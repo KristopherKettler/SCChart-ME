@@ -1,0 +1,301 @@
+appearance default {
+	lineWidth 2
+	background (198,226,255) //LightSlateGrey 
+}
+
+appearance declarationAppearance {
+	lineWidth 0
+	background (198,226,255) //SlateGrey2 
+	foreground (198,226,255) //LightSlateGrey 
+}
+appearance texthighlight{
+	foreground (109, 9, 174)
+	background (109, 9, 174)
+}
+
+appearance nodeLine {
+	lineWidth 2
+}
+
+appearance initChartColour {
+	background (198,226,255) //SlateGrey2 
+	foreground (119,136,153) //LightSlateGrey 
+}
+
+appearance subStartSCChartColour {
+	background (198,226,255) //SlateGrey2 
+	foreground (0,0,0) //Black
+	lineWidth 4
+}
+
+appearance mainChartColour {
+	foreground (119,136,153) //LightSlateGrey 
+}
+
+appearance startNodeLine {
+	background (198,226,255) //LightSlateGrey 
+	lineWidth 4
+}
+
+appearance connector{
+	background (0,0,0) //Black
+}
+
+appearance immediateArrowStyle {
+	lineStyle DASH
+}
+
+appearance greenTriangle {
+	background (50,205,50) 
+}
+
+appearance redCircle {
+	background (255,0,0) //Red
+}
+
+appearance textFont{
+	font ("Sans",10)
+	lineWidth 2
+}
+
+nodeStyle rootStateStyle (1) {
+	roundedRectangle {
+		appearance initChartColour
+		size(800,1000)
+		corner(15,15)
+		text {
+			appearance textFont
+			position (CENTER,TOP 3)
+			value "%1$s"
+		}
+//		multiText {
+//			appearance {
+//				font ("system-ui, sans-serif", 12)
+//				foreground (0, 0, 0)
+//			}			
+//			
+//			position (20, 20)
+//			value "%2$s"
+//		}
+	}
+}
+
+nodeStyle SuperStateStyle (1){
+	rectangle {
+		appearance mainChartColour
+		text {
+			appearance textFont
+			position (LEFT 3,TOP 3)
+			value "%1$s"
+		}
+	}
+}
+
+nodeStyle subSuperStateStyle (1) {
+	roundedRectangle {
+		appearance initChartColour
+		size(140,80)
+		corner(15,15)
+		text {
+			appearance textFont
+			position (CENTER,TOP 3)
+			value "%1$s"
+		}
+	}
+}
+
+nodeStyle subStartSuperStateStyle (1) {
+	roundedRectangle {
+		appearance subStartSCChartColour
+		size(140,80)
+		corner(15,15)
+		text {
+			appearance textFont
+			position (CENTER,TOP 3)
+			value "%1$s"
+		}
+	}
+}
+
+nodeStyle declarationStyle(3){
+	rectangle {
+		appearance declarationAppearance
+		size(140,80)
+		text {
+			position ( LEFT 5, MIDDLE )
+			value "%1$s %2$s %3$s"
+		}
+		text {
+			appearance texthighlight
+			position ( LEFT 5, MIDDLE )
+			value "%1$s %2$s"
+		}
+	}
+}
+
+nodeStyle subSuperStateDeclarationStyle(2){
+	rectangle {
+		appearance declarationAppearance
+		size(140,80)
+		text {
+			position ( LEFT 5, MIDDLE )
+			value "%1$s %2$s"
+		}
+		text {
+			appearance texthighlight
+			position ( LEFT 5, MIDDLE )
+			value "%1$s"
+		}
+	}
+}
+
+nodeStyle startNodeStyle(1){
+	ellipse{
+		appearance startNodeLine
+		size(60,60)
+		text {
+			position ( CENTER, MIDDLE )
+			value "%s"
+		}
+	}
+}
+
+nodeStyle startEndNodeStyle(1){
+	ellipse{
+		appearance startNodeLine
+		size(60,60)
+		text {
+			position ( CENTER, MIDDLE )
+			value "%s"
+		}
+		ellipse{
+			appearance default
+			position ( CENTER, MIDDLE )
+			size(50,50)
+			text {
+				position ( CENTER, MIDDLE )
+				value "%s"
+			}
+		}
+	}
+}
+
+nodeStyle simpleStateStyle (1){
+	ellipse {
+		appearance default
+		size(60,60)
+		text {
+			position ( CENTER, MIDDLE )
+			value "%s"
+		}
+	}
+}
+
+nodeStyle endNodeStyle(1){
+	ellipse{
+		appearance nodeLine
+		size(60,60)
+		text {
+			position ( CENTER, MIDDLE )
+			value "%s"
+		}
+		ellipse{
+			appearance default
+			position ( CENTER, MIDDLE )
+			size(50,50)
+					text {
+			position ( CENTER, MIDDLE )
+			value "%s"
+		}
+		}
+	}
+}
+
+nodeStyle connectorStyle{
+	ellipse {
+		appearance connector
+		size(10,10)
+	}
+}
+
+
+edgeStyle immediateArrow(1) {
+	appearance immediateArrowStyle
+	decorator {
+		location (1.0) // at the end of the edge
+		ARROW
+		appearance default 
+	}
+	decorator {
+		location (0.5)
+		movable
+		text {
+			value "%s"
+		}
+	}
+} 
+
+edgeStyle immediateTerminatArrow {
+	appearance immediateArrowStyle
+	decorator {
+		location (1.0) // at the end of the edge
+		ARROW
+		appearance default 
+	}
+	decorator {
+		location (0)
+		TRIANGLE
+		appearance greenTriangle 
+	}
+} 
+
+edgeStyle weakAbortArrow {
+	appearance default
+	decorator {
+		location (1.0) // at the end of the edge
+		ARROW
+		appearance default 
+	}
+}
+
+edgeStyle weakAbortTerminatArrow {
+	appearance default
+	decorator {
+		location (1.0) // at the end of the edge
+		ARROW
+		appearance default 
+	}
+	decorator {
+		location (0)
+		TRIANGLE
+		appearance greenTriangle 
+	}
+} 
+
+edgeStyle strongAbortArrow {
+	appearance default
+	decorator {
+		location (1.0) // at the end of the edge
+		ARROW
+		appearance default 
+	}
+	decorator {
+		location (0)
+		CIRCLE 
+		appearance redCircle
+	}
+}
+
+edgeStyle defferedArrow {
+	appearance default
+	decorator {
+		location (0.95) // at the end of the edge
+		ARROW
+		appearance default 
+	}
+	decorator {
+		location (1.0)
+		CIRCLE 
+		appearance redCircle
+	}
+}

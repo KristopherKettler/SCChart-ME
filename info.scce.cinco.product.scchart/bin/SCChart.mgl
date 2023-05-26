@@ -1,0 +1,159 @@
+id info.scce.cinco.product.scchart.mglid
+stylePath "model/SCChart.style"
+
+//@postCreate("info.scce.cinco.product.scchart.hooks.postCreateSCChartModel")
+//@preSave("info.scce.cinco.product.scchart.hooks.PreSaveSCChart")
+@event("info.scce.cinco.product.scchart.events.SCChartEvent")
+graphModel SCChart {
+	diagramExtension "scchart"
+	containableElements(RootState[1,1])
+}
+
+@palette("infrastructure")
+//@postSelect("info.scce.cinco.product.scchart.hooks.PostSelectSCChart")
+//@postCreate("info.scce.cinco.product.scchart.hooks.postCreateInitSCChart")
+//@postAttributeChange("info.scce.cinco.product.scchart.hooks.PostDeclarationChangeHook")
+container RootState {
+	style rootStateStyle ("${label}")
+	containableElements(SuperStateRegion,SuperStateDeclarationNode)
+	outgoingEdges (*)
+	attr EString as label := "<insert name>"
+	attr SuperStateDeclaration as declaration[0,*]
+}
+
+@palette("SuperStates")
+//@postCreate("info.scce.cinco.product.scchart.hooks.PostCreateSuperState")
+container SuperStateRegion {
+	style SuperStateStyle ("${RegionID}")
+	containableElements(SubSuperState,InitilalSubSuperState,InitialState,SimpleState,FinalState,Connector)
+	attr EString as label := "<insert name>"
+	attr EString as RegionID := "<insert name>"
+}
+
+//@postCreate("info.scce.cinco.product.scchart.hooks.PostCreateSubSuperState")
+@palette("SuperStates")
+container SubSuperState {
+	style subSuperStateStyle ("${label}")
+	containableElements(SubSuperStateRegion,SubSuperStateDeclarationNode)
+	incomingEdges (*)
+	outgoingEdges (*)
+	attr SubSuperStateDeclaration as declaration[0,*]
+	attr EString as label := "<insert name>"
+}
+
+//@postCreate("info.scce.cinco.product.scchart.hooks.PostCreateSubSuperState")
+@palette("SuperStates")
+container InitilalSubSuperState extends SubSuperState{
+	style subStartSuperStateStyle ("${label}")
+	containableElements(SubSuperStateRegion,SubSuperStateDeclarationNode)
+	incomingEdges (*)
+	outgoingEdges (*)
+}
+
+@palette("SuperStates")
+container SubSuperStateRegion {
+	style SuperStateStyle ("${RegionID}")
+	containableElements(*)
+	attr EString as RegionID := "<insert name>"
+}
+
+@palette("Declaratioon")
+@disable(select,delete)
+node SuperStateDeclarationNode {
+	style declarationStyle("${InputOutput}", "${declarationType}","${name}")
+	attr EString as InputOutput
+	attr EString as declarationType
+	attr EString as name
+}
+
+@palette("Declaratioon")
+@disable(select,delete)
+node SubSuperStateDeclarationNode {
+	style subSuperStateDeclarationStyle("${declarationType}","${name}")
+	attr EString as declarationType
+	attr EString as name
+}
+
+node SimpleState {
+	style simpleStateStyle("${label}")
+	incomingEdges (*)
+	outgoingEdges (*)
+	attr EString as label := "<insert name>"
+}	
+
+node InitialState extends SimpleState {
+	style startNodeStyle("${label}")
+	incomingEdges (*)
+	outgoingEdges (*)
+}
+
+node FinalState extends SimpleState {
+	style endNodeStyle("${label}")
+	incomingEdges (*)
+	outgoingEdges (*)
+}
+
+//node StartEndNode {
+//	style startEndNodeStyle("${label}")
+//	incomingEdges (*)
+//	outgoingEdges (*)
+//	attr EString as label := "<insert name>"
+//}
+
+node Connector {
+	style connectorStyle
+	incomingEdges (*)
+	outgoingEdges (*)
+}
+
+edge Transition {
+	style immediateArrow("${label}")
+	attr EBoolean as history
+}
+
+@palette("Declaratioon")
+edge ImmediateTransition {
+	style immediateArrow("${label}")
+	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.IntProvider")
+	attr EInt as dsderminat := "-1"
+	attr EString as label := "wqwq"
+	attr EBoolean as history
+	//@grammar("info.scce.cinco.product.scchart.dsl.transition.TransitionsExpression", "info.scce.cinco.product.scchart.dsl.transition.TransitionsExpression")	
+	attr EInt as priority := "0"
+}	
+
+edge ImmediateTerminationTransition {
+	style immediateTerminatArrow
+}	
+
+edge WeakAbortTransition {
+	style weakAbortArrow
+}
+
+edge StrongAbortTransition {
+	style strongAbortArrow
+}
+
+edge WeakAbortTerminationTransition {
+	style weakAbortTerminatArrow
+}
+
+edge DefferedTransition {
+	style defferedArrow
+}
+
+@label(name)
+type SuperStateDeclaration {
+	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationInputOutputProvider")
+	attr EString as InputOutput
+	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
+	attr EString as declarationType
+	attr EString as name
+}
+
+@label(name)
+type SubSuperStateDeclaration {
+	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SubSuperStateDeclarationTypeProvider")
+	attr EString as declarationType
+	attr EString as name
+}

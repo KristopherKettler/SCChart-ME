@@ -1,0 +1,337 @@
+/**
+ */
+package info.scce.cinco.product.scchart.mglid.scchart.internal.impl;
+
+import info.scce.cinco.product.scchart.mglid.scchart.internal.*;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Factory</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory {
+	/**
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static InternalFactory init() {
+		try {
+			InternalFactory theInternalFactory = (InternalFactory)EPackage.Registry.INSTANCE.getEFactory(InternalPackage.eNS_URI);
+			if (theInternalFactory != null) {
+				return theInternalFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new InternalFactoryImpl();
+	}
+
+	/**
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InternalFactoryImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
+			case InternalPackage.INTERNAL_ROOT_STATE: return createInternalRootState();
+			case InternalPackage.INTERNAL_SUPER_STATE_REGION: return createInternalSuperStateRegion();
+			case InternalPackage.INTERNAL_SUB_SUPER_STATE: return createInternalSubSuperState();
+			case InternalPackage.INTERNAL_INITILAL_SUB_SUPER_STATE: return createInternalInitilalSubSuperState();
+			case InternalPackage.INTERNAL_SUB_SUPER_STATE_REGION: return createInternalSubSuperStateRegion();
+			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION_NODE: return createInternalSuperStateDeclarationNode();
+			case InternalPackage.INTERNAL_SUB_SUPER_STATE_DECLARATION_NODE: return createInternalSubSuperStateDeclarationNode();
+			case InternalPackage.INTERNAL_SIMPLE_STATE: return createInternalSimpleState();
+			case InternalPackage.INTERNAL_INITIAL_STATE: return createInternalInitialState();
+			case InternalPackage.INTERNAL_FINAL_STATE: return createInternalFinalState();
+			case InternalPackage.INTERNAL_CONNECTOR: return createInternalConnector();
+			case InternalPackage.INTERNAL_TRANSITION: return createInternalTransition();
+			case InternalPackage.INTERNAL_IMMEDIATE_TRANSITION: return createInternalImmediateTransition();
+			case InternalPackage.INTERNAL_IMMEDIATE_TERMINATION_TRANSITION: return createInternalImmediateTerminationTransition();
+			case InternalPackage.INTERNAL_WEAK_ABORT_TRANSITION: return createInternalWeakAbortTransition();
+			case InternalPackage.INTERNAL_STRONG_ABORT_TRANSITION: return createInternalStrongAbortTransition();
+			case InternalPackage.INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION: return createInternalWeakAbortTerminationTransition();
+			case InternalPackage.INTERNAL_DEFFERED_TRANSITION: return createInternalDefferedTransition();
+			case InternalPackage.INTERNAL_SC_CHART: return createInternalSCChart();
+			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION: return createInternalSuperStateDeclaration();
+			case InternalPackage.INTERNAL_SUB_SUPER_STATE_DECLARATION: return createInternalSubSuperStateDeclaration();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalRootState createInternalRootState() {
+		InternalRootStateImpl internalRootState = new InternalRootStateImpl();
+		return internalRootState;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalSuperStateRegion createInternalSuperStateRegion() {
+		InternalSuperStateRegionImpl internalSuperStateRegion = new InternalSuperStateRegionImpl();
+		return internalSuperStateRegion;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalSubSuperState createInternalSubSuperState() {
+		InternalSubSuperStateImpl internalSubSuperState = new InternalSubSuperStateImpl();
+		return internalSubSuperState;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalInitilalSubSuperState createInternalInitilalSubSuperState() {
+		InternalInitilalSubSuperStateImpl internalInitilalSubSuperState = new InternalInitilalSubSuperStateImpl();
+		return internalInitilalSubSuperState;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalSubSuperStateRegion createInternalSubSuperStateRegion() {
+		InternalSubSuperStateRegionImpl internalSubSuperStateRegion = new InternalSubSuperStateRegionImpl();
+		return internalSubSuperStateRegion;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalSuperStateDeclarationNode createInternalSuperStateDeclarationNode() {
+		InternalSuperStateDeclarationNodeImpl internalSuperStateDeclarationNode = new InternalSuperStateDeclarationNodeImpl();
+		return internalSuperStateDeclarationNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalSubSuperStateDeclarationNode createInternalSubSuperStateDeclarationNode() {
+		InternalSubSuperStateDeclarationNodeImpl internalSubSuperStateDeclarationNode = new InternalSubSuperStateDeclarationNodeImpl();
+		return internalSubSuperStateDeclarationNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalSimpleState createInternalSimpleState() {
+		InternalSimpleStateImpl internalSimpleState = new InternalSimpleStateImpl();
+		return internalSimpleState;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalInitialState createInternalInitialState() {
+		InternalInitialStateImpl internalInitialState = new InternalInitialStateImpl();
+		return internalInitialState;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalFinalState createInternalFinalState() {
+		InternalFinalStateImpl internalFinalState = new InternalFinalStateImpl();
+		return internalFinalState;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalConnector createInternalConnector() {
+		InternalConnectorImpl internalConnector = new InternalConnectorImpl();
+		return internalConnector;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalTransition createInternalTransition() {
+		InternalTransitionImpl internalTransition = new InternalTransitionImpl();
+		return internalTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalImmediateTransition createInternalImmediateTransition() {
+		InternalImmediateTransitionImpl internalImmediateTransition = new InternalImmediateTransitionImpl();
+		return internalImmediateTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalImmediateTerminationTransition createInternalImmediateTerminationTransition() {
+		InternalImmediateTerminationTransitionImpl internalImmediateTerminationTransition = new InternalImmediateTerminationTransitionImpl();
+		return internalImmediateTerminationTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalWeakAbortTransition createInternalWeakAbortTransition() {
+		InternalWeakAbortTransitionImpl internalWeakAbortTransition = new InternalWeakAbortTransitionImpl();
+		return internalWeakAbortTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalStrongAbortTransition createInternalStrongAbortTransition() {
+		InternalStrongAbortTransitionImpl internalStrongAbortTransition = new InternalStrongAbortTransitionImpl();
+		return internalStrongAbortTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalWeakAbortTerminationTransition createInternalWeakAbortTerminationTransition() {
+		InternalWeakAbortTerminationTransitionImpl internalWeakAbortTerminationTransition = new InternalWeakAbortTerminationTransitionImpl();
+		return internalWeakAbortTerminationTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalDefferedTransition createInternalDefferedTransition() {
+		InternalDefferedTransitionImpl internalDefferedTransition = new InternalDefferedTransitionImpl();
+		return internalDefferedTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalSCChart createInternalSCChart() {
+		InternalSCChartImpl internalSCChart = new InternalSCChartImpl();
+		return internalSCChart;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalSuperStateDeclaration createInternalSuperStateDeclaration() {
+		InternalSuperStateDeclarationImpl internalSuperStateDeclaration = new InternalSuperStateDeclarationImpl();
+		return internalSuperStateDeclaration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalSubSuperStateDeclaration createInternalSubSuperStateDeclaration() {
+		InternalSubSuperStateDeclarationImpl internalSubSuperStateDeclaration = new InternalSubSuperStateDeclarationImpl();
+		return internalSubSuperStateDeclaration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalPackage getInternalPackage() {
+		return (InternalPackage)getEPackage();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @deprecated
+	 * @generated
+	 */
+	@Deprecated
+	public static InternalPackage getPackage() {
+		return InternalPackage.eINSTANCE;
+	}
+
+} //InternalFactoryImpl
