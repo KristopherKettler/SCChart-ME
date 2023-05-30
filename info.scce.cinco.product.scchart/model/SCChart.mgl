@@ -56,7 +56,7 @@ container SubSuperStateRegion {
 	attr EString as RegionID := "<insert name>"
 }
 
-@palette("Declaratioon")
+@palette("Declaration")
 @disable(select,delete)
 node SuperStateDeclarationNode {
 	style declarationStyle("${InputOutput}", "${declarationType}","${name}")
@@ -65,7 +65,7 @@ node SuperStateDeclarationNode {
 	attr EString as name
 }
 
-@palette("Declaratioon")
+@palette("Declaration")
 @disable(select,delete)
 node SubSuperStateDeclarationNode {
 	style subSuperStateDeclarationStyle("${declarationType}","${name}")
@@ -73,6 +73,7 @@ node SubSuperStateDeclarationNode {
 	attr EString as name
 }
 
+@palette("States")
 node SimpleState {
 	style simpleStateStyle("${label}")
 	incomingEdges (*)
@@ -80,12 +81,14 @@ node SimpleState {
 	attr EString as label := "<insert name>"
 }	
 
+@palette("States")
 node InitialState extends SimpleState {
 	style startNodeStyle("${label}")
 	incomingEdges (*)
 	outgoingEdges (*)
 }
 
+@palette("States")
 node FinalState extends SimpleState {
 	style endNodeStyle("${label}")
 	incomingEdges (*)
@@ -110,7 +113,6 @@ edge Transition {
 	attr EBoolean as history
 }
 
-@palette("Declaratioon")
 edge ImmediateTransition {
 	style immediateArrow("${label}")
 	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.IntProvider")
