@@ -1,7 +1,6 @@
 id info.scce.cinco.product.scchart.mglid
 stylePath "model/SCChart.style"
 
-//@postCreate("info.scce.cinco.product.scchart.hooks.postCreateSCChartModel")
 //@preSave("info.scce.cinco.product.scchart.hooks.PreSaveSCChart")
 @event("info.scce.cinco.product.scchart.events.SCChartEvent")
 graphModel SCChart {

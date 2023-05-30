@@ -34,7 +34,7 @@ final class SCChartEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 	}
 	
 	override postCreate(SCChart element) {
-		// TODO: Auto-generated method stub
+		element.newRootState(20,20,700,900)
 	}
 	
 	override postSave(SCChart element) {

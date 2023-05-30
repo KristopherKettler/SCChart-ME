@@ -33,6 +33,7 @@ public final class SCChartEvent extends info.scce.cinco.product.scchart.mglid.sc
   
   @Override
   public void postCreate(final SCChart element) {
+    element.newRootState(20, 20, 700, 900);
   }
   
   @Override
