@@ -1,10 +1,14 @@
 package info.scce.cinco.product.scchart.mglid.adapter;
 
 import com.google.common.base.Objects;
+import de.jabc.cinco.meta.core.event.hub.EventHub;
+import de.jabc.cinco.meta.core.event.hub.impl.PayloadContext;
+import de.jabc.cinco.meta.plugin.event.api.payload.PostAttributeChangePayload;
 import de.jabc.cinco.meta.runtime.contentadapter.CincoEContentAdapter;
 import graphmodel.GraphModel;
 import graphmodel.ModelElement;
 import graphmodel.internal.InternalGraphModel;
+import info.scce.cinco.product.scchart.mglid.scchart.InitilalSubSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitilalSubSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
 import org.eclipse.emf.common.notify.Notification;
@@ -31,9 +35,15 @@ public class InitilalSubSuperStateEContentAdapter extends EContentAdapter implem
         if (_isRelevant) {
           _matched=true;
           ModelElement _element = ((InternalInitilalSubSuperState)o).getElement();
+          String _name = ((EStructuralFeature)feature).getName();
+          Object _oldValue = notification.getOldValue();
+          final PostAttributeChangePayload<InitilalSubSuperState> eventPayload = new PostAttributeChangePayload<InitilalSubSuperState>(((InitilalSubSuperState) _element), _name, _oldValue);
+          final PayloadContext<PostAttributeChangePayload<InitilalSubSuperState>, Void> eventContext = new PayloadContext<PostAttributeChangePayload<InitilalSubSuperState>, Void>("event.post.attributeChange.info_scce_cinco_product_scchart_mglid_scchart_InitilalSubSuperState", eventPayload);
+          EventHub.getInstance().notifyFirst(eventContext);
+          ModelElement _element_1 = ((InternalInitilalSubSuperState)o).getElement();
           GraphModel _rootElement = null;
-          if (_element!=null) {
-            _rootElement=_element.getRootElement();
+          if (_element_1!=null) {
+            _rootElement=_element_1.getRootElement();
           }
           if (_rootElement!=null) {
             _rootElement.updateModelElements();

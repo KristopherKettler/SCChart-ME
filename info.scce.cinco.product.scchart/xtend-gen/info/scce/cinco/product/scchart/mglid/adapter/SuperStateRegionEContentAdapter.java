@@ -1,10 +1,14 @@
 package info.scce.cinco.product.scchart.mglid.adapter;
 
 import com.google.common.base.Objects;
+import de.jabc.cinco.meta.core.event.hub.EventHub;
+import de.jabc.cinco.meta.core.event.hub.impl.PayloadContext;
+import de.jabc.cinco.meta.plugin.event.api.payload.PostAttributeChangePayload;
 import de.jabc.cinco.meta.runtime.contentadapter.CincoEContentAdapter;
 import graphmodel.GraphModel;
 import graphmodel.ModelElement;
 import graphmodel.internal.InternalGraphModel;
+import info.scce.cinco.product.scchart.mglid.scchart.SuperStateRegion;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateRegion;
 import org.eclipse.emf.common.notify.Notification;
@@ -31,9 +35,15 @@ public class SuperStateRegionEContentAdapter extends EContentAdapter implements 
         if (_isRelevant) {
           _matched=true;
           ModelElement _element = ((InternalSuperStateRegion)o).getElement();
+          String _name = ((EStructuralFeature)feature).getName();
+          Object _oldValue = notification.getOldValue();
+          final PostAttributeChangePayload<SuperStateRegion> eventPayload = new PostAttributeChangePayload<SuperStateRegion>(((SuperStateRegion) _element), _name, _oldValue);
+          final PayloadContext<PostAttributeChangePayload<SuperStateRegion>, Void> eventContext = new PayloadContext<PostAttributeChangePayload<SuperStateRegion>, Void>("event.post.attributeChange.info_scce_cinco_product_scchart_mglid_scchart_SuperStateRegion", eventPayload);
+          EventHub.getInstance().notifyFirst(eventContext);
+          ModelElement _element_1 = ((InternalSuperStateRegion)o).getElement();
           GraphModel _rootElement = null;
-          if (_element!=null) {
-            _rootElement=_element.getRootElement();
+          if (_element_1!=null) {
+            _rootElement=_element_1.getRootElement();
           }
           if (_rootElement!=null) {
             _rootElement.updateModelElements();

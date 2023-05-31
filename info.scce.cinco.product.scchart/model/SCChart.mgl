@@ -12,6 +12,7 @@ graphModel SCChart {
 //@postSelect("info.scce.cinco.product.scchart.hooks.PostSelectSCChart")
 //@postCreate("info.scce.cinco.product.scchart.hooks.postCreateInitSCChart")
 //@postAttributeChange("info.scce.cinco.product.scchart.hooks.PostDeclarationChangeHook")
+@event("info.scce.cinco.product.scchart.events.RootStateEvent")
 container RootState {
 	style rootStateStyle ("${label}")
 	containableElements(SuperStateRegion,SuperStateDeclarationNode)
@@ -22,6 +23,7 @@ container RootState {
 
 @palette("SuperStates")
 //@postCreate("info.scce.cinco.product.scchart.hooks.PostCreateSuperState")
+@event("info.scce.cinco.product.scchart.events.SuperStateRegionEvent")
 container SuperStateRegion {
 	style SuperStateStyle ("${RegionID}")
 	containableElements(SubSuperState,InitilalSubSuperState,InitialState,SimpleState,FinalState,Connector)
@@ -31,6 +33,7 @@ container SuperStateRegion {
 
 //@postCreate("info.scce.cinco.product.scchart.hooks.PostCreateSubSuperState")
 @palette("SuperStates")
+@event("info.scce.cinco.product.scchart.events.SubSuperStateEvent")
 container SubSuperState {
 	style subSuperStateStyle ("${label}")
 	containableElements(SubSuperStateRegion,SubSuperStateDeclarationNode)
@@ -42,6 +45,7 @@ container SubSuperState {
 
 //@postCreate("info.scce.cinco.product.scchart.hooks.PostCreateSubSuperState")
 @palette("SuperStates")
+@event("info.scce.cinco.product.scchart.events.InitilalSubSuperStateEvent")
 container InitilalSubSuperState extends SubSuperState{
 	style subStartSuperStateStyle ("${label}")
 	containableElements(SubSuperStateRegion,SubSuperStateDeclarationNode)
@@ -113,12 +117,11 @@ edge Transition {
 	attr EBoolean as history
 }
 
-edge ImmediateTransition {
+edge ImmediateTransition extends Transition{
 	style immediateArrow("${label}")
 	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.IntProvider")
 	attr EInt as dsderminat := "-1"
 	attr EString as label := "wqwq"
-	attr EBoolean as history
 	//@grammar("info.scce.cinco.product.scchart.dsl.transition.TransitionsExpression", "info.scce.cinco.product.scchart.dsl.transition.TransitionsExpression")	
 	attr EInt as priority := "0"
 }	
