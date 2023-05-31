@@ -2,8 +2,6 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.internal.impl;
 
-import graphmodel.internal.impl.InternalEdgeImpl;
-
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalWeakAbortTransition;
 
@@ -16,7 +14,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class InternalWeakAbortTransitionImpl extends InternalEdgeImpl implements InternalWeakAbortTransition {
+public class InternalWeakAbortTransitionImpl extends InternalTransitionImpl implements InternalWeakAbortTransition {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -829,7 +829,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransitionView__IsHistory() {
+	public EOperation getTransitionView__GetAction() {
         return getTransitionView().getEOperations().get(0);
 	}
 
@@ -839,8 +839,128 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransitionView__SetHistory__boolean() {
+	public EOperation getTransitionView__SetAction__String() {
         return getTransitionView().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getTransitionView__GetTrigger() {
+        return getTransitionView().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getTransitionView__SetTrigger__String() {
+        return getTransitionView().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getTransitionView__IsStrong_Abort() {
+        return getTransitionView().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getTransitionView__SetStrong_Abort__boolean() {
+        return getTransitionView().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getTransitionView__GetPriority() {
+        return getTransitionView().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getTransitionView__SetPriority__int() {
+        return getTransitionView().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getTransitionView__IsImmediate_transition() {
+        return getTransitionView().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getTransitionView__SetImmediate_transition__boolean() {
+        return getTransitionView().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getTransitionView__IsTermination() {
+        return getTransitionView().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getTransitionView__SetTermination__boolean() {
+        return getTransitionView().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getTransitionView__IsHistory() {
+        return getTransitionView().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getTransitionView__SetHistory__boolean() {
+        return getTransitionView().getEOperations().get(13);
 	}
 
 	/**
@@ -872,7 +992,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransitionView__GetDsderminat() {
+	public EOperation getImmediateTransitionView__GetLabel() {
         return getImmediateTransitionView().getEOperations().get(0);
 	}
 
@@ -882,68 +1002,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransitionView__SetDsderminat__int() {
-        return getImmediateTransitionView().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getImmediateTransitionView__GetLabel() {
-        return getImmediateTransitionView().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EOperation getImmediateTransitionView__SetLabel__String() {
-        return getImmediateTransitionView().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getImmediateTransitionView__IsHistory() {
-        return getImmediateTransitionView().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getImmediateTransitionView__SetHistory__boolean() {
-        return getImmediateTransitionView().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getImmediateTransitionView__GetPriority() {
-        return getImmediateTransitionView().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getImmediateTransitionView__SetPriority__int() {
-        return getImmediateTransitionView().getEOperations().get(7);
+        return getImmediateTransitionView().getEOperations().get(1);
 	}
 
 	/**

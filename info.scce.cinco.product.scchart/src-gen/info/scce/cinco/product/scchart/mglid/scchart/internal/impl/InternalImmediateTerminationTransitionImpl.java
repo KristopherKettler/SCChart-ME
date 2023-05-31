@@ -2,8 +2,6 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.internal.impl;
 
-import graphmodel.internal.impl.InternalEdgeImpl;
-
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTerminationTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
 
@@ -16,7 +14,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class InternalImmediateTerminationTransitionImpl extends InternalEdgeImpl implements InternalImmediateTerminationTransition {
+public class InternalImmediateTerminationTransitionImpl extends InternalTransitionImpl implements InternalImmediateTerminationTransition {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

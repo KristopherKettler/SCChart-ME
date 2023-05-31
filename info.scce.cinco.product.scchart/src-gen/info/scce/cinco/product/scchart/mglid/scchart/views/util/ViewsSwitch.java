@@ -144,30 +144,35 @@ public class ViewsSwitch<T> extends Switch<T> {
 			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW: {
 				ImmediateTransitionView immediateTransitionView = (ImmediateTransitionView)theEObject;
 				T result = caseImmediateTransitionView(immediateTransitionView);
+				if (result == null) result = caseTransitionView(immediateTransitionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ViewsPackage.IMMEDIATE_TERMINATION_TRANSITION_VIEW: {
 				ImmediateTerminationTransitionView immediateTerminationTransitionView = (ImmediateTerminationTransitionView)theEObject;
 				T result = caseImmediateTerminationTransitionView(immediateTerminationTransitionView);
+				if (result == null) result = caseTransitionView(immediateTerminationTransitionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ViewsPackage.WEAK_ABORT_TRANSITION_VIEW: {
 				WeakAbortTransitionView weakAbortTransitionView = (WeakAbortTransitionView)theEObject;
 				T result = caseWeakAbortTransitionView(weakAbortTransitionView);
+				if (result == null) result = caseTransitionView(weakAbortTransitionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW: {
 				StrongAbortTransitionView strongAbortTransitionView = (StrongAbortTransitionView)theEObject;
 				T result = caseStrongAbortTransitionView(strongAbortTransitionView);
+				if (result == null) result = caseTransitionView(strongAbortTransitionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ViewsPackage.WEAK_ABORT_TERMINATION_TRANSITION_VIEW: {
 				WeakAbortTerminationTransitionView weakAbortTerminationTransitionView = (WeakAbortTerminationTransitionView)theEObject;
 				T result = caseWeakAbortTerminationTransitionView(weakAbortTerminationTransitionView);
+				if (result == null) result = caseTransitionView(weakAbortTerminationTransitionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}

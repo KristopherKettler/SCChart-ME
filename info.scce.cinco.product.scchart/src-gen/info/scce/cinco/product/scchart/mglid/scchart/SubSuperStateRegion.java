@@ -166,246 +166,6 @@ public interface SubSuperStateRegion extends Container {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<SubSuperState> getSubSuperStates();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewSubSuperState();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	SubSuperState newSubSuperState(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	SubSuperState newSubSuperState(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	SubSuperState newSubSuperState(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	SubSuperState newSubSuperState(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<SuperStateRegion> getSuperStateRegions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewSuperStateRegion();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	SuperStateRegion newSuperStateRegion(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	SuperStateRegion newSuperStateRegion(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	SuperStateRegion newSuperStateRegion(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	SuperStateRegion newSuperStateRegion(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<RootState> getRootStates();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewRootState();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	RootState newRootState(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	RootState newRootState(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	RootState newRootState(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	RootState newRootState(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<Connector> getConnectors();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewConnector();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	Connector newConnector(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	Connector newConnector(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	Connector newConnector(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	Connector newConnector(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<SubSuperStateRegion> getSubSuperStateRegions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewSubSuperStateRegion();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	SubSuperStateRegion newSubSuperStateRegion(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	SubSuperStateRegion newSubSuperStateRegion(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	SubSuperStateRegion newSubSuperStateRegion(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	SubSuperStateRegion newSubSuperStateRegion(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
 	EList<SuperStateDeclarationNode> getSuperStateDeclarationNodes();
 
 	/**
@@ -502,6 +262,150 @@ public interface SubSuperStateRegion extends Container {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	EList<Connector> getConnectors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewConnector();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	Connector newConnector(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	Connector newConnector(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	Connector newConnector(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	Connector newConnector(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<SubSuperState> getSubSuperStates();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewSubSuperState();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SubSuperState newSubSuperState(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SubSuperState newSubSuperState(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SubSuperState newSubSuperState(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SubSuperState newSubSuperState(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<SubSuperStateRegion> getSubSuperStateRegions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewSubSuperStateRegion();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SubSuperStateRegion newSubSuperStateRegion(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SubSuperStateRegion newSubSuperStateRegion(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SubSuperStateRegion newSubSuperStateRegion(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SubSuperStateRegion newSubSuperStateRegion(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	EList<SubSuperStateDeclarationNode> getSubSuperStateDeclarationNodes();
 
 	/**
@@ -591,6 +495,102 @@ public interface SubSuperStateRegion extends Container {
 	 * @generated
 	 */
 	SimpleState newSimpleState(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<RootState> getRootStates();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewRootState();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	RootState newRootState(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	RootState newRootState(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	RootState newRootState(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	RootState newRootState(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<SuperStateRegion> getSuperStateRegions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewSuperStateRegion();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SuperStateRegion newSuperStateRegion(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SuperStateRegion newSuperStateRegion(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SuperStateRegion newSuperStateRegion(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SuperStateRegion newSuperStateRegion(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -182,7 +182,7 @@ public interface SuperStateRegion extends Container {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<SubSuperState> getSubSuperStates();
+	EList<InitialState> getInitialStates();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -190,7 +190,7 @@ public interface SuperStateRegion extends Container {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewSubSuperState();
+	boolean canNewInitialState();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -198,7 +198,7 @@ public interface SuperStateRegion extends Container {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SubSuperState newSubSuperState(int x, int y);
+	InitialState newInitialState(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -206,7 +206,7 @@ public interface SuperStateRegion extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SubSuperState newSubSuperState(String id, int x, int y);
+	InitialState newInitialState(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,7 +214,7 @@ public interface SuperStateRegion extends Container {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SubSuperState newSubSuperState(int x, int y, int width, int height);
+	InitialState newInitialState(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -222,7 +222,7 @@ public interface SuperStateRegion extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SubSuperState newSubSuperState(String id, int x, int y, int width, int height);
+	InitialState newInitialState(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -278,7 +278,7 @@ public interface SuperStateRegion extends Container {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<InitialState> getInitialStates();
+	EList<SubSuperState> getSubSuperStates();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -286,7 +286,7 @@ public interface SuperStateRegion extends Container {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewInitialState();
+	boolean canNewSubSuperState();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -294,7 +294,7 @@ public interface SuperStateRegion extends Container {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	InitialState newInitialState(int x, int y);
+	SubSuperState newSubSuperState(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -302,7 +302,7 @@ public interface SuperStateRegion extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	InitialState newInitialState(String id, int x, int y);
+	SubSuperState newSubSuperState(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -310,7 +310,7 @@ public interface SuperStateRegion extends Container {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	InitialState newInitialState(int x, int y, int width, int height);
+	SubSuperState newSubSuperState(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -318,7 +318,7 @@ public interface SuperStateRegion extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	InitialState newInitialState(String id, int x, int y, int width, int height);
+	SubSuperState newSubSuperState(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->

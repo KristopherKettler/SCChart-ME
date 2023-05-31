@@ -13,7 +13,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +27,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class WeakAbortTerminationTransitionViewImpl extends EObjectImpl implements WeakAbortTerminationTransitionView {
+public class WeakAbortTerminationTransitionViewImpl extends TransitionViewImpl implements WeakAbortTerminationTransitionView {
 	/**
 	 * The cached value of the '{@link #getInternalWeakAbortTerminationTransition() <em>Internal Weak Abort Termination Transition</em>}' reference.
 	 * <!-- begin-user-doc -->

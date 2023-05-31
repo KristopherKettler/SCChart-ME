@@ -1560,8 +1560,68 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalTransition_History() {
+	public EAttribute getInternalTransition_Action() {
         return (EAttribute)getInternalTransition().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInternalTransition_Trigger() {
+        return (EAttribute)getInternalTransition().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInternalTransition_Strong_Abort() {
+        return (EAttribute)getInternalTransition().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInternalTransition_Priority() {
+        return (EAttribute)getInternalTransition().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInternalTransition_Immediate_transition() {
+        return (EAttribute)getInternalTransition().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInternalTransition_Termination() {
+        return (EAttribute)getInternalTransition().getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInternalTransition_History() {
+        return (EAttribute)getInternalTransition().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -1583,38 +1643,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalImmediateTransition_Dsderminat() {
-        return (EAttribute)getInternalImmediateTransition().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EAttribute getInternalImmediateTransition_Label() {
-        return (EAttribute)getInternalImmediateTransition().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getInternalImmediateTransition_History() {
-        return (EAttribute)getInternalImmediateTransition().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getInternalImmediateTransition_Priority() {
-        return (EAttribute)getInternalImmediateTransition().getEStructuralFeatures().get(3);
+        return (EAttribute)getInternalImmediateTransition().getEStructuralFeatures().get(0);
 	}
 
 	/**

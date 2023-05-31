@@ -17,7 +17,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +31,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class ImmediateTransitionViewImpl extends EObjectImpl implements ImmediateTransitionView {
+public class ImmediateTransitionViewImpl extends TransitionViewImpl implements ImmediateTransitionView {
 	/**
 	 * The cached value of the '{@link #getInternalImmediateTransition() <em>Internal Immediate Transition</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -108,29 +107,6 @@ public class ImmediateTransitionViewImpl extends EObjectImpl implements Immediat
 	 * @generated
 	 */
 	@Override
-	public int getDsderminat() {
-		return getInternalImmediateTransition().getDsderminat();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDsderminat(final int _arg) {
-		getInternalImmediateTransition().getElement().transact("Set Dsderminat", () -> {
-			getInternalImmediateTransition().setDsderminat(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getLabel() {
 		return getInternalImmediateTransition().getLabel();
 	}
@@ -144,52 +120,6 @@ public class ImmediateTransitionViewImpl extends EObjectImpl implements Immediat
 	public void setLabel(final String _arg) {
 		getInternalImmediateTransition().getElement().transact("Set Label", () -> {
 			getInternalImmediateTransition().setLabel(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean isHistory() {
-		return getInternalImmediateTransition().isHistory();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setHistory(final boolean _arg) {
-		getInternalImmediateTransition().getElement().transact("Set History", () -> {
-			getInternalImmediateTransition().setHistory(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public int getPriority() {
-		return getInternalImmediateTransition().getPriority();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPriority(final int _arg) {
-		getInternalImmediateTransition().getElement().transact("Set Priority", () -> {
-			getInternalImmediateTransition().setPriority(_arg);
 		});
 		
 	}
@@ -261,25 +191,10 @@ public class ImmediateTransitionViewImpl extends EObjectImpl implements Immediat
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___GET_DSDERMINAT:
-				return getDsderminat();
-			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___SET_DSDERMINAT__INT:
-				setDsderminat((Integer)arguments.get(0));
-				return null;
 			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___GET_LABEL:
 				return getLabel();
 			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___SET_LABEL__STRING:
 				setLabel((String)arguments.get(0));
-				return null;
-			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___IS_HISTORY:
-				return isHistory();
-			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___SET_HISTORY__BOOLEAN:
-				setHistory((Boolean)arguments.get(0));
-				return null;
-			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___GET_PRIORITY:
-				return getPriority();
-			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___SET_PRIORITY__INT:
-				setPriority((Integer)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

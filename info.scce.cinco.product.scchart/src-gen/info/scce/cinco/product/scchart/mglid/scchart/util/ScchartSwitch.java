@@ -199,6 +199,7 @@ public class ScchartSwitch<T> extends Switch<T> {
 			case ScchartPackage.IMMEDIATE_TRANSITION: {
 				ImmediateTransition immediateTransition = (ImmediateTransition)theEObject;
 				T result = caseImmediateTransition(immediateTransition);
+				if (result == null) result = caseTransition(immediateTransition);
 				if (result == null) result = caseEdge(immediateTransition);
 				if (result == null) result = caseModelElement(immediateTransition);
 				if (result == null) result = caseIdentifiableElement(immediateTransition);
@@ -208,6 +209,7 @@ public class ScchartSwitch<T> extends Switch<T> {
 			case ScchartPackage.IMMEDIATE_TERMINATION_TRANSITION: {
 				ImmediateTerminationTransition immediateTerminationTransition = (ImmediateTerminationTransition)theEObject;
 				T result = caseImmediateTerminationTransition(immediateTerminationTransition);
+				if (result == null) result = caseTransition(immediateTerminationTransition);
 				if (result == null) result = caseEdge(immediateTerminationTransition);
 				if (result == null) result = caseModelElement(immediateTerminationTransition);
 				if (result == null) result = caseIdentifiableElement(immediateTerminationTransition);
@@ -217,6 +219,7 @@ public class ScchartSwitch<T> extends Switch<T> {
 			case ScchartPackage.WEAK_ABORT_TRANSITION: {
 				WeakAbortTransition weakAbortTransition = (WeakAbortTransition)theEObject;
 				T result = caseWeakAbortTransition(weakAbortTransition);
+				if (result == null) result = caseTransition(weakAbortTransition);
 				if (result == null) result = caseEdge(weakAbortTransition);
 				if (result == null) result = caseModelElement(weakAbortTransition);
 				if (result == null) result = caseIdentifiableElement(weakAbortTransition);
@@ -226,6 +229,7 @@ public class ScchartSwitch<T> extends Switch<T> {
 			case ScchartPackage.STRONG_ABORT_TRANSITION: {
 				StrongAbortTransition strongAbortTransition = (StrongAbortTransition)theEObject;
 				T result = caseStrongAbortTransition(strongAbortTransition);
+				if (result == null) result = caseTransition(strongAbortTransition);
 				if (result == null) result = caseEdge(strongAbortTransition);
 				if (result == null) result = caseModelElement(strongAbortTransition);
 				if (result == null) result = caseIdentifiableElement(strongAbortTransition);
@@ -235,6 +239,7 @@ public class ScchartSwitch<T> extends Switch<T> {
 			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION: {
 				WeakAbortTerminationTransition weakAbortTerminationTransition = (WeakAbortTerminationTransition)theEObject;
 				T result = caseWeakAbortTerminationTransition(weakAbortTerminationTransition);
+				if (result == null) result = caseTransition(weakAbortTerminationTransition);
 				if (result == null) result = caseEdge(weakAbortTerminationTransition);
 				if (result == null) result = caseModelElement(weakAbortTerminationTransition);
 				if (result == null) result = caseIdentifiableElement(weakAbortTerminationTransition);

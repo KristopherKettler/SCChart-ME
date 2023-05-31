@@ -187,7 +187,7 @@ public class DefferedTransitionImpl extends EdgeImpl implements DefferedTransiti
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final SubSuperState source) {
+	public boolean canReconnectSource(final InitialState source) {
 		return source.canStart(this.getClass());
 	}
 
@@ -197,27 +197,7 @@ public class DefferedTransitionImpl extends EdgeImpl implements DefferedTransiti
 	 * @generated
 	 */
 	@Override
-	public void reconnectSource(final SubSuperState source) {
-		this.setSourceElement(source);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canReconnectSource(final RootState source) {
-		return source.canStart(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectSource(final RootState source) {
+	public void reconnectSource(final InitialState source) {
 		this.setSourceElement(source);
 	}
 
@@ -247,7 +227,7 @@ public class DefferedTransitionImpl extends EdgeImpl implements DefferedTransiti
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final InitialState source) {
+	public boolean canReconnectSource(final SubSuperState source) {
 		return source.canStart(this.getClass());
 	}
 
@@ -257,7 +237,7 @@ public class DefferedTransitionImpl extends EdgeImpl implements DefferedTransiti
 	 * @generated
 	 */
 	@Override
-	public void reconnectSource(final InitialState source) {
+	public void reconnectSource(final SubSuperState source) {
 		this.setSourceElement(source);
 	}
 
@@ -278,6 +258,26 @@ public class DefferedTransitionImpl extends EdgeImpl implements DefferedTransiti
 	 */
 	@Override
 	public void reconnectSource(final SimpleState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final RootState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final RootState source) {
 		this.setSourceElement(source);
 	}
 
@@ -327,7 +327,7 @@ public class DefferedTransitionImpl extends EdgeImpl implements DefferedTransiti
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final SubSuperState target) {
+	public boolean canReconnectTarget(final InitialState target) {
 		return target.canEnd(this.getClass());
 	}
 
@@ -337,7 +337,7 @@ public class DefferedTransitionImpl extends EdgeImpl implements DefferedTransiti
 	 * @generated
 	 */
 	@Override
-	public void reconnectTarget(final SubSuperState target) {
+	public void reconnectTarget(final InitialState target) {
 		this.setTargetElement(target);
 	}
 
@@ -367,7 +367,7 @@ public class DefferedTransitionImpl extends EdgeImpl implements DefferedTransiti
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final InitialState target) {
+	public boolean canReconnectTarget(final SubSuperState target) {
 		return target.canEnd(this.getClass());
 	}
 
@@ -377,7 +377,7 @@ public class DefferedTransitionImpl extends EdgeImpl implements DefferedTransiti
 	 * @generated
 	 */
 	@Override
-	public void reconnectTarget(final InitialState target) {
+	public void reconnectTarget(final SubSuperState target) {
 		this.setTargetElement(target);
 	}
 
@@ -505,30 +505,30 @@ public class DefferedTransitionImpl extends EdgeImpl implements DefferedTransiti
 			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_SOURCE__INITILALSUBSUPERSTATE:
 				reconnectSource((InitilalSubSuperState)arguments.get(0));
 				return null;
-			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_SOURCE__SUBSUPERSTATE:
-				return canReconnectSource((SubSuperState)arguments.get(0));
-			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_SOURCE__SUBSUPERSTATE:
-				reconnectSource((SubSuperState)arguments.get(0));
-				return null;
-			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
-				return canReconnectSource((RootState)arguments.get(0));
-			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
-				reconnectSource((RootState)arguments.get(0));
+			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_SOURCE__INITIALSTATE:
+				return canReconnectSource((InitialState)arguments.get(0));
+			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_SOURCE__INITIALSTATE:
+				reconnectSource((InitialState)arguments.get(0));
 				return null;
 			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_SOURCE__CONNECTOR:
 				return canReconnectSource((Connector)arguments.get(0));
 			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_SOURCE__CONNECTOR:
 				reconnectSource((Connector)arguments.get(0));
 				return null;
-			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_SOURCE__INITIALSTATE:
-				return canReconnectSource((InitialState)arguments.get(0));
-			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_SOURCE__INITIALSTATE:
-				reconnectSource((InitialState)arguments.get(0));
+			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_SOURCE__SUBSUPERSTATE:
+				return canReconnectSource((SubSuperState)arguments.get(0));
+			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_SOURCE__SUBSUPERSTATE:
+				reconnectSource((SubSuperState)arguments.get(0));
 				return null;
 			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_SOURCE__SIMPLESTATE:
 				return canReconnectSource((SimpleState)arguments.get(0));
 			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_SOURCE__SIMPLESTATE:
 				reconnectSource((SimpleState)arguments.get(0));
+				return null;
+			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
+				return canReconnectSource((RootState)arguments.get(0));
+			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
+				reconnectSource((RootState)arguments.get(0));
 				return null;
 			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_SOURCE__FINALSTATE:
 				return canReconnectSource((FinalState)arguments.get(0));
@@ -540,20 +540,20 @@ public class DefferedTransitionImpl extends EdgeImpl implements DefferedTransiti
 			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_TARGET__INITILALSUBSUPERSTATE:
 				reconnectTarget((InitilalSubSuperState)arguments.get(0));
 				return null;
-			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_TARGET__SUBSUPERSTATE:
-				return canReconnectTarget((SubSuperState)arguments.get(0));
-			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_TARGET__SUBSUPERSTATE:
-				reconnectTarget((SubSuperState)arguments.get(0));
+			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_TARGET__INITIALSTATE:
+				return canReconnectTarget((InitialState)arguments.get(0));
+			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_TARGET__INITIALSTATE:
+				reconnectTarget((InitialState)arguments.get(0));
 				return null;
 			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_TARGET__CONNECTOR:
 				return canReconnectTarget((Connector)arguments.get(0));
 			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_TARGET__CONNECTOR:
 				reconnectTarget((Connector)arguments.get(0));
 				return null;
-			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_TARGET__INITIALSTATE:
-				return canReconnectTarget((InitialState)arguments.get(0));
-			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_TARGET__INITIALSTATE:
-				reconnectTarget((InitialState)arguments.get(0));
+			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_TARGET__SUBSUPERSTATE:
+				return canReconnectTarget((SubSuperState)arguments.get(0));
+			case ScchartPackage.DEFFERED_TRANSITION___RECONNECT_TARGET__SUBSUPERSTATE:
+				reconnectTarget((SubSuperState)arguments.get(0));
 				return null;
 			case ScchartPackage.DEFFERED_TRANSITION___CAN_RECONNECT_TARGET__SIMPLESTATE:
 				return canReconnectTarget((SimpleState)arguments.get(0));

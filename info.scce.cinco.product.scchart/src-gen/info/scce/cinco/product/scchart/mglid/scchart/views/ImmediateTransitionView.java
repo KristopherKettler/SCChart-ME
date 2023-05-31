@@ -4,8 +4,6 @@ package info.scce.cinco.product.scchart.mglid.scchart.views;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Immediate Transition View</b></em>'.
@@ -22,7 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface ImmediateTransitionView extends EObject {
+public interface ImmediateTransitionView extends TransitionView {
 	/**
 	 * Returns the value of the '<em><b>Internal Immediate Transition</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -51,22 +49,6 @@ public interface ImmediateTransitionView extends EObject {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	int getDsderminat();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setDsderminat(int _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
 	String getLabel();
 
 	/**
@@ -76,37 +58,5 @@ public interface ImmediateTransitionView extends EObject {
 	 * @generated
 	 */
 	void setLabel(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	boolean isHistory();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setHistory(boolean _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	int getPriority();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setPriority(int _arg);
 
 } // ImmediateTransitionView

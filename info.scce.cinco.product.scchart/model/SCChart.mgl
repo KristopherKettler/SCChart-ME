@@ -114,31 +114,35 @@ node Connector {
 
 edge Transition {
 	style immediateArrow("${label}")
-	attr EBoolean as history
+	attr EInt as Priority
+	attr EString as Trigger
+	attr EString as Action
+	attr EBoolean as History
+	attr EBoolean as Termination
+	attr EBoolean as Immediate_transition
+	attr EBoolean as Strong_Abort
 }
 
 edge ImmediateTransition extends Transition{
 	style immediateArrow("${label}")
 	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.IntProvider")
-	attr EInt as dsderminat := "-1"
 	attr EString as label := "wqwq"
 	//@grammar("info.scce.cinco.product.scchart.dsl.transition.TransitionsExpression", "info.scce.cinco.product.scchart.dsl.transition.TransitionsExpression")	
-	attr EInt as priority := "0"
 }	
 
-edge ImmediateTerminationTransition {
+edge ImmediateTerminationTransition extends Transition{
 	style immediateTerminatArrow
 }	
 
-edge WeakAbortTransition {
+edge WeakAbortTransition extends Transition{
 	style weakAbortArrow
 }
 
-edge StrongAbortTransition {
+edge StrongAbortTransition extends Transition{
 	style strongAbortArrow
 }
 
-edge WeakAbortTerminationTransition {
+edge WeakAbortTerminationTransition extends Transition{
 	style weakAbortTerminatArrow
 }
 

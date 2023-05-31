@@ -108,6 +108,144 @@ public class TransitionViewImpl extends EObjectImpl implements TransitionView {
 	 * @generated
 	 */
 	@Override
+	public String getAction() {
+		return getInternalTransition().getAction();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAction(final String _arg) {
+		getInternalTransition().getElement().transact("Set Action", () -> {
+			getInternalTransition().setAction(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getTrigger() {
+		return getInternalTransition().getTrigger();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTrigger(final String _arg) {
+		getInternalTransition().getElement().transact("Set Trigger", () -> {
+			getInternalTransition().setTrigger(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isStrong_Abort() {
+		return getInternalTransition().isStrong_Abort();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStrong_Abort(final boolean _arg) {
+		getInternalTransition().getElement().transact("Set Strong_Abort", () -> {
+			getInternalTransition().setStrong_Abort(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int getPriority() {
+		return getInternalTransition().getPriority();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPriority(final int _arg) {
+		getInternalTransition().getElement().transact("Set Priority", () -> {
+			getInternalTransition().setPriority(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isImmediate_transition() {
+		return getInternalTransition().isImmediate_transition();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setImmediate_transition(final boolean _arg) {
+		getInternalTransition().getElement().transact("Set Immediate_transition", () -> {
+			getInternalTransition().setImmediate_transition(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isTermination() {
+		return getInternalTransition().isTermination();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTermination(final boolean _arg) {
+		getInternalTransition().getElement().transact("Set Termination", () -> {
+			getInternalTransition().setTermination(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean isHistory() {
 		return getInternalTransition().isHistory();
 	}
@@ -192,6 +330,36 @@ public class TransitionViewImpl extends EObjectImpl implements TransitionView {
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
+			case ViewsPackage.TRANSITION_VIEW___GET_ACTION:
+				return getAction();
+			case ViewsPackage.TRANSITION_VIEW___SET_ACTION__STRING:
+				setAction((String)arguments.get(0));
+				return null;
+			case ViewsPackage.TRANSITION_VIEW___GET_TRIGGER:
+				return getTrigger();
+			case ViewsPackage.TRANSITION_VIEW___SET_TRIGGER__STRING:
+				setTrigger((String)arguments.get(0));
+				return null;
+			case ViewsPackage.TRANSITION_VIEW___IS_STRONG_ABORT:
+				return isStrong_Abort();
+			case ViewsPackage.TRANSITION_VIEW___SET_STRONG_ABORT__BOOLEAN:
+				setStrong_Abort((Boolean)arguments.get(0));
+				return null;
+			case ViewsPackage.TRANSITION_VIEW___GET_PRIORITY:
+				return getPriority();
+			case ViewsPackage.TRANSITION_VIEW___SET_PRIORITY__INT:
+				setPriority((Integer)arguments.get(0));
+				return null;
+			case ViewsPackage.TRANSITION_VIEW___IS_IMMEDIATE_TRANSITION:
+				return isImmediate_transition();
+			case ViewsPackage.TRANSITION_VIEW___SET_IMMEDIATE_TRANSITION__BOOLEAN:
+				setImmediate_transition((Boolean)arguments.get(0));
+				return null;
+			case ViewsPackage.TRANSITION_VIEW___IS_TERMINATION:
+				return isTermination();
+			case ViewsPackage.TRANSITION_VIEW___SET_TERMINATION__BOOLEAN:
+				setTermination((Boolean)arguments.get(0));
+				return null;
 			case ViewsPackage.TRANSITION_VIEW___IS_HISTORY:
 				return isHistory();
 			case ViewsPackage.TRANSITION_VIEW___SET_HISTORY__BOOLEAN:

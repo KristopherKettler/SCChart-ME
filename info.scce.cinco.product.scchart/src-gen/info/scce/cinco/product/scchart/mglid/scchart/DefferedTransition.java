@@ -122,7 +122,7 @@ public interface DefferedTransition extends Edge {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(SubSuperState source);
+	boolean canReconnectSource(InitialState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -130,23 +130,7 @@ public interface DefferedTransition extends Edge {
 	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectSource(SubSuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectSource(RootState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(RootState source);
+	void reconnectSource(InitialState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -170,7 +154,7 @@ public interface DefferedTransition extends Edge {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(InitialState source);
+	boolean canReconnectSource(SubSuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -178,7 +162,7 @@ public interface DefferedTransition extends Edge {
 	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectSource(InitialState source);
+	void reconnectSource(SubSuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -195,6 +179,22 @@ public interface DefferedTransition extends Edge {
 	 * @generated
 	 */
 	void reconnectSource(SimpleState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectSource(RootState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(RootState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -234,7 +234,7 @@ public interface DefferedTransition extends Edge {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(SubSuperState target);
+	boolean canReconnectTarget(InitialState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -242,7 +242,7 @@ public interface DefferedTransition extends Edge {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(SubSuperState target);
+	void reconnectTarget(InitialState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -266,7 +266,7 @@ public interface DefferedTransition extends Edge {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(InitialState target);
+	boolean canReconnectTarget(SubSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -274,7 +274,7 @@ public interface DefferedTransition extends Edge {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(InitialState target);
+	void reconnectTarget(SubSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
