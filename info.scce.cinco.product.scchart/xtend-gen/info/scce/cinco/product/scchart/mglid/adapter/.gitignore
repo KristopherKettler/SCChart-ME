@@ -104,3 +104,7 @@
 /SuperStateDeclarationNodeEContentAdapter.java
 /SuperStateRegionEContentAdapter.java
 /TransitionEContentAdapter.java
+/.InitilalSuperStateEContentAdapter.java._trace
+/.RegionEContentAdapter.java._trace
+/.RootStateDeclarationEContentAdapter.java._trace
+/.RootStateDeclarationNodeEContentAdapter.java._trace

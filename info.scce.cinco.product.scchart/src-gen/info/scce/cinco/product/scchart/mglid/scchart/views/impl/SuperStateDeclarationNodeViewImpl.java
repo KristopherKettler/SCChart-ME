@@ -131,29 +131,6 @@ public class SuperStateDeclarationNodeViewImpl extends EObjectImpl implements Su
 	 * @generated
 	 */
 	@Override
-	public String getInputOutput() {
-		return getInternalSuperStateDeclarationNode().getInputOutput();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInputOutput(final String _arg) {
-		getInternalSuperStateDeclarationNode().getElement().transact("Set InputOutput", () -> {
-			getInternalSuperStateDeclarationNode().setInputOutput(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getName() {
 		return getInternalSuperStateDeclarationNode().getName();
 	}
@@ -242,11 +219,6 @@ public class SuperStateDeclarationNodeViewImpl extends EObjectImpl implements Su
 				return getDeclarationType();
 			case ViewsPackage.SUPER_STATE_DECLARATION_NODE_VIEW___SET_DECLARATION_TYPE__STRING:
 				setDeclarationType((String)arguments.get(0));
-				return null;
-			case ViewsPackage.SUPER_STATE_DECLARATION_NODE_VIEW___GET_INPUT_OUTPUT:
-				return getInputOutput();
-			case ViewsPackage.SUPER_STATE_DECLARATION_NODE_VIEW___SET_INPUT_OUTPUT__STRING:
-				setInputOutput((String)arguments.get(0));
 				return null;
 			case ViewsPackage.SUPER_STATE_DECLARATION_NODE_VIEW___GET_NAME:
 				return getName();

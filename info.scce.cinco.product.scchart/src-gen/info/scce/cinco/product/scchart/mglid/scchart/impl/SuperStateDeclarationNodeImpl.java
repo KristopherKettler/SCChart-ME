@@ -11,10 +11,10 @@ import graphmodel.Node;
 
 import graphmodel.impl.NodeImpl;
 
-import info.scce.cinco.product.scchart.mglid.scchart.RootState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
 import info.scce.cinco.product.scchart.mglid.scchart.ScchartPackage;
-import info.scce.cinco.product.scchart.mglid.scchart.SubSuperStateRegion;
+import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclarationNode;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclarationNode;
@@ -73,29 +73,6 @@ public class SuperStateDeclarationNodeImpl extends NodeImpl implements SuperStat
 	public void setDeclarationType(final String _arg) {
 		getInternalSuperStateDeclarationNode().getElement().transact("Set DeclarationType", () -> {
 			getInternalSuperStateDeclarationNode().setDeclarationType(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getInputOutput() {
-		return getInternalSuperStateDeclarationNode().getInputOutput();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInputOutput(final String _arg) {
-		getInternalSuperStateDeclarationNode().getElement().transact("Set InputOutput", () -> {
-			getInternalSuperStateDeclarationNode().setInputOutput(_arg);
 		});
 		
 	}
@@ -262,8 +239,8 @@ public class SuperStateDeclarationNodeImpl extends NodeImpl implements SuperStat
 	 * @generated
 	 */
 	@Override
-	public boolean canMoveTo(final RootState rootState, final int x, final int y) {
-		return rootState.canContain(info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclarationNode.class);
+	public boolean canMoveTo(final SuperState superState, final int x, final int y) {
+		return superState.canContain(info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclarationNode.class);
 	}
 
 	/**
@@ -272,14 +249,14 @@ public class SuperStateDeclarationNodeImpl extends NodeImpl implements SuperStat
 	 * @generated
 	 */
 	@Override
-	public void moveTo(final RootState rootState, final int x, final int y) {
+	public void moveTo(final SuperState superState, final int x, final int y) {
 		transact("Move to", () -> {
 			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
 			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
 			int deltaX = x - ime.getX();
 			int deltaY = y - ime.getY();
-			s_moveTo(rootState, x, y);
-			rootState.getInternalContainerElement().getModelElements().add(ime);
+			s_moveTo(superState, x, y);
+			superState.getInternalContainerElement().getModelElements().add(ime);
 			ime.setX(x);
 			ime.setY(y);
 		});
@@ -292,7 +269,7 @@ public class SuperStateDeclarationNodeImpl extends NodeImpl implements SuperStat
 	 * @generated
 	 */
 	@Override
-	public void s_moveTo(final RootState rootState, final int x, final int y) {
+	public void s_moveTo(final SuperState superState, final int x, final int y) {
 		
 	}
 
@@ -302,8 +279,8 @@ public class SuperStateDeclarationNodeImpl extends NodeImpl implements SuperStat
 	 * @generated
 	 */
 	@Override
-	public boolean canMoveTo(final SubSuperStateRegion subSuperStateRegion, final int x, final int y) {
-		return subSuperStateRegion.canContain(info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclarationNode.class);
+	public boolean canMoveTo(final InitilalSuperState initilalSuperState, final int x, final int y) {
+		return initilalSuperState.canContain(info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclarationNode.class);
 	}
 
 	/**
@@ -312,14 +289,14 @@ public class SuperStateDeclarationNodeImpl extends NodeImpl implements SuperStat
 	 * @generated
 	 */
 	@Override
-	public void moveTo(final SubSuperStateRegion subSuperStateRegion, final int x, final int y) {
+	public void moveTo(final InitilalSuperState initilalSuperState, final int x, final int y) {
 		transact("Move to", () -> {
 			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
 			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
 			int deltaX = x - ime.getX();
 			int deltaY = y - ime.getY();
-			s_moveTo(subSuperStateRegion, x, y);
-			subSuperStateRegion.getInternalContainerElement().getModelElements().add(ime);
+			s_moveTo(initilalSuperState, x, y);
+			initilalSuperState.getInternalContainerElement().getModelElements().add(ime);
 			ime.setX(x);
 			ime.setY(y);
 		});
@@ -332,7 +309,18 @@ public class SuperStateDeclarationNodeImpl extends NodeImpl implements SuperStat
 	 * @generated
 	 */
 	@Override
-	public void s_moveTo(final SubSuperStateRegion subSuperStateRegion, final int x, final int y) {
+	public void s_moveTo(final InitilalSuperState initilalSuperState, final int x, final int y) {
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SuperState getContainer() {
+		return (info.scce.cinco.product.scchart.mglid.scchart.SuperState)getInternalElement().getContainer().getContainerElement();
 		
 	}
 
@@ -365,6 +353,7 @@ public class SuperStateDeclarationNodeImpl extends NodeImpl implements SuperStat
 		}
 		if (baseClass == ModelElement.class) {
 			switch (baseOperationID) {
+				case GraphmodelPackage.MODEL_ELEMENT___GET_CONTAINER: return ScchartPackage.SUPER_STATE_DECLARATION_NODE___GET_CONTAINER;
 				case GraphmodelPackage.MODEL_ELEMENT___GET_ROOT_ELEMENT: return ScchartPackage.SUPER_STATE_DECLARATION_NODE___GET_ROOT_ELEMENT;
 				case GraphmodelPackage.MODEL_ELEMENT___PRE_SAVE: return ScchartPackage.SUPER_STATE_DECLARATION_NODE___PRE_SAVE;
 				case GraphmodelPackage.MODEL_ELEMENT___POST_SAVE: return ScchartPackage.SUPER_STATE_DECLARATION_NODE___POST_SAVE;
@@ -399,11 +388,6 @@ public class SuperStateDeclarationNodeImpl extends NodeImpl implements SuperStat
 				return getDeclarationType();
 			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___SET_DECLARATION_TYPE__STRING:
 				setDeclarationType((String)arguments.get(0));
-				return null;
-			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___GET_INPUT_OUTPUT:
-				return getInputOutput();
-			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___SET_INPUT_OUTPUT__STRING:
-				setInputOutput((String)arguments.get(0));
 				return null;
 			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___GET_NAME:
 				return getName();
@@ -444,22 +428,24 @@ public class SuperStateDeclarationNodeImpl extends NodeImpl implements SuperStat
 			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___POST_RESIZE__INT_INT_INT_INT_DIRECTION:
 				postResize((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Direction)arguments.get(4));
 				return null;
-			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___CAN_MOVE_TO__ROOTSTATE_INT_INT:
-				return canMoveTo((RootState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
-			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___MOVE_TO__ROOTSTATE_INT_INT:
-				moveTo((RootState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___CAN_MOVE_TO__SUPERSTATE_INT_INT:
+				return canMoveTo((SuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___MOVE_TO__SUPERSTATE_INT_INT:
+				moveTo((SuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
-			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___SMOVE_TO__ROOTSTATE_INT_INT:
-				s_moveTo((RootState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___SMOVE_TO__SUPERSTATE_INT_INT:
+				s_moveTo((SuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
-			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___CAN_MOVE_TO__SUBSUPERSTATEREGION_INT_INT:
-				return canMoveTo((SubSuperStateRegion)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
-			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___MOVE_TO__SUBSUPERSTATEREGION_INT_INT:
-				moveTo((SubSuperStateRegion)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___CAN_MOVE_TO__INITILALSUPERSTATE_INT_INT:
+				return canMoveTo((InitilalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___MOVE_TO__INITILALSUPERSTATE_INT_INT:
+				moveTo((InitilalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
-			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___SMOVE_TO__SUBSUPERSTATEREGION_INT_INT:
-				s_moveTo((SubSuperStateRegion)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___SMOVE_TO__INITILALSUPERSTATE_INT_INT:
+				s_moveTo((InitilalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
+			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___GET_CONTAINER:
+				return getContainer();
 			case ScchartPackage.SUPER_STATE_DECLARATION_NODE___GET_SUPER_STATE_DECLARATION_NODE_VIEW:
 				return getSuperStateDeclarationNodeView();
 		}

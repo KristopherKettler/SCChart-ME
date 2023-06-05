@@ -31,40 +31,40 @@ public interface ScchartFactory extends EFactory {
 	RootState createRootState();
 
 	/**
-	 * Returns a new object of class '<em>Super State Region</em>'.
+	 * Returns a new object of class '<em>Region</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Super State Region</em>'.
+	 * @return a new object of class '<em>Region</em>'.
 	 * @generated
 	 */
-	SuperStateRegion createSuperStateRegion();
+	Region createRegion();
 
 	/**
-	 * Returns a new object of class '<em>Sub Super State</em>'.
+	 * Returns a new object of class '<em>Super State</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sub Super State</em>'.
+	 * @return a new object of class '<em>Super State</em>'.
 	 * @generated
 	 */
-	SubSuperState createSubSuperState();
+	SuperState createSuperState();
 
 	/**
-	 * Returns a new object of class '<em>Initilal Sub Super State</em>'.
+	 * Returns a new object of class '<em>Initilal Super State</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Initilal Sub Super State</em>'.
+	 * @return a new object of class '<em>Initilal Super State</em>'.
 	 * @generated
 	 */
-	InitilalSubSuperState createInitilalSubSuperState();
+	InitilalSuperState createInitilalSuperState();
 
 	/**
-	 * Returns a new object of class '<em>Sub Super State Region</em>'.
+	 * Returns a new object of class '<em>Root State Declaration Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sub Super State Region</em>'.
+	 * @return a new object of class '<em>Root State Declaration Node</em>'.
 	 * @generated
 	 */
-	SubSuperStateRegion createSubSuperStateRegion();
+	RootStateDeclarationNode createRootStateDeclarationNode();
 
 	/**
 	 * Returns a new object of class '<em>Super State Declaration Node</em>'.
@@ -74,15 +74,6 @@ public interface ScchartFactory extends EFactory {
 	 * @generated
 	 */
 	SuperStateDeclarationNode createSuperStateDeclarationNode();
-
-	/**
-	 * Returns a new object of class '<em>Sub Super State Declaration Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sub Super State Declaration Node</em>'.
-	 * @generated
-	 */
-	SubSuperStateDeclarationNode createSubSuperStateDeclarationNode();
 
 	/**
 	 * Returns a new object of class '<em>Simple State</em>'.
@@ -193,6 +184,15 @@ public interface ScchartFactory extends EFactory {
 	SCChart createSCChart();
 
 	/**
+	 * Returns a new object of class '<em>Root State Declaration</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Root State Declaration</em>'.
+	 * @generated
+	 */
+	RootStateDeclaration createRootStateDeclaration();
+
+	/**
 	 * Returns a new object of class '<em>Super State Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -200,15 +200,6 @@ public interface ScchartFactory extends EFactory {
 	 * @generated
 	 */
 	SuperStateDeclaration createSuperStateDeclaration();
-
-	/**
-	 * Returns a new object of class '<em>Sub Super State Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sub Super State Declaration</em>'.
-	 * @generated
-	 */
-	SubSuperStateDeclaration createSubSuperStateDeclaration();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -12,17 +12,17 @@ class EventStartup implements IStartup {
 	
 	def static void subscribe() {
 		RootStateEvent.instance.subscribe
-		SuperStateRegionEvent.instance.subscribe
-		SubSuperStateEvent.instance.subscribe
-		InitilalSubSuperStateEvent.instance.subscribe
+		RegionEvent.instance.subscribe
+		SuperStateEvent.instance.subscribe
+		InitilalSuperStateEvent.instance.subscribe
 		SCChartEvent.instance.subscribe
 	}
 	
 	def static void unsubscribe() {
 		RootStateEvent.instance.unsubscribe
-		SuperStateRegionEvent.instance.unsubscribe
-		SubSuperStateEvent.instance.unsubscribe
-		InitilalSubSuperStateEvent.instance.unsubscribe
+		RegionEvent.instance.unsubscribe
+		SuperStateEvent.instance.unsubscribe
+		InitilalSuperStateEvent.instance.unsubscribe
 		SCChartEvent.instance.unsubscribe
 	}
 	

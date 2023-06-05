@@ -59,28 +59,28 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass superStateRegionEClass = null;
+	private EClass regionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass subSuperStateEClass = null;
+	private EClass superStateEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass initilalSubSuperStateEClass = null;
+	private EClass initilalSuperStateEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass subSuperStateRegionEClass = null;
+	private EClass rootStateDeclarationNodeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,13 +88,6 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	private EClass superStateDeclarationNodeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass subSuperStateDeclarationNodeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -185,14 +178,14 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass superStateDeclarationEClass = null;
+	private EClass rootStateDeclarationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass subSuperStateDeclarationEClass = null;
+	private EClass superStateDeclarationEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -323,7 +316,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__AddDeclaration__SuperStateDeclaration() {
+	public EOperation getRootState__AddDeclaration__RootStateDeclaration() {
         return getRootState().getEOperations().get(4);
 	}
 
@@ -333,7 +326,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__RemoveDeclaration__SuperStateDeclaration() {
+	public EOperation getRootState__RemoveDeclaration__RootStateDeclaration() {
         return getRootState().getEOperations().get(5);
 	}
 
@@ -433,7 +426,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__GetSuperStateDeclarationNodes() {
+	public EOperation getRootState__GetRegions() {
         return getRootState().getEOperations().get(15);
 	}
 
@@ -443,7 +436,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewSuperStateDeclarationNode() {
+	public EOperation getRootState__CanNewRegion() {
         return getRootState().getEOperations().get(16);
 	}
 
@@ -453,7 +446,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewSuperStateDeclarationNode__int_int() {
+	public EOperation getRootState__NewRegion__int_int() {
         return getRootState().getEOperations().get(17);
 	}
 
@@ -463,7 +456,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewSuperStateDeclarationNode__String_int_int() {
+	public EOperation getRootState__NewRegion__String_int_int() {
         return getRootState().getEOperations().get(18);
 	}
 
@@ -473,7 +466,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewSuperStateDeclarationNode__int_int_int_int() {
+	public EOperation getRootState__NewRegion__int_int_int_int() {
         return getRootState().getEOperations().get(19);
 	}
 
@@ -483,7 +476,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewSuperStateDeclarationNode__String_int_int_int_int() {
+	public EOperation getRootState__NewRegion__String_int_int_int_int() {
         return getRootState().getEOperations().get(20);
 	}
 
@@ -493,7 +486,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__GetSuperStateRegions() {
+	public EOperation getRootState__GetRootStateDeclarationNodes() {
         return getRootState().getEOperations().get(21);
 	}
 
@@ -503,7 +496,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewSuperStateRegion() {
+	public EOperation getRootState__CanNewRootStateDeclarationNode() {
         return getRootState().getEOperations().get(22);
 	}
 
@@ -513,7 +506,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewSuperStateRegion__int_int() {
+	public EOperation getRootState__NewRootStateDeclarationNode__int_int() {
         return getRootState().getEOperations().get(23);
 	}
 
@@ -523,7 +516,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewSuperStateRegion__String_int_int() {
+	public EOperation getRootState__NewRootStateDeclarationNode__String_int_int() {
         return getRootState().getEOperations().get(24);
 	}
 
@@ -533,7 +526,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewSuperStateRegion__int_int_int_int() {
+	public EOperation getRootState__NewRootStateDeclarationNode__int_int_int_int() {
         return getRootState().getEOperations().get(25);
 	}
 
@@ -543,7 +536,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewSuperStateRegion__String_int_int_int_int() {
+	public EOperation getRootState__NewRootStateDeclarationNode__String_int_int_int_int() {
         return getRootState().getEOperations().get(26);
 	}
 
@@ -623,7 +616,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__GetOutgoingImmediateTransitions() {
+	public EOperation getRootState__GetOutgoingDefferedTransitions() {
         return getRootState().getEOperations().get(34);
 	}
 
@@ -643,7 +636,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__GetOutgoingTransitions() {
+	public EOperation getRootState__GetOutgoingStrongAbortTransitions() {
         return getRootState().getEOperations().get(36);
 	}
 
@@ -653,7 +646,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__GetOutgoingStrongAbortTransitions() {
+	public EOperation getRootState__GetOutgoingWeakAbortTerminationTransitions() {
         return getRootState().getEOperations().get(37);
 	}
 
@@ -663,7 +656,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__GetOutgoingDefferedTransitions() {
+	public EOperation getRootState__GetOutgoingImmediateTerminationTransitions() {
         return getRootState().getEOperations().get(38);
 	}
 
@@ -673,7 +666,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__GetOutgoingImmediateTerminationTransitions() {
+	public EOperation getRootState__GetOutgoingTransitions() {
         return getRootState().getEOperations().get(39);
 	}
 
@@ -683,7 +676,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__GetOutgoingWeakAbortTerminationTransitions() {
+	public EOperation getRootState__GetOutgoingImmediateTransitions() {
         return getRootState().getEOperations().get(40);
 	}
 
@@ -693,7 +686,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__GetSubSuperStateSuccessors() {
+	public EOperation getRootState__GetSuperStateSuccessors() {
         return getRootState().getEOperations().get(41);
 	}
 
@@ -703,7 +696,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__GetInitilalSubSuperStateSuccessors() {
+	public EOperation getRootState__GetInitilalSuperStateSuccessors() {
         return getRootState().getEOperations().get(42);
 	}
 
@@ -753,7 +746,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewImmediateTransition__InitilalSubSuperState() {
+	public EOperation getRootState__CanNewDefferedTransition__InitilalSuperState() {
         return getRootState().getEOperations().get(47);
 	}
 
@@ -763,7 +756,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTransition__InitilalSubSuperState() {
+	public EOperation getRootState__NewDefferedTransition__InitilalSuperState() {
         return getRootState().getEOperations().get(48);
 	}
 
@@ -773,7 +766,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTransition__InitilalSubSuperState_String() {
+	public EOperation getRootState__NewDefferedTransition__InitilalSuperState_String() {
         return getRootState().getEOperations().get(49);
 	}
 
@@ -783,7 +776,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewImmediateTransition__InitialState() {
+	public EOperation getRootState__CanNewDefferedTransition__Connector() {
         return getRootState().getEOperations().get(50);
 	}
 
@@ -793,7 +786,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTransition__InitialState() {
+	public EOperation getRootState__NewDefferedTransition__Connector() {
         return getRootState().getEOperations().get(51);
 	}
 
@@ -803,7 +796,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTransition__InitialState_String() {
+	public EOperation getRootState__NewDefferedTransition__Connector_String() {
         return getRootState().getEOperations().get(52);
 	}
 
@@ -813,7 +806,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewImmediateTransition__Connector() {
+	public EOperation getRootState__CanNewDefferedTransition__SuperState() {
         return getRootState().getEOperations().get(53);
 	}
 
@@ -823,7 +816,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTransition__Connector() {
+	public EOperation getRootState__NewDefferedTransition__SuperState() {
         return getRootState().getEOperations().get(54);
 	}
 
@@ -833,7 +826,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTransition__Connector_String() {
+	public EOperation getRootState__NewDefferedTransition__SuperState_String() {
         return getRootState().getEOperations().get(55);
 	}
 
@@ -843,7 +836,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewImmediateTransition__SubSuperState() {
+	public EOperation getRootState__CanNewDefferedTransition__SimpleState() {
         return getRootState().getEOperations().get(56);
 	}
 
@@ -853,7 +846,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTransition__SubSuperState() {
+	public EOperation getRootState__NewDefferedTransition__SimpleState() {
         return getRootState().getEOperations().get(57);
 	}
 
@@ -863,7 +856,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTransition__SubSuperState_String() {
+	public EOperation getRootState__NewDefferedTransition__SimpleState_String() {
         return getRootState().getEOperations().get(58);
 	}
 
@@ -873,7 +866,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewImmediateTransition__SimpleState() {
+	public EOperation getRootState__CanNewDefferedTransition__FinalState() {
         return getRootState().getEOperations().get(59);
 	}
 
@@ -883,7 +876,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTransition__SimpleState() {
+	public EOperation getRootState__NewDefferedTransition__FinalState() {
         return getRootState().getEOperations().get(60);
 	}
 
@@ -893,7 +886,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTransition__SimpleState_String() {
+	public EOperation getRootState__NewDefferedTransition__FinalState_String() {
         return getRootState().getEOperations().get(61);
 	}
 
@@ -903,7 +896,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewImmediateTransition__FinalState() {
+	public EOperation getRootState__CanNewDefferedTransition__InitialState() {
         return getRootState().getEOperations().get(62);
 	}
 
@@ -913,7 +906,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTransition__FinalState() {
+	public EOperation getRootState__NewDefferedTransition__InitialState() {
         return getRootState().getEOperations().get(63);
 	}
 
@@ -923,7 +916,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTransition__FinalState_String() {
+	public EOperation getRootState__NewDefferedTransition__InitialState_String() {
         return getRootState().getEOperations().get(64);
 	}
 
@@ -933,7 +926,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewWeakAbortTransition__InitilalSubSuperState() {
+	public EOperation getRootState__CanNewWeakAbortTransition__InitilalSuperState() {
         return getRootState().getEOperations().get(65);
 	}
 
@@ -943,7 +936,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTransition__InitilalSubSuperState() {
+	public EOperation getRootState__NewWeakAbortTransition__InitilalSuperState() {
         return getRootState().getEOperations().get(66);
 	}
 
@@ -953,7 +946,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTransition__InitilalSubSuperState_String() {
+	public EOperation getRootState__NewWeakAbortTransition__InitilalSuperState_String() {
         return getRootState().getEOperations().get(67);
 	}
 
@@ -963,7 +956,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewWeakAbortTransition__InitialState() {
+	public EOperation getRootState__CanNewWeakAbortTransition__Connector() {
         return getRootState().getEOperations().get(68);
 	}
 
@@ -973,7 +966,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTransition__InitialState() {
+	public EOperation getRootState__NewWeakAbortTransition__Connector() {
         return getRootState().getEOperations().get(69);
 	}
 
@@ -983,7 +976,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTransition__InitialState_String() {
+	public EOperation getRootState__NewWeakAbortTransition__Connector_String() {
         return getRootState().getEOperations().get(70);
 	}
 
@@ -993,7 +986,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewWeakAbortTransition__Connector() {
+	public EOperation getRootState__CanNewWeakAbortTransition__SuperState() {
         return getRootState().getEOperations().get(71);
 	}
 
@@ -1003,7 +996,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTransition__Connector() {
+	public EOperation getRootState__NewWeakAbortTransition__SuperState() {
         return getRootState().getEOperations().get(72);
 	}
 
@@ -1013,7 +1006,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTransition__Connector_String() {
+	public EOperation getRootState__NewWeakAbortTransition__SuperState_String() {
         return getRootState().getEOperations().get(73);
 	}
 
@@ -1023,7 +1016,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewWeakAbortTransition__SubSuperState() {
+	public EOperation getRootState__CanNewWeakAbortTransition__SimpleState() {
         return getRootState().getEOperations().get(74);
 	}
 
@@ -1033,7 +1026,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTransition__SubSuperState() {
+	public EOperation getRootState__NewWeakAbortTransition__SimpleState() {
         return getRootState().getEOperations().get(75);
 	}
 
@@ -1043,7 +1036,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTransition__SubSuperState_String() {
+	public EOperation getRootState__NewWeakAbortTransition__SimpleState_String() {
         return getRootState().getEOperations().get(76);
 	}
 
@@ -1053,7 +1046,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewWeakAbortTransition__SimpleState() {
+	public EOperation getRootState__CanNewWeakAbortTransition__FinalState() {
         return getRootState().getEOperations().get(77);
 	}
 
@@ -1063,7 +1056,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTransition__SimpleState() {
+	public EOperation getRootState__NewWeakAbortTransition__FinalState() {
         return getRootState().getEOperations().get(78);
 	}
 
@@ -1073,7 +1066,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTransition__SimpleState_String() {
+	public EOperation getRootState__NewWeakAbortTransition__FinalState_String() {
         return getRootState().getEOperations().get(79);
 	}
 
@@ -1083,7 +1076,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewWeakAbortTransition__FinalState() {
+	public EOperation getRootState__CanNewWeakAbortTransition__InitialState() {
         return getRootState().getEOperations().get(80);
 	}
 
@@ -1093,7 +1086,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTransition__FinalState() {
+	public EOperation getRootState__NewWeakAbortTransition__InitialState() {
         return getRootState().getEOperations().get(81);
 	}
 
@@ -1103,7 +1096,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTransition__FinalState_String() {
+	public EOperation getRootState__NewWeakAbortTransition__InitialState_String() {
         return getRootState().getEOperations().get(82);
 	}
 
@@ -1113,7 +1106,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewImmediateTerminationTransition__InitilalSubSuperState() {
+	public EOperation getRootState__CanNewStrongAbortTransition__InitilalSuperState() {
         return getRootState().getEOperations().get(83);
 	}
 
@@ -1123,7 +1116,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTerminationTransition__InitilalSubSuperState() {
+	public EOperation getRootState__NewStrongAbortTransition__InitilalSuperState() {
         return getRootState().getEOperations().get(84);
 	}
 
@@ -1133,7 +1126,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTerminationTransition__InitilalSubSuperState_String() {
+	public EOperation getRootState__NewStrongAbortTransition__InitilalSuperState_String() {
         return getRootState().getEOperations().get(85);
 	}
 
@@ -1143,7 +1136,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewImmediateTerminationTransition__InitialState() {
+	public EOperation getRootState__CanNewStrongAbortTransition__Connector() {
         return getRootState().getEOperations().get(86);
 	}
 
@@ -1153,7 +1146,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTerminationTransition__InitialState() {
+	public EOperation getRootState__NewStrongAbortTransition__Connector() {
         return getRootState().getEOperations().get(87);
 	}
 
@@ -1163,7 +1156,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTerminationTransition__InitialState_String() {
+	public EOperation getRootState__NewStrongAbortTransition__Connector_String() {
         return getRootState().getEOperations().get(88);
 	}
 
@@ -1173,7 +1166,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewImmediateTerminationTransition__Connector() {
+	public EOperation getRootState__CanNewStrongAbortTransition__SuperState() {
         return getRootState().getEOperations().get(89);
 	}
 
@@ -1183,7 +1176,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTerminationTransition__Connector() {
+	public EOperation getRootState__NewStrongAbortTransition__SuperState() {
         return getRootState().getEOperations().get(90);
 	}
 
@@ -1193,7 +1186,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTerminationTransition__Connector_String() {
+	public EOperation getRootState__NewStrongAbortTransition__SuperState_String() {
         return getRootState().getEOperations().get(91);
 	}
 
@@ -1203,7 +1196,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewImmediateTerminationTransition__SubSuperState() {
+	public EOperation getRootState__CanNewStrongAbortTransition__SimpleState() {
         return getRootState().getEOperations().get(92);
 	}
 
@@ -1213,7 +1206,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTerminationTransition__SubSuperState() {
+	public EOperation getRootState__NewStrongAbortTransition__SimpleState() {
         return getRootState().getEOperations().get(93);
 	}
 
@@ -1223,7 +1216,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTerminationTransition__SubSuperState_String() {
+	public EOperation getRootState__NewStrongAbortTransition__SimpleState_String() {
         return getRootState().getEOperations().get(94);
 	}
 
@@ -1233,7 +1226,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewImmediateTerminationTransition__SimpleState() {
+	public EOperation getRootState__CanNewStrongAbortTransition__FinalState() {
         return getRootState().getEOperations().get(95);
 	}
 
@@ -1243,7 +1236,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTerminationTransition__SimpleState() {
+	public EOperation getRootState__NewStrongAbortTransition__FinalState() {
         return getRootState().getEOperations().get(96);
 	}
 
@@ -1253,7 +1246,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTerminationTransition__SimpleState_String() {
+	public EOperation getRootState__NewStrongAbortTransition__FinalState_String() {
         return getRootState().getEOperations().get(97);
 	}
 
@@ -1263,7 +1256,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewImmediateTerminationTransition__FinalState() {
+	public EOperation getRootState__CanNewStrongAbortTransition__InitialState() {
         return getRootState().getEOperations().get(98);
 	}
 
@@ -1273,7 +1266,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTerminationTransition__FinalState() {
+	public EOperation getRootState__NewStrongAbortTransition__InitialState() {
         return getRootState().getEOperations().get(99);
 	}
 
@@ -1283,7 +1276,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewImmediateTerminationTransition__FinalState_String() {
+	public EOperation getRootState__NewStrongAbortTransition__InitialState_String() {
         return getRootState().getEOperations().get(100);
 	}
 
@@ -1293,7 +1286,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewStrongAbortTransition__InitilalSubSuperState() {
+	public EOperation getRootState__CanNewWeakAbortTerminationTransition__InitilalSuperState() {
         return getRootState().getEOperations().get(101);
 	}
 
@@ -1303,7 +1296,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewStrongAbortTransition__InitilalSubSuperState() {
+	public EOperation getRootState__NewWeakAbortTerminationTransition__InitilalSuperState() {
         return getRootState().getEOperations().get(102);
 	}
 
@@ -1313,7 +1306,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewStrongAbortTransition__InitilalSubSuperState_String() {
+	public EOperation getRootState__NewWeakAbortTerminationTransition__InitilalSuperState_String() {
         return getRootState().getEOperations().get(103);
 	}
 
@@ -1323,7 +1316,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewStrongAbortTransition__InitialState() {
+	public EOperation getRootState__CanNewWeakAbortTerminationTransition__Connector() {
         return getRootState().getEOperations().get(104);
 	}
 
@@ -1333,7 +1326,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewStrongAbortTransition__InitialState() {
+	public EOperation getRootState__NewWeakAbortTerminationTransition__Connector() {
         return getRootState().getEOperations().get(105);
 	}
 
@@ -1343,7 +1336,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewStrongAbortTransition__InitialState_String() {
+	public EOperation getRootState__NewWeakAbortTerminationTransition__Connector_String() {
         return getRootState().getEOperations().get(106);
 	}
 
@@ -1353,7 +1346,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewStrongAbortTransition__Connector() {
+	public EOperation getRootState__CanNewWeakAbortTerminationTransition__SuperState() {
         return getRootState().getEOperations().get(107);
 	}
 
@@ -1363,7 +1356,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewStrongAbortTransition__Connector() {
+	public EOperation getRootState__NewWeakAbortTerminationTransition__SuperState() {
         return getRootState().getEOperations().get(108);
 	}
 
@@ -1373,7 +1366,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewStrongAbortTransition__Connector_String() {
+	public EOperation getRootState__NewWeakAbortTerminationTransition__SuperState_String() {
         return getRootState().getEOperations().get(109);
 	}
 
@@ -1383,7 +1376,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewStrongAbortTransition__SubSuperState() {
+	public EOperation getRootState__CanNewWeakAbortTerminationTransition__SimpleState() {
         return getRootState().getEOperations().get(110);
 	}
 
@@ -1393,7 +1386,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewStrongAbortTransition__SubSuperState() {
+	public EOperation getRootState__NewWeakAbortTerminationTransition__SimpleState() {
         return getRootState().getEOperations().get(111);
 	}
 
@@ -1403,7 +1396,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewStrongAbortTransition__SubSuperState_String() {
+	public EOperation getRootState__NewWeakAbortTerminationTransition__SimpleState_String() {
         return getRootState().getEOperations().get(112);
 	}
 
@@ -1413,7 +1406,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewStrongAbortTransition__SimpleState() {
+	public EOperation getRootState__CanNewWeakAbortTerminationTransition__FinalState() {
         return getRootState().getEOperations().get(113);
 	}
 
@@ -1423,7 +1416,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewStrongAbortTransition__SimpleState() {
+	public EOperation getRootState__NewWeakAbortTerminationTransition__FinalState() {
         return getRootState().getEOperations().get(114);
 	}
 
@@ -1433,7 +1426,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewStrongAbortTransition__SimpleState_String() {
+	public EOperation getRootState__NewWeakAbortTerminationTransition__FinalState_String() {
         return getRootState().getEOperations().get(115);
 	}
 
@@ -1443,7 +1436,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewStrongAbortTransition__FinalState() {
+	public EOperation getRootState__CanNewWeakAbortTerminationTransition__InitialState() {
         return getRootState().getEOperations().get(116);
 	}
 
@@ -1453,7 +1446,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewStrongAbortTransition__FinalState() {
+	public EOperation getRootState__NewWeakAbortTerminationTransition__InitialState() {
         return getRootState().getEOperations().get(117);
 	}
 
@@ -1463,7 +1456,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewStrongAbortTransition__FinalState_String() {
+	public EOperation getRootState__NewWeakAbortTerminationTransition__InitialState_String() {
         return getRootState().getEOperations().get(118);
 	}
 
@@ -1473,7 +1466,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewWeakAbortTerminationTransition__InitilalSubSuperState() {
+	public EOperation getRootState__CanNewImmediateTerminationTransition__InitilalSuperState() {
         return getRootState().getEOperations().get(119);
 	}
 
@@ -1483,7 +1476,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTerminationTransition__InitilalSubSuperState() {
+	public EOperation getRootState__NewImmediateTerminationTransition__InitilalSuperState() {
         return getRootState().getEOperations().get(120);
 	}
 
@@ -1493,7 +1486,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTerminationTransition__InitilalSubSuperState_String() {
+	public EOperation getRootState__NewImmediateTerminationTransition__InitilalSuperState_String() {
         return getRootState().getEOperations().get(121);
 	}
 
@@ -1503,7 +1496,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewWeakAbortTerminationTransition__InitialState() {
+	public EOperation getRootState__CanNewImmediateTerminationTransition__Connector() {
         return getRootState().getEOperations().get(122);
 	}
 
@@ -1513,7 +1506,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTerminationTransition__InitialState() {
+	public EOperation getRootState__NewImmediateTerminationTransition__Connector() {
         return getRootState().getEOperations().get(123);
 	}
 
@@ -1523,7 +1516,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTerminationTransition__InitialState_String() {
+	public EOperation getRootState__NewImmediateTerminationTransition__Connector_String() {
         return getRootState().getEOperations().get(124);
 	}
 
@@ -1533,7 +1526,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewWeakAbortTerminationTransition__Connector() {
+	public EOperation getRootState__CanNewImmediateTerminationTransition__SuperState() {
         return getRootState().getEOperations().get(125);
 	}
 
@@ -1543,7 +1536,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTerminationTransition__Connector() {
+	public EOperation getRootState__NewImmediateTerminationTransition__SuperState() {
         return getRootState().getEOperations().get(126);
 	}
 
@@ -1553,7 +1546,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTerminationTransition__Connector_String() {
+	public EOperation getRootState__NewImmediateTerminationTransition__SuperState_String() {
         return getRootState().getEOperations().get(127);
 	}
 
@@ -1563,7 +1556,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewWeakAbortTerminationTransition__SubSuperState() {
+	public EOperation getRootState__CanNewImmediateTerminationTransition__SimpleState() {
         return getRootState().getEOperations().get(128);
 	}
 
@@ -1573,7 +1566,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTerminationTransition__SubSuperState() {
+	public EOperation getRootState__NewImmediateTerminationTransition__SimpleState() {
         return getRootState().getEOperations().get(129);
 	}
 
@@ -1583,7 +1576,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTerminationTransition__SubSuperState_String() {
+	public EOperation getRootState__NewImmediateTerminationTransition__SimpleState_String() {
         return getRootState().getEOperations().get(130);
 	}
 
@@ -1593,7 +1586,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewWeakAbortTerminationTransition__SimpleState() {
+	public EOperation getRootState__CanNewImmediateTerminationTransition__FinalState() {
         return getRootState().getEOperations().get(131);
 	}
 
@@ -1603,7 +1596,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTerminationTransition__SimpleState() {
+	public EOperation getRootState__NewImmediateTerminationTransition__FinalState() {
         return getRootState().getEOperations().get(132);
 	}
 
@@ -1613,7 +1606,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTerminationTransition__SimpleState_String() {
+	public EOperation getRootState__NewImmediateTerminationTransition__FinalState_String() {
         return getRootState().getEOperations().get(133);
 	}
 
@@ -1623,7 +1616,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewWeakAbortTerminationTransition__FinalState() {
+	public EOperation getRootState__CanNewImmediateTerminationTransition__InitialState() {
         return getRootState().getEOperations().get(134);
 	}
 
@@ -1633,7 +1626,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTerminationTransition__FinalState() {
+	public EOperation getRootState__NewImmediateTerminationTransition__InitialState() {
         return getRootState().getEOperations().get(135);
 	}
 
@@ -1643,7 +1636,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewWeakAbortTerminationTransition__FinalState_String() {
+	public EOperation getRootState__NewImmediateTerminationTransition__InitialState_String() {
         return getRootState().getEOperations().get(136);
 	}
 
@@ -1653,7 +1646,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewTransition__InitilalSubSuperState() {
+	public EOperation getRootState__CanNewImmediateTransition__InitilalSuperState() {
         return getRootState().getEOperations().get(137);
 	}
 
@@ -1663,7 +1656,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewTransition__InitilalSubSuperState() {
+	public EOperation getRootState__NewImmediateTransition__InitilalSuperState() {
         return getRootState().getEOperations().get(138);
 	}
 
@@ -1673,7 +1666,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewTransition__InitilalSubSuperState_String() {
+	public EOperation getRootState__NewImmediateTransition__InitilalSuperState_String() {
         return getRootState().getEOperations().get(139);
 	}
 
@@ -1683,7 +1676,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewTransition__InitialState() {
+	public EOperation getRootState__CanNewImmediateTransition__Connector() {
         return getRootState().getEOperations().get(140);
 	}
 
@@ -1693,7 +1686,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewTransition__InitialState() {
+	public EOperation getRootState__NewImmediateTransition__Connector() {
         return getRootState().getEOperations().get(141);
 	}
 
@@ -1703,7 +1696,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewTransition__InitialState_String() {
+	public EOperation getRootState__NewImmediateTransition__Connector_String() {
         return getRootState().getEOperations().get(142);
 	}
 
@@ -1713,7 +1706,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewTransition__Connector() {
+	public EOperation getRootState__CanNewImmediateTransition__SuperState() {
         return getRootState().getEOperations().get(143);
 	}
 
@@ -1723,7 +1716,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewTransition__Connector() {
+	public EOperation getRootState__NewImmediateTransition__SuperState() {
         return getRootState().getEOperations().get(144);
 	}
 
@@ -1733,7 +1726,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewTransition__Connector_String() {
+	public EOperation getRootState__NewImmediateTransition__SuperState_String() {
         return getRootState().getEOperations().get(145);
 	}
 
@@ -1743,7 +1736,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewTransition__SubSuperState() {
+	public EOperation getRootState__CanNewImmediateTransition__SimpleState() {
         return getRootState().getEOperations().get(146);
 	}
 
@@ -1753,7 +1746,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewTransition__SubSuperState() {
+	public EOperation getRootState__NewImmediateTransition__SimpleState() {
         return getRootState().getEOperations().get(147);
 	}
 
@@ -1763,7 +1756,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewTransition__SubSuperState_String() {
+	public EOperation getRootState__NewImmediateTransition__SimpleState_String() {
         return getRootState().getEOperations().get(148);
 	}
 
@@ -1773,7 +1766,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewTransition__SimpleState() {
+	public EOperation getRootState__CanNewImmediateTransition__FinalState() {
         return getRootState().getEOperations().get(149);
 	}
 
@@ -1783,7 +1776,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewTransition__SimpleState() {
+	public EOperation getRootState__NewImmediateTransition__FinalState() {
         return getRootState().getEOperations().get(150);
 	}
 
@@ -1793,7 +1786,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewTransition__SimpleState_String() {
+	public EOperation getRootState__NewImmediateTransition__FinalState_String() {
         return getRootState().getEOperations().get(151);
 	}
 
@@ -1803,7 +1796,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewTransition__FinalState() {
+	public EOperation getRootState__CanNewImmediateTransition__InitialState() {
         return getRootState().getEOperations().get(152);
 	}
 
@@ -1813,7 +1806,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewTransition__FinalState() {
+	public EOperation getRootState__NewImmediateTransition__InitialState() {
         return getRootState().getEOperations().get(153);
 	}
 
@@ -1823,7 +1816,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewTransition__FinalState_String() {
+	public EOperation getRootState__NewImmediateTransition__InitialState_String() {
         return getRootState().getEOperations().get(154);
 	}
 
@@ -1833,7 +1826,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewDefferedTransition__InitilalSubSuperState() {
+	public EOperation getRootState__CanNewTransition__InitilalSuperState() {
         return getRootState().getEOperations().get(155);
 	}
 
@@ -1843,7 +1836,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewDefferedTransition__InitilalSubSuperState() {
+	public EOperation getRootState__NewTransition__InitilalSuperState() {
         return getRootState().getEOperations().get(156);
 	}
 
@@ -1853,7 +1846,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewDefferedTransition__InitilalSubSuperState_String() {
+	public EOperation getRootState__NewTransition__InitilalSuperState_String() {
         return getRootState().getEOperations().get(157);
 	}
 
@@ -1863,7 +1856,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewDefferedTransition__InitialState() {
+	public EOperation getRootState__CanNewTransition__Connector() {
         return getRootState().getEOperations().get(158);
 	}
 
@@ -1873,7 +1866,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewDefferedTransition__InitialState() {
+	public EOperation getRootState__NewTransition__Connector() {
         return getRootState().getEOperations().get(159);
 	}
 
@@ -1883,7 +1876,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewDefferedTransition__InitialState_String() {
+	public EOperation getRootState__NewTransition__Connector_String() {
         return getRootState().getEOperations().get(160);
 	}
 
@@ -1893,7 +1886,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewDefferedTransition__Connector() {
+	public EOperation getRootState__CanNewTransition__SuperState() {
         return getRootState().getEOperations().get(161);
 	}
 
@@ -1903,7 +1896,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewDefferedTransition__Connector() {
+	public EOperation getRootState__NewTransition__SuperState() {
         return getRootState().getEOperations().get(162);
 	}
 
@@ -1913,7 +1906,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewDefferedTransition__Connector_String() {
+	public EOperation getRootState__NewTransition__SuperState_String() {
         return getRootState().getEOperations().get(163);
 	}
 
@@ -1923,7 +1916,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewDefferedTransition__SubSuperState() {
+	public EOperation getRootState__CanNewTransition__SimpleState() {
         return getRootState().getEOperations().get(164);
 	}
 
@@ -1933,7 +1926,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewDefferedTransition__SubSuperState() {
+	public EOperation getRootState__NewTransition__SimpleState() {
         return getRootState().getEOperations().get(165);
 	}
 
@@ -1943,7 +1936,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewDefferedTransition__SubSuperState_String() {
+	public EOperation getRootState__NewTransition__SimpleState_String() {
         return getRootState().getEOperations().get(166);
 	}
 
@@ -1953,7 +1946,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewDefferedTransition__SimpleState() {
+	public EOperation getRootState__CanNewTransition__FinalState() {
         return getRootState().getEOperations().get(167);
 	}
 
@@ -1963,7 +1956,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewDefferedTransition__SimpleState() {
+	public EOperation getRootState__NewTransition__FinalState() {
         return getRootState().getEOperations().get(168);
 	}
 
@@ -1973,7 +1966,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewDefferedTransition__SimpleState_String() {
+	public EOperation getRootState__NewTransition__FinalState_String() {
         return getRootState().getEOperations().get(169);
 	}
 
@@ -1983,7 +1976,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanNewDefferedTransition__FinalState() {
+	public EOperation getRootState__CanNewTransition__InitialState() {
         return getRootState().getEOperations().get(170);
 	}
 
@@ -1993,7 +1986,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewDefferedTransition__FinalState() {
+	public EOperation getRootState__NewTransition__InitialState() {
         return getRootState().getEOperations().get(171);
 	}
 
@@ -2003,7 +1996,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__NewDefferedTransition__FinalState_String() {
+	public EOperation getRootState__NewTransition__InitialState_String() {
         return getRootState().getEOperations().get(172);
 	}
 
@@ -2043,7 +2036,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__CanMoveTo__SubSuperStateRegion_int_int() {
+	public EOperation getRootState__GetContainer() {
         return getRootState().getEOperations().get(176);
 	}
 
@@ -2053,7 +2046,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__MoveTo__SubSuperStateRegion_int_int() {
+	public EOperation getRootState__GetRootStateView() {
         return getRootState().getEOperations().get(177);
 	}
 
@@ -2063,31 +2056,11 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootState__S_moveTo__SubSuperStateRegion_int_int() {
-        return getRootState().getEOperations().get(178);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootState__GetRootStateView() {
-        return getRootState().getEOperations().get(179);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getSuperStateRegion() {
-		if (superStateRegionEClass == null) {
-			superStateRegionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(1);
+	public EClass getRegion() {
+		if (regionEClass == null) {
+			regionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(1);
 		}
-		return superStateRegionEClass;
+		return regionEClass;
 	}
 
 	/**
@@ -2096,8 +2069,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__GetLabel() {
-        return getSuperStateRegion().getEOperations().get(0);
+	public EOperation getRegion__GetLabel() {
+        return getRegion().getEOperations().get(0);
 	}
 
 	/**
@@ -2106,8 +2079,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__SetLabel__String() {
-        return getSuperStateRegion().getEOperations().get(1);
+	public EOperation getRegion__SetLabel__String() {
+        return getRegion().getEOperations().get(1);
 	}
 
 	/**
@@ -2116,8 +2089,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__GetRegionID() {
-        return getSuperStateRegion().getEOperations().get(2);
+	public EOperation getRegion__GetRegionID() {
+        return getRegion().getEOperations().get(2);
 	}
 
 	/**
@@ -2126,8 +2099,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__SetRegionID__String() {
-        return getSuperStateRegion().getEOperations().get(3);
+	public EOperation getRegion__SetRegionID__String() {
+        return getRegion().getEOperations().get(3);
 	}
 
 	/**
@@ -2136,8 +2109,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__GetInternalSuperStateRegion() {
-        return getSuperStateRegion().getEOperations().get(4);
+	public EOperation getRegion__GetInternalRegion() {
+        return getRegion().getEOperations().get(4);
 	}
 
 	/**
@@ -2146,8 +2119,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__IsExactlySuperStateRegion() {
-        return getSuperStateRegion().getEOperations().get(5);
+	public EOperation getRegion__IsExactlyRegion() {
+        return getRegion().getEOperations().get(5);
 	}
 
 	/**
@@ -2156,8 +2129,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__PreDelete() {
-        return getSuperStateRegion().getEOperations().get(6);
+	public EOperation getRegion__PreDelete() {
+        return getRegion().getEOperations().get(6);
 	}
 
 	/**
@@ -2166,8 +2139,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__GetPostDeleteFunction() {
-        return getSuperStateRegion().getEOperations().get(7);
+	public EOperation getRegion__GetPostDeleteFunction() {
+        return getRegion().getEOperations().get(7);
 	}
 
 	/**
@@ -2176,8 +2149,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__GetPostDeleteEvent() {
-        return getSuperStateRegion().getEOperations().get(8);
+	public EOperation getRegion__GetPostDeleteEvent() {
+        return getRegion().getEOperations().get(8);
 	}
 
 	/**
@@ -2186,8 +2159,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__PreSave() {
-        return getSuperStateRegion().getEOperations().get(9);
+	public EOperation getRegion__PreSave() {
+        return getRegion().getEOperations().get(9);
 	}
 
 	/**
@@ -2196,8 +2169,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__PostSave() {
-        return getSuperStateRegion().getEOperations().get(10);
+	public EOperation getRegion__PostSave() {
+        return getRegion().getEOperations().get(10);
 	}
 
 	/**
@@ -2206,8 +2179,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__GetRootElement() {
-        return getSuperStateRegion().getEOperations().get(11);
+	public EOperation getRegion__GetRootElement() {
+        return getRegion().getEOperations().get(11);
 	}
 
 	/**
@@ -2216,8 +2189,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__GetNodes() {
-        return getSuperStateRegion().getEOperations().get(12);
+	public EOperation getRegion__GetNodes() {
+        return getRegion().getEOperations().get(12);
 	}
 
 	/**
@@ -2226,8 +2199,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__GetInitilalSubSuperStates() {
-        return getSuperStateRegion().getEOperations().get(13);
+	public EOperation getRegion__GetInitilalSuperStates() {
+        return getRegion().getEOperations().get(13);
 	}
 
 	/**
@@ -2236,8 +2209,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__CanNewInitilalSubSuperState() {
-        return getSuperStateRegion().getEOperations().get(14);
+	public EOperation getRegion__CanNewInitilalSuperState() {
+        return getRegion().getEOperations().get(14);
 	}
 
 	/**
@@ -2246,8 +2219,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewInitilalSubSuperState__int_int() {
-        return getSuperStateRegion().getEOperations().get(15);
+	public EOperation getRegion__NewInitilalSuperState__int_int() {
+        return getRegion().getEOperations().get(15);
 	}
 
 	/**
@@ -2256,8 +2229,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewInitilalSubSuperState__String_int_int() {
-        return getSuperStateRegion().getEOperations().get(16);
+	public EOperation getRegion__NewInitilalSuperState__String_int_int() {
+        return getRegion().getEOperations().get(16);
 	}
 
 	/**
@@ -2266,8 +2239,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewInitilalSubSuperState__int_int_int_int() {
-        return getSuperStateRegion().getEOperations().get(17);
+	public EOperation getRegion__NewInitilalSuperState__int_int_int_int() {
+        return getRegion().getEOperations().get(17);
 	}
 
 	/**
@@ -2276,8 +2249,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewInitilalSubSuperState__String_int_int_int_int() {
-        return getSuperStateRegion().getEOperations().get(18);
+	public EOperation getRegion__NewInitilalSuperState__String_int_int_int_int() {
+        return getRegion().getEOperations().get(18);
 	}
 
 	/**
@@ -2286,8 +2259,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__GetInitialStates() {
-        return getSuperStateRegion().getEOperations().get(19);
+	public EOperation getRegion__GetConnectors() {
+        return getRegion().getEOperations().get(19);
 	}
 
 	/**
@@ -2296,8 +2269,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__CanNewInitialState() {
-        return getSuperStateRegion().getEOperations().get(20);
+	public EOperation getRegion__CanNewConnector() {
+        return getRegion().getEOperations().get(20);
 	}
 
 	/**
@@ -2306,8 +2279,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewInitialState__int_int() {
-        return getSuperStateRegion().getEOperations().get(21);
+	public EOperation getRegion__NewConnector__int_int() {
+        return getRegion().getEOperations().get(21);
 	}
 
 	/**
@@ -2316,8 +2289,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewInitialState__String_int_int() {
-        return getSuperStateRegion().getEOperations().get(22);
+	public EOperation getRegion__NewConnector__String_int_int() {
+        return getRegion().getEOperations().get(22);
 	}
 
 	/**
@@ -2326,8 +2299,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewInitialState__int_int_int_int() {
-        return getSuperStateRegion().getEOperations().get(23);
+	public EOperation getRegion__NewConnector__int_int_int_int() {
+        return getRegion().getEOperations().get(23);
 	}
 
 	/**
@@ -2336,8 +2309,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewInitialState__String_int_int_int_int() {
-        return getSuperStateRegion().getEOperations().get(24);
+	public EOperation getRegion__NewConnector__String_int_int_int_int() {
+        return getRegion().getEOperations().get(24);
 	}
 
 	/**
@@ -2346,8 +2319,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__GetConnectors() {
-        return getSuperStateRegion().getEOperations().get(25);
+	public EOperation getRegion__GetSuperStates() {
+        return getRegion().getEOperations().get(25);
 	}
 
 	/**
@@ -2356,8 +2329,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__CanNewConnector() {
-        return getSuperStateRegion().getEOperations().get(26);
+	public EOperation getRegion__CanNewSuperState() {
+        return getRegion().getEOperations().get(26);
 	}
 
 	/**
@@ -2366,8 +2339,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewConnector__int_int() {
-        return getSuperStateRegion().getEOperations().get(27);
+	public EOperation getRegion__NewSuperState__int_int() {
+        return getRegion().getEOperations().get(27);
 	}
 
 	/**
@@ -2376,8 +2349,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewConnector__String_int_int() {
-        return getSuperStateRegion().getEOperations().get(28);
+	public EOperation getRegion__NewSuperState__String_int_int() {
+        return getRegion().getEOperations().get(28);
 	}
 
 	/**
@@ -2386,8 +2359,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewConnector__int_int_int_int() {
-        return getSuperStateRegion().getEOperations().get(29);
+	public EOperation getRegion__NewSuperState__int_int_int_int() {
+        return getRegion().getEOperations().get(29);
 	}
 
 	/**
@@ -2396,8 +2369,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewConnector__String_int_int_int_int() {
-        return getSuperStateRegion().getEOperations().get(30);
+	public EOperation getRegion__NewSuperState__String_int_int_int_int() {
+        return getRegion().getEOperations().get(30);
 	}
 
 	/**
@@ -2406,8 +2379,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__GetSubSuperStates() {
-        return getSuperStateRegion().getEOperations().get(31);
+	public EOperation getRegion__GetSimpleStates() {
+        return getRegion().getEOperations().get(31);
 	}
 
 	/**
@@ -2416,8 +2389,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__CanNewSubSuperState() {
-        return getSuperStateRegion().getEOperations().get(32);
+	public EOperation getRegion__CanNewSimpleState() {
+        return getRegion().getEOperations().get(32);
 	}
 
 	/**
@@ -2426,8 +2399,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewSubSuperState__int_int() {
-        return getSuperStateRegion().getEOperations().get(33);
+	public EOperation getRegion__NewSimpleState__int_int() {
+        return getRegion().getEOperations().get(33);
 	}
 
 	/**
@@ -2436,8 +2409,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewSubSuperState__String_int_int() {
-        return getSuperStateRegion().getEOperations().get(34);
+	public EOperation getRegion__NewSimpleState__String_int_int() {
+        return getRegion().getEOperations().get(34);
 	}
 
 	/**
@@ -2446,8 +2419,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewSubSuperState__int_int_int_int() {
-        return getSuperStateRegion().getEOperations().get(35);
+	public EOperation getRegion__NewSimpleState__int_int_int_int() {
+        return getRegion().getEOperations().get(35);
 	}
 
 	/**
@@ -2456,8 +2429,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewSubSuperState__String_int_int_int_int() {
-        return getSuperStateRegion().getEOperations().get(36);
+	public EOperation getRegion__NewSimpleState__String_int_int_int_int() {
+        return getRegion().getEOperations().get(36);
 	}
 
 	/**
@@ -2466,8 +2439,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__GetSimpleStates() {
-        return getSuperStateRegion().getEOperations().get(37);
+	public EOperation getRegion__GetFinalStates() {
+        return getRegion().getEOperations().get(37);
 	}
 
 	/**
@@ -2476,8 +2449,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__CanNewSimpleState() {
-        return getSuperStateRegion().getEOperations().get(38);
+	public EOperation getRegion__CanNewFinalState() {
+        return getRegion().getEOperations().get(38);
 	}
 
 	/**
@@ -2486,8 +2459,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewSimpleState__int_int() {
-        return getSuperStateRegion().getEOperations().get(39);
+	public EOperation getRegion__NewFinalState__int_int() {
+        return getRegion().getEOperations().get(39);
 	}
 
 	/**
@@ -2496,8 +2469,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewSimpleState__String_int_int() {
-        return getSuperStateRegion().getEOperations().get(40);
+	public EOperation getRegion__NewFinalState__String_int_int() {
+        return getRegion().getEOperations().get(40);
 	}
 
 	/**
@@ -2506,8 +2479,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewSimpleState__int_int_int_int() {
-        return getSuperStateRegion().getEOperations().get(41);
+	public EOperation getRegion__NewFinalState__int_int_int_int() {
+        return getRegion().getEOperations().get(41);
 	}
 
 	/**
@@ -2516,8 +2489,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewSimpleState__String_int_int_int_int() {
-        return getSuperStateRegion().getEOperations().get(42);
+	public EOperation getRegion__NewFinalState__String_int_int_int_int() {
+        return getRegion().getEOperations().get(42);
 	}
 
 	/**
@@ -2526,8 +2499,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__GetFinalStates() {
-        return getSuperStateRegion().getEOperations().get(43);
+	public EOperation getRegion__GetInitialStates() {
+        return getRegion().getEOperations().get(43);
 	}
 
 	/**
@@ -2536,8 +2509,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__CanNewFinalState() {
-        return getSuperStateRegion().getEOperations().get(44);
+	public EOperation getRegion__CanNewInitialState() {
+        return getRegion().getEOperations().get(44);
 	}
 
 	/**
@@ -2546,8 +2519,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewFinalState__int_int() {
-        return getSuperStateRegion().getEOperations().get(45);
+	public EOperation getRegion__NewInitialState__int_int() {
+        return getRegion().getEOperations().get(45);
 	}
 
 	/**
@@ -2556,8 +2529,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewFinalState__String_int_int() {
-        return getSuperStateRegion().getEOperations().get(46);
+	public EOperation getRegion__NewInitialState__String_int_int() {
+        return getRegion().getEOperations().get(46);
 	}
 
 	/**
@@ -2566,8 +2539,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewFinalState__int_int_int_int() {
-        return getSuperStateRegion().getEOperations().get(47);
+	public EOperation getRegion__NewInitialState__int_int_int_int() {
+        return getRegion().getEOperations().get(47);
 	}
 
 	/**
@@ -2576,8 +2549,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__NewFinalState__String_int_int_int_int() {
-        return getSuperStateRegion().getEOperations().get(48);
+	public EOperation getRegion__NewInitialState__String_int_int_int_int() {
+        return getRegion().getEOperations().get(48);
 	}
 
 	/**
@@ -2586,8 +2559,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__S_moveTo__ModelElementContainer_int_int() {
-        return getSuperStateRegion().getEOperations().get(49);
+	public EOperation getRegion__S_moveTo__ModelElementContainer_int_int() {
+        return getRegion().getEOperations().get(49);
 	}
 
 	/**
@@ -2596,8 +2569,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__PreMove__ModelElementContainer_int_int() {
-        return getSuperStateRegion().getEOperations().get(50);
+	public EOperation getRegion__PreMove__ModelElementContainer_int_int() {
+        return getRegion().getEOperations().get(50);
 	}
 
 	/**
@@ -2606,8 +2579,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__PostMove__ModelElementContainer_ModelElementContainer_int_int_int_int() {
-        return getSuperStateRegion().getEOperations().get(51);
+	public EOperation getRegion__PostMove__ModelElementContainer_ModelElementContainer_int_int_int_int() {
+        return getRegion().getEOperations().get(51);
 	}
 
 	/**
@@ -2616,8 +2589,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__PreResize__int_int_int_int_Direction() {
-        return getSuperStateRegion().getEOperations().get(52);
+	public EOperation getRegion__PreResize__int_int_int_int_Direction() {
+        return getRegion().getEOperations().get(52);
 	}
 
 	/**
@@ -2626,8 +2599,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__PostResize__int_int_int_int_Direction() {
-        return getSuperStateRegion().getEOperations().get(53);
+	public EOperation getRegion__PostResize__int_int_int_int_Direction() {
+        return getRegion().getEOperations().get(53);
 	}
 
 	/**
@@ -2636,8 +2609,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__CanMoveTo__RootState_int_int() {
-        return getSuperStateRegion().getEOperations().get(54);
+	public EOperation getRegion__CanMoveTo__RootState_int_int() {
+        return getRegion().getEOperations().get(54);
 	}
 
 	/**
@@ -2646,8 +2619,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__MoveTo__RootState_int_int() {
-        return getSuperStateRegion().getEOperations().get(55);
+	public EOperation getRegion__MoveTo__RootState_int_int() {
+        return getRegion().getEOperations().get(55);
 	}
 
 	/**
@@ -2656,8 +2629,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__S_moveTo__RootState_int_int() {
-        return getSuperStateRegion().getEOperations().get(56);
+	public EOperation getRegion__S_moveTo__RootState_int_int() {
+        return getRegion().getEOperations().get(56);
 	}
 
 	/**
@@ -2666,8 +2639,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__CanMoveTo__SubSuperStateRegion_int_int() {
-        return getSuperStateRegion().getEOperations().get(57);
+	public EOperation getRegion__CanMoveTo__SuperState_int_int() {
+        return getRegion().getEOperations().get(57);
 	}
 
 	/**
@@ -2676,8 +2649,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__MoveTo__SubSuperStateRegion_int_int() {
-        return getSuperStateRegion().getEOperations().get(58);
+	public EOperation getRegion__MoveTo__SuperState_int_int() {
+        return getRegion().getEOperations().get(58);
 	}
 
 	/**
@@ -2686,8 +2659,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__S_moveTo__SubSuperStateRegion_int_int() {
-        return getSuperStateRegion().getEOperations().get(59);
+	public EOperation getRegion__S_moveTo__SuperState_int_int() {
+        return getRegion().getEOperations().get(59);
 	}
 
 	/**
@@ -2696,8 +2669,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateRegion__GetSuperStateRegionView() {
-        return getSuperStateRegion().getEOperations().get(60);
+	public EOperation getRegion__CanMoveTo__InitilalSuperState_int_int() {
+        return getRegion().getEOperations().get(60);
 	}
 
 	/**
@@ -2706,11 +2679,41 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getSubSuperState() {
-		if (subSuperStateEClass == null) {
-			subSuperStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(2);
+	public EOperation getRegion__MoveTo__InitilalSuperState_int_int() {
+        return getRegion().getEOperations().get(61);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRegion__S_moveTo__InitilalSuperState_int_int() {
+        return getRegion().getEOperations().get(62);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRegion__GetRegionView() {
+        return getRegion().getEOperations().get(63);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSuperState() {
+		if (superStateEClass == null) {
+			superStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(2);
 		}
-		return subSuperStateEClass;
+		return superStateEClass;
 	}
 
 	/**
@@ -2719,8 +2722,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetLabel() {
-        return getSubSuperState().getEOperations().get(0);
+	public EOperation getSuperState__GetLabel() {
+        return getSuperState().getEOperations().get(0);
 	}
 
 	/**
@@ -2729,8 +2732,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__SetLabel__String() {
-        return getSubSuperState().getEOperations().get(1);
+	public EOperation getSuperState__SetLabel__String() {
+        return getSuperState().getEOperations().get(1);
 	}
 
 	/**
@@ -2739,8 +2742,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetDeclaration() {
-        return getSubSuperState().getEOperations().get(2);
+	public EOperation getSuperState__GetDeclaration() {
+        return getSuperState().getEOperations().get(2);
 	}
 
 	/**
@@ -2749,8 +2752,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__SetDeclaration__EList() {
-        return getSubSuperState().getEOperations().get(3);
+	public EOperation getSuperState__SetDeclaration__EList() {
+        return getSuperState().getEOperations().get(3);
 	}
 
 	/**
@@ -2759,8 +2762,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__AddDeclaration__SubSuperStateDeclaration() {
-        return getSubSuperState().getEOperations().get(4);
+	public EOperation getSuperState__AddDeclaration__SuperStateDeclaration() {
+        return getSuperState().getEOperations().get(4);
 	}
 
 	/**
@@ -2769,8 +2772,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__RemoveDeclaration__SubSuperStateDeclaration() {
-        return getSubSuperState().getEOperations().get(5);
+	public EOperation getSuperState__RemoveDeclaration__SuperStateDeclaration() {
+        return getSuperState().getEOperations().get(5);
 	}
 
 	/**
@@ -2779,8 +2782,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetInternalSubSuperState() {
-        return getSubSuperState().getEOperations().get(6);
+	public EOperation getSuperState__GetInternalSuperState() {
+        return getSuperState().getEOperations().get(6);
 	}
 
 	/**
@@ -2789,8 +2792,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__IsExactlySubSuperState() {
-        return getSubSuperState().getEOperations().get(7);
+	public EOperation getSuperState__IsExactlySuperState() {
+        return getSuperState().getEOperations().get(7);
 	}
 
 	/**
@@ -2799,8 +2802,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__PreDelete() {
-        return getSubSuperState().getEOperations().get(8);
+	public EOperation getSuperState__PreDelete() {
+        return getSuperState().getEOperations().get(8);
 	}
 
 	/**
@@ -2809,8 +2812,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetPostDeleteFunction() {
-        return getSubSuperState().getEOperations().get(9);
+	public EOperation getSuperState__GetPostDeleteFunction() {
+        return getSuperState().getEOperations().get(9);
 	}
 
 	/**
@@ -2819,8 +2822,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetPostDeleteEvent() {
-        return getSubSuperState().getEOperations().get(10);
+	public EOperation getSuperState__GetPostDeleteEvent() {
+        return getSuperState().getEOperations().get(10);
 	}
 
 	/**
@@ -2829,8 +2832,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__PreSave() {
-        return getSubSuperState().getEOperations().get(11);
+	public EOperation getSuperState__PreSave() {
+        return getSuperState().getEOperations().get(11);
 	}
 
 	/**
@@ -2839,8 +2842,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__PostSave() {
-        return getSubSuperState().getEOperations().get(12);
+	public EOperation getSuperState__PostSave() {
+        return getSuperState().getEOperations().get(12);
 	}
 
 	/**
@@ -2849,8 +2852,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetRootElement() {
-        return getSubSuperState().getEOperations().get(13);
+	public EOperation getSuperState__GetRootElement() {
+        return getSuperState().getEOperations().get(13);
 	}
 
 	/**
@@ -2859,8 +2862,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetNodes() {
-        return getSubSuperState().getEOperations().get(14);
+	public EOperation getSuperState__GetNodes() {
+        return getSuperState().getEOperations().get(14);
 	}
 
 	/**
@@ -2869,8 +2872,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetSubSuperStateRegions() {
-        return getSubSuperState().getEOperations().get(15);
+	public EOperation getSuperState__GetRegions() {
+        return getSuperState().getEOperations().get(15);
 	}
 
 	/**
@@ -2879,8 +2882,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewSubSuperStateRegion() {
-        return getSubSuperState().getEOperations().get(16);
+	public EOperation getSuperState__CanNewRegion() {
+        return getSuperState().getEOperations().get(16);
 	}
 
 	/**
@@ -2889,8 +2892,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewSubSuperStateRegion__int_int() {
-        return getSubSuperState().getEOperations().get(17);
+	public EOperation getSuperState__NewRegion__int_int() {
+        return getSuperState().getEOperations().get(17);
 	}
 
 	/**
@@ -2899,8 +2902,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewSubSuperStateRegion__String_int_int() {
-        return getSubSuperState().getEOperations().get(18);
+	public EOperation getSuperState__NewRegion__String_int_int() {
+        return getSuperState().getEOperations().get(18);
 	}
 
 	/**
@@ -2909,8 +2912,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewSubSuperStateRegion__int_int_int_int() {
-        return getSubSuperState().getEOperations().get(19);
+	public EOperation getSuperState__NewRegion__int_int_int_int() {
+        return getSuperState().getEOperations().get(19);
 	}
 
 	/**
@@ -2919,8 +2922,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewSubSuperStateRegion__String_int_int_int_int() {
-        return getSubSuperState().getEOperations().get(20);
+	public EOperation getSuperState__NewRegion__String_int_int_int_int() {
+        return getSuperState().getEOperations().get(20);
 	}
 
 	/**
@@ -2929,8 +2932,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetSubSuperStateDeclarationNodes() {
-        return getSubSuperState().getEOperations().get(21);
+	public EOperation getSuperState__GetSuperStateDeclarationNodes() {
+        return getSuperState().getEOperations().get(21);
 	}
 
 	/**
@@ -2939,8 +2942,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewSubSuperStateDeclarationNode() {
-        return getSubSuperState().getEOperations().get(22);
+	public EOperation getSuperState__CanNewSuperStateDeclarationNode() {
+        return getSuperState().getEOperations().get(22);
 	}
 
 	/**
@@ -2949,8 +2952,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewSubSuperStateDeclarationNode__int_int() {
-        return getSubSuperState().getEOperations().get(23);
+	public EOperation getSuperState__NewSuperStateDeclarationNode__int_int() {
+        return getSuperState().getEOperations().get(23);
 	}
 
 	/**
@@ -2959,8 +2962,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewSubSuperStateDeclarationNode__String_int_int() {
-        return getSubSuperState().getEOperations().get(24);
+	public EOperation getSuperState__NewSuperStateDeclarationNode__String_int_int() {
+        return getSuperState().getEOperations().get(24);
 	}
 
 	/**
@@ -2969,8 +2972,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewSubSuperStateDeclarationNode__int_int_int_int() {
-        return getSubSuperState().getEOperations().get(25);
+	public EOperation getSuperState__NewSuperStateDeclarationNode__int_int_int_int() {
+        return getSuperState().getEOperations().get(25);
 	}
 
 	/**
@@ -2979,8 +2982,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewSubSuperStateDeclarationNode__String_int_int_int_int() {
-        return getSubSuperState().getEOperations().get(26);
+	public EOperation getSuperState__NewSuperStateDeclarationNode__String_int_int_int_int() {
+        return getSuperState().getEOperations().get(26);
 	}
 
 	/**
@@ -2989,8 +2992,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetOutgoing() {
-        return getSubSuperState().getEOperations().get(27);
+	public EOperation getSuperState__GetOutgoing() {
+        return getSuperState().getEOperations().get(27);
 	}
 
 	/**
@@ -2999,8 +3002,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetSuccessors() {
-        return getSubSuperState().getEOperations().get(28);
+	public EOperation getSuperState__GetSuccessors() {
+        return getSuperState().getEOperations().get(28);
 	}
 
 	/**
@@ -3009,8 +3012,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetIncoming() {
-        return getSubSuperState().getEOperations().get(29);
+	public EOperation getSuperState__GetIncoming() {
+        return getSuperState().getEOperations().get(29);
 	}
 
 	/**
@@ -3019,8 +3022,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetPredecessors() {
-        return getSubSuperState().getEOperations().get(30);
+	public EOperation getSuperState__GetPredecessors() {
+        return getSuperState().getEOperations().get(30);
 	}
 
 	/**
@@ -3029,8 +3032,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__S_moveTo__ModelElementContainer_int_int() {
-        return getSubSuperState().getEOperations().get(31);
+	public EOperation getSuperState__S_moveTo__ModelElementContainer_int_int() {
+        return getSuperState().getEOperations().get(31);
 	}
 
 	/**
@@ -3039,8 +3042,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__PreMove__ModelElementContainer_int_int() {
-        return getSubSuperState().getEOperations().get(32);
+	public EOperation getSuperState__PreMove__ModelElementContainer_int_int() {
+        return getSuperState().getEOperations().get(32);
 	}
 
 	/**
@@ -3049,8 +3052,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__PostMove__ModelElementContainer_ModelElementContainer_int_int_int_int() {
-        return getSubSuperState().getEOperations().get(33);
+	public EOperation getSuperState__PostMove__ModelElementContainer_ModelElementContainer_int_int_int_int() {
+        return getSuperState().getEOperations().get(33);
 	}
 
 	/**
@@ -3059,8 +3062,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__PreResize__int_int_int_int_Direction() {
-        return getSubSuperState().getEOperations().get(34);
+	public EOperation getSuperState__PreResize__int_int_int_int_Direction() {
+        return getSuperState().getEOperations().get(34);
 	}
 
 	/**
@@ -3069,8 +3072,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__PostResize__int_int_int_int_Direction() {
-        return getSubSuperState().getEOperations().get(35);
+	public EOperation getSuperState__PostResize__int_int_int_int_Direction() {
+        return getSuperState().getEOperations().get(35);
 	}
 
 	/**
@@ -3079,8 +3082,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetOutgoingImmediateTransitions() {
-        return getSubSuperState().getEOperations().get(36);
+	public EOperation getSuperState__GetOutgoingDefferedTransitions() {
+        return getSuperState().getEOperations().get(36);
 	}
 
 	/**
@@ -3089,8 +3092,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetOutgoingWeakAbortTransitions() {
-        return getSubSuperState().getEOperations().get(37);
+	public EOperation getSuperState__GetOutgoingWeakAbortTransitions() {
+        return getSuperState().getEOperations().get(37);
 	}
 
 	/**
@@ -3099,8 +3102,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetOutgoingTransitions() {
-        return getSubSuperState().getEOperations().get(38);
+	public EOperation getSuperState__GetOutgoingStrongAbortTransitions() {
+        return getSuperState().getEOperations().get(38);
 	}
 
 	/**
@@ -3109,8 +3112,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetOutgoingStrongAbortTransitions() {
-        return getSubSuperState().getEOperations().get(39);
+	public EOperation getSuperState__GetOutgoingWeakAbortTerminationTransitions() {
+        return getSuperState().getEOperations().get(39);
 	}
 
 	/**
@@ -3119,8 +3122,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetOutgoingDefferedTransitions() {
-        return getSubSuperState().getEOperations().get(40);
+	public EOperation getSuperState__GetOutgoingImmediateTerminationTransitions() {
+        return getSuperState().getEOperations().get(40);
 	}
 
 	/**
@@ -3129,8 +3132,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetOutgoingImmediateTerminationTransitions() {
-        return getSubSuperState().getEOperations().get(41);
+	public EOperation getSuperState__GetOutgoingTransitions() {
+        return getSuperState().getEOperations().get(41);
 	}
 
 	/**
@@ -3139,8 +3142,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetOutgoingWeakAbortTerminationTransitions() {
-        return getSubSuperState().getEOperations().get(42);
+	public EOperation getSuperState__GetOutgoingImmediateTransitions() {
+        return getSuperState().getEOperations().get(42);
 	}
 
 	/**
@@ -3149,8 +3152,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetIncomingImmediateTransitions() {
-        return getSubSuperState().getEOperations().get(43);
+	public EOperation getSuperState__GetIncomingDefferedTransitions() {
+        return getSuperState().getEOperations().get(43);
 	}
 
 	/**
@@ -3159,8 +3162,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetIncomingWeakAbortTransitions() {
-        return getSubSuperState().getEOperations().get(44);
+	public EOperation getSuperState__GetIncomingWeakAbortTransitions() {
+        return getSuperState().getEOperations().get(44);
 	}
 
 	/**
@@ -3169,8 +3172,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetIncomingTransitions() {
-        return getSubSuperState().getEOperations().get(45);
+	public EOperation getSuperState__GetIncomingStrongAbortTransitions() {
+        return getSuperState().getEOperations().get(45);
 	}
 
 	/**
@@ -3179,8 +3182,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetIncomingStrongAbortTransitions() {
-        return getSubSuperState().getEOperations().get(46);
+	public EOperation getSuperState__GetIncomingWeakAbortTerminationTransitions() {
+        return getSuperState().getEOperations().get(46);
 	}
 
 	/**
@@ -3189,8 +3192,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetIncomingDefferedTransitions() {
-        return getSubSuperState().getEOperations().get(47);
+	public EOperation getSuperState__GetIncomingImmediateTerminationTransitions() {
+        return getSuperState().getEOperations().get(47);
 	}
 
 	/**
@@ -3199,8 +3202,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetIncomingImmediateTerminationTransitions() {
-        return getSubSuperState().getEOperations().get(48);
+	public EOperation getSuperState__GetIncomingTransitions() {
+        return getSuperState().getEOperations().get(48);
 	}
 
 	/**
@@ -3209,8 +3212,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetIncomingWeakAbortTerminationTransitions() {
-        return getSubSuperState().getEOperations().get(49);
+	public EOperation getSuperState__GetIncomingImmediateTransitions() {
+        return getSuperState().getEOperations().get(49);
 	}
 
 	/**
@@ -3219,8 +3222,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetRootStatePredecessors() {
-        return getSubSuperState().getEOperations().get(50);
+	public EOperation getSuperState__GetRootStatePredecessors() {
+        return getSuperState().getEOperations().get(50);
 	}
 
 	/**
@@ -3229,8 +3232,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetSubSuperStatePredecessors() {
-        return getSubSuperState().getEOperations().get(51);
+	public EOperation getSuperState__GetSuperStatePredecessors() {
+        return getSuperState().getEOperations().get(51);
 	}
 
 	/**
@@ -3239,8 +3242,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetInitilalSubSuperStatePredecessors() {
-        return getSubSuperState().getEOperations().get(52);
+	public EOperation getSuperState__GetInitilalSuperStatePredecessors() {
+        return getSuperState().getEOperations().get(52);
 	}
 
 	/**
@@ -3249,8 +3252,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetSimpleStatePredecessors() {
-        return getSubSuperState().getEOperations().get(53);
+	public EOperation getSuperState__GetSimpleStatePredecessors() {
+        return getSuperState().getEOperations().get(53);
 	}
 
 	/**
@@ -3259,8 +3262,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetInitialStatePredecessors() {
-        return getSubSuperState().getEOperations().get(54);
+	public EOperation getSuperState__GetInitialStatePredecessors() {
+        return getSuperState().getEOperations().get(54);
 	}
 
 	/**
@@ -3269,8 +3272,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetFinalStatePredecessors() {
-        return getSubSuperState().getEOperations().get(55);
+	public EOperation getSuperState__GetFinalStatePredecessors() {
+        return getSuperState().getEOperations().get(55);
 	}
 
 	/**
@@ -3279,8 +3282,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetConnectorPredecessors() {
-        return getSubSuperState().getEOperations().get(56);
+	public EOperation getSuperState__GetConnectorPredecessors() {
+        return getSuperState().getEOperations().get(56);
 	}
 
 	/**
@@ -3289,8 +3292,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetSubSuperStateSuccessors() {
-        return getSubSuperState().getEOperations().get(57);
+	public EOperation getSuperState__GetSuperStateSuccessors() {
+        return getSuperState().getEOperations().get(57);
 	}
 
 	/**
@@ -3299,8 +3302,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetInitilalSubSuperStateSuccessors() {
-        return getSubSuperState().getEOperations().get(58);
+	public EOperation getSuperState__GetInitilalSuperStateSuccessors() {
+        return getSuperState().getEOperations().get(58);
 	}
 
 	/**
@@ -3309,8 +3312,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetSimpleStateSuccessors() {
-        return getSubSuperState().getEOperations().get(59);
+	public EOperation getSuperState__GetSimpleStateSuccessors() {
+        return getSuperState().getEOperations().get(59);
 	}
 
 	/**
@@ -3319,8 +3322,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetInitialStateSuccessors() {
-        return getSubSuperState().getEOperations().get(60);
+	public EOperation getSuperState__GetInitialStateSuccessors() {
+        return getSuperState().getEOperations().get(60);
 	}
 
 	/**
@@ -3329,8 +3332,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetFinalStateSuccessors() {
-        return getSubSuperState().getEOperations().get(61);
+	public EOperation getSuperState__GetFinalStateSuccessors() {
+        return getSuperState().getEOperations().get(61);
 	}
 
 	/**
@@ -3339,8 +3342,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__GetConnectorSuccessors() {
-        return getSubSuperState().getEOperations().get(62);
+	public EOperation getSuperState__GetConnectorSuccessors() {
+        return getSuperState().getEOperations().get(62);
 	}
 
 	/**
@@ -3349,8 +3352,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewImmediateTransition__InitilalSubSuperState() {
-        return getSubSuperState().getEOperations().get(63);
+	public EOperation getSuperState__CanNewDefferedTransition__InitilalSuperState() {
+        return getSuperState().getEOperations().get(63);
 	}
 
 	/**
@@ -3359,8 +3362,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTransition__InitilalSubSuperState() {
-        return getSubSuperState().getEOperations().get(64);
+	public EOperation getSuperState__NewDefferedTransition__InitilalSuperState() {
+        return getSuperState().getEOperations().get(64);
 	}
 
 	/**
@@ -3369,8 +3372,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTransition__InitilalSubSuperState_String() {
-        return getSubSuperState().getEOperations().get(65);
+	public EOperation getSuperState__NewDefferedTransition__InitilalSuperState_String() {
+        return getSuperState().getEOperations().get(65);
 	}
 
 	/**
@@ -3379,8 +3382,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewImmediateTransition__InitialState() {
-        return getSubSuperState().getEOperations().get(66);
+	public EOperation getSuperState__CanNewDefferedTransition__Connector() {
+        return getSuperState().getEOperations().get(66);
 	}
 
 	/**
@@ -3389,8 +3392,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTransition__InitialState() {
-        return getSubSuperState().getEOperations().get(67);
+	public EOperation getSuperState__NewDefferedTransition__Connector() {
+        return getSuperState().getEOperations().get(67);
 	}
 
 	/**
@@ -3399,8 +3402,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTransition__InitialState_String() {
-        return getSubSuperState().getEOperations().get(68);
+	public EOperation getSuperState__NewDefferedTransition__Connector_String() {
+        return getSuperState().getEOperations().get(68);
 	}
 
 	/**
@@ -3409,8 +3412,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewImmediateTransition__Connector() {
-        return getSubSuperState().getEOperations().get(69);
+	public EOperation getSuperState__CanNewDefferedTransition__SuperState() {
+        return getSuperState().getEOperations().get(69);
 	}
 
 	/**
@@ -3419,8 +3422,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTransition__Connector() {
-        return getSubSuperState().getEOperations().get(70);
+	public EOperation getSuperState__NewDefferedTransition__SuperState() {
+        return getSuperState().getEOperations().get(70);
 	}
 
 	/**
@@ -3429,8 +3432,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTransition__Connector_String() {
-        return getSubSuperState().getEOperations().get(71);
+	public EOperation getSuperState__NewDefferedTransition__SuperState_String() {
+        return getSuperState().getEOperations().get(71);
 	}
 
 	/**
@@ -3439,8 +3442,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewImmediateTransition__SubSuperState() {
-        return getSubSuperState().getEOperations().get(72);
+	public EOperation getSuperState__CanNewDefferedTransition__SimpleState() {
+        return getSuperState().getEOperations().get(72);
 	}
 
 	/**
@@ -3449,8 +3452,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTransition__SubSuperState() {
-        return getSubSuperState().getEOperations().get(73);
+	public EOperation getSuperState__NewDefferedTransition__SimpleState() {
+        return getSuperState().getEOperations().get(73);
 	}
 
 	/**
@@ -3459,8 +3462,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTransition__SubSuperState_String() {
-        return getSubSuperState().getEOperations().get(74);
+	public EOperation getSuperState__NewDefferedTransition__SimpleState_String() {
+        return getSuperState().getEOperations().get(74);
 	}
 
 	/**
@@ -3469,8 +3472,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewImmediateTransition__SimpleState() {
-        return getSubSuperState().getEOperations().get(75);
+	public EOperation getSuperState__CanNewDefferedTransition__FinalState() {
+        return getSuperState().getEOperations().get(75);
 	}
 
 	/**
@@ -3479,8 +3482,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTransition__SimpleState() {
-        return getSubSuperState().getEOperations().get(76);
+	public EOperation getSuperState__NewDefferedTransition__FinalState() {
+        return getSuperState().getEOperations().get(76);
 	}
 
 	/**
@@ -3489,8 +3492,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTransition__SimpleState_String() {
-        return getSubSuperState().getEOperations().get(77);
+	public EOperation getSuperState__NewDefferedTransition__FinalState_String() {
+        return getSuperState().getEOperations().get(77);
 	}
 
 	/**
@@ -3499,8 +3502,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewImmediateTransition__FinalState() {
-        return getSubSuperState().getEOperations().get(78);
+	public EOperation getSuperState__CanNewDefferedTransition__InitialState() {
+        return getSuperState().getEOperations().get(78);
 	}
 
 	/**
@@ -3509,8 +3512,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTransition__FinalState() {
-        return getSubSuperState().getEOperations().get(79);
+	public EOperation getSuperState__NewDefferedTransition__InitialState() {
+        return getSuperState().getEOperations().get(79);
 	}
 
 	/**
@@ -3519,8 +3522,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTransition__FinalState_String() {
-        return getSubSuperState().getEOperations().get(80);
+	public EOperation getSuperState__NewDefferedTransition__InitialState_String() {
+        return getSuperState().getEOperations().get(80);
 	}
 
 	/**
@@ -3529,8 +3532,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewWeakAbortTransition__InitilalSubSuperState() {
-        return getSubSuperState().getEOperations().get(81);
+	public EOperation getSuperState__CanNewWeakAbortTransition__InitilalSuperState() {
+        return getSuperState().getEOperations().get(81);
 	}
 
 	/**
@@ -3539,8 +3542,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTransition__InitilalSubSuperState() {
-        return getSubSuperState().getEOperations().get(82);
+	public EOperation getSuperState__NewWeakAbortTransition__InitilalSuperState() {
+        return getSuperState().getEOperations().get(82);
 	}
 
 	/**
@@ -3549,8 +3552,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTransition__InitilalSubSuperState_String() {
-        return getSubSuperState().getEOperations().get(83);
+	public EOperation getSuperState__NewWeakAbortTransition__InitilalSuperState_String() {
+        return getSuperState().getEOperations().get(83);
 	}
 
 	/**
@@ -3559,8 +3562,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewWeakAbortTransition__InitialState() {
-        return getSubSuperState().getEOperations().get(84);
+	public EOperation getSuperState__CanNewWeakAbortTransition__Connector() {
+        return getSuperState().getEOperations().get(84);
 	}
 
 	/**
@@ -3569,8 +3572,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTransition__InitialState() {
-        return getSubSuperState().getEOperations().get(85);
+	public EOperation getSuperState__NewWeakAbortTransition__Connector() {
+        return getSuperState().getEOperations().get(85);
 	}
 
 	/**
@@ -3579,8 +3582,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTransition__InitialState_String() {
-        return getSubSuperState().getEOperations().get(86);
+	public EOperation getSuperState__NewWeakAbortTransition__Connector_String() {
+        return getSuperState().getEOperations().get(86);
 	}
 
 	/**
@@ -3589,8 +3592,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewWeakAbortTransition__Connector() {
-        return getSubSuperState().getEOperations().get(87);
+	public EOperation getSuperState__CanNewWeakAbortTransition__SuperState() {
+        return getSuperState().getEOperations().get(87);
 	}
 
 	/**
@@ -3599,8 +3602,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTransition__Connector() {
-        return getSubSuperState().getEOperations().get(88);
+	public EOperation getSuperState__NewWeakAbortTransition__SuperState() {
+        return getSuperState().getEOperations().get(88);
 	}
 
 	/**
@@ -3609,8 +3612,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTransition__Connector_String() {
-        return getSubSuperState().getEOperations().get(89);
+	public EOperation getSuperState__NewWeakAbortTransition__SuperState_String() {
+        return getSuperState().getEOperations().get(89);
 	}
 
 	/**
@@ -3619,8 +3622,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewWeakAbortTransition__SubSuperState() {
-        return getSubSuperState().getEOperations().get(90);
+	public EOperation getSuperState__CanNewWeakAbortTransition__SimpleState() {
+        return getSuperState().getEOperations().get(90);
 	}
 
 	/**
@@ -3629,8 +3632,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTransition__SubSuperState() {
-        return getSubSuperState().getEOperations().get(91);
+	public EOperation getSuperState__NewWeakAbortTransition__SimpleState() {
+        return getSuperState().getEOperations().get(91);
 	}
 
 	/**
@@ -3639,8 +3642,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTransition__SubSuperState_String() {
-        return getSubSuperState().getEOperations().get(92);
+	public EOperation getSuperState__NewWeakAbortTransition__SimpleState_String() {
+        return getSuperState().getEOperations().get(92);
 	}
 
 	/**
@@ -3649,8 +3652,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewWeakAbortTransition__SimpleState() {
-        return getSubSuperState().getEOperations().get(93);
+	public EOperation getSuperState__CanNewWeakAbortTransition__FinalState() {
+        return getSuperState().getEOperations().get(93);
 	}
 
 	/**
@@ -3659,8 +3662,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTransition__SimpleState() {
-        return getSubSuperState().getEOperations().get(94);
+	public EOperation getSuperState__NewWeakAbortTransition__FinalState() {
+        return getSuperState().getEOperations().get(94);
 	}
 
 	/**
@@ -3669,8 +3672,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTransition__SimpleState_String() {
-        return getSubSuperState().getEOperations().get(95);
+	public EOperation getSuperState__NewWeakAbortTransition__FinalState_String() {
+        return getSuperState().getEOperations().get(95);
 	}
 
 	/**
@@ -3679,8 +3682,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewWeakAbortTransition__FinalState() {
-        return getSubSuperState().getEOperations().get(96);
+	public EOperation getSuperState__CanNewWeakAbortTransition__InitialState() {
+        return getSuperState().getEOperations().get(96);
 	}
 
 	/**
@@ -3689,8 +3692,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTransition__FinalState() {
-        return getSubSuperState().getEOperations().get(97);
+	public EOperation getSuperState__NewWeakAbortTransition__InitialState() {
+        return getSuperState().getEOperations().get(97);
 	}
 
 	/**
@@ -3699,8 +3702,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTransition__FinalState_String() {
-        return getSubSuperState().getEOperations().get(98);
+	public EOperation getSuperState__NewWeakAbortTransition__InitialState_String() {
+        return getSuperState().getEOperations().get(98);
 	}
 
 	/**
@@ -3709,8 +3712,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewImmediateTerminationTransition__InitilalSubSuperState() {
-        return getSubSuperState().getEOperations().get(99);
+	public EOperation getSuperState__CanNewStrongAbortTransition__InitilalSuperState() {
+        return getSuperState().getEOperations().get(99);
 	}
 
 	/**
@@ -3719,8 +3722,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTerminationTransition__InitilalSubSuperState() {
-        return getSubSuperState().getEOperations().get(100);
+	public EOperation getSuperState__NewStrongAbortTransition__InitilalSuperState() {
+        return getSuperState().getEOperations().get(100);
 	}
 
 	/**
@@ -3729,8 +3732,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTerminationTransition__InitilalSubSuperState_String() {
-        return getSubSuperState().getEOperations().get(101);
+	public EOperation getSuperState__NewStrongAbortTransition__InitilalSuperState_String() {
+        return getSuperState().getEOperations().get(101);
 	}
 
 	/**
@@ -3739,8 +3742,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewImmediateTerminationTransition__InitialState() {
-        return getSubSuperState().getEOperations().get(102);
+	public EOperation getSuperState__CanNewStrongAbortTransition__Connector() {
+        return getSuperState().getEOperations().get(102);
 	}
 
 	/**
@@ -3749,8 +3752,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTerminationTransition__InitialState() {
-        return getSubSuperState().getEOperations().get(103);
+	public EOperation getSuperState__NewStrongAbortTransition__Connector() {
+        return getSuperState().getEOperations().get(103);
 	}
 
 	/**
@@ -3759,8 +3762,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTerminationTransition__InitialState_String() {
-        return getSubSuperState().getEOperations().get(104);
+	public EOperation getSuperState__NewStrongAbortTransition__Connector_String() {
+        return getSuperState().getEOperations().get(104);
 	}
 
 	/**
@@ -3769,8 +3772,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewImmediateTerminationTransition__Connector() {
-        return getSubSuperState().getEOperations().get(105);
+	public EOperation getSuperState__CanNewStrongAbortTransition__SuperState() {
+        return getSuperState().getEOperations().get(105);
 	}
 
 	/**
@@ -3779,8 +3782,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTerminationTransition__Connector() {
-        return getSubSuperState().getEOperations().get(106);
+	public EOperation getSuperState__NewStrongAbortTransition__SuperState() {
+        return getSuperState().getEOperations().get(106);
 	}
 
 	/**
@@ -3789,8 +3792,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTerminationTransition__Connector_String() {
-        return getSubSuperState().getEOperations().get(107);
+	public EOperation getSuperState__NewStrongAbortTransition__SuperState_String() {
+        return getSuperState().getEOperations().get(107);
 	}
 
 	/**
@@ -3799,8 +3802,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewImmediateTerminationTransition__SubSuperState() {
-        return getSubSuperState().getEOperations().get(108);
+	public EOperation getSuperState__CanNewStrongAbortTransition__SimpleState() {
+        return getSuperState().getEOperations().get(108);
 	}
 
 	/**
@@ -3809,8 +3812,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTerminationTransition__SubSuperState() {
-        return getSubSuperState().getEOperations().get(109);
+	public EOperation getSuperState__NewStrongAbortTransition__SimpleState() {
+        return getSuperState().getEOperations().get(109);
 	}
 
 	/**
@@ -3819,8 +3822,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTerminationTransition__SubSuperState_String() {
-        return getSubSuperState().getEOperations().get(110);
+	public EOperation getSuperState__NewStrongAbortTransition__SimpleState_String() {
+        return getSuperState().getEOperations().get(110);
 	}
 
 	/**
@@ -3829,8 +3832,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewImmediateTerminationTransition__SimpleState() {
-        return getSubSuperState().getEOperations().get(111);
+	public EOperation getSuperState__CanNewStrongAbortTransition__FinalState() {
+        return getSuperState().getEOperations().get(111);
 	}
 
 	/**
@@ -3839,8 +3842,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTerminationTransition__SimpleState() {
-        return getSubSuperState().getEOperations().get(112);
+	public EOperation getSuperState__NewStrongAbortTransition__FinalState() {
+        return getSuperState().getEOperations().get(112);
 	}
 
 	/**
@@ -3849,8 +3852,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTerminationTransition__SimpleState_String() {
-        return getSubSuperState().getEOperations().get(113);
+	public EOperation getSuperState__NewStrongAbortTransition__FinalState_String() {
+        return getSuperState().getEOperations().get(113);
 	}
 
 	/**
@@ -3859,8 +3862,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewImmediateTerminationTransition__FinalState() {
-        return getSubSuperState().getEOperations().get(114);
+	public EOperation getSuperState__CanNewStrongAbortTransition__InitialState() {
+        return getSuperState().getEOperations().get(114);
 	}
 
 	/**
@@ -3869,8 +3872,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTerminationTransition__FinalState() {
-        return getSubSuperState().getEOperations().get(115);
+	public EOperation getSuperState__NewStrongAbortTransition__InitialState() {
+        return getSuperState().getEOperations().get(115);
 	}
 
 	/**
@@ -3879,8 +3882,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewImmediateTerminationTransition__FinalState_String() {
-        return getSubSuperState().getEOperations().get(116);
+	public EOperation getSuperState__NewStrongAbortTransition__InitialState_String() {
+        return getSuperState().getEOperations().get(116);
 	}
 
 	/**
@@ -3889,8 +3892,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewStrongAbortTransition__InitilalSubSuperState() {
-        return getSubSuperState().getEOperations().get(117);
+	public EOperation getSuperState__CanNewWeakAbortTerminationTransition__InitilalSuperState() {
+        return getSuperState().getEOperations().get(117);
 	}
 
 	/**
@@ -3899,8 +3902,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewStrongAbortTransition__InitilalSubSuperState() {
-        return getSubSuperState().getEOperations().get(118);
+	public EOperation getSuperState__NewWeakAbortTerminationTransition__InitilalSuperState() {
+        return getSuperState().getEOperations().get(118);
 	}
 
 	/**
@@ -3909,8 +3912,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewStrongAbortTransition__InitilalSubSuperState_String() {
-        return getSubSuperState().getEOperations().get(119);
+	public EOperation getSuperState__NewWeakAbortTerminationTransition__InitilalSuperState_String() {
+        return getSuperState().getEOperations().get(119);
 	}
 
 	/**
@@ -3919,8 +3922,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewStrongAbortTransition__InitialState() {
-        return getSubSuperState().getEOperations().get(120);
+	public EOperation getSuperState__CanNewWeakAbortTerminationTransition__Connector() {
+        return getSuperState().getEOperations().get(120);
 	}
 
 	/**
@@ -3929,8 +3932,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewStrongAbortTransition__InitialState() {
-        return getSubSuperState().getEOperations().get(121);
+	public EOperation getSuperState__NewWeakAbortTerminationTransition__Connector() {
+        return getSuperState().getEOperations().get(121);
 	}
 
 	/**
@@ -3939,8 +3942,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewStrongAbortTransition__InitialState_String() {
-        return getSubSuperState().getEOperations().get(122);
+	public EOperation getSuperState__NewWeakAbortTerminationTransition__Connector_String() {
+        return getSuperState().getEOperations().get(122);
 	}
 
 	/**
@@ -3949,8 +3952,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewStrongAbortTransition__Connector() {
-        return getSubSuperState().getEOperations().get(123);
+	public EOperation getSuperState__CanNewWeakAbortTerminationTransition__SuperState() {
+        return getSuperState().getEOperations().get(123);
 	}
 
 	/**
@@ -3959,8 +3962,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewStrongAbortTransition__Connector() {
-        return getSubSuperState().getEOperations().get(124);
+	public EOperation getSuperState__NewWeakAbortTerminationTransition__SuperState() {
+        return getSuperState().getEOperations().get(124);
 	}
 
 	/**
@@ -3969,8 +3972,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewStrongAbortTransition__Connector_String() {
-        return getSubSuperState().getEOperations().get(125);
+	public EOperation getSuperState__NewWeakAbortTerminationTransition__SuperState_String() {
+        return getSuperState().getEOperations().get(125);
 	}
 
 	/**
@@ -3979,8 +3982,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewStrongAbortTransition__SubSuperState() {
-        return getSubSuperState().getEOperations().get(126);
+	public EOperation getSuperState__CanNewWeakAbortTerminationTransition__SimpleState() {
+        return getSuperState().getEOperations().get(126);
 	}
 
 	/**
@@ -3989,8 +3992,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewStrongAbortTransition__SubSuperState() {
-        return getSubSuperState().getEOperations().get(127);
+	public EOperation getSuperState__NewWeakAbortTerminationTransition__SimpleState() {
+        return getSuperState().getEOperations().get(127);
 	}
 
 	/**
@@ -3999,8 +4002,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewStrongAbortTransition__SubSuperState_String() {
-        return getSubSuperState().getEOperations().get(128);
+	public EOperation getSuperState__NewWeakAbortTerminationTransition__SimpleState_String() {
+        return getSuperState().getEOperations().get(128);
 	}
 
 	/**
@@ -4009,8 +4012,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewStrongAbortTransition__SimpleState() {
-        return getSubSuperState().getEOperations().get(129);
+	public EOperation getSuperState__CanNewWeakAbortTerminationTransition__FinalState() {
+        return getSuperState().getEOperations().get(129);
 	}
 
 	/**
@@ -4019,8 +4022,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewStrongAbortTransition__SimpleState() {
-        return getSubSuperState().getEOperations().get(130);
+	public EOperation getSuperState__NewWeakAbortTerminationTransition__FinalState() {
+        return getSuperState().getEOperations().get(130);
 	}
 
 	/**
@@ -4029,8 +4032,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewStrongAbortTransition__SimpleState_String() {
-        return getSubSuperState().getEOperations().get(131);
+	public EOperation getSuperState__NewWeakAbortTerminationTransition__FinalState_String() {
+        return getSuperState().getEOperations().get(131);
 	}
 
 	/**
@@ -4039,8 +4042,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewStrongAbortTransition__FinalState() {
-        return getSubSuperState().getEOperations().get(132);
+	public EOperation getSuperState__CanNewWeakAbortTerminationTransition__InitialState() {
+        return getSuperState().getEOperations().get(132);
 	}
 
 	/**
@@ -4049,8 +4052,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewStrongAbortTransition__FinalState() {
-        return getSubSuperState().getEOperations().get(133);
+	public EOperation getSuperState__NewWeakAbortTerminationTransition__InitialState() {
+        return getSuperState().getEOperations().get(133);
 	}
 
 	/**
@@ -4059,8 +4062,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewStrongAbortTransition__FinalState_String() {
-        return getSubSuperState().getEOperations().get(134);
+	public EOperation getSuperState__NewWeakAbortTerminationTransition__InitialState_String() {
+        return getSuperState().getEOperations().get(134);
 	}
 
 	/**
@@ -4069,8 +4072,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewWeakAbortTerminationTransition__InitilalSubSuperState() {
-        return getSubSuperState().getEOperations().get(135);
+	public EOperation getSuperState__CanNewImmediateTerminationTransition__InitilalSuperState() {
+        return getSuperState().getEOperations().get(135);
 	}
 
 	/**
@@ -4079,8 +4082,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTerminationTransition__InitilalSubSuperState() {
-        return getSubSuperState().getEOperations().get(136);
+	public EOperation getSuperState__NewImmediateTerminationTransition__InitilalSuperState() {
+        return getSuperState().getEOperations().get(136);
 	}
 
 	/**
@@ -4089,8 +4092,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTerminationTransition__InitilalSubSuperState_String() {
-        return getSubSuperState().getEOperations().get(137);
+	public EOperation getSuperState__NewImmediateTerminationTransition__InitilalSuperState_String() {
+        return getSuperState().getEOperations().get(137);
 	}
 
 	/**
@@ -4099,8 +4102,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewWeakAbortTerminationTransition__InitialState() {
-        return getSubSuperState().getEOperations().get(138);
+	public EOperation getSuperState__CanNewImmediateTerminationTransition__Connector() {
+        return getSuperState().getEOperations().get(138);
 	}
 
 	/**
@@ -4109,8 +4112,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTerminationTransition__InitialState() {
-        return getSubSuperState().getEOperations().get(139);
+	public EOperation getSuperState__NewImmediateTerminationTransition__Connector() {
+        return getSuperState().getEOperations().get(139);
 	}
 
 	/**
@@ -4119,8 +4122,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTerminationTransition__InitialState_String() {
-        return getSubSuperState().getEOperations().get(140);
+	public EOperation getSuperState__NewImmediateTerminationTransition__Connector_String() {
+        return getSuperState().getEOperations().get(140);
 	}
 
 	/**
@@ -4129,8 +4132,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewWeakAbortTerminationTransition__Connector() {
-        return getSubSuperState().getEOperations().get(141);
+	public EOperation getSuperState__CanNewImmediateTerminationTransition__SuperState() {
+        return getSuperState().getEOperations().get(141);
 	}
 
 	/**
@@ -4139,8 +4142,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTerminationTransition__Connector() {
-        return getSubSuperState().getEOperations().get(142);
+	public EOperation getSuperState__NewImmediateTerminationTransition__SuperState() {
+        return getSuperState().getEOperations().get(142);
 	}
 
 	/**
@@ -4149,8 +4152,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTerminationTransition__Connector_String() {
-        return getSubSuperState().getEOperations().get(143);
+	public EOperation getSuperState__NewImmediateTerminationTransition__SuperState_String() {
+        return getSuperState().getEOperations().get(143);
 	}
 
 	/**
@@ -4159,8 +4162,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewWeakAbortTerminationTransition__SubSuperState() {
-        return getSubSuperState().getEOperations().get(144);
+	public EOperation getSuperState__CanNewImmediateTerminationTransition__SimpleState() {
+        return getSuperState().getEOperations().get(144);
 	}
 
 	/**
@@ -4169,8 +4172,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTerminationTransition__SubSuperState() {
-        return getSubSuperState().getEOperations().get(145);
+	public EOperation getSuperState__NewImmediateTerminationTransition__SimpleState() {
+        return getSuperState().getEOperations().get(145);
 	}
 
 	/**
@@ -4179,8 +4182,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTerminationTransition__SubSuperState_String() {
-        return getSubSuperState().getEOperations().get(146);
+	public EOperation getSuperState__NewImmediateTerminationTransition__SimpleState_String() {
+        return getSuperState().getEOperations().get(146);
 	}
 
 	/**
@@ -4189,8 +4192,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewWeakAbortTerminationTransition__SimpleState() {
-        return getSubSuperState().getEOperations().get(147);
+	public EOperation getSuperState__CanNewImmediateTerminationTransition__FinalState() {
+        return getSuperState().getEOperations().get(147);
 	}
 
 	/**
@@ -4199,8 +4202,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTerminationTransition__SimpleState() {
-        return getSubSuperState().getEOperations().get(148);
+	public EOperation getSuperState__NewImmediateTerminationTransition__FinalState() {
+        return getSuperState().getEOperations().get(148);
 	}
 
 	/**
@@ -4209,8 +4212,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTerminationTransition__SimpleState_String() {
-        return getSubSuperState().getEOperations().get(149);
+	public EOperation getSuperState__NewImmediateTerminationTransition__FinalState_String() {
+        return getSuperState().getEOperations().get(149);
 	}
 
 	/**
@@ -4219,8 +4222,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewWeakAbortTerminationTransition__FinalState() {
-        return getSubSuperState().getEOperations().get(150);
+	public EOperation getSuperState__CanNewImmediateTerminationTransition__InitialState() {
+        return getSuperState().getEOperations().get(150);
 	}
 
 	/**
@@ -4229,8 +4232,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTerminationTransition__FinalState() {
-        return getSubSuperState().getEOperations().get(151);
+	public EOperation getSuperState__NewImmediateTerminationTransition__InitialState() {
+        return getSuperState().getEOperations().get(151);
 	}
 
 	/**
@@ -4239,8 +4242,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewWeakAbortTerminationTransition__FinalState_String() {
-        return getSubSuperState().getEOperations().get(152);
+	public EOperation getSuperState__NewImmediateTerminationTransition__InitialState_String() {
+        return getSuperState().getEOperations().get(152);
 	}
 
 	/**
@@ -4249,8 +4252,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewTransition__InitilalSubSuperState() {
-        return getSubSuperState().getEOperations().get(153);
+	public EOperation getSuperState__CanNewImmediateTransition__InitilalSuperState() {
+        return getSuperState().getEOperations().get(153);
 	}
 
 	/**
@@ -4259,8 +4262,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewTransition__InitilalSubSuperState() {
-        return getSubSuperState().getEOperations().get(154);
+	public EOperation getSuperState__NewImmediateTransition__InitilalSuperState() {
+        return getSuperState().getEOperations().get(154);
 	}
 
 	/**
@@ -4269,8 +4272,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewTransition__InitilalSubSuperState_String() {
-        return getSubSuperState().getEOperations().get(155);
+	public EOperation getSuperState__NewImmediateTransition__InitilalSuperState_String() {
+        return getSuperState().getEOperations().get(155);
 	}
 
 	/**
@@ -4279,8 +4282,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewTransition__InitialState() {
-        return getSubSuperState().getEOperations().get(156);
+	public EOperation getSuperState__CanNewImmediateTransition__Connector() {
+        return getSuperState().getEOperations().get(156);
 	}
 
 	/**
@@ -4289,8 +4292,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewTransition__InitialState() {
-        return getSubSuperState().getEOperations().get(157);
+	public EOperation getSuperState__NewImmediateTransition__Connector() {
+        return getSuperState().getEOperations().get(157);
 	}
 
 	/**
@@ -4299,8 +4302,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewTransition__InitialState_String() {
-        return getSubSuperState().getEOperations().get(158);
+	public EOperation getSuperState__NewImmediateTransition__Connector_String() {
+        return getSuperState().getEOperations().get(158);
 	}
 
 	/**
@@ -4309,8 +4312,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewTransition__Connector() {
-        return getSubSuperState().getEOperations().get(159);
+	public EOperation getSuperState__CanNewImmediateTransition__SuperState() {
+        return getSuperState().getEOperations().get(159);
 	}
 
 	/**
@@ -4319,8 +4322,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewTransition__Connector() {
-        return getSubSuperState().getEOperations().get(160);
+	public EOperation getSuperState__NewImmediateTransition__SuperState() {
+        return getSuperState().getEOperations().get(160);
 	}
 
 	/**
@@ -4329,8 +4332,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewTransition__Connector_String() {
-        return getSubSuperState().getEOperations().get(161);
+	public EOperation getSuperState__NewImmediateTransition__SuperState_String() {
+        return getSuperState().getEOperations().get(161);
 	}
 
 	/**
@@ -4339,8 +4342,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewTransition__SubSuperState() {
-        return getSubSuperState().getEOperations().get(162);
+	public EOperation getSuperState__CanNewImmediateTransition__SimpleState() {
+        return getSuperState().getEOperations().get(162);
 	}
 
 	/**
@@ -4349,8 +4352,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewTransition__SubSuperState() {
-        return getSubSuperState().getEOperations().get(163);
+	public EOperation getSuperState__NewImmediateTransition__SimpleState() {
+        return getSuperState().getEOperations().get(163);
 	}
 
 	/**
@@ -4359,8 +4362,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewTransition__SubSuperState_String() {
-        return getSubSuperState().getEOperations().get(164);
+	public EOperation getSuperState__NewImmediateTransition__SimpleState_String() {
+        return getSuperState().getEOperations().get(164);
 	}
 
 	/**
@@ -4369,8 +4372,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewTransition__SimpleState() {
-        return getSubSuperState().getEOperations().get(165);
+	public EOperation getSuperState__CanNewImmediateTransition__FinalState() {
+        return getSuperState().getEOperations().get(165);
 	}
 
 	/**
@@ -4379,8 +4382,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewTransition__SimpleState() {
-        return getSubSuperState().getEOperations().get(166);
+	public EOperation getSuperState__NewImmediateTransition__FinalState() {
+        return getSuperState().getEOperations().get(166);
 	}
 
 	/**
@@ -4389,8 +4392,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewTransition__SimpleState_String() {
-        return getSubSuperState().getEOperations().get(167);
+	public EOperation getSuperState__NewImmediateTransition__FinalState_String() {
+        return getSuperState().getEOperations().get(167);
 	}
 
 	/**
@@ -4399,8 +4402,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewTransition__FinalState() {
-        return getSubSuperState().getEOperations().get(168);
+	public EOperation getSuperState__CanNewImmediateTransition__InitialState() {
+        return getSuperState().getEOperations().get(168);
 	}
 
 	/**
@@ -4409,8 +4412,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewTransition__FinalState() {
-        return getSubSuperState().getEOperations().get(169);
+	public EOperation getSuperState__NewImmediateTransition__InitialState() {
+        return getSuperState().getEOperations().get(169);
 	}
 
 	/**
@@ -4419,8 +4422,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewTransition__FinalState_String() {
-        return getSubSuperState().getEOperations().get(170);
+	public EOperation getSuperState__NewImmediateTransition__InitialState_String() {
+        return getSuperState().getEOperations().get(170);
 	}
 
 	/**
@@ -4429,8 +4432,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewDefferedTransition__InitilalSubSuperState() {
-        return getSubSuperState().getEOperations().get(171);
+	public EOperation getSuperState__CanNewTransition__InitilalSuperState() {
+        return getSuperState().getEOperations().get(171);
 	}
 
 	/**
@@ -4439,8 +4442,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewDefferedTransition__InitilalSubSuperState() {
-        return getSubSuperState().getEOperations().get(172);
+	public EOperation getSuperState__NewTransition__InitilalSuperState() {
+        return getSuperState().getEOperations().get(172);
 	}
 
 	/**
@@ -4449,8 +4452,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewDefferedTransition__InitilalSubSuperState_String() {
-        return getSubSuperState().getEOperations().get(173);
+	public EOperation getSuperState__NewTransition__InitilalSuperState_String() {
+        return getSuperState().getEOperations().get(173);
 	}
 
 	/**
@@ -4459,8 +4462,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewDefferedTransition__InitialState() {
-        return getSubSuperState().getEOperations().get(174);
+	public EOperation getSuperState__CanNewTransition__Connector() {
+        return getSuperState().getEOperations().get(174);
 	}
 
 	/**
@@ -4469,8 +4472,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewDefferedTransition__InitialState() {
-        return getSubSuperState().getEOperations().get(175);
+	public EOperation getSuperState__NewTransition__Connector() {
+        return getSuperState().getEOperations().get(175);
 	}
 
 	/**
@@ -4479,8 +4482,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewDefferedTransition__InitialState_String() {
-        return getSubSuperState().getEOperations().get(176);
+	public EOperation getSuperState__NewTransition__Connector_String() {
+        return getSuperState().getEOperations().get(176);
 	}
 
 	/**
@@ -4489,8 +4492,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewDefferedTransition__Connector() {
-        return getSubSuperState().getEOperations().get(177);
+	public EOperation getSuperState__CanNewTransition__SuperState() {
+        return getSuperState().getEOperations().get(177);
 	}
 
 	/**
@@ -4499,8 +4502,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewDefferedTransition__Connector() {
-        return getSubSuperState().getEOperations().get(178);
+	public EOperation getSuperState__NewTransition__SuperState() {
+        return getSuperState().getEOperations().get(178);
 	}
 
 	/**
@@ -4509,8 +4512,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewDefferedTransition__Connector_String() {
-        return getSubSuperState().getEOperations().get(179);
+	public EOperation getSuperState__NewTransition__SuperState_String() {
+        return getSuperState().getEOperations().get(179);
 	}
 
 	/**
@@ -4519,8 +4522,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewDefferedTransition__SubSuperState() {
-        return getSubSuperState().getEOperations().get(180);
+	public EOperation getSuperState__CanNewTransition__SimpleState() {
+        return getSuperState().getEOperations().get(180);
 	}
 
 	/**
@@ -4529,8 +4532,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewDefferedTransition__SubSuperState() {
-        return getSubSuperState().getEOperations().get(181);
+	public EOperation getSuperState__NewTransition__SimpleState() {
+        return getSuperState().getEOperations().get(181);
 	}
 
 	/**
@@ -4539,8 +4542,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewDefferedTransition__SubSuperState_String() {
-        return getSubSuperState().getEOperations().get(182);
+	public EOperation getSuperState__NewTransition__SimpleState_String() {
+        return getSuperState().getEOperations().get(182);
 	}
 
 	/**
@@ -4549,8 +4552,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewDefferedTransition__SimpleState() {
-        return getSubSuperState().getEOperations().get(183);
+	public EOperation getSuperState__CanNewTransition__FinalState() {
+        return getSuperState().getEOperations().get(183);
 	}
 
 	/**
@@ -4559,8 +4562,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewDefferedTransition__SimpleState() {
-        return getSubSuperState().getEOperations().get(184);
+	public EOperation getSuperState__NewTransition__FinalState() {
+        return getSuperState().getEOperations().get(184);
 	}
 
 	/**
@@ -4569,8 +4572,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewDefferedTransition__SimpleState_String() {
-        return getSubSuperState().getEOperations().get(185);
+	public EOperation getSuperState__NewTransition__FinalState_String() {
+        return getSuperState().getEOperations().get(185);
 	}
 
 	/**
@@ -4579,8 +4582,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanNewDefferedTransition__FinalState() {
-        return getSubSuperState().getEOperations().get(186);
+	public EOperation getSuperState__CanNewTransition__InitialState() {
+        return getSuperState().getEOperations().get(186);
 	}
 
 	/**
@@ -4589,8 +4592,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewDefferedTransition__FinalState() {
-        return getSubSuperState().getEOperations().get(187);
+	public EOperation getSuperState__NewTransition__InitialState() {
+        return getSuperState().getEOperations().get(187);
 	}
 
 	/**
@@ -4599,8 +4602,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__NewDefferedTransition__FinalState_String() {
-        return getSubSuperState().getEOperations().get(188);
+	public EOperation getSuperState__NewTransition__InitialState_String() {
+        return getSuperState().getEOperations().get(188);
 	}
 
 	/**
@@ -4609,8 +4612,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanMoveTo__SuperStateRegion_int_int() {
-        return getSubSuperState().getEOperations().get(189);
+	public EOperation getSuperState__CanMoveTo__Region_int_int() {
+        return getSuperState().getEOperations().get(189);
 	}
 
 	/**
@@ -4619,8 +4622,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__MoveTo__SuperStateRegion_int_int() {
-        return getSubSuperState().getEOperations().get(190);
+	public EOperation getSuperState__MoveTo__Region_int_int() {
+        return getSuperState().getEOperations().get(190);
 	}
 
 	/**
@@ -4629,8 +4632,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__S_moveTo__SuperStateRegion_int_int() {
-        return getSubSuperState().getEOperations().get(191);
+	public EOperation getSuperState__S_moveTo__Region_int_int() {
+        return getSuperState().getEOperations().get(191);
 	}
 
 	/**
@@ -4639,8 +4642,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__CanMoveTo__SubSuperStateRegion_int_int() {
-        return getSubSuperState().getEOperations().get(192);
+	public EOperation getSuperState__GetContainer() {
+        return getSuperState().getEOperations().get(192);
 	}
 
 	/**
@@ -4649,8 +4652,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__MoveTo__SubSuperStateRegion_int_int() {
-        return getSubSuperState().getEOperations().get(193);
+	public EOperation getSuperState__GetSuperStateView() {
+        return getSuperState().getEOperations().get(193);
 	}
 
 	/**
@@ -4659,31 +4662,11 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperState__S_moveTo__SubSuperStateRegion_int_int() {
-        return getSubSuperState().getEOperations().get(194);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperState__GetSubSuperStateView() {
-        return getSubSuperState().getEOperations().get(195);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getInitilalSubSuperState() {
-		if (initilalSubSuperStateEClass == null) {
-			initilalSubSuperStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(3);
+	public EClass getInitilalSuperState() {
+		if (initilalSuperStateEClass == null) {
+			initilalSuperStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(3);
 		}
-		return initilalSubSuperStateEClass;
+		return initilalSuperStateEClass;
 	}
 
 	/**
@@ -4692,8 +4675,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetInternalInitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(0);
+	public EOperation getInitilalSuperState__GetInternalInitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(0);
 	}
 
 	/**
@@ -4702,8 +4685,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__IsExactlyInitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(1);
+	public EOperation getInitilalSuperState__IsExactlyInitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(1);
 	}
 
 	/**
@@ -4712,8 +4695,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__PreDelete() {
-        return getInitilalSubSuperState().getEOperations().get(2);
+	public EOperation getInitilalSuperState__PreDelete() {
+        return getInitilalSuperState().getEOperations().get(2);
 	}
 
 	/**
@@ -4722,8 +4705,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetPostDeleteFunction() {
-        return getInitilalSubSuperState().getEOperations().get(3);
+	public EOperation getInitilalSuperState__GetPostDeleteFunction() {
+        return getInitilalSuperState().getEOperations().get(3);
 	}
 
 	/**
@@ -4732,8 +4715,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetPostDeleteEvent() {
-        return getInitilalSubSuperState().getEOperations().get(4);
+	public EOperation getInitilalSuperState__GetPostDeleteEvent() {
+        return getInitilalSuperState().getEOperations().get(4);
 	}
 
 	/**
@@ -4742,8 +4725,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__PreSave() {
-        return getInitilalSubSuperState().getEOperations().get(5);
+	public EOperation getInitilalSuperState__PreSave() {
+        return getInitilalSuperState().getEOperations().get(5);
 	}
 
 	/**
@@ -4752,8 +4735,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__PostSave() {
-        return getInitilalSubSuperState().getEOperations().get(6);
+	public EOperation getInitilalSuperState__PostSave() {
+        return getInitilalSuperState().getEOperations().get(6);
 	}
 
 	/**
@@ -4762,8 +4745,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetRootElement() {
-        return getInitilalSubSuperState().getEOperations().get(7);
+	public EOperation getInitilalSuperState__GetRootElement() {
+        return getInitilalSuperState().getEOperations().get(7);
 	}
 
 	/**
@@ -4772,8 +4755,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetNodes() {
-        return getInitilalSubSuperState().getEOperations().get(8);
+	public EOperation getInitilalSuperState__GetNodes() {
+        return getInitilalSuperState().getEOperations().get(8);
 	}
 
 	/**
@@ -4782,8 +4765,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetSubSuperStateRegions() {
-        return getInitilalSubSuperState().getEOperations().get(9);
+	public EOperation getInitilalSuperState__GetRegions() {
+        return getInitilalSuperState().getEOperations().get(9);
 	}
 
 	/**
@@ -4792,8 +4775,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewSubSuperStateRegion() {
-        return getInitilalSubSuperState().getEOperations().get(10);
+	public EOperation getInitilalSuperState__CanNewRegion() {
+        return getInitilalSuperState().getEOperations().get(10);
 	}
 
 	/**
@@ -4802,8 +4785,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewSubSuperStateRegion__int_int() {
-        return getInitilalSubSuperState().getEOperations().get(11);
+	public EOperation getInitilalSuperState__NewRegion__int_int() {
+        return getInitilalSuperState().getEOperations().get(11);
 	}
 
 	/**
@@ -4812,8 +4795,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewSubSuperStateRegion__String_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(12);
+	public EOperation getInitilalSuperState__NewRegion__String_int_int() {
+        return getInitilalSuperState().getEOperations().get(12);
 	}
 
 	/**
@@ -4822,8 +4805,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewSubSuperStateRegion__int_int_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(13);
+	public EOperation getInitilalSuperState__NewRegion__int_int_int_int() {
+        return getInitilalSuperState().getEOperations().get(13);
 	}
 
 	/**
@@ -4832,8 +4815,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewSubSuperStateRegion__String_int_int_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(14);
+	public EOperation getInitilalSuperState__NewRegion__String_int_int_int_int() {
+        return getInitilalSuperState().getEOperations().get(14);
 	}
 
 	/**
@@ -4842,8 +4825,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetSubSuperStateDeclarationNodes() {
-        return getInitilalSubSuperState().getEOperations().get(15);
+	public EOperation getInitilalSuperState__GetSuperStateDeclarationNodes() {
+        return getInitilalSuperState().getEOperations().get(15);
 	}
 
 	/**
@@ -4852,8 +4835,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewSubSuperStateDeclarationNode() {
-        return getInitilalSubSuperState().getEOperations().get(16);
+	public EOperation getInitilalSuperState__CanNewSuperStateDeclarationNode() {
+        return getInitilalSuperState().getEOperations().get(16);
 	}
 
 	/**
@@ -4862,8 +4845,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewSubSuperStateDeclarationNode__int_int() {
-        return getInitilalSubSuperState().getEOperations().get(17);
+	public EOperation getInitilalSuperState__NewSuperStateDeclarationNode__int_int() {
+        return getInitilalSuperState().getEOperations().get(17);
 	}
 
 	/**
@@ -4872,8 +4855,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewSubSuperStateDeclarationNode__String_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(18);
+	public EOperation getInitilalSuperState__NewSuperStateDeclarationNode__String_int_int() {
+        return getInitilalSuperState().getEOperations().get(18);
 	}
 
 	/**
@@ -4882,8 +4865,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewSubSuperStateDeclarationNode__int_int_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(19);
+	public EOperation getInitilalSuperState__NewSuperStateDeclarationNode__int_int_int_int() {
+        return getInitilalSuperState().getEOperations().get(19);
 	}
 
 	/**
@@ -4892,8 +4875,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewSubSuperStateDeclarationNode__String_int_int_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(20);
+	public EOperation getInitilalSuperState__NewSuperStateDeclarationNode__String_int_int_int_int() {
+        return getInitilalSuperState().getEOperations().get(20);
 	}
 
 	/**
@@ -4902,8 +4885,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetOutgoing() {
-        return getInitilalSubSuperState().getEOperations().get(21);
+	public EOperation getInitilalSuperState__GetOutgoing() {
+        return getInitilalSuperState().getEOperations().get(21);
 	}
 
 	/**
@@ -4912,8 +4895,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetSuccessors() {
-        return getInitilalSubSuperState().getEOperations().get(22);
+	public EOperation getInitilalSuperState__GetSuccessors() {
+        return getInitilalSuperState().getEOperations().get(22);
 	}
 
 	/**
@@ -4922,8 +4905,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetIncoming() {
-        return getInitilalSubSuperState().getEOperations().get(23);
+	public EOperation getInitilalSuperState__GetIncoming() {
+        return getInitilalSuperState().getEOperations().get(23);
 	}
 
 	/**
@@ -4932,8 +4915,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetPredecessors() {
-        return getInitilalSubSuperState().getEOperations().get(24);
+	public EOperation getInitilalSuperState__GetPredecessors() {
+        return getInitilalSuperState().getEOperations().get(24);
 	}
 
 	/**
@@ -4942,8 +4925,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__S_moveTo__ModelElementContainer_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(25);
+	public EOperation getInitilalSuperState__S_moveTo__ModelElementContainer_int_int() {
+        return getInitilalSuperState().getEOperations().get(25);
 	}
 
 	/**
@@ -4952,8 +4935,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__PreMove__ModelElementContainer_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(26);
+	public EOperation getInitilalSuperState__PreMove__ModelElementContainer_int_int() {
+        return getInitilalSuperState().getEOperations().get(26);
 	}
 
 	/**
@@ -4962,8 +4945,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__PostMove__ModelElementContainer_ModelElementContainer_int_int_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(27);
+	public EOperation getInitilalSuperState__PostMove__ModelElementContainer_ModelElementContainer_int_int_int_int() {
+        return getInitilalSuperState().getEOperations().get(27);
 	}
 
 	/**
@@ -4972,8 +4955,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__PreResize__int_int_int_int_Direction() {
-        return getInitilalSubSuperState().getEOperations().get(28);
+	public EOperation getInitilalSuperState__PreResize__int_int_int_int_Direction() {
+        return getInitilalSuperState().getEOperations().get(28);
 	}
 
 	/**
@@ -4982,8 +4965,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__PostResize__int_int_int_int_Direction() {
-        return getInitilalSubSuperState().getEOperations().get(29);
+	public EOperation getInitilalSuperState__PostResize__int_int_int_int_Direction() {
+        return getInitilalSuperState().getEOperations().get(29);
 	}
 
 	/**
@@ -4992,8 +4975,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetOutgoingImmediateTransitions() {
-        return getInitilalSubSuperState().getEOperations().get(30);
+	public EOperation getInitilalSuperState__GetOutgoingDefferedTransitions() {
+        return getInitilalSuperState().getEOperations().get(30);
 	}
 
 	/**
@@ -5002,8 +4985,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetOutgoingWeakAbortTransitions() {
-        return getInitilalSubSuperState().getEOperations().get(31);
+	public EOperation getInitilalSuperState__GetOutgoingWeakAbortTransitions() {
+        return getInitilalSuperState().getEOperations().get(31);
 	}
 
 	/**
@@ -5012,8 +4995,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetOutgoingTransitions() {
-        return getInitilalSubSuperState().getEOperations().get(32);
+	public EOperation getInitilalSuperState__GetOutgoingStrongAbortTransitions() {
+        return getInitilalSuperState().getEOperations().get(32);
 	}
 
 	/**
@@ -5022,8 +5005,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetOutgoingStrongAbortTransitions() {
-        return getInitilalSubSuperState().getEOperations().get(33);
+	public EOperation getInitilalSuperState__GetOutgoingWeakAbortTerminationTransitions() {
+        return getInitilalSuperState().getEOperations().get(33);
 	}
 
 	/**
@@ -5032,8 +5015,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetOutgoingDefferedTransitions() {
-        return getInitilalSubSuperState().getEOperations().get(34);
+	public EOperation getInitilalSuperState__GetOutgoingImmediateTerminationTransitions() {
+        return getInitilalSuperState().getEOperations().get(34);
 	}
 
 	/**
@@ -5042,8 +5025,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetOutgoingImmediateTerminationTransitions() {
-        return getInitilalSubSuperState().getEOperations().get(35);
+	public EOperation getInitilalSuperState__GetOutgoingTransitions() {
+        return getInitilalSuperState().getEOperations().get(35);
 	}
 
 	/**
@@ -5052,8 +5035,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetOutgoingWeakAbortTerminationTransitions() {
-        return getInitilalSubSuperState().getEOperations().get(36);
+	public EOperation getInitilalSuperState__GetOutgoingImmediateTransitions() {
+        return getInitilalSuperState().getEOperations().get(36);
 	}
 
 	/**
@@ -5062,8 +5045,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetIncomingImmediateTransitions() {
-        return getInitilalSubSuperState().getEOperations().get(37);
+	public EOperation getInitilalSuperState__GetIncomingDefferedTransitions() {
+        return getInitilalSuperState().getEOperations().get(37);
 	}
 
 	/**
@@ -5072,8 +5055,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetIncomingWeakAbortTransitions() {
-        return getInitilalSubSuperState().getEOperations().get(38);
+	public EOperation getInitilalSuperState__GetIncomingWeakAbortTransitions() {
+        return getInitilalSuperState().getEOperations().get(38);
 	}
 
 	/**
@@ -5082,8 +5065,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetIncomingTransitions() {
-        return getInitilalSubSuperState().getEOperations().get(39);
+	public EOperation getInitilalSuperState__GetIncomingStrongAbortTransitions() {
+        return getInitilalSuperState().getEOperations().get(39);
 	}
 
 	/**
@@ -5092,8 +5075,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetIncomingStrongAbortTransitions() {
-        return getInitilalSubSuperState().getEOperations().get(40);
+	public EOperation getInitilalSuperState__GetIncomingWeakAbortTerminationTransitions() {
+        return getInitilalSuperState().getEOperations().get(40);
 	}
 
 	/**
@@ -5102,8 +5085,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetIncomingDefferedTransitions() {
-        return getInitilalSubSuperState().getEOperations().get(41);
+	public EOperation getInitilalSuperState__GetIncomingImmediateTerminationTransitions() {
+        return getInitilalSuperState().getEOperations().get(41);
 	}
 
 	/**
@@ -5112,8 +5095,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetIncomingImmediateTerminationTransitions() {
-        return getInitilalSubSuperState().getEOperations().get(42);
+	public EOperation getInitilalSuperState__GetIncomingTransitions() {
+        return getInitilalSuperState().getEOperations().get(42);
 	}
 
 	/**
@@ -5122,8 +5105,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetIncomingWeakAbortTerminationTransitions() {
-        return getInitilalSubSuperState().getEOperations().get(43);
+	public EOperation getInitilalSuperState__GetIncomingImmediateTransitions() {
+        return getInitilalSuperState().getEOperations().get(43);
 	}
 
 	/**
@@ -5132,8 +5115,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetRootStatePredecessors() {
-        return getInitilalSubSuperState().getEOperations().get(44);
+	public EOperation getInitilalSuperState__GetRootStatePredecessors() {
+        return getInitilalSuperState().getEOperations().get(44);
 	}
 
 	/**
@@ -5142,8 +5125,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetSubSuperStatePredecessors() {
-        return getInitilalSubSuperState().getEOperations().get(45);
+	public EOperation getInitilalSuperState__GetSuperStatePredecessors() {
+        return getInitilalSuperState().getEOperations().get(45);
 	}
 
 	/**
@@ -5152,8 +5135,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetInitilalSubSuperStatePredecessors() {
-        return getInitilalSubSuperState().getEOperations().get(46);
+	public EOperation getInitilalSuperState__GetInitilalSuperStatePredecessors() {
+        return getInitilalSuperState().getEOperations().get(46);
 	}
 
 	/**
@@ -5162,8 +5145,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetSimpleStatePredecessors() {
-        return getInitilalSubSuperState().getEOperations().get(47);
+	public EOperation getInitilalSuperState__GetSimpleStatePredecessors() {
+        return getInitilalSuperState().getEOperations().get(47);
 	}
 
 	/**
@@ -5172,8 +5155,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetInitialStatePredecessors() {
-        return getInitilalSubSuperState().getEOperations().get(48);
+	public EOperation getInitilalSuperState__GetInitialStatePredecessors() {
+        return getInitilalSuperState().getEOperations().get(48);
 	}
 
 	/**
@@ -5182,8 +5165,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetFinalStatePredecessors() {
-        return getInitilalSubSuperState().getEOperations().get(49);
+	public EOperation getInitilalSuperState__GetFinalStatePredecessors() {
+        return getInitilalSuperState().getEOperations().get(49);
 	}
 
 	/**
@@ -5192,8 +5175,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetConnectorPredecessors() {
-        return getInitilalSubSuperState().getEOperations().get(50);
+	public EOperation getInitilalSuperState__GetConnectorPredecessors() {
+        return getInitilalSuperState().getEOperations().get(50);
 	}
 
 	/**
@@ -5202,8 +5185,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetSubSuperStateSuccessors() {
-        return getInitilalSubSuperState().getEOperations().get(51);
+	public EOperation getInitilalSuperState__GetSuperStateSuccessors() {
+        return getInitilalSuperState().getEOperations().get(51);
 	}
 
 	/**
@@ -5212,8 +5195,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetInitilalSubSuperStateSuccessors() {
-        return getInitilalSubSuperState().getEOperations().get(52);
+	public EOperation getInitilalSuperState__GetInitilalSuperStateSuccessors() {
+        return getInitilalSuperState().getEOperations().get(52);
 	}
 
 	/**
@@ -5222,8 +5205,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetSimpleStateSuccessors() {
-        return getInitilalSubSuperState().getEOperations().get(53);
+	public EOperation getInitilalSuperState__GetSimpleStateSuccessors() {
+        return getInitilalSuperState().getEOperations().get(53);
 	}
 
 	/**
@@ -5232,8 +5215,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetInitialStateSuccessors() {
-        return getInitilalSubSuperState().getEOperations().get(54);
+	public EOperation getInitilalSuperState__GetInitialStateSuccessors() {
+        return getInitilalSuperState().getEOperations().get(54);
 	}
 
 	/**
@@ -5242,8 +5225,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetFinalStateSuccessors() {
-        return getInitilalSubSuperState().getEOperations().get(55);
+	public EOperation getInitilalSuperState__GetFinalStateSuccessors() {
+        return getInitilalSuperState().getEOperations().get(55);
 	}
 
 	/**
@@ -5252,8 +5235,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__GetConnectorSuccessors() {
-        return getInitilalSubSuperState().getEOperations().get(56);
+	public EOperation getInitilalSuperState__GetConnectorSuccessors() {
+        return getInitilalSuperState().getEOperations().get(56);
 	}
 
 	/**
@@ -5262,8 +5245,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewImmediateTransition__InitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(57);
+	public EOperation getInitilalSuperState__CanNewDefferedTransition__InitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(57);
 	}
 
 	/**
@@ -5272,8 +5255,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTransition__InitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(58);
+	public EOperation getInitilalSuperState__NewDefferedTransition__InitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(58);
 	}
 
 	/**
@@ -5282,8 +5265,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTransition__InitilalSubSuperState_String() {
-        return getInitilalSubSuperState().getEOperations().get(59);
+	public EOperation getInitilalSuperState__NewDefferedTransition__InitilalSuperState_String() {
+        return getInitilalSuperState().getEOperations().get(59);
 	}
 
 	/**
@@ -5292,8 +5275,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewImmediateTransition__InitialState() {
-        return getInitilalSubSuperState().getEOperations().get(60);
+	public EOperation getInitilalSuperState__CanNewDefferedTransition__Connector() {
+        return getInitilalSuperState().getEOperations().get(60);
 	}
 
 	/**
@@ -5302,8 +5285,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTransition__InitialState() {
-        return getInitilalSubSuperState().getEOperations().get(61);
+	public EOperation getInitilalSuperState__NewDefferedTransition__Connector() {
+        return getInitilalSuperState().getEOperations().get(61);
 	}
 
 	/**
@@ -5312,8 +5295,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTransition__InitialState_String() {
-        return getInitilalSubSuperState().getEOperations().get(62);
+	public EOperation getInitilalSuperState__NewDefferedTransition__Connector_String() {
+        return getInitilalSuperState().getEOperations().get(62);
 	}
 
 	/**
@@ -5322,8 +5305,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewImmediateTransition__Connector() {
-        return getInitilalSubSuperState().getEOperations().get(63);
+	public EOperation getInitilalSuperState__CanNewDefferedTransition__SuperState() {
+        return getInitilalSuperState().getEOperations().get(63);
 	}
 
 	/**
@@ -5332,8 +5315,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTransition__Connector() {
-        return getInitilalSubSuperState().getEOperations().get(64);
+	public EOperation getInitilalSuperState__NewDefferedTransition__SuperState() {
+        return getInitilalSuperState().getEOperations().get(64);
 	}
 
 	/**
@@ -5342,8 +5325,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTransition__Connector_String() {
-        return getInitilalSubSuperState().getEOperations().get(65);
+	public EOperation getInitilalSuperState__NewDefferedTransition__SuperState_String() {
+        return getInitilalSuperState().getEOperations().get(65);
 	}
 
 	/**
@@ -5352,8 +5335,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewImmediateTransition__SubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(66);
+	public EOperation getInitilalSuperState__CanNewDefferedTransition__SimpleState() {
+        return getInitilalSuperState().getEOperations().get(66);
 	}
 
 	/**
@@ -5362,8 +5345,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTransition__SubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(67);
+	public EOperation getInitilalSuperState__NewDefferedTransition__SimpleState() {
+        return getInitilalSuperState().getEOperations().get(67);
 	}
 
 	/**
@@ -5372,8 +5355,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTransition__SubSuperState_String() {
-        return getInitilalSubSuperState().getEOperations().get(68);
+	public EOperation getInitilalSuperState__NewDefferedTransition__SimpleState_String() {
+        return getInitilalSuperState().getEOperations().get(68);
 	}
 
 	/**
@@ -5382,8 +5365,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewImmediateTransition__SimpleState() {
-        return getInitilalSubSuperState().getEOperations().get(69);
+	public EOperation getInitilalSuperState__CanNewDefferedTransition__FinalState() {
+        return getInitilalSuperState().getEOperations().get(69);
 	}
 
 	/**
@@ -5392,8 +5375,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTransition__SimpleState() {
-        return getInitilalSubSuperState().getEOperations().get(70);
+	public EOperation getInitilalSuperState__NewDefferedTransition__FinalState() {
+        return getInitilalSuperState().getEOperations().get(70);
 	}
 
 	/**
@@ -5402,8 +5385,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTransition__SimpleState_String() {
-        return getInitilalSubSuperState().getEOperations().get(71);
+	public EOperation getInitilalSuperState__NewDefferedTransition__FinalState_String() {
+        return getInitilalSuperState().getEOperations().get(71);
 	}
 
 	/**
@@ -5412,8 +5395,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewImmediateTransition__FinalState() {
-        return getInitilalSubSuperState().getEOperations().get(72);
+	public EOperation getInitilalSuperState__CanNewDefferedTransition__InitialState() {
+        return getInitilalSuperState().getEOperations().get(72);
 	}
 
 	/**
@@ -5422,8 +5405,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTransition__FinalState() {
-        return getInitilalSubSuperState().getEOperations().get(73);
+	public EOperation getInitilalSuperState__NewDefferedTransition__InitialState() {
+        return getInitilalSuperState().getEOperations().get(73);
 	}
 
 	/**
@@ -5432,8 +5415,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTransition__FinalState_String() {
-        return getInitilalSubSuperState().getEOperations().get(74);
+	public EOperation getInitilalSuperState__NewDefferedTransition__InitialState_String() {
+        return getInitilalSuperState().getEOperations().get(74);
 	}
 
 	/**
@@ -5442,8 +5425,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewWeakAbortTransition__InitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(75);
+	public EOperation getInitilalSuperState__CanNewWeakAbortTransition__InitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(75);
 	}
 
 	/**
@@ -5452,8 +5435,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTransition__InitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(76);
+	public EOperation getInitilalSuperState__NewWeakAbortTransition__InitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(76);
 	}
 
 	/**
@@ -5462,8 +5445,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTransition__InitilalSubSuperState_String() {
-        return getInitilalSubSuperState().getEOperations().get(77);
+	public EOperation getInitilalSuperState__NewWeakAbortTransition__InitilalSuperState_String() {
+        return getInitilalSuperState().getEOperations().get(77);
 	}
 
 	/**
@@ -5472,8 +5455,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewWeakAbortTransition__InitialState() {
-        return getInitilalSubSuperState().getEOperations().get(78);
+	public EOperation getInitilalSuperState__CanNewWeakAbortTransition__Connector() {
+        return getInitilalSuperState().getEOperations().get(78);
 	}
 
 	/**
@@ -5482,8 +5465,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTransition__InitialState() {
-        return getInitilalSubSuperState().getEOperations().get(79);
+	public EOperation getInitilalSuperState__NewWeakAbortTransition__Connector() {
+        return getInitilalSuperState().getEOperations().get(79);
 	}
 
 	/**
@@ -5492,8 +5475,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTransition__InitialState_String() {
-        return getInitilalSubSuperState().getEOperations().get(80);
+	public EOperation getInitilalSuperState__NewWeakAbortTransition__Connector_String() {
+        return getInitilalSuperState().getEOperations().get(80);
 	}
 
 	/**
@@ -5502,8 +5485,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewWeakAbortTransition__Connector() {
-        return getInitilalSubSuperState().getEOperations().get(81);
+	public EOperation getInitilalSuperState__CanNewWeakAbortTransition__SuperState() {
+        return getInitilalSuperState().getEOperations().get(81);
 	}
 
 	/**
@@ -5512,8 +5495,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTransition__Connector() {
-        return getInitilalSubSuperState().getEOperations().get(82);
+	public EOperation getInitilalSuperState__NewWeakAbortTransition__SuperState() {
+        return getInitilalSuperState().getEOperations().get(82);
 	}
 
 	/**
@@ -5522,8 +5505,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTransition__Connector_String() {
-        return getInitilalSubSuperState().getEOperations().get(83);
+	public EOperation getInitilalSuperState__NewWeakAbortTransition__SuperState_String() {
+        return getInitilalSuperState().getEOperations().get(83);
 	}
 
 	/**
@@ -5532,8 +5515,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewWeakAbortTransition__SubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(84);
+	public EOperation getInitilalSuperState__CanNewWeakAbortTransition__SimpleState() {
+        return getInitilalSuperState().getEOperations().get(84);
 	}
 
 	/**
@@ -5542,8 +5525,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTransition__SubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(85);
+	public EOperation getInitilalSuperState__NewWeakAbortTransition__SimpleState() {
+        return getInitilalSuperState().getEOperations().get(85);
 	}
 
 	/**
@@ -5552,8 +5535,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTransition__SubSuperState_String() {
-        return getInitilalSubSuperState().getEOperations().get(86);
+	public EOperation getInitilalSuperState__NewWeakAbortTransition__SimpleState_String() {
+        return getInitilalSuperState().getEOperations().get(86);
 	}
 
 	/**
@@ -5562,8 +5545,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewWeakAbortTransition__SimpleState() {
-        return getInitilalSubSuperState().getEOperations().get(87);
+	public EOperation getInitilalSuperState__CanNewWeakAbortTransition__FinalState() {
+        return getInitilalSuperState().getEOperations().get(87);
 	}
 
 	/**
@@ -5572,8 +5555,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTransition__SimpleState() {
-        return getInitilalSubSuperState().getEOperations().get(88);
+	public EOperation getInitilalSuperState__NewWeakAbortTransition__FinalState() {
+        return getInitilalSuperState().getEOperations().get(88);
 	}
 
 	/**
@@ -5582,8 +5565,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTransition__SimpleState_String() {
-        return getInitilalSubSuperState().getEOperations().get(89);
+	public EOperation getInitilalSuperState__NewWeakAbortTransition__FinalState_String() {
+        return getInitilalSuperState().getEOperations().get(89);
 	}
 
 	/**
@@ -5592,8 +5575,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewWeakAbortTransition__FinalState() {
-        return getInitilalSubSuperState().getEOperations().get(90);
+	public EOperation getInitilalSuperState__CanNewWeakAbortTransition__InitialState() {
+        return getInitilalSuperState().getEOperations().get(90);
 	}
 
 	/**
@@ -5602,8 +5585,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTransition__FinalState() {
-        return getInitilalSubSuperState().getEOperations().get(91);
+	public EOperation getInitilalSuperState__NewWeakAbortTransition__InitialState() {
+        return getInitilalSuperState().getEOperations().get(91);
 	}
 
 	/**
@@ -5612,8 +5595,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTransition__FinalState_String() {
-        return getInitilalSubSuperState().getEOperations().get(92);
+	public EOperation getInitilalSuperState__NewWeakAbortTransition__InitialState_String() {
+        return getInitilalSuperState().getEOperations().get(92);
 	}
 
 	/**
@@ -5622,8 +5605,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewImmediateTerminationTransition__InitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(93);
+	public EOperation getInitilalSuperState__CanNewStrongAbortTransition__InitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(93);
 	}
 
 	/**
@@ -5632,8 +5615,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTerminationTransition__InitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(94);
+	public EOperation getInitilalSuperState__NewStrongAbortTransition__InitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(94);
 	}
 
 	/**
@@ -5642,8 +5625,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTerminationTransition__InitilalSubSuperState_String() {
-        return getInitilalSubSuperState().getEOperations().get(95);
+	public EOperation getInitilalSuperState__NewStrongAbortTransition__InitilalSuperState_String() {
+        return getInitilalSuperState().getEOperations().get(95);
 	}
 
 	/**
@@ -5652,8 +5635,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewImmediateTerminationTransition__InitialState() {
-        return getInitilalSubSuperState().getEOperations().get(96);
+	public EOperation getInitilalSuperState__CanNewStrongAbortTransition__Connector() {
+        return getInitilalSuperState().getEOperations().get(96);
 	}
 
 	/**
@@ -5662,8 +5645,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTerminationTransition__InitialState() {
-        return getInitilalSubSuperState().getEOperations().get(97);
+	public EOperation getInitilalSuperState__NewStrongAbortTransition__Connector() {
+        return getInitilalSuperState().getEOperations().get(97);
 	}
 
 	/**
@@ -5672,8 +5655,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTerminationTransition__InitialState_String() {
-        return getInitilalSubSuperState().getEOperations().get(98);
+	public EOperation getInitilalSuperState__NewStrongAbortTransition__Connector_String() {
+        return getInitilalSuperState().getEOperations().get(98);
 	}
 
 	/**
@@ -5682,8 +5665,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewImmediateTerminationTransition__Connector() {
-        return getInitilalSubSuperState().getEOperations().get(99);
+	public EOperation getInitilalSuperState__CanNewStrongAbortTransition__SuperState() {
+        return getInitilalSuperState().getEOperations().get(99);
 	}
 
 	/**
@@ -5692,8 +5675,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTerminationTransition__Connector() {
-        return getInitilalSubSuperState().getEOperations().get(100);
+	public EOperation getInitilalSuperState__NewStrongAbortTransition__SuperState() {
+        return getInitilalSuperState().getEOperations().get(100);
 	}
 
 	/**
@@ -5702,8 +5685,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTerminationTransition__Connector_String() {
-        return getInitilalSubSuperState().getEOperations().get(101);
+	public EOperation getInitilalSuperState__NewStrongAbortTransition__SuperState_String() {
+        return getInitilalSuperState().getEOperations().get(101);
 	}
 
 	/**
@@ -5712,8 +5695,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewImmediateTerminationTransition__SubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(102);
+	public EOperation getInitilalSuperState__CanNewStrongAbortTransition__SimpleState() {
+        return getInitilalSuperState().getEOperations().get(102);
 	}
 
 	/**
@@ -5722,8 +5705,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTerminationTransition__SubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(103);
+	public EOperation getInitilalSuperState__NewStrongAbortTransition__SimpleState() {
+        return getInitilalSuperState().getEOperations().get(103);
 	}
 
 	/**
@@ -5732,8 +5715,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTerminationTransition__SubSuperState_String() {
-        return getInitilalSubSuperState().getEOperations().get(104);
+	public EOperation getInitilalSuperState__NewStrongAbortTransition__SimpleState_String() {
+        return getInitilalSuperState().getEOperations().get(104);
 	}
 
 	/**
@@ -5742,8 +5725,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewImmediateTerminationTransition__SimpleState() {
-        return getInitilalSubSuperState().getEOperations().get(105);
+	public EOperation getInitilalSuperState__CanNewStrongAbortTransition__FinalState() {
+        return getInitilalSuperState().getEOperations().get(105);
 	}
 
 	/**
@@ -5752,8 +5735,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTerminationTransition__SimpleState() {
-        return getInitilalSubSuperState().getEOperations().get(106);
+	public EOperation getInitilalSuperState__NewStrongAbortTransition__FinalState() {
+        return getInitilalSuperState().getEOperations().get(106);
 	}
 
 	/**
@@ -5762,8 +5745,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTerminationTransition__SimpleState_String() {
-        return getInitilalSubSuperState().getEOperations().get(107);
+	public EOperation getInitilalSuperState__NewStrongAbortTransition__FinalState_String() {
+        return getInitilalSuperState().getEOperations().get(107);
 	}
 
 	/**
@@ -5772,8 +5755,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewImmediateTerminationTransition__FinalState() {
-        return getInitilalSubSuperState().getEOperations().get(108);
+	public EOperation getInitilalSuperState__CanNewStrongAbortTransition__InitialState() {
+        return getInitilalSuperState().getEOperations().get(108);
 	}
 
 	/**
@@ -5782,8 +5765,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTerminationTransition__FinalState() {
-        return getInitilalSubSuperState().getEOperations().get(109);
+	public EOperation getInitilalSuperState__NewStrongAbortTransition__InitialState() {
+        return getInitilalSuperState().getEOperations().get(109);
 	}
 
 	/**
@@ -5792,8 +5775,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewImmediateTerminationTransition__FinalState_String() {
-        return getInitilalSubSuperState().getEOperations().get(110);
+	public EOperation getInitilalSuperState__NewStrongAbortTransition__InitialState_String() {
+        return getInitilalSuperState().getEOperations().get(110);
 	}
 
 	/**
@@ -5802,8 +5785,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewStrongAbortTransition__InitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(111);
+	public EOperation getInitilalSuperState__CanNewWeakAbortTerminationTransition__InitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(111);
 	}
 
 	/**
@@ -5812,8 +5795,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewStrongAbortTransition__InitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(112);
+	public EOperation getInitilalSuperState__NewWeakAbortTerminationTransition__InitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(112);
 	}
 
 	/**
@@ -5822,8 +5805,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewStrongAbortTransition__InitilalSubSuperState_String() {
-        return getInitilalSubSuperState().getEOperations().get(113);
+	public EOperation getInitilalSuperState__NewWeakAbortTerminationTransition__InitilalSuperState_String() {
+        return getInitilalSuperState().getEOperations().get(113);
 	}
 
 	/**
@@ -5832,8 +5815,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewStrongAbortTransition__InitialState() {
-        return getInitilalSubSuperState().getEOperations().get(114);
+	public EOperation getInitilalSuperState__CanNewWeakAbortTerminationTransition__Connector() {
+        return getInitilalSuperState().getEOperations().get(114);
 	}
 
 	/**
@@ -5842,8 +5825,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewStrongAbortTransition__InitialState() {
-        return getInitilalSubSuperState().getEOperations().get(115);
+	public EOperation getInitilalSuperState__NewWeakAbortTerminationTransition__Connector() {
+        return getInitilalSuperState().getEOperations().get(115);
 	}
 
 	/**
@@ -5852,8 +5835,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewStrongAbortTransition__InitialState_String() {
-        return getInitilalSubSuperState().getEOperations().get(116);
+	public EOperation getInitilalSuperState__NewWeakAbortTerminationTransition__Connector_String() {
+        return getInitilalSuperState().getEOperations().get(116);
 	}
 
 	/**
@@ -5862,8 +5845,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewStrongAbortTransition__Connector() {
-        return getInitilalSubSuperState().getEOperations().get(117);
+	public EOperation getInitilalSuperState__CanNewWeakAbortTerminationTransition__SuperState() {
+        return getInitilalSuperState().getEOperations().get(117);
 	}
 
 	/**
@@ -5872,8 +5855,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewStrongAbortTransition__Connector() {
-        return getInitilalSubSuperState().getEOperations().get(118);
+	public EOperation getInitilalSuperState__NewWeakAbortTerminationTransition__SuperState() {
+        return getInitilalSuperState().getEOperations().get(118);
 	}
 
 	/**
@@ -5882,8 +5865,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewStrongAbortTransition__Connector_String() {
-        return getInitilalSubSuperState().getEOperations().get(119);
+	public EOperation getInitilalSuperState__NewWeakAbortTerminationTransition__SuperState_String() {
+        return getInitilalSuperState().getEOperations().get(119);
 	}
 
 	/**
@@ -5892,8 +5875,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewStrongAbortTransition__SubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(120);
+	public EOperation getInitilalSuperState__CanNewWeakAbortTerminationTransition__SimpleState() {
+        return getInitilalSuperState().getEOperations().get(120);
 	}
 
 	/**
@@ -5902,8 +5885,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewStrongAbortTransition__SubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(121);
+	public EOperation getInitilalSuperState__NewWeakAbortTerminationTransition__SimpleState() {
+        return getInitilalSuperState().getEOperations().get(121);
 	}
 
 	/**
@@ -5912,8 +5895,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewStrongAbortTransition__SubSuperState_String() {
-        return getInitilalSubSuperState().getEOperations().get(122);
+	public EOperation getInitilalSuperState__NewWeakAbortTerminationTransition__SimpleState_String() {
+        return getInitilalSuperState().getEOperations().get(122);
 	}
 
 	/**
@@ -5922,8 +5905,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewStrongAbortTransition__SimpleState() {
-        return getInitilalSubSuperState().getEOperations().get(123);
+	public EOperation getInitilalSuperState__CanNewWeakAbortTerminationTransition__FinalState() {
+        return getInitilalSuperState().getEOperations().get(123);
 	}
 
 	/**
@@ -5932,8 +5915,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewStrongAbortTransition__SimpleState() {
-        return getInitilalSubSuperState().getEOperations().get(124);
+	public EOperation getInitilalSuperState__NewWeakAbortTerminationTransition__FinalState() {
+        return getInitilalSuperState().getEOperations().get(124);
 	}
 
 	/**
@@ -5942,8 +5925,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewStrongAbortTransition__SimpleState_String() {
-        return getInitilalSubSuperState().getEOperations().get(125);
+	public EOperation getInitilalSuperState__NewWeakAbortTerminationTransition__FinalState_String() {
+        return getInitilalSuperState().getEOperations().get(125);
 	}
 
 	/**
@@ -5952,8 +5935,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewStrongAbortTransition__FinalState() {
-        return getInitilalSubSuperState().getEOperations().get(126);
+	public EOperation getInitilalSuperState__CanNewWeakAbortTerminationTransition__InitialState() {
+        return getInitilalSuperState().getEOperations().get(126);
 	}
 
 	/**
@@ -5962,8 +5945,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewStrongAbortTransition__FinalState() {
-        return getInitilalSubSuperState().getEOperations().get(127);
+	public EOperation getInitilalSuperState__NewWeakAbortTerminationTransition__InitialState() {
+        return getInitilalSuperState().getEOperations().get(127);
 	}
 
 	/**
@@ -5972,8 +5955,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewStrongAbortTransition__FinalState_String() {
-        return getInitilalSubSuperState().getEOperations().get(128);
+	public EOperation getInitilalSuperState__NewWeakAbortTerminationTransition__InitialState_String() {
+        return getInitilalSuperState().getEOperations().get(128);
 	}
 
 	/**
@@ -5982,8 +5965,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewWeakAbortTerminationTransition__InitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(129);
+	public EOperation getInitilalSuperState__CanNewImmediateTerminationTransition__InitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(129);
 	}
 
 	/**
@@ -5992,8 +5975,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTerminationTransition__InitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(130);
+	public EOperation getInitilalSuperState__NewImmediateTerminationTransition__InitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(130);
 	}
 
 	/**
@@ -6002,8 +5985,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTerminationTransition__InitilalSubSuperState_String() {
-        return getInitilalSubSuperState().getEOperations().get(131);
+	public EOperation getInitilalSuperState__NewImmediateTerminationTransition__InitilalSuperState_String() {
+        return getInitilalSuperState().getEOperations().get(131);
 	}
 
 	/**
@@ -6012,8 +5995,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewWeakAbortTerminationTransition__InitialState() {
-        return getInitilalSubSuperState().getEOperations().get(132);
+	public EOperation getInitilalSuperState__CanNewImmediateTerminationTransition__Connector() {
+        return getInitilalSuperState().getEOperations().get(132);
 	}
 
 	/**
@@ -6022,8 +6005,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTerminationTransition__InitialState() {
-        return getInitilalSubSuperState().getEOperations().get(133);
+	public EOperation getInitilalSuperState__NewImmediateTerminationTransition__Connector() {
+        return getInitilalSuperState().getEOperations().get(133);
 	}
 
 	/**
@@ -6032,8 +6015,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTerminationTransition__InitialState_String() {
-        return getInitilalSubSuperState().getEOperations().get(134);
+	public EOperation getInitilalSuperState__NewImmediateTerminationTransition__Connector_String() {
+        return getInitilalSuperState().getEOperations().get(134);
 	}
 
 	/**
@@ -6042,8 +6025,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewWeakAbortTerminationTransition__Connector() {
-        return getInitilalSubSuperState().getEOperations().get(135);
+	public EOperation getInitilalSuperState__CanNewImmediateTerminationTransition__SuperState() {
+        return getInitilalSuperState().getEOperations().get(135);
 	}
 
 	/**
@@ -6052,8 +6035,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTerminationTransition__Connector() {
-        return getInitilalSubSuperState().getEOperations().get(136);
+	public EOperation getInitilalSuperState__NewImmediateTerminationTransition__SuperState() {
+        return getInitilalSuperState().getEOperations().get(136);
 	}
 
 	/**
@@ -6062,8 +6045,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTerminationTransition__Connector_String() {
-        return getInitilalSubSuperState().getEOperations().get(137);
+	public EOperation getInitilalSuperState__NewImmediateTerminationTransition__SuperState_String() {
+        return getInitilalSuperState().getEOperations().get(137);
 	}
 
 	/**
@@ -6072,8 +6055,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewWeakAbortTerminationTransition__SubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(138);
+	public EOperation getInitilalSuperState__CanNewImmediateTerminationTransition__SimpleState() {
+        return getInitilalSuperState().getEOperations().get(138);
 	}
 
 	/**
@@ -6082,8 +6065,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTerminationTransition__SubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(139);
+	public EOperation getInitilalSuperState__NewImmediateTerminationTransition__SimpleState() {
+        return getInitilalSuperState().getEOperations().get(139);
 	}
 
 	/**
@@ -6092,8 +6075,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTerminationTransition__SubSuperState_String() {
-        return getInitilalSubSuperState().getEOperations().get(140);
+	public EOperation getInitilalSuperState__NewImmediateTerminationTransition__SimpleState_String() {
+        return getInitilalSuperState().getEOperations().get(140);
 	}
 
 	/**
@@ -6102,8 +6085,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewWeakAbortTerminationTransition__SimpleState() {
-        return getInitilalSubSuperState().getEOperations().get(141);
+	public EOperation getInitilalSuperState__CanNewImmediateTerminationTransition__FinalState() {
+        return getInitilalSuperState().getEOperations().get(141);
 	}
 
 	/**
@@ -6112,8 +6095,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTerminationTransition__SimpleState() {
-        return getInitilalSubSuperState().getEOperations().get(142);
+	public EOperation getInitilalSuperState__NewImmediateTerminationTransition__FinalState() {
+        return getInitilalSuperState().getEOperations().get(142);
 	}
 
 	/**
@@ -6122,8 +6105,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTerminationTransition__SimpleState_String() {
-        return getInitilalSubSuperState().getEOperations().get(143);
+	public EOperation getInitilalSuperState__NewImmediateTerminationTransition__FinalState_String() {
+        return getInitilalSuperState().getEOperations().get(143);
 	}
 
 	/**
@@ -6132,8 +6115,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewWeakAbortTerminationTransition__FinalState() {
-        return getInitilalSubSuperState().getEOperations().get(144);
+	public EOperation getInitilalSuperState__CanNewImmediateTerminationTransition__InitialState() {
+        return getInitilalSuperState().getEOperations().get(144);
 	}
 
 	/**
@@ -6142,8 +6125,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTerminationTransition__FinalState() {
-        return getInitilalSubSuperState().getEOperations().get(145);
+	public EOperation getInitilalSuperState__NewImmediateTerminationTransition__InitialState() {
+        return getInitilalSuperState().getEOperations().get(145);
 	}
 
 	/**
@@ -6152,8 +6135,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewWeakAbortTerminationTransition__FinalState_String() {
-        return getInitilalSubSuperState().getEOperations().get(146);
+	public EOperation getInitilalSuperState__NewImmediateTerminationTransition__InitialState_String() {
+        return getInitilalSuperState().getEOperations().get(146);
 	}
 
 	/**
@@ -6162,8 +6145,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewTransition__InitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(147);
+	public EOperation getInitilalSuperState__CanNewImmediateTransition__InitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(147);
 	}
 
 	/**
@@ -6172,8 +6155,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewTransition__InitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(148);
+	public EOperation getInitilalSuperState__NewImmediateTransition__InitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(148);
 	}
 
 	/**
@@ -6182,8 +6165,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewTransition__InitilalSubSuperState_String() {
-        return getInitilalSubSuperState().getEOperations().get(149);
+	public EOperation getInitilalSuperState__NewImmediateTransition__InitilalSuperState_String() {
+        return getInitilalSuperState().getEOperations().get(149);
 	}
 
 	/**
@@ -6192,8 +6175,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewTransition__InitialState() {
-        return getInitilalSubSuperState().getEOperations().get(150);
+	public EOperation getInitilalSuperState__CanNewImmediateTransition__Connector() {
+        return getInitilalSuperState().getEOperations().get(150);
 	}
 
 	/**
@@ -6202,8 +6185,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewTransition__InitialState() {
-        return getInitilalSubSuperState().getEOperations().get(151);
+	public EOperation getInitilalSuperState__NewImmediateTransition__Connector() {
+        return getInitilalSuperState().getEOperations().get(151);
 	}
 
 	/**
@@ -6212,8 +6195,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewTransition__InitialState_String() {
-        return getInitilalSubSuperState().getEOperations().get(152);
+	public EOperation getInitilalSuperState__NewImmediateTransition__Connector_String() {
+        return getInitilalSuperState().getEOperations().get(152);
 	}
 
 	/**
@@ -6222,8 +6205,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewTransition__Connector() {
-        return getInitilalSubSuperState().getEOperations().get(153);
+	public EOperation getInitilalSuperState__CanNewImmediateTransition__SuperState() {
+        return getInitilalSuperState().getEOperations().get(153);
 	}
 
 	/**
@@ -6232,8 +6215,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewTransition__Connector() {
-        return getInitilalSubSuperState().getEOperations().get(154);
+	public EOperation getInitilalSuperState__NewImmediateTransition__SuperState() {
+        return getInitilalSuperState().getEOperations().get(154);
 	}
 
 	/**
@@ -6242,8 +6225,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewTransition__Connector_String() {
-        return getInitilalSubSuperState().getEOperations().get(155);
+	public EOperation getInitilalSuperState__NewImmediateTransition__SuperState_String() {
+        return getInitilalSuperState().getEOperations().get(155);
 	}
 
 	/**
@@ -6252,8 +6235,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewTransition__SubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(156);
+	public EOperation getInitilalSuperState__CanNewImmediateTransition__SimpleState() {
+        return getInitilalSuperState().getEOperations().get(156);
 	}
 
 	/**
@@ -6262,8 +6245,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewTransition__SubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(157);
+	public EOperation getInitilalSuperState__NewImmediateTransition__SimpleState() {
+        return getInitilalSuperState().getEOperations().get(157);
 	}
 
 	/**
@@ -6272,8 +6255,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewTransition__SubSuperState_String() {
-        return getInitilalSubSuperState().getEOperations().get(158);
+	public EOperation getInitilalSuperState__NewImmediateTransition__SimpleState_String() {
+        return getInitilalSuperState().getEOperations().get(158);
 	}
 
 	/**
@@ -6282,8 +6265,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewTransition__SimpleState() {
-        return getInitilalSubSuperState().getEOperations().get(159);
+	public EOperation getInitilalSuperState__CanNewImmediateTransition__FinalState() {
+        return getInitilalSuperState().getEOperations().get(159);
 	}
 
 	/**
@@ -6292,8 +6275,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewTransition__SimpleState() {
-        return getInitilalSubSuperState().getEOperations().get(160);
+	public EOperation getInitilalSuperState__NewImmediateTransition__FinalState() {
+        return getInitilalSuperState().getEOperations().get(160);
 	}
 
 	/**
@@ -6302,8 +6285,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewTransition__SimpleState_String() {
-        return getInitilalSubSuperState().getEOperations().get(161);
+	public EOperation getInitilalSuperState__NewImmediateTransition__FinalState_String() {
+        return getInitilalSuperState().getEOperations().get(161);
 	}
 
 	/**
@@ -6312,8 +6295,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewTransition__FinalState() {
-        return getInitilalSubSuperState().getEOperations().get(162);
+	public EOperation getInitilalSuperState__CanNewImmediateTransition__InitialState() {
+        return getInitilalSuperState().getEOperations().get(162);
 	}
 
 	/**
@@ -6322,8 +6305,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewTransition__FinalState() {
-        return getInitilalSubSuperState().getEOperations().get(163);
+	public EOperation getInitilalSuperState__NewImmediateTransition__InitialState() {
+        return getInitilalSuperState().getEOperations().get(163);
 	}
 
 	/**
@@ -6332,8 +6315,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewTransition__FinalState_String() {
-        return getInitilalSubSuperState().getEOperations().get(164);
+	public EOperation getInitilalSuperState__NewImmediateTransition__InitialState_String() {
+        return getInitilalSuperState().getEOperations().get(164);
 	}
 
 	/**
@@ -6342,8 +6325,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewDefferedTransition__InitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(165);
+	public EOperation getInitilalSuperState__CanNewTransition__InitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(165);
 	}
 
 	/**
@@ -6352,8 +6335,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewDefferedTransition__InitilalSubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(166);
+	public EOperation getInitilalSuperState__NewTransition__InitilalSuperState() {
+        return getInitilalSuperState().getEOperations().get(166);
 	}
 
 	/**
@@ -6362,8 +6345,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewDefferedTransition__InitilalSubSuperState_String() {
-        return getInitilalSubSuperState().getEOperations().get(167);
+	public EOperation getInitilalSuperState__NewTransition__InitilalSuperState_String() {
+        return getInitilalSuperState().getEOperations().get(167);
 	}
 
 	/**
@@ -6372,8 +6355,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewDefferedTransition__InitialState() {
-        return getInitilalSubSuperState().getEOperations().get(168);
+	public EOperation getInitilalSuperState__CanNewTransition__Connector() {
+        return getInitilalSuperState().getEOperations().get(168);
 	}
 
 	/**
@@ -6382,8 +6365,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewDefferedTransition__InitialState() {
-        return getInitilalSubSuperState().getEOperations().get(169);
+	public EOperation getInitilalSuperState__NewTransition__Connector() {
+        return getInitilalSuperState().getEOperations().get(169);
 	}
 
 	/**
@@ -6392,8 +6375,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewDefferedTransition__InitialState_String() {
-        return getInitilalSubSuperState().getEOperations().get(170);
+	public EOperation getInitilalSuperState__NewTransition__Connector_String() {
+        return getInitilalSuperState().getEOperations().get(170);
 	}
 
 	/**
@@ -6402,8 +6385,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewDefferedTransition__Connector() {
-        return getInitilalSubSuperState().getEOperations().get(171);
+	public EOperation getInitilalSuperState__CanNewTransition__SuperState() {
+        return getInitilalSuperState().getEOperations().get(171);
 	}
 
 	/**
@@ -6412,8 +6395,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewDefferedTransition__Connector() {
-        return getInitilalSubSuperState().getEOperations().get(172);
+	public EOperation getInitilalSuperState__NewTransition__SuperState() {
+        return getInitilalSuperState().getEOperations().get(172);
 	}
 
 	/**
@@ -6422,8 +6405,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewDefferedTransition__Connector_String() {
-        return getInitilalSubSuperState().getEOperations().get(173);
+	public EOperation getInitilalSuperState__NewTransition__SuperState_String() {
+        return getInitilalSuperState().getEOperations().get(173);
 	}
 
 	/**
@@ -6432,8 +6415,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewDefferedTransition__SubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(174);
+	public EOperation getInitilalSuperState__CanNewTransition__SimpleState() {
+        return getInitilalSuperState().getEOperations().get(174);
 	}
 
 	/**
@@ -6442,8 +6425,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewDefferedTransition__SubSuperState() {
-        return getInitilalSubSuperState().getEOperations().get(175);
+	public EOperation getInitilalSuperState__NewTransition__SimpleState() {
+        return getInitilalSuperState().getEOperations().get(175);
 	}
 
 	/**
@@ -6452,8 +6435,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewDefferedTransition__SubSuperState_String() {
-        return getInitilalSubSuperState().getEOperations().get(176);
+	public EOperation getInitilalSuperState__NewTransition__SimpleState_String() {
+        return getInitilalSuperState().getEOperations().get(176);
 	}
 
 	/**
@@ -6462,8 +6445,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewDefferedTransition__SimpleState() {
-        return getInitilalSubSuperState().getEOperations().get(177);
+	public EOperation getInitilalSuperState__CanNewTransition__FinalState() {
+        return getInitilalSuperState().getEOperations().get(177);
 	}
 
 	/**
@@ -6472,8 +6455,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewDefferedTransition__SimpleState() {
-        return getInitilalSubSuperState().getEOperations().get(178);
+	public EOperation getInitilalSuperState__NewTransition__FinalState() {
+        return getInitilalSuperState().getEOperations().get(178);
 	}
 
 	/**
@@ -6482,8 +6465,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewDefferedTransition__SimpleState_String() {
-        return getInitilalSubSuperState().getEOperations().get(179);
+	public EOperation getInitilalSuperState__NewTransition__FinalState_String() {
+        return getInitilalSuperState().getEOperations().get(179);
 	}
 
 	/**
@@ -6492,8 +6475,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanNewDefferedTransition__FinalState() {
-        return getInitilalSubSuperState().getEOperations().get(180);
+	public EOperation getInitilalSuperState__CanNewTransition__InitialState() {
+        return getInitilalSuperState().getEOperations().get(180);
 	}
 
 	/**
@@ -6502,8 +6485,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewDefferedTransition__FinalState() {
-        return getInitilalSubSuperState().getEOperations().get(181);
+	public EOperation getInitilalSuperState__NewTransition__InitialState() {
+        return getInitilalSuperState().getEOperations().get(181);
 	}
 
 	/**
@@ -6512,8 +6495,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__NewDefferedTransition__FinalState_String() {
-        return getInitilalSubSuperState().getEOperations().get(182);
+	public EOperation getInitilalSuperState__NewTransition__InitialState_String() {
+        return getInitilalSuperState().getEOperations().get(182);
 	}
 
 	/**
@@ -6522,8 +6505,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanMoveTo__SuperStateRegion_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(183);
+	public EOperation getInitilalSuperState__CanMoveTo__Region_int_int() {
+        return getInitilalSuperState().getEOperations().get(183);
 	}
 
 	/**
@@ -6532,8 +6515,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__MoveTo__SuperStateRegion_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(184);
+	public EOperation getInitilalSuperState__MoveTo__Region_int_int() {
+        return getInitilalSuperState().getEOperations().get(184);
 	}
 
 	/**
@@ -6542,8 +6525,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__S_moveTo__SuperStateRegion_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(185);
+	public EOperation getInitilalSuperState__S_moveTo__Region_int_int() {
+        return getInitilalSuperState().getEOperations().get(185);
 	}
 
 	/**
@@ -6552,8 +6535,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__CanMoveTo__SubSuperStateRegion_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(186);
+	public EOperation getInitilalSuperState__GetContainer() {
+        return getInitilalSuperState().getEOperations().get(186);
 	}
 
 	/**
@@ -6562,8 +6545,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__MoveTo__SubSuperStateRegion_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(187);
+	public EOperation getInitilalSuperState__GetInitilalSuperStateView() {
+        return getInitilalSuperState().getEOperations().get(187);
 	}
 
 	/**
@@ -6572,31 +6555,11 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitilalSubSuperState__S_moveTo__SubSuperStateRegion_int_int() {
-        return getInitilalSubSuperState().getEOperations().get(188);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInitilalSubSuperState__GetInitilalSubSuperStateView() {
-        return getInitilalSubSuperState().getEOperations().get(189);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getSubSuperStateRegion() {
-		if (subSuperStateRegionEClass == null) {
-			subSuperStateRegionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(4);
+	public EClass getRootStateDeclarationNode() {
+		if (rootStateDeclarationNodeEClass == null) {
+			rootStateDeclarationNodeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(4);
 		}
-		return subSuperStateRegionEClass;
+		return rootStateDeclarationNodeEClass;
 	}
 
 	/**
@@ -6605,8 +6568,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__GetRegionID() {
-        return getSubSuperStateRegion().getEOperations().get(0);
+	public EOperation getRootStateDeclarationNode__GetDeclarationType() {
+        return getRootStateDeclarationNode().getEOperations().get(0);
 	}
 
 	/**
@@ -6615,8 +6578,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__SetRegionID__String() {
-        return getSubSuperStateRegion().getEOperations().get(1);
+	public EOperation getRootStateDeclarationNode__SetDeclarationType__String() {
+        return getRootStateDeclarationNode().getEOperations().get(1);
 	}
 
 	/**
@@ -6625,8 +6588,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__GetInternalSubSuperStateRegion() {
-        return getSubSuperStateRegion().getEOperations().get(2);
+	public EOperation getRootStateDeclarationNode__GetInputOutput() {
+        return getRootStateDeclarationNode().getEOperations().get(2);
 	}
 
 	/**
@@ -6635,8 +6598,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__IsExactlySubSuperStateRegion() {
-        return getSubSuperStateRegion().getEOperations().get(3);
+	public EOperation getRootStateDeclarationNode__SetInputOutput__String() {
+        return getRootStateDeclarationNode().getEOperations().get(3);
 	}
 
 	/**
@@ -6645,8 +6608,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__PreDelete() {
-        return getSubSuperStateRegion().getEOperations().get(4);
+	public EOperation getRootStateDeclarationNode__GetName() {
+        return getRootStateDeclarationNode().getEOperations().get(4);
 	}
 
 	/**
@@ -6655,8 +6618,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__GetPostDeleteFunction() {
-        return getSubSuperStateRegion().getEOperations().get(5);
+	public EOperation getRootStateDeclarationNode__SetName__String() {
+        return getRootStateDeclarationNode().getEOperations().get(5);
 	}
 
 	/**
@@ -6665,8 +6628,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__GetPostDeleteEvent() {
-        return getSubSuperStateRegion().getEOperations().get(6);
+	public EOperation getRootStateDeclarationNode__GetInternalRootStateDeclarationNode() {
+        return getRootStateDeclarationNode().getEOperations().get(6);
 	}
 
 	/**
@@ -6675,8 +6638,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__PreSave() {
-        return getSubSuperStateRegion().getEOperations().get(7);
+	public EOperation getRootStateDeclarationNode__IsExactlyRootStateDeclarationNode() {
+        return getRootStateDeclarationNode().getEOperations().get(7);
 	}
 
 	/**
@@ -6685,8 +6648,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__PostSave() {
-        return getSubSuperStateRegion().getEOperations().get(8);
+	public EOperation getRootStateDeclarationNode__PreDelete() {
+        return getRootStateDeclarationNode().getEOperations().get(8);
 	}
 
 	/**
@@ -6695,8 +6658,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__GetRootElement() {
-        return getSubSuperStateRegion().getEOperations().get(9);
+	public EOperation getRootStateDeclarationNode__GetPostDeleteFunction() {
+        return getRootStateDeclarationNode().getEOperations().get(9);
 	}
 
 	/**
@@ -6705,8 +6668,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__GetNodes() {
-        return getSubSuperStateRegion().getEOperations().get(10);
+	public EOperation getRootStateDeclarationNode__GetPostDeleteEvent() {
+        return getRootStateDeclarationNode().getEOperations().get(10);
 	}
 
 	/**
@@ -6715,8 +6678,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__GetInitilalSubSuperStates() {
-        return getSubSuperStateRegion().getEOperations().get(11);
+	public EOperation getRootStateDeclarationNode__PreSave() {
+        return getRootStateDeclarationNode().getEOperations().get(11);
 	}
 
 	/**
@@ -6725,8 +6688,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__CanNewInitilalSubSuperState() {
-        return getSubSuperStateRegion().getEOperations().get(12);
+	public EOperation getRootStateDeclarationNode__PostSave() {
+        return getRootStateDeclarationNode().getEOperations().get(12);
 	}
 
 	/**
@@ -6735,8 +6698,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__NewInitilalSubSuperState__int_int() {
-        return getSubSuperStateRegion().getEOperations().get(13);
+	public EOperation getRootStateDeclarationNode__GetRootElement() {
+        return getRootStateDeclarationNode().getEOperations().get(13);
 	}
 
 	/**
@@ -6745,8 +6708,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__NewInitilalSubSuperState__String_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(14);
+	public EOperation getRootStateDeclarationNode__S_moveTo__ModelElementContainer_int_int() {
+        return getRootStateDeclarationNode().getEOperations().get(14);
 	}
 
 	/**
@@ -6755,8 +6718,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__NewInitilalSubSuperState__int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(15);
+	public EOperation getRootStateDeclarationNode__PreMove__ModelElementContainer_int_int() {
+        return getRootStateDeclarationNode().getEOperations().get(15);
 	}
 
 	/**
@@ -6765,8 +6728,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__NewInitilalSubSuperState__String_int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(16);
+	public EOperation getRootStateDeclarationNode__PostMove__ModelElementContainer_ModelElementContainer_int_int_int_int() {
+        return getRootStateDeclarationNode().getEOperations().get(16);
 	}
 
 	/**
@@ -6775,8 +6738,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__GetSuperStateDeclarationNodes() {
-        return getSubSuperStateRegion().getEOperations().get(17);
+	public EOperation getRootStateDeclarationNode__PreResize__int_int_int_int_Direction() {
+        return getRootStateDeclarationNode().getEOperations().get(17);
 	}
 
 	/**
@@ -6785,8 +6748,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__CanNewSuperStateDeclarationNode() {
-        return getSubSuperStateRegion().getEOperations().get(18);
+	public EOperation getRootStateDeclarationNode__PostResize__int_int_int_int_Direction() {
+        return getRootStateDeclarationNode().getEOperations().get(18);
 	}
 
 	/**
@@ -6795,8 +6758,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__NewSuperStateDeclarationNode__int_int() {
-        return getSubSuperStateRegion().getEOperations().get(19);
+	public EOperation getRootStateDeclarationNode__CanMoveTo__RootState_int_int() {
+        return getRootStateDeclarationNode().getEOperations().get(19);
 	}
 
 	/**
@@ -6805,8 +6768,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__NewSuperStateDeclarationNode__String_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(20);
+	public EOperation getRootStateDeclarationNode__MoveTo__RootState_int_int() {
+        return getRootStateDeclarationNode().getEOperations().get(20);
 	}
 
 	/**
@@ -6815,8 +6778,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__NewSuperStateDeclarationNode__int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(21);
+	public EOperation getRootStateDeclarationNode__S_moveTo__RootState_int_int() {
+        return getRootStateDeclarationNode().getEOperations().get(21);
 	}
 
 	/**
@@ -6825,8 +6788,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__NewSuperStateDeclarationNode__String_int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(22);
+	public EOperation getRootStateDeclarationNode__GetContainer() {
+        return getRootStateDeclarationNode().getEOperations().get(22);
 	}
 
 	/**
@@ -6835,688 +6798,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSubSuperStateRegion__GetInitialStates() {
-        return getSubSuperStateRegion().getEOperations().get(23);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__CanNewInitialState() {
-        return getSubSuperStateRegion().getEOperations().get(24);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewInitialState__int_int() {
-        return getSubSuperStateRegion().getEOperations().get(25);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewInitialState__String_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(26);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewInitialState__int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(27);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewInitialState__String_int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(28);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__GetConnectors() {
-        return getSubSuperStateRegion().getEOperations().get(29);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__CanNewConnector() {
-        return getSubSuperStateRegion().getEOperations().get(30);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewConnector__int_int() {
-        return getSubSuperStateRegion().getEOperations().get(31);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewConnector__String_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(32);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewConnector__int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(33);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewConnector__String_int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(34);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__GetSubSuperStates() {
-        return getSubSuperStateRegion().getEOperations().get(35);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__CanNewSubSuperState() {
-        return getSubSuperStateRegion().getEOperations().get(36);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSubSuperState__int_int() {
-        return getSubSuperStateRegion().getEOperations().get(37);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSubSuperState__String_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(38);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSubSuperState__int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(39);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSubSuperState__String_int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(40);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__GetSubSuperStateRegions() {
-        return getSubSuperStateRegion().getEOperations().get(41);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__CanNewSubSuperStateRegion() {
-        return getSubSuperStateRegion().getEOperations().get(42);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSubSuperStateRegion__int_int() {
-        return getSubSuperStateRegion().getEOperations().get(43);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSubSuperStateRegion__String_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(44);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSubSuperStateRegion__int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(45);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSubSuperStateRegion__String_int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(46);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__GetSubSuperStateDeclarationNodes() {
-        return getSubSuperStateRegion().getEOperations().get(47);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__CanNewSubSuperStateDeclarationNode() {
-        return getSubSuperStateRegion().getEOperations().get(48);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSubSuperStateDeclarationNode__int_int() {
-        return getSubSuperStateRegion().getEOperations().get(49);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSubSuperStateDeclarationNode__String_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(50);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSubSuperStateDeclarationNode__int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(51);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSubSuperStateDeclarationNode__String_int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(52);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__GetSimpleStates() {
-        return getSubSuperStateRegion().getEOperations().get(53);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__CanNewSimpleState() {
-        return getSubSuperStateRegion().getEOperations().get(54);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSimpleState__int_int() {
-        return getSubSuperStateRegion().getEOperations().get(55);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSimpleState__String_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(56);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSimpleState__int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(57);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSimpleState__String_int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(58);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__GetRootStates() {
-        return getSubSuperStateRegion().getEOperations().get(59);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__CanNewRootState() {
-        return getSubSuperStateRegion().getEOperations().get(60);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewRootState__int_int() {
-        return getSubSuperStateRegion().getEOperations().get(61);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewRootState__String_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(62);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewRootState__int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(63);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewRootState__String_int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(64);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__GetSuperStateRegions() {
-        return getSubSuperStateRegion().getEOperations().get(65);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__CanNewSuperStateRegion() {
-        return getSubSuperStateRegion().getEOperations().get(66);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSuperStateRegion__int_int() {
-        return getSubSuperStateRegion().getEOperations().get(67);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSuperStateRegion__String_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(68);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSuperStateRegion__int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(69);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewSuperStateRegion__String_int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(70);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__GetFinalStates() {
-        return getSubSuperStateRegion().getEOperations().get(71);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__CanNewFinalState() {
-        return getSubSuperStateRegion().getEOperations().get(72);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewFinalState__int_int() {
-        return getSubSuperStateRegion().getEOperations().get(73);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewFinalState__String_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(74);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewFinalState__int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(75);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__NewFinalState__String_int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(76);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__S_moveTo__ModelElementContainer_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(77);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__PreMove__ModelElementContainer_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(78);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__PostMove__ModelElementContainer_ModelElementContainer_int_int_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(79);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__PreResize__int_int_int_int_Direction() {
-        return getSubSuperStateRegion().getEOperations().get(80);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__PostResize__int_int_int_int_Direction() {
-        return getSubSuperStateRegion().getEOperations().get(81);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__CanMoveTo__SubSuperState_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(82);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__MoveTo__SubSuperState_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(83);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__S_moveTo__SubSuperState_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(84);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__CanMoveTo__InitilalSubSuperState_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(85);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__MoveTo__InitilalSubSuperState_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(86);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__S_moveTo__InitilalSubSuperState_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(87);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__CanMoveTo__SubSuperStateRegion_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(88);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__MoveTo__SubSuperStateRegion_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(89);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__S_moveTo__SubSuperStateRegion_int_int() {
-        return getSubSuperStateRegion().getEOperations().get(90);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateRegion__GetSubSuperStateRegionView() {
-        return getSubSuperStateRegion().getEOperations().get(91);
+	public EOperation getRootStateDeclarationNode__GetRootStateDeclarationNodeView() {
+        return getRootStateDeclarationNode().getEOperations().get(23);
 	}
 
 	/**
@@ -7558,7 +6841,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__GetInputOutput() {
+	public EOperation getSuperStateDeclarationNode__GetName() {
         return getSuperStateDeclarationNode().getEOperations().get(2);
 	}
 
@@ -7568,7 +6851,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__SetInputOutput__String() {
+	public EOperation getSuperStateDeclarationNode__SetName__String() {
         return getSuperStateDeclarationNode().getEOperations().get(3);
 	}
 
@@ -7578,7 +6861,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__GetName() {
+	public EOperation getSuperStateDeclarationNode__GetInternalSuperStateDeclarationNode() {
         return getSuperStateDeclarationNode().getEOperations().get(4);
 	}
 
@@ -7588,7 +6871,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__SetName__String() {
+	public EOperation getSuperStateDeclarationNode__IsExactlySuperStateDeclarationNode() {
         return getSuperStateDeclarationNode().getEOperations().get(5);
 	}
 
@@ -7598,7 +6881,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__GetInternalSuperStateDeclarationNode() {
+	public EOperation getSuperStateDeclarationNode__PreDelete() {
         return getSuperStateDeclarationNode().getEOperations().get(6);
 	}
 
@@ -7608,7 +6891,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__IsExactlySuperStateDeclarationNode() {
+	public EOperation getSuperStateDeclarationNode__GetPostDeleteFunction() {
         return getSuperStateDeclarationNode().getEOperations().get(7);
 	}
 
@@ -7618,7 +6901,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__PreDelete() {
+	public EOperation getSuperStateDeclarationNode__GetPostDeleteEvent() {
         return getSuperStateDeclarationNode().getEOperations().get(8);
 	}
 
@@ -7628,7 +6911,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__GetPostDeleteFunction() {
+	public EOperation getSuperStateDeclarationNode__PreSave() {
         return getSuperStateDeclarationNode().getEOperations().get(9);
 	}
 
@@ -7638,7 +6921,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__GetPostDeleteEvent() {
+	public EOperation getSuperStateDeclarationNode__PostSave() {
         return getSuperStateDeclarationNode().getEOperations().get(10);
 	}
 
@@ -7648,7 +6931,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__PreSave() {
+	public EOperation getSuperStateDeclarationNode__GetRootElement() {
         return getSuperStateDeclarationNode().getEOperations().get(11);
 	}
 
@@ -7658,7 +6941,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__PostSave() {
+	public EOperation getSuperStateDeclarationNode__S_moveTo__ModelElementContainer_int_int() {
         return getSuperStateDeclarationNode().getEOperations().get(12);
 	}
 
@@ -7668,7 +6951,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__GetRootElement() {
+	public EOperation getSuperStateDeclarationNode__PreMove__ModelElementContainer_int_int() {
         return getSuperStateDeclarationNode().getEOperations().get(13);
 	}
 
@@ -7678,7 +6961,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__S_moveTo__ModelElementContainer_int_int() {
+	public EOperation getSuperStateDeclarationNode__PostMove__ModelElementContainer_ModelElementContainer_int_int_int_int() {
         return getSuperStateDeclarationNode().getEOperations().get(14);
 	}
 
@@ -7688,7 +6971,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__PreMove__ModelElementContainer_int_int() {
+	public EOperation getSuperStateDeclarationNode__PreResize__int_int_int_int_Direction() {
         return getSuperStateDeclarationNode().getEOperations().get(15);
 	}
 
@@ -7698,7 +6981,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__PostMove__ModelElementContainer_ModelElementContainer_int_int_int_int() {
+	public EOperation getSuperStateDeclarationNode__PostResize__int_int_int_int_Direction() {
         return getSuperStateDeclarationNode().getEOperations().get(16);
 	}
 
@@ -7708,7 +6991,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__PreResize__int_int_int_int_Direction() {
+	public EOperation getSuperStateDeclarationNode__CanMoveTo__SuperState_int_int() {
         return getSuperStateDeclarationNode().getEOperations().get(17);
 	}
 
@@ -7718,7 +7001,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__PostResize__int_int_int_int_Direction() {
+	public EOperation getSuperStateDeclarationNode__MoveTo__SuperState_int_int() {
         return getSuperStateDeclarationNode().getEOperations().get(18);
 	}
 
@@ -7728,7 +7011,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__CanMoveTo__RootState_int_int() {
+	public EOperation getSuperStateDeclarationNode__S_moveTo__SuperState_int_int() {
         return getSuperStateDeclarationNode().getEOperations().get(19);
 	}
 
@@ -7738,7 +7021,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__MoveTo__RootState_int_int() {
+	public EOperation getSuperStateDeclarationNode__CanMoveTo__InitilalSuperState_int_int() {
         return getSuperStateDeclarationNode().getEOperations().get(20);
 	}
 
@@ -7748,7 +7031,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__S_moveTo__RootState_int_int() {
+	public EOperation getSuperStateDeclarationNode__MoveTo__InitilalSuperState_int_int() {
         return getSuperStateDeclarationNode().getEOperations().get(21);
 	}
 
@@ -7758,7 +7041,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__CanMoveTo__SubSuperStateRegion_int_int() {
+	public EOperation getSuperStateDeclarationNode__S_moveTo__InitilalSuperState_int_int() {
         return getSuperStateDeclarationNode().getEOperations().get(22);
 	}
 
@@ -7768,7 +7051,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__MoveTo__SubSuperStateRegion_int_int() {
+	public EOperation getSuperStateDeclarationNode__GetContainer() {
         return getSuperStateDeclarationNode().getEOperations().get(23);
 	}
 
@@ -7778,301 +7061,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNode__S_moveTo__SubSuperStateRegion_int_int() {
-        return getSuperStateDeclarationNode().getEOperations().get(24);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EOperation getSuperStateDeclarationNode__GetSuperStateDeclarationNodeView() {
-        return getSuperStateDeclarationNode().getEOperations().get(25);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getSubSuperStateDeclarationNode() {
-		if (subSuperStateDeclarationNodeEClass == null) {
-			subSuperStateDeclarationNodeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(6);
-		}
-		return subSuperStateDeclarationNodeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__GetDeclarationType() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__SetDeclarationType__String() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__GetName() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__SetName__String() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__GetInternalSubSuperStateDeclarationNode() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__IsExactlySubSuperStateDeclarationNode() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__PreDelete() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__GetPostDeleteFunction() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__GetPostDeleteEvent() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__PreSave() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__PostSave() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__GetRootElement() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__S_moveTo__ModelElementContainer_int_int() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__PreMove__ModelElementContainer_int_int() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(13);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__PostMove__ModelElementContainer_ModelElementContainer_int_int_int_int() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(14);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__PreResize__int_int_int_int_Direction() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(15);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__PostResize__int_int_int_int_Direction() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(16);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__CanMoveTo__SubSuperState_int_int() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(17);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__MoveTo__SubSuperState_int_int() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(18);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__S_moveTo__SubSuperState_int_int() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(19);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__CanMoveTo__InitilalSubSuperState_int_int() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(20);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__MoveTo__InitilalSubSuperState_int_int() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(21);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__S_moveTo__InitilalSubSuperState_int_int() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(22);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__CanMoveTo__SubSuperStateRegion_int_int() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(23);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__MoveTo__SubSuperStateRegion_int_int() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(24);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__S_moveTo__SubSuperStateRegion_int_int() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(25);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclarationNode__GetSubSuperStateDeclarationNodeView() {
-        return getSubSuperStateDeclarationNode().getEOperations().get(26);
+        return getSuperStateDeclarationNode().getEOperations().get(24);
 	}
 
 	/**
@@ -8083,7 +7073,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	@Override
 	public EClass getSimpleState() {
 		if (simpleStateEClass == null) {
-			simpleStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(7);
+			simpleStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(6);
 		}
 		return simpleStateEClass;
 	}
@@ -8284,7 +7274,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetOutgoingImmediateTransitions() {
+	public EOperation getSimpleState__GetOutgoingDefferedTransitions() {
         return getSimpleState().getEOperations().get(19);
 	}
 
@@ -8304,7 +7294,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetOutgoingTransitions() {
+	public EOperation getSimpleState__GetOutgoingStrongAbortTransitions() {
         return getSimpleState().getEOperations().get(21);
 	}
 
@@ -8314,7 +7304,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetOutgoingStrongAbortTransitions() {
+	public EOperation getSimpleState__GetOutgoingWeakAbortTerminationTransitions() {
         return getSimpleState().getEOperations().get(22);
 	}
 
@@ -8324,7 +7314,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetOutgoingDefferedTransitions() {
+	public EOperation getSimpleState__GetOutgoingImmediateTerminationTransitions() {
         return getSimpleState().getEOperations().get(23);
 	}
 
@@ -8334,7 +7324,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetOutgoingImmediateTerminationTransitions() {
+	public EOperation getSimpleState__GetOutgoingTransitions() {
         return getSimpleState().getEOperations().get(24);
 	}
 
@@ -8344,7 +7334,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetOutgoingWeakAbortTerminationTransitions() {
+	public EOperation getSimpleState__GetOutgoingImmediateTransitions() {
         return getSimpleState().getEOperations().get(25);
 	}
 
@@ -8354,7 +7344,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetIncomingImmediateTransitions() {
+	public EOperation getSimpleState__GetIncomingDefferedTransitions() {
         return getSimpleState().getEOperations().get(26);
 	}
 
@@ -8374,7 +7364,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetIncomingTransitions() {
+	public EOperation getSimpleState__GetIncomingStrongAbortTransitions() {
         return getSimpleState().getEOperations().get(28);
 	}
 
@@ -8384,7 +7374,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetIncomingStrongAbortTransitions() {
+	public EOperation getSimpleState__GetIncomingWeakAbortTerminationTransitions() {
         return getSimpleState().getEOperations().get(29);
 	}
 
@@ -8394,7 +7384,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetIncomingDefferedTransitions() {
+	public EOperation getSimpleState__GetIncomingImmediateTerminationTransitions() {
         return getSimpleState().getEOperations().get(30);
 	}
 
@@ -8404,7 +7394,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetIncomingImmediateTerminationTransitions() {
+	public EOperation getSimpleState__GetIncomingTransitions() {
         return getSimpleState().getEOperations().get(31);
 	}
 
@@ -8414,7 +7404,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetIncomingWeakAbortTerminationTransitions() {
+	public EOperation getSimpleState__GetIncomingImmediateTransitions() {
         return getSimpleState().getEOperations().get(32);
 	}
 
@@ -8434,7 +7424,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetSubSuperStatePredecessors() {
+	public EOperation getSimpleState__GetSuperStatePredecessors() {
         return getSimpleState().getEOperations().get(34);
 	}
 
@@ -8444,7 +7434,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetInitilalSubSuperStatePredecessors() {
+	public EOperation getSimpleState__GetInitilalSuperStatePredecessors() {
         return getSimpleState().getEOperations().get(35);
 	}
 
@@ -8494,7 +7484,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetSubSuperStateSuccessors() {
+	public EOperation getSimpleState__GetSuperStateSuccessors() {
         return getSimpleState().getEOperations().get(40);
 	}
 
@@ -8504,7 +7494,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__GetInitilalSubSuperStateSuccessors() {
+	public EOperation getSimpleState__GetInitilalSuperStateSuccessors() {
         return getSimpleState().getEOperations().get(41);
 	}
 
@@ -8554,7 +7544,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewImmediateTransition__InitilalSubSuperState() {
+	public EOperation getSimpleState__CanNewDefferedTransition__InitilalSuperState() {
         return getSimpleState().getEOperations().get(46);
 	}
 
@@ -8564,7 +7554,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTransition__InitilalSubSuperState() {
+	public EOperation getSimpleState__NewDefferedTransition__InitilalSuperState() {
         return getSimpleState().getEOperations().get(47);
 	}
 
@@ -8574,7 +7564,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTransition__InitilalSubSuperState_String() {
+	public EOperation getSimpleState__NewDefferedTransition__InitilalSuperState_String() {
         return getSimpleState().getEOperations().get(48);
 	}
 
@@ -8584,7 +7574,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewImmediateTransition__InitialState() {
+	public EOperation getSimpleState__CanNewDefferedTransition__Connector() {
         return getSimpleState().getEOperations().get(49);
 	}
 
@@ -8594,7 +7584,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTransition__InitialState() {
+	public EOperation getSimpleState__NewDefferedTransition__Connector() {
         return getSimpleState().getEOperations().get(50);
 	}
 
@@ -8604,7 +7594,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTransition__InitialState_String() {
+	public EOperation getSimpleState__NewDefferedTransition__Connector_String() {
         return getSimpleState().getEOperations().get(51);
 	}
 
@@ -8614,7 +7604,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewImmediateTransition__Connector() {
+	public EOperation getSimpleState__CanNewDefferedTransition__SuperState() {
         return getSimpleState().getEOperations().get(52);
 	}
 
@@ -8624,7 +7614,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTransition__Connector() {
+	public EOperation getSimpleState__NewDefferedTransition__SuperState() {
         return getSimpleState().getEOperations().get(53);
 	}
 
@@ -8634,7 +7624,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTransition__Connector_String() {
+	public EOperation getSimpleState__NewDefferedTransition__SuperState_String() {
         return getSimpleState().getEOperations().get(54);
 	}
 
@@ -8644,7 +7634,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewImmediateTransition__SubSuperState() {
+	public EOperation getSimpleState__CanNewDefferedTransition__SimpleState() {
         return getSimpleState().getEOperations().get(55);
 	}
 
@@ -8654,7 +7644,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTransition__SubSuperState() {
+	public EOperation getSimpleState__NewDefferedTransition__SimpleState() {
         return getSimpleState().getEOperations().get(56);
 	}
 
@@ -8664,7 +7654,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTransition__SubSuperState_String() {
+	public EOperation getSimpleState__NewDefferedTransition__SimpleState_String() {
         return getSimpleState().getEOperations().get(57);
 	}
 
@@ -8674,7 +7664,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewImmediateTransition__SimpleState() {
+	public EOperation getSimpleState__CanNewDefferedTransition__FinalState() {
         return getSimpleState().getEOperations().get(58);
 	}
 
@@ -8684,7 +7674,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTransition__SimpleState() {
+	public EOperation getSimpleState__NewDefferedTransition__FinalState() {
         return getSimpleState().getEOperations().get(59);
 	}
 
@@ -8694,7 +7684,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTransition__SimpleState_String() {
+	public EOperation getSimpleState__NewDefferedTransition__FinalState_String() {
         return getSimpleState().getEOperations().get(60);
 	}
 
@@ -8704,7 +7694,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewImmediateTransition__FinalState() {
+	public EOperation getSimpleState__CanNewDefferedTransition__InitialState() {
         return getSimpleState().getEOperations().get(61);
 	}
 
@@ -8714,7 +7704,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTransition__FinalState() {
+	public EOperation getSimpleState__NewDefferedTransition__InitialState() {
         return getSimpleState().getEOperations().get(62);
 	}
 
@@ -8724,7 +7714,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTransition__FinalState_String() {
+	public EOperation getSimpleState__NewDefferedTransition__InitialState_String() {
         return getSimpleState().getEOperations().get(63);
 	}
 
@@ -8734,7 +7724,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewWeakAbortTransition__InitilalSubSuperState() {
+	public EOperation getSimpleState__CanNewWeakAbortTransition__InitilalSuperState() {
         return getSimpleState().getEOperations().get(64);
 	}
 
@@ -8744,7 +7734,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTransition__InitilalSubSuperState() {
+	public EOperation getSimpleState__NewWeakAbortTransition__InitilalSuperState() {
         return getSimpleState().getEOperations().get(65);
 	}
 
@@ -8754,7 +7744,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTransition__InitilalSubSuperState_String() {
+	public EOperation getSimpleState__NewWeakAbortTransition__InitilalSuperState_String() {
         return getSimpleState().getEOperations().get(66);
 	}
 
@@ -8764,7 +7754,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewWeakAbortTransition__InitialState() {
+	public EOperation getSimpleState__CanNewWeakAbortTransition__Connector() {
         return getSimpleState().getEOperations().get(67);
 	}
 
@@ -8774,7 +7764,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTransition__InitialState() {
+	public EOperation getSimpleState__NewWeakAbortTransition__Connector() {
         return getSimpleState().getEOperations().get(68);
 	}
 
@@ -8784,7 +7774,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTransition__InitialState_String() {
+	public EOperation getSimpleState__NewWeakAbortTransition__Connector_String() {
         return getSimpleState().getEOperations().get(69);
 	}
 
@@ -8794,7 +7784,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewWeakAbortTransition__Connector() {
+	public EOperation getSimpleState__CanNewWeakAbortTransition__SuperState() {
         return getSimpleState().getEOperations().get(70);
 	}
 
@@ -8804,7 +7794,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTransition__Connector() {
+	public EOperation getSimpleState__NewWeakAbortTransition__SuperState() {
         return getSimpleState().getEOperations().get(71);
 	}
 
@@ -8814,7 +7804,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTransition__Connector_String() {
+	public EOperation getSimpleState__NewWeakAbortTransition__SuperState_String() {
         return getSimpleState().getEOperations().get(72);
 	}
 
@@ -8824,7 +7814,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewWeakAbortTransition__SubSuperState() {
+	public EOperation getSimpleState__CanNewWeakAbortTransition__SimpleState() {
         return getSimpleState().getEOperations().get(73);
 	}
 
@@ -8834,7 +7824,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTransition__SubSuperState() {
+	public EOperation getSimpleState__NewWeakAbortTransition__SimpleState() {
         return getSimpleState().getEOperations().get(74);
 	}
 
@@ -8844,7 +7834,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTransition__SubSuperState_String() {
+	public EOperation getSimpleState__NewWeakAbortTransition__SimpleState_String() {
         return getSimpleState().getEOperations().get(75);
 	}
 
@@ -8854,7 +7844,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewWeakAbortTransition__SimpleState() {
+	public EOperation getSimpleState__CanNewWeakAbortTransition__FinalState() {
         return getSimpleState().getEOperations().get(76);
 	}
 
@@ -8864,7 +7854,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTransition__SimpleState() {
+	public EOperation getSimpleState__NewWeakAbortTransition__FinalState() {
         return getSimpleState().getEOperations().get(77);
 	}
 
@@ -8874,7 +7864,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTransition__SimpleState_String() {
+	public EOperation getSimpleState__NewWeakAbortTransition__FinalState_String() {
         return getSimpleState().getEOperations().get(78);
 	}
 
@@ -8884,7 +7874,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewWeakAbortTransition__FinalState() {
+	public EOperation getSimpleState__CanNewWeakAbortTransition__InitialState() {
         return getSimpleState().getEOperations().get(79);
 	}
 
@@ -8894,7 +7884,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTransition__FinalState() {
+	public EOperation getSimpleState__NewWeakAbortTransition__InitialState() {
         return getSimpleState().getEOperations().get(80);
 	}
 
@@ -8904,7 +7894,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTransition__FinalState_String() {
+	public EOperation getSimpleState__NewWeakAbortTransition__InitialState_String() {
         return getSimpleState().getEOperations().get(81);
 	}
 
@@ -8914,7 +7904,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewImmediateTerminationTransition__InitilalSubSuperState() {
+	public EOperation getSimpleState__CanNewStrongAbortTransition__InitilalSuperState() {
         return getSimpleState().getEOperations().get(82);
 	}
 
@@ -8924,7 +7914,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTerminationTransition__InitilalSubSuperState() {
+	public EOperation getSimpleState__NewStrongAbortTransition__InitilalSuperState() {
         return getSimpleState().getEOperations().get(83);
 	}
 
@@ -8934,7 +7924,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTerminationTransition__InitilalSubSuperState_String() {
+	public EOperation getSimpleState__NewStrongAbortTransition__InitilalSuperState_String() {
         return getSimpleState().getEOperations().get(84);
 	}
 
@@ -8944,7 +7934,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewImmediateTerminationTransition__InitialState() {
+	public EOperation getSimpleState__CanNewStrongAbortTransition__Connector() {
         return getSimpleState().getEOperations().get(85);
 	}
 
@@ -8954,7 +7944,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTerminationTransition__InitialState() {
+	public EOperation getSimpleState__NewStrongAbortTransition__Connector() {
         return getSimpleState().getEOperations().get(86);
 	}
 
@@ -8964,7 +7954,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTerminationTransition__InitialState_String() {
+	public EOperation getSimpleState__NewStrongAbortTransition__Connector_String() {
         return getSimpleState().getEOperations().get(87);
 	}
 
@@ -8974,7 +7964,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewImmediateTerminationTransition__Connector() {
+	public EOperation getSimpleState__CanNewStrongAbortTransition__SuperState() {
         return getSimpleState().getEOperations().get(88);
 	}
 
@@ -8984,7 +7974,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTerminationTransition__Connector() {
+	public EOperation getSimpleState__NewStrongAbortTransition__SuperState() {
         return getSimpleState().getEOperations().get(89);
 	}
 
@@ -8994,7 +7984,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTerminationTransition__Connector_String() {
+	public EOperation getSimpleState__NewStrongAbortTransition__SuperState_String() {
         return getSimpleState().getEOperations().get(90);
 	}
 
@@ -9004,7 +7994,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewImmediateTerminationTransition__SubSuperState() {
+	public EOperation getSimpleState__CanNewStrongAbortTransition__SimpleState() {
         return getSimpleState().getEOperations().get(91);
 	}
 
@@ -9014,7 +8004,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTerminationTransition__SubSuperState() {
+	public EOperation getSimpleState__NewStrongAbortTransition__SimpleState() {
         return getSimpleState().getEOperations().get(92);
 	}
 
@@ -9024,7 +8014,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTerminationTransition__SubSuperState_String() {
+	public EOperation getSimpleState__NewStrongAbortTransition__SimpleState_String() {
         return getSimpleState().getEOperations().get(93);
 	}
 
@@ -9034,7 +8024,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewImmediateTerminationTransition__SimpleState() {
+	public EOperation getSimpleState__CanNewStrongAbortTransition__FinalState() {
         return getSimpleState().getEOperations().get(94);
 	}
 
@@ -9044,7 +8034,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTerminationTransition__SimpleState() {
+	public EOperation getSimpleState__NewStrongAbortTransition__FinalState() {
         return getSimpleState().getEOperations().get(95);
 	}
 
@@ -9054,7 +8044,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTerminationTransition__SimpleState_String() {
+	public EOperation getSimpleState__NewStrongAbortTransition__FinalState_String() {
         return getSimpleState().getEOperations().get(96);
 	}
 
@@ -9064,7 +8054,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewImmediateTerminationTransition__FinalState() {
+	public EOperation getSimpleState__CanNewStrongAbortTransition__InitialState() {
         return getSimpleState().getEOperations().get(97);
 	}
 
@@ -9074,7 +8064,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTerminationTransition__FinalState() {
+	public EOperation getSimpleState__NewStrongAbortTransition__InitialState() {
         return getSimpleState().getEOperations().get(98);
 	}
 
@@ -9084,7 +8074,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewImmediateTerminationTransition__FinalState_String() {
+	public EOperation getSimpleState__NewStrongAbortTransition__InitialState_String() {
         return getSimpleState().getEOperations().get(99);
 	}
 
@@ -9094,7 +8084,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewStrongAbortTransition__InitilalSubSuperState() {
+	public EOperation getSimpleState__CanNewWeakAbortTerminationTransition__InitilalSuperState() {
         return getSimpleState().getEOperations().get(100);
 	}
 
@@ -9104,7 +8094,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewStrongAbortTransition__InitilalSubSuperState() {
+	public EOperation getSimpleState__NewWeakAbortTerminationTransition__InitilalSuperState() {
         return getSimpleState().getEOperations().get(101);
 	}
 
@@ -9114,7 +8104,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewStrongAbortTransition__InitilalSubSuperState_String() {
+	public EOperation getSimpleState__NewWeakAbortTerminationTransition__InitilalSuperState_String() {
         return getSimpleState().getEOperations().get(102);
 	}
 
@@ -9124,7 +8114,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewStrongAbortTransition__InitialState() {
+	public EOperation getSimpleState__CanNewWeakAbortTerminationTransition__Connector() {
         return getSimpleState().getEOperations().get(103);
 	}
 
@@ -9134,7 +8124,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewStrongAbortTransition__InitialState() {
+	public EOperation getSimpleState__NewWeakAbortTerminationTransition__Connector() {
         return getSimpleState().getEOperations().get(104);
 	}
 
@@ -9144,7 +8134,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewStrongAbortTransition__InitialState_String() {
+	public EOperation getSimpleState__NewWeakAbortTerminationTransition__Connector_String() {
         return getSimpleState().getEOperations().get(105);
 	}
 
@@ -9154,7 +8144,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewStrongAbortTransition__Connector() {
+	public EOperation getSimpleState__CanNewWeakAbortTerminationTransition__SuperState() {
         return getSimpleState().getEOperations().get(106);
 	}
 
@@ -9164,7 +8154,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewStrongAbortTransition__Connector() {
+	public EOperation getSimpleState__NewWeakAbortTerminationTransition__SuperState() {
         return getSimpleState().getEOperations().get(107);
 	}
 
@@ -9174,7 +8164,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewStrongAbortTransition__Connector_String() {
+	public EOperation getSimpleState__NewWeakAbortTerminationTransition__SuperState_String() {
         return getSimpleState().getEOperations().get(108);
 	}
 
@@ -9184,7 +8174,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewStrongAbortTransition__SubSuperState() {
+	public EOperation getSimpleState__CanNewWeakAbortTerminationTransition__SimpleState() {
         return getSimpleState().getEOperations().get(109);
 	}
 
@@ -9194,7 +8184,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewStrongAbortTransition__SubSuperState() {
+	public EOperation getSimpleState__NewWeakAbortTerminationTransition__SimpleState() {
         return getSimpleState().getEOperations().get(110);
 	}
 
@@ -9204,7 +8194,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewStrongAbortTransition__SubSuperState_String() {
+	public EOperation getSimpleState__NewWeakAbortTerminationTransition__SimpleState_String() {
         return getSimpleState().getEOperations().get(111);
 	}
 
@@ -9214,7 +8204,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewStrongAbortTransition__SimpleState() {
+	public EOperation getSimpleState__CanNewWeakAbortTerminationTransition__FinalState() {
         return getSimpleState().getEOperations().get(112);
 	}
 
@@ -9224,7 +8214,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewStrongAbortTransition__SimpleState() {
+	public EOperation getSimpleState__NewWeakAbortTerminationTransition__FinalState() {
         return getSimpleState().getEOperations().get(113);
 	}
 
@@ -9234,7 +8224,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewStrongAbortTransition__SimpleState_String() {
+	public EOperation getSimpleState__NewWeakAbortTerminationTransition__FinalState_String() {
         return getSimpleState().getEOperations().get(114);
 	}
 
@@ -9244,7 +8234,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewStrongAbortTransition__FinalState() {
+	public EOperation getSimpleState__CanNewWeakAbortTerminationTransition__InitialState() {
         return getSimpleState().getEOperations().get(115);
 	}
 
@@ -9254,7 +8244,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewStrongAbortTransition__FinalState() {
+	public EOperation getSimpleState__NewWeakAbortTerminationTransition__InitialState() {
         return getSimpleState().getEOperations().get(116);
 	}
 
@@ -9264,7 +8254,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewStrongAbortTransition__FinalState_String() {
+	public EOperation getSimpleState__NewWeakAbortTerminationTransition__InitialState_String() {
         return getSimpleState().getEOperations().get(117);
 	}
 
@@ -9274,7 +8264,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewWeakAbortTerminationTransition__InitilalSubSuperState() {
+	public EOperation getSimpleState__CanNewImmediateTerminationTransition__InitilalSuperState() {
         return getSimpleState().getEOperations().get(118);
 	}
 
@@ -9284,7 +8274,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTerminationTransition__InitilalSubSuperState() {
+	public EOperation getSimpleState__NewImmediateTerminationTransition__InitilalSuperState() {
         return getSimpleState().getEOperations().get(119);
 	}
 
@@ -9294,7 +8284,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTerminationTransition__InitilalSubSuperState_String() {
+	public EOperation getSimpleState__NewImmediateTerminationTransition__InitilalSuperState_String() {
         return getSimpleState().getEOperations().get(120);
 	}
 
@@ -9304,7 +8294,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewWeakAbortTerminationTransition__InitialState() {
+	public EOperation getSimpleState__CanNewImmediateTerminationTransition__Connector() {
         return getSimpleState().getEOperations().get(121);
 	}
 
@@ -9314,7 +8304,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTerminationTransition__InitialState() {
+	public EOperation getSimpleState__NewImmediateTerminationTransition__Connector() {
         return getSimpleState().getEOperations().get(122);
 	}
 
@@ -9324,7 +8314,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTerminationTransition__InitialState_String() {
+	public EOperation getSimpleState__NewImmediateTerminationTransition__Connector_String() {
         return getSimpleState().getEOperations().get(123);
 	}
 
@@ -9334,7 +8324,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewWeakAbortTerminationTransition__Connector() {
+	public EOperation getSimpleState__CanNewImmediateTerminationTransition__SuperState() {
         return getSimpleState().getEOperations().get(124);
 	}
 
@@ -9344,7 +8334,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTerminationTransition__Connector() {
+	public EOperation getSimpleState__NewImmediateTerminationTransition__SuperState() {
         return getSimpleState().getEOperations().get(125);
 	}
 
@@ -9354,7 +8344,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTerminationTransition__Connector_String() {
+	public EOperation getSimpleState__NewImmediateTerminationTransition__SuperState_String() {
         return getSimpleState().getEOperations().get(126);
 	}
 
@@ -9364,7 +8354,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewWeakAbortTerminationTransition__SubSuperState() {
+	public EOperation getSimpleState__CanNewImmediateTerminationTransition__SimpleState() {
         return getSimpleState().getEOperations().get(127);
 	}
 
@@ -9374,7 +8364,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTerminationTransition__SubSuperState() {
+	public EOperation getSimpleState__NewImmediateTerminationTransition__SimpleState() {
         return getSimpleState().getEOperations().get(128);
 	}
 
@@ -9384,7 +8374,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTerminationTransition__SubSuperState_String() {
+	public EOperation getSimpleState__NewImmediateTerminationTransition__SimpleState_String() {
         return getSimpleState().getEOperations().get(129);
 	}
 
@@ -9394,7 +8384,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewWeakAbortTerminationTransition__SimpleState() {
+	public EOperation getSimpleState__CanNewImmediateTerminationTransition__FinalState() {
         return getSimpleState().getEOperations().get(130);
 	}
 
@@ -9404,7 +8394,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTerminationTransition__SimpleState() {
+	public EOperation getSimpleState__NewImmediateTerminationTransition__FinalState() {
         return getSimpleState().getEOperations().get(131);
 	}
 
@@ -9414,7 +8404,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTerminationTransition__SimpleState_String() {
+	public EOperation getSimpleState__NewImmediateTerminationTransition__FinalState_String() {
         return getSimpleState().getEOperations().get(132);
 	}
 
@@ -9424,7 +8414,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewWeakAbortTerminationTransition__FinalState() {
+	public EOperation getSimpleState__CanNewImmediateTerminationTransition__InitialState() {
         return getSimpleState().getEOperations().get(133);
 	}
 
@@ -9434,7 +8424,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTerminationTransition__FinalState() {
+	public EOperation getSimpleState__NewImmediateTerminationTransition__InitialState() {
         return getSimpleState().getEOperations().get(134);
 	}
 
@@ -9444,7 +8434,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewWeakAbortTerminationTransition__FinalState_String() {
+	public EOperation getSimpleState__NewImmediateTerminationTransition__InitialState_String() {
         return getSimpleState().getEOperations().get(135);
 	}
 
@@ -9454,7 +8444,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewTransition__InitilalSubSuperState() {
+	public EOperation getSimpleState__CanNewImmediateTransition__InitilalSuperState() {
         return getSimpleState().getEOperations().get(136);
 	}
 
@@ -9464,7 +8454,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewTransition__InitilalSubSuperState() {
+	public EOperation getSimpleState__NewImmediateTransition__InitilalSuperState() {
         return getSimpleState().getEOperations().get(137);
 	}
 
@@ -9474,7 +8464,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewTransition__InitilalSubSuperState_String() {
+	public EOperation getSimpleState__NewImmediateTransition__InitilalSuperState_String() {
         return getSimpleState().getEOperations().get(138);
 	}
 
@@ -9484,7 +8474,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewTransition__InitialState() {
+	public EOperation getSimpleState__CanNewImmediateTransition__Connector() {
         return getSimpleState().getEOperations().get(139);
 	}
 
@@ -9494,7 +8484,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewTransition__InitialState() {
+	public EOperation getSimpleState__NewImmediateTransition__Connector() {
         return getSimpleState().getEOperations().get(140);
 	}
 
@@ -9504,7 +8494,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewTransition__InitialState_String() {
+	public EOperation getSimpleState__NewImmediateTransition__Connector_String() {
         return getSimpleState().getEOperations().get(141);
 	}
 
@@ -9514,7 +8504,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewTransition__Connector() {
+	public EOperation getSimpleState__CanNewImmediateTransition__SuperState() {
         return getSimpleState().getEOperations().get(142);
 	}
 
@@ -9524,7 +8514,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewTransition__Connector() {
+	public EOperation getSimpleState__NewImmediateTransition__SuperState() {
         return getSimpleState().getEOperations().get(143);
 	}
 
@@ -9534,7 +8524,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewTransition__Connector_String() {
+	public EOperation getSimpleState__NewImmediateTransition__SuperState_String() {
         return getSimpleState().getEOperations().get(144);
 	}
 
@@ -9544,7 +8534,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewTransition__SubSuperState() {
+	public EOperation getSimpleState__CanNewImmediateTransition__SimpleState() {
         return getSimpleState().getEOperations().get(145);
 	}
 
@@ -9554,7 +8544,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewTransition__SubSuperState() {
+	public EOperation getSimpleState__NewImmediateTransition__SimpleState() {
         return getSimpleState().getEOperations().get(146);
 	}
 
@@ -9564,7 +8554,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewTransition__SubSuperState_String() {
+	public EOperation getSimpleState__NewImmediateTransition__SimpleState_String() {
         return getSimpleState().getEOperations().get(147);
 	}
 
@@ -9574,7 +8564,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewTransition__SimpleState() {
+	public EOperation getSimpleState__CanNewImmediateTransition__FinalState() {
         return getSimpleState().getEOperations().get(148);
 	}
 
@@ -9584,7 +8574,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewTransition__SimpleState() {
+	public EOperation getSimpleState__NewImmediateTransition__FinalState() {
         return getSimpleState().getEOperations().get(149);
 	}
 
@@ -9594,7 +8584,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewTransition__SimpleState_String() {
+	public EOperation getSimpleState__NewImmediateTransition__FinalState_String() {
         return getSimpleState().getEOperations().get(150);
 	}
 
@@ -9604,7 +8594,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewTransition__FinalState() {
+	public EOperation getSimpleState__CanNewImmediateTransition__InitialState() {
         return getSimpleState().getEOperations().get(151);
 	}
 
@@ -9614,7 +8604,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewTransition__FinalState() {
+	public EOperation getSimpleState__NewImmediateTransition__InitialState() {
         return getSimpleState().getEOperations().get(152);
 	}
 
@@ -9624,7 +8614,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewTransition__FinalState_String() {
+	public EOperation getSimpleState__NewImmediateTransition__InitialState_String() {
         return getSimpleState().getEOperations().get(153);
 	}
 
@@ -9634,7 +8624,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewDefferedTransition__InitilalSubSuperState() {
+	public EOperation getSimpleState__CanNewTransition__InitilalSuperState() {
         return getSimpleState().getEOperations().get(154);
 	}
 
@@ -9644,7 +8634,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewDefferedTransition__InitilalSubSuperState() {
+	public EOperation getSimpleState__NewTransition__InitilalSuperState() {
         return getSimpleState().getEOperations().get(155);
 	}
 
@@ -9654,7 +8644,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewDefferedTransition__InitilalSubSuperState_String() {
+	public EOperation getSimpleState__NewTransition__InitilalSuperState_String() {
         return getSimpleState().getEOperations().get(156);
 	}
 
@@ -9664,7 +8654,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewDefferedTransition__InitialState() {
+	public EOperation getSimpleState__CanNewTransition__Connector() {
         return getSimpleState().getEOperations().get(157);
 	}
 
@@ -9674,7 +8664,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewDefferedTransition__InitialState() {
+	public EOperation getSimpleState__NewTransition__Connector() {
         return getSimpleState().getEOperations().get(158);
 	}
 
@@ -9684,7 +8674,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewDefferedTransition__InitialState_String() {
+	public EOperation getSimpleState__NewTransition__Connector_String() {
         return getSimpleState().getEOperations().get(159);
 	}
 
@@ -9694,7 +8684,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewDefferedTransition__Connector() {
+	public EOperation getSimpleState__CanNewTransition__SuperState() {
         return getSimpleState().getEOperations().get(160);
 	}
 
@@ -9704,7 +8694,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewDefferedTransition__Connector() {
+	public EOperation getSimpleState__NewTransition__SuperState() {
         return getSimpleState().getEOperations().get(161);
 	}
 
@@ -9714,7 +8704,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewDefferedTransition__Connector_String() {
+	public EOperation getSimpleState__NewTransition__SuperState_String() {
         return getSimpleState().getEOperations().get(162);
 	}
 
@@ -9724,7 +8714,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewDefferedTransition__SubSuperState() {
+	public EOperation getSimpleState__CanNewTransition__SimpleState() {
         return getSimpleState().getEOperations().get(163);
 	}
 
@@ -9734,7 +8724,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewDefferedTransition__SubSuperState() {
+	public EOperation getSimpleState__NewTransition__SimpleState() {
         return getSimpleState().getEOperations().get(164);
 	}
 
@@ -9744,7 +8734,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewDefferedTransition__SubSuperState_String() {
+	public EOperation getSimpleState__NewTransition__SimpleState_String() {
         return getSimpleState().getEOperations().get(165);
 	}
 
@@ -9754,7 +8744,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewDefferedTransition__SimpleState() {
+	public EOperation getSimpleState__CanNewTransition__FinalState() {
         return getSimpleState().getEOperations().get(166);
 	}
 
@@ -9764,7 +8754,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewDefferedTransition__SimpleState() {
+	public EOperation getSimpleState__NewTransition__FinalState() {
         return getSimpleState().getEOperations().get(167);
 	}
 
@@ -9774,7 +8764,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewDefferedTransition__SimpleState_String() {
+	public EOperation getSimpleState__NewTransition__FinalState_String() {
         return getSimpleState().getEOperations().get(168);
 	}
 
@@ -9784,7 +8774,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanNewDefferedTransition__FinalState() {
+	public EOperation getSimpleState__CanNewTransition__InitialState() {
         return getSimpleState().getEOperations().get(169);
 	}
 
@@ -9794,7 +8784,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewDefferedTransition__FinalState() {
+	public EOperation getSimpleState__NewTransition__InitialState() {
         return getSimpleState().getEOperations().get(170);
 	}
 
@@ -9804,7 +8794,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__NewDefferedTransition__FinalState_String() {
+	public EOperation getSimpleState__NewTransition__InitialState_String() {
         return getSimpleState().getEOperations().get(171);
 	}
 
@@ -9814,7 +8804,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanMoveTo__SuperStateRegion_int_int() {
+	public EOperation getSimpleState__CanMoveTo__Region_int_int() {
         return getSimpleState().getEOperations().get(172);
 	}
 
@@ -9824,7 +8814,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__MoveTo__SuperStateRegion_int_int() {
+	public EOperation getSimpleState__MoveTo__Region_int_int() {
         return getSimpleState().getEOperations().get(173);
 	}
 
@@ -9834,7 +8824,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__S_moveTo__SuperStateRegion_int_int() {
+	public EOperation getSimpleState__S_moveTo__Region_int_int() {
         return getSimpleState().getEOperations().get(174);
 	}
 
@@ -9844,7 +8834,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__CanMoveTo__SubSuperStateRegion_int_int() {
+	public EOperation getSimpleState__GetContainer() {
         return getSimpleState().getEOperations().get(175);
 	}
 
@@ -9854,28 +8844,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSimpleState__MoveTo__SubSuperStateRegion_int_int() {
-        return getSimpleState().getEOperations().get(176);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSimpleState__S_moveTo__SubSuperStateRegion_int_int() {
-        return getSimpleState().getEOperations().get(177);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EOperation getSimpleState__GetSimpleStateView() {
-        return getSimpleState().getEOperations().get(178);
+        return getSimpleState().getEOperations().get(176);
 	}
 
 	/**
@@ -9886,7 +8856,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	@Override
 	public EClass getInitialState() {
 		if (initialStateEClass == null) {
-			initialStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(8);
+			initialStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(7);
 		}
 		return initialStateEClass;
 	}
@@ -10067,7 +9037,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetOutgoingImmediateTransitions() {
+	public EOperation getInitialState__GetOutgoingDefferedTransitions() {
         return getInitialState().getEOperations().get(17);
 	}
 
@@ -10087,7 +9057,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetOutgoingTransitions() {
+	public EOperation getInitialState__GetOutgoingStrongAbortTransitions() {
         return getInitialState().getEOperations().get(19);
 	}
 
@@ -10097,7 +9067,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetOutgoingStrongAbortTransitions() {
+	public EOperation getInitialState__GetOutgoingWeakAbortTerminationTransitions() {
         return getInitialState().getEOperations().get(20);
 	}
 
@@ -10107,7 +9077,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetOutgoingDefferedTransitions() {
+	public EOperation getInitialState__GetOutgoingImmediateTerminationTransitions() {
         return getInitialState().getEOperations().get(21);
 	}
 
@@ -10117,7 +9087,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetOutgoingImmediateTerminationTransitions() {
+	public EOperation getInitialState__GetOutgoingTransitions() {
         return getInitialState().getEOperations().get(22);
 	}
 
@@ -10127,7 +9097,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetOutgoingWeakAbortTerminationTransitions() {
+	public EOperation getInitialState__GetOutgoingImmediateTransitions() {
         return getInitialState().getEOperations().get(23);
 	}
 
@@ -10137,7 +9107,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetIncomingImmediateTransitions() {
+	public EOperation getInitialState__GetIncomingDefferedTransitions() {
         return getInitialState().getEOperations().get(24);
 	}
 
@@ -10157,7 +9127,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetIncomingTransitions() {
+	public EOperation getInitialState__GetIncomingStrongAbortTransitions() {
         return getInitialState().getEOperations().get(26);
 	}
 
@@ -10167,7 +9137,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetIncomingStrongAbortTransitions() {
+	public EOperation getInitialState__GetIncomingWeakAbortTerminationTransitions() {
         return getInitialState().getEOperations().get(27);
 	}
 
@@ -10177,7 +9147,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetIncomingDefferedTransitions() {
+	public EOperation getInitialState__GetIncomingImmediateTerminationTransitions() {
         return getInitialState().getEOperations().get(28);
 	}
 
@@ -10187,7 +9157,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetIncomingImmediateTerminationTransitions() {
+	public EOperation getInitialState__GetIncomingTransitions() {
         return getInitialState().getEOperations().get(29);
 	}
 
@@ -10197,7 +9167,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetIncomingWeakAbortTerminationTransitions() {
+	public EOperation getInitialState__GetIncomingImmediateTransitions() {
         return getInitialState().getEOperations().get(30);
 	}
 
@@ -10217,7 +9187,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetSubSuperStatePredecessors() {
+	public EOperation getInitialState__GetSuperStatePredecessors() {
         return getInitialState().getEOperations().get(32);
 	}
 
@@ -10227,7 +9197,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetInitilalSubSuperStatePredecessors() {
+	public EOperation getInitialState__GetInitilalSuperStatePredecessors() {
         return getInitialState().getEOperations().get(33);
 	}
 
@@ -10277,7 +9247,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetSubSuperStateSuccessors() {
+	public EOperation getInitialState__GetSuperStateSuccessors() {
         return getInitialState().getEOperations().get(38);
 	}
 
@@ -10287,7 +9257,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__GetInitilalSubSuperStateSuccessors() {
+	public EOperation getInitialState__GetInitilalSuperStateSuccessors() {
         return getInitialState().getEOperations().get(39);
 	}
 
@@ -10337,7 +9307,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewImmediateTransition__InitilalSubSuperState() {
+	public EOperation getInitialState__CanNewDefferedTransition__InitilalSuperState() {
         return getInitialState().getEOperations().get(44);
 	}
 
@@ -10347,7 +9317,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTransition__InitilalSubSuperState() {
+	public EOperation getInitialState__NewDefferedTransition__InitilalSuperState() {
         return getInitialState().getEOperations().get(45);
 	}
 
@@ -10357,7 +9327,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTransition__InitilalSubSuperState_String() {
+	public EOperation getInitialState__NewDefferedTransition__InitilalSuperState_String() {
         return getInitialState().getEOperations().get(46);
 	}
 
@@ -10367,7 +9337,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewImmediateTransition__InitialState() {
+	public EOperation getInitialState__CanNewDefferedTransition__Connector() {
         return getInitialState().getEOperations().get(47);
 	}
 
@@ -10377,7 +9347,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTransition__InitialState() {
+	public EOperation getInitialState__NewDefferedTransition__Connector() {
         return getInitialState().getEOperations().get(48);
 	}
 
@@ -10387,7 +9357,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTransition__InitialState_String() {
+	public EOperation getInitialState__NewDefferedTransition__Connector_String() {
         return getInitialState().getEOperations().get(49);
 	}
 
@@ -10397,7 +9367,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewImmediateTransition__Connector() {
+	public EOperation getInitialState__CanNewDefferedTransition__SuperState() {
         return getInitialState().getEOperations().get(50);
 	}
 
@@ -10407,7 +9377,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTransition__Connector() {
+	public EOperation getInitialState__NewDefferedTransition__SuperState() {
         return getInitialState().getEOperations().get(51);
 	}
 
@@ -10417,7 +9387,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTransition__Connector_String() {
+	public EOperation getInitialState__NewDefferedTransition__SuperState_String() {
         return getInitialState().getEOperations().get(52);
 	}
 
@@ -10427,7 +9397,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewImmediateTransition__SubSuperState() {
+	public EOperation getInitialState__CanNewDefferedTransition__SimpleState() {
         return getInitialState().getEOperations().get(53);
 	}
 
@@ -10437,7 +9407,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTransition__SubSuperState() {
+	public EOperation getInitialState__NewDefferedTransition__SimpleState() {
         return getInitialState().getEOperations().get(54);
 	}
 
@@ -10447,7 +9417,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTransition__SubSuperState_String() {
+	public EOperation getInitialState__NewDefferedTransition__SimpleState_String() {
         return getInitialState().getEOperations().get(55);
 	}
 
@@ -10457,7 +9427,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewImmediateTransition__SimpleState() {
+	public EOperation getInitialState__CanNewDefferedTransition__FinalState() {
         return getInitialState().getEOperations().get(56);
 	}
 
@@ -10467,7 +9437,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTransition__SimpleState() {
+	public EOperation getInitialState__NewDefferedTransition__FinalState() {
         return getInitialState().getEOperations().get(57);
 	}
 
@@ -10477,7 +9447,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTransition__SimpleState_String() {
+	public EOperation getInitialState__NewDefferedTransition__FinalState_String() {
         return getInitialState().getEOperations().get(58);
 	}
 
@@ -10487,7 +9457,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewImmediateTransition__FinalState() {
+	public EOperation getInitialState__CanNewDefferedTransition__InitialState() {
         return getInitialState().getEOperations().get(59);
 	}
 
@@ -10497,7 +9467,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTransition__FinalState() {
+	public EOperation getInitialState__NewDefferedTransition__InitialState() {
         return getInitialState().getEOperations().get(60);
 	}
 
@@ -10507,7 +9477,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTransition__FinalState_String() {
+	public EOperation getInitialState__NewDefferedTransition__InitialState_String() {
         return getInitialState().getEOperations().get(61);
 	}
 
@@ -10517,7 +9487,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewWeakAbortTransition__InitilalSubSuperState() {
+	public EOperation getInitialState__CanNewWeakAbortTransition__InitilalSuperState() {
         return getInitialState().getEOperations().get(62);
 	}
 
@@ -10527,7 +9497,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTransition__InitilalSubSuperState() {
+	public EOperation getInitialState__NewWeakAbortTransition__InitilalSuperState() {
         return getInitialState().getEOperations().get(63);
 	}
 
@@ -10537,7 +9507,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTransition__InitilalSubSuperState_String() {
+	public EOperation getInitialState__NewWeakAbortTransition__InitilalSuperState_String() {
         return getInitialState().getEOperations().get(64);
 	}
 
@@ -10547,7 +9517,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewWeakAbortTransition__InitialState() {
+	public EOperation getInitialState__CanNewWeakAbortTransition__Connector() {
         return getInitialState().getEOperations().get(65);
 	}
 
@@ -10557,7 +9527,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTransition__InitialState() {
+	public EOperation getInitialState__NewWeakAbortTransition__Connector() {
         return getInitialState().getEOperations().get(66);
 	}
 
@@ -10567,7 +9537,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTransition__InitialState_String() {
+	public EOperation getInitialState__NewWeakAbortTransition__Connector_String() {
         return getInitialState().getEOperations().get(67);
 	}
 
@@ -10577,7 +9547,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewWeakAbortTransition__Connector() {
+	public EOperation getInitialState__CanNewWeakAbortTransition__SuperState() {
         return getInitialState().getEOperations().get(68);
 	}
 
@@ -10587,7 +9557,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTransition__Connector() {
+	public EOperation getInitialState__NewWeakAbortTransition__SuperState() {
         return getInitialState().getEOperations().get(69);
 	}
 
@@ -10597,7 +9567,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTransition__Connector_String() {
+	public EOperation getInitialState__NewWeakAbortTransition__SuperState_String() {
         return getInitialState().getEOperations().get(70);
 	}
 
@@ -10607,7 +9577,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewWeakAbortTransition__SubSuperState() {
+	public EOperation getInitialState__CanNewWeakAbortTransition__SimpleState() {
         return getInitialState().getEOperations().get(71);
 	}
 
@@ -10617,7 +9587,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTransition__SubSuperState() {
+	public EOperation getInitialState__NewWeakAbortTransition__SimpleState() {
         return getInitialState().getEOperations().get(72);
 	}
 
@@ -10627,7 +9597,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTransition__SubSuperState_String() {
+	public EOperation getInitialState__NewWeakAbortTransition__SimpleState_String() {
         return getInitialState().getEOperations().get(73);
 	}
 
@@ -10637,7 +9607,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewWeakAbortTransition__SimpleState() {
+	public EOperation getInitialState__CanNewWeakAbortTransition__FinalState() {
         return getInitialState().getEOperations().get(74);
 	}
 
@@ -10647,7 +9617,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTransition__SimpleState() {
+	public EOperation getInitialState__NewWeakAbortTransition__FinalState() {
         return getInitialState().getEOperations().get(75);
 	}
 
@@ -10657,7 +9627,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTransition__SimpleState_String() {
+	public EOperation getInitialState__NewWeakAbortTransition__FinalState_String() {
         return getInitialState().getEOperations().get(76);
 	}
 
@@ -10667,7 +9637,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewWeakAbortTransition__FinalState() {
+	public EOperation getInitialState__CanNewWeakAbortTransition__InitialState() {
         return getInitialState().getEOperations().get(77);
 	}
 
@@ -10677,7 +9647,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTransition__FinalState() {
+	public EOperation getInitialState__NewWeakAbortTransition__InitialState() {
         return getInitialState().getEOperations().get(78);
 	}
 
@@ -10687,7 +9657,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTransition__FinalState_String() {
+	public EOperation getInitialState__NewWeakAbortTransition__InitialState_String() {
         return getInitialState().getEOperations().get(79);
 	}
 
@@ -10697,7 +9667,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewImmediateTerminationTransition__InitilalSubSuperState() {
+	public EOperation getInitialState__CanNewStrongAbortTransition__InitilalSuperState() {
         return getInitialState().getEOperations().get(80);
 	}
 
@@ -10707,7 +9677,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTerminationTransition__InitilalSubSuperState() {
+	public EOperation getInitialState__NewStrongAbortTransition__InitilalSuperState() {
         return getInitialState().getEOperations().get(81);
 	}
 
@@ -10717,7 +9687,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTerminationTransition__InitilalSubSuperState_String() {
+	public EOperation getInitialState__NewStrongAbortTransition__InitilalSuperState_String() {
         return getInitialState().getEOperations().get(82);
 	}
 
@@ -10727,7 +9697,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewImmediateTerminationTransition__InitialState() {
+	public EOperation getInitialState__CanNewStrongAbortTransition__Connector() {
         return getInitialState().getEOperations().get(83);
 	}
 
@@ -10737,7 +9707,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTerminationTransition__InitialState() {
+	public EOperation getInitialState__NewStrongAbortTransition__Connector() {
         return getInitialState().getEOperations().get(84);
 	}
 
@@ -10747,7 +9717,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTerminationTransition__InitialState_String() {
+	public EOperation getInitialState__NewStrongAbortTransition__Connector_String() {
         return getInitialState().getEOperations().get(85);
 	}
 
@@ -10757,7 +9727,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewImmediateTerminationTransition__Connector() {
+	public EOperation getInitialState__CanNewStrongAbortTransition__SuperState() {
         return getInitialState().getEOperations().get(86);
 	}
 
@@ -10767,7 +9737,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTerminationTransition__Connector() {
+	public EOperation getInitialState__NewStrongAbortTransition__SuperState() {
         return getInitialState().getEOperations().get(87);
 	}
 
@@ -10777,7 +9747,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTerminationTransition__Connector_String() {
+	public EOperation getInitialState__NewStrongAbortTransition__SuperState_String() {
         return getInitialState().getEOperations().get(88);
 	}
 
@@ -10787,7 +9757,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewImmediateTerminationTransition__SubSuperState() {
+	public EOperation getInitialState__CanNewStrongAbortTransition__SimpleState() {
         return getInitialState().getEOperations().get(89);
 	}
 
@@ -10797,7 +9767,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTerminationTransition__SubSuperState() {
+	public EOperation getInitialState__NewStrongAbortTransition__SimpleState() {
         return getInitialState().getEOperations().get(90);
 	}
 
@@ -10807,7 +9777,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTerminationTransition__SubSuperState_String() {
+	public EOperation getInitialState__NewStrongAbortTransition__SimpleState_String() {
         return getInitialState().getEOperations().get(91);
 	}
 
@@ -10817,7 +9787,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewImmediateTerminationTransition__SimpleState() {
+	public EOperation getInitialState__CanNewStrongAbortTransition__FinalState() {
         return getInitialState().getEOperations().get(92);
 	}
 
@@ -10827,7 +9797,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTerminationTransition__SimpleState() {
+	public EOperation getInitialState__NewStrongAbortTransition__FinalState() {
         return getInitialState().getEOperations().get(93);
 	}
 
@@ -10837,7 +9807,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTerminationTransition__SimpleState_String() {
+	public EOperation getInitialState__NewStrongAbortTransition__FinalState_String() {
         return getInitialState().getEOperations().get(94);
 	}
 
@@ -10847,7 +9817,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewImmediateTerminationTransition__FinalState() {
+	public EOperation getInitialState__CanNewStrongAbortTransition__InitialState() {
         return getInitialState().getEOperations().get(95);
 	}
 
@@ -10857,7 +9827,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTerminationTransition__FinalState() {
+	public EOperation getInitialState__NewStrongAbortTransition__InitialState() {
         return getInitialState().getEOperations().get(96);
 	}
 
@@ -10867,7 +9837,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewImmediateTerminationTransition__FinalState_String() {
+	public EOperation getInitialState__NewStrongAbortTransition__InitialState_String() {
         return getInitialState().getEOperations().get(97);
 	}
 
@@ -10877,7 +9847,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewStrongAbortTransition__InitilalSubSuperState() {
+	public EOperation getInitialState__CanNewWeakAbortTerminationTransition__InitilalSuperState() {
         return getInitialState().getEOperations().get(98);
 	}
 
@@ -10887,7 +9857,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewStrongAbortTransition__InitilalSubSuperState() {
+	public EOperation getInitialState__NewWeakAbortTerminationTransition__InitilalSuperState() {
         return getInitialState().getEOperations().get(99);
 	}
 
@@ -10897,7 +9867,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewStrongAbortTransition__InitilalSubSuperState_String() {
+	public EOperation getInitialState__NewWeakAbortTerminationTransition__InitilalSuperState_String() {
         return getInitialState().getEOperations().get(100);
 	}
 
@@ -10907,7 +9877,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewStrongAbortTransition__InitialState() {
+	public EOperation getInitialState__CanNewWeakAbortTerminationTransition__Connector() {
         return getInitialState().getEOperations().get(101);
 	}
 
@@ -10917,7 +9887,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewStrongAbortTransition__InitialState() {
+	public EOperation getInitialState__NewWeakAbortTerminationTransition__Connector() {
         return getInitialState().getEOperations().get(102);
 	}
 
@@ -10927,7 +9897,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewStrongAbortTransition__InitialState_String() {
+	public EOperation getInitialState__NewWeakAbortTerminationTransition__Connector_String() {
         return getInitialState().getEOperations().get(103);
 	}
 
@@ -10937,7 +9907,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewStrongAbortTransition__Connector() {
+	public EOperation getInitialState__CanNewWeakAbortTerminationTransition__SuperState() {
         return getInitialState().getEOperations().get(104);
 	}
 
@@ -10947,7 +9917,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewStrongAbortTransition__Connector() {
+	public EOperation getInitialState__NewWeakAbortTerminationTransition__SuperState() {
         return getInitialState().getEOperations().get(105);
 	}
 
@@ -10957,7 +9927,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewStrongAbortTransition__Connector_String() {
+	public EOperation getInitialState__NewWeakAbortTerminationTransition__SuperState_String() {
         return getInitialState().getEOperations().get(106);
 	}
 
@@ -10967,7 +9937,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewStrongAbortTransition__SubSuperState() {
+	public EOperation getInitialState__CanNewWeakAbortTerminationTransition__SimpleState() {
         return getInitialState().getEOperations().get(107);
 	}
 
@@ -10977,7 +9947,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewStrongAbortTransition__SubSuperState() {
+	public EOperation getInitialState__NewWeakAbortTerminationTransition__SimpleState() {
         return getInitialState().getEOperations().get(108);
 	}
 
@@ -10987,7 +9957,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewStrongAbortTransition__SubSuperState_String() {
+	public EOperation getInitialState__NewWeakAbortTerminationTransition__SimpleState_String() {
         return getInitialState().getEOperations().get(109);
 	}
 
@@ -10997,7 +9967,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewStrongAbortTransition__SimpleState() {
+	public EOperation getInitialState__CanNewWeakAbortTerminationTransition__FinalState() {
         return getInitialState().getEOperations().get(110);
 	}
 
@@ -11007,7 +9977,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewStrongAbortTransition__SimpleState() {
+	public EOperation getInitialState__NewWeakAbortTerminationTransition__FinalState() {
         return getInitialState().getEOperations().get(111);
 	}
 
@@ -11017,7 +9987,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewStrongAbortTransition__SimpleState_String() {
+	public EOperation getInitialState__NewWeakAbortTerminationTransition__FinalState_String() {
         return getInitialState().getEOperations().get(112);
 	}
 
@@ -11027,7 +9997,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewStrongAbortTransition__FinalState() {
+	public EOperation getInitialState__CanNewWeakAbortTerminationTransition__InitialState() {
         return getInitialState().getEOperations().get(113);
 	}
 
@@ -11037,7 +10007,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewStrongAbortTransition__FinalState() {
+	public EOperation getInitialState__NewWeakAbortTerminationTransition__InitialState() {
         return getInitialState().getEOperations().get(114);
 	}
 
@@ -11047,7 +10017,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewStrongAbortTransition__FinalState_String() {
+	public EOperation getInitialState__NewWeakAbortTerminationTransition__InitialState_String() {
         return getInitialState().getEOperations().get(115);
 	}
 
@@ -11057,7 +10027,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewWeakAbortTerminationTransition__InitilalSubSuperState() {
+	public EOperation getInitialState__CanNewImmediateTerminationTransition__InitilalSuperState() {
         return getInitialState().getEOperations().get(116);
 	}
 
@@ -11067,7 +10037,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTerminationTransition__InitilalSubSuperState() {
+	public EOperation getInitialState__NewImmediateTerminationTransition__InitilalSuperState() {
         return getInitialState().getEOperations().get(117);
 	}
 
@@ -11077,7 +10047,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTerminationTransition__InitilalSubSuperState_String() {
+	public EOperation getInitialState__NewImmediateTerminationTransition__InitilalSuperState_String() {
         return getInitialState().getEOperations().get(118);
 	}
 
@@ -11087,7 +10057,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewWeakAbortTerminationTransition__InitialState() {
+	public EOperation getInitialState__CanNewImmediateTerminationTransition__Connector() {
         return getInitialState().getEOperations().get(119);
 	}
 
@@ -11097,7 +10067,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTerminationTransition__InitialState() {
+	public EOperation getInitialState__NewImmediateTerminationTransition__Connector() {
         return getInitialState().getEOperations().get(120);
 	}
 
@@ -11107,7 +10077,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTerminationTransition__InitialState_String() {
+	public EOperation getInitialState__NewImmediateTerminationTransition__Connector_String() {
         return getInitialState().getEOperations().get(121);
 	}
 
@@ -11117,7 +10087,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewWeakAbortTerminationTransition__Connector() {
+	public EOperation getInitialState__CanNewImmediateTerminationTransition__SuperState() {
         return getInitialState().getEOperations().get(122);
 	}
 
@@ -11127,7 +10097,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTerminationTransition__Connector() {
+	public EOperation getInitialState__NewImmediateTerminationTransition__SuperState() {
         return getInitialState().getEOperations().get(123);
 	}
 
@@ -11137,7 +10107,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTerminationTransition__Connector_String() {
+	public EOperation getInitialState__NewImmediateTerminationTransition__SuperState_String() {
         return getInitialState().getEOperations().get(124);
 	}
 
@@ -11147,7 +10117,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewWeakAbortTerminationTransition__SubSuperState() {
+	public EOperation getInitialState__CanNewImmediateTerminationTransition__SimpleState() {
         return getInitialState().getEOperations().get(125);
 	}
 
@@ -11157,7 +10127,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTerminationTransition__SubSuperState() {
+	public EOperation getInitialState__NewImmediateTerminationTransition__SimpleState() {
         return getInitialState().getEOperations().get(126);
 	}
 
@@ -11167,7 +10137,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTerminationTransition__SubSuperState_String() {
+	public EOperation getInitialState__NewImmediateTerminationTransition__SimpleState_String() {
         return getInitialState().getEOperations().get(127);
 	}
 
@@ -11177,7 +10147,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewWeakAbortTerminationTransition__SimpleState() {
+	public EOperation getInitialState__CanNewImmediateTerminationTransition__FinalState() {
         return getInitialState().getEOperations().get(128);
 	}
 
@@ -11187,7 +10157,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTerminationTransition__SimpleState() {
+	public EOperation getInitialState__NewImmediateTerminationTransition__FinalState() {
         return getInitialState().getEOperations().get(129);
 	}
 
@@ -11197,7 +10167,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTerminationTransition__SimpleState_String() {
+	public EOperation getInitialState__NewImmediateTerminationTransition__FinalState_String() {
         return getInitialState().getEOperations().get(130);
 	}
 
@@ -11207,7 +10177,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewWeakAbortTerminationTransition__FinalState() {
+	public EOperation getInitialState__CanNewImmediateTerminationTransition__InitialState() {
         return getInitialState().getEOperations().get(131);
 	}
 
@@ -11217,7 +10187,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTerminationTransition__FinalState() {
+	public EOperation getInitialState__NewImmediateTerminationTransition__InitialState() {
         return getInitialState().getEOperations().get(132);
 	}
 
@@ -11227,7 +10197,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewWeakAbortTerminationTransition__FinalState_String() {
+	public EOperation getInitialState__NewImmediateTerminationTransition__InitialState_String() {
         return getInitialState().getEOperations().get(133);
 	}
 
@@ -11237,7 +10207,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewTransition__InitilalSubSuperState() {
+	public EOperation getInitialState__CanNewImmediateTransition__InitilalSuperState() {
         return getInitialState().getEOperations().get(134);
 	}
 
@@ -11247,7 +10217,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewTransition__InitilalSubSuperState() {
+	public EOperation getInitialState__NewImmediateTransition__InitilalSuperState() {
         return getInitialState().getEOperations().get(135);
 	}
 
@@ -11257,7 +10227,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewTransition__InitilalSubSuperState_String() {
+	public EOperation getInitialState__NewImmediateTransition__InitilalSuperState_String() {
         return getInitialState().getEOperations().get(136);
 	}
 
@@ -11267,7 +10237,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewTransition__InitialState() {
+	public EOperation getInitialState__CanNewImmediateTransition__Connector() {
         return getInitialState().getEOperations().get(137);
 	}
 
@@ -11277,7 +10247,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewTransition__InitialState() {
+	public EOperation getInitialState__NewImmediateTransition__Connector() {
         return getInitialState().getEOperations().get(138);
 	}
 
@@ -11287,7 +10257,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewTransition__InitialState_String() {
+	public EOperation getInitialState__NewImmediateTransition__Connector_String() {
         return getInitialState().getEOperations().get(139);
 	}
 
@@ -11297,7 +10267,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewTransition__Connector() {
+	public EOperation getInitialState__CanNewImmediateTransition__SuperState() {
         return getInitialState().getEOperations().get(140);
 	}
 
@@ -11307,7 +10277,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewTransition__Connector() {
+	public EOperation getInitialState__NewImmediateTransition__SuperState() {
         return getInitialState().getEOperations().get(141);
 	}
 
@@ -11317,7 +10287,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewTransition__Connector_String() {
+	public EOperation getInitialState__NewImmediateTransition__SuperState_String() {
         return getInitialState().getEOperations().get(142);
 	}
 
@@ -11327,7 +10297,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewTransition__SubSuperState() {
+	public EOperation getInitialState__CanNewImmediateTransition__SimpleState() {
         return getInitialState().getEOperations().get(143);
 	}
 
@@ -11337,7 +10307,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewTransition__SubSuperState() {
+	public EOperation getInitialState__NewImmediateTransition__SimpleState() {
         return getInitialState().getEOperations().get(144);
 	}
 
@@ -11347,7 +10317,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewTransition__SubSuperState_String() {
+	public EOperation getInitialState__NewImmediateTransition__SimpleState_String() {
         return getInitialState().getEOperations().get(145);
 	}
 
@@ -11357,7 +10327,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewTransition__SimpleState() {
+	public EOperation getInitialState__CanNewImmediateTransition__FinalState() {
         return getInitialState().getEOperations().get(146);
 	}
 
@@ -11367,7 +10337,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewTransition__SimpleState() {
+	public EOperation getInitialState__NewImmediateTransition__FinalState() {
         return getInitialState().getEOperations().get(147);
 	}
 
@@ -11377,7 +10347,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewTransition__SimpleState_String() {
+	public EOperation getInitialState__NewImmediateTransition__FinalState_String() {
         return getInitialState().getEOperations().get(148);
 	}
 
@@ -11387,7 +10357,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewTransition__FinalState() {
+	public EOperation getInitialState__CanNewImmediateTransition__InitialState() {
         return getInitialState().getEOperations().get(149);
 	}
 
@@ -11397,7 +10367,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewTransition__FinalState() {
+	public EOperation getInitialState__NewImmediateTransition__InitialState() {
         return getInitialState().getEOperations().get(150);
 	}
 
@@ -11407,7 +10377,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewTransition__FinalState_String() {
+	public EOperation getInitialState__NewImmediateTransition__InitialState_String() {
         return getInitialState().getEOperations().get(151);
 	}
 
@@ -11417,7 +10387,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewDefferedTransition__InitilalSubSuperState() {
+	public EOperation getInitialState__CanNewTransition__InitilalSuperState() {
         return getInitialState().getEOperations().get(152);
 	}
 
@@ -11427,7 +10397,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewDefferedTransition__InitilalSubSuperState() {
+	public EOperation getInitialState__NewTransition__InitilalSuperState() {
         return getInitialState().getEOperations().get(153);
 	}
 
@@ -11437,7 +10407,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewDefferedTransition__InitilalSubSuperState_String() {
+	public EOperation getInitialState__NewTransition__InitilalSuperState_String() {
         return getInitialState().getEOperations().get(154);
 	}
 
@@ -11447,7 +10417,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewDefferedTransition__InitialState() {
+	public EOperation getInitialState__CanNewTransition__Connector() {
         return getInitialState().getEOperations().get(155);
 	}
 
@@ -11457,7 +10427,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewDefferedTransition__InitialState() {
+	public EOperation getInitialState__NewTransition__Connector() {
         return getInitialState().getEOperations().get(156);
 	}
 
@@ -11467,7 +10437,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewDefferedTransition__InitialState_String() {
+	public EOperation getInitialState__NewTransition__Connector_String() {
         return getInitialState().getEOperations().get(157);
 	}
 
@@ -11477,7 +10447,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewDefferedTransition__Connector() {
+	public EOperation getInitialState__CanNewTransition__SuperState() {
         return getInitialState().getEOperations().get(158);
 	}
 
@@ -11487,7 +10457,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewDefferedTransition__Connector() {
+	public EOperation getInitialState__NewTransition__SuperState() {
         return getInitialState().getEOperations().get(159);
 	}
 
@@ -11497,7 +10467,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewDefferedTransition__Connector_String() {
+	public EOperation getInitialState__NewTransition__SuperState_String() {
         return getInitialState().getEOperations().get(160);
 	}
 
@@ -11507,7 +10477,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewDefferedTransition__SubSuperState() {
+	public EOperation getInitialState__CanNewTransition__SimpleState() {
         return getInitialState().getEOperations().get(161);
 	}
 
@@ -11517,7 +10487,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewDefferedTransition__SubSuperState() {
+	public EOperation getInitialState__NewTransition__SimpleState() {
         return getInitialState().getEOperations().get(162);
 	}
 
@@ -11527,7 +10497,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewDefferedTransition__SubSuperState_String() {
+	public EOperation getInitialState__NewTransition__SimpleState_String() {
         return getInitialState().getEOperations().get(163);
 	}
 
@@ -11537,7 +10507,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewDefferedTransition__SimpleState() {
+	public EOperation getInitialState__CanNewTransition__FinalState() {
         return getInitialState().getEOperations().get(164);
 	}
 
@@ -11547,7 +10517,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewDefferedTransition__SimpleState() {
+	public EOperation getInitialState__NewTransition__FinalState() {
         return getInitialState().getEOperations().get(165);
 	}
 
@@ -11557,7 +10527,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewDefferedTransition__SimpleState_String() {
+	public EOperation getInitialState__NewTransition__FinalState_String() {
         return getInitialState().getEOperations().get(166);
 	}
 
@@ -11567,7 +10537,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanNewDefferedTransition__FinalState() {
+	public EOperation getInitialState__CanNewTransition__InitialState() {
         return getInitialState().getEOperations().get(167);
 	}
 
@@ -11577,7 +10547,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewDefferedTransition__FinalState() {
+	public EOperation getInitialState__NewTransition__InitialState() {
         return getInitialState().getEOperations().get(168);
 	}
 
@@ -11587,7 +10557,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__NewDefferedTransition__FinalState_String() {
+	public EOperation getInitialState__NewTransition__InitialState_String() {
         return getInitialState().getEOperations().get(169);
 	}
 
@@ -11597,7 +10567,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanMoveTo__SuperStateRegion_int_int() {
+	public EOperation getInitialState__CanMoveTo__Region_int_int() {
         return getInitialState().getEOperations().get(170);
 	}
 
@@ -11607,7 +10577,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__MoveTo__SuperStateRegion_int_int() {
+	public EOperation getInitialState__MoveTo__Region_int_int() {
         return getInitialState().getEOperations().get(171);
 	}
 
@@ -11617,7 +10587,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__S_moveTo__SuperStateRegion_int_int() {
+	public EOperation getInitialState__S_moveTo__Region_int_int() {
         return getInitialState().getEOperations().get(172);
 	}
 
@@ -11627,7 +10597,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__CanMoveTo__SubSuperStateRegion_int_int() {
+	public EOperation getInitialState__GetContainer() {
         return getInitialState().getEOperations().get(173);
 	}
 
@@ -11637,28 +10607,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getInitialState__MoveTo__SubSuperStateRegion_int_int() {
-        return getInitialState().getEOperations().get(174);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInitialState__S_moveTo__SubSuperStateRegion_int_int() {
-        return getInitialState().getEOperations().get(175);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EOperation getInitialState__GetInitialStateView() {
-        return getInitialState().getEOperations().get(176);
+        return getInitialState().getEOperations().get(174);
 	}
 
 	/**
@@ -11669,7 +10619,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	@Override
 	public EClass getFinalState() {
 		if (finalStateEClass == null) {
-			finalStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(9);
+			finalStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(8);
 		}
 		return finalStateEClass;
 	}
@@ -11850,7 +10800,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetOutgoingImmediateTransitions() {
+	public EOperation getFinalState__GetOutgoingDefferedTransitions() {
         return getFinalState().getEOperations().get(17);
 	}
 
@@ -11870,7 +10820,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetOutgoingTransitions() {
+	public EOperation getFinalState__GetOutgoingStrongAbortTransitions() {
         return getFinalState().getEOperations().get(19);
 	}
 
@@ -11880,7 +10830,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetOutgoingStrongAbortTransitions() {
+	public EOperation getFinalState__GetOutgoingWeakAbortTerminationTransitions() {
         return getFinalState().getEOperations().get(20);
 	}
 
@@ -11890,7 +10840,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetOutgoingDefferedTransitions() {
+	public EOperation getFinalState__GetOutgoingImmediateTerminationTransitions() {
         return getFinalState().getEOperations().get(21);
 	}
 
@@ -11900,7 +10850,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetOutgoingImmediateTerminationTransitions() {
+	public EOperation getFinalState__GetOutgoingTransitions() {
         return getFinalState().getEOperations().get(22);
 	}
 
@@ -11910,7 +10860,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetOutgoingWeakAbortTerminationTransitions() {
+	public EOperation getFinalState__GetOutgoingImmediateTransitions() {
         return getFinalState().getEOperations().get(23);
 	}
 
@@ -11920,7 +10870,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetIncomingImmediateTransitions() {
+	public EOperation getFinalState__GetIncomingDefferedTransitions() {
         return getFinalState().getEOperations().get(24);
 	}
 
@@ -11940,7 +10890,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetIncomingTransitions() {
+	public EOperation getFinalState__GetIncomingStrongAbortTransitions() {
         return getFinalState().getEOperations().get(26);
 	}
 
@@ -11950,7 +10900,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetIncomingStrongAbortTransitions() {
+	public EOperation getFinalState__GetIncomingWeakAbortTerminationTransitions() {
         return getFinalState().getEOperations().get(27);
 	}
 
@@ -11960,7 +10910,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetIncomingDefferedTransitions() {
+	public EOperation getFinalState__GetIncomingImmediateTerminationTransitions() {
         return getFinalState().getEOperations().get(28);
 	}
 
@@ -11970,7 +10920,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetIncomingImmediateTerminationTransitions() {
+	public EOperation getFinalState__GetIncomingTransitions() {
         return getFinalState().getEOperations().get(29);
 	}
 
@@ -11980,7 +10930,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetIncomingWeakAbortTerminationTransitions() {
+	public EOperation getFinalState__GetIncomingImmediateTransitions() {
         return getFinalState().getEOperations().get(30);
 	}
 
@@ -12000,7 +10950,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetSubSuperStatePredecessors() {
+	public EOperation getFinalState__GetSuperStatePredecessors() {
         return getFinalState().getEOperations().get(32);
 	}
 
@@ -12010,7 +10960,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetInitilalSubSuperStatePredecessors() {
+	public EOperation getFinalState__GetInitilalSuperStatePredecessors() {
         return getFinalState().getEOperations().get(33);
 	}
 
@@ -12060,7 +11010,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetSubSuperStateSuccessors() {
+	public EOperation getFinalState__GetSuperStateSuccessors() {
         return getFinalState().getEOperations().get(38);
 	}
 
@@ -12070,7 +11020,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__GetInitilalSubSuperStateSuccessors() {
+	public EOperation getFinalState__GetInitilalSuperStateSuccessors() {
         return getFinalState().getEOperations().get(39);
 	}
 
@@ -12120,7 +11070,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewImmediateTransition__InitilalSubSuperState() {
+	public EOperation getFinalState__CanNewDefferedTransition__InitilalSuperState() {
         return getFinalState().getEOperations().get(44);
 	}
 
@@ -12130,7 +11080,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTransition__InitilalSubSuperState() {
+	public EOperation getFinalState__NewDefferedTransition__InitilalSuperState() {
         return getFinalState().getEOperations().get(45);
 	}
 
@@ -12140,7 +11090,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTransition__InitilalSubSuperState_String() {
+	public EOperation getFinalState__NewDefferedTransition__InitilalSuperState_String() {
         return getFinalState().getEOperations().get(46);
 	}
 
@@ -12150,7 +11100,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewImmediateTransition__InitialState() {
+	public EOperation getFinalState__CanNewDefferedTransition__Connector() {
         return getFinalState().getEOperations().get(47);
 	}
 
@@ -12160,7 +11110,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTransition__InitialState() {
+	public EOperation getFinalState__NewDefferedTransition__Connector() {
         return getFinalState().getEOperations().get(48);
 	}
 
@@ -12170,7 +11120,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTransition__InitialState_String() {
+	public EOperation getFinalState__NewDefferedTransition__Connector_String() {
         return getFinalState().getEOperations().get(49);
 	}
 
@@ -12180,7 +11130,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewImmediateTransition__Connector() {
+	public EOperation getFinalState__CanNewDefferedTransition__SuperState() {
         return getFinalState().getEOperations().get(50);
 	}
 
@@ -12190,7 +11140,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTransition__Connector() {
+	public EOperation getFinalState__NewDefferedTransition__SuperState() {
         return getFinalState().getEOperations().get(51);
 	}
 
@@ -12200,7 +11150,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTransition__Connector_String() {
+	public EOperation getFinalState__NewDefferedTransition__SuperState_String() {
         return getFinalState().getEOperations().get(52);
 	}
 
@@ -12210,7 +11160,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewImmediateTransition__SubSuperState() {
+	public EOperation getFinalState__CanNewDefferedTransition__SimpleState() {
         return getFinalState().getEOperations().get(53);
 	}
 
@@ -12220,7 +11170,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTransition__SubSuperState() {
+	public EOperation getFinalState__NewDefferedTransition__SimpleState() {
         return getFinalState().getEOperations().get(54);
 	}
 
@@ -12230,7 +11180,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTransition__SubSuperState_String() {
+	public EOperation getFinalState__NewDefferedTransition__SimpleState_String() {
         return getFinalState().getEOperations().get(55);
 	}
 
@@ -12240,7 +11190,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewImmediateTransition__SimpleState() {
+	public EOperation getFinalState__CanNewDefferedTransition__FinalState() {
         return getFinalState().getEOperations().get(56);
 	}
 
@@ -12250,7 +11200,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTransition__SimpleState() {
+	public EOperation getFinalState__NewDefferedTransition__FinalState() {
         return getFinalState().getEOperations().get(57);
 	}
 
@@ -12260,7 +11210,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTransition__SimpleState_String() {
+	public EOperation getFinalState__NewDefferedTransition__FinalState_String() {
         return getFinalState().getEOperations().get(58);
 	}
 
@@ -12270,7 +11220,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewImmediateTransition__FinalState() {
+	public EOperation getFinalState__CanNewDefferedTransition__InitialState() {
         return getFinalState().getEOperations().get(59);
 	}
 
@@ -12280,7 +11230,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTransition__FinalState() {
+	public EOperation getFinalState__NewDefferedTransition__InitialState() {
         return getFinalState().getEOperations().get(60);
 	}
 
@@ -12290,7 +11240,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTransition__FinalState_String() {
+	public EOperation getFinalState__NewDefferedTransition__InitialState_String() {
         return getFinalState().getEOperations().get(61);
 	}
 
@@ -12300,7 +11250,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewWeakAbortTransition__InitilalSubSuperState() {
+	public EOperation getFinalState__CanNewWeakAbortTransition__InitilalSuperState() {
         return getFinalState().getEOperations().get(62);
 	}
 
@@ -12310,7 +11260,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTransition__InitilalSubSuperState() {
+	public EOperation getFinalState__NewWeakAbortTransition__InitilalSuperState() {
         return getFinalState().getEOperations().get(63);
 	}
 
@@ -12320,7 +11270,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTransition__InitilalSubSuperState_String() {
+	public EOperation getFinalState__NewWeakAbortTransition__InitilalSuperState_String() {
         return getFinalState().getEOperations().get(64);
 	}
 
@@ -12330,7 +11280,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewWeakAbortTransition__InitialState() {
+	public EOperation getFinalState__CanNewWeakAbortTransition__Connector() {
         return getFinalState().getEOperations().get(65);
 	}
 
@@ -12340,7 +11290,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTransition__InitialState() {
+	public EOperation getFinalState__NewWeakAbortTransition__Connector() {
         return getFinalState().getEOperations().get(66);
 	}
 
@@ -12350,7 +11300,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTransition__InitialState_String() {
+	public EOperation getFinalState__NewWeakAbortTransition__Connector_String() {
         return getFinalState().getEOperations().get(67);
 	}
 
@@ -12360,7 +11310,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewWeakAbortTransition__Connector() {
+	public EOperation getFinalState__CanNewWeakAbortTransition__SuperState() {
         return getFinalState().getEOperations().get(68);
 	}
 
@@ -12370,7 +11320,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTransition__Connector() {
+	public EOperation getFinalState__NewWeakAbortTransition__SuperState() {
         return getFinalState().getEOperations().get(69);
 	}
 
@@ -12380,7 +11330,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTransition__Connector_String() {
+	public EOperation getFinalState__NewWeakAbortTransition__SuperState_String() {
         return getFinalState().getEOperations().get(70);
 	}
 
@@ -12390,7 +11340,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewWeakAbortTransition__SubSuperState() {
+	public EOperation getFinalState__CanNewWeakAbortTransition__SimpleState() {
         return getFinalState().getEOperations().get(71);
 	}
 
@@ -12400,7 +11350,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTransition__SubSuperState() {
+	public EOperation getFinalState__NewWeakAbortTransition__SimpleState() {
         return getFinalState().getEOperations().get(72);
 	}
 
@@ -12410,7 +11360,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTransition__SubSuperState_String() {
+	public EOperation getFinalState__NewWeakAbortTransition__SimpleState_String() {
         return getFinalState().getEOperations().get(73);
 	}
 
@@ -12420,7 +11370,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewWeakAbortTransition__SimpleState() {
+	public EOperation getFinalState__CanNewWeakAbortTransition__FinalState() {
         return getFinalState().getEOperations().get(74);
 	}
 
@@ -12430,7 +11380,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTransition__SimpleState() {
+	public EOperation getFinalState__NewWeakAbortTransition__FinalState() {
         return getFinalState().getEOperations().get(75);
 	}
 
@@ -12440,7 +11390,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTransition__SimpleState_String() {
+	public EOperation getFinalState__NewWeakAbortTransition__FinalState_String() {
         return getFinalState().getEOperations().get(76);
 	}
 
@@ -12450,7 +11400,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewWeakAbortTransition__FinalState() {
+	public EOperation getFinalState__CanNewWeakAbortTransition__InitialState() {
         return getFinalState().getEOperations().get(77);
 	}
 
@@ -12460,7 +11410,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTransition__FinalState() {
+	public EOperation getFinalState__NewWeakAbortTransition__InitialState() {
         return getFinalState().getEOperations().get(78);
 	}
 
@@ -12470,7 +11420,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTransition__FinalState_String() {
+	public EOperation getFinalState__NewWeakAbortTransition__InitialState_String() {
         return getFinalState().getEOperations().get(79);
 	}
 
@@ -12480,7 +11430,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewImmediateTerminationTransition__InitilalSubSuperState() {
+	public EOperation getFinalState__CanNewStrongAbortTransition__InitilalSuperState() {
         return getFinalState().getEOperations().get(80);
 	}
 
@@ -12490,7 +11440,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTerminationTransition__InitilalSubSuperState() {
+	public EOperation getFinalState__NewStrongAbortTransition__InitilalSuperState() {
         return getFinalState().getEOperations().get(81);
 	}
 
@@ -12500,7 +11450,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTerminationTransition__InitilalSubSuperState_String() {
+	public EOperation getFinalState__NewStrongAbortTransition__InitilalSuperState_String() {
         return getFinalState().getEOperations().get(82);
 	}
 
@@ -12510,7 +11460,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewImmediateTerminationTransition__InitialState() {
+	public EOperation getFinalState__CanNewStrongAbortTransition__Connector() {
         return getFinalState().getEOperations().get(83);
 	}
 
@@ -12520,7 +11470,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTerminationTransition__InitialState() {
+	public EOperation getFinalState__NewStrongAbortTransition__Connector() {
         return getFinalState().getEOperations().get(84);
 	}
 
@@ -12530,7 +11480,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTerminationTransition__InitialState_String() {
+	public EOperation getFinalState__NewStrongAbortTransition__Connector_String() {
         return getFinalState().getEOperations().get(85);
 	}
 
@@ -12540,7 +11490,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewImmediateTerminationTransition__Connector() {
+	public EOperation getFinalState__CanNewStrongAbortTransition__SuperState() {
         return getFinalState().getEOperations().get(86);
 	}
 
@@ -12550,7 +11500,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTerminationTransition__Connector() {
+	public EOperation getFinalState__NewStrongAbortTransition__SuperState() {
         return getFinalState().getEOperations().get(87);
 	}
 
@@ -12560,7 +11510,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTerminationTransition__Connector_String() {
+	public EOperation getFinalState__NewStrongAbortTransition__SuperState_String() {
         return getFinalState().getEOperations().get(88);
 	}
 
@@ -12570,7 +11520,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewImmediateTerminationTransition__SubSuperState() {
+	public EOperation getFinalState__CanNewStrongAbortTransition__SimpleState() {
         return getFinalState().getEOperations().get(89);
 	}
 
@@ -12580,7 +11530,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTerminationTransition__SubSuperState() {
+	public EOperation getFinalState__NewStrongAbortTransition__SimpleState() {
         return getFinalState().getEOperations().get(90);
 	}
 
@@ -12590,7 +11540,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTerminationTransition__SubSuperState_String() {
+	public EOperation getFinalState__NewStrongAbortTransition__SimpleState_String() {
         return getFinalState().getEOperations().get(91);
 	}
 
@@ -12600,7 +11550,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewImmediateTerminationTransition__SimpleState() {
+	public EOperation getFinalState__CanNewStrongAbortTransition__FinalState() {
         return getFinalState().getEOperations().get(92);
 	}
 
@@ -12610,7 +11560,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTerminationTransition__SimpleState() {
+	public EOperation getFinalState__NewStrongAbortTransition__FinalState() {
         return getFinalState().getEOperations().get(93);
 	}
 
@@ -12620,7 +11570,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTerminationTransition__SimpleState_String() {
+	public EOperation getFinalState__NewStrongAbortTransition__FinalState_String() {
         return getFinalState().getEOperations().get(94);
 	}
 
@@ -12630,7 +11580,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewImmediateTerminationTransition__FinalState() {
+	public EOperation getFinalState__CanNewStrongAbortTransition__InitialState() {
         return getFinalState().getEOperations().get(95);
 	}
 
@@ -12640,7 +11590,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTerminationTransition__FinalState() {
+	public EOperation getFinalState__NewStrongAbortTransition__InitialState() {
         return getFinalState().getEOperations().get(96);
 	}
 
@@ -12650,7 +11600,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewImmediateTerminationTransition__FinalState_String() {
+	public EOperation getFinalState__NewStrongAbortTransition__InitialState_String() {
         return getFinalState().getEOperations().get(97);
 	}
 
@@ -12660,7 +11610,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewStrongAbortTransition__InitilalSubSuperState() {
+	public EOperation getFinalState__CanNewWeakAbortTerminationTransition__InitilalSuperState() {
         return getFinalState().getEOperations().get(98);
 	}
 
@@ -12670,7 +11620,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewStrongAbortTransition__InitilalSubSuperState() {
+	public EOperation getFinalState__NewWeakAbortTerminationTransition__InitilalSuperState() {
         return getFinalState().getEOperations().get(99);
 	}
 
@@ -12680,7 +11630,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewStrongAbortTransition__InitilalSubSuperState_String() {
+	public EOperation getFinalState__NewWeakAbortTerminationTransition__InitilalSuperState_String() {
         return getFinalState().getEOperations().get(100);
 	}
 
@@ -12690,7 +11640,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewStrongAbortTransition__InitialState() {
+	public EOperation getFinalState__CanNewWeakAbortTerminationTransition__Connector() {
         return getFinalState().getEOperations().get(101);
 	}
 
@@ -12700,7 +11650,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewStrongAbortTransition__InitialState() {
+	public EOperation getFinalState__NewWeakAbortTerminationTransition__Connector() {
         return getFinalState().getEOperations().get(102);
 	}
 
@@ -12710,7 +11660,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewStrongAbortTransition__InitialState_String() {
+	public EOperation getFinalState__NewWeakAbortTerminationTransition__Connector_String() {
         return getFinalState().getEOperations().get(103);
 	}
 
@@ -12720,7 +11670,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewStrongAbortTransition__Connector() {
+	public EOperation getFinalState__CanNewWeakAbortTerminationTransition__SuperState() {
         return getFinalState().getEOperations().get(104);
 	}
 
@@ -12730,7 +11680,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewStrongAbortTransition__Connector() {
+	public EOperation getFinalState__NewWeakAbortTerminationTransition__SuperState() {
         return getFinalState().getEOperations().get(105);
 	}
 
@@ -12740,7 +11690,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewStrongAbortTransition__Connector_String() {
+	public EOperation getFinalState__NewWeakAbortTerminationTransition__SuperState_String() {
         return getFinalState().getEOperations().get(106);
 	}
 
@@ -12750,7 +11700,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewStrongAbortTransition__SubSuperState() {
+	public EOperation getFinalState__CanNewWeakAbortTerminationTransition__SimpleState() {
         return getFinalState().getEOperations().get(107);
 	}
 
@@ -12760,7 +11710,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewStrongAbortTransition__SubSuperState() {
+	public EOperation getFinalState__NewWeakAbortTerminationTransition__SimpleState() {
         return getFinalState().getEOperations().get(108);
 	}
 
@@ -12770,7 +11720,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewStrongAbortTransition__SubSuperState_String() {
+	public EOperation getFinalState__NewWeakAbortTerminationTransition__SimpleState_String() {
         return getFinalState().getEOperations().get(109);
 	}
 
@@ -12780,7 +11730,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewStrongAbortTransition__SimpleState() {
+	public EOperation getFinalState__CanNewWeakAbortTerminationTransition__FinalState() {
         return getFinalState().getEOperations().get(110);
 	}
 
@@ -12790,7 +11740,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewStrongAbortTransition__SimpleState() {
+	public EOperation getFinalState__NewWeakAbortTerminationTransition__FinalState() {
         return getFinalState().getEOperations().get(111);
 	}
 
@@ -12800,7 +11750,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewStrongAbortTransition__SimpleState_String() {
+	public EOperation getFinalState__NewWeakAbortTerminationTransition__FinalState_String() {
         return getFinalState().getEOperations().get(112);
 	}
 
@@ -12810,7 +11760,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewStrongAbortTransition__FinalState() {
+	public EOperation getFinalState__CanNewWeakAbortTerminationTransition__InitialState() {
         return getFinalState().getEOperations().get(113);
 	}
 
@@ -12820,7 +11770,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewStrongAbortTransition__FinalState() {
+	public EOperation getFinalState__NewWeakAbortTerminationTransition__InitialState() {
         return getFinalState().getEOperations().get(114);
 	}
 
@@ -12830,7 +11780,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewStrongAbortTransition__FinalState_String() {
+	public EOperation getFinalState__NewWeakAbortTerminationTransition__InitialState_String() {
         return getFinalState().getEOperations().get(115);
 	}
 
@@ -12840,7 +11790,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewWeakAbortTerminationTransition__InitilalSubSuperState() {
+	public EOperation getFinalState__CanNewImmediateTerminationTransition__InitilalSuperState() {
         return getFinalState().getEOperations().get(116);
 	}
 
@@ -12850,7 +11800,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTerminationTransition__InitilalSubSuperState() {
+	public EOperation getFinalState__NewImmediateTerminationTransition__InitilalSuperState() {
         return getFinalState().getEOperations().get(117);
 	}
 
@@ -12860,7 +11810,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTerminationTransition__InitilalSubSuperState_String() {
+	public EOperation getFinalState__NewImmediateTerminationTransition__InitilalSuperState_String() {
         return getFinalState().getEOperations().get(118);
 	}
 
@@ -12870,7 +11820,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewWeakAbortTerminationTransition__InitialState() {
+	public EOperation getFinalState__CanNewImmediateTerminationTransition__Connector() {
         return getFinalState().getEOperations().get(119);
 	}
 
@@ -12880,7 +11830,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTerminationTransition__InitialState() {
+	public EOperation getFinalState__NewImmediateTerminationTransition__Connector() {
         return getFinalState().getEOperations().get(120);
 	}
 
@@ -12890,7 +11840,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTerminationTransition__InitialState_String() {
+	public EOperation getFinalState__NewImmediateTerminationTransition__Connector_String() {
         return getFinalState().getEOperations().get(121);
 	}
 
@@ -12900,7 +11850,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewWeakAbortTerminationTransition__Connector() {
+	public EOperation getFinalState__CanNewImmediateTerminationTransition__SuperState() {
         return getFinalState().getEOperations().get(122);
 	}
 
@@ -12910,7 +11860,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTerminationTransition__Connector() {
+	public EOperation getFinalState__NewImmediateTerminationTransition__SuperState() {
         return getFinalState().getEOperations().get(123);
 	}
 
@@ -12920,7 +11870,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTerminationTransition__Connector_String() {
+	public EOperation getFinalState__NewImmediateTerminationTransition__SuperState_String() {
         return getFinalState().getEOperations().get(124);
 	}
 
@@ -12930,7 +11880,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewWeakAbortTerminationTransition__SubSuperState() {
+	public EOperation getFinalState__CanNewImmediateTerminationTransition__SimpleState() {
         return getFinalState().getEOperations().get(125);
 	}
 
@@ -12940,7 +11890,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTerminationTransition__SubSuperState() {
+	public EOperation getFinalState__NewImmediateTerminationTransition__SimpleState() {
         return getFinalState().getEOperations().get(126);
 	}
 
@@ -12950,7 +11900,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTerminationTransition__SubSuperState_String() {
+	public EOperation getFinalState__NewImmediateTerminationTransition__SimpleState_String() {
         return getFinalState().getEOperations().get(127);
 	}
 
@@ -12960,7 +11910,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewWeakAbortTerminationTransition__SimpleState() {
+	public EOperation getFinalState__CanNewImmediateTerminationTransition__FinalState() {
         return getFinalState().getEOperations().get(128);
 	}
 
@@ -12970,7 +11920,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTerminationTransition__SimpleState() {
+	public EOperation getFinalState__NewImmediateTerminationTransition__FinalState() {
         return getFinalState().getEOperations().get(129);
 	}
 
@@ -12980,7 +11930,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTerminationTransition__SimpleState_String() {
+	public EOperation getFinalState__NewImmediateTerminationTransition__FinalState_String() {
         return getFinalState().getEOperations().get(130);
 	}
 
@@ -12990,7 +11940,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewWeakAbortTerminationTransition__FinalState() {
+	public EOperation getFinalState__CanNewImmediateTerminationTransition__InitialState() {
         return getFinalState().getEOperations().get(131);
 	}
 
@@ -13000,7 +11950,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTerminationTransition__FinalState() {
+	public EOperation getFinalState__NewImmediateTerminationTransition__InitialState() {
         return getFinalState().getEOperations().get(132);
 	}
 
@@ -13010,7 +11960,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewWeakAbortTerminationTransition__FinalState_String() {
+	public EOperation getFinalState__NewImmediateTerminationTransition__InitialState_String() {
         return getFinalState().getEOperations().get(133);
 	}
 
@@ -13020,7 +11970,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewTransition__InitilalSubSuperState() {
+	public EOperation getFinalState__CanNewImmediateTransition__InitilalSuperState() {
         return getFinalState().getEOperations().get(134);
 	}
 
@@ -13030,7 +11980,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewTransition__InitilalSubSuperState() {
+	public EOperation getFinalState__NewImmediateTransition__InitilalSuperState() {
         return getFinalState().getEOperations().get(135);
 	}
 
@@ -13040,7 +11990,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewTransition__InitilalSubSuperState_String() {
+	public EOperation getFinalState__NewImmediateTransition__InitilalSuperState_String() {
         return getFinalState().getEOperations().get(136);
 	}
 
@@ -13050,7 +12000,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewTransition__InitialState() {
+	public EOperation getFinalState__CanNewImmediateTransition__Connector() {
         return getFinalState().getEOperations().get(137);
 	}
 
@@ -13060,7 +12010,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewTransition__InitialState() {
+	public EOperation getFinalState__NewImmediateTransition__Connector() {
         return getFinalState().getEOperations().get(138);
 	}
 
@@ -13070,7 +12020,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewTransition__InitialState_String() {
+	public EOperation getFinalState__NewImmediateTransition__Connector_String() {
         return getFinalState().getEOperations().get(139);
 	}
 
@@ -13080,7 +12030,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewTransition__Connector() {
+	public EOperation getFinalState__CanNewImmediateTransition__SuperState() {
         return getFinalState().getEOperations().get(140);
 	}
 
@@ -13090,7 +12040,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewTransition__Connector() {
+	public EOperation getFinalState__NewImmediateTransition__SuperState() {
         return getFinalState().getEOperations().get(141);
 	}
 
@@ -13100,7 +12050,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewTransition__Connector_String() {
+	public EOperation getFinalState__NewImmediateTransition__SuperState_String() {
         return getFinalState().getEOperations().get(142);
 	}
 
@@ -13110,7 +12060,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewTransition__SubSuperState() {
+	public EOperation getFinalState__CanNewImmediateTransition__SimpleState() {
         return getFinalState().getEOperations().get(143);
 	}
 
@@ -13120,7 +12070,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewTransition__SubSuperState() {
+	public EOperation getFinalState__NewImmediateTransition__SimpleState() {
         return getFinalState().getEOperations().get(144);
 	}
 
@@ -13130,7 +12080,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewTransition__SubSuperState_String() {
+	public EOperation getFinalState__NewImmediateTransition__SimpleState_String() {
         return getFinalState().getEOperations().get(145);
 	}
 
@@ -13140,7 +12090,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewTransition__SimpleState() {
+	public EOperation getFinalState__CanNewImmediateTransition__FinalState() {
         return getFinalState().getEOperations().get(146);
 	}
 
@@ -13150,7 +12100,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewTransition__SimpleState() {
+	public EOperation getFinalState__NewImmediateTransition__FinalState() {
         return getFinalState().getEOperations().get(147);
 	}
 
@@ -13160,7 +12110,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewTransition__SimpleState_String() {
+	public EOperation getFinalState__NewImmediateTransition__FinalState_String() {
         return getFinalState().getEOperations().get(148);
 	}
 
@@ -13170,7 +12120,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewTransition__FinalState() {
+	public EOperation getFinalState__CanNewImmediateTransition__InitialState() {
         return getFinalState().getEOperations().get(149);
 	}
 
@@ -13180,7 +12130,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewTransition__FinalState() {
+	public EOperation getFinalState__NewImmediateTransition__InitialState() {
         return getFinalState().getEOperations().get(150);
 	}
 
@@ -13190,7 +12140,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewTransition__FinalState_String() {
+	public EOperation getFinalState__NewImmediateTransition__InitialState_String() {
         return getFinalState().getEOperations().get(151);
 	}
 
@@ -13200,7 +12150,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewDefferedTransition__InitilalSubSuperState() {
+	public EOperation getFinalState__CanNewTransition__InitilalSuperState() {
         return getFinalState().getEOperations().get(152);
 	}
 
@@ -13210,7 +12160,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewDefferedTransition__InitilalSubSuperState() {
+	public EOperation getFinalState__NewTransition__InitilalSuperState() {
         return getFinalState().getEOperations().get(153);
 	}
 
@@ -13220,7 +12170,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewDefferedTransition__InitilalSubSuperState_String() {
+	public EOperation getFinalState__NewTransition__InitilalSuperState_String() {
         return getFinalState().getEOperations().get(154);
 	}
 
@@ -13230,7 +12180,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewDefferedTransition__InitialState() {
+	public EOperation getFinalState__CanNewTransition__Connector() {
         return getFinalState().getEOperations().get(155);
 	}
 
@@ -13240,7 +12190,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewDefferedTransition__InitialState() {
+	public EOperation getFinalState__NewTransition__Connector() {
         return getFinalState().getEOperations().get(156);
 	}
 
@@ -13250,7 +12200,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewDefferedTransition__InitialState_String() {
+	public EOperation getFinalState__NewTransition__Connector_String() {
         return getFinalState().getEOperations().get(157);
 	}
 
@@ -13260,7 +12210,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewDefferedTransition__Connector() {
+	public EOperation getFinalState__CanNewTransition__SuperState() {
         return getFinalState().getEOperations().get(158);
 	}
 
@@ -13270,7 +12220,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewDefferedTransition__Connector() {
+	public EOperation getFinalState__NewTransition__SuperState() {
         return getFinalState().getEOperations().get(159);
 	}
 
@@ -13280,7 +12230,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewDefferedTransition__Connector_String() {
+	public EOperation getFinalState__NewTransition__SuperState_String() {
         return getFinalState().getEOperations().get(160);
 	}
 
@@ -13290,7 +12240,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewDefferedTransition__SubSuperState() {
+	public EOperation getFinalState__CanNewTransition__SimpleState() {
         return getFinalState().getEOperations().get(161);
 	}
 
@@ -13300,7 +12250,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewDefferedTransition__SubSuperState() {
+	public EOperation getFinalState__NewTransition__SimpleState() {
         return getFinalState().getEOperations().get(162);
 	}
 
@@ -13310,7 +12260,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewDefferedTransition__SubSuperState_String() {
+	public EOperation getFinalState__NewTransition__SimpleState_String() {
         return getFinalState().getEOperations().get(163);
 	}
 
@@ -13320,7 +12270,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewDefferedTransition__SimpleState() {
+	public EOperation getFinalState__CanNewTransition__FinalState() {
         return getFinalState().getEOperations().get(164);
 	}
 
@@ -13330,7 +12280,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewDefferedTransition__SimpleState() {
+	public EOperation getFinalState__NewTransition__FinalState() {
         return getFinalState().getEOperations().get(165);
 	}
 
@@ -13340,7 +12290,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewDefferedTransition__SimpleState_String() {
+	public EOperation getFinalState__NewTransition__FinalState_String() {
         return getFinalState().getEOperations().get(166);
 	}
 
@@ -13350,7 +12300,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanNewDefferedTransition__FinalState() {
+	public EOperation getFinalState__CanNewTransition__InitialState() {
         return getFinalState().getEOperations().get(167);
 	}
 
@@ -13360,7 +12310,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewDefferedTransition__FinalState() {
+	public EOperation getFinalState__NewTransition__InitialState() {
         return getFinalState().getEOperations().get(168);
 	}
 
@@ -13370,7 +12320,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__NewDefferedTransition__FinalState_String() {
+	public EOperation getFinalState__NewTransition__InitialState_String() {
         return getFinalState().getEOperations().get(169);
 	}
 
@@ -13380,7 +12330,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanMoveTo__SuperStateRegion_int_int() {
+	public EOperation getFinalState__CanMoveTo__Region_int_int() {
         return getFinalState().getEOperations().get(170);
 	}
 
@@ -13390,7 +12340,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__MoveTo__SuperStateRegion_int_int() {
+	public EOperation getFinalState__MoveTo__Region_int_int() {
         return getFinalState().getEOperations().get(171);
 	}
 
@@ -13400,7 +12350,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__S_moveTo__SuperStateRegion_int_int() {
+	public EOperation getFinalState__S_moveTo__Region_int_int() {
         return getFinalState().getEOperations().get(172);
 	}
 
@@ -13410,7 +12360,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__CanMoveTo__SubSuperStateRegion_int_int() {
+	public EOperation getFinalState__GetContainer() {
         return getFinalState().getEOperations().get(173);
 	}
 
@@ -13420,28 +12370,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getFinalState__MoveTo__SubSuperStateRegion_int_int() {
-        return getFinalState().getEOperations().get(174);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getFinalState__S_moveTo__SubSuperStateRegion_int_int() {
-        return getFinalState().getEOperations().get(175);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EOperation getFinalState__GetFinalStateView() {
-        return getFinalState().getEOperations().get(176);
+        return getFinalState().getEOperations().get(174);
 	}
 
 	/**
@@ -13452,7 +12382,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	@Override
 	public EClass getConnector() {
 		if (connectorEClass == null) {
-			connectorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(10);
+			connectorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(9);
 		}
 		return connectorEClass;
 	}
@@ -13633,7 +12563,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetOutgoingImmediateTransitions() {
+	public EOperation getConnector__GetOutgoingDefferedTransitions() {
         return getConnector().getEOperations().get(17);
 	}
 
@@ -13653,7 +12583,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetOutgoingTransitions() {
+	public EOperation getConnector__GetOutgoingStrongAbortTransitions() {
         return getConnector().getEOperations().get(19);
 	}
 
@@ -13663,7 +12593,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetOutgoingStrongAbortTransitions() {
+	public EOperation getConnector__GetOutgoingWeakAbortTerminationTransitions() {
         return getConnector().getEOperations().get(20);
 	}
 
@@ -13673,7 +12603,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetOutgoingDefferedTransitions() {
+	public EOperation getConnector__GetOutgoingImmediateTerminationTransitions() {
         return getConnector().getEOperations().get(21);
 	}
 
@@ -13683,7 +12613,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetOutgoingImmediateTerminationTransitions() {
+	public EOperation getConnector__GetOutgoingTransitions() {
         return getConnector().getEOperations().get(22);
 	}
 
@@ -13693,7 +12623,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetOutgoingWeakAbortTerminationTransitions() {
+	public EOperation getConnector__GetOutgoingImmediateTransitions() {
         return getConnector().getEOperations().get(23);
 	}
 
@@ -13703,7 +12633,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetIncomingImmediateTransitions() {
+	public EOperation getConnector__GetIncomingDefferedTransitions() {
         return getConnector().getEOperations().get(24);
 	}
 
@@ -13723,7 +12653,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetIncomingTransitions() {
+	public EOperation getConnector__GetIncomingStrongAbortTransitions() {
         return getConnector().getEOperations().get(26);
 	}
 
@@ -13733,7 +12663,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetIncomingStrongAbortTransitions() {
+	public EOperation getConnector__GetIncomingWeakAbortTerminationTransitions() {
         return getConnector().getEOperations().get(27);
 	}
 
@@ -13743,7 +12673,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetIncomingDefferedTransitions() {
+	public EOperation getConnector__GetIncomingImmediateTerminationTransitions() {
         return getConnector().getEOperations().get(28);
 	}
 
@@ -13753,7 +12683,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetIncomingImmediateTerminationTransitions() {
+	public EOperation getConnector__GetIncomingTransitions() {
         return getConnector().getEOperations().get(29);
 	}
 
@@ -13763,7 +12693,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetIncomingWeakAbortTerminationTransitions() {
+	public EOperation getConnector__GetIncomingImmediateTransitions() {
         return getConnector().getEOperations().get(30);
 	}
 
@@ -13783,7 +12713,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetSubSuperStatePredecessors() {
+	public EOperation getConnector__GetSuperStatePredecessors() {
         return getConnector().getEOperations().get(32);
 	}
 
@@ -13793,7 +12723,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetInitilalSubSuperStatePredecessors() {
+	public EOperation getConnector__GetInitilalSuperStatePredecessors() {
         return getConnector().getEOperations().get(33);
 	}
 
@@ -13843,7 +12773,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetSubSuperStateSuccessors() {
+	public EOperation getConnector__GetSuperStateSuccessors() {
         return getConnector().getEOperations().get(38);
 	}
 
@@ -13853,7 +12783,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__GetInitilalSubSuperStateSuccessors() {
+	public EOperation getConnector__GetInitilalSuperStateSuccessors() {
         return getConnector().getEOperations().get(39);
 	}
 
@@ -13903,7 +12833,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewImmediateTransition__InitilalSubSuperState() {
+	public EOperation getConnector__CanNewDefferedTransition__InitilalSuperState() {
         return getConnector().getEOperations().get(44);
 	}
 
@@ -13913,7 +12843,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTransition__InitilalSubSuperState() {
+	public EOperation getConnector__NewDefferedTransition__InitilalSuperState() {
         return getConnector().getEOperations().get(45);
 	}
 
@@ -13923,7 +12853,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTransition__InitilalSubSuperState_String() {
+	public EOperation getConnector__NewDefferedTransition__InitilalSuperState_String() {
         return getConnector().getEOperations().get(46);
 	}
 
@@ -13933,7 +12863,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewImmediateTransition__InitialState() {
+	public EOperation getConnector__CanNewDefferedTransition__Connector() {
         return getConnector().getEOperations().get(47);
 	}
 
@@ -13943,7 +12873,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTransition__InitialState() {
+	public EOperation getConnector__NewDefferedTransition__Connector() {
         return getConnector().getEOperations().get(48);
 	}
 
@@ -13953,7 +12883,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTransition__InitialState_String() {
+	public EOperation getConnector__NewDefferedTransition__Connector_String() {
         return getConnector().getEOperations().get(49);
 	}
 
@@ -13963,7 +12893,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewImmediateTransition__Connector() {
+	public EOperation getConnector__CanNewDefferedTransition__SuperState() {
         return getConnector().getEOperations().get(50);
 	}
 
@@ -13973,7 +12903,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTransition__Connector() {
+	public EOperation getConnector__NewDefferedTransition__SuperState() {
         return getConnector().getEOperations().get(51);
 	}
 
@@ -13983,7 +12913,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTransition__Connector_String() {
+	public EOperation getConnector__NewDefferedTransition__SuperState_String() {
         return getConnector().getEOperations().get(52);
 	}
 
@@ -13993,7 +12923,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewImmediateTransition__SubSuperState() {
+	public EOperation getConnector__CanNewDefferedTransition__SimpleState() {
         return getConnector().getEOperations().get(53);
 	}
 
@@ -14003,7 +12933,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTransition__SubSuperState() {
+	public EOperation getConnector__NewDefferedTransition__SimpleState() {
         return getConnector().getEOperations().get(54);
 	}
 
@@ -14013,7 +12943,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTransition__SubSuperState_String() {
+	public EOperation getConnector__NewDefferedTransition__SimpleState_String() {
         return getConnector().getEOperations().get(55);
 	}
 
@@ -14023,7 +12953,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewImmediateTransition__SimpleState() {
+	public EOperation getConnector__CanNewDefferedTransition__FinalState() {
         return getConnector().getEOperations().get(56);
 	}
 
@@ -14033,7 +12963,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTransition__SimpleState() {
+	public EOperation getConnector__NewDefferedTransition__FinalState() {
         return getConnector().getEOperations().get(57);
 	}
 
@@ -14043,7 +12973,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTransition__SimpleState_String() {
+	public EOperation getConnector__NewDefferedTransition__FinalState_String() {
         return getConnector().getEOperations().get(58);
 	}
 
@@ -14053,7 +12983,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewImmediateTransition__FinalState() {
+	public EOperation getConnector__CanNewDefferedTransition__InitialState() {
         return getConnector().getEOperations().get(59);
 	}
 
@@ -14063,7 +12993,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTransition__FinalState() {
+	public EOperation getConnector__NewDefferedTransition__InitialState() {
         return getConnector().getEOperations().get(60);
 	}
 
@@ -14073,7 +13003,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTransition__FinalState_String() {
+	public EOperation getConnector__NewDefferedTransition__InitialState_String() {
         return getConnector().getEOperations().get(61);
 	}
 
@@ -14083,7 +13013,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewWeakAbortTransition__InitilalSubSuperState() {
+	public EOperation getConnector__CanNewWeakAbortTransition__InitilalSuperState() {
         return getConnector().getEOperations().get(62);
 	}
 
@@ -14093,7 +13023,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTransition__InitilalSubSuperState() {
+	public EOperation getConnector__NewWeakAbortTransition__InitilalSuperState() {
         return getConnector().getEOperations().get(63);
 	}
 
@@ -14103,7 +13033,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTransition__InitilalSubSuperState_String() {
+	public EOperation getConnector__NewWeakAbortTransition__InitilalSuperState_String() {
         return getConnector().getEOperations().get(64);
 	}
 
@@ -14113,7 +13043,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewWeakAbortTransition__InitialState() {
+	public EOperation getConnector__CanNewWeakAbortTransition__Connector() {
         return getConnector().getEOperations().get(65);
 	}
 
@@ -14123,7 +13053,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTransition__InitialState() {
+	public EOperation getConnector__NewWeakAbortTransition__Connector() {
         return getConnector().getEOperations().get(66);
 	}
 
@@ -14133,7 +13063,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTransition__InitialState_String() {
+	public EOperation getConnector__NewWeakAbortTransition__Connector_String() {
         return getConnector().getEOperations().get(67);
 	}
 
@@ -14143,7 +13073,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewWeakAbortTransition__Connector() {
+	public EOperation getConnector__CanNewWeakAbortTransition__SuperState() {
         return getConnector().getEOperations().get(68);
 	}
 
@@ -14153,7 +13083,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTransition__Connector() {
+	public EOperation getConnector__NewWeakAbortTransition__SuperState() {
         return getConnector().getEOperations().get(69);
 	}
 
@@ -14163,7 +13093,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTransition__Connector_String() {
+	public EOperation getConnector__NewWeakAbortTransition__SuperState_String() {
         return getConnector().getEOperations().get(70);
 	}
 
@@ -14173,7 +13103,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewWeakAbortTransition__SubSuperState() {
+	public EOperation getConnector__CanNewWeakAbortTransition__SimpleState() {
         return getConnector().getEOperations().get(71);
 	}
 
@@ -14183,7 +13113,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTransition__SubSuperState() {
+	public EOperation getConnector__NewWeakAbortTransition__SimpleState() {
         return getConnector().getEOperations().get(72);
 	}
 
@@ -14193,7 +13123,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTransition__SubSuperState_String() {
+	public EOperation getConnector__NewWeakAbortTransition__SimpleState_String() {
         return getConnector().getEOperations().get(73);
 	}
 
@@ -14203,7 +13133,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewWeakAbortTransition__SimpleState() {
+	public EOperation getConnector__CanNewWeakAbortTransition__FinalState() {
         return getConnector().getEOperations().get(74);
 	}
 
@@ -14213,7 +13143,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTransition__SimpleState() {
+	public EOperation getConnector__NewWeakAbortTransition__FinalState() {
         return getConnector().getEOperations().get(75);
 	}
 
@@ -14223,7 +13153,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTransition__SimpleState_String() {
+	public EOperation getConnector__NewWeakAbortTransition__FinalState_String() {
         return getConnector().getEOperations().get(76);
 	}
 
@@ -14233,7 +13163,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewWeakAbortTransition__FinalState() {
+	public EOperation getConnector__CanNewWeakAbortTransition__InitialState() {
         return getConnector().getEOperations().get(77);
 	}
 
@@ -14243,7 +13173,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTransition__FinalState() {
+	public EOperation getConnector__NewWeakAbortTransition__InitialState() {
         return getConnector().getEOperations().get(78);
 	}
 
@@ -14253,7 +13183,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTransition__FinalState_String() {
+	public EOperation getConnector__NewWeakAbortTransition__InitialState_String() {
         return getConnector().getEOperations().get(79);
 	}
 
@@ -14263,7 +13193,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewImmediateTerminationTransition__InitilalSubSuperState() {
+	public EOperation getConnector__CanNewStrongAbortTransition__InitilalSuperState() {
         return getConnector().getEOperations().get(80);
 	}
 
@@ -14273,7 +13203,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTerminationTransition__InitilalSubSuperState() {
+	public EOperation getConnector__NewStrongAbortTransition__InitilalSuperState() {
         return getConnector().getEOperations().get(81);
 	}
 
@@ -14283,7 +13213,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTerminationTransition__InitilalSubSuperState_String() {
+	public EOperation getConnector__NewStrongAbortTransition__InitilalSuperState_String() {
         return getConnector().getEOperations().get(82);
 	}
 
@@ -14293,7 +13223,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewImmediateTerminationTransition__InitialState() {
+	public EOperation getConnector__CanNewStrongAbortTransition__Connector() {
         return getConnector().getEOperations().get(83);
 	}
 
@@ -14303,7 +13233,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTerminationTransition__InitialState() {
+	public EOperation getConnector__NewStrongAbortTransition__Connector() {
         return getConnector().getEOperations().get(84);
 	}
 
@@ -14313,7 +13243,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTerminationTransition__InitialState_String() {
+	public EOperation getConnector__NewStrongAbortTransition__Connector_String() {
         return getConnector().getEOperations().get(85);
 	}
 
@@ -14323,7 +13253,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewImmediateTerminationTransition__Connector() {
+	public EOperation getConnector__CanNewStrongAbortTransition__SuperState() {
         return getConnector().getEOperations().get(86);
 	}
 
@@ -14333,7 +13263,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTerminationTransition__Connector() {
+	public EOperation getConnector__NewStrongAbortTransition__SuperState() {
         return getConnector().getEOperations().get(87);
 	}
 
@@ -14343,7 +13273,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTerminationTransition__Connector_String() {
+	public EOperation getConnector__NewStrongAbortTransition__SuperState_String() {
         return getConnector().getEOperations().get(88);
 	}
 
@@ -14353,7 +13283,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewImmediateTerminationTransition__SubSuperState() {
+	public EOperation getConnector__CanNewStrongAbortTransition__SimpleState() {
         return getConnector().getEOperations().get(89);
 	}
 
@@ -14363,7 +13293,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTerminationTransition__SubSuperState() {
+	public EOperation getConnector__NewStrongAbortTransition__SimpleState() {
         return getConnector().getEOperations().get(90);
 	}
 
@@ -14373,7 +13303,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTerminationTransition__SubSuperState_String() {
+	public EOperation getConnector__NewStrongAbortTransition__SimpleState_String() {
         return getConnector().getEOperations().get(91);
 	}
 
@@ -14383,7 +13313,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewImmediateTerminationTransition__SimpleState() {
+	public EOperation getConnector__CanNewStrongAbortTransition__FinalState() {
         return getConnector().getEOperations().get(92);
 	}
 
@@ -14393,7 +13323,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTerminationTransition__SimpleState() {
+	public EOperation getConnector__NewStrongAbortTransition__FinalState() {
         return getConnector().getEOperations().get(93);
 	}
 
@@ -14403,7 +13333,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTerminationTransition__SimpleState_String() {
+	public EOperation getConnector__NewStrongAbortTransition__FinalState_String() {
         return getConnector().getEOperations().get(94);
 	}
 
@@ -14413,7 +13343,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewImmediateTerminationTransition__FinalState() {
+	public EOperation getConnector__CanNewStrongAbortTransition__InitialState() {
         return getConnector().getEOperations().get(95);
 	}
 
@@ -14423,7 +13353,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTerminationTransition__FinalState() {
+	public EOperation getConnector__NewStrongAbortTransition__InitialState() {
         return getConnector().getEOperations().get(96);
 	}
 
@@ -14433,7 +13363,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewImmediateTerminationTransition__FinalState_String() {
+	public EOperation getConnector__NewStrongAbortTransition__InitialState_String() {
         return getConnector().getEOperations().get(97);
 	}
 
@@ -14443,7 +13373,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewStrongAbortTransition__InitilalSubSuperState() {
+	public EOperation getConnector__CanNewWeakAbortTerminationTransition__InitilalSuperState() {
         return getConnector().getEOperations().get(98);
 	}
 
@@ -14453,7 +13383,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewStrongAbortTransition__InitilalSubSuperState() {
+	public EOperation getConnector__NewWeakAbortTerminationTransition__InitilalSuperState() {
         return getConnector().getEOperations().get(99);
 	}
 
@@ -14463,7 +13393,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewStrongAbortTransition__InitilalSubSuperState_String() {
+	public EOperation getConnector__NewWeakAbortTerminationTransition__InitilalSuperState_String() {
         return getConnector().getEOperations().get(100);
 	}
 
@@ -14473,7 +13403,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewStrongAbortTransition__InitialState() {
+	public EOperation getConnector__CanNewWeakAbortTerminationTransition__Connector() {
         return getConnector().getEOperations().get(101);
 	}
 
@@ -14483,7 +13413,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewStrongAbortTransition__InitialState() {
+	public EOperation getConnector__NewWeakAbortTerminationTransition__Connector() {
         return getConnector().getEOperations().get(102);
 	}
 
@@ -14493,7 +13423,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewStrongAbortTransition__InitialState_String() {
+	public EOperation getConnector__NewWeakAbortTerminationTransition__Connector_String() {
         return getConnector().getEOperations().get(103);
 	}
 
@@ -14503,7 +13433,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewStrongAbortTransition__Connector() {
+	public EOperation getConnector__CanNewWeakAbortTerminationTransition__SuperState() {
         return getConnector().getEOperations().get(104);
 	}
 
@@ -14513,7 +13443,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewStrongAbortTransition__Connector() {
+	public EOperation getConnector__NewWeakAbortTerminationTransition__SuperState() {
         return getConnector().getEOperations().get(105);
 	}
 
@@ -14523,7 +13453,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewStrongAbortTransition__Connector_String() {
+	public EOperation getConnector__NewWeakAbortTerminationTransition__SuperState_String() {
         return getConnector().getEOperations().get(106);
 	}
 
@@ -14533,7 +13463,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewStrongAbortTransition__SubSuperState() {
+	public EOperation getConnector__CanNewWeakAbortTerminationTransition__SimpleState() {
         return getConnector().getEOperations().get(107);
 	}
 
@@ -14543,7 +13473,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewStrongAbortTransition__SubSuperState() {
+	public EOperation getConnector__NewWeakAbortTerminationTransition__SimpleState() {
         return getConnector().getEOperations().get(108);
 	}
 
@@ -14553,7 +13483,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewStrongAbortTransition__SubSuperState_String() {
+	public EOperation getConnector__NewWeakAbortTerminationTransition__SimpleState_String() {
         return getConnector().getEOperations().get(109);
 	}
 
@@ -14563,7 +13493,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewStrongAbortTransition__SimpleState() {
+	public EOperation getConnector__CanNewWeakAbortTerminationTransition__FinalState() {
         return getConnector().getEOperations().get(110);
 	}
 
@@ -14573,7 +13503,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewStrongAbortTransition__SimpleState() {
+	public EOperation getConnector__NewWeakAbortTerminationTransition__FinalState() {
         return getConnector().getEOperations().get(111);
 	}
 
@@ -14583,7 +13513,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewStrongAbortTransition__SimpleState_String() {
+	public EOperation getConnector__NewWeakAbortTerminationTransition__FinalState_String() {
         return getConnector().getEOperations().get(112);
 	}
 
@@ -14593,7 +13523,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewStrongAbortTransition__FinalState() {
+	public EOperation getConnector__CanNewWeakAbortTerminationTransition__InitialState() {
         return getConnector().getEOperations().get(113);
 	}
 
@@ -14603,7 +13533,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewStrongAbortTransition__FinalState() {
+	public EOperation getConnector__NewWeakAbortTerminationTransition__InitialState() {
         return getConnector().getEOperations().get(114);
 	}
 
@@ -14613,7 +13543,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewStrongAbortTransition__FinalState_String() {
+	public EOperation getConnector__NewWeakAbortTerminationTransition__InitialState_String() {
         return getConnector().getEOperations().get(115);
 	}
 
@@ -14623,7 +13553,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewWeakAbortTerminationTransition__InitilalSubSuperState() {
+	public EOperation getConnector__CanNewImmediateTerminationTransition__InitilalSuperState() {
         return getConnector().getEOperations().get(116);
 	}
 
@@ -14633,7 +13563,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTerminationTransition__InitilalSubSuperState() {
+	public EOperation getConnector__NewImmediateTerminationTransition__InitilalSuperState() {
         return getConnector().getEOperations().get(117);
 	}
 
@@ -14643,7 +13573,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTerminationTransition__InitilalSubSuperState_String() {
+	public EOperation getConnector__NewImmediateTerminationTransition__InitilalSuperState_String() {
         return getConnector().getEOperations().get(118);
 	}
 
@@ -14653,7 +13583,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewWeakAbortTerminationTransition__InitialState() {
+	public EOperation getConnector__CanNewImmediateTerminationTransition__Connector() {
         return getConnector().getEOperations().get(119);
 	}
 
@@ -14663,7 +13593,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTerminationTransition__InitialState() {
+	public EOperation getConnector__NewImmediateTerminationTransition__Connector() {
         return getConnector().getEOperations().get(120);
 	}
 
@@ -14673,7 +13603,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTerminationTransition__InitialState_String() {
+	public EOperation getConnector__NewImmediateTerminationTransition__Connector_String() {
         return getConnector().getEOperations().get(121);
 	}
 
@@ -14683,7 +13613,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewWeakAbortTerminationTransition__Connector() {
+	public EOperation getConnector__CanNewImmediateTerminationTransition__SuperState() {
         return getConnector().getEOperations().get(122);
 	}
 
@@ -14693,7 +13623,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTerminationTransition__Connector() {
+	public EOperation getConnector__NewImmediateTerminationTransition__SuperState() {
         return getConnector().getEOperations().get(123);
 	}
 
@@ -14703,7 +13633,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTerminationTransition__Connector_String() {
+	public EOperation getConnector__NewImmediateTerminationTransition__SuperState_String() {
         return getConnector().getEOperations().get(124);
 	}
 
@@ -14713,7 +13643,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewWeakAbortTerminationTransition__SubSuperState() {
+	public EOperation getConnector__CanNewImmediateTerminationTransition__SimpleState() {
         return getConnector().getEOperations().get(125);
 	}
 
@@ -14723,7 +13653,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTerminationTransition__SubSuperState() {
+	public EOperation getConnector__NewImmediateTerminationTransition__SimpleState() {
         return getConnector().getEOperations().get(126);
 	}
 
@@ -14733,7 +13663,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTerminationTransition__SubSuperState_String() {
+	public EOperation getConnector__NewImmediateTerminationTransition__SimpleState_String() {
         return getConnector().getEOperations().get(127);
 	}
 
@@ -14743,7 +13673,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewWeakAbortTerminationTransition__SimpleState() {
+	public EOperation getConnector__CanNewImmediateTerminationTransition__FinalState() {
         return getConnector().getEOperations().get(128);
 	}
 
@@ -14753,7 +13683,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTerminationTransition__SimpleState() {
+	public EOperation getConnector__NewImmediateTerminationTransition__FinalState() {
         return getConnector().getEOperations().get(129);
 	}
 
@@ -14763,7 +13693,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTerminationTransition__SimpleState_String() {
+	public EOperation getConnector__NewImmediateTerminationTransition__FinalState_String() {
         return getConnector().getEOperations().get(130);
 	}
 
@@ -14773,7 +13703,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewWeakAbortTerminationTransition__FinalState() {
+	public EOperation getConnector__CanNewImmediateTerminationTransition__InitialState() {
         return getConnector().getEOperations().get(131);
 	}
 
@@ -14783,7 +13713,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTerminationTransition__FinalState() {
+	public EOperation getConnector__NewImmediateTerminationTransition__InitialState() {
         return getConnector().getEOperations().get(132);
 	}
 
@@ -14793,7 +13723,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewWeakAbortTerminationTransition__FinalState_String() {
+	public EOperation getConnector__NewImmediateTerminationTransition__InitialState_String() {
         return getConnector().getEOperations().get(133);
 	}
 
@@ -14803,7 +13733,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewTransition__InitilalSubSuperState() {
+	public EOperation getConnector__CanNewImmediateTransition__InitilalSuperState() {
         return getConnector().getEOperations().get(134);
 	}
 
@@ -14813,7 +13743,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewTransition__InitilalSubSuperState() {
+	public EOperation getConnector__NewImmediateTransition__InitilalSuperState() {
         return getConnector().getEOperations().get(135);
 	}
 
@@ -14823,7 +13753,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewTransition__InitilalSubSuperState_String() {
+	public EOperation getConnector__NewImmediateTransition__InitilalSuperState_String() {
         return getConnector().getEOperations().get(136);
 	}
 
@@ -14833,7 +13763,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewTransition__InitialState() {
+	public EOperation getConnector__CanNewImmediateTransition__Connector() {
         return getConnector().getEOperations().get(137);
 	}
 
@@ -14843,7 +13773,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewTransition__InitialState() {
+	public EOperation getConnector__NewImmediateTransition__Connector() {
         return getConnector().getEOperations().get(138);
 	}
 
@@ -14853,7 +13783,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewTransition__InitialState_String() {
+	public EOperation getConnector__NewImmediateTransition__Connector_String() {
         return getConnector().getEOperations().get(139);
 	}
 
@@ -14863,7 +13793,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewTransition__Connector() {
+	public EOperation getConnector__CanNewImmediateTransition__SuperState() {
         return getConnector().getEOperations().get(140);
 	}
 
@@ -14873,7 +13803,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewTransition__Connector() {
+	public EOperation getConnector__NewImmediateTransition__SuperState() {
         return getConnector().getEOperations().get(141);
 	}
 
@@ -14883,7 +13813,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewTransition__Connector_String() {
+	public EOperation getConnector__NewImmediateTransition__SuperState_String() {
         return getConnector().getEOperations().get(142);
 	}
 
@@ -14893,7 +13823,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewTransition__SubSuperState() {
+	public EOperation getConnector__CanNewImmediateTransition__SimpleState() {
         return getConnector().getEOperations().get(143);
 	}
 
@@ -14903,7 +13833,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewTransition__SubSuperState() {
+	public EOperation getConnector__NewImmediateTransition__SimpleState() {
         return getConnector().getEOperations().get(144);
 	}
 
@@ -14913,7 +13843,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewTransition__SubSuperState_String() {
+	public EOperation getConnector__NewImmediateTransition__SimpleState_String() {
         return getConnector().getEOperations().get(145);
 	}
 
@@ -14923,7 +13853,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewTransition__SimpleState() {
+	public EOperation getConnector__CanNewImmediateTransition__FinalState() {
         return getConnector().getEOperations().get(146);
 	}
 
@@ -14933,7 +13863,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewTransition__SimpleState() {
+	public EOperation getConnector__NewImmediateTransition__FinalState() {
         return getConnector().getEOperations().get(147);
 	}
 
@@ -14943,7 +13873,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewTransition__SimpleState_String() {
+	public EOperation getConnector__NewImmediateTransition__FinalState_String() {
         return getConnector().getEOperations().get(148);
 	}
 
@@ -14953,7 +13883,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewTransition__FinalState() {
+	public EOperation getConnector__CanNewImmediateTransition__InitialState() {
         return getConnector().getEOperations().get(149);
 	}
 
@@ -14963,7 +13893,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewTransition__FinalState() {
+	public EOperation getConnector__NewImmediateTransition__InitialState() {
         return getConnector().getEOperations().get(150);
 	}
 
@@ -14973,7 +13903,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewTransition__FinalState_String() {
+	public EOperation getConnector__NewImmediateTransition__InitialState_String() {
         return getConnector().getEOperations().get(151);
 	}
 
@@ -14983,7 +13913,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewDefferedTransition__InitilalSubSuperState() {
+	public EOperation getConnector__CanNewTransition__InitilalSuperState() {
         return getConnector().getEOperations().get(152);
 	}
 
@@ -14993,7 +13923,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewDefferedTransition__InitilalSubSuperState() {
+	public EOperation getConnector__NewTransition__InitilalSuperState() {
         return getConnector().getEOperations().get(153);
 	}
 
@@ -15003,7 +13933,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewDefferedTransition__InitilalSubSuperState_String() {
+	public EOperation getConnector__NewTransition__InitilalSuperState_String() {
         return getConnector().getEOperations().get(154);
 	}
 
@@ -15013,7 +13943,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewDefferedTransition__InitialState() {
+	public EOperation getConnector__CanNewTransition__Connector() {
         return getConnector().getEOperations().get(155);
 	}
 
@@ -15023,7 +13953,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewDefferedTransition__InitialState() {
+	public EOperation getConnector__NewTransition__Connector() {
         return getConnector().getEOperations().get(156);
 	}
 
@@ -15033,7 +13963,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewDefferedTransition__InitialState_String() {
+	public EOperation getConnector__NewTransition__Connector_String() {
         return getConnector().getEOperations().get(157);
 	}
 
@@ -15043,7 +13973,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewDefferedTransition__Connector() {
+	public EOperation getConnector__CanNewTransition__SuperState() {
         return getConnector().getEOperations().get(158);
 	}
 
@@ -15053,7 +13983,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewDefferedTransition__Connector() {
+	public EOperation getConnector__NewTransition__SuperState() {
         return getConnector().getEOperations().get(159);
 	}
 
@@ -15063,7 +13993,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewDefferedTransition__Connector_String() {
+	public EOperation getConnector__NewTransition__SuperState_String() {
         return getConnector().getEOperations().get(160);
 	}
 
@@ -15073,7 +14003,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewDefferedTransition__SubSuperState() {
+	public EOperation getConnector__CanNewTransition__SimpleState() {
         return getConnector().getEOperations().get(161);
 	}
 
@@ -15083,7 +14013,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewDefferedTransition__SubSuperState() {
+	public EOperation getConnector__NewTransition__SimpleState() {
         return getConnector().getEOperations().get(162);
 	}
 
@@ -15093,7 +14023,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewDefferedTransition__SubSuperState_String() {
+	public EOperation getConnector__NewTransition__SimpleState_String() {
         return getConnector().getEOperations().get(163);
 	}
 
@@ -15103,7 +14033,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewDefferedTransition__SimpleState() {
+	public EOperation getConnector__CanNewTransition__FinalState() {
         return getConnector().getEOperations().get(164);
 	}
 
@@ -15113,7 +14043,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewDefferedTransition__SimpleState() {
+	public EOperation getConnector__NewTransition__FinalState() {
         return getConnector().getEOperations().get(165);
 	}
 
@@ -15123,7 +14053,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewDefferedTransition__SimpleState_String() {
+	public EOperation getConnector__NewTransition__FinalState_String() {
         return getConnector().getEOperations().get(166);
 	}
 
@@ -15133,7 +14063,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanNewDefferedTransition__FinalState() {
+	public EOperation getConnector__CanNewTransition__InitialState() {
         return getConnector().getEOperations().get(167);
 	}
 
@@ -15143,7 +14073,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewDefferedTransition__FinalState() {
+	public EOperation getConnector__NewTransition__InitialState() {
         return getConnector().getEOperations().get(168);
 	}
 
@@ -15153,7 +14083,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__NewDefferedTransition__FinalState_String() {
+	public EOperation getConnector__NewTransition__InitialState_String() {
         return getConnector().getEOperations().get(169);
 	}
 
@@ -15163,7 +14093,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanMoveTo__SuperStateRegion_int_int() {
+	public EOperation getConnector__CanMoveTo__Region_int_int() {
         return getConnector().getEOperations().get(170);
 	}
 
@@ -15173,7 +14103,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__MoveTo__SuperStateRegion_int_int() {
+	public EOperation getConnector__MoveTo__Region_int_int() {
         return getConnector().getEOperations().get(171);
 	}
 
@@ -15183,7 +14113,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__S_moveTo__SuperStateRegion_int_int() {
+	public EOperation getConnector__S_moveTo__Region_int_int() {
         return getConnector().getEOperations().get(172);
 	}
 
@@ -15193,7 +14123,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__CanMoveTo__SubSuperStateRegion_int_int() {
+	public EOperation getConnector__GetContainer() {
         return getConnector().getEOperations().get(173);
 	}
 
@@ -15203,28 +14133,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getConnector__MoveTo__SubSuperStateRegion_int_int() {
-        return getConnector().getEOperations().get(174);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getConnector__S_moveTo__SubSuperStateRegion_int_int() {
-        return getConnector().getEOperations().get(175);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EOperation getConnector__GetConnectorView() {
-        return getConnector().getEOperations().get(176);
+        return getConnector().getEOperations().get(174);
 	}
 
 	/**
@@ -15235,7 +14145,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	@Override
 	public EClass getTransition() {
 		if (transitionEClass == null) {
-			transitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(11);
+			transitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(10);
 		}
 		return transitionEClass;
 	}
@@ -15486,7 +14396,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__CanReconnectSource__InitilalSubSuperState() {
+	public EOperation getTransition__CanReconnectSource__InitilalSuperState() {
         return getTransition().getEOperations().get(24);
 	}
 
@@ -15496,7 +14406,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__ReconnectSource__InitilalSubSuperState() {
+	public EOperation getTransition__ReconnectSource__InitilalSuperState() {
         return getTransition().getEOperations().get(25);
 	}
 
@@ -15506,7 +14416,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__CanReconnectSource__InitialState() {
+	public EOperation getTransition__CanReconnectSource__Connector() {
         return getTransition().getEOperations().get(26);
 	}
 
@@ -15516,7 +14426,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__ReconnectSource__InitialState() {
+	public EOperation getTransition__ReconnectSource__Connector() {
         return getTransition().getEOperations().get(27);
 	}
 
@@ -15526,7 +14436,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__CanReconnectSource__Connector() {
+	public EOperation getTransition__CanReconnectSource__SuperState() {
         return getTransition().getEOperations().get(28);
 	}
 
@@ -15536,7 +14446,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__ReconnectSource__Connector() {
+	public EOperation getTransition__ReconnectSource__SuperState() {
         return getTransition().getEOperations().get(29);
 	}
 
@@ -15546,7 +14456,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__CanReconnectSource__SubSuperState() {
+	public EOperation getTransition__CanReconnectSource__SimpleState() {
         return getTransition().getEOperations().get(30);
 	}
 
@@ -15556,7 +14466,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__ReconnectSource__SubSuperState() {
+	public EOperation getTransition__ReconnectSource__SimpleState() {
         return getTransition().getEOperations().get(31);
 	}
 
@@ -15566,7 +14476,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__CanReconnectSource__SimpleState() {
+	public EOperation getTransition__CanReconnectSource__RootState() {
         return getTransition().getEOperations().get(32);
 	}
 
@@ -15576,7 +14486,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__ReconnectSource__SimpleState() {
+	public EOperation getTransition__ReconnectSource__RootState() {
         return getTransition().getEOperations().get(33);
 	}
 
@@ -15586,7 +14496,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__CanReconnectSource__RootState() {
+	public EOperation getTransition__CanReconnectSource__FinalState() {
         return getTransition().getEOperations().get(34);
 	}
 
@@ -15596,7 +14506,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__ReconnectSource__RootState() {
+	public EOperation getTransition__ReconnectSource__FinalState() {
         return getTransition().getEOperations().get(35);
 	}
 
@@ -15606,7 +14516,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__CanReconnectSource__FinalState() {
+	public EOperation getTransition__CanReconnectSource__InitialState() {
         return getTransition().getEOperations().get(36);
 	}
 
@@ -15616,7 +14526,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__ReconnectSource__FinalState() {
+	public EOperation getTransition__ReconnectSource__InitialState() {
         return getTransition().getEOperations().get(37);
 	}
 
@@ -15626,7 +14536,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__CanReconnectTarget__InitilalSubSuperState() {
+	public EOperation getTransition__CanReconnectTarget__InitilalSuperState() {
         return getTransition().getEOperations().get(38);
 	}
 
@@ -15636,7 +14546,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__ReconnectTarget__InitilalSubSuperState() {
+	public EOperation getTransition__ReconnectTarget__InitilalSuperState() {
         return getTransition().getEOperations().get(39);
 	}
 
@@ -15646,7 +14556,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__CanReconnectTarget__InitialState() {
+	public EOperation getTransition__CanReconnectTarget__Connector() {
         return getTransition().getEOperations().get(40);
 	}
 
@@ -15656,7 +14566,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__ReconnectTarget__InitialState() {
+	public EOperation getTransition__ReconnectTarget__Connector() {
         return getTransition().getEOperations().get(41);
 	}
 
@@ -15666,7 +14576,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__CanReconnectTarget__Connector() {
+	public EOperation getTransition__CanReconnectTarget__SuperState() {
         return getTransition().getEOperations().get(42);
 	}
 
@@ -15676,7 +14586,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__ReconnectTarget__Connector() {
+	public EOperation getTransition__ReconnectTarget__SuperState() {
         return getTransition().getEOperations().get(43);
 	}
 
@@ -15686,7 +14596,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__CanReconnectTarget__SubSuperState() {
+	public EOperation getTransition__CanReconnectTarget__SimpleState() {
         return getTransition().getEOperations().get(44);
 	}
 
@@ -15696,7 +14606,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__ReconnectTarget__SubSuperState() {
+	public EOperation getTransition__ReconnectTarget__SimpleState() {
         return getTransition().getEOperations().get(45);
 	}
 
@@ -15706,7 +14616,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__CanReconnectTarget__SimpleState() {
+	public EOperation getTransition__CanReconnectTarget__FinalState() {
         return getTransition().getEOperations().get(46);
 	}
 
@@ -15716,7 +14626,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__ReconnectTarget__SimpleState() {
+	public EOperation getTransition__ReconnectTarget__FinalState() {
         return getTransition().getEOperations().get(47);
 	}
 
@@ -15726,7 +14636,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__CanReconnectTarget__FinalState() {
+	public EOperation getTransition__CanReconnectTarget__InitialState() {
         return getTransition().getEOperations().get(48);
 	}
 
@@ -15736,7 +14646,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getTransition__ReconnectTarget__FinalState() {
+	public EOperation getTransition__ReconnectTarget__InitialState() {
         return getTransition().getEOperations().get(49);
 	}
 
@@ -15758,7 +14668,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	@Override
 	public EClass getImmediateTransition() {
 		if (immediateTransitionEClass == null) {
-			immediateTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(12);
+			immediateTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(11);
 		}
 		return immediateTransitionEClass;
 	}
@@ -15889,7 +14799,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__CanReconnectSource__InitilalSubSuperState() {
+	public EOperation getImmediateTransition__CanReconnectSource__InitilalSuperState() {
         return getImmediateTransition().getEOperations().get(12);
 	}
 
@@ -15899,7 +14809,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__ReconnectSource__InitilalSubSuperState() {
+	public EOperation getImmediateTransition__ReconnectSource__InitilalSuperState() {
         return getImmediateTransition().getEOperations().get(13);
 	}
 
@@ -15909,7 +14819,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__CanReconnectSource__InitialState() {
+	public EOperation getImmediateTransition__CanReconnectSource__Connector() {
         return getImmediateTransition().getEOperations().get(14);
 	}
 
@@ -15919,7 +14829,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__ReconnectSource__InitialState() {
+	public EOperation getImmediateTransition__ReconnectSource__Connector() {
         return getImmediateTransition().getEOperations().get(15);
 	}
 
@@ -15929,7 +14839,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__CanReconnectSource__Connector() {
+	public EOperation getImmediateTransition__CanReconnectSource__SuperState() {
         return getImmediateTransition().getEOperations().get(16);
 	}
 
@@ -15939,7 +14849,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__ReconnectSource__Connector() {
+	public EOperation getImmediateTransition__ReconnectSource__SuperState() {
         return getImmediateTransition().getEOperations().get(17);
 	}
 
@@ -15949,7 +14859,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__CanReconnectSource__SubSuperState() {
+	public EOperation getImmediateTransition__CanReconnectSource__SimpleState() {
         return getImmediateTransition().getEOperations().get(18);
 	}
 
@@ -15959,7 +14869,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__ReconnectSource__SubSuperState() {
+	public EOperation getImmediateTransition__ReconnectSource__SimpleState() {
         return getImmediateTransition().getEOperations().get(19);
 	}
 
@@ -15969,7 +14879,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__CanReconnectSource__SimpleState() {
+	public EOperation getImmediateTransition__CanReconnectSource__RootState() {
         return getImmediateTransition().getEOperations().get(20);
 	}
 
@@ -15979,7 +14889,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__ReconnectSource__SimpleState() {
+	public EOperation getImmediateTransition__ReconnectSource__RootState() {
         return getImmediateTransition().getEOperations().get(21);
 	}
 
@@ -15989,7 +14899,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__CanReconnectSource__RootState() {
+	public EOperation getImmediateTransition__CanReconnectSource__FinalState() {
         return getImmediateTransition().getEOperations().get(22);
 	}
 
@@ -15999,7 +14909,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__ReconnectSource__RootState() {
+	public EOperation getImmediateTransition__ReconnectSource__FinalState() {
         return getImmediateTransition().getEOperations().get(23);
 	}
 
@@ -16009,7 +14919,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__CanReconnectSource__FinalState() {
+	public EOperation getImmediateTransition__CanReconnectSource__InitialState() {
         return getImmediateTransition().getEOperations().get(24);
 	}
 
@@ -16019,7 +14929,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__ReconnectSource__FinalState() {
+	public EOperation getImmediateTransition__ReconnectSource__InitialState() {
         return getImmediateTransition().getEOperations().get(25);
 	}
 
@@ -16029,7 +14939,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__CanReconnectTarget__InitilalSubSuperState() {
+	public EOperation getImmediateTransition__CanReconnectTarget__InitilalSuperState() {
         return getImmediateTransition().getEOperations().get(26);
 	}
 
@@ -16039,7 +14949,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__ReconnectTarget__InitilalSubSuperState() {
+	public EOperation getImmediateTransition__ReconnectTarget__InitilalSuperState() {
         return getImmediateTransition().getEOperations().get(27);
 	}
 
@@ -16049,7 +14959,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__CanReconnectTarget__InitialState() {
+	public EOperation getImmediateTransition__CanReconnectTarget__Connector() {
         return getImmediateTransition().getEOperations().get(28);
 	}
 
@@ -16059,7 +14969,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__ReconnectTarget__InitialState() {
+	public EOperation getImmediateTransition__ReconnectTarget__Connector() {
         return getImmediateTransition().getEOperations().get(29);
 	}
 
@@ -16069,7 +14979,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__CanReconnectTarget__Connector() {
+	public EOperation getImmediateTransition__CanReconnectTarget__SuperState() {
         return getImmediateTransition().getEOperations().get(30);
 	}
 
@@ -16079,7 +14989,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__ReconnectTarget__Connector() {
+	public EOperation getImmediateTransition__ReconnectTarget__SuperState() {
         return getImmediateTransition().getEOperations().get(31);
 	}
 
@@ -16089,7 +14999,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__CanReconnectTarget__SubSuperState() {
+	public EOperation getImmediateTransition__CanReconnectTarget__SimpleState() {
         return getImmediateTransition().getEOperations().get(32);
 	}
 
@@ -16099,7 +15009,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__ReconnectTarget__SubSuperState() {
+	public EOperation getImmediateTransition__ReconnectTarget__SimpleState() {
         return getImmediateTransition().getEOperations().get(33);
 	}
 
@@ -16109,7 +15019,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__CanReconnectTarget__SimpleState() {
+	public EOperation getImmediateTransition__CanReconnectTarget__FinalState() {
         return getImmediateTransition().getEOperations().get(34);
 	}
 
@@ -16119,7 +15029,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__ReconnectTarget__SimpleState() {
+	public EOperation getImmediateTransition__ReconnectTarget__FinalState() {
         return getImmediateTransition().getEOperations().get(35);
 	}
 
@@ -16129,7 +15039,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__CanReconnectTarget__FinalState() {
+	public EOperation getImmediateTransition__CanReconnectTarget__InitialState() {
         return getImmediateTransition().getEOperations().get(36);
 	}
 
@@ -16139,7 +15049,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTransition__ReconnectTarget__FinalState() {
+	public EOperation getImmediateTransition__ReconnectTarget__InitialState() {
         return getImmediateTransition().getEOperations().get(37);
 	}
 
@@ -16161,7 +15071,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	@Override
 	public EClass getImmediateTerminationTransition() {
 		if (immediateTerminationTransitionEClass == null) {
-			immediateTerminationTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(13);
+			immediateTerminationTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(12);
 		}
 		return immediateTerminationTransitionEClass;
 	}
@@ -16272,7 +15182,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__CanReconnectSource__InitilalSubSuperState() {
+	public EOperation getImmediateTerminationTransition__CanReconnectSource__InitilalSuperState() {
         return getImmediateTerminationTransition().getEOperations().get(10);
 	}
 
@@ -16282,7 +15192,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__ReconnectSource__InitilalSubSuperState() {
+	public EOperation getImmediateTerminationTransition__ReconnectSource__InitilalSuperState() {
         return getImmediateTerminationTransition().getEOperations().get(11);
 	}
 
@@ -16292,7 +15202,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__CanReconnectSource__InitialState() {
+	public EOperation getImmediateTerminationTransition__CanReconnectSource__Connector() {
         return getImmediateTerminationTransition().getEOperations().get(12);
 	}
 
@@ -16302,7 +15212,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__ReconnectSource__InitialState() {
+	public EOperation getImmediateTerminationTransition__ReconnectSource__Connector() {
         return getImmediateTerminationTransition().getEOperations().get(13);
 	}
 
@@ -16312,7 +15222,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__CanReconnectSource__Connector() {
+	public EOperation getImmediateTerminationTransition__CanReconnectSource__SuperState() {
         return getImmediateTerminationTransition().getEOperations().get(14);
 	}
 
@@ -16322,7 +15232,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__ReconnectSource__Connector() {
+	public EOperation getImmediateTerminationTransition__ReconnectSource__SuperState() {
         return getImmediateTerminationTransition().getEOperations().get(15);
 	}
 
@@ -16332,7 +15242,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__CanReconnectSource__SubSuperState() {
+	public EOperation getImmediateTerminationTransition__CanReconnectSource__SimpleState() {
         return getImmediateTerminationTransition().getEOperations().get(16);
 	}
 
@@ -16342,7 +15252,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__ReconnectSource__SubSuperState() {
+	public EOperation getImmediateTerminationTransition__ReconnectSource__SimpleState() {
         return getImmediateTerminationTransition().getEOperations().get(17);
 	}
 
@@ -16352,7 +15262,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__CanReconnectSource__SimpleState() {
+	public EOperation getImmediateTerminationTransition__CanReconnectSource__RootState() {
         return getImmediateTerminationTransition().getEOperations().get(18);
 	}
 
@@ -16362,7 +15272,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__ReconnectSource__SimpleState() {
+	public EOperation getImmediateTerminationTransition__ReconnectSource__RootState() {
         return getImmediateTerminationTransition().getEOperations().get(19);
 	}
 
@@ -16372,7 +15282,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__CanReconnectSource__RootState() {
+	public EOperation getImmediateTerminationTransition__CanReconnectSource__FinalState() {
         return getImmediateTerminationTransition().getEOperations().get(20);
 	}
 
@@ -16382,7 +15292,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__ReconnectSource__RootState() {
+	public EOperation getImmediateTerminationTransition__ReconnectSource__FinalState() {
         return getImmediateTerminationTransition().getEOperations().get(21);
 	}
 
@@ -16392,7 +15302,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__CanReconnectSource__FinalState() {
+	public EOperation getImmediateTerminationTransition__CanReconnectSource__InitialState() {
         return getImmediateTerminationTransition().getEOperations().get(22);
 	}
 
@@ -16402,7 +15312,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__ReconnectSource__FinalState() {
+	public EOperation getImmediateTerminationTransition__ReconnectSource__InitialState() {
         return getImmediateTerminationTransition().getEOperations().get(23);
 	}
 
@@ -16412,7 +15322,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__CanReconnectTarget__InitilalSubSuperState() {
+	public EOperation getImmediateTerminationTransition__CanReconnectTarget__InitilalSuperState() {
         return getImmediateTerminationTransition().getEOperations().get(24);
 	}
 
@@ -16422,7 +15332,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__ReconnectTarget__InitilalSubSuperState() {
+	public EOperation getImmediateTerminationTransition__ReconnectTarget__InitilalSuperState() {
         return getImmediateTerminationTransition().getEOperations().get(25);
 	}
 
@@ -16432,7 +15342,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__CanReconnectTarget__InitialState() {
+	public EOperation getImmediateTerminationTransition__CanReconnectTarget__Connector() {
         return getImmediateTerminationTransition().getEOperations().get(26);
 	}
 
@@ -16442,7 +15352,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__ReconnectTarget__InitialState() {
+	public EOperation getImmediateTerminationTransition__ReconnectTarget__Connector() {
         return getImmediateTerminationTransition().getEOperations().get(27);
 	}
 
@@ -16452,7 +15362,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__CanReconnectTarget__Connector() {
+	public EOperation getImmediateTerminationTransition__CanReconnectTarget__SuperState() {
         return getImmediateTerminationTransition().getEOperations().get(28);
 	}
 
@@ -16462,7 +15372,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__ReconnectTarget__Connector() {
+	public EOperation getImmediateTerminationTransition__ReconnectTarget__SuperState() {
         return getImmediateTerminationTransition().getEOperations().get(29);
 	}
 
@@ -16472,7 +15382,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__CanReconnectTarget__SubSuperState() {
+	public EOperation getImmediateTerminationTransition__CanReconnectTarget__SimpleState() {
         return getImmediateTerminationTransition().getEOperations().get(30);
 	}
 
@@ -16482,7 +15392,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__ReconnectTarget__SubSuperState() {
+	public EOperation getImmediateTerminationTransition__ReconnectTarget__SimpleState() {
         return getImmediateTerminationTransition().getEOperations().get(31);
 	}
 
@@ -16492,7 +15402,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__CanReconnectTarget__SimpleState() {
+	public EOperation getImmediateTerminationTransition__CanReconnectTarget__FinalState() {
         return getImmediateTerminationTransition().getEOperations().get(32);
 	}
 
@@ -16502,7 +15412,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__ReconnectTarget__SimpleState() {
+	public EOperation getImmediateTerminationTransition__ReconnectTarget__FinalState() {
         return getImmediateTerminationTransition().getEOperations().get(33);
 	}
 
@@ -16512,7 +15422,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__CanReconnectTarget__FinalState() {
+	public EOperation getImmediateTerminationTransition__CanReconnectTarget__InitialState() {
         return getImmediateTerminationTransition().getEOperations().get(34);
 	}
 
@@ -16522,7 +15432,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getImmediateTerminationTransition__ReconnectTarget__FinalState() {
+	public EOperation getImmediateTerminationTransition__ReconnectTarget__InitialState() {
         return getImmediateTerminationTransition().getEOperations().get(35);
 	}
 
@@ -16544,7 +15454,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	@Override
 	public EClass getWeakAbortTransition() {
 		if (weakAbortTransitionEClass == null) {
-			weakAbortTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(14);
+			weakAbortTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(13);
 		}
 		return weakAbortTransitionEClass;
 	}
@@ -16655,7 +15565,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__CanReconnectSource__InitilalSubSuperState() {
+	public EOperation getWeakAbortTransition__CanReconnectSource__InitilalSuperState() {
         return getWeakAbortTransition().getEOperations().get(10);
 	}
 
@@ -16665,7 +15575,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__ReconnectSource__InitilalSubSuperState() {
+	public EOperation getWeakAbortTransition__ReconnectSource__InitilalSuperState() {
         return getWeakAbortTransition().getEOperations().get(11);
 	}
 
@@ -16675,7 +15585,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__CanReconnectSource__InitialState() {
+	public EOperation getWeakAbortTransition__CanReconnectSource__Connector() {
         return getWeakAbortTransition().getEOperations().get(12);
 	}
 
@@ -16685,7 +15595,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__ReconnectSource__InitialState() {
+	public EOperation getWeakAbortTransition__ReconnectSource__Connector() {
         return getWeakAbortTransition().getEOperations().get(13);
 	}
 
@@ -16695,7 +15605,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__CanReconnectSource__Connector() {
+	public EOperation getWeakAbortTransition__CanReconnectSource__SuperState() {
         return getWeakAbortTransition().getEOperations().get(14);
 	}
 
@@ -16705,7 +15615,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__ReconnectSource__Connector() {
+	public EOperation getWeakAbortTransition__ReconnectSource__SuperState() {
         return getWeakAbortTransition().getEOperations().get(15);
 	}
 
@@ -16715,7 +15625,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__CanReconnectSource__SubSuperState() {
+	public EOperation getWeakAbortTransition__CanReconnectSource__SimpleState() {
         return getWeakAbortTransition().getEOperations().get(16);
 	}
 
@@ -16725,7 +15635,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__ReconnectSource__SubSuperState() {
+	public EOperation getWeakAbortTransition__ReconnectSource__SimpleState() {
         return getWeakAbortTransition().getEOperations().get(17);
 	}
 
@@ -16735,7 +15645,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__CanReconnectSource__SimpleState() {
+	public EOperation getWeakAbortTransition__CanReconnectSource__RootState() {
         return getWeakAbortTransition().getEOperations().get(18);
 	}
 
@@ -16745,7 +15655,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__ReconnectSource__SimpleState() {
+	public EOperation getWeakAbortTransition__ReconnectSource__RootState() {
         return getWeakAbortTransition().getEOperations().get(19);
 	}
 
@@ -16755,7 +15665,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__CanReconnectSource__RootState() {
+	public EOperation getWeakAbortTransition__CanReconnectSource__FinalState() {
         return getWeakAbortTransition().getEOperations().get(20);
 	}
 
@@ -16765,7 +15675,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__ReconnectSource__RootState() {
+	public EOperation getWeakAbortTransition__ReconnectSource__FinalState() {
         return getWeakAbortTransition().getEOperations().get(21);
 	}
 
@@ -16775,7 +15685,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__CanReconnectSource__FinalState() {
+	public EOperation getWeakAbortTransition__CanReconnectSource__InitialState() {
         return getWeakAbortTransition().getEOperations().get(22);
 	}
 
@@ -16785,7 +15695,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__ReconnectSource__FinalState() {
+	public EOperation getWeakAbortTransition__ReconnectSource__InitialState() {
         return getWeakAbortTransition().getEOperations().get(23);
 	}
 
@@ -16795,7 +15705,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__CanReconnectTarget__InitilalSubSuperState() {
+	public EOperation getWeakAbortTransition__CanReconnectTarget__InitilalSuperState() {
         return getWeakAbortTransition().getEOperations().get(24);
 	}
 
@@ -16805,7 +15715,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__ReconnectTarget__InitilalSubSuperState() {
+	public EOperation getWeakAbortTransition__ReconnectTarget__InitilalSuperState() {
         return getWeakAbortTransition().getEOperations().get(25);
 	}
 
@@ -16815,7 +15725,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__CanReconnectTarget__InitialState() {
+	public EOperation getWeakAbortTransition__CanReconnectTarget__Connector() {
         return getWeakAbortTransition().getEOperations().get(26);
 	}
 
@@ -16825,7 +15735,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__ReconnectTarget__InitialState() {
+	public EOperation getWeakAbortTransition__ReconnectTarget__Connector() {
         return getWeakAbortTransition().getEOperations().get(27);
 	}
 
@@ -16835,7 +15745,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__CanReconnectTarget__Connector() {
+	public EOperation getWeakAbortTransition__CanReconnectTarget__SuperState() {
         return getWeakAbortTransition().getEOperations().get(28);
 	}
 
@@ -16845,7 +15755,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__ReconnectTarget__Connector() {
+	public EOperation getWeakAbortTransition__ReconnectTarget__SuperState() {
         return getWeakAbortTransition().getEOperations().get(29);
 	}
 
@@ -16855,7 +15765,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__CanReconnectTarget__SubSuperState() {
+	public EOperation getWeakAbortTransition__CanReconnectTarget__SimpleState() {
         return getWeakAbortTransition().getEOperations().get(30);
 	}
 
@@ -16865,7 +15775,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__ReconnectTarget__SubSuperState() {
+	public EOperation getWeakAbortTransition__ReconnectTarget__SimpleState() {
         return getWeakAbortTransition().getEOperations().get(31);
 	}
 
@@ -16875,7 +15785,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__CanReconnectTarget__SimpleState() {
+	public EOperation getWeakAbortTransition__CanReconnectTarget__FinalState() {
         return getWeakAbortTransition().getEOperations().get(32);
 	}
 
@@ -16885,7 +15795,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__ReconnectTarget__SimpleState() {
+	public EOperation getWeakAbortTransition__ReconnectTarget__FinalState() {
         return getWeakAbortTransition().getEOperations().get(33);
 	}
 
@@ -16895,7 +15805,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__CanReconnectTarget__FinalState() {
+	public EOperation getWeakAbortTransition__CanReconnectTarget__InitialState() {
         return getWeakAbortTransition().getEOperations().get(34);
 	}
 
@@ -16905,7 +15815,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTransition__ReconnectTarget__FinalState() {
+	public EOperation getWeakAbortTransition__ReconnectTarget__InitialState() {
         return getWeakAbortTransition().getEOperations().get(35);
 	}
 
@@ -16927,7 +15837,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	@Override
 	public EClass getStrongAbortTransition() {
 		if (strongAbortTransitionEClass == null) {
-			strongAbortTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(15);
+			strongAbortTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(14);
 		}
 		return strongAbortTransitionEClass;
 	}
@@ -17038,7 +15948,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__CanReconnectSource__InitilalSubSuperState() {
+	public EOperation getStrongAbortTransition__CanReconnectSource__InitilalSuperState() {
         return getStrongAbortTransition().getEOperations().get(10);
 	}
 
@@ -17048,7 +15958,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__ReconnectSource__InitilalSubSuperState() {
+	public EOperation getStrongAbortTransition__ReconnectSource__InitilalSuperState() {
         return getStrongAbortTransition().getEOperations().get(11);
 	}
 
@@ -17058,7 +15968,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__CanReconnectSource__InitialState() {
+	public EOperation getStrongAbortTransition__CanReconnectSource__Connector() {
         return getStrongAbortTransition().getEOperations().get(12);
 	}
 
@@ -17068,7 +15978,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__ReconnectSource__InitialState() {
+	public EOperation getStrongAbortTransition__ReconnectSource__Connector() {
         return getStrongAbortTransition().getEOperations().get(13);
 	}
 
@@ -17078,7 +15988,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__CanReconnectSource__Connector() {
+	public EOperation getStrongAbortTransition__CanReconnectSource__SuperState() {
         return getStrongAbortTransition().getEOperations().get(14);
 	}
 
@@ -17088,7 +15998,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__ReconnectSource__Connector() {
+	public EOperation getStrongAbortTransition__ReconnectSource__SuperState() {
         return getStrongAbortTransition().getEOperations().get(15);
 	}
 
@@ -17098,7 +16008,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__CanReconnectSource__SubSuperState() {
+	public EOperation getStrongAbortTransition__CanReconnectSource__SimpleState() {
         return getStrongAbortTransition().getEOperations().get(16);
 	}
 
@@ -17108,7 +16018,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__ReconnectSource__SubSuperState() {
+	public EOperation getStrongAbortTransition__ReconnectSource__SimpleState() {
         return getStrongAbortTransition().getEOperations().get(17);
 	}
 
@@ -17118,7 +16028,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__CanReconnectSource__SimpleState() {
+	public EOperation getStrongAbortTransition__CanReconnectSource__RootState() {
         return getStrongAbortTransition().getEOperations().get(18);
 	}
 
@@ -17128,7 +16038,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__ReconnectSource__SimpleState() {
+	public EOperation getStrongAbortTransition__ReconnectSource__RootState() {
         return getStrongAbortTransition().getEOperations().get(19);
 	}
 
@@ -17138,7 +16048,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__CanReconnectSource__RootState() {
+	public EOperation getStrongAbortTransition__CanReconnectSource__FinalState() {
         return getStrongAbortTransition().getEOperations().get(20);
 	}
 
@@ -17148,7 +16058,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__ReconnectSource__RootState() {
+	public EOperation getStrongAbortTransition__ReconnectSource__FinalState() {
         return getStrongAbortTransition().getEOperations().get(21);
 	}
 
@@ -17158,7 +16068,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__CanReconnectSource__FinalState() {
+	public EOperation getStrongAbortTransition__CanReconnectSource__InitialState() {
         return getStrongAbortTransition().getEOperations().get(22);
 	}
 
@@ -17168,7 +16078,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__ReconnectSource__FinalState() {
+	public EOperation getStrongAbortTransition__ReconnectSource__InitialState() {
         return getStrongAbortTransition().getEOperations().get(23);
 	}
 
@@ -17178,7 +16088,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__CanReconnectTarget__InitilalSubSuperState() {
+	public EOperation getStrongAbortTransition__CanReconnectTarget__InitilalSuperState() {
         return getStrongAbortTransition().getEOperations().get(24);
 	}
 
@@ -17188,7 +16098,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__ReconnectTarget__InitilalSubSuperState() {
+	public EOperation getStrongAbortTransition__ReconnectTarget__InitilalSuperState() {
         return getStrongAbortTransition().getEOperations().get(25);
 	}
 
@@ -17198,7 +16108,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__CanReconnectTarget__InitialState() {
+	public EOperation getStrongAbortTransition__CanReconnectTarget__Connector() {
         return getStrongAbortTransition().getEOperations().get(26);
 	}
 
@@ -17208,7 +16118,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__ReconnectTarget__InitialState() {
+	public EOperation getStrongAbortTransition__ReconnectTarget__Connector() {
         return getStrongAbortTransition().getEOperations().get(27);
 	}
 
@@ -17218,7 +16128,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__CanReconnectTarget__Connector() {
+	public EOperation getStrongAbortTransition__CanReconnectTarget__SuperState() {
         return getStrongAbortTransition().getEOperations().get(28);
 	}
 
@@ -17228,7 +16138,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__ReconnectTarget__Connector() {
+	public EOperation getStrongAbortTransition__ReconnectTarget__SuperState() {
         return getStrongAbortTransition().getEOperations().get(29);
 	}
 
@@ -17238,7 +16148,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__CanReconnectTarget__SubSuperState() {
+	public EOperation getStrongAbortTransition__CanReconnectTarget__SimpleState() {
         return getStrongAbortTransition().getEOperations().get(30);
 	}
 
@@ -17248,7 +16158,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__ReconnectTarget__SubSuperState() {
+	public EOperation getStrongAbortTransition__ReconnectTarget__SimpleState() {
         return getStrongAbortTransition().getEOperations().get(31);
 	}
 
@@ -17258,7 +16168,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__CanReconnectTarget__SimpleState() {
+	public EOperation getStrongAbortTransition__CanReconnectTarget__FinalState() {
         return getStrongAbortTransition().getEOperations().get(32);
 	}
 
@@ -17268,7 +16178,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__ReconnectTarget__SimpleState() {
+	public EOperation getStrongAbortTransition__ReconnectTarget__FinalState() {
         return getStrongAbortTransition().getEOperations().get(33);
 	}
 
@@ -17278,7 +16188,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__CanReconnectTarget__FinalState() {
+	public EOperation getStrongAbortTransition__CanReconnectTarget__InitialState() {
         return getStrongAbortTransition().getEOperations().get(34);
 	}
 
@@ -17288,7 +16198,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getStrongAbortTransition__ReconnectTarget__FinalState() {
+	public EOperation getStrongAbortTransition__ReconnectTarget__InitialState() {
         return getStrongAbortTransition().getEOperations().get(35);
 	}
 
@@ -17310,7 +16220,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	@Override
 	public EClass getWeakAbortTerminationTransition() {
 		if (weakAbortTerminationTransitionEClass == null) {
-			weakAbortTerminationTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(16);
+			weakAbortTerminationTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(15);
 		}
 		return weakAbortTerminationTransitionEClass;
 	}
@@ -17421,7 +16331,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__CanReconnectSource__InitilalSubSuperState() {
+	public EOperation getWeakAbortTerminationTransition__CanReconnectSource__InitilalSuperState() {
         return getWeakAbortTerminationTransition().getEOperations().get(10);
 	}
 
@@ -17431,7 +16341,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__ReconnectSource__InitilalSubSuperState() {
+	public EOperation getWeakAbortTerminationTransition__ReconnectSource__InitilalSuperState() {
         return getWeakAbortTerminationTransition().getEOperations().get(11);
 	}
 
@@ -17441,7 +16351,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__CanReconnectSource__InitialState() {
+	public EOperation getWeakAbortTerminationTransition__CanReconnectSource__Connector() {
         return getWeakAbortTerminationTransition().getEOperations().get(12);
 	}
 
@@ -17451,7 +16361,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__ReconnectSource__InitialState() {
+	public EOperation getWeakAbortTerminationTransition__ReconnectSource__Connector() {
         return getWeakAbortTerminationTransition().getEOperations().get(13);
 	}
 
@@ -17461,7 +16371,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__CanReconnectSource__Connector() {
+	public EOperation getWeakAbortTerminationTransition__CanReconnectSource__SuperState() {
         return getWeakAbortTerminationTransition().getEOperations().get(14);
 	}
 
@@ -17471,7 +16381,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__ReconnectSource__Connector() {
+	public EOperation getWeakAbortTerminationTransition__ReconnectSource__SuperState() {
         return getWeakAbortTerminationTransition().getEOperations().get(15);
 	}
 
@@ -17481,7 +16391,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__CanReconnectSource__SubSuperState() {
+	public EOperation getWeakAbortTerminationTransition__CanReconnectSource__SimpleState() {
         return getWeakAbortTerminationTransition().getEOperations().get(16);
 	}
 
@@ -17491,7 +16401,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__ReconnectSource__SubSuperState() {
+	public EOperation getWeakAbortTerminationTransition__ReconnectSource__SimpleState() {
         return getWeakAbortTerminationTransition().getEOperations().get(17);
 	}
 
@@ -17501,7 +16411,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__CanReconnectSource__SimpleState() {
+	public EOperation getWeakAbortTerminationTransition__CanReconnectSource__RootState() {
         return getWeakAbortTerminationTransition().getEOperations().get(18);
 	}
 
@@ -17511,7 +16421,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__ReconnectSource__SimpleState() {
+	public EOperation getWeakAbortTerminationTransition__ReconnectSource__RootState() {
         return getWeakAbortTerminationTransition().getEOperations().get(19);
 	}
 
@@ -17521,7 +16431,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__CanReconnectSource__RootState() {
+	public EOperation getWeakAbortTerminationTransition__CanReconnectSource__FinalState() {
         return getWeakAbortTerminationTransition().getEOperations().get(20);
 	}
 
@@ -17531,7 +16441,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__ReconnectSource__RootState() {
+	public EOperation getWeakAbortTerminationTransition__ReconnectSource__FinalState() {
         return getWeakAbortTerminationTransition().getEOperations().get(21);
 	}
 
@@ -17541,7 +16451,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__CanReconnectSource__FinalState() {
+	public EOperation getWeakAbortTerminationTransition__CanReconnectSource__InitialState() {
         return getWeakAbortTerminationTransition().getEOperations().get(22);
 	}
 
@@ -17551,7 +16461,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__ReconnectSource__FinalState() {
+	public EOperation getWeakAbortTerminationTransition__ReconnectSource__InitialState() {
         return getWeakAbortTerminationTransition().getEOperations().get(23);
 	}
 
@@ -17561,7 +16471,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__CanReconnectTarget__InitilalSubSuperState() {
+	public EOperation getWeakAbortTerminationTransition__CanReconnectTarget__InitilalSuperState() {
         return getWeakAbortTerminationTransition().getEOperations().get(24);
 	}
 
@@ -17571,7 +16481,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__ReconnectTarget__InitilalSubSuperState() {
+	public EOperation getWeakAbortTerminationTransition__ReconnectTarget__InitilalSuperState() {
         return getWeakAbortTerminationTransition().getEOperations().get(25);
 	}
 
@@ -17581,7 +16491,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__CanReconnectTarget__InitialState() {
+	public EOperation getWeakAbortTerminationTransition__CanReconnectTarget__Connector() {
         return getWeakAbortTerminationTransition().getEOperations().get(26);
 	}
 
@@ -17591,7 +16501,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__ReconnectTarget__InitialState() {
+	public EOperation getWeakAbortTerminationTransition__ReconnectTarget__Connector() {
         return getWeakAbortTerminationTransition().getEOperations().get(27);
 	}
 
@@ -17601,7 +16511,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__CanReconnectTarget__Connector() {
+	public EOperation getWeakAbortTerminationTransition__CanReconnectTarget__SuperState() {
         return getWeakAbortTerminationTransition().getEOperations().get(28);
 	}
 
@@ -17611,7 +16521,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__ReconnectTarget__Connector() {
+	public EOperation getWeakAbortTerminationTransition__ReconnectTarget__SuperState() {
         return getWeakAbortTerminationTransition().getEOperations().get(29);
 	}
 
@@ -17621,7 +16531,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__CanReconnectTarget__SubSuperState() {
+	public EOperation getWeakAbortTerminationTransition__CanReconnectTarget__SimpleState() {
         return getWeakAbortTerminationTransition().getEOperations().get(30);
 	}
 
@@ -17631,7 +16541,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__ReconnectTarget__SubSuperState() {
+	public EOperation getWeakAbortTerminationTransition__ReconnectTarget__SimpleState() {
         return getWeakAbortTerminationTransition().getEOperations().get(31);
 	}
 
@@ -17641,7 +16551,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__CanReconnectTarget__SimpleState() {
+	public EOperation getWeakAbortTerminationTransition__CanReconnectTarget__FinalState() {
         return getWeakAbortTerminationTransition().getEOperations().get(32);
 	}
 
@@ -17651,7 +16561,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__ReconnectTarget__SimpleState() {
+	public EOperation getWeakAbortTerminationTransition__ReconnectTarget__FinalState() {
         return getWeakAbortTerminationTransition().getEOperations().get(33);
 	}
 
@@ -17661,7 +16571,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__CanReconnectTarget__FinalState() {
+	public EOperation getWeakAbortTerminationTransition__CanReconnectTarget__InitialState() {
         return getWeakAbortTerminationTransition().getEOperations().get(34);
 	}
 
@@ -17671,7 +16581,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getWeakAbortTerminationTransition__ReconnectTarget__FinalState() {
+	public EOperation getWeakAbortTerminationTransition__ReconnectTarget__InitialState() {
         return getWeakAbortTerminationTransition().getEOperations().get(35);
 	}
 
@@ -17693,7 +16603,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	@Override
 	public EClass getDefferedTransition() {
 		if (defferedTransitionEClass == null) {
-			defferedTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(17);
+			defferedTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(16);
 		}
 		return defferedTransitionEClass;
 	}
@@ -17804,7 +16714,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__CanReconnectSource__InitilalSubSuperState() {
+	public EOperation getDefferedTransition__CanReconnectSource__InitilalSuperState() {
         return getDefferedTransition().getEOperations().get(10);
 	}
 
@@ -17814,7 +16724,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__ReconnectSource__InitilalSubSuperState() {
+	public EOperation getDefferedTransition__ReconnectSource__InitilalSuperState() {
         return getDefferedTransition().getEOperations().get(11);
 	}
 
@@ -17824,7 +16734,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__CanReconnectSource__InitialState() {
+	public EOperation getDefferedTransition__CanReconnectSource__Connector() {
         return getDefferedTransition().getEOperations().get(12);
 	}
 
@@ -17834,7 +16744,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__ReconnectSource__InitialState() {
+	public EOperation getDefferedTransition__ReconnectSource__Connector() {
         return getDefferedTransition().getEOperations().get(13);
 	}
 
@@ -17844,7 +16754,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__CanReconnectSource__Connector() {
+	public EOperation getDefferedTransition__CanReconnectSource__SuperState() {
         return getDefferedTransition().getEOperations().get(14);
 	}
 
@@ -17854,7 +16764,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__ReconnectSource__Connector() {
+	public EOperation getDefferedTransition__ReconnectSource__SuperState() {
         return getDefferedTransition().getEOperations().get(15);
 	}
 
@@ -17864,7 +16774,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__CanReconnectSource__SubSuperState() {
+	public EOperation getDefferedTransition__CanReconnectSource__SimpleState() {
         return getDefferedTransition().getEOperations().get(16);
 	}
 
@@ -17874,7 +16784,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__ReconnectSource__SubSuperState() {
+	public EOperation getDefferedTransition__ReconnectSource__SimpleState() {
         return getDefferedTransition().getEOperations().get(17);
 	}
 
@@ -17884,7 +16794,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__CanReconnectSource__SimpleState() {
+	public EOperation getDefferedTransition__CanReconnectSource__RootState() {
         return getDefferedTransition().getEOperations().get(18);
 	}
 
@@ -17894,7 +16804,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__ReconnectSource__SimpleState() {
+	public EOperation getDefferedTransition__ReconnectSource__RootState() {
         return getDefferedTransition().getEOperations().get(19);
 	}
 
@@ -17904,7 +16814,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__CanReconnectSource__RootState() {
+	public EOperation getDefferedTransition__CanReconnectSource__FinalState() {
         return getDefferedTransition().getEOperations().get(20);
 	}
 
@@ -17914,7 +16824,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__ReconnectSource__RootState() {
+	public EOperation getDefferedTransition__ReconnectSource__FinalState() {
         return getDefferedTransition().getEOperations().get(21);
 	}
 
@@ -17924,7 +16834,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__CanReconnectSource__FinalState() {
+	public EOperation getDefferedTransition__CanReconnectSource__InitialState() {
         return getDefferedTransition().getEOperations().get(22);
 	}
 
@@ -17934,7 +16844,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__ReconnectSource__FinalState() {
+	public EOperation getDefferedTransition__ReconnectSource__InitialState() {
         return getDefferedTransition().getEOperations().get(23);
 	}
 
@@ -17944,7 +16854,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__CanReconnectTarget__InitilalSubSuperState() {
+	public EOperation getDefferedTransition__CanReconnectTarget__InitilalSuperState() {
         return getDefferedTransition().getEOperations().get(24);
 	}
 
@@ -17954,7 +16864,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__ReconnectTarget__InitilalSubSuperState() {
+	public EOperation getDefferedTransition__ReconnectTarget__InitilalSuperState() {
         return getDefferedTransition().getEOperations().get(25);
 	}
 
@@ -17964,7 +16874,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__CanReconnectTarget__InitialState() {
+	public EOperation getDefferedTransition__CanReconnectTarget__Connector() {
         return getDefferedTransition().getEOperations().get(26);
 	}
 
@@ -17974,7 +16884,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__ReconnectTarget__InitialState() {
+	public EOperation getDefferedTransition__ReconnectTarget__Connector() {
         return getDefferedTransition().getEOperations().get(27);
 	}
 
@@ -17984,7 +16894,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__CanReconnectTarget__Connector() {
+	public EOperation getDefferedTransition__CanReconnectTarget__SuperState() {
         return getDefferedTransition().getEOperations().get(28);
 	}
 
@@ -17994,7 +16904,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__ReconnectTarget__Connector() {
+	public EOperation getDefferedTransition__ReconnectTarget__SuperState() {
         return getDefferedTransition().getEOperations().get(29);
 	}
 
@@ -18004,7 +16914,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__CanReconnectTarget__SubSuperState() {
+	public EOperation getDefferedTransition__CanReconnectTarget__SimpleState() {
         return getDefferedTransition().getEOperations().get(30);
 	}
 
@@ -18014,7 +16924,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__ReconnectTarget__SubSuperState() {
+	public EOperation getDefferedTransition__ReconnectTarget__SimpleState() {
         return getDefferedTransition().getEOperations().get(31);
 	}
 
@@ -18024,7 +16934,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__CanReconnectTarget__SimpleState() {
+	public EOperation getDefferedTransition__CanReconnectTarget__FinalState() {
         return getDefferedTransition().getEOperations().get(32);
 	}
 
@@ -18034,7 +16944,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__ReconnectTarget__SimpleState() {
+	public EOperation getDefferedTransition__ReconnectTarget__FinalState() {
         return getDefferedTransition().getEOperations().get(33);
 	}
 
@@ -18044,7 +16954,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__CanReconnectTarget__FinalState() {
+	public EOperation getDefferedTransition__CanReconnectTarget__InitialState() {
         return getDefferedTransition().getEOperations().get(34);
 	}
 
@@ -18054,7 +16964,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getDefferedTransition__ReconnectTarget__FinalState() {
+	public EOperation getDefferedTransition__ReconnectTarget__InitialState() {
         return getDefferedTransition().getEOperations().get(35);
 	}
 
@@ -18076,7 +16986,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	@Override
 	public EClass getSCChart() {
 		if (scChartEClass == null) {
-			scChartEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(18);
+			scChartEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(17);
 		}
 		return scChartEClass;
 	}
@@ -18257,6 +17167,109 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getRootStateDeclaration() {
+		if (rootStateDeclarationEClass == null) {
+			rootStateDeclarationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(18);
+		}
+		return rootStateDeclarationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRootStateDeclaration__GetDeclarationType() {
+        return getRootStateDeclaration().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRootStateDeclaration__SetDeclarationType__String() {
+        return getRootStateDeclaration().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRootStateDeclaration__GetInputOutput() {
+        return getRootStateDeclaration().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRootStateDeclaration__SetInputOutput__String() {
+        return getRootStateDeclaration().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRootStateDeclaration__GetName() {
+        return getRootStateDeclaration().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRootStateDeclaration__SetName__String() {
+        return getRootStateDeclaration().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRootStateDeclaration__GetInternalRootStateDeclaration() {
+        return getRootStateDeclaration().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRootStateDeclaration__IsExactlyRootStateDeclaration() {
+        return getRootStateDeclaration().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRootStateDeclaration__GetRootStateDeclarationView() {
+        return getRootStateDeclaration().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getSuperStateDeclaration() {
 		if (superStateDeclarationEClass == null) {
 			superStateDeclarationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(19);
@@ -18290,7 +17303,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclaration__GetInputOutput() {
+	public EOperation getSuperStateDeclaration__GetName() {
         return getSuperStateDeclaration().getEOperations().get(2);
 	}
 
@@ -18300,7 +17313,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclaration__SetInputOutput__String() {
+	public EOperation getSuperStateDeclaration__SetName__String() {
         return getSuperStateDeclaration().getEOperations().get(3);
 	}
 
@@ -18310,7 +17323,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclaration__GetName() {
+	public EOperation getSuperStateDeclaration__GetInternalSuperStateDeclaration() {
         return getSuperStateDeclaration().getEOperations().get(4);
 	}
 
@@ -18320,7 +17333,7 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclaration__SetName__String() {
+	public EOperation getSuperStateDeclaration__IsExactlySuperStateDeclaration() {
         return getSuperStateDeclaration().getEOperations().get(5);
 	}
 
@@ -18330,111 +17343,8 @@ public class ScchartPackageImpl extends EPackageImpl implements ScchartPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclaration__GetInternalSuperStateDeclaration() {
-        return getSuperStateDeclaration().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateDeclaration__IsExactlySuperStateDeclaration() {
-        return getSuperStateDeclaration().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EOperation getSuperStateDeclaration__GetSuperStateDeclarationView() {
-        return getSuperStateDeclaration().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getSubSuperStateDeclaration() {
-		if (subSuperStateDeclarationEClass == null) {
-			subSuperStateDeclarationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ScchartPackage.eNS_URI).getEClassifiers().get(20);
-		}
-		return subSuperStateDeclarationEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclaration__GetDeclarationType() {
-        return getSubSuperStateDeclaration().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclaration__SetDeclarationType__String() {
-        return getSubSuperStateDeclaration().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclaration__GetName() {
-        return getSubSuperStateDeclaration().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclaration__SetName__String() {
-        return getSubSuperStateDeclaration().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclaration__GetInternalSubSuperStateDeclaration() {
-        return getSubSuperStateDeclaration().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclaration__IsExactlySubSuperStateDeclaration() {
-        return getSubSuperStateDeclaration().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSubSuperStateDeclaration__GetSubSuperStateDeclarationView() {
-        return getSubSuperStateDeclaration().getEOperations().get(6);
+        return getSuperStateDeclaration().getEOperations().get(6);
 	}
 
 	/**

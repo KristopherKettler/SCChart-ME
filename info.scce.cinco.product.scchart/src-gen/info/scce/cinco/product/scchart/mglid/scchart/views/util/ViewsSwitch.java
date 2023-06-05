@@ -72,40 +72,34 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.SUPER_STATE_REGION_VIEW: {
-				SuperStateRegionView superStateRegionView = (SuperStateRegionView)theEObject;
-				T result = caseSuperStateRegionView(superStateRegionView);
+			case ViewsPackage.REGION_VIEW: {
+				RegionView regionView = (RegionView)theEObject;
+				T result = caseRegionView(regionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.SUB_SUPER_STATE_VIEW: {
-				SubSuperStateView subSuperStateView = (SubSuperStateView)theEObject;
-				T result = caseSubSuperStateView(subSuperStateView);
+			case ViewsPackage.SUPER_STATE_VIEW: {
+				SuperStateView superStateView = (SuperStateView)theEObject;
+				T result = caseSuperStateView(superStateView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.INITILAL_SUB_SUPER_STATE_VIEW: {
-				InitilalSubSuperStateView initilalSubSuperStateView = (InitilalSubSuperStateView)theEObject;
-				T result = caseInitilalSubSuperStateView(initilalSubSuperStateView);
-				if (result == null) result = caseSubSuperStateView(initilalSubSuperStateView);
+			case ViewsPackage.INITILAL_SUPER_STATE_VIEW: {
+				InitilalSuperStateView initilalSuperStateView = (InitilalSuperStateView)theEObject;
+				T result = caseInitilalSuperStateView(initilalSuperStateView);
+				if (result == null) result = caseSuperStateView(initilalSuperStateView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.SUB_SUPER_STATE_REGION_VIEW: {
-				SubSuperStateRegionView subSuperStateRegionView = (SubSuperStateRegionView)theEObject;
-				T result = caseSubSuperStateRegionView(subSuperStateRegionView);
+			case ViewsPackage.ROOT_STATE_DECLARATION_NODE_VIEW: {
+				RootStateDeclarationNodeView rootStateDeclarationNodeView = (RootStateDeclarationNodeView)theEObject;
+				T result = caseRootStateDeclarationNodeView(rootStateDeclarationNodeView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ViewsPackage.SUPER_STATE_DECLARATION_NODE_VIEW: {
 				SuperStateDeclarationNodeView superStateDeclarationNodeView = (SuperStateDeclarationNodeView)theEObject;
 				T result = caseSuperStateDeclarationNodeView(superStateDeclarationNodeView);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ViewsPackage.SUB_SUPER_STATE_DECLARATION_NODE_VIEW: {
-				SubSuperStateDeclarationNodeView subSuperStateDeclarationNodeView = (SubSuperStateDeclarationNodeView)theEObject;
-				T result = caseSubSuperStateDeclarationNodeView(subSuperStateDeclarationNodeView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -188,15 +182,15 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.SUPER_STATE_DECLARATION_VIEW: {
-				SuperStateDeclarationView superStateDeclarationView = (SuperStateDeclarationView)theEObject;
-				T result = caseSuperStateDeclarationView(superStateDeclarationView);
+			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW: {
+				RootStateDeclarationView rootStateDeclarationView = (RootStateDeclarationView)theEObject;
+				T result = caseRootStateDeclarationView(rootStateDeclarationView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.SUB_SUPER_STATE_DECLARATION_VIEW: {
-				SubSuperStateDeclarationView subSuperStateDeclarationView = (SubSuperStateDeclarationView)theEObject;
-				T result = caseSubSuperStateDeclarationView(subSuperStateDeclarationView);
+			case ViewsPackage.SUPER_STATE_DECLARATION_VIEW: {
+				SuperStateDeclarationView superStateDeclarationView = (SuperStateDeclarationView)theEObject;
+				T result = caseSuperStateDeclarationView(superStateDeclarationView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -220,62 +214,62 @@ public class ViewsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Super State Region View</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Region View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Super State Region View</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Region View</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSuperStateRegionView(SuperStateRegionView object) {
+	public T caseRegionView(RegionView object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Sub Super State View</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Super State View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Sub Super State View</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Super State View</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSubSuperStateView(SubSuperStateView object) {
+	public T caseSuperStateView(SuperStateView object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Initilal Sub Super State View</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Initilal Super State View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Initilal Sub Super State View</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Initilal Super State View</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInitilalSubSuperStateView(InitilalSubSuperStateView object) {
+	public T caseInitilalSuperStateView(InitilalSuperStateView object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Sub Super State Region View</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Root State Declaration Node View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Sub Super State Region View</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Root State Declaration Node View</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSubSuperStateRegionView(SubSuperStateRegionView object) {
+	public T caseRootStateDeclarationNodeView(RootStateDeclarationNodeView object) {
 		return null;
 	}
 
@@ -291,21 +285,6 @@ public class ViewsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSuperStateDeclarationNodeView(SuperStateDeclarationNodeView object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Sub Super State Declaration Node View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Sub Super State Declaration Node View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSubSuperStateDeclarationNodeView(SubSuperStateDeclarationNodeView object) {
 		return null;
 	}
 
@@ -490,6 +469,21 @@ public class ViewsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Root State Declaration View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Root State Declaration View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRootStateDeclarationView(RootStateDeclarationView object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Super State Declaration View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -501,21 +495,6 @@ public class ViewsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSuperStateDeclarationView(SuperStateDeclarationView object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Sub Super State Declaration View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Sub Super State Declaration View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSubSuperStateDeclarationView(SubSuperStateDeclarationView object) {
 		return null;
 	}
 

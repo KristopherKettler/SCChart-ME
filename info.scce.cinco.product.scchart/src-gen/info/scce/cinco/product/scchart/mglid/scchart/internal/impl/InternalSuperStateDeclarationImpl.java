@@ -22,7 +22,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * </p>
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateDeclarationImpl#getDeclarationType <em>Declaration Type</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateDeclarationImpl#getInputOutput <em>Input Output</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateDeclarationImpl#getName <em>Name</em>}</li>
  * </ul>
  *
@@ -48,26 +47,6 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 	 * @ordered
 	 */
 	protected String declarationType = DECLARATION_TYPE_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getInputOutput() <em>Input Output</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getInputOutput()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String INPUT_OUTPUT_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getInputOutput() <em>Input Output</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getInputOutput()
-	 * @generated
-	 * @ordered
-	 */
-	protected String inputOutput = INPUT_OUTPUT_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -137,29 +116,6 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 	 * @generated
 	 */
 	@Override
-	public String getInputOutput() {
-		return inputOutput;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInputOutput(String newInputOutput) {
-		String oldInputOutput = inputOutput;
-		inputOutput = newInputOutput;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__INPUT_OUTPUT, oldInputOutput, inputOutput));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getName() {
 		return name;
 	}
@@ -187,8 +143,6 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 		switch (featureID) {
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__DECLARATION_TYPE:
 				return getDeclarationType();
-			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__INPUT_OUTPUT:
-				return getInputOutput();
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__NAME:
 				return getName();
 		}
@@ -205,9 +159,6 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 		switch (featureID) {
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__DECLARATION_TYPE:
 				setDeclarationType((String)newValue);
-				return;
-			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__INPUT_OUTPUT:
-				setInputOutput((String)newValue);
 				return;
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__NAME:
 				setName((String)newValue);
@@ -227,9 +178,6 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__DECLARATION_TYPE:
 				setDeclarationType(DECLARATION_TYPE_EDEFAULT);
 				return;
-			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__INPUT_OUTPUT:
-				setInputOutput(INPUT_OUTPUT_EDEFAULT);
-				return;
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__NAME:
 				setName(NAME_EDEFAULT);
 				return;
@@ -247,8 +195,6 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 		switch (featureID) {
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__DECLARATION_TYPE:
 				return DECLARATION_TYPE_EDEFAULT == null ? declarationType != null : !DECLARATION_TYPE_EDEFAULT.equals(declarationType);
-			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__INPUT_OUTPUT:
-				return INPUT_OUTPUT_EDEFAULT == null ? inputOutput != null : !INPUT_OUTPUT_EDEFAULT.equals(inputOutput);
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
@@ -267,8 +213,6 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (declarationType: ");
 		result.append(declarationType);
-		result.append(", InputOutput: ");
-		result.append(inputOutput);
 		result.append(", name: ");
 		result.append(name);
 		result.append(')');

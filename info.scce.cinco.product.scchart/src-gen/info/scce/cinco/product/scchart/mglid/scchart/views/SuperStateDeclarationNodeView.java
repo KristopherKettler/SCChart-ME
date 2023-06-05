@@ -67,22 +67,6 @@ public interface SuperStateDeclarationNodeView extends EObject {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	String getInputOutput();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setInputOutput(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
 	String getName();
 
 	/**

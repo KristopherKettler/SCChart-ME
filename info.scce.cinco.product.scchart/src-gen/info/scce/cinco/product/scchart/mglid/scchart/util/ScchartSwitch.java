@@ -86,48 +86,46 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ScchartPackage.SUPER_STATE_REGION: {
-				SuperStateRegion superStateRegion = (SuperStateRegion)theEObject;
-				T result = caseSuperStateRegion(superStateRegion);
-				if (result == null) result = caseContainer(superStateRegion);
-				if (result == null) result = caseModelElementContainer(superStateRegion);
-				if (result == null) result = caseNode(superStateRegion);
-				if (result == null) result = caseModelElement(superStateRegion);
-				if (result == null) result = caseIdentifiableElement(superStateRegion);
+			case ScchartPackage.REGION: {
+				Region region = (Region)theEObject;
+				T result = caseRegion(region);
+				if (result == null) result = caseContainer(region);
+				if (result == null) result = caseModelElementContainer(region);
+				if (result == null) result = caseNode(region);
+				if (result == null) result = caseModelElement(region);
+				if (result == null) result = caseIdentifiableElement(region);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ScchartPackage.SUB_SUPER_STATE: {
-				SubSuperState subSuperState = (SubSuperState)theEObject;
-				T result = caseSubSuperState(subSuperState);
-				if (result == null) result = caseContainer(subSuperState);
-				if (result == null) result = caseModelElementContainer(subSuperState);
-				if (result == null) result = caseNode(subSuperState);
-				if (result == null) result = caseModelElement(subSuperState);
-				if (result == null) result = caseIdentifiableElement(subSuperState);
+			case ScchartPackage.SUPER_STATE: {
+				SuperState superState = (SuperState)theEObject;
+				T result = caseSuperState(superState);
+				if (result == null) result = caseContainer(superState);
+				if (result == null) result = caseModelElementContainer(superState);
+				if (result == null) result = caseNode(superState);
+				if (result == null) result = caseModelElement(superState);
+				if (result == null) result = caseIdentifiableElement(superState);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ScchartPackage.INITILAL_SUB_SUPER_STATE: {
-				InitilalSubSuperState initilalSubSuperState = (InitilalSubSuperState)theEObject;
-				T result = caseInitilalSubSuperState(initilalSubSuperState);
-				if (result == null) result = caseSubSuperState(initilalSubSuperState);
-				if (result == null) result = caseContainer(initilalSubSuperState);
-				if (result == null) result = caseModelElementContainer(initilalSubSuperState);
-				if (result == null) result = caseNode(initilalSubSuperState);
-				if (result == null) result = caseModelElement(initilalSubSuperState);
-				if (result == null) result = caseIdentifiableElement(initilalSubSuperState);
+			case ScchartPackage.INITILAL_SUPER_STATE: {
+				InitilalSuperState initilalSuperState = (InitilalSuperState)theEObject;
+				T result = caseInitilalSuperState(initilalSuperState);
+				if (result == null) result = caseSuperState(initilalSuperState);
+				if (result == null) result = caseContainer(initilalSuperState);
+				if (result == null) result = caseModelElementContainer(initilalSuperState);
+				if (result == null) result = caseNode(initilalSuperState);
+				if (result == null) result = caseModelElement(initilalSuperState);
+				if (result == null) result = caseIdentifiableElement(initilalSuperState);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ScchartPackage.SUB_SUPER_STATE_REGION: {
-				SubSuperStateRegion subSuperStateRegion = (SubSuperStateRegion)theEObject;
-				T result = caseSubSuperStateRegion(subSuperStateRegion);
-				if (result == null) result = caseContainer(subSuperStateRegion);
-				if (result == null) result = caseModelElementContainer(subSuperStateRegion);
-				if (result == null) result = caseNode(subSuperStateRegion);
-				if (result == null) result = caseModelElement(subSuperStateRegion);
-				if (result == null) result = caseIdentifiableElement(subSuperStateRegion);
+			case ScchartPackage.ROOT_STATE_DECLARATION_NODE: {
+				RootStateDeclarationNode rootStateDeclarationNode = (RootStateDeclarationNode)theEObject;
+				T result = caseRootStateDeclarationNode(rootStateDeclarationNode);
+				if (result == null) result = caseNode(rootStateDeclarationNode);
+				if (result == null) result = caseModelElement(rootStateDeclarationNode);
+				if (result == null) result = caseIdentifiableElement(rootStateDeclarationNode);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -137,15 +135,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = caseNode(superStateDeclarationNode);
 				if (result == null) result = caseModelElement(superStateDeclarationNode);
 				if (result == null) result = caseIdentifiableElement(superStateDeclarationNode);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ScchartPackage.SUB_SUPER_STATE_DECLARATION_NODE: {
-				SubSuperStateDeclarationNode subSuperStateDeclarationNode = (SubSuperStateDeclarationNode)theEObject;
-				T result = caseSubSuperStateDeclarationNode(subSuperStateDeclarationNode);
-				if (result == null) result = caseNode(subSuperStateDeclarationNode);
-				if (result == null) result = caseModelElement(subSuperStateDeclarationNode);
-				if (result == null) result = caseIdentifiableElement(subSuperStateDeclarationNode);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -264,19 +253,19 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ScchartPackage.ROOT_STATE_DECLARATION: {
+				RootStateDeclaration rootStateDeclaration = (RootStateDeclaration)theEObject;
+				T result = caseRootStateDeclaration(rootStateDeclaration);
+				if (result == null) result = caseType(rootStateDeclaration);
+				if (result == null) result = caseIdentifiableElement(rootStateDeclaration);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ScchartPackage.SUPER_STATE_DECLARATION: {
 				SuperStateDeclaration superStateDeclaration = (SuperStateDeclaration)theEObject;
 				T result = caseSuperStateDeclaration(superStateDeclaration);
 				if (result == null) result = caseType(superStateDeclaration);
 				if (result == null) result = caseIdentifiableElement(superStateDeclaration);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ScchartPackage.SUB_SUPER_STATE_DECLARATION: {
-				SubSuperStateDeclaration subSuperStateDeclaration = (SubSuperStateDeclaration)theEObject;
-				T result = caseSubSuperStateDeclaration(subSuperStateDeclaration);
-				if (result == null) result = caseType(subSuperStateDeclaration);
-				if (result == null) result = caseIdentifiableElement(subSuperStateDeclaration);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -300,62 +289,62 @@ public class ScchartSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Super State Region</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Region</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Super State Region</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Region</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSuperStateRegion(SuperStateRegion object) {
+	public T caseRegion(Region object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Sub Super State</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Super State</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Sub Super State</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Super State</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSubSuperState(SubSuperState object) {
+	public T caseSuperState(SuperState object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Initilal Sub Super State</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Initilal Super State</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Initilal Sub Super State</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Initilal Super State</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInitilalSubSuperState(InitilalSubSuperState object) {
+	public T caseInitilalSuperState(InitilalSuperState object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Sub Super State Region</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Root State Declaration Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Sub Super State Region</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Root State Declaration Node</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSubSuperStateRegion(SubSuperStateRegion object) {
+	public T caseRootStateDeclarationNode(RootStateDeclarationNode object) {
 		return null;
 	}
 
@@ -371,21 +360,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSuperStateDeclarationNode(SuperStateDeclarationNode object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Sub Super State Declaration Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Sub Super State Declaration Node</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSubSuperStateDeclarationNode(SubSuperStateDeclarationNode object) {
 		return null;
 	}
 
@@ -570,6 +544,21 @@ public class ScchartSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Root State Declaration</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Root State Declaration</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRootStateDeclaration(RootStateDeclaration object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Super State Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -581,21 +570,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSuperStateDeclaration(SuperStateDeclaration object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Sub Super State Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Sub Super State Declaration</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSubSuperStateDeclaration(SubSuperStateDeclaration object) {
 		return null;
 	}
 

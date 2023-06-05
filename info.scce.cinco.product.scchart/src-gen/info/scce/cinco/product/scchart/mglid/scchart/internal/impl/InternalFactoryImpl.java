@@ -57,12 +57,11 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case InternalPackage.INTERNAL_ROOT_STATE: return createInternalRootState();
-			case InternalPackage.INTERNAL_SUPER_STATE_REGION: return createInternalSuperStateRegion();
-			case InternalPackage.INTERNAL_SUB_SUPER_STATE: return createInternalSubSuperState();
-			case InternalPackage.INTERNAL_INITILAL_SUB_SUPER_STATE: return createInternalInitilalSubSuperState();
-			case InternalPackage.INTERNAL_SUB_SUPER_STATE_REGION: return createInternalSubSuperStateRegion();
+			case InternalPackage.INTERNAL_REGION: return createInternalRegion();
+			case InternalPackage.INTERNAL_SUPER_STATE: return createInternalSuperState();
+			case InternalPackage.INTERNAL_INITILAL_SUPER_STATE: return createInternalInitilalSuperState();
+			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION_NODE: return createInternalRootStateDeclarationNode();
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION_NODE: return createInternalSuperStateDeclarationNode();
-			case InternalPackage.INTERNAL_SUB_SUPER_STATE_DECLARATION_NODE: return createInternalSubSuperStateDeclarationNode();
 			case InternalPackage.INTERNAL_SIMPLE_STATE: return createInternalSimpleState();
 			case InternalPackage.INTERNAL_INITIAL_STATE: return createInternalInitialState();
 			case InternalPackage.INTERNAL_FINAL_STATE: return createInternalFinalState();
@@ -75,8 +74,8 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION: return createInternalWeakAbortTerminationTransition();
 			case InternalPackage.INTERNAL_DEFFERED_TRANSITION: return createInternalDefferedTransition();
 			case InternalPackage.INTERNAL_SC_CHART: return createInternalSCChart();
+			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION: return createInternalRootStateDeclaration();
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION: return createInternalSuperStateDeclaration();
-			case InternalPackage.INTERNAL_SUB_SUPER_STATE_DECLARATION: return createInternalSubSuperStateDeclaration();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -99,9 +98,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalSuperStateRegion createInternalSuperStateRegion() {
-		InternalSuperStateRegionImpl internalSuperStateRegion = new InternalSuperStateRegionImpl();
-		return internalSuperStateRegion;
+	public InternalRegion createInternalRegion() {
+		InternalRegionImpl internalRegion = new InternalRegionImpl();
+		return internalRegion;
 	}
 
 	/**
@@ -110,9 +109,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalSubSuperState createInternalSubSuperState() {
-		InternalSubSuperStateImpl internalSubSuperState = new InternalSubSuperStateImpl();
-		return internalSubSuperState;
+	public InternalSuperState createInternalSuperState() {
+		InternalSuperStateImpl internalSuperState = new InternalSuperStateImpl();
+		return internalSuperState;
 	}
 
 	/**
@@ -121,9 +120,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalInitilalSubSuperState createInternalInitilalSubSuperState() {
-		InternalInitilalSubSuperStateImpl internalInitilalSubSuperState = new InternalInitilalSubSuperStateImpl();
-		return internalInitilalSubSuperState;
+	public InternalInitilalSuperState createInternalInitilalSuperState() {
+		InternalInitilalSuperStateImpl internalInitilalSuperState = new InternalInitilalSuperStateImpl();
+		return internalInitilalSuperState;
 	}
 
 	/**
@@ -132,9 +131,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalSubSuperStateRegion createInternalSubSuperStateRegion() {
-		InternalSubSuperStateRegionImpl internalSubSuperStateRegion = new InternalSubSuperStateRegionImpl();
-		return internalSubSuperStateRegion;
+	public InternalRootStateDeclarationNode createInternalRootStateDeclarationNode() {
+		InternalRootStateDeclarationNodeImpl internalRootStateDeclarationNode = new InternalRootStateDeclarationNodeImpl();
+		return internalRootStateDeclarationNode;
 	}
 
 	/**
@@ -146,17 +145,6 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalSuperStateDeclarationNode createInternalSuperStateDeclarationNode() {
 		InternalSuperStateDeclarationNodeImpl internalSuperStateDeclarationNode = new InternalSuperStateDeclarationNodeImpl();
 		return internalSuperStateDeclarationNode;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InternalSubSuperStateDeclarationNode createInternalSubSuperStateDeclarationNode() {
-		InternalSubSuperStateDeclarationNodeImpl internalSubSuperStateDeclarationNode = new InternalSubSuperStateDeclarationNodeImpl();
-		return internalSubSuperStateDeclarationNode;
 	}
 
 	/**
@@ -297,9 +285,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalSuperStateDeclaration createInternalSuperStateDeclaration() {
-		InternalSuperStateDeclarationImpl internalSuperStateDeclaration = new InternalSuperStateDeclarationImpl();
-		return internalSuperStateDeclaration;
+	public InternalRootStateDeclaration createInternalRootStateDeclaration() {
+		InternalRootStateDeclarationImpl internalRootStateDeclaration = new InternalRootStateDeclarationImpl();
+		return internalRootStateDeclaration;
 	}
 
 	/**
@@ -308,9 +296,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalSubSuperStateDeclaration createInternalSubSuperStateDeclaration() {
-		InternalSubSuperStateDeclarationImpl internalSubSuperStateDeclaration = new InternalSubSuperStateDeclarationImpl();
-		return internalSubSuperStateDeclaration;
+	public InternalSuperStateDeclaration createInternalSuperStateDeclaration() {
+		InternalSuperStateDeclarationImpl internalSuperStateDeclaration = new InternalSuperStateDeclarationImpl();
+		return internalSuperStateDeclaration;
 	}
 
 	/**

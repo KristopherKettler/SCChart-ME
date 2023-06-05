@@ -43,22 +43,6 @@ public interface SuperStateDeclarationNode extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	String getInputOutput();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setInputOutput(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
 	String getName();
 
 	/**
@@ -176,50 +160,58 @@ public interface SuperStateDeclarationNode extends Node {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" rootStateRequired="true" xRequired="true" yRequired="true"
+	 * @model required="true" superStateRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	boolean canMoveTo(RootState rootState, int x, int y);
+	boolean canMoveTo(SuperState superState, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model rootStateRequired="true" xRequired="true" yRequired="true"
+	 * @model superStateRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	void moveTo(RootState rootState, int x, int y);
+	void moveTo(SuperState superState, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model rootStateRequired="true" xRequired="true" yRequired="true"
+	 * @model superStateRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	void s_moveTo(RootState rootState, int x, int y);
+	void s_moveTo(SuperState superState, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" subSuperStateRegionRequired="true" xRequired="true" yRequired="true"
+	 * @model required="true" initilalSuperStateRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	boolean canMoveTo(SubSuperStateRegion subSuperStateRegion, int x, int y);
+	boolean canMoveTo(InitilalSuperState initilalSuperState, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model subSuperStateRegionRequired="true" xRequired="true" yRequired="true"
+	 * @model initilalSuperStateRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	void moveTo(SubSuperStateRegion subSuperStateRegion, int x, int y);
+	void moveTo(InitilalSuperState initilalSuperState, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model subSuperStateRegionRequired="true" xRequired="true" yRequired="true"
+	 * @model initilalSuperStateRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	void s_moveTo(SubSuperStateRegion subSuperStateRegion, int x, int y);
+	void s_moveTo(InitilalSuperState initilalSuperState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	SuperState getContainer();
 
 	/**
 	 * <!-- begin-user-doc -->

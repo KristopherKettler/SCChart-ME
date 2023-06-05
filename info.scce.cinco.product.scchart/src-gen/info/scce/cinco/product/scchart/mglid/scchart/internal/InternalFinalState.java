@@ -7,10 +7,10 @@ import de.jabc.cinco.meta.core.mgl.model.constraints.ConnectionConstraint;
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
-import info.scce.cinco.product.scchart.mglid.scchart.InitilalSubSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
-import info.scce.cinco.product.scchart.mglid.scchart.SubSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -55,7 +55,7 @@ public interface InternalFinalState extends InternalSimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<SubSuperState> getSubSuperStatePredecessors();
+	EList<SuperState> getSuperStatePredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -63,7 +63,7 @@ public interface InternalFinalState extends InternalSimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<InitilalSubSuperState> getInitilalSubSuperStatePredecessors();
+	EList<InitilalSuperState> getInitilalSuperStatePredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -103,7 +103,7 @@ public interface InternalFinalState extends InternalSimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<SubSuperState> getSubSuperStateSuccessors();
+	EList<SuperState> getSuperStateSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -111,7 +111,7 @@ public interface InternalFinalState extends InternalSimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<InitilalSubSuperState> getInitilalSubSuperStateSuccessors();
+	EList<InitilalSuperState> getInitilalSuperStateSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->

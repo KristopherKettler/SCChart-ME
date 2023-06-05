@@ -31,40 +31,40 @@ public interface InternalFactory extends EFactory {
 	InternalRootState createInternalRootState();
 
 	/**
-	 * Returns a new object of class '<em>Super State Region</em>'.
+	 * Returns a new object of class '<em>Region</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Super State Region</em>'.
+	 * @return a new object of class '<em>Region</em>'.
 	 * @generated
 	 */
-	InternalSuperStateRegion createInternalSuperStateRegion();
+	InternalRegion createInternalRegion();
 
 	/**
-	 * Returns a new object of class '<em>Sub Super State</em>'.
+	 * Returns a new object of class '<em>Super State</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sub Super State</em>'.
+	 * @return a new object of class '<em>Super State</em>'.
 	 * @generated
 	 */
-	InternalSubSuperState createInternalSubSuperState();
+	InternalSuperState createInternalSuperState();
 
 	/**
-	 * Returns a new object of class '<em>Initilal Sub Super State</em>'.
+	 * Returns a new object of class '<em>Initilal Super State</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Initilal Sub Super State</em>'.
+	 * @return a new object of class '<em>Initilal Super State</em>'.
 	 * @generated
 	 */
-	InternalInitilalSubSuperState createInternalInitilalSubSuperState();
+	InternalInitilalSuperState createInternalInitilalSuperState();
 
 	/**
-	 * Returns a new object of class '<em>Sub Super State Region</em>'.
+	 * Returns a new object of class '<em>Root State Declaration Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sub Super State Region</em>'.
+	 * @return a new object of class '<em>Root State Declaration Node</em>'.
 	 * @generated
 	 */
-	InternalSubSuperStateRegion createInternalSubSuperStateRegion();
+	InternalRootStateDeclarationNode createInternalRootStateDeclarationNode();
 
 	/**
 	 * Returns a new object of class '<em>Super State Declaration Node</em>'.
@@ -74,15 +74,6 @@ public interface InternalFactory extends EFactory {
 	 * @generated
 	 */
 	InternalSuperStateDeclarationNode createInternalSuperStateDeclarationNode();
-
-	/**
-	 * Returns a new object of class '<em>Sub Super State Declaration Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sub Super State Declaration Node</em>'.
-	 * @generated
-	 */
-	InternalSubSuperStateDeclarationNode createInternalSubSuperStateDeclarationNode();
 
 	/**
 	 * Returns a new object of class '<em>Simple State</em>'.
@@ -193,6 +184,15 @@ public interface InternalFactory extends EFactory {
 	InternalSCChart createInternalSCChart();
 
 	/**
+	 * Returns a new object of class '<em>Root State Declaration</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Root State Declaration</em>'.
+	 * @generated
+	 */
+	InternalRootStateDeclaration createInternalRootStateDeclaration();
+
+	/**
 	 * Returns a new object of class '<em>Super State Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -200,15 +200,6 @@ public interface InternalFactory extends EFactory {
 	 * @generated
 	 */
 	InternalSuperStateDeclaration createInternalSuperStateDeclaration();
-
-	/**
-	 * Returns a new object of class '<em>Sub Super State Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sub Super State Declaration</em>'.
-	 * @generated
-	 */
-	InternalSubSuperStateDeclaration createInternalSubSuperStateDeclaration();
 
 	/**
 	 * Returns the package supported by this factory.

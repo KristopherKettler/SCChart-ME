@@ -10,10 +10,10 @@ import graphmodel.internal.InternalContainer;
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
-import info.scce.cinco.product.scchart.mglid.scchart.InitilalSubSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
-import info.scce.cinco.product.scchart.mglid.scchart.SubSuperState;
-import info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration;
+import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -60,7 +60,7 @@ public interface InternalRootState extends InternalContainer {
 
 	/**
 	 * Returns the value of the '<em><b>Declaration</b></em>' containment reference list.
-	 * The list contents are of type {@link info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration}.
+	 * The list contents are of type {@link info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Declaration</em>' containment reference list.
@@ -68,7 +68,7 @@ public interface InternalRootState extends InternalContainer {
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<SuperStateDeclaration> getDeclaration();
+	EList<RootStateDeclaration> getDeclaration();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,7 +92,7 @@ public interface InternalRootState extends InternalContainer {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<SubSuperState> getSubSuperStateSuccessors();
+	EList<SuperState> getSuperStateSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -100,7 +100,7 @@ public interface InternalRootState extends InternalContainer {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<InitilalSubSuperState> getInitilalSubSuperStateSuccessors();
+	EList<InitilalSuperState> getInitilalSuperStateSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->

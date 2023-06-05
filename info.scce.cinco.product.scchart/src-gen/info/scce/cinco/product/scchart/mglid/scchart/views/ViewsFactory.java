@@ -31,40 +31,40 @@ public interface ViewsFactory extends EFactory {
 	RootStateView createRootStateView();
 
 	/**
-	 * Returns a new object of class '<em>Super State Region View</em>'.
+	 * Returns a new object of class '<em>Region View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Super State Region View</em>'.
+	 * @return a new object of class '<em>Region View</em>'.
 	 * @generated
 	 */
-	SuperStateRegionView createSuperStateRegionView();
+	RegionView createRegionView();
 
 	/**
-	 * Returns a new object of class '<em>Sub Super State View</em>'.
+	 * Returns a new object of class '<em>Super State View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sub Super State View</em>'.
+	 * @return a new object of class '<em>Super State View</em>'.
 	 * @generated
 	 */
-	SubSuperStateView createSubSuperStateView();
+	SuperStateView createSuperStateView();
 
 	/**
-	 * Returns a new object of class '<em>Initilal Sub Super State View</em>'.
+	 * Returns a new object of class '<em>Initilal Super State View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Initilal Sub Super State View</em>'.
+	 * @return a new object of class '<em>Initilal Super State View</em>'.
 	 * @generated
 	 */
-	InitilalSubSuperStateView createInitilalSubSuperStateView();
+	InitilalSuperStateView createInitilalSuperStateView();
 
 	/**
-	 * Returns a new object of class '<em>Sub Super State Region View</em>'.
+	 * Returns a new object of class '<em>Root State Declaration Node View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sub Super State Region View</em>'.
+	 * @return a new object of class '<em>Root State Declaration Node View</em>'.
 	 * @generated
 	 */
-	SubSuperStateRegionView createSubSuperStateRegionView();
+	RootStateDeclarationNodeView createRootStateDeclarationNodeView();
 
 	/**
 	 * Returns a new object of class '<em>Super State Declaration Node View</em>'.
@@ -74,15 +74,6 @@ public interface ViewsFactory extends EFactory {
 	 * @generated
 	 */
 	SuperStateDeclarationNodeView createSuperStateDeclarationNodeView();
-
-	/**
-	 * Returns a new object of class '<em>Sub Super State Declaration Node View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sub Super State Declaration Node View</em>'.
-	 * @generated
-	 */
-	SubSuperStateDeclarationNodeView createSubSuperStateDeclarationNodeView();
 
 	/**
 	 * Returns a new object of class '<em>Simple State View</em>'.
@@ -193,6 +184,15 @@ public interface ViewsFactory extends EFactory {
 	SCChartView createSCChartView();
 
 	/**
+	 * Returns a new object of class '<em>Root State Declaration View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Root State Declaration View</em>'.
+	 * @generated
+	 */
+	RootStateDeclarationView createRootStateDeclarationView();
+
+	/**
 	 * Returns a new object of class '<em>Super State Declaration View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -200,15 +200,6 @@ public interface ViewsFactory extends EFactory {
 	 * @generated
 	 */
 	SuperStateDeclarationView createSuperStateDeclarationView();
-
-	/**
-	 * Returns a new object of class '<em>Sub Super State Declaration View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sub Super State Declaration View</em>'.
-	 * @generated
-	 */
-	SubSuperStateDeclarationView createSubSuperStateDeclarationView();
 
 	/**
 	 * Returns the package supported by this factory.

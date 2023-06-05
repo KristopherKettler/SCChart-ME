@@ -2,7 +2,7 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.views;
 
-import info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration;
+import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState;
 
@@ -71,7 +71,7 @@ public interface RootStateView extends EObject {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<SuperStateDeclaration> getDeclaration();
+	EList<RootStateDeclaration> getDeclaration();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,7 +79,7 @@ public interface RootStateView extends EObject {
 	 * @model _argMany="true"
 	 * @generated
 	 */
-	void setDeclaration(EList<SuperStateDeclaration> _arg);
+	void setDeclaration(EList<RootStateDeclaration> _arg);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,7 +87,7 @@ public interface RootStateView extends EObject {
 	 * @model
 	 * @generated
 	 */
-	void addDeclaration(SuperStateDeclaration _arg);
+	void addDeclaration(RootStateDeclaration _arg);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,6 +95,6 @@ public interface RootStateView extends EObject {
 	 * @model
 	 * @generated
 	 */
-	void removeDeclaration(SuperStateDeclaration declaration);
+	void removeDeclaration(RootStateDeclaration declaration);
 
 } // RootStateView

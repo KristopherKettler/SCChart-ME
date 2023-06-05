@@ -14,7 +14,6 @@ import graphmodel.internal.InternalNode;
  * </p>
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclarationNode#getDeclarationType <em>Declaration Type</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclarationNode#getInputOutput <em>Input Output</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclarationNode#getName <em>Name</em>}</li>
  * </ul>
  *
@@ -44,28 +43,6 @@ public interface InternalSuperStateDeclarationNode extends InternalNode {
 	 * @generated
 	 */
 	void setDeclarationType(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Input Output</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Input Output</em>' attribute.
-	 * @see #setInputOutput(String)
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuperStateDeclarationNode_InputOutput()
-	 * @model
-	 * @generated
-	 */
-	String getInputOutput();
-
-	/**
-	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclarationNode#getInputOutput <em>Input Output</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Input Output</em>' attribute.
-	 * @see #getInputOutput()
-	 * @generated
-	 */
-	void setInputOutput(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.

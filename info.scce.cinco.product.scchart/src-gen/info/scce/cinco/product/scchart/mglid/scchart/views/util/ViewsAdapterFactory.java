@@ -72,28 +72,24 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 				return createRootStateViewAdapter();
 			}
 			@Override
-			public Adapter caseSuperStateRegionView(SuperStateRegionView object) {
-				return createSuperStateRegionViewAdapter();
+			public Adapter caseRegionView(RegionView object) {
+				return createRegionViewAdapter();
 			}
 			@Override
-			public Adapter caseSubSuperStateView(SubSuperStateView object) {
-				return createSubSuperStateViewAdapter();
+			public Adapter caseSuperStateView(SuperStateView object) {
+				return createSuperStateViewAdapter();
 			}
 			@Override
-			public Adapter caseInitilalSubSuperStateView(InitilalSubSuperStateView object) {
-				return createInitilalSubSuperStateViewAdapter();
+			public Adapter caseInitilalSuperStateView(InitilalSuperStateView object) {
+				return createInitilalSuperStateViewAdapter();
 			}
 			@Override
-			public Adapter caseSubSuperStateRegionView(SubSuperStateRegionView object) {
-				return createSubSuperStateRegionViewAdapter();
+			public Adapter caseRootStateDeclarationNodeView(RootStateDeclarationNodeView object) {
+				return createRootStateDeclarationNodeViewAdapter();
 			}
 			@Override
 			public Adapter caseSuperStateDeclarationNodeView(SuperStateDeclarationNodeView object) {
 				return createSuperStateDeclarationNodeViewAdapter();
-			}
-			@Override
-			public Adapter caseSubSuperStateDeclarationNodeView(SubSuperStateDeclarationNodeView object) {
-				return createSubSuperStateDeclarationNodeViewAdapter();
 			}
 			@Override
 			public Adapter caseSimpleStateView(SimpleStateView object) {
@@ -144,12 +140,12 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 				return createSCChartViewAdapter();
 			}
 			@Override
-			public Adapter caseSuperStateDeclarationView(SuperStateDeclarationView object) {
-				return createSuperStateDeclarationViewAdapter();
+			public Adapter caseRootStateDeclarationView(RootStateDeclarationView object) {
+				return createRootStateDeclarationViewAdapter();
 			}
 			@Override
-			public Adapter caseSubSuperStateDeclarationView(SubSuperStateDeclarationView object) {
-				return createSubSuperStateDeclarationViewAdapter();
+			public Adapter caseSuperStateDeclarationView(SuperStateDeclarationView object) {
+				return createSuperStateDeclarationViewAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -186,58 +182,58 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateRegionView <em>Super State Region View</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RegionView <em>Region View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateRegionView
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RegionView
 	 * @generated
 	 */
-	public Adapter createSuperStateRegionViewAdapter() {
+	public Adapter createRegionViewAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SubSuperStateView <em>Sub Super State View</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView <em>Super State View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SubSuperStateView
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView
 	 * @generated
 	 */
-	public Adapter createSubSuperStateViewAdapter() {
+	public Adapter createSuperStateViewAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.InitilalSubSuperStateView <em>Initilal Sub Super State View</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.InitilalSuperStateView <em>Initilal Super State View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.InitilalSubSuperStateView
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.InitilalSuperStateView
 	 * @generated
 	 */
-	public Adapter createInitilalSubSuperStateViewAdapter() {
+	public Adapter createInitilalSuperStateViewAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SubSuperStateRegionView <em>Sub Super State Region View</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView <em>Root State Declaration Node View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SubSuperStateRegionView
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView
 	 * @generated
 	 */
-	public Adapter createSubSuperStateRegionViewAdapter() {
+	public Adapter createRootStateDeclarationNodeViewAdapter() {
 		return null;
 	}
 
@@ -252,20 +248,6 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSuperStateDeclarationNodeViewAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SubSuperStateDeclarationNodeView <em>Sub Super State Declaration Node View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SubSuperStateDeclarationNodeView
-	 * @generated
-	 */
-	public Adapter createSubSuperStateDeclarationNodeViewAdapter() {
 		return null;
 	}
 
@@ -438,6 +420,20 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView <em>Root State Declaration View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView
+	 * @generated
+	 */
+	public Adapter createRootStateDeclarationViewAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView <em>Super State Declaration View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -448,20 +444,6 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSuperStateDeclarationViewAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SubSuperStateDeclarationView <em>Sub Super State Declaration View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SubSuperStateDeclarationView
-	 * @generated
-	 */
-	public Adapter createSubSuperStateDeclarationViewAdapter() {
 		return null;
 	}
 

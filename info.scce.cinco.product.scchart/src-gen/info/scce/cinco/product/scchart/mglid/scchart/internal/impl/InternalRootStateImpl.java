@@ -14,10 +14,10 @@ import graphmodel.internal.impl.InternalContainerImpl;
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
-import info.scce.cinco.product.scchart.mglid.scchart.InitilalSubSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
-import info.scce.cinco.product.scchart.mglid.scchart.SubSuperState;
-import info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration;
+import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState;
@@ -82,7 +82,7 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<SuperStateDeclaration> declaration;
+	protected EList<RootStateDeclaration> declaration;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -132,9 +132,9 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 */
 	@Override
-	public EList<SuperStateDeclaration> getDeclaration() {
+	public EList<RootStateDeclaration> getDeclaration() {
 		if (declaration == null) {
-			declaration = new EObjectContainmentEList<SuperStateDeclaration>(SuperStateDeclaration.class, this, InternalPackage.INTERNAL_ROOT_STATE__DECLARATION);
+			declaration = new EObjectContainmentEList<RootStateDeclaration>(RootStateDeclaration.class, this, InternalPackage.INTERNAL_ROOT_STATE__DECLARATION);
 		}
 		return declaration;
 	}
@@ -148,8 +148,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	public EList<ContainmentConstraint> getContainmentConstraints() {
 		 org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>constraints =
 			new org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>();
-		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.SuperStateRegion.class));
-		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclarationNode.class));
+		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Region.class));
+		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclarationNode.class));
 		return constraints;
 		
 	}
@@ -175,8 +175,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 */
 	@Override
-	public EList<SubSuperState> getSubSuperStateSuccessors() {
-		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.SubSuperState.class);
+	public EList<SuperState> getSuperStateSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.SuperState.class);
 	}
 
 	/**
@@ -185,8 +185,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 */
 	@Override
-	public EList<InitilalSubSuperState> getInitilalSubSuperStateSuccessors() {
-		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.InitilalSubSuperState.class);
+	public EList<InitilalSuperState> getInitilalSuperStateSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class);
 	}
 
 	/**
@@ -273,7 +273,7 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 				return;
 			case InternalPackage.INTERNAL_ROOT_STATE__DECLARATION:
 				getDeclaration().clear();
-				getDeclaration().addAll((Collection<? extends SuperStateDeclaration>)newValue);
+				getDeclaration().addAll((Collection<? extends RootStateDeclaration>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -353,10 +353,10 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 				return getContainmentConstraints();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_OUTGOING_CONSTRAINTS:
 				return getOutgoingConstraints();
-			case InternalPackage.INTERNAL_ROOT_STATE___GET_SUB_SUPER_STATE_SUCCESSORS:
-				return getSubSuperStateSuccessors();
-			case InternalPackage.INTERNAL_ROOT_STATE___GET_INITILAL_SUB_SUPER_STATE_SUCCESSORS:
-				return getInitilalSubSuperStateSuccessors();
+			case InternalPackage.INTERNAL_ROOT_STATE___GET_SUPER_STATE_SUCCESSORS:
+				return getSuperStateSuccessors();
+			case InternalPackage.INTERNAL_ROOT_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS:
+				return getInitilalSuperStateSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_SIMPLE_STATE_SUCCESSORS:
 				return getSimpleStateSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_INITIAL_STATE_SUCCESSORS:

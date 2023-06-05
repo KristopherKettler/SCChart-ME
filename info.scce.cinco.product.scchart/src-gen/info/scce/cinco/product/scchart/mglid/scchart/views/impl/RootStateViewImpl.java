@@ -2,7 +2,7 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.views.impl;
 
-import info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration;
+import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState;
 
@@ -133,7 +133,7 @@ public class RootStateViewImpl extends EObjectImpl implements RootStateView {
 	 * @generated
 	 */
 	@Override
-	public EList<SuperStateDeclaration> getDeclaration() {
+	public EList<RootStateDeclaration> getDeclaration() {
 		return getInternalRootState().getDeclaration();
 	}
 
@@ -143,7 +143,7 @@ public class RootStateViewImpl extends EObjectImpl implements RootStateView {
 	 * @generated
 	 */
 	@Override
-	public void setDeclaration(final EList<SuperStateDeclaration> _arg) {
+	public void setDeclaration(final EList<RootStateDeclaration> _arg) {
 		getInternalRootState().getElement().transact("Set Declaration", () -> {
 			getInternalRootState().getDeclaration().clear();
 			getInternalRootState().getDeclaration().addAll(_arg);
@@ -157,7 +157,7 @@ public class RootStateViewImpl extends EObjectImpl implements RootStateView {
 	 * @generated
 	 */
 	@Override
-	public void addDeclaration(final SuperStateDeclaration _arg) {
+	public void addDeclaration(final RootStateDeclaration _arg) {
 		getInternalRootState().getElement().transact("Set Declaration", () -> {
 			getInternalRootState().getDeclaration().add(_arg);
 		});
@@ -170,7 +170,7 @@ public class RootStateViewImpl extends EObjectImpl implements RootStateView {
 	 * @generated
 	 */
 	@Override
-	public void removeDeclaration(final SuperStateDeclaration declaration) {
+	public void removeDeclaration(final RootStateDeclaration declaration) {
 		getInternalRootState().getElement().transact("Set Declaration", () -> {
 			getInternalRootState().getDeclaration().remove(declaration);
 		});
@@ -253,13 +253,13 @@ public class RootStateViewImpl extends EObjectImpl implements RootStateView {
 			case ViewsPackage.ROOT_STATE_VIEW___GET_DECLARATION:
 				return getDeclaration();
 			case ViewsPackage.ROOT_STATE_VIEW___SET_DECLARATION__ELIST:
-				setDeclaration((EList<SuperStateDeclaration>)arguments.get(0));
+				setDeclaration((EList<RootStateDeclaration>)arguments.get(0));
 				return null;
-			case ViewsPackage.ROOT_STATE_VIEW___ADD_DECLARATION__SUPERSTATEDECLARATION:
-				addDeclaration((SuperStateDeclaration)arguments.get(0));
+			case ViewsPackage.ROOT_STATE_VIEW___ADD_DECLARATION__ROOTSTATEDECLARATION:
+				addDeclaration((RootStateDeclaration)arguments.get(0));
 				return null;
-			case ViewsPackage.ROOT_STATE_VIEW___REMOVE_DECLARATION__SUPERSTATEDECLARATION:
-				removeDeclaration((SuperStateDeclaration)arguments.get(0));
+			case ViewsPackage.ROOT_STATE_VIEW___REMOVE_DECLARATION__ROOTSTATEDECLARATION:
+				removeDeclaration((RootStateDeclaration)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

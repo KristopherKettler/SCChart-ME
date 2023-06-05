@@ -49,7 +49,7 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 	}
 	
 	override postCreate(RootState element) {
-		// TODO: Auto-generated method stub
+		element.newRegion(20,20)
 	}
 	
 	override postDelete(RootState element) {

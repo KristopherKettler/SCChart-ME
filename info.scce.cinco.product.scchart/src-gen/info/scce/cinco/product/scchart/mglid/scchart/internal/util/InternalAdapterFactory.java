@@ -81,28 +81,24 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 				return createInternalRootStateAdapter();
 			}
 			@Override
-			public Adapter caseInternalSuperStateRegion(InternalSuperStateRegion object) {
-				return createInternalSuperStateRegionAdapter();
+			public Adapter caseInternalRegion(InternalRegion object) {
+				return createInternalRegionAdapter();
 			}
 			@Override
-			public Adapter caseInternalSubSuperState(InternalSubSuperState object) {
-				return createInternalSubSuperStateAdapter();
+			public Adapter caseInternalSuperState(InternalSuperState object) {
+				return createInternalSuperStateAdapter();
 			}
 			@Override
-			public Adapter caseInternalInitilalSubSuperState(InternalInitilalSubSuperState object) {
-				return createInternalInitilalSubSuperStateAdapter();
+			public Adapter caseInternalInitilalSuperState(InternalInitilalSuperState object) {
+				return createInternalInitilalSuperStateAdapter();
 			}
 			@Override
-			public Adapter caseInternalSubSuperStateRegion(InternalSubSuperStateRegion object) {
-				return createInternalSubSuperStateRegionAdapter();
+			public Adapter caseInternalRootStateDeclarationNode(InternalRootStateDeclarationNode object) {
+				return createInternalRootStateDeclarationNodeAdapter();
 			}
 			@Override
 			public Adapter caseInternalSuperStateDeclarationNode(InternalSuperStateDeclarationNode object) {
 				return createInternalSuperStateDeclarationNodeAdapter();
-			}
-			@Override
-			public Adapter caseInternalSubSuperStateDeclarationNode(InternalSubSuperStateDeclarationNode object) {
-				return createInternalSubSuperStateDeclarationNodeAdapter();
 			}
 			@Override
 			public Adapter caseInternalSimpleState(InternalSimpleState object) {
@@ -153,12 +149,12 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 				return createInternalSCChartAdapter();
 			}
 			@Override
-			public Adapter caseInternalSuperStateDeclaration(InternalSuperStateDeclaration object) {
-				return createInternalSuperStateDeclarationAdapter();
+			public Adapter caseInternalRootStateDeclaration(InternalRootStateDeclaration object) {
+				return createInternalRootStateDeclarationAdapter();
 			}
 			@Override
-			public Adapter caseInternalSubSuperStateDeclaration(InternalSubSuperStateDeclaration object) {
-				return createInternalSubSuperStateDeclarationAdapter();
+			public Adapter caseInternalSuperStateDeclaration(InternalSuperStateDeclaration object) {
+				return createInternalSuperStateDeclarationAdapter();
 			}
 			@Override
 			public Adapter caseInternalIdentifiableElement(InternalIdentifiableElement object) {
@@ -227,58 +223,58 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateRegion <em>Super State Region</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion <em>Region</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateRegion
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion
 	 * @generated
 	 */
-	public Adapter createInternalSuperStateRegionAdapter() {
+	public Adapter createInternalRegionAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSubSuperState <em>Sub Super State</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState <em>Super State</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSubSuperState
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState
 	 * @generated
 	 */
-	public Adapter createInternalSubSuperStateAdapter() {
+	public Adapter createInternalSuperStateAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitilalSubSuperState <em>Initilal Sub Super State</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitilalSuperState <em>Initilal Super State</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitilalSubSuperState
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitilalSuperState
 	 * @generated
 	 */
-	public Adapter createInternalInitilalSubSuperStateAdapter() {
+	public Adapter createInternalInitilalSuperStateAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSubSuperStateRegion <em>Sub Super State Region</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclarationNode <em>Root State Declaration Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSubSuperStateRegion
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclarationNode
 	 * @generated
 	 */
-	public Adapter createInternalSubSuperStateRegionAdapter() {
+	public Adapter createInternalRootStateDeclarationNodeAdapter() {
 		return null;
 	}
 
@@ -293,20 +289,6 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInternalSuperStateDeclarationNodeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSubSuperStateDeclarationNode <em>Sub Super State Declaration Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSubSuperStateDeclarationNode
-	 * @generated
-	 */
-	public Adapter createInternalSubSuperStateDeclarationNodeAdapter() {
 		return null;
 	}
 
@@ -479,6 +461,20 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration <em>Root State Declaration</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration
+	 * @generated
+	 */
+	public Adapter createInternalRootStateDeclarationAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration <em>Super State Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -489,20 +485,6 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInternalSuperStateDeclarationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSubSuperStateDeclaration <em>Sub Super State Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSubSuperStateDeclaration
-	 * @generated
-	 */
-	public Adapter createInternalSubSuperStateDeclarationAdapter() {
 		return null;
 	}
 

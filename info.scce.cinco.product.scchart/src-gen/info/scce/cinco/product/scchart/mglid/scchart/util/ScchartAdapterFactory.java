@@ -81,28 +81,24 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 				return createRootStateAdapter();
 			}
 			@Override
-			public Adapter caseSuperStateRegion(SuperStateRegion object) {
-				return createSuperStateRegionAdapter();
+			public Adapter caseRegion(Region object) {
+				return createRegionAdapter();
 			}
 			@Override
-			public Adapter caseSubSuperState(SubSuperState object) {
-				return createSubSuperStateAdapter();
+			public Adapter caseSuperState(SuperState object) {
+				return createSuperStateAdapter();
 			}
 			@Override
-			public Adapter caseInitilalSubSuperState(InitilalSubSuperState object) {
-				return createInitilalSubSuperStateAdapter();
+			public Adapter caseInitilalSuperState(InitilalSuperState object) {
+				return createInitilalSuperStateAdapter();
 			}
 			@Override
-			public Adapter caseSubSuperStateRegion(SubSuperStateRegion object) {
-				return createSubSuperStateRegionAdapter();
+			public Adapter caseRootStateDeclarationNode(RootStateDeclarationNode object) {
+				return createRootStateDeclarationNodeAdapter();
 			}
 			@Override
 			public Adapter caseSuperStateDeclarationNode(SuperStateDeclarationNode object) {
 				return createSuperStateDeclarationNodeAdapter();
-			}
-			@Override
-			public Adapter caseSubSuperStateDeclarationNode(SubSuperStateDeclarationNode object) {
-				return createSubSuperStateDeclarationNodeAdapter();
 			}
 			@Override
 			public Adapter caseSimpleState(SimpleState object) {
@@ -153,12 +149,12 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 				return createSCChartAdapter();
 			}
 			@Override
-			public Adapter caseSuperStateDeclaration(SuperStateDeclaration object) {
-				return createSuperStateDeclarationAdapter();
+			public Adapter caseRootStateDeclaration(RootStateDeclaration object) {
+				return createRootStateDeclarationAdapter();
 			}
 			@Override
-			public Adapter caseSubSuperStateDeclaration(SubSuperStateDeclaration object) {
-				return createSubSuperStateDeclarationAdapter();
+			public Adapter caseSuperStateDeclaration(SuperStateDeclaration object) {
+				return createSuperStateDeclarationAdapter();
 			}
 			@Override
 			public Adapter caseIdentifiableElement(IdentifiableElement object) {
@@ -227,58 +223,58 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.SuperStateRegion <em>Super State Region</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.Region <em>Region</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.SuperStateRegion
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.Region
 	 * @generated
 	 */
-	public Adapter createSuperStateRegionAdapter() {
+	public Adapter createRegionAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.SubSuperState <em>Sub Super State</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.SuperState <em>Super State</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.SubSuperState
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.SuperState
 	 * @generated
 	 */
-	public Adapter createSubSuperStateAdapter() {
+	public Adapter createSuperStateAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.InitilalSubSuperState <em>Initilal Sub Super State</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState <em>Initilal Super State</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.InitilalSubSuperState
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState
 	 * @generated
 	 */
-	public Adapter createInitilalSubSuperStateAdapter() {
+	public Adapter createInitilalSuperStateAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.SubSuperStateRegion <em>Sub Super State Region</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclarationNode <em>Root State Declaration Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.SubSuperStateRegion
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclarationNode
 	 * @generated
 	 */
-	public Adapter createSubSuperStateRegionAdapter() {
+	public Adapter createRootStateDeclarationNodeAdapter() {
 		return null;
 	}
 
@@ -293,20 +289,6 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSuperStateDeclarationNodeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.SubSuperStateDeclarationNode <em>Sub Super State Declaration Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.SubSuperStateDeclarationNode
-	 * @generated
-	 */
-	public Adapter createSubSuperStateDeclarationNodeAdapter() {
 		return null;
 	}
 
@@ -479,6 +461,20 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration <em>Root State Declaration</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration
+	 * @generated
+	 */
+	public Adapter createRootStateDeclarationAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration <em>Super State Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -489,20 +485,6 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSuperStateDeclarationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.SubSuperStateDeclaration <em>Sub Super State Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.SubSuperStateDeclaration
-	 * @generated
-	 */
-	public Adapter createSubSuperStateDeclarationAdapter() {
 		return null;
 	}
 

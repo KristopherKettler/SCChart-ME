@@ -57,12 +57,11 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case ViewsPackage.ROOT_STATE_VIEW: return createRootStateView();
-			case ViewsPackage.SUPER_STATE_REGION_VIEW: return createSuperStateRegionView();
-			case ViewsPackage.SUB_SUPER_STATE_VIEW: return createSubSuperStateView();
-			case ViewsPackage.INITILAL_SUB_SUPER_STATE_VIEW: return createInitilalSubSuperStateView();
-			case ViewsPackage.SUB_SUPER_STATE_REGION_VIEW: return createSubSuperStateRegionView();
+			case ViewsPackage.REGION_VIEW: return createRegionView();
+			case ViewsPackage.SUPER_STATE_VIEW: return createSuperStateView();
+			case ViewsPackage.INITILAL_SUPER_STATE_VIEW: return createInitilalSuperStateView();
+			case ViewsPackage.ROOT_STATE_DECLARATION_NODE_VIEW: return createRootStateDeclarationNodeView();
 			case ViewsPackage.SUPER_STATE_DECLARATION_NODE_VIEW: return createSuperStateDeclarationNodeView();
-			case ViewsPackage.SUB_SUPER_STATE_DECLARATION_NODE_VIEW: return createSubSuperStateDeclarationNodeView();
 			case ViewsPackage.SIMPLE_STATE_VIEW: return createSimpleStateView();
 			case ViewsPackage.INITIAL_STATE_VIEW: return createInitialStateView();
 			case ViewsPackage.FINAL_STATE_VIEW: return createFinalStateView();
@@ -75,8 +74,8 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.WEAK_ABORT_TERMINATION_TRANSITION_VIEW: return createWeakAbortTerminationTransitionView();
 			case ViewsPackage.DEFFERED_TRANSITION_VIEW: return createDefferedTransitionView();
 			case ViewsPackage.SC_CHART_VIEW: return createSCChartView();
+			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW: return createRootStateDeclarationView();
 			case ViewsPackage.SUPER_STATE_DECLARATION_VIEW: return createSuperStateDeclarationView();
-			case ViewsPackage.SUB_SUPER_STATE_DECLARATION_VIEW: return createSubSuperStateDeclarationView();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -99,9 +98,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public SuperStateRegionView createSuperStateRegionView() {
-		SuperStateRegionViewImpl superStateRegionView = new SuperStateRegionViewImpl();
-		return superStateRegionView;
+	public RegionView createRegionView() {
+		RegionViewImpl regionView = new RegionViewImpl();
+		return regionView;
 	}
 
 	/**
@@ -110,9 +109,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public SubSuperStateView createSubSuperStateView() {
-		SubSuperStateViewImpl subSuperStateView = new SubSuperStateViewImpl();
-		return subSuperStateView;
+	public SuperStateView createSuperStateView() {
+		SuperStateViewImpl superStateView = new SuperStateViewImpl();
+		return superStateView;
 	}
 
 	/**
@@ -121,9 +120,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public InitilalSubSuperStateView createInitilalSubSuperStateView() {
-		InitilalSubSuperStateViewImpl initilalSubSuperStateView = new InitilalSubSuperStateViewImpl();
-		return initilalSubSuperStateView;
+	public InitilalSuperStateView createInitilalSuperStateView() {
+		InitilalSuperStateViewImpl initilalSuperStateView = new InitilalSuperStateViewImpl();
+		return initilalSuperStateView;
 	}
 
 	/**
@@ -132,9 +131,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public SubSuperStateRegionView createSubSuperStateRegionView() {
-		SubSuperStateRegionViewImpl subSuperStateRegionView = new SubSuperStateRegionViewImpl();
-		return subSuperStateRegionView;
+	public RootStateDeclarationNodeView createRootStateDeclarationNodeView() {
+		RootStateDeclarationNodeViewImpl rootStateDeclarationNodeView = new RootStateDeclarationNodeViewImpl();
+		return rootStateDeclarationNodeView;
 	}
 
 	/**
@@ -146,17 +145,6 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public SuperStateDeclarationNodeView createSuperStateDeclarationNodeView() {
 		SuperStateDeclarationNodeViewImpl superStateDeclarationNodeView = new SuperStateDeclarationNodeViewImpl();
 		return superStateDeclarationNodeView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SubSuperStateDeclarationNodeView createSubSuperStateDeclarationNodeView() {
-		SubSuperStateDeclarationNodeViewImpl subSuperStateDeclarationNodeView = new SubSuperStateDeclarationNodeViewImpl();
-		return subSuperStateDeclarationNodeView;
 	}
 
 	/**
@@ -297,9 +285,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public SuperStateDeclarationView createSuperStateDeclarationView() {
-		SuperStateDeclarationViewImpl superStateDeclarationView = new SuperStateDeclarationViewImpl();
-		return superStateDeclarationView;
+	public RootStateDeclarationView createRootStateDeclarationView() {
+		RootStateDeclarationViewImpl rootStateDeclarationView = new RootStateDeclarationViewImpl();
+		return rootStateDeclarationView;
 	}
 
 	/**
@@ -308,9 +296,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public SubSuperStateDeclarationView createSubSuperStateDeclarationView() {
-		SubSuperStateDeclarationViewImpl subSuperStateDeclarationView = new SubSuperStateDeclarationViewImpl();
-		return subSuperStateDeclarationView;
+	public SuperStateDeclarationView createSuperStateDeclarationView() {
+		SuperStateDeclarationViewImpl superStateDeclarationView = new SuperStateDeclarationViewImpl();
+		return superStateDeclarationView;
 	}
 
 	/**

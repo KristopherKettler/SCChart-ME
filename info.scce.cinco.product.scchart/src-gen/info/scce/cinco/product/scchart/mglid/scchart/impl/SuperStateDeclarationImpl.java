@@ -185,29 +185,6 @@ public class SuperStateDeclarationImpl extends EObjectImpl implements SuperState
 	 * @generated
 	 */
 	@Override
-	public String getInputOutput() {
-		return getInternalSuperStateDeclaration().getInputOutput();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInputOutput(final String _arg) {
-		getInternalSuperStateDeclaration().getElement().transact("Set InputOutput", () -> {
-			getInternalSuperStateDeclaration().setInputOutput(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getName() {
 		return getInternalSuperStateDeclaration().getName();
 	}
@@ -484,11 +461,6 @@ public class SuperStateDeclarationImpl extends EObjectImpl implements SuperState
 				return getDeclarationType();
 			case ScchartPackage.SUPER_STATE_DECLARATION___SET_DECLARATION_TYPE__STRING:
 				setDeclarationType((String)arguments.get(0));
-				return null;
-			case ScchartPackage.SUPER_STATE_DECLARATION___GET_INPUT_OUTPUT:
-				return getInputOutput();
-			case ScchartPackage.SUPER_STATE_DECLARATION___SET_INPUT_OUTPUT__STRING:
-				setInputOutput((String)arguments.get(0));
 				return null;
 			case ScchartPackage.SUPER_STATE_DECLARATION___GET_NAME:
 				return getName();

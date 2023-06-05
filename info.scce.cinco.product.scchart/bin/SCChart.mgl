@@ -1,8 +1,8 @@
 id info.scce.cinco.product.scchart.mglid
 stylePath "model/SCChart.style"
 
-//@preSave("info.scce.cinco.product.scchart.hooks.PreSaveSCChart")
 @event("info.scce.cinco.product.scchart.events.SCChartEvent")
+//@preSave("info.scce.cinco.product.scchart.hooks.PreSaveSCChart")
 graphModel SCChart {
 	diagramExtension "scchart"
 	containableElements(RootState[1,1])
@@ -15,54 +15,47 @@ graphModel SCChart {
 @event("info.scce.cinco.product.scchart.events.RootStateEvent")
 container RootState {
 	style rootStateStyle ("${label}")
-	containableElements(SuperStateRegion,SuperStateDeclarationNode)
+	containableElements(Region,RootStateDeclarationNode)
 	outgoingEdges (*)
 	attr EString as label := "<insert name>"
-	attr SuperStateDeclaration as declaration[0,*]
+	attr RootStateDeclaration as declaration[0,*]
 }
 
 @palette("SuperStates")
 //@postCreate("info.scce.cinco.product.scchart.hooks.PostCreateSuperState")
-@event("info.scce.cinco.product.scchart.events.SuperStateRegionEvent")
-container SuperStateRegion {
+@event("info.scce.cinco.product.scchart.events.RegionEvent")
+container Region {
 	style SuperStateStyle ("${RegionID}")
-	containableElements(SubSuperState,InitilalSubSuperState,InitialState,SimpleState,FinalState,Connector)
+	containableElements(SuperState,InitilalSuperState,InitialState,SimpleState,FinalState,Connector)
 	attr EString as label := "<insert name>"
 	attr EString as RegionID := "<insert name>"
 }
 
 //@postCreate("info.scce.cinco.product.scchart.hooks.PostCreateSubSuperState")
 @palette("SuperStates")
-@event("info.scce.cinco.product.scchart.events.SubSuperStateEvent")
-container SubSuperState {
+@event("info.scce.cinco.product.scchart.events.SuperStateEvent")
+container SuperState {
 	style subSuperStateStyle ("${label}")
-	containableElements(SubSuperStateRegion,SubSuperStateDeclarationNode)
+	containableElements(Region,SuperStateDeclarationNode)
 	incomingEdges (*)
 	outgoingEdges (*)
-	attr SubSuperStateDeclaration as declaration[0,*]
+	attr SuperStateDeclaration as declaration[0,*]
 	attr EString as label := "<insert name>"
 }
 
 //@postCreate("info.scce.cinco.product.scchart.hooks.PostCreateSubSuperState")
 @palette("SuperStates")
-@event("info.scce.cinco.product.scchart.events.InitilalSubSuperStateEvent")
-container InitilalSubSuperState extends SubSuperState{
+@event("info.scce.cinco.product.scchart.events.InitilalSuperStateEvent")
+container InitilalSuperState extends SuperState{
 	style subStartSuperStateStyle ("${label}")
-	containableElements(SubSuperStateRegion,SubSuperStateDeclarationNode)
+	containableElements(Region,SuperStateDeclarationNode)
 	incomingEdges (*)
 	outgoingEdges (*)
-}
-
-@palette("SuperStates")
-container SubSuperStateRegion {
-	style SuperStateStyle ("${RegionID}")
-	containableElements(*)
-	attr EString as RegionID := "<insert name>"
 }
 
 @palette("Declaration")
 @disable(select,delete)
-node SuperStateDeclarationNode {
+node RootStateDeclarationNode {
 	style declarationStyle("${InputOutput}", "${declarationType}","${name}")
 	attr EString as InputOutput
 	attr EString as declarationType
@@ -71,7 +64,7 @@ node SuperStateDeclarationNode {
 
 @palette("Declaration")
 @disable(select,delete)
-node SubSuperStateDeclarationNode {
+node SuperStateDeclarationNode {
 	style subSuperStateDeclarationStyle("${declarationType}","${name}")
 	attr EString as declarationType
 	attr EString as name
@@ -98,13 +91,6 @@ node FinalState extends SimpleState {
 	incomingEdges (*)
 	outgoingEdges (*)
 }
-
-//node StartEndNode {
-//	style startEndNodeStyle("${label}")
-//	incomingEdges (*)
-//	outgoingEdges (*)
-//	attr EString as label := "<insert name>"
-//}
 
 node Connector {
 	style connectorStyle
@@ -151,7 +137,7 @@ edge DefferedTransition {
 }
 
 @label(name)
-type SuperStateDeclaration {
+type RootStateDeclaration {
 	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationInputOutputProvider")
 	attr EString as InputOutput
 	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
@@ -160,7 +146,7 @@ type SuperStateDeclaration {
 }
 
 @label(name)
-type SubSuperStateDeclaration {
+type SuperStateDeclaration {
 	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SubSuperStateDeclarationTypeProvider")
 	attr EString as declarationType
 	attr EString as name
