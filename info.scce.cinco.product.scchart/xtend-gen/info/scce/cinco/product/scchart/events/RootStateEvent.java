@@ -3,6 +3,11 @@ package info.scce.cinco.product.scchart.events;
 import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
+import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
+import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclarationNode;
+import java.util.function.Consumer;
+import org.eclipse.xtext.xbase.lib.IterableExtensions;
+import org.eclipse.xtext.xbase.lib.Procedures.Procedure2;
 
 /**
  * About this class:
@@ -44,10 +49,24 @@ public final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.
   
   @Override
   public void postAttributeChange(final RootState element, final String attribute, final Object oldValue) {
+    final Consumer<RootStateDeclarationNode> _function = (RootStateDeclarationNode it) -> {
+      it.delete();
+    };
+    element.getRootStateDeclarationNodes().forEach(_function);
+    final Procedure2<RootStateDeclaration, Integer> _function_1 = (RootStateDeclaration declaration, Integer i) -> {
+      int _width = element.getWidth();
+      int _minus = (_width - 20);
+      element.newRootStateDeclarationNode(10, (10 + (10 * ((i).intValue() + 1))), _minus, 10);
+      IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).setInputOutput(declaration.getInputOutput());
+      IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).setDeclarationType(declaration.getDeclarationType());
+      IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).setName(declaration.getName());
+    };
+    IterableExtensions.<RootStateDeclaration>forEach(element.getDeclaration(), _function_1);
   }
   
   @Override
   public void postCreate(final RootState element) {
+    element.newRegion(10, 20, 180, 90);
   }
   
   @Override

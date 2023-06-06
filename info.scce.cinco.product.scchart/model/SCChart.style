@@ -91,7 +91,7 @@ nodeStyle SuperStateStyle (1){
 	}
 }
 
-nodeStyle subSuperStateStyle (1) {
+nodeStyle superStateStyle (1) {
 	roundedRectangle {
 		appearance initChartColour
 		size(140,80)

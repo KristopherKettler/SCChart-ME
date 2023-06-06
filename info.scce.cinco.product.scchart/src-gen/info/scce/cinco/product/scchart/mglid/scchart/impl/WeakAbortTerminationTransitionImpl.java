@@ -166,6 +166,26 @@ public class WeakAbortTerminationTransitionImpl extends TransitionImpl implement
 	 * @generated
 	 */
 	@Override
+	public boolean canReconnectSource(final InitialState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final InitialState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean canReconnectSource(final InitilalSuperState source) {
 		return source.canStart(this.getClass());
 	}
@@ -226,26 +246,6 @@ public class WeakAbortTerminationTransitionImpl extends TransitionImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final SimpleState source) {
-		return source.canStart(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectSource(final SimpleState source) {
-		this.setSourceElement(source);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean canReconnectSource(final RootState source) {
 		return source.canStart(this.getClass());
 	}
@@ -257,6 +257,26 @@ public class WeakAbortTerminationTransitionImpl extends TransitionImpl implement
 	 */
 	@Override
 	public void reconnectSource(final RootState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final SimpleState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final SimpleState source) {
 		this.setSourceElement(source);
 	}
 
@@ -286,8 +306,8 @@ public class WeakAbortTerminationTransitionImpl extends TransitionImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final InitialState source) {
-		return source.canStart(this.getClass());
+	public boolean canReconnectTarget(final InitialState target) {
+		return target.canEnd(this.getClass());
 	}
 
 	/**
@@ -296,8 +316,8 @@ public class WeakAbortTerminationTransitionImpl extends TransitionImpl implement
 	 * @generated
 	 */
 	@Override
-	public void reconnectSource(final InitialState source) {
-		this.setSourceElement(source);
+	public void reconnectTarget(final InitialState target) {
+		this.setTargetElement(target);
 	}
 
 	/**
@@ -406,26 +426,6 @@ public class WeakAbortTerminationTransitionImpl extends TransitionImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final InitialState target) {
-		return target.canEnd(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectTarget(final InitialState target) {
-		this.setTargetElement(target);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public WeakAbortTerminationTransitionView getWeakAbortTerminationTransitionView() {
 		WeakAbortTerminationTransitionView weakAbortTerminationTransitionView = info.scce.cinco.product.scchart.mglid.scchart.views.ViewsFactory.eINSTANCE.createWeakAbortTerminationTransitionView();
 		weakAbortTerminationTransitionView.setInternalWeakAbortTerminationTransition((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalWeakAbortTerminationTransition)getInternalElement());
@@ -475,20 +475,22 @@ public class WeakAbortTerminationTransitionImpl extends TransitionImpl implement
 				case ScchartPackage.TRANSITION___GET_ROOT_ELEMENT: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___GET_ROOT_ELEMENT;
 				case ScchartPackage.TRANSITION___GET_SOURCE_ELEMENT: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___GET_SOURCE_ELEMENT;
 				case ScchartPackage.TRANSITION___GET_TARGET_ELEMENT: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___GET_TARGET_ELEMENT;
+				case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__INITIALSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__INITIALSTATE;
+				case ScchartPackage.TRANSITION___RECONNECT_SOURCE__INITIALSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__INITIALSTATE;
 				case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__INITILALSUPERSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__INITILALSUPERSTATE;
 				case ScchartPackage.TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE;
 				case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__CONNECTOR: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__CONNECTOR;
 				case ScchartPackage.TRANSITION___RECONNECT_SOURCE__CONNECTOR: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__CONNECTOR;
 				case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__SUPERSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__SUPERSTATE;
 				case ScchartPackage.TRANSITION___RECONNECT_SOURCE__SUPERSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__SUPERSTATE;
-				case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__SIMPLESTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__SIMPLESTATE;
-				case ScchartPackage.TRANSITION___RECONNECT_SOURCE__SIMPLESTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__SIMPLESTATE;
 				case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE;
 				case ScchartPackage.TRANSITION___RECONNECT_SOURCE__ROOTSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__ROOTSTATE;
+				case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__SIMPLESTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__SIMPLESTATE;
+				case ScchartPackage.TRANSITION___RECONNECT_SOURCE__SIMPLESTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__SIMPLESTATE;
 				case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__FINALSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__FINALSTATE;
 				case ScchartPackage.TRANSITION___RECONNECT_SOURCE__FINALSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__FINALSTATE;
-				case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__INITIALSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__INITIALSTATE;
-				case ScchartPackage.TRANSITION___RECONNECT_SOURCE__INITIALSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__INITIALSTATE;
+				case ScchartPackage.TRANSITION___CAN_RECONNECT_TARGET__INITIALSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_TARGET__INITIALSTATE;
+				case ScchartPackage.TRANSITION___RECONNECT_TARGET__INITIALSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_TARGET__INITIALSTATE;
 				case ScchartPackage.TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE;
 				case ScchartPackage.TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE;
 				case ScchartPackage.TRANSITION___CAN_RECONNECT_TARGET__CONNECTOR: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_TARGET__CONNECTOR;
@@ -499,8 +501,6 @@ public class WeakAbortTerminationTransitionImpl extends TransitionImpl implement
 				case ScchartPackage.TRANSITION___RECONNECT_TARGET__SIMPLESTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_TARGET__SIMPLESTATE;
 				case ScchartPackage.TRANSITION___CAN_RECONNECT_TARGET__FINALSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_TARGET__FINALSTATE;
 				case ScchartPackage.TRANSITION___RECONNECT_TARGET__FINALSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_TARGET__FINALSTATE;
-				case ScchartPackage.TRANSITION___CAN_RECONNECT_TARGET__INITIALSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_TARGET__INITIALSTATE;
-				case ScchartPackage.TRANSITION___RECONNECT_TARGET__INITIALSTATE: return ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_TARGET__INITIALSTATE;
 				default: return super.eDerivedOperationID(baseOperationID, baseClass);
 			}
 		}
@@ -538,6 +538,11 @@ public class WeakAbortTerminationTransitionImpl extends TransitionImpl implement
 				return getSourceElement();
 			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___GET_TARGET_ELEMENT:
 				return getTargetElement();
+			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__INITIALSTATE:
+				return canReconnectSource((InitialState)arguments.get(0));
+			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__INITIALSTATE:
+				reconnectSource((InitialState)arguments.get(0));
+				return null;
 			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__INITILALSUPERSTATE:
 				return canReconnectSource((InitilalSuperState)arguments.get(0));
 			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE:
@@ -553,25 +558,25 @@ public class WeakAbortTerminationTransitionImpl extends TransitionImpl implement
 			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__SUPERSTATE:
 				reconnectSource((SuperState)arguments.get(0));
 				return null;
-			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__SIMPLESTATE:
-				return canReconnectSource((SimpleState)arguments.get(0));
-			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__SIMPLESTATE:
-				reconnectSource((SimpleState)arguments.get(0));
-				return null;
 			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
 				return canReconnectSource((RootState)arguments.get(0));
 			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
 				reconnectSource((RootState)arguments.get(0));
+				return null;
+			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__SIMPLESTATE:
+				return canReconnectSource((SimpleState)arguments.get(0));
+			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__SIMPLESTATE:
+				reconnectSource((SimpleState)arguments.get(0));
 				return null;
 			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__FINALSTATE:
 				return canReconnectSource((FinalState)arguments.get(0));
 			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__FINALSTATE:
 				reconnectSource((FinalState)arguments.get(0));
 				return null;
-			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_SOURCE__INITIALSTATE:
-				return canReconnectSource((InitialState)arguments.get(0));
-			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_SOURCE__INITIALSTATE:
-				reconnectSource((InitialState)arguments.get(0));
+			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_TARGET__INITIALSTATE:
+				return canReconnectTarget((InitialState)arguments.get(0));
+			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_TARGET__INITIALSTATE:
+				reconnectTarget((InitialState)arguments.get(0));
 				return null;
 			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
 				return canReconnectTarget((InitilalSuperState)arguments.get(0));
@@ -597,11 +602,6 @@ public class WeakAbortTerminationTransitionImpl extends TransitionImpl implement
 				return canReconnectTarget((FinalState)arguments.get(0));
 			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_TARGET__FINALSTATE:
 				reconnectTarget((FinalState)arguments.get(0));
-				return null;
-			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___CAN_RECONNECT_TARGET__INITIALSTATE:
-				return canReconnectTarget((InitialState)arguments.get(0));
-			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___RECONNECT_TARGET__INITIALSTATE:
-				reconnectTarget((InitialState)arguments.get(0));
 				return null;
 			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION___GET_WEAK_ABORT_TERMINATION_TRANSITION_VIEW:
 				return getWeakAbortTerminationTransitionView();

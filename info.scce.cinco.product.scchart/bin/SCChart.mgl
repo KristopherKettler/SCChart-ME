@@ -2,16 +2,12 @@ id info.scce.cinco.product.scchart.mglid
 stylePath "model/SCChart.style"
 
 @event("info.scce.cinco.product.scchart.events.SCChartEvent")
-//@preSave("info.scce.cinco.product.scchart.hooks.PreSaveSCChart")
 graphModel SCChart {
 	diagramExtension "scchart"
 	containableElements(RootState[1,1])
 }
 
 @palette("infrastructure")
-//@postSelect("info.scce.cinco.product.scchart.hooks.PostSelectSCChart")
-//@postCreate("info.scce.cinco.product.scchart.hooks.postCreateInitSCChart")
-//@postAttributeChange("info.scce.cinco.product.scchart.hooks.PostDeclarationChangeHook")
 @event("info.scce.cinco.product.scchart.events.RootStateEvent")
 container RootState {
 	style rootStateStyle ("${label}")
@@ -22,7 +18,6 @@ container RootState {
 }
 
 @palette("SuperStates")
-//@postCreate("info.scce.cinco.product.scchart.hooks.PostCreateSuperState")
 @event("info.scce.cinco.product.scchart.events.RegionEvent")
 container Region {
 	style SuperStateStyle ("${RegionID}")
@@ -31,11 +26,10 @@ container Region {
 	attr EString as RegionID := "<insert name>"
 }
 
-//@postCreate("info.scce.cinco.product.scchart.hooks.PostCreateSubSuperState")
 @palette("SuperStates")
 @event("info.scce.cinco.product.scchart.events.SuperStateEvent")
 container SuperState {
-	style subSuperStateStyle ("${label}")
+	style superStateStyle ("${label}")
 	containableElements(Region,SuperStateDeclarationNode)
 	incomingEdges (*)
 	outgoingEdges (*)
@@ -43,7 +37,6 @@ container SuperState {
 	attr EString as label := "<insert name>"
 }
 
-//@postCreate("info.scce.cinco.product.scchart.hooks.PostCreateSubSuperState")
 @palette("SuperStates")
 @event("info.scce.cinco.product.scchart.events.InitilalSuperStateEvent")
 container InitilalSuperState extends SuperState{
@@ -111,9 +104,7 @@ edge Transition {
 
 edge ImmediateTransition extends Transition{
 	style immediateArrow("${label}")
-	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.IntProvider")
 	attr EString as label := "wqwq"
-	//@grammar("info.scce.cinco.product.scchart.dsl.transition.TransitionsExpression", "info.scce.cinco.product.scchart.dsl.transition.TransitionsExpression")	
 }	
 
 edge ImmediateTerminationTransition extends Transition{
@@ -138,16 +129,16 @@ edge DefferedTransition {
 
 @label(name)
 type RootStateDeclaration {
-	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationInputOutputProvider")
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationInputOutputProvider")
 	attr EString as InputOutput
-	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationTypeProvider")
 	attr EString as declarationType
 	attr EString as name
 }
 
 @label(name)
 type SuperStateDeclaration {
-	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SubSuperStateDeclarationTypeProvider")
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
 	attr EString as declarationType
 	attr EString as name
 }

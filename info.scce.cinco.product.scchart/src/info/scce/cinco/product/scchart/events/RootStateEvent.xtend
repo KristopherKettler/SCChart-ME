@@ -45,11 +45,17 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 	}
 	
 	override postAttributeChange(RootState element, String attribute, Object oldValue) {
-		// TODO: Auto-generated method stub
+		element.rootStateDeclarationNodes.forEach[it.delete]
+		element.getDeclaration.forEach[ declaration , i |
+			element.newRootStateDeclarationNode(10,10 + 10*(i+1),element.width-20,10)
+			element.rootStateDeclarationNodes.last.setInputOutput(declaration.inputOutput)
+			element.rootStateDeclarationNodes.last.setDeclarationType(declaration.declarationType)
+			element.rootStateDeclarationNodes.last.setName(declaration.name)
+			]
 	}
 	
 	override postCreate(RootState element) {
-		element.newRegion(20,20)
+		element.newRegion(10,20,180,90)
 	}
 	
 	override postDelete(RootState element) {
