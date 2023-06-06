@@ -106,54 +106,6 @@ public interface DefferedTransition extends Edge {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(InitialState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(InitialState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectSource(InitilalSuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(InitilalSuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectSource(Connector source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(Connector source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
 	boolean canReconnectSource(SuperState source);
 
 	/**
@@ -215,50 +167,50 @@ public interface DefferedTransition extends Edge {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
+	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(InitialState target);
+	boolean canReconnectSource(Connector source);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
+	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(InitialState target);
+	void reconnectSource(Connector source);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
+	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(InitilalSuperState target);
+	boolean canReconnectSource(InitilalSuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
+	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(InitilalSuperState target);
+	void reconnectSource(InitilalSuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
+	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(Connector target);
+	boolean canReconnectSource(InitialState source);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
+	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(Connector target);
+	void reconnectSource(InitialState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -307,6 +259,54 @@ public interface DefferedTransition extends Edge {
 	 * @generated
 	 */
 	void reconnectTarget(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(InitialState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(InitialState target);
 
 	/**
 	 * <!-- begin-user-doc -->

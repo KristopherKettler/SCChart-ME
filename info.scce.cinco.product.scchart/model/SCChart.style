@@ -9,8 +9,9 @@ appearance declarationAppearance {
 	foreground (198,226,255) //LightSlateGrey 
 }
 appearance texthighlight{
-	foreground (109, 9, 174)
-	background (109, 9, 174)
+	font ("Sans",BOLD,7)
+	foreground (166, 0, 99)
+	background (166, 0, 99)
 }
 
 appearance nodeLine {

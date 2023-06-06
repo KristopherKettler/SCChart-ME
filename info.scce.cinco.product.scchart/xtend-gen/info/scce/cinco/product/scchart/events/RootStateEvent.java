@@ -56,7 +56,7 @@ public final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.
     final Procedure2<RootStateDeclaration, Integer> _function_1 = (RootStateDeclaration declaration, Integer i) -> {
       int _width = element.getWidth();
       int _minus = (_width - 20);
-      element.newRootStateDeclarationNode(10, (10 + (10 * ((i).intValue() + 1))), _minus, 10);
+      element.newRootStateDeclarationNode(10, (10 + (15 * ((i).intValue() + 1))), _minus, 15);
       IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).setInputOutput(declaration.getInputOutput());
       IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).setDeclarationType(declaration.getDeclarationType());
       IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).setName(declaration.getName());

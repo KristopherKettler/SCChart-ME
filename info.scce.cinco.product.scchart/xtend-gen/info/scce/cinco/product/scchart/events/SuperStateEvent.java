@@ -3,6 +3,11 @@ package info.scce.cinco.product.scchart.events;
 import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration;
+import info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclarationNode;
+import java.util.function.Consumer;
+import org.eclipse.xtext.xbase.lib.IterableExtensions;
+import org.eclipse.xtext.xbase.lib.Procedures.Procedure2;
 
 /**
  * About this class:
@@ -44,6 +49,18 @@ public final class SuperStateEvent extends info.scce.cinco.product.scchart.mglid
   
   @Override
   public void postAttributeChange(final SuperState element, final String attribute, final Object oldValue) {
+    final Consumer<SuperStateDeclarationNode> _function = (SuperStateDeclarationNode it) -> {
+      it.delete();
+    };
+    element.getSuperStateDeclarationNodes().forEach(_function);
+    final Procedure2<SuperStateDeclaration, Integer> _function_1 = (SuperStateDeclaration declaration, Integer i) -> {
+      int _width = element.getWidth();
+      int _minus = (_width - 20);
+      element.newSuperStateDeclarationNode(10, (10 + (10 * ((i).intValue() + 1))), _minus, 10);
+      IterableExtensions.<SuperStateDeclarationNode>last(element.getSuperStateDeclarationNodes()).setDeclarationType(declaration.getDeclarationType());
+      IterableExtensions.<SuperStateDeclarationNode>last(element.getSuperStateDeclarationNodes()).setName(declaration.getName());
+    };
+    IterableExtensions.<SuperStateDeclaration>forEach(element.getDeclaration(), _function_1);
   }
   
   @Override

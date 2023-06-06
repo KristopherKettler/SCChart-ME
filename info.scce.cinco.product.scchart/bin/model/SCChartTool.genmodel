@@ -117,12 +117,12 @@
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/RootState/postResize/direction"/>
         </genOperations>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/RootState/getOutgoingTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/RootState/getOutgoingWeakAbortTerminationTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/RootState/getOutgoingStrongAbortTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/RootState/getOutgoingImmediateTerminationTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/RootState/getOutgoingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/RootState/getOutgoingWeakAbortTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/RootState/getOutgoingImmediateTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/RootState/getOutgoingImmediateTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/RootState/getOutgoingWeakAbortTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/RootState/getOutgoingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/RootState/getSuperStateSuccessors"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/RootState/getInitilalSuperStateSuccessors"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/RootState/getSimpleStateSuccessors"/>
@@ -585,78 +585,6 @@
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/postSave"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/getRootElement"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/getNodes"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/getInitialStates"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/canNewInitialState"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState/y"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.1">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.1/id"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.1/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.1/y"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.2">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.2/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.2/y"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.2/width"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.2/height"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.3">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.3/id"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.3/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.3/y"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.3/width"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.3/height"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/getInitilalSuperStates"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/canNewInitilalSuperState"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState/y"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.1">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.1/id"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.1/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.1/y"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.2">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.2/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.2/y"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.2/width"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.2/height"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.3">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.3/id"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.3/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.3/y"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.3/width"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.3/height"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/getConnectors"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/canNewConnector"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector/y"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.1">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.1/id"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.1/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.1/y"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.2">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.2/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.2/y"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.2/width"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.2/height"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.3">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.3/id"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.3/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.3/y"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.3/width"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.3/height"/>
-        </genOperations>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/getSuperStates"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/canNewSuperState"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newSuperState">
@@ -728,6 +656,78 @@
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newFinalState.3/y"/>
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newFinalState.3/width"/>
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newFinalState.3/height"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/getConnectors"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/canNewConnector"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector/y"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.1">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.1/id"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.1/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.1/y"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.2">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.2/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.2/y"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.2/width"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.2/height"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.3">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.3/id"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.3/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.3/y"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.3/width"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newConnector.3/height"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/getInitilalSuperStates"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/canNewInitilalSuperState"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState/y"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.1">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.1/id"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.1/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.1/y"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.2">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.2/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.2/y"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.2/width"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.2/height"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.3">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.3/id"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.3/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.3/y"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.3/width"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitilalSuperState.3/height"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/getInitialStates"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/canNewInitialState"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState/y"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.1">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.1/id"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.1/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.1/y"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.2">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.2/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.2/y"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.2/width"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.2/height"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.3">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.3/id"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.3/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.3/y"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.3/width"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/newInitialState.3/height"/>
         </genOperations>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/s_moveTo">
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Region/s_moveTo/container"/>
@@ -832,30 +832,6 @@
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/postSave"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getRootElement"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getNodes"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getSuperStateDeclarationNodes"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/canNewSuperStateDeclarationNode"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode/y"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.1">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.1/id"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.1/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.1/y"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.2">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.2/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.2/y"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.2/width"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.2/height"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.3">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.3/id"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.3/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.3/y"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.3/width"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.3/height"/>
-        </genOperations>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getRegions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/canNewRegion"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newRegion">
@@ -879,6 +855,30 @@
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newRegion.3/y"/>
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newRegion.3/width"/>
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newRegion.3/height"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getSuperStateDeclarationNodes"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/canNewSuperStateDeclarationNode"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode/y"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.1">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.1/id"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.1/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.1/y"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.2">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.2/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.2/y"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.2/width"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.2/height"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.3">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.3/id"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.3/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.3/y"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.3/width"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/newSuperStateDeclarationNode.3/height"/>
         </genOperations>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getOutgoing"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getSuccessors"/>
@@ -917,19 +917,19 @@
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/postResize/direction"/>
         </genOperations>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getOutgoingTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getOutgoingWeakAbortTerminationTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getOutgoingStrongAbortTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getOutgoingImmediateTerminationTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getOutgoingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getOutgoingWeakAbortTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getOutgoingImmediateTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getOutgoingImmediateTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getOutgoingWeakAbortTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getOutgoingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getIncomingTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getIncomingWeakAbortTerminationTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getIncomingStrongAbortTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getIncomingImmediateTerminationTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getIncomingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getIncomingWeakAbortTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getIncomingImmediateTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getIncomingImmediateTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getIncomingWeakAbortTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getIncomingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getRootStatePredecessors"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getSuperStatePredecessors"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SuperState/getInitilalSuperStatePredecessors"/>
@@ -1391,30 +1391,6 @@
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/postSave"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getRootElement"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getNodes"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getSuperStateDeclarationNodes"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/canNewSuperStateDeclarationNode"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode/y"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.1">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.1/id"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.1/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.1/y"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.2">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.2/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.2/y"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.2/width"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.2/height"/>
-        </genOperations>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.3">
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.3/id"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.3/x"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.3/y"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.3/width"/>
-          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.3/height"/>
-        </genOperations>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getRegions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/canNewRegion"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newRegion">
@@ -1438,6 +1414,30 @@
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newRegion.3/y"/>
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newRegion.3/width"/>
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newRegion.3/height"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getSuperStateDeclarationNodes"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/canNewSuperStateDeclarationNode"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode/y"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.1">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.1/id"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.1/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.1/y"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.2">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.2/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.2/y"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.2/width"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.2/height"/>
+        </genOperations>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.3">
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.3/id"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.3/x"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.3/y"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.3/width"/>
+          <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/newSuperStateDeclarationNode.3/height"/>
         </genOperations>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getOutgoing"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getSuccessors"/>
@@ -1476,19 +1476,19 @@
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/postResize/direction"/>
         </genOperations>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getOutgoingTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getOutgoingWeakAbortTerminationTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getOutgoingStrongAbortTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getOutgoingImmediateTerminationTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getOutgoingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getOutgoingWeakAbortTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getOutgoingImmediateTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getOutgoingImmediateTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getOutgoingWeakAbortTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getOutgoingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getIncomingTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getIncomingWeakAbortTerminationTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getIncomingStrongAbortTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getIncomingImmediateTerminationTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getIncomingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getIncomingWeakAbortTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getIncomingImmediateTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getIncomingImmediateTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getIncomingWeakAbortTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getIncomingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getRootStatePredecessors"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getSuperStatePredecessors"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitilalSuperState/getInitilalSuperStatePredecessors"/>
@@ -2143,19 +2143,19 @@
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/postResize/direction"/>
         </genOperations>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getOutgoingTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getOutgoingWeakAbortTerminationTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getOutgoingStrongAbortTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getOutgoingImmediateTerminationTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getOutgoingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getOutgoingWeakAbortTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getOutgoingImmediateTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getOutgoingImmediateTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getOutgoingWeakAbortTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getOutgoingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getIncomingTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getIncomingWeakAbortTerminationTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getIncomingStrongAbortTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getIncomingImmediateTerminationTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getIncomingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getIncomingWeakAbortTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getIncomingImmediateTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getIncomingImmediateTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getIncomingWeakAbortTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getIncomingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getRootStatePredecessors"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getSuperStatePredecessors"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/SimpleState/getInitilalSuperStatePredecessors"/>
@@ -2653,19 +2653,19 @@
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/postResize/direction"/>
         </genOperations>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getOutgoingTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getOutgoingWeakAbortTerminationTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getOutgoingStrongAbortTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getOutgoingImmediateTerminationTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getOutgoingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getOutgoingWeakAbortTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getOutgoingImmediateTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getOutgoingImmediateTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getOutgoingWeakAbortTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getOutgoingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getIncomingTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getIncomingWeakAbortTerminationTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getIncomingStrongAbortTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getIncomingImmediateTerminationTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getIncomingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getIncomingWeakAbortTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getIncomingImmediateTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getIncomingImmediateTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getIncomingWeakAbortTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getIncomingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getRootStatePredecessors"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getSuperStatePredecessors"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/InitialState/getInitilalSuperStatePredecessors"/>
@@ -3163,19 +3163,19 @@
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/postResize/direction"/>
         </genOperations>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getOutgoingTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getOutgoingWeakAbortTerminationTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getOutgoingStrongAbortTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getOutgoingImmediateTerminationTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getOutgoingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getOutgoingWeakAbortTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getOutgoingImmediateTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getOutgoingImmediateTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getOutgoingWeakAbortTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getOutgoingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getIncomingTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getIncomingWeakAbortTerminationTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getIncomingStrongAbortTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getIncomingImmediateTerminationTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getIncomingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getIncomingWeakAbortTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getIncomingImmediateTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getIncomingImmediateTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getIncomingWeakAbortTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getIncomingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getRootStatePredecessors"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getSuperStatePredecessors"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/FinalState/getInitilalSuperStatePredecessors"/>
@@ -3673,19 +3673,19 @@
           <genParameters ecoreParameter="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/postResize/direction"/>
         </genOperations>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getOutgoingTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getOutgoingWeakAbortTerminationTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getOutgoingStrongAbortTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getOutgoingImmediateTerminationTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getOutgoingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getOutgoingWeakAbortTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getOutgoingImmediateTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getOutgoingImmediateTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getOutgoingWeakAbortTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getOutgoingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getIncomingTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getIncomingWeakAbortTerminationTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getIncomingStrongAbortTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getIncomingImmediateTerminationTransitions"/>
+        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getIncomingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getIncomingWeakAbortTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getIncomingImmediateTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getIncomingImmediateTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getIncomingWeakAbortTerminationTransitions"/>
-        <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getIncomingDefferedTransitions"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getRootStatePredecessors"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getSuperStatePredecessors"/>
         <genOperations ecoreOperation="/info.scce.cinco.product.scchart/src-gen/model/SCChartTool.ecore#//scchart/Connector/getInitilalSuperStatePredecessors"/>

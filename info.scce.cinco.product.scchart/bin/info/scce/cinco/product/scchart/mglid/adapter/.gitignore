@@ -108,3 +108,13 @@
 /.RegionEContentAdapter.java._trace
 /.RootStateDeclarationEContentAdapter.java._trace
 /.RootStateDeclarationNodeEContentAdapter.java._trace
+/.RegionEContentAdapter.xtendbin
+/.RootStateDeclarationEContentAdapter.xtendbin
+/.RootStateDeclarationNodeEContentAdapter.xtendbin
+/RootStateDeclarationEContentAdapter.java
+/RootStateDeclarationNodeEContentAdapter.java
+/.InitilalSuperStateEContentAdapter.xtendbin
+/.SuperStateEContentAdapter.xtendbin
+/InitilalSuperStateEContentAdapter.java
+/RegionEContentAdapter.java
+/SuperStateEContentAdapter.java
