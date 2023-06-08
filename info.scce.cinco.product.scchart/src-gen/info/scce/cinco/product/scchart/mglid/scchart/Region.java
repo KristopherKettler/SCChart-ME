@@ -134,7 +134,7 @@ public interface Region extends Container {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<SuperState> getSuperStates();
+	EList<Connector> getConnectors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -142,7 +142,7 @@ public interface Region extends Container {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewSuperState();
+	boolean canNewConnector();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -150,7 +150,7 @@ public interface Region extends Container {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(int x, int y);
+	Connector newConnector(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -158,7 +158,7 @@ public interface Region extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(String id, int x, int y);
+	Connector newConnector(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -166,7 +166,7 @@ public interface Region extends Container {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(int x, int y, int width, int height);
+	Connector newConnector(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -174,55 +174,7 @@ public interface Region extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<SimpleState> getSimpleStates();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewSimpleState();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	SimpleState newSimpleState(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	SimpleState newSimpleState(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	SimpleState newSimpleState(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	SimpleState newSimpleState(String id, int x, int y, int width, int height);
+	Connector newConnector(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -278,7 +230,7 @@ public interface Region extends Container {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<Connector> getConnectors();
+	EList<SimpleState> getSimpleStates();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -286,7 +238,7 @@ public interface Region extends Container {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewConnector();
+	boolean canNewSimpleState();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -294,7 +246,7 @@ public interface Region extends Container {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	Connector newConnector(int x, int y);
+	SimpleState newSimpleState(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -302,7 +254,7 @@ public interface Region extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	Connector newConnector(String id, int x, int y);
+	SimpleState newSimpleState(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -310,7 +262,7 @@ public interface Region extends Container {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	Connector newConnector(int x, int y, int width, int height);
+	SimpleState newSimpleState(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -318,7 +270,7 @@ public interface Region extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	Connector newConnector(String id, int x, int y, int width, int height);
+	SimpleState newSimpleState(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -367,6 +319,54 @@ public interface Region extends Container {
 	 * @generated
 	 */
 	InitilalSuperState newInitilalSuperState(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<SuperState> getSuperStates();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewSuperState();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SuperState newSuperState(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SuperState newSuperState(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SuperState newSuperState(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SuperState newSuperState(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->

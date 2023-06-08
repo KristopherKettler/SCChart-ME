@@ -8,8 +8,13 @@ appearance declarationAppearance {
 	background (198,226,255) //SlateGrey2 
 	foreground (198,226,255) //LightSlateGrey 
 }
-appearance texthighlight{
-	font ("Sans",BOLD,7)
+
+appearance declarationText{
+	font ("Sans",BOLD,8)
+}
+
+appearance textHighlight{
+	font ("Sans",BOLD,8)
 	foreground (166, 0, 99)
 	background (166, 0, 99)
 }
@@ -123,11 +128,12 @@ nodeStyle declarationStyle(3){
 		appearance declarationAppearance
 		size(140,80)
 		text {
+			appearance declarationText
 			position ( LEFT 5, MIDDLE )
 			value "%1$s %2$s %3$s"
 		}
 		text {
-			appearance texthighlight
+			appearance textHighlight
 			position ( LEFT 5, MIDDLE )
 			value "%1$s %2$s"
 		}
@@ -139,11 +145,12 @@ nodeStyle subSuperStateDeclarationStyle(2){
 		appearance declarationAppearance
 		size(140,80)
 		text {
+			appearance declarationText
 			position ( LEFT 5, MIDDLE )
 			value "%1$s %2$s"
 		}
 		text {
-			appearance texthighlight
+			appearance textHighlight
 			position ( LEFT 5, MIDDLE )
 			value "%1$s"
 		}

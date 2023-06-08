@@ -45,9 +45,10 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 	}
 	
 	override postAttributeChange(RootState element, String attribute, Object oldValue) {
+		
 		element.rootStateDeclarationNodes.forEach[it.delete]
 		element.getDeclaration.forEach[ declaration , i |
-			element.newRootStateDeclarationNode(10,10 + 15*(i+1),element.width-20,15)
+			element.newRootStateDeclarationNode(10,10 + 13*(i+1),element.width-20,13)
 			element.rootStateDeclarationNodes.last.setInputOutput(declaration.inputOutput)
 			element.rootStateDeclarationNodes.last.setDeclarationType(declaration.declarationType)
 			element.rootStateDeclarationNodes.last.setName(declaration.name)
@@ -77,7 +78,11 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 	}
 	
 	override postResize(RootState element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction) {
-		// TODO: Auto-generated method stub
+		val int yPos = element.height - 10 + 13 * element.rootStateDeclarationNodes.size
+		element.regions.forEach[
+			
+			it.x = 
+		]// TODO: Auto-generated method stub
 	}
 	
 	override postSelect(RootState element) {

@@ -67,6 +67,7 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 	}
 	
 	override postMove(Region element, ModelElementContainer oldContainer, int oldX, int oldY) {
+		element.rootElement
 		// TODO: Auto-generated method stub
 	}
 	
