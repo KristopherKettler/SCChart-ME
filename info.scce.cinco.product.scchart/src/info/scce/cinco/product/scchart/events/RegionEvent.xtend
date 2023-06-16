@@ -5,6 +5,10 @@ package info.scce.cinco.product.scchart.events
 import graphmodel.Direction
 import graphmodel.ModelElementContainer
 import info.scce.cinco.product.scchart.mglid.scchart.Region
+import java.util.UUID
+import java.lang.Math
+import info.scce.cinco.product.scchart.mglid.scchart.SuperState
+import java.util.Arrays
 
 /* 
  * About this class:
@@ -49,7 +53,105 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 	}
 	
 	override postCreate(Region element) {
-		// TODO: Auto-generated method stub
+		element.uuid=UUID.randomUUID.toString 
+		element.getRootElement.getRootStates.head.getRegions.forEach[
+			if(it.uuid==element.uuid){
+				if(element.getRootElement.getRootStates.head.getRegions.size==1){
+					element.getRootElement.getRootStates.head.width=200
+					element.getRootElement.getRootStates.head.height=150
+					it.x=10
+					it.y=30+element.getRootElement.getRootStates.head.getRootStateDeclarationNodes.size*13
+					it.width=element.getRootElement.getRootStates.head.width-20
+					it.height=element.getRootElement.getRootStates.head.height-40-element.getRootElement.getRootStates.head.getRootStateDeclarationNodes.size*13
+				}
+				else {
+					var break = true
+					for(region1 : element.getRootElement.getRootStates.head.getRegions){
+						if(((it.x-region1.x-region1.width<=13&&it.x-region1.x-region1.width>-1)||(region1.x-it.x<=13&&region1.x-it.x>-1))&&break&&region1.y<it.y&&region1.y+region1.height>it.y &&it.uuid!=region1.uuid){
+							it.y=region1.y
+							it.height = region1.height
+							var countYHeight = 0
+							for(r : element.getRootElement.getRootStates.head.getRegions){
+								if(it.y==r.y){
+									countYHeight++
+								}
+							}
+							val containerWidth = (element.getRootElement.getRootStates.head.width-10-countYHeight*10)/countYHeight
+							val itOldX = it.x
+							var count = 0
+							for(region2: element.getRootElement.getRootStates.head.getRegions){
+								if(region2.y==it.y&&region2.x<itOldX){
+										region2.x = (containerWidth +10) *  count + 10  
+										region2.width = containerWidth 
+										count++
+									}
+							}
+							for(region2: element.getRootElement.getRootStates.head.getRegions){
+								if(region2.y==it.y&&region2.x>itOldX){
+										region2.x = (containerWidth + 10) * count + 10  
+										region2.width = containerWidth 
+										count++
+									}
+							}
+							for(region2: element.getRootElement.getRootStates.head.getRegions){
+								if(region2.y==it.y&&region2.x==itOldX){
+										region2.x = (containerWidth + 10 ) * count + 10  
+										region2.width = containerWidth 
+										count++
+									}
+							}
+							break = false
+						}
+						else if(((it.y-region1.y-region1.height<=13&&it.y-region1.y-region1.height>-1)||(region1.y-it.y<=13&&region1.y-it.y>-1))&&break&&region1.x<it.x&&region1.x+region1.width>it.x &&it.uuid!=region1.uuid){
+							it.x=region1.x
+							it.width = region1.width
+							var countXWidth = 0
+							for(r : element.getRootElement.getRootStates.head.getRegions){
+								if(it.x==r.x){
+									countXWidth++
+								}
+							}
+							val containerHeight = (element.getRootElement.getRootStates.head.width-10-element.getRootElement.getRootStates.head.getRegions.size*10)/countXWidth
+							val itOldY = it.y
+							var count = 0
+							for(region2: element.getRootElement.getRootStates.head.getRegions){
+								if(region2.x==it.x&&region2.y<itOldY){
+										region2.y = (containerHeight +10) *  count + 10  
+										region2.height = containerHeight 
+										count++
+									}
+							}
+							for(region2: element.getRootElement.getRootStates.head.getRegions){
+								if(region2.x==it.x&&region2.y>itOldY){
+										region2.y = (containerHeight + 10) * count + 10  
+										region2.height = containerHeight 
+										count++
+									}
+							}
+							for(region2: element.getRootElement.getRootStates.head.getRegions){
+								if(region2.x==it.x&&region2.y==itOldY){
+										region2.y = (containerHeight + 10 ) * count + 10  
+										region2.height = containerHeight 
+										count++
+									}
+							}
+							break = false
+						}
+
+				}
+//				element.width = element.getRootElement.getRootStates.head.width-20
+//				element.height = 100
+//				element.moveTo(element.getRootElement.getRootStates.head,10,element.getRootElement.getRootStates.head.height)
+//				element.getRootElement.getRootStates.head.width = element.getRootElement.getRootStates.head.width
+//				element.getRootElement.getRootStates.head.height = element.getRootElement.getRootStates.head.height+110
+				}
+			}
+			
+		]// TODO: Auto-generated method stub
+	}
+	
+	def searchElement(SuperState superState,Region element){
+		// TODO: rekursiv postCreate
 	}
 	
 	override postDelete(Region element) {
@@ -67,8 +169,18 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 	}
 	
 	override postMove(Region element, ModelElementContainer oldContainer, int oldX, int oldY) {
-		element.rootElement
-		// TODO: Auto-generated method stub
+//		if(element.x>0&&element.x<11){
+//			
+//		} 
+//		element.getRootElement.getRootStates.head.getRegions.forEach[
+//			if(it.uuid==element.uuid){
+//				element.width = element.getRootElement.getRootStates.head.width-20
+//				element.height = 100
+//				element.moveTo(element.getRootElement.getRootStates.head,10,element.getRootElement.getRootStates.head.height)
+//				element.getRootElement.getRootStates.head.width = element.getRootElement.getRootStates.head.width
+//				element.getRootElement.getRootStates.head.height = element.getRootElement.getRootStates.head.height+110
+//			}
+//		]// TODO: Auto-generated method stub
 	}
 	
 	override postResize(Region element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction) {

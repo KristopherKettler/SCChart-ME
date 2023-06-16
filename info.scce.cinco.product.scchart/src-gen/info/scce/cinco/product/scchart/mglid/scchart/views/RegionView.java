@@ -77,4 +77,20 @@ public interface RegionView extends EObject {
 	 */
 	void setRegionID(String _arg);
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	String getUuid();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setUuid(String _arg);
+
 } // RegionView

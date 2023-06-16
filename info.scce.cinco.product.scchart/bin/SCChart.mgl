@@ -24,6 +24,8 @@ container Region {
 	containableElements(SuperState,InitilalSuperState,InitialState,SimpleState,FinalState,Connector)
 	attr EString as label := "<insert name>"
 	attr EString as RegionID := "<insert name>"
+	@propertiesViewHidden
+	attr EString as uuid
 }
 
 @palette("SuperStates")

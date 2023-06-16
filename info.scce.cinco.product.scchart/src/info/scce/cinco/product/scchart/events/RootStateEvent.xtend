@@ -46,17 +46,26 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 	
 	override postAttributeChange(RootState element, String attribute, Object oldValue) {
 		
-		element.rootStateDeclarationNodes.forEach[it.delete]
-		element.getDeclaration.forEach[ declaration , i |
-			element.newRootStateDeclarationNode(10,10 + 13*(i+1),element.width-20,13)
-			element.rootStateDeclarationNodes.last.setInputOutput(declaration.inputOutput)
-			element.rootStateDeclarationNodes.last.setDeclarationType(declaration.declarationType)
-			element.rootStateDeclarationNodes.last.setName(declaration.name)
-			]
+//		element.rootStateDeclarationNodes.forEach[it.delete]
+//		element.getDeclaration.forEach[ declaration , index |
+//			element.newRootStateDeclarationNode(10,30 + 13*index,element.width-20,13)
+//			element.rootStateDeclarationNodes.last.setInputOutput(declaration.inputOutput)
+//			element.rootStateDeclarationNodes.last.setDeclarationType(declaration.declarationType)
+//			element.rootStateDeclarationNodes.last.setName(declaration.name)
+//			]
+//		val regionCount = element.getRegions.size
+//		val declarationCount = element.getRootStateDeclarationNodes.size
+//		val yZeroPosition = 33 + 13* declarationCount
+//		element.regions.forEach[ region , index | 
+//			region.x = 10
+//			region.y = yZeroPosition + (element.height - yZeroPosition )/regionCount*index
+//			region.height = (element.height - yZeroPosition)/regionCount - 10
+//			region.width = element.width - 20
+//		]
 	}
 	
 	override postCreate(RootState element) {
-		element.newRegion(10,20,180,90)
+		element.newRegion(0,0,0,0)
 	}
 	
 	override postDelete(RootState element) {
@@ -78,11 +87,16 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 	}
 	
 	override postResize(RootState element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction) {
-		val int yPos = element.height - 10 + 13 * element.rootStateDeclarationNodes.size
-		element.regions.forEach[
-			
-			it.x = 
-		]// TODO: Auto-generated method stub
+		
+//		val regionCount = element.getRegions.size
+//		val declarationCount = element.getRootStateDeclarationNodes.size
+//		val yZeroPosition = 33 + 13* declarationCount
+//		element.regions.forEach[ region , index | 
+//			region.x = 10
+//			region.y = yZeroPosition + (element.height - yZeroPosition)/regionCount*index
+//			region.height = (element.height - yZeroPosition)/regionCount - 10
+//			region.width = element.width - 20
+//		]
 	}
 	
 	override postSelect(RootState element) {

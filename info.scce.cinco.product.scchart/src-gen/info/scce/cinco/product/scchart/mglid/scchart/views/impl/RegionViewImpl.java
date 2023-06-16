@@ -154,6 +154,29 @@ public class RegionViewImpl extends EObjectImpl implements RegionView {
 	 * @generated
 	 */
 	@Override
+	public String getUuid() {
+		return getInternalRegion().getUuid();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUuid(final String _arg) {
+		getInternalRegion().getElement().transact("Set Uuid", () -> {
+			getInternalRegion().setUuid(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.REGION_VIEW__INTERNAL_REGION:
@@ -224,6 +247,11 @@ public class RegionViewImpl extends EObjectImpl implements RegionView {
 				return getRegionID();
 			case ViewsPackage.REGION_VIEW___SET_REGION_ID__STRING:
 				setRegionID((String)arguments.get(0));
+				return null;
+			case ViewsPackage.REGION_VIEW___GET_UUID:
+				return getUuid();
+			case ViewsPackage.REGION_VIEW___SET_UUID__STRING:
+				setUuid((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

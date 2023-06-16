@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRegionImpl#getLabel <em>Label</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRegionImpl#getRegionID <em>Region ID</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRegionImpl#getUuid <em>Uuid</em>}</li>
  * </ul>
  *
  * @generated
@@ -76,6 +77,26 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 	 * @ordered
 	 */
 	protected String regionID = REGION_ID_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getUuid() <em>Uuid</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUuid()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String UUID_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getUuid() <em>Uuid</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUuid()
+	 * @generated
+	 * @ordered
+	 */
+	protected String uuid = UUID_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,6 +169,29 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 	 * @generated
 	 */
 	@Override
+	public String getUuid() {
+		return uuid;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUuid(String newUuid) {
+		String oldUuid = uuid;
+		uuid = newUuid;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_REGION__UUID, oldUuid, uuid));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EList<ContainmentConstraint> getContainmentConstraints() {
 		 org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>constraints =
 			new org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>();
@@ -173,6 +217,8 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 				return getLabel();
 			case InternalPackage.INTERNAL_REGION__REGION_ID:
 				return getRegionID();
+			case InternalPackage.INTERNAL_REGION__UUID:
+				return getUuid();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -190,6 +236,9 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 				return;
 			case InternalPackage.INTERNAL_REGION__REGION_ID:
 				setRegionID((String)newValue);
+				return;
+			case InternalPackage.INTERNAL_REGION__UUID:
+				setUuid((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -209,6 +258,9 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 			case InternalPackage.INTERNAL_REGION__REGION_ID:
 				setRegionID(REGION_ID_EDEFAULT);
 				return;
+			case InternalPackage.INTERNAL_REGION__UUID:
+				setUuid(UUID_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -225,6 +277,8 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 				return LABEL_EDEFAULT == null ? label != null : !LABEL_EDEFAULT.equals(label);
 			case InternalPackage.INTERNAL_REGION__REGION_ID:
 				return REGION_ID_EDEFAULT == null ? regionID != null : !REGION_ID_EDEFAULT.equals(regionID);
+			case InternalPackage.INTERNAL_REGION__UUID:
+				return UUID_EDEFAULT == null ? uuid != null : !UUID_EDEFAULT.equals(uuid);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -279,6 +333,8 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 		result.append(label);
 		result.append(", RegionID: ");
 		result.append(regionID);
+		result.append(", uuid: ");
+		result.append(uuid);
 		result.append(')');
 		return result.toString();
 	}

@@ -393,6 +393,16 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
+	public EAttribute getInternalRegion_Uuid() {
+        return (EAttribute)getInternalRegion().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EOperation getInternalRegion__GetContainmentConstraints() {
         return getInternalRegion().getEOperations().get(0);
 	}

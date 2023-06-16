@@ -212,13 +212,31 @@ public interface ViewsPackage extends EPackage {
 	int REGION_VIEW___SET_REGION_ID__STRING = 3;
 
 	/**
+	 * The operation id for the '<em>Get Uuid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REGION_VIEW___GET_UUID = 4;
+
+	/**
+	 * The operation id for the '<em>Set Uuid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REGION_VIEW___SET_UUID__STRING = 5;
+
+	/**
 	 * The number of operations of the '<em>Region View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REGION_VIEW_OPERATION_COUNT = 4;
+	int REGION_VIEW_OPERATION_COUNT = 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateViewImpl <em>Super State View</em>}' class.
@@ -2218,6 +2236,26 @@ public interface ViewsPackage extends EPackage {
 	EOperation getRegionView__SetRegionID__String();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RegionView#getUuid() <em>Get Uuid</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Uuid</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RegionView#getUuid()
+	 * @generated
+	 */
+	EOperation getRegionView__GetUuid();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RegionView#setUuid(java.lang.String) <em>Set Uuid</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Uuid</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RegionView#setUuid(java.lang.String)
+	 * @generated
+	 */
+	EOperation getRegionView__SetUuid__String();
+
+	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView <em>Super State View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3173,6 +3211,22 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation REGION_VIEW___SET_REGION_ID__STRING = eINSTANCE.getRegionView__SetRegionID__String();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Uuid</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation REGION_VIEW___GET_UUID = eINSTANCE.getRegionView__GetUuid();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Uuid</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation REGION_VIEW___SET_UUID__STRING = eINSTANCE.getRegionView__SetUuid__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateViewImpl <em>Super State View</em>}' class.
