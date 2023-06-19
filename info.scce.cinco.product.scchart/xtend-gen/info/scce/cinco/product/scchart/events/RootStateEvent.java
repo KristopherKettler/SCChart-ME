@@ -2,7 +2,9 @@ package info.scce.cinco.product.scchart.events;
 
 import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
+import info.scce.cinco.product.scchart.mglid.scchart.Region;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
+import org.eclipse.emf.common.util.EList;
 
 /**
  * About this class:
@@ -68,6 +70,23 @@ public final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.
   
   @Override
   public void postResize(final RootState element, final int oldWidth, final int oldHeight, final int oldX, final int oldY, final Direction direction) {
+    final float eleOldWidth = oldWidth;
+    final float eleOldHeight = oldHeight;
+    final float eleWidth = element.getWidth();
+    final float eleHeight = element.getHeight();
+    final float proportionWidth = (eleWidth / eleOldWidth);
+    final float proportionHeight = (eleHeight / eleOldHeight);
+    EList<Region> _regions = element.getRegions();
+    for (final Region region : _regions) {
+      {
+        final float regWidth = region.getWidth();
+        final float regHeight = region.getHeight();
+        final float width = (proportionWidth * regWidth);
+        final float height = (proportionHeight * regHeight);
+        region.setWidth(Math.round(width));
+        region.setHeight(Math.round(height));
+      }
+    }
   }
   
   @Override

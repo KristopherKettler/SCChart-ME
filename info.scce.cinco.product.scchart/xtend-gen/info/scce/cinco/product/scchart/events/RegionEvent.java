@@ -144,18 +144,22 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
                     countXWidth++;
                   }
                 }
-                int _width_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getWidth();
-                int _minus_5 = (_width_2 - 10);
-                int _size_3 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions().size();
-                int _multiply_2 = (_size_3 * 10);
+                int _height_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
+                int _minus_5 = (_height_1 - 30);
+                int _size_3 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarationNodes().size();
+                int _multiply_2 = (13 * _size_3);
                 int _minus_6 = (_minus_5 - _multiply_2);
-                final int containerHeight = (_minus_6 / countXWidth);
+                int _minus_7 = (_minus_6 - (countXWidth * 10));
+                final int containerHeight = (_minus_7 / countXWidth);
                 final int itOldY = it.getY();
                 int count_1 = 0;
                 EList<Region> _regions_6 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
                 for (final Region region2_3 : _regions_6) {
                   if (((region2_3.getX() == it.getX()) && (region2_3.getY() < itOldY))) {
-                    region2_3.setY((((containerHeight + 10) * count_1) + 10));
+                    int _size_4 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarationNodes().size();
+                    int _multiply_3 = (13 * _size_4);
+                    int _minus_8 = ((((containerHeight + 10) * count_1) + 30) - _multiply_3);
+                    region2_3.setY(_minus_8);
                     region2_3.setHeight(containerHeight);
                     count_1++;
                   }
@@ -163,7 +167,10 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
                 EList<Region> _regions_7 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
                 for (final Region region2_4 : _regions_7) {
                   if (((region2_4.getX() == it.getX()) && (region2_4.getY() > itOldY))) {
-                    region2_4.setY((((containerHeight + 10) * count_1) + 10));
+                    int _size_5 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarationNodes().size();
+                    int _multiply_4 = (13 * _size_5);
+                    int _minus_9 = ((((containerHeight + 10) * count_1) + 30) - _multiply_4);
+                    region2_4.setY(_minus_9);
                     region2_4.setHeight(containerHeight);
                     count_1++;
                   }
@@ -171,7 +178,10 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
                 EList<Region> _regions_8 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
                 for (final Region region2_5 : _regions_8) {
                   if (((region2_5.getX() == it.getX()) && (region2_5.getY() == itOldY))) {
-                    region2_5.setY((((containerHeight + 10) * count_1) + 10));
+                    int _size_6 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarationNodes().size();
+                    int _multiply_5 = (13 * _size_6);
+                    int _minus_10 = ((((containerHeight + 10) * count_1) + 30) - _multiply_5);
+                    region2_5.setY(_minus_10);
                     region2_5.setHeight(containerHeight);
                     count_1++;
                   }

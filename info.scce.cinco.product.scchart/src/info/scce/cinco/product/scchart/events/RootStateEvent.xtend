@@ -5,6 +5,7 @@ package info.scce.cinco.product.scchart.events
 import graphmodel.Direction
 import graphmodel.ModelElementContainer
 import info.scce.cinco.product.scchart.mglid.scchart.RootState
+import Java.Lang.Float
 
 /* 
  * About this class:
@@ -87,16 +88,24 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 	}
 	
 	override postResize(RootState element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction) {
+		val float eleOldWidth = oldWidth
+		val float eleOldHeight = oldHeight
+		val float eleWidth = element.width
+		val float eleHeight = element.height
 		
-//		val regionCount = element.getRegions.size
-//		val declarationCount = element.getRootStateDeclarationNodes.size
-//		val yZeroPosition = 33 + 13* declarationCount
-//		element.regions.forEach[ region , index | 
-//			region.x = 10
-//			region.y = yZeroPosition + (element.height - yZeroPosition)/regionCount*index
-//			region.height = (element.height - yZeroPosition)/regionCount - 10
-//			region.width = element.width - 20
-//		]
+		val float proportionWidth = eleWidth/eleOldWidth
+		val float proportionHeight = eleHeight/eleOldHeight
+		for(region : element.getRegions){
+			//region.x = proportionWidth*region.x
+			val float regWidth = region.width
+			val float regHeight = region.height
+			val float width = proportionWidth*regWidth
+			val float height = proportionHeight*regHeight	
+			region.width = Math.round(width) 
+			//region.y = proportionHeight*region.y
+			region.height =  Math.round(height) 
+		}
+		
 	}
 	
 	override postSelect(RootState element) {

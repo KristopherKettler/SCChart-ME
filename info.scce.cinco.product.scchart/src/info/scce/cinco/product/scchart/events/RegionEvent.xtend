@@ -111,26 +111,26 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 									countXWidth++
 								}
 							}
-							val containerHeight = (element.getRootElement.getRootStates.head.width-10-element.getRootElement.getRootStates.head.getRegions.size*10)/countXWidth
+							val containerHeight = (element.getRootElement.getRootStates.head.height-30-13*element.getRootElement.getRootStates.head.getRootStateDeclarationNodes.size-countXWidth*10)/countXWidth
 							val itOldY = it.y
 							var count = 0
 							for(region2: element.getRootElement.getRootStates.head.getRegions){
 								if(region2.x==it.x&&region2.y<itOldY){
-										region2.y = (containerHeight +10) *  count + 10  
+										region2.y = (containerHeight +10) *  count + 30-13*element.getRootElement.getRootStates.head.getRootStateDeclarationNodes.size 
 										region2.height = containerHeight 
 										count++
 									}
 							}
 							for(region2: element.getRootElement.getRootStates.head.getRegions){
 								if(region2.x==it.x&&region2.y>itOldY){
-										region2.y = (containerHeight + 10) * count + 10  
+										region2.y = (containerHeight + 10) * count + 30-13*element.getRootElement.getRootStates.head.getRootStateDeclarationNodes.size
 										region2.height = containerHeight 
 										count++
 									}
 							}
 							for(region2: element.getRootElement.getRootStates.head.getRegions){
 								if(region2.x==it.x&&region2.y==itOldY){
-										region2.y = (containerHeight + 10 ) * count + 10  
+										region2.y = (containerHeight + 10 ) * count + 30-13*element.getRootElement.getRootStates.head.getRootStateDeclarationNodes.size
 										region2.height = containerHeight 
 										count++
 									}
