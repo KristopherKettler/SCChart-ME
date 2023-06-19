@@ -78,7 +78,7 @@ node InitialState extends SimpleState {
 	style startNodeStyle("${label}")
 	incomingEdges (*)
 	outgoingEdges (*)
-}
+}							//legacy code for resize all regions on the same level
 
 @palette("States")
 node FinalState extends SimpleState {

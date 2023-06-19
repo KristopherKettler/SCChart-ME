@@ -5,7 +5,7 @@ package info.scce.cinco.product.scchart.events
 import graphmodel.Direction
 import graphmodel.ModelElementContainer
 import info.scce.cinco.product.scchart.mglid.scchart.RootState
-import Java.Lang.Float
+
 
 /* 
  * About this class:
@@ -46,7 +46,7 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 	}
 	
 	override postAttributeChange(RootState element, String attribute, Object oldValue) {
-		
+		//must be recoded
 //		element.rootStateDeclarationNodes.forEach[it.delete]
 //		element.getDeclaration.forEach[ declaration , index |
 //			element.newRootStateDeclarationNode(10,30 + 13*index,element.width-20,13)
@@ -66,7 +66,7 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 	}
 	
 	override postCreate(RootState element) {
-		element.newRegion(0,0,0,0)
+		element.newRegion(10,30,element.width-20,element.height-40)
 	}
 	
 	override postDelete(RootState element) {

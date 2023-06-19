@@ -11,10 +11,10 @@ import org.eclipse.xtext.xbase.lib.Pair;
 public class RootStateDeclarationInputOutputProvider extends CincoValuesProvider<RootStateDeclaration, String> {
   @Override
   public Map<String, String> getPossibleValues(final RootStateDeclaration inputOutput) {
-    Pair<String, String> _mappedTo = Pair.<String, String>of("", "");
-    Pair<String, String> _mappedTo_1 = Pair.<String, String>of("Input", "Input");
-    Pair<String, String> _mappedTo_2 = Pair.<String, String>of("Output", "Output");
-    Pair<String, String> _mappedTo_3 = Pair.<String, String>of("InputOutput", "InputOutput");
+    Pair<String, String> _mappedTo = Pair.<String, String>of("Constants", "const");
+    Pair<String, String> _mappedTo_1 = Pair.<String, String>of("Input", "input");
+    Pair<String, String> _mappedTo_2 = Pair.<String, String>of("Output", "output");
+    Pair<String, String> _mappedTo_3 = Pair.<String, String>of("InputOutput", "input output");
     return Collections.<String, String>unmodifiableMap(CollectionLiterals.<String, String>newHashMap(_mappedTo, _mappedTo_1, _mappedTo_2, _mappedTo_3));
   }
 }

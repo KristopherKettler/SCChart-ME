@@ -64,10 +64,6 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
         int _size = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions().size();
         boolean _equals_1 = (_size == 1);
         if (_equals_1) {
-          RootState _head = IterableExtensions.<RootState>head(element.getRootElement().getRootStates());
-          _head.setWidth(200);
-          RootState _head_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates());
-          _head_1.setHeight(150);
           it.setX(10);
           int _size_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarationNodes().size();
           int _multiply = (_size_1 * 13);
@@ -86,107 +82,72 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
           boolean break_ = true;
           EList<Region> _regions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
           for (final Region region1 : _regions) {
-            if ((((((((((it.getX() - region1.getX()) - region1.getWidth()) <= 13) && (((it.getX() - region1.getX()) - region1.getWidth()) > (-1))) || (((region1.getX() - it.getX()) <= 13) && ((region1.getX() - it.getX()) > (-1)))) && break_) && (region1.getY() < it.getY())) && ((region1.getY() + region1.getHeight()) > it.getY())) && (!Objects.equal(it.getUuid(), region1.getUuid())))) {
-              it.setY(region1.getY());
-              it.setHeight(region1.getHeight());
-              int countYHeight = 0;
-              EList<Region> _regions_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-              for (final Region r : _regions_1) {
-                int _y = it.getY();
-                int _y_1 = r.getY();
-                boolean _equals_2 = (_y == _y_1);
-                if (_equals_2) {
-                  countYHeight++;
-                }
-              }
-              int _width_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getWidth();
+            if (((((((((it.getX() - region1.getX()) - region1.getWidth()) <= 13) && (((it.getX() - region1.getX()) - region1.getWidth()) > (-1))) && break_) && (region1.getY() < it.getY())) && ((region1.getY() + region1.getHeight()) > it.getY())) && (!Objects.equal(it.getUuid(), region1.getUuid())))) {
+              int _width_1 = region1.getWidth();
               int _minus_3 = (_width_1 - 10);
-              int _minus_4 = (_minus_3 - (countYHeight * 10));
-              final int containerWidth = (_minus_4 / countYHeight);
-              final int itOldX = it.getX();
-              int count = 0;
-              EList<Region> _regions_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-              for (final Region region2 : _regions_2) {
-                if (((region2.getY() == it.getY()) && (region2.getX() < itOldX))) {
-                  region2.setX((((containerWidth + 10) * count) + 10));
-                  region2.setWidth(containerWidth);
-                  count++;
-                }
-              }
-              EList<Region> _regions_3 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-              for (final Region region2_1 : _regions_3) {
-                if (((region2_1.getY() == it.getY()) && (region2_1.getX() > itOldX))) {
-                  region2_1.setX((((containerWidth + 10) * count) + 10));
-                  region2_1.setWidth(containerWidth);
-                  count++;
-                }
-              }
-              EList<Region> _regions_4 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-              for (final Region region2_2 : _regions_4) {
-                if (((region2_2.getY() == it.getY()) && (region2_2.getX() == itOldX))) {
-                  region2_2.setX((((containerWidth + 10) * count) + 10));
-                  region2_2.setWidth(containerWidth);
-                  count++;
-                }
-              }
+              int _divide = (_minus_3 / 2);
+              region1.setWidth(_divide);
+              it.setWidth(region1.getWidth());
+              it.setHeight(region1.getHeight());
+              int _x = region1.getX();
+              int _width_2 = region1.getWidth();
+              int _plus_1 = (_x + _width_2);
+              int _plus_2 = (_plus_1 + 10);
+              it.setX(_plus_2);
+              it.setY(region1.getY());
               break_ = false;
             } else {
-              if ((((((((((it.getY() - region1.getY()) - region1.getHeight()) <= 13) && (((it.getY() - region1.getY()) - region1.getHeight()) > (-1))) || (((region1.getY() - it.getY()) <= 13) && ((region1.getY() - it.getY()) > (-1)))) && break_) && (region1.getX() < it.getX())) && ((region1.getX() + region1.getWidth()) > it.getX())) && (!Objects.equal(it.getUuid(), region1.getUuid())))) {
-                it.setX(region1.getX());
+              if ((((((((region1.getX() - it.getX()) <= 13) && ((region1.getX() - it.getX()) > (-1))) && break_) && (region1.getY() < it.getY())) && ((region1.getY() + region1.getHeight()) > it.getY())) && (!Objects.equal(it.getUuid(), region1.getUuid())))) {
+                int _width_3 = region1.getWidth();
+                int _minus_4 = (_width_3 - 10);
+                int _divide_1 = (_minus_4 / 2);
+                region1.setWidth(_divide_1);
                 it.setWidth(region1.getWidth());
-                int countXWidth = 0;
-                EList<Region> _regions_5 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-                for (final Region r_1 : _regions_5) {
-                  int _x = it.getX();
-                  int _x_1 = r_1.getX();
-                  boolean _equals_3 = (_x == _x_1);
-                  if (_equals_3) {
-                    countXWidth++;
-                  }
-                }
-                int _height_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
-                int _minus_5 = (_height_1 - 30);
-                int _size_3 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarationNodes().size();
-                int _multiply_2 = (13 * _size_3);
-                int _minus_6 = (_minus_5 - _multiply_2);
-                int _minus_7 = (_minus_6 - (countXWidth * 10));
-                final int containerHeight = (_minus_7 / countXWidth);
-                final int itOldY = it.getY();
-                int count_1 = 0;
-                EList<Region> _regions_6 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-                for (final Region region2_3 : _regions_6) {
-                  if (((region2_3.getX() == it.getX()) && (region2_3.getY() < itOldY))) {
-                    int _size_4 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarationNodes().size();
-                    int _multiply_3 = (13 * _size_4);
-                    int _minus_8 = ((((containerHeight + 10) * count_1) + 30) - _multiply_3);
-                    region2_3.setY(_minus_8);
-                    region2_3.setHeight(containerHeight);
-                    count_1++;
-                  }
-                }
-                EList<Region> _regions_7 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-                for (final Region region2_4 : _regions_7) {
-                  if (((region2_4.getX() == it.getX()) && (region2_4.getY() > itOldY))) {
-                    int _size_5 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarationNodes().size();
-                    int _multiply_4 = (13 * _size_5);
-                    int _minus_9 = ((((containerHeight + 10) * count_1) + 30) - _multiply_4);
-                    region2_4.setY(_minus_9);
-                    region2_4.setHeight(containerHeight);
-                    count_1++;
-                  }
-                }
-                EList<Region> _regions_8 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-                for (final Region region2_5 : _regions_8) {
-                  if (((region2_5.getX() == it.getX()) && (region2_5.getY() == itOldY))) {
-                    int _size_6 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarationNodes().size();
-                    int _multiply_5 = (13 * _size_6);
-                    int _minus_10 = ((((containerHeight + 10) * count_1) + 30) - _multiply_5);
-                    region2_5.setY(_minus_10);
-                    region2_5.setHeight(containerHeight);
-                    count_1++;
-                  }
-                }
+                it.setHeight(region1.getHeight());
+                it.setX(region1.getX());
+                it.setY(region1.getY());
+                int _x_1 = region1.getX();
+                int _width_4 = region1.getWidth();
+                int _plus_3 = (_x_1 + _width_4);
+                int _plus_4 = (_plus_3 + 10);
+                region1.setX(_plus_4);
                 break_ = false;
+              } else {
+                if (((((((((it.getY() - region1.getY()) - region1.getHeight()) <= 13) && (((it.getY() - region1.getY()) - region1.getHeight()) > (-1))) && break_) && (region1.getX() < it.getX())) && ((region1.getX() + region1.getWidth()) > it.getX())) && (!Objects.equal(it.getUuid(), region1.getUuid())))) {
+                  int _height_1 = region1.getHeight();
+                  int _minus_5 = (_height_1 - 10);
+                  int _divide_2 = (_minus_5 / 2);
+                  region1.setHeight(_divide_2);
+                  it.setWidth(region1.getWidth());
+                  it.setHeight(region1.getHeight());
+                  it.setX(region1.getX());
+                  int _y = region1.getY();
+                  int _height_2 = region1.getHeight();
+                  int _plus_5 = (_y + _height_2);
+                  int _plus_6 = (_plus_5 + 10);
+                  it.setY(_plus_6);
+                  break_ = false;
+                } else {
+                  if ((((((((region1.getY() - it.getY()) <= 13) && ((region1.getY() - it.getY()) > (-1))) && break_) && (region1.getX() < it.getX())) && ((region1.getX() + region1.getWidth()) > it.getX())) && (!Objects.equal(it.getUuid(), region1.getUuid())))) {
+                    int _height_3 = region1.getHeight();
+                    int _minus_6 = (_height_3 - 10);
+                    int _divide_3 = (_minus_6 / 2);
+                    region1.setHeight(_divide_3);
+                    it.setWidth(region1.getWidth());
+                    it.setHeight(region1.getHeight());
+                    it.setX(region1.getX());
+                    it.setY(region1.getY());
+                    int _y_1 = region1.getY();
+                    int _height_4 = region1.getHeight();
+                    int _plus_7 = (_y_1 + _height_4);
+                    int _plus_8 = (_plus_7 + 10);
+                    region1.setY(_plus_8);
+                    break_ = false;
+                  } else {
+                    if ((((((((region1.getY() - it.getY()) <= 13) && ((region1.getY() - it.getY()) > (-1))) && break_) && (region1.getX() < it.getX())) && ((region1.getX() + region1.getWidth()) > it.getX())) && (!Objects.equal(it.getUuid(), region1.getUuid())))) {
+                    }
+                  }
+                }
               }
             }
           }

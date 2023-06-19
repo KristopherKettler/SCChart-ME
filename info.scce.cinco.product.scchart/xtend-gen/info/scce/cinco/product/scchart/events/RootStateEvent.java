@@ -50,7 +50,11 @@ public final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.
   
   @Override
   public void postCreate(final RootState element) {
-    element.newRegion(0, 0, 0, 0);
+    int _width = element.getWidth();
+    int _minus = (_width - 20);
+    int _height = element.getHeight();
+    int _minus_1 = (_height - 40);
+    element.newRegion(10, 30, _minus, _minus_1);
   }
   
   @Override
