@@ -9,6 +9,7 @@ import java.util.UUID
 import java.lang.Math
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState
 import java.util.Arrays
+import graphmodel.Container
 
 /* 
  * About this class:
@@ -55,6 +56,7 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 	override postCreate(Region element) {
 		element.uuid=UUID.randomUUID.toString 
 		element.getRootElement.getRootStates.head.getRegions.forEach[
+			searchElement(element.getRootElement.getRootStates.head,it)
 			//check if container contains region
 			if(it.uuid==element.uuid){
 				//if the region is the only one in the container
@@ -171,19 +173,23 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 						else if((region1.y-it.y<=13&&region1.y-it.y>-1)&&break&&region1.x<it.x&&region1.x+region1.width>it.x &&it.uuid!=region1.uuid){
 							
 						}
-				}
+					}
 //				element.width = element.getRootElement.getRootStates.head.width-20
 //				element.height = 100
 //				element.moveTo(element.getRootElement.getRootStates.head,10,element.getRootElement.getRootStates.head.height)
 //				element.getRootElement.getRootStates.head.width = element.getRootElement.getRootStates.head.width
 //				element.getRootElement.getRootStates.head.height = element.getRootElement.getRootStates.head.height+110
+				
 				}
+				
 			}
-			
+			else if(){
+					
+			}
 		]// TODO: Auto-generated method stub
 	}
 	
-	def searchElement(SuperState superState,Region element){
+	def searchElement(Container superState,Region element){
 		// TODO: rekursiv postCreate
 	}
 	
