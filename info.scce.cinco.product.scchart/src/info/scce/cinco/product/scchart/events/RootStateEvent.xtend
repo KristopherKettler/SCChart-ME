@@ -47,13 +47,23 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 	
 	override postAttributeChange(RootState element, String attribute, Object oldValue) {
 		//must be recoded
-//		element.rootStateDeclarationNodes.forEach[it.delete]
-//		element.getDeclaration.forEach[ declaration , index |
-//			element.newRootStateDeclarationNode(10,30 + 13*index,element.width-20,13)
-//			element.rootStateDeclarationNodes.last.setInputOutput(declaration.inputOutput)
-//			element.rootStateDeclarationNodes.last.setDeclarationType(declaration.declarationType)
-//			element.rootStateDeclarationNodes.last.setName(declaration.name)
-//			]
+		element.rootStateDeclarationNodes.forEach[it.delete]
+		element.getDeclaration.forEach[ declaration , index |
+			element.newRootStateDeclarationNode(10,30 + 13*index,element.width-20,13)
+			element.rootStateDeclarationNodes.last.setInputOutput(declaration.inputOutput)
+			element.rootStateDeclarationNodes.last.setDeclarationType(declaration.declarationType)
+			element.rootStateDeclarationNodes.last.setName(declaration.name)
+		]
+		var boolean break = true
+		for(region : element.regions){
+			if(region.y<element.getRootStateDeclarationNodes.last.y+13){
+				for(region1 : element.regions){
+					region1.y = region1.y + 13
+				}
+				element.height = element.height + 13
+			}
+			
+		}
 //		val regionCount = element.getRegions.size
 //		val declarationCount = element.getRootStateDeclarationNodes.size
 //		val yZeroPosition = 33 + 13* declarationCount

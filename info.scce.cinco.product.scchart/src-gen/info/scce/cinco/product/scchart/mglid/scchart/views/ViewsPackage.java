@@ -878,31 +878,13 @@ public interface ViewsPackage extends EPackage {
 	int TRANSITION_VIEW___SET_TRIGGER__STRING = 3;
 
 	/**
-	 * The operation id for the '<em>Is Strong Abort</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_VIEW___IS_STRONG_ABORT = 4;
-
-	/**
-	 * The operation id for the '<em>Set Strong Abort</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_VIEW___SET_STRONG_ABORT__BOOLEAN = 5;
-
-	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW___GET_PRIORITY = 6;
+	int TRANSITION_VIEW___GET_PRIORITY = 4;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -911,61 +893,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW___SET_PRIORITY__INT = 7;
-
-	/**
-	 * The operation id for the '<em>Is Immediate transition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_VIEW___IS_IMMEDIATE_TRANSITION = 8;
-
-	/**
-	 * The operation id for the '<em>Set Immediate transition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_VIEW___SET_IMMEDIATE_TRANSITION__BOOLEAN = 9;
-
-	/**
-	 * The operation id for the '<em>Is Termination</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_VIEW___IS_TERMINATION = 10;
-
-	/**
-	 * The operation id for the '<em>Set Termination</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_VIEW___SET_TERMINATION__BOOLEAN = 11;
-
-	/**
-	 * The operation id for the '<em>Is History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_VIEW___IS_HISTORY = 12;
-
-	/**
-	 * The operation id for the '<em>Set History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_VIEW___SET_HISTORY__BOOLEAN = 13;
+	int TRANSITION_VIEW___SET_PRIORITY__INT = 5;
 
 	/**
 	 * The number of operations of the '<em>Transition View</em>' class.
@@ -974,7 +902,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW_OPERATION_COUNT = 14;
+	int TRANSITION_VIEW_OPERATION_COUNT = 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateTransitionViewImpl <em>Immediate Transition View</em>}' class.
@@ -1050,24 +978,6 @@ public interface ViewsPackage extends EPackage {
 	int IMMEDIATE_TRANSITION_VIEW___SET_TRIGGER__STRING = TRANSITION_VIEW___SET_TRIGGER__STRING;
 
 	/**
-	 * The operation id for the '<em>Is Strong Abort</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___IS_STRONG_ABORT = TRANSITION_VIEW___IS_STRONG_ABORT;
-
-	/**
-	 * The operation id for the '<em>Set Strong Abort</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___SET_STRONG_ABORT__BOOLEAN = TRANSITION_VIEW___SET_STRONG_ABORT__BOOLEAN;
-
-	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1084,60 +994,6 @@ public interface ViewsPackage extends EPackage {
 	 * @ordered
 	 */
 	int IMMEDIATE_TRANSITION_VIEW___SET_PRIORITY__INT = TRANSITION_VIEW___SET_PRIORITY__INT;
-
-	/**
-	 * The operation id for the '<em>Is Immediate transition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___IS_IMMEDIATE_TRANSITION = TRANSITION_VIEW___IS_IMMEDIATE_TRANSITION;
-
-	/**
-	 * The operation id for the '<em>Set Immediate transition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___SET_IMMEDIATE_TRANSITION__BOOLEAN = TRANSITION_VIEW___SET_IMMEDIATE_TRANSITION__BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>Is Termination</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___IS_TERMINATION = TRANSITION_VIEW___IS_TERMINATION;
-
-	/**
-	 * The operation id for the '<em>Set Termination</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___SET_TERMINATION__BOOLEAN = TRANSITION_VIEW___SET_TERMINATION__BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>Is History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___IS_HISTORY = TRANSITION_VIEW___IS_HISTORY;
-
-	/**
-	 * The operation id for the '<em>Set History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___SET_HISTORY__BOOLEAN = TRANSITION_VIEW___SET_HISTORY__BOOLEAN;
 
 	/**
 	 * The operation id for the '<em>Get Label</em>' operation.
@@ -1240,24 +1096,6 @@ public interface ViewsPackage extends EPackage {
 	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___SET_TRIGGER__STRING = TRANSITION_VIEW___SET_TRIGGER__STRING;
 
 	/**
-	 * The operation id for the '<em>Is Strong Abort</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___IS_STRONG_ABORT = TRANSITION_VIEW___IS_STRONG_ABORT;
-
-	/**
-	 * The operation id for the '<em>Set Strong Abort</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___SET_STRONG_ABORT__BOOLEAN = TRANSITION_VIEW___SET_STRONG_ABORT__BOOLEAN;
-
-	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1274,60 +1112,6 @@ public interface ViewsPackage extends EPackage {
 	 * @ordered
 	 */
 	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___SET_PRIORITY__INT = TRANSITION_VIEW___SET_PRIORITY__INT;
-
-	/**
-	 * The operation id for the '<em>Is Immediate transition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___IS_IMMEDIATE_TRANSITION = TRANSITION_VIEW___IS_IMMEDIATE_TRANSITION;
-
-	/**
-	 * The operation id for the '<em>Set Immediate transition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___SET_IMMEDIATE_TRANSITION__BOOLEAN = TRANSITION_VIEW___SET_IMMEDIATE_TRANSITION__BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>Is Termination</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___IS_TERMINATION = TRANSITION_VIEW___IS_TERMINATION;
-
-	/**
-	 * The operation id for the '<em>Set Termination</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___SET_TERMINATION__BOOLEAN = TRANSITION_VIEW___SET_TERMINATION__BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>Is History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___IS_HISTORY = TRANSITION_VIEW___IS_HISTORY;
-
-	/**
-	 * The operation id for the '<em>Set History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___SET_HISTORY__BOOLEAN = TRANSITION_VIEW___SET_HISTORY__BOOLEAN;
 
 	/**
 	 * The number of operations of the '<em>Immediate Termination Transition View</em>' class.
@@ -1412,24 +1196,6 @@ public interface ViewsPackage extends EPackage {
 	int WEAK_ABORT_TRANSITION_VIEW___SET_TRIGGER__STRING = TRANSITION_VIEW___SET_TRIGGER__STRING;
 
 	/**
-	 * The operation id for the '<em>Is Strong Abort</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW___IS_STRONG_ABORT = TRANSITION_VIEW___IS_STRONG_ABORT;
-
-	/**
-	 * The operation id for the '<em>Set Strong Abort</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW___SET_STRONG_ABORT__BOOLEAN = TRANSITION_VIEW___SET_STRONG_ABORT__BOOLEAN;
-
-	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1446,60 +1212,6 @@ public interface ViewsPackage extends EPackage {
 	 * @ordered
 	 */
 	int WEAK_ABORT_TRANSITION_VIEW___SET_PRIORITY__INT = TRANSITION_VIEW___SET_PRIORITY__INT;
-
-	/**
-	 * The operation id for the '<em>Is Immediate transition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW___IS_IMMEDIATE_TRANSITION = TRANSITION_VIEW___IS_IMMEDIATE_TRANSITION;
-
-	/**
-	 * The operation id for the '<em>Set Immediate transition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW___SET_IMMEDIATE_TRANSITION__BOOLEAN = TRANSITION_VIEW___SET_IMMEDIATE_TRANSITION__BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>Is Termination</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW___IS_TERMINATION = TRANSITION_VIEW___IS_TERMINATION;
-
-	/**
-	 * The operation id for the '<em>Set Termination</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW___SET_TERMINATION__BOOLEAN = TRANSITION_VIEW___SET_TERMINATION__BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>Is History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW___IS_HISTORY = TRANSITION_VIEW___IS_HISTORY;
-
-	/**
-	 * The operation id for the '<em>Set History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW___SET_HISTORY__BOOLEAN = TRANSITION_VIEW___SET_HISTORY__BOOLEAN;
 
 	/**
 	 * The number of operations of the '<em>Weak Abort Transition View</em>' class.
@@ -1584,24 +1296,6 @@ public interface ViewsPackage extends EPackage {
 	int STRONG_ABORT_TRANSITION_VIEW___SET_TRIGGER__STRING = TRANSITION_VIEW___SET_TRIGGER__STRING;
 
 	/**
-	 * The operation id for the '<em>Is Strong Abort</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___IS_STRONG_ABORT = TRANSITION_VIEW___IS_STRONG_ABORT;
-
-	/**
-	 * The operation id for the '<em>Set Strong Abort</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___SET_STRONG_ABORT__BOOLEAN = TRANSITION_VIEW___SET_STRONG_ABORT__BOOLEAN;
-
-	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1618,60 +1312,6 @@ public interface ViewsPackage extends EPackage {
 	 * @ordered
 	 */
 	int STRONG_ABORT_TRANSITION_VIEW___SET_PRIORITY__INT = TRANSITION_VIEW___SET_PRIORITY__INT;
-
-	/**
-	 * The operation id for the '<em>Is Immediate transition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___IS_IMMEDIATE_TRANSITION = TRANSITION_VIEW___IS_IMMEDIATE_TRANSITION;
-
-	/**
-	 * The operation id for the '<em>Set Immediate transition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___SET_IMMEDIATE_TRANSITION__BOOLEAN = TRANSITION_VIEW___SET_IMMEDIATE_TRANSITION__BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>Is Termination</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___IS_TERMINATION = TRANSITION_VIEW___IS_TERMINATION;
-
-	/**
-	 * The operation id for the '<em>Set Termination</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___SET_TERMINATION__BOOLEAN = TRANSITION_VIEW___SET_TERMINATION__BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>Is History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___IS_HISTORY = TRANSITION_VIEW___IS_HISTORY;
-
-	/**
-	 * The operation id for the '<em>Set History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___SET_HISTORY__BOOLEAN = TRANSITION_VIEW___SET_HISTORY__BOOLEAN;
 
 	/**
 	 * The number of operations of the '<em>Strong Abort Transition View</em>' class.
@@ -1756,24 +1396,6 @@ public interface ViewsPackage extends EPackage {
 	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___SET_TRIGGER__STRING = TRANSITION_VIEW___SET_TRIGGER__STRING;
 
 	/**
-	 * The operation id for the '<em>Is Strong Abort</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___IS_STRONG_ABORT = TRANSITION_VIEW___IS_STRONG_ABORT;
-
-	/**
-	 * The operation id for the '<em>Set Strong Abort</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___SET_STRONG_ABORT__BOOLEAN = TRANSITION_VIEW___SET_STRONG_ABORT__BOOLEAN;
-
-	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1790,60 +1412,6 @@ public interface ViewsPackage extends EPackage {
 	 * @ordered
 	 */
 	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___SET_PRIORITY__INT = TRANSITION_VIEW___SET_PRIORITY__INT;
-
-	/**
-	 * The operation id for the '<em>Is Immediate transition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___IS_IMMEDIATE_TRANSITION = TRANSITION_VIEW___IS_IMMEDIATE_TRANSITION;
-
-	/**
-	 * The operation id for the '<em>Set Immediate transition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___SET_IMMEDIATE_TRANSITION__BOOLEAN = TRANSITION_VIEW___SET_IMMEDIATE_TRANSITION__BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>Is Termination</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___IS_TERMINATION = TRANSITION_VIEW___IS_TERMINATION;
-
-	/**
-	 * The operation id for the '<em>Set Termination</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___SET_TERMINATION__BOOLEAN = TRANSITION_VIEW___SET_TERMINATION__BOOLEAN;
-
-	/**
-	 * The operation id for the '<em>Is History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___IS_HISTORY = TRANSITION_VIEW___IS_HISTORY;
-
-	/**
-	 * The operation id for the '<em>Set History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___SET_HISTORY__BOOLEAN = TRANSITION_VIEW___SET_HISTORY__BOOLEAN;
 
 	/**
 	 * The number of operations of the '<em>Weak Abort Termination Transition View</em>' class.
@@ -2665,26 +2233,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getTransitionView__SetTrigger__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#isStrong_Abort() <em>Is Strong Abort</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Strong Abort</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#isStrong_Abort()
-	 * @generated
-	 */
-	EOperation getTransitionView__IsStrong_Abort();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setStrong_Abort(boolean) <em>Set Strong Abort</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Strong Abort</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setStrong_Abort(boolean)
-	 * @generated
-	 */
-	EOperation getTransitionView__SetStrong_Abort__boolean();
-
-	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getPriority() <em>Get Priority</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2703,66 +2251,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getTransitionView__SetPriority__int();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#isImmediate_transition() <em>Is Immediate transition</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Immediate transition</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#isImmediate_transition()
-	 * @generated
-	 */
-	EOperation getTransitionView__IsImmediate_transition();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setImmediate_transition(boolean) <em>Set Immediate transition</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Immediate transition</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setImmediate_transition(boolean)
-	 * @generated
-	 */
-	EOperation getTransitionView__SetImmediate_transition__boolean();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#isTermination() <em>Is Termination</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Termination</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#isTermination()
-	 * @generated
-	 */
-	EOperation getTransitionView__IsTermination();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setTermination(boolean) <em>Set Termination</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Termination</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setTermination(boolean)
-	 * @generated
-	 */
-	EOperation getTransitionView__SetTermination__boolean();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#isHistory() <em>Is History</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is History</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#isHistory()
-	 * @generated
-	 */
-	EOperation getTransitionView__IsHistory();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setHistory(boolean) <em>Set History</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set History</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setHistory(boolean)
-	 * @generated
-	 */
-	EOperation getTransitionView__SetHistory__boolean();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTransitionView <em>Immediate Transition View</em>}'.
@@ -3567,22 +3055,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation TRANSITION_VIEW___SET_TRIGGER__STRING = eINSTANCE.getTransitionView__SetTrigger__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Strong Abort</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TRANSITION_VIEW___IS_STRONG_ABORT = eINSTANCE.getTransitionView__IsStrong_Abort();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Strong Abort</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TRANSITION_VIEW___SET_STRONG_ABORT__BOOLEAN = eINSTANCE.getTransitionView__SetStrong_Abort__boolean();
-
-		/**
 		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3597,54 +3069,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation TRANSITION_VIEW___SET_PRIORITY__INT = eINSTANCE.getTransitionView__SetPriority__int();
-
-		/**
-		 * The meta object literal for the '<em><b>Is Immediate transition</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TRANSITION_VIEW___IS_IMMEDIATE_TRANSITION = eINSTANCE.getTransitionView__IsImmediate_transition();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Immediate transition</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TRANSITION_VIEW___SET_IMMEDIATE_TRANSITION__BOOLEAN = eINSTANCE.getTransitionView__SetImmediate_transition__boolean();
-
-		/**
-		 * The meta object literal for the '<em><b>Is Termination</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TRANSITION_VIEW___IS_TERMINATION = eINSTANCE.getTransitionView__IsTermination();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Termination</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TRANSITION_VIEW___SET_TERMINATION__BOOLEAN = eINSTANCE.getTransitionView__SetTermination__boolean();
-
-		/**
-		 * The meta object literal for the '<em><b>Is History</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TRANSITION_VIEW___IS_HISTORY = eINSTANCE.getTransitionView__IsHistory();
-
-		/**
-		 * The meta object literal for the '<em><b>Set History</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TRANSITION_VIEW___SET_HISTORY__BOOLEAN = eINSTANCE.getTransitionView__SetHistory__boolean();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateTransitionViewImpl <em>Immediate Transition View</em>}' class.

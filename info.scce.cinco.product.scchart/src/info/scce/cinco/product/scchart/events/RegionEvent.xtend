@@ -82,7 +82,7 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 //							var countYHeight = 0
 //							for(r : element.getRootElement.getRootStates.head.getRegions){
 //								if(it.y==r.y){
-//									countYHeight++
+//									countYHeight++f()
 //								}
 //							}
 //							val containerWidth = (element.getRootElement.getRootStates.head.width-10-countYHeight*10)/countYHeight
@@ -183,8 +183,16 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 				}
 				
 			}
-			else if(){
-					
+			else{
+				if(it.getSuperStates!=null)	{
+					for(superState : it.getSuperStates){
+						if(superState.getRegions!=null){
+							for(region : superState.getRegions){
+								searchElement(superState,region)
+							}
+						}
+					}
+				}
 			}
 		]// TODO: Auto-generated method stub
 	}

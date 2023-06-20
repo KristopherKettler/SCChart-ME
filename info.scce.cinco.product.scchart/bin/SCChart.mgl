@@ -20,7 +20,7 @@ container RootState {
 @palette("SuperStates")
 @event("info.scce.cinco.product.scchart.events.RegionEvent")
 container Region {
-	style SuperStateStyle ("${RegionID}")
+	style regionStyle ("${RegionID}")
 	containableElements(SuperState,InitilalSuperState,InitialState,SimpleState,FinalState,Connector)
 	attr EString as label := "<insert name>"
 	attr EString as RegionID := "<insert name>"
@@ -42,7 +42,7 @@ container SuperState {
 @palette("SuperStates")
 @event("info.scce.cinco.product.scchart.events.InitilalSuperStateEvent")
 container InitilalSuperState extends SuperState{
-	style subStartSuperStateStyle ("${label}")
+	style initSuperStateStyle ("${label}")
 	containableElements(Region,SuperStateDeclarationNode)
 	incomingEdges (*)
 	outgoingEdges (*)
@@ -94,18 +94,14 @@ node Connector {
 }
 
 edge Transition {
-	style immediateArrow("${label}")
+	style transitionStyle("asasa")
 	attr EInt as Priority
 	attr EString as Trigger
 	attr EString as Action
-	attr EBoolean as History
-	attr EBoolean as Termination
-	attr EBoolean as Immediate_transition
-	attr EBoolean as Strong_Abort
 }
 
 edge ImmediateTransition extends Transition{
-	style immediateArrow("${label}")
+	style immediateTransitionStyle("${label}")
 	attr EString as label := "wqwq"
 }	
 

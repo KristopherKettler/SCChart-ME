@@ -154,29 +154,6 @@ public class TransitionViewImpl extends EObjectImpl implements TransitionView {
 	 * @generated
 	 */
 	@Override
-	public boolean isStrong_Abort() {
-		return getInternalTransition().isStrong_Abort();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStrong_Abort(final boolean _arg) {
-		getInternalTransition().getElement().transact("Set Strong_Abort", () -> {
-			getInternalTransition().setStrong_Abort(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public int getPriority() {
 		return getInternalTransition().getPriority();
 	}
@@ -190,75 +167,6 @@ public class TransitionViewImpl extends EObjectImpl implements TransitionView {
 	public void setPriority(final int _arg) {
 		getInternalTransition().getElement().transact("Set Priority", () -> {
 			getInternalTransition().setPriority(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean isImmediate_transition() {
-		return getInternalTransition().isImmediate_transition();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setImmediate_transition(final boolean _arg) {
-		getInternalTransition().getElement().transact("Set Immediate_transition", () -> {
-			getInternalTransition().setImmediate_transition(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean isTermination() {
-		return getInternalTransition().isTermination();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTermination(final boolean _arg) {
-		getInternalTransition().getElement().transact("Set Termination", () -> {
-			getInternalTransition().setTermination(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean isHistory() {
-		return getInternalTransition().isHistory();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setHistory(final boolean _arg) {
-		getInternalTransition().getElement().transact("Set History", () -> {
-			getInternalTransition().setHistory(_arg);
 		});
 		
 	}
@@ -340,30 +248,10 @@ public class TransitionViewImpl extends EObjectImpl implements TransitionView {
 			case ViewsPackage.TRANSITION_VIEW___SET_TRIGGER__STRING:
 				setTrigger((String)arguments.get(0));
 				return null;
-			case ViewsPackage.TRANSITION_VIEW___IS_STRONG_ABORT:
-				return isStrong_Abort();
-			case ViewsPackage.TRANSITION_VIEW___SET_STRONG_ABORT__BOOLEAN:
-				setStrong_Abort((Boolean)arguments.get(0));
-				return null;
 			case ViewsPackage.TRANSITION_VIEW___GET_PRIORITY:
 				return getPriority();
 			case ViewsPackage.TRANSITION_VIEW___SET_PRIORITY__INT:
 				setPriority((Integer)arguments.get(0));
-				return null;
-			case ViewsPackage.TRANSITION_VIEW___IS_IMMEDIATE_TRANSITION:
-				return isImmediate_transition();
-			case ViewsPackage.TRANSITION_VIEW___SET_IMMEDIATE_TRANSITION__BOOLEAN:
-				setImmediate_transition((Boolean)arguments.get(0));
-				return null;
-			case ViewsPackage.TRANSITION_VIEW___IS_TERMINATION:
-				return isTermination();
-			case ViewsPackage.TRANSITION_VIEW___SET_TERMINATION__BOOLEAN:
-				setTermination((Boolean)arguments.get(0));
-				return null;
-			case ViewsPackage.TRANSITION_VIEW___IS_HISTORY:
-				return isHistory();
-			case ViewsPackage.TRANSITION_VIEW___SET_HISTORY__BOOLEAN:
-				setHistory((Boolean)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

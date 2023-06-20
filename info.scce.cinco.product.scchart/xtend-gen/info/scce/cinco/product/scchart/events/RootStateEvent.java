@@ -4,7 +4,12 @@ import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
 import info.scce.cinco.product.scchart.mglid.scchart.Region;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
+import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
+import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclarationNode;
+import java.util.function.Consumer;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.xtext.xbase.lib.IterableExtensions;
+import org.eclipse.xtext.xbase.lib.Procedures.Procedure2;
 
 /**
  * About this class:
@@ -46,6 +51,38 @@ public final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.
   
   @Override
   public void postAttributeChange(final RootState element, final String attribute, final Object oldValue) {
+    final Consumer<RootStateDeclarationNode> _function = (RootStateDeclarationNode it) -> {
+      it.delete();
+    };
+    element.getRootStateDeclarationNodes().forEach(_function);
+    final Procedure2<RootStateDeclaration, Integer> _function_1 = (RootStateDeclaration declaration, Integer index) -> {
+      int _width = element.getWidth();
+      int _minus = (_width - 20);
+      element.newRootStateDeclarationNode(10, (30 + (13 * (index).intValue())), _minus, 13);
+      IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).setInputOutput(declaration.getInputOutput());
+      IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).setDeclarationType(declaration.getDeclarationType());
+      IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).setName(declaration.getName());
+    };
+    IterableExtensions.<RootStateDeclaration>forEach(element.getDeclaration(), _function_1);
+    boolean break_ = true;
+    EList<Region> _regions = element.getRegions();
+    for (final Region region : _regions) {
+      int _y = region.getY();
+      int _y_1 = IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).getY();
+      int _plus = (_y_1 + 13);
+      boolean _lessThan = (_y < _plus);
+      if (_lessThan) {
+        EList<Region> _regions_1 = element.getRegions();
+        for (final Region region1 : _regions_1) {
+          int _y_2 = region1.getY();
+          int _plus_1 = (_y_2 + 13);
+          region1.setY(_plus_1);
+        }
+        int _height = element.getHeight();
+        int _plus_2 = (_height + 13);
+        element.setHeight(_plus_2);
+      }
+    }
   }
   
   @Override

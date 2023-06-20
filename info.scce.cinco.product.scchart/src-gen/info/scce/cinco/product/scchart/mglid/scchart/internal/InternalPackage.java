@@ -3804,49 +3804,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_TRANSITION__TRIGGER = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Strong Abort</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_TRANSITION__STRONG_ABORT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 2;
-
-	/**
 	 * The feature id for the '<em><b>Priority</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_TRANSITION__PRIORITY = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Immediate transition</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_TRANSITION__IMMEDIATE_TRANSITION = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Termination</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_TRANSITION__TERMINATION = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 5;
-
-	/**
-	 * The feature id for the '<em><b>History</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_TRANSITION__HISTORY = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 6;
+	int INTERNAL_TRANSITION__PRIORITY = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Transition</em>' class.
@@ -3855,7 +3819,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_TRANSITION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 7;
+	int INTERNAL_TRANSITION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -4048,15 +4012,6 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_IMMEDIATE_TRANSITION__TRIGGER = INTERNAL_TRANSITION__TRIGGER;
 
 	/**
-	 * The feature id for the '<em><b>Strong Abort</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__STRONG_ABORT = INTERNAL_TRANSITION__STRONG_ABORT;
-
-	/**
 	 * The feature id for the '<em><b>Priority</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4064,33 +4019,6 @@ public interface InternalPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERNAL_IMMEDIATE_TRANSITION__PRIORITY = INTERNAL_TRANSITION__PRIORITY;
-
-	/**
-	 * The feature id for the '<em><b>Immediate transition</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__IMMEDIATE_TRANSITION = INTERNAL_TRANSITION__IMMEDIATE_TRANSITION;
-
-	/**
-	 * The feature id for the '<em><b>Termination</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__TERMINATION = INTERNAL_TRANSITION__TERMINATION;
-
-	/**
-	 * The feature id for the '<em><b>History</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__HISTORY = INTERNAL_TRANSITION__HISTORY;
 
 	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
@@ -4301,15 +4229,6 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__TRIGGER = INTERNAL_TRANSITION__TRIGGER;
 
 	/**
-	 * The feature id for the '<em><b>Strong Abort</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__STRONG_ABORT = INTERNAL_TRANSITION__STRONG_ABORT;
-
-	/**
 	 * The feature id for the '<em><b>Priority</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4317,33 +4236,6 @@ public interface InternalPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__PRIORITY = INTERNAL_TRANSITION__PRIORITY;
-
-	/**
-	 * The feature id for the '<em><b>Immediate transition</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__IMMEDIATE_TRANSITION = INTERNAL_TRANSITION__IMMEDIATE_TRANSITION;
-
-	/**
-	 * The feature id for the '<em><b>Termination</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__TERMINATION = INTERNAL_TRANSITION__TERMINATION;
-
-	/**
-	 * The feature id for the '<em><b>History</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__HISTORY = INTERNAL_TRANSITION__HISTORY;
 
 	/**
 	 * The number of structural features of the '<em>Immediate Termination Transition</em>' class.
@@ -4545,15 +4437,6 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_WEAK_ABORT_TRANSITION__TRIGGER = INTERNAL_TRANSITION__TRIGGER;
 
 	/**
-	 * The feature id for the '<em><b>Strong Abort</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION__STRONG_ABORT = INTERNAL_TRANSITION__STRONG_ABORT;
-
-	/**
 	 * The feature id for the '<em><b>Priority</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4561,33 +4444,6 @@ public interface InternalPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERNAL_WEAK_ABORT_TRANSITION__PRIORITY = INTERNAL_TRANSITION__PRIORITY;
-
-	/**
-	 * The feature id for the '<em><b>Immediate transition</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION__IMMEDIATE_TRANSITION = INTERNAL_TRANSITION__IMMEDIATE_TRANSITION;
-
-	/**
-	 * The feature id for the '<em><b>Termination</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION__TERMINATION = INTERNAL_TRANSITION__TERMINATION;
-
-	/**
-	 * The feature id for the '<em><b>History</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION__HISTORY = INTERNAL_TRANSITION__HISTORY;
 
 	/**
 	 * The number of structural features of the '<em>Weak Abort Transition</em>' class.
@@ -4789,15 +4645,6 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_STRONG_ABORT_TRANSITION__TRIGGER = INTERNAL_TRANSITION__TRIGGER;
 
 	/**
-	 * The feature id for the '<em><b>Strong Abort</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__STRONG_ABORT = INTERNAL_TRANSITION__STRONG_ABORT;
-
-	/**
 	 * The feature id for the '<em><b>Priority</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4805,33 +4652,6 @@ public interface InternalPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERNAL_STRONG_ABORT_TRANSITION__PRIORITY = INTERNAL_TRANSITION__PRIORITY;
-
-	/**
-	 * The feature id for the '<em><b>Immediate transition</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__IMMEDIATE_TRANSITION = INTERNAL_TRANSITION__IMMEDIATE_TRANSITION;
-
-	/**
-	 * The feature id for the '<em><b>Termination</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__TERMINATION = INTERNAL_TRANSITION__TERMINATION;
-
-	/**
-	 * The feature id for the '<em><b>History</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__HISTORY = INTERNAL_TRANSITION__HISTORY;
 
 	/**
 	 * The number of structural features of the '<em>Strong Abort Transition</em>' class.
@@ -5033,15 +4853,6 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__TRIGGER = INTERNAL_TRANSITION__TRIGGER;
 
 	/**
-	 * The feature id for the '<em><b>Strong Abort</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__STRONG_ABORT = INTERNAL_TRANSITION__STRONG_ABORT;
-
-	/**
 	 * The feature id for the '<em><b>Priority</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5049,33 +4860,6 @@ public interface InternalPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__PRIORITY = INTERNAL_TRANSITION__PRIORITY;
-
-	/**
-	 * The feature id for the '<em><b>Immediate transition</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__IMMEDIATE_TRANSITION = INTERNAL_TRANSITION__IMMEDIATE_TRANSITION;
-
-	/**
-	 * The feature id for the '<em><b>Termination</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__TERMINATION = INTERNAL_TRANSITION__TERMINATION;
-
-	/**
-	 * The feature id for the '<em><b>History</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__HISTORY = INTERNAL_TRANSITION__HISTORY;
 
 	/**
 	 * The number of structural features of the '<em>Weak Abort Termination Transition</em>' class.
@@ -7007,17 +6791,6 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalTransition_Trigger();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#isStrong_Abort <em>Strong Abort</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Strong Abort</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#isStrong_Abort()
-	 * @see #getInternalTransition()
-	 * @generated
-	 */
-	EAttribute getInternalTransition_Strong_Abort();
-
-	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getPriority <em>Priority</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7027,39 +6800,6 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getInternalTransition_Priority();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#isImmediate_transition <em>Immediate transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Immediate transition</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#isImmediate_transition()
-	 * @see #getInternalTransition()
-	 * @generated
-	 */
-	EAttribute getInternalTransition_Immediate_transition();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#isTermination <em>Termination</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Termination</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#isTermination()
-	 * @see #getInternalTransition()
-	 * @generated
-	 */
-	EAttribute getInternalTransition_Termination();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#isHistory <em>History</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>History</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#isHistory()
-	 * @see #getInternalTransition()
-	 * @generated
-	 */
-	EAttribute getInternalTransition_History();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition <em>Immediate Transition</em>}'.
@@ -8289,44 +8029,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_TRANSITION__TRIGGER = eINSTANCE.getInternalTransition_Trigger();
 
 		/**
-		 * The meta object literal for the '<em><b>Strong Abort</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_TRANSITION__STRONG_ABORT = eINSTANCE.getInternalTransition_Strong_Abort();
-
-		/**
 		 * The meta object literal for the '<em><b>Priority</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute INTERNAL_TRANSITION__PRIORITY = eINSTANCE.getInternalTransition_Priority();
-
-		/**
-		 * The meta object literal for the '<em><b>Immediate transition</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_TRANSITION__IMMEDIATE_TRANSITION = eINSTANCE.getInternalTransition_Immediate_transition();
-
-		/**
-		 * The meta object literal for the '<em><b>Termination</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_TRANSITION__TERMINATION = eINSTANCE.getInternalTransition_Termination();
-
-		/**
-		 * The meta object literal for the '<em><b>History</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_TRANSITION__HISTORY = eINSTANCE.getInternalTransition_History();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalImmediateTransitionImpl <em>Immediate Transition</em>}' class.
