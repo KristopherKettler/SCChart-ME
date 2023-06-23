@@ -42,7 +42,7 @@ container SuperState {
 @palette("SuperStates")
 @event("info.scce.cinco.product.scchart.events.InitilalSuperStateEvent")
 container InitilalSuperState extends SuperState{
-	style initSuperStateStyle ("${label}")
+	style initialSuperStateStyle ("${label}")
 	containableElements(Region,SuperStateDeclarationNode)
 	incomingEdges (*)
 	outgoingEdges (*)
@@ -78,11 +78,11 @@ node InitialState extends SimpleState {
 	style startNodeStyle("${label}")
 	incomingEdges (*)
 	outgoingEdges (*)
-}							//legacy code for resize all regions on the same level
+}							
 
 @palette("States")
 node FinalState extends SimpleState {
-	style endNodeStyle("${label}")
+	style finalStateStyle("${label}")
 	incomingEdges (*)
 	outgoingEdges (*)
 }
@@ -100,24 +100,24 @@ edge Transition {
 	attr EString as Action
 }
 
-edge ImmediateTransition extends Transition{
+edge ImmediateTransition {
 	style immediateTransitionStyle("${label}")
 	attr EString as label := "wqwq"
 }	
 
-edge ImmediateTerminationTransition extends Transition{
+edge ImmediateTerminationTransition {
 	style immediateTerminatArrow
 }	
 
-edge WeakAbortTransition extends Transition{
+edge WeakAbortTransition {
 	style weakAbortArrow
 }
 
-edge StrongAbortTransition extends Transition{
+edge StrongAbortTransition {
 	style strongAbortArrow
 }
 
-edge WeakAbortTerminationTransition extends Transition{
+edge WeakAbortTerminationTransition {
 	style weakAbortTerminatArrow
 }
 

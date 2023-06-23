@@ -5,7 +5,7 @@ package info.scce.cinco.product.scchart.events
 import graphmodel.Direction
 import graphmodel.ModelElementContainer
 import info.scce.cinco.product.scchart.mglid.scchart.RootState
-
+import graphmodel.Edge
 
 /* 
  * About this class:
@@ -119,6 +119,7 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 	}
 	
 	override postSelect(RootState element) {
+		//var l = element.getEdges(Edge)
 		// TODO: Auto-generated method stub
 	}
 	
