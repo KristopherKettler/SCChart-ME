@@ -2,6 +2,7 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.internal;
 
+import graphmodel.internal.InternalEdge;
 
 /**
  * <!-- begin-user-doc -->
@@ -13,5 +14,5 @@ package info.scce.cinco.product.scchart.mglid.scchart.internal;
  * @model
  * @generated
  */
-public interface InternalWeakAbortTerminationTransition extends InternalTransition {
+public interface InternalWeakAbortTerminationTransition extends InternalEdge {
 } // InternalWeakAbortTerminationTransition

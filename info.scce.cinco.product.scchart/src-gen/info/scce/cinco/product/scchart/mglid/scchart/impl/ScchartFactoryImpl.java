@@ -58,6 +58,7 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 		switch (eClass.getClassifierID()) {
 			case ScchartPackage.ROOT_STATE: return createRootState();
 			case ScchartPackage.REGION: return createRegion();
+			case ScchartPackage.DATA_FLOW_REGION: return createDataFlowRegion();
 			case ScchartPackage.SUPER_STATE: return createSuperState();
 			case ScchartPackage.INITILAL_SUPER_STATE: return createInitilalSuperState();
 			case ScchartPackage.ROOT_STATE_DECLARATION_NODE: return createRootStateDeclarationNode();
@@ -101,6 +102,17 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	public Region createRegion() {
 		RegionImpl region = new RegionImpl();
 		return region;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DataFlowRegion createDataFlowRegion() {
+		DataFlowRegionImpl dataFlowRegion = new DataFlowRegionImpl();
+		return dataFlowRegion;
 	}
 
 	/**

@@ -771,6 +771,340 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_REGION_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDataFlowRegionImpl <em>Data Flow Region</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDataFlowRegionImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalDataFlowRegion()
+	 * @generated
+	 */
+	int INTERNAL_DATA_FLOW_REGION = 2;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION__ID = INTERNAL_REGION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION__CONTAINER = INTERNAL_REGION__CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>Element</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION__ELEMENT = INTERNAL_REGION__ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>X</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION__X = INTERNAL_REGION__X;
+
+	/**
+	 * The feature id for the '<em><b>Y</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION__Y = INTERNAL_REGION__Y;
+
+	/**
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION__HEIGHT = INTERNAL_REGION__HEIGHT;
+
+	/**
+	 * The feature id for the '<em><b>Width</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION__WIDTH = INTERNAL_REGION__WIDTH;
+
+	/**
+	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION__INCOMING = INTERNAL_REGION__INCOMING;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION__OUTGOING = INTERNAL_REGION__OUTGOING;
+
+	/**
+	 * The feature id for the '<em><b>Model Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION__MODEL_ELEMENTS = INTERNAL_REGION__MODEL_ELEMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Label</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION__LABEL = INTERNAL_REGION__LABEL;
+
+	/**
+	 * The feature id for the '<em><b>Region ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION__REGION_ID = INTERNAL_REGION__REGION_ID;
+
+	/**
+	 * The feature id for the '<em><b>Uuid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION__UUID = INTERNAL_REGION__UUID;
+
+	/**
+	 * The number of structural features of the '<em>Data Flow Region</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION_FEATURE_COUNT = INTERNAL_REGION_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Equals</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___EQUALS__OBJECT = INTERNAL_REGION___EQUALS__OBJECT;
+
+	/**
+	 * The operation id for the '<em>Hash Code</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___HASH_CODE = INTERNAL_REGION___HASH_CODE;
+
+	/**
+	 * The operation id for the '<em>Save</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___SAVE = INTERNAL_REGION___SAVE;
+
+	/**
+	 * The operation id for the '<em>Get Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___GET_ELEMENT = INTERNAL_REGION___GET_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Root Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___GET_ROOT_ELEMENT = INTERNAL_REGION___GET_ROOT_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___GET_SUCCESSORS = INTERNAL_REGION___GET_SUCCESSORS;
+
+	/**
+	 * The operation id for the '<em>Get Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___GET_SUCCESSORS__CLASS = INTERNAL_REGION___GET_SUCCESSORS__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___GET_PREDECESSORS = INTERNAL_REGION___GET_PREDECESSORS;
+
+	/**
+	 * The operation id for the '<em>Get Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___GET_PREDECESSORS__CLASS = INTERNAL_REGION___GET_PREDECESSORS__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Incoming</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___GET_INCOMING__CLASS = INTERNAL_REGION___GET_INCOMING__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Outgoing</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___GET_OUTGOING__CLASS = INTERNAL_REGION___GET_OUTGOING__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Connect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___CAN_CONNECT__EDGE_NODE = INTERNAL_REGION___CAN_CONNECT__EDGE_NODE;
+
+	/**
+	 * The operation id for the '<em>Get Outgoing Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___GET_OUTGOING_CONSTRAINTS = INTERNAL_REGION___GET_OUTGOING_CONSTRAINTS;
+
+	/**
+	 * The operation id for the '<em>Get Incoming Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___GET_INCOMING_CONSTRAINTS = INTERNAL_REGION___GET_INCOMING_CONSTRAINTS;
+
+	/**
+	 * The operation id for the '<em>Can Start</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___CAN_START__CLASS = INTERNAL_REGION___CAN_START__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___CAN_END__CLASS = INTERNAL_REGION___CAN_END__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Contain</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___CAN_CONTAIN__CLASS = INTERNAL_REGION___CAN_CONTAIN__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Contain Nodes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___CAN_CONTAIN_NODES__ELIST = INTERNAL_REGION___CAN_CONTAIN_NODES__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Container Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___GET_CONTAINER_ELEMENT = INTERNAL_REGION___GET_CONTAINER_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Can Contain</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___CAN_CONTAIN__ELIST = INTERNAL_REGION___CAN_CONTAIN__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Containment Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION___GET_CONTAINMENT_CONSTRAINTS = INTERNAL_REGION_OPERATION_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Data Flow Region</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION_OPERATION_COUNT = INTERNAL_REGION_OPERATION_COUNT + 1;
+
+	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateImpl <em>Super State</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -778,7 +1112,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuperState()
 	 * @generated
 	 */
-	int INTERNAL_SUPER_STATE = 2;
+	int INTERNAL_SUPER_STATE = 3;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1220,7 +1554,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalInitilalSuperState()
 	 * @generated
 	 */
-	int INTERNAL_INITILAL_SUPER_STATE = 3;
+	int INTERNAL_INITILAL_SUPER_STATE = 4;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1662,7 +1996,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalRootStateDeclarationNode()
 	 * @generated
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION_NODE = 4;
+	int INTERNAL_ROOT_STATE_DECLARATION_NODE = 5;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1942,7 +2276,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuperStateDeclarationNode()
 	 * @generated
 	 */
-	int INTERNAL_SUPER_STATE_DECLARATION_NODE = 5;
+	int INTERNAL_SUPER_STATE_DECLARATION_NODE = 6;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2213,7 +2547,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSimpleState()
 	 * @generated
 	 */
-	int INTERNAL_SIMPLE_STATE = 6;
+	int INTERNAL_SIMPLE_STATE = 7;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2592,7 +2926,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalInitialState()
 	 * @generated
 	 */
-	int INTERNAL_INITIAL_STATE = 7;
+	int INTERNAL_INITIAL_STATE = 8;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2971,7 +3305,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalFinalState()
 	 * @generated
 	 */
-	int INTERNAL_FINAL_STATE = 8;
+	int INTERNAL_FINAL_STATE = 9;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3350,7 +3684,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConnector()
 	 * @generated
 	 */
-	int INTERNAL_CONNECTOR = 9;
+	int INTERNAL_CONNECTOR = 10;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3720,7 +4054,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTransition()
 	 * @generated
 	 */
-	int INTERNAL_TRANSITION = 10;
+	int INTERNAL_TRANSITION = 11;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3786,22 +4120,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_TRANSITION__DECORATORS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__DECORATORS;
 
 	/**
-	 * The feature id for the '<em><b>Action</b></em>' attribute.
+	 * The feature id for the '<em><b>Condition</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_TRANSITION__ACTION = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 0;
+	int INTERNAL_TRANSITION__CONDITION = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Trigger</b></em>' attribute.
+	 * The feature id for the '<em><b>Effect</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_TRANSITION__TRIGGER = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 1;
+	int INTERNAL_TRANSITION__EFFECT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Priority</b></em>' attribute.
@@ -3928,7 +4262,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION = 11;
+	int INTERNAL_IMMEDIATE_TRANSITION = 12;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3937,7 +4271,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__ID = INTERNAL_TRANSITION__ID;
+	int INTERNAL_IMMEDIATE_TRANSITION__ID = graphmodel.internal.InternalPackage.INTERNAL_EDGE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -3946,7 +4280,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__CONTAINER = INTERNAL_TRANSITION__CONTAINER;
+	int INTERNAL_IMMEDIATE_TRANSITION__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_EDGE__CONTAINER;
 
 	/**
 	 * The feature id for the '<em><b>Element</b></em>' containment reference.
@@ -3955,7 +4289,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__ELEMENT = INTERNAL_TRANSITION__ELEMENT;
+	int INTERNAL_IMMEDIATE_TRANSITION__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>source Element</b></em>' reference.
@@ -3964,7 +4298,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__SOURCE_ELEMENT = INTERNAL_TRANSITION__SOURCE_ELEMENT;
+	int INTERNAL_IMMEDIATE_TRANSITION__SOURCE_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__SOURCE_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>target Element</b></em>' reference.
@@ -3973,7 +4307,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__TARGET_ELEMENT = INTERNAL_TRANSITION__TARGET_ELEMENT;
+	int INTERNAL_IMMEDIATE_TRANSITION__TARGET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__TARGET_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Bendpoints</b></em>' containment reference list.
@@ -3982,7 +4316,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__BENDPOINTS = INTERNAL_TRANSITION__BENDPOINTS;
+	int INTERNAL_IMMEDIATE_TRANSITION__BENDPOINTS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__BENDPOINTS;
 
 	/**
 	 * The feature id for the '<em><b>Decorators</b></em>' containment reference list.
@@ -3991,34 +4325,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__DECORATORS = INTERNAL_TRANSITION__DECORATORS;
-
-	/**
-	 * The feature id for the '<em><b>Action</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__ACTION = INTERNAL_TRANSITION__ACTION;
-
-	/**
-	 * The feature id for the '<em><b>Trigger</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__TRIGGER = INTERNAL_TRANSITION__TRIGGER;
-
-	/**
-	 * The feature id for the '<em><b>Priority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__PRIORITY = INTERNAL_TRANSITION__PRIORITY;
+	int INTERNAL_IMMEDIATE_TRANSITION__DECORATORS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__DECORATORS;
 
 	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
@@ -4027,7 +4334,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__LABEL = INTERNAL_TRANSITION_FEATURE_COUNT + 0;
+	int INTERNAL_IMMEDIATE_TRANSITION__LABEL = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Priority</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_IMMEDIATE_TRANSITION__PRIORITY = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Immediate Transition</em>' class.
@@ -4036,7 +4352,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION_FEATURE_COUNT = INTERNAL_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_IMMEDIATE_TRANSITION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -4045,7 +4361,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION___EQUALS__OBJECT = INTERNAL_TRANSITION___EQUALS__OBJECT;
+	int INTERNAL_IMMEDIATE_TRANSITION___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___EQUALS__OBJECT;
 
 	/**
 	 * The operation id for the '<em>Hash Code</em>' operation.
@@ -4054,7 +4370,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION___HASH_CODE = INTERNAL_TRANSITION___HASH_CODE;
+	int INTERNAL_IMMEDIATE_TRANSITION___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___HASH_CODE;
 
 	/**
 	 * The operation id for the '<em>Save</em>' operation.
@@ -4063,7 +4379,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION___SAVE = INTERNAL_TRANSITION___SAVE;
+	int INTERNAL_IMMEDIATE_TRANSITION___SAVE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SAVE;
 
 	/**
 	 * The operation id for the '<em>Get Element</em>' operation.
@@ -4072,7 +4388,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION___GET_ELEMENT = INTERNAL_TRANSITION___GET_ELEMENT;
+	int INTERNAL_IMMEDIATE_TRANSITION___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Root Element</em>' operation.
@@ -4081,7 +4397,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION___GET_ROOT_ELEMENT = INTERNAL_TRANSITION___GET_ROOT_ELEMENT;
+	int INTERNAL_IMMEDIATE_TRANSITION___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_ROOT_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Source Element</em>' operation.
@@ -4090,7 +4406,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION___GET_SOURCE_ELEMENT = INTERNAL_TRANSITION___GET_SOURCE_ELEMENT;
+	int INTERNAL_IMMEDIATE_TRANSITION___GET_SOURCE_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_SOURCE_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Target Element</em>' operation.
@@ -4099,7 +4415,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION___GET_TARGET_ELEMENT = INTERNAL_TRANSITION___GET_TARGET_ELEMENT;
+	int INTERNAL_IMMEDIATE_TRANSITION___GET_TARGET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_TARGET_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Set Source Element</em>' operation.
@@ -4108,7 +4424,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION___SET_SOURCE_ELEMENT__NODE = INTERNAL_TRANSITION___SET_SOURCE_ELEMENT__NODE;
+	int INTERNAL_IMMEDIATE_TRANSITION___SET_SOURCE_ELEMENT__NODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SET_SOURCE_ELEMENT__NODE;
 
 	/**
 	 * The operation id for the '<em>Set Target Element</em>' operation.
@@ -4117,7 +4433,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION___SET_TARGET_ELEMENT__NODE = INTERNAL_TRANSITION___SET_TARGET_ELEMENT__NODE;
+	int INTERNAL_IMMEDIATE_TRANSITION___SET_TARGET_ELEMENT__NODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SET_TARGET_ELEMENT__NODE;
 
 	/**
 	 * The operation id for the '<em>Add Bendpoint</em>' operation.
@@ -4126,7 +4442,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION___ADD_BENDPOINT__INT_INT = INTERNAL_TRANSITION___ADD_BENDPOINT__INT_INT;
+	int INTERNAL_IMMEDIATE_TRANSITION___ADD_BENDPOINT__INT_INT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___ADD_BENDPOINT__INT_INT;
 
 	/**
 	 * The number of operations of the '<em>Immediate Transition</em>' class.
@@ -4135,7 +4451,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION_OPERATION_COUNT = INTERNAL_TRANSITION_OPERATION_COUNT + 0;
+	int INTERNAL_IMMEDIATE_TRANSITION_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalImmediateTerminationTransitionImpl <em>Immediate Termination Transition</em>}' class.
@@ -4145,7 +4461,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateTerminationTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION = 12;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION = 13;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4154,7 +4470,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__ID = INTERNAL_TRANSITION__ID;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__ID = graphmodel.internal.InternalPackage.INTERNAL_EDGE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -4163,7 +4479,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__CONTAINER = INTERNAL_TRANSITION__CONTAINER;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_EDGE__CONTAINER;
 
 	/**
 	 * The feature id for the '<em><b>Element</b></em>' containment reference.
@@ -4172,7 +4488,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__ELEMENT = INTERNAL_TRANSITION__ELEMENT;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>source Element</b></em>' reference.
@@ -4181,7 +4497,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__SOURCE_ELEMENT = INTERNAL_TRANSITION__SOURCE_ELEMENT;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__SOURCE_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__SOURCE_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>target Element</b></em>' reference.
@@ -4190,7 +4506,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__TARGET_ELEMENT = INTERNAL_TRANSITION__TARGET_ELEMENT;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__TARGET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__TARGET_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Bendpoints</b></em>' containment reference list.
@@ -4199,7 +4515,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__BENDPOINTS = INTERNAL_TRANSITION__BENDPOINTS;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__BENDPOINTS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__BENDPOINTS;
 
 	/**
 	 * The feature id for the '<em><b>Decorators</b></em>' containment reference list.
@@ -4208,34 +4524,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__DECORATORS = INTERNAL_TRANSITION__DECORATORS;
-
-	/**
-	 * The feature id for the '<em><b>Action</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__ACTION = INTERNAL_TRANSITION__ACTION;
-
-	/**
-	 * The feature id for the '<em><b>Trigger</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__TRIGGER = INTERNAL_TRANSITION__TRIGGER;
-
-	/**
-	 * The feature id for the '<em><b>Priority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__PRIORITY = INTERNAL_TRANSITION__PRIORITY;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION__DECORATORS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__DECORATORS;
 
 	/**
 	 * The number of structural features of the '<em>Immediate Termination Transition</em>' class.
@@ -4244,7 +4533,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION_FEATURE_COUNT = INTERNAL_TRANSITION_FEATURE_COUNT + 0;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -4253,7 +4542,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___EQUALS__OBJECT = INTERNAL_TRANSITION___EQUALS__OBJECT;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___EQUALS__OBJECT;
 
 	/**
 	 * The operation id for the '<em>Hash Code</em>' operation.
@@ -4262,7 +4551,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___HASH_CODE = INTERNAL_TRANSITION___HASH_CODE;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___HASH_CODE;
 
 	/**
 	 * The operation id for the '<em>Save</em>' operation.
@@ -4271,7 +4560,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___SAVE = INTERNAL_TRANSITION___SAVE;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___SAVE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SAVE;
 
 	/**
 	 * The operation id for the '<em>Get Element</em>' operation.
@@ -4280,7 +4569,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___GET_ELEMENT = INTERNAL_TRANSITION___GET_ELEMENT;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Root Element</em>' operation.
@@ -4289,7 +4578,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___GET_ROOT_ELEMENT = INTERNAL_TRANSITION___GET_ROOT_ELEMENT;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_ROOT_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Source Element</em>' operation.
@@ -4298,7 +4587,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___GET_SOURCE_ELEMENT = INTERNAL_TRANSITION___GET_SOURCE_ELEMENT;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___GET_SOURCE_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_SOURCE_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Target Element</em>' operation.
@@ -4307,7 +4596,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___GET_TARGET_ELEMENT = INTERNAL_TRANSITION___GET_TARGET_ELEMENT;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___GET_TARGET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_TARGET_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Set Source Element</em>' operation.
@@ -4316,7 +4605,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___SET_SOURCE_ELEMENT__NODE = INTERNAL_TRANSITION___SET_SOURCE_ELEMENT__NODE;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___SET_SOURCE_ELEMENT__NODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SET_SOURCE_ELEMENT__NODE;
 
 	/**
 	 * The operation id for the '<em>Set Target Element</em>' operation.
@@ -4325,7 +4614,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___SET_TARGET_ELEMENT__NODE = INTERNAL_TRANSITION___SET_TARGET_ELEMENT__NODE;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___SET_TARGET_ELEMENT__NODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SET_TARGET_ELEMENT__NODE;
 
 	/**
 	 * The operation id for the '<em>Add Bendpoint</em>' operation.
@@ -4334,7 +4623,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___ADD_BENDPOINT__INT_INT = INTERNAL_TRANSITION___ADD_BENDPOINT__INT_INT;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION___ADD_BENDPOINT__INT_INT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___ADD_BENDPOINT__INT_INT;
 
 	/**
 	 * The number of operations of the '<em>Immediate Termination Transition</em>' class.
@@ -4343,7 +4632,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION_OPERATION_COUNT = INTERNAL_TRANSITION_OPERATION_COUNT + 0;
+	int INTERNAL_IMMEDIATE_TERMINATION_TRANSITION_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalWeakAbortTransitionImpl <em>Weak Abort Transition</em>}' class.
@@ -4353,7 +4642,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalWeakAbortTransition()
 	 * @generated
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION = 13;
+	int INTERNAL_WEAK_ABORT_TRANSITION = 14;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4362,7 +4651,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION__ID = INTERNAL_TRANSITION__ID;
+	int INTERNAL_WEAK_ABORT_TRANSITION__ID = graphmodel.internal.InternalPackage.INTERNAL_EDGE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -4371,7 +4660,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION__CONTAINER = INTERNAL_TRANSITION__CONTAINER;
+	int INTERNAL_WEAK_ABORT_TRANSITION__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_EDGE__CONTAINER;
 
 	/**
 	 * The feature id for the '<em><b>Element</b></em>' containment reference.
@@ -4380,7 +4669,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION__ELEMENT = INTERNAL_TRANSITION__ELEMENT;
+	int INTERNAL_WEAK_ABORT_TRANSITION__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>source Element</b></em>' reference.
@@ -4389,7 +4678,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION__SOURCE_ELEMENT = INTERNAL_TRANSITION__SOURCE_ELEMENT;
+	int INTERNAL_WEAK_ABORT_TRANSITION__SOURCE_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__SOURCE_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>target Element</b></em>' reference.
@@ -4398,7 +4687,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION__TARGET_ELEMENT = INTERNAL_TRANSITION__TARGET_ELEMENT;
+	int INTERNAL_WEAK_ABORT_TRANSITION__TARGET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__TARGET_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Bendpoints</b></em>' containment reference list.
@@ -4407,7 +4696,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION__BENDPOINTS = INTERNAL_TRANSITION__BENDPOINTS;
+	int INTERNAL_WEAK_ABORT_TRANSITION__BENDPOINTS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__BENDPOINTS;
 
 	/**
 	 * The feature id for the '<em><b>Decorators</b></em>' containment reference list.
@@ -4416,34 +4705,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION__DECORATORS = INTERNAL_TRANSITION__DECORATORS;
-
-	/**
-	 * The feature id for the '<em><b>Action</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION__ACTION = INTERNAL_TRANSITION__ACTION;
-
-	/**
-	 * The feature id for the '<em><b>Trigger</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION__TRIGGER = INTERNAL_TRANSITION__TRIGGER;
-
-	/**
-	 * The feature id for the '<em><b>Priority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION__PRIORITY = INTERNAL_TRANSITION__PRIORITY;
+	int INTERNAL_WEAK_ABORT_TRANSITION__DECORATORS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__DECORATORS;
 
 	/**
 	 * The number of structural features of the '<em>Weak Abort Transition</em>' class.
@@ -4452,7 +4714,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION_FEATURE_COUNT = INTERNAL_TRANSITION_FEATURE_COUNT + 0;
+	int INTERNAL_WEAK_ABORT_TRANSITION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -4461,7 +4723,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION___EQUALS__OBJECT = INTERNAL_TRANSITION___EQUALS__OBJECT;
+	int INTERNAL_WEAK_ABORT_TRANSITION___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___EQUALS__OBJECT;
 
 	/**
 	 * The operation id for the '<em>Hash Code</em>' operation.
@@ -4470,7 +4732,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION___HASH_CODE = INTERNAL_TRANSITION___HASH_CODE;
+	int INTERNAL_WEAK_ABORT_TRANSITION___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___HASH_CODE;
 
 	/**
 	 * The operation id for the '<em>Save</em>' operation.
@@ -4479,7 +4741,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION___SAVE = INTERNAL_TRANSITION___SAVE;
+	int INTERNAL_WEAK_ABORT_TRANSITION___SAVE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SAVE;
 
 	/**
 	 * The operation id for the '<em>Get Element</em>' operation.
@@ -4488,7 +4750,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION___GET_ELEMENT = INTERNAL_TRANSITION___GET_ELEMENT;
+	int INTERNAL_WEAK_ABORT_TRANSITION___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Root Element</em>' operation.
@@ -4497,7 +4759,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION___GET_ROOT_ELEMENT = INTERNAL_TRANSITION___GET_ROOT_ELEMENT;
+	int INTERNAL_WEAK_ABORT_TRANSITION___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_ROOT_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Source Element</em>' operation.
@@ -4506,7 +4768,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION___GET_SOURCE_ELEMENT = INTERNAL_TRANSITION___GET_SOURCE_ELEMENT;
+	int INTERNAL_WEAK_ABORT_TRANSITION___GET_SOURCE_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_SOURCE_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Target Element</em>' operation.
@@ -4515,7 +4777,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION___GET_TARGET_ELEMENT = INTERNAL_TRANSITION___GET_TARGET_ELEMENT;
+	int INTERNAL_WEAK_ABORT_TRANSITION___GET_TARGET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_TARGET_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Set Source Element</em>' operation.
@@ -4524,7 +4786,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION___SET_SOURCE_ELEMENT__NODE = INTERNAL_TRANSITION___SET_SOURCE_ELEMENT__NODE;
+	int INTERNAL_WEAK_ABORT_TRANSITION___SET_SOURCE_ELEMENT__NODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SET_SOURCE_ELEMENT__NODE;
 
 	/**
 	 * The operation id for the '<em>Set Target Element</em>' operation.
@@ -4533,7 +4795,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION___SET_TARGET_ELEMENT__NODE = INTERNAL_TRANSITION___SET_TARGET_ELEMENT__NODE;
+	int INTERNAL_WEAK_ABORT_TRANSITION___SET_TARGET_ELEMENT__NODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SET_TARGET_ELEMENT__NODE;
 
 	/**
 	 * The operation id for the '<em>Add Bendpoint</em>' operation.
@@ -4542,7 +4804,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION___ADD_BENDPOINT__INT_INT = INTERNAL_TRANSITION___ADD_BENDPOINT__INT_INT;
+	int INTERNAL_WEAK_ABORT_TRANSITION___ADD_BENDPOINT__INT_INT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___ADD_BENDPOINT__INT_INT;
 
 	/**
 	 * The number of operations of the '<em>Weak Abort Transition</em>' class.
@@ -4551,7 +4813,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION_OPERATION_COUNT = INTERNAL_TRANSITION_OPERATION_COUNT + 0;
+	int INTERNAL_WEAK_ABORT_TRANSITION_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalStrongAbortTransitionImpl <em>Strong Abort Transition</em>}' class.
@@ -4561,7 +4823,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalStrongAbortTransition()
 	 * @generated
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION = 14;
+	int INTERNAL_STRONG_ABORT_TRANSITION = 15;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4570,7 +4832,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__ID = INTERNAL_TRANSITION__ID;
+	int INTERNAL_STRONG_ABORT_TRANSITION__ID = graphmodel.internal.InternalPackage.INTERNAL_EDGE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -4579,7 +4841,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__CONTAINER = INTERNAL_TRANSITION__CONTAINER;
+	int INTERNAL_STRONG_ABORT_TRANSITION__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_EDGE__CONTAINER;
 
 	/**
 	 * The feature id for the '<em><b>Element</b></em>' containment reference.
@@ -4588,7 +4850,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__ELEMENT = INTERNAL_TRANSITION__ELEMENT;
+	int INTERNAL_STRONG_ABORT_TRANSITION__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>source Element</b></em>' reference.
@@ -4597,7 +4859,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__SOURCE_ELEMENT = INTERNAL_TRANSITION__SOURCE_ELEMENT;
+	int INTERNAL_STRONG_ABORT_TRANSITION__SOURCE_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__SOURCE_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>target Element</b></em>' reference.
@@ -4606,7 +4868,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__TARGET_ELEMENT = INTERNAL_TRANSITION__TARGET_ELEMENT;
+	int INTERNAL_STRONG_ABORT_TRANSITION__TARGET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__TARGET_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Bendpoints</b></em>' containment reference list.
@@ -4615,7 +4877,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__BENDPOINTS = INTERNAL_TRANSITION__BENDPOINTS;
+	int INTERNAL_STRONG_ABORT_TRANSITION__BENDPOINTS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__BENDPOINTS;
 
 	/**
 	 * The feature id for the '<em><b>Decorators</b></em>' containment reference list.
@@ -4624,34 +4886,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__DECORATORS = INTERNAL_TRANSITION__DECORATORS;
-
-	/**
-	 * The feature id for the '<em><b>Action</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__ACTION = INTERNAL_TRANSITION__ACTION;
-
-	/**
-	 * The feature id for the '<em><b>Trigger</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__TRIGGER = INTERNAL_TRANSITION__TRIGGER;
-
-	/**
-	 * The feature id for the '<em><b>Priority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__PRIORITY = INTERNAL_TRANSITION__PRIORITY;
+	int INTERNAL_STRONG_ABORT_TRANSITION__DECORATORS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__DECORATORS;
 
 	/**
 	 * The number of structural features of the '<em>Strong Abort Transition</em>' class.
@@ -4660,7 +4895,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION_FEATURE_COUNT = INTERNAL_TRANSITION_FEATURE_COUNT + 0;
+	int INTERNAL_STRONG_ABORT_TRANSITION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -4669,7 +4904,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION___EQUALS__OBJECT = INTERNAL_TRANSITION___EQUALS__OBJECT;
+	int INTERNAL_STRONG_ABORT_TRANSITION___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___EQUALS__OBJECT;
 
 	/**
 	 * The operation id for the '<em>Hash Code</em>' operation.
@@ -4678,7 +4913,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION___HASH_CODE = INTERNAL_TRANSITION___HASH_CODE;
+	int INTERNAL_STRONG_ABORT_TRANSITION___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___HASH_CODE;
 
 	/**
 	 * The operation id for the '<em>Save</em>' operation.
@@ -4687,7 +4922,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION___SAVE = INTERNAL_TRANSITION___SAVE;
+	int INTERNAL_STRONG_ABORT_TRANSITION___SAVE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SAVE;
 
 	/**
 	 * The operation id for the '<em>Get Element</em>' operation.
@@ -4696,7 +4931,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION___GET_ELEMENT = INTERNAL_TRANSITION___GET_ELEMENT;
+	int INTERNAL_STRONG_ABORT_TRANSITION___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Root Element</em>' operation.
@@ -4705,7 +4940,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION___GET_ROOT_ELEMENT = INTERNAL_TRANSITION___GET_ROOT_ELEMENT;
+	int INTERNAL_STRONG_ABORT_TRANSITION___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_ROOT_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Source Element</em>' operation.
@@ -4714,7 +4949,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION___GET_SOURCE_ELEMENT = INTERNAL_TRANSITION___GET_SOURCE_ELEMENT;
+	int INTERNAL_STRONG_ABORT_TRANSITION___GET_SOURCE_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_SOURCE_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Target Element</em>' operation.
@@ -4723,7 +4958,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION___GET_TARGET_ELEMENT = INTERNAL_TRANSITION___GET_TARGET_ELEMENT;
+	int INTERNAL_STRONG_ABORT_TRANSITION___GET_TARGET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_TARGET_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Set Source Element</em>' operation.
@@ -4732,7 +4967,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION___SET_SOURCE_ELEMENT__NODE = INTERNAL_TRANSITION___SET_SOURCE_ELEMENT__NODE;
+	int INTERNAL_STRONG_ABORT_TRANSITION___SET_SOURCE_ELEMENT__NODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SET_SOURCE_ELEMENT__NODE;
 
 	/**
 	 * The operation id for the '<em>Set Target Element</em>' operation.
@@ -4741,7 +4976,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION___SET_TARGET_ELEMENT__NODE = INTERNAL_TRANSITION___SET_TARGET_ELEMENT__NODE;
+	int INTERNAL_STRONG_ABORT_TRANSITION___SET_TARGET_ELEMENT__NODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SET_TARGET_ELEMENT__NODE;
 
 	/**
 	 * The operation id for the '<em>Add Bendpoint</em>' operation.
@@ -4750,7 +4985,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION___ADD_BENDPOINT__INT_INT = INTERNAL_TRANSITION___ADD_BENDPOINT__INT_INT;
+	int INTERNAL_STRONG_ABORT_TRANSITION___ADD_BENDPOINT__INT_INT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___ADD_BENDPOINT__INT_INT;
 
 	/**
 	 * The number of operations of the '<em>Strong Abort Transition</em>' class.
@@ -4759,7 +4994,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION_OPERATION_COUNT = INTERNAL_TRANSITION_OPERATION_COUNT + 0;
+	int INTERNAL_STRONG_ABORT_TRANSITION_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalWeakAbortTerminationTransitionImpl <em>Weak Abort Termination Transition</em>}' class.
@@ -4769,7 +5004,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalWeakAbortTerminationTransition()
 	 * @generated
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION = 15;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION = 16;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4778,7 +5013,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__ID = INTERNAL_TRANSITION__ID;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__ID = graphmodel.internal.InternalPackage.INTERNAL_EDGE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -4787,7 +5022,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__CONTAINER = INTERNAL_TRANSITION__CONTAINER;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_EDGE__CONTAINER;
 
 	/**
 	 * The feature id for the '<em><b>Element</b></em>' containment reference.
@@ -4796,7 +5031,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__ELEMENT = INTERNAL_TRANSITION__ELEMENT;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>source Element</b></em>' reference.
@@ -4805,7 +5040,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__SOURCE_ELEMENT = INTERNAL_TRANSITION__SOURCE_ELEMENT;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__SOURCE_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__SOURCE_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>target Element</b></em>' reference.
@@ -4814,7 +5049,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__TARGET_ELEMENT = INTERNAL_TRANSITION__TARGET_ELEMENT;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__TARGET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__TARGET_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Bendpoints</b></em>' containment reference list.
@@ -4823,7 +5058,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__BENDPOINTS = INTERNAL_TRANSITION__BENDPOINTS;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__BENDPOINTS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__BENDPOINTS;
 
 	/**
 	 * The feature id for the '<em><b>Decorators</b></em>' containment reference list.
@@ -4832,34 +5067,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__DECORATORS = INTERNAL_TRANSITION__DECORATORS;
-
-	/**
-	 * The feature id for the '<em><b>Action</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__ACTION = INTERNAL_TRANSITION__ACTION;
-
-	/**
-	 * The feature id for the '<em><b>Trigger</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__TRIGGER = INTERNAL_TRANSITION__TRIGGER;
-
-	/**
-	 * The feature id for the '<em><b>Priority</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__PRIORITY = INTERNAL_TRANSITION__PRIORITY;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION__DECORATORS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__DECORATORS;
 
 	/**
 	 * The number of structural features of the '<em>Weak Abort Termination Transition</em>' class.
@@ -4868,7 +5076,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION_FEATURE_COUNT = INTERNAL_TRANSITION_FEATURE_COUNT + 0;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -4877,7 +5085,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___EQUALS__OBJECT = INTERNAL_TRANSITION___EQUALS__OBJECT;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___EQUALS__OBJECT;
 
 	/**
 	 * The operation id for the '<em>Hash Code</em>' operation.
@@ -4886,7 +5094,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___HASH_CODE = INTERNAL_TRANSITION___HASH_CODE;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___HASH_CODE;
 
 	/**
 	 * The operation id for the '<em>Save</em>' operation.
@@ -4895,7 +5103,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___SAVE = INTERNAL_TRANSITION___SAVE;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___SAVE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SAVE;
 
 	/**
 	 * The operation id for the '<em>Get Element</em>' operation.
@@ -4904,7 +5112,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___GET_ELEMENT = INTERNAL_TRANSITION___GET_ELEMENT;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Root Element</em>' operation.
@@ -4913,7 +5121,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___GET_ROOT_ELEMENT = INTERNAL_TRANSITION___GET_ROOT_ELEMENT;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_ROOT_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Source Element</em>' operation.
@@ -4922,7 +5130,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___GET_SOURCE_ELEMENT = INTERNAL_TRANSITION___GET_SOURCE_ELEMENT;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___GET_SOURCE_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_SOURCE_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Target Element</em>' operation.
@@ -4931,7 +5139,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___GET_TARGET_ELEMENT = INTERNAL_TRANSITION___GET_TARGET_ELEMENT;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___GET_TARGET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_TARGET_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Set Source Element</em>' operation.
@@ -4940,7 +5148,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___SET_SOURCE_ELEMENT__NODE = INTERNAL_TRANSITION___SET_SOURCE_ELEMENT__NODE;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___SET_SOURCE_ELEMENT__NODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SET_SOURCE_ELEMENT__NODE;
 
 	/**
 	 * The operation id for the '<em>Set Target Element</em>' operation.
@@ -4949,7 +5157,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___SET_TARGET_ELEMENT__NODE = INTERNAL_TRANSITION___SET_TARGET_ELEMENT__NODE;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___SET_TARGET_ELEMENT__NODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SET_TARGET_ELEMENT__NODE;
 
 	/**
 	 * The operation id for the '<em>Add Bendpoint</em>' operation.
@@ -4958,7 +5166,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___ADD_BENDPOINT__INT_INT = INTERNAL_TRANSITION___ADD_BENDPOINT__INT_INT;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION___ADD_BENDPOINT__INT_INT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___ADD_BENDPOINT__INT_INT;
 
 	/**
 	 * The number of operations of the '<em>Weak Abort Termination Transition</em>' class.
@@ -4967,7 +5175,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION_OPERATION_COUNT = INTERNAL_TRANSITION_OPERATION_COUNT + 0;
+	int INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDefferedTransitionImpl <em>Deffered Transition</em>}' class.
@@ -4977,7 +5185,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalDefferedTransition()
 	 * @generated
 	 */
-	int INTERNAL_DEFFERED_TRANSITION = 16;
+	int INTERNAL_DEFFERED_TRANSITION = 17;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5158,7 +5366,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSCChart()
 	 * @generated
 	 */
-	int INTERNAL_SC_CHART = 17;
+	int INTERNAL_SC_CHART = 18;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5303,7 +5511,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalRootStateDeclaration()
 	 * @generated
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION = 18;
+	int INTERNAL_ROOT_STATE_DECLARATION = 19;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5412,7 +5620,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuperStateDeclaration()
 	 * @generated
 	 */
-	int INTERNAL_SUPER_STATE_DECLARATION = 19;
+	int INTERNAL_SUPER_STATE_DECLARATION = 20;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5669,6 +5877,26 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getInternalRegion__GetContainmentConstraints();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDataFlowRegion <em>Data Flow Region</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Data Flow Region</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDataFlowRegion
+	 * @generated
+	 */
+	EClass getInternalDataFlowRegion();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDataFlowRegion#getContainmentConstraints() <em>Get Containment Constraints</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Containment Constraints</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDataFlowRegion#getContainmentConstraints()
+	 * @generated
+	 */
+	EOperation getInternalDataFlowRegion__GetContainmentConstraints();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState <em>Super State</em>}'.
@@ -6769,26 +6997,26 @@ public interface InternalPackage extends EPackage {
 	EClass getInternalTransition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getAction <em>Action</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getCondition <em>Condition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Action</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getAction()
+	 * @return the meta object for the attribute '<em>Condition</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getCondition()
 	 * @see #getInternalTransition()
 	 * @generated
 	 */
-	EAttribute getInternalTransition_Action();
+	EAttribute getInternalTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getTrigger <em>Trigger</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getEffect <em>Effect</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Trigger</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getTrigger()
+	 * @return the meta object for the attribute '<em>Effect</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getEffect()
 	 * @see #getInternalTransition()
 	 * @generated
 	 */
-	EAttribute getInternalTransition_Trigger();
+	EAttribute getInternalTransition_Effect();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getPriority <em>Priority</em>}'.
@@ -6821,6 +7049,17 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getInternalImmediateTransition_Label();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getPriority <em>Priority</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Priority</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getPriority()
+	 * @see #getInternalImmediateTransition()
+	 * @generated
+	 */
+	EAttribute getInternalImmediateTransition_Priority();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTerminationTransition <em>Immediate Termination Transition</em>}'.
@@ -7121,6 +7360,24 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation INTERNAL_REGION___GET_CONTAINMENT_CONSTRAINTS = eINSTANCE.getInternalRegion__GetContainmentConstraints();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDataFlowRegionImpl <em>Data Flow Region</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDataFlowRegionImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalDataFlowRegion()
+		 * @generated
+		 */
+		EClass INTERNAL_DATA_FLOW_REGION = eINSTANCE.getInternalDataFlowRegion();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Containment Constraints</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_DATA_FLOW_REGION___GET_CONTAINMENT_CONSTRAINTS = eINSTANCE.getInternalDataFlowRegion__GetContainmentConstraints();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateImpl <em>Super State</em>}' class.
@@ -8013,20 +8270,20 @@ public interface InternalPackage extends EPackage {
 		EClass INTERNAL_TRANSITION = eINSTANCE.getInternalTransition();
 
 		/**
-		 * The meta object literal for the '<em><b>Action</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Condition</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_TRANSITION__ACTION = eINSTANCE.getInternalTransition_Action();
+		EAttribute INTERNAL_TRANSITION__CONDITION = eINSTANCE.getInternalTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Trigger</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_TRANSITION__TRIGGER = eINSTANCE.getInternalTransition_Trigger();
+		EAttribute INTERNAL_TRANSITION__EFFECT = eINSTANCE.getInternalTransition_Effect();
 
 		/**
 		 * The meta object literal for the '<em><b>Priority</b></em>' attribute feature.
@@ -8053,6 +8310,14 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute INTERNAL_IMMEDIATE_TRANSITION__LABEL = eINSTANCE.getInternalImmediateTransition_Label();
+
+		/**
+		 * The meta object literal for the '<em><b>Priority</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_IMMEDIATE_TRANSITION__PRIORITY = eINSTANCE.getInternalImmediateTransition_Priority();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalImmediateTerminationTransitionImpl <em>Immediate Termination Transition</em>}' class.

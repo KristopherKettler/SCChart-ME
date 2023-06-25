@@ -239,6 +239,106 @@ public interface ViewsPackage extends EPackage {
 	int REGION_VIEW_OPERATION_COUNT = 6;
 
 	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.DataFlowRegionViewImpl <em>Data Flow Region View</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.DataFlowRegionViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDataFlowRegionView()
+	 * @generated
+	 */
+	int DATA_FLOW_REGION_VIEW = 2;
+
+	/**
+	 * The feature id for the '<em><b>Internal Region</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_FLOW_REGION_VIEW__INTERNAL_REGION = REGION_VIEW__INTERNAL_REGION;
+
+	/**
+	 * The feature id for the '<em><b>Internal Data Flow Region</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_FLOW_REGION_VIEW__INTERNAL_DATA_FLOW_REGION = REGION_VIEW_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Data Flow Region View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_FLOW_REGION_VIEW_FEATURE_COUNT = REGION_VIEW_FEATURE_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_FLOW_REGION_VIEW___GET_LABEL = REGION_VIEW___GET_LABEL;
+
+	/**
+	 * The operation id for the '<em>Set Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_FLOW_REGION_VIEW___SET_LABEL__STRING = REGION_VIEW___SET_LABEL__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Region ID</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_FLOW_REGION_VIEW___GET_REGION_ID = REGION_VIEW___GET_REGION_ID;
+
+	/**
+	 * The operation id for the '<em>Set Region ID</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_FLOW_REGION_VIEW___SET_REGION_ID__STRING = REGION_VIEW___SET_REGION_ID__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Uuid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_FLOW_REGION_VIEW___GET_UUID = REGION_VIEW___GET_UUID;
+
+	/**
+	 * The operation id for the '<em>Set Uuid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_FLOW_REGION_VIEW___SET_UUID__STRING = REGION_VIEW___SET_UUID__STRING;
+
+	/**
+	 * The number of operations of the '<em>Data Flow Region View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_FLOW_REGION_VIEW_OPERATION_COUNT = REGION_VIEW_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateViewImpl <em>Super State View</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -246,7 +346,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuperStateView()
 	 * @generated
 	 */
-	int SUPER_STATE_VIEW = 2;
+	int SUPER_STATE_VIEW = 3;
 
 	/**
 	 * The feature id for the '<em><b>Internal Super State</b></em>' reference.
@@ -337,7 +437,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getInitilalSuperStateView()
 	 * @generated
 	 */
-	int INITILAL_SUPER_STATE_VIEW = 3;
+	int INITILAL_SUPER_STATE_VIEW = 4;
 
 	/**
 	 * The feature id for the '<em><b>Internal Super State</b></em>' reference.
@@ -437,7 +537,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getRootStateDeclarationNodeView()
 	 * @generated
 	 */
-	int ROOT_STATE_DECLARATION_NODE_VIEW = 4;
+	int ROOT_STATE_DECLARATION_NODE_VIEW = 5;
 
 	/**
 	 * The feature id for the '<em><b>Internal Root State Declaration Node</b></em>' reference.
@@ -528,7 +628,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuperStateDeclarationNodeView()
 	 * @generated
 	 */
-	int SUPER_STATE_DECLARATION_NODE_VIEW = 5;
+	int SUPER_STATE_DECLARATION_NODE_VIEW = 6;
 
 	/**
 	 * The feature id for the '<em><b>Internal Super State Declaration Node</b></em>' reference.
@@ -601,7 +701,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSimpleStateView()
 	 * @generated
 	 */
-	int SIMPLE_STATE_VIEW = 6;
+	int SIMPLE_STATE_VIEW = 7;
 
 	/**
 	 * The feature id for the '<em><b>Internal Simple State</b></em>' reference.
@@ -656,7 +756,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getInitialStateView()
 	 * @generated
 	 */
-	int INITIAL_STATE_VIEW = 7;
+	int INITIAL_STATE_VIEW = 8;
 
 	/**
 	 * The feature id for the '<em><b>Internal Simple State</b></em>' reference.
@@ -720,7 +820,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getFinalStateView()
 	 * @generated
 	 */
-	int FINAL_STATE_VIEW = 8;
+	int FINAL_STATE_VIEW = 9;
 
 	/**
 	 * The feature id for the '<em><b>Internal Simple State</b></em>' reference.
@@ -784,7 +884,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConnectorView()
 	 * @generated
 	 */
-	int CONNECTOR_VIEW = 9;
+	int CONNECTOR_VIEW = 10;
 
 	/**
 	 * The feature id for the '<em><b>Internal Connector</b></em>' reference.
@@ -821,7 +921,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTransitionView()
 	 * @generated
 	 */
-	int TRANSITION_VIEW = 10;
+	int TRANSITION_VIEW = 11;
 
 	/**
 	 * The feature id for the '<em><b>Internal Transition</b></em>' reference.
@@ -842,40 +942,40 @@ public interface ViewsPackage extends EPackage {
 	int TRANSITION_VIEW_FEATURE_COUNT = 1;
 
 	/**
-	 * The operation id for the '<em>Get Action</em>' operation.
+	 * The operation id for the '<em>Get Condition</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW___GET_ACTION = 0;
+	int TRANSITION_VIEW___GET_CONDITION = 0;
 
 	/**
-	 * The operation id for the '<em>Set Action</em>' operation.
+	 * The operation id for the '<em>Set Condition</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW___SET_ACTION__STRING = 1;
+	int TRANSITION_VIEW___SET_CONDITION__STRING = 1;
 
 	/**
-	 * The operation id for the '<em>Get Trigger</em>' operation.
+	 * The operation id for the '<em>Get Effect</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW___GET_TRIGGER = 2;
+	int TRANSITION_VIEW___GET_EFFECT = 2;
 
 	/**
-	 * The operation id for the '<em>Set Trigger</em>' operation.
+	 * The operation id for the '<em>Set Effect</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW___SET_TRIGGER__STRING = 3;
+	int TRANSITION_VIEW___SET_EFFECT__STRING = 3;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -893,7 +993,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW___SET_PRIORITY__INT = 5;
+	int TRANSITION_VIEW___SET_PRIORITY__STRING = 5;
 
 	/**
 	 * The number of operations of the '<em>Transition View</em>' class.
@@ -912,16 +1012,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_TRANSITION_VIEW = 11;
-
-	/**
-	 * The feature id for the '<em><b>Internal Transition</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW__INTERNAL_TRANSITION = TRANSITION_VIEW__INTERNAL_TRANSITION;
+	int IMMEDIATE_TRANSITION_VIEW = 12;
 
 	/**
 	 * The feature id for the '<em><b>Internal Immediate Transition</b></em>' reference.
@@ -930,7 +1021,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TRANSITION_VIEW__INTERNAL_IMMEDIATE_TRANSITION = TRANSITION_VIEW_FEATURE_COUNT + 0;
+	int IMMEDIATE_TRANSITION_VIEW__INTERNAL_IMMEDIATE_TRANSITION = 0;
 
 	/**
 	 * The number of structural features of the '<em>Immediate Transition View</em>' class.
@@ -939,61 +1030,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TRANSITION_VIEW_FEATURE_COUNT = TRANSITION_VIEW_FEATURE_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Get Action</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___GET_ACTION = TRANSITION_VIEW___GET_ACTION;
-
-	/**
-	 * The operation id for the '<em>Set Action</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___SET_ACTION__STRING = TRANSITION_VIEW___SET_ACTION__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Trigger</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___GET_TRIGGER = TRANSITION_VIEW___GET_TRIGGER;
-
-	/**
-	 * The operation id for the '<em>Set Trigger</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___SET_TRIGGER__STRING = TRANSITION_VIEW___SET_TRIGGER__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Priority</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___GET_PRIORITY = TRANSITION_VIEW___GET_PRIORITY;
-
-	/**
-	 * The operation id for the '<em>Set Priority</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___SET_PRIORITY__INT = TRANSITION_VIEW___SET_PRIORITY__INT;
+	int IMMEDIATE_TRANSITION_VIEW_FEATURE_COUNT = 1;
 
 	/**
 	 * The operation id for the '<em>Get Label</em>' operation.
@@ -1002,7 +1039,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TRANSITION_VIEW___GET_LABEL = TRANSITION_VIEW_OPERATION_COUNT + 0;
+	int IMMEDIATE_TRANSITION_VIEW___GET_LABEL = 0;
 
 	/**
 	 * The operation id for the '<em>Set Label</em>' operation.
@@ -1011,7 +1048,25 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TRANSITION_VIEW___SET_LABEL__STRING = TRANSITION_VIEW_OPERATION_COUNT + 1;
+	int IMMEDIATE_TRANSITION_VIEW___SET_LABEL__STRING = 1;
+
+	/**
+	 * The operation id for the '<em>Get Priority</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_TRANSITION_VIEW___GET_PRIORITY = 2;
+
+	/**
+	 * The operation id for the '<em>Set Priority</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_TRANSITION_VIEW___SET_PRIORITY__STRING = 3;
 
 	/**
 	 * The number of operations of the '<em>Immediate Transition View</em>' class.
@@ -1020,7 +1075,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TRANSITION_VIEW_OPERATION_COUNT = TRANSITION_VIEW_OPERATION_COUNT + 2;
+	int IMMEDIATE_TRANSITION_VIEW_OPERATION_COUNT = 4;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateTerminationTransitionViewImpl <em>Immediate Termination Transition View</em>}' class.
@@ -1030,16 +1085,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateTerminationTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW = 12;
-
-	/**
-	 * The feature id for the '<em><b>Internal Transition</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW__INTERNAL_TRANSITION = TRANSITION_VIEW__INTERNAL_TRANSITION;
+	int IMMEDIATE_TERMINATION_TRANSITION_VIEW = 13;
 
 	/**
 	 * The feature id for the '<em><b>Internal Immediate Termination Transition</b></em>' reference.
@@ -1048,7 +1094,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW__INTERNAL_IMMEDIATE_TERMINATION_TRANSITION = TRANSITION_VIEW_FEATURE_COUNT + 0;
+	int IMMEDIATE_TERMINATION_TRANSITION_VIEW__INTERNAL_IMMEDIATE_TERMINATION_TRANSITION = 0;
 
 	/**
 	 * The number of structural features of the '<em>Immediate Termination Transition View</em>' class.
@@ -1057,61 +1103,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW_FEATURE_COUNT = TRANSITION_VIEW_FEATURE_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Get Action</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___GET_ACTION = TRANSITION_VIEW___GET_ACTION;
-
-	/**
-	 * The operation id for the '<em>Set Action</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___SET_ACTION__STRING = TRANSITION_VIEW___SET_ACTION__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Trigger</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___GET_TRIGGER = TRANSITION_VIEW___GET_TRIGGER;
-
-	/**
-	 * The operation id for the '<em>Set Trigger</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___SET_TRIGGER__STRING = TRANSITION_VIEW___SET_TRIGGER__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Priority</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___GET_PRIORITY = TRANSITION_VIEW___GET_PRIORITY;
-
-	/**
-	 * The operation id for the '<em>Set Priority</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW___SET_PRIORITY__INT = TRANSITION_VIEW___SET_PRIORITY__INT;
+	int IMMEDIATE_TERMINATION_TRANSITION_VIEW_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Immediate Termination Transition View</em>' class.
@@ -1120,7 +1112,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW_OPERATION_COUNT = TRANSITION_VIEW_OPERATION_COUNT + 0;
+	int IMMEDIATE_TERMINATION_TRANSITION_VIEW_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.WeakAbortTransitionViewImpl <em>Weak Abort Transition View</em>}' class.
@@ -1130,16 +1122,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getWeakAbortTransitionView()
 	 * @generated
 	 */
-	int WEAK_ABORT_TRANSITION_VIEW = 13;
-
-	/**
-	 * The feature id for the '<em><b>Internal Transition</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW__INTERNAL_TRANSITION = TRANSITION_VIEW__INTERNAL_TRANSITION;
+	int WEAK_ABORT_TRANSITION_VIEW = 14;
 
 	/**
 	 * The feature id for the '<em><b>Internal Weak Abort Transition</b></em>' reference.
@@ -1148,7 +1131,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEAK_ABORT_TRANSITION_VIEW__INTERNAL_WEAK_ABORT_TRANSITION = TRANSITION_VIEW_FEATURE_COUNT + 0;
+	int WEAK_ABORT_TRANSITION_VIEW__INTERNAL_WEAK_ABORT_TRANSITION = 0;
 
 	/**
 	 * The number of structural features of the '<em>Weak Abort Transition View</em>' class.
@@ -1157,61 +1140,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEAK_ABORT_TRANSITION_VIEW_FEATURE_COUNT = TRANSITION_VIEW_FEATURE_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Get Action</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW___GET_ACTION = TRANSITION_VIEW___GET_ACTION;
-
-	/**
-	 * The operation id for the '<em>Set Action</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW___SET_ACTION__STRING = TRANSITION_VIEW___SET_ACTION__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Trigger</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW___GET_TRIGGER = TRANSITION_VIEW___GET_TRIGGER;
-
-	/**
-	 * The operation id for the '<em>Set Trigger</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW___SET_TRIGGER__STRING = TRANSITION_VIEW___SET_TRIGGER__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Priority</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW___GET_PRIORITY = TRANSITION_VIEW___GET_PRIORITY;
-
-	/**
-	 * The operation id for the '<em>Set Priority</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TRANSITION_VIEW___SET_PRIORITY__INT = TRANSITION_VIEW___SET_PRIORITY__INT;
+	int WEAK_ABORT_TRANSITION_VIEW_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Weak Abort Transition View</em>' class.
@@ -1220,7 +1149,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEAK_ABORT_TRANSITION_VIEW_OPERATION_COUNT = TRANSITION_VIEW_OPERATION_COUNT + 0;
+	int WEAK_ABORT_TRANSITION_VIEW_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.StrongAbortTransitionViewImpl <em>Strong Abort Transition View</em>}' class.
@@ -1230,16 +1159,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getStrongAbortTransitionView()
 	 * @generated
 	 */
-	int STRONG_ABORT_TRANSITION_VIEW = 14;
-
-	/**
-	 * The feature id for the '<em><b>Internal Transition</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW__INTERNAL_TRANSITION = TRANSITION_VIEW__INTERNAL_TRANSITION;
+	int STRONG_ABORT_TRANSITION_VIEW = 15;
 
 	/**
 	 * The feature id for the '<em><b>Internal Strong Abort Transition</b></em>' reference.
@@ -1248,7 +1168,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_TRANSITION_VIEW__INTERNAL_STRONG_ABORT_TRANSITION = TRANSITION_VIEW_FEATURE_COUNT + 0;
+	int STRONG_ABORT_TRANSITION_VIEW__INTERNAL_STRONG_ABORT_TRANSITION = 0;
 
 	/**
 	 * The number of structural features of the '<em>Strong Abort Transition View</em>' class.
@@ -1257,61 +1177,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_TRANSITION_VIEW_FEATURE_COUNT = TRANSITION_VIEW_FEATURE_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Get Action</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___GET_ACTION = TRANSITION_VIEW___GET_ACTION;
-
-	/**
-	 * The operation id for the '<em>Set Action</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___SET_ACTION__STRING = TRANSITION_VIEW___SET_ACTION__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Trigger</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___GET_TRIGGER = TRANSITION_VIEW___GET_TRIGGER;
-
-	/**
-	 * The operation id for the '<em>Set Trigger</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___SET_TRIGGER__STRING = TRANSITION_VIEW___SET_TRIGGER__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Priority</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___GET_PRIORITY = TRANSITION_VIEW___GET_PRIORITY;
-
-	/**
-	 * The operation id for the '<em>Set Priority</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___SET_PRIORITY__INT = TRANSITION_VIEW___SET_PRIORITY__INT;
+	int STRONG_ABORT_TRANSITION_VIEW_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Strong Abort Transition View</em>' class.
@@ -1320,7 +1186,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_TRANSITION_VIEW_OPERATION_COUNT = TRANSITION_VIEW_OPERATION_COUNT + 0;
+	int STRONG_ABORT_TRANSITION_VIEW_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.WeakAbortTerminationTransitionViewImpl <em>Weak Abort Termination Transition View</em>}' class.
@@ -1330,16 +1196,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getWeakAbortTerminationTransitionView()
 	 * @generated
 	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW = 15;
-
-	/**
-	 * The feature id for the '<em><b>Internal Transition</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW__INTERNAL_TRANSITION = TRANSITION_VIEW__INTERNAL_TRANSITION;
+	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW = 16;
 
 	/**
 	 * The feature id for the '<em><b>Internal Weak Abort Termination Transition</b></em>' reference.
@@ -1348,7 +1205,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW__INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION = TRANSITION_VIEW_FEATURE_COUNT + 0;
+	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW__INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION = 0;
 
 	/**
 	 * The number of structural features of the '<em>Weak Abort Termination Transition View</em>' class.
@@ -1357,61 +1214,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW_FEATURE_COUNT = TRANSITION_VIEW_FEATURE_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Get Action</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___GET_ACTION = TRANSITION_VIEW___GET_ACTION;
-
-	/**
-	 * The operation id for the '<em>Set Action</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___SET_ACTION__STRING = TRANSITION_VIEW___SET_ACTION__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Trigger</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___GET_TRIGGER = TRANSITION_VIEW___GET_TRIGGER;
-
-	/**
-	 * The operation id for the '<em>Set Trigger</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___SET_TRIGGER__STRING = TRANSITION_VIEW___SET_TRIGGER__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Priority</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___GET_PRIORITY = TRANSITION_VIEW___GET_PRIORITY;
-
-	/**
-	 * The operation id for the '<em>Set Priority</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW___SET_PRIORITY__INT = TRANSITION_VIEW___SET_PRIORITY__INT;
+	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Weak Abort Termination Transition View</em>' class.
@@ -1420,7 +1223,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW_OPERATION_COUNT = TRANSITION_VIEW_OPERATION_COUNT + 0;
+	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.DefferedTransitionViewImpl <em>Deffered Transition View</em>}' class.
@@ -1430,7 +1233,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDefferedTransitionView()
 	 * @generated
 	 */
-	int DEFFERED_TRANSITION_VIEW = 16;
+	int DEFFERED_TRANSITION_VIEW = 17;
 
 	/**
 	 * The feature id for the '<em><b>Internal Deffered Transition</b></em>' reference.
@@ -1467,7 +1270,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSCChartView()
 	 * @generated
 	 */
-	int SC_CHART_VIEW = 17;
+	int SC_CHART_VIEW = 18;
 
 	/**
 	 * The feature id for the '<em><b>Internal SC Chart</b></em>' reference.
@@ -1504,7 +1307,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getRootStateDeclarationView()
 	 * @generated
 	 */
-	int ROOT_STATE_DECLARATION_VIEW = 18;
+	int ROOT_STATE_DECLARATION_VIEW = 19;
 
 	/**
 	 * The feature id for the '<em><b>Internal Root State Declaration</b></em>' reference.
@@ -1595,7 +1398,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuperStateDeclarationView()
 	 * @generated
 	 */
-	int SUPER_STATE_DECLARATION_VIEW = 19;
+	int SUPER_STATE_DECLARATION_VIEW = 20;
 
 	/**
 	 * The feature id for the '<em><b>Internal Super State Declaration</b></em>' reference.
@@ -1822,6 +1625,27 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getRegionView__SetUuid__String();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.DataFlowRegionView <em>Data Flow Region View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Data Flow Region View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.DataFlowRegionView
+	 * @generated
+	 */
+	EClass getDataFlowRegionView();
+
+	/**
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.DataFlowRegionView#getInternalDataFlowRegion <em>Internal Data Flow Region</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Internal Data Flow Region</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.DataFlowRegionView#getInternalDataFlowRegion()
+	 * @see #getDataFlowRegionView()
+	 * @generated
+	 */
+	EReference getDataFlowRegionView_InternalDataFlowRegion();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView <em>Super State View</em>}'.
@@ -2193,44 +2017,44 @@ public interface ViewsPackage extends EPackage {
 	EReference getTransitionView_InternalTransition();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getAction() <em>Get Action</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getCondition() <em>Get Condition</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Action</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getAction()
+	 * @return the meta object for the '<em>Get Condition</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getCondition()
 	 * @generated
 	 */
-	EOperation getTransitionView__GetAction();
+	EOperation getTransitionView__GetCondition();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setAction(java.lang.String) <em>Set Action</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setCondition(java.lang.String) <em>Set Condition</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Action</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setAction(java.lang.String)
+	 * @return the meta object for the '<em>Set Condition</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setCondition(java.lang.String)
 	 * @generated
 	 */
-	EOperation getTransitionView__SetAction__String();
+	EOperation getTransitionView__SetCondition__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getTrigger() <em>Get Trigger</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getEffect() <em>Get Effect</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Trigger</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getTrigger()
+	 * @return the meta object for the '<em>Get Effect</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getEffect()
 	 * @generated
 	 */
-	EOperation getTransitionView__GetTrigger();
+	EOperation getTransitionView__GetEffect();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setTrigger(java.lang.String) <em>Set Trigger</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setEffect(java.lang.String) <em>Set Effect</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Trigger</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setTrigger(java.lang.String)
+	 * @return the meta object for the '<em>Set Effect</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setEffect(java.lang.String)
 	 * @generated
 	 */
-	EOperation getTransitionView__SetTrigger__String();
+	EOperation getTransitionView__SetEffect__String();
 
 	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getPriority() <em>Get Priority</em>}' operation.
@@ -2243,14 +2067,14 @@ public interface ViewsPackage extends EPackage {
 	EOperation getTransitionView__GetPriority();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setPriority(int) <em>Set Priority</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setPriority(int)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setPriority(java.lang.String)
 	 * @generated
 	 */
-	EOperation getTransitionView__SetPriority__int();
+	EOperation getTransitionView__SetPriority__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTransitionView <em>Immediate Transition View</em>}'.
@@ -2292,6 +2116,26 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getImmediateTransitionView__SetLabel__String();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTransitionView#getPriority() <em>Get Priority</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Priority</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTransitionView#getPriority()
+	 * @generated
+	 */
+	EOperation getImmediateTransitionView__GetPriority();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Priority</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTransitionView#setPriority(java.lang.String)
+	 * @generated
+	 */
+	EOperation getImmediateTransitionView__SetPriority__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTerminationTransitionView <em>Immediate Termination Transition View</em>}'.
@@ -2717,6 +2561,24 @@ public interface ViewsPackage extends EPackage {
 		EOperation REGION_VIEW___SET_UUID__STRING = eINSTANCE.getRegionView__SetUuid__String();
 
 		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.DataFlowRegionViewImpl <em>Data Flow Region View</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.DataFlowRegionViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDataFlowRegionView()
+		 * @generated
+		 */
+		EClass DATA_FLOW_REGION_VIEW = eINSTANCE.getDataFlowRegionView();
+
+		/**
+		 * The meta object literal for the '<em><b>Internal Data Flow Region</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DATA_FLOW_REGION_VIEW__INTERNAL_DATA_FLOW_REGION = eINSTANCE.getDataFlowRegionView_InternalDataFlowRegion();
+
+		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateViewImpl <em>Super State View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3023,36 +2885,36 @@ public interface ViewsPackage extends EPackage {
 		EReference TRANSITION_VIEW__INTERNAL_TRANSITION = eINSTANCE.getTransitionView_InternalTransition();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Action</b></em>' operation.
+		 * The meta object literal for the '<em><b>Get Condition</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TRANSITION_VIEW___GET_ACTION = eINSTANCE.getTransitionView__GetAction();
+		EOperation TRANSITION_VIEW___GET_CONDITION = eINSTANCE.getTransitionView__GetCondition();
 
 		/**
-		 * The meta object literal for the '<em><b>Set Action</b></em>' operation.
+		 * The meta object literal for the '<em><b>Set Condition</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TRANSITION_VIEW___SET_ACTION__STRING = eINSTANCE.getTransitionView__SetAction__String();
+		EOperation TRANSITION_VIEW___SET_CONDITION__STRING = eINSTANCE.getTransitionView__SetCondition__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Trigger</b></em>' operation.
+		 * The meta object literal for the '<em><b>Get Effect</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TRANSITION_VIEW___GET_TRIGGER = eINSTANCE.getTransitionView__GetTrigger();
+		EOperation TRANSITION_VIEW___GET_EFFECT = eINSTANCE.getTransitionView__GetEffect();
 
 		/**
-		 * The meta object literal for the '<em><b>Set Trigger</b></em>' operation.
+		 * The meta object literal for the '<em><b>Set Effect</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TRANSITION_VIEW___SET_TRIGGER__STRING = eINSTANCE.getTransitionView__SetTrigger__String();
+		EOperation TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getTransitionView__SetEffect__String();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
@@ -3068,7 +2930,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TRANSITION_VIEW___SET_PRIORITY__INT = eINSTANCE.getTransitionView__SetPriority__int();
+		EOperation TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getTransitionView__SetPriority__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateTransitionViewImpl <em>Immediate Transition View</em>}' class.
@@ -3103,6 +2965,22 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation IMMEDIATE_TRANSITION_VIEW___SET_LABEL__STRING = eINSTANCE.getImmediateTransitionView__SetLabel__String();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation IMMEDIATE_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getImmediateTransitionView__GetPriority();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation IMMEDIATE_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getImmediateTransitionView__SetPriority__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateTerminationTransitionViewImpl <em>Immediate Termination Transition View</em>}' class.

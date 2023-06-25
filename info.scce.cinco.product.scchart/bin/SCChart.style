@@ -299,7 +299,7 @@ edgeStyle strongAbortArrow {
 	}
 }
 
-edgeStyle defferedArrow {
+edgeStyle deferredArrow {
 	appearance default
 	decorator {
 		location (0.95) // at the end of the edge

@@ -4,6 +4,8 @@ package info.scce.cinco.product.scchart.mglid.scchart.views;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalWeakAbortTerminationTransition;
 
+import org.eclipse.emf.ecore.EObject;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Weak Abort Termination Transition View</b></em>'.
@@ -20,7 +22,7 @@ import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalWeakAbortT
  * @model
  * @generated
  */
-public interface WeakAbortTerminationTransitionView extends TransitionView {
+public interface WeakAbortTerminationTransitionView extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Internal Weak Abort Termination Transition</b></em>' reference.
 	 * <!-- begin-user-doc -->

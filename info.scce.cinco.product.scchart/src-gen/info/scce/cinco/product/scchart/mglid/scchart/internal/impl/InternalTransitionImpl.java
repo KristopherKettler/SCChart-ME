@@ -21,8 +21,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTransitionImpl#getAction <em>Action</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTransitionImpl#getTrigger <em>Trigger</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTransitionImpl#getCondition <em>Condition</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTransitionImpl#getEffect <em>Effect</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTransitionImpl#getPriority <em>Priority</em>}</li>
  * </ul>
  *
@@ -30,44 +30,44 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  */
 public class InternalTransitionImpl extends InternalEdgeImpl implements InternalTransition {
 	/**
-	 * The default value of the '{@link #getAction() <em>Action</em>}' attribute.
+	 * The default value of the '{@link #getCondition() <em>Condition</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAction()
+	 * @see #getCondition()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String ACTION_EDEFAULT = null;
+	protected static final String CONDITION_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getAction() <em>Action</em>}' attribute.
+	 * The cached value of the '{@link #getCondition() <em>Condition</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAction()
+	 * @see #getCondition()
 	 * @generated
 	 * @ordered
 	 */
-	protected String action = ACTION_EDEFAULT;
+	protected String condition = CONDITION_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getTrigger() <em>Trigger</em>}' attribute.
+	 * The default value of the '{@link #getEffect() <em>Effect</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTrigger()
+	 * @see #getEffect()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String TRIGGER_EDEFAULT = null;
+	protected static final String EFFECT_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getTrigger() <em>Trigger</em>}' attribute.
+	 * The cached value of the '{@link #getEffect() <em>Effect</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTrigger()
+	 * @see #getEffect()
 	 * @generated
 	 * @ordered
 	 */
-	protected String trigger = TRIGGER_EDEFAULT;
+	protected String effect = EFFECT_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getPriority() <em>Priority</em>}' attribute.
@@ -77,7 +77,7 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int PRIORITY_EDEFAULT = 0;
+	protected static final String PRIORITY_EDEFAULT = "0";
 
 	/**
 	 * The cached value of the '{@link #getPriority() <em>Priority</em>}' attribute.
@@ -87,7 +87,7 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	 * @generated
 	 * @ordered
 	 */
-	protected int priority = PRIORITY_EDEFAULT;
+	protected String priority = PRIORITY_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -114,8 +114,8 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	 * @generated
 	 */
 	@Override
-	public String getAction() {
-		return action;
+	public String getCondition() {
+		return condition;
 	}
 
 	/**
@@ -124,11 +124,11 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	 * @generated
 	 */
 	@Override
-	public void setAction(String newAction) {
-		String oldAction = action;
-		action = newAction;
+	public void setCondition(String newCondition) {
+		String oldCondition = condition;
+		condition = newCondition;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_TRANSITION__ACTION, oldAction, action));
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_TRANSITION__CONDITION, oldCondition, condition));
 	}
 
 	/**
@@ -137,8 +137,8 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	 * @generated
 	 */
 	@Override
-	public String getTrigger() {
-		return trigger;
+	public String getEffect() {
+		return effect;
 	}
 
 	/**
@@ -147,11 +147,11 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	 * @generated
 	 */
 	@Override
-	public void setTrigger(String newTrigger) {
-		String oldTrigger = trigger;
-		trigger = newTrigger;
+	public void setEffect(String newEffect) {
+		String oldEffect = effect;
+		effect = newEffect;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_TRANSITION__TRIGGER, oldTrigger, trigger));
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_TRANSITION__EFFECT, oldEffect, effect));
 	}
 
 	/**
@@ -160,7 +160,7 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	 * @generated
 	 */
 	@Override
-	public int getPriority() {
+	public String getPriority() {
 		return priority;
 	}
 
@@ -170,8 +170,8 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	 * @generated
 	 */
 	@Override
-	public void setPriority(int newPriority) {
-		int oldPriority = priority;
+	public void setPriority(String newPriority) {
+		String oldPriority = priority;
 		priority = newPriority;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_TRANSITION__PRIORITY, oldPriority, priority));
@@ -185,10 +185,10 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_TRANSITION__ACTION:
-				return getAction();
-			case InternalPackage.INTERNAL_TRANSITION__TRIGGER:
-				return getTrigger();
+			case InternalPackage.INTERNAL_TRANSITION__CONDITION:
+				return getCondition();
+			case InternalPackage.INTERNAL_TRANSITION__EFFECT:
+				return getEffect();
 			case InternalPackage.INTERNAL_TRANSITION__PRIORITY:
 				return getPriority();
 		}
@@ -203,14 +203,14 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_TRANSITION__ACTION:
-				setAction((String)newValue);
+			case InternalPackage.INTERNAL_TRANSITION__CONDITION:
+				setCondition((String)newValue);
 				return;
-			case InternalPackage.INTERNAL_TRANSITION__TRIGGER:
-				setTrigger((String)newValue);
+			case InternalPackage.INTERNAL_TRANSITION__EFFECT:
+				setEffect((String)newValue);
 				return;
 			case InternalPackage.INTERNAL_TRANSITION__PRIORITY:
-				setPriority((Integer)newValue);
+				setPriority((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -224,11 +224,11 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_TRANSITION__ACTION:
-				setAction(ACTION_EDEFAULT);
+			case InternalPackage.INTERNAL_TRANSITION__CONDITION:
+				setCondition(CONDITION_EDEFAULT);
 				return;
-			case InternalPackage.INTERNAL_TRANSITION__TRIGGER:
-				setTrigger(TRIGGER_EDEFAULT);
+			case InternalPackage.INTERNAL_TRANSITION__EFFECT:
+				setEffect(EFFECT_EDEFAULT);
 				return;
 			case InternalPackage.INTERNAL_TRANSITION__PRIORITY:
 				setPriority(PRIORITY_EDEFAULT);
@@ -245,12 +245,12 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_TRANSITION__ACTION:
-				return ACTION_EDEFAULT == null ? action != null : !ACTION_EDEFAULT.equals(action);
-			case InternalPackage.INTERNAL_TRANSITION__TRIGGER:
-				return TRIGGER_EDEFAULT == null ? trigger != null : !TRIGGER_EDEFAULT.equals(trigger);
+			case InternalPackage.INTERNAL_TRANSITION__CONDITION:
+				return CONDITION_EDEFAULT == null ? condition != null : !CONDITION_EDEFAULT.equals(condition);
+			case InternalPackage.INTERNAL_TRANSITION__EFFECT:
+				return EFFECT_EDEFAULT == null ? effect != null : !EFFECT_EDEFAULT.equals(effect);
 			case InternalPackage.INTERNAL_TRANSITION__PRIORITY:
-				return priority != PRIORITY_EDEFAULT;
+				return PRIORITY_EDEFAULT == null ? priority != null : !PRIORITY_EDEFAULT.equals(priority);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -265,11 +265,11 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (Action: ");
-		result.append(action);
-		result.append(", Trigger: ");
-		result.append(trigger);
-		result.append(", Priority: ");
+		result.append(" (condition: ");
+		result.append(condition);
+		result.append(", effect: ");
+		result.append(effect);
+		result.append(", priority: ");
 		result.append(priority);
 		result.append(')');
 		return result.toString();

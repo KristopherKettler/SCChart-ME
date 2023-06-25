@@ -76,6 +76,10 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 				return createRegionViewAdapter();
 			}
 			@Override
+			public Adapter caseDataFlowRegionView(DataFlowRegionView object) {
+				return createDataFlowRegionViewAdapter();
+			}
+			@Override
 			public Adapter caseSuperStateView(SuperStateView object) {
 				return createSuperStateViewAdapter();
 			}
@@ -192,6 +196,20 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createRegionViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.DataFlowRegionView <em>Data Flow Region View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.DataFlowRegionView
+	 * @generated
+	 */
+	public Adapter createDataFlowRegionViewAdapter() {
 		return null;
 	}
 

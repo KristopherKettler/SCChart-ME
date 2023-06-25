@@ -108,8 +108,8 @@ public class TransitionViewImpl extends EObjectImpl implements TransitionView {
 	 * @generated
 	 */
 	@Override
-	public String getAction() {
-		return getInternalTransition().getAction();
+	public String getCondition() {
+		return getInternalTransition().getCondition();
 	}
 
 	/**
@@ -118,9 +118,9 @@ public class TransitionViewImpl extends EObjectImpl implements TransitionView {
 	 * @generated
 	 */
 	@Override
-	public void setAction(final String _arg) {
-		getInternalTransition().getElement().transact("Set Action", () -> {
-			getInternalTransition().setAction(_arg);
+	public void setCondition(final String _arg) {
+		getInternalTransition().getElement().transact("Set Condition", () -> {
+			getInternalTransition().setCondition(_arg);
 		});
 		
 	}
@@ -131,8 +131,8 @@ public class TransitionViewImpl extends EObjectImpl implements TransitionView {
 	 * @generated
 	 */
 	@Override
-	public String getTrigger() {
-		return getInternalTransition().getTrigger();
+	public String getEffect() {
+		return getInternalTransition().getEffect();
 	}
 
 	/**
@@ -141,9 +141,9 @@ public class TransitionViewImpl extends EObjectImpl implements TransitionView {
 	 * @generated
 	 */
 	@Override
-	public void setTrigger(final String _arg) {
-		getInternalTransition().getElement().transact("Set Trigger", () -> {
-			getInternalTransition().setTrigger(_arg);
+	public void setEffect(final String _arg) {
+		getInternalTransition().getElement().transact("Set Effect", () -> {
+			getInternalTransition().setEffect(_arg);
 		});
 		
 	}
@@ -154,7 +154,7 @@ public class TransitionViewImpl extends EObjectImpl implements TransitionView {
 	 * @generated
 	 */
 	@Override
-	public int getPriority() {
+	public String getPriority() {
 		return getInternalTransition().getPriority();
 	}
 
@@ -164,7 +164,7 @@ public class TransitionViewImpl extends EObjectImpl implements TransitionView {
 	 * @generated
 	 */
 	@Override
-	public void setPriority(final int _arg) {
+	public void setPriority(final String _arg) {
 		getInternalTransition().getElement().transact("Set Priority", () -> {
 			getInternalTransition().setPriority(_arg);
 		});
@@ -238,20 +238,20 @@ public class TransitionViewImpl extends EObjectImpl implements TransitionView {
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case ViewsPackage.TRANSITION_VIEW___GET_ACTION:
-				return getAction();
-			case ViewsPackage.TRANSITION_VIEW___SET_ACTION__STRING:
-				setAction((String)arguments.get(0));
+			case ViewsPackage.TRANSITION_VIEW___GET_CONDITION:
+				return getCondition();
+			case ViewsPackage.TRANSITION_VIEW___SET_CONDITION__STRING:
+				setCondition((String)arguments.get(0));
 				return null;
-			case ViewsPackage.TRANSITION_VIEW___GET_TRIGGER:
-				return getTrigger();
-			case ViewsPackage.TRANSITION_VIEW___SET_TRIGGER__STRING:
-				setTrigger((String)arguments.get(0));
+			case ViewsPackage.TRANSITION_VIEW___GET_EFFECT:
+				return getEffect();
+			case ViewsPackage.TRANSITION_VIEW___SET_EFFECT__STRING:
+				setEffect((String)arguments.get(0));
 				return null;
 			case ViewsPackage.TRANSITION_VIEW___GET_PRIORITY:
 				return getPriority();
-			case ViewsPackage.TRANSITION_VIEW___SET_PRIORITY__INT:
-				setPriority((Integer)arguments.get(0));
+			case ViewsPackage.TRANSITION_VIEW___SET_PRIORITY__STRING:
+				setPriority((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

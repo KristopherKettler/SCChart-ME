@@ -97,6 +97,18 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ScchartPackage.DATA_FLOW_REGION: {
+				DataFlowRegion dataFlowRegion = (DataFlowRegion)theEObject;
+				T result = caseDataFlowRegion(dataFlowRegion);
+				if (result == null) result = caseRegion(dataFlowRegion);
+				if (result == null) result = caseContainer(dataFlowRegion);
+				if (result == null) result = caseModelElementContainer(dataFlowRegion);
+				if (result == null) result = caseNode(dataFlowRegion);
+				if (result == null) result = caseModelElement(dataFlowRegion);
+				if (result == null) result = caseIdentifiableElement(dataFlowRegion);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ScchartPackage.SUPER_STATE: {
 				SuperState superState = (SuperState)theEObject;
 				T result = caseSuperState(superState);
@@ -188,7 +200,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 			case ScchartPackage.IMMEDIATE_TRANSITION: {
 				ImmediateTransition immediateTransition = (ImmediateTransition)theEObject;
 				T result = caseImmediateTransition(immediateTransition);
-				if (result == null) result = caseTransition(immediateTransition);
 				if (result == null) result = caseEdge(immediateTransition);
 				if (result == null) result = caseModelElement(immediateTransition);
 				if (result == null) result = caseIdentifiableElement(immediateTransition);
@@ -198,7 +209,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 			case ScchartPackage.IMMEDIATE_TERMINATION_TRANSITION: {
 				ImmediateTerminationTransition immediateTerminationTransition = (ImmediateTerminationTransition)theEObject;
 				T result = caseImmediateTerminationTransition(immediateTerminationTransition);
-				if (result == null) result = caseTransition(immediateTerminationTransition);
 				if (result == null) result = caseEdge(immediateTerminationTransition);
 				if (result == null) result = caseModelElement(immediateTerminationTransition);
 				if (result == null) result = caseIdentifiableElement(immediateTerminationTransition);
@@ -208,7 +218,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 			case ScchartPackage.WEAK_ABORT_TRANSITION: {
 				WeakAbortTransition weakAbortTransition = (WeakAbortTransition)theEObject;
 				T result = caseWeakAbortTransition(weakAbortTransition);
-				if (result == null) result = caseTransition(weakAbortTransition);
 				if (result == null) result = caseEdge(weakAbortTransition);
 				if (result == null) result = caseModelElement(weakAbortTransition);
 				if (result == null) result = caseIdentifiableElement(weakAbortTransition);
@@ -218,7 +227,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 			case ScchartPackage.STRONG_ABORT_TRANSITION: {
 				StrongAbortTransition strongAbortTransition = (StrongAbortTransition)theEObject;
 				T result = caseStrongAbortTransition(strongAbortTransition);
-				if (result == null) result = caseTransition(strongAbortTransition);
 				if (result == null) result = caseEdge(strongAbortTransition);
 				if (result == null) result = caseModelElement(strongAbortTransition);
 				if (result == null) result = caseIdentifiableElement(strongAbortTransition);
@@ -228,7 +236,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION: {
 				WeakAbortTerminationTransition weakAbortTerminationTransition = (WeakAbortTerminationTransition)theEObject;
 				T result = caseWeakAbortTerminationTransition(weakAbortTerminationTransition);
-				if (result == null) result = caseTransition(weakAbortTerminationTransition);
 				if (result == null) result = caseEdge(weakAbortTerminationTransition);
 				if (result == null) result = caseModelElement(weakAbortTerminationTransition);
 				if (result == null) result = caseIdentifiableElement(weakAbortTerminationTransition);
@@ -300,6 +307,21 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRegion(Region object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Data Flow Region</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Data Flow Region</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDataFlowRegion(DataFlowRegion object) {
 		return null;
 	}
 

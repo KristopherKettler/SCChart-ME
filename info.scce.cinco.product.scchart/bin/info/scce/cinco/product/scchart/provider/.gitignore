@@ -19,3 +19,5 @@
 /.RootStateDeclarationTypeProvider.xtendbin
 /RootStateDeclarationInputOutputProvider.java
 /RootStateDeclarationTypeProvider.java
+/.SimplesStateNameTest.java._trace
+/.TransitionPriorityProvider.java._trace

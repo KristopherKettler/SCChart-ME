@@ -40,6 +40,15 @@ public interface ViewsFactory extends EFactory {
 	RegionView createRegionView();
 
 	/**
+	 * Returns a new object of class '<em>Data Flow Region View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Data Flow Region View</em>'.
+	 * @generated
+	 */
+	DataFlowRegionView createDataFlowRegionView();
+
+	/**
 	 * Returns a new object of class '<em>Super State View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

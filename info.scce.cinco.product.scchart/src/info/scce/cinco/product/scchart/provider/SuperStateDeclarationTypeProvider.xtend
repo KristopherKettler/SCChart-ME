@@ -7,6 +7,7 @@ import java.util.Map
 class SuperStateDeclarationTypeProvider extends CincoValuesProvider<SuperStateDeclaration, String> {
 	override Map<String, String> getPossibleValues(SuperStateDeclaration type) {
 		return #{
+			"select type" -> "select type",
 			"String" -> "String",
 			"bool" -> "bool",
 			"int" -> "int",

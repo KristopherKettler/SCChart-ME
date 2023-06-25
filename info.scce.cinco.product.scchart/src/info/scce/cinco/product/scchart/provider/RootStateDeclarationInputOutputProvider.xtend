@@ -8,6 +8,7 @@ class RootStateDeclarationInputOutputProvider extends CincoValuesProvider<RootSt
 
 	override Map<String, String> getPossibleValues(RootStateDeclaration inputOutput) {
 		return #{
+			"select type" -> "select type",
 			"const" -> "constant",
 			"input" -> "input",
 			"output" -> "output",

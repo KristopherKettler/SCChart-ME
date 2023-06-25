@@ -58,6 +58,7 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 		switch (eClass.getClassifierID()) {
 			case InternalPackage.INTERNAL_ROOT_STATE: return createInternalRootState();
 			case InternalPackage.INTERNAL_REGION: return createInternalRegion();
+			case InternalPackage.INTERNAL_DATA_FLOW_REGION: return createInternalDataFlowRegion();
 			case InternalPackage.INTERNAL_SUPER_STATE: return createInternalSuperState();
 			case InternalPackage.INTERNAL_INITILAL_SUPER_STATE: return createInternalInitilalSuperState();
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION_NODE: return createInternalRootStateDeclarationNode();
@@ -101,6 +102,17 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalRegion createInternalRegion() {
 		InternalRegionImpl internalRegion = new InternalRegionImpl();
 		return internalRegion;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalDataFlowRegion createInternalDataFlowRegion() {
+		InternalDataFlowRegionImpl internalDataFlowRegion = new InternalDataFlowRegionImpl();
+		return internalDataFlowRegion;
 	}
 
 	/**

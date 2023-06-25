@@ -21,11 +21,18 @@ container RootState {
 @event("info.scce.cinco.product.scchart.events.RegionEvent")
 container Region {
 	style regionStyle ("${RegionID}")
-	containableElements(SuperState,InitilalSuperState,InitialState,SimpleState,FinalState,Connector)
+	containableElements(SuperState,InitilalSuperState[0,1],InitialState[0,1],SimpleState,FinalState,Connector)
 	attr EString as label := "<insert name>"
 	attr EString as RegionID := "<insert name>"
 	@propertiesViewHidden
 	attr EString as uuid
+}
+
+@palette("Dataflow")
+//@event("info.scce.cinco.product.scchart.events.RegionEvent")
+container DataFlowRegion extends Region {
+	style regionStyle ("${RegionID}")
+	containableElements(SuperState,InitilalSuperState[0,1],InitialState[0,1],SimpleState,FinalState,Connector)
 }
 
 @palette("SuperStates")
@@ -70,6 +77,7 @@ node SimpleState {
 	style simpleStateStyle("${label}")
 	incomingEdges (*)
 	outgoingEdges (*)
+	
 	attr EString as label := "<insert name>"
 }	
 
@@ -93,50 +101,67 @@ node Connector {
 	outgoingEdges (*)
 }
 
+/*Transitions */
+
+/*same as auto and delayed transition */
 edge Transition {
 	style transitionStyle("asasa")
-	attr EInt as Priority
-	attr EString as Trigger
-	attr EString as Action
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.TransitionPriorityProvider")
+	attr EString as priority := '0'
+	attr EString as condition
+	attr EString as effect
+	attr EString as delay 
 }
 
 edge ImmediateTransition {
 	style immediateTransitionStyle("${label}")
+	attr EString as priority := '0'
 	attr EString as label := "wqwq"
-}	
+}
 
-edge ImmediateTerminationTransition {
+edge TerminationTransition {
 	style immediateTerminatArrow
 }	
+
+edge ConditionalTerminationTransition {
+	style weakAbortTerminatArrow
+}
 
 edge WeakAbortTransition {
 	style weakAbortArrow
 }
 
+/* immediate terminate superstate */
 edge StrongAbortTransition {
 	style strongAbortArrow
 }
 
-edge WeakAbortTerminationTransition {
-	style weakAbortTerminatArrow
+/* preempt all immediate behavior in target state */
+edge DeferredTransition {
+	style deferredArrow
 }
 
-edge DefferedTransition {
-	style defferedArrow
+edge ShallowHistoryTransition {
+	style strongAbortArrow
 }
+
+edge HistoryTransition {
+	style strongAbortArrow
+}
+
 
 @label(name)
 type RootStateDeclaration {
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationInputOutputProvider")
-	attr EString as InputOutput
+	attr EString as InputOutput := "select type"
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationTypeProvider")
-	attr EString as declarationType
+	attr EString as declarationType := "select type"
 	attr EString as name
 }
 
 @label(name)
 type SuperStateDeclaration {
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
-	attr EString as declarationType
+	attr EString as declarationType := "select type"
 	attr EString as name
 }

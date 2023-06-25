@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class StrongAbortTransitionViewImpl extends TransitionViewImpl implements StrongAbortTransitionView {
+public class StrongAbortTransitionViewImpl extends EObjectImpl implements StrongAbortTransitionView {
 	/**
 	 * The cached value of the '{@link #getInternalStrongAbortTransition() <em>Internal Strong Abort Transition</em>}' reference.
 	 * <!-- begin-user-doc -->

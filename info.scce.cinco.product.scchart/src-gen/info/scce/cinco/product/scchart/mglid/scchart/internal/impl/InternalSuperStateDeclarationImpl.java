@@ -36,7 +36,7 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DECLARATION_TYPE_EDEFAULT = null;
+	protected static final String DECLARATION_TYPE_EDEFAULT = "select type";
 
 	/**
 	 * The cached value of the '{@link #getDeclarationType() <em>Declaration Type</em>}' attribute.

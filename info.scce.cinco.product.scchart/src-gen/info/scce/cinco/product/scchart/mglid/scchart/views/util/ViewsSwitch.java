@@ -78,6 +78,13 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ViewsPackage.DATA_FLOW_REGION_VIEW: {
+				DataFlowRegionView dataFlowRegionView = (DataFlowRegionView)theEObject;
+				T result = caseDataFlowRegionView(dataFlowRegionView);
+				if (result == null) result = caseRegionView(dataFlowRegionView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ViewsPackage.SUPER_STATE_VIEW: {
 				SuperStateView superStateView = (SuperStateView)theEObject;
 				T result = caseSuperStateView(superStateView);
@@ -138,35 +145,30 @@ public class ViewsSwitch<T> extends Switch<T> {
 			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW: {
 				ImmediateTransitionView immediateTransitionView = (ImmediateTransitionView)theEObject;
 				T result = caseImmediateTransitionView(immediateTransitionView);
-				if (result == null) result = caseTransitionView(immediateTransitionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ViewsPackage.IMMEDIATE_TERMINATION_TRANSITION_VIEW: {
 				ImmediateTerminationTransitionView immediateTerminationTransitionView = (ImmediateTerminationTransitionView)theEObject;
 				T result = caseImmediateTerminationTransitionView(immediateTerminationTransitionView);
-				if (result == null) result = caseTransitionView(immediateTerminationTransitionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ViewsPackage.WEAK_ABORT_TRANSITION_VIEW: {
 				WeakAbortTransitionView weakAbortTransitionView = (WeakAbortTransitionView)theEObject;
 				T result = caseWeakAbortTransitionView(weakAbortTransitionView);
-				if (result == null) result = caseTransitionView(weakAbortTransitionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW: {
 				StrongAbortTransitionView strongAbortTransitionView = (StrongAbortTransitionView)theEObject;
 				T result = caseStrongAbortTransitionView(strongAbortTransitionView);
-				if (result == null) result = caseTransitionView(strongAbortTransitionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case ViewsPackage.WEAK_ABORT_TERMINATION_TRANSITION_VIEW: {
 				WeakAbortTerminationTransitionView weakAbortTerminationTransitionView = (WeakAbortTerminationTransitionView)theEObject;
 				T result = caseWeakAbortTerminationTransitionView(weakAbortTerminationTransitionView);
-				if (result == null) result = caseTransitionView(weakAbortTerminationTransitionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -225,6 +227,21 @@ public class ViewsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRegionView(RegionView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Data Flow Region View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Data Flow Region View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDataFlowRegionView(DataFlowRegionView object) {
 		return null;
 	}
 

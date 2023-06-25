@@ -13,8 +13,8 @@ import graphmodel.internal.InternalEdge;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getAction <em>Action</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getTrigger <em>Trigger</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getCondition <em>Condition</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getEffect <em>Effect</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getPriority <em>Priority</em>}</li>
  * </ul>
  *
@@ -24,60 +24,61 @@ import graphmodel.internal.InternalEdge;
  */
 public interface InternalTransition extends InternalEdge {
 	/**
-	 * Returns the value of the '<em><b>Action</b></em>' attribute.
+	 * Returns the value of the '<em><b>Condition</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Action</em>' attribute.
-	 * @see #setAction(String)
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalTransition_Action()
+	 * @return the value of the '<em>Condition</em>' attribute.
+	 * @see #setCondition(String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalTransition_Condition()
 	 * @model
 	 * @generated
 	 */
-	String getAction();
+	String getCondition();
 
 	/**
-	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getAction <em>Action</em>}' attribute.
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getCondition <em>Condition</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Action</em>' attribute.
-	 * @see #getAction()
+	 * @param value the new value of the '<em>Condition</em>' attribute.
+	 * @see #getCondition()
 	 * @generated
 	 */
-	void setAction(String value);
+	void setCondition(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Trigger</b></em>' attribute.
+	 * Returns the value of the '<em><b>Effect</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Trigger</em>' attribute.
-	 * @see #setTrigger(String)
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalTransition_Trigger()
+	 * @return the value of the '<em>Effect</em>' attribute.
+	 * @see #setEffect(String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalTransition_Effect()
 	 * @model
 	 * @generated
 	 */
-	String getTrigger();
+	String getEffect();
 
 	/**
-	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getTrigger <em>Trigger</em>}' attribute.
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getEffect <em>Effect</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Trigger</em>' attribute.
-	 * @see #getTrigger()
+	 * @param value the new value of the '<em>Effect</em>' attribute.
+	 * @see #getEffect()
 	 * @generated
 	 */
-	void setTrigger(String value);
+	void setEffect(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Priority</b></em>' attribute.
+	 * The default value is <code>"0"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Priority</em>' attribute.
-	 * @see #setPriority(int)
+	 * @see #setPriority(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalTransition_Priority()
-	 * @model
+	 * @model default="0"
 	 * @generated
 	 */
-	int getPriority();
+	String getPriority();
 
 	/**
 	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getPriority <em>Priority</em>}' attribute.
@@ -87,6 +88,6 @@ public interface InternalTransition extends InternalEdge {
 	 * @see #getPriority()
 	 * @generated
 	 */
-	void setPriority(int value);
+	void setPriority(String value);
 
 } // InternalTransition

@@ -58,6 +58,7 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 		switch (eClass.getClassifierID()) {
 			case ViewsPackage.ROOT_STATE_VIEW: return createRootStateView();
 			case ViewsPackage.REGION_VIEW: return createRegionView();
+			case ViewsPackage.DATA_FLOW_REGION_VIEW: return createDataFlowRegionView();
 			case ViewsPackage.SUPER_STATE_VIEW: return createSuperStateView();
 			case ViewsPackage.INITILAL_SUPER_STATE_VIEW: return createInitilalSuperStateView();
 			case ViewsPackage.ROOT_STATE_DECLARATION_NODE_VIEW: return createRootStateDeclarationNodeView();
@@ -101,6 +102,17 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public RegionView createRegionView() {
 		RegionViewImpl regionView = new RegionViewImpl();
 		return regionView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DataFlowRegionView createDataFlowRegionView() {
+		DataFlowRegionViewImpl dataFlowRegionView = new DataFlowRegionViewImpl();
+		return dataFlowRegionView;
 	}
 
 	/**

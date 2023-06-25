@@ -40,6 +40,15 @@ public interface ScchartFactory extends EFactory {
 	Region createRegion();
 
 	/**
+	 * Returns a new object of class '<em>Data Flow Region</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Data Flow Region</em>'.
+	 * @generated
+	 */
+	DataFlowRegion createDataFlowRegion();
+
+	/**
 	 * Returns a new object of class '<em>Super State</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

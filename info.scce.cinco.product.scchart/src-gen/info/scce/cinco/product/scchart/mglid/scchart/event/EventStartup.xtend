@@ -13,6 +13,7 @@ class EventStartup implements IStartup {
 	def static void subscribe() {
 		RootStateEvent.instance.subscribe
 		RegionEvent.instance.subscribe
+		DataFlowRegionEvent.instance.subscribe
 		SuperStateEvent.instance.subscribe
 		InitilalSuperStateEvent.instance.subscribe
 		SCChartEvent.instance.subscribe
@@ -21,6 +22,7 @@ class EventStartup implements IStartup {
 	def static void unsubscribe() {
 		RootStateEvent.instance.unsubscribe
 		RegionEvent.instance.unsubscribe
+		DataFlowRegionEvent.instance.unsubscribe
 		SuperStateEvent.instance.unsubscribe
 		InitilalSuperStateEvent.instance.unsubscribe
 		SCChartEvent.instance.unsubscribe

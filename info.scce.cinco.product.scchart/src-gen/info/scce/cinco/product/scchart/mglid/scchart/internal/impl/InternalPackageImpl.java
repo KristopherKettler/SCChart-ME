@@ -50,6 +50,13 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass internalDataFlowRegionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass internalSuperStateEClass = null;
 
 	/**
@@ -413,9 +420,32 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
+	public EClass getInternalDataFlowRegion() {
+		if (internalDataFlowRegionEClass == null) {
+			internalDataFlowRegionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(2);
+		}
+		return internalDataFlowRegionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalDataFlowRegion__GetContainmentConstraints() {
+        return getInternalDataFlowRegion().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getInternalSuperState() {
 		if (internalSuperStateEClass == null) {
-			internalSuperStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(2);
+			internalSuperStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(3);
 		}
 		return internalSuperStateEClass;
 	}
@@ -608,7 +638,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalInitilalSuperState() {
 		if (internalInitilalSuperStateEClass == null) {
-			internalInitilalSuperStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(3);
+			internalInitilalSuperStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(4);
 		}
 		return internalInitilalSuperStateEClass;
 	}
@@ -781,7 +811,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalRootStateDeclarationNode() {
 		if (internalRootStateDeclarationNodeEClass == null) {
-			internalRootStateDeclarationNodeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(4);
+			internalRootStateDeclarationNodeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(5);
 		}
 		return internalRootStateDeclarationNodeEClass;
 	}
@@ -824,7 +854,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalSuperStateDeclarationNode() {
 		if (internalSuperStateDeclarationNodeEClass == null) {
-			internalSuperStateDeclarationNodeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(5);
+			internalSuperStateDeclarationNodeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(6);
 		}
 		return internalSuperStateDeclarationNodeEClass;
 	}
@@ -857,7 +887,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalSimpleState() {
 		if (internalSimpleStateEClass == null) {
-			internalSimpleStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(6);
+			internalSimpleStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(7);
 		}
 		return internalSimpleStateEClass;
 	}
@@ -1030,7 +1060,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalInitialState() {
 		if (internalInitialStateEClass == null) {
-			internalInitialStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(7);
+			internalInitialStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(8);
 		}
 		return internalInitialStateEClass;
 	}
@@ -1193,7 +1223,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalFinalState() {
 		if (internalFinalStateEClass == null) {
-			internalFinalStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(8);
+			internalFinalStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(9);
 		}
 		return internalFinalStateEClass;
 	}
@@ -1356,7 +1386,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalConnector() {
 		if (internalConnectorEClass == null) {
-			internalConnectorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(9);
+			internalConnectorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(10);
 		}
 		return internalConnectorEClass;
 	}
@@ -1519,7 +1549,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalTransition() {
 		if (internalTransitionEClass == null) {
-			internalTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(10);
+			internalTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(11);
 		}
 		return internalTransitionEClass;
 	}
@@ -1530,7 +1560,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalTransition_Action() {
+	public EAttribute getInternalTransition_Condition() {
         return (EAttribute)getInternalTransition().getEStructuralFeatures().get(0);
 	}
 
@@ -1540,7 +1570,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalTransition_Trigger() {
+	public EAttribute getInternalTransition_Effect() {
         return (EAttribute)getInternalTransition().getEStructuralFeatures().get(1);
 	}
 
@@ -1562,7 +1592,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalImmediateTransition() {
 		if (internalImmediateTransitionEClass == null) {
-			internalImmediateTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(11);
+			internalImmediateTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(12);
 		}
 		return internalImmediateTransitionEClass;
 	}
@@ -1583,9 +1613,19 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
+	public EAttribute getInternalImmediateTransition_Priority() {
+        return (EAttribute)getInternalImmediateTransition().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getInternalImmediateTerminationTransition() {
 		if (internalImmediateTerminationTransitionEClass == null) {
-			internalImmediateTerminationTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(12);
+			internalImmediateTerminationTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(13);
 		}
 		return internalImmediateTerminationTransitionEClass;
 	}
@@ -1598,7 +1638,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalWeakAbortTransition() {
 		if (internalWeakAbortTransitionEClass == null) {
-			internalWeakAbortTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(13);
+			internalWeakAbortTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(14);
 		}
 		return internalWeakAbortTransitionEClass;
 	}
@@ -1611,7 +1651,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalStrongAbortTransition() {
 		if (internalStrongAbortTransitionEClass == null) {
-			internalStrongAbortTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(14);
+			internalStrongAbortTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(15);
 		}
 		return internalStrongAbortTransitionEClass;
 	}
@@ -1624,7 +1664,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalWeakAbortTerminationTransition() {
 		if (internalWeakAbortTerminationTransitionEClass == null) {
-			internalWeakAbortTerminationTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(15);
+			internalWeakAbortTerminationTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(16);
 		}
 		return internalWeakAbortTerminationTransitionEClass;
 	}
@@ -1637,7 +1677,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalDefferedTransition() {
 		if (internalDefferedTransitionEClass == null) {
-			internalDefferedTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(16);
+			internalDefferedTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(17);
 		}
 		return internalDefferedTransitionEClass;
 	}
@@ -1650,7 +1690,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalSCChart() {
 		if (internalSCChartEClass == null) {
-			internalSCChartEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(17);
+			internalSCChartEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(18);
 		}
 		return internalSCChartEClass;
 	}
@@ -1673,7 +1713,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalRootStateDeclaration() {
 		if (internalRootStateDeclarationEClass == null) {
-			internalRootStateDeclarationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(18);
+			internalRootStateDeclarationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(19);
 		}
 		return internalRootStateDeclarationEClass;
 	}
@@ -1716,7 +1756,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalSuperStateDeclaration() {
 		if (internalSuperStateDeclarationEClass == null) {
-			internalSuperStateDeclarationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(19);
+			internalSuperStateDeclarationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(20);
 		}
 		return internalSuperStateDeclarationEClass;
 	}

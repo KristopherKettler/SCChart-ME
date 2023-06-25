@@ -51,7 +51,7 @@ public interface TransitionView extends EObject {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	String getAction();
+	String getCondition();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,7 +59,7 @@ public interface TransitionView extends EObject {
 	 * @model
 	 * @generated
 	 */
-	void setAction(String _arg);
+	void setCondition(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,7 +67,7 @@ public interface TransitionView extends EObject {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	String getTrigger();
+	String getEffect();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -75,7 +75,7 @@ public interface TransitionView extends EObject {
 	 * @model
 	 * @generated
 	 */
-	void setTrigger(String _arg);
+	void setEffect(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,7 +83,7 @@ public interface TransitionView extends EObject {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	int getPriority();
+	String getPriority();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,6 +91,6 @@ public interface TransitionView extends EObject {
 	 * @model
 	 * @generated
 	 */
-	void setPriority(int _arg);
+	void setPriority(String _arg);
 
 } // TransitionView

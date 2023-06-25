@@ -48,7 +48,12 @@ final class SuperStateEvent extends info.scce.cinco.product.scchart.mglid.scchar
 		element.superStateDeclarationNodes.forEach[it.delete]
 		element.getDeclaration.forEach[ declaration , i |
 			element.newSuperStateDeclarationNode(10,10 + 10*(i+1),element.width-20,10)
-			element.superStateDeclarationNodes.last.setDeclarationType(declaration.declarationType)
+			if(declaration.declarationType !== "") {
+				element.superStateDeclarationNodes.last.setDeclarationType(declaration.declarationType)
+			}
+			else{
+				element.superStateDeclarationNodes.last.setDeclarationType("")
+			}
 			element.superStateDeclarationNodes.last.setName(declaration.name)
 			]
 	}

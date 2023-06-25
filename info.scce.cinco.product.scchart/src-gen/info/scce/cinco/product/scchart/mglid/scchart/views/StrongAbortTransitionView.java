@@ -4,6 +4,8 @@ package info.scce.cinco.product.scchart.mglid.scchart.views;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortTransition;
 
+import org.eclipse.emf.ecore.EObject;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Strong Abort Transition View</b></em>'.
@@ -20,7 +22,7 @@ import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbor
  * @model
  * @generated
  */
-public interface StrongAbortTransitionView extends TransitionView {
+public interface StrongAbortTransitionView extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Internal Strong Abort Transition</b></em>' reference.
 	 * <!-- begin-user-doc -->

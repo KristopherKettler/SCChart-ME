@@ -57,7 +57,13 @@ public final class SuperStateEvent extends info.scce.cinco.product.scchart.mglid
       int _width = element.getWidth();
       int _minus = (_width - 20);
       element.newSuperStateDeclarationNode(10, (10 + (10 * ((i).intValue() + 1))), _minus, 10);
-      IterableExtensions.<SuperStateDeclarationNode>last(element.getSuperStateDeclarationNodes()).setDeclarationType(declaration.getDeclarationType());
+      String _declarationType = declaration.getDeclarationType();
+      boolean _tripleNotEquals = (_declarationType != "");
+      if (_tripleNotEquals) {
+        IterableExtensions.<SuperStateDeclarationNode>last(element.getSuperStateDeclarationNodes()).setDeclarationType(declaration.getDeclarationType());
+      } else {
+        IterableExtensions.<SuperStateDeclarationNode>last(element.getSuperStateDeclarationNodes()).setDeclarationType("");
+      }
       IterableExtensions.<SuperStateDeclarationNode>last(element.getSuperStateDeclarationNodes()).setName(declaration.getName());
     };
     IterableExtensions.<SuperStateDeclaration>forEach(element.getDeclaration(), _function_1);

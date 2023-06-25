@@ -97,6 +97,18 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case InternalPackage.INTERNAL_DATA_FLOW_REGION: {
+				InternalDataFlowRegion internalDataFlowRegion = (InternalDataFlowRegion)theEObject;
+				T result = caseInternalDataFlowRegion(internalDataFlowRegion);
+				if (result == null) result = caseInternalRegion(internalDataFlowRegion);
+				if (result == null) result = caseInternalContainer(internalDataFlowRegion);
+				if (result == null) result = caseInternalNode(internalDataFlowRegion);
+				if (result == null) result = caseInternalModelElementContainer(internalDataFlowRegion);
+				if (result == null) result = caseInternalModelElement(internalDataFlowRegion);
+				if (result == null) result = caseInternalIdentifiableElement(internalDataFlowRegion);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case InternalPackage.INTERNAL_SUPER_STATE: {
 				InternalSuperState internalSuperState = (InternalSuperState)theEObject;
 				T result = caseInternalSuperState(internalSuperState);
@@ -188,7 +200,6 @@ public class InternalSwitch<T> extends Switch<T> {
 			case InternalPackage.INTERNAL_IMMEDIATE_TRANSITION: {
 				InternalImmediateTransition internalImmediateTransition = (InternalImmediateTransition)theEObject;
 				T result = caseInternalImmediateTransition(internalImmediateTransition);
-				if (result == null) result = caseInternalTransition(internalImmediateTransition);
 				if (result == null) result = caseInternalEdge(internalImmediateTransition);
 				if (result == null) result = caseInternalModelElement(internalImmediateTransition);
 				if (result == null) result = caseInternalIdentifiableElement(internalImmediateTransition);
@@ -198,7 +209,6 @@ public class InternalSwitch<T> extends Switch<T> {
 			case InternalPackage.INTERNAL_IMMEDIATE_TERMINATION_TRANSITION: {
 				InternalImmediateTerminationTransition internalImmediateTerminationTransition = (InternalImmediateTerminationTransition)theEObject;
 				T result = caseInternalImmediateTerminationTransition(internalImmediateTerminationTransition);
-				if (result == null) result = caseInternalTransition(internalImmediateTerminationTransition);
 				if (result == null) result = caseInternalEdge(internalImmediateTerminationTransition);
 				if (result == null) result = caseInternalModelElement(internalImmediateTerminationTransition);
 				if (result == null) result = caseInternalIdentifiableElement(internalImmediateTerminationTransition);
@@ -208,7 +218,6 @@ public class InternalSwitch<T> extends Switch<T> {
 			case InternalPackage.INTERNAL_WEAK_ABORT_TRANSITION: {
 				InternalWeakAbortTransition internalWeakAbortTransition = (InternalWeakAbortTransition)theEObject;
 				T result = caseInternalWeakAbortTransition(internalWeakAbortTransition);
-				if (result == null) result = caseInternalTransition(internalWeakAbortTransition);
 				if (result == null) result = caseInternalEdge(internalWeakAbortTransition);
 				if (result == null) result = caseInternalModelElement(internalWeakAbortTransition);
 				if (result == null) result = caseInternalIdentifiableElement(internalWeakAbortTransition);
@@ -218,7 +227,6 @@ public class InternalSwitch<T> extends Switch<T> {
 			case InternalPackage.INTERNAL_STRONG_ABORT_TRANSITION: {
 				InternalStrongAbortTransition internalStrongAbortTransition = (InternalStrongAbortTransition)theEObject;
 				T result = caseInternalStrongAbortTransition(internalStrongAbortTransition);
-				if (result == null) result = caseInternalTransition(internalStrongAbortTransition);
 				if (result == null) result = caseInternalEdge(internalStrongAbortTransition);
 				if (result == null) result = caseInternalModelElement(internalStrongAbortTransition);
 				if (result == null) result = caseInternalIdentifiableElement(internalStrongAbortTransition);
@@ -228,7 +236,6 @@ public class InternalSwitch<T> extends Switch<T> {
 			case InternalPackage.INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION: {
 				InternalWeakAbortTerminationTransition internalWeakAbortTerminationTransition = (InternalWeakAbortTerminationTransition)theEObject;
 				T result = caseInternalWeakAbortTerminationTransition(internalWeakAbortTerminationTransition);
-				if (result == null) result = caseInternalTransition(internalWeakAbortTerminationTransition);
 				if (result == null) result = caseInternalEdge(internalWeakAbortTerminationTransition);
 				if (result == null) result = caseInternalModelElement(internalWeakAbortTerminationTransition);
 				if (result == null) result = caseInternalIdentifiableElement(internalWeakAbortTerminationTransition);
@@ -300,6 +307,21 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalRegion(InternalRegion object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Data Flow Region</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Data Flow Region</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalDataFlowRegion(InternalDataFlowRegion object) {
 		return null;
 	}
 

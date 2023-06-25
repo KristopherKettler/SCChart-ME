@@ -85,6 +85,10 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 				return createInternalRegionAdapter();
 			}
 			@Override
+			public Adapter caseInternalDataFlowRegion(InternalDataFlowRegion object) {
+				return createInternalDataFlowRegionAdapter();
+			}
+			@Override
 			public Adapter caseInternalSuperState(InternalSuperState object) {
 				return createInternalSuperStateAdapter();
 			}
@@ -233,6 +237,20 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInternalRegionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDataFlowRegion <em>Data Flow Region</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDataFlowRegion
+	 * @generated
+	 */
+	public Adapter createInternalDataFlowRegionAdapter() {
 		return null;
 	}
 
