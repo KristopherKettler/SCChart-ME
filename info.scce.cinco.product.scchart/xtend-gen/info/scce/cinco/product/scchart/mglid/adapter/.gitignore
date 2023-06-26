@@ -119,3 +119,12 @@
 /RegionEContentAdapter.java
 /SuperStateEContentAdapter.java
 /.DataFlowRegionEContentAdapter.java._trace
+/.ConditionalTerminationTransitionEContentAdapter.java._trace
+/.DataFlowRegionEContentAdapter.xtendbin
+/.DeferredTransitionEContentAdapter.java._trace
+/.HistoryTransitionEContentAdapter.java._trace
+/.ShallowHistoryTransitionEContentAdapter.java._trace
+/.TerminationTransitionEContentAdapter.java._trace
+/DataFlowRegionEContentAdapter.java
+/.ActionEContentAdapter.java._trace
+/.SuspendEContentAdapter.java._trace

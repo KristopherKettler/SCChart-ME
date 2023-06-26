@@ -139,13 +139,22 @@ public interface InternalFactory extends EFactory {
 	InternalImmediateTransition createInternalImmediateTransition();
 
 	/**
-	 * Returns a new object of class '<em>Immediate Termination Transition</em>'.
+	 * Returns a new object of class '<em>Termination Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate Termination Transition</em>'.
+	 * @return a new object of class '<em>Termination Transition</em>'.
 	 * @generated
 	 */
-	InternalImmediateTerminationTransition createInternalImmediateTerminationTransition();
+	InternalTerminationTransition createInternalTerminationTransition();
+
+	/**
+	 * Returns a new object of class '<em>Conditional Termination Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Conditional Termination Transition</em>'.
+	 * @generated
+	 */
+	InternalConditionalTerminationTransition createInternalConditionalTerminationTransition();
 
 	/**
 	 * Returns a new object of class '<em>Weak Abort Transition</em>'.
@@ -166,22 +175,31 @@ public interface InternalFactory extends EFactory {
 	InternalStrongAbortTransition createInternalStrongAbortTransition();
 
 	/**
-	 * Returns a new object of class '<em>Weak Abort Termination Transition</em>'.
+	 * Returns a new object of class '<em>Deferred Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Weak Abort Termination Transition</em>'.
+	 * @return a new object of class '<em>Deferred Transition</em>'.
 	 * @generated
 	 */
-	InternalWeakAbortTerminationTransition createInternalWeakAbortTerminationTransition();
+	InternalDeferredTransition createInternalDeferredTransition();
 
 	/**
-	 * Returns a new object of class '<em>Deffered Transition</em>'.
+	 * Returns a new object of class '<em>Shallow History Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Deffered Transition</em>'.
+	 * @return a new object of class '<em>Shallow History Transition</em>'.
 	 * @generated
 	 */
-	InternalDefferedTransition createInternalDefferedTransition();
+	InternalShallowHistoryTransition createInternalShallowHistoryTransition();
+
+	/**
+	 * Returns a new object of class '<em>History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>History Transition</em>'.
+	 * @generated
+	 */
+	InternalHistoryTransition createInternalHistoryTransition();
 
 	/**
 	 * Returns a new object of class '<em>SC Chart</em>'.
@@ -209,6 +227,24 @@ public interface InternalFactory extends EFactory {
 	 * @generated
 	 */
 	InternalSuperStateDeclaration createInternalSuperStateDeclaration();
+
+	/**
+	 * Returns a new object of class '<em>Suspend</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Suspend</em>'.
+	 * @generated
+	 */
+	InternalSuspend createInternalSuspend();
+
+	/**
+	 * Returns a new object of class '<em>Action</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Action</em>'.
+	 * @generated
+	 */
+	InternalAction createInternalAction();
 
 	/**
 	 * Returns the package supported by this factory.

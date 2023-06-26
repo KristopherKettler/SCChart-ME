@@ -2,7 +2,9 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.views.impl;
 
+import info.scce.cinco.product.scchart.mglid.scchart.Action;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration;
+import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState;
 
@@ -110,6 +112,56 @@ public class SuperStateViewImpl extends EObjectImpl implements SuperStateView {
 	 * @generated
 	 */
 	@Override
+	public EList<Suspend> getSuspends() {
+		return getInternalSuperState().getSuspends();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSuspends(final EList<Suspend> _arg) {
+		getInternalSuperState().getElement().transact("Set Suspends", () -> {
+			getInternalSuperState().getSuspends().clear();
+			getInternalSuperState().getSuspends().addAll(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void addSuspends(final Suspend _arg) {
+		getInternalSuperState().getElement().transact("Set Suspends", () -> {
+			getInternalSuperState().getSuspends().add(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void removeSuspends(final Suspend suspends) {
+		getInternalSuperState().getElement().transact("Set Suspends", () -> {
+			getInternalSuperState().getSuspends().remove(suspends);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getLabel() {
 		return getInternalSuperState().getLabel();
 	}
@@ -183,6 +235,56 @@ public class SuperStateViewImpl extends EObjectImpl implements SuperStateView {
 	 * @generated
 	 */
 	@Override
+	public EList<Action> getActions() {
+		return getInternalSuperState().getActions();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setActions(final EList<Action> _arg) {
+		getInternalSuperState().getElement().transact("Set Actions", () -> {
+			getInternalSuperState().getActions().clear();
+			getInternalSuperState().getActions().addAll(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void addActions(final Action _arg) {
+		getInternalSuperState().getElement().transact("Set Actions", () -> {
+			getInternalSuperState().getActions().add(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void removeActions(final Action actions) {
+		getInternalSuperState().getElement().transact("Set Actions", () -> {
+			getInternalSuperState().getActions().remove(actions);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.SUPER_STATE_VIEW__INTERNAL_SUPER_STATE:
@@ -245,6 +347,17 @@ public class SuperStateViewImpl extends EObjectImpl implements SuperStateView {
 	@SuppressWarnings("unchecked")
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
+			case ViewsPackage.SUPER_STATE_VIEW___GET_SUSPENDS:
+				return getSuspends();
+			case ViewsPackage.SUPER_STATE_VIEW___SET_SUSPENDS__ELIST:
+				setSuspends((EList<Suspend>)arguments.get(0));
+				return null;
+			case ViewsPackage.SUPER_STATE_VIEW___ADD_SUSPENDS__SUSPEND:
+				addSuspends((Suspend)arguments.get(0));
+				return null;
+			case ViewsPackage.SUPER_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND:
+				removeSuspends((Suspend)arguments.get(0));
+				return null;
 			case ViewsPackage.SUPER_STATE_VIEW___GET_LABEL:
 				return getLabel();
 			case ViewsPackage.SUPER_STATE_VIEW___SET_LABEL__STRING:
@@ -260,6 +373,17 @@ public class SuperStateViewImpl extends EObjectImpl implements SuperStateView {
 				return null;
 			case ViewsPackage.SUPER_STATE_VIEW___REMOVE_DECLARATION__SUPERSTATEDECLARATION:
 				removeDeclaration((SuperStateDeclaration)arguments.get(0));
+				return null;
+			case ViewsPackage.SUPER_STATE_VIEW___GET_ACTIONS:
+				return getActions();
+			case ViewsPackage.SUPER_STATE_VIEW___SET_ACTIONS__ELIST:
+				setActions((EList<Action>)arguments.get(0));
+				return null;
+			case ViewsPackage.SUPER_STATE_VIEW___ADD_ACTIONS__ACTION:
+				addActions((Action)arguments.get(0));
+				return null;
+			case ViewsPackage.SUPER_STATE_VIEW___REMOVE_ACTIONS__ACTION:
+				removeActions((Action)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

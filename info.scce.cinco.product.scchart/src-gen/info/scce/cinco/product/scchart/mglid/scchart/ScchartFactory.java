@@ -139,13 +139,22 @@ public interface ScchartFactory extends EFactory {
 	ImmediateTransition createImmediateTransition();
 
 	/**
-	 * Returns a new object of class '<em>Immediate Termination Transition</em>'.
+	 * Returns a new object of class '<em>Termination Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate Termination Transition</em>'.
+	 * @return a new object of class '<em>Termination Transition</em>'.
 	 * @generated
 	 */
-	ImmediateTerminationTransition createImmediateTerminationTransition();
+	TerminationTransition createTerminationTransition();
+
+	/**
+	 * Returns a new object of class '<em>Conditional Termination Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Conditional Termination Transition</em>'.
+	 * @generated
+	 */
+	ConditionalTerminationTransition createConditionalTerminationTransition();
 
 	/**
 	 * Returns a new object of class '<em>Weak Abort Transition</em>'.
@@ -166,22 +175,31 @@ public interface ScchartFactory extends EFactory {
 	StrongAbortTransition createStrongAbortTransition();
 
 	/**
-	 * Returns a new object of class '<em>Weak Abort Termination Transition</em>'.
+	 * Returns a new object of class '<em>Deferred Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Weak Abort Termination Transition</em>'.
+	 * @return a new object of class '<em>Deferred Transition</em>'.
 	 * @generated
 	 */
-	WeakAbortTerminationTransition createWeakAbortTerminationTransition();
+	DeferredTransition createDeferredTransition();
 
 	/**
-	 * Returns a new object of class '<em>Deffered Transition</em>'.
+	 * Returns a new object of class '<em>Shallow History Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Deffered Transition</em>'.
+	 * @return a new object of class '<em>Shallow History Transition</em>'.
 	 * @generated
 	 */
-	DefferedTransition createDefferedTransition();
+	ShallowHistoryTransition createShallowHistoryTransition();
+
+	/**
+	 * Returns a new object of class '<em>History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>History Transition</em>'.
+	 * @generated
+	 */
+	HistoryTransition createHistoryTransition();
 
 	/**
 	 * Returns a new object of class '<em>SC Chart</em>'.
@@ -209,6 +227,24 @@ public interface ScchartFactory extends EFactory {
 	 * @generated
 	 */
 	SuperStateDeclaration createSuperStateDeclaration();
+
+	/**
+	 * Returns a new object of class '<em>Suspend</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Suspend</em>'.
+	 * @generated
+	 */
+	Suspend createSuspend();
+
+	/**
+	 * Returns a new object of class '<em>Action</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Action</em>'.
+	 * @generated
+	 */
+	Action createAction();
 
 	/**
 	 * Returns the package supported by this factory.

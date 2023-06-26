@@ -69,14 +69,18 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.CONNECTOR_VIEW: return createConnectorView();
 			case ViewsPackage.TRANSITION_VIEW: return createTransitionView();
 			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW: return createImmediateTransitionView();
-			case ViewsPackage.IMMEDIATE_TERMINATION_TRANSITION_VIEW: return createImmediateTerminationTransitionView();
+			case ViewsPackage.TERMINATION_TRANSITION_VIEW: return createTerminationTransitionView();
+			case ViewsPackage.CONDITIONAL_TERMINATION_TRANSITION_VIEW: return createConditionalTerminationTransitionView();
 			case ViewsPackage.WEAK_ABORT_TRANSITION_VIEW: return createWeakAbortTransitionView();
 			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW: return createStrongAbortTransitionView();
-			case ViewsPackage.WEAK_ABORT_TERMINATION_TRANSITION_VIEW: return createWeakAbortTerminationTransitionView();
-			case ViewsPackage.DEFFERED_TRANSITION_VIEW: return createDefferedTransitionView();
+			case ViewsPackage.DEFERRED_TRANSITION_VIEW: return createDeferredTransitionView();
+			case ViewsPackage.SHALLOW_HISTORY_TRANSITION_VIEW: return createShallowHistoryTransitionView();
+			case ViewsPackage.HISTORY_TRANSITION_VIEW: return createHistoryTransitionView();
 			case ViewsPackage.SC_CHART_VIEW: return createSCChartView();
 			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW: return createRootStateDeclarationView();
 			case ViewsPackage.SUPER_STATE_DECLARATION_VIEW: return createSuperStateDeclarationView();
+			case ViewsPackage.SUSPEND_VIEW: return createSuspendView();
+			case ViewsPackage.ACTION_VIEW: return createActionView();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -231,9 +235,20 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public ImmediateTerminationTransitionView createImmediateTerminationTransitionView() {
-		ImmediateTerminationTransitionViewImpl immediateTerminationTransitionView = new ImmediateTerminationTransitionViewImpl();
-		return immediateTerminationTransitionView;
+	public TerminationTransitionView createTerminationTransitionView() {
+		TerminationTransitionViewImpl terminationTransitionView = new TerminationTransitionViewImpl();
+		return terminationTransitionView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ConditionalTerminationTransitionView createConditionalTerminationTransitionView() {
+		ConditionalTerminationTransitionViewImpl conditionalTerminationTransitionView = new ConditionalTerminationTransitionViewImpl();
+		return conditionalTerminationTransitionView;
 	}
 
 	/**
@@ -264,9 +279,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public WeakAbortTerminationTransitionView createWeakAbortTerminationTransitionView() {
-		WeakAbortTerminationTransitionViewImpl weakAbortTerminationTransitionView = new WeakAbortTerminationTransitionViewImpl();
-		return weakAbortTerminationTransitionView;
+	public DeferredTransitionView createDeferredTransitionView() {
+		DeferredTransitionViewImpl deferredTransitionView = new DeferredTransitionViewImpl();
+		return deferredTransitionView;
 	}
 
 	/**
@@ -275,9 +290,20 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public DefferedTransitionView createDefferedTransitionView() {
-		DefferedTransitionViewImpl defferedTransitionView = new DefferedTransitionViewImpl();
-		return defferedTransitionView;
+	public ShallowHistoryTransitionView createShallowHistoryTransitionView() {
+		ShallowHistoryTransitionViewImpl shallowHistoryTransitionView = new ShallowHistoryTransitionViewImpl();
+		return shallowHistoryTransitionView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public HistoryTransitionView createHistoryTransitionView() {
+		HistoryTransitionViewImpl historyTransitionView = new HistoryTransitionViewImpl();
+		return historyTransitionView;
 	}
 
 	/**
@@ -311,6 +337,28 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public SuperStateDeclarationView createSuperStateDeclarationView() {
 		SuperStateDeclarationViewImpl superStateDeclarationView = new SuperStateDeclarationViewImpl();
 		return superStateDeclarationView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SuspendView createSuspendView() {
+		SuspendViewImpl suspendView = new SuspendViewImpl();
+		return suspendView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ActionView createActionView() {
+		ActionViewImpl actionView = new ActionViewImpl();
+		return actionView;
 	}
 
 	/**

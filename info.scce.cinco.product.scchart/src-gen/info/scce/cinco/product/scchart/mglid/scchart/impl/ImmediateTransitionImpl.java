@@ -213,6 +213,26 @@ public class ImmediateTransitionImpl extends EdgeImpl implements ImmediateTransi
 	 * @generated
 	 */
 	@Override
+	public boolean canReconnectSource(final FinalState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final FinalState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean canReconnectSource(final SimpleState source) {
 		return source.canStart(this.getClass());
 	}
@@ -224,6 +244,46 @@ public class ImmediateTransitionImpl extends EdgeImpl implements ImmediateTransi
 	 */
 	@Override
 	public void reconnectSource(final SimpleState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final SuperState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final SuperState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final InitialState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final InitialState source) {
 		this.setSourceElement(source);
 	}
 
@@ -273,66 +333,6 @@ public class ImmediateTransitionImpl extends EdgeImpl implements ImmediateTransi
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final InitialState source) {
-		return source.canStart(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectSource(final InitialState source) {
-		this.setSourceElement(source);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canReconnectSource(final FinalState source) {
-		return source.canStart(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectSource(final FinalState source) {
-		this.setSourceElement(source);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canReconnectSource(final SuperState source) {
-		return source.canStart(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectSource(final SuperState source) {
-		this.setSourceElement(source);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean canReconnectSource(final Connector source) {
 		return source.canStart(this.getClass());
 	}
@@ -345,6 +345,26 @@ public class ImmediateTransitionImpl extends EdgeImpl implements ImmediateTransi
 	@Override
 	public void reconnectSource(final Connector source) {
 		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectTarget(final FinalState target) {
+		return target.canEnd(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectTarget(final FinalState target) {
+		this.setTargetElement(target);
 	}
 
 	/**
@@ -373,7 +393,7 @@ public class ImmediateTransitionImpl extends EdgeImpl implements ImmediateTransi
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final InitilalSuperState target) {
+	public boolean canReconnectTarget(final SuperState target) {
 		return target.canEnd(this.getClass());
 	}
 
@@ -383,7 +403,7 @@ public class ImmediateTransitionImpl extends EdgeImpl implements ImmediateTransi
 	 * @generated
 	 */
 	@Override
-	public void reconnectTarget(final InitilalSuperState target) {
+	public void reconnectTarget(final SuperState target) {
 		this.setTargetElement(target);
 	}
 
@@ -413,7 +433,7 @@ public class ImmediateTransitionImpl extends EdgeImpl implements ImmediateTransi
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final FinalState target) {
+	public boolean canReconnectTarget(final InitilalSuperState target) {
 		return target.canEnd(this.getClass());
 	}
 
@@ -423,27 +443,7 @@ public class ImmediateTransitionImpl extends EdgeImpl implements ImmediateTransi
 	 * @generated
 	 */
 	@Override
-	public void reconnectTarget(final FinalState target) {
-		this.setTargetElement(target);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canReconnectTarget(final SuperState target) {
-		return target.canEnd(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectTarget(final SuperState target) {
+	public void reconnectTarget(final InitilalSuperState target) {
 		this.setTargetElement(target);
 	}
 
@@ -556,10 +556,25 @@ public class ImmediateTransitionImpl extends EdgeImpl implements ImmediateTransi
 				return getSourceElement();
 			case ScchartPackage.IMMEDIATE_TRANSITION___GET_TARGET_ELEMENT:
 				return getTargetElement();
+			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_SOURCE__FINALSTATE:
+				return canReconnectSource((FinalState)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_SOURCE__FINALSTATE:
+				reconnectSource((FinalState)arguments.get(0));
+				return null;
 			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_SOURCE__SIMPLESTATE:
 				return canReconnectSource((SimpleState)arguments.get(0));
 			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_SOURCE__SIMPLESTATE:
 				reconnectSource((SimpleState)arguments.get(0));
+				return null;
+			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_SOURCE__SUPERSTATE:
+				return canReconnectSource((SuperState)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_SOURCE__SUPERSTATE:
+				reconnectSource((SuperState)arguments.get(0));
+				return null;
+			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_SOURCE__INITIALSTATE:
+				return canReconnectSource((InitialState)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_SOURCE__INITIALSTATE:
+				reconnectSource((InitialState)arguments.get(0));
 				return null;
 			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
 				return canReconnectSource((RootState)arguments.get(0));
@@ -571,50 +586,35 @@ public class ImmediateTransitionImpl extends EdgeImpl implements ImmediateTransi
 			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE:
 				reconnectSource((InitilalSuperState)arguments.get(0));
 				return null;
-			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_SOURCE__INITIALSTATE:
-				return canReconnectSource((InitialState)arguments.get(0));
-			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_SOURCE__INITIALSTATE:
-				reconnectSource((InitialState)arguments.get(0));
-				return null;
-			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_SOURCE__FINALSTATE:
-				return canReconnectSource((FinalState)arguments.get(0));
-			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_SOURCE__FINALSTATE:
-				reconnectSource((FinalState)arguments.get(0));
-				return null;
-			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_SOURCE__SUPERSTATE:
-				return canReconnectSource((SuperState)arguments.get(0));
-			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_SOURCE__SUPERSTATE:
-				reconnectSource((SuperState)arguments.get(0));
-				return null;
 			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_SOURCE__CONNECTOR:
 				return canReconnectSource((Connector)arguments.get(0));
 			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_SOURCE__CONNECTOR:
 				reconnectSource((Connector)arguments.get(0));
-				return null;
-			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_TARGET__SIMPLESTATE:
-				return canReconnectTarget((SimpleState)arguments.get(0));
-			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_TARGET__SIMPLESTATE:
-				reconnectTarget((SimpleState)arguments.get(0));
-				return null;
-			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
-				return canReconnectTarget((InitilalSuperState)arguments.get(0));
-			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
-				reconnectTarget((InitilalSuperState)arguments.get(0));
-				return null;
-			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_TARGET__INITIALSTATE:
-				return canReconnectTarget((InitialState)arguments.get(0));
-			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_TARGET__INITIALSTATE:
-				reconnectTarget((InitialState)arguments.get(0));
 				return null;
 			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_TARGET__FINALSTATE:
 				return canReconnectTarget((FinalState)arguments.get(0));
 			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_TARGET__FINALSTATE:
 				reconnectTarget((FinalState)arguments.get(0));
 				return null;
+			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_TARGET__SIMPLESTATE:
+				return canReconnectTarget((SimpleState)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_TARGET__SIMPLESTATE:
+				reconnectTarget((SimpleState)arguments.get(0));
+				return null;
 			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_TARGET__SUPERSTATE:
 				return canReconnectTarget((SuperState)arguments.get(0));
 			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_TARGET__SUPERSTATE:
 				reconnectTarget((SuperState)arguments.get(0));
+				return null;
+			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_TARGET__INITIALSTATE:
+				return canReconnectTarget((InitialState)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_TARGET__INITIALSTATE:
+				reconnectTarget((InitialState)arguments.get(0));
+				return null;
+			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
+				return canReconnectTarget((InitilalSuperState)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
+				reconnectTarget((InitilalSuperState)arguments.get(0));
 				return null;
 			case ScchartPackage.IMMEDIATE_TRANSITION___CAN_RECONNECT_TARGET__CONNECTOR:
 				return canReconnectTarget((Connector)arguments.get(0));

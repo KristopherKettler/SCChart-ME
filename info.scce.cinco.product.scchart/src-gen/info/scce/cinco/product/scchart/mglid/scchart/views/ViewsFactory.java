@@ -139,13 +139,22 @@ public interface ViewsFactory extends EFactory {
 	ImmediateTransitionView createImmediateTransitionView();
 
 	/**
-	 * Returns a new object of class '<em>Immediate Termination Transition View</em>'.
+	 * Returns a new object of class '<em>Termination Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate Termination Transition View</em>'.
+	 * @return a new object of class '<em>Termination Transition View</em>'.
 	 * @generated
 	 */
-	ImmediateTerminationTransitionView createImmediateTerminationTransitionView();
+	TerminationTransitionView createTerminationTransitionView();
+
+	/**
+	 * Returns a new object of class '<em>Conditional Termination Transition View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Conditional Termination Transition View</em>'.
+	 * @generated
+	 */
+	ConditionalTerminationTransitionView createConditionalTerminationTransitionView();
 
 	/**
 	 * Returns a new object of class '<em>Weak Abort Transition View</em>'.
@@ -166,22 +175,31 @@ public interface ViewsFactory extends EFactory {
 	StrongAbortTransitionView createStrongAbortTransitionView();
 
 	/**
-	 * Returns a new object of class '<em>Weak Abort Termination Transition View</em>'.
+	 * Returns a new object of class '<em>Deferred Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Weak Abort Termination Transition View</em>'.
+	 * @return a new object of class '<em>Deferred Transition View</em>'.
 	 * @generated
 	 */
-	WeakAbortTerminationTransitionView createWeakAbortTerminationTransitionView();
+	DeferredTransitionView createDeferredTransitionView();
 
 	/**
-	 * Returns a new object of class '<em>Deffered Transition View</em>'.
+	 * Returns a new object of class '<em>Shallow History Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Deffered Transition View</em>'.
+	 * @return a new object of class '<em>Shallow History Transition View</em>'.
 	 * @generated
 	 */
-	DefferedTransitionView createDefferedTransitionView();
+	ShallowHistoryTransitionView createShallowHistoryTransitionView();
+
+	/**
+	 * Returns a new object of class '<em>History Transition View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>History Transition View</em>'.
+	 * @generated
+	 */
+	HistoryTransitionView createHistoryTransitionView();
 
 	/**
 	 * Returns a new object of class '<em>SC Chart View</em>'.
@@ -209,6 +227,24 @@ public interface ViewsFactory extends EFactory {
 	 * @generated
 	 */
 	SuperStateDeclarationView createSuperStateDeclarationView();
+
+	/**
+	 * Returns a new object of class '<em>Suspend View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Suspend View</em>'.
+	 * @generated
+	 */
+	SuspendView createSuspendView();
+
+	/**
+	 * Returns a new object of class '<em>Action View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Action View</em>'.
+	 * @generated
+	 */
+	ActionView createActionView();
 
 	/**
 	 * Returns the package supported by this factory.

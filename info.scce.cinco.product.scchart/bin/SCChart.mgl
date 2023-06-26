@@ -43,6 +43,8 @@ container SuperState {
 	incomingEdges (*)
 	outgoingEdges (*)
 	attr SuperStateDeclaration as declaration[0,*]
+	attr Suspend as suspends[0,*] 
+	attr Action as actions[0,*]
 	attr EString as label := "<insert name>"
 }
 
@@ -164,4 +166,20 @@ type SuperStateDeclaration {
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
 	attr EString as declarationType := "select type"
 	attr EString as name
+}
+
+@label(name)
+type Suspend {
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
+	attr EString as ActionType := "select type"
+	attr EString as condition
+	attr EString as effect
+}
+
+@label(name)
+type Action {
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
+	attr EString as ActionType := "select type"
+	attr EString as condition
+	attr EString as effect
 }

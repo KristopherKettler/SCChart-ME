@@ -131,6 +131,29 @@ public class TransitionViewImpl extends EObjectImpl implements TransitionView {
 	 * @generated
 	 */
 	@Override
+	public String getDelay() {
+		return getInternalTransition().getDelay();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDelay(final String _arg) {
+		getInternalTransition().getElement().transact("Set Delay", () -> {
+			getInternalTransition().setDelay(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEffect() {
 		return getInternalTransition().getEffect();
 	}
@@ -242,6 +265,11 @@ public class TransitionViewImpl extends EObjectImpl implements TransitionView {
 				return getCondition();
 			case ViewsPackage.TRANSITION_VIEW___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
+				return null;
+			case ViewsPackage.TRANSITION_VIEW___GET_DELAY:
+				return getDelay();
+			case ViewsPackage.TRANSITION_VIEW___SET_DELAY__STRING:
+				setDelay((String)arguments.get(0));
 				return null;
 			case ViewsPackage.TRANSITION_VIEW___GET_EFFECT:
 				return getEffect();

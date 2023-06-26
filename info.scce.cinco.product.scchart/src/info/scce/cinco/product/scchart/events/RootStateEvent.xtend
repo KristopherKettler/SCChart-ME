@@ -62,7 +62,6 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 				}
 				element.height = element.height + 13
 			}
-			
 		}
 //		val regionCount = element.getRegions.size
 //		val declarationCount = element.getRootStateDeclarationNodes.size

@@ -69,14 +69,18 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 			case ScchartPackage.CONNECTOR: return createConnector();
 			case ScchartPackage.TRANSITION: return createTransition();
 			case ScchartPackage.IMMEDIATE_TRANSITION: return createImmediateTransition();
-			case ScchartPackage.IMMEDIATE_TERMINATION_TRANSITION: return createImmediateTerminationTransition();
+			case ScchartPackage.TERMINATION_TRANSITION: return createTerminationTransition();
+			case ScchartPackage.CONDITIONAL_TERMINATION_TRANSITION: return createConditionalTerminationTransition();
 			case ScchartPackage.WEAK_ABORT_TRANSITION: return createWeakAbortTransition();
 			case ScchartPackage.STRONG_ABORT_TRANSITION: return createStrongAbortTransition();
-			case ScchartPackage.WEAK_ABORT_TERMINATION_TRANSITION: return createWeakAbortTerminationTransition();
-			case ScchartPackage.DEFFERED_TRANSITION: return createDefferedTransition();
+			case ScchartPackage.DEFERRED_TRANSITION: return createDeferredTransition();
+			case ScchartPackage.SHALLOW_HISTORY_TRANSITION: return createShallowHistoryTransition();
+			case ScchartPackage.HISTORY_TRANSITION: return createHistoryTransition();
 			case ScchartPackage.SC_CHART: return createSCChart();
 			case ScchartPackage.ROOT_STATE_DECLARATION: return createRootStateDeclaration();
 			case ScchartPackage.SUPER_STATE_DECLARATION: return createSuperStateDeclaration();
+			case ScchartPackage.SUSPEND: return createSuspend();
+			case ScchartPackage.ACTION: return createAction();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -231,9 +235,20 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public ImmediateTerminationTransition createImmediateTerminationTransition() {
-		ImmediateTerminationTransitionImpl immediateTerminationTransition = new ImmediateTerminationTransitionImpl();
-		return immediateTerminationTransition;
+	public TerminationTransition createTerminationTransition() {
+		TerminationTransitionImpl terminationTransition = new TerminationTransitionImpl();
+		return terminationTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ConditionalTerminationTransition createConditionalTerminationTransition() {
+		ConditionalTerminationTransitionImpl conditionalTerminationTransition = new ConditionalTerminationTransitionImpl();
+		return conditionalTerminationTransition;
 	}
 
 	/**
@@ -264,9 +279,9 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public WeakAbortTerminationTransition createWeakAbortTerminationTransition() {
-		WeakAbortTerminationTransitionImpl weakAbortTerminationTransition = new WeakAbortTerminationTransitionImpl();
-		return weakAbortTerminationTransition;
+	public DeferredTransition createDeferredTransition() {
+		DeferredTransitionImpl deferredTransition = new DeferredTransitionImpl();
+		return deferredTransition;
 	}
 
 	/**
@@ -275,9 +290,20 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public DefferedTransition createDefferedTransition() {
-		DefferedTransitionImpl defferedTransition = new DefferedTransitionImpl();
-		return defferedTransition;
+	public ShallowHistoryTransition createShallowHistoryTransition() {
+		ShallowHistoryTransitionImpl shallowHistoryTransition = new ShallowHistoryTransitionImpl();
+		return shallowHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public HistoryTransition createHistoryTransition() {
+		HistoryTransitionImpl historyTransition = new HistoryTransitionImpl();
+		return historyTransition;
 	}
 
 	/**
@@ -311,6 +337,28 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	public SuperStateDeclaration createSuperStateDeclaration() {
 		SuperStateDeclarationImpl superStateDeclaration = new SuperStateDeclarationImpl();
 		return superStateDeclaration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Suspend createSuspend() {
+		SuspendImpl suspend = new SuspendImpl();
+		return suspend;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Action createAction() {
+		ActionImpl action = new ActionImpl();
+		return action;
 	}
 
 	/**

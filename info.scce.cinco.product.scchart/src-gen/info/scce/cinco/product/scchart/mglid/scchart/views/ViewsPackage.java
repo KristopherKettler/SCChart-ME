@@ -367,13 +367,49 @@ public interface ViewsPackage extends EPackage {
 	int SUPER_STATE_VIEW_FEATURE_COUNT = 1;
 
 	/**
+	 * The operation id for the '<em>Get Suspends</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_VIEW___GET_SUSPENDS = 0;
+
+	/**
+	 * The operation id for the '<em>Set Suspends</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_VIEW___SET_SUSPENDS__ELIST = 1;
+
+	/**
+	 * The operation id for the '<em>Add Suspends</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_VIEW___ADD_SUSPENDS__SUSPEND = 2;
+
+	/**
+	 * The operation id for the '<em>Remove Suspends</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND = 3;
+
+	/**
 	 * The operation id for the '<em>Get Label</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_VIEW___GET_LABEL = 0;
+	int SUPER_STATE_VIEW___GET_LABEL = 4;
 
 	/**
 	 * The operation id for the '<em>Set Label</em>' operation.
@@ -382,7 +418,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_VIEW___SET_LABEL__STRING = 1;
+	int SUPER_STATE_VIEW___SET_LABEL__STRING = 5;
 
 	/**
 	 * The operation id for the '<em>Get Declaration</em>' operation.
@@ -391,7 +427,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_VIEW___GET_DECLARATION = 2;
+	int SUPER_STATE_VIEW___GET_DECLARATION = 6;
 
 	/**
 	 * The operation id for the '<em>Set Declaration</em>' operation.
@@ -400,7 +436,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_VIEW___SET_DECLARATION__ELIST = 3;
+	int SUPER_STATE_VIEW___SET_DECLARATION__ELIST = 7;
 
 	/**
 	 * The operation id for the '<em>Add Declaration</em>' operation.
@@ -409,7 +445,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_VIEW___ADD_DECLARATION__SUPERSTATEDECLARATION = 4;
+	int SUPER_STATE_VIEW___ADD_DECLARATION__SUPERSTATEDECLARATION = 8;
 
 	/**
 	 * The operation id for the '<em>Remove Declaration</em>' operation.
@@ -418,7 +454,43 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_VIEW___REMOVE_DECLARATION__SUPERSTATEDECLARATION = 5;
+	int SUPER_STATE_VIEW___REMOVE_DECLARATION__SUPERSTATEDECLARATION = 9;
+
+	/**
+	 * The operation id for the '<em>Get Actions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_VIEW___GET_ACTIONS = 10;
+
+	/**
+	 * The operation id for the '<em>Set Actions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_VIEW___SET_ACTIONS__ELIST = 11;
+
+	/**
+	 * The operation id for the '<em>Add Actions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_VIEW___ADD_ACTIONS__ACTION = 12;
+
+	/**
+	 * The operation id for the '<em>Remove Actions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_VIEW___REMOVE_ACTIONS__ACTION = 13;
 
 	/**
 	 * The number of operations of the '<em>Super State View</em>' class.
@@ -427,7 +499,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_VIEW_OPERATION_COUNT = 6;
+	int SUPER_STATE_VIEW_OPERATION_COUNT = 14;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.InitilalSuperStateViewImpl <em>Initilal Super State View</em>}' class.
@@ -465,6 +537,42 @@ public interface ViewsPackage extends EPackage {
 	 * @ordered
 	 */
 	int INITILAL_SUPER_STATE_VIEW_FEATURE_COUNT = SUPER_STATE_VIEW_FEATURE_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Suspends</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITILAL_SUPER_STATE_VIEW___GET_SUSPENDS = SUPER_STATE_VIEW___GET_SUSPENDS;
+
+	/**
+	 * The operation id for the '<em>Set Suspends</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITILAL_SUPER_STATE_VIEW___SET_SUSPENDS__ELIST = SUPER_STATE_VIEW___SET_SUSPENDS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Add Suspends</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITILAL_SUPER_STATE_VIEW___ADD_SUSPENDS__SUSPEND = SUPER_STATE_VIEW___ADD_SUSPENDS__SUSPEND;
+
+	/**
+	 * The operation id for the '<em>Remove Suspends</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITILAL_SUPER_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND = SUPER_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND;
 
 	/**
 	 * The operation id for the '<em>Get Label</em>' operation.
@@ -519,6 +627,42 @@ public interface ViewsPackage extends EPackage {
 	 * @ordered
 	 */
 	int INITILAL_SUPER_STATE_VIEW___REMOVE_DECLARATION__SUPERSTATEDECLARATION = SUPER_STATE_VIEW___REMOVE_DECLARATION__SUPERSTATEDECLARATION;
+
+	/**
+	 * The operation id for the '<em>Get Actions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITILAL_SUPER_STATE_VIEW___GET_ACTIONS = SUPER_STATE_VIEW___GET_ACTIONS;
+
+	/**
+	 * The operation id for the '<em>Set Actions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITILAL_SUPER_STATE_VIEW___SET_ACTIONS__ELIST = SUPER_STATE_VIEW___SET_ACTIONS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Add Actions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITILAL_SUPER_STATE_VIEW___ADD_ACTIONS__ACTION = SUPER_STATE_VIEW___ADD_ACTIONS__ACTION;
+
+	/**
+	 * The operation id for the '<em>Remove Actions</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITILAL_SUPER_STATE_VIEW___REMOVE_ACTIONS__ACTION = SUPER_STATE_VIEW___REMOVE_ACTIONS__ACTION;
 
 	/**
 	 * The number of operations of the '<em>Initilal Super State View</em>' class.
@@ -960,13 +1104,31 @@ public interface ViewsPackage extends EPackage {
 	int TRANSITION_VIEW___SET_CONDITION__STRING = 1;
 
 	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_VIEW___GET_DELAY = 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_VIEW___SET_DELAY__STRING = 3;
+
+	/**
 	 * The operation id for the '<em>Get Effect</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW___GET_EFFECT = 2;
+	int TRANSITION_VIEW___GET_EFFECT = 4;
 
 	/**
 	 * The operation id for the '<em>Set Effect</em>' operation.
@@ -975,7 +1137,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW___SET_EFFECT__STRING = 3;
+	int TRANSITION_VIEW___SET_EFFECT__STRING = 5;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -984,7 +1146,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW___GET_PRIORITY = 4;
+	int TRANSITION_VIEW___GET_PRIORITY = 6;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -993,7 +1155,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW___SET_PRIORITY__STRING = 5;
+	int TRANSITION_VIEW___SET_PRIORITY__STRING = 7;
 
 	/**
 	 * The number of operations of the '<em>Transition View</em>' class.
@@ -1002,7 +1164,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW_OPERATION_COUNT = 6;
+	int TRANSITION_VIEW_OPERATION_COUNT = 8;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateTransitionViewImpl <em>Immediate Transition View</em>}' class.
@@ -1078,41 +1240,78 @@ public interface ViewsPackage extends EPackage {
 	int IMMEDIATE_TRANSITION_VIEW_OPERATION_COUNT = 4;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateTerminationTransitionViewImpl <em>Immediate Termination Transition View</em>}' class.
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.TerminationTransitionViewImpl <em>Termination Transition View</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateTerminationTransitionViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateTerminationTransitionView()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.TerminationTransitionViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTerminationTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW = 13;
+	int TERMINATION_TRANSITION_VIEW = 13;
 
 	/**
-	 * The feature id for the '<em><b>Internal Immediate Termination Transition</b></em>' reference.
+	 * The feature id for the '<em><b>Internal Termination Transition</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW__INTERNAL_IMMEDIATE_TERMINATION_TRANSITION = 0;
+	int TERMINATION_TRANSITION_VIEW__INTERNAL_TERMINATION_TRANSITION = 0;
 
 	/**
-	 * The number of structural features of the '<em>Immediate Termination Transition View</em>' class.
+	 * The number of structural features of the '<em>Termination Transition View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW_FEATURE_COUNT = 1;
+	int TERMINATION_TRANSITION_VIEW_FEATURE_COUNT = 1;
 
 	/**
-	 * The number of operations of the '<em>Immediate Termination Transition View</em>' class.
+	 * The number of operations of the '<em>Termination Transition View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TERMINATION_TRANSITION_VIEW_OPERATION_COUNT = 0;
+	int TERMINATION_TRANSITION_VIEW_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConditionalTerminationTransitionViewImpl <em>Conditional Termination Transition View</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConditionalTerminationTransitionViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConditionalTerminationTransitionView()
+	 * @generated
+	 */
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW = 14;
+
+	/**
+	 * The feature id for the '<em><b>Internal Conditional Termination Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW__INTERNAL_CONDITIONAL_TERMINATION_TRANSITION = 0;
+
+	/**
+	 * The number of structural features of the '<em>Conditional Termination Transition View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Conditional Termination Transition View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.WeakAbortTransitionViewImpl <em>Weak Abort Transition View</em>}' class.
@@ -1122,7 +1321,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getWeakAbortTransitionView()
 	 * @generated
 	 */
-	int WEAK_ABORT_TRANSITION_VIEW = 14;
+	int WEAK_ABORT_TRANSITION_VIEW = 15;
 
 	/**
 	 * The feature id for the '<em><b>Internal Weak Abort Transition</b></em>' reference.
@@ -1159,7 +1358,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getStrongAbortTransitionView()
 	 * @generated
 	 */
-	int STRONG_ABORT_TRANSITION_VIEW = 15;
+	int STRONG_ABORT_TRANSITION_VIEW = 16;
 
 	/**
 	 * The feature id for the '<em><b>Internal Strong Abort Transition</b></em>' reference.
@@ -1189,78 +1388,115 @@ public interface ViewsPackage extends EPackage {
 	int STRONG_ABORT_TRANSITION_VIEW_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.WeakAbortTerminationTransitionViewImpl <em>Weak Abort Termination Transition View</em>}' class.
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.DeferredTransitionViewImpl <em>Deferred Transition View</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.WeakAbortTerminationTransitionViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getWeakAbortTerminationTransitionView()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.DeferredTransitionViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDeferredTransitionView()
 	 * @generated
 	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW = 16;
+	int DEFERRED_TRANSITION_VIEW = 17;
 
 	/**
-	 * The feature id for the '<em><b>Internal Weak Abort Termination Transition</b></em>' reference.
+	 * The feature id for the '<em><b>Internal Deferred Transition</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW__INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION = 0;
+	int DEFERRED_TRANSITION_VIEW__INTERNAL_DEFERRED_TRANSITION = 0;
 
 	/**
-	 * The number of structural features of the '<em>Weak Abort Termination Transition View</em>' class.
+	 * The number of structural features of the '<em>Deferred Transition View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW_FEATURE_COUNT = 1;
+	int DEFERRED_TRANSITION_VIEW_FEATURE_COUNT = 1;
 
 	/**
-	 * The number of operations of the '<em>Weak Abort Termination Transition View</em>' class.
+	 * The number of operations of the '<em>Deferred Transition View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEAK_ABORT_TERMINATION_TRANSITION_VIEW_OPERATION_COUNT = 0;
+	int DEFERRED_TRANSITION_VIEW_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.DefferedTransitionViewImpl <em>Deffered Transition View</em>}' class.
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ShallowHistoryTransitionViewImpl <em>Shallow History Transition View</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.DefferedTransitionViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDefferedTransitionView()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ShallowHistoryTransitionViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getShallowHistoryTransitionView()
 	 * @generated
 	 */
-	int DEFFERED_TRANSITION_VIEW = 17;
+	int SHALLOW_HISTORY_TRANSITION_VIEW = 18;
 
 	/**
-	 * The feature id for the '<em><b>Internal Deffered Transition</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEFFERED_TRANSITION_VIEW__INTERNAL_DEFFERED_TRANSITION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Deffered Transition View</em>' class.
+	 * The feature id for the '<em><b>Internal Shallow History Transition</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEFFERED_TRANSITION_VIEW_FEATURE_COUNT = 1;
+	int SHALLOW_HISTORY_TRANSITION_VIEW__INTERNAL_SHALLOW_HISTORY_TRANSITION = 0;
 
 	/**
-	 * The number of operations of the '<em>Deffered Transition View</em>' class.
+	 * The number of structural features of the '<em>Shallow History Transition View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DEFFERED_TRANSITION_VIEW_OPERATION_COUNT = 0;
+	int SHALLOW_HISTORY_TRANSITION_VIEW_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Shallow History Transition View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHALLOW_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.HistoryTransitionViewImpl <em>History Transition View</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.HistoryTransitionViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getHistoryTransitionView()
+	 * @generated
+	 */
+	int HISTORY_TRANSITION_VIEW = 19;
+
+	/**
+	 * The feature id for the '<em><b>Internal History Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW__INTERNAL_HISTORY_TRANSITION = 0;
+
+	/**
+	 * The number of structural features of the '<em>History Transition View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>History Transition View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SCChartViewImpl <em>SC Chart View</em>}' class.
@@ -1270,7 +1506,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSCChartView()
 	 * @generated
 	 */
-	int SC_CHART_VIEW = 18;
+	int SC_CHART_VIEW = 20;
 
 	/**
 	 * The feature id for the '<em><b>Internal SC Chart</b></em>' reference.
@@ -1307,7 +1543,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getRootStateDeclarationView()
 	 * @generated
 	 */
-	int ROOT_STATE_DECLARATION_VIEW = 19;
+	int ROOT_STATE_DECLARATION_VIEW = 21;
 
 	/**
 	 * The feature id for the '<em><b>Internal Root State Declaration</b></em>' reference.
@@ -1398,7 +1634,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuperStateDeclarationView()
 	 * @generated
 	 */
-	int SUPER_STATE_DECLARATION_VIEW = 20;
+	int SUPER_STATE_DECLARATION_VIEW = 22;
 
 	/**
 	 * The feature id for the '<em><b>Internal Super State Declaration</b></em>' reference.
@@ -1462,6 +1698,188 @@ public interface ViewsPackage extends EPackage {
 	 * @ordered
 	 */
 	int SUPER_STATE_DECLARATION_VIEW_OPERATION_COUNT = 4;
+
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl <em>Suspend View</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuspendView()
+	 * @generated
+	 */
+	int SUSPEND_VIEW = 23;
+
+	/**
+	 * The feature id for the '<em><b>Internal Suspend</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUSPEND_VIEW__INTERNAL_SUSPEND = 0;
+
+	/**
+	 * The number of structural features of the '<em>Suspend View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUSPEND_VIEW_FEATURE_COUNT = 1;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUSPEND_VIEW___GET_CONDITION = 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUSPEND_VIEW___SET_CONDITION__STRING = 1;
+
+	/**
+	 * The operation id for the '<em>Get Action Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUSPEND_VIEW___GET_ACTION_TYPE = 2;
+
+	/**
+	 * The operation id for the '<em>Set Action Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUSPEND_VIEW___SET_ACTION_TYPE__STRING = 3;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUSPEND_VIEW___GET_EFFECT = 4;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUSPEND_VIEW___SET_EFFECT__STRING = 5;
+
+	/**
+	 * The number of operations of the '<em>Suspend View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUSPEND_VIEW_OPERATION_COUNT = 6;
+
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionViewImpl <em>Action View</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getActionView()
+	 * @generated
+	 */
+	int ACTION_VIEW = 24;
+
+	/**
+	 * The feature id for the '<em><b>Internal Action</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW__INTERNAL_ACTION = 0;
+
+	/**
+	 * The number of structural features of the '<em>Action View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW_FEATURE_COUNT = 1;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___GET_CONDITION = 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___SET_CONDITION__STRING = 1;
+
+	/**
+	 * The operation id for the '<em>Get Action Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___GET_ACTION_TYPE = 2;
+
+	/**
+	 * The operation id for the '<em>Set Action Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___SET_ACTION_TYPE__STRING = 3;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___GET_EFFECT = 4;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___SET_EFFECT__STRING = 5;
+
+	/**
+	 * The number of operations of the '<em>Action View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW_OPERATION_COUNT = 6;
 
 
 	/**
@@ -1669,6 +2087,46 @@ public interface ViewsPackage extends EPackage {
 	EReference getSuperStateView_InternalSuperState();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#getSuspends() <em>Get Suspends</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Suspends</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#getSuspends()
+	 * @generated
+	 */
+	EOperation getSuperStateView__GetSuspends();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#setSuspends(org.eclipse.emf.common.util.EList) <em>Set Suspends</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Suspends</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#setSuspends(org.eclipse.emf.common.util.EList)
+	 * @generated
+	 */
+	EOperation getSuperStateView__SetSuspends__EList();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#addSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend) <em>Add Suspends</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Add Suspends</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#addSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend)
+	 * @generated
+	 */
+	EOperation getSuperStateView__AddSuspends__Suspend();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#removeSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend) <em>Remove Suspends</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Remove Suspends</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#removeSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend)
+	 * @generated
+	 */
+	EOperation getSuperStateView__RemoveSuspends__Suspend();
+
+	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#getLabel() <em>Get Label</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1727,6 +2185,46 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getSuperStateView__RemoveDeclaration__SuperStateDeclaration();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#getActions() <em>Get Actions</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Actions</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#getActions()
+	 * @generated
+	 */
+	EOperation getSuperStateView__GetActions();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#setActions(org.eclipse.emf.common.util.EList) <em>Set Actions</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Actions</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#setActions(org.eclipse.emf.common.util.EList)
+	 * @generated
+	 */
+	EOperation getSuperStateView__SetActions__EList();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#addActions(info.scce.cinco.product.scchart.mglid.scchart.Action) <em>Add Actions</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Add Actions</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#addActions(info.scce.cinco.product.scchart.mglid.scchart.Action)
+	 * @generated
+	 */
+	EOperation getSuperStateView__AddActions__Action();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#removeActions(info.scce.cinco.product.scchart.mglid.scchart.Action) <em>Remove Actions</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Remove Actions</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#removeActions(info.scce.cinco.product.scchart.mglid.scchart.Action)
+	 * @generated
+	 */
+	EOperation getSuperStateView__RemoveActions__Action();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.InitilalSuperStateView <em>Initilal Super State View</em>}'.
@@ -2037,6 +2535,26 @@ public interface ViewsPackage extends EPackage {
 	EOperation getTransitionView__SetCondition__String();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getDelay() <em>Get Delay</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Delay</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getDelay()
+	 * @generated
+	 */
+	EOperation getTransitionView__GetDelay();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setDelay(java.lang.String) <em>Set Delay</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Delay</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setDelay(java.lang.String)
+	 * @generated
+	 */
+	EOperation getTransitionView__SetDelay__String();
+
+	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getEffect() <em>Get Effect</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2138,25 +2656,46 @@ public interface ViewsPackage extends EPackage {
 	EOperation getImmediateTransitionView__SetPriority__String();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTerminationTransitionView <em>Immediate Termination Transition View</em>}'.
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationTransitionView <em>Termination Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Immediate Termination Transition View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTerminationTransitionView
+	 * @return the meta object for class '<em>Termination Transition View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TerminationTransitionView
 	 * @generated
 	 */
-	EClass getImmediateTerminationTransitionView();
+	EClass getTerminationTransitionView();
 
 	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTerminationTransitionView#getInternalImmediateTerminationTransition <em>Internal Immediate Termination Transition</em>}'.
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationTransitionView#getInternalTerminationTransition <em>Internal Termination Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Immediate Termination Transition</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTerminationTransitionView#getInternalImmediateTerminationTransition()
-	 * @see #getImmediateTerminationTransitionView()
+	 * @return the meta object for the reference '<em>Internal Termination Transition</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TerminationTransitionView#getInternalTerminationTransition()
+	 * @see #getTerminationTransitionView()
 	 * @generated
 	 */
-	EReference getImmediateTerminationTransitionView_InternalImmediateTerminationTransition();
+	EReference getTerminationTransitionView_InternalTerminationTransition();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationTransitionView <em>Conditional Termination Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Conditional Termination Transition View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationTransitionView
+	 * @generated
+	 */
+	EClass getConditionalTerminationTransitionView();
+
+	/**
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationTransitionView#getInternalConditionalTerminationTransition <em>Internal Conditional Termination Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Internal Conditional Termination Transition</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationTransitionView#getInternalConditionalTerminationTransition()
+	 * @see #getConditionalTerminationTransitionView()
+	 * @generated
+	 */
+	EReference getConditionalTerminationTransitionView_InternalConditionalTerminationTransition();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.WeakAbortTransitionView <em>Weak Abort Transition View</em>}'.
@@ -2201,46 +2740,67 @@ public interface ViewsPackage extends EPackage {
 	EReference getStrongAbortTransitionView_InternalStrongAbortTransition();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.WeakAbortTerminationTransitionView <em>Weak Abort Termination Transition View</em>}'.
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.DeferredTransitionView <em>Deferred Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Weak Abort Termination Transition View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.WeakAbortTerminationTransitionView
+	 * @return the meta object for class '<em>Deferred Transition View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.DeferredTransitionView
 	 * @generated
 	 */
-	EClass getWeakAbortTerminationTransitionView();
+	EClass getDeferredTransitionView();
 
 	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.WeakAbortTerminationTransitionView#getInternalWeakAbortTerminationTransition <em>Internal Weak Abort Termination Transition</em>}'.
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.DeferredTransitionView#getInternalDeferredTransition <em>Internal Deferred Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Weak Abort Termination Transition</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.WeakAbortTerminationTransitionView#getInternalWeakAbortTerminationTransition()
-	 * @see #getWeakAbortTerminationTransitionView()
+	 * @return the meta object for the reference '<em>Internal Deferred Transition</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.DeferredTransitionView#getInternalDeferredTransition()
+	 * @see #getDeferredTransitionView()
 	 * @generated
 	 */
-	EReference getWeakAbortTerminationTransitionView_InternalWeakAbortTerminationTransition();
+	EReference getDeferredTransitionView_InternalDeferredTransition();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.DefferedTransitionView <em>Deffered Transition View</em>}'.
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ShallowHistoryTransitionView <em>Shallow History Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Deffered Transition View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.DefferedTransitionView
+	 * @return the meta object for class '<em>Shallow History Transition View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ShallowHistoryTransitionView
 	 * @generated
 	 */
-	EClass getDefferedTransitionView();
+	EClass getShallowHistoryTransitionView();
 
 	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.DefferedTransitionView#getInternalDefferedTransition <em>Internal Deffered Transition</em>}'.
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ShallowHistoryTransitionView#getInternalShallowHistoryTransition <em>Internal Shallow History Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Deffered Transition</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.DefferedTransitionView#getInternalDefferedTransition()
-	 * @see #getDefferedTransitionView()
+	 * @return the meta object for the reference '<em>Internal Shallow History Transition</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ShallowHistoryTransitionView#getInternalShallowHistoryTransition()
+	 * @see #getShallowHistoryTransitionView()
 	 * @generated
 	 */
-	EReference getDefferedTransitionView_InternalDefferedTransition();
+	EReference getShallowHistoryTransitionView_InternalShallowHistoryTransition();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView <em>History Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>History Transition View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView
+	 * @generated
+	 */
+	EClass getHistoryTransitionView();
+
+	/**
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#getInternalHistoryTransition <em>Internal History Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Internal History Transition</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#getInternalHistoryTransition()
+	 * @see #getHistoryTransitionView()
+	 * @generated
+	 */
+	EReference getHistoryTransitionView_InternalHistoryTransition();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartView <em>SC Chart View</em>}'.
@@ -2404,6 +2964,168 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getSuperStateDeclarationView__SetName__String();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView <em>Suspend View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Suspend View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView
+	 * @generated
+	 */
+	EClass getSuspendView();
+
+	/**
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getInternalSuspend <em>Internal Suspend</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Internal Suspend</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getInternalSuspend()
+	 * @see #getSuspendView()
+	 * @generated
+	 */
+	EReference getSuspendView_InternalSuspend();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getCondition() <em>Get Condition</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Condition</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getCondition()
+	 * @generated
+	 */
+	EOperation getSuspendView__GetCondition();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setCondition(java.lang.String) <em>Set Condition</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Condition</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setCondition(java.lang.String)
+	 * @generated
+	 */
+	EOperation getSuspendView__SetCondition__String();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getActionType() <em>Get Action Type</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Action Type</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getActionType()
+	 * @generated
+	 */
+	EOperation getSuspendView__GetActionType();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setActionType(java.lang.String) <em>Set Action Type</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Action Type</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setActionType(java.lang.String)
+	 * @generated
+	 */
+	EOperation getSuspendView__SetActionType__String();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getEffect() <em>Get Effect</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Effect</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getEffect()
+	 * @generated
+	 */
+	EOperation getSuspendView__GetEffect();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setEffect(java.lang.String) <em>Set Effect</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Effect</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setEffect(java.lang.String)
+	 * @generated
+	 */
+	EOperation getSuspendView__SetEffect__String();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView <em>Action View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Action View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView
+	 * @generated
+	 */
+	EClass getActionView();
+
+	/**
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getInternalAction <em>Internal Action</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Internal Action</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getInternalAction()
+	 * @see #getActionView()
+	 * @generated
+	 */
+	EReference getActionView_InternalAction();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getCondition() <em>Get Condition</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Condition</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getCondition()
+	 * @generated
+	 */
+	EOperation getActionView__GetCondition();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setCondition(java.lang.String) <em>Set Condition</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Condition</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setCondition(java.lang.String)
+	 * @generated
+	 */
+	EOperation getActionView__SetCondition__String();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getActionType() <em>Get Action Type</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Action Type</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getActionType()
+	 * @generated
+	 */
+	EOperation getActionView__GetActionType();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setActionType(java.lang.String) <em>Set Action Type</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Action Type</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setActionType(java.lang.String)
+	 * @generated
+	 */
+	EOperation getActionView__SetActionType__String();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getEffect() <em>Get Effect</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Effect</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getEffect()
+	 * @generated
+	 */
+	EOperation getActionView__GetEffect();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setEffect(java.lang.String) <em>Set Effect</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Effect</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setEffect(java.lang.String)
+	 * @generated
+	 */
+	EOperation getActionView__SetEffect__String();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2597,6 +3319,38 @@ public interface ViewsPackage extends EPackage {
 		EReference SUPER_STATE_VIEW__INTERNAL_SUPER_STATE = eINSTANCE.getSuperStateView_InternalSuperState();
 
 		/**
+		 * The meta object literal for the '<em><b>Get Suspends</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_VIEW___GET_SUSPENDS = eINSTANCE.getSuperStateView__GetSuspends();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Suspends</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_VIEW___SET_SUSPENDS__ELIST = eINSTANCE.getSuperStateView__SetSuspends__EList();
+
+		/**
+		 * The meta object literal for the '<em><b>Add Suspends</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_VIEW___ADD_SUSPENDS__SUSPEND = eINSTANCE.getSuperStateView__AddSuspends__Suspend();
+
+		/**
+		 * The meta object literal for the '<em><b>Remove Suspends</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND = eINSTANCE.getSuperStateView__RemoveSuspends__Suspend();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Label</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2643,6 +3397,38 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation SUPER_STATE_VIEW___REMOVE_DECLARATION__SUPERSTATEDECLARATION = eINSTANCE.getSuperStateView__RemoveDeclaration__SuperStateDeclaration();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Actions</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_VIEW___GET_ACTIONS = eINSTANCE.getSuperStateView__GetActions();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Actions</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_VIEW___SET_ACTIONS__ELIST = eINSTANCE.getSuperStateView__SetActions__EList();
+
+		/**
+		 * The meta object literal for the '<em><b>Add Actions</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_VIEW___ADD_ACTIONS__ACTION = eINSTANCE.getSuperStateView__AddActions__Action();
+
+		/**
+		 * The meta object literal for the '<em><b>Remove Actions</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_VIEW___REMOVE_ACTIONS__ACTION = eINSTANCE.getSuperStateView__RemoveActions__Action();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.InitilalSuperStateViewImpl <em>Initilal Super State View</em>}' class.
@@ -2901,6 +3687,22 @@ public interface ViewsPackage extends EPackage {
 		EOperation TRANSITION_VIEW___SET_CONDITION__STRING = eINSTANCE.getTransitionView__SetCondition__String();
 
 		/**
+		 * The meta object literal for the '<em><b>Get Delay</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation TRANSITION_VIEW___GET_DELAY = eINSTANCE.getTransitionView__GetDelay();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Delay</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation TRANSITION_VIEW___SET_DELAY__STRING = eINSTANCE.getTransitionView__SetDelay__String();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Effect</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2983,22 +3785,40 @@ public interface ViewsPackage extends EPackage {
 		EOperation IMMEDIATE_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getImmediateTransitionView__SetPriority__String();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateTerminationTransitionViewImpl <em>Immediate Termination Transition View</em>}' class.
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.TerminationTransitionViewImpl <em>Termination Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateTerminationTransitionViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateTerminationTransitionView()
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.TerminationTransitionViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTerminationTransitionView()
 		 * @generated
 		 */
-		EClass IMMEDIATE_TERMINATION_TRANSITION_VIEW = eINSTANCE.getImmediateTerminationTransitionView();
+		EClass TERMINATION_TRANSITION_VIEW = eINSTANCE.getTerminationTransitionView();
 
 		/**
-		 * The meta object literal for the '<em><b>Internal Immediate Termination Transition</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Internal Termination Transition</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference IMMEDIATE_TERMINATION_TRANSITION_VIEW__INTERNAL_IMMEDIATE_TERMINATION_TRANSITION = eINSTANCE.getImmediateTerminationTransitionView_InternalImmediateTerminationTransition();
+		EReference TERMINATION_TRANSITION_VIEW__INTERNAL_TERMINATION_TRANSITION = eINSTANCE.getTerminationTransitionView_InternalTerminationTransition();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConditionalTerminationTransitionViewImpl <em>Conditional Termination Transition View</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConditionalTerminationTransitionViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConditionalTerminationTransitionView()
+		 * @generated
+		 */
+		EClass CONDITIONAL_TERMINATION_TRANSITION_VIEW = eINSTANCE.getConditionalTerminationTransitionView();
+
+		/**
+		 * The meta object literal for the '<em><b>Internal Conditional Termination Transition</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONDITIONAL_TERMINATION_TRANSITION_VIEW__INTERNAL_CONDITIONAL_TERMINATION_TRANSITION = eINSTANCE.getConditionalTerminationTransitionView_InternalConditionalTerminationTransition();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.WeakAbortTransitionViewImpl <em>Weak Abort Transition View</em>}' class.
@@ -3037,40 +3857,58 @@ public interface ViewsPackage extends EPackage {
 		EReference STRONG_ABORT_TRANSITION_VIEW__INTERNAL_STRONG_ABORT_TRANSITION = eINSTANCE.getStrongAbortTransitionView_InternalStrongAbortTransition();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.WeakAbortTerminationTransitionViewImpl <em>Weak Abort Termination Transition View</em>}' class.
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.DeferredTransitionViewImpl <em>Deferred Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.WeakAbortTerminationTransitionViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getWeakAbortTerminationTransitionView()
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.DeferredTransitionViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDeferredTransitionView()
 		 * @generated
 		 */
-		EClass WEAK_ABORT_TERMINATION_TRANSITION_VIEW = eINSTANCE.getWeakAbortTerminationTransitionView();
+		EClass DEFERRED_TRANSITION_VIEW = eINSTANCE.getDeferredTransitionView();
 
 		/**
-		 * The meta object literal for the '<em><b>Internal Weak Abort Termination Transition</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Internal Deferred Transition</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEAK_ABORT_TERMINATION_TRANSITION_VIEW__INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION = eINSTANCE.getWeakAbortTerminationTransitionView_InternalWeakAbortTerminationTransition();
+		EReference DEFERRED_TRANSITION_VIEW__INTERNAL_DEFERRED_TRANSITION = eINSTANCE.getDeferredTransitionView_InternalDeferredTransition();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.DefferedTransitionViewImpl <em>Deffered Transition View</em>}' class.
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ShallowHistoryTransitionViewImpl <em>Shallow History Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.DefferedTransitionViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDefferedTransitionView()
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ShallowHistoryTransitionViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getShallowHistoryTransitionView()
 		 * @generated
 		 */
-		EClass DEFFERED_TRANSITION_VIEW = eINSTANCE.getDefferedTransitionView();
+		EClass SHALLOW_HISTORY_TRANSITION_VIEW = eINSTANCE.getShallowHistoryTransitionView();
 
 		/**
-		 * The meta object literal for the '<em><b>Internal Deffered Transition</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Internal Shallow History Transition</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DEFFERED_TRANSITION_VIEW__INTERNAL_DEFFERED_TRANSITION = eINSTANCE.getDefferedTransitionView_InternalDefferedTransition();
+		EReference SHALLOW_HISTORY_TRANSITION_VIEW__INTERNAL_SHALLOW_HISTORY_TRANSITION = eINSTANCE.getShallowHistoryTransitionView_InternalShallowHistoryTransition();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.HistoryTransitionViewImpl <em>History Transition View</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.HistoryTransitionViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getHistoryTransitionView()
+		 * @generated
+		 */
+		EClass HISTORY_TRANSITION_VIEW = eINSTANCE.getHistoryTransitionView();
+
+		/**
+		 * The meta object literal for the '<em><b>Internal History Transition</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference HISTORY_TRANSITION_VIEW__INTERNAL_HISTORY_TRANSITION = eINSTANCE.getHistoryTransitionView_InternalHistoryTransition();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SCChartViewImpl <em>SC Chart View</em>}' class.
@@ -3205,6 +4043,138 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation SUPER_STATE_DECLARATION_VIEW___SET_NAME__STRING = eINSTANCE.getSuperStateDeclarationView__SetName__String();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl <em>Suspend View</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuspendView()
+		 * @generated
+		 */
+		EClass SUSPEND_VIEW = eINSTANCE.getSuspendView();
+
+		/**
+		 * The meta object literal for the '<em><b>Internal Suspend</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUSPEND_VIEW__INTERNAL_SUSPEND = eINSTANCE.getSuspendView_InternalSuspend();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Condition</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUSPEND_VIEW___GET_CONDITION = eINSTANCE.getSuspendView__GetCondition();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Condition</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUSPEND_VIEW___SET_CONDITION__STRING = eINSTANCE.getSuspendView__SetCondition__String();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Action Type</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUSPEND_VIEW___GET_ACTION_TYPE = eINSTANCE.getSuspendView__GetActionType();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Action Type</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUSPEND_VIEW___SET_ACTION_TYPE__STRING = eINSTANCE.getSuspendView__SetActionType__String();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Effect</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUSPEND_VIEW___GET_EFFECT = eINSTANCE.getSuspendView__GetEffect();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Effect</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUSPEND_VIEW___SET_EFFECT__STRING = eINSTANCE.getSuspendView__SetEffect__String();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionViewImpl <em>Action View</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getActionView()
+		 * @generated
+		 */
+		EClass ACTION_VIEW = eINSTANCE.getActionView();
+
+		/**
+		 * The meta object literal for the '<em><b>Internal Action</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ACTION_VIEW__INTERNAL_ACTION = eINSTANCE.getActionView_InternalAction();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Condition</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___GET_CONDITION = eINSTANCE.getActionView__GetCondition();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Condition</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___SET_CONDITION__STRING = eINSTANCE.getActionView__SetCondition__String();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Action Type</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___GET_ACTION_TYPE = eINSTANCE.getActionView__GetActionType();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Action Type</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___SET_ACTION_TYPE__STRING = eINSTANCE.getActionView__SetActionType__String();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Effect</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___GET_EFFECT = eINSTANCE.getActionView__GetEffect();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Effect</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___SET_EFFECT__STRING = eINSTANCE.getActionView__SetEffect__String();
 
 	}
 

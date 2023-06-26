@@ -69,14 +69,18 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_CONNECTOR: return createInternalConnector();
 			case InternalPackage.INTERNAL_TRANSITION: return createInternalTransition();
 			case InternalPackage.INTERNAL_IMMEDIATE_TRANSITION: return createInternalImmediateTransition();
-			case InternalPackage.INTERNAL_IMMEDIATE_TERMINATION_TRANSITION: return createInternalImmediateTerminationTransition();
+			case InternalPackage.INTERNAL_TERMINATION_TRANSITION: return createInternalTerminationTransition();
+			case InternalPackage.INTERNAL_CONDITIONAL_TERMINATION_TRANSITION: return createInternalConditionalTerminationTransition();
 			case InternalPackage.INTERNAL_WEAK_ABORT_TRANSITION: return createInternalWeakAbortTransition();
 			case InternalPackage.INTERNAL_STRONG_ABORT_TRANSITION: return createInternalStrongAbortTransition();
-			case InternalPackage.INTERNAL_WEAK_ABORT_TERMINATION_TRANSITION: return createInternalWeakAbortTerminationTransition();
-			case InternalPackage.INTERNAL_DEFFERED_TRANSITION: return createInternalDefferedTransition();
+			case InternalPackage.INTERNAL_DEFERRED_TRANSITION: return createInternalDeferredTransition();
+			case InternalPackage.INTERNAL_SHALLOW_HISTORY_TRANSITION: return createInternalShallowHistoryTransition();
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION: return createInternalHistoryTransition();
 			case InternalPackage.INTERNAL_SC_CHART: return createInternalSCChart();
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION: return createInternalRootStateDeclaration();
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION: return createInternalSuperStateDeclaration();
+			case InternalPackage.INTERNAL_SUSPEND: return createInternalSuspend();
+			case InternalPackage.INTERNAL_ACTION: return createInternalAction();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -231,9 +235,20 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalImmediateTerminationTransition createInternalImmediateTerminationTransition() {
-		InternalImmediateTerminationTransitionImpl internalImmediateTerminationTransition = new InternalImmediateTerminationTransitionImpl();
-		return internalImmediateTerminationTransition;
+	public InternalTerminationTransition createInternalTerminationTransition() {
+		InternalTerminationTransitionImpl internalTerminationTransition = new InternalTerminationTransitionImpl();
+		return internalTerminationTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalConditionalTerminationTransition createInternalConditionalTerminationTransition() {
+		InternalConditionalTerminationTransitionImpl internalConditionalTerminationTransition = new InternalConditionalTerminationTransitionImpl();
+		return internalConditionalTerminationTransition;
 	}
 
 	/**
@@ -264,9 +279,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalWeakAbortTerminationTransition createInternalWeakAbortTerminationTransition() {
-		InternalWeakAbortTerminationTransitionImpl internalWeakAbortTerminationTransition = new InternalWeakAbortTerminationTransitionImpl();
-		return internalWeakAbortTerminationTransition;
+	public InternalDeferredTransition createInternalDeferredTransition() {
+		InternalDeferredTransitionImpl internalDeferredTransition = new InternalDeferredTransitionImpl();
+		return internalDeferredTransition;
 	}
 
 	/**
@@ -275,9 +290,20 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalDefferedTransition createInternalDefferedTransition() {
-		InternalDefferedTransitionImpl internalDefferedTransition = new InternalDefferedTransitionImpl();
-		return internalDefferedTransition;
+	public InternalShallowHistoryTransition createInternalShallowHistoryTransition() {
+		InternalShallowHistoryTransitionImpl internalShallowHistoryTransition = new InternalShallowHistoryTransitionImpl();
+		return internalShallowHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalHistoryTransition createInternalHistoryTransition() {
+		InternalHistoryTransitionImpl internalHistoryTransition = new InternalHistoryTransitionImpl();
+		return internalHistoryTransition;
 	}
 
 	/**
@@ -311,6 +337,28 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalSuperStateDeclaration createInternalSuperStateDeclaration() {
 		InternalSuperStateDeclarationImpl internalSuperStateDeclaration = new InternalSuperStateDeclarationImpl();
 		return internalSuperStateDeclaration;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalSuspend createInternalSuspend() {
+		InternalSuspendImpl internalSuspend = new InternalSuspendImpl();
+		return internalSuspend;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalAction createInternalAction() {
+		InternalActionImpl internalAction = new InternalActionImpl();
+		return internalAction;
 	}
 
 	/**

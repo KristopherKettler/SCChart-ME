@@ -67,6 +67,22 @@ public interface TransitionView extends EObject {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	String getDelay();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setDelay(String _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	String getEffect();
 
 	/**

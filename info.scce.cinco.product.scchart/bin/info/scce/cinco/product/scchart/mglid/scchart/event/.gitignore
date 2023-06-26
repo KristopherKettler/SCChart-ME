@@ -27,3 +27,5 @@
 /RegionEvent.java
 /SuperStateEvent.java
 /.DataFlowRegionEvent.java._trace
+/.DataFlowRegionEvent.xtendbin
+/DataFlowRegionEvent.java

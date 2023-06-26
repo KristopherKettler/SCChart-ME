@@ -22,6 +22,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * </p>
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTransitionImpl#getCondition <em>Condition</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTransitionImpl#getDelay <em>Delay</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTransitionImpl#getEffect <em>Effect</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTransitionImpl#getPriority <em>Priority</em>}</li>
  * </ul>
@@ -48,6 +49,26 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	 * @ordered
 	 */
 	protected String condition = CONDITION_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getDelay() <em>Delay</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDelay()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DELAY_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDelay() <em>Delay</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDelay()
+	 * @generated
+	 * @ordered
+	 */
+	protected String delay = DELAY_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getEffect() <em>Effect</em>}' attribute.
@@ -137,6 +158,29 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	 * @generated
 	 */
 	@Override
+	public String getDelay() {
+		return delay;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDelay(String newDelay) {
+		String oldDelay = delay;
+		delay = newDelay;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_TRANSITION__DELAY, oldDelay, delay));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEffect() {
 		return effect;
 	}
@@ -187,6 +231,8 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 		switch (featureID) {
 			case InternalPackage.INTERNAL_TRANSITION__CONDITION:
 				return getCondition();
+			case InternalPackage.INTERNAL_TRANSITION__DELAY:
+				return getDelay();
 			case InternalPackage.INTERNAL_TRANSITION__EFFECT:
 				return getEffect();
 			case InternalPackage.INTERNAL_TRANSITION__PRIORITY:
@@ -205,6 +251,9 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 		switch (featureID) {
 			case InternalPackage.INTERNAL_TRANSITION__CONDITION:
 				setCondition((String)newValue);
+				return;
+			case InternalPackage.INTERNAL_TRANSITION__DELAY:
+				setDelay((String)newValue);
 				return;
 			case InternalPackage.INTERNAL_TRANSITION__EFFECT:
 				setEffect((String)newValue);
@@ -227,6 +276,9 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 			case InternalPackage.INTERNAL_TRANSITION__CONDITION:
 				setCondition(CONDITION_EDEFAULT);
 				return;
+			case InternalPackage.INTERNAL_TRANSITION__DELAY:
+				setDelay(DELAY_EDEFAULT);
+				return;
 			case InternalPackage.INTERNAL_TRANSITION__EFFECT:
 				setEffect(EFFECT_EDEFAULT);
 				return;
@@ -247,6 +299,8 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 		switch (featureID) {
 			case InternalPackage.INTERNAL_TRANSITION__CONDITION:
 				return CONDITION_EDEFAULT == null ? condition != null : !CONDITION_EDEFAULT.equals(condition);
+			case InternalPackage.INTERNAL_TRANSITION__DELAY:
+				return DELAY_EDEFAULT == null ? delay != null : !DELAY_EDEFAULT.equals(delay);
 			case InternalPackage.INTERNAL_TRANSITION__EFFECT:
 				return EFFECT_EDEFAULT == null ? effect != null : !EFFECT_EDEFAULT.equals(effect);
 			case InternalPackage.INTERNAL_TRANSITION__PRIORITY:
@@ -267,6 +321,8 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (condition: ");
 		result.append(condition);
+		result.append(", delay: ");
+		result.append(delay);
 		result.append(", effect: ");
 		result.append(effect);
 		result.append(", priority: ");

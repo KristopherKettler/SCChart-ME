@@ -11,6 +11,7 @@ import graphmodel.internal.InternalNode;
 
 import graphmodel.internal.impl.InternalContainerImpl;
 
+import info.scce.cinco.product.scchart.mglid.scchart.Action;
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
@@ -19,6 +20,7 @@ import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration;
+import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState;
@@ -48,13 +50,25 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateImpl#getSuspends <em>Suspends</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateImpl#getLabel <em>Label</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateImpl#getDeclaration <em>Declaration</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateImpl#getActions <em>Actions</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class InternalSuperStateImpl extends InternalContainerImpl implements InternalSuperState {
+	/**
+	 * The cached value of the '{@link #getSuspends() <em>Suspends</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSuspends()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Suspend> suspends;
+
 	/**
 	 * The default value of the '{@link #getLabel() <em>Label</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -86,6 +100,16 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 	protected EList<SuperStateDeclaration> declaration;
 
 	/**
+	 * The cached value of the '{@link #getActions() <em>Actions</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getActions()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Action> actions;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -102,6 +126,19 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 	@Override
 	protected EClass eStaticClass() {
 		return InternalPackage.Literals.INTERNAL_SUPER_STATE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<Suspend> getSuspends() {
+		if (suspends == null) {
+			suspends = new EObjectContainmentEList<Suspend>(Suspend.class, this, InternalPackage.INTERNAL_SUPER_STATE__SUSPENDS);
+		}
+		return suspends;
 	}
 
 	/**
@@ -146,6 +183,19 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 	 * @generated
 	 */
 	@Override
+	public EList<Action> getActions() {
+		if (actions == null) {
+			actions = new EObjectContainmentEList<Action>(Action.class, this, InternalPackage.INTERNAL_SUPER_STATE__ACTIONS);
+		}
+		return actions;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EList<ContainmentConstraint> getContainmentConstraints() {
 		 org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>constraints =
 			new org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>();
@@ -162,7 +212,7 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 	 */
 	@Override
 	public EList<ConnectionConstraint> getIncomingConstraints() {
-		ConnectionConstraint cons0 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.Transition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateTerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.WeakAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.WeakAbortTerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.DefferedTransition.class);
+		ConnectionConstraint cons0 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.Transition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.WeakAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ShallowHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
 		org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>eList = new org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>();
 		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0));
 		eList.addAll(super.getIncomingConstraints());
@@ -177,7 +227,7 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 	 */
 	@Override
 	public EList<ConnectionConstraint> getOutgoingConstraints() {
-		ConnectionConstraint cons0 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.Transition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateTerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.WeakAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.WeakAbortTerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.DefferedTransition.class);
+		ConnectionConstraint cons0 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.Transition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.WeakAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ShallowHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
 		org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>eList = new org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>();
 		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0));
 		eList.addAll(super.getOutgoingConstraints());
@@ -323,8 +373,12 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_SUPER_STATE__SUSPENDS:
+				return ((InternalEList<?>)getSuspends()).basicRemove(otherEnd, msgs);
 			case InternalPackage.INTERNAL_SUPER_STATE__DECLARATION:
 				return ((InternalEList<?>)getDeclaration()).basicRemove(otherEnd, msgs);
+			case InternalPackage.INTERNAL_SUPER_STATE__ACTIONS:
+				return ((InternalEList<?>)getActions()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -337,10 +391,14 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_SUPER_STATE__SUSPENDS:
+				return getSuspends();
 			case InternalPackage.INTERNAL_SUPER_STATE__LABEL:
 				return getLabel();
 			case InternalPackage.INTERNAL_SUPER_STATE__DECLARATION:
 				return getDeclaration();
+			case InternalPackage.INTERNAL_SUPER_STATE__ACTIONS:
+				return getActions();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -354,12 +412,20 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_SUPER_STATE__SUSPENDS:
+				getSuspends().clear();
+				getSuspends().addAll((Collection<? extends Suspend>)newValue);
+				return;
 			case InternalPackage.INTERNAL_SUPER_STATE__LABEL:
 				setLabel((String)newValue);
 				return;
 			case InternalPackage.INTERNAL_SUPER_STATE__DECLARATION:
 				getDeclaration().clear();
 				getDeclaration().addAll((Collection<? extends SuperStateDeclaration>)newValue);
+				return;
+			case InternalPackage.INTERNAL_SUPER_STATE__ACTIONS:
+				getActions().clear();
+				getActions().addAll((Collection<? extends Action>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -373,11 +439,17 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_SUPER_STATE__SUSPENDS:
+				getSuspends().clear();
+				return;
 			case InternalPackage.INTERNAL_SUPER_STATE__LABEL:
 				setLabel(LABEL_EDEFAULT);
 				return;
 			case InternalPackage.INTERNAL_SUPER_STATE__DECLARATION:
 				getDeclaration().clear();
+				return;
+			case InternalPackage.INTERNAL_SUPER_STATE__ACTIONS:
+				getActions().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -391,10 +463,14 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_SUPER_STATE__SUSPENDS:
+				return suspends != null && !suspends.isEmpty();
 			case InternalPackage.INTERNAL_SUPER_STATE__LABEL:
 				return LABEL_EDEFAULT == null ? label != null : !LABEL_EDEFAULT.equals(label);
 			case InternalPackage.INTERNAL_SUPER_STATE__DECLARATION:
 				return declaration != null && !declaration.isEmpty();
+			case InternalPackage.INTERNAL_SUPER_STATE__ACTIONS:
+				return actions != null && !actions.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
