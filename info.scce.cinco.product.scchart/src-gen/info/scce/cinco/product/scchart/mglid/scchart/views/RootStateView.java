@@ -3,6 +3,7 @@
 package info.scce.cinco.product.scchart.mglid.scchart.views;
 
 import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
+import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState;
 
@@ -48,6 +49,38 @@ public interface RootStateView extends EObject {
 	 * @generated
 	 */
 	void setInternalRootState(InternalRootState value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<Suspend> getSuspends();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model _argMany="true"
+	 * @generated
+	 */
+	void setSuspends(EList<Suspend> _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void addSuspends(Suspend _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void removeSuspends(Suspend suspends);
 
 	/**
 	 * <!-- begin-user-doc -->

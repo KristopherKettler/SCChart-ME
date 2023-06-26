@@ -15,6 +15,7 @@ container RootState {
 	outgoingEdges (*)
 	attr EString as label := "<insert name>"
 	attr RootStateDeclaration as declaration[0,*]
+	attr Suspend as suspends[0,*] 
 }
 
 @palette("SuperStates")
@@ -168,17 +169,17 @@ type SuperStateDeclaration {
 	attr EString as name
 }
 
-@label(name)
+//@label(name)
 type Suspend {
-	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
+	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
 	attr EString as ActionType := "select type"
 	attr EString as condition
 	attr EString as effect
 }
 
-@label(name)
+//@label(name)
 type Action {
-	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
+	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
 	attr EString as ActionType := "select type"
 	attr EString as condition
 	attr EString as effect

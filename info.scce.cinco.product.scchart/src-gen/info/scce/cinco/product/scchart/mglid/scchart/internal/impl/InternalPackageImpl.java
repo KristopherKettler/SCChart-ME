@@ -295,8 +295,18 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
+	public EReference getInternalRootState_Suspends() {
+        return (EReference)getInternalRootState().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getInternalRootState_Label() {
-        return (EAttribute)getInternalRootState().getEStructuralFeatures().get(0);
+        return (EAttribute)getInternalRootState().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -306,7 +316,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 */
 	@Override
 	public EReference getInternalRootState_Declaration() {
-        return (EReference)getInternalRootState().getEStructuralFeatures().get(1);
+        return (EReference)getInternalRootState().getEStructuralFeatures().get(2);
 	}
 
 	/**

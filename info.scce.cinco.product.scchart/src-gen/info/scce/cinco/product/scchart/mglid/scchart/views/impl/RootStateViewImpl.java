@@ -3,6 +3,7 @@
 package info.scce.cinco.product.scchart.mglid.scchart.views.impl;
 
 import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
+import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState;
 
@@ -102,6 +103,56 @@ public class RootStateViewImpl extends EObjectImpl implements RootStateView {
 		internalRootState = newInternalRootState;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, ViewsPackage.ROOT_STATE_VIEW__INTERNAL_ROOT_STATE, oldInternalRootState, internalRootState));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<Suspend> getSuspends() {
+		return getInternalRootState().getSuspends();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSuspends(final EList<Suspend> _arg) {
+		getInternalRootState().getElement().transact("Set Suspends", () -> {
+			getInternalRootState().getSuspends().clear();
+			getInternalRootState().getSuspends().addAll(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void addSuspends(final Suspend _arg) {
+		getInternalRootState().getElement().transact("Set Suspends", () -> {
+			getInternalRootState().getSuspends().add(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void removeSuspends(final Suspend suspends) {
+		getInternalRootState().getElement().transact("Set Suspends", () -> {
+			getInternalRootState().getSuspends().remove(suspends);
+		});
+		
 	}
 
 	/**
@@ -245,6 +296,17 @@ public class RootStateViewImpl extends EObjectImpl implements RootStateView {
 	@SuppressWarnings("unchecked")
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
+			case ViewsPackage.ROOT_STATE_VIEW___GET_SUSPENDS:
+				return getSuspends();
+			case ViewsPackage.ROOT_STATE_VIEW___SET_SUSPENDS__ELIST:
+				setSuspends((EList<Suspend>)arguments.get(0));
+				return null;
+			case ViewsPackage.ROOT_STATE_VIEW___ADD_SUSPENDS__SUSPEND:
+				addSuspends((Suspend)arguments.get(0));
+				return null;
+			case ViewsPackage.ROOT_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND:
+				removeSuspends((Suspend)arguments.get(0));
+				return null;
 			case ViewsPackage.ROOT_STATE_VIEW___GET_LABEL:
 				return getLabel();
 			case ViewsPackage.ROOT_STATE_VIEW___SET_LABEL__STRING:
