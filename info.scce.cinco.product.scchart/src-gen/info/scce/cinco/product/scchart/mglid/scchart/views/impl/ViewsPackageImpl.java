@@ -304,7 +304,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateView__GetSuspends() {
+	public EOperation getRootStateView__GetLabel() {
         return getRootStateView().getEOperations().get(0);
 	}
 
@@ -314,7 +314,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateView__SetSuspends__EList() {
+	public EOperation getRootStateView__SetLabel__String() {
         return getRootStateView().getEOperations().get(1);
 	}
 
@@ -324,7 +324,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateView__AddSuspends__Suspend() {
+	public EOperation getRootStateView__GetDeclaration() {
         return getRootStateView().getEOperations().get(2);
 	}
 
@@ -334,7 +334,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateView__RemoveSuspends__Suspend() {
+	public EOperation getRootStateView__SetDeclaration__EList() {
         return getRootStateView().getEOperations().get(3);
 	}
 
@@ -344,7 +344,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateView__GetLabel() {
+	public EOperation getRootStateView__AddDeclaration__RootStateDeclaration() {
         return getRootStateView().getEOperations().get(4);
 	}
 
@@ -354,48 +354,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateView__SetLabel__String() {
-        return getRootStateView().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateView__GetDeclaration() {
-        return getRootStateView().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateView__SetDeclaration__EList() {
-        return getRootStateView().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateView__AddDeclaration__RootStateDeclaration() {
-        return getRootStateView().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EOperation getRootStateView__RemoveDeclaration__RootStateDeclaration() {
-        return getRootStateView().getEOperations().get(9);
+        return getRootStateView().getEOperations().get(5);
 	}
 
 	/**

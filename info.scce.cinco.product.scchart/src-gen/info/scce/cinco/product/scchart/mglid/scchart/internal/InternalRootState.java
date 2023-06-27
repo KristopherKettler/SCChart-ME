@@ -14,7 +14,6 @@ import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
-import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -27,7 +26,6 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getSuspends <em>Suspends</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getLabel <em>Label</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getDeclaration <em>Declaration</em>}</li>
  * </ul>
@@ -37,18 +35,6 @@ import org.eclipse.emf.common.util.EList;
  * @generated
  */
 public interface InternalRootState extends InternalContainer {
-	/**
-	 * Returns the value of the '<em><b>Suspends</b></em>' containment reference list.
-	 * The list contents are of type {@link info.scce.cinco.product.scchart.mglid.scchart.Suspend}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Suspends</em>' containment reference list.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalRootState_Suspends()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<Suspend> getSuspends();
-
 	/**
 	 * Returns the value of the '<em><b>Label</b></em>' attribute.
 	 * The default value is <code>"<insert name>"</code>.

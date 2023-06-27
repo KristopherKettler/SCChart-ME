@@ -18,7 +18,6 @@ import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
-import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState;
@@ -48,7 +47,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateImpl#getSuspends <em>Suspends</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateImpl#getLabel <em>Label</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateImpl#getDeclaration <em>Declaration</em>}</li>
  * </ul>
@@ -56,16 +54,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * @generated
  */
 public class InternalRootStateImpl extends InternalContainerImpl implements InternalRootState {
-	/**
-	 * The cached value of the '{@link #getSuspends() <em>Suspends</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSuspends()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Suspend> suspends;
-
 	/**
 	 * The default value of the '{@link #getLabel() <em>Label</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -113,19 +101,6 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	protected EClass eStaticClass() {
 		return InternalPackage.Literals.INTERNAL_ROOT_STATE;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<Suspend> getSuspends() {
-		if (suspends == null) {
-			suspends = new EObjectContainmentEList<Suspend>(Suspend.class, this, InternalPackage.INTERNAL_ROOT_STATE__SUSPENDS);
-		}
-		return suspends;
 	}
 
 	/**
@@ -262,8 +237,6 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_ROOT_STATE__SUSPENDS:
-				return ((InternalEList<?>)getSuspends()).basicRemove(otherEnd, msgs);
 			case InternalPackage.INTERNAL_ROOT_STATE__DECLARATION:
 				return ((InternalEList<?>)getDeclaration()).basicRemove(otherEnd, msgs);
 		}
@@ -278,8 +251,6 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_ROOT_STATE__SUSPENDS:
-				return getSuspends();
 			case InternalPackage.INTERNAL_ROOT_STATE__LABEL:
 				return getLabel();
 			case InternalPackage.INTERNAL_ROOT_STATE__DECLARATION:
@@ -297,10 +268,6 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_ROOT_STATE__SUSPENDS:
-				getSuspends().clear();
-				getSuspends().addAll((Collection<? extends Suspend>)newValue);
-				return;
 			case InternalPackage.INTERNAL_ROOT_STATE__LABEL:
 				setLabel((String)newValue);
 				return;
@@ -320,9 +287,6 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_ROOT_STATE__SUSPENDS:
-				getSuspends().clear();
-				return;
 			case InternalPackage.INTERNAL_ROOT_STATE__LABEL:
 				setLabel(LABEL_EDEFAULT);
 				return;
@@ -341,8 +305,6 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_ROOT_STATE__SUSPENDS:
-				return suspends != null && !suspends.isEmpty();
 			case InternalPackage.INTERNAL_ROOT_STATE__LABEL:
 				return LABEL_EDEFAULT == null ? label != null : !LABEL_EDEFAULT.equals(label);
 			case InternalPackage.INTERNAL_ROOT_STATE__DECLARATION:

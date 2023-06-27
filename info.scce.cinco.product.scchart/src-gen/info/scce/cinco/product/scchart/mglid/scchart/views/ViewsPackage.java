@@ -85,49 +85,13 @@ public interface ViewsPackage extends EPackage {
 	int ROOT_STATE_VIEW_FEATURE_COUNT = 1;
 
 	/**
-	 * The operation id for the '<em>Get Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_VIEW___GET_SUSPENDS = 0;
-
-	/**
-	 * The operation id for the '<em>Set Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_VIEW___SET_SUSPENDS__ELIST = 1;
-
-	/**
-	 * The operation id for the '<em>Add Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_VIEW___ADD_SUSPENDS__SUSPEND = 2;
-
-	/**
-	 * The operation id for the '<em>Remove Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND = 3;
-
-	/**
 	 * The operation id for the '<em>Get Label</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW___GET_LABEL = 4;
+	int ROOT_STATE_VIEW___GET_LABEL = 0;
 
 	/**
 	 * The operation id for the '<em>Set Label</em>' operation.
@@ -136,7 +100,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW___SET_LABEL__STRING = 5;
+	int ROOT_STATE_VIEW___SET_LABEL__STRING = 1;
 
 	/**
 	 * The operation id for the '<em>Get Declaration</em>' operation.
@@ -145,7 +109,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW___GET_DECLARATION = 6;
+	int ROOT_STATE_VIEW___GET_DECLARATION = 2;
 
 	/**
 	 * The operation id for the '<em>Set Declaration</em>' operation.
@@ -154,7 +118,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW___SET_DECLARATION__ELIST = 7;
+	int ROOT_STATE_VIEW___SET_DECLARATION__ELIST = 3;
 
 	/**
 	 * The operation id for the '<em>Add Declaration</em>' operation.
@@ -163,7 +127,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW___ADD_DECLARATION__ROOTSTATEDECLARATION = 8;
+	int ROOT_STATE_VIEW___ADD_DECLARATION__ROOTSTATEDECLARATION = 4;
 
 	/**
 	 * The operation id for the '<em>Remove Declaration</em>' operation.
@@ -172,7 +136,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW___REMOVE_DECLARATION__ROOTSTATEDECLARATION = 9;
+	int ROOT_STATE_VIEW___REMOVE_DECLARATION__ROOTSTATEDECLARATION = 5;
 
 	/**
 	 * The number of operations of the '<em>Root State View</em>' class.
@@ -181,7 +145,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW_OPERATION_COUNT = 10;
+	int ROOT_STATE_VIEW_OPERATION_COUNT = 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.RegionViewImpl <em>Region View</em>}' class.
@@ -1940,46 +1904,6 @@ public interface ViewsPackage extends EPackage {
 	EReference getRootStateView_InternalRootState();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#getSuspends() <em>Get Suspends</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Suspends</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#getSuspends()
-	 * @generated
-	 */
-	EOperation getRootStateView__GetSuspends();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#setSuspends(org.eclipse.emf.common.util.EList) <em>Set Suspends</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Suspends</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#setSuspends(org.eclipse.emf.common.util.EList)
-	 * @generated
-	 */
-	EOperation getRootStateView__SetSuspends__EList();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#addSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend) <em>Add Suspends</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Suspends</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#addSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend)
-	 * @generated
-	 */
-	EOperation getRootStateView__AddSuspends__Suspend();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#removeSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend) <em>Remove Suspends</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Remove Suspends</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#removeSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend)
-	 * @generated
-	 */
-	EOperation getRootStateView__RemoveSuspends__Suspend();
-
-	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#getLabel() <em>Get Label</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3243,38 +3167,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference ROOT_STATE_VIEW__INTERNAL_ROOT_STATE = eINSTANCE.getRootStateView_InternalRootState();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Suspends</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_VIEW___GET_SUSPENDS = eINSTANCE.getRootStateView__GetSuspends();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Suspends</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_VIEW___SET_SUSPENDS__ELIST = eINSTANCE.getRootStateView__SetSuspends__EList();
-
-		/**
-		 * The meta object literal for the '<em><b>Add Suspends</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_VIEW___ADD_SUSPENDS__SUSPEND = eINSTANCE.getRootStateView__AddSuspends__Suspend();
-
-		/**
-		 * The meta object literal for the '<em><b>Remove Suspends</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND = eINSTANCE.getRootStateView__RemoveSuspends__Suspend();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Label</b></em>' operation.

@@ -128,17 +128,3 @@
 /DataFlowRegionEContentAdapter.java
 /.ActionEContentAdapter.java._trace
 /.SuspendEContentAdapter.java._trace
-/.ActionEContentAdapter.xtendbin
-/.ConditionalTerminationTransitionEContentAdapter.xtendbin
-/.DeferredTransitionEContentAdapter.xtendbin
-/.HistoryTransitionEContentAdapter.xtendbin
-/.ShallowHistoryTransitionEContentAdapter.xtendbin
-/.SuspendEContentAdapter.xtendbin
-/.TerminationTransitionEContentAdapter.xtendbin
-/ActionEContentAdapter.java
-/ConditionalTerminationTransitionEContentAdapter.java
-/DeferredTransitionEContentAdapter.java
-/HistoryTransitionEContentAdapter.java
-/ShallowHistoryTransitionEContentAdapter.java
-/SuspendEContentAdapter.java
-/TerminationTransitionEContentAdapter.java
