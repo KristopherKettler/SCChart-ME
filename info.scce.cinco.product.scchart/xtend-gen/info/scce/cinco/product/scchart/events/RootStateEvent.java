@@ -6,6 +6,8 @@ import info.scce.cinco.product.scchart.mglid.scchart.Region;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
 import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclarationNode;
+import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
+import info.scce.cinco.product.scchart.mglid.scchart.SuspendNode;
 import java.util.function.Consumer;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
@@ -64,6 +66,22 @@ public final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.
       IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).setName(declaration.getName());
     };
     IterableExtensions.<RootStateDeclaration>forEach(element.getDeclaration(), _function_1);
+    final Consumer<SuspendNode> _function_2 = (SuspendNode it) -> {
+      it.delete();
+    };
+    element.getSuspendNodes().forEach(_function_2);
+    final Procedure2<Suspend, Integer> _function_3 = (Suspend suspend, Integer index) -> {
+      int _size = element.getDeclaration().size();
+      int _multiply = (13 * _size);
+      int _plus = (30 + _multiply);
+      int _plus_1 = (_plus + (13 * (index).intValue()));
+      int _width = element.getWidth();
+      int _minus = (_width - 20);
+      element.newSuspendNode(10, _plus_1, _minus, 13);
+      IterableExtensions.<SuspendNode>last(element.getSuspendNodes()).setSuspendType(suspend.getSuspendType());
+      IterableExtensions.<SuspendNode>last(element.getSuspendNodes()).setCondition(suspend.getCondition());
+    };
+    IterableExtensions.<Suspend>forEach(element.getSuspends(), _function_3);
     boolean break_ = true;
     EList<Region> _regions = element.getRegions();
     for (final Region region : _regions) {

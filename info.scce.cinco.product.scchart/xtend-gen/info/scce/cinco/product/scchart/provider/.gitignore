@@ -26,3 +26,6 @@
 /SimplesStateNameTest.java
 /TransitionPriorityProvider.java
 /.SuspendTypeProvider.java._trace
+/.SuspendTypeProvider.xtendbin
+/SuspendTypeProvider.java
+/.ActionTypeProvider.java._trace

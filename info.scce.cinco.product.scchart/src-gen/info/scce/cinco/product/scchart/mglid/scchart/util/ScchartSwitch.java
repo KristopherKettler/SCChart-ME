@@ -141,6 +141,24 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ScchartPackage.SUSPEND_NODE: {
+				SuspendNode suspendNode = (SuspendNode)theEObject;
+				T result = caseSuspendNode(suspendNode);
+				if (result == null) result = caseNode(suspendNode);
+				if (result == null) result = caseModelElement(suspendNode);
+				if (result == null) result = caseIdentifiableElement(suspendNode);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ScchartPackage.ACTION_NODE: {
+				ActionNode actionNode = (ActionNode)theEObject;
+				T result = caseActionNode(actionNode);
+				if (result == null) result = caseNode(actionNode);
+				if (result == null) result = caseModelElement(actionNode);
+				if (result == null) result = caseIdentifiableElement(actionNode);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ScchartPackage.SUPER_STATE_DECLARATION_NODE: {
 				SuperStateDeclarationNode superStateDeclarationNode = (SuperStateDeclarationNode)theEObject;
 				T result = caseSuperStateDeclarationNode(superStateDeclarationNode);
@@ -401,6 +419,36 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRootStateDeclarationNode(RootStateDeclarationNode object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Suspend Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Suspend Node</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSuspendNode(SuspendNode object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Action Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Action Node</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseActionNode(ActionNode object) {
 		return null;
 	}
 

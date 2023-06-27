@@ -14,8 +14,7 @@ import graphmodel.internal.InternalType;
  * </p>
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getCondition <em>Condition</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getActionType <em>Action Type</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getEffect <em>Effect</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getSuspendType <em>Suspend Type</em>}</li>
  * </ul>
  *
  * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuspend()
@@ -46,48 +45,26 @@ public interface InternalSuspend extends InternalType {
 	void setCondition(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Action Type</b></em>' attribute.
+	 * Returns the value of the '<em><b>Suspend Type</b></em>' attribute.
 	 * The default value is <code>"suspend"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Action Type</em>' attribute.
-	 * @see #setActionType(String)
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuspend_ActionType()
+	 * @return the value of the '<em>Suspend Type</em>' attribute.
+	 * @see #setSuspendType(String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuspend_SuspendType()
 	 * @model default="suspend"
 	 * @generated
 	 */
-	String getActionType();
+	String getSuspendType();
 
 	/**
-	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getActionType <em>Action Type</em>}' attribute.
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getSuspendType <em>Suspend Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Action Type</em>' attribute.
-	 * @see #getActionType()
+	 * @param value the new value of the '<em>Suspend Type</em>' attribute.
+	 * @see #getSuspendType()
 	 * @generated
 	 */
-	void setActionType(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Effect</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Effect</em>' attribute.
-	 * @see #setEffect(String)
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuspend_Effect()
-	 * @model
-	 * @generated
-	 */
-	String getEffect();
-
-	/**
-	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getEffect <em>Effect</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Effect</em>' attribute.
-	 * @see #getEffect()
-	 * @generated
-	 */
-	void setEffect(String value);
+	void setSuspendType(String value);
 
 } // InternalSuspend

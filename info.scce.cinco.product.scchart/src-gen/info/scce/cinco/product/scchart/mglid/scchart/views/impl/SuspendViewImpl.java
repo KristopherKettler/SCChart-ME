@@ -131,8 +131,8 @@ public class SuspendViewImpl extends EObjectImpl implements SuspendView {
 	 * @generated
 	 */
 	@Override
-	public String getActionType() {
-		return getInternalSuspend().getActionType();
+	public String getSuspendType() {
+		return getInternalSuspend().getSuspendType();
 	}
 
 	/**
@@ -141,32 +141,9 @@ public class SuspendViewImpl extends EObjectImpl implements SuspendView {
 	 * @generated
 	 */
 	@Override
-	public void setActionType(final String _arg) {
-		getInternalSuspend().getElement().transact("Set ActionType", () -> {
-			getInternalSuspend().setActionType(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getEffect() {
-		return getInternalSuspend().getEffect();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEffect(final String _arg) {
-		getInternalSuspend().getElement().transact("Set Effect", () -> {
-			getInternalSuspend().setEffect(_arg);
+	public void setSuspendType(final String _arg) {
+		getInternalSuspend().getElement().transact("Set SuspendType", () -> {
+			getInternalSuspend().setSuspendType(_arg);
 		});
 		
 	}
@@ -243,15 +220,10 @@ public class SuspendViewImpl extends EObjectImpl implements SuspendView {
 			case ViewsPackage.SUSPEND_VIEW___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ViewsPackage.SUSPEND_VIEW___GET_ACTION_TYPE:
-				return getActionType();
-			case ViewsPackage.SUSPEND_VIEW___SET_ACTION_TYPE__STRING:
-				setActionType((String)arguments.get(0));
-				return null;
-			case ViewsPackage.SUSPEND_VIEW___GET_EFFECT:
-				return getEffect();
-			case ViewsPackage.SUSPEND_VIEW___SET_EFFECT__STRING:
-				setEffect((String)arguments.get(0));
+			case ViewsPackage.SUSPEND_VIEW___GET_SUSPEND_TYPE:
+				return getSuspendType();
+			case ViewsPackage.SUSPEND_VIEW___SET_SUSPEND_TYPE__STRING:
+				setSuspendType((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

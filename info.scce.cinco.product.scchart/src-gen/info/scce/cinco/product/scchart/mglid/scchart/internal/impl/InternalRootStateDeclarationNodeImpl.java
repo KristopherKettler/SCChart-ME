@@ -267,7 +267,7 @@ public class InternalRootStateDeclarationNodeImpl extends InternalNodeImpl imple
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (declarationType: ");
 		result.append(declarationType);
-		result.append(", InputOutput: ");
+		result.append(", inputOutput: ");
 		result.append(inputOutput);
 		result.append(", name: ");
 		result.append(name);

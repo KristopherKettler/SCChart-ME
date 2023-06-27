@@ -101,6 +101,14 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 				return createInternalRootStateDeclarationNodeAdapter();
 			}
 			@Override
+			public Adapter caseInternalSuspendNode(InternalSuspendNode object) {
+				return createInternalSuspendNodeAdapter();
+			}
+			@Override
+			public Adapter caseInternalActionNode(InternalActionNode object) {
+				return createInternalActionNodeAdapter();
+			}
+			@Override
 			public Adapter caseInternalSuperStateDeclarationNode(InternalSuperStateDeclarationNode object) {
 				return createInternalSuperStateDeclarationNodeAdapter();
 			}
@@ -309,6 +317,34 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInternalRootStateDeclarationNodeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspendNode <em>Suspend Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspendNode
+	 * @generated
+	 */
+	public Adapter createInternalSuspendNodeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalActionNode <em>Action Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalActionNode
+	 * @generated
+	 */
+	public Adapter createInternalActionNodeAdapter() {
 		return null;
 	}
 

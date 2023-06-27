@@ -128,3 +128,5 @@
 /DataFlowRegionEContentAdapter.java
 /.ActionEContentAdapter.java._trace
 /.SuspendEContentAdapter.java._trace
+/.ActionNodeEContentAdapter.java._trace
+/.SuspendNodeEContentAdapter.java._trace

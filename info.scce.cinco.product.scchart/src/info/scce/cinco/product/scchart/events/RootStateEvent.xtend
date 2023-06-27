@@ -54,6 +54,13 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 			element.rootStateDeclarationNodes.last.setDeclarationType(declaration.declarationType)
 			element.rootStateDeclarationNodes.last.setName(declaration.name)
 		]
+		element.getSuspendNodes.forEach[it.delete]
+		element.getSuspends.forEach[ suspend , index |
+			element.newSuspendNode(10,30 + 13*element.getDeclaration.size+13*index,element.width-20,13)
+			element.suspendNodes.last.setSuspendType(suspend.suspendType)
+			element.suspendNodes.last.setCondition(suspend.condition)
+		]
+		
 		var boolean break = true
 		for(region : element.regions){
 			if(region.y<element.getRootStateDeclarationNodes.last.y+13){

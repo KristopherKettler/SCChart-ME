@@ -76,6 +76,24 @@ public interface ViewsFactory extends EFactory {
 	RootStateDeclarationNodeView createRootStateDeclarationNodeView();
 
 	/**
+	 * Returns a new object of class '<em>Suspend Node View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Suspend Node View</em>'.
+	 * @generated
+	 */
+	SuspendNodeView createSuspendNodeView();
+
+	/**
+	 * Returns a new object of class '<em>Action Node View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Action Node View</em>'.
+	 * @generated
+	 */
+	ActionNodeView createActionNodeView();
+
+	/**
 	 * Returns a new object of class '<em>Super State Declaration Node View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

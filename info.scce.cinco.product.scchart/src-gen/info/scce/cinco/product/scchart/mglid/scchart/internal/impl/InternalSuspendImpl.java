@@ -22,8 +22,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * </p>
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuspendImpl#getCondition <em>Condition</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuspendImpl#getActionType <em>Action Type</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuspendImpl#getEffect <em>Effect</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuspendImpl#getSuspendType <em>Suspend Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -50,44 +49,24 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 	protected String condition = CONDITION_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getActionType() <em>Action Type</em>}' attribute.
+	 * The default value of the '{@link #getSuspendType() <em>Suspend Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getActionType()
+	 * @see #getSuspendType()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String ACTION_TYPE_EDEFAULT = "suspend";
+	protected static final String SUSPEND_TYPE_EDEFAULT = "suspend";
 
 	/**
-	 * The cached value of the '{@link #getActionType() <em>Action Type</em>}' attribute.
+	 * The cached value of the '{@link #getSuspendType() <em>Suspend Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getActionType()
+	 * @see #getSuspendType()
 	 * @generated
 	 * @ordered
 	 */
-	protected String actionType = ACTION_TYPE_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getEffect() <em>Effect</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getEffect()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String EFFECT_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getEffect() <em>Effect</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getEffect()
-	 * @generated
-	 * @ordered
-	 */
-	protected String effect = EFFECT_EDEFAULT;
+	protected String suspendType = SUSPEND_TYPE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -137,8 +116,8 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 	 * @generated
 	 */
 	@Override
-	public String getActionType() {
-		return actionType;
+	public String getSuspendType() {
+		return suspendType;
 	}
 
 	/**
@@ -147,34 +126,11 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 	 * @generated
 	 */
 	@Override
-	public void setActionType(String newActionType) {
-		String oldActionType = actionType;
-		actionType = newActionType;
+	public void setSuspendType(String newSuspendType) {
+		String oldSuspendType = suspendType;
+		suspendType = newSuspendType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_SUSPEND__ACTION_TYPE, oldActionType, actionType));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getEffect() {
-		return effect;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEffect(String newEffect) {
-		String oldEffect = effect;
-		effect = newEffect;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_SUSPEND__EFFECT, oldEffect, effect));
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_SUSPEND__SUSPEND_TYPE, oldSuspendType, suspendType));
 	}
 
 	/**
@@ -187,10 +143,8 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 		switch (featureID) {
 			case InternalPackage.INTERNAL_SUSPEND__CONDITION:
 				return getCondition();
-			case InternalPackage.INTERNAL_SUSPEND__ACTION_TYPE:
-				return getActionType();
-			case InternalPackage.INTERNAL_SUSPEND__EFFECT:
-				return getEffect();
+			case InternalPackage.INTERNAL_SUSPEND__SUSPEND_TYPE:
+				return getSuspendType();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -206,11 +160,8 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 			case InternalPackage.INTERNAL_SUSPEND__CONDITION:
 				setCondition((String)newValue);
 				return;
-			case InternalPackage.INTERNAL_SUSPEND__ACTION_TYPE:
-				setActionType((String)newValue);
-				return;
-			case InternalPackage.INTERNAL_SUSPEND__EFFECT:
-				setEffect((String)newValue);
+			case InternalPackage.INTERNAL_SUSPEND__SUSPEND_TYPE:
+				setSuspendType((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -227,11 +178,8 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 			case InternalPackage.INTERNAL_SUSPEND__CONDITION:
 				setCondition(CONDITION_EDEFAULT);
 				return;
-			case InternalPackage.INTERNAL_SUSPEND__ACTION_TYPE:
-				setActionType(ACTION_TYPE_EDEFAULT);
-				return;
-			case InternalPackage.INTERNAL_SUSPEND__EFFECT:
-				setEffect(EFFECT_EDEFAULT);
+			case InternalPackage.INTERNAL_SUSPEND__SUSPEND_TYPE:
+				setSuspendType(SUSPEND_TYPE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -247,10 +195,8 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 		switch (featureID) {
 			case InternalPackage.INTERNAL_SUSPEND__CONDITION:
 				return CONDITION_EDEFAULT == null ? condition != null : !CONDITION_EDEFAULT.equals(condition);
-			case InternalPackage.INTERNAL_SUSPEND__ACTION_TYPE:
-				return ACTION_TYPE_EDEFAULT == null ? actionType != null : !ACTION_TYPE_EDEFAULT.equals(actionType);
-			case InternalPackage.INTERNAL_SUSPEND__EFFECT:
-				return EFFECT_EDEFAULT == null ? effect != null : !EFFECT_EDEFAULT.equals(effect);
+			case InternalPackage.INTERNAL_SUSPEND__SUSPEND_TYPE:
+				return SUSPEND_TYPE_EDEFAULT == null ? suspendType != null : !SUSPEND_TYPE_EDEFAULT.equals(suspendType);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -267,10 +213,8 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (condition: ");
 		result.append(condition);
-		result.append(", ActionType: ");
-		result.append(actionType);
-		result.append(", effect: ");
-		result.append(effect);
+		result.append(", SuspendType: ");
+		result.append(suspendType);
 		result.append(')');
 		return result.toString();
 	}

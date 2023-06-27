@@ -76,6 +76,24 @@ public interface ScchartFactory extends EFactory {
 	RootStateDeclarationNode createRootStateDeclarationNode();
 
 	/**
+	 * Returns a new object of class '<em>Suspend Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Suspend Node</em>'.
+	 * @generated
+	 */
+	SuspendNode createSuspendNode();
+
+	/**
+	 * Returns a new object of class '<em>Action Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Action Node</em>'.
+	 * @generated
+	 */
+	ActionNode createActionNode();
+
+	/**
 	 * Returns a new object of class '<em>Super State Declaration Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

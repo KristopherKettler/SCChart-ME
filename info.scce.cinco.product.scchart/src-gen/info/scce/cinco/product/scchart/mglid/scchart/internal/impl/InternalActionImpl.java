@@ -57,7 +57,7 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String ACTION_TYPE_EDEFAULT = "select type";
+	protected static final String ACTION_TYPE_EDEFAULT = "entry";
 
 	/**
 	 * The cached value of the '{@link #getActionType() <em>Action Type</em>}' attribute.

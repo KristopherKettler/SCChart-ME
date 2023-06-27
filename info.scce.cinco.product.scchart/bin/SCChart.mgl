@@ -11,10 +11,11 @@ graphModel SCChart {
 @event("info.scce.cinco.product.scchart.events.RootStateEvent")
 container RootState {
 	style rootStateStyle ("${label}")
-	containableElements(Region,RootStateDeclarationNode)
+	containableElements(Region,RootStateDeclarationNode,SuspendNode)
 	outgoingEdges (*)
 	attr EString as label := "<insert name>"
 	attr RootStateDeclaration as declaration[0,*]
+	attr Suspend as suspends[0,*]
 }
 
 @palette("SuperStates")
@@ -39,7 +40,7 @@ container DataFlowRegion extends Region {
 @event("info.scce.cinco.product.scchart.events.SuperStateEvent")
 container SuperState {
 	style superStateStyle ("${label}")
-	containableElements(Region,SuperStateDeclarationNode)
+	containableElements(Region,SuperStateDeclarationNode,ActionNode,SuspendNode)
 	incomingEdges (*)
 	outgoingEdges (*)
 	attr SuperStateDeclaration as declaration[0,*]
@@ -61,7 +62,20 @@ container InitilalSuperState extends SuperState{
 @disable(select,delete)
 node RootStateDeclarationNode {
 	style declarationStyle("${InputOutput}", "${declarationType}","${name}")
-	attr EString as InputOutput
+	attr EString as inputOutput
+	attr EString as declarationType
+	attr EString as name
+}
+
+node SuspendNode {
+	style declarationStyle("${SuspendType}", "${condition}","name")
+	attr EString as suspendType
+	attr EString as condition
+}
+
+node ActionNode {
+	style declarationStyle("${InputOutput}", "${declarationType}","${name}")
+	attr EString as inputOutput
 	attr EString as declarationType
 	attr EString as name
 }
@@ -79,7 +93,6 @@ node SimpleState {
 	style simpleStateStyle("${label}")
 	incomingEdges (*)
 	outgoingEdges (*)
-	
 	attr EString as label := "<insert name>"
 }	
 
@@ -168,18 +181,17 @@ type SuperStateDeclaration {
 	attr EString as name
 }
 
-//@label(name)
+@label(SuspendType)
 type Suspend {
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuspendTypeProvider")
-	attr EString as ActionType := "suspend"
+	attr EString as SuspendType := "suspend"
 	attr EString as condition
-	attr EString as effect
 }
 
-//@label(name)
+@label(ActionType)
 type Action {
-	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
-	attr EString as ActionType := "select type"
-	attr EString as condition
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.ActionTypeProvider")
+	attr EString as ActionType := "entry"
+	attr EString as condition 
 	attr EString as effect
 }

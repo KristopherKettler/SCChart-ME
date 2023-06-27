@@ -158,13 +158,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_ROOT_STATE__MODEL_ELEMENTS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__MODEL_ELEMENTS;
 
 	/**
+	 * The feature id for the '<em><b>Suspends</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ROOT_STATE__SUSPENDS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE__LABEL = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 0;
+	int INTERNAL_ROOT_STATE__LABEL = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Declaration</b></em>' containment reference list.
@@ -173,7 +182,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE__DECLARATION = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 1;
+	int INTERNAL_ROOT_STATE__DECLARATION = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Root State</em>' class.
@@ -182,7 +191,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 2;
+	int INTERNAL_ROOT_STATE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -2305,6 +2314,557 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_ROOT_STATE_DECLARATION_NODE_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuspendNodeImpl <em>Suspend Node</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuspendNodeImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuspendNode()
+	 * @generated
+	 */
+	int INTERNAL_SUSPEND_NODE = 6;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE__ID = graphmodel.internal.InternalPackage.INTERNAL_NODE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_NODE__CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>Element</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE__ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>X</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE__X = graphmodel.internal.InternalPackage.INTERNAL_NODE__X;
+
+	/**
+	 * The feature id for the '<em><b>Y</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE__Y = graphmodel.internal.InternalPackage.INTERNAL_NODE__Y;
+
+	/**
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE__HEIGHT = graphmodel.internal.InternalPackage.INTERNAL_NODE__HEIGHT;
+
+	/**
+	 * The feature id for the '<em><b>Width</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE__WIDTH = graphmodel.internal.InternalPackage.INTERNAL_NODE__WIDTH;
+
+	/**
+	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE__INCOMING = graphmodel.internal.InternalPackage.INTERNAL_NODE__INCOMING;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE__OUTGOING = graphmodel.internal.InternalPackage.INTERNAL_NODE__OUTGOING;
+
+	/**
+	 * The feature id for the '<em><b>Condition</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE__CONDITION = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Suspend Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE__SUSPEND_TYPE = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Suspend Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Equals</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_NODE___EQUALS__OBJECT;
+
+	/**
+	 * The operation id for the '<em>Hash Code</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_NODE___HASH_CODE;
+
+	/**
+	 * The operation id for the '<em>Save</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___SAVE = graphmodel.internal.InternalPackage.INTERNAL_NODE___SAVE;
+
+	/**
+	 * The operation id for the '<em>Get Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Root Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_ROOT_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___GET_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_SUCCESSORS;
+
+	/**
+	 * The operation id for the '<em>Get Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___GET_SUCCESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_SUCCESSORS__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___GET_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_PREDECESSORS;
+
+	/**
+	 * The operation id for the '<em>Get Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___GET_PREDECESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_PREDECESSORS__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Incoming</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___GET_INCOMING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Outgoing</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___GET_OUTGOING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Connect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___CAN_CONNECT__EDGE_NODE = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_CONNECT__EDGE_NODE;
+
+	/**
+	 * The operation id for the '<em>Get Outgoing Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___GET_OUTGOING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING_CONSTRAINTS;
+
+	/**
+	 * The operation id for the '<em>Get Incoming Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___GET_INCOMING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING_CONSTRAINTS;
+
+	/**
+	 * The operation id for the '<em>Can Start</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___CAN_START__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_START__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE___CAN_END__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_END__CLASS;
+
+	/**
+	 * The number of operations of the '<em>Suspend Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND_NODE_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionNodeImpl <em>Action Node</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionNodeImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalActionNode()
+	 * @generated
+	 */
+	int INTERNAL_ACTION_NODE = 7;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE__ID = graphmodel.internal.InternalPackage.INTERNAL_NODE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_NODE__CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>Element</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE__ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>X</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE__X = graphmodel.internal.InternalPackage.INTERNAL_NODE__X;
+
+	/**
+	 * The feature id for the '<em><b>Y</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE__Y = graphmodel.internal.InternalPackage.INTERNAL_NODE__Y;
+
+	/**
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE__HEIGHT = graphmodel.internal.InternalPackage.INTERNAL_NODE__HEIGHT;
+
+	/**
+	 * The feature id for the '<em><b>Width</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE__WIDTH = graphmodel.internal.InternalPackage.INTERNAL_NODE__WIDTH;
+
+	/**
+	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE__INCOMING = graphmodel.internal.InternalPackage.INTERNAL_NODE__INCOMING;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE__OUTGOING = graphmodel.internal.InternalPackage.INTERNAL_NODE__OUTGOING;
+
+	/**
+	 * The feature id for the '<em><b>Declaration Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE__DECLARATION_TYPE = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Input Output</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE__INPUT_OUTPUT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE__NAME = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Action Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Equals</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_NODE___EQUALS__OBJECT;
+
+	/**
+	 * The operation id for the '<em>Hash Code</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_NODE___HASH_CODE;
+
+	/**
+	 * The operation id for the '<em>Save</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___SAVE = graphmodel.internal.InternalPackage.INTERNAL_NODE___SAVE;
+
+	/**
+	 * The operation id for the '<em>Get Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Root Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_ROOT_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___GET_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_SUCCESSORS;
+
+	/**
+	 * The operation id for the '<em>Get Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___GET_SUCCESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_SUCCESSORS__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___GET_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_PREDECESSORS;
+
+	/**
+	 * The operation id for the '<em>Get Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___GET_PREDECESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_PREDECESSORS__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Incoming</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___GET_INCOMING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Outgoing</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___GET_OUTGOING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Connect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___CAN_CONNECT__EDGE_NODE = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_CONNECT__EDGE_NODE;
+
+	/**
+	 * The operation id for the '<em>Get Outgoing Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___GET_OUTGOING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING_CONSTRAINTS;
+
+	/**
+	 * The operation id for the '<em>Get Incoming Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___GET_INCOMING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING_CONSTRAINTS;
+
+	/**
+	 * The operation id for the '<em>Can Start</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___CAN_START__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_START__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE___CAN_END__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_END__CLASS;
+
+	/**
+	 * The number of operations of the '<em>Action Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION_NODE_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateDeclarationNodeImpl <em>Super State Declaration Node</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2312,7 +2872,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuperStateDeclarationNode()
 	 * @generated
 	 */
-	int INTERNAL_SUPER_STATE_DECLARATION_NODE = 6;
+	int INTERNAL_SUPER_STATE_DECLARATION_NODE = 8;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2583,7 +3143,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSimpleState()
 	 * @generated
 	 */
-	int INTERNAL_SIMPLE_STATE = 7;
+	int INTERNAL_SIMPLE_STATE = 9;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2962,7 +3522,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalInitialState()
 	 * @generated
 	 */
-	int INTERNAL_INITIAL_STATE = 8;
+	int INTERNAL_INITIAL_STATE = 10;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3341,7 +3901,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalFinalState()
 	 * @generated
 	 */
-	int INTERNAL_FINAL_STATE = 9;
+	int INTERNAL_FINAL_STATE = 11;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3720,7 +4280,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConnector()
 	 * @generated
 	 */
-	int INTERNAL_CONNECTOR = 10;
+	int INTERNAL_CONNECTOR = 12;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4090,7 +4650,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTransition()
 	 * @generated
 	 */
-	int INTERNAL_TRANSITION = 11;
+	int INTERNAL_TRANSITION = 13;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4307,7 +4867,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION = 12;
+	int INTERNAL_IMMEDIATE_TRANSITION = 14;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4506,7 +5066,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTerminationTransition()
 	 * @generated
 	 */
-	int INTERNAL_TERMINATION_TRANSITION = 13;
+	int INTERNAL_TERMINATION_TRANSITION = 15;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4687,7 +5247,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConditionalTerminationTransition()
 	 * @generated
 	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_TRANSITION = 14;
+	int INTERNAL_CONDITIONAL_TERMINATION_TRANSITION = 16;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4868,7 +5428,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalWeakAbortTransition()
 	 * @generated
 	 */
-	int INTERNAL_WEAK_ABORT_TRANSITION = 15;
+	int INTERNAL_WEAK_ABORT_TRANSITION = 17;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5049,7 +5609,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalStrongAbortTransition()
 	 * @generated
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION = 16;
+	int INTERNAL_STRONG_ABORT_TRANSITION = 18;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5230,7 +5790,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_DEFERRED_TRANSITION = 17;
+	int INTERNAL_DEFERRED_TRANSITION = 19;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5411,7 +5971,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalShallowHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION = 18;
+	int INTERNAL_SHALLOW_HISTORY_TRANSITION = 20;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5592,7 +6152,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_HISTORY_TRANSITION = 19;
+	int INTERNAL_HISTORY_TRANSITION = 21;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5773,7 +6333,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSCChart()
 	 * @generated
 	 */
-	int INTERNAL_SC_CHART = 20;
+	int INTERNAL_SC_CHART = 22;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5918,7 +6478,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalRootStateDeclaration()
 	 * @generated
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION = 21;
+	int INTERNAL_ROOT_STATE_DECLARATION = 23;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6027,7 +6587,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuperStateDeclaration()
 	 * @generated
 	 */
-	int INTERNAL_SUPER_STATE_DECLARATION = 22;
+	int INTERNAL_SUPER_STATE_DECLARATION = 24;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6127,7 +6687,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuspend()
 	 * @generated
 	 */
-	int INTERNAL_SUSPEND = 23;
+	int INTERNAL_SUSPEND = 25;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6157,22 +6717,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_SUSPEND__CONDITION = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Action Type</b></em>' attribute.
+	 * The feature id for the '<em><b>Suspend Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUSPEND__ACTION_TYPE = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Effect</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUSPEND__EFFECT = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 2;
+	int INTERNAL_SUSPEND__SUSPEND_TYPE = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Suspend</em>' class.
@@ -6181,7 +6732,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUSPEND_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 3;
+	int INTERNAL_SUSPEND_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -6236,7 +6787,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalAction()
 	 * @generated
 	 */
-	int INTERNAL_ACTION = 24;
+	int INTERNAL_ACTION = 26;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6347,6 +6898,17 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getInternalRootState();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getSuspends <em>Suspends</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Suspends</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getSuspends()
+	 * @see #getInternalRootState()
+	 * @generated
+	 */
+	EReference getInternalRootState_Suspends();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getLabel <em>Label</em>}'.
@@ -6949,6 +7511,81 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getInternalRootStateDeclarationNode_Name();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspendNode <em>Suspend Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Suspend Node</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspendNode
+	 * @generated
+	 */
+	EClass getInternalSuspendNode();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspendNode#getCondition <em>Condition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Condition</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspendNode#getCondition()
+	 * @see #getInternalSuspendNode()
+	 * @generated
+	 */
+	EAttribute getInternalSuspendNode_Condition();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspendNode#getSuspendType <em>Suspend Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Suspend Type</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspendNode#getSuspendType()
+	 * @see #getInternalSuspendNode()
+	 * @generated
+	 */
+	EAttribute getInternalSuspendNode_SuspendType();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalActionNode <em>Action Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Action Node</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalActionNode
+	 * @generated
+	 */
+	EClass getInternalActionNode();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalActionNode#getDeclarationType <em>Declaration Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Declaration Type</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalActionNode#getDeclarationType()
+	 * @see #getInternalActionNode()
+	 * @generated
+	 */
+	EAttribute getInternalActionNode_DeclarationType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalActionNode#getInputOutput <em>Input Output</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Input Output</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalActionNode#getInputOutput()
+	 * @see #getInternalActionNode()
+	 * @generated
+	 */
+	EAttribute getInternalActionNode_InputOutput();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalActionNode#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalActionNode#getName()
+	 * @see #getInternalActionNode()
+	 * @generated
+	 */
+	EAttribute getInternalActionNode_Name();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclarationNode <em>Super State Declaration Node</em>}'.
@@ -7906,26 +8543,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalSuspend_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getActionType <em>Action Type</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getSuspendType <em>Suspend Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Action Type</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getActionType()
+	 * @return the meta object for the attribute '<em>Suspend Type</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getSuspendType()
 	 * @see #getInternalSuspend()
 	 * @generated
 	 */
-	EAttribute getInternalSuspend_ActionType();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getEffect <em>Effect</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Effect</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getEffect()
-	 * @see #getInternalSuspend()
-	 * @generated
-	 */
-	EAttribute getInternalSuspend_Effect();
+	EAttribute getInternalSuspend_SuspendType();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction <em>Action</em>}'.
@@ -8002,6 +8628,14 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EClass INTERNAL_ROOT_STATE = eINSTANCE.getInternalRootState();
+
+		/**
+		 * The meta object literal for the '<em><b>Suspends</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INTERNAL_ROOT_STATE__SUSPENDS = eINSTANCE.getInternalRootState_Suspends();
 
 		/**
 		 * The meta object literal for the '<em><b>Label</b></em>' attribute feature.
@@ -8484,6 +9118,66 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute INTERNAL_ROOT_STATE_DECLARATION_NODE__NAME = eINSTANCE.getInternalRootStateDeclarationNode_Name();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuspendNodeImpl <em>Suspend Node</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuspendNodeImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuspendNode()
+		 * @generated
+		 */
+		EClass INTERNAL_SUSPEND_NODE = eINSTANCE.getInternalSuspendNode();
+
+		/**
+		 * The meta object literal for the '<em><b>Condition</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_SUSPEND_NODE__CONDITION = eINSTANCE.getInternalSuspendNode_Condition();
+
+		/**
+		 * The meta object literal for the '<em><b>Suspend Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_SUSPEND_NODE__SUSPEND_TYPE = eINSTANCE.getInternalSuspendNode_SuspendType();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionNodeImpl <em>Action Node</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionNodeImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalActionNode()
+		 * @generated
+		 */
+		EClass INTERNAL_ACTION_NODE = eINSTANCE.getInternalActionNode();
+
+		/**
+		 * The meta object literal for the '<em><b>Declaration Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_ACTION_NODE__DECLARATION_TYPE = eINSTANCE.getInternalActionNode_DeclarationType();
+
+		/**
+		 * The meta object literal for the '<em><b>Input Output</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_ACTION_NODE__INPUT_OUTPUT = eINSTANCE.getInternalActionNode_InputOutput();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_ACTION_NODE__NAME = eINSTANCE.getInternalActionNode_Name();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateDeclarationNodeImpl <em>Super State Declaration Node</em>}' class.
@@ -9274,20 +9968,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_SUSPEND__CONDITION = eINSTANCE.getInternalSuspend_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Action Type</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Suspend Type</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_SUSPEND__ACTION_TYPE = eINSTANCE.getInternalSuspend_ActionType();
-
-		/**
-		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_SUSPEND__EFFECT = eINSTANCE.getInternalSuspend_Effect();
+		EAttribute INTERNAL_SUSPEND__SUSPEND_TYPE = eINSTANCE.getInternalSuspend_SuspendType();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionImpl <em>Action</em>}' class.

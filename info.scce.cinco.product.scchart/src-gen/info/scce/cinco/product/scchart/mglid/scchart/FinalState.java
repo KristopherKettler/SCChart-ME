@@ -166,7 +166,7 @@ public interface FinalState extends SimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<DeferredTransition> getOutgoingDeferredTransitions();
+	EList<WeakAbortTransition> getOutgoingWeakAbortTransitions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -175,30 +175,6 @@ public interface FinalState extends SimpleState {
 	 * @generated
 	 */
 	EList<ImmediateTransition> getOutgoingImmediateTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<ConditionalTerminationTransition> getOutgoingConditionalTerminationTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<StrongAbortTransition> getOutgoingStrongAbortTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<ShallowHistoryTransition> getOutgoingShallowHistoryTransitions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -222,14 +198,6 @@ public interface FinalState extends SimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<WeakAbortTransition> getOutgoingWeakAbortTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
 	EList<Transition> getOutgoingTransitions();
 
 	/**
@@ -238,7 +206,39 @@ public interface FinalState extends SimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<DeferredTransition> getIncomingDeferredTransitions();
+	EList<ConditionalTerminationTransition> getOutgoingConditionalTerminationTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<StrongAbortTransition> getOutgoingStrongAbortTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<DeferredTransition> getOutgoingDeferredTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<ShallowHistoryTransition> getOutgoingShallowHistoryTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<WeakAbortTransition> getIncomingWeakAbortTransitions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -247,30 +247,6 @@ public interface FinalState extends SimpleState {
 	 * @generated
 	 */
 	EList<ImmediateTransition> getIncomingImmediateTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<ConditionalTerminationTransition> getIncomingConditionalTerminationTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<StrongAbortTransition> getIncomingStrongAbortTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<ShallowHistoryTransition> getIncomingShallowHistoryTransitions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -294,7 +270,7 @@ public interface FinalState extends SimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<WeakAbortTransition> getIncomingWeakAbortTransitions();
+	EList<Transition> getIncomingTransitions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -302,7 +278,31 @@ public interface FinalState extends SimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<Transition> getIncomingTransitions();
+	EList<ConditionalTerminationTransition> getIncomingConditionalTerminationTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<StrongAbortTransition> getIncomingStrongAbortTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<DeferredTransition> getIncomingDeferredTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<ShallowHistoryTransition> getIncomingShallowHistoryTransitions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,7 +414,7 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewDeferredTransition(InitialState target);
+	boolean canNewWeakAbortTransition(SuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -422,31 +422,7 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	DeferredTransition newDeferredTransition(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	DeferredTransition newDeferredTransition(InitialState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewDeferredTransition(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	DeferredTransition newDeferredTransition(FinalState target);
+	WeakAbortTransition newWeakAbortTransition(SuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -454,967 +430,7 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true" idRequired="true"
 	 * @generated
 	 */
-	DeferredTransition newDeferredTransition(FinalState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewDeferredTransition(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	DeferredTransition newDeferredTransition(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	DeferredTransition newDeferredTransition(SimpleState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewDeferredTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	DeferredTransition newDeferredTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	DeferredTransition newDeferredTransition(Connector target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewDeferredTransition(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	DeferredTransition newDeferredTransition(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	DeferredTransition newDeferredTransition(InitilalSuperState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewDeferredTransition(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	DeferredTransition newDeferredTransition(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	DeferredTransition newDeferredTransition(SuperState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewImmediateTransition(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ImmediateTransition newImmediateTransition(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ImmediateTransition newImmediateTransition(InitialState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewImmediateTransition(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ImmediateTransition newImmediateTransition(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ImmediateTransition newImmediateTransition(FinalState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewImmediateTransition(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ImmediateTransition newImmediateTransition(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ImmediateTransition newImmediateTransition(SimpleState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewImmediateTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ImmediateTransition newImmediateTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ImmediateTransition newImmediateTransition(Connector target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewImmediateTransition(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ImmediateTransition newImmediateTransition(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ImmediateTransition newImmediateTransition(InitilalSuperState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewImmediateTransition(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ImmediateTransition newImmediateTransition(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ImmediateTransition newImmediateTransition(SuperState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewConditionalTerminationTransition(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ConditionalTerminationTransition newConditionalTerminationTransition(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ConditionalTerminationTransition newConditionalTerminationTransition(InitialState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewConditionalTerminationTransition(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ConditionalTerminationTransition newConditionalTerminationTransition(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ConditionalTerminationTransition newConditionalTerminationTransition(FinalState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewConditionalTerminationTransition(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ConditionalTerminationTransition newConditionalTerminationTransition(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ConditionalTerminationTransition newConditionalTerminationTransition(SimpleState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewConditionalTerminationTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ConditionalTerminationTransition newConditionalTerminationTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ConditionalTerminationTransition newConditionalTerminationTransition(Connector target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewConditionalTerminationTransition(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ConditionalTerminationTransition newConditionalTerminationTransition(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ConditionalTerminationTransition newConditionalTerminationTransition(InitilalSuperState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewConditionalTerminationTransition(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ConditionalTerminationTransition newConditionalTerminationTransition(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ConditionalTerminationTransition newConditionalTerminationTransition(SuperState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewStrongAbortTransition(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	StrongAbortTransition newStrongAbortTransition(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	StrongAbortTransition newStrongAbortTransition(InitialState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewStrongAbortTransition(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	StrongAbortTransition newStrongAbortTransition(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	StrongAbortTransition newStrongAbortTransition(FinalState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewStrongAbortTransition(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	StrongAbortTransition newStrongAbortTransition(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	StrongAbortTransition newStrongAbortTransition(SimpleState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewStrongAbortTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	StrongAbortTransition newStrongAbortTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	StrongAbortTransition newStrongAbortTransition(Connector target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewStrongAbortTransition(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	StrongAbortTransition newStrongAbortTransition(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	StrongAbortTransition newStrongAbortTransition(InitilalSuperState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewStrongAbortTransition(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	StrongAbortTransition newStrongAbortTransition(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	StrongAbortTransition newStrongAbortTransition(SuperState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewShallowHistoryTransition(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ShallowHistoryTransition newShallowHistoryTransition(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ShallowHistoryTransition newShallowHistoryTransition(InitialState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewShallowHistoryTransition(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ShallowHistoryTransition newShallowHistoryTransition(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ShallowHistoryTransition newShallowHistoryTransition(FinalState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewShallowHistoryTransition(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ShallowHistoryTransition newShallowHistoryTransition(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ShallowHistoryTransition newShallowHistoryTransition(SimpleState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewShallowHistoryTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ShallowHistoryTransition newShallowHistoryTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ShallowHistoryTransition newShallowHistoryTransition(Connector target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewShallowHistoryTransition(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ShallowHistoryTransition newShallowHistoryTransition(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ShallowHistoryTransition newShallowHistoryTransition(InitilalSuperState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewShallowHistoryTransition(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ShallowHistoryTransition newShallowHistoryTransition(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ShallowHistoryTransition newShallowHistoryTransition(SuperState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewTerminationTransition(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	TerminationTransition newTerminationTransition(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	TerminationTransition newTerminationTransition(InitialState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewTerminationTransition(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	TerminationTransition newTerminationTransition(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	TerminationTransition newTerminationTransition(FinalState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewTerminationTransition(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	TerminationTransition newTerminationTransition(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	TerminationTransition newTerminationTransition(SimpleState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewTerminationTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	TerminationTransition newTerminationTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	TerminationTransition newTerminationTransition(Connector target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewTerminationTransition(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	TerminationTransition newTerminationTransition(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	TerminationTransition newTerminationTransition(InitilalSuperState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewTerminationTransition(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	TerminationTransition newTerminationTransition(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	TerminationTransition newTerminationTransition(SuperState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewHistoryTransition(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	HistoryTransition newHistoryTransition(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	HistoryTransition newHistoryTransition(InitialState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewHistoryTransition(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	HistoryTransition newHistoryTransition(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	HistoryTransition newHistoryTransition(FinalState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewHistoryTransition(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	HistoryTransition newHistoryTransition(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	HistoryTransition newHistoryTransition(SimpleState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewHistoryTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	HistoryTransition newHistoryTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	HistoryTransition newHistoryTransition(Connector target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewHistoryTransition(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	HistoryTransition newHistoryTransition(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	HistoryTransition newHistoryTransition(InitilalSuperState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewHistoryTransition(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	HistoryTransition newHistoryTransition(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	HistoryTransition newHistoryTransition(SuperState target, String id);
+	WeakAbortTransition newWeakAbortTransition(SuperState target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1470,6 +486,30 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
+	boolean canNewWeakAbortTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	WeakAbortTransition newWeakAbortTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	WeakAbortTransition newWeakAbortTransition(InitilalSuperState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
 	boolean canNewWeakAbortTransition(SimpleState target);
 
 	/**
@@ -1518,7 +558,7 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewWeakAbortTransition(InitilalSuperState target);
+	boolean canNewImmediateTransition(SuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1526,7 +566,7 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	WeakAbortTransition newWeakAbortTransition(InitilalSuperState target);
+	ImmediateTransition newImmediateTransition(SuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1534,7 +574,7 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true" idRequired="true"
 	 * @generated
 	 */
-	WeakAbortTransition newWeakAbortTransition(InitilalSuperState target, String id);
+	ImmediateTransition newImmediateTransition(SuperState target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1542,7 +582,7 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewWeakAbortTransition(SuperState target);
+	boolean canNewImmediateTransition(InitialState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1550,7 +590,7 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	WeakAbortTransition newWeakAbortTransition(SuperState target);
+	ImmediateTransition newImmediateTransition(InitialState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1558,7 +598,415 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true" idRequired="true"
 	 * @generated
 	 */
-	WeakAbortTransition newWeakAbortTransition(SuperState target, String id);
+	ImmediateTransition newImmediateTransition(InitialState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewImmediateTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	ImmediateTransition newImmediateTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	ImmediateTransition newImmediateTransition(FinalState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewImmediateTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	ImmediateTransition newImmediateTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	ImmediateTransition newImmediateTransition(InitilalSuperState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewImmediateTransition(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	ImmediateTransition newImmediateTransition(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	ImmediateTransition newImmediateTransition(SimpleState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewImmediateTransition(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	ImmediateTransition newImmediateTransition(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	ImmediateTransition newImmediateTransition(Connector target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewTerminationTransition(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	TerminationTransition newTerminationTransition(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	TerminationTransition newTerminationTransition(SuperState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewTerminationTransition(InitialState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	TerminationTransition newTerminationTransition(InitialState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	TerminationTransition newTerminationTransition(InitialState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewTerminationTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	TerminationTransition newTerminationTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	TerminationTransition newTerminationTransition(FinalState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewTerminationTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	TerminationTransition newTerminationTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	TerminationTransition newTerminationTransition(InitilalSuperState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewTerminationTransition(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	TerminationTransition newTerminationTransition(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	TerminationTransition newTerminationTransition(SimpleState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewTerminationTransition(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	TerminationTransition newTerminationTransition(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	TerminationTransition newTerminationTransition(Connector target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewHistoryTransition(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	HistoryTransition newHistoryTransition(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	HistoryTransition newHistoryTransition(SuperState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewHistoryTransition(InitialState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	HistoryTransition newHistoryTransition(InitialState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	HistoryTransition newHistoryTransition(InitialState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewHistoryTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	HistoryTransition newHistoryTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	HistoryTransition newHistoryTransition(FinalState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewHistoryTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	HistoryTransition newHistoryTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	HistoryTransition newHistoryTransition(InitilalSuperState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewHistoryTransition(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	HistoryTransition newHistoryTransition(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	HistoryTransition newHistoryTransition(SimpleState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewHistoryTransition(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	HistoryTransition newHistoryTransition(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	HistoryTransition newHistoryTransition(Connector target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewTransition(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	Transition newTransition(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	Transition newTransition(SuperState target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1614,6 +1062,30 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
+	boolean canNewTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	Transition newTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	Transition newTransition(InitilalSuperState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
 	boolean canNewTransition(SimpleState target);
 
 	/**
@@ -1662,7 +1134,7 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewTransition(InitilalSuperState target);
+	boolean canNewConditionalTerminationTransition(SuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1670,7 +1142,7 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	Transition newTransition(InitilalSuperState target);
+	ConditionalTerminationTransition newConditionalTerminationTransition(SuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1678,7 +1150,7 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true" idRequired="true"
 	 * @generated
 	 */
-	Transition newTransition(InitilalSuperState target, String id);
+	ConditionalTerminationTransition newConditionalTerminationTransition(SuperState target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1686,7 +1158,7 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewTransition(SuperState target);
+	boolean canNewConditionalTerminationTransition(InitialState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1694,7 +1166,7 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	Transition newTransition(SuperState target);
+	ConditionalTerminationTransition newConditionalTerminationTransition(InitialState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1702,7 +1174,535 @@ public interface FinalState extends SimpleState {
 	 * @model targetRequired="true" idRequired="true"
 	 * @generated
 	 */
-	Transition newTransition(SuperState target, String id);
+	ConditionalTerminationTransition newConditionalTerminationTransition(InitialState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewConditionalTerminationTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	ConditionalTerminationTransition newConditionalTerminationTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	ConditionalTerminationTransition newConditionalTerminationTransition(FinalState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewConditionalTerminationTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	ConditionalTerminationTransition newConditionalTerminationTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	ConditionalTerminationTransition newConditionalTerminationTransition(InitilalSuperState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewConditionalTerminationTransition(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	ConditionalTerminationTransition newConditionalTerminationTransition(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	ConditionalTerminationTransition newConditionalTerminationTransition(SimpleState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewConditionalTerminationTransition(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	ConditionalTerminationTransition newConditionalTerminationTransition(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	ConditionalTerminationTransition newConditionalTerminationTransition(Connector target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewStrongAbortTransition(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	StrongAbortTransition newStrongAbortTransition(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	StrongAbortTransition newStrongAbortTransition(SuperState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewStrongAbortTransition(InitialState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	StrongAbortTransition newStrongAbortTransition(InitialState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	StrongAbortTransition newStrongAbortTransition(InitialState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewStrongAbortTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	StrongAbortTransition newStrongAbortTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	StrongAbortTransition newStrongAbortTransition(FinalState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewStrongAbortTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	StrongAbortTransition newStrongAbortTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	StrongAbortTransition newStrongAbortTransition(InitilalSuperState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewStrongAbortTransition(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	StrongAbortTransition newStrongAbortTransition(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	StrongAbortTransition newStrongAbortTransition(SimpleState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewStrongAbortTransition(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	StrongAbortTransition newStrongAbortTransition(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	StrongAbortTransition newStrongAbortTransition(Connector target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewDeferredTransition(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	DeferredTransition newDeferredTransition(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	DeferredTransition newDeferredTransition(SuperState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewDeferredTransition(InitialState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	DeferredTransition newDeferredTransition(InitialState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	DeferredTransition newDeferredTransition(InitialState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewDeferredTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	DeferredTransition newDeferredTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	DeferredTransition newDeferredTransition(FinalState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewDeferredTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	DeferredTransition newDeferredTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	DeferredTransition newDeferredTransition(InitilalSuperState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewDeferredTransition(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	DeferredTransition newDeferredTransition(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	DeferredTransition newDeferredTransition(SimpleState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewDeferredTransition(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	DeferredTransition newDeferredTransition(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	DeferredTransition newDeferredTransition(Connector target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewShallowHistoryTransition(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	ShallowHistoryTransition newShallowHistoryTransition(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	ShallowHistoryTransition newShallowHistoryTransition(SuperState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewShallowHistoryTransition(InitialState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	ShallowHistoryTransition newShallowHistoryTransition(InitialState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	ShallowHistoryTransition newShallowHistoryTransition(InitialState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewShallowHistoryTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	ShallowHistoryTransition newShallowHistoryTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	ShallowHistoryTransition newShallowHistoryTransition(FinalState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewShallowHistoryTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	ShallowHistoryTransition newShallowHistoryTransition(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	ShallowHistoryTransition newShallowHistoryTransition(InitilalSuperState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewShallowHistoryTransition(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	ShallowHistoryTransition newShallowHistoryTransition(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	ShallowHistoryTransition newShallowHistoryTransition(SimpleState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewShallowHistoryTransition(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	ShallowHistoryTransition newShallowHistoryTransition(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	ShallowHistoryTransition newShallowHistoryTransition(Connector target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -101,6 +101,14 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 				return createRootStateDeclarationNodeAdapter();
 			}
 			@Override
+			public Adapter caseSuspendNode(SuspendNode object) {
+				return createSuspendNodeAdapter();
+			}
+			@Override
+			public Adapter caseActionNode(ActionNode object) {
+				return createActionNodeAdapter();
+			}
+			@Override
 			public Adapter caseSuperStateDeclarationNode(SuperStateDeclarationNode object) {
 				return createSuperStateDeclarationNodeAdapter();
 			}
@@ -309,6 +317,34 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createRootStateDeclarationNodeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.SuspendNode <em>Suspend Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.SuspendNode
+	 * @generated
+	 */
+	public Adapter createSuspendNodeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.ActionNode <em>Action Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.ActionNode
+	 * @generated
+	 */
+	public Adapter createActionNodeAdapter() {
 		return null;
 	}
 

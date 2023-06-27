@@ -62,6 +62,8 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 			case ScchartPackage.SUPER_STATE: return createSuperState();
 			case ScchartPackage.INITILAL_SUPER_STATE: return createInitilalSuperState();
 			case ScchartPackage.ROOT_STATE_DECLARATION_NODE: return createRootStateDeclarationNode();
+			case ScchartPackage.SUSPEND_NODE: return createSuspendNode();
+			case ScchartPackage.ACTION_NODE: return createActionNode();
 			case ScchartPackage.SUPER_STATE_DECLARATION_NODE: return createSuperStateDeclarationNode();
 			case ScchartPackage.SIMPLE_STATE: return createSimpleState();
 			case ScchartPackage.INITIAL_STATE: return createInitialState();
@@ -150,6 +152,28 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	public RootStateDeclarationNode createRootStateDeclarationNode() {
 		RootStateDeclarationNodeImpl rootStateDeclarationNode = new RootStateDeclarationNodeImpl();
 		return rootStateDeclarationNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SuspendNode createSuspendNode() {
+		SuspendNodeImpl suspendNode = new SuspendNodeImpl();
+		return suspendNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ActionNode createActionNode() {
+		ActionNodeImpl actionNode = new ActionNodeImpl();
+		return actionNode;
 	}
 
 	/**

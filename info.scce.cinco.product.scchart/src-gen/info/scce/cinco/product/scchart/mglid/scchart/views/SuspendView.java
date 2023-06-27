@@ -67,7 +67,7 @@ public interface SuspendView extends EObject {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	String getActionType();
+	String getSuspendType();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -75,22 +75,6 @@ public interface SuspendView extends EObject {
 	 * @model
 	 * @generated
 	 */
-	void setActionType(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	String getEffect();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setEffect(String _arg);
+	void setSuspendType(String _arg);
 
 } // SuspendView

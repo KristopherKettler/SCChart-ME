@@ -104,6 +104,18 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ViewsPackage.SUSPEND_NODE_VIEW: {
+				SuspendNodeView suspendNodeView = (SuspendNodeView)theEObject;
+				T result = caseSuspendNodeView(suspendNodeView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ViewsPackage.ACTION_NODE_VIEW: {
+				ActionNodeView actionNodeView = (ActionNodeView)theEObject;
+				T result = caseActionNodeView(actionNodeView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ViewsPackage.SUPER_STATE_DECLARATION_NODE_VIEW: {
 				SuperStateDeclarationNodeView superStateDeclarationNodeView = (SuperStateDeclarationNodeView)theEObject;
 				T result = caseSuperStateDeclarationNodeView(superStateDeclarationNodeView);
@@ -311,6 +323,36 @@ public class ViewsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRootStateDeclarationNodeView(RootStateDeclarationNodeView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Suspend Node View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Suspend Node View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSuspendNodeView(SuspendNodeView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Action Node View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Action Node View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseActionNodeView(ActionNodeView object) {
 		return null;
 	}
 

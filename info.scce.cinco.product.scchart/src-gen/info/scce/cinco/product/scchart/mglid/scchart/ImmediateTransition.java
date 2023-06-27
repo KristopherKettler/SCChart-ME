@@ -138,6 +138,22 @@ public interface ImmediateTransition extends Edge {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
+	boolean canReconnectSource(SuperState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(SuperState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
 	boolean canReconnectSource(RootState source);
 
 	/**
@@ -186,6 +202,22 @@ public interface ImmediateTransition extends Edge {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
+	boolean canReconnectSource(InitilalSuperState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(InitilalSuperState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
 	boolean canReconnectSource(SimpleState source);
 
 	/**
@@ -215,34 +247,18 @@ public interface ImmediateTransition extends Edge {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
+	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(InitilalSuperState source);
+	boolean canReconnectTarget(SuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
+	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectSource(InitilalSuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectSource(SuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(SuperState source);
+	void reconnectTarget(SuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -282,6 +298,22 @@ public interface ImmediateTransition extends Edge {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
+	boolean canReconnectTarget(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
 	boolean canReconnectTarget(SimpleState target);
 
 	/**
@@ -307,38 +339,6 @@ public interface ImmediateTransition extends Edge {
 	 * @generated
 	 */
 	void reconnectTarget(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectTarget(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	void reconnectTarget(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectTarget(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	void reconnectTarget(SuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->

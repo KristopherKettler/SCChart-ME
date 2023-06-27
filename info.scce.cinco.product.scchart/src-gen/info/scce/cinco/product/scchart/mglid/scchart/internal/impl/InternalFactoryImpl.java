@@ -62,6 +62,8 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_SUPER_STATE: return createInternalSuperState();
 			case InternalPackage.INTERNAL_INITILAL_SUPER_STATE: return createInternalInitilalSuperState();
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION_NODE: return createInternalRootStateDeclarationNode();
+			case InternalPackage.INTERNAL_SUSPEND_NODE: return createInternalSuspendNode();
+			case InternalPackage.INTERNAL_ACTION_NODE: return createInternalActionNode();
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION_NODE: return createInternalSuperStateDeclarationNode();
 			case InternalPackage.INTERNAL_SIMPLE_STATE: return createInternalSimpleState();
 			case InternalPackage.INTERNAL_INITIAL_STATE: return createInternalInitialState();
@@ -150,6 +152,28 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalRootStateDeclarationNode createInternalRootStateDeclarationNode() {
 		InternalRootStateDeclarationNodeImpl internalRootStateDeclarationNode = new InternalRootStateDeclarationNodeImpl();
 		return internalRootStateDeclarationNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalSuspendNode createInternalSuspendNode() {
+		InternalSuspendNodeImpl internalSuspendNode = new InternalSuspendNodeImpl();
+		return internalSuspendNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalActionNode createInternalActionNode() {
+		InternalActionNodeImpl internalActionNode = new InternalActionNodeImpl();
+		return internalActionNode;
 	}
 
 	/**

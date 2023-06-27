@@ -62,6 +62,8 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.SUPER_STATE_VIEW: return createSuperStateView();
 			case ViewsPackage.INITILAL_SUPER_STATE_VIEW: return createInitilalSuperStateView();
 			case ViewsPackage.ROOT_STATE_DECLARATION_NODE_VIEW: return createRootStateDeclarationNodeView();
+			case ViewsPackage.SUSPEND_NODE_VIEW: return createSuspendNodeView();
+			case ViewsPackage.ACTION_NODE_VIEW: return createActionNodeView();
 			case ViewsPackage.SUPER_STATE_DECLARATION_NODE_VIEW: return createSuperStateDeclarationNodeView();
 			case ViewsPackage.SIMPLE_STATE_VIEW: return createSimpleStateView();
 			case ViewsPackage.INITIAL_STATE_VIEW: return createInitialStateView();
@@ -150,6 +152,28 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public RootStateDeclarationNodeView createRootStateDeclarationNodeView() {
 		RootStateDeclarationNodeViewImpl rootStateDeclarationNodeView = new RootStateDeclarationNodeViewImpl();
 		return rootStateDeclarationNodeView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SuspendNodeView createSuspendNodeView() {
+		SuspendNodeViewImpl suspendNodeView = new SuspendNodeViewImpl();
+		return suspendNodeView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ActionNodeView createActionNodeView() {
+		ActionNodeViewImpl actionNodeView = new ActionNodeViewImpl();
+		return actionNodeView;
 	}
 
 	/**

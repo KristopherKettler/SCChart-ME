@@ -76,6 +76,24 @@ public interface InternalFactory extends EFactory {
 	InternalRootStateDeclarationNode createInternalRootStateDeclarationNode();
 
 	/**
+	 * Returns a new object of class '<em>Suspend Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Suspend Node</em>'.
+	 * @generated
+	 */
+	InternalSuspendNode createInternalSuspendNode();
+
+	/**
+	 * Returns a new object of class '<em>Action Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Action Node</em>'.
+	 * @generated
+	 */
+	InternalActionNode createInternalActionNode();
+
+	/**
 	 * Returns a new object of class '<em>Super State Declaration Node</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
