@@ -47,13 +47,13 @@ public interface InternalSuspend extends InternalType {
 
 	/**
 	 * Returns the value of the '<em><b>Action Type</b></em>' attribute.
-	 * The default value is <code>"select type"</code>.
+	 * The default value is <code>"suspend"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Action Type</em>' attribute.
 	 * @see #setActionType(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuspend_ActionType()
-	 * @model default="select type"
+	 * @model default="suspend"
 	 * @generated
 	 */
 	String getActionType();

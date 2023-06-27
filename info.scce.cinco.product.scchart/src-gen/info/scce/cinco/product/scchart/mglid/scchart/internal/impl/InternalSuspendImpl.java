@@ -57,7 +57,7 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String ACTION_TYPE_EDEFAULT = "select type";
+	protected static final String ACTION_TYPE_EDEFAULT = "suspend";
 
 	/**
 	 * The cached value of the '{@link #getActionType() <em>Action Type</em>}' attribute.
