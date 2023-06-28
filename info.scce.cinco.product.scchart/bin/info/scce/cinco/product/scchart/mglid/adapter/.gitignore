@@ -130,3 +130,7 @@
 /.SuspendEContentAdapter.java._trace
 /.ActionNodeEContentAdapter.java._trace
 /.SuspendNodeEContentAdapter.java._trace
+/.ActionNodeEContentAdapter.xtendbin
+/.SuspendNodeEContentAdapter.xtendbin
+/ActionNodeEContentAdapter.java
+/SuspendNodeEContentAdapter.java

@@ -63,7 +63,7 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 		
 		var boolean break = true
 		for(region : element.regions){
-			if(region.y<element.getRootStateDeclarationNodes.last.y+13){
+			if(region.y<element.getRootStateDeclarationNodes.last.y+13||region.y<element.getSuspendNodes.last.y+13){
 				for(region1 : element.regions){
 					region1.y = region1.y + 13
 				}

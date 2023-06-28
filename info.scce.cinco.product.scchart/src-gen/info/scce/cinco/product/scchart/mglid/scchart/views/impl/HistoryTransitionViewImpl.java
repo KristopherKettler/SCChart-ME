@@ -7,7 +7,11 @@ import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTra
 import info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView;
 import info.scce.cinco.product.scchart.mglid.scchart.views.ViewsPackage;
 
+import java.lang.reflect.InvocationTargetException;
+
 import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -104,6 +108,52 @@ public class HistoryTransitionViewImpl extends EObjectImpl implements HistoryTra
 	 * @generated
 	 */
 	@Override
+	public boolean isDeepHistory() {
+		return getInternalHistoryTransition().isDeepHistory();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDeepHistory(final boolean _arg) {
+		getInternalHistoryTransition().getElement().transact("Set DeepHistory", () -> {
+			getInternalHistoryTransition().setDeepHistory(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getH() {
+		return getInternalHistoryTransition().getH();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setH(final String _arg) {
+		getInternalHistoryTransition().getElement().transact("Set H", () -> {
+			getInternalHistoryTransition().setH(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.HISTORY_TRANSITION_VIEW__INTERNAL_HISTORY_TRANSITION:
@@ -155,6 +205,28 @@ public class HistoryTransitionViewImpl extends EObjectImpl implements HistoryTra
 				return internalHistoryTransition != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY:
+				return isDeepHistory();
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN:
+				setDeepHistory((Boolean)arguments.get(0));
+				return null;
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___GET_H:
+				return getH();
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_H__STRING:
+				setH((String)arguments.get(0));
+				return null;
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 } //HistoryTransitionViewImpl

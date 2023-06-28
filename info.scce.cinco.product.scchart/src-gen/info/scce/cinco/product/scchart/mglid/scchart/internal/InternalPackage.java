@@ -5964,187 +5964,6 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_DEFERRED_TRANSITION_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalShallowHistoryTransitionImpl <em>Shallow History Transition</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalShallowHistoryTransitionImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalShallowHistoryTransition()
-	 * @generated
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION = 20;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION__ID = graphmodel.internal.InternalPackage.INTERNAL_EDGE__ID;
-
-	/**
-	 * The feature id for the '<em><b>Container</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_EDGE__CONTAINER;
-
-	/**
-	 * The feature id for the '<em><b>Element</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>source Element</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION__SOURCE_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__SOURCE_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>target Element</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION__TARGET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__TARGET_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>Bendpoints</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION__BENDPOINTS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__BENDPOINTS;
-
-	/**
-	 * The feature id for the '<em><b>Decorators</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION__DECORATORS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__DECORATORS;
-
-	/**
-	 * The number of structural features of the '<em>Shallow History Transition</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Equals</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___EQUALS__OBJECT;
-
-	/**
-	 * The operation id for the '<em>Hash Code</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___HASH_CODE;
-
-	/**
-	 * The operation id for the '<em>Save</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION___SAVE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SAVE;
-
-	/**
-	 * The operation id for the '<em>Get Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_ELEMENT;
-
-	/**
-	 * The operation id for the '<em>Get Root Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_ROOT_ELEMENT;
-
-	/**
-	 * The operation id for the '<em>Get Source Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION___GET_SOURCE_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_SOURCE_ELEMENT;
-
-	/**
-	 * The operation id for the '<em>Get Target Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION___GET_TARGET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_TARGET_ELEMENT;
-
-	/**
-	 * The operation id for the '<em>Set Source Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION___SET_SOURCE_ELEMENT__NODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SET_SOURCE_ELEMENT__NODE;
-
-	/**
-	 * The operation id for the '<em>Set Target Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION___SET_TARGET_ELEMENT__NODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SET_TARGET_ELEMENT__NODE;
-
-	/**
-	 * The operation id for the '<em>Add Bendpoint</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION___ADD_BENDPOINT__INT_INT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___ADD_BENDPOINT__INT_INT;
-
-	/**
-	 * The number of operations of the '<em>Shallow History Transition</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SHALLOW_HISTORY_TRANSITION_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalHistoryTransitionImpl <em>History Transition</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6152,7 +5971,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_HISTORY_TRANSITION = 21;
+	int INTERNAL_HISTORY_TRANSITION = 20;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6218,13 +6037,31 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_HISTORY_TRANSITION__DECORATORS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__DECORATORS;
 
 	/**
+	 * The feature id for the '<em><b>Deep History</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_HISTORY_TRANSITION__DEEP_HISTORY = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>H</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_HISTORY_TRANSITION__H = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>History Transition</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_HISTORY_TRANSITION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 0;
+	int INTERNAL_HISTORY_TRANSITION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -6333,7 +6170,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSCChart()
 	 * @generated
 	 */
-	int INTERNAL_SC_CHART = 22;
+	int INTERNAL_SC_CHART = 21;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6478,7 +6315,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalRootStateDeclaration()
 	 * @generated
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION = 23;
+	int INTERNAL_ROOT_STATE_DECLARATION = 22;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6587,7 +6424,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuperStateDeclaration()
 	 * @generated
 	 */
-	int INTERNAL_SUPER_STATE_DECLARATION = 24;
+	int INTERNAL_SUPER_STATE_DECLARATION = 23;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6687,7 +6524,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuspend()
 	 * @generated
 	 */
-	int INTERNAL_SUSPEND = 25;
+	int INTERNAL_SUSPEND = 24;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6787,7 +6624,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalAction()
 	 * @generated
 	 */
-	int INTERNAL_ACTION = 26;
+	int INTERNAL_ACTION = 25;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8407,16 +8244,6 @@ public interface InternalPackage extends EPackage {
 	EClass getInternalDeferredTransition();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalShallowHistoryTransition <em>Shallow History Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Shallow History Transition</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalShallowHistoryTransition
-	 * @generated
-	 */
-	EClass getInternalShallowHistoryTransition();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition <em>History Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8425,6 +8252,28 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getInternalHistoryTransition();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#isDeepHistory <em>Deep History</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Deep History</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#isDeepHistory()
+	 * @see #getInternalHistoryTransition()
+	 * @generated
+	 */
+	EAttribute getInternalHistoryTransition_DeepHistory();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#getH <em>H</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>H</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#getH()
+	 * @see #getInternalHistoryTransition()
+	 * @generated
+	 */
+	EAttribute getInternalHistoryTransition_H();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChart <em>SC Chart</em>}'.
@@ -9852,16 +9701,6 @@ public interface InternalPackage extends EPackage {
 		EClass INTERNAL_DEFERRED_TRANSITION = eINSTANCE.getInternalDeferredTransition();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalShallowHistoryTransitionImpl <em>Shallow History Transition</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalShallowHistoryTransitionImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalShallowHistoryTransition()
-		 * @generated
-		 */
-		EClass INTERNAL_SHALLOW_HISTORY_TRANSITION = eINSTANCE.getInternalShallowHistoryTransition();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalHistoryTransitionImpl <em>History Transition</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -9870,6 +9709,22 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EClass INTERNAL_HISTORY_TRANSITION = eINSTANCE.getInternalHistoryTransition();
+
+		/**
+		 * The meta object literal for the '<em><b>Deep History</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_HISTORY_TRANSITION__DEEP_HISTORY = eINSTANCE.getInternalHistoryTransition_DeepHistory();
+
+		/**
+		 * The meta object literal for the '<em><b>H</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_HISTORY_TRANSITION__H = eINSTANCE.getInternalHistoryTransition_H();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSCChartImpl <em>SC Chart</em>}' class.

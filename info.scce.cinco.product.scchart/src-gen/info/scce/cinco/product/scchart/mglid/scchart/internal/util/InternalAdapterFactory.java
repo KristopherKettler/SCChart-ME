@@ -157,10 +157,6 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 				return createInternalDeferredTransitionAdapter();
 			}
 			@Override
-			public Adapter caseInternalShallowHistoryTransition(InternalShallowHistoryTransition object) {
-				return createInternalShallowHistoryTransitionAdapter();
-			}
-			@Override
 			public Adapter caseInternalHistoryTransition(InternalHistoryTransition object) {
 				return createInternalHistoryTransitionAdapter();
 			}
@@ -513,20 +509,6 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInternalDeferredTransitionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalShallowHistoryTransition <em>Shallow History Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalShallowHistoryTransition
-	 * @generated
-	 */
-	public Adapter createInternalShallowHistoryTransitionAdapter() {
 		return null;
 	}
 

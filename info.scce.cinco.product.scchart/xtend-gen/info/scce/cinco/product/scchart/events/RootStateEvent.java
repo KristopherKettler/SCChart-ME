@@ -85,20 +85,16 @@ public final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.
     boolean break_ = true;
     EList<Region> _regions = element.getRegions();
     for (final Region region : _regions) {
-      int _y = region.getY();
-      int _y_1 = IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).getY();
-      int _plus = (_y_1 + 13);
-      boolean _lessThan = (_y < _plus);
-      if (_lessThan) {
+      if (((region.getY() < (IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).getY() + 13)) || (region.getY() < (IterableExtensions.<SuspendNode>last(element.getSuspendNodes()).getY() + 13)))) {
         EList<Region> _regions_1 = element.getRegions();
         for (final Region region1 : _regions_1) {
-          int _y_2 = region1.getY();
-          int _plus_1 = (_y_2 + 13);
-          region1.setY(_plus_1);
+          int _y = region1.getY();
+          int _plus = (_y + 13);
+          region1.setY(_plus);
         }
         int _height = element.getHeight();
-        int _plus_2 = (_height + 13);
-        element.setHeight(_plus_2);
+        int _plus_1 = (_height + 13);
+        element.setHeight(_plus_1);
       }
     }
   }

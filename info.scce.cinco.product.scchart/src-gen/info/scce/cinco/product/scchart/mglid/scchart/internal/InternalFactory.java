@@ -202,15 +202,6 @@ public interface InternalFactory extends EFactory {
 	InternalDeferredTransition createInternalDeferredTransition();
 
 	/**
-	 * Returns a new object of class '<em>Shallow History Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Shallow History Transition</em>'.
-	 * @generated
-	 */
-	InternalShallowHistoryTransition createInternalShallowHistoryTransition();
-
-	/**
 	 * Returns a new object of class '<em>History Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

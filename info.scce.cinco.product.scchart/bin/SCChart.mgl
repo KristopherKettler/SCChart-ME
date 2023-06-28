@@ -156,12 +156,11 @@ edge DeferredTransition {
 	style deferredArrow
 }
 
-edge ShallowHistoryTransition {
-	style strongAbortArrow
-}
-
 edge HistoryTransition {
 	style strongAbortArrow
+	attr EBoolean as deepHistory
+	@propertiesViewHidden
+	attr EString as H := "H"
 }
 
 
@@ -181,7 +180,7 @@ type SuperStateDeclaration {
 	attr EString as name
 }
 
-@label(SuspendType)
+@label(condition)
 type Suspend {
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuspendTypeProvider")
 	attr EString as SuspendType := "suspend"

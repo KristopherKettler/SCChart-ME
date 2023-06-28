@@ -269,15 +269,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ScchartPackage.SHALLOW_HISTORY_TRANSITION: {
-				ShallowHistoryTransition shallowHistoryTransition = (ShallowHistoryTransition)theEObject;
-				T result = caseShallowHistoryTransition(shallowHistoryTransition);
-				if (result == null) result = caseEdge(shallowHistoryTransition);
-				if (result == null) result = caseModelElement(shallowHistoryTransition);
-				if (result == null) result = caseIdentifiableElement(shallowHistoryTransition);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ScchartPackage.HISTORY_TRANSITION: {
 				HistoryTransition historyTransition = (HistoryTransition)theEObject;
 				T result = caseHistoryTransition(historyTransition);
@@ -629,21 +620,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDeferredTransition(DeferredTransition object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Shallow History Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Shallow History Transition</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseShallowHistoryTransition(ShallowHistoryTransition object) {
 		return null;
 	}
 

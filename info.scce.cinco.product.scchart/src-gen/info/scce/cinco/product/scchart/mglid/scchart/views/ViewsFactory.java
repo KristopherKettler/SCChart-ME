@@ -202,15 +202,6 @@ public interface ViewsFactory extends EFactory {
 	DeferredTransitionView createDeferredTransitionView();
 
 	/**
-	 * Returns a new object of class '<em>Shallow History Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Shallow History Transition View</em>'.
-	 * @generated
-	 */
-	ShallowHistoryTransitionView createShallowHistoryTransitionView();
-
-	/**
 	 * Returns a new object of class '<em>History Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

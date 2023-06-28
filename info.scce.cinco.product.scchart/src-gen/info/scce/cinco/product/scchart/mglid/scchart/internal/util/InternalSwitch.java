@@ -269,15 +269,6 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case InternalPackage.INTERNAL_SHALLOW_HISTORY_TRANSITION: {
-				InternalShallowHistoryTransition internalShallowHistoryTransition = (InternalShallowHistoryTransition)theEObject;
-				T result = caseInternalShallowHistoryTransition(internalShallowHistoryTransition);
-				if (result == null) result = caseInternalEdge(internalShallowHistoryTransition);
-				if (result == null) result = caseInternalModelElement(internalShallowHistoryTransition);
-				if (result == null) result = caseInternalIdentifiableElement(internalShallowHistoryTransition);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION: {
 				InternalHistoryTransition internalHistoryTransition = (InternalHistoryTransition)theEObject;
 				T result = caseInternalHistoryTransition(internalHistoryTransition);
@@ -629,21 +620,6 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalDeferredTransition(InternalDeferredTransition object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Shallow History Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Shallow History Transition</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalShallowHistoryTransition(InternalShallowHistoryTransition object) {
 		return null;
 	}
 

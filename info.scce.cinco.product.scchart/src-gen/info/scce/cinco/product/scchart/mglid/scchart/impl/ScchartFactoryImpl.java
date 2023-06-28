@@ -76,7 +76,6 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 			case ScchartPackage.WEAK_ABORT_TRANSITION: return createWeakAbortTransition();
 			case ScchartPackage.STRONG_ABORT_TRANSITION: return createStrongAbortTransition();
 			case ScchartPackage.DEFERRED_TRANSITION: return createDeferredTransition();
-			case ScchartPackage.SHALLOW_HISTORY_TRANSITION: return createShallowHistoryTransition();
 			case ScchartPackage.HISTORY_TRANSITION: return createHistoryTransition();
 			case ScchartPackage.SC_CHART: return createSCChart();
 			case ScchartPackage.ROOT_STATE_DECLARATION: return createRootStateDeclaration();
@@ -306,17 +305,6 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	public DeferredTransition createDeferredTransition() {
 		DeferredTransitionImpl deferredTransition = new DeferredTransitionImpl();
 		return deferredTransition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ShallowHistoryTransition createShallowHistoryTransition() {
-		ShallowHistoryTransitionImpl shallowHistoryTransition = new ShallowHistoryTransitionImpl();
-		return shallowHistoryTransition;
 	}
 
 	/**

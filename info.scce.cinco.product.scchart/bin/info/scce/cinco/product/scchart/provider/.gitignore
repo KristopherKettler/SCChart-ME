@@ -29,3 +29,5 @@
 /.SuspendTypeProvider.xtendbin
 /SuspendTypeProvider.java
 /.ActionTypeProvider.java._trace
+/.ActionTypeProvider.xtendbin
+/ActionTypeProvider.java

@@ -202,15 +202,6 @@ public interface ScchartFactory extends EFactory {
 	DeferredTransition createDeferredTransition();
 
 	/**
-	 * Returns a new object of class '<em>Shallow History Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Shallow History Transition</em>'.
-	 * @generated
-	 */
-	ShallowHistoryTransition createShallowHistoryTransition();
-
-	/**
 	 * Returns a new object of class '<em>History Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

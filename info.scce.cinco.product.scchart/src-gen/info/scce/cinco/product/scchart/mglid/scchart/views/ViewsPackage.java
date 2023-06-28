@@ -1625,43 +1625,6 @@ public interface ViewsPackage extends EPackage {
 	int DEFERRED_TRANSITION_VIEW_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ShallowHistoryTransitionViewImpl <em>Shallow History Transition View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ShallowHistoryTransitionViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getShallowHistoryTransitionView()
-	 * @generated
-	 */
-	int SHALLOW_HISTORY_TRANSITION_VIEW = 20;
-
-	/**
-	 * The feature id for the '<em><b>Internal Shallow History Transition</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SHALLOW_HISTORY_TRANSITION_VIEW__INTERNAL_SHALLOW_HISTORY_TRANSITION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Shallow History Transition View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SHALLOW_HISTORY_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Shallow History Transition View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SHALLOW_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.HistoryTransitionViewImpl <em>History Transition View</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1669,7 +1632,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getHistoryTransitionView()
 	 * @generated
 	 */
-	int HISTORY_TRANSITION_VIEW = 21;
+	int HISTORY_TRANSITION_VIEW = 20;
 
 	/**
 	 * The feature id for the '<em><b>Internal History Transition</b></em>' reference.
@@ -1690,13 +1653,49 @@ public interface ViewsPackage extends EPackage {
 	int HISTORY_TRANSITION_VIEW_FEATURE_COUNT = 1;
 
 	/**
+	 * The operation id for the '<em>Is Deep History</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY = 0;
+
+	/**
+	 * The operation id for the '<em>Set Deep History</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN = 1;
+
+	/**
+	 * The operation id for the '<em>Get H</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW___GET_H = 2;
+
+	/**
+	 * The operation id for the '<em>Set H</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW___SET_H__STRING = 3;
+
+	/**
 	 * The number of operations of the '<em>History Transition View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORY_TRANSITION_VIEW_OPERATION_COUNT = 0;
+	int HISTORY_TRANSITION_VIEW_OPERATION_COUNT = 4;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SCChartViewImpl <em>SC Chart View</em>}' class.
@@ -1706,7 +1705,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSCChartView()
 	 * @generated
 	 */
-	int SC_CHART_VIEW = 22;
+	int SC_CHART_VIEW = 21;
 
 	/**
 	 * The feature id for the '<em><b>Internal SC Chart</b></em>' reference.
@@ -1743,7 +1742,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getRootStateDeclarationView()
 	 * @generated
 	 */
-	int ROOT_STATE_DECLARATION_VIEW = 23;
+	int ROOT_STATE_DECLARATION_VIEW = 22;
 
 	/**
 	 * The feature id for the '<em><b>Internal Root State Declaration</b></em>' reference.
@@ -1834,7 +1833,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuperStateDeclarationView()
 	 * @generated
 	 */
-	int SUPER_STATE_DECLARATION_VIEW = 24;
+	int SUPER_STATE_DECLARATION_VIEW = 23;
 
 	/**
 	 * The feature id for the '<em><b>Internal Super State Declaration</b></em>' reference.
@@ -1907,7 +1906,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuspendView()
 	 * @generated
 	 */
-	int SUSPEND_VIEW = 25;
+	int SUSPEND_VIEW = 24;
 
 	/**
 	 * The feature id for the '<em><b>Internal Suspend</b></em>' reference.
@@ -1980,7 +1979,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getActionView()
 	 * @generated
 	 */
-	int ACTION_VIEW = 26;
+	int ACTION_VIEW = 25;
 
 	/**
 	 * The feature id for the '<em><b>Internal Action</b></em>' reference.
@@ -3125,27 +3124,6 @@ public interface ViewsPackage extends EPackage {
 	EReference getDeferredTransitionView_InternalDeferredTransition();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ShallowHistoryTransitionView <em>Shallow History Transition View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Shallow History Transition View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ShallowHistoryTransitionView
-	 * @generated
-	 */
-	EClass getShallowHistoryTransitionView();
-
-	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ShallowHistoryTransitionView#getInternalShallowHistoryTransition <em>Internal Shallow History Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Shallow History Transition</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ShallowHistoryTransitionView#getInternalShallowHistoryTransition()
-	 * @see #getShallowHistoryTransitionView()
-	 * @generated
-	 */
-	EReference getShallowHistoryTransitionView_InternalShallowHistoryTransition();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView <em>History Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3165,6 +3143,46 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getHistoryTransitionView_InternalHistoryTransition();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#isDeepHistory() <em>Is Deep History</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Deep History</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#isDeepHistory()
+	 * @generated
+	 */
+	EOperation getHistoryTransitionView__IsDeepHistory();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#setDeepHistory(boolean) <em>Set Deep History</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Deep History</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#setDeepHistory(boolean)
+	 * @generated
+	 */
+	EOperation getHistoryTransitionView__SetDeepHistory__boolean();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#getH() <em>Get H</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get H</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#getH()
+	 * @generated
+	 */
+	EOperation getHistoryTransitionView__GetH();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#setH(java.lang.String) <em>Set H</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set H</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#setH(java.lang.String)
+	 * @generated
+	 */
+	EOperation getHistoryTransitionView__SetH__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartView <em>SC Chart View</em>}'.
@@ -4367,24 +4385,6 @@ public interface ViewsPackage extends EPackage {
 		EReference DEFERRED_TRANSITION_VIEW__INTERNAL_DEFERRED_TRANSITION = eINSTANCE.getDeferredTransitionView_InternalDeferredTransition();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ShallowHistoryTransitionViewImpl <em>Shallow History Transition View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ShallowHistoryTransitionViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getShallowHistoryTransitionView()
-		 * @generated
-		 */
-		EClass SHALLOW_HISTORY_TRANSITION_VIEW = eINSTANCE.getShallowHistoryTransitionView();
-
-		/**
-		 * The meta object literal for the '<em><b>Internal Shallow History Transition</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SHALLOW_HISTORY_TRANSITION_VIEW__INTERNAL_SHALLOW_HISTORY_TRANSITION = eINSTANCE.getShallowHistoryTransitionView_InternalShallowHistoryTransition();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.HistoryTransitionViewImpl <em>History Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -4401,6 +4401,38 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference HISTORY_TRANSITION_VIEW__INTERNAL_HISTORY_TRANSITION = eINSTANCE.getHistoryTransitionView_InternalHistoryTransition();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Deep History</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY = eINSTANCE.getHistoryTransitionView__IsDeepHistory();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Deep History</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN = eINSTANCE.getHistoryTransitionView__SetDeepHistory__boolean();
+
+		/**
+		 * The meta object literal for the '<em><b>Get H</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation HISTORY_TRANSITION_VIEW___GET_H = eINSTANCE.getHistoryTransitionView__GetH();
+
+		/**
+		 * The meta object literal for the '<em><b>Set H</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation HISTORY_TRANSITION_VIEW___SET_H__STRING = eINSTANCE.getHistoryTransitionView__SetH__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SCChartViewImpl <em>SC Chart View</em>}' class.

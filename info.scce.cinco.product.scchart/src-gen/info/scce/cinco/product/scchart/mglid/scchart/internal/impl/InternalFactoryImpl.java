@@ -76,7 +76,6 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_WEAK_ABORT_TRANSITION: return createInternalWeakAbortTransition();
 			case InternalPackage.INTERNAL_STRONG_ABORT_TRANSITION: return createInternalStrongAbortTransition();
 			case InternalPackage.INTERNAL_DEFERRED_TRANSITION: return createInternalDeferredTransition();
-			case InternalPackage.INTERNAL_SHALLOW_HISTORY_TRANSITION: return createInternalShallowHistoryTransition();
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION: return createInternalHistoryTransition();
 			case InternalPackage.INTERNAL_SC_CHART: return createInternalSCChart();
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION: return createInternalRootStateDeclaration();
@@ -306,17 +305,6 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalDeferredTransition createInternalDeferredTransition() {
 		InternalDeferredTransitionImpl internalDeferredTransition = new InternalDeferredTransitionImpl();
 		return internalDeferredTransition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InternalShallowHistoryTransition createInternalShallowHistoryTransition() {
-		InternalShallowHistoryTransitionImpl internalShallowHistoryTransition = new InternalShallowHistoryTransitionImpl();
-		return internalShallowHistoryTransition;
 	}
 
 	/**

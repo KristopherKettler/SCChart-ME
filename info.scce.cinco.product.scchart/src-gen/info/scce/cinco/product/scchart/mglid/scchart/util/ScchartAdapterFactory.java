@@ -157,10 +157,6 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 				return createDeferredTransitionAdapter();
 			}
 			@Override
-			public Adapter caseShallowHistoryTransition(ShallowHistoryTransition object) {
-				return createShallowHistoryTransitionAdapter();
-			}
-			@Override
 			public Adapter caseHistoryTransition(HistoryTransition object) {
 				return createHistoryTransitionAdapter();
 			}
@@ -513,20 +509,6 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDeferredTransitionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.ShallowHistoryTransition <em>Shallow History Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.ShallowHistoryTransition
-	 * @generated
-	 */
-	public Adapter createShallowHistoryTransitionAdapter() {
 		return null;
 	}
 

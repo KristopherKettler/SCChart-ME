@@ -190,12 +190,6 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.SHALLOW_HISTORY_TRANSITION_VIEW: {
-				ShallowHistoryTransitionView shallowHistoryTransitionView = (ShallowHistoryTransitionView)theEObject;
-				T result = caseShallowHistoryTransitionView(shallowHistoryTransitionView);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ViewsPackage.HISTORY_TRANSITION_VIEW: {
 				HistoryTransitionView historyTransitionView = (HistoryTransitionView)theEObject;
 				T result = caseHistoryTransitionView(historyTransitionView);
@@ -533,21 +527,6 @@ public class ViewsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDeferredTransitionView(DeferredTransitionView object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Shallow History Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Shallow History Transition View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseShallowHistoryTransitionView(ShallowHistoryTransitionView object) {
 		return null;
 	}
 

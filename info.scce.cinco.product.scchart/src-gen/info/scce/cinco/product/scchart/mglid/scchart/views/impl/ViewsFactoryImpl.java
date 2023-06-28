@@ -76,7 +76,6 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.WEAK_ABORT_TRANSITION_VIEW: return createWeakAbortTransitionView();
 			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW: return createStrongAbortTransitionView();
 			case ViewsPackage.DEFERRED_TRANSITION_VIEW: return createDeferredTransitionView();
-			case ViewsPackage.SHALLOW_HISTORY_TRANSITION_VIEW: return createShallowHistoryTransitionView();
 			case ViewsPackage.HISTORY_TRANSITION_VIEW: return createHistoryTransitionView();
 			case ViewsPackage.SC_CHART_VIEW: return createSCChartView();
 			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW: return createRootStateDeclarationView();
@@ -306,17 +305,6 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public DeferredTransitionView createDeferredTransitionView() {
 		DeferredTransitionViewImpl deferredTransitionView = new DeferredTransitionViewImpl();
 		return deferredTransitionView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ShallowHistoryTransitionView createShallowHistoryTransitionView() {
-		ShallowHistoryTransitionViewImpl shallowHistoryTransitionView = new ShallowHistoryTransitionViewImpl();
-		return shallowHistoryTransitionView;
 	}
 
 	/**
