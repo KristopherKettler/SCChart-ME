@@ -38,7 +38,7 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String CONDITION_EDEFAULT = null;
+	protected static final String CONDITION_EDEFAULT = "<No condition>";
 
 	/**
 	 * The cached value of the '{@link #getCondition() <em>Condition</em>}' attribute.
@@ -58,7 +58,7 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DELAY_EDEFAULT = null;
+	protected static final String DELAY_EDEFAULT = "<No delay>";
 
 	/**
 	 * The cached value of the '{@link #getDelay() <em>Delay</em>}' attribute.
@@ -78,7 +78,7 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String EFFECT_EDEFAULT = null;
+	protected static final String EFFECT_EDEFAULT = "<No effect>";
 
 	/**
 	 * The cached value of the '{@link #getEffect() <em>Effect</em>}' attribute.

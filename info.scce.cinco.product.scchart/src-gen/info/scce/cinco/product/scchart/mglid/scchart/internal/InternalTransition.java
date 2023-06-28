@@ -26,12 +26,13 @@ import graphmodel.internal.InternalEdge;
 public interface InternalTransition extends InternalEdge {
 	/**
 	 * Returns the value of the '<em><b>Condition</b></em>' attribute.
+	 * The default value is <code>"<No condition>"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Condition</em>' attribute.
 	 * @see #setCondition(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalTransition_Condition()
-	 * @model
+	 * @model default="&lt;No condition&gt;"
 	 * @generated
 	 */
 	String getCondition();
@@ -48,12 +49,13 @@ public interface InternalTransition extends InternalEdge {
 
 	/**
 	 * Returns the value of the '<em><b>Delay</b></em>' attribute.
+	 * The default value is <code>"<No delay>"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Delay</em>' attribute.
 	 * @see #setDelay(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalTransition_Delay()
-	 * @model
+	 * @model default="&lt;No delay&gt;"
 	 * @generated
 	 */
 	String getDelay();
@@ -70,12 +72,13 @@ public interface InternalTransition extends InternalEdge {
 
 	/**
 	 * Returns the value of the '<em><b>Effect</b></em>' attribute.
+	 * The default value is <code>"<No effect>"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Effect</em>' attribute.
 	 * @see #setEffect(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalTransition_Effect()
-	 * @model
+	 * @model default="&lt;No effect&gt;"
 	 * @generated
 	 */
 	String getEffect();

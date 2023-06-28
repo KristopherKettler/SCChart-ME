@@ -22,6 +22,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * </p>
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuspendImpl#getCondition <em>Condition</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuspendImpl#getName <em>Name</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuspendImpl#getSuspendType <em>Suspend Type</em>}</li>
  * </ul>
  *
@@ -47,6 +48,26 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 	 * @ordered
 	 */
 	protected String condition = CONDITION_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getSuspendType() <em>Suspend Type</em>}' attribute.
@@ -116,6 +137,29 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 	 * @generated
 	 */
 	@Override
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_SUSPEND__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getSuspendType() {
 		return suspendType;
 	}
@@ -143,6 +187,8 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 		switch (featureID) {
 			case InternalPackage.INTERNAL_SUSPEND__CONDITION:
 				return getCondition();
+			case InternalPackage.INTERNAL_SUSPEND__NAME:
+				return getName();
 			case InternalPackage.INTERNAL_SUSPEND__SUSPEND_TYPE:
 				return getSuspendType();
 		}
@@ -159,6 +205,9 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 		switch (featureID) {
 			case InternalPackage.INTERNAL_SUSPEND__CONDITION:
 				setCondition((String)newValue);
+				return;
+			case InternalPackage.INTERNAL_SUSPEND__NAME:
+				setName((String)newValue);
 				return;
 			case InternalPackage.INTERNAL_SUSPEND__SUSPEND_TYPE:
 				setSuspendType((String)newValue);
@@ -178,6 +227,9 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 			case InternalPackage.INTERNAL_SUSPEND__CONDITION:
 				setCondition(CONDITION_EDEFAULT);
 				return;
+			case InternalPackage.INTERNAL_SUSPEND__NAME:
+				setName(NAME_EDEFAULT);
+				return;
 			case InternalPackage.INTERNAL_SUSPEND__SUSPEND_TYPE:
 				setSuspendType(SUSPEND_TYPE_EDEFAULT);
 				return;
@@ -195,6 +247,8 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 		switch (featureID) {
 			case InternalPackage.INTERNAL_SUSPEND__CONDITION:
 				return CONDITION_EDEFAULT == null ? condition != null : !CONDITION_EDEFAULT.equals(condition);
+			case InternalPackage.INTERNAL_SUSPEND__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case InternalPackage.INTERNAL_SUSPEND__SUSPEND_TYPE:
 				return SUSPEND_TYPE_EDEFAULT == null ? suspendType != null : !SUSPEND_TYPE_EDEFAULT.equals(suspendType);
 		}
@@ -213,6 +267,8 @@ public class InternalSuspendImpl extends InternalTypeImpl implements InternalSus
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (condition: ");
 		result.append(condition);
+		result.append(", name: ");
+		result.append(name);
 		result.append(", SuspendType: ");
 		result.append(suspendType);
 		result.append(')');

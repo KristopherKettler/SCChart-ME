@@ -6554,13 +6554,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_SUSPEND__CONDITION = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUSPEND__NAME = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 1;
+
+	/**
 	 * The feature id for the '<em><b>Suspend Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUSPEND__SUSPEND_TYPE = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 1;
+	int INTERNAL_SUSPEND__SUSPEND_TYPE = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Suspend</em>' class.
@@ -6569,7 +6578,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUSPEND_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 2;
+	int INTERNAL_SUSPEND_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -6645,22 +6654,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_ACTION__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_TYPE__ELEMENT;
 
 	/**
-	 * The feature id for the '<em><b>Condition</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_ACTION__CONDITION = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 0;
-
-	/**
 	 * The feature id for the '<em><b>Action Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ACTION__ACTION_TYPE = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 1;
+	int INTERNAL_ACTION__ACTION_TYPE = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Condition</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION__CONDITION = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Effect</b></em>' attribute.
@@ -6672,13 +6681,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_ACTION__EFFECT = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION__NAME = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Action</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ACTION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 3;
+	int INTERNAL_ACTION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -8392,6 +8410,17 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalSuspend_Condition();
 
 	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getName()
+	 * @see #getInternalSuspend()
+	 * @generated
+	 */
+	EAttribute getInternalSuspend_Name();
+
+	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend#getSuspendType <em>Suspend Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8413,17 +8442,6 @@ public interface InternalPackage extends EPackage {
 	EClass getInternalAction();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getCondition <em>Condition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Condition</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getCondition()
-	 * @see #getInternalAction()
-	 * @generated
-	 */
-	EAttribute getInternalAction_Condition();
-
-	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getActionType <em>Action Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8435,6 +8453,17 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalAction_ActionType();
 
 	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getCondition <em>Condition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Condition</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getCondition()
+	 * @see #getInternalAction()
+	 * @generated
+	 */
+	EAttribute getInternalAction_Condition();
+
+	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getEffect <em>Effect</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8444,6 +8473,17 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getInternalAction_Effect();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getName()
+	 * @see #getInternalAction()
+	 * @generated
+	 */
+	EAttribute getInternalAction_Name();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -9823,6 +9863,14 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_SUSPEND__CONDITION = eINSTANCE.getInternalSuspend_Condition();
 
 		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_SUSPEND__NAME = eINSTANCE.getInternalSuspend_Name();
+
+		/**
 		 * The meta object literal for the '<em><b>Suspend Type</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -9841,14 +9889,6 @@ public interface InternalPackage extends EPackage {
 		EClass INTERNAL_ACTION = eINSTANCE.getInternalAction();
 
 		/**
-		 * The meta object literal for the '<em><b>Condition</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_ACTION__CONDITION = eINSTANCE.getInternalAction_Condition();
-
-		/**
 		 * The meta object literal for the '<em><b>Action Type</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -9857,12 +9897,28 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_ACTION__ACTION_TYPE = eINSTANCE.getInternalAction_ActionType();
 
 		/**
+		 * The meta object literal for the '<em><b>Condition</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_ACTION__CONDITION = eINSTANCE.getInternalAction_Condition();
+
+		/**
 		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute INTERNAL_ACTION__EFFECT = eINSTANCE.getInternalAction_Effect();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_ACTION__NAME = eINSTANCE.getInternalAction_Name();
 
 	}
 

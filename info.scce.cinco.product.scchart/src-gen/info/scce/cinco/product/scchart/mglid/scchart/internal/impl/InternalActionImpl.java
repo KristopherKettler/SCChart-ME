@@ -21,34 +21,15 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionImpl#getCondition <em>Condition</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionImpl#getActionType <em>Action Type</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionImpl#getCondition <em>Condition</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionImpl#getEffect <em>Effect</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class InternalActionImpl extends InternalTypeImpl implements InternalAction {
-	/**
-	 * The default value of the '{@link #getCondition() <em>Condition</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCondition()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String CONDITION_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getCondition() <em>Condition</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCondition()
-	 * @generated
-	 * @ordered
-	 */
-	protected String condition = CONDITION_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getActionType() <em>Action Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -68,6 +49,26 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 	 * @ordered
 	 */
 	protected String actionType = ACTION_TYPE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getCondition() <em>Condition</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCondition()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String CONDITION_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getCondition() <em>Condition</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCondition()
+	 * @generated
+	 * @ordered
+	 */
+	protected String condition = CONDITION_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getEffect() <em>Effect</em>}' attribute.
@@ -90,6 +91,26 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 	protected String effect = EFFECT_EDEFAULT;
 
 	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -106,29 +127,6 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 	@Override
 	protected EClass eStaticClass() {
 		return InternalPackage.Literals.INTERNAL_ACTION;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getCondition() {
-		return condition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCondition(String newCondition) {
-		String oldCondition = condition;
-		condition = newCondition;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_ACTION__CONDITION, oldCondition, condition));
 	}
 
 	/**
@@ -160,6 +158,29 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 	 * @generated
 	 */
 	@Override
+	public String getCondition() {
+		return condition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCondition(String newCondition) {
+		String oldCondition = condition;
+		condition = newCondition;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_ACTION__CONDITION, oldCondition, condition));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEffect() {
 		return effect;
 	}
@@ -183,14 +204,39 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 	 * @generated
 	 */
 	@Override
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_ACTION__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_ACTION__CONDITION:
-				return getCondition();
 			case InternalPackage.INTERNAL_ACTION__ACTION_TYPE:
 				return getActionType();
+			case InternalPackage.INTERNAL_ACTION__CONDITION:
+				return getCondition();
 			case InternalPackage.INTERNAL_ACTION__EFFECT:
 				return getEffect();
+			case InternalPackage.INTERNAL_ACTION__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -203,14 +249,17 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_ACTION__CONDITION:
-				setCondition((String)newValue);
-				return;
 			case InternalPackage.INTERNAL_ACTION__ACTION_TYPE:
 				setActionType((String)newValue);
 				return;
+			case InternalPackage.INTERNAL_ACTION__CONDITION:
+				setCondition((String)newValue);
+				return;
 			case InternalPackage.INTERNAL_ACTION__EFFECT:
 				setEffect((String)newValue);
+				return;
+			case InternalPackage.INTERNAL_ACTION__NAME:
+				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -224,14 +273,17 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_ACTION__CONDITION:
-				setCondition(CONDITION_EDEFAULT);
-				return;
 			case InternalPackage.INTERNAL_ACTION__ACTION_TYPE:
 				setActionType(ACTION_TYPE_EDEFAULT);
 				return;
+			case InternalPackage.INTERNAL_ACTION__CONDITION:
+				setCondition(CONDITION_EDEFAULT);
+				return;
 			case InternalPackage.INTERNAL_ACTION__EFFECT:
 				setEffect(EFFECT_EDEFAULT);
+				return;
+			case InternalPackage.INTERNAL_ACTION__NAME:
+				setName(NAME_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -245,12 +297,14 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_ACTION__CONDITION:
-				return CONDITION_EDEFAULT == null ? condition != null : !CONDITION_EDEFAULT.equals(condition);
 			case InternalPackage.INTERNAL_ACTION__ACTION_TYPE:
 				return ACTION_TYPE_EDEFAULT == null ? actionType != null : !ACTION_TYPE_EDEFAULT.equals(actionType);
+			case InternalPackage.INTERNAL_ACTION__CONDITION:
+				return CONDITION_EDEFAULT == null ? condition != null : !CONDITION_EDEFAULT.equals(condition);
 			case InternalPackage.INTERNAL_ACTION__EFFECT:
 				return EFFECT_EDEFAULT == null ? effect != null : !EFFECT_EDEFAULT.equals(effect);
+			case InternalPackage.INTERNAL_ACTION__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -265,12 +319,14 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (condition: ");
-		result.append(condition);
-		result.append(", ActionType: ");
+		result.append(" (actionType: ");
 		result.append(actionType);
+		result.append(", condition: ");
+		result.append(condition);
 		result.append(", effect: ");
 		result.append(effect);
+		result.append(", name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}

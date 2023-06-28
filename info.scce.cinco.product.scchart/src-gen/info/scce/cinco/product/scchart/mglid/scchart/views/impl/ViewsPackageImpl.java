@@ -1663,7 +1663,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuspendView__GetSuspendType() {
+	public EOperation getSuspendView__GetName() {
         return getSuspendView().getEOperations().get(2);
 	}
 
@@ -1673,8 +1673,28 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuspendView__SetSuspendType__String() {
+	public EOperation getSuspendView__SetName__String() {
         return getSuspendView().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSuspendView__GetSuspendType() {
+        return getSuspendView().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSuspendView__SetSuspendType__String() {
+        return getSuspendView().getEOperations().get(5);
 	}
 
 	/**
@@ -1706,7 +1726,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getActionView__GetCondition() {
+	public EOperation getActionView__GetActionType() {
         return getActionView().getEOperations().get(0);
 	}
 
@@ -1716,7 +1736,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getActionView__SetCondition__String() {
+	public EOperation getActionView__SetActionType__String() {
         return getActionView().getEOperations().get(1);
 	}
 
@@ -1726,7 +1746,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getActionView__GetActionType() {
+	public EOperation getActionView__GetCondition() {
         return getActionView().getEOperations().get(2);
 	}
 
@@ -1736,7 +1756,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getActionView__SetActionType__String() {
+	public EOperation getActionView__SetCondition__String() {
         return getActionView().getEOperations().get(3);
 	}
 
@@ -1758,6 +1778,26 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EOperation getActionView__SetEffect__String() {
         return getActionView().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getActionView__GetName() {
+        return getActionView().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getActionView__SetName__String() {
+        return getActionView().getEOperations().get(7);
 	}
 
 	/**

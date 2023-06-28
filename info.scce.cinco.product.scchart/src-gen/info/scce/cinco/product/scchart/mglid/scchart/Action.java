@@ -25,22 +25,6 @@ public interface Action extends Type {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	String getCondition();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setCondition(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
 	String getActionType();
 
 	/**
@@ -57,6 +41,22 @@ public interface Action extends Type {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	String getCondition();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setCondition(String _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	String getEffect();
 
 	/**
@@ -66,6 +66,22 @@ public interface Action extends Type {
 	 * @generated
 	 */
 	void setEffect(String _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setName(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -37,7 +37,7 @@ public class InternalRootStateDeclarationImpl extends InternalTypeImpl implement
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DECLARATION_TYPE_EDEFAULT = "select type";
+	protected static final String DECLARATION_TYPE_EDEFAULT = "bool";
 
 	/**
 	 * The cached value of the '{@link #getDeclarationType() <em>Declaration Type</em>}' attribute.
@@ -57,7 +57,7 @@ public class InternalRootStateDeclarationImpl extends InternalTypeImpl implement
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String INPUT_OUTPUT_EDEFAULT = "select type";
+	protected static final String INPUT_OUTPUT_EDEFAULT = " ";
 
 	/**
 	 * The cached value of the '{@link #getInputOutput() <em>Input Output</em>}' attribute.

@@ -25,13 +25,13 @@ import graphmodel.internal.InternalType;
 public interface InternalRootStateDeclaration extends InternalType {
 	/**
 	 * Returns the value of the '<em><b>Declaration Type</b></em>' attribute.
-	 * The default value is <code>"select type"</code>.
+	 * The default value is <code>"bool"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Declaration Type</em>' attribute.
 	 * @see #setDeclarationType(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalRootStateDeclaration_DeclarationType()
-	 * @model default="select type"
+	 * @model default="bool"
 	 * @generated
 	 */
 	String getDeclarationType();
@@ -48,13 +48,13 @@ public interface InternalRootStateDeclaration extends InternalType {
 
 	/**
 	 * Returns the value of the '<em><b>Input Output</b></em>' attribute.
-	 * The default value is <code>"select type"</code>.
+	 * The default value is <code>" "</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Input Output</em>' attribute.
 	 * @see #setInputOutput(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalRootStateDeclaration_InputOutput()
-	 * @model default="select type"
+	 * @model default=" "
 	 * @generated
 	 */
 	String getInputOutput();

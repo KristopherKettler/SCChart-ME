@@ -185,6 +185,29 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 	 * @generated
 	 */
 	@Override
+	public String getName() {
+		return getInternalSuspend().getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(final String _arg) {
+		getInternalSuspend().getElement().transact("Set Name", () -> {
+			getInternalSuspend().setName(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getSuspendType() {
 		return getInternalSuspend().getSuspendType();
 	}
@@ -461,6 +484,11 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 				return getCondition();
 			case ScchartPackage.SUSPEND___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
+				return null;
+			case ScchartPackage.SUSPEND___GET_NAME:
+				return getName();
+			case ScchartPackage.SUSPEND___SET_NAME__STRING:
+				setName((String)arguments.get(0));
 				return null;
 			case ScchartPackage.SUSPEND___GET_SUSPEND_TYPE:
 				return getSuspendType();

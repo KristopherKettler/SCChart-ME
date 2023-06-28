@@ -162,29 +162,6 @@ public class ActionImpl extends EObjectImpl implements Action {
 	 * @generated
 	 */
 	@Override
-	public String getCondition() {
-		return getInternalAction().getCondition();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCondition(final String _arg) {
-		getInternalAction().getElement().transact("Set Condition", () -> {
-			getInternalAction().setCondition(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getActionType() {
 		return getInternalAction().getActionType();
 	}
@@ -208,6 +185,29 @@ public class ActionImpl extends EObjectImpl implements Action {
 	 * @generated
 	 */
 	@Override
+	public String getCondition() {
+		return getInternalAction().getCondition();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCondition(final String _arg) {
+		getInternalAction().getElement().transact("Set Condition", () -> {
+			getInternalAction().setCondition(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEffect() {
 		return getInternalAction().getEffect();
 	}
@@ -221,6 +221,29 @@ public class ActionImpl extends EObjectImpl implements Action {
 	public void setEffect(final String _arg) {
 		getInternalAction().getElement().transact("Set Effect", () -> {
 			getInternalAction().setEffect(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getName() {
+		return getInternalAction().getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(final String _arg) {
+		getInternalAction().getElement().transact("Set Name", () -> {
+			getInternalAction().setName(_arg);
 		});
 		
 	}
@@ -480,20 +503,25 @@ public class ActionImpl extends EObjectImpl implements Action {
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case ScchartPackage.ACTION___GET_CONDITION:
-				return getCondition();
-			case ScchartPackage.ACTION___SET_CONDITION__STRING:
-				setCondition((String)arguments.get(0));
-				return null;
 			case ScchartPackage.ACTION___GET_ACTION_TYPE:
 				return getActionType();
 			case ScchartPackage.ACTION___SET_ACTION_TYPE__STRING:
 				setActionType((String)arguments.get(0));
 				return null;
+			case ScchartPackage.ACTION___GET_CONDITION:
+				return getCondition();
+			case ScchartPackage.ACTION___SET_CONDITION__STRING:
+				setCondition((String)arguments.get(0));
+				return null;
 			case ScchartPackage.ACTION___GET_EFFECT:
 				return getEffect();
 			case ScchartPackage.ACTION___SET_EFFECT__STRING:
 				setEffect((String)arguments.get(0));
+				return null;
+			case ScchartPackage.ACTION___GET_NAME:
+				return getName();
+			case ScchartPackage.ACTION___SET_NAME__STRING:
+				setName((String)arguments.get(0));
 				return null;
 			case ScchartPackage.ACTION___GET_INTERNAL_ACTION:
 				return getInternalAction();

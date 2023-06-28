@@ -1994,8 +1994,18 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalSuspend_SuspendType() {
+	public EAttribute getInternalSuspend_Name() {
         return (EAttribute)getInternalSuspend().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInternalSuspend_SuspendType() {
+        return (EAttribute)getInternalSuspend().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -2017,7 +2027,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalAction_Condition() {
+	public EAttribute getInternalAction_ActionType() {
         return (EAttribute)getInternalAction().getEStructuralFeatures().get(0);
 	}
 
@@ -2027,7 +2037,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalAction_ActionType() {
+	public EAttribute getInternalAction_Condition() {
         return (EAttribute)getInternalAction().getEStructuralFeatures().get(1);
 	}
 
@@ -2039,6 +2049,16 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EAttribute getInternalAction_Effect() {
         return (EAttribute)getInternalAction().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInternalAction_Name() {
+        return (EAttribute)getInternalAction().getEStructuralFeatures().get(3);
 	}
 
 	/**

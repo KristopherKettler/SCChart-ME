@@ -120,12 +120,12 @@ node Connector {
 
 /*same as auto and delayed transition */
 edge Transition {
-	style transitionStyle("asasa")
+	style transitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(empty delay || delay == '<No delay>' ? '' : delay).concat(condition == '<No condition>' ? '' : ' ['.concat(condition).concat(']')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.TransitionPriorityProvider")
 	attr EString as priority := '0'
-	attr EString as condition
-	attr EString as effect
-	attr EString as delay 
+	attr EString as condition := '<No condition>'
+	attr EString as effect := '<No effect>'
+	attr EString as delay := '<No delay>'
 }
 
 edge ImmediateTransition {
@@ -163,34 +163,35 @@ edge HistoryTransition {
 	attr EString as H := "H"
 }
 
-
 @label(name)
 type RootStateDeclaration {
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationInputOutputProvider")
-	attr EString as InputOutput := "select type"
+	attr EString as InputOutput := ' '
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationTypeProvider")
-	attr EString as declarationType := "select type"
+	attr EString as declarationType := "bool"
 	attr EString as name
 }
 
 @label(name)
 type SuperStateDeclaration {
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
-	attr EString as declarationType := "select type"
+	attr EString as declarationType := "bool"
 	attr EString as name
 }
 
-@label(condition)
+@label(name)
 type Suspend {
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuspendTypeProvider")
 	attr EString as SuspendType := "suspend"
 	attr EString as condition
+	attr EString as name 
 }
 
-@label(ActionType)
+@label(name)
 type Action {
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.ActionTypeProvider")
-	attr EString as ActionType := "entry"
+	attr EString as actionType := "entry"
 	attr EString as condition 
 	attr EString as effect
+	attr EString as name 
 }

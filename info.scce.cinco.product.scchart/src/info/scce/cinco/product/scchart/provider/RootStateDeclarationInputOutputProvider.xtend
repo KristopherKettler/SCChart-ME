@@ -7,12 +7,13 @@ import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration
 class RootStateDeclarationInputOutputProvider extends CincoValuesProvider<RootStateDeclaration, String> {
 
 	override Map<String, String> getPossibleValues(RootStateDeclaration inputOutput) {
-		return #{
-			"select type" -> "select type",
-			"const" -> "constant",
-			"input" -> "input",
-			"output" -> "output",
-			"input output" -> "input output"
+		
+		val String[] arr = #[' ','constant','input','output','input output'] 
+		
+		var map = newLinkedHashMap
+		for(string : arr){
+			map.put(string,string)
 		}
+		return map
 	}
 }

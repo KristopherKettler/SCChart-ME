@@ -1945,13 +1945,31 @@ public interface ViewsPackage extends EPackage {
 	int SUSPEND_VIEW___SET_CONDITION__STRING = 1;
 
 	/**
+	 * The operation id for the '<em>Get Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUSPEND_VIEW___GET_NAME = 2;
+
+	/**
+	 * The operation id for the '<em>Set Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUSPEND_VIEW___SET_NAME__STRING = 3;
+
+	/**
 	 * The operation id for the '<em>Get Suspend Type</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUSPEND_VIEW___GET_SUSPEND_TYPE = 2;
+	int SUSPEND_VIEW___GET_SUSPEND_TYPE = 4;
 
 	/**
 	 * The operation id for the '<em>Set Suspend Type</em>' operation.
@@ -1960,7 +1978,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUSPEND_VIEW___SET_SUSPEND_TYPE__STRING = 3;
+	int SUSPEND_VIEW___SET_SUSPEND_TYPE__STRING = 5;
 
 	/**
 	 * The number of operations of the '<em>Suspend View</em>' class.
@@ -1969,7 +1987,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUSPEND_VIEW_OPERATION_COUNT = 4;
+	int SUSPEND_VIEW_OPERATION_COUNT = 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionViewImpl <em>Action View</em>}' class.
@@ -2000,31 +2018,13 @@ public interface ViewsPackage extends EPackage {
 	int ACTION_VIEW_FEATURE_COUNT = 1;
 
 	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
 	 * The operation id for the '<em>Get Action Type</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACTION_VIEW___GET_ACTION_TYPE = 2;
+	int ACTION_VIEW___GET_ACTION_TYPE = 0;
 
 	/**
 	 * The operation id for the '<em>Set Action Type</em>' operation.
@@ -2033,7 +2033,25 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACTION_VIEW___SET_ACTION_TYPE__STRING = 3;
+	int ACTION_VIEW___SET_ACTION_TYPE__STRING = 1;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___GET_CONDITION = 2;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___SET_CONDITION__STRING = 3;
 
 	/**
 	 * The operation id for the '<em>Get Effect</em>' operation.
@@ -2054,13 +2072,31 @@ public interface ViewsPackage extends EPackage {
 	int ACTION_VIEW___SET_EFFECT__STRING = 5;
 
 	/**
+	 * The operation id for the '<em>Get Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___GET_NAME = 6;
+
+	/**
+	 * The operation id for the '<em>Set Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___SET_NAME__STRING = 7;
+
+	/**
 	 * The number of operations of the '<em>Action View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACTION_VIEW_OPERATION_COUNT = 6;
+	int ACTION_VIEW_OPERATION_COUNT = 8;
 
 
 	/**
@@ -3389,6 +3425,26 @@ public interface ViewsPackage extends EPackage {
 	EOperation getSuspendView__SetCondition__String();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getName() <em>Get Name</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Name</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getName()
+	 * @generated
+	 */
+	EOperation getSuspendView__GetName();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setName(java.lang.String) <em>Set Name</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Name</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setName(java.lang.String)
+	 * @generated
+	 */
+	EOperation getSuspendView__SetName__String();
+
+	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getSuspendType() <em>Get Suspend Type</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3430,26 +3486,6 @@ public interface ViewsPackage extends EPackage {
 	EReference getActionView_InternalAction();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getCondition() <em>Get Condition</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Condition</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getCondition()
-	 * @generated
-	 */
-	EOperation getActionView__GetCondition();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setCondition(java.lang.String) <em>Set Condition</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Condition</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setCondition(java.lang.String)
-	 * @generated
-	 */
-	EOperation getActionView__SetCondition__String();
-
-	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getActionType() <em>Get Action Type</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3470,6 +3506,26 @@ public interface ViewsPackage extends EPackage {
 	EOperation getActionView__SetActionType__String();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getCondition() <em>Get Condition</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Condition</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getCondition()
+	 * @generated
+	 */
+	EOperation getActionView__GetCondition();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setCondition(java.lang.String) <em>Set Condition</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Condition</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setCondition(java.lang.String)
+	 * @generated
+	 */
+	EOperation getActionView__SetCondition__String();
+
+	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getEffect() <em>Get Effect</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3488,6 +3544,26 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getActionView__SetEffect__String();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getName() <em>Get Name</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Name</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getName()
+	 * @generated
+	 */
+	EOperation getActionView__GetName();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setName(java.lang.String) <em>Set Name</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Name</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setName(java.lang.String)
+	 * @generated
+	 */
+	EOperation getActionView__SetName__String();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -4603,6 +4679,22 @@ public interface ViewsPackage extends EPackage {
 		EOperation SUSPEND_VIEW___SET_CONDITION__STRING = eINSTANCE.getSuspendView__SetCondition__String();
 
 		/**
+		 * The meta object literal for the '<em><b>Get Name</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUSPEND_VIEW___GET_NAME = eINSTANCE.getSuspendView__GetName();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Name</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUSPEND_VIEW___SET_NAME__STRING = eINSTANCE.getSuspendView__SetName__String();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Suspend Type</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -4637,22 +4729,6 @@ public interface ViewsPackage extends EPackage {
 		EReference ACTION_VIEW__INTERNAL_ACTION = eINSTANCE.getActionView_InternalAction();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Condition</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ACTION_VIEW___GET_CONDITION = eINSTANCE.getActionView__GetCondition();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Condition</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ACTION_VIEW___SET_CONDITION__STRING = eINSTANCE.getActionView__SetCondition__String();
-
-		/**
 		 * The meta object literal for the '<em><b>Get Action Type</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -4669,6 +4745,22 @@ public interface ViewsPackage extends EPackage {
 		EOperation ACTION_VIEW___SET_ACTION_TYPE__STRING = eINSTANCE.getActionView__SetActionType__String();
 
 		/**
+		 * The meta object literal for the '<em><b>Get Condition</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___GET_CONDITION = eINSTANCE.getActionView__GetCondition();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Condition</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___SET_CONDITION__STRING = eINSTANCE.getActionView__SetCondition__String();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Effect</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -4683,6 +4775,22 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation ACTION_VIEW___SET_EFFECT__STRING = eINSTANCE.getActionView__SetEffect__String();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Name</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___GET_NAME = eINSTANCE.getActionView__GetName();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Name</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___SET_NAME__STRING = eINSTANCE.getActionView__SetName__String();
 
 	}
 

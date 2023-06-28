@@ -131,6 +131,29 @@ public class SuspendViewImpl extends EObjectImpl implements SuspendView {
 	 * @generated
 	 */
 	@Override
+	public String getName() {
+		return getInternalSuspend().getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(final String _arg) {
+		getInternalSuspend().getElement().transact("Set Name", () -> {
+			getInternalSuspend().setName(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getSuspendType() {
 		return getInternalSuspend().getSuspendType();
 	}
@@ -219,6 +242,11 @@ public class SuspendViewImpl extends EObjectImpl implements SuspendView {
 				return getCondition();
 			case ViewsPackage.SUSPEND_VIEW___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
+				return null;
+			case ViewsPackage.SUSPEND_VIEW___GET_NAME:
+				return getName();
+			case ViewsPackage.SUSPEND_VIEW___SET_NAME__STRING:
+				setName((String)arguments.get(0));
 				return null;
 			case ViewsPackage.SUSPEND_VIEW___GET_SUSPEND_TYPE:
 				return getSuspendType();

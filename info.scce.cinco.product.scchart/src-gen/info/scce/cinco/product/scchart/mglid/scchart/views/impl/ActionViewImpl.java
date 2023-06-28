@@ -108,29 +108,6 @@ public class ActionViewImpl extends EObjectImpl implements ActionView {
 	 * @generated
 	 */
 	@Override
-	public String getCondition() {
-		return getInternalAction().getCondition();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCondition(final String _arg) {
-		getInternalAction().getElement().transact("Set Condition", () -> {
-			getInternalAction().setCondition(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getActionType() {
 		return getInternalAction().getActionType();
 	}
@@ -154,6 +131,29 @@ public class ActionViewImpl extends EObjectImpl implements ActionView {
 	 * @generated
 	 */
 	@Override
+	public String getCondition() {
+		return getInternalAction().getCondition();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCondition(final String _arg) {
+		getInternalAction().getElement().transact("Set Condition", () -> {
+			getInternalAction().setCondition(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEffect() {
 		return getInternalAction().getEffect();
 	}
@@ -167,6 +167,29 @@ public class ActionViewImpl extends EObjectImpl implements ActionView {
 	public void setEffect(final String _arg) {
 		getInternalAction().getElement().transact("Set Effect", () -> {
 			getInternalAction().setEffect(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getName() {
+		return getInternalAction().getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(final String _arg) {
+		getInternalAction().getElement().transact("Set Name", () -> {
+			getInternalAction().setName(_arg);
 		});
 		
 	}
@@ -238,20 +261,25 @@ public class ActionViewImpl extends EObjectImpl implements ActionView {
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case ViewsPackage.ACTION_VIEW___GET_CONDITION:
-				return getCondition();
-			case ViewsPackage.ACTION_VIEW___SET_CONDITION__STRING:
-				setCondition((String)arguments.get(0));
-				return null;
 			case ViewsPackage.ACTION_VIEW___GET_ACTION_TYPE:
 				return getActionType();
 			case ViewsPackage.ACTION_VIEW___SET_ACTION_TYPE__STRING:
 				setActionType((String)arguments.get(0));
 				return null;
+			case ViewsPackage.ACTION_VIEW___GET_CONDITION:
+				return getCondition();
+			case ViewsPackage.ACTION_VIEW___SET_CONDITION__STRING:
+				setCondition((String)arguments.get(0));
+				return null;
 			case ViewsPackage.ACTION_VIEW___GET_EFFECT:
 				return getEffect();
 			case ViewsPackage.ACTION_VIEW___SET_EFFECT__STRING:
 				setEffect((String)arguments.get(0));
+				return null;
+			case ViewsPackage.ACTION_VIEW___GET_NAME:
+				return getName();
+			case ViewsPackage.ACTION_VIEW___SET_NAME__STRING:
+				setName((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);
