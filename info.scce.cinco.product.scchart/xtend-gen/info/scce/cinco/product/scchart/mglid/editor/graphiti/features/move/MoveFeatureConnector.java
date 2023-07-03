@@ -5,7 +5,9 @@ import de.jabc.cinco.meta.core.ge.style.generator.runtime.features.CincoMoveShap
 import graphmodel.ModelElementContainer;
 import graphmodel.internal.InternalModelElementContainer;
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
+import info.scce.cinco.product.scchart.mglid.scchart.DataFlowRegion;
 import info.scce.cinco.product.scchart.mglid.scchart.Region;
+import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDataFlowRegion;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion;
 import java.util.Arrays;
 import org.eclipse.graphiti.features.IFeatureProvider;
@@ -80,6 +82,12 @@ public class MoveFeatureConnector extends CincoMoveShapeFeature {
     return true;
   }
   
+  protected boolean _moveContainer(final InternalDataFlowRegion target, final Connector oe, final IMoveShapeContext context) {
+    ModelElementContainer _containerElement = target.getContainerElement();
+    oe.moveTo(((DataFlowRegion) _containerElement), context.getX(), context.getY());
+    return true;
+  }
+  
   /**
    * Get-method for an error
    * @return Returns an 'error' in which 'error' is  'ECincoError.OK'
@@ -98,7 +106,9 @@ public class MoveFeatureConnector extends CincoMoveShapeFeature {
   }
   
   public boolean moveContainer(final InternalModelElementContainer target, final Connector oe, final IMoveShapeContext context) {
-    if (target instanceof InternalRegion) {
+    if (target instanceof InternalDataFlowRegion) {
+      return _moveContainer((InternalDataFlowRegion)target, oe, context);
+    } else if (target instanceof InternalRegion) {
       return _moveContainer((InternalRegion)target, oe, context);
     } else if (target != null) {
       return _moveContainer(target, oe, context);

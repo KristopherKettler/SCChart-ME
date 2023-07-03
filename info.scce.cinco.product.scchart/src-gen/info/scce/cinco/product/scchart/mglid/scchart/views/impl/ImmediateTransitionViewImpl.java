@@ -108,8 +108,8 @@ public class ImmediateTransitionViewImpl extends EObjectImpl implements Immediat
 	 * @generated
 	 */
 	@Override
-	public String getLabel() {
-		return getInternalImmediateTransition().getLabel();
+	public String getCondition() {
+		return getInternalImmediateTransition().getCondition();
 	}
 
 	/**
@@ -118,9 +118,55 @@ public class ImmediateTransitionViewImpl extends EObjectImpl implements Immediat
 	 * @generated
 	 */
 	@Override
-	public void setLabel(final String _arg) {
-		getInternalImmediateTransition().getElement().transact("Set Label", () -> {
-			getInternalImmediateTransition().setLabel(_arg);
+	public void setCondition(final String _arg) {
+		getInternalImmediateTransition().getElement().transact("Set Condition", () -> {
+			getInternalImmediateTransition().setCondition(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getDelay() {
+		return getInternalImmediateTransition().getDelay();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDelay(final String _arg) {
+		getInternalImmediateTransition().getElement().transact("Set Delay", () -> {
+			getInternalImmediateTransition().setDelay(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getEffect() {
+		return getInternalImmediateTransition().getEffect();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEffect(final String _arg) {
+		getInternalImmediateTransition().getElement().transact("Set Effect", () -> {
+			getInternalImmediateTransition().setEffect(_arg);
 		});
 		
 	}
@@ -215,10 +261,20 @@ public class ImmediateTransitionViewImpl extends EObjectImpl implements Immediat
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___GET_LABEL:
-				return getLabel();
-			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___SET_LABEL__STRING:
-				setLabel((String)arguments.get(0));
+			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___GET_CONDITION:
+				return getCondition();
+			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___SET_CONDITION__STRING:
+				setCondition((String)arguments.get(0));
+				return null;
+			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___GET_DELAY:
+				return getDelay();
+			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___SET_DELAY__STRING:
+				setDelay((String)arguments.get(0));
+				return null;
+			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___GET_EFFECT:
+				return getEffect();
+			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___SET_EFFECT__STRING:
+				setEffect((String)arguments.get(0));
 				return null;
 			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW___GET_PRIORITY:
 				return getPriority();

@@ -51,7 +51,7 @@ public interface ImmediateTransitionView extends EObject {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	String getLabel();
+	String getCondition();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,7 +59,39 @@ public interface ImmediateTransitionView extends EObject {
 	 * @model
 	 * @generated
 	 */
-	void setLabel(String _arg);
+	void setCondition(String _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	String getDelay();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setDelay(String _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	String getEffect();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setEffect(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->

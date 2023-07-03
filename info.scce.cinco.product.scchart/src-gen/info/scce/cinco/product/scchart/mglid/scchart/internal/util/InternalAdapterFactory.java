@@ -145,20 +145,60 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 				return createInternalConditionalTerminationTransitionAdapter();
 			}
 			@Override
-			public Adapter caseInternalWeakAbortTransition(InternalWeakAbortTransition object) {
-				return createInternalWeakAbortTransitionAdapter();
-			}
-			@Override
 			public Adapter caseInternalStrongAbortTransition(InternalStrongAbortTransition object) {
 				return createInternalStrongAbortTransitionAdapter();
+			}
+			@Override
+			public Adapter caseInternalImmediateStrongAbortTransition(InternalImmediateStrongAbortTransition object) {
+				return createInternalImmediateStrongAbortTransitionAdapter();
 			}
 			@Override
 			public Adapter caseInternalDeferredTransition(InternalDeferredTransition object) {
 				return createInternalDeferredTransitionAdapter();
 			}
 			@Override
+			public Adapter caseInternalImmediateDeferredTransition(InternalImmediateDeferredTransition object) {
+				return createInternalImmediateDeferredTransitionAdapter();
+			}
+			@Override
+			public Adapter caseInternalTerminationDefferdTransition(InternalTerminationDefferdTransition object) {
+				return createInternalTerminationDefferdTransitionAdapter();
+			}
+			@Override
+			public Adapter caseInternalConditionalTerminationDeferredTransition(InternalConditionalTerminationDeferredTransition object) {
+				return createInternalConditionalTerminationDeferredTransitionAdapter();
+			}
+			@Override
+			public Adapter caseInternalStrongAbortDeferredTransition(InternalStrongAbortDeferredTransition object) {
+				return createInternalStrongAbortDeferredTransitionAdapter();
+			}
+			@Override
+			public Adapter caseInternalImmediateStrongAbortDeferredTransition(InternalImmediateStrongAbortDeferredTransition object) {
+				return createInternalImmediateStrongAbortDeferredTransitionAdapter();
+			}
+			@Override
 			public Adapter caseInternalHistoryTransition(InternalHistoryTransition object) {
 				return createInternalHistoryTransitionAdapter();
+			}
+			@Override
+			public Adapter caseInternalImmediateHistoryTransition(InternalImmediateHistoryTransition object) {
+				return createInternalImmediateHistoryTransitionAdapter();
+			}
+			@Override
+			public Adapter caseInternalTerminationHistoryTransition(InternalTerminationHistoryTransition object) {
+				return createInternalTerminationHistoryTransitionAdapter();
+			}
+			@Override
+			public Adapter caseInternalConditionalTerminationHistoryTransition(InternalConditionalTerminationHistoryTransition object) {
+				return createInternalConditionalTerminationHistoryTransitionAdapter();
+			}
+			@Override
+			public Adapter caseInternalStrongAbortHistoryTransition(InternalStrongAbortHistoryTransition object) {
+				return createInternalStrongAbortHistoryTransitionAdapter();
+			}
+			@Override
+			public Adapter caseInternalImmediateStrongAbortHistoryTransition(InternalImmediateStrongAbortHistoryTransition object) {
+				return createInternalImmediateStrongAbortHistoryTransitionAdapter();
 			}
 			@Override
 			public Adapter caseInternalSCChart(InternalSCChart object) {
@@ -471,20 +511,6 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalWeakAbortTransition <em>Weak Abort Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalWeakAbortTransition
-	 * @generated
-	 */
-	public Adapter createInternalWeakAbortTransitionAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortTransition <em>Strong Abort Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -495,6 +521,20 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInternalStrongAbortTransitionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortTransition <em>Immediate Strong Abort Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortTransition
+	 * @generated
+	 */
+	public Adapter createInternalImmediateStrongAbortTransitionAdapter() {
 		return null;
 	}
 
@@ -513,6 +553,76 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateDeferredTransition <em>Immediate Deferred Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateDeferredTransition
+	 * @generated
+	 */
+	public Adapter createInternalImmediateDeferredTransitionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationDefferdTransition <em>Termination Defferd Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationDefferdTransition
+	 * @generated
+	 */
+	public Adapter createInternalTerminationDefferdTransitionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationDeferredTransition <em>Conditional Termination Deferred Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationDeferredTransition
+	 * @generated
+	 */
+	public Adapter createInternalConditionalTerminationDeferredTransitionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortDeferredTransition <em>Strong Abort Deferred Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortDeferredTransition
+	 * @generated
+	 */
+	public Adapter createInternalStrongAbortDeferredTransitionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortDeferredTransition <em>Immediate Strong Abort Deferred Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortDeferredTransition
+	 * @generated
+	 */
+	public Adapter createInternalImmediateStrongAbortDeferredTransitionAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition <em>History Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -523,6 +633,76 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInternalHistoryTransitionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateHistoryTransition <em>Immediate History Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateHistoryTransition
+	 * @generated
+	 */
+	public Adapter createInternalImmediateHistoryTransitionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationHistoryTransition <em>Termination History Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationHistoryTransition
+	 * @generated
+	 */
+	public Adapter createInternalTerminationHistoryTransitionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationHistoryTransition <em>Conditional Termination History Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationHistoryTransition
+	 * @generated
+	 */
+	public Adapter createInternalConditionalTerminationHistoryTransitionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortHistoryTransition <em>Strong Abort History Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortHistoryTransition
+	 * @generated
+	 */
+	public Adapter createInternalStrongAbortHistoryTransitionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortHistoryTransition <em>Immediate Strong Abort History Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortHistoryTransition
+	 * @generated
+	 */
+	public Adapter createInternalImmediateStrongAbortHistoryTransitionAdapter() {
 		return null;
 	}
 

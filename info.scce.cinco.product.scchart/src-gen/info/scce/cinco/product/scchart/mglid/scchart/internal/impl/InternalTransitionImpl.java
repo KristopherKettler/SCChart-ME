@@ -58,7 +58,7 @@ public class InternalTransitionImpl extends InternalEdgeImpl implements Internal
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DELAY_EDEFAULT = "<No delay>";
+	protected static final String DELAY_EDEFAULT = "<No count delay>";
 
 	/**
 	 * The cached value of the '{@link #getDelay() <em>Delay</em>}' attribute.

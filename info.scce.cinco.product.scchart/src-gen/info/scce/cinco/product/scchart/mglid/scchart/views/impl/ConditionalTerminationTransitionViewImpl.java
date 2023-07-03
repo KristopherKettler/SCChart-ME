@@ -7,7 +7,11 @@ import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditiona
 import info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationTransitionView;
 import info.scce.cinco.product.scchart.mglid.scchart.views.ViewsPackage;
 
+import java.lang.reflect.InvocationTargetException;
+
 import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -104,6 +108,98 @@ public class ConditionalTerminationTransitionViewImpl extends EObjectImpl implem
 	 * @generated
 	 */
 	@Override
+	public String getCondition() {
+		return getInternalConditionalTerminationTransition().getCondition();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCondition(final String _arg) {
+		getInternalConditionalTerminationTransition().getElement().transact("Set Condition", () -> {
+			getInternalConditionalTerminationTransition().setCondition(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getDelay() {
+		return getInternalConditionalTerminationTransition().getDelay();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDelay(final String _arg) {
+		getInternalConditionalTerminationTransition().getElement().transact("Set Delay", () -> {
+			getInternalConditionalTerminationTransition().setDelay(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getEffect() {
+		return getInternalConditionalTerminationTransition().getEffect();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEffect(final String _arg) {
+		getInternalConditionalTerminationTransition().getElement().transact("Set Effect", () -> {
+			getInternalConditionalTerminationTransition().setEffect(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getPriority() {
+		return getInternalConditionalTerminationTransition().getPriority();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPriority(final String _arg) {
+		getInternalConditionalTerminationTransition().getElement().transact("Set Priority", () -> {
+			getInternalConditionalTerminationTransition().setPriority(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.CONDITIONAL_TERMINATION_TRANSITION_VIEW__INTERNAL_CONDITIONAL_TERMINATION_TRANSITION:
@@ -155,6 +251,38 @@ public class ConditionalTerminationTransitionViewImpl extends EObjectImpl implem
 				return internalConditionalTerminationTransition != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case ViewsPackage.CONDITIONAL_TERMINATION_TRANSITION_VIEW___GET_CONDITION:
+				return getCondition();
+			case ViewsPackage.CONDITIONAL_TERMINATION_TRANSITION_VIEW___SET_CONDITION__STRING:
+				setCondition((String)arguments.get(0));
+				return null;
+			case ViewsPackage.CONDITIONAL_TERMINATION_TRANSITION_VIEW___GET_DELAY:
+				return getDelay();
+			case ViewsPackage.CONDITIONAL_TERMINATION_TRANSITION_VIEW___SET_DELAY__STRING:
+				setDelay((String)arguments.get(0));
+				return null;
+			case ViewsPackage.CONDITIONAL_TERMINATION_TRANSITION_VIEW___GET_EFFECT:
+				return getEffect();
+			case ViewsPackage.CONDITIONAL_TERMINATION_TRANSITION_VIEW___SET_EFFECT__STRING:
+				setEffect((String)arguments.get(0));
+				return null;
+			case ViewsPackage.CONDITIONAL_TERMINATION_TRANSITION_VIEW___GET_PRIORITY:
+				return getPriority();
+			case ViewsPackage.CONDITIONAL_TERMINATION_TRANSITION_VIEW___SET_PRIORITY__STRING:
+				setPriority((String)arguments.get(0));
+				return null;
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 } //ConditionalTerminationTransitionViewImpl

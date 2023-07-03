@@ -73,10 +73,20 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW: return createImmediateTransitionView();
 			case ViewsPackage.TERMINATION_TRANSITION_VIEW: return createTerminationTransitionView();
 			case ViewsPackage.CONDITIONAL_TERMINATION_TRANSITION_VIEW: return createConditionalTerminationTransitionView();
-			case ViewsPackage.WEAK_ABORT_TRANSITION_VIEW: return createWeakAbortTransitionView();
 			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW: return createStrongAbortTransitionView();
+			case ViewsPackage.IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW: return createImmediateStrongAbortTransitionView();
 			case ViewsPackage.DEFERRED_TRANSITION_VIEW: return createDeferredTransitionView();
+			case ViewsPackage.IMMEDIATE_DEFERRED_TRANSITION_VIEW: return createImmediateDeferredTransitionView();
+			case ViewsPackage.TERMINATION_DEFFERD_TRANSITION_VIEW: return createTerminationDefferdTransitionView();
+			case ViewsPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW: return createConditionalTerminationDeferredTransitionView();
+			case ViewsPackage.STRONG_ABORT_DEFERRED_TRANSITION_VIEW: return createStrongAbortDeferredTransitionView();
+			case ViewsPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW: return createImmediateStrongAbortDeferredTransitionView();
 			case ViewsPackage.HISTORY_TRANSITION_VIEW: return createHistoryTransitionView();
+			case ViewsPackage.IMMEDIATE_HISTORY_TRANSITION_VIEW: return createImmediateHistoryTransitionView();
+			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW: return createTerminationHistoryTransitionView();
+			case ViewsPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW: return createConditionalTerminationHistoryTransitionView();
+			case ViewsPackage.STRONG_ABORT_HISTORY_TRANSITION_VIEW: return createStrongAbortHistoryTransitionView();
+			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW: return createImmediateStrongAbortHistoryTransitionView();
 			case ViewsPackage.SC_CHART_VIEW: return createSCChartView();
 			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW: return createRootStateDeclarationView();
 			case ViewsPackage.SUPER_STATE_DECLARATION_VIEW: return createSuperStateDeclarationView();
@@ -280,9 +290,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public WeakAbortTransitionView createWeakAbortTransitionView() {
-		WeakAbortTransitionViewImpl weakAbortTransitionView = new WeakAbortTransitionViewImpl();
-		return weakAbortTransitionView;
+	public StrongAbortTransitionView createStrongAbortTransitionView() {
+		StrongAbortTransitionViewImpl strongAbortTransitionView = new StrongAbortTransitionViewImpl();
+		return strongAbortTransitionView;
 	}
 
 	/**
@@ -291,9 +301,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public StrongAbortTransitionView createStrongAbortTransitionView() {
-		StrongAbortTransitionViewImpl strongAbortTransitionView = new StrongAbortTransitionViewImpl();
-		return strongAbortTransitionView;
+	public ImmediateStrongAbortTransitionView createImmediateStrongAbortTransitionView() {
+		ImmediateStrongAbortTransitionViewImpl immediateStrongAbortTransitionView = new ImmediateStrongAbortTransitionViewImpl();
+		return immediateStrongAbortTransitionView;
 	}
 
 	/**
@@ -313,9 +323,119 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
+	public ImmediateDeferredTransitionView createImmediateDeferredTransitionView() {
+		ImmediateDeferredTransitionViewImpl immediateDeferredTransitionView = new ImmediateDeferredTransitionViewImpl();
+		return immediateDeferredTransitionView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TerminationDefferdTransitionView createTerminationDefferdTransitionView() {
+		TerminationDefferdTransitionViewImpl terminationDefferdTransitionView = new TerminationDefferdTransitionViewImpl();
+		return terminationDefferdTransitionView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ConditionalTerminationDeferredTransitionView createConditionalTerminationDeferredTransitionView() {
+		ConditionalTerminationDeferredTransitionViewImpl conditionalTerminationDeferredTransitionView = new ConditionalTerminationDeferredTransitionViewImpl();
+		return conditionalTerminationDeferredTransitionView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StrongAbortDeferredTransitionView createStrongAbortDeferredTransitionView() {
+		StrongAbortDeferredTransitionViewImpl strongAbortDeferredTransitionView = new StrongAbortDeferredTransitionViewImpl();
+		return strongAbortDeferredTransitionView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ImmediateStrongAbortDeferredTransitionView createImmediateStrongAbortDeferredTransitionView() {
+		ImmediateStrongAbortDeferredTransitionViewImpl immediateStrongAbortDeferredTransitionView = new ImmediateStrongAbortDeferredTransitionViewImpl();
+		return immediateStrongAbortDeferredTransitionView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public HistoryTransitionView createHistoryTransitionView() {
 		HistoryTransitionViewImpl historyTransitionView = new HistoryTransitionViewImpl();
 		return historyTransitionView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ImmediateHistoryTransitionView createImmediateHistoryTransitionView() {
+		ImmediateHistoryTransitionViewImpl immediateHistoryTransitionView = new ImmediateHistoryTransitionViewImpl();
+		return immediateHistoryTransitionView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TerminationHistoryTransitionView createTerminationHistoryTransitionView() {
+		TerminationHistoryTransitionViewImpl terminationHistoryTransitionView = new TerminationHistoryTransitionViewImpl();
+		return terminationHistoryTransitionView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ConditionalTerminationHistoryTransitionView createConditionalTerminationHistoryTransitionView() {
+		ConditionalTerminationHistoryTransitionViewImpl conditionalTerminationHistoryTransitionView = new ConditionalTerminationHistoryTransitionViewImpl();
+		return conditionalTerminationHistoryTransitionView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StrongAbortHistoryTransitionView createStrongAbortHistoryTransitionView() {
+		StrongAbortHistoryTransitionViewImpl strongAbortHistoryTransitionView = new StrongAbortHistoryTransitionViewImpl();
+		return strongAbortHistoryTransitionView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ImmediateStrongAbortHistoryTransitionView createImmediateStrongAbortHistoryTransitionView() {
+		ImmediateStrongAbortHistoryTransitionViewImpl immediateStrongAbortHistoryTransitionView = new ImmediateStrongAbortHistoryTransitionViewImpl();
+		return immediateStrongAbortHistoryTransitionView;
 	}
 
 	/**

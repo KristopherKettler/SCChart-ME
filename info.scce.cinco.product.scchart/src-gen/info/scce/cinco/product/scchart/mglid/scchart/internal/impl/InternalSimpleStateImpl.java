@@ -112,9 +112,14 @@ public class InternalSimpleStateImpl extends InternalNodeImpl implements Interna
 	 */
 	@Override
 	public EList<ConnectionConstraint> getIncomingConstraints() {
-		ConnectionConstraint cons0 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.Transition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.WeakAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
+		ConnectionConstraint cons0 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
+		ConnectionConstraint cons1 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class);
+		ConnectionConstraint cons2 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class);
+		ConnectionConstraint cons3 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition.class);
+		ConnectionConstraint cons4 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class);
+		ConnectionConstraint cons5 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortTransition.class);
 		org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>eList = new org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>();
-		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0));
+		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0,cons1,cons2,cons3,cons4,cons5));
 		eList.addAll(super.getIncomingConstraints());
 		return eList;
 		
@@ -127,9 +132,10 @@ public class InternalSimpleStateImpl extends InternalNodeImpl implements Interna
 	 */
 	@Override
 	public EList<ConnectionConstraint> getOutgoingConstraints() {
-		ConnectionConstraint cons0 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.Transition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.WeakAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
+		ConnectionConstraint cons0 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
+		ConnectionConstraint cons1 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class);
 		org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>eList = new org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>();
-		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0));
+		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0,cons1));
 		eList.addAll(super.getOutgoingConstraints());
 		return eList;
 		

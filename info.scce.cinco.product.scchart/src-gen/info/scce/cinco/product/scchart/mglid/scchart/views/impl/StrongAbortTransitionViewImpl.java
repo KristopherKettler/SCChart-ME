@@ -7,7 +7,11 @@ import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbor
 import info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortTransitionView;
 import info.scce.cinco.product.scchart.mglid.scchart.views.ViewsPackage;
 
+import java.lang.reflect.InvocationTargetException;
+
 import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -104,6 +108,98 @@ public class StrongAbortTransitionViewImpl extends EObjectImpl implements Strong
 	 * @generated
 	 */
 	@Override
+	public String getCondition() {
+		return getInternalStrongAbortTransition().getCondition();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCondition(final String _arg) {
+		getInternalStrongAbortTransition().getElement().transact("Set Condition", () -> {
+			getInternalStrongAbortTransition().setCondition(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getDelay() {
+		return getInternalStrongAbortTransition().getDelay();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDelay(final String _arg) {
+		getInternalStrongAbortTransition().getElement().transact("Set Delay", () -> {
+			getInternalStrongAbortTransition().setDelay(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getEffect() {
+		return getInternalStrongAbortTransition().getEffect();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEffect(final String _arg) {
+		getInternalStrongAbortTransition().getElement().transact("Set Effect", () -> {
+			getInternalStrongAbortTransition().setEffect(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getPriority() {
+		return getInternalStrongAbortTransition().getPriority();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPriority(final String _arg) {
+		getInternalStrongAbortTransition().getElement().transact("Set Priority", () -> {
+			getInternalStrongAbortTransition().setPriority(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW__INTERNAL_STRONG_ABORT_TRANSITION:
@@ -155,6 +251,38 @@ public class StrongAbortTransitionViewImpl extends EObjectImpl implements Strong
 				return internalStrongAbortTransition != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW___GET_CONDITION:
+				return getCondition();
+			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW___SET_CONDITION__STRING:
+				setCondition((String)arguments.get(0));
+				return null;
+			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW___GET_DELAY:
+				return getDelay();
+			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW___SET_DELAY__STRING:
+				setDelay((String)arguments.get(0));
+				return null;
+			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW___GET_EFFECT:
+				return getEffect();
+			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW___SET_EFFECT__STRING:
+				setEffect((String)arguments.get(0));
+				return null;
+			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW___GET_PRIORITY:
+				return getPriority();
+			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW___SET_PRIORITY__STRING:
+				setPriority((String)arguments.get(0));
+				return null;
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 } //StrongAbortTransitionViewImpl

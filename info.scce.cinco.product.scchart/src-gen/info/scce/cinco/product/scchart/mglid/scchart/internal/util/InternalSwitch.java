@@ -242,21 +242,21 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case InternalPackage.INTERNAL_WEAK_ABORT_TRANSITION: {
-				InternalWeakAbortTransition internalWeakAbortTransition = (InternalWeakAbortTransition)theEObject;
-				T result = caseInternalWeakAbortTransition(internalWeakAbortTransition);
-				if (result == null) result = caseInternalEdge(internalWeakAbortTransition);
-				if (result == null) result = caseInternalModelElement(internalWeakAbortTransition);
-				if (result == null) result = caseInternalIdentifiableElement(internalWeakAbortTransition);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case InternalPackage.INTERNAL_STRONG_ABORT_TRANSITION: {
 				InternalStrongAbortTransition internalStrongAbortTransition = (InternalStrongAbortTransition)theEObject;
 				T result = caseInternalStrongAbortTransition(internalStrongAbortTransition);
 				if (result == null) result = caseInternalEdge(internalStrongAbortTransition);
 				if (result == null) result = caseInternalModelElement(internalStrongAbortTransition);
 				if (result == null) result = caseInternalIdentifiableElement(internalStrongAbortTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION: {
+				InternalImmediateStrongAbortTransition internalImmediateStrongAbortTransition = (InternalImmediateStrongAbortTransition)theEObject;
+				T result = caseInternalImmediateStrongAbortTransition(internalImmediateStrongAbortTransition);
+				if (result == null) result = caseInternalEdge(internalImmediateStrongAbortTransition);
+				if (result == null) result = caseInternalModelElement(internalImmediateStrongAbortTransition);
+				if (result == null) result = caseInternalIdentifiableElement(internalImmediateStrongAbortTransition);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -269,12 +269,102 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case InternalPackage.INTERNAL_IMMEDIATE_DEFERRED_TRANSITION: {
+				InternalImmediateDeferredTransition internalImmediateDeferredTransition = (InternalImmediateDeferredTransition)theEObject;
+				T result = caseInternalImmediateDeferredTransition(internalImmediateDeferredTransition);
+				if (result == null) result = caseInternalEdge(internalImmediateDeferredTransition);
+				if (result == null) result = caseInternalModelElement(internalImmediateDeferredTransition);
+				if (result == null) result = caseInternalIdentifiableElement(internalImmediateDeferredTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_TERMINATION_DEFFERD_TRANSITION: {
+				InternalTerminationDefferdTransition internalTerminationDefferdTransition = (InternalTerminationDefferdTransition)theEObject;
+				T result = caseInternalTerminationDefferdTransition(internalTerminationDefferdTransition);
+				if (result == null) result = caseInternalEdge(internalTerminationDefferdTransition);
+				if (result == null) result = caseInternalModelElement(internalTerminationDefferdTransition);
+				if (result == null) result = caseInternalIdentifiableElement(internalTerminationDefferdTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION: {
+				InternalConditionalTerminationDeferredTransition internalConditionalTerminationDeferredTransition = (InternalConditionalTerminationDeferredTransition)theEObject;
+				T result = caseInternalConditionalTerminationDeferredTransition(internalConditionalTerminationDeferredTransition);
+				if (result == null) result = caseInternalEdge(internalConditionalTerminationDeferredTransition);
+				if (result == null) result = caseInternalModelElement(internalConditionalTerminationDeferredTransition);
+				if (result == null) result = caseInternalIdentifiableElement(internalConditionalTerminationDeferredTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION: {
+				InternalStrongAbortDeferredTransition internalStrongAbortDeferredTransition = (InternalStrongAbortDeferredTransition)theEObject;
+				T result = caseInternalStrongAbortDeferredTransition(internalStrongAbortDeferredTransition);
+				if (result == null) result = caseInternalEdge(internalStrongAbortDeferredTransition);
+				if (result == null) result = caseInternalModelElement(internalStrongAbortDeferredTransition);
+				if (result == null) result = caseInternalIdentifiableElement(internalStrongAbortDeferredTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION: {
+				InternalImmediateStrongAbortDeferredTransition internalImmediateStrongAbortDeferredTransition = (InternalImmediateStrongAbortDeferredTransition)theEObject;
+				T result = caseInternalImmediateStrongAbortDeferredTransition(internalImmediateStrongAbortDeferredTransition);
+				if (result == null) result = caseInternalEdge(internalImmediateStrongAbortDeferredTransition);
+				if (result == null) result = caseInternalModelElement(internalImmediateStrongAbortDeferredTransition);
+				if (result == null) result = caseInternalIdentifiableElement(internalImmediateStrongAbortDeferredTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION: {
 				InternalHistoryTransition internalHistoryTransition = (InternalHistoryTransition)theEObject;
 				T result = caseInternalHistoryTransition(internalHistoryTransition);
 				if (result == null) result = caseInternalEdge(internalHistoryTransition);
 				if (result == null) result = caseInternalModelElement(internalHistoryTransition);
 				if (result == null) result = caseInternalIdentifiableElement(internalHistoryTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION: {
+				InternalImmediateHistoryTransition internalImmediateHistoryTransition = (InternalImmediateHistoryTransition)theEObject;
+				T result = caseInternalImmediateHistoryTransition(internalImmediateHistoryTransition);
+				if (result == null) result = caseInternalEdge(internalImmediateHistoryTransition);
+				if (result == null) result = caseInternalModelElement(internalImmediateHistoryTransition);
+				if (result == null) result = caseInternalIdentifiableElement(internalImmediateHistoryTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION: {
+				InternalTerminationHistoryTransition internalTerminationHistoryTransition = (InternalTerminationHistoryTransition)theEObject;
+				T result = caseInternalTerminationHistoryTransition(internalTerminationHistoryTransition);
+				if (result == null) result = caseInternalEdge(internalTerminationHistoryTransition);
+				if (result == null) result = caseInternalModelElement(internalTerminationHistoryTransition);
+				if (result == null) result = caseInternalIdentifiableElement(internalTerminationHistoryTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION: {
+				InternalConditionalTerminationHistoryTransition internalConditionalTerminationHistoryTransition = (InternalConditionalTerminationHistoryTransition)theEObject;
+				T result = caseInternalConditionalTerminationHistoryTransition(internalConditionalTerminationHistoryTransition);
+				if (result == null) result = caseInternalEdge(internalConditionalTerminationHistoryTransition);
+				if (result == null) result = caseInternalModelElement(internalConditionalTerminationHistoryTransition);
+				if (result == null) result = caseInternalIdentifiableElement(internalConditionalTerminationHistoryTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_STRONG_ABORT_HISTORY_TRANSITION: {
+				InternalStrongAbortHistoryTransition internalStrongAbortHistoryTransition = (InternalStrongAbortHistoryTransition)theEObject;
+				T result = caseInternalStrongAbortHistoryTransition(internalStrongAbortHistoryTransition);
+				if (result == null) result = caseInternalEdge(internalStrongAbortHistoryTransition);
+				if (result == null) result = caseInternalModelElement(internalStrongAbortHistoryTransition);
+				if (result == null) result = caseInternalIdentifiableElement(internalStrongAbortHistoryTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION: {
+				InternalImmediateStrongAbortHistoryTransition internalImmediateStrongAbortHistoryTransition = (InternalImmediateStrongAbortHistoryTransition)theEObject;
+				T result = caseInternalImmediateStrongAbortHistoryTransition(internalImmediateStrongAbortHistoryTransition);
+				if (result == null) result = caseInternalEdge(internalImmediateStrongAbortHistoryTransition);
+				if (result == null) result = caseInternalModelElement(internalImmediateStrongAbortHistoryTransition);
+				if (result == null) result = caseInternalIdentifiableElement(internalImmediateStrongAbortHistoryTransition);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -579,21 +669,6 @@ public class InternalSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Weak Abort Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Weak Abort Transition</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalWeakAbortTransition(InternalWeakAbortTransition object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Strong Abort Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -605,6 +680,21 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalStrongAbortTransition(InternalStrongAbortTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Immediate Strong Abort Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Immediate Strong Abort Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalImmediateStrongAbortTransition(InternalImmediateStrongAbortTransition object) {
 		return null;
 	}
 
@@ -624,6 +714,81 @@ public class InternalSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Immediate Deferred Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Immediate Deferred Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalImmediateDeferredTransition(InternalImmediateDeferredTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Termination Defferd Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Termination Defferd Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalTerminationDefferdTransition(InternalTerminationDefferdTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Conditional Termination Deferred Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Conditional Termination Deferred Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalConditionalTerminationDeferredTransition(InternalConditionalTerminationDeferredTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Strong Abort Deferred Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Strong Abort Deferred Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalStrongAbortDeferredTransition(InternalStrongAbortDeferredTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Immediate Strong Abort Deferred Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Immediate Strong Abort Deferred Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalImmediateStrongAbortDeferredTransition(InternalImmediateStrongAbortDeferredTransition object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>History Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -635,6 +800,81 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalHistoryTransition(InternalHistoryTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Immediate History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Immediate History Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalImmediateHistoryTransition(InternalImmediateHistoryTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Termination History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Termination History Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalTerminationHistoryTransition(InternalTerminationHistoryTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Conditional Termination History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Conditional Termination History Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalConditionalTerminationHistoryTransition(InternalConditionalTerminationHistoryTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Strong Abort History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Strong Abort History Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalStrongAbortHistoryTransition(InternalStrongAbortHistoryTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Immediate Strong Abort History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Immediate Strong Abort History Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalImmediateStrongAbortHistoryTransition(InternalImmediateStrongAbortHistoryTransition object) {
 		return null;
 	}
 

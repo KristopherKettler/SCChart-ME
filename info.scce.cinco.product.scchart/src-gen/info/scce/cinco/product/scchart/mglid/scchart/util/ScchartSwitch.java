@@ -242,21 +242,21 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ScchartPackage.WEAK_ABORT_TRANSITION: {
-				WeakAbortTransition weakAbortTransition = (WeakAbortTransition)theEObject;
-				T result = caseWeakAbortTransition(weakAbortTransition);
-				if (result == null) result = caseEdge(weakAbortTransition);
-				if (result == null) result = caseModelElement(weakAbortTransition);
-				if (result == null) result = caseIdentifiableElement(weakAbortTransition);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ScchartPackage.STRONG_ABORT_TRANSITION: {
 				StrongAbortTransition strongAbortTransition = (StrongAbortTransition)theEObject;
 				T result = caseStrongAbortTransition(strongAbortTransition);
 				if (result == null) result = caseEdge(strongAbortTransition);
 				if (result == null) result = caseModelElement(strongAbortTransition);
 				if (result == null) result = caseIdentifiableElement(strongAbortTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION: {
+				ImmediateStrongAbortTransition immediateStrongAbortTransition = (ImmediateStrongAbortTransition)theEObject;
+				T result = caseImmediateStrongAbortTransition(immediateStrongAbortTransition);
+				if (result == null) result = caseEdge(immediateStrongAbortTransition);
+				if (result == null) result = caseModelElement(immediateStrongAbortTransition);
+				if (result == null) result = caseIdentifiableElement(immediateStrongAbortTransition);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -269,12 +269,102 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION: {
+				ImmediateDeferredTransition immediateDeferredTransition = (ImmediateDeferredTransition)theEObject;
+				T result = caseImmediateDeferredTransition(immediateDeferredTransition);
+				if (result == null) result = caseEdge(immediateDeferredTransition);
+				if (result == null) result = caseModelElement(immediateDeferredTransition);
+				if (result == null) result = caseIdentifiableElement(immediateDeferredTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ScchartPackage.TERMINATION_DEFFERD_TRANSITION: {
+				TerminationDefferdTransition terminationDefferdTransition = (TerminationDefferdTransition)theEObject;
+				T result = caseTerminationDefferdTransition(terminationDefferdTransition);
+				if (result == null) result = caseEdge(terminationDefferdTransition);
+				if (result == null) result = caseModelElement(terminationDefferdTransition);
+				if (result == null) result = caseIdentifiableElement(terminationDefferdTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION: {
+				ConditionalTerminationDeferredTransition conditionalTerminationDeferredTransition = (ConditionalTerminationDeferredTransition)theEObject;
+				T result = caseConditionalTerminationDeferredTransition(conditionalTerminationDeferredTransition);
+				if (result == null) result = caseEdge(conditionalTerminationDeferredTransition);
+				if (result == null) result = caseModelElement(conditionalTerminationDeferredTransition);
+				if (result == null) result = caseIdentifiableElement(conditionalTerminationDeferredTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION: {
+				StrongAbortDeferredTransition strongAbortDeferredTransition = (StrongAbortDeferredTransition)theEObject;
+				T result = caseStrongAbortDeferredTransition(strongAbortDeferredTransition);
+				if (result == null) result = caseEdge(strongAbortDeferredTransition);
+				if (result == null) result = caseModelElement(strongAbortDeferredTransition);
+				if (result == null) result = caseIdentifiableElement(strongAbortDeferredTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION: {
+				ImmediateStrongAbortDeferredTransition immediateStrongAbortDeferredTransition = (ImmediateStrongAbortDeferredTransition)theEObject;
+				T result = caseImmediateStrongAbortDeferredTransition(immediateStrongAbortDeferredTransition);
+				if (result == null) result = caseEdge(immediateStrongAbortDeferredTransition);
+				if (result == null) result = caseModelElement(immediateStrongAbortDeferredTransition);
+				if (result == null) result = caseIdentifiableElement(immediateStrongAbortDeferredTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ScchartPackage.HISTORY_TRANSITION: {
 				HistoryTransition historyTransition = (HistoryTransition)theEObject;
 				T result = caseHistoryTransition(historyTransition);
 				if (result == null) result = caseEdge(historyTransition);
 				if (result == null) result = caseModelElement(historyTransition);
 				if (result == null) result = caseIdentifiableElement(historyTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ScchartPackage.IMMEDIATE_HISTORY_TRANSITION: {
+				ImmediateHistoryTransition immediateHistoryTransition = (ImmediateHistoryTransition)theEObject;
+				T result = caseImmediateHistoryTransition(immediateHistoryTransition);
+				if (result == null) result = caseEdge(immediateHistoryTransition);
+				if (result == null) result = caseModelElement(immediateHistoryTransition);
+				if (result == null) result = caseIdentifiableElement(immediateHistoryTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION: {
+				TerminationHistoryTransition terminationHistoryTransition = (TerminationHistoryTransition)theEObject;
+				T result = caseTerminationHistoryTransition(terminationHistoryTransition);
+				if (result == null) result = caseEdge(terminationHistoryTransition);
+				if (result == null) result = caseModelElement(terminationHistoryTransition);
+				if (result == null) result = caseIdentifiableElement(terminationHistoryTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION: {
+				ConditionalTerminationHistoryTransition conditionalTerminationHistoryTransition = (ConditionalTerminationHistoryTransition)theEObject;
+				T result = caseConditionalTerminationHistoryTransition(conditionalTerminationHistoryTransition);
+				if (result == null) result = caseEdge(conditionalTerminationHistoryTransition);
+				if (result == null) result = caseModelElement(conditionalTerminationHistoryTransition);
+				if (result == null) result = caseIdentifiableElement(conditionalTerminationHistoryTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION: {
+				StrongAbortHistoryTransition strongAbortHistoryTransition = (StrongAbortHistoryTransition)theEObject;
+				T result = caseStrongAbortHistoryTransition(strongAbortHistoryTransition);
+				if (result == null) result = caseEdge(strongAbortHistoryTransition);
+				if (result == null) result = caseModelElement(strongAbortHistoryTransition);
+				if (result == null) result = caseIdentifiableElement(strongAbortHistoryTransition);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION: {
+				ImmediateStrongAbortHistoryTransition immediateStrongAbortHistoryTransition = (ImmediateStrongAbortHistoryTransition)theEObject;
+				T result = caseImmediateStrongAbortHistoryTransition(immediateStrongAbortHistoryTransition);
+				if (result == null) result = caseEdge(immediateStrongAbortHistoryTransition);
+				if (result == null) result = caseModelElement(immediateStrongAbortHistoryTransition);
+				if (result == null) result = caseIdentifiableElement(immediateStrongAbortHistoryTransition);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -579,21 +669,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Weak Abort Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Weak Abort Transition</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseWeakAbortTransition(WeakAbortTransition object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Strong Abort Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -605,6 +680,21 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseStrongAbortTransition(StrongAbortTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Immediate Strong Abort Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Immediate Strong Abort Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseImmediateStrongAbortTransition(ImmediateStrongAbortTransition object) {
 		return null;
 	}
 
@@ -624,6 +714,81 @@ public class ScchartSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Immediate Deferred Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Immediate Deferred Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseImmediateDeferredTransition(ImmediateDeferredTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Termination Defferd Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Termination Defferd Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTerminationDefferdTransition(TerminationDefferdTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Conditional Termination Deferred Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Conditional Termination Deferred Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConditionalTerminationDeferredTransition(ConditionalTerminationDeferredTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Strong Abort Deferred Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Strong Abort Deferred Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStrongAbortDeferredTransition(StrongAbortDeferredTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Immediate Strong Abort Deferred Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Immediate Strong Abort Deferred Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseImmediateStrongAbortDeferredTransition(ImmediateStrongAbortDeferredTransition object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>History Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -635,6 +800,81 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseHistoryTransition(HistoryTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Immediate History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Immediate History Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseImmediateHistoryTransition(ImmediateHistoryTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Termination History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Termination History Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTerminationHistoryTransition(TerminationHistoryTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Conditional Termination History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Conditional Termination History Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConditionalTerminationHistoryTransition(ConditionalTerminationHistoryTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Strong Abort History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Strong Abort History Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStrongAbortHistoryTransition(StrongAbortHistoryTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Immediate Strong Abort History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Immediate Strong Abort History Transition</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseImmediateStrongAbortHistoryTransition(ImmediateStrongAbortHistoryTransition object) {
 		return null;
 	}
 

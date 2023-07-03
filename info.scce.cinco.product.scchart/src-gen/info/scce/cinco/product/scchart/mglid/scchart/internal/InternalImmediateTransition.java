@@ -13,7 +13,9 @@ import graphmodel.internal.InternalEdge;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getLabel <em>Label</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getCondition <em>Condition</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getDelay <em>Delay</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getEffect <em>Effect</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getPriority <em>Priority</em>}</li>
  * </ul>
  *
@@ -23,27 +25,73 @@ import graphmodel.internal.InternalEdge;
  */
 public interface InternalImmediateTransition extends InternalEdge {
 	/**
-	 * Returns the value of the '<em><b>Label</b></em>' attribute.
-	 * The default value is <code>"wqwq"</code>.
+	 * Returns the value of the '<em><b>Condition</b></em>' attribute.
+	 * The default value is <code>"<No condition>"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Label</em>' attribute.
-	 * @see #setLabel(String)
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalImmediateTransition_Label()
-	 * @model default="wqwq"
+	 * @return the value of the '<em>Condition</em>' attribute.
+	 * @see #setCondition(String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalImmediateTransition_Condition()
+	 * @model default="&lt;No condition&gt;"
 	 * @generated
 	 */
-	String getLabel();
+	String getCondition();
 
 	/**
-	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getLabel <em>Label</em>}' attribute.
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getCondition <em>Condition</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Label</em>' attribute.
-	 * @see #getLabel()
+	 * @param value the new value of the '<em>Condition</em>' attribute.
+	 * @see #getCondition()
 	 * @generated
 	 */
-	void setLabel(String value);
+	void setCondition(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Delay</b></em>' attribute.
+	 * The default value is <code>"<No count delay>"</code>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Delay</em>' attribute.
+	 * @see #setDelay(String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalImmediateTransition_Delay()
+	 * @model default="&lt;No count delay&gt;"
+	 * @generated
+	 */
+	String getDelay();
+
+	/**
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getDelay <em>Delay</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Delay</em>' attribute.
+	 * @see #getDelay()
+	 * @generated
+	 */
+	void setDelay(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Effect</b></em>' attribute.
+	 * The default value is <code>"<No effect>"</code>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Effect</em>' attribute.
+	 * @see #setEffect(String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalImmediateTransition_Effect()
+	 * @model default="&lt;No effect&gt;"
+	 * @generated
+	 */
+	String getEffect();
+
+	/**
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getEffect <em>Effect</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Effect</em>' attribute.
+	 * @see #getEffect()
+	 * @generated
+	 */
+	void setEffect(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Priority</b></em>' attribute.

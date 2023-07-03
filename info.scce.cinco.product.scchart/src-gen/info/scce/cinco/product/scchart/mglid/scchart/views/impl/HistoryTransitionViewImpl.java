@@ -108,6 +108,52 @@ public class HistoryTransitionViewImpl extends EObjectImpl implements HistoryTra
 	 * @generated
 	 */
 	@Override
+	public String getCondition() {
+		return getInternalHistoryTransition().getCondition();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCondition(final String _arg) {
+		getInternalHistoryTransition().getElement().transact("Set Condition", () -> {
+			getInternalHistoryTransition().setCondition(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getDelay() {
+		return getInternalHistoryTransition().getDelay();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDelay(final String _arg) {
+		getInternalHistoryTransition().getElement().transact("Set Delay", () -> {
+			getInternalHistoryTransition().setDelay(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean isDeepHistory() {
 		return getInternalHistoryTransition().isDeepHistory();
 	}
@@ -131,6 +177,29 @@ public class HistoryTransitionViewImpl extends EObjectImpl implements HistoryTra
 	 * @generated
 	 */
 	@Override
+	public String getEffect() {
+		return getInternalHistoryTransition().getEffect();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEffect(final String _arg) {
+		getInternalHistoryTransition().getElement().transact("Set Effect", () -> {
+			getInternalHistoryTransition().setEffect(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getH() {
 		return getInternalHistoryTransition().getH();
 	}
@@ -144,6 +213,29 @@ public class HistoryTransitionViewImpl extends EObjectImpl implements HistoryTra
 	public void setH(final String _arg) {
 		getInternalHistoryTransition().getElement().transact("Set H", () -> {
 			getInternalHistoryTransition().setH(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getPriority() {
+		return getInternalHistoryTransition().getPriority();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPriority(final String _arg) {
+		getInternalHistoryTransition().getElement().transact("Set Priority", () -> {
+			getInternalHistoryTransition().setPriority(_arg);
 		});
 		
 	}
@@ -215,15 +307,35 @@ public class HistoryTransitionViewImpl extends EObjectImpl implements HistoryTra
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___GET_CONDITION:
+				return getCondition();
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_CONDITION__STRING:
+				setCondition((String)arguments.get(0));
+				return null;
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___GET_DELAY:
+				return getDelay();
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_DELAY__STRING:
+				setDelay((String)arguments.get(0));
+				return null;
 			case ViewsPackage.HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY:
 				return isDeepHistory();
 			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN:
 				setDeepHistory((Boolean)arguments.get(0));
 				return null;
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___GET_EFFECT:
+				return getEffect();
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING:
+				setEffect((String)arguments.get(0));
+				return null;
 			case ViewsPackage.HISTORY_TRANSITION_VIEW___GET_H:
 				return getH();
 			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_H__STRING:
 				setH((String)arguments.get(0));
+				return null;
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___GET_PRIORITY:
+				return getPriority();
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING:
+				setPriority((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

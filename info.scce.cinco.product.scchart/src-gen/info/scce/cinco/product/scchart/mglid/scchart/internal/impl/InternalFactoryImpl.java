@@ -73,10 +73,20 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_IMMEDIATE_TRANSITION: return createInternalImmediateTransition();
 			case InternalPackage.INTERNAL_TERMINATION_TRANSITION: return createInternalTerminationTransition();
 			case InternalPackage.INTERNAL_CONDITIONAL_TERMINATION_TRANSITION: return createInternalConditionalTerminationTransition();
-			case InternalPackage.INTERNAL_WEAK_ABORT_TRANSITION: return createInternalWeakAbortTransition();
 			case InternalPackage.INTERNAL_STRONG_ABORT_TRANSITION: return createInternalStrongAbortTransition();
+			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION: return createInternalImmediateStrongAbortTransition();
 			case InternalPackage.INTERNAL_DEFERRED_TRANSITION: return createInternalDeferredTransition();
+			case InternalPackage.INTERNAL_IMMEDIATE_DEFERRED_TRANSITION: return createInternalImmediateDeferredTransition();
+			case InternalPackage.INTERNAL_TERMINATION_DEFFERD_TRANSITION: return createInternalTerminationDefferdTransition();
+			case InternalPackage.INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION: return createInternalConditionalTerminationDeferredTransition();
+			case InternalPackage.INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION: return createInternalStrongAbortDeferredTransition();
+			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION: return createInternalImmediateStrongAbortDeferredTransition();
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION: return createInternalHistoryTransition();
+			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION: return createInternalImmediateHistoryTransition();
+			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION: return createInternalTerminationHistoryTransition();
+			case InternalPackage.INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION: return createInternalConditionalTerminationHistoryTransition();
+			case InternalPackage.INTERNAL_STRONG_ABORT_HISTORY_TRANSITION: return createInternalStrongAbortHistoryTransition();
+			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION: return createInternalImmediateStrongAbortHistoryTransition();
 			case InternalPackage.INTERNAL_SC_CHART: return createInternalSCChart();
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION: return createInternalRootStateDeclaration();
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION: return createInternalSuperStateDeclaration();
@@ -280,9 +290,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalWeakAbortTransition createInternalWeakAbortTransition() {
-		InternalWeakAbortTransitionImpl internalWeakAbortTransition = new InternalWeakAbortTransitionImpl();
-		return internalWeakAbortTransition;
+	public InternalStrongAbortTransition createInternalStrongAbortTransition() {
+		InternalStrongAbortTransitionImpl internalStrongAbortTransition = new InternalStrongAbortTransitionImpl();
+		return internalStrongAbortTransition;
 	}
 
 	/**
@@ -291,9 +301,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalStrongAbortTransition createInternalStrongAbortTransition() {
-		InternalStrongAbortTransitionImpl internalStrongAbortTransition = new InternalStrongAbortTransitionImpl();
-		return internalStrongAbortTransition;
+	public InternalImmediateStrongAbortTransition createInternalImmediateStrongAbortTransition() {
+		InternalImmediateStrongAbortTransitionImpl internalImmediateStrongAbortTransition = new InternalImmediateStrongAbortTransitionImpl();
+		return internalImmediateStrongAbortTransition;
 	}
 
 	/**
@@ -313,9 +323,119 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
+	public InternalImmediateDeferredTransition createInternalImmediateDeferredTransition() {
+		InternalImmediateDeferredTransitionImpl internalImmediateDeferredTransition = new InternalImmediateDeferredTransitionImpl();
+		return internalImmediateDeferredTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalTerminationDefferdTransition createInternalTerminationDefferdTransition() {
+		InternalTerminationDefferdTransitionImpl internalTerminationDefferdTransition = new InternalTerminationDefferdTransitionImpl();
+		return internalTerminationDefferdTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalConditionalTerminationDeferredTransition createInternalConditionalTerminationDeferredTransition() {
+		InternalConditionalTerminationDeferredTransitionImpl internalConditionalTerminationDeferredTransition = new InternalConditionalTerminationDeferredTransitionImpl();
+		return internalConditionalTerminationDeferredTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalStrongAbortDeferredTransition createInternalStrongAbortDeferredTransition() {
+		InternalStrongAbortDeferredTransitionImpl internalStrongAbortDeferredTransition = new InternalStrongAbortDeferredTransitionImpl();
+		return internalStrongAbortDeferredTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalImmediateStrongAbortDeferredTransition createInternalImmediateStrongAbortDeferredTransition() {
+		InternalImmediateStrongAbortDeferredTransitionImpl internalImmediateStrongAbortDeferredTransition = new InternalImmediateStrongAbortDeferredTransitionImpl();
+		return internalImmediateStrongAbortDeferredTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public InternalHistoryTransition createInternalHistoryTransition() {
 		InternalHistoryTransitionImpl internalHistoryTransition = new InternalHistoryTransitionImpl();
 		return internalHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalImmediateHistoryTransition createInternalImmediateHistoryTransition() {
+		InternalImmediateHistoryTransitionImpl internalImmediateHistoryTransition = new InternalImmediateHistoryTransitionImpl();
+		return internalImmediateHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalTerminationHistoryTransition createInternalTerminationHistoryTransition() {
+		InternalTerminationHistoryTransitionImpl internalTerminationHistoryTransition = new InternalTerminationHistoryTransitionImpl();
+		return internalTerminationHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalConditionalTerminationHistoryTransition createInternalConditionalTerminationHistoryTransition() {
+		InternalConditionalTerminationHistoryTransitionImpl internalConditionalTerminationHistoryTransition = new InternalConditionalTerminationHistoryTransitionImpl();
+		return internalConditionalTerminationHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalStrongAbortHistoryTransition createInternalStrongAbortHistoryTransition() {
+		InternalStrongAbortHistoryTransitionImpl internalStrongAbortHistoryTransition = new InternalStrongAbortHistoryTransitionImpl();
+		return internalStrongAbortHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalImmediateStrongAbortHistoryTransition createInternalImmediateStrongAbortHistoryTransition() {
+		InternalImmediateStrongAbortHistoryTransitionImpl internalImmediateStrongAbortHistoryTransition = new InternalImmediateStrongAbortHistoryTransitionImpl();
+		return internalImmediateStrongAbortHistoryTransition;
 	}
 
 	/**

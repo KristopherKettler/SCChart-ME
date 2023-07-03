@@ -136,20 +136,60 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 				return createConditionalTerminationTransitionViewAdapter();
 			}
 			@Override
-			public Adapter caseWeakAbortTransitionView(WeakAbortTransitionView object) {
-				return createWeakAbortTransitionViewAdapter();
-			}
-			@Override
 			public Adapter caseStrongAbortTransitionView(StrongAbortTransitionView object) {
 				return createStrongAbortTransitionViewAdapter();
+			}
+			@Override
+			public Adapter caseImmediateStrongAbortTransitionView(ImmediateStrongAbortTransitionView object) {
+				return createImmediateStrongAbortTransitionViewAdapter();
 			}
 			@Override
 			public Adapter caseDeferredTransitionView(DeferredTransitionView object) {
 				return createDeferredTransitionViewAdapter();
 			}
 			@Override
+			public Adapter caseImmediateDeferredTransitionView(ImmediateDeferredTransitionView object) {
+				return createImmediateDeferredTransitionViewAdapter();
+			}
+			@Override
+			public Adapter caseTerminationDefferdTransitionView(TerminationDefferdTransitionView object) {
+				return createTerminationDefferdTransitionViewAdapter();
+			}
+			@Override
+			public Adapter caseConditionalTerminationDeferredTransitionView(ConditionalTerminationDeferredTransitionView object) {
+				return createConditionalTerminationDeferredTransitionViewAdapter();
+			}
+			@Override
+			public Adapter caseStrongAbortDeferredTransitionView(StrongAbortDeferredTransitionView object) {
+				return createStrongAbortDeferredTransitionViewAdapter();
+			}
+			@Override
+			public Adapter caseImmediateStrongAbortDeferredTransitionView(ImmediateStrongAbortDeferredTransitionView object) {
+				return createImmediateStrongAbortDeferredTransitionViewAdapter();
+			}
+			@Override
 			public Adapter caseHistoryTransitionView(HistoryTransitionView object) {
 				return createHistoryTransitionViewAdapter();
+			}
+			@Override
+			public Adapter caseImmediateHistoryTransitionView(ImmediateHistoryTransitionView object) {
+				return createImmediateHistoryTransitionViewAdapter();
+			}
+			@Override
+			public Adapter caseTerminationHistoryTransitionView(TerminationHistoryTransitionView object) {
+				return createTerminationHistoryTransitionViewAdapter();
+			}
+			@Override
+			public Adapter caseConditionalTerminationHistoryTransitionView(ConditionalTerminationHistoryTransitionView object) {
+				return createConditionalTerminationHistoryTransitionViewAdapter();
+			}
+			@Override
+			public Adapter caseStrongAbortHistoryTransitionView(StrongAbortHistoryTransitionView object) {
+				return createStrongAbortHistoryTransitionViewAdapter();
+			}
+			@Override
+			public Adapter caseImmediateStrongAbortHistoryTransitionView(ImmediateStrongAbortHistoryTransitionView object) {
+				return createImmediateStrongAbortHistoryTransitionViewAdapter();
 			}
 			@Override
 			public Adapter caseSCChartView(SCChartView object) {
@@ -430,20 +470,6 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.WeakAbortTransitionView <em>Weak Abort Transition View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.WeakAbortTransitionView
-	 * @generated
-	 */
-	public Adapter createWeakAbortTransitionViewAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortTransitionView <em>Strong Abort Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -454,6 +480,20 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createStrongAbortTransitionViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortTransitionView <em>Immediate Strong Abort Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortTransitionView
+	 * @generated
+	 */
+	public Adapter createImmediateStrongAbortTransitionViewAdapter() {
 		return null;
 	}
 
@@ -472,6 +512,76 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateDeferredTransitionView <em>Immediate Deferred Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateDeferredTransitionView
+	 * @generated
+	 */
+	public Adapter createImmediateDeferredTransitionViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationDefferdTransitionView <em>Termination Defferd Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TerminationDefferdTransitionView
+	 * @generated
+	 */
+	public Adapter createTerminationDefferdTransitionViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationDeferredTransitionView <em>Conditional Termination Deferred Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationDeferredTransitionView
+	 * @generated
+	 */
+	public Adapter createConditionalTerminationDeferredTransitionViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortDeferredTransitionView <em>Strong Abort Deferred Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortDeferredTransitionView
+	 * @generated
+	 */
+	public Adapter createStrongAbortDeferredTransitionViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortDeferredTransitionView <em>Immediate Strong Abort Deferred Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortDeferredTransitionView
+	 * @generated
+	 */
+	public Adapter createImmediateStrongAbortDeferredTransitionViewAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView <em>History Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -482,6 +592,76 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createHistoryTransitionViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateHistoryTransitionView <em>Immediate History Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateHistoryTransitionView
+	 * @generated
+	 */
+	public Adapter createImmediateHistoryTransitionViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationHistoryTransitionView <em>Termination History Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TerminationHistoryTransitionView
+	 * @generated
+	 */
+	public Adapter createTerminationHistoryTransitionViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationHistoryTransitionView <em>Conditional Termination History Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationHistoryTransitionView
+	 * @generated
+	 */
+	public Adapter createConditionalTerminationHistoryTransitionViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortHistoryTransitionView <em>Strong Abort History Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortHistoryTransitionView
+	 * @generated
+	 */
+	public Adapter createStrongAbortHistoryTransitionViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortHistoryTransitionView <em>Immediate Strong Abort History Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortHistoryTransitionView
+	 * @generated
+	 */
+	public Adapter createImmediateStrongAbortHistoryTransitionViewAdapter() {
 		return null;
 	}
 

@@ -21,13 +21,57 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalHistoryTransitionImpl#getCondition <em>Condition</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalHistoryTransitionImpl#getDelay <em>Delay</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalHistoryTransitionImpl#isDeepHistory <em>Deep History</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalHistoryTransitionImpl#getEffect <em>Effect</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalHistoryTransitionImpl#getH <em>H</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalHistoryTransitionImpl#getPriority <em>Priority</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class InternalHistoryTransitionImpl extends InternalEdgeImpl implements InternalHistoryTransition {
+	/**
+	 * The default value of the '{@link #getCondition() <em>Condition</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCondition()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String CONDITION_EDEFAULT = "<No condition>";
+
+	/**
+	 * The cached value of the '{@link #getCondition() <em>Condition</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCondition()
+	 * @generated
+	 * @ordered
+	 */
+	protected String condition = CONDITION_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getDelay() <em>Delay</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDelay()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DELAY_EDEFAULT = "<No count delay>";
+
+	/**
+	 * The cached value of the '{@link #getDelay() <em>Delay</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDelay()
+	 * @generated
+	 * @ordered
+	 */
+	protected String delay = DELAY_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #isDeepHistory() <em>Deep History</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -49,6 +93,26 @@ public class InternalHistoryTransitionImpl extends InternalEdgeImpl implements I
 	protected boolean deepHistory = DEEP_HISTORY_EDEFAULT;
 
 	/**
+	 * The default value of the '{@link #getEffect() <em>Effect</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEffect()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String EFFECT_EDEFAULT = "<No effect>";
+
+	/**
+	 * The cached value of the '{@link #getEffect() <em>Effect</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEffect()
+	 * @generated
+	 * @ordered
+	 */
+	protected String effect = EFFECT_EDEFAULT;
+
+	/**
 	 * The default value of the '{@link #getH() <em>H</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -56,7 +120,7 @@ public class InternalHistoryTransitionImpl extends InternalEdgeImpl implements I
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String H_EDEFAULT = "H";
+	protected static final String H_EDEFAULT = "";
 
 	/**
 	 * The cached value of the '{@link #getH() <em>H</em>}' attribute.
@@ -67,6 +131,26 @@ public class InternalHistoryTransitionImpl extends InternalEdgeImpl implements I
 	 * @ordered
 	 */
 	protected String h = H_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getPriority() <em>Priority</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPriority()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PRIORITY_EDEFAULT = "0";
+
+	/**
+	 * The cached value of the '{@link #getPriority() <em>Priority</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPriority()
+	 * @generated
+	 * @ordered
+	 */
+	protected String priority = PRIORITY_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,6 +169,52 @@ public class InternalHistoryTransitionImpl extends InternalEdgeImpl implements I
 	@Override
 	protected EClass eStaticClass() {
 		return InternalPackage.Literals.INTERNAL_HISTORY_TRANSITION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCondition() {
+		return condition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCondition(String newCondition) {
+		String oldCondition = condition;
+		condition = newCondition;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_HISTORY_TRANSITION__CONDITION, oldCondition, condition));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getDelay() {
+		return delay;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDelay(String newDelay) {
+		String oldDelay = delay;
+		delay = newDelay;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_HISTORY_TRANSITION__DELAY, oldDelay, delay));
 	}
 
 	/**
@@ -116,6 +246,29 @@ public class InternalHistoryTransitionImpl extends InternalEdgeImpl implements I
 	 * @generated
 	 */
 	@Override
+	public String getEffect() {
+		return effect;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEffect(String newEffect) {
+		String oldEffect = effect;
+		effect = newEffect;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_HISTORY_TRANSITION__EFFECT, oldEffect, effect));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getH() {
 		return h;
 	}
@@ -139,12 +292,43 @@ public class InternalHistoryTransitionImpl extends InternalEdgeImpl implements I
 	 * @generated
 	 */
 	@Override
+	public String getPriority() {
+		return priority;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPriority(String newPriority) {
+		String oldPriority = priority;
+		priority = newPriority;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_HISTORY_TRANSITION__PRIORITY, oldPriority, priority));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__CONDITION:
+				return getCondition();
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__DELAY:
+				return getDelay();
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__DEEP_HISTORY:
 				return isDeepHistory();
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__EFFECT:
+				return getEffect();
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__H:
 				return getH();
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__PRIORITY:
+				return getPriority();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -157,11 +341,23 @@ public class InternalHistoryTransitionImpl extends InternalEdgeImpl implements I
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__CONDITION:
+				setCondition((String)newValue);
+				return;
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__DELAY:
+				setDelay((String)newValue);
+				return;
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__DEEP_HISTORY:
 				setDeepHistory((Boolean)newValue);
 				return;
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__EFFECT:
+				setEffect((String)newValue);
+				return;
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__H:
 				setH((String)newValue);
+				return;
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__PRIORITY:
+				setPriority((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -175,11 +371,23 @@ public class InternalHistoryTransitionImpl extends InternalEdgeImpl implements I
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__CONDITION:
+				setCondition(CONDITION_EDEFAULT);
+				return;
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__DELAY:
+				setDelay(DELAY_EDEFAULT);
+				return;
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__DEEP_HISTORY:
 				setDeepHistory(DEEP_HISTORY_EDEFAULT);
 				return;
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__EFFECT:
+				setEffect(EFFECT_EDEFAULT);
+				return;
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__H:
 				setH(H_EDEFAULT);
+				return;
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__PRIORITY:
+				setPriority(PRIORITY_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -193,10 +401,18 @@ public class InternalHistoryTransitionImpl extends InternalEdgeImpl implements I
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__CONDITION:
+				return CONDITION_EDEFAULT == null ? condition != null : !CONDITION_EDEFAULT.equals(condition);
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__DELAY:
+				return DELAY_EDEFAULT == null ? delay != null : !DELAY_EDEFAULT.equals(delay);
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__DEEP_HISTORY:
 				return deepHistory != DEEP_HISTORY_EDEFAULT;
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__EFFECT:
+				return EFFECT_EDEFAULT == null ? effect != null : !EFFECT_EDEFAULT.equals(effect);
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__H:
 				return H_EDEFAULT == null ? h != null : !H_EDEFAULT.equals(h);
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__PRIORITY:
+				return PRIORITY_EDEFAULT == null ? priority != null : !PRIORITY_EDEFAULT.equals(priority);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -211,10 +427,18 @@ public class InternalHistoryTransitionImpl extends InternalEdgeImpl implements I
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (deepHistory: ");
+		result.append(" (condition: ");
+		result.append(condition);
+		result.append(", delay: ");
+		result.append(delay);
+		result.append(", deepHistory: ");
 		result.append(deepHistory);
+		result.append(", effect: ");
+		result.append(effect);
 		result.append(", H: ");
 		result.append(h);
+		result.append(", priority: ");
+		result.append(priority);
 		result.append(')');
 		return result.toString();
 	}

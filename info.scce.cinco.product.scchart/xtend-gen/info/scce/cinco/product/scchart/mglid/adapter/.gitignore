@@ -134,3 +134,16 @@
 /.SuspendNodeEContentAdapter.xtendbin
 /ActionNodeEContentAdapter.java
 /SuspendNodeEContentAdapter.java
+/.ImmediateStrongAbortTransitionEContentAdapter.java._trace
+/.ImmediateDefferedTransitionEContentAdapter.java._trace
+/.ConditionalTerminationHistoryTransitionEContentAdapter.java._trace
+/.ImmediateHistoryTransitionEContentAdapter.java._trace
+/.ImmediateStrongAbortHistoryTransitionEContentAdapter.java._trace
+/.StrongAbortHistoryTransitionEContentAdapter.java._trace
+/.TerminationHistoryTransitionEContentAdapter.java._trace
+/.ConditionalTerminationDeferredTransitionEContentAdapter.java._trace
+/.ImmediateDeferredTransitionEContentAdapter.java._trace
+/.ImmediateStrongAbortDeferredTransitionEContentAdapter.java._trace
+/.StrongAbortDeferredTransitionEContentAdapter.java._trace
+/.TerminationDefferdTransitionEContentAdapter.java._trace
+/.AbstractTransitionEContentAdapter.java._trace

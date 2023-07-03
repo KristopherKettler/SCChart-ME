@@ -49,9 +49,11 @@ appearance connector{
 
 appearance transitionAppearance {
 	lineStyle SOLID
+	lineWidth 2
 }
-appearance immediateArrowStyle {
+appearance immediateTransitionAppearance {
 	lineStyle DASH
+	lineWidth 2
 }
 
 appearance greenTriangle {
@@ -62,9 +64,22 @@ appearance redCircle {
 	background (255,0,0) //Red
 }
 
+appearance historyCircle {
+	background (0,0,0)
+}
+
+appearance historyH {
+	font ("Sans",10)
+	foreground (255,255,255)
+}
+
 appearance textFont{
 	font ("Sans",10)
-	lineWidth 2
+	//lineWidth 2
+}
+
+appearance connectionAppearance {
+	
 }
 
 nodeStyle rootStateStyle (1) {
@@ -233,7 +248,7 @@ edgeStyle transitionStyle(1){
 }
 
 edgeStyle immediateTransitionStyle(1) {
-	appearance immediateArrowStyle
+	appearance immediateTransitionAppearance
 	decorator {
 		location (1.0) // at the end of the edge
 		ARROW
@@ -248,8 +263,8 @@ edgeStyle immediateTransitionStyle(1) {
 	}
 } 
 
-edgeStyle immediateTerminatArrow {
-	appearance immediateArrowStyle
+edgeStyle terminationTransitionStyle(1) {
+	appearance immediateTransitionAppearance
 	decorator {
 		location (1.0) // at the end of the edge
 		ARROW
@@ -257,36 +272,45 @@ edgeStyle immediateTerminatArrow {
 	}
 	decorator {
 		location (0)
-		TRIANGLE
-		appearance greenTriangle 
+		polygon {
+			appearance greenTriangle 
+			points [(0,0) (0,5) (15,0)(0,-5)]
+		}
+	}
+	decorator {
+		location (0.5)
+		movable
+		text {
+			value "%s"
+		}
 	}
 } 
 
-edgeStyle weakAbortArrow {
-	appearance default
+edgeStyle conditionalTerminationTransitionStyle(1) {
+	appearance transitionAppearance
 	decorator {
 		location (1.0) // at the end of the edge
 		ARROW
 		appearance default 
+	}
+	decorator {
+		location (0)
+		polygon {
+			appearance greenTriangle 
+			points [(0,0) (0,5) (11,0)(0,-5)]
+		}
+	}
+	decorator {
+		location (0.5)
+		movable
+		text {
+			value "%s"
+		}
 	}
 }
 
-edgeStyle weakAbortTerminatArrow {
-	appearance default
-	decorator {
-		location (1.0) // at the end of the edge
-		ARROW
-		appearance default 
-	}
-	decorator {
-		location (0)
-		TRIANGLE
-		appearance greenTriangle 
-	}
-} 
-
-edgeStyle strongAbortArrow {
-	appearance default
+edgeStyle strongAbortTransitionStyle(1) {
+	appearance transitionAppearance
 	decorator {
 		location (1.0) // at the end of the edge
 		ARROW
@@ -297,18 +321,415 @@ edgeStyle strongAbortArrow {
 		CIRCLE 
 		appearance redCircle
 	}
+		decorator {
+		location (0.5)
+		movable
+		text {
+			value "%s"
+		}
+	}
 }
 
-edgeStyle deferredArrow {
-	appearance default
+edgeStyle immediateStrongAbortTransitionStyle(1) {
+	appearance immediateTransitionAppearance
 	decorator {
-		location (0.95) // at the end of the edge
+		location (1.0) // at the end of the edge
 		ARROW
 		appearance default 
+	}
+	decorator {
+		location (0)
+		CIRCLE 
+		appearance redCircle
+	}
+	decorator {
+		location (0.5)
+		movable
+		text {
+			value "%s"
+		}
+	}
+}
+
+edgeStyle deferredTransitionStyle(1) {
+	appearance transitionAppearance
+	decorator {
+		location (1.0)
+		polyline{
+			appearance transitionAppearance
+			points[(-22,-5)(-12,0)(-22,5)]
+		}
 	}
 	decorator {
 		location (1.0)
 		CIRCLE 
 		appearance redCircle
 	}
+	decorator {
+		location (0.5)
+		movable
+		text {
+			value "%s"
+		}
+	}
+}
+
+edgeStyle immediateDeferredTransitionStyle(1) {
+	appearance immediateTransitionAppearance
+	decorator {
+		location (1.0)
+		polyline{
+			appearance transitionAppearance
+			points[(-22,-5)(-12,0)(-22,5)]
+		}
+	}
+	decorator {
+		location (1.0)
+		CIRCLE 
+		appearance redCircle
+	}
+	decorator {
+		location (0.5)
+		movable
+		text {
+			value "%s"
+		}
+	}
+}
+
+edgeStyle terminationDeferredTransitionStyle(1){
+	appearance immediateTransitionAppearance
+	decorator {
+		location (1.0)
+		polyline{
+			appearance transitionAppearance
+			points[(-22,-5)(-12,0)(-22,5)]
+		}
+	}
+	decorator {
+		location (1.0)
+		CIRCLE 
+		appearance redCircle
+	}
+	decorator {
+		location (0.5)
+		movable
+		text {
+			value "%s"
+		}
+	}
+	decorator {
+		location (0)
+		polygon {
+			appearance greenTriangle 
+			points [(0,0) (0,5) (11,0)(0,-5)]
+		}
+	}
+}
+
+edgeStyle conditionalTerminationDeferredTransitionStyle(1){
+	appearance transitionAppearance
+	decorator {
+		location (1.0)
+		polyline{
+			appearance transitionAppearance
+			points[(-22,-5)(-12,0)(-22,5)]
+		}
+	}
+	decorator {
+		location (1.0)
+		CIRCLE 
+		appearance redCircle
+	}
+	decorator {
+		location (0.5)
+		movable
+		text {
+			value "%s"
+		}
+	}
+	decorator {
+		location (0)
+		polygon {
+			appearance greenTriangle 
+			points [(0,0) (0,5) (11,0)(0,-5)]
+		}
+	}
+}
+
+edgeStyle strongAbortDeferredTransitionStyle(1){
+	appearance transitionAppearance
+	decorator {
+		location (1.0)
+		polyline{
+			appearance transitionAppearance
+			points[(-22,-5)(-12,0)(-22,5)]
+		}
+	}
+	decorator {
+		location (1.0)
+		CIRCLE 
+		appearance redCircle
+	}
+	decorator {
+		location (0.5)
+		movable
+		text {
+			value "%s"
+		}
+	}
+	decorator {
+		location (0)
+		CIRCLE 
+		appearance redCircle
+	}
+}
+
+edgeStyle immediateStrongAbortDeferredTransitionStyle(1){
+	appearance immediateTransitionAppearance
+	decorator {
+		location (1.0)
+		polyline{
+			appearance transitionAppearance
+			points[(-22,-5)(-12,0)(-22,5)]
+		}
+	}
+	decorator {
+		location (1.0)
+		CIRCLE 
+		appearance redCircle
+	}
+	decorator {
+		location (0.5)
+		movable
+		text {
+			value "%s"
+		}
+	}
+	decorator {
+		location (0)
+		CIRCLE 
+		appearance redCircle
+	}
+}
+
+
+edgeStyle historyTransitionStyle(2) {
+	appearance transitionAppearance
+	decorator {
+		location (1.0)
+		ellipse {
+			appearance historyCircle
+			size(15,15)
+		}
+	}
+	decorator {
+		location (1.0)
+		text {
+			appearance historyH
+			value "%2$s"
+		}
+	}
+	decorator {
+		location (1.0)
+		polyline{
+			appearance historyH
+			points[(-5,-5)(-5,5)(-5,0)(-10,0)(-10,-5)(-10,5)]
+		}
+	}
+	decorator {
+		location (1.0)
+		polyline{
+			appearance transitionAppearance
+			points[(-25,-5)(-15,0)(-25,5)]
+		}
+	}
+}
+
+edgeStyle immediateHistoryTransitionStyle(2) {
+	appearance immediateTransitionAppearance
+	decorator {
+		location (1.0)
+		ellipse {
+			appearance historyCircle
+			size(15,15)
+		}
+	}
+	decorator {
+		location (1.0)
+		text {
+			appearance historyH
+			value "%2$s"
+		}
+	}
+	decorator {
+		location (1.0)
+		polyline{
+			appearance historyH
+			points[(-5,-5)(-5,5)(-5,0)(-10,0)(-10,-5)(-10,5)]
+		}
+	}
+	decorator {
+		location (1.0)
+		polyline{
+			appearance transitionAppearance
+			points[(-25,-5)(-15,0)(-25,5)]
+		}
+	}
+}
+
+edgeStyle terminationHistoryTransitionStyle(2) {
+	appearance immediateTransitionAppearance
+	decorator {
+		location (1.0)
+		ellipse {
+			appearance historyCircle
+			size(15,15)
+		}
+	}
+	decorator {
+		location (1.0)
+		text {
+			appearance historyH
+			value "%2$s"
+		}
+	}
+	decorator {
+		location (1.0)
+		polyline{
+			appearance historyH
+			points[(-5,-5)(-5,5)(-5,0)(-10,0)(-10,-5)(-10,5)]
+		}
+	}
+	decorator {
+		location (1.0)
+		polyline{
+			appearance transitionAppearance
+			points[(-25,-5)(-15,0)(-25,5)]
+		}
+	}
+	decorator {
+		location (0)
+		polygon {
+			appearance greenTriangle 
+			points [(0,0) (0,5) (11,0)(0,-5)]
+		}
+	}
+}
+
+edgeStyle conditionalTerminationHistoryTransitionStyle(2) {
+	appearance immediateTransitionAppearance
+	decorator {
+		location (1.0)
+		ellipse {
+			appearance historyCircle
+			size(15,15)
+		}
+	}
+	decorator {
+		location (1.0)
+		text {
+			appearance historyH
+			value "%2$s"
+		}
+	}
+	decorator {
+		location (1.0)
+		polyline{
+			appearance historyH
+			points[(-5,-5)(-5,5)(-5,0)(-10,0)(-10,-5)(-10,5)]
+		}
+	}
+	decorator {
+		location (1.0)
+		polyline{
+			appearance transitionAppearance
+			points[(-25,-5)(-15,0)(-25,5)]
+		}
+	}
+	decorator {
+		location (0)
+		polygon {
+			appearance greenTriangle 
+			points [(0,0) (0,5) (11,0)(0,-5)]
+		}
+	}
+}
+
+edgeStyle strongAbortHistoryTransitionStyle(2) {
+	appearance transitionAppearance
+	decorator {
+		location (1.0)
+		ellipse {
+			appearance historyCircle
+			size(15,15)
+		}
+	}
+	decorator {
+		location (1.0)
+		text {
+			appearance historyH
+			value "%2$s"
+		}
+	}
+	decorator {
+		location (1.0)
+		polyline{
+			appearance historyH
+			points[(-5,-5)(-5,5)(-5,0)(-10,0)(-10,-5)(-10,5)]
+		}
+	}
+	decorator {
+		location (1.0)
+		polyline{
+			appearance transitionAppearance
+			points[(-25,-5)(-15,0)(-25,5)]
+		}
+	}
+	decorator {
+		location (0)
+		CIRCLE 
+		appearance redCircle
+	}
+}
+
+edgeStyle immediateStrongAbortHistoryTransitionStyle(2) {
+	appearance immediateTransitionAppearance
+	decorator {
+		location (1.0)
+		ellipse {
+			appearance historyCircle
+			size(15,15)
+		}
+	}
+	decorator {
+		location (1.0)
+		text {
+			appearance historyH
+			value "%2$s"
+		}
+	}
+	decorator {
+		location (1.0)
+		polyline{
+			appearance historyH
+			points[(-5,-5)(-5,5)(-5,0)(-10,0)(-10,-5)(-10,5)]
+		}
+	}
+	decorator {
+		location (1.0)
+		polyline{
+			appearance transitionAppearance
+			points[(-25,-5)(-15,0)(-25,5)]
+		}
+	}
+	decorator {
+		location (0)
+		CIRCLE 
+		appearance redCircle
+	}
+}
+
+edgeStyle connectionStyle {
+	appearance connectionAppearance
 }

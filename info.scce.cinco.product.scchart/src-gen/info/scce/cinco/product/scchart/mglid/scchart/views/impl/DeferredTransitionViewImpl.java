@@ -7,7 +7,11 @@ import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeferredTr
 import info.scce.cinco.product.scchart.mglid.scchart.views.DeferredTransitionView;
 import info.scce.cinco.product.scchart.mglid.scchart.views.ViewsPackage;
 
+import java.lang.reflect.InvocationTargetException;
+
 import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -104,6 +108,98 @@ public class DeferredTransitionViewImpl extends EObjectImpl implements DeferredT
 	 * @generated
 	 */
 	@Override
+	public String getCondition() {
+		return getInternalDeferredTransition().getCondition();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCondition(final String _arg) {
+		getInternalDeferredTransition().getElement().transact("Set Condition", () -> {
+			getInternalDeferredTransition().setCondition(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getDelay() {
+		return getInternalDeferredTransition().getDelay();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDelay(final String _arg) {
+		getInternalDeferredTransition().getElement().transact("Set Delay", () -> {
+			getInternalDeferredTransition().setDelay(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getEffect() {
+		return getInternalDeferredTransition().getEffect();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEffect(final String _arg) {
+		getInternalDeferredTransition().getElement().transact("Set Effect", () -> {
+			getInternalDeferredTransition().setEffect(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getPriority() {
+		return getInternalDeferredTransition().getPriority();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPriority(final String _arg) {
+		getInternalDeferredTransition().getElement().transact("Set Priority", () -> {
+			getInternalDeferredTransition().setPriority(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.DEFERRED_TRANSITION_VIEW__INTERNAL_DEFERRED_TRANSITION:
@@ -155,6 +251,38 @@ public class DeferredTransitionViewImpl extends EObjectImpl implements DeferredT
 				return internalDeferredTransition != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case ViewsPackage.DEFERRED_TRANSITION_VIEW___GET_CONDITION:
+				return getCondition();
+			case ViewsPackage.DEFERRED_TRANSITION_VIEW___SET_CONDITION__STRING:
+				setCondition((String)arguments.get(0));
+				return null;
+			case ViewsPackage.DEFERRED_TRANSITION_VIEW___GET_DELAY:
+				return getDelay();
+			case ViewsPackage.DEFERRED_TRANSITION_VIEW___SET_DELAY__STRING:
+				setDelay((String)arguments.get(0));
+				return null;
+			case ViewsPackage.DEFERRED_TRANSITION_VIEW___GET_EFFECT:
+				return getEffect();
+			case ViewsPackage.DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING:
+				setEffect((String)arguments.get(0));
+				return null;
+			case ViewsPackage.DEFERRED_TRANSITION_VIEW___GET_PRIORITY:
+				return getPriority();
+			case ViewsPackage.DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING:
+				setPriority((String)arguments.get(0));
+				return null;
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 } //DeferredTransitionViewImpl

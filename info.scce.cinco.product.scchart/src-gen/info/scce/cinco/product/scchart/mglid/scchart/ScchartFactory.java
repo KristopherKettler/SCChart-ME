@@ -175,15 +175,6 @@ public interface ScchartFactory extends EFactory {
 	ConditionalTerminationTransition createConditionalTerminationTransition();
 
 	/**
-	 * Returns a new object of class '<em>Weak Abort Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Weak Abort Transition</em>'.
-	 * @generated
-	 */
-	WeakAbortTransition createWeakAbortTransition();
-
-	/**
 	 * Returns a new object of class '<em>Strong Abort Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -191,6 +182,15 @@ public interface ScchartFactory extends EFactory {
 	 * @generated
 	 */
 	StrongAbortTransition createStrongAbortTransition();
+
+	/**
+	 * Returns a new object of class '<em>Immediate Strong Abort Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immediate Strong Abort Transition</em>'.
+	 * @generated
+	 */
+	ImmediateStrongAbortTransition createImmediateStrongAbortTransition();
 
 	/**
 	 * Returns a new object of class '<em>Deferred Transition</em>'.
@@ -202,6 +202,51 @@ public interface ScchartFactory extends EFactory {
 	DeferredTransition createDeferredTransition();
 
 	/**
+	 * Returns a new object of class '<em>Immediate Deferred Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immediate Deferred Transition</em>'.
+	 * @generated
+	 */
+	ImmediateDeferredTransition createImmediateDeferredTransition();
+
+	/**
+	 * Returns a new object of class '<em>Termination Defferd Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Termination Defferd Transition</em>'.
+	 * @generated
+	 */
+	TerminationDefferdTransition createTerminationDefferdTransition();
+
+	/**
+	 * Returns a new object of class '<em>Conditional Termination Deferred Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Conditional Termination Deferred Transition</em>'.
+	 * @generated
+	 */
+	ConditionalTerminationDeferredTransition createConditionalTerminationDeferredTransition();
+
+	/**
+	 * Returns a new object of class '<em>Strong Abort Deferred Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Strong Abort Deferred Transition</em>'.
+	 * @generated
+	 */
+	StrongAbortDeferredTransition createStrongAbortDeferredTransition();
+
+	/**
+	 * Returns a new object of class '<em>Immediate Strong Abort Deferred Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immediate Strong Abort Deferred Transition</em>'.
+	 * @generated
+	 */
+	ImmediateStrongAbortDeferredTransition createImmediateStrongAbortDeferredTransition();
+
+	/**
 	 * Returns a new object of class '<em>History Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -209,6 +254,51 @@ public interface ScchartFactory extends EFactory {
 	 * @generated
 	 */
 	HistoryTransition createHistoryTransition();
+
+	/**
+	 * Returns a new object of class '<em>Immediate History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immediate History Transition</em>'.
+	 * @generated
+	 */
+	ImmediateHistoryTransition createImmediateHistoryTransition();
+
+	/**
+	 * Returns a new object of class '<em>Termination History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Termination History Transition</em>'.
+	 * @generated
+	 */
+	TerminationHistoryTransition createTerminationHistoryTransition();
+
+	/**
+	 * Returns a new object of class '<em>Conditional Termination History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Conditional Termination History Transition</em>'.
+	 * @generated
+	 */
+	ConditionalTerminationHistoryTransition createConditionalTerminationHistoryTransition();
+
+	/**
+	 * Returns a new object of class '<em>Strong Abort History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Strong Abort History Transition</em>'.
+	 * @generated
+	 */
+	StrongAbortHistoryTransition createStrongAbortHistoryTransition();
+
+	/**
+	 * Returns a new object of class '<em>Immediate Strong Abort History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Immediate Strong Abort History Transition</em>'.
+	 * @generated
+	 */
+	ImmediateStrongAbortHistoryTransition createImmediateStrongAbortHistoryTransition();
 
 	/**
 	 * Returns a new object of class '<em>SC Chart</em>'.

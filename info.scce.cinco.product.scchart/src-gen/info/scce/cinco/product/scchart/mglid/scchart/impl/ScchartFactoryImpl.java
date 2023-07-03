@@ -73,10 +73,20 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 			case ScchartPackage.IMMEDIATE_TRANSITION: return createImmediateTransition();
 			case ScchartPackage.TERMINATION_TRANSITION: return createTerminationTransition();
 			case ScchartPackage.CONDITIONAL_TERMINATION_TRANSITION: return createConditionalTerminationTransition();
-			case ScchartPackage.WEAK_ABORT_TRANSITION: return createWeakAbortTransition();
 			case ScchartPackage.STRONG_ABORT_TRANSITION: return createStrongAbortTransition();
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION: return createImmediateStrongAbortTransition();
 			case ScchartPackage.DEFERRED_TRANSITION: return createDeferredTransition();
+			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION: return createImmediateDeferredTransition();
+			case ScchartPackage.TERMINATION_DEFFERD_TRANSITION: return createTerminationDefferdTransition();
+			case ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION: return createConditionalTerminationDeferredTransition();
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION: return createStrongAbortDeferredTransition();
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION: return createImmediateStrongAbortDeferredTransition();
 			case ScchartPackage.HISTORY_TRANSITION: return createHistoryTransition();
+			case ScchartPackage.IMMEDIATE_HISTORY_TRANSITION: return createImmediateHistoryTransition();
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION: return createTerminationHistoryTransition();
+			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION: return createConditionalTerminationHistoryTransition();
+			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION: return createStrongAbortHistoryTransition();
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION: return createImmediateStrongAbortHistoryTransition();
 			case ScchartPackage.SC_CHART: return createSCChart();
 			case ScchartPackage.ROOT_STATE_DECLARATION: return createRootStateDeclaration();
 			case ScchartPackage.SUPER_STATE_DECLARATION: return createSuperStateDeclaration();
@@ -280,9 +290,9 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public WeakAbortTransition createWeakAbortTransition() {
-		WeakAbortTransitionImpl weakAbortTransition = new WeakAbortTransitionImpl();
-		return weakAbortTransition;
+	public StrongAbortTransition createStrongAbortTransition() {
+		StrongAbortTransitionImpl strongAbortTransition = new StrongAbortTransitionImpl();
+		return strongAbortTransition;
 	}
 
 	/**
@@ -291,9 +301,9 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public StrongAbortTransition createStrongAbortTransition() {
-		StrongAbortTransitionImpl strongAbortTransition = new StrongAbortTransitionImpl();
-		return strongAbortTransition;
+	public ImmediateStrongAbortTransition createImmediateStrongAbortTransition() {
+		ImmediateStrongAbortTransitionImpl immediateStrongAbortTransition = new ImmediateStrongAbortTransitionImpl();
+		return immediateStrongAbortTransition;
 	}
 
 	/**
@@ -313,9 +323,119 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
+	public ImmediateDeferredTransition createImmediateDeferredTransition() {
+		ImmediateDeferredTransitionImpl immediateDeferredTransition = new ImmediateDeferredTransitionImpl();
+		return immediateDeferredTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TerminationDefferdTransition createTerminationDefferdTransition() {
+		TerminationDefferdTransitionImpl terminationDefferdTransition = new TerminationDefferdTransitionImpl();
+		return terminationDefferdTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ConditionalTerminationDeferredTransition createConditionalTerminationDeferredTransition() {
+		ConditionalTerminationDeferredTransitionImpl conditionalTerminationDeferredTransition = new ConditionalTerminationDeferredTransitionImpl();
+		return conditionalTerminationDeferredTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StrongAbortDeferredTransition createStrongAbortDeferredTransition() {
+		StrongAbortDeferredTransitionImpl strongAbortDeferredTransition = new StrongAbortDeferredTransitionImpl();
+		return strongAbortDeferredTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ImmediateStrongAbortDeferredTransition createImmediateStrongAbortDeferredTransition() {
+		ImmediateStrongAbortDeferredTransitionImpl immediateStrongAbortDeferredTransition = new ImmediateStrongAbortDeferredTransitionImpl();
+		return immediateStrongAbortDeferredTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public HistoryTransition createHistoryTransition() {
 		HistoryTransitionImpl historyTransition = new HistoryTransitionImpl();
 		return historyTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ImmediateHistoryTransition createImmediateHistoryTransition() {
+		ImmediateHistoryTransitionImpl immediateHistoryTransition = new ImmediateHistoryTransitionImpl();
+		return immediateHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TerminationHistoryTransition createTerminationHistoryTransition() {
+		TerminationHistoryTransitionImpl terminationHistoryTransition = new TerminationHistoryTransitionImpl();
+		return terminationHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ConditionalTerminationHistoryTransition createConditionalTerminationHistoryTransition() {
+		ConditionalTerminationHistoryTransitionImpl conditionalTerminationHistoryTransition = new ConditionalTerminationHistoryTransitionImpl();
+		return conditionalTerminationHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StrongAbortHistoryTransition createStrongAbortHistoryTransition() {
+		StrongAbortHistoryTransitionImpl strongAbortHistoryTransition = new StrongAbortHistoryTransitionImpl();
+		return strongAbortHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ImmediateStrongAbortHistoryTransition createImmediateStrongAbortHistoryTransition() {
+		ImmediateStrongAbortHistoryTransitionImpl immediateStrongAbortHistoryTransition = new ImmediateStrongAbortHistoryTransitionImpl();
+		return immediateStrongAbortHistoryTransition;
 	}
 
 	/**

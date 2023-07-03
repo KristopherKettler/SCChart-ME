@@ -49,13 +49,13 @@ public interface InternalTransition extends InternalEdge {
 
 	/**
 	 * Returns the value of the '<em><b>Delay</b></em>' attribute.
-	 * The default value is <code>"<No delay>"</code>.
+	 * The default value is <code>"<No count delay>"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Delay</em>' attribute.
 	 * @see #setDelay(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalTransition_Delay()
-	 * @model default="&lt;No delay&gt;"
+	 * @model default="&lt;No count delay&gt;"
 	 * @generated
 	 */
 	String getDelay();

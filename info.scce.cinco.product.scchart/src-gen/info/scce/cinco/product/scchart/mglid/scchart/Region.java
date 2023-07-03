@@ -246,7 +246,7 @@ public interface Region extends Container {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<SimpleState> getSimpleStates();
+	EList<SuperState> getSuperStates();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -254,7 +254,7 @@ public interface Region extends Container {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewSimpleState();
+	boolean canNewSuperState();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,7 +262,7 @@ public interface Region extends Container {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SimpleState newSimpleState(int x, int y);
+	SuperState newSuperState(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -270,7 +270,7 @@ public interface Region extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SimpleState newSimpleState(String id, int x, int y);
+	SuperState newSuperState(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -278,7 +278,7 @@ public interface Region extends Container {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SimpleState newSimpleState(int x, int y, int width, int height);
+	SuperState newSuperState(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -286,55 +286,7 @@ public interface Region extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SimpleState newSimpleState(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<InitilalSuperState> getInitilalSuperStates();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewInitilalSuperState();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	InitilalSuperState newInitilalSuperState(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	InitilalSuperState newInitilalSuperState(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	InitilalSuperState newInitilalSuperState(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	InitilalSuperState newInitilalSuperState(String id, int x, int y, int width, int height);
+	SuperState newSuperState(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -390,7 +342,7 @@ public interface Region extends Container {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<SuperState> getSuperStates();
+	EList<InitilalSuperState> getInitilalSuperStates();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -398,7 +350,7 @@ public interface Region extends Container {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewSuperState();
+	boolean canNewInitilalSuperState();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -406,7 +358,7 @@ public interface Region extends Container {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(int x, int y);
+	InitilalSuperState newInitilalSuperState(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,7 +366,7 @@ public interface Region extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(String id, int x, int y);
+	InitilalSuperState newInitilalSuperState(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -422,7 +374,7 @@ public interface Region extends Container {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(int x, int y, int width, int height);
+	InitilalSuperState newInitilalSuperState(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -430,7 +382,55 @@ public interface Region extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(String id, int x, int y, int width, int height);
+	InitilalSuperState newInitilalSuperState(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<SimpleState> getSimpleStates();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewSimpleState();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SimpleState newSimpleState(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SimpleState newSimpleState(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SimpleState newSimpleState(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SimpleState newSimpleState(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
