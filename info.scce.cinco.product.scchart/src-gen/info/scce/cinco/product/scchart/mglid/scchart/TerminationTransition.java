@@ -138,22 +138,6 @@ public interface TerminationTransition extends Edge {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(RootState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(RootState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
 	boolean canReconnectSource(SuperState source);
 
 	/**
@@ -183,34 +167,18 @@ public interface TerminationTransition extends Edge {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
+	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(InitialState target);
+	boolean canReconnectSource(RootState source);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
+	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectTarget(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	void reconnectTarget(FinalState target);
+	void reconnectSource(RootState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -250,22 +218,6 @@ public interface TerminationTransition extends Edge {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	void reconnectTarget(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
-	 * @generated
-	 */
 	boolean canReconnectTarget(SimpleState target);
 
 	/**
@@ -275,6 +227,54 @@ public interface TerminationTransition extends Edge {
 	 * @generated
 	 */
 	void reconnectTarget(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(InitialState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(InitialState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(InitilalSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->

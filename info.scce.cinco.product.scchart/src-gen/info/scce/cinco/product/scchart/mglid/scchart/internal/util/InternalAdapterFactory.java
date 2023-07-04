@@ -201,6 +201,10 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 				return createInternalImmediateStrongAbortHistoryTransitionAdapter();
 			}
 			@Override
+			public Adapter caseInternalConnection(InternalConnection object) {
+				return createInternalConnectionAdapter();
+			}
+			@Override
 			public Adapter caseInternalSCChart(InternalSCChart object) {
 				return createInternalSCChartAdapter();
 			}
@@ -703,6 +707,20 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInternalImmediateStrongAbortHistoryTransitionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnection <em>Connection</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnection
+	 * @generated
+	 */
+	public Adapter createInternalConnectionAdapter() {
 		return null;
 	}
 

@@ -87,6 +87,7 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION: return createInternalConditionalTerminationHistoryTransition();
 			case InternalPackage.INTERNAL_STRONG_ABORT_HISTORY_TRANSITION: return createInternalStrongAbortHistoryTransition();
 			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION: return createInternalImmediateStrongAbortHistoryTransition();
+			case InternalPackage.INTERNAL_CONNECTION: return createInternalConnection();
 			case InternalPackage.INTERNAL_SC_CHART: return createInternalSCChart();
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION: return createInternalRootStateDeclaration();
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION: return createInternalSuperStateDeclaration();
@@ -436,6 +437,17 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalImmediateStrongAbortHistoryTransition createInternalImmediateStrongAbortHistoryTransition() {
 		InternalImmediateStrongAbortHistoryTransitionImpl internalImmediateStrongAbortHistoryTransition = new InternalImmediateStrongAbortHistoryTransitionImpl();
 		return internalImmediateStrongAbortHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalConnection createInternalConnection() {
+		InternalConnectionImpl internalConnection = new InternalConnectionImpl();
+		return internalConnection;
 	}
 
 	/**

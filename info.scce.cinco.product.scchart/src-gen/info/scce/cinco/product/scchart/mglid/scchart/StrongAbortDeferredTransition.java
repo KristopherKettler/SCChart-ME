@@ -170,22 +170,6 @@ public interface StrongAbortDeferredTransition extends Edge {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(RootState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(RootState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
 	boolean canReconnectSource(SuperState source);
 
 	/**
@@ -211,6 +195,22 @@ public interface StrongAbortDeferredTransition extends Edge {
 	 * @generated
 	 */
 	void reconnectSource(InitilalSuperState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectSource(RootState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(RootState source);
 
 	/**
 	 * <!-- begin-user-doc -->

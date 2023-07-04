@@ -8621,6 +8621,187 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalConnectionImpl <em>Connection</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalConnectionImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConnection()
+	 * @generated
+	 */
+	int INTERNAL_CONNECTION = 31;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION__ID = graphmodel.internal.InternalPackage.INTERNAL_EDGE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_EDGE__CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>Element</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>source Element</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION__SOURCE_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__SOURCE_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>target Element</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION__TARGET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE__TARGET_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Bendpoints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION__BENDPOINTS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__BENDPOINTS;
+
+	/**
+	 * The feature id for the '<em><b>Decorators</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION__DECORATORS = graphmodel.internal.InternalPackage.INTERNAL_EDGE__DECORATORS;
+
+	/**
+	 * The number of structural features of the '<em>Connection</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Equals</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___EQUALS__OBJECT;
+
+	/**
+	 * The operation id for the '<em>Hash Code</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___HASH_CODE;
+
+	/**
+	 * The operation id for the '<em>Save</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION___SAVE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SAVE;
+
+	/**
+	 * The operation id for the '<em>Get Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Root Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_ROOT_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Source Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION___GET_SOURCE_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_SOURCE_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Target Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION___GET_TARGET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___GET_TARGET_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Set Source Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION___SET_SOURCE_ELEMENT__NODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SET_SOURCE_ELEMENT__NODE;
+
+	/**
+	 * The operation id for the '<em>Set Target Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION___SET_TARGET_ELEMENT__NODE = graphmodel.internal.InternalPackage.INTERNAL_EDGE___SET_TARGET_ELEMENT__NODE;
+
+	/**
+	 * The operation id for the '<em>Add Bendpoint</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION___ADD_BENDPOINT__INT_INT = graphmodel.internal.InternalPackage.INTERNAL_EDGE___ADD_BENDPOINT__INT_INT;
+
+	/**
+	 * The number of operations of the '<em>Connection</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTION_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_EDGE_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSCChartImpl <em>SC Chart</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8628,7 +8809,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSCChart()
 	 * @generated
 	 */
-	int INTERNAL_SC_CHART = 31;
+	int INTERNAL_SC_CHART = 32;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8773,7 +8954,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalRootStateDeclaration()
 	 * @generated
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION = 32;
+	int INTERNAL_ROOT_STATE_DECLARATION = 33;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8882,7 +9063,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuperStateDeclaration()
 	 * @generated
 	 */
-	int INTERNAL_SUPER_STATE_DECLARATION = 33;
+	int INTERNAL_SUPER_STATE_DECLARATION = 34;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8982,7 +9163,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuspend()
 	 * @generated
 	 */
-	int INTERNAL_SUSPEND = 34;
+	int INTERNAL_SUSPEND = 35;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9091,7 +9272,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalAction()
 	 * @generated
 	 */
-	int INTERNAL_ACTION = 35;
+	int INTERNAL_ACTION = 36;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -11644,6 +11825,16 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalImmediateStrongAbortHistoryTransition_Priority();
 
 	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnection <em>Connection</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Connection</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnection
+	 * @generated
+	 */
+	EClass getInternalConnection();
+
+	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChart <em>SC Chart</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13791,6 +13982,16 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION__PRIORITY = eINSTANCE.getInternalImmediateStrongAbortHistoryTransition_Priority();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalConnectionImpl <em>Connection</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalConnectionImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConnection()
+		 * @generated
+		 */
+		EClass INTERNAL_CONNECTION = eINSTANCE.getInternalConnection();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSCChartImpl <em>SC Chart</em>}' class.

@@ -301,26 +301,6 @@ public class StrongAbortHistoryTransitionImpl extends EdgeImpl implements Strong
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final RootState source) {
-		return source.canStart(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectSource(final RootState source) {
-		this.setSourceElement(source);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean canReconnectSource(final SuperState source) {
 		return source.canStart(this.getClass());
 	}
@@ -352,6 +332,26 @@ public class StrongAbortHistoryTransitionImpl extends EdgeImpl implements Strong
 	 */
 	@Override
 	public void reconnectSource(final InitilalSuperState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final RootState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final RootState source) {
 		this.setSourceElement(source);
 	}
 
@@ -504,11 +504,6 @@ public class StrongAbortHistoryTransitionImpl extends EdgeImpl implements Strong
 				return getSourceElement();
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___GET_TARGET_ELEMENT:
 				return getTargetElement();
-			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
-				return canReconnectSource((RootState)arguments.get(0));
-			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
-				reconnectSource((RootState)arguments.get(0));
-				return null;
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__SUPERSTATE:
 				return canReconnectSource((SuperState)arguments.get(0));
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___RECONNECT_SOURCE__SUPERSTATE:
@@ -518,6 +513,11 @@ public class StrongAbortHistoryTransitionImpl extends EdgeImpl implements Strong
 				return canReconnectSource((InitilalSuperState)arguments.get(0));
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE:
 				reconnectSource((InitilalSuperState)arguments.get(0));
+				return null;
+			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
+				return canReconnectSource((RootState)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
+				reconnectSource((RootState)arguments.get(0));
 				return null;
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___CAN_RECONNECT_TARGET__SUPERSTATE:
 				return canReconnectTarget((SuperState)arguments.get(0));

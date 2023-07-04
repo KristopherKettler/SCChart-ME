@@ -3364,6 +3364,43 @@ public interface ViewsPackage extends EPackage {
 	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = 12;
 
 	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionViewImpl <em>Connection View</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConnectionView()
+	 * @generated
+	 */
+	int CONNECTION_VIEW = 31;
+
+	/**
+	 * The feature id for the '<em><b>Internal Connection</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTION_VIEW__INTERNAL_CONNECTION = 0;
+
+	/**
+	 * The number of structural features of the '<em>Connection View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTION_VIEW_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Connection View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTION_VIEW_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SCChartViewImpl <em>SC Chart View</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3371,7 +3408,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSCChartView()
 	 * @generated
 	 */
-	int SC_CHART_VIEW = 31;
+	int SC_CHART_VIEW = 32;
 
 	/**
 	 * The feature id for the '<em><b>Internal SC Chart</b></em>' reference.
@@ -3408,7 +3445,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getRootStateDeclarationView()
 	 * @generated
 	 */
-	int ROOT_STATE_DECLARATION_VIEW = 32;
+	int ROOT_STATE_DECLARATION_VIEW = 33;
 
 	/**
 	 * The feature id for the '<em><b>Internal Root State Declaration</b></em>' reference.
@@ -3499,7 +3536,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuperStateDeclarationView()
 	 * @generated
 	 */
-	int SUPER_STATE_DECLARATION_VIEW = 33;
+	int SUPER_STATE_DECLARATION_VIEW = 34;
 
 	/**
 	 * The feature id for the '<em><b>Internal Super State Declaration</b></em>' reference.
@@ -3572,7 +3609,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuspendView()
 	 * @generated
 	 */
-	int SUSPEND_VIEW = 34;
+	int SUSPEND_VIEW = 35;
 
 	/**
 	 * The feature id for the '<em><b>Internal Suspend</b></em>' reference.
@@ -3663,7 +3700,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getActionView()
 	 * @generated
 	 */
-	int ACTION_VIEW = 35;
+	int ACTION_VIEW = 36;
 
 	/**
 	 * The feature id for the '<em><b>Internal Action</b></em>' reference.
@@ -6537,6 +6574,27 @@ public interface ViewsPackage extends EPackage {
 	EOperation getImmediateStrongAbortHistoryTransitionView__SetPriority__String();
 
 	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionView <em>Connection View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Connection View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionView
+	 * @generated
+	 */
+	EClass getConnectionView();
+
+	/**
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionView#getInternalConnection <em>Internal Connection</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Internal Connection</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionView#getInternalConnection()
+	 * @see #getConnectionView()
+	 * @generated
+	 */
+	EReference getConnectionView_InternalConnection();
+
+	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartView <em>SC Chart View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9157,6 +9215,24 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getImmediateStrongAbortHistoryTransitionView__SetPriority__String();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionViewImpl <em>Connection View</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConnectionView()
+		 * @generated
+		 */
+		EClass CONNECTION_VIEW = eINSTANCE.getConnectionView();
+
+		/**
+		 * The meta object literal for the '<em><b>Internal Connection</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONNECTION_VIEW__INTERNAL_CONNECTION = eINSTANCE.getConnectionView_InternalConnection();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SCChartViewImpl <em>SC Chart View</em>}' class.

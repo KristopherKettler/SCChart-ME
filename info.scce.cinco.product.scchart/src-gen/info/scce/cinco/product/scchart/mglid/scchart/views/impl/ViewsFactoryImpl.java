@@ -87,6 +87,7 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW: return createConditionalTerminationHistoryTransitionView();
 			case ViewsPackage.STRONG_ABORT_HISTORY_TRANSITION_VIEW: return createStrongAbortHistoryTransitionView();
 			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW: return createImmediateStrongAbortHistoryTransitionView();
+			case ViewsPackage.CONNECTION_VIEW: return createConnectionView();
 			case ViewsPackage.SC_CHART_VIEW: return createSCChartView();
 			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW: return createRootStateDeclarationView();
 			case ViewsPackage.SUPER_STATE_DECLARATION_VIEW: return createSuperStateDeclarationView();
@@ -436,6 +437,17 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public ImmediateStrongAbortHistoryTransitionView createImmediateStrongAbortHistoryTransitionView() {
 		ImmediateStrongAbortHistoryTransitionViewImpl immediateStrongAbortHistoryTransitionView = new ImmediateStrongAbortHistoryTransitionViewImpl();
 		return immediateStrongAbortHistoryTransitionView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ConnectionView createConnectionView() {
+		ConnectionViewImpl connectionView = new ConnectionViewImpl();
+		return connectionView;
 	}
 
 	/**

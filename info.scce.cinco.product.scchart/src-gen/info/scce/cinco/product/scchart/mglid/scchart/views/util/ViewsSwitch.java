@@ -256,6 +256,12 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ViewsPackage.CONNECTION_VIEW: {
+				ConnectionView connectionView = (ConnectionView)theEObject;
+				T result = caseConnectionView(connectionView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ViewsPackage.SC_CHART_VIEW: {
 				SCChartView scChartView = (SCChartView)theEObject;
 				T result = caseSCChartView(scChartView);
@@ -752,6 +758,21 @@ public class ViewsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseImmediateStrongAbortHistoryTransitionView(ImmediateStrongAbortHistoryTransitionView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Connection View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Connection View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConnectionView(ConnectionView object) {
 		return null;
 	}
 

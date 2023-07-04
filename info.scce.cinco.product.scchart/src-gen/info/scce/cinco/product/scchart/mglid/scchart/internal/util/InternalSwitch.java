@@ -368,6 +368,15 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case InternalPackage.INTERNAL_CONNECTION: {
+				InternalConnection internalConnection = (InternalConnection)theEObject;
+				T result = caseInternalConnection(internalConnection);
+				if (result == null) result = caseInternalEdge(internalConnection);
+				if (result == null) result = caseInternalModelElement(internalConnection);
+				if (result == null) result = caseInternalIdentifiableElement(internalConnection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case InternalPackage.INTERNAL_SC_CHART: {
 				InternalSCChart internalSCChart = (InternalSCChart)theEObject;
 				T result = caseInternalSCChart(internalSCChart);
@@ -875,6 +884,21 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalImmediateStrongAbortHistoryTransition(InternalImmediateStrongAbortHistoryTransition object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Connection</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Connection</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalConnection(InternalConnection object) {
 		return null;
 	}
 

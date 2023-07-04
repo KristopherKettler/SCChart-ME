@@ -69,8 +69,8 @@ node RootStateDeclarationNode {
 
 @palette
 node SuspendNode {
-	style declarationStyle("${SuspendType}", "${condition}","name")
-	attr EString as suspendType
+	style suspendStyle("${(suspendType == ' ' ? ' ' : suspendType)}", "${(suspendType == ' ' ? ' ' : empty condition ? ' ' : condition)}")
+	attr EString as suspendType := ' '
 	attr EString as condition
 }
 
@@ -311,10 +311,11 @@ type SuperStateDeclaration {
 	attr EString as name
 }
 
+
 @label(name)
 type Suspend {
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuspendTypeProvider")
-	attr EString as SuspendType := "suspend"
+	attr EString as SuspendType := ' '
 	attr EString as condition
 	attr EString as name 
 }

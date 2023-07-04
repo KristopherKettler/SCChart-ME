@@ -301,6 +301,15 @@ public interface ViewsFactory extends EFactory {
 	ImmediateStrongAbortHistoryTransitionView createImmediateStrongAbortHistoryTransitionView();
 
 	/**
+	 * Returns a new object of class '<em>Connection View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Connection View</em>'.
+	 * @generated
+	 */
+	ConnectionView createConnectionView();
+
+	/**
 	 * Returns a new object of class '<em>SC Chart View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

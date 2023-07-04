@@ -87,6 +87,7 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION: return createConditionalTerminationHistoryTransition();
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION: return createStrongAbortHistoryTransition();
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION: return createImmediateStrongAbortHistoryTransition();
+			case ScchartPackage.CONNECTION: return createConnection();
 			case ScchartPackage.SC_CHART: return createSCChart();
 			case ScchartPackage.ROOT_STATE_DECLARATION: return createRootStateDeclaration();
 			case ScchartPackage.SUPER_STATE_DECLARATION: return createSuperStateDeclaration();
@@ -436,6 +437,17 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	public ImmediateStrongAbortHistoryTransition createImmediateStrongAbortHistoryTransition() {
 		ImmediateStrongAbortHistoryTransitionImpl immediateStrongAbortHistoryTransition = new ImmediateStrongAbortHistoryTransitionImpl();
 		return immediateStrongAbortHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Connection createConnection() {
+		ConnectionImpl connection = new ConnectionImpl();
+		return connection;
 	}
 
 	/**

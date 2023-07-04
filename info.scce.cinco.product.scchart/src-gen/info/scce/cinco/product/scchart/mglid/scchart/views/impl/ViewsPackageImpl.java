@@ -252,6 +252,13 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass connectionViewEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass scChartViewEClass = null;
 
 	/**
@@ -3191,9 +3198,32 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getConnectionView() {
+		if (connectionViewEClass == null) {
+			connectionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(31);
+		}
+		return connectionViewEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getConnectionView_InternalConnection() {
+        return (EReference)getConnectionView().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getSCChartView() {
 		if (scChartViewEClass == null) {
-			scChartViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(31);
+			scChartViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(32);
 		}
 		return scChartViewEClass;
 	}
@@ -3216,7 +3246,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getRootStateDeclarationView() {
 		if (rootStateDeclarationViewEClass == null) {
-			rootStateDeclarationViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(32);
+			rootStateDeclarationViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(33);
 		}
 		return rootStateDeclarationViewEClass;
 	}
@@ -3299,7 +3329,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getSuperStateDeclarationView() {
 		if (superStateDeclarationViewEClass == null) {
-			superStateDeclarationViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(33);
+			superStateDeclarationViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(34);
 		}
 		return superStateDeclarationViewEClass;
 	}
@@ -3362,7 +3392,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getSuspendView() {
 		if (suspendViewEClass == null) {
-			suspendViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(34);
+			suspendViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(35);
 		}
 		return suspendViewEClass;
 	}
@@ -3445,7 +3475,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getActionView() {
 		if (actionViewEClass == null) {
-			actionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(35);
+			actionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(36);
 		}
 		return actionViewEClass;
 	}

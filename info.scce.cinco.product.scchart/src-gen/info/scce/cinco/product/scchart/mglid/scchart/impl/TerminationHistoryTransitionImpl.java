@@ -278,26 +278,6 @@ public class TerminationHistoryTransitionImpl extends EdgeImpl implements Termin
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final RootState source) {
-		return source.canStart(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectSource(final RootState source) {
-		this.setSourceElement(source);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean canReconnectSource(final SuperState source) {
 		return source.canStart(this.getClass());
 	}
@@ -329,6 +309,26 @@ public class TerminationHistoryTransitionImpl extends EdgeImpl implements Termin
 	 */
 	@Override
 	public void reconnectSource(final InitilalSuperState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final RootState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final RootState source) {
 		this.setSourceElement(source);
 	}
 
@@ -476,11 +476,6 @@ public class TerminationHistoryTransitionImpl extends EdgeImpl implements Termin
 				return getSourceElement();
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___GET_TARGET_ELEMENT:
 				return getTargetElement();
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
-				return canReconnectSource((RootState)arguments.get(0));
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
-				reconnectSource((RootState)arguments.get(0));
-				return null;
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__SUPERSTATE:
 				return canReconnectSource((SuperState)arguments.get(0));
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__SUPERSTATE:
@@ -490,6 +485,11 @@ public class TerminationHistoryTransitionImpl extends EdgeImpl implements Termin
 				return canReconnectSource((InitilalSuperState)arguments.get(0));
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE:
 				reconnectSource((InitilalSuperState)arguments.get(0));
+				return null;
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
+				return canReconnectSource((RootState)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
+				reconnectSource((RootState)arguments.get(0));
 				return null;
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_TARGET__SUPERSTATE:
 				return canReconnectTarget((SuperState)arguments.get(0));
