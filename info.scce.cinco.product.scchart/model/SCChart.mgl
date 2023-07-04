@@ -41,7 +41,7 @@ container SuperState {
 	style superStateStyle ("${label}")
 	containableElements(Region,SuperStateDeclarationNode,ActionNode,SuspendNode)
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
-	outgoingEdges (*)
+	outgoingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 	attr SuperStateDeclaration as declaration[0,*]
 	attr Suspend as suspends[0,*] 
 	attr Action as actions[0,*]
@@ -53,8 +53,8 @@ container SuperState {
 container InitilalSuperState extends SuperState{
 	style initialSuperStateStyle ("${label}")
 	containableElements(Region,SuperStateDeclarationNode)
-	incomingEdges (*)
-	outgoingEdges (*)
+	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
+	outgoingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 }
 
 @palette
@@ -121,113 +121,111 @@ node Connector {
 
 /*Transitions */
 /*same as auto and delayed transition, weak abort for superstates*/
-edge Transition {
-	style transitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(empty delay || delay == '<No count delay>' ? '' : delay).concat(condition == '<No condition>' ? '' : ' ['.concat(condition).concat(']')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.TransitionPriorityProvider")
+edge AbstractTransition{
+	style connectionStyle
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.AbstractTransitionPriorityProvider")
 	attr EString as priority := '0'
+}
+edge Transition extends AbstractTransition{
+	style transitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(empty delay || delay == '<No count delay>' ? '' : delay).concat(condition == '<No condition>' ? '' : ' ['.concat(condition).concat(']')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 }
 
-edge ImmediateTransition {
+edge ImmediateTransition extends AbstractTransition{
 	style immediateTransitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(empty delay || delay == '<No count delay>' ? '' : delay).concat(condition == '<No condition>' ? '' : ' ['.concat(condition).concat(']')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.TransitionPriorityProvider")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 }
 
 /*unconditional Termination */
-edge TerminationTransition {
+edge TerminationTransition extends AbstractTransition{
 	style terminationTransitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.TransitionPriorityProvider")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as effect := '<No effect>'
 }
 
-edge ConditionalTerminationTransition {
+edge ConditionalTerminationTransition extends AbstractTransition{
 	style conditionalTerminationTransitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(empty delay || delay == '<No count delay>' ? '' : delay).concat(condition == '<No condition>' ? '' : ' ['.concat(condition).concat(']')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.TransitionPriorityProvider")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 }
 
 /* immediate terminate superstate */
-edge StrongAbortTransition {
+edge StrongAbortTransition extends AbstractTransition{
 	style strongAbortTransitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(empty delay || delay == '<No count delay>' ? '' : delay).concat(condition == '<No condition>' ? '' : ' ['.concat(condition).concat(']')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.TransitionPriorityProvider")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 }
 
 /* immediate terminate superstate */
-edge ImmediateStrongAbortTransition {
+edge ImmediateStrongAbortTransition extends AbstractTransition{
 	style immediateStrongAbortTransitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(empty delay || delay == '<No count delay>' ? '' : delay).concat(condition == '<No condition>' ? '' : ' ['.concat(condition).concat(']')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.TransitionPriorityProvider")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 }
 
 /* preempt all immediate behavior in target state */
-edge DeferredTransition {
+edge DeferredTransition extends AbstractTransition{
 	style deferredTransitionStyle("")
-	@propertiesViewHidden
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 }
 
-edge ImmediateDeferredTransition {
+edge ImmediateDeferredTransition extends AbstractTransition{
 	style immediateDeferredTransitionStyle("")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 }  
 
-edge TerminationDefferdTransition {
+edge TerminationDefferdTransition extends AbstractTransition{
 	style terminationDeferredTransitionStyle("")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 }
 
-edge  ConditionalTerminationDeferredTransition {
+edge  ConditionalTerminationDeferredTransition extends AbstractTransition{
 	style conditionalTerminationDeferredTransitionStyle("")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 }
 
-edge StrongAbortDeferredTransition {
+edge StrongAbortDeferredTransition extends AbstractTransition{
 	style immediateStrongAbortDeferredTransitionStyle("")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 }
 
-edge ImmediateStrongAbortDeferredTransition {
+edge ImmediateStrongAbortDeferredTransition extends AbstractTransition{
 	style strongAbortDeferredTransitionStyle("")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 }
 
-edge HistoryTransition {
+edge HistoryTransition extends AbstractTransition{
 	style historyTransitionStyle("","${H}")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
@@ -236,9 +234,9 @@ edge HistoryTransition {
 	attr EString as H := ""
 }
 
-edge ImmediateHistoryTransition {
+edge ImmediateHistoryTransition extends AbstractTransition{
 	style immediateHistoryTransitionStyle("","${H}")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
@@ -247,9 +245,9 @@ edge ImmediateHistoryTransition {
 	attr EString as H := ""
 }
 
-edge TerminationHistoryTransition {
+edge TerminationHistoryTransition extends AbstractTransition{
 	style terminationHistoryTransitionStyle("","${H}")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 	attr EBoolean as deepHistory
@@ -257,9 +255,9 @@ edge TerminationHistoryTransition {
 	attr EString as H := ""
 }
 
-edge ConditionalTerminationHistoryTransition {
+edge ConditionalTerminationHistoryTransition extends AbstractTransition{
 	style conditionalTerminationHistoryTransitionStyle("","${H}")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
@@ -268,9 +266,9 @@ edge ConditionalTerminationHistoryTransition {
 	attr EString as H := ""
 }
 
-edge StrongAbortHistoryTransition {
+edge StrongAbortHistoryTransition extends AbstractTransition{
 	style strongAbortHistoryTransitionStyle("","${H}")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
@@ -279,9 +277,9 @@ edge StrongAbortHistoryTransition {
 	attr EString as H := ""
 } 
 
-edge ImmediateStrongAbortHistoryTransition {
+edge ImmediateStrongAbortHistoryTransition extends AbstractTransition{
 	style immediateStrongAbortHistoryTransitionStyle("","${H}")
-	attr EString as priority := '0'
+	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'

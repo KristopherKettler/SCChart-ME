@@ -8,8 +8,7 @@ import graphmodel.IdentifiableElement;
 import graphmodel.ModelElement;
 import graphmodel.Node;
 
-import graphmodel.impl.EdgeImpl;
-
+import info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
@@ -38,7 +37,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class StrongAbortTransitionImpl extends EdgeImpl implements StrongAbortTransition {
+public class StrongAbortTransitionImpl extends AbstractTransitionImpl implements StrongAbortTransition {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -123,29 +122,6 @@ public class StrongAbortTransitionImpl extends EdgeImpl implements StrongAbortTr
 	public void setEffect(final String _arg) {
 		getInternalStrongAbortTransition().getElement().transact("Set Effect", () -> {
 			getInternalStrongAbortTransition().setEffect(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getPriority() {
-		return getInternalStrongAbortTransition().getPriority();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPriority(final String _arg) {
-		getInternalStrongAbortTransition().getElement().transact("Set Priority", () -> {
-			getInternalStrongAbortTransition().setPriority(_arg);
 		});
 		
 	}
@@ -339,7 +315,7 @@ public class StrongAbortTransitionImpl extends EdgeImpl implements StrongAbortTr
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final Connector target) {
+	public boolean canReconnectTarget(final InitilalSuperState target) {
 		return target.canEnd(this.getClass());
 	}
 
@@ -349,7 +325,7 @@ public class StrongAbortTransitionImpl extends EdgeImpl implements StrongAbortTr
 	 * @generated
 	 */
 	@Override
-	public void reconnectTarget(final Connector target) {
+	public void reconnectTarget(final InitilalSuperState target) {
 		this.setTargetElement(target);
 	}
 
@@ -419,7 +395,7 @@ public class StrongAbortTransitionImpl extends EdgeImpl implements StrongAbortTr
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final InitilalSuperState target) {
+	public boolean canReconnectTarget(final Connector target) {
 		return target.canEnd(this.getClass());
 	}
 
@@ -429,7 +405,7 @@ public class StrongAbortTransitionImpl extends EdgeImpl implements StrongAbortTr
 	 * @generated
 	 */
 	@Override
-	public void reconnectTarget(final InitilalSuperState target) {
+	public void reconnectTarget(final Connector target) {
 		this.setTargetElement(target);
 	}
 
@@ -478,6 +454,21 @@ public class StrongAbortTransitionImpl extends EdgeImpl implements StrongAbortTr
 				default: return super.eDerivedOperationID(baseOperationID, baseClass);
 			}
 		}
+		if (baseClass == AbstractTransition.class) {
+			switch (baseOperationID) {
+				case ScchartPackage.ABSTRACT_TRANSITION___PRE_DELETE: return ScchartPackage.STRONG_ABORT_TRANSITION___PRE_DELETE;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_POST_DELETE_FUNCTION: return ScchartPackage.STRONG_ABORT_TRANSITION___GET_POST_DELETE_FUNCTION;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_POST_DELETE_EVENT: return ScchartPackage.STRONG_ABORT_TRANSITION___GET_POST_DELETE_EVENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___PRE_SAVE: return ScchartPackage.STRONG_ABORT_TRANSITION___PRE_SAVE;
+				case ScchartPackage.ABSTRACT_TRANSITION___POST_SAVE: return ScchartPackage.STRONG_ABORT_TRANSITION___POST_SAVE;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_ROOT_ELEMENT: return ScchartPackage.STRONG_ABORT_TRANSITION___GET_ROOT_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_SOURCE_ELEMENT: return ScchartPackage.STRONG_ABORT_TRANSITION___GET_SOURCE_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_TARGET_ELEMENT: return ScchartPackage.STRONG_ABORT_TRANSITION___GET_TARGET_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE: return ScchartPackage.STRONG_ABORT_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE;
+				case ScchartPackage.ABSTRACT_TRANSITION___RECONNECT_SOURCE__ROOTSTATE: return ScchartPackage.STRONG_ABORT_TRANSITION___RECONNECT_SOURCE__ROOTSTATE;
+				default: return super.eDerivedOperationID(baseOperationID, baseClass);
+			}
+		}
 		return super.eDerivedOperationID(baseOperationID, baseClass);
 	}
 
@@ -503,11 +494,6 @@ public class StrongAbortTransitionImpl extends EdgeImpl implements StrongAbortTr
 				return getEffect();
 			case ScchartPackage.STRONG_ABORT_TRANSITION___SET_EFFECT__STRING:
 				setEffect((String)arguments.get(0));
-				return null;
-			case ScchartPackage.STRONG_ABORT_TRANSITION___GET_PRIORITY:
-				return getPriority();
-			case ScchartPackage.STRONG_ABORT_TRANSITION___SET_PRIORITY__STRING:
-				setPriority((String)arguments.get(0));
 				return null;
 			case ScchartPackage.STRONG_ABORT_TRANSITION___GET_INTERNAL_STRONG_ABORT_TRANSITION:
 				return getInternalStrongAbortTransition();
@@ -552,10 +538,10 @@ public class StrongAbortTransitionImpl extends EdgeImpl implements StrongAbortTr
 			case ScchartPackage.STRONG_ABORT_TRANSITION___RECONNECT_TARGET__SUPERSTATE:
 				reconnectTarget((SuperState)arguments.get(0));
 				return null;
-			case ScchartPackage.STRONG_ABORT_TRANSITION___CAN_RECONNECT_TARGET__CONNECTOR:
-				return canReconnectTarget((Connector)arguments.get(0));
-			case ScchartPackage.STRONG_ABORT_TRANSITION___RECONNECT_TARGET__CONNECTOR:
-				reconnectTarget((Connector)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
+				return canReconnectTarget((InitilalSuperState)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
+				reconnectTarget((InitilalSuperState)arguments.get(0));
 				return null;
 			case ScchartPackage.STRONG_ABORT_TRANSITION___CAN_RECONNECT_TARGET__SIMPLESTATE:
 				return canReconnectTarget((SimpleState)arguments.get(0));
@@ -572,10 +558,10 @@ public class StrongAbortTransitionImpl extends EdgeImpl implements StrongAbortTr
 			case ScchartPackage.STRONG_ABORT_TRANSITION___RECONNECT_TARGET__FINALSTATE:
 				reconnectTarget((FinalState)arguments.get(0));
 				return null;
-			case ScchartPackage.STRONG_ABORT_TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
-				return canReconnectTarget((InitilalSuperState)arguments.get(0));
-			case ScchartPackage.STRONG_ABORT_TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
-				reconnectTarget((InitilalSuperState)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_TRANSITION___CAN_RECONNECT_TARGET__CONNECTOR:
+				return canReconnectTarget((Connector)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_TRANSITION___RECONNECT_TARGET__CONNECTOR:
+				reconnectTarget((Connector)arguments.get(0));
 				return null;
 			case ScchartPackage.STRONG_ABORT_TRANSITION___GET_STRONG_ABORT_TRANSITION_VIEW:
 				return getStrongAbortTransitionView();

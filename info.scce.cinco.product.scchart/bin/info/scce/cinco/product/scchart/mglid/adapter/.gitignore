@@ -170,3 +170,5 @@
 /StrongAbortHistoryTransitionEContentAdapter.java
 /TerminationDefferdTransitionEContentAdapter.java
 /TerminationHistoryTransitionEContentAdapter.java
+/.ConnectionEContentAdapter.xtendbin
+/ConnectionEContentAdapter.java

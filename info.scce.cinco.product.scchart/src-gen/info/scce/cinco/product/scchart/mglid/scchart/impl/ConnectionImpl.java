@@ -11,11 +11,9 @@ import graphmodel.Node;
 import graphmodel.impl.EdgeImpl;
 
 import info.scce.cinco.product.scchart.mglid.scchart.Connection;
-import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
 import info.scce.cinco.product.scchart.mglid.scchart.ScchartPackage;
-import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnection;
 
@@ -143,8 +141,8 @@ public class ConnectionImpl extends EdgeImpl implements Connection {
 	 * @generated
 	 */
 	@Override
-	public Node getSourceElement() {
-		return(graphmodel.Node)super.getSourceElement();
+	public RootState getSourceElement() {
+		return(info.scce.cinco.product.scchart.mglid.scchart.RootState)super.getSourceElement();
 	}
 
 	/**
@@ -153,48 +151,8 @@ public class ConnectionImpl extends EdgeImpl implements Connection {
 	 * @generated
 	 */
 	@Override
-	public InitilalSuperState getTargetElement() {
-		return(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState)super.getTargetElement();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canReconnectSource(final SuperState source) {
-		return source.canStart(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectSource(final SuperState source) {
-		this.setSourceElement(source);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canReconnectSource(final InitilalSuperState source) {
-		return source.canStart(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectSource(final InitilalSuperState source) {
-		this.setSourceElement(source);
+	public Node getTargetElement() {
+		return(graphmodel.Node)super.getTargetElement();
 	}
 
 	/**
@@ -215,26 +173,6 @@ public class ConnectionImpl extends EdgeImpl implements Connection {
 	@Override
 	public void reconnectSource(final RootState source) {
 		this.setSourceElement(source);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canReconnectTarget(final InitilalSuperState target) {
-		return target.canEnd(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectTarget(final InitilalSuperState target) {
-		this.setTargetElement(target);
 	}
 
 	/**
@@ -316,25 +254,10 @@ public class ConnectionImpl extends EdgeImpl implements Connection {
 				return getSourceElement();
 			case ScchartPackage.CONNECTION___GET_TARGET_ELEMENT:
 				return getTargetElement();
-			case ScchartPackage.CONNECTION___CAN_RECONNECT_SOURCE__SUPERSTATE:
-				return canReconnectSource((SuperState)arguments.get(0));
-			case ScchartPackage.CONNECTION___RECONNECT_SOURCE__SUPERSTATE:
-				reconnectSource((SuperState)arguments.get(0));
-				return null;
-			case ScchartPackage.CONNECTION___CAN_RECONNECT_SOURCE__INITILALSUPERSTATE:
-				return canReconnectSource((InitilalSuperState)arguments.get(0));
-			case ScchartPackage.CONNECTION___RECONNECT_SOURCE__INITILALSUPERSTATE:
-				reconnectSource((InitilalSuperState)arguments.get(0));
-				return null;
 			case ScchartPackage.CONNECTION___CAN_RECONNECT_SOURCE__ROOTSTATE:
 				return canReconnectSource((RootState)arguments.get(0));
 			case ScchartPackage.CONNECTION___RECONNECT_SOURCE__ROOTSTATE:
 				reconnectSource((RootState)arguments.get(0));
-				return null;
-			case ScchartPackage.CONNECTION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
-				return canReconnectTarget((InitilalSuperState)arguments.get(0));
-			case ScchartPackage.CONNECTION___RECONNECT_TARGET__INITILALSUPERSTATE:
-				reconnectTarget((InitilalSuperState)arguments.get(0));
 				return null;
 			case ScchartPackage.CONNECTION___GET_CONNECTION_VIEW:
 				return getConnectionView();

@@ -129,6 +129,10 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 				return createConnectorAdapter();
 			}
 			@Override
+			public Adapter caseAbstractTransition(AbstractTransition object) {
+				return createAbstractTransitionAdapter();
+			}
+			@Override
 			public Adapter caseTransition(Transition object) {
 				return createTransitionAdapter();
 			}
@@ -455,6 +459,20 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createConnectorAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition <em>Abstract Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition
+	 * @generated
+	 */
+	public Adapter createAbstractTransitionAdapter() {
 		return null;
 	}
 

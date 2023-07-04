@@ -69,6 +69,7 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 			case ScchartPackage.INITIAL_STATE: return createInitialState();
 			case ScchartPackage.FINAL_STATE: return createFinalState();
 			case ScchartPackage.CONNECTOR: return createConnector();
+			case ScchartPackage.ABSTRACT_TRANSITION: return createAbstractTransition();
 			case ScchartPackage.TRANSITION: return createTransition();
 			case ScchartPackage.IMMEDIATE_TRANSITION: return createImmediateTransition();
 			case ScchartPackage.TERMINATION_TRANSITION: return createTerminationTransition();
@@ -239,6 +240,17 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	public Connector createConnector() {
 		ConnectorImpl connector = new ConnectorImpl();
 		return connector;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AbstractTransition createAbstractTransition() {
+		AbstractTransitionImpl abstractTransition = new AbstractTransitionImpl();
+		return abstractTransition;
 	}
 
 	/**

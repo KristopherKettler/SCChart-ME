@@ -120,6 +120,10 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 				return createConnectorViewAdapter();
 			}
 			@Override
+			public Adapter caseAbstractTransitionView(AbstractTransitionView object) {
+				return createAbstractTransitionViewAdapter();
+			}
+			@Override
 			public Adapter caseTransitionView(TransitionView object) {
 				return createTransitionViewAdapter();
 			}
@@ -414,6 +418,20 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createConnectorViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AbstractTransitionView <em>Abstract Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.AbstractTransitionView
+	 * @generated
+	 */
+	public Adapter createAbstractTransitionViewAdapter() {
 		return null;
 	}
 

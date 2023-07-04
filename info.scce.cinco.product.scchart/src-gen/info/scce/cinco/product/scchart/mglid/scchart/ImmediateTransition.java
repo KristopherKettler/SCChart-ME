@@ -2,7 +2,6 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart;
 
-import graphmodel.Edge;
 import graphmodel.Node;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition;
@@ -19,7 +18,7 @@ import info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTransitionVi
  * @model
  * @generated
  */
-public interface ImmediateTransition extends Edge {
+public interface ImmediateTransition extends AbstractTransition {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -67,22 +66,6 @@ public interface ImmediateTransition extends Edge {
 	 * @generated
 	 */
 	void setEffect(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	String getPriority();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setPriority(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -186,7 +169,7 @@ public interface ImmediateTransition extends Edge {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(Connector source);
+	boolean canReconnectSource(InitilalSuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -194,7 +177,7 @@ public interface ImmediateTransition extends Edge {
 	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectSource(Connector source);
+	void reconnectSource(InitilalSuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -234,6 +217,22 @@ public interface ImmediateTransition extends Edge {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
+	boolean canReconnectSource(RootState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(RootState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
 	boolean canReconnectSource(FinalState source);
 
 	/**
@@ -250,7 +249,7 @@ public interface ImmediateTransition extends Edge {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(InitilalSuperState source);
+	boolean canReconnectSource(Connector source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -258,23 +257,7 @@ public interface ImmediateTransition extends Edge {
 	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectSource(InitilalSuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectSource(RootState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(RootState source);
+	void reconnectSource(Connector source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -298,7 +281,7 @@ public interface ImmediateTransition extends Edge {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(Connector target);
+	boolean canReconnectTarget(InitilalSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -306,7 +289,7 @@ public interface ImmediateTransition extends Edge {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(Connector target);
+	void reconnectTarget(InitilalSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -362,7 +345,7 @@ public interface ImmediateTransition extends Edge {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(InitilalSuperState target);
+	boolean canReconnectTarget(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -370,7 +353,7 @@ public interface ImmediateTransition extends Edge {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(InitilalSuperState target);
+	void reconnectTarget(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->

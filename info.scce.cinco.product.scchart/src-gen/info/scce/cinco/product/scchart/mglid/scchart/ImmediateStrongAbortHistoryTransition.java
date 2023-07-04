@@ -2,7 +2,6 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart;
 
-import graphmodel.Edge;
 import graphmodel.Node;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortHistoryTransition;
@@ -19,7 +18,7 @@ import info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortH
  * @model
  * @generated
  */
-public interface ImmediateStrongAbortHistoryTransition extends Edge {
+public interface ImmediateStrongAbortHistoryTransition extends AbstractTransition {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -99,22 +98,6 @@ public interface ImmediateStrongAbortHistoryTransition extends Edge {
 	 * @generated
 	 */
 	void setH(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	String getPriority();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setPriority(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -2,7 +2,6 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart;
 
-import graphmodel.Edge;
 import graphmodel.Node;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationTransition;
@@ -19,7 +18,7 @@ import info.scce.cinco.product.scchart.mglid.scchart.views.TerminationTransition
  * @model
  * @generated
  */
-public interface TerminationTransition extends Edge {
+public interface TerminationTransition extends AbstractTransition {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -35,22 +34,6 @@ public interface TerminationTransition extends Edge {
 	 * @generated
 	 */
 	void setEffect(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	String getPriority();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setPriority(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -202,7 +185,7 @@ public interface TerminationTransition extends Edge {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(Connector target);
+	boolean canReconnectTarget(InitilalSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,7 +193,7 @@ public interface TerminationTransition extends Edge {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(Connector target);
+	void reconnectTarget(InitilalSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -266,7 +249,7 @@ public interface TerminationTransition extends Edge {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(InitilalSuperState target);
+	boolean canReconnectTarget(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -274,7 +257,7 @@ public interface TerminationTransition extends Edge {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(InitilalSuperState target);
+	void reconnectTarget(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->

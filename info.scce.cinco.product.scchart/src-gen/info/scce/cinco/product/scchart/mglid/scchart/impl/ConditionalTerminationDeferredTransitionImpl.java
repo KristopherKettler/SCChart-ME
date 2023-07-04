@@ -8,8 +8,7 @@ import graphmodel.IdentifiableElement;
 import graphmodel.ModelElement;
 import graphmodel.Node;
 
-import graphmodel.impl.EdgeImpl;
-
+import info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationDeferredTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ConditionalTerminationDeferredTransitionImpl extends EdgeImpl implements ConditionalTerminationDeferredTransition {
+public class ConditionalTerminationDeferredTransitionImpl extends AbstractTransitionImpl implements ConditionalTerminationDeferredTransition {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -119,29 +118,6 @@ public class ConditionalTerminationDeferredTransitionImpl extends EdgeImpl imple
 	public void setEffect(final String _arg) {
 		getInternalConditionalTerminationDeferredTransition().getElement().transact("Set Effect", () -> {
 			getInternalConditionalTerminationDeferredTransition().setEffect(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getPriority() {
-		return getInternalConditionalTerminationDeferredTransition().getPriority();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPriority(final String _arg) {
-		getInternalConditionalTerminationDeferredTransition().getElement().transact("Set Priority", () -> {
-			getInternalConditionalTerminationDeferredTransition().setPriority(_arg);
 		});
 		
 	}
@@ -394,6 +370,21 @@ public class ConditionalTerminationDeferredTransitionImpl extends EdgeImpl imple
 				default: return super.eDerivedOperationID(baseOperationID, baseClass);
 			}
 		}
+		if (baseClass == AbstractTransition.class) {
+			switch (baseOperationID) {
+				case ScchartPackage.ABSTRACT_TRANSITION___PRE_DELETE: return ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___PRE_DELETE;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_POST_DELETE_FUNCTION: return ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___GET_POST_DELETE_FUNCTION;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_POST_DELETE_EVENT: return ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___GET_POST_DELETE_EVENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___PRE_SAVE: return ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___PRE_SAVE;
+				case ScchartPackage.ABSTRACT_TRANSITION___POST_SAVE: return ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___POST_SAVE;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_ROOT_ELEMENT: return ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___GET_ROOT_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_SOURCE_ELEMENT: return ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___GET_SOURCE_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_TARGET_ELEMENT: return ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___GET_TARGET_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE: return ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE;
+				case ScchartPackage.ABSTRACT_TRANSITION___RECONNECT_SOURCE__ROOTSTATE: return ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___RECONNECT_SOURCE__ROOTSTATE;
+				default: return super.eDerivedOperationID(baseOperationID, baseClass);
+			}
+		}
 		return super.eDerivedOperationID(baseOperationID, baseClass);
 	}
 
@@ -419,11 +410,6 @@ public class ConditionalTerminationDeferredTransitionImpl extends EdgeImpl imple
 				return getEffect();
 			case ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___SET_EFFECT__STRING:
 				setEffect((String)arguments.get(0));
-				return null;
-			case ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___GET_PRIORITY:
-				return getPriority();
-			case ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___SET_PRIORITY__STRING:
-				setPriority((String)arguments.get(0));
 				return null;
 			case ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___GET_INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION:
 				return getInternalConditionalTerminationDeferredTransition();

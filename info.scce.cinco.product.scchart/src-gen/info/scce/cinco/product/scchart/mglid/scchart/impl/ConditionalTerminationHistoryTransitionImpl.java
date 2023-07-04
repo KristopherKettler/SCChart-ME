@@ -8,8 +8,7 @@ import graphmodel.IdentifiableElement;
 import graphmodel.ModelElement;
 import graphmodel.Node;
 
-import graphmodel.impl.EdgeImpl;
-
+import info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationHistoryTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ConditionalTerminationHistoryTransitionImpl extends EdgeImpl implements ConditionalTerminationHistoryTransition {
+public class ConditionalTerminationHistoryTransitionImpl extends AbstractTransitionImpl implements ConditionalTerminationHistoryTransition {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -165,29 +164,6 @@ public class ConditionalTerminationHistoryTransitionImpl extends EdgeImpl implem
 	public void setH(final String _arg) {
 		getInternalConditionalTerminationHistoryTransition().getElement().transact("Set H", () -> {
 			getInternalConditionalTerminationHistoryTransition().setH(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getPriority() {
-		return getInternalConditionalTerminationHistoryTransition().getPriority();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPriority(final String _arg) {
-		getInternalConditionalTerminationHistoryTransition().getElement().transact("Set Priority", () -> {
-			getInternalConditionalTerminationHistoryTransition().setPriority(_arg);
 		});
 		
 	}
@@ -440,6 +416,21 @@ public class ConditionalTerminationHistoryTransitionImpl extends EdgeImpl implem
 				default: return super.eDerivedOperationID(baseOperationID, baseClass);
 			}
 		}
+		if (baseClass == AbstractTransition.class) {
+			switch (baseOperationID) {
+				case ScchartPackage.ABSTRACT_TRANSITION___PRE_DELETE: return ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___PRE_DELETE;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_POST_DELETE_FUNCTION: return ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___GET_POST_DELETE_FUNCTION;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_POST_DELETE_EVENT: return ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___GET_POST_DELETE_EVENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___PRE_SAVE: return ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___PRE_SAVE;
+				case ScchartPackage.ABSTRACT_TRANSITION___POST_SAVE: return ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___POST_SAVE;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_ROOT_ELEMENT: return ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___GET_ROOT_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_SOURCE_ELEMENT: return ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___GET_SOURCE_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_TARGET_ELEMENT: return ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___GET_TARGET_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE: return ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE;
+				case ScchartPackage.ABSTRACT_TRANSITION___RECONNECT_SOURCE__ROOTSTATE: return ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__ROOTSTATE;
+				default: return super.eDerivedOperationID(baseOperationID, baseClass);
+			}
+		}
 		return super.eDerivedOperationID(baseOperationID, baseClass);
 	}
 
@@ -475,11 +466,6 @@ public class ConditionalTerminationHistoryTransitionImpl extends EdgeImpl implem
 				return getH();
 			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___SET_H__STRING:
 				setH((String)arguments.get(0));
-				return null;
-			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___GET_PRIORITY:
-				return getPriority();
-			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___SET_PRIORITY__STRING:
-				setPriority((String)arguments.get(0));
 				return null;
 			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___GET_INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION:
 				return getInternalConditionalTerminationHistoryTransition();

@@ -4,8 +4,6 @@ package info.scce.cinco.product.scchart.mglid.scchart.views;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortHistoryTransition;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Strong Abort History Transition View</b></em>'.
@@ -22,7 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface StrongAbortHistoryTransitionView extends EObject {
+public interface StrongAbortHistoryTransitionView extends AbstractTransitionView {
 	/**
 	 * Returns the value of the '<em><b>Internal Strong Abort History Transition</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -124,21 +122,5 @@ public interface StrongAbortHistoryTransitionView extends EObject {
 	 * @generated
 	 */
 	void setH(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	String getPriority();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setPriority(String _arg);
 
 } // StrongAbortHistoryTransitionView

@@ -17,7 +17,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +31,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class StrongAbortTransitionViewImpl extends EObjectImpl implements StrongAbortTransitionView {
+public class StrongAbortTransitionViewImpl extends AbstractTransitionViewImpl implements StrongAbortTransitionView {
 	/**
 	 * The cached value of the '{@link #getInternalStrongAbortTransition() <em>Internal Strong Abort Transition</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -177,29 +176,6 @@ public class StrongAbortTransitionViewImpl extends EObjectImpl implements Strong
 	 * @generated
 	 */
 	@Override
-	public String getPriority() {
-		return getInternalStrongAbortTransition().getPriority();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPriority(final String _arg) {
-		getInternalStrongAbortTransition().getElement().transact("Set Priority", () -> {
-			getInternalStrongAbortTransition().setPriority(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW__INTERNAL_STRONG_ABORT_TRANSITION:
@@ -275,11 +251,6 @@ public class StrongAbortTransitionViewImpl extends EObjectImpl implements Strong
 				return getEffect();
 			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW___SET_EFFECT__STRING:
 				setEffect((String)arguments.get(0));
-				return null;
-			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW___GET_PRIORITY:
-				return getPriority();
-			case ViewsPackage.STRONG_ABORT_TRANSITION_VIEW___SET_PRIORITY__STRING:
-				setPriority((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

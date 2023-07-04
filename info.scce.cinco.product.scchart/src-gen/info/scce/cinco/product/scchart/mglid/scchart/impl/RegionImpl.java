@@ -379,8 +379,8 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 	 * @generated
 	 */
 	@Override
-	public EList<Connector> getConnectors() {
-		return getModelElements(info.scce.cinco.product.scchart.mglid.scchart.Connector.class);
+	public EList<InitilalSuperState> getInitilalSuperStates() {
+		return getModelElements(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class);
 	}
 
 	/**
@@ -389,8 +389,8 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 	 * @generated
 	 */
 	@Override
-	public boolean canNewConnector() {
-		return this.canContain(info.scce.cinco.product.scchart.mglid.scchart.Connector.class);
+	public boolean canNewInitilalSuperState() {
+		return this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class);
 	}
 
 	/**
@@ -399,8 +399,8 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 	 * @generated
 	 */
 	@Override
-	public Connector newConnector(final int x, final int y) {
-		return newConnector(x, y, -1, -1);
+	public InitilalSuperState newInitilalSuperState(final int x, final int y) {
+		return newInitilalSuperState(x, y, -1, -1);
 	}
 
 	/**
@@ -409,8 +409,8 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 	 * @generated
 	 */
 	@Override
-	public Connector newConnector(final String id, final int x, final int y) {
-		return newConnector(x, y, -1, -1);
+	public InitilalSuperState newInitilalSuperState(final String id, final int x, final int y) {
+		return newInitilalSuperState(x, y, -1, -1);
 	}
 
 	/**
@@ -419,15 +419,15 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 	 * @generated
 	 */
 	@Override
-	public Connector newConnector(final int x, final int y, final int width, final int height) {
-		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.Connector.class)) {
-			info.scce.cinco.product.scchart.mglid.scchart.Connector node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnector((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
+	public InitilalSuperState newInitilalSuperState(final int x, final int y, final int width, final int height) {
+		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class)) {
+			info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createInitilalSuperState((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
 			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
 			node.move(x, y);
 			node.resize(width, height);
 			return node;
 		} else throw new java.lang.RuntimeException(
-			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.Connector.class, this.getClass()));
+			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class, this.getClass()));
 		
 	}
 
@@ -437,15 +437,15 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 	 * @generated
 	 */
 	@Override
-	public Connector newConnector(final String id, final int x, final int y, final int width, final int height) {
-		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.Connector.class)) {
-			info.scce.cinco.product.scchart.mglid.scchart.Connector node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnector((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
+	public InitilalSuperState newInitilalSuperState(final String id, final int x, final int y, final int width, final int height) {
+		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class)) {
+			info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createInitilalSuperState((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
 			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
 			node.move(x, y);
 			node.resize(width, height);
 			return node;
 		} else throw new java.lang.RuntimeException(
-			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.Connector.class, this.getClass()));
+			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class, this.getClass()));
 		
 	}
 
@@ -683,8 +683,8 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 	 * @generated
 	 */
 	@Override
-	public EList<InitilalSuperState> getInitilalSuperStates() {
-		return getModelElements(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class);
+	public EList<Connector> getConnectors() {
+		return getModelElements(info.scce.cinco.product.scchart.mglid.scchart.Connector.class);
 	}
 
 	/**
@@ -693,8 +693,8 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 	 * @generated
 	 */
 	@Override
-	public boolean canNewInitilalSuperState() {
-		return this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class);
+	public boolean canNewConnector() {
+		return this.canContain(info.scce.cinco.product.scchart.mglid.scchart.Connector.class);
 	}
 
 	/**
@@ -703,8 +703,8 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 	 * @generated
 	 */
 	@Override
-	public InitilalSuperState newInitilalSuperState(final int x, final int y) {
-		return newInitilalSuperState(x, y, -1, -1);
+	public Connector newConnector(final int x, final int y) {
+		return newConnector(x, y, -1, -1);
 	}
 
 	/**
@@ -713,8 +713,8 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 	 * @generated
 	 */
 	@Override
-	public InitilalSuperState newInitilalSuperState(final String id, final int x, final int y) {
-		return newInitilalSuperState(x, y, -1, -1);
+	public Connector newConnector(final String id, final int x, final int y) {
+		return newConnector(x, y, -1, -1);
 	}
 
 	/**
@@ -723,15 +723,15 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 	 * @generated
 	 */
 	@Override
-	public InitilalSuperState newInitilalSuperState(final int x, final int y, final int width, final int height) {
-		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class)) {
-			info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createInitilalSuperState((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
+	public Connector newConnector(final int x, final int y, final int width, final int height) {
+		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.Connector.class)) {
+			info.scce.cinco.product.scchart.mglid.scchart.Connector node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnector((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
 			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
 			node.move(x, y);
 			node.resize(width, height);
 			return node;
 		} else throw new java.lang.RuntimeException(
-			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class, this.getClass()));
+			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.Connector.class, this.getClass()));
 		
 	}
 
@@ -741,15 +741,15 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 	 * @generated
 	 */
 	@Override
-	public InitilalSuperState newInitilalSuperState(final String id, final int x, final int y, final int width, final int height) {
-		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class)) {
-			info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createInitilalSuperState((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
+	public Connector newConnector(final String id, final int x, final int y, final int width, final int height) {
+		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.Connector.class)) {
+			info.scce.cinco.product.scchart.mglid.scchart.Connector node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnector((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
 			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
 			node.move(x, y);
 			node.resize(width, height);
 			return node;
 		} else throw new java.lang.RuntimeException(
-			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class, this.getClass()));
+			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.Connector.class, this.getClass()));
 		
 	}
 
@@ -1758,18 +1758,18 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 				return newSuperState((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
 			case ScchartPackage.REGION___NEW_SUPER_STATE__STRING_INT_INT_INT_INT:
 				return newSuperState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
-			case ScchartPackage.REGION___GET_CONNECTORS:
-				return getConnectors();
-			case ScchartPackage.REGION___CAN_NEW_CONNECTOR:
-				return canNewConnector();
-			case ScchartPackage.REGION___NEW_CONNECTOR__INT_INT:
-				return newConnector((Integer)arguments.get(0), (Integer)arguments.get(1));
-			case ScchartPackage.REGION___NEW_CONNECTOR__STRING_INT_INT:
-				return newConnector((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
-			case ScchartPackage.REGION___NEW_CONNECTOR__INT_INT_INT_INT:
-				return newConnector((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
-			case ScchartPackage.REGION___NEW_CONNECTOR__STRING_INT_INT_INT_INT:
-				return newConnector((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
+			case ScchartPackage.REGION___GET_INITILAL_SUPER_STATES:
+				return getInitilalSuperStates();
+			case ScchartPackage.REGION___CAN_NEW_INITILAL_SUPER_STATE:
+				return canNewInitilalSuperState();
+			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__INT_INT:
+				return newInitilalSuperState((Integer)arguments.get(0), (Integer)arguments.get(1));
+			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__STRING_INT_INT:
+				return newInitilalSuperState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__INT_INT_INT_INT:
+				return newInitilalSuperState((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
+			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__STRING_INT_INT_INT_INT:
+				return newInitilalSuperState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
 			case ScchartPackage.REGION___GET_SIMPLE_STATES:
 				return getSimpleStates();
 			case ScchartPackage.REGION___CAN_NEW_SIMPLE_STATE:
@@ -1806,18 +1806,18 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 				return newFinalState((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
 			case ScchartPackage.REGION___NEW_FINAL_STATE__STRING_INT_INT_INT_INT:
 				return newFinalState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
-			case ScchartPackage.REGION___GET_INITILAL_SUPER_STATES:
-				return getInitilalSuperStates();
-			case ScchartPackage.REGION___CAN_NEW_INITILAL_SUPER_STATE:
-				return canNewInitilalSuperState();
-			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__INT_INT:
-				return newInitilalSuperState((Integer)arguments.get(0), (Integer)arguments.get(1));
-			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__STRING_INT_INT:
-				return newInitilalSuperState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
-			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__INT_INT_INT_INT:
-				return newInitilalSuperState((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
-			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__STRING_INT_INT_INT_INT:
-				return newInitilalSuperState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
+			case ScchartPackage.REGION___GET_CONNECTORS:
+				return getConnectors();
+			case ScchartPackage.REGION___CAN_NEW_CONNECTOR:
+				return canNewConnector();
+			case ScchartPackage.REGION___NEW_CONNECTOR__INT_INT:
+				return newConnector((Integer)arguments.get(0), (Integer)arguments.get(1));
+			case ScchartPackage.REGION___NEW_CONNECTOR__STRING_INT_INT:
+				return newConnector((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.REGION___NEW_CONNECTOR__INT_INT_INT_INT:
+				return newConnector((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
+			case ScchartPackage.REGION___NEW_CONNECTOR__STRING_INT_INT_INT_INT:
+				return newConnector((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
 			case ScchartPackage.REGION___SMOVE_TO__MODELELEMENTCONTAINER_INT_INT:
 				s_moveTo((ModelElementContainer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;

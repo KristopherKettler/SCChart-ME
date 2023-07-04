@@ -4,8 +4,6 @@ package info.scce.cinco.product.scchart.mglid.scchart.views;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationTransition;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Termination Transition View</b></em>'.
@@ -22,7 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface TerminationTransitionView extends EObject {
+public interface TerminationTransitionView extends AbstractTransitionView {
 	/**
 	 * Returns the value of the '<em><b>Internal Termination Transition</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -60,21 +58,5 @@ public interface TerminationTransitionView extends EObject {
 	 * @generated
 	 */
 	void setEffect(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	String getPriority();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setPriority(String _arg);
 
 } // TerminationTransitionView

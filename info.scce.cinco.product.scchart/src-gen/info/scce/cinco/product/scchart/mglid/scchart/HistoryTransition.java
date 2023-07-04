@@ -2,7 +2,6 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart;
 
-import graphmodel.Edge;
 import graphmodel.Node;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition;
@@ -19,7 +18,7 @@ import info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView
  * @model
  * @generated
  */
-public interface HistoryTransition extends Edge {
+public interface HistoryTransition extends AbstractTransition {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -99,22 +98,6 @@ public interface HistoryTransition extends Edge {
 	 * @generated
 	 */
 	void setH(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	String getPriority();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setPriority(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->

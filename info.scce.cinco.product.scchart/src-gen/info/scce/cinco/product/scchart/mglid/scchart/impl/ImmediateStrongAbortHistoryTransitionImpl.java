@@ -8,8 +8,7 @@ import graphmodel.IdentifiableElement;
 import graphmodel.ModelElement;
 import graphmodel.Node;
 
-import graphmodel.impl.EdgeImpl;
-
+import info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortHistoryTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ImmediateStrongAbortHistoryTransitionImpl extends EdgeImpl implements ImmediateStrongAbortHistoryTransition {
+public class ImmediateStrongAbortHistoryTransitionImpl extends AbstractTransitionImpl implements ImmediateStrongAbortHistoryTransition {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -165,29 +164,6 @@ public class ImmediateStrongAbortHistoryTransitionImpl extends EdgeImpl implemen
 	public void setH(final String _arg) {
 		getInternalImmediateStrongAbortHistoryTransition().getElement().transact("Set H", () -> {
 			getInternalImmediateStrongAbortHistoryTransition().setH(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getPriority() {
-		return getInternalImmediateStrongAbortHistoryTransition().getPriority();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPriority(final String _arg) {
-		getInternalImmediateStrongAbortHistoryTransition().getElement().transact("Set Priority", () -> {
-			getInternalImmediateStrongAbortHistoryTransition().setPriority(_arg);
 		});
 		
 	}
@@ -440,6 +416,21 @@ public class ImmediateStrongAbortHistoryTransitionImpl extends EdgeImpl implemen
 				default: return super.eDerivedOperationID(baseOperationID, baseClass);
 			}
 		}
+		if (baseClass == AbstractTransition.class) {
+			switch (baseOperationID) {
+				case ScchartPackage.ABSTRACT_TRANSITION___PRE_DELETE: return ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION___PRE_DELETE;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_POST_DELETE_FUNCTION: return ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION___GET_POST_DELETE_FUNCTION;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_POST_DELETE_EVENT: return ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION___GET_POST_DELETE_EVENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___PRE_SAVE: return ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION___PRE_SAVE;
+				case ScchartPackage.ABSTRACT_TRANSITION___POST_SAVE: return ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION___POST_SAVE;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_ROOT_ELEMENT: return ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION___GET_ROOT_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_SOURCE_ELEMENT: return ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION___GET_SOURCE_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_TARGET_ELEMENT: return ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION___GET_TARGET_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE: return ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE;
+				case ScchartPackage.ABSTRACT_TRANSITION___RECONNECT_SOURCE__ROOTSTATE: return ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION___RECONNECT_SOURCE__ROOTSTATE;
+				default: return super.eDerivedOperationID(baseOperationID, baseClass);
+			}
+		}
 		return super.eDerivedOperationID(baseOperationID, baseClass);
 	}
 
@@ -475,11 +466,6 @@ public class ImmediateStrongAbortHistoryTransitionImpl extends EdgeImpl implemen
 				return getH();
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION___SET_H__STRING:
 				setH((String)arguments.get(0));
-				return null;
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION___GET_PRIORITY:
-				return getPriority();
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION___SET_PRIORITY__STRING:
-				setPriority((String)arguments.get(0));
 				return null;
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION___GET_INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION:
 				return getInternalImmediateStrongAbortHistoryTransition();

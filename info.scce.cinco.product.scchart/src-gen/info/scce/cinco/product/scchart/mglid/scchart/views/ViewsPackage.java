@@ -1258,86 +1258,32 @@ public interface ViewsPackage extends EPackage {
 	int CONNECTOR_VIEW_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.TransitionViewImpl <em>Transition View</em>}' class.
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.AbstractTransitionViewImpl <em>Abstract Transition View</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.TransitionViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTransitionView()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.AbstractTransitionViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getAbstractTransitionView()
 	 * @generated
 	 */
-	int TRANSITION_VIEW = 13;
+	int ABSTRACT_TRANSITION_VIEW = 13;
 
 	/**
-	 * The feature id for the '<em><b>Internal Transition</b></em>' reference.
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW__INTERNAL_TRANSITION = 0;
+	int ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = 0;
 
 	/**
-	 * The number of structural features of the '<em>Transition View</em>' class.
+	 * The number of structural features of the '<em>Abstract Transition View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_VIEW___GET_EFFECT = 4;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_VIEW___SET_EFFECT__STRING = 5;
+	int ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT = 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -1346,7 +1292,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW___GET_PRIORITY = 6;
+	int ABSTRACT_TRANSITION_VIEW___GET_PRIORITY = 0;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -1355,7 +1301,125 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW___SET_PRIORITY__STRING = 7;
+	int ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING = 1;
+
+	/**
+	 * The number of operations of the '<em>Abstract Transition View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT = 2;
+
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.TransitionViewImpl <em>Transition View</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.TransitionViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTransitionView()
+	 * @generated
+	 */
+	int TRANSITION_VIEW = 14;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
+
+	/**
+	 * The feature id for the '<em><b>Internal Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_VIEW__INTERNAL_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Transition View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Priority</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
+
+	/**
+	 * The operation id for the '<em>Set Priority</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Transition View</em>' class.
@@ -1364,7 +1428,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSITION_VIEW_OPERATION_COUNT = 8;
+	int TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateTransitionViewImpl <em>Immediate Transition View</em>}' class.
@@ -1374,7 +1438,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_TRANSITION_VIEW = 14;
+	int IMMEDIATE_TRANSITION_VIEW = 15;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Immediate Transition</b></em>' reference.
@@ -1383,7 +1456,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TRANSITION_VIEW__INTERNAL_IMMEDIATE_TRANSITION = 0;
+	int IMMEDIATE_TRANSITION_VIEW__INTERNAL_IMMEDIATE_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Immediate Transition View</em>' class.
@@ -1392,61 +1465,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___GET_EFFECT = 4;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_TRANSITION_VIEW___SET_EFFECT__STRING = 5;
+	int IMMEDIATE_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -1455,7 +1474,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TRANSITION_VIEW___GET_PRIORITY = 6;
+	int IMMEDIATE_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -1464,7 +1483,61 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TRANSITION_VIEW___SET_PRIORITY__STRING = 7;
+	int IMMEDIATE_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Immediate Transition View</em>' class.
@@ -1473,7 +1546,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_TRANSITION_VIEW_OPERATION_COUNT = 8;
+	int IMMEDIATE_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.TerminationTransitionViewImpl <em>Termination Transition View</em>}' class.
@@ -1483,7 +1556,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTerminationTransitionView()
 	 * @generated
 	 */
-	int TERMINATION_TRANSITION_VIEW = 15;
+	int TERMINATION_TRANSITION_VIEW = 16;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Termination Transition</b></em>' reference.
@@ -1492,7 +1574,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_TRANSITION_VIEW__INTERNAL_TERMINATION_TRANSITION = 0;
+	int TERMINATION_TRANSITION_VIEW__INTERNAL_TERMINATION_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Termination Transition View</em>' class.
@@ -1501,25 +1583,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_TRANSITION_VIEW___GET_EFFECT = 0;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_TRANSITION_VIEW___SET_EFFECT__STRING = 1;
+	int TERMINATION_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -1528,7 +1592,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_TRANSITION_VIEW___GET_PRIORITY = 2;
+	int TERMINATION_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -1537,7 +1601,25 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_TRANSITION_VIEW___SET_PRIORITY__STRING = 3;
+	int TERMINATION_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Termination Transition View</em>' class.
@@ -1546,7 +1628,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_TRANSITION_VIEW_OPERATION_COUNT = 4;
+	int TERMINATION_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConditionalTerminationTransitionViewImpl <em>Conditional Termination Transition View</em>}' class.
@@ -1556,7 +1638,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConditionalTerminationTransitionView()
 	 * @generated
 	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW = 16;
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW = 17;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Conditional Termination Transition</b></em>' reference.
@@ -1565,7 +1656,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW__INTERNAL_CONDITIONAL_TERMINATION_TRANSITION = 0;
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW__INTERNAL_CONDITIONAL_TERMINATION_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Conditional Termination Transition View</em>' class.
@@ -1574,61 +1665,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___GET_EFFECT = 4;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___SET_EFFECT__STRING = 5;
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -1637,7 +1674,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___GET_PRIORITY = 6;
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -1646,7 +1683,61 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___SET_PRIORITY__STRING = 7;
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Conditional Termination Transition View</em>' class.
@@ -1655,7 +1746,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW_OPERATION_COUNT = 8;
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.StrongAbortTransitionViewImpl <em>Strong Abort Transition View</em>}' class.
@@ -1665,7 +1756,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getStrongAbortTransitionView()
 	 * @generated
 	 */
-	int STRONG_ABORT_TRANSITION_VIEW = 17;
+	int STRONG_ABORT_TRANSITION_VIEW = 18;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Strong Abort Transition</b></em>' reference.
@@ -1674,7 +1774,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_TRANSITION_VIEW__INTERNAL_STRONG_ABORT_TRANSITION = 0;
+	int STRONG_ABORT_TRANSITION_VIEW__INTERNAL_STRONG_ABORT_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Strong Abort Transition View</em>' class.
@@ -1683,61 +1783,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___GET_EFFECT = 4;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_TRANSITION_VIEW___SET_EFFECT__STRING = 5;
+	int STRONG_ABORT_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -1746,7 +1792,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_TRANSITION_VIEW___GET_PRIORITY = 6;
+	int STRONG_ABORT_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -1755,7 +1801,61 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_TRANSITION_VIEW___SET_PRIORITY__STRING = 7;
+	int STRONG_ABORT_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Strong Abort Transition View</em>' class.
@@ -1764,7 +1864,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_TRANSITION_VIEW_OPERATION_COUNT = 8;
+	int STRONG_ABORT_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateStrongAbortTransitionViewImpl <em>Immediate Strong Abort Transition View</em>}' class.
@@ -1774,7 +1874,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateStrongAbortTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW = 18;
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW = 19;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Immediate Strong Abort Transition</b></em>' reference.
@@ -1783,7 +1892,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW__INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION = 0;
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW__INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Immediate Strong Abort Transition View</em>' class.
@@ -1792,61 +1901,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___GET_EFFECT = 4;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___SET_EFFECT__STRING = 5;
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -1855,7 +1910,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___GET_PRIORITY = 6;
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -1864,7 +1919,61 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___SET_PRIORITY__STRING = 7;
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Immediate Strong Abort Transition View</em>' class.
@@ -1873,7 +1982,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW_OPERATION_COUNT = 8;
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.DeferredTransitionViewImpl <em>Deferred Transition View</em>}' class.
@@ -1883,7 +1992,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDeferredTransitionView()
 	 * @generated
 	 */
-	int DEFERRED_TRANSITION_VIEW = 19;
+	int DEFERRED_TRANSITION_VIEW = 20;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEFERRED_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Deferred Transition</b></em>' reference.
@@ -1892,7 +2010,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEFERRED_TRANSITION_VIEW__INTERNAL_DEFERRED_TRANSITION = 0;
+	int DEFERRED_TRANSITION_VIEW__INTERNAL_DEFERRED_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Deferred Transition View</em>' class.
@@ -1901,61 +2019,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEFERRED_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEFERRED_TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEFERRED_TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEFERRED_TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEFERRED_TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEFERRED_TRANSITION_VIEW___GET_EFFECT = 4;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = 5;
+	int DEFERRED_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -1964,7 +2028,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEFERRED_TRANSITION_VIEW___GET_PRIORITY = 6;
+	int DEFERRED_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -1973,7 +2037,61 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = 7;
+	int DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEFERRED_TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEFERRED_TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEFERRED_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEFERRED_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEFERRED_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Deferred Transition View</em>' class.
@@ -1982,7 +2100,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DEFERRED_TRANSITION_VIEW_OPERATION_COUNT = 8;
+	int DEFERRED_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateDeferredTransitionViewImpl <em>Immediate Deferred Transition View</em>}' class.
@@ -1992,7 +2110,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateDeferredTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW = 20;
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW = 21;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Immediate Deferred Transition</b></em>' reference.
@@ -2001,7 +2128,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW__INTERNAL_IMMEDIATE_DEFERRED_TRANSITION = 0;
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW__INTERNAL_IMMEDIATE_DEFERRED_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Immediate Deferred Transition View</em>' class.
@@ -2010,61 +2137,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___GET_EFFECT = 4;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = 5;
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -2073,7 +2146,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___GET_PRIORITY = 6;
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -2082,7 +2155,61 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = 7;
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Immediate Deferred Transition View</em>' class.
@@ -2091,7 +2218,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW_OPERATION_COUNT = 8;
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.TerminationDefferdTransitionViewImpl <em>Termination Defferd Transition View</em>}' class.
@@ -2101,7 +2228,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTerminationDefferdTransitionView()
 	 * @generated
 	 */
-	int TERMINATION_DEFFERD_TRANSITION_VIEW = 21;
+	int TERMINATION_DEFFERD_TRANSITION_VIEW = 22;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_DEFFERD_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Termination Defferd Transition</b></em>' reference.
@@ -2110,7 +2246,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_DEFFERD_TRANSITION_VIEW__INTERNAL_TERMINATION_DEFFERD_TRANSITION = 0;
+	int TERMINATION_DEFFERD_TRANSITION_VIEW__INTERNAL_TERMINATION_DEFFERD_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Termination Defferd Transition View</em>' class.
@@ -2119,43 +2255,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_DEFFERD_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_DEFFERD_TRANSITION_VIEW___GET_DELAY = 0;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_DEFFERD_TRANSITION_VIEW___SET_DELAY__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_DEFFERD_TRANSITION_VIEW___GET_EFFECT = 2;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_DEFFERD_TRANSITION_VIEW___SET_EFFECT__STRING = 3;
+	int TERMINATION_DEFFERD_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -2164,7 +2264,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_DEFFERD_TRANSITION_VIEW___GET_PRIORITY = 4;
+	int TERMINATION_DEFFERD_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -2173,7 +2273,43 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_DEFFERD_TRANSITION_VIEW___SET_PRIORITY__STRING = 5;
+	int TERMINATION_DEFFERD_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_DEFFERD_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_DEFFERD_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_DEFFERD_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_DEFFERD_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
 
 	/**
 	 * The number of operations of the '<em>Termination Defferd Transition View</em>' class.
@@ -2182,7 +2318,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_DEFFERD_TRANSITION_VIEW_OPERATION_COUNT = 6;
+	int TERMINATION_DEFFERD_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConditionalTerminationDeferredTransitionViewImpl <em>Conditional Termination Deferred Transition View</em>}' class.
@@ -2192,7 +2328,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConditionalTerminationDeferredTransitionView()
 	 * @generated
 	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW = 22;
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW = 23;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Conditional Termination Deferred Transition</b></em>' reference.
@@ -2201,7 +2346,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW__INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION = 0;
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW__INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Conditional Termination Deferred Transition View</em>' class.
@@ -2210,61 +2355,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___GET_EFFECT = 4;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = 5;
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -2273,7 +2364,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___GET_PRIORITY = 6;
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -2282,7 +2373,61 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = 7;
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Conditional Termination Deferred Transition View</em>' class.
@@ -2291,7 +2436,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW_OPERATION_COUNT = 8;
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.StrongAbortDeferredTransitionViewImpl <em>Strong Abort Deferred Transition View</em>}' class.
@@ -2301,7 +2446,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getStrongAbortDeferredTransitionView()
 	 * @generated
 	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 23;
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 24;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Strong Abort Deferred Transition</b></em>' reference.
@@ -2310,7 +2464,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW__INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION = 0;
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW__INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Strong Abort Deferred Transition View</em>' class.
@@ -2319,61 +2473,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_EFFECT = 4;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = 5;
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -2382,7 +2482,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_PRIORITY = 6;
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -2391,7 +2491,61 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = 7;
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Strong Abort Deferred Transition View</em>' class.
@@ -2400,7 +2554,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW_OPERATION_COUNT = 8;
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateStrongAbortDeferredTransitionViewImpl <em>Immediate Strong Abort Deferred Transition View</em>}' class.
@@ -2410,7 +2564,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateStrongAbortDeferredTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 24;
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 25;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Immediate Strong Abort Deferred Transition</b></em>' reference.
@@ -2419,7 +2582,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW__INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION = 0;
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW__INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Immediate Strong Abort Deferred Transition View</em>' class.
@@ -2428,61 +2591,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_EFFECT = 4;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = 5;
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -2491,7 +2600,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_PRIORITY = 6;
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -2500,7 +2609,61 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = 7;
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Immediate Strong Abort Deferred Transition View</em>' class.
@@ -2509,7 +2672,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW_OPERATION_COUNT = 8;
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.HistoryTransitionViewImpl <em>History Transition View</em>}' class.
@@ -2519,7 +2682,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getHistoryTransitionView()
 	 * @generated
 	 */
-	int HISTORY_TRANSITION_VIEW = 25;
+	int HISTORY_TRANSITION_VIEW = 26;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal History Transition</b></em>' reference.
@@ -2528,7 +2700,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORY_TRANSITION_VIEW__INTERNAL_HISTORY_TRANSITION = 0;
+	int HISTORY_TRANSITION_VIEW__INTERNAL_HISTORY_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>History Transition View</em>' class.
@@ -2537,97 +2709,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORY_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Is Deep History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY = 4;
-
-	/**
-	 * The operation id for the '<em>Set Deep History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN = 5;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_TRANSITION_VIEW___GET_EFFECT = 6;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = 7;
-
-	/**
-	 * The operation id for the '<em>Get H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_TRANSITION_VIEW___GET_H = 8;
-
-	/**
-	 * The operation id for the '<em>Set H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_TRANSITION_VIEW___SET_H__STRING = 9;
+	int HISTORY_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -2636,7 +2718,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORY_TRANSITION_VIEW___GET_PRIORITY = 10;
+	int HISTORY_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -2645,7 +2727,97 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = 11;
+	int HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Is Deep History</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Deep History</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 7;
+
+	/**
+	 * The operation id for the '<em>Get H</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW___GET_H = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
+
+	/**
+	 * The operation id for the '<em>Set H</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTORY_TRANSITION_VIEW___SET_H__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 9;
 
 	/**
 	 * The number of operations of the '<em>History Transition View</em>' class.
@@ -2654,7 +2826,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORY_TRANSITION_VIEW_OPERATION_COUNT = 12;
+	int HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateHistoryTransitionViewImpl <em>Immediate History Transition View</em>}' class.
@@ -2664,7 +2836,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateHistoryTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW = 26;
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW = 27;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Immediate History Transition</b></em>' reference.
@@ -2673,7 +2854,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW__INTERNAL_IMMEDIATE_HISTORY_TRANSITION = 0;
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW__INTERNAL_IMMEDIATE_HISTORY_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Immediate History Transition View</em>' class.
@@ -2682,97 +2863,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Is Deep History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY = 4;
-
-	/**
-	 * The operation id for the '<em>Set Deep History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN = 5;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW___GET_EFFECT = 6;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = 7;
-
-	/**
-	 * The operation id for the '<em>Get H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW___GET_H = 8;
-
-	/**
-	 * The operation id for the '<em>Set H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_H__STRING = 9;
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -2781,7 +2872,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW___GET_PRIORITY = 10;
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -2790,7 +2881,97 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = 11;
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Is Deep History</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Deep History</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 7;
+
+	/**
+	 * The operation id for the '<em>Get H</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW___GET_H = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
+
+	/**
+	 * The operation id for the '<em>Set H</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_H__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 9;
 
 	/**
 	 * The number of operations of the '<em>Immediate History Transition View</em>' class.
@@ -2799,7 +2980,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = 12;
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.TerminationHistoryTransitionViewImpl <em>Termination History Transition View</em>}' class.
@@ -2809,7 +2990,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTerminationHistoryTransitionView()
 	 * @generated
 	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW = 27;
+	int TERMINATION_HISTORY_TRANSITION_VIEW = 28;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_HISTORY_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Termination History Transition</b></em>' reference.
@@ -2818,7 +3008,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW__INTERNAL_TERMINATION_HISTORY_TRANSITION = 0;
+	int TERMINATION_HISTORY_TRANSITION_VIEW__INTERNAL_TERMINATION_HISTORY_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Termination History Transition View</em>' class.
@@ -2827,79 +3017,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW___GET_DELAY = 0;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW___SET_DELAY__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Is Deep History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Deep History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN = 3;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW___GET_EFFECT = 4;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = 5;
-
-	/**
-	 * The operation id for the '<em>Get H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW___GET_H = 6;
-
-	/**
-	 * The operation id for the '<em>Set H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW___SET_H__STRING = 7;
+	int TERMINATION_HISTORY_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -2908,7 +3026,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW___GET_PRIORITY = 8;
+	int TERMINATION_HISTORY_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -2917,7 +3035,79 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = 9;
+	int TERMINATION_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_HISTORY_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_HISTORY_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Is Deep History</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Deep History</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_HISTORY_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Get H</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_HISTORY_TRANSITION_VIEW___GET_H = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
+
+	/**
+	 * The operation id for the '<em>Set H</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TERMINATION_HISTORY_TRANSITION_VIEW___SET_H__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 7;
 
 	/**
 	 * The number of operations of the '<em>Termination History Transition View</em>' class.
@@ -2926,7 +3116,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = 10;
+	int TERMINATION_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConditionalTerminationHistoryTransitionViewImpl <em>Conditional Termination History Transition View</em>}' class.
@@ -2936,7 +3126,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConditionalTerminationHistoryTransitionView()
 	 * @generated
 	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW = 28;
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW = 29;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Conditional Termination History Transition</b></em>' reference.
@@ -2945,7 +3144,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW__INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION = 0;
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW__INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Conditional Termination History Transition View</em>' class.
@@ -2954,97 +3153,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Is Deep History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY = 4;
-
-	/**
-	 * The operation id for the '<em>Set Deep History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN = 5;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___GET_EFFECT = 6;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = 7;
-
-	/**
-	 * The operation id for the '<em>Get H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___GET_H = 8;
-
-	/**
-	 * The operation id for the '<em>Set H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_H__STRING = 9;
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -3053,7 +3162,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___GET_PRIORITY = 10;
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -3062,7 +3171,97 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = 11;
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Is Deep History</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Deep History</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 7;
+
+	/**
+	 * The operation id for the '<em>Get H</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___GET_H = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
+
+	/**
+	 * The operation id for the '<em>Set H</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_H__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 9;
 
 	/**
 	 * The number of operations of the '<em>Conditional Termination History Transition View</em>' class.
@@ -3071,7 +3270,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = 12;
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.StrongAbortHistoryTransitionViewImpl <em>Strong Abort History Transition View</em>}' class.
@@ -3081,7 +3280,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getStrongAbortHistoryTransitionView()
 	 * @generated
 	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW = 29;
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW = 30;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Strong Abort History Transition</b></em>' reference.
@@ -3090,7 +3298,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW__INTERNAL_STRONG_ABORT_HISTORY_TRANSITION = 0;
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW__INTERNAL_STRONG_ABORT_HISTORY_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Strong Abort History Transition View</em>' class.
@@ -3099,97 +3307,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Is Deep History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY = 4;
-
-	/**
-	 * The operation id for the '<em>Set Deep History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN = 5;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_EFFECT = 6;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = 7;
-
-	/**
-	 * The operation id for the '<em>Get H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_H = 8;
-
-	/**
-	 * The operation id for the '<em>Set H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_H__STRING = 9;
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -3198,7 +3316,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_PRIORITY = 10;
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -3207,7 +3325,97 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = 11;
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Is Deep History</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Deep History</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 7;
+
+	/**
+	 * The operation id for the '<em>Get H</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_H = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
+
+	/**
+	 * The operation id for the '<em>Set H</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_H__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 9;
 
 	/**
 	 * The number of operations of the '<em>Strong Abort History Transition View</em>' class.
@@ -3216,7 +3424,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = 12;
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateStrongAbortHistoryTransitionViewImpl <em>Immediate Strong Abort History Transition View</em>}' class.
@@ -3226,7 +3434,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateStrongAbortHistoryTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW = 30;
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW = 31;
+
+	/**
+	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION;
 
 	/**
 	 * The feature id for the '<em><b>Internal Immediate Strong Abort History Transition</b></em>' reference.
@@ -3235,7 +3452,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW__INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION = 0;
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW__INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Immediate Strong Abort History Transition View</em>' class.
@@ -3244,97 +3461,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_DELAY = 2;
-
-	/**
-	 * The operation id for the '<em>Set Delay</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_DELAY__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Is Deep History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY = 4;
-
-	/**
-	 * The operation id for the '<em>Set Deep History</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN = 5;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_EFFECT = 6;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = 7;
-
-	/**
-	 * The operation id for the '<em>Get H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_H = 8;
-
-	/**
-	 * The operation id for the '<em>Set H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_H__STRING = 9;
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW_FEATURE_COUNT = ABSTRACT_TRANSITION_VIEW_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Priority</em>' operation.
@@ -3343,7 +3470,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_PRIORITY = 10;
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_PRIORITY = ABSTRACT_TRANSITION_VIEW___GET_PRIORITY;
 
 	/**
 	 * The operation id for the '<em>Set Priority</em>' operation.
@@ -3352,7 +3479,97 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = 11;
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_CONDITION = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_CONDITION__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_DELAY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Set Delay</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_DELAY__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Is Deep History</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Set Deep History</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_EFFECT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 7;
+
+	/**
+	 * The operation id for the '<em>Get H</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_H = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
+
+	/**
+	 * The operation id for the '<em>Set H</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_H__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 9;
 
 	/**
 	 * The number of operations of the '<em>Immediate Strong Abort History Transition View</em>' class.
@@ -3361,7 +3578,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = 12;
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionViewImpl <em>Connection View</em>}' class.
@@ -3371,7 +3588,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConnectionView()
 	 * @generated
 	 */
-	int CONNECTION_VIEW = 31;
+	int CONNECTION_VIEW = 32;
 
 	/**
 	 * The feature id for the '<em><b>Internal Connection</b></em>' reference.
@@ -3408,7 +3625,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSCChartView()
 	 * @generated
 	 */
-	int SC_CHART_VIEW = 32;
+	int SC_CHART_VIEW = 33;
 
 	/**
 	 * The feature id for the '<em><b>Internal SC Chart</b></em>' reference.
@@ -3445,7 +3662,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getRootStateDeclarationView()
 	 * @generated
 	 */
-	int ROOT_STATE_DECLARATION_VIEW = 33;
+	int ROOT_STATE_DECLARATION_VIEW = 34;
 
 	/**
 	 * The feature id for the '<em><b>Internal Root State Declaration</b></em>' reference.
@@ -3536,7 +3753,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuperStateDeclarationView()
 	 * @generated
 	 */
-	int SUPER_STATE_DECLARATION_VIEW = 34;
+	int SUPER_STATE_DECLARATION_VIEW = 35;
 
 	/**
 	 * The feature id for the '<em><b>Internal Super State Declaration</b></em>' reference.
@@ -3609,7 +3826,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuspendView()
 	 * @generated
 	 */
-	int SUSPEND_VIEW = 35;
+	int SUSPEND_VIEW = 36;
 
 	/**
 	 * The feature id for the '<em><b>Internal Suspend</b></em>' reference.
@@ -3700,7 +3917,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getActionView()
 	 * @generated
 	 */
-	int ACTION_VIEW = 36;
+	int ACTION_VIEW = 37;
 
 	/**
 	 * The feature id for the '<em><b>Internal Action</b></em>' reference.
@@ -4596,6 +4813,47 @@ public interface ViewsPackage extends EPackage {
 	EReference getConnectorView_InternalConnector();
 
 	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AbstractTransitionView <em>Abstract Transition View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Abstract Transition View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.AbstractTransitionView
+	 * @generated
+	 */
+	EClass getAbstractTransitionView();
+
+	/**
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AbstractTransitionView#getInternalAbstractTransition <em>Internal Abstract Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Internal Abstract Transition</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.AbstractTransitionView#getInternalAbstractTransition()
+	 * @see #getAbstractTransitionView()
+	 * @generated
+	 */
+	EReference getAbstractTransitionView_InternalAbstractTransition();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AbstractTransitionView#getPriority() <em>Get Priority</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Priority</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.AbstractTransitionView#getPriority()
+	 * @generated
+	 */
+	EOperation getAbstractTransitionView__GetPriority();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AbstractTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Priority</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.AbstractTransitionView#setPriority(java.lang.String)
+	 * @generated
+	 */
+	EOperation getAbstractTransitionView__SetPriority__String();
+
+	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView <em>Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4675,26 +4933,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getTransitionView__SetEffect__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getTransitionView__SetPriority__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTransitionView <em>Immediate Transition View</em>}'.
@@ -4778,26 +5016,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getImmediateTransitionView__SetEffect__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getImmediateTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getImmediateTransitionView__SetPriority__String();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationTransitionView <em>Termination Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4837,26 +5055,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getTerminationTransitionView__SetEffect__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TerminationTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getTerminationTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TerminationTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getTerminationTransitionView__SetPriority__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationTransitionView <em>Conditional Termination Transition View</em>}'.
@@ -4940,26 +5138,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getConditionalTerminationTransitionView__SetEffect__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getConditionalTerminationTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getConditionalTerminationTransitionView__SetPriority__String();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortTransitionView <em>Strong Abort Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5039,26 +5217,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getStrongAbortTransitionView__SetEffect__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getStrongAbortTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getStrongAbortTransitionView__SetPriority__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortTransitionView <em>Immediate Strong Abort Transition View</em>}'.
@@ -5142,26 +5300,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getImmediateStrongAbortTransitionView__SetEffect__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getImmediateStrongAbortTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getImmediateStrongAbortTransitionView__SetPriority__String();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.DeferredTransitionView <em>Deferred Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5241,26 +5379,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getDeferredTransitionView__SetEffect__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.DeferredTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.DeferredTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getDeferredTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.DeferredTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.DeferredTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getDeferredTransitionView__SetPriority__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateDeferredTransitionView <em>Immediate Deferred Transition View</em>}'.
@@ -5344,26 +5462,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getImmediateDeferredTransitionView__SetEffect__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateDeferredTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateDeferredTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getImmediateDeferredTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateDeferredTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateDeferredTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getImmediateDeferredTransitionView__SetPriority__String();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationDefferdTransitionView <em>Termination Defferd Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5423,26 +5521,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getTerminationDefferdTransitionView__SetEffect__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationDefferdTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TerminationDefferdTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getTerminationDefferdTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationDefferdTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TerminationDefferdTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getTerminationDefferdTransitionView__SetPriority__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationDeferredTransitionView <em>Conditional Termination Deferred Transition View</em>}'.
@@ -5526,26 +5604,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getConditionalTerminationDeferredTransitionView__SetEffect__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationDeferredTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationDeferredTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getConditionalTerminationDeferredTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationDeferredTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationDeferredTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getConditionalTerminationDeferredTransitionView__SetPriority__String();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortDeferredTransitionView <em>Strong Abort Deferred Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5627,26 +5685,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getStrongAbortDeferredTransitionView__SetEffect__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortDeferredTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortDeferredTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getStrongAbortDeferredTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortDeferredTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortDeferredTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getStrongAbortDeferredTransitionView__SetPriority__String();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortDeferredTransitionView <em>Immediate Strong Abort Deferred Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5726,26 +5764,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getImmediateStrongAbortDeferredTransitionView__SetEffect__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortDeferredTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortDeferredTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getImmediateStrongAbortDeferredTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortDeferredTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortDeferredTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getImmediateStrongAbortDeferredTransitionView__SetPriority__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView <em>History Transition View</em>}'.
@@ -5869,26 +5887,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getHistoryTransitionView__SetH__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getHistoryTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getHistoryTransitionView__SetPriority__String();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateHistoryTransitionView <em>Immediate History Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6010,26 +6008,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getImmediateHistoryTransitionView__SetH__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateHistoryTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateHistoryTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getImmediateHistoryTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateHistoryTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateHistoryTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getImmediateHistoryTransitionView__SetPriority__String();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationHistoryTransitionView <em>Termination History Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6129,26 +6107,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getTerminationHistoryTransitionView__SetH__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationHistoryTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TerminationHistoryTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getTerminationHistoryTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationHistoryTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TerminationHistoryTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getTerminationHistoryTransitionView__SetPriority__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationHistoryTransitionView <em>Conditional Termination History Transition View</em>}'.
@@ -6272,26 +6230,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getConditionalTerminationHistoryTransitionView__SetH__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationHistoryTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationHistoryTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getConditionalTerminationHistoryTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationHistoryTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationHistoryTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getConditionalTerminationHistoryTransitionView__SetPriority__String();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortHistoryTransitionView <em>Strong Abort History Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6413,26 +6351,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getStrongAbortHistoryTransitionView__SetH__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortHistoryTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortHistoryTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getStrongAbortHistoryTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortHistoryTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortHistoryTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getStrongAbortHistoryTransitionView__SetPriority__String();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortHistoryTransitionView <em>Immediate Strong Abort History Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6552,26 +6470,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getImmediateStrongAbortHistoryTransitionView__SetH__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortHistoryTransitionView#getPriority() <em>Get Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortHistoryTransitionView#getPriority()
-	 * @generated
-	 */
-	EOperation getImmediateStrongAbortHistoryTransitionView__GetPriority();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortHistoryTransitionView#setPriority(java.lang.String) <em>Set Priority</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Priority</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortHistoryTransitionView#setPriority(java.lang.String)
-	 * @generated
-	 */
-	EOperation getImmediateStrongAbortHistoryTransitionView__SetPriority__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionView <em>Connection View</em>}'.
@@ -7613,6 +7511,40 @@ public interface ViewsPackage extends EPackage {
 		EReference CONNECTOR_VIEW__INTERNAL_CONNECTOR = eINSTANCE.getConnectorView_InternalConnector();
 
 		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.AbstractTransitionViewImpl <em>Abstract Transition View</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.AbstractTransitionViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getAbstractTransitionView()
+		 * @generated
+		 */
+		EClass ABSTRACT_TRANSITION_VIEW = eINSTANCE.getAbstractTransitionView();
+
+		/**
+		 * The meta object literal for the '<em><b>Internal Abstract Transition</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ABSTRACT_TRANSITION_VIEW__INTERNAL_ABSTRACT_TRANSITION = eINSTANCE.getAbstractTransitionView_InternalAbstractTransition();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ABSTRACT_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getAbstractTransitionView__GetPriority();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ABSTRACT_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getAbstractTransitionView__SetPriority__String();
+
+		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.TransitionViewImpl <em>Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7677,22 +7609,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getTransitionView__SetEffect__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getTransitionView__SetPriority__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateTransitionViewImpl <em>Immediate Transition View</em>}' class.
@@ -7761,22 +7677,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation IMMEDIATE_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getImmediateTransitionView__SetEffect__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getImmediateTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getImmediateTransitionView__SetPriority__String();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.TerminationTransitionViewImpl <em>Termination Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7809,22 +7709,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation TERMINATION_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getTerminationTransitionView__SetEffect__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TERMINATION_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getTerminationTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TERMINATION_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getTerminationTransitionView__SetPriority__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConditionalTerminationTransitionViewImpl <em>Conditional Termination Transition View</em>}' class.
@@ -7893,22 +7777,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation CONDITIONAL_TERMINATION_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getConditionalTerminationTransitionView__SetEffect__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation CONDITIONAL_TERMINATION_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getConditionalTerminationTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation CONDITIONAL_TERMINATION_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getConditionalTerminationTransitionView__SetPriority__String();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.StrongAbortTransitionViewImpl <em>Strong Abort Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7973,22 +7841,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation STRONG_ABORT_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getStrongAbortTransitionView__SetEffect__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation STRONG_ABORT_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getStrongAbortTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation STRONG_ABORT_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getStrongAbortTransitionView__SetPriority__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateStrongAbortTransitionViewImpl <em>Immediate Strong Abort Transition View</em>}' class.
@@ -8057,22 +7909,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getImmediateStrongAbortTransitionView__SetEffect__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getImmediateStrongAbortTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getImmediateStrongAbortTransitionView__SetPriority__String();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.DeferredTransitionViewImpl <em>Deferred Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -8137,22 +7973,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getDeferredTransitionView__SetEffect__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation DEFERRED_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getDeferredTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getDeferredTransitionView__SetPriority__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateDeferredTransitionViewImpl <em>Immediate Deferred Transition View</em>}' class.
@@ -8221,22 +8041,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation IMMEDIATE_DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getImmediateDeferredTransitionView__SetEffect__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_DEFERRED_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getImmediateDeferredTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getImmediateDeferredTransitionView__SetPriority__String();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.TerminationDefferdTransitionViewImpl <em>Termination Defferd Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -8285,22 +8089,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation TERMINATION_DEFFERD_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getTerminationDefferdTransitionView__SetEffect__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TERMINATION_DEFFERD_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getTerminationDefferdTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TERMINATION_DEFFERD_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getTerminationDefferdTransitionView__SetPriority__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConditionalTerminationDeferredTransitionViewImpl <em>Conditional Termination Deferred Transition View</em>}' class.
@@ -8369,22 +8157,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getConditionalTerminationDeferredTransitionView__SetEffect__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getConditionalTerminationDeferredTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getConditionalTerminationDeferredTransitionView__SetPriority__String();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.StrongAbortDeferredTransitionViewImpl <em>Strong Abort Deferred Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -8451,22 +8223,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getStrongAbortDeferredTransitionView__SetEffect__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getStrongAbortDeferredTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getStrongAbortDeferredTransitionView__SetPriority__String();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateStrongAbortDeferredTransitionViewImpl <em>Immediate Strong Abort Deferred Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -8531,22 +8287,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getImmediateStrongAbortDeferredTransitionView__SetEffect__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getImmediateStrongAbortDeferredTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getImmediateStrongAbortDeferredTransitionView__SetPriority__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.HistoryTransitionViewImpl <em>History Transition View</em>}' class.
@@ -8647,22 +8387,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation HISTORY_TRANSITION_VIEW___SET_H__STRING = eINSTANCE.getHistoryTransitionView__SetH__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation HISTORY_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getHistoryTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getHistoryTransitionView__SetPriority__String();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateHistoryTransitionViewImpl <em>Immediate History Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -8761,22 +8485,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_H__STRING = eINSTANCE.getImmediateHistoryTransitionView__SetH__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_HISTORY_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getImmediateHistoryTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getImmediateHistoryTransitionView__SetPriority__String();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.TerminationHistoryTransitionViewImpl <em>Termination History Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -8857,22 +8565,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation TERMINATION_HISTORY_TRANSITION_VIEW___SET_H__STRING = eINSTANCE.getTerminationHistoryTransitionView__SetH__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TERMINATION_HISTORY_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getTerminationHistoryTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TERMINATION_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getTerminationHistoryTransitionView__SetPriority__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConditionalTerminationHistoryTransitionViewImpl <em>Conditional Termination History Transition View</em>}' class.
@@ -8973,22 +8665,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_H__STRING = eINSTANCE.getConditionalTerminationHistoryTransitionView__SetH__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getConditionalTerminationHistoryTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getConditionalTerminationHistoryTransitionView__SetPriority__String();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.StrongAbortHistoryTransitionViewImpl <em>Strong Abort History Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -9087,22 +8763,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_H__STRING = eINSTANCE.getStrongAbortHistoryTransitionView__SetH__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getStrongAbortHistoryTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getStrongAbortHistoryTransitionView__SetPriority__String();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateStrongAbortHistoryTransitionViewImpl <em>Immediate Strong Abort History Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -9199,22 +8859,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_H__STRING = eINSTANCE.getImmediateStrongAbortHistoryTransitionView__SetH__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_PRIORITY = eINSTANCE.getImmediateStrongAbortHistoryTransitionView__GetPriority();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Priority</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING = eINSTANCE.getImmediateStrongAbortHistoryTransitionView__SetPriority__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionViewImpl <em>Connection View</em>}' class.

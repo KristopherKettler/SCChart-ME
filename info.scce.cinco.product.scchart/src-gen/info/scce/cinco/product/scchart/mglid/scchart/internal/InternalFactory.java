@@ -139,6 +139,15 @@ public interface InternalFactory extends EFactory {
 	InternalConnector createInternalConnector();
 
 	/**
+	 * Returns a new object of class '<em>Abstract Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Abstract Transition</em>'.
+	 * @generated
+	 */
+	InternalAbstractTransition createInternalAbstractTransition();
+
+	/**
 	 * Returns a new object of class '<em>Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

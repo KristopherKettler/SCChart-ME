@@ -69,6 +69,7 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.INITIAL_STATE_VIEW: return createInitialStateView();
 			case ViewsPackage.FINAL_STATE_VIEW: return createFinalStateView();
 			case ViewsPackage.CONNECTOR_VIEW: return createConnectorView();
+			case ViewsPackage.ABSTRACT_TRANSITION_VIEW: return createAbstractTransitionView();
 			case ViewsPackage.TRANSITION_VIEW: return createTransitionView();
 			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW: return createImmediateTransitionView();
 			case ViewsPackage.TERMINATION_TRANSITION_VIEW: return createTerminationTransitionView();
@@ -239,6 +240,17 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public ConnectorView createConnectorView() {
 		ConnectorViewImpl connectorView = new ConnectorViewImpl();
 		return connectorView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AbstractTransitionView createAbstractTransitionView() {
+		AbstractTransitionViewImpl abstractTransitionView = new AbstractTransitionViewImpl();
+		return abstractTransitionView;
 	}
 
 	/**

@@ -17,7 +17,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +31,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class ImmediateStrongAbortDeferredTransitionViewImpl extends EObjectImpl implements ImmediateStrongAbortDeferredTransitionView {
+public class ImmediateStrongAbortDeferredTransitionViewImpl extends AbstractTransitionViewImpl implements ImmediateStrongAbortDeferredTransitionView {
 	/**
 	 * The cached value of the '{@link #getInternalImmediateStrongAbortDeferredTransition() <em>Internal Immediate Strong Abort Deferred Transition</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -177,29 +176,6 @@ public class ImmediateStrongAbortDeferredTransitionViewImpl extends EObjectImpl 
 	 * @generated
 	 */
 	@Override
-	public String getPriority() {
-		return getInternalImmediateStrongAbortDeferredTransition().getPriority();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPriority(final String _arg) {
-		getInternalImmediateStrongAbortDeferredTransition().getElement().transact("Set Priority", () -> {
-			getInternalImmediateStrongAbortDeferredTransition().setPriority(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW__INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION:
@@ -275,11 +251,6 @@ public class ImmediateStrongAbortDeferredTransitionViewImpl extends EObjectImpl 
 				return getEffect();
 			case ViewsPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_EFFECT__STRING:
 				setEffect((String)arguments.get(0));
-				return null;
-			case ViewsPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_PRIORITY:
-				return getPriority();
-			case ViewsPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_PRIORITY__STRING:
-				setPriority((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

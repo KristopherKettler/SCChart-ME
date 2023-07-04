@@ -2,8 +2,6 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.internal.impl;
 
-import graphmodel.internal.impl.InternalEdgeImpl;
-
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationTransition;
 
@@ -22,12 +20,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * </p>
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationTransitionImpl#getEffect <em>Effect</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationTransitionImpl#getPriority <em>Priority</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class InternalTerminationTransitionImpl extends InternalEdgeImpl implements InternalTerminationTransition {
+public class InternalTerminationTransitionImpl extends InternalAbstractTransitionImpl implements InternalTerminationTransition {
 	/**
 	 * The default value of the '{@link #getEffect() <em>Effect</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -47,26 +44,6 @@ public class InternalTerminationTransitionImpl extends InternalEdgeImpl implemen
 	 * @ordered
 	 */
 	protected String effect = EFFECT_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getPriority() <em>Priority</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPriority()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String PRIORITY_EDEFAULT = "0";
-
-	/**
-	 * The cached value of the '{@link #getPriority() <em>Priority</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPriority()
-	 * @generated
-	 * @ordered
-	 */
-	protected String priority = PRIORITY_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -116,35 +93,10 @@ public class InternalTerminationTransitionImpl extends InternalEdgeImpl implemen
 	 * @generated
 	 */
 	@Override
-	public String getPriority() {
-		return priority;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPriority(String newPriority) {
-		String oldPriority = priority;
-		priority = newPriority;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_TERMINATION_TRANSITION__PRIORITY, oldPriority, priority));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case InternalPackage.INTERNAL_TERMINATION_TRANSITION__EFFECT:
 				return getEffect();
-			case InternalPackage.INTERNAL_TERMINATION_TRANSITION__PRIORITY:
-				return getPriority();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -159,9 +111,6 @@ public class InternalTerminationTransitionImpl extends InternalEdgeImpl implemen
 		switch (featureID) {
 			case InternalPackage.INTERNAL_TERMINATION_TRANSITION__EFFECT:
 				setEffect((String)newValue);
-				return;
-			case InternalPackage.INTERNAL_TERMINATION_TRANSITION__PRIORITY:
-				setPriority((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -178,9 +127,6 @@ public class InternalTerminationTransitionImpl extends InternalEdgeImpl implemen
 			case InternalPackage.INTERNAL_TERMINATION_TRANSITION__EFFECT:
 				setEffect(EFFECT_EDEFAULT);
 				return;
-			case InternalPackage.INTERNAL_TERMINATION_TRANSITION__PRIORITY:
-				setPriority(PRIORITY_EDEFAULT);
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -195,8 +141,6 @@ public class InternalTerminationTransitionImpl extends InternalEdgeImpl implemen
 		switch (featureID) {
 			case InternalPackage.INTERNAL_TERMINATION_TRANSITION__EFFECT:
 				return EFFECT_EDEFAULT == null ? effect != null : !EFFECT_EDEFAULT.equals(effect);
-			case InternalPackage.INTERNAL_TERMINATION_TRANSITION__PRIORITY:
-				return PRIORITY_EDEFAULT == null ? priority != null : !PRIORITY_EDEFAULT.equals(priority);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -213,8 +157,6 @@ public class InternalTerminationTransitionImpl extends InternalEdgeImpl implemen
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (effect: ");
 		result.append(effect);
-		result.append(", priority: ");
-		result.append(priority);
 		result.append(')');
 		return result.toString();
 	}

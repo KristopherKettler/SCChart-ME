@@ -90,7 +90,7 @@ public interface Connection extends Edge {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	Node getSourceElement();
+	RootState getSourceElement();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -98,39 +98,7 @@ public interface Connection extends Edge {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	InitilalSuperState getTargetElement();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectSource(SuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(SuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectSource(InitilalSuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(InitilalSuperState source);
+	Node getTargetElement();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,22 +115,6 @@ public interface Connection extends Edge {
 	 * @generated
 	 */
 	void reconnectSource(RootState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectTarget(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	void reconnectTarget(InitilalSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->

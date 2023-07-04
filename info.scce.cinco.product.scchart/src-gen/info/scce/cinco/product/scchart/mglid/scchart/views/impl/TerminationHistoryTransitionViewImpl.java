@@ -17,7 +17,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +31,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class TerminationHistoryTransitionViewImpl extends EObjectImpl implements TerminationHistoryTransitionView {
+public class TerminationHistoryTransitionViewImpl extends AbstractTransitionViewImpl implements TerminationHistoryTransitionView {
 	/**
 	 * The cached value of the '{@link #getInternalTerminationHistoryTransition() <em>Internal Termination History Transition</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -200,29 +199,6 @@ public class TerminationHistoryTransitionViewImpl extends EObjectImpl implements
 	 * @generated
 	 */
 	@Override
-	public String getPriority() {
-		return getInternalTerminationHistoryTransition().getPriority();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPriority(final String _arg) {
-		getInternalTerminationHistoryTransition().getElement().transact("Set Priority", () -> {
-			getInternalTerminationHistoryTransition().setPriority(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW__INTERNAL_TERMINATION_HISTORY_TRANSITION:
@@ -303,11 +279,6 @@ public class TerminationHistoryTransitionViewImpl extends EObjectImpl implements
 				return getH();
 			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___SET_H__STRING:
 				setH((String)arguments.get(0));
-				return null;
-			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___GET_PRIORITY:
-				return getPriority();
-			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING:
-				setPriority((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

@@ -69,6 +69,7 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_INITIAL_STATE: return createInternalInitialState();
 			case InternalPackage.INTERNAL_FINAL_STATE: return createInternalFinalState();
 			case InternalPackage.INTERNAL_CONNECTOR: return createInternalConnector();
+			case InternalPackage.INTERNAL_ABSTRACT_TRANSITION: return createInternalAbstractTransition();
 			case InternalPackage.INTERNAL_TRANSITION: return createInternalTransition();
 			case InternalPackage.INTERNAL_IMMEDIATE_TRANSITION: return createInternalImmediateTransition();
 			case InternalPackage.INTERNAL_TERMINATION_TRANSITION: return createInternalTerminationTransition();
@@ -239,6 +240,17 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalConnector createInternalConnector() {
 		InternalConnectorImpl internalConnector = new InternalConnectorImpl();
 		return internalConnector;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalAbstractTransition createInternalAbstractTransition() {
+		InternalAbstractTransitionImpl internalAbstractTransition = new InternalAbstractTransitionImpl();
+		return internalAbstractTransition;
 	}
 
 	/**

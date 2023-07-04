@@ -198,7 +198,7 @@ public interface Region extends Container {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<Connector> getConnectors();
+	EList<InitilalSuperState> getInitilalSuperStates();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -206,7 +206,7 @@ public interface Region extends Container {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewConnector();
+	boolean canNewInitilalSuperState();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,7 +214,7 @@ public interface Region extends Container {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	Connector newConnector(int x, int y);
+	InitilalSuperState newInitilalSuperState(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -222,7 +222,7 @@ public interface Region extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	Connector newConnector(String id, int x, int y);
+	InitilalSuperState newInitilalSuperState(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -230,7 +230,7 @@ public interface Region extends Container {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	Connector newConnector(int x, int y, int width, int height);
+	InitilalSuperState newInitilalSuperState(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -238,7 +238,7 @@ public interface Region extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	Connector newConnector(String id, int x, int y, int width, int height);
+	InitilalSuperState newInitilalSuperState(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -390,7 +390,7 @@ public interface Region extends Container {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<InitilalSuperState> getInitilalSuperStates();
+	EList<Connector> getConnectors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -398,7 +398,7 @@ public interface Region extends Container {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewInitilalSuperState();
+	boolean canNewConnector();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -406,7 +406,7 @@ public interface Region extends Container {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	InitilalSuperState newInitilalSuperState(int x, int y);
+	Connector newConnector(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,7 +414,7 @@ public interface Region extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	InitilalSuperState newInitilalSuperState(String id, int x, int y);
+	Connector newConnector(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -422,7 +422,7 @@ public interface Region extends Container {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	InitilalSuperState newInitilalSuperState(int x, int y, int width, int height);
+	Connector newConnector(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -430,7 +430,7 @@ public interface Region extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	InitilalSuperState newInitilalSuperState(String id, int x, int y, int width, int height);
+	Connector newConnector(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->

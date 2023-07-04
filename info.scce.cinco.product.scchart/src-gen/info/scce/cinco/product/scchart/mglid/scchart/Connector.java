@@ -3,7 +3,6 @@
 package info.scce.cinco.product.scchart.mglid.scchart;
 
 import graphmodel.Direction;
-import graphmodel.Edge;
 import graphmodel.ModelElementContainer;
 import graphmodel.Node;
 
@@ -94,7 +93,7 @@ public interface Connector extends Node {
 	 * @model kind="operation" required="true" many="false"
 	 * @generated
 	 */
-	EList<? extends Edge> getOutgoing();
+	EList<? extends AbstractTransition> getOutgoing();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -110,7 +109,7 @@ public interface Connector extends Node {
 	 * @model kind="operation" required="true" many="false"
 	 * @generated
 	 */
-	EList<? extends Edge> getIncoming();
+	EList<? extends AbstractTransition> getIncoming();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -174,39 +173,15 @@ public interface Connector extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	EList<AbstractTransition> getOutgoingAbstractTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	EList<ImmediateTransition> getOutgoingImmediateTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<ImmediateStrongAbortTransition> getIncomingImmediateStrongAbortTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<ConditionalTerminationTransition> getIncomingConditionalTerminationTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<TerminationTransition> getIncomingTerminationTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<StrongAbortTransition> getIncomingStrongAbortTransitions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -222,7 +197,47 @@ public interface Connector extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	EList<AbstractTransition> getIncomingAbstractTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<ConditionalTerminationTransition> getIncomingConditionalTerminationTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	EList<ImmediateTransition> getIncomingImmediateTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<StrongAbortTransition> getIncomingStrongAbortTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<ImmediateStrongAbortTransition> getIncomingImmediateStrongAbortTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<TerminationTransition> getIncomingTerminationTransitions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -358,7 +373,7 @@ public interface Connector extends Node {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewTransition(Connector target);
+	boolean canNewTransition(InitilalSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -366,7 +381,7 @@ public interface Connector extends Node {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	Transition newTransition(Connector target);
+	Transition newTransition(InitilalSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -374,7 +389,7 @@ public interface Connector extends Node {
 	 * @model targetRequired="true" idRequired="true"
 	 * @generated
 	 */
-	Transition newTransition(Connector target, String id);
+	Transition newTransition(InitilalSuperState target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -454,7 +469,7 @@ public interface Connector extends Node {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewTransition(InitilalSuperState target);
+	boolean canNewTransition(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -462,7 +477,7 @@ public interface Connector extends Node {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	Transition newTransition(InitilalSuperState target);
+	Transition newTransition(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -470,7 +485,7 @@ public interface Connector extends Node {
 	 * @model targetRequired="true" idRequired="true"
 	 * @generated
 	 */
-	Transition newTransition(InitilalSuperState target, String id);
+	Transition newTransition(Connector target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -502,7 +517,7 @@ public interface Connector extends Node {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewImmediateTransition(Connector target);
+	boolean canNewImmediateTransition(InitilalSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -510,7 +525,7 @@ public interface Connector extends Node {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	ImmediateTransition newImmediateTransition(Connector target);
+	ImmediateTransition newImmediateTransition(InitilalSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -518,7 +533,7 @@ public interface Connector extends Node {
 	 * @model targetRequired="true" idRequired="true"
 	 * @generated
 	 */
-	ImmediateTransition newImmediateTransition(Connector target, String id);
+	ImmediateTransition newImmediateTransition(InitilalSuperState target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -598,7 +613,7 @@ public interface Connector extends Node {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewImmediateTransition(InitilalSuperState target);
+	boolean canNewImmediateTransition(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -606,7 +621,7 @@ public interface Connector extends Node {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	ImmediateTransition newImmediateTransition(InitilalSuperState target);
+	ImmediateTransition newImmediateTransition(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -614,7 +629,7 @@ public interface Connector extends Node {
 	 * @model targetRequired="true" idRequired="true"
 	 * @generated
 	 */
-	ImmediateTransition newImmediateTransition(InitilalSuperState target, String id);
+	ImmediateTransition newImmediateTransition(Connector target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->

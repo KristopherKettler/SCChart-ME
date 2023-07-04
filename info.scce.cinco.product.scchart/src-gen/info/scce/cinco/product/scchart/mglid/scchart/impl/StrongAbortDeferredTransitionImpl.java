@@ -8,8 +8,7 @@ import graphmodel.IdentifiableElement;
 import graphmodel.ModelElement;
 import graphmodel.Node;
 
-import graphmodel.impl.EdgeImpl;
-
+import info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class StrongAbortDeferredTransitionImpl extends EdgeImpl implements StrongAbortDeferredTransition {
+public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl implements StrongAbortDeferredTransition {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -119,29 +118,6 @@ public class StrongAbortDeferredTransitionImpl extends EdgeImpl implements Stron
 	public void setEffect(final String _arg) {
 		getInternalStrongAbortDeferredTransition().getElement().transact("Set Effect", () -> {
 			getInternalStrongAbortDeferredTransition().setEffect(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getPriority() {
-		return getInternalStrongAbortDeferredTransition().getPriority();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPriority(final String _arg) {
-		getInternalStrongAbortDeferredTransition().getElement().transact("Set Priority", () -> {
-			getInternalStrongAbortDeferredTransition().setPriority(_arg);
 		});
 		
 	}
@@ -394,6 +370,21 @@ public class StrongAbortDeferredTransitionImpl extends EdgeImpl implements Stron
 				default: return super.eDerivedOperationID(baseOperationID, baseClass);
 			}
 		}
+		if (baseClass == AbstractTransition.class) {
+			switch (baseOperationID) {
+				case ScchartPackage.ABSTRACT_TRANSITION___PRE_DELETE: return ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___PRE_DELETE;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_POST_DELETE_FUNCTION: return ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___GET_POST_DELETE_FUNCTION;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_POST_DELETE_EVENT: return ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___GET_POST_DELETE_EVENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___PRE_SAVE: return ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___PRE_SAVE;
+				case ScchartPackage.ABSTRACT_TRANSITION___POST_SAVE: return ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___POST_SAVE;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_ROOT_ELEMENT: return ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___GET_ROOT_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_SOURCE_ELEMENT: return ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___GET_SOURCE_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___GET_TARGET_ELEMENT: return ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___GET_TARGET_ELEMENT;
+				case ScchartPackage.ABSTRACT_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE: return ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE;
+				case ScchartPackage.ABSTRACT_TRANSITION___RECONNECT_SOURCE__ROOTSTATE: return ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_SOURCE__ROOTSTATE;
+				default: return super.eDerivedOperationID(baseOperationID, baseClass);
+			}
+		}
 		return super.eDerivedOperationID(baseOperationID, baseClass);
 	}
 
@@ -419,11 +410,6 @@ public class StrongAbortDeferredTransitionImpl extends EdgeImpl implements Stron
 				return getEffect();
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___SET_EFFECT__STRING:
 				setEffect((String)arguments.get(0));
-				return null;
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___GET_PRIORITY:
-				return getPriority();
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___SET_PRIORITY__STRING:
-				setPriority((String)arguments.get(0));
 				return null;
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___GET_INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION:
 				return getInternalStrongAbortDeferredTransition();

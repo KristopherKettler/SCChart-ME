@@ -82,9 +82,26 @@ public class InternalInitilalSuperStateImpl extends InternalSuperStateImpl imple
 	 */
 	@Override
 	public EList<ConnectionConstraint> getIncomingConstraints() {
-		ConnectionConstraint cons0 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.Transition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationDefferdTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.Connection.class);
+		ConnectionConstraint cons0 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
+		ConnectionConstraint cons1 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class);
+		ConnectionConstraint cons2 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class);
+		ConnectionConstraint cons3 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition.class);
+		ConnectionConstraint cons4 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class);
+		ConnectionConstraint cons5 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortTransition.class);
+		ConnectionConstraint cons6 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
+		ConnectionConstraint cons7 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateDeferredTransition.class);
+		ConnectionConstraint cons8 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationDefferdTransition.class);
+		ConnectionConstraint cons9 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationDeferredTransition.class);
+		ConnectionConstraint cons10 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition.class);
+		ConnectionConstraint cons11 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortDeferredTransition.class);
+		ConnectionConstraint cons12 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
+		ConnectionConstraint cons13 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateHistoryTransition.class);
+		ConnectionConstraint cons14 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition.class);
+		ConnectionConstraint cons15 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationHistoryTransition.class);
+		ConnectionConstraint cons16 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition.class);
+		ConnectionConstraint cons17 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortHistoryTransition.class);
 		org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>eList = new org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>();
-		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0));
+		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0,cons1,cons2,cons3,cons4,cons5,cons6,cons7,cons8,cons9,cons10,cons11,cons12,cons13,cons14,cons15,cons16,cons17));
 		eList.addAll(super.getIncomingConstraints());
 		return eList;
 		
@@ -97,9 +114,26 @@ public class InternalInitilalSuperStateImpl extends InternalSuperStateImpl imple
 	 */
 	@Override
 	public EList<ConnectionConstraint> getOutgoingConstraints() {
-		ConnectionConstraint cons0 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.Transition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationDefferdTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.Connection.class);
+		ConnectionConstraint cons0 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
+		ConnectionConstraint cons1 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class);
+		ConnectionConstraint cons2 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class);
+		ConnectionConstraint cons3 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition.class);
+		ConnectionConstraint cons4 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class);
+		ConnectionConstraint cons5 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortTransition.class);
+		ConnectionConstraint cons6 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
+		ConnectionConstraint cons7 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateDeferredTransition.class);
+		ConnectionConstraint cons8 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationDefferdTransition.class);
+		ConnectionConstraint cons9 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationDeferredTransition.class);
+		ConnectionConstraint cons10 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition.class);
+		ConnectionConstraint cons11 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortDeferredTransition.class);
+		ConnectionConstraint cons12 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
+		ConnectionConstraint cons13 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateHistoryTransition.class);
+		ConnectionConstraint cons14 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition.class);
+		ConnectionConstraint cons15 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationHistoryTransition.class);
+		ConnectionConstraint cons16 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition.class);
+		ConnectionConstraint cons17 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortHistoryTransition.class);
 		org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>eList = new org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>();
-		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0));
+		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0,cons1,cons2,cons3,cons4,cons5,cons6,cons7,cons8,cons9,cons10,cons11,cons12,cons13,cons14,cons15,cons16,cons17));
 		eList.addAll(super.getOutgoingConstraints());
 		return eList;
 		

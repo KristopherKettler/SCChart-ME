@@ -17,7 +17,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +31,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class ImmediateStrongAbortHistoryTransitionViewImpl extends EObjectImpl implements ImmediateStrongAbortHistoryTransitionView {
+public class ImmediateStrongAbortHistoryTransitionViewImpl extends AbstractTransitionViewImpl implements ImmediateStrongAbortHistoryTransitionView {
 	/**
 	 * The cached value of the '{@link #getInternalImmediateStrongAbortHistoryTransition() <em>Internal Immediate Strong Abort History Transition</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -223,29 +222,6 @@ public class ImmediateStrongAbortHistoryTransitionViewImpl extends EObjectImpl i
 	 * @generated
 	 */
 	@Override
-	public String getPriority() {
-		return getInternalImmediateStrongAbortHistoryTransition().getPriority();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPriority(final String _arg) {
-		getInternalImmediateStrongAbortHistoryTransition().getElement().transact("Set Priority", () -> {
-			getInternalImmediateStrongAbortHistoryTransition().setPriority(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW__INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION:
@@ -331,11 +307,6 @@ public class ImmediateStrongAbortHistoryTransitionViewImpl extends EObjectImpl i
 				return getH();
 			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_H__STRING:
 				setH((String)arguments.get(0));
-				return null;
-			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_PRIORITY:
-				return getPriority();
-			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_PRIORITY__STRING:
-				setPriority((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);
