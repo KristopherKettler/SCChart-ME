@@ -139,6 +139,24 @@ public interface InternalFactory extends EFactory {
 	InternalConnector createInternalConnector();
 
 	/**
+	 * Returns a new object of class '<em>Input</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Input</em>'.
+	 * @generated
+	 */
+	InternalInput createInternalInput();
+
+	/**
+	 * Returns a new object of class '<em>Output</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Output</em>'.
+	 * @generated
+	 */
+	InternalOutput createInternalOutput();
+
+	/**
 	 * Returns a new object of class '<em>Abstract Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

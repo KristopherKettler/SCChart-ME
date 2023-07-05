@@ -11,6 +11,8 @@ import graphmodel.Node;
 import graphmodel.impl.EdgeImpl;
 
 import info.scce.cinco.product.scchart.mglid.scchart.Connection;
+import info.scce.cinco.product.scchart.mglid.scchart.Input;
+import info.scce.cinco.product.scchart.mglid.scchart.Output;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
 import info.scce.cinco.product.scchart.mglid.scchart.ScchartPackage;
@@ -141,8 +143,8 @@ public class ConnectionImpl extends EdgeImpl implements Connection {
 	 * @generated
 	 */
 	@Override
-	public RootState getSourceElement() {
-		return(info.scce.cinco.product.scchart.mglid.scchart.RootState)super.getSourceElement();
+	public Node getSourceElement() {
+		return(graphmodel.Node)super.getSourceElement();
 	}
 
 	/**
@@ -151,8 +153,8 @@ public class ConnectionImpl extends EdgeImpl implements Connection {
 	 * @generated
 	 */
 	@Override
-	public Node getTargetElement() {
-		return(graphmodel.Node)super.getTargetElement();
+	public Output getTargetElement() {
+		return(info.scce.cinco.product.scchart.mglid.scchart.Output)super.getTargetElement();
 	}
 
 	/**
@@ -173,6 +175,46 @@ public class ConnectionImpl extends EdgeImpl implements Connection {
 	@Override
 	public void reconnectSource(final RootState source) {
 		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final Input source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final Input source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectTarget(final Output target) {
+		return target.canEnd(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectTarget(final Output target) {
+		this.setTargetElement(target);
 	}
 
 	/**
@@ -258,6 +300,16 @@ public class ConnectionImpl extends EdgeImpl implements Connection {
 				return canReconnectSource((RootState)arguments.get(0));
 			case ScchartPackage.CONNECTION___RECONNECT_SOURCE__ROOTSTATE:
 				reconnectSource((RootState)arguments.get(0));
+				return null;
+			case ScchartPackage.CONNECTION___CAN_RECONNECT_SOURCE__INPUT:
+				return canReconnectSource((Input)arguments.get(0));
+			case ScchartPackage.CONNECTION___RECONNECT_SOURCE__INPUT:
+				reconnectSource((Input)arguments.get(0));
+				return null;
+			case ScchartPackage.CONNECTION___CAN_RECONNECT_TARGET__OUTPUT:
+				return canReconnectTarget((Output)arguments.get(0));
+			case ScchartPackage.CONNECTION___RECONNECT_TARGET__OUTPUT:
+				reconnectTarget((Output)arguments.get(0));
 				return null;
 			case ScchartPackage.CONNECTION___GET_CONNECTION_VIEW:
 				return getConnectionView();

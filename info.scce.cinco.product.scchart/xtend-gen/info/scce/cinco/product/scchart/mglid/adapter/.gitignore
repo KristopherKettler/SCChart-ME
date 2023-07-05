@@ -172,3 +172,7 @@
 /TerminationHistoryTransitionEContentAdapter.java
 /.ConnectionEContentAdapter.xtendbin
 /ConnectionEContentAdapter.java
+/.AbstractTransitionEContentAdapter.xtendbin
+/AbstractTransitionEContentAdapter.java
+/.InputEContentAdapter.java._trace
+/.OutputEContentAdapter.java._trace

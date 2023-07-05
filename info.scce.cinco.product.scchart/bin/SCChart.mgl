@@ -32,7 +32,7 @@ container Region {
 @palette("Dataflow")
 container DataFlowRegion extends Region {
 	style regionStyle ("${RegionID}")
-	containableElements(SuperState,InitilalSuperState[0,1],InitialState[0,1],SimpleState,FinalState,Connector)
+	containableElements(SuperState,InitilalSuperState[0,1],InitialState[0,1],SimpleState,FinalState,Input,Output)
 }
 
 @palette("SuperStates")
@@ -117,6 +117,18 @@ node Connector {
 	style connectorStyle
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition)
 	outgoingEdges (Transition,ImmediateTransition)
+}
+
+@palette("Dataflow")
+node Input {
+	style inputStyle
+	outgoingEdges (Connection[1,1])
+}
+
+@palette("Dataflow")
+node Output {
+	style outputStyle
+	incomingEdges (Connection[1,1])
 }
 
 /*Transitions */

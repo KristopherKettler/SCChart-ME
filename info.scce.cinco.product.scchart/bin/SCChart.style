@@ -1,6 +1,7 @@
 appearance default {
 	lineWidth 2
 	background (198,226,255) //LightSlateGrey 
+	foreground (119,136,153) //LightSlateGrey 
 }
 
 appearance declarationAppearance {
@@ -235,7 +236,7 @@ nodeStyle finalStateStyle(1){
 					text {
 			position ( CENTER, MIDDLE )
 			value "%s"
-		}
+			}
 		}
 	}
 }
@@ -244,6 +245,20 @@ nodeStyle connectorStyle{
 	ellipse {
 		appearance connector
 		size(10,10)
+	}
+}
+
+nodeStyle inputStyle {
+	polygon{
+		appearance default
+		points[(0,0)(0,-30)(50,-30)(60,-15)(50,0)]
+	}
+}
+
+nodeStyle outputStyle {
+	polygon{
+		appearance default
+		points[(0,-15)(10,-30)(60,-30)(60,0)(10,0)]
 	}
 }
 
@@ -748,4 +763,5 @@ edgeStyle immediateStrongAbortHistoryTransitionStyle(2) {
 
 edgeStyle connectionStyle {
 	appearance connectionAppearance
+	 
 }

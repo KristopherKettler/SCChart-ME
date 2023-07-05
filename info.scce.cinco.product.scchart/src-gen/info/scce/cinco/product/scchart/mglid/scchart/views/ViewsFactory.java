@@ -139,6 +139,24 @@ public interface ViewsFactory extends EFactory {
 	ConnectorView createConnectorView();
 
 	/**
+	 * Returns a new object of class '<em>Input View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Input View</em>'.
+	 * @generated
+	 */
+	InputView createInputView();
+
+	/**
+	 * Returns a new object of class '<em>Output View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Output View</em>'.
+	 * @generated
+	 */
+	OutputView createOutputView();
+
+	/**
 	 * Returns a new object of class '<em>Abstract Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

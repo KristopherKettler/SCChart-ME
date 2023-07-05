@@ -32,3 +32,5 @@
 /.ActionTypeProvider.xtendbin
 /ActionTypeProvider.java
 /.AbstractTransitionPriorityProvider.java._trace
+/.AbstractTransitionPriorityProvider.xtendbin
+/AbstractTransitionPriorityProvider.java

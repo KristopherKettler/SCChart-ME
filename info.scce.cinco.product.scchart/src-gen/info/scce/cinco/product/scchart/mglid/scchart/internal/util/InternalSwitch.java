@@ -206,6 +206,24 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case InternalPackage.INTERNAL_INPUT: {
+				InternalInput internalInput = (InternalInput)theEObject;
+				T result = caseInternalInput(internalInput);
+				if (result == null) result = caseInternalNode(internalInput);
+				if (result == null) result = caseInternalModelElement(internalInput);
+				if (result == null) result = caseInternalIdentifiableElement(internalInput);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_OUTPUT: {
+				InternalOutput internalOutput = (InternalOutput)theEObject;
+				T result = caseInternalOutput(internalOutput);
+				if (result == null) result = caseInternalNode(internalOutput);
+				if (result == null) result = caseInternalModelElement(internalOutput);
+				if (result == null) result = caseInternalIdentifiableElement(internalOutput);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case InternalPackage.INTERNAL_ABSTRACT_TRANSITION: {
 				InternalAbstractTransition internalAbstractTransition = (InternalAbstractTransition)theEObject;
 				T result = caseInternalAbstractTransition(internalAbstractTransition);
@@ -641,6 +659,36 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalConnector(InternalConnector object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Input</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Input</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalInput(InternalInput object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Output</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Output</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalOutput(InternalOutput object) {
 		return null;
 	}
 

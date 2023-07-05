@@ -15,6 +15,7 @@ import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.Output;
 import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
@@ -261,6 +262,16 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 */
 	@Override
+	public EList<Output> getOutputSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.Output.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case InternalPackage.INTERNAL_ROOT_STATE__SUSPENDS:
@@ -404,6 +415,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 				return getFinalStateSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_CONNECTOR_SUCCESSORS:
 				return getConnectorSuccessors();
+			case InternalPackage.INTERNAL_ROOT_STATE___GET_OUTPUT_SUCCESSORS:
+				return getOutputSuccessors();
 		}
 		return super.eInvoke(operationID, arguments);
 	}

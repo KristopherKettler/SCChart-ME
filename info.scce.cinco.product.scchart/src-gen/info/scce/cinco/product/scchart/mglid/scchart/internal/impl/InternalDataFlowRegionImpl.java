@@ -53,12 +53,14 @@ public class InternalDataFlowRegionImpl extends InternalRegionImpl implements In
 	public EList<ContainmentConstraint> getContainmentConstraints() {
 		 org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>constraints =
 			new org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>();
+		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Connector.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.SuperState.class));
 		constraints.add(new ContainmentConstraint(0,1,info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class));
 		constraints.add(new ContainmentConstraint(0,1,info.scce.cinco.product.scchart.mglid.scchart.InitialState.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.FinalState.class));
-		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Connector.class));
+		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Input.class));
+		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Output.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.SuperState.class));
 		constraints.add(new ContainmentConstraint(0,1,info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class));
 		constraints.add(new ContainmentConstraint(0,1,info.scce.cinco.product.scchart.mglid.scchart.InitialState.class));
