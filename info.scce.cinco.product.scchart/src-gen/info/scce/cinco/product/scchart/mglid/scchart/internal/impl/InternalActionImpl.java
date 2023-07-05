@@ -2,7 +2,7 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.internal.impl;
 
-import graphmodel.internal.impl.InternalTypeImpl;
+import graphmodel.internal.impl.InternalNodeImpl;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
@@ -24,12 +24,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionImpl#getActionType <em>Action Type</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionImpl#getCondition <em>Condition</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionImpl#getEffect <em>Effect</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class InternalActionImpl extends InternalTypeImpl implements InternalAction {
+public class InternalActionImpl extends InternalNodeImpl implements InternalAction {
 	/**
 	 * The default value of the '{@link #getActionType() <em>Action Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -38,7 +37,7 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String ACTION_TYPE_EDEFAULT = "entry";
+	protected static final String ACTION_TYPE_EDEFAULT = " ";
 
 	/**
 	 * The cached value of the '{@link #getActionType() <em>Action Type</em>}' attribute.
@@ -89,26 +88,6 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 	 * @ordered
 	 */
 	protected String effect = EFFECT_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,29 +183,6 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 	 * @generated
 	 */
 	@Override
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_ACTION__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case InternalPackage.INTERNAL_ACTION__ACTION_TYPE:
@@ -235,8 +191,6 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 				return getCondition();
 			case InternalPackage.INTERNAL_ACTION__EFFECT:
 				return getEffect();
-			case InternalPackage.INTERNAL_ACTION__NAME:
-				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -257,9 +211,6 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 				return;
 			case InternalPackage.INTERNAL_ACTION__EFFECT:
 				setEffect((String)newValue);
-				return;
-			case InternalPackage.INTERNAL_ACTION__NAME:
-				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -282,9 +233,6 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 			case InternalPackage.INTERNAL_ACTION__EFFECT:
 				setEffect(EFFECT_EDEFAULT);
 				return;
-			case InternalPackage.INTERNAL_ACTION__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -303,8 +251,6 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 				return CONDITION_EDEFAULT == null ? condition != null : !CONDITION_EDEFAULT.equals(condition);
 			case InternalPackage.INTERNAL_ACTION__EFFECT:
 				return EFFECT_EDEFAULT == null ? effect != null : !EFFECT_EDEFAULT.equals(effect);
-			case InternalPackage.INTERNAL_ACTION__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -325,8 +271,6 @@ public class InternalActionImpl extends InternalTypeImpl implements InternalActi
 		result.append(condition);
 		result.append(", effect: ");
 		result.append(effect);
-		result.append(", name: ");
-		result.append(name);
 		result.append(')');
 		return result.toString();
 	}

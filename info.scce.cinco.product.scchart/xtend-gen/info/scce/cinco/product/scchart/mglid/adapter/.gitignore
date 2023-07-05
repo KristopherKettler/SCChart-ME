@@ -176,3 +176,9 @@
 /AbstractTransitionEContentAdapter.java
 /.InputEContentAdapter.java._trace
 /.OutputEContentAdapter.java._trace
+/.InputEContentAdapter.xtendbin
+/.OutputEContentAdapter.xtendbin
+/InputEContentAdapter.java
+/OutputEContentAdapter.java
+/.OperatorEContentAdapter.java._trace
+/.ConnectionCircuitEContentAdapter.java._trace

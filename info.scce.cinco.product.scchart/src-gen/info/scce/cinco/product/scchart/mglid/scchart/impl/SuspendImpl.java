@@ -2,10 +2,20 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.impl;
 
-import graphmodel.internal.InternalPackage;
-import graphmodel.internal.InternalType;
+import graphmodel.Direction;
+import graphmodel.GraphmodelPackage;
+import graphmodel.IdentifiableElement;
+import graphmodel.ModelElement;
+import graphmodel.ModelElementContainer;
+import graphmodel.Node;
 
+import graphmodel.impl.NodeImpl;
+
+import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.RootState;
+import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
 import info.scce.cinco.product.scchart.mglid.scchart.ScchartPackage;
+import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend;
@@ -14,62 +24,18 @@ import info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView;
 
 import java.lang.reflect.InvocationTargetException;
 
-import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Suspend</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * The following features are implemented:
- * </p>
- * <ul>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.impl.SuspendImpl#getId <em>Id</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.impl.SuspendImpl#getInternalElement <em>Internal Element</em>}</li>
- * </ul>
  *
  * @generated
  */
-public class SuspendImpl extends EObjectImpl implements Suspend {
-	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getId()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String ID_EDEFAULT = "";
-
-	/**
-	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getId()
-	 * @generated
-	 * @ordered
-	 */
-	protected String id = ID_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getInternalElement() <em>Internal Element</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getInternalElement()
-	 * @generated
-	 * @ordered
-	 */
-	protected InternalType internalElement;
-
+public class SuspendImpl extends NodeImpl implements Suspend {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -95,73 +61,6 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 	 * @generated
 	 */
 	@Override
-	public String getId() {
-		return id;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setId(String newId) {
-		String oldId = id;
-		id = newId;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ScchartPackage.SUSPEND__ID, oldId, id));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InternalType getInternalElement() {
-		return internalElement;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetInternalElement(InternalType newInternalElement, NotificationChain msgs) {
-		InternalType oldInternalElement = internalElement;
-		internalElement = newInternalElement;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ScchartPackage.SUSPEND__INTERNAL_ELEMENT, oldInternalElement, newInternalElement);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInternalElement(InternalType newInternalElement) {
-		if (newInternalElement != internalElement) {
-			NotificationChain msgs = null;
-			if (internalElement != null)
-				msgs = ((InternalEObject)internalElement).eInverseRemove(this, InternalPackage.INTERNAL_TYPE__ELEMENT, InternalType.class, msgs);
-			if (newInternalElement != null)
-				msgs = ((InternalEObject)newInternalElement).eInverseAdd(this, InternalPackage.INTERNAL_TYPE__ELEMENT, InternalType.class, msgs);
-			msgs = basicSetInternalElement(newInternalElement, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ScchartPackage.SUSPEND__INTERNAL_ELEMENT, newInternalElement, newInternalElement));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getCondition() {
 		return getInternalSuspend().getCondition();
 	}
@@ -175,29 +74,6 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 	public void setCondition(final String _arg) {
 		getInternalSuspend().getElement().transact("Set Condition", () -> {
 			getInternalSuspend().setCondition(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getName() {
-		return getInternalSuspend().getName();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setName(final String _arg) {
-		getInternalSuspend().getElement().transact("Set Name", () -> {
-			getInternalSuspend().setName(_arg);
 		});
 		
 	}
@@ -231,9 +107,31 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 	 * @generated
 	 */
 	@Override
+	public String getUuid() {
+		return getInternalSuspend().getUuid();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUuid(final String _arg) {
+		getInternalSuspend().getElement().transact("Set Uuid", () -> {
+			getInternalSuspend().setUuid(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public InternalSuspend getInternalSuspend() {
-		return (info.scce.cinco.product.scchart.mglid.scchart
-		.internal.InternalSuspend) getInternalElement();
+		return (info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend) getInternalElement();
 	}
 
 	/**
@@ -252,32 +150,11 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 	 * @generated
 	 */
 	@Override
-	public SuspendView getSuspendView() {
-		SuspendView suspendView = info.scce.cinco.product.scchart.mglid.scchart.views.ViewsFactory.eINSTANCE.createSuspendView();
-		suspendView.setInternalSuspend((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend)getInternalElement());
-		return suspendView;
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void delete() {
-		preDelete();
-		org.eclipse.emf.ecore.util.EcoreUtil.delete(this.getInternalElement());
-		org.eclipse.emf.ecore.util.EcoreUtil.delete(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public void preDelete() {
+		// event.pre.delete.info_scce_cinco_product_scchart_mglid_scchart_Suspend
+		de.jabc.cinco.meta.plugin.event.api.payload.PreDeletePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend> eventPayload = new de.jabc.cinco.meta.plugin.event.api.payload.PreDeletePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>(this);
+		de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PreDeletePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>, java.lang.Void> eventContext = new de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PreDeletePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>, java.lang.Void>("event.pre.delete.info_scce_cinco_product_scchart_mglid_scchart_Suspend", eventPayload);
+		de.jabc.cinco.meta.core.event.hub.EventHub.getInstance().notifyFirst(eventContext);
 		
 	}
 
@@ -287,12 +164,9 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 	 * @generated
 	 */
 	@Override
-	public boolean equals(final Object obj) {
-		return (obj != null && (obj == this))
-					|| obj instanceof graphmodel.IdentifiableElement
-						&& ((graphmodel.IdentifiableElement) obj).getId() != null
-						&& ((graphmodel.IdentifiableElement) obj).getId().equals(this.getId())
-						&& obj.getClass().getName().equals(this.getClass().getName());
+	public Runnable getPostDeleteFunction() {
+		return () -> {};
+		
 	}
 
 	/**
@@ -301,24 +175,14 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 	 * @generated
 	 */
 	@Override
-	public int hashCode() {
-		return java.util.Objects.hash(getId(),getClass().getName());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void save() {
-		try {
-			preSave();
-			this.eResource().save(null);
-			postSave();
-		} catch (java.io.IOException e) {
-			e.printStackTrace();
-		}
+	public Runnable getPostDeleteEvent() {
+		// event.post.delete.info_scce_cinco_product_scchart_mglid_scchart_Suspend
+		de.jabc.cinco.meta.plugin.event.api.payload.PostDeletePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend> eventPayload = new de.jabc.cinco.meta.plugin.event.api.payload.PostDeletePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>(this);
+		de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PostDeletePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>, java.lang.Runnable> eventContext = new de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PostDeletePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>, java.lang.Runnable>("event.post.delete.info_scce_cinco_product_scchart_mglid_scchart_Suspend", eventPayload);
+		de.jabc.cinco.meta.core.event.hub.EventHub.getInstance().notifyFirst(eventContext);
+		java.lang.Runnable eventResult = eventContext.getFirstResult();
+		return eventResult;
+		
 	}
 
 	/**
@@ -347,31 +211,9 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 	 * @generated
 	 */
 	@Override
-	public void transact(final String label, final Runnable runnable) {
-		org.eclipse.emf.transaction.TransactionalEditingDomain dom;
-		org.eclipse.emf.transaction.TransactionalEditingDomain.Factory factory = org.eclipse.emf.transaction.TransactionalEditingDomain.Factory.INSTANCE;
-		org.eclipse.emf.ecore.resource.Resource res = getInternalElement().eResource();
-		if (res == null)
-			dom = factory.createEditingDomain();
-		else dom = org.eclipse.emf.transaction.util.TransactionUtil.getEditingDomain(res);
-		if (dom == null)	
-			if (res.getResourceSet() != null)
-				dom = factory.createEditingDomain(res.getResourceSet());
-			else
-				dom = factory.createEditingDomain();
-		if (dom != null) {
-			dom.getCommandStack().execute(new org.eclipse.emf.transaction.RecordingCommand(dom, label) {
-				
-				@Override
-				protected void doExecute() {
-					try {
-						runnable.run();
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-				}
-			});
-		}
+	public SCChart getRootElement() {
+		return (info.scce.cinco.product.scchart.mglid.scchart.SCChart) this.getInternalElement().getRootElement().getElement();
+		
 	}
 
 	/**
@@ -380,14 +222,8 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case ScchartPackage.SUSPEND__INTERNAL_ELEMENT:
-				if (internalElement != null)
-					msgs = ((InternalEObject)internalElement).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ScchartPackage.SUSPEND__INTERNAL_ELEMENT, null, msgs);
-				return basicSetInternalElement((InternalType)otherEnd, msgs);
-		}
-		return super.eInverseAdd(otherEnd, featureID, msgs);
+	public void s_moveTo(final ModelElementContainer container, final int x, final int y) {
+		
 	}
 
 	/**
@@ -396,12 +232,12 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case ScchartPackage.SUSPEND__INTERNAL_ELEMENT:
-				return basicSetInternalElement(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+	public void preMove(final ModelElementContainer newContainer, final int newX, final int newY) {
+		// event.pre.move.info_scce_cinco_product_scchart_mglid_scchart_Suspend
+		de.jabc.cinco.meta.plugin.event.api.payload.PreMovePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend> eventPayload = new de.jabc.cinco.meta.plugin.event.api.payload.PreMovePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>(this, newContainer, newX, newY);
+		de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PreMovePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>, java.lang.Void> eventContext = new de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PreMovePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>, java.lang.Void>("event.pre.move.info_scce_cinco_product_scchart_mglid_scchart_Suspend", eventPayload);
+		de.jabc.cinco.meta.core.event.hub.EventHub.getInstance().notifyFirst(eventContext);
+		
 	}
 
 	/**
@@ -410,14 +246,12 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case ScchartPackage.SUSPEND__ID:
-				return getId();
-			case ScchartPackage.SUSPEND__INTERNAL_ELEMENT:
-				return getInternalElement();
-		}
-		return super.eGet(featureID, resolve, coreType);
+	public void postMove(final ModelElementContainer source, final ModelElementContainer target, final int x, final int y, final int deltaX, final int deltaY) {
+		// event.post.move.info_scce_cinco_product_scchart_mglid_scchart_Suspend
+		de.jabc.cinco.meta.plugin.event.api.payload.PostMovePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend> eventPayload = new de.jabc.cinco.meta.plugin.event.api.payload.PostMovePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>(this, source, x - deltaX, y - deltaY);
+		de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PostMovePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>, java.lang.Void> eventContext = new de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PostMovePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>, java.lang.Void>("event.post.move.info_scce_cinco_product_scchart_mglid_scchart_Suspend", eventPayload);
+		de.jabc.cinco.meta.core.event.hub.EventHub.getInstance().notifyFirst(eventContext);
+		
 	}
 
 	/**
@@ -426,16 +260,12 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 	 * @generated
 	 */
 	@Override
-	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case ScchartPackage.SUSPEND__ID:
-				setId((String)newValue);
-				return;
-			case ScchartPackage.SUSPEND__INTERNAL_ELEMENT:
-				setInternalElement((InternalType)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
+	public void preResize(final int newWidth, final int newHeight, final int newX, final int newY, final Direction direction) {
+		// event.pre.resize.info_scce_cinco_product_scchart_mglid_scchart_Suspend
+		de.jabc.cinco.meta.plugin.event.api.payload.PreResizePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend> eventPayload = new de.jabc.cinco.meta.plugin.event.api.payload.PreResizePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>(this, newWidth, newHeight, newX, newY, direction);
+		de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PreResizePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>, java.lang.Void> eventContext = new de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PreResizePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>, java.lang.Void>("event.pre.resize.info_scce_cinco_product_scchart_mglid_scchart_Suspend", eventPayload);
+		de.jabc.cinco.meta.core.event.hub.EventHub.getInstance().notifyFirst(eventContext);
+		
 	}
 
 	/**
@@ -444,16 +274,12 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 	 * @generated
 	 */
 	@Override
-	public void eUnset(int featureID) {
-		switch (featureID) {
-			case ScchartPackage.SUSPEND__ID:
-				setId(ID_EDEFAULT);
-				return;
-			case ScchartPackage.SUSPEND__INTERNAL_ELEMENT:
-				setInternalElement((InternalType)null);
-				return;
-		}
-		super.eUnset(featureID);
+	public void postResize(final int oldWidth, final int oldHeight, final int oldX, final int oldY, final Direction direction) {
+		// event.post.resize.info_scce_cinco_product_scchart_mglid_scchart_Suspend
+		de.jabc.cinco.meta.plugin.event.api.payload.PostResizePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend> eventPayload = new de.jabc.cinco.meta.plugin.event.api.payload.PostResizePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>(this, oldWidth, oldHeight, oldX, oldY, direction);
+		de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PostResizePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>, java.lang.Void> eventContext = new de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PostResizePayload<info.scce.cinco.product.scchart.mglid.scchart.Suspend>, java.lang.Void>("event.post.resize.info_scce_cinco_product_scchart_mglid_scchart_Suspend", eventPayload);
+		de.jabc.cinco.meta.core.event.hub.EventHub.getInstance().notifyFirst(eventContext);
+		
 	}
 
 	/**
@@ -462,14 +288,175 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 	 * @generated
 	 */
 	@Override
-	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case ScchartPackage.SUSPEND__ID:
-				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
-			case ScchartPackage.SUSPEND__INTERNAL_ELEMENT:
-				return internalElement != null;
+	public boolean canMoveTo(final RootState rootState, final int x, final int y) {
+		return rootState.canContain(info.scce.cinco.product.scchart.mglid.scchart.Suspend.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void moveTo(final RootState rootState, final int x, final int y) {
+		transact("Move to", () -> {
+			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
+			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
+			int deltaX = x - ime.getX();
+			int deltaY = y - ime.getY();
+			preMove(rootState, x, y);
+			s_moveTo(rootState, x, y);
+			rootState.getInternalContainerElement().getModelElements().add(ime);
+			ime.setX(x);
+			ime.setY(y);
+			postMove(sourceContainer, rootState, x, y, deltaX, deltaY);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void s_moveTo(final RootState rootState, final int x, final int y) {
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canMoveTo(final SuperState superState, final int x, final int y) {
+		return superState.canContain(info.scce.cinco.product.scchart.mglid.scchart.Suspend.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void moveTo(final SuperState superState, final int x, final int y) {
+		transact("Move to", () -> {
+			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
+			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
+			int deltaX = x - ime.getX();
+			int deltaY = y - ime.getY();
+			preMove(superState, x, y);
+			s_moveTo(superState, x, y);
+			superState.getInternalContainerElement().getModelElements().add(ime);
+			ime.setX(x);
+			ime.setY(y);
+			postMove(sourceContainer, superState, x, y, deltaX, deltaY);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void s_moveTo(final SuperState superState, final int x, final int y) {
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canMoveTo(final InitilalSuperState initilalSuperState, final int x, final int y) {
+		return initilalSuperState.canContain(info.scce.cinco.product.scchart.mglid.scchart.Suspend.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void moveTo(final InitilalSuperState initilalSuperState, final int x, final int y) {
+		transact("Move to", () -> {
+			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
+			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
+			int deltaX = x - ime.getX();
+			int deltaY = y - ime.getY();
+			preMove(initilalSuperState, x, y);
+			s_moveTo(initilalSuperState, x, y);
+			initilalSuperState.getInternalContainerElement().getModelElements().add(ime);
+			ime.setX(x);
+			ime.setY(y);
+			postMove(sourceContainer, initilalSuperState, x, y, deltaX, deltaY);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void s_moveTo(final InitilalSuperState initilalSuperState, final int x, final int y) {
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SuspendView getSuspendView() {
+		SuspendView suspendView = info.scce.cinco.product.scchart.mglid.scchart.views.ViewsFactory.eINSTANCE.createSuspendView();
+		suspendView.setInternalSuspend((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend)getInternalElement());
+		return suspendView;
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedOperationID(int baseOperationID, Class<?> baseClass) {
+		if (baseClass == IdentifiableElement.class) {
+			switch (baseOperationID) {
+				case GraphmodelPackage.IDENTIFIABLE_ELEMENT___PRE_SAVE: return ScchartPackage.SUSPEND___PRE_SAVE;
+				case GraphmodelPackage.IDENTIFIABLE_ELEMENT___POST_SAVE: return ScchartPackage.SUSPEND___POST_SAVE;
+				default: return super.eDerivedOperationID(baseOperationID, baseClass);
+			}
 		}
-		return super.eIsSet(featureID);
+		if (baseClass == ModelElement.class) {
+			switch (baseOperationID) {
+				case GraphmodelPackage.MODEL_ELEMENT___GET_ROOT_ELEMENT: return ScchartPackage.SUSPEND___GET_ROOT_ELEMENT;
+				case GraphmodelPackage.MODEL_ELEMENT___PRE_SAVE: return ScchartPackage.SUSPEND___PRE_SAVE;
+				case GraphmodelPackage.MODEL_ELEMENT___POST_SAVE: return ScchartPackage.SUSPEND___POST_SAVE;
+				default: return super.eDerivedOperationID(baseOperationID, baseClass);
+			}
+		}
+		if (baseClass == Node.class) {
+			switch (baseOperationID) {
+				case GraphmodelPackage.NODE___PRE_MOVE__MODELELEMENTCONTAINER_INT_INT: return ScchartPackage.SUSPEND___PRE_MOVE__MODELELEMENTCONTAINER_INT_INT;
+				case GraphmodelPackage.NODE___POST_MOVE__MODELELEMENTCONTAINER_MODELELEMENTCONTAINER_INT_INT_INT_INT: return ScchartPackage.SUSPEND___POST_MOVE__MODELELEMENTCONTAINER_MODELELEMENTCONTAINER_INT_INT_INT_INT;
+				case GraphmodelPackage.NODE___GET_POST_DELETE_FUNCTION: return ScchartPackage.SUSPEND___GET_POST_DELETE_FUNCTION;
+				case GraphmodelPackage.NODE___GET_POST_DELETE_EVENT: return ScchartPackage.SUSPEND___GET_POST_DELETE_EVENT;
+				case GraphmodelPackage.NODE___PRE_DELETE: return ScchartPackage.SUSPEND___PRE_DELETE;
+				case GraphmodelPackage.NODE___PRE_RESIZE__INT_INT_INT_INT_DIRECTION: return ScchartPackage.SUSPEND___PRE_RESIZE__INT_INT_INT_INT_DIRECTION;
+				case GraphmodelPackage.NODE___POST_RESIZE__INT_INT_INT_INT_DIRECTION: return ScchartPackage.SUSPEND___POST_RESIZE__INT_INT_INT_INT_DIRECTION;
+				case GraphmodelPackage.NODE___SMOVE_TO__MODELELEMENTCONTAINER_INT_INT: return ScchartPackage.SUSPEND___SMOVE_TO__MODELELEMENTCONTAINER_INT_INT;
+				default: return super.eDerivedOperationID(baseOperationID, baseClass);
+			}
+		}
+		return super.eDerivedOperationID(baseOperationID, baseClass);
 	}
 
 	/**
@@ -485,62 +472,78 @@ public class SuspendImpl extends EObjectImpl implements Suspend {
 			case ScchartPackage.SUSPEND___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ScchartPackage.SUSPEND___GET_NAME:
-				return getName();
-			case ScchartPackage.SUSPEND___SET_NAME__STRING:
-				setName((String)arguments.get(0));
-				return null;
 			case ScchartPackage.SUSPEND___GET_SUSPEND_TYPE:
 				return getSuspendType();
 			case ScchartPackage.SUSPEND___SET_SUSPEND_TYPE__STRING:
 				setSuspendType((String)arguments.get(0));
 				return null;
+			case ScchartPackage.SUSPEND___GET_UUID:
+				return getUuid();
+			case ScchartPackage.SUSPEND___SET_UUID__STRING:
+				setUuid((String)arguments.get(0));
+				return null;
 			case ScchartPackage.SUSPEND___GET_INTERNAL_SUSPEND:
 				return getInternalSuspend();
 			case ScchartPackage.SUSPEND___IS_EXACTLY_SUSPEND:
 				return isExactlySuspend();
-			case ScchartPackage.SUSPEND___GET_SUSPEND_VIEW:
-				return getSuspendView();
-			case ScchartPackage.SUSPEND___DELETE:
-				delete();
-				return null;
 			case ScchartPackage.SUSPEND___PRE_DELETE:
 				preDelete();
 				return null;
-			case ScchartPackage.SUSPEND___EQUALS__OBJECT:
-				return equals(arguments.get(0));
-			case ScchartPackage.SUSPEND___HASH_CODE:
-				return hashCode();
-			case ScchartPackage.SUSPEND___SAVE:
-				save();
-				return null;
+			case ScchartPackage.SUSPEND___GET_POST_DELETE_FUNCTION:
+				return getPostDeleteFunction();
+			case ScchartPackage.SUSPEND___GET_POST_DELETE_EVENT:
+				return getPostDeleteEvent();
 			case ScchartPackage.SUSPEND___PRE_SAVE:
 				preSave();
 				return null;
 			case ScchartPackage.SUSPEND___POST_SAVE:
 				postSave();
 				return null;
-			case ScchartPackage.SUSPEND___TRANSACT__STRING_RUNNABLE:
-				transact((String)arguments.get(0), (Runnable)arguments.get(1));
+			case ScchartPackage.SUSPEND___GET_ROOT_ELEMENT:
+				return getRootElement();
+			case ScchartPackage.SUSPEND___SMOVE_TO__MODELELEMENTCONTAINER_INT_INT:
+				s_moveTo((ModelElementContainer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
+			case ScchartPackage.SUSPEND___PRE_MOVE__MODELELEMENTCONTAINER_INT_INT:
+				preMove((ModelElementContainer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.SUSPEND___POST_MOVE__MODELELEMENTCONTAINER_MODELELEMENTCONTAINER_INT_INT_INT_INT:
+				postMove((ModelElementContainer)arguments.get(0), (ModelElementContainer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4), (Integer)arguments.get(5));
+				return null;
+			case ScchartPackage.SUSPEND___PRE_RESIZE__INT_INT_INT_INT_DIRECTION:
+				preResize((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Direction)arguments.get(4));
+				return null;
+			case ScchartPackage.SUSPEND___POST_RESIZE__INT_INT_INT_INT_DIRECTION:
+				postResize((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Direction)arguments.get(4));
+				return null;
+			case ScchartPackage.SUSPEND___CAN_MOVE_TO__ROOTSTATE_INT_INT:
+				return canMoveTo((RootState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.SUSPEND___MOVE_TO__ROOTSTATE_INT_INT:
+				moveTo((RootState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.SUSPEND___SMOVE_TO__ROOTSTATE_INT_INT:
+				s_moveTo((RootState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.SUSPEND___CAN_MOVE_TO__SUPERSTATE_INT_INT:
+				return canMoveTo((SuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.SUSPEND___MOVE_TO__SUPERSTATE_INT_INT:
+				moveTo((SuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.SUSPEND___SMOVE_TO__SUPERSTATE_INT_INT:
+				s_moveTo((SuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.SUSPEND___CAN_MOVE_TO__INITILALSUPERSTATE_INT_INT:
+				return canMoveTo((InitilalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.SUSPEND___MOVE_TO__INITILALSUPERSTATE_INT_INT:
+				moveTo((InitilalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.SUSPEND___SMOVE_TO__INITILALSUPERSTATE_INT_INT:
+				s_moveTo((InitilalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.SUSPEND___GET_SUSPEND_VIEW:
+				return getSuspendView();
 		}
 		return super.eInvoke(operationID, arguments);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (id: ");
-		result.append(id);
-		result.append(')');
-		return result.toString();
 	}
 
 } //SuspendImpl

@@ -11,7 +11,9 @@ import graphmodel.Node;
 import graphmodel.impl.EdgeImpl;
 
 import info.scce.cinco.product.scchart.mglid.scchart.Connection;
+import info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit;
 import info.scce.cinco.product.scchart.mglid.scchart.Input;
+import info.scce.cinco.product.scchart.mglid.scchart.Operator;
 import info.scce.cinco.product.scchart.mglid.scchart.Output;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
@@ -153,8 +155,8 @@ public class ConnectionImpl extends EdgeImpl implements Connection {
 	 * @generated
 	 */
 	@Override
-	public Output getTargetElement() {
-		return(info.scce.cinco.product.scchart.mglid.scchart.Output)super.getTargetElement();
+	public Node getTargetElement() {
+		return(graphmodel.Node)super.getTargetElement();
 	}
 
 	/**
@@ -174,6 +176,26 @@ public class ConnectionImpl extends EdgeImpl implements Connection {
 	 */
 	@Override
 	public void reconnectSource(final RootState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final ConnectionCircuit source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final ConnectionCircuit source) {
 		this.setSourceElement(source);
 	}
 
@@ -203,6 +225,26 @@ public class ConnectionImpl extends EdgeImpl implements Connection {
 	 * @generated
 	 */
 	@Override
+	public boolean canReconnectSource(final Operator source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final Operator source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean canReconnectTarget(final Output target) {
 		return target.canEnd(this.getClass());
 	}
@@ -214,6 +256,46 @@ public class ConnectionImpl extends EdgeImpl implements Connection {
 	 */
 	@Override
 	public void reconnectTarget(final Output target) {
+		this.setTargetElement(target);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectTarget(final ConnectionCircuit target) {
+		return target.canEnd(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectTarget(final ConnectionCircuit target) {
+		this.setTargetElement(target);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectTarget(final Operator target) {
+		return target.canEnd(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectTarget(final Operator target) {
 		this.setTargetElement(target);
 	}
 
@@ -301,15 +383,35 @@ public class ConnectionImpl extends EdgeImpl implements Connection {
 			case ScchartPackage.CONNECTION___RECONNECT_SOURCE__ROOTSTATE:
 				reconnectSource((RootState)arguments.get(0));
 				return null;
+			case ScchartPackage.CONNECTION___CAN_RECONNECT_SOURCE__CONNECTIONCIRCUIT:
+				return canReconnectSource((ConnectionCircuit)arguments.get(0));
+			case ScchartPackage.CONNECTION___RECONNECT_SOURCE__CONNECTIONCIRCUIT:
+				reconnectSource((ConnectionCircuit)arguments.get(0));
+				return null;
 			case ScchartPackage.CONNECTION___CAN_RECONNECT_SOURCE__INPUT:
 				return canReconnectSource((Input)arguments.get(0));
 			case ScchartPackage.CONNECTION___RECONNECT_SOURCE__INPUT:
 				reconnectSource((Input)arguments.get(0));
 				return null;
+			case ScchartPackage.CONNECTION___CAN_RECONNECT_SOURCE__OPERATOR:
+				return canReconnectSource((Operator)arguments.get(0));
+			case ScchartPackage.CONNECTION___RECONNECT_SOURCE__OPERATOR:
+				reconnectSource((Operator)arguments.get(0));
+				return null;
 			case ScchartPackage.CONNECTION___CAN_RECONNECT_TARGET__OUTPUT:
 				return canReconnectTarget((Output)arguments.get(0));
 			case ScchartPackage.CONNECTION___RECONNECT_TARGET__OUTPUT:
 				reconnectTarget((Output)arguments.get(0));
+				return null;
+			case ScchartPackage.CONNECTION___CAN_RECONNECT_TARGET__CONNECTIONCIRCUIT:
+				return canReconnectTarget((ConnectionCircuit)arguments.get(0));
+			case ScchartPackage.CONNECTION___RECONNECT_TARGET__CONNECTIONCIRCUIT:
+				reconnectTarget((ConnectionCircuit)arguments.get(0));
+				return null;
+			case ScchartPackage.CONNECTION___CAN_RECONNECT_TARGET__OPERATOR:
+				return canReconnectTarget((Operator)arguments.get(0));
+			case ScchartPackage.CONNECTION___RECONNECT_TARGET__OPERATOR:
+				reconnectTarget((Operator)arguments.get(0));
 				return null;
 			case ScchartPackage.CONNECTION___GET_CONNECTION_VIEW:
 				return getConnectionView();

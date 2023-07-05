@@ -12,8 +12,10 @@ import graphmodel.Node;
 import graphmodel.impl.NodeImpl;
 
 import info.scce.cinco.product.scchart.mglid.scchart.Connection;
+import info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit;
 import info.scce.cinco.product.scchart.mglid.scchart.DataFlowRegion;
 import info.scce.cinco.product.scchart.mglid.scchart.Input;
+import info.scce.cinco.product.scchart.mglid.scchart.Operator;
 import info.scce.cinco.product.scchart.mglid.scchart.Output;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
@@ -54,6 +56,29 @@ public class OutputImpl extends NodeImpl implements Output {
 	@Override
 	protected EClass eStaticClass() {
 		return ScchartPackage.eINSTANCE.getOutput();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getLabel() {
+		return getInternalOutput().getLabel();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLabel(final String _arg) {
+		getInternalOutput().getElement().transact("Set Label", () -> {
+			getInternalOutput().setLabel(_arg);
+		});
+		
 	}
 
 	/**
@@ -249,6 +274,26 @@ public class OutputImpl extends NodeImpl implements Output {
 	 * @generated
 	 */
 	@Override
+	public EList<Operator> getOperatorPredecessors() {
+		return ((graphmodel.Node)this).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.Operator.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<ConnectionCircuit> getConnectionCircuitPredecessors() {
+		return ((graphmodel.Node)this).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean canMoveTo(final DataFlowRegion dataFlowRegion, final int x, final int y) {
 		return dataFlowRegion.canContain(info.scce.cinco.product.scchart.mglid.scchart.Output.class);
 	}
@@ -356,6 +401,11 @@ public class OutputImpl extends NodeImpl implements Output {
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
+			case ScchartPackage.OUTPUT___GET_LABEL:
+				return getLabel();
+			case ScchartPackage.OUTPUT___SET_LABEL__STRING:
+				setLabel((String)arguments.get(0));
+				return null;
 			case ScchartPackage.OUTPUT___GET_INTERNAL_OUTPUT:
 				return getInternalOutput();
 			case ScchartPackage.OUTPUT___IS_EXACTLY_OUTPUT:
@@ -400,6 +450,10 @@ public class OutputImpl extends NodeImpl implements Output {
 				return getRootStatePredecessors();
 			case ScchartPackage.OUTPUT___GET_INPUT_PREDECESSORS:
 				return getInputPredecessors();
+			case ScchartPackage.OUTPUT___GET_OPERATOR_PREDECESSORS:
+				return getOperatorPredecessors();
+			case ScchartPackage.OUTPUT___GET_CONNECTION_CIRCUIT_PREDECESSORS:
+				return getConnectionCircuitPredecessors();
 			case ScchartPackage.OUTPUT___CAN_MOVE_TO__DATAFLOWREGION_INT_INT:
 				return canMoveTo((DataFlowRegion)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 			case ScchartPackage.OUTPUT___MOVE_TO__DATAFLOWREGION_INT_INT:

@@ -70,28 +70,28 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass rootStateDeclarationNodeViewEClass = null;
+	private EClass rootStateDeclarationViewEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass suspendNodeViewEClass = null;
+	private EClass suspendViewEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass actionNodeViewEClass = null;
+	private EClass actionViewEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass superStateDeclarationNodeViewEClass = null;
+	private EClass superStateDeclarationViewEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -134,6 +134,20 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	private EClass outputViewEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass operatorViewEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass connectionCircuitViewEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,34 +297,6 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	private EClass scChartViewEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass rootStateDeclarationViewEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass superStateDeclarationViewEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass suspendViewEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass actionViewEClass = null;
-
-	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -409,7 +395,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateView__GetSuspends() {
+	public EOperation getRootStateView__GetLabel() {
         return getRootStateView().getEOperations().get(0);
 	}
 
@@ -419,88 +405,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateView__SetSuspends__EList() {
-        return getRootStateView().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateView__AddSuspends__Suspend() {
-        return getRootStateView().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateView__RemoveSuspends__Suspend() {
-        return getRootStateView().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateView__GetLabel() {
-        return getRootStateView().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EOperation getRootStateView__SetLabel__String() {
-        return getRootStateView().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateView__GetDeclaration() {
-        return getRootStateView().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateView__SetDeclaration__EList() {
-        return getRootStateView().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateView__AddDeclaration__RootStateDeclaration() {
-        return getRootStateView().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateView__RemoveDeclaration__RootStateDeclaration() {
-        return getRootStateView().getEOperations().get(9);
+        return getRootStateView().getEOperations().get(1);
 	}
 
 	/**
@@ -638,7 +544,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateView__GetSuspends() {
+	public EOperation getSuperStateView__GetLabel() {
         return getSuperStateView().getEOperations().get(0);
 	}
 
@@ -648,128 +554,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateView__SetSuspends__EList() {
-        return getSuperStateView().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateView__AddSuspends__Suspend() {
-        return getSuperStateView().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateView__RemoveSuspends__Suspend() {
-        return getSuperStateView().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateView__GetLabel() {
-        return getSuperStateView().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EOperation getSuperStateView__SetLabel__String() {
-        return getSuperStateView().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateView__GetDeclaration() {
-        return getSuperStateView().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateView__SetDeclaration__EList() {
-        return getSuperStateView().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateView__AddDeclaration__SuperStateDeclaration() {
-        return getSuperStateView().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateView__RemoveDeclaration__SuperStateDeclaration() {
-        return getSuperStateView().getEOperations().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateView__GetActions() {
-        return getSuperStateView().getEOperations().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateView__SetActions__EList() {
-        return getSuperStateView().getEOperations().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateView__AddActions__Action() {
-        return getSuperStateView().getEOperations().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateView__RemoveActions__Action() {
-        return getSuperStateView().getEOperations().get(13);
+        return getSuperStateView().getEOperations().get(1);
 	}
 
 	/**
@@ -801,11 +587,11 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getRootStateDeclarationNodeView() {
-		if (rootStateDeclarationNodeViewEClass == null) {
-			rootStateDeclarationNodeViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(5);
+	public EClass getRootStateDeclarationView() {
+		if (rootStateDeclarationViewEClass == null) {
+			rootStateDeclarationViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(5);
 		}
-		return rootStateDeclarationNodeViewEClass;
+		return rootStateDeclarationViewEClass;
 	}
 
 	/**
@@ -814,8 +600,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getRootStateDeclarationNodeView_InternalRootStateDeclarationNode() {
-        return (EReference)getRootStateDeclarationNodeView().getEStructuralFeatures().get(0);
+	public EReference getRootStateDeclarationView_InternalRootStateDeclaration() {
+        return (EReference)getRootStateDeclarationView().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -824,8 +610,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateDeclarationNodeView__GetDeclarationType() {
-        return getRootStateDeclarationNodeView().getEOperations().get(0);
+	public EOperation getRootStateDeclarationView__GetDeclarationType() {
+        return getRootStateDeclarationView().getEOperations().get(0);
 	}
 
 	/**
@@ -834,8 +620,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateDeclarationNodeView__SetDeclarationType__String() {
-        return getRootStateDeclarationNodeView().getEOperations().get(1);
+	public EOperation getRootStateDeclarationView__SetDeclarationType__String() {
+        return getRootStateDeclarationView().getEOperations().get(1);
 	}
 
 	/**
@@ -844,8 +630,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateDeclarationNodeView__GetInputOutput() {
-        return getRootStateDeclarationNodeView().getEOperations().get(2);
+	public EOperation getRootStateDeclarationView__GetInputOutput() {
+        return getRootStateDeclarationView().getEOperations().get(2);
 	}
 
 	/**
@@ -854,8 +640,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateDeclarationNodeView__SetInputOutput__String() {
-        return getRootStateDeclarationNodeView().getEOperations().get(3);
+	public EOperation getRootStateDeclarationView__SetInputOutput__String() {
+        return getRootStateDeclarationView().getEOperations().get(3);
 	}
 
 	/**
@@ -864,8 +650,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateDeclarationNodeView__GetName() {
-        return getRootStateDeclarationNodeView().getEOperations().get(4);
+	public EOperation getRootStateDeclarationView__GetName() {
+        return getRootStateDeclarationView().getEOperations().get(4);
 	}
 
 	/**
@@ -874,8 +660,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateDeclarationNodeView__SetName__String() {
-        return getRootStateDeclarationNodeView().getEOperations().get(5);
+	public EOperation getRootStateDeclarationView__SetName__String() {
+        return getRootStateDeclarationView().getEOperations().get(5);
 	}
 
 	/**
@@ -884,11 +670,11 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getSuspendNodeView() {
-		if (suspendNodeViewEClass == null) {
-			suspendNodeViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(6);
+	public EClass getSuspendView() {
+		if (suspendViewEClass == null) {
+			suspendViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(6);
 		}
-		return suspendNodeViewEClass;
+		return suspendViewEClass;
 	}
 
 	/**
@@ -897,8 +683,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getSuspendNodeView_InternalSuspendNode() {
-        return (EReference)getSuspendNodeView().getEStructuralFeatures().get(0);
+	public EReference getSuspendView_InternalSuspend() {
+        return (EReference)getSuspendView().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -907,8 +693,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuspendNodeView__GetCondition() {
-        return getSuspendNodeView().getEOperations().get(0);
+	public EOperation getSuspendView__GetCondition() {
+        return getSuspendView().getEOperations().get(0);
 	}
 
 	/**
@@ -917,8 +703,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuspendNodeView__SetCondition__String() {
-        return getSuspendNodeView().getEOperations().get(1);
+	public EOperation getSuspendView__SetCondition__String() {
+        return getSuspendView().getEOperations().get(1);
 	}
 
 	/**
@@ -927,8 +713,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuspendNodeView__GetSuspendType() {
-        return getSuspendNodeView().getEOperations().get(2);
+	public EOperation getSuspendView__GetSuspendType() {
+        return getSuspendView().getEOperations().get(2);
 	}
 
 	/**
@@ -937,8 +723,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuspendNodeView__SetSuspendType__String() {
-        return getSuspendNodeView().getEOperations().get(3);
+	public EOperation getSuspendView__SetSuspendType__String() {
+        return getSuspendView().getEOperations().get(3);
 	}
 
 	/**
@@ -947,11 +733,31 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getActionNodeView() {
-		if (actionNodeViewEClass == null) {
-			actionNodeViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(7);
+	public EOperation getSuspendView__GetUuid() {
+        return getSuspendView().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSuspendView__SetUuid__String() {
+        return getSuspendView().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getActionView() {
+		if (actionViewEClass == null) {
+			actionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(7);
 		}
-		return actionNodeViewEClass;
+		return actionViewEClass;
 	}
 
 	/**
@@ -960,8 +766,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getActionNodeView_InternalActionNode() {
-        return (EReference)getActionNodeView().getEStructuralFeatures().get(0);
+	public EReference getActionView_InternalAction() {
+        return (EReference)getActionView().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -970,8 +776,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getActionNodeView__GetDeclarationType() {
-        return getActionNodeView().getEOperations().get(0);
+	public EOperation getActionView__GetActionType() {
+        return getActionView().getEOperations().get(0);
 	}
 
 	/**
@@ -980,8 +786,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getActionNodeView__SetDeclarationType__String() {
-        return getActionNodeView().getEOperations().get(1);
+	public EOperation getActionView__SetActionType__String() {
+        return getActionView().getEOperations().get(1);
 	}
 
 	/**
@@ -990,8 +796,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getActionNodeView__GetInputOutput() {
-        return getActionNodeView().getEOperations().get(2);
+	public EOperation getActionView__GetCondition() {
+        return getActionView().getEOperations().get(2);
 	}
 
 	/**
@@ -1000,8 +806,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getActionNodeView__SetInputOutput__String() {
-        return getActionNodeView().getEOperations().get(3);
+	public EOperation getActionView__SetCondition__String() {
+        return getActionView().getEOperations().get(3);
 	}
 
 	/**
@@ -1010,8 +816,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getActionNodeView__GetName() {
-        return getActionNodeView().getEOperations().get(4);
+	public EOperation getActionView__GetEffect() {
+        return getActionView().getEOperations().get(4);
 	}
 
 	/**
@@ -1020,8 +826,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getActionNodeView__SetName__String() {
-        return getActionNodeView().getEOperations().get(5);
+	public EOperation getActionView__SetEffect__String() {
+        return getActionView().getEOperations().get(5);
 	}
 
 	/**
@@ -1030,11 +836,11 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getSuperStateDeclarationNodeView() {
-		if (superStateDeclarationNodeViewEClass == null) {
-			superStateDeclarationNodeViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(8);
+	public EClass getSuperStateDeclarationView() {
+		if (superStateDeclarationViewEClass == null) {
+			superStateDeclarationViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(8);
 		}
-		return superStateDeclarationNodeViewEClass;
+		return superStateDeclarationViewEClass;
 	}
 
 	/**
@@ -1043,8 +849,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getSuperStateDeclarationNodeView_InternalSuperStateDeclarationNode() {
-        return (EReference)getSuperStateDeclarationNodeView().getEStructuralFeatures().get(0);
+	public EReference getSuperStateDeclarationView_InternalSuperStateDeclaration() {
+        return (EReference)getSuperStateDeclarationView().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1053,8 +859,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNodeView__GetDeclarationType() {
-        return getSuperStateDeclarationNodeView().getEOperations().get(0);
+	public EOperation getSuperStateDeclarationView__GetDeclarationType() {
+        return getSuperStateDeclarationView().getEOperations().get(0);
 	}
 
 	/**
@@ -1063,8 +869,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNodeView__SetDeclarationType__String() {
-        return getSuperStateDeclarationNodeView().getEOperations().get(1);
+	public EOperation getSuperStateDeclarationView__SetDeclarationType__String() {
+        return getSuperStateDeclarationView().getEOperations().get(1);
 	}
 
 	/**
@@ -1073,8 +879,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNodeView__GetName() {
-        return getSuperStateDeclarationNodeView().getEOperations().get(2);
+	public EOperation getSuperStateDeclarationView__GetName() {
+        return getSuperStateDeclarationView().getEOperations().get(2);
 	}
 
 	/**
@@ -1083,8 +889,28 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationNodeView__SetName__String() {
-        return getSuperStateDeclarationNodeView().getEOperations().get(3);
+	public EOperation getSuperStateDeclarationView__SetName__String() {
+        return getSuperStateDeclarationView().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSuperStateDeclarationView__GetConstSig() {
+        return getSuperStateDeclarationView().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSuperStateDeclarationView__SetConstSig__String() {
+        return getSuperStateDeclarationView().getEOperations().get(5);
 	}
 
 	/**
@@ -1228,6 +1054,26 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
+	public EOperation getInputView__GetLabel() {
+        return getInputView().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInputView__SetLabel__String() {
+        return getInputView().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getOutputView() {
 		if (outputViewEClass == null) {
 			outputViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(14);
@@ -1251,9 +1097,95 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
+	public EOperation getOutputView__GetLabel() {
+        return getOutputView().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getOutputView__SetLabel__String() {
+        return getOutputView().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getOperatorView() {
+		if (operatorViewEClass == null) {
+			operatorViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(15);
+		}
+		return operatorViewEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getOperatorView_InternalOperator() {
+        return (EReference)getOperatorView().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getOperatorView__GetOperator() {
+        return getOperatorView().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getOperatorView__SetOperator__String() {
+        return getOperatorView().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getConnectionCircuitView() {
+		if (connectionCircuitViewEClass == null) {
+			connectionCircuitViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(16);
+		}
+		return connectionCircuitViewEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getConnectionCircuitView_InternalConnectionCircuit() {
+        return (EReference)getConnectionCircuitView().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getAbstractTransitionView() {
 		if (abstractTransitionViewEClass == null) {
-			abstractTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(15);
+			abstractTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(17);
 		}
 		return abstractTransitionViewEClass;
 	}
@@ -1296,7 +1228,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getTransitionView() {
 		if (transitionViewEClass == null) {
-			transitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(16);
+			transitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(18);
 		}
 		return transitionViewEClass;
 	}
@@ -1379,7 +1311,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getImmediateTransitionView() {
 		if (immediateTransitionViewEClass == null) {
-			immediateTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(17);
+			immediateTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(19);
 		}
 		return immediateTransitionViewEClass;
 	}
@@ -1462,7 +1394,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getTerminationTransitionView() {
 		if (terminationTransitionViewEClass == null) {
-			terminationTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(18);
+			terminationTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(20);
 		}
 		return terminationTransitionViewEClass;
 	}
@@ -1505,7 +1437,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getConditionalTerminationTransitionView() {
 		if (conditionalTerminationTransitionViewEClass == null) {
-			conditionalTerminationTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(19);
+			conditionalTerminationTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(21);
 		}
 		return conditionalTerminationTransitionViewEClass;
 	}
@@ -1588,7 +1520,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getStrongAbortTransitionView() {
 		if (strongAbortTransitionViewEClass == null) {
-			strongAbortTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(20);
+			strongAbortTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(22);
 		}
 		return strongAbortTransitionViewEClass;
 	}
@@ -1671,7 +1603,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getImmediateStrongAbortTransitionView() {
 		if (immediateStrongAbortTransitionViewEClass == null) {
-			immediateStrongAbortTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(21);
+			immediateStrongAbortTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(23);
 		}
 		return immediateStrongAbortTransitionViewEClass;
 	}
@@ -1754,7 +1686,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getDeferredTransitionView() {
 		if (deferredTransitionViewEClass == null) {
-			deferredTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(22);
+			deferredTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(24);
 		}
 		return deferredTransitionViewEClass;
 	}
@@ -1837,7 +1769,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getImmediateDeferredTransitionView() {
 		if (immediateDeferredTransitionViewEClass == null) {
-			immediateDeferredTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(23);
+			immediateDeferredTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(25);
 		}
 		return immediateDeferredTransitionViewEClass;
 	}
@@ -1920,7 +1852,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getTerminationDefferdTransitionView() {
 		if (terminationDefferdTransitionViewEClass == null) {
-			terminationDefferdTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(24);
+			terminationDefferdTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(26);
 		}
 		return terminationDefferdTransitionViewEClass;
 	}
@@ -1983,7 +1915,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getConditionalTerminationDeferredTransitionView() {
 		if (conditionalTerminationDeferredTransitionViewEClass == null) {
-			conditionalTerminationDeferredTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(25);
+			conditionalTerminationDeferredTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(27);
 		}
 		return conditionalTerminationDeferredTransitionViewEClass;
 	}
@@ -2066,7 +1998,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getStrongAbortDeferredTransitionView() {
 		if (strongAbortDeferredTransitionViewEClass == null) {
-			strongAbortDeferredTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(26);
+			strongAbortDeferredTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(28);
 		}
 		return strongAbortDeferredTransitionViewEClass;
 	}
@@ -2149,7 +2081,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getImmediateStrongAbortDeferredTransitionView() {
 		if (immediateStrongAbortDeferredTransitionViewEClass == null) {
-			immediateStrongAbortDeferredTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(27);
+			immediateStrongAbortDeferredTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(29);
 		}
 		return immediateStrongAbortDeferredTransitionViewEClass;
 	}
@@ -2232,7 +2164,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getHistoryTransitionView() {
 		if (historyTransitionViewEClass == null) {
-			historyTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(28);
+			historyTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(30);
 		}
 		return historyTransitionViewEClass;
 	}
@@ -2355,7 +2287,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getImmediateHistoryTransitionView() {
 		if (immediateHistoryTransitionViewEClass == null) {
-			immediateHistoryTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(29);
+			immediateHistoryTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(31);
 		}
 		return immediateHistoryTransitionViewEClass;
 	}
@@ -2478,7 +2410,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getTerminationHistoryTransitionView() {
 		if (terminationHistoryTransitionViewEClass == null) {
-			terminationHistoryTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(30);
+			terminationHistoryTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(32);
 		}
 		return terminationHistoryTransitionViewEClass;
 	}
@@ -2581,7 +2513,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getConditionalTerminationHistoryTransitionView() {
 		if (conditionalTerminationHistoryTransitionViewEClass == null) {
-			conditionalTerminationHistoryTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(31);
+			conditionalTerminationHistoryTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(33);
 		}
 		return conditionalTerminationHistoryTransitionViewEClass;
 	}
@@ -2704,7 +2636,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getStrongAbortHistoryTransitionView() {
 		if (strongAbortHistoryTransitionViewEClass == null) {
-			strongAbortHistoryTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(32);
+			strongAbortHistoryTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(34);
 		}
 		return strongAbortHistoryTransitionViewEClass;
 	}
@@ -2827,7 +2759,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getImmediateStrongAbortHistoryTransitionView() {
 		if (immediateStrongAbortHistoryTransitionViewEClass == null) {
-			immediateStrongAbortHistoryTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(33);
+			immediateStrongAbortHistoryTransitionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(35);
 		}
 		return immediateStrongAbortHistoryTransitionViewEClass;
 	}
@@ -2950,7 +2882,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getConnectionView() {
 		if (connectionViewEClass == null) {
-			connectionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(34);
+			connectionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(36);
 		}
 		return connectionViewEClass;
 	}
@@ -2973,7 +2905,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EClass getSCChartView() {
 		if (scChartViewEClass == null) {
-			scChartViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(35);
+			scChartViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(37);
 		}
 		return scChartViewEClass;
 	}
@@ -2986,338 +2918,6 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EReference getSCChartView_InternalSCChart() {
         return (EReference)getSCChartView().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getRootStateDeclarationView() {
-		if (rootStateDeclarationViewEClass == null) {
-			rootStateDeclarationViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(36);
-		}
-		return rootStateDeclarationViewEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getRootStateDeclarationView_InternalRootStateDeclaration() {
-        return (EReference)getRootStateDeclarationView().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateDeclarationView__GetDeclarationType() {
-        return getRootStateDeclarationView().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateDeclarationView__SetDeclarationType__String() {
-        return getRootStateDeclarationView().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateDeclarationView__GetInputOutput() {
-        return getRootStateDeclarationView().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateDeclarationView__SetInputOutput__String() {
-        return getRootStateDeclarationView().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateDeclarationView__GetName() {
-        return getRootStateDeclarationView().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getRootStateDeclarationView__SetName__String() {
-        return getRootStateDeclarationView().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getSuperStateDeclarationView() {
-		if (superStateDeclarationViewEClass == null) {
-			superStateDeclarationViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(37);
-		}
-		return superStateDeclarationViewEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSuperStateDeclarationView_InternalSuperStateDeclaration() {
-        return (EReference)getSuperStateDeclarationView().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateDeclarationView__GetDeclarationType() {
-        return getSuperStateDeclarationView().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateDeclarationView__SetDeclarationType__String() {
-        return getSuperStateDeclarationView().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateDeclarationView__GetName() {
-        return getSuperStateDeclarationView().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuperStateDeclarationView__SetName__String() {
-        return getSuperStateDeclarationView().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getSuspendView() {
-		if (suspendViewEClass == null) {
-			suspendViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(38);
-		}
-		return suspendViewEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getSuspendView_InternalSuspend() {
-        return (EReference)getSuspendView().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuspendView__GetCondition() {
-        return getSuspendView().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuspendView__SetCondition__String() {
-        return getSuspendView().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuspendView__GetName() {
-        return getSuspendView().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuspendView__SetName__String() {
-        return getSuspendView().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuspendView__GetSuspendType() {
-        return getSuspendView().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSuspendView__SetSuspendType__String() {
-        return getSuspendView().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getActionView() {
-		if (actionViewEClass == null) {
-			actionViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(39);
-		}
-		return actionViewEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getActionView_InternalAction() {
-        return (EReference)getActionView().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getActionView__GetActionType() {
-        return getActionView().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getActionView__SetActionType__String() {
-        return getActionView().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getActionView__GetCondition() {
-        return getActionView().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getActionView__SetCondition__String() {
-        return getActionView().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getActionView__GetEffect() {
-        return getActionView().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getActionView__SetEffect__String() {
-        return getActionView().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getActionView__GetName() {
-        return getActionView().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getActionView__SetName__String() {
-        return getActionView().getEOperations().get(7);
 	}
 
 	/**

@@ -62,9 +62,9 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 				//if the region is the only one in the container
 				if(element.getRootElement.getRootStates.head.getRegions.size==1){
 					it.x=10
-					it.y=33+element.getRootElement.getRootStates.head.getRootStateDeclarationNodes.size*13
+					it.y=33+element.getRootElement.getRootStates.head.getRootStateDeclarations.size*13
 					it.width=element.getRootElement.getRootStates.head.width-20
-					it.height=element.getRootElement.getRootStates.head.height-43-element.getRootElement.getRootStates.head.getRootStateDeclarationNodes.size*13
+					it.height=element.getRootElement.getRootStates.head.height-43-element.getRootElement.getRootStates.head.getRootStateDeclarations.size*13
 				}
 				else {
 					//manual break

@@ -85,49 +85,13 @@ public interface ViewsPackage extends EPackage {
 	int ROOT_STATE_VIEW_FEATURE_COUNT = 1;
 
 	/**
-	 * The operation id for the '<em>Get Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_VIEW___GET_SUSPENDS = 0;
-
-	/**
-	 * The operation id for the '<em>Set Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_VIEW___SET_SUSPENDS__ELIST = 1;
-
-	/**
-	 * The operation id for the '<em>Add Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_VIEW___ADD_SUSPENDS__SUSPEND = 2;
-
-	/**
-	 * The operation id for the '<em>Remove Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND = 3;
-
-	/**
 	 * The operation id for the '<em>Get Label</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW___GET_LABEL = 4;
+	int ROOT_STATE_VIEW___GET_LABEL = 0;
 
 	/**
 	 * The operation id for the '<em>Set Label</em>' operation.
@@ -136,43 +100,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW___SET_LABEL__STRING = 5;
-
-	/**
-	 * The operation id for the '<em>Get Declaration</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_VIEW___GET_DECLARATION = 6;
-
-	/**
-	 * The operation id for the '<em>Set Declaration</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_VIEW___SET_DECLARATION__ELIST = 7;
-
-	/**
-	 * The operation id for the '<em>Add Declaration</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_VIEW___ADD_DECLARATION__ROOTSTATEDECLARATION = 8;
-
-	/**
-	 * The operation id for the '<em>Remove Declaration</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_VIEW___REMOVE_DECLARATION__ROOTSTATEDECLARATION = 9;
+	int ROOT_STATE_VIEW___SET_LABEL__STRING = 1;
 
 	/**
 	 * The number of operations of the '<em>Root State View</em>' class.
@@ -181,7 +109,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW_OPERATION_COUNT = 10;
+	int ROOT_STATE_VIEW_OPERATION_COUNT = 2;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.RegionViewImpl <em>Region View</em>}' class.
@@ -403,49 +331,13 @@ public interface ViewsPackage extends EPackage {
 	int SUPER_STATE_VIEW_FEATURE_COUNT = 1;
 
 	/**
-	 * The operation id for the '<em>Get Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_VIEW___GET_SUSPENDS = 0;
-
-	/**
-	 * The operation id for the '<em>Set Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_VIEW___SET_SUSPENDS__ELIST = 1;
-
-	/**
-	 * The operation id for the '<em>Add Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_VIEW___ADD_SUSPENDS__SUSPEND = 2;
-
-	/**
-	 * The operation id for the '<em>Remove Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND = 3;
-
-	/**
 	 * The operation id for the '<em>Get Label</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_VIEW___GET_LABEL = 4;
+	int SUPER_STATE_VIEW___GET_LABEL = 0;
 
 	/**
 	 * The operation id for the '<em>Set Label</em>' operation.
@@ -454,79 +346,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_VIEW___SET_LABEL__STRING = 5;
-
-	/**
-	 * The operation id for the '<em>Get Declaration</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_VIEW___GET_DECLARATION = 6;
-
-	/**
-	 * The operation id for the '<em>Set Declaration</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_VIEW___SET_DECLARATION__ELIST = 7;
-
-	/**
-	 * The operation id for the '<em>Add Declaration</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_VIEW___ADD_DECLARATION__SUPERSTATEDECLARATION = 8;
-
-	/**
-	 * The operation id for the '<em>Remove Declaration</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_VIEW___REMOVE_DECLARATION__SUPERSTATEDECLARATION = 9;
-
-	/**
-	 * The operation id for the '<em>Get Actions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_VIEW___GET_ACTIONS = 10;
-
-	/**
-	 * The operation id for the '<em>Set Actions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_VIEW___SET_ACTIONS__ELIST = 11;
-
-	/**
-	 * The operation id for the '<em>Add Actions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_VIEW___ADD_ACTIONS__ACTION = 12;
-
-	/**
-	 * The operation id for the '<em>Remove Actions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_VIEW___REMOVE_ACTIONS__ACTION = 13;
+	int SUPER_STATE_VIEW___SET_LABEL__STRING = 1;
 
 	/**
 	 * The number of operations of the '<em>Super State View</em>' class.
@@ -535,7 +355,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_VIEW_OPERATION_COUNT = 14;
+	int SUPER_STATE_VIEW_OPERATION_COUNT = 2;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.InitilalSuperStateViewImpl <em>Initilal Super State View</em>}' class.
@@ -575,42 +395,6 @@ public interface ViewsPackage extends EPackage {
 	int INITILAL_SUPER_STATE_VIEW_FEATURE_COUNT = SUPER_STATE_VIEW_FEATURE_COUNT + 1;
 
 	/**
-	 * The operation id for the '<em>Get Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITILAL_SUPER_STATE_VIEW___GET_SUSPENDS = SUPER_STATE_VIEW___GET_SUSPENDS;
-
-	/**
-	 * The operation id for the '<em>Set Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITILAL_SUPER_STATE_VIEW___SET_SUSPENDS__ELIST = SUPER_STATE_VIEW___SET_SUSPENDS__ELIST;
-
-	/**
-	 * The operation id for the '<em>Add Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITILAL_SUPER_STATE_VIEW___ADD_SUSPENDS__SUSPEND = SUPER_STATE_VIEW___ADD_SUSPENDS__SUSPEND;
-
-	/**
-	 * The operation id for the '<em>Remove Suspends</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITILAL_SUPER_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND = SUPER_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND;
-
-	/**
 	 * The operation id for the '<em>Get Label</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -629,78 +413,6 @@ public interface ViewsPackage extends EPackage {
 	int INITILAL_SUPER_STATE_VIEW___SET_LABEL__STRING = SUPER_STATE_VIEW___SET_LABEL__STRING;
 
 	/**
-	 * The operation id for the '<em>Get Declaration</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITILAL_SUPER_STATE_VIEW___GET_DECLARATION = SUPER_STATE_VIEW___GET_DECLARATION;
-
-	/**
-	 * The operation id for the '<em>Set Declaration</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITILAL_SUPER_STATE_VIEW___SET_DECLARATION__ELIST = SUPER_STATE_VIEW___SET_DECLARATION__ELIST;
-
-	/**
-	 * The operation id for the '<em>Add Declaration</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITILAL_SUPER_STATE_VIEW___ADD_DECLARATION__SUPERSTATEDECLARATION = SUPER_STATE_VIEW___ADD_DECLARATION__SUPERSTATEDECLARATION;
-
-	/**
-	 * The operation id for the '<em>Remove Declaration</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITILAL_SUPER_STATE_VIEW___REMOVE_DECLARATION__SUPERSTATEDECLARATION = SUPER_STATE_VIEW___REMOVE_DECLARATION__SUPERSTATEDECLARATION;
-
-	/**
-	 * The operation id for the '<em>Get Actions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITILAL_SUPER_STATE_VIEW___GET_ACTIONS = SUPER_STATE_VIEW___GET_ACTIONS;
-
-	/**
-	 * The operation id for the '<em>Set Actions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITILAL_SUPER_STATE_VIEW___SET_ACTIONS__ELIST = SUPER_STATE_VIEW___SET_ACTIONS__ELIST;
-
-	/**
-	 * The operation id for the '<em>Add Actions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITILAL_SUPER_STATE_VIEW___ADD_ACTIONS__ACTION = SUPER_STATE_VIEW___ADD_ACTIONS__ACTION;
-
-	/**
-	 * The operation id for the '<em>Remove Actions</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITILAL_SUPER_STATE_VIEW___REMOVE_ACTIONS__ACTION = SUPER_STATE_VIEW___REMOVE_ACTIONS__ACTION;
-
-	/**
 	 * The number of operations of the '<em>Initilal Super State View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -710,32 +422,32 @@ public interface ViewsPackage extends EPackage {
 	int INITILAL_SUPER_STATE_VIEW_OPERATION_COUNT = SUPER_STATE_VIEW_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.RootStateDeclarationNodeViewImpl <em>Root State Declaration Node View</em>}' class.
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.RootStateDeclarationViewImpl <em>Root State Declaration View</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.RootStateDeclarationNodeViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getRootStateDeclarationNodeView()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.RootStateDeclarationViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getRootStateDeclarationView()
 	 * @generated
 	 */
-	int ROOT_STATE_DECLARATION_NODE_VIEW = 5;
+	int ROOT_STATE_DECLARATION_VIEW = 5;
 
 	/**
-	 * The feature id for the '<em><b>Internal Root State Declaration Node</b></em>' reference.
+	 * The feature id for the '<em><b>Internal Root State Declaration</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_NODE_VIEW__INTERNAL_ROOT_STATE_DECLARATION_NODE = 0;
+	int ROOT_STATE_DECLARATION_VIEW__INTERNAL_ROOT_STATE_DECLARATION = 0;
 
 	/**
-	 * The number of structural features of the '<em>Root State Declaration Node View</em>' class.
+	 * The number of structural features of the '<em>Root State Declaration View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_NODE_VIEW_FEATURE_COUNT = 1;
+	int ROOT_STATE_DECLARATION_VIEW_FEATURE_COUNT = 1;
 
 	/**
 	 * The operation id for the '<em>Get Declaration Type</em>' operation.
@@ -744,7 +456,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_NODE_VIEW___GET_DECLARATION_TYPE = 0;
+	int ROOT_STATE_DECLARATION_VIEW___GET_DECLARATION_TYPE = 0;
 
 	/**
 	 * The operation id for the '<em>Set Declaration Type</em>' operation.
@@ -753,7 +465,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_NODE_VIEW___SET_DECLARATION_TYPE__STRING = 1;
+	int ROOT_STATE_DECLARATION_VIEW___SET_DECLARATION_TYPE__STRING = 1;
 
 	/**
 	 * The operation id for the '<em>Get Input Output</em>' operation.
@@ -762,7 +474,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_NODE_VIEW___GET_INPUT_OUTPUT = 2;
+	int ROOT_STATE_DECLARATION_VIEW___GET_INPUT_OUTPUT = 2;
 
 	/**
 	 * The operation id for the '<em>Set Input Output</em>' operation.
@@ -771,7 +483,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_NODE_VIEW___SET_INPUT_OUTPUT__STRING = 3;
+	int ROOT_STATE_DECLARATION_VIEW___SET_INPUT_OUTPUT__STRING = 3;
 
 	/**
 	 * The operation id for the '<em>Get Name</em>' operation.
@@ -780,7 +492,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_NODE_VIEW___GET_NAME = 4;
+	int ROOT_STATE_DECLARATION_VIEW___GET_NAME = 4;
 
 	/**
 	 * The operation id for the '<em>Set Name</em>' operation.
@@ -789,44 +501,44 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_NODE_VIEW___SET_NAME__STRING = 5;
+	int ROOT_STATE_DECLARATION_VIEW___SET_NAME__STRING = 5;
 
 	/**
-	 * The number of operations of the '<em>Root State Declaration Node View</em>' class.
+	 * The number of operations of the '<em>Root State Declaration View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_NODE_VIEW_OPERATION_COUNT = 6;
+	int ROOT_STATE_DECLARATION_VIEW_OPERATION_COUNT = 6;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendNodeViewImpl <em>Suspend Node View</em>}' class.
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl <em>Suspend View</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendNodeViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuspendNodeView()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuspendView()
 	 * @generated
 	 */
-	int SUSPEND_NODE_VIEW = 6;
+	int SUSPEND_VIEW = 6;
 
 	/**
-	 * The feature id for the '<em><b>Internal Suspend Node</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUSPEND_NODE_VIEW__INTERNAL_SUSPEND_NODE = 0;
-
-	/**
-	 * The number of structural features of the '<em>Suspend Node View</em>' class.
+	 * The feature id for the '<em><b>Internal Suspend</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUSPEND_NODE_VIEW_FEATURE_COUNT = 1;
+	int SUSPEND_VIEW__INTERNAL_SUSPEND = 0;
+
+	/**
+	 * The number of structural features of the '<em>Suspend View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUSPEND_VIEW_FEATURE_COUNT = 1;
 
 	/**
 	 * The operation id for the '<em>Get Condition</em>' operation.
@@ -835,7 +547,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUSPEND_NODE_VIEW___GET_CONDITION = 0;
+	int SUSPEND_VIEW___GET_CONDITION = 0;
 
 	/**
 	 * The operation id for the '<em>Set Condition</em>' operation.
@@ -844,7 +556,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUSPEND_NODE_VIEW___SET_CONDITION__STRING = 1;
+	int SUSPEND_VIEW___SET_CONDITION__STRING = 1;
 
 	/**
 	 * The operation id for the '<em>Get Suspend Type</em>' operation.
@@ -853,7 +565,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUSPEND_NODE_VIEW___GET_SUSPEND_TYPE = 2;
+	int SUSPEND_VIEW___GET_SUSPEND_TYPE = 2;
 
 	/**
 	 * The operation id for the '<em>Set Suspend Type</em>' operation.
@@ -862,44 +574,153 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUSPEND_NODE_VIEW___SET_SUSPEND_TYPE__STRING = 3;
+	int SUSPEND_VIEW___SET_SUSPEND_TYPE__STRING = 3;
 
 	/**
-	 * The number of operations of the '<em>Suspend Node View</em>' class.
+	 * The operation id for the '<em>Get Uuid</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUSPEND_NODE_VIEW_OPERATION_COUNT = 4;
+	int SUSPEND_VIEW___GET_UUID = 4;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionNodeViewImpl <em>Action Node View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionNodeViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getActionNodeView()
-	 * @generated
-	 */
-	int ACTION_NODE_VIEW = 7;
-
-	/**
-	 * The feature id for the '<em><b>Internal Action Node</b></em>' reference.
+	 * The operation id for the '<em>Set Uuid</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACTION_NODE_VIEW__INTERNAL_ACTION_NODE = 0;
+	int SUSPEND_VIEW___SET_UUID__STRING = 5;
 
 	/**
-	 * The number of structural features of the '<em>Action Node View</em>' class.
+	 * The number of operations of the '<em>Suspend View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACTION_NODE_VIEW_FEATURE_COUNT = 1;
+	int SUSPEND_VIEW_OPERATION_COUNT = 6;
+
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionViewImpl <em>Action View</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getActionView()
+	 * @generated
+	 */
+	int ACTION_VIEW = 7;
+
+	/**
+	 * The feature id for the '<em><b>Internal Action</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW__INTERNAL_ACTION = 0;
+
+	/**
+	 * The number of structural features of the '<em>Action View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW_FEATURE_COUNT = 1;
+
+	/**
+	 * The operation id for the '<em>Get Action Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___GET_ACTION_TYPE = 0;
+
+	/**
+	 * The operation id for the '<em>Set Action Type</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___SET_ACTION_TYPE__STRING = 1;
+
+	/**
+	 * The operation id for the '<em>Get Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___GET_CONDITION = 2;
+
+	/**
+	 * The operation id for the '<em>Set Condition</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___SET_CONDITION__STRING = 3;
+
+	/**
+	 * The operation id for the '<em>Get Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___GET_EFFECT = 4;
+
+	/**
+	 * The operation id for the '<em>Set Effect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___SET_EFFECT__STRING = 5;
+
+	/**
+	 * The number of operations of the '<em>Action View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW_OPERATION_COUNT = 6;
+
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateDeclarationViewImpl <em>Super State Declaration View</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateDeclarationViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuperStateDeclarationView()
+	 * @generated
+	 */
+	int SUPER_STATE_DECLARATION_VIEW = 8;
+
+	/**
+	 * The feature id for the '<em><b>Internal Super State Declaration</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_DECLARATION_VIEW__INTERNAL_SUPER_STATE_DECLARATION = 0;
+
+	/**
+	 * The number of structural features of the '<em>Super State Declaration View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_DECLARATION_VIEW_FEATURE_COUNT = 1;
 
 	/**
 	 * The operation id for the '<em>Get Declaration Type</em>' operation.
@@ -908,7 +729,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACTION_NODE_VIEW___GET_DECLARATION_TYPE = 0;
+	int SUPER_STATE_DECLARATION_VIEW___GET_DECLARATION_TYPE = 0;
 
 	/**
 	 * The operation id for the '<em>Set Declaration Type</em>' operation.
@@ -917,25 +738,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACTION_NODE_VIEW___SET_DECLARATION_TYPE__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Input Output</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_NODE_VIEW___GET_INPUT_OUTPUT = 2;
-
-	/**
-	 * The operation id for the '<em>Set Input Output</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_NODE_VIEW___SET_INPUT_OUTPUT__STRING = 3;
+	int SUPER_STATE_DECLARATION_VIEW___SET_DECLARATION_TYPE__STRING = 1;
 
 	/**
 	 * The operation id for the '<em>Get Name</em>' operation.
@@ -944,7 +747,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACTION_NODE_VIEW___GET_NAME = 4;
+	int SUPER_STATE_DECLARATION_VIEW___GET_NAME = 2;
 
 	/**
 	 * The operation id for the '<em>Set Name</em>' operation.
@@ -953,89 +756,34 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACTION_NODE_VIEW___SET_NAME__STRING = 5;
+	int SUPER_STATE_DECLARATION_VIEW___SET_NAME__STRING = 3;
 
 	/**
-	 * The number of operations of the '<em>Action Node View</em>' class.
+	 * The operation id for the '<em>Get Const Sig</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACTION_NODE_VIEW_OPERATION_COUNT = 6;
+	int SUPER_STATE_DECLARATION_VIEW___GET_CONST_SIG = 4;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateDeclarationNodeViewImpl <em>Super State Declaration Node View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateDeclarationNodeViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuperStateDeclarationNodeView()
-	 * @generated
-	 */
-	int SUPER_STATE_DECLARATION_NODE_VIEW = 8;
-
-	/**
-	 * The feature id for the '<em><b>Internal Super State Declaration Node</b></em>' reference.
+	 * The operation id for the '<em>Set Const Sig</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_DECLARATION_NODE_VIEW__INTERNAL_SUPER_STATE_DECLARATION_NODE = 0;
+	int SUPER_STATE_DECLARATION_VIEW___SET_CONST_SIG__STRING = 5;
 
 	/**
-	 * The number of structural features of the '<em>Super State Declaration Node View</em>' class.
+	 * The number of operations of the '<em>Super State Declaration View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_DECLARATION_NODE_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Declaration Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_DECLARATION_NODE_VIEW___GET_DECLARATION_TYPE = 0;
-
-	/**
-	 * The operation id for the '<em>Set Declaration Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_DECLARATION_NODE_VIEW___SET_DECLARATION_TYPE__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_DECLARATION_NODE_VIEW___GET_NAME = 2;
-
-	/**
-	 * The operation id for the '<em>Set Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_DECLARATION_NODE_VIEW___SET_NAME__STRING = 3;
-
-	/**
-	 * The number of operations of the '<em>Super State Declaration Node View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_DECLARATION_NODE_VIEW_OPERATION_COUNT = 4;
+	int SUPER_STATE_DECLARATION_VIEW_OPERATION_COUNT = 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SimpleStateViewImpl <em>Simple State View</em>}' class.
@@ -1286,13 +1034,31 @@ public interface ViewsPackage extends EPackage {
 	int INPUT_VIEW_FEATURE_COUNT = 1;
 
 	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INPUT_VIEW___GET_LABEL = 0;
+
+	/**
+	 * The operation id for the '<em>Set Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INPUT_VIEW___SET_LABEL__STRING = 1;
+
+	/**
 	 * The number of operations of the '<em>Input View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INPUT_VIEW_OPERATION_COUNT = 0;
+	int INPUT_VIEW_OPERATION_COUNT = 2;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.OutputViewImpl <em>Output View</em>}' class.
@@ -1323,13 +1089,123 @@ public interface ViewsPackage extends EPackage {
 	int OUTPUT_VIEW_FEATURE_COUNT = 1;
 
 	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OUTPUT_VIEW___GET_LABEL = 0;
+
+	/**
+	 * The operation id for the '<em>Set Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OUTPUT_VIEW___SET_LABEL__STRING = 1;
+
+	/**
 	 * The number of operations of the '<em>Output View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int OUTPUT_VIEW_OPERATION_COUNT = 0;
+	int OUTPUT_VIEW_OPERATION_COUNT = 2;
+
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.OperatorViewImpl <em>Operator View</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.OperatorViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getOperatorView()
+	 * @generated
+	 */
+	int OPERATOR_VIEW = 15;
+
+	/**
+	 * The feature id for the '<em><b>Internal Operator</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPERATOR_VIEW__INTERNAL_OPERATOR = 0;
+
+	/**
+	 * The number of structural features of the '<em>Operator View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPERATOR_VIEW_FEATURE_COUNT = 1;
+
+	/**
+	 * The operation id for the '<em>Get Operator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPERATOR_VIEW___GET_OPERATOR = 0;
+
+	/**
+	 * The operation id for the '<em>Set Operator</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPERATOR_VIEW___SET_OPERATOR__STRING = 1;
+
+	/**
+	 * The number of operations of the '<em>Operator View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPERATOR_VIEW_OPERATION_COUNT = 2;
+
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionCircuitViewImpl <em>Connection Circuit View</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionCircuitViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConnectionCircuitView()
+	 * @generated
+	 */
+	int CONNECTION_CIRCUIT_VIEW = 16;
+
+	/**
+	 * The feature id for the '<em><b>Internal Connection Circuit</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTION_CIRCUIT_VIEW__INTERNAL_CONNECTION_CIRCUIT = 0;
+
+	/**
+	 * The number of structural features of the '<em>Connection Circuit View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTION_CIRCUIT_VIEW_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Connection Circuit View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTION_CIRCUIT_VIEW_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.AbstractTransitionViewImpl <em>Abstract Transition View</em>}' class.
@@ -1339,7 +1215,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getAbstractTransitionView()
 	 * @generated
 	 */
-	int ABSTRACT_TRANSITION_VIEW = 15;
+	int ABSTRACT_TRANSITION_VIEW = 17;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -1394,7 +1270,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTransitionView()
 	 * @generated
 	 */
-	int TRANSITION_VIEW = 16;
+	int TRANSITION_VIEW = 18;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -1512,7 +1388,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_TRANSITION_VIEW = 17;
+	int IMMEDIATE_TRANSITION_VIEW = 19;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -1630,7 +1506,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTerminationTransitionView()
 	 * @generated
 	 */
-	int TERMINATION_TRANSITION_VIEW = 18;
+	int TERMINATION_TRANSITION_VIEW = 20;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -1712,7 +1588,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConditionalTerminationTransitionView()
 	 * @generated
 	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW = 19;
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW = 21;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -1830,7 +1706,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getStrongAbortTransitionView()
 	 * @generated
 	 */
-	int STRONG_ABORT_TRANSITION_VIEW = 20;
+	int STRONG_ABORT_TRANSITION_VIEW = 22;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -1948,7 +1824,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateStrongAbortTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW = 21;
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW = 23;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2066,7 +1942,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDeferredTransitionView()
 	 * @generated
 	 */
-	int DEFERRED_TRANSITION_VIEW = 22;
+	int DEFERRED_TRANSITION_VIEW = 24;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2184,7 +2060,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateDeferredTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW = 23;
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW = 25;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2302,7 +2178,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTerminationDefferdTransitionView()
 	 * @generated
 	 */
-	int TERMINATION_DEFFERD_TRANSITION_VIEW = 24;
+	int TERMINATION_DEFFERD_TRANSITION_VIEW = 26;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2402,7 +2278,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConditionalTerminationDeferredTransitionView()
 	 * @generated
 	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW = 25;
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW = 27;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2520,7 +2396,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getStrongAbortDeferredTransitionView()
 	 * @generated
 	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 26;
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 28;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2638,7 +2514,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateStrongAbortDeferredTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 27;
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 29;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2756,7 +2632,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getHistoryTransitionView()
 	 * @generated
 	 */
-	int HISTORY_TRANSITION_VIEW = 28;
+	int HISTORY_TRANSITION_VIEW = 30;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2910,7 +2786,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateHistoryTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW = 29;
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW = 31;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3064,7 +2940,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTerminationHistoryTransitionView()
 	 * @generated
 	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW = 30;
+	int TERMINATION_HISTORY_TRANSITION_VIEW = 32;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3200,7 +3076,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConditionalTerminationHistoryTransitionView()
 	 * @generated
 	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW = 31;
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW = 33;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3354,7 +3230,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getStrongAbortHistoryTransitionView()
 	 * @generated
 	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW = 32;
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW = 34;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3508,7 +3384,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateStrongAbortHistoryTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW = 33;
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW = 35;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3662,7 +3538,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConnectionView()
 	 * @generated
 	 */
-	int CONNECTION_VIEW = 34;
+	int CONNECTION_VIEW = 36;
 
 	/**
 	 * The feature id for the '<em><b>Internal Connection</b></em>' reference.
@@ -3699,7 +3575,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSCChartView()
 	 * @generated
 	 */
-	int SC_CHART_VIEW = 35;
+	int SC_CHART_VIEW = 37;
 
 	/**
 	 * The feature id for the '<em><b>Internal SC Chart</b></em>' reference.
@@ -3728,370 +3604,6 @@ public interface ViewsPackage extends EPackage {
 	 */
 	int SC_CHART_VIEW_OPERATION_COUNT = 0;
 
-	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.RootStateDeclarationViewImpl <em>Root State Declaration View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.RootStateDeclarationViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getRootStateDeclarationView()
-	 * @generated
-	 */
-	int ROOT_STATE_DECLARATION_VIEW = 36;
-
-	/**
-	 * The feature id for the '<em><b>Internal Root State Declaration</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_DECLARATION_VIEW__INTERNAL_ROOT_STATE_DECLARATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Root State Declaration View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_DECLARATION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Declaration Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_DECLARATION_VIEW___GET_DECLARATION_TYPE = 0;
-
-	/**
-	 * The operation id for the '<em>Set Declaration Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_DECLARATION_VIEW___SET_DECLARATION_TYPE__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Input Output</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_DECLARATION_VIEW___GET_INPUT_OUTPUT = 2;
-
-	/**
-	 * The operation id for the '<em>Set Input Output</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_DECLARATION_VIEW___SET_INPUT_OUTPUT__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Get Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_DECLARATION_VIEW___GET_NAME = 4;
-
-	/**
-	 * The operation id for the '<em>Set Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_DECLARATION_VIEW___SET_NAME__STRING = 5;
-
-	/**
-	 * The number of operations of the '<em>Root State Declaration View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROOT_STATE_DECLARATION_VIEW_OPERATION_COUNT = 6;
-
-	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateDeclarationViewImpl <em>Super State Declaration View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateDeclarationViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuperStateDeclarationView()
-	 * @generated
-	 */
-	int SUPER_STATE_DECLARATION_VIEW = 37;
-
-	/**
-	 * The feature id for the '<em><b>Internal Super State Declaration</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_DECLARATION_VIEW__INTERNAL_SUPER_STATE_DECLARATION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Super State Declaration View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_DECLARATION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Declaration Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_DECLARATION_VIEW___GET_DECLARATION_TYPE = 0;
-
-	/**
-	 * The operation id for the '<em>Set Declaration Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_DECLARATION_VIEW___SET_DECLARATION_TYPE__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_DECLARATION_VIEW___GET_NAME = 2;
-
-	/**
-	 * The operation id for the '<em>Set Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_DECLARATION_VIEW___SET_NAME__STRING = 3;
-
-	/**
-	 * The number of operations of the '<em>Super State Declaration View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUPER_STATE_DECLARATION_VIEW_OPERATION_COUNT = 4;
-
-	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl <em>Suspend View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuspendView()
-	 * @generated
-	 */
-	int SUSPEND_VIEW = 38;
-
-	/**
-	 * The feature id for the '<em><b>Internal Suspend</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUSPEND_VIEW__INTERNAL_SUSPEND = 0;
-
-	/**
-	 * The number of structural features of the '<em>Suspend View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUSPEND_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUSPEND_VIEW___GET_CONDITION = 0;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUSPEND_VIEW___SET_CONDITION__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUSPEND_VIEW___GET_NAME = 2;
-
-	/**
-	 * The operation id for the '<em>Set Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUSPEND_VIEW___SET_NAME__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Get Suspend Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUSPEND_VIEW___GET_SUSPEND_TYPE = 4;
-
-	/**
-	 * The operation id for the '<em>Set Suspend Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUSPEND_VIEW___SET_SUSPEND_TYPE__STRING = 5;
-
-	/**
-	 * The number of operations of the '<em>Suspend View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUSPEND_VIEW_OPERATION_COUNT = 6;
-
-	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionViewImpl <em>Action View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getActionView()
-	 * @generated
-	 */
-	int ACTION_VIEW = 39;
-
-	/**
-	 * The feature id for the '<em><b>Internal Action</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_VIEW__INTERNAL_ACTION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Action View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Action Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_VIEW___GET_ACTION_TYPE = 0;
-
-	/**
-	 * The operation id for the '<em>Set Action Type</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_VIEW___SET_ACTION_TYPE__STRING = 1;
-
-	/**
-	 * The operation id for the '<em>Get Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_VIEW___GET_CONDITION = 2;
-
-	/**
-	 * The operation id for the '<em>Set Condition</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_VIEW___SET_CONDITION__STRING = 3;
-
-	/**
-	 * The operation id for the '<em>Get Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_VIEW___GET_EFFECT = 4;
-
-	/**
-	 * The operation id for the '<em>Set Effect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_VIEW___SET_EFFECT__STRING = 5;
-
-	/**
-	 * The operation id for the '<em>Get Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_VIEW___GET_NAME = 6;
-
-	/**
-	 * The operation id for the '<em>Set Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_VIEW___SET_NAME__STRING = 7;
-
-	/**
-	 * The number of operations of the '<em>Action View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTION_VIEW_OPERATION_COUNT = 8;
-
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView <em>Root State View</em>}'.
@@ -4115,46 +3627,6 @@ public interface ViewsPackage extends EPackage {
 	EReference getRootStateView_InternalRootState();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#getSuspends() <em>Get Suspends</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Suspends</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#getSuspends()
-	 * @generated
-	 */
-	EOperation getRootStateView__GetSuspends();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#setSuspends(org.eclipse.emf.common.util.EList) <em>Set Suspends</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Suspends</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#setSuspends(org.eclipse.emf.common.util.EList)
-	 * @generated
-	 */
-	EOperation getRootStateView__SetSuspends__EList();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#addSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend) <em>Add Suspends</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Suspends</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#addSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend)
-	 * @generated
-	 */
-	EOperation getRootStateView__AddSuspends__Suspend();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#removeSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend) <em>Remove Suspends</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Remove Suspends</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#removeSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend)
-	 * @generated
-	 */
-	EOperation getRootStateView__RemoveSuspends__Suspend();
-
-	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#getLabel() <em>Get Label</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4173,46 +3645,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getRootStateView__SetLabel__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#getDeclaration() <em>Get Declaration</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Declaration</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#getDeclaration()
-	 * @generated
-	 */
-	EOperation getRootStateView__GetDeclaration();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#setDeclaration(org.eclipse.emf.common.util.EList) <em>Set Declaration</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Declaration</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#setDeclaration(org.eclipse.emf.common.util.EList)
-	 * @generated
-	 */
-	EOperation getRootStateView__SetDeclaration__EList();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#addDeclaration(info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration) <em>Add Declaration</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Declaration</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#addDeclaration(info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration)
-	 * @generated
-	 */
-	EOperation getRootStateView__AddDeclaration__RootStateDeclaration();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#removeDeclaration(info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration) <em>Remove Declaration</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Remove Declaration</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#removeDeclaration(info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration)
-	 * @generated
-	 */
-	EOperation getRootStateView__RemoveDeclaration__RootStateDeclaration();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RegionView <em>Region View</em>}'.
@@ -4338,46 +3770,6 @@ public interface ViewsPackage extends EPackage {
 	EReference getSuperStateView_InternalSuperState();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#getSuspends() <em>Get Suspends</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Suspends</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#getSuspends()
-	 * @generated
-	 */
-	EOperation getSuperStateView__GetSuspends();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#setSuspends(org.eclipse.emf.common.util.EList) <em>Set Suspends</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Suspends</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#setSuspends(org.eclipse.emf.common.util.EList)
-	 * @generated
-	 */
-	EOperation getSuperStateView__SetSuspends__EList();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#addSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend) <em>Add Suspends</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Suspends</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#addSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend)
-	 * @generated
-	 */
-	EOperation getSuperStateView__AddSuspends__Suspend();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#removeSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend) <em>Remove Suspends</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Remove Suspends</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#removeSuspends(info.scce.cinco.product.scchart.mglid.scchart.Suspend)
-	 * @generated
-	 */
-	EOperation getSuperStateView__RemoveSuspends__Suspend();
-
-	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#getLabel() <em>Get Label</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4396,86 +3788,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getSuperStateView__SetLabel__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#getDeclaration() <em>Get Declaration</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Declaration</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#getDeclaration()
-	 * @generated
-	 */
-	EOperation getSuperStateView__GetDeclaration();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#setDeclaration(org.eclipse.emf.common.util.EList) <em>Set Declaration</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Declaration</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#setDeclaration(org.eclipse.emf.common.util.EList)
-	 * @generated
-	 */
-	EOperation getSuperStateView__SetDeclaration__EList();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#addDeclaration(info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration) <em>Add Declaration</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Declaration</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#addDeclaration(info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration)
-	 * @generated
-	 */
-	EOperation getSuperStateView__AddDeclaration__SuperStateDeclaration();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#removeDeclaration(info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration) <em>Remove Declaration</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Remove Declaration</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#removeDeclaration(info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration)
-	 * @generated
-	 */
-	EOperation getSuperStateView__RemoveDeclaration__SuperStateDeclaration();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#getActions() <em>Get Actions</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Actions</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#getActions()
-	 * @generated
-	 */
-	EOperation getSuperStateView__GetActions();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#setActions(org.eclipse.emf.common.util.EList) <em>Set Actions</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Actions</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#setActions(org.eclipse.emf.common.util.EList)
-	 * @generated
-	 */
-	EOperation getSuperStateView__SetActions__EList();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#addActions(info.scce.cinco.product.scchart.mglid.scchart.Action) <em>Add Actions</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Actions</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#addActions(info.scce.cinco.product.scchart.mglid.scchart.Action)
-	 * @generated
-	 */
-	EOperation getSuperStateView__AddActions__Action();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#removeActions(info.scce.cinco.product.scchart.mglid.scchart.Action) <em>Remove Actions</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Remove Actions</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#removeActions(info.scce.cinco.product.scchart.mglid.scchart.Action)
-	 * @generated
-	 */
-	EOperation getSuperStateView__RemoveActions__Action();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.InitilalSuperStateView <em>Initilal Super State View</em>}'.
@@ -4499,288 +3811,328 @@ public interface ViewsPackage extends EPackage {
 	EReference getInitilalSuperStateView_InternalInitilalSuperState();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView <em>Root State Declaration Node View</em>}'.
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView <em>Root State Declaration View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Root State Declaration Node View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView
+	 * @return the meta object for class '<em>Root State Declaration View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView
 	 * @generated
 	 */
-	EClass getRootStateDeclarationNodeView();
+	EClass getRootStateDeclarationView();
 
 	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView#getInternalRootStateDeclarationNode <em>Internal Root State Declaration Node</em>}'.
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getInternalRootStateDeclaration <em>Internal Root State Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Root State Declaration Node</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView#getInternalRootStateDeclarationNode()
-	 * @see #getRootStateDeclarationNodeView()
+	 * @return the meta object for the reference '<em>Internal Root State Declaration</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getInternalRootStateDeclaration()
+	 * @see #getRootStateDeclarationView()
 	 * @generated
 	 */
-	EReference getRootStateDeclarationNodeView_InternalRootStateDeclarationNode();
+	EReference getRootStateDeclarationView_InternalRootStateDeclaration();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView#getDeclarationType() <em>Get Declaration Type</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getDeclarationType() <em>Get Declaration Type</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Get Declaration Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView#getDeclarationType()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getDeclarationType()
 	 * @generated
 	 */
-	EOperation getRootStateDeclarationNodeView__GetDeclarationType();
+	EOperation getRootStateDeclarationView__GetDeclarationType();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView#setDeclarationType(java.lang.String) <em>Set Declaration Type</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setDeclarationType(java.lang.String) <em>Set Declaration Type</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Set Declaration Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView#setDeclarationType(java.lang.String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setDeclarationType(java.lang.String)
 	 * @generated
 	 */
-	EOperation getRootStateDeclarationNodeView__SetDeclarationType__String();
+	EOperation getRootStateDeclarationView__SetDeclarationType__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView#getInputOutput() <em>Get Input Output</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getInputOutput() <em>Get Input Output</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Get Input Output</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView#getInputOutput()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getInputOutput()
 	 * @generated
 	 */
-	EOperation getRootStateDeclarationNodeView__GetInputOutput();
+	EOperation getRootStateDeclarationView__GetInputOutput();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView#setInputOutput(java.lang.String) <em>Set Input Output</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setInputOutput(java.lang.String) <em>Set Input Output</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Set Input Output</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView#setInputOutput(java.lang.String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setInputOutput(java.lang.String)
 	 * @generated
 	 */
-	EOperation getRootStateDeclarationNodeView__SetInputOutput__String();
+	EOperation getRootStateDeclarationView__SetInputOutput__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView#getName() <em>Get Name</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getName() <em>Get Name</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Get Name</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView#getName()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getName()
 	 * @generated
 	 */
-	EOperation getRootStateDeclarationNodeView__GetName();
+	EOperation getRootStateDeclarationView__GetName();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView#setName(java.lang.String) <em>Set Name</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setName(java.lang.String) <em>Set Name</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Set Name</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView#setName(java.lang.String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setName(java.lang.String)
 	 * @generated
 	 */
-	EOperation getRootStateDeclarationNodeView__SetName__String();
+	EOperation getRootStateDeclarationView__SetName__String();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendNodeView <em>Suspend Node View</em>}'.
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView <em>Suspend View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Suspend Node View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendNodeView
+	 * @return the meta object for class '<em>Suspend View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView
 	 * @generated
 	 */
-	EClass getSuspendNodeView();
+	EClass getSuspendView();
 
 	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendNodeView#getInternalSuspendNode <em>Internal Suspend Node</em>}'.
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getInternalSuspend <em>Internal Suspend</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Suspend Node</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendNodeView#getInternalSuspendNode()
-	 * @see #getSuspendNodeView()
+	 * @return the meta object for the reference '<em>Internal Suspend</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getInternalSuspend()
+	 * @see #getSuspendView()
 	 * @generated
 	 */
-	EReference getSuspendNodeView_InternalSuspendNode();
+	EReference getSuspendView_InternalSuspend();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendNodeView#getCondition() <em>Get Condition</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getCondition() <em>Get Condition</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Get Condition</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendNodeView#getCondition()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getCondition()
 	 * @generated
 	 */
-	EOperation getSuspendNodeView__GetCondition();
+	EOperation getSuspendView__GetCondition();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendNodeView#setCondition(java.lang.String) <em>Set Condition</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setCondition(java.lang.String) <em>Set Condition</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Set Condition</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendNodeView#setCondition(java.lang.String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setCondition(java.lang.String)
 	 * @generated
 	 */
-	EOperation getSuspendNodeView__SetCondition__String();
+	EOperation getSuspendView__SetCondition__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendNodeView#getSuspendType() <em>Get Suspend Type</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getSuspendType() <em>Get Suspend Type</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Get Suspend Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendNodeView#getSuspendType()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getSuspendType()
 	 * @generated
 	 */
-	EOperation getSuspendNodeView__GetSuspendType();
+	EOperation getSuspendView__GetSuspendType();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendNodeView#setSuspendType(java.lang.String) <em>Set Suspend Type</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setSuspendType(java.lang.String) <em>Set Suspend Type</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Set Suspend Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendNodeView#setSuspendType(java.lang.String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setSuspendType(java.lang.String)
 	 * @generated
 	 */
-	EOperation getSuspendNodeView__SetSuspendType__String();
+	EOperation getSuspendView__SetSuspendType__String();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView <em>Action Node View</em>}'.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getUuid() <em>Get Uuid</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Action Node View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView
+	 * @return the meta object for the '<em>Get Uuid</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getUuid()
 	 * @generated
 	 */
-	EClass getActionNodeView();
+	EOperation getSuspendView__GetUuid();
 
 	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView#getInternalActionNode <em>Internal Action Node</em>}'.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setUuid(java.lang.String) <em>Set Uuid</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Action Node</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView#getInternalActionNode()
-	 * @see #getActionNodeView()
+	 * @return the meta object for the '<em>Set Uuid</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setUuid(java.lang.String)
 	 * @generated
 	 */
-	EReference getActionNodeView_InternalActionNode();
+	EOperation getSuspendView__SetUuid__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView#getDeclarationType() <em>Get Declaration Type</em>}' operation.
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView <em>Action View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Action View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView
+	 * @generated
+	 */
+	EClass getActionView();
+
+	/**
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getInternalAction <em>Internal Action</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Internal Action</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getInternalAction()
+	 * @see #getActionView()
+	 * @generated
+	 */
+	EReference getActionView_InternalAction();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getActionType() <em>Get Action Type</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Action Type</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getActionType()
+	 * @generated
+	 */
+	EOperation getActionView__GetActionType();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setActionType(java.lang.String) <em>Set Action Type</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Action Type</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setActionType(java.lang.String)
+	 * @generated
+	 */
+	EOperation getActionView__SetActionType__String();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getCondition() <em>Get Condition</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Condition</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getCondition()
+	 * @generated
+	 */
+	EOperation getActionView__GetCondition();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setCondition(java.lang.String) <em>Set Condition</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Condition</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setCondition(java.lang.String)
+	 * @generated
+	 */
+	EOperation getActionView__SetCondition__String();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getEffect() <em>Get Effect</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Effect</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getEffect()
+	 * @generated
+	 */
+	EOperation getActionView__GetEffect();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setEffect(java.lang.String) <em>Set Effect</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Effect</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setEffect(java.lang.String)
+	 * @generated
+	 */
+	EOperation getActionView__SetEffect__String();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView <em>Super State Declaration View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Super State Declaration View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView
+	 * @generated
+	 */
+	EClass getSuperStateDeclarationView();
+
+	/**
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getInternalSuperStateDeclaration <em>Internal Super State Declaration</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Internal Super State Declaration</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getInternalSuperStateDeclaration()
+	 * @see #getSuperStateDeclarationView()
+	 * @generated
+	 */
+	EReference getSuperStateDeclarationView_InternalSuperStateDeclaration();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getDeclarationType() <em>Get Declaration Type</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Get Declaration Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView#getDeclarationType()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getDeclarationType()
 	 * @generated
 	 */
-	EOperation getActionNodeView__GetDeclarationType();
+	EOperation getSuperStateDeclarationView__GetDeclarationType();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView#setDeclarationType(java.lang.String) <em>Set Declaration Type</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#setDeclarationType(java.lang.String) <em>Set Declaration Type</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Set Declaration Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView#setDeclarationType(java.lang.String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#setDeclarationType(java.lang.String)
 	 * @generated
 	 */
-	EOperation getActionNodeView__SetDeclarationType__String();
+	EOperation getSuperStateDeclarationView__SetDeclarationType__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView#getInputOutput() <em>Get Input Output</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Input Output</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView#getInputOutput()
-	 * @generated
-	 */
-	EOperation getActionNodeView__GetInputOutput();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView#setInputOutput(java.lang.String) <em>Set Input Output</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Input Output</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView#setInputOutput(java.lang.String)
-	 * @generated
-	 */
-	EOperation getActionNodeView__SetInputOutput__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView#getName() <em>Get Name</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getName() <em>Get Name</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Get Name</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView#getName()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getName()
 	 * @generated
 	 */
-	EOperation getActionNodeView__GetName();
+	EOperation getSuperStateDeclarationView__GetName();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView#setName(java.lang.String) <em>Set Name</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#setName(java.lang.String) <em>Set Name</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Set Name</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView#setName(java.lang.String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#setName(java.lang.String)
 	 * @generated
 	 */
-	EOperation getActionNodeView__SetName__String();
+	EOperation getSuperStateDeclarationView__SetName__String();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationNodeView <em>Super State Declaration Node View</em>}'.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getConstSig() <em>Get Const Sig</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Super State Declaration Node View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationNodeView
+	 * @return the meta object for the '<em>Get Const Sig</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getConstSig()
 	 * @generated
 	 */
-	EClass getSuperStateDeclarationNodeView();
+	EOperation getSuperStateDeclarationView__GetConstSig();
 
 	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationNodeView#getInternalSuperStateDeclarationNode <em>Internal Super State Declaration Node</em>}'.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#setConstSig(java.lang.String) <em>Set Const Sig</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Super State Declaration Node</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationNodeView#getInternalSuperStateDeclarationNode()
-	 * @see #getSuperStateDeclarationNodeView()
+	 * @return the meta object for the '<em>Set Const Sig</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#setConstSig(java.lang.String)
 	 * @generated
 	 */
-	EReference getSuperStateDeclarationNodeView_InternalSuperStateDeclarationNode();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationNodeView#getDeclarationType() <em>Get Declaration Type</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Declaration Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationNodeView#getDeclarationType()
-	 * @generated
-	 */
-	EOperation getSuperStateDeclarationNodeView__GetDeclarationType();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationNodeView#setDeclarationType(java.lang.String) <em>Set Declaration Type</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Declaration Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationNodeView#setDeclarationType(java.lang.String)
-	 * @generated
-	 */
-	EOperation getSuperStateDeclarationNodeView__SetDeclarationType__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationNodeView#getName() <em>Get Name</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Name</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationNodeView#getName()
-	 * @generated
-	 */
-	EOperation getSuperStateDeclarationNodeView__GetName();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationNodeView#setName(java.lang.String) <em>Set Name</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Name</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationNodeView#setName(java.lang.String)
-	 * @generated
-	 */
-	EOperation getSuperStateDeclarationNodeView__SetName__String();
+	EOperation getSuperStateDeclarationView__SetConstSig__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SimpleStateView <em>Simple State View</em>}'.
@@ -4908,6 +4260,26 @@ public interface ViewsPackage extends EPackage {
 	EReference getInputView_InternalInput();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.InputView#getLabel() <em>Get Label</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Label</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.InputView#getLabel()
+	 * @generated
+	 */
+	EOperation getInputView__GetLabel();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.InputView#setLabel(java.lang.String) <em>Set Label</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Label</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.InputView#setLabel(java.lang.String)
+	 * @generated
+	 */
+	EOperation getInputView__SetLabel__String();
+
+	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OutputView <em>Output View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4927,6 +4299,88 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getOutputView_InternalOutput();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OutputView#getLabel() <em>Get Label</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Label</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OutputView#getLabel()
+	 * @generated
+	 */
+	EOperation getOutputView__GetLabel();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OutputView#setLabel(java.lang.String) <em>Set Label</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Label</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OutputView#setLabel(java.lang.String)
+	 * @generated
+	 */
+	EOperation getOutputView__SetLabel__String();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView <em>Operator View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Operator View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView
+	 * @generated
+	 */
+	EClass getOperatorView();
+
+	/**
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView#getInternalOperator <em>Internal Operator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Internal Operator</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView#getInternalOperator()
+	 * @see #getOperatorView()
+	 * @generated
+	 */
+	EReference getOperatorView_InternalOperator();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView#getOperator() <em>Get Operator</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Operator</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView#getOperator()
+	 * @generated
+	 */
+	EOperation getOperatorView__GetOperator();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView#setOperator(java.lang.String) <em>Set Operator</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Operator</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView#setOperator(java.lang.String)
+	 * @generated
+	 */
+	EOperation getOperatorView__SetOperator__String();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionCircuitView <em>Connection Circuit View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Connection Circuit View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionCircuitView
+	 * @generated
+	 */
+	EClass getConnectionCircuitView();
+
+	/**
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionCircuitView#getInternalConnectionCircuit <em>Internal Connection Circuit</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Internal Connection Circuit</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionCircuitView#getInternalConnectionCircuit()
+	 * @see #getConnectionCircuitView()
+	 * @generated
+	 */
+	EReference getConnectionCircuitView_InternalConnectionCircuit();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AbstractTransitionView <em>Abstract Transition View</em>}'.
@@ -6630,330 +6084,6 @@ public interface ViewsPackage extends EPackage {
 	EReference getSCChartView_InternalSCChart();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView <em>Root State Declaration View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Root State Declaration View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView
-	 * @generated
-	 */
-	EClass getRootStateDeclarationView();
-
-	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getInternalRootStateDeclaration <em>Internal Root State Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Root State Declaration</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getInternalRootStateDeclaration()
-	 * @see #getRootStateDeclarationView()
-	 * @generated
-	 */
-	EReference getRootStateDeclarationView_InternalRootStateDeclaration();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getDeclarationType() <em>Get Declaration Type</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Declaration Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getDeclarationType()
-	 * @generated
-	 */
-	EOperation getRootStateDeclarationView__GetDeclarationType();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setDeclarationType(java.lang.String) <em>Set Declaration Type</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Declaration Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setDeclarationType(java.lang.String)
-	 * @generated
-	 */
-	EOperation getRootStateDeclarationView__SetDeclarationType__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getInputOutput() <em>Get Input Output</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Input Output</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getInputOutput()
-	 * @generated
-	 */
-	EOperation getRootStateDeclarationView__GetInputOutput();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setInputOutput(java.lang.String) <em>Set Input Output</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Input Output</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setInputOutput(java.lang.String)
-	 * @generated
-	 */
-	EOperation getRootStateDeclarationView__SetInputOutput__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getName() <em>Get Name</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Name</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getName()
-	 * @generated
-	 */
-	EOperation getRootStateDeclarationView__GetName();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setName(java.lang.String) <em>Set Name</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Name</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setName(java.lang.String)
-	 * @generated
-	 */
-	EOperation getRootStateDeclarationView__SetName__String();
-
-	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView <em>Super State Declaration View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Super State Declaration View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView
-	 * @generated
-	 */
-	EClass getSuperStateDeclarationView();
-
-	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getInternalSuperStateDeclaration <em>Internal Super State Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Super State Declaration</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getInternalSuperStateDeclaration()
-	 * @see #getSuperStateDeclarationView()
-	 * @generated
-	 */
-	EReference getSuperStateDeclarationView_InternalSuperStateDeclaration();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getDeclarationType() <em>Get Declaration Type</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Declaration Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getDeclarationType()
-	 * @generated
-	 */
-	EOperation getSuperStateDeclarationView__GetDeclarationType();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#setDeclarationType(java.lang.String) <em>Set Declaration Type</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Declaration Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#setDeclarationType(java.lang.String)
-	 * @generated
-	 */
-	EOperation getSuperStateDeclarationView__SetDeclarationType__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getName() <em>Get Name</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Name</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getName()
-	 * @generated
-	 */
-	EOperation getSuperStateDeclarationView__GetName();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#setName(java.lang.String) <em>Set Name</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Name</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#setName(java.lang.String)
-	 * @generated
-	 */
-	EOperation getSuperStateDeclarationView__SetName__String();
-
-	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView <em>Suspend View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Suspend View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView
-	 * @generated
-	 */
-	EClass getSuspendView();
-
-	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getInternalSuspend <em>Internal Suspend</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Suspend</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getInternalSuspend()
-	 * @see #getSuspendView()
-	 * @generated
-	 */
-	EReference getSuspendView_InternalSuspend();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getCondition() <em>Get Condition</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Condition</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getCondition()
-	 * @generated
-	 */
-	EOperation getSuspendView__GetCondition();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setCondition(java.lang.String) <em>Set Condition</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Condition</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setCondition(java.lang.String)
-	 * @generated
-	 */
-	EOperation getSuspendView__SetCondition__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getName() <em>Get Name</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Name</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getName()
-	 * @generated
-	 */
-	EOperation getSuspendView__GetName();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setName(java.lang.String) <em>Set Name</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Name</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setName(java.lang.String)
-	 * @generated
-	 */
-	EOperation getSuspendView__SetName__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getSuspendType() <em>Get Suspend Type</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Suspend Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#getSuspendType()
-	 * @generated
-	 */
-	EOperation getSuspendView__GetSuspendType();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setSuspendType(java.lang.String) <em>Set Suspend Type</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Suspend Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView#setSuspendType(java.lang.String)
-	 * @generated
-	 */
-	EOperation getSuspendView__SetSuspendType__String();
-
-	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView <em>Action View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Action View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView
-	 * @generated
-	 */
-	EClass getActionView();
-
-	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getInternalAction <em>Internal Action</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Action</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getInternalAction()
-	 * @see #getActionView()
-	 * @generated
-	 */
-	EReference getActionView_InternalAction();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getActionType() <em>Get Action Type</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Action Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getActionType()
-	 * @generated
-	 */
-	EOperation getActionView__GetActionType();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setActionType(java.lang.String) <em>Set Action Type</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Action Type</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setActionType(java.lang.String)
-	 * @generated
-	 */
-	EOperation getActionView__SetActionType__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getCondition() <em>Get Condition</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Condition</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getCondition()
-	 * @generated
-	 */
-	EOperation getActionView__GetCondition();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setCondition(java.lang.String) <em>Set Condition</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Condition</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setCondition(java.lang.String)
-	 * @generated
-	 */
-	EOperation getActionView__SetCondition__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getEffect() <em>Get Effect</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Effect</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getEffect()
-	 * @generated
-	 */
-	EOperation getActionView__GetEffect();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setEffect(java.lang.String) <em>Set Effect</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Effect</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setEffect(java.lang.String)
-	 * @generated
-	 */
-	EOperation getActionView__SetEffect__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getName() <em>Get Name</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Name</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getName()
-	 * @generated
-	 */
-	EOperation getActionView__GetName();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setName(java.lang.String) <em>Set Name</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Name</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setName(java.lang.String)
-	 * @generated
-	 */
-	EOperation getActionView__SetName__String();
-
-	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6995,38 +6125,6 @@ public interface ViewsPackage extends EPackage {
 		EReference ROOT_STATE_VIEW__INTERNAL_ROOT_STATE = eINSTANCE.getRootStateView_InternalRootState();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Suspends</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_VIEW___GET_SUSPENDS = eINSTANCE.getRootStateView__GetSuspends();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Suspends</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_VIEW___SET_SUSPENDS__ELIST = eINSTANCE.getRootStateView__SetSuspends__EList();
-
-		/**
-		 * The meta object literal for the '<em><b>Add Suspends</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_VIEW___ADD_SUSPENDS__SUSPEND = eINSTANCE.getRootStateView__AddSuspends__Suspend();
-
-		/**
-		 * The meta object literal for the '<em><b>Remove Suspends</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND = eINSTANCE.getRootStateView__RemoveSuspends__Suspend();
-
-		/**
 		 * The meta object literal for the '<em><b>Get Label</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7041,38 +6139,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation ROOT_STATE_VIEW___SET_LABEL__STRING = eINSTANCE.getRootStateView__SetLabel__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Declaration</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_VIEW___GET_DECLARATION = eINSTANCE.getRootStateView__GetDeclaration();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Declaration</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_VIEW___SET_DECLARATION__ELIST = eINSTANCE.getRootStateView__SetDeclaration__EList();
-
-		/**
-		 * The meta object literal for the '<em><b>Add Declaration</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_VIEW___ADD_DECLARATION__ROOTSTATEDECLARATION = eINSTANCE.getRootStateView__AddDeclaration__RootStateDeclaration();
-
-		/**
-		 * The meta object literal for the '<em><b>Remove Declaration</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_VIEW___REMOVE_DECLARATION__ROOTSTATEDECLARATION = eINSTANCE.getRootStateView__RemoveDeclaration__RootStateDeclaration();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.RegionViewImpl <em>Region View</em>}' class.
@@ -7177,38 +6243,6 @@ public interface ViewsPackage extends EPackage {
 		EReference SUPER_STATE_VIEW__INTERNAL_SUPER_STATE = eINSTANCE.getSuperStateView_InternalSuperState();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Suspends</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_VIEW___GET_SUSPENDS = eINSTANCE.getSuperStateView__GetSuspends();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Suspends</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_VIEW___SET_SUSPENDS__ELIST = eINSTANCE.getSuperStateView__SetSuspends__EList();
-
-		/**
-		 * The meta object literal for the '<em><b>Add Suspends</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_VIEW___ADD_SUSPENDS__SUSPEND = eINSTANCE.getSuperStateView__AddSuspends__Suspend();
-
-		/**
-		 * The meta object literal for the '<em><b>Remove Suspends</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND = eINSTANCE.getSuperStateView__RemoveSuspends__Suspend();
-
-		/**
 		 * The meta object literal for the '<em><b>Get Label</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7223,70 +6257,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation SUPER_STATE_VIEW___SET_LABEL__STRING = eINSTANCE.getSuperStateView__SetLabel__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Declaration</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_VIEW___GET_DECLARATION = eINSTANCE.getSuperStateView__GetDeclaration();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Declaration</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_VIEW___SET_DECLARATION__ELIST = eINSTANCE.getSuperStateView__SetDeclaration__EList();
-
-		/**
-		 * The meta object literal for the '<em><b>Add Declaration</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_VIEW___ADD_DECLARATION__SUPERSTATEDECLARATION = eINSTANCE.getSuperStateView__AddDeclaration__SuperStateDeclaration();
-
-		/**
-		 * The meta object literal for the '<em><b>Remove Declaration</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_VIEW___REMOVE_DECLARATION__SUPERSTATEDECLARATION = eINSTANCE.getSuperStateView__RemoveDeclaration__SuperStateDeclaration();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Actions</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_VIEW___GET_ACTIONS = eINSTANCE.getSuperStateView__GetActions();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Actions</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_VIEW___SET_ACTIONS__ELIST = eINSTANCE.getSuperStateView__SetActions__EList();
-
-		/**
-		 * The meta object literal for the '<em><b>Add Actions</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_VIEW___ADD_ACTIONS__ACTION = eINSTANCE.getSuperStateView__AddActions__Action();
-
-		/**
-		 * The meta object literal for the '<em><b>Remove Actions</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_VIEW___REMOVE_ACTIONS__ACTION = eINSTANCE.getSuperStateView__RemoveActions__Action();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.InitilalSuperStateViewImpl <em>Initilal Super State View</em>}' class.
@@ -7307,22 +6277,22 @@ public interface ViewsPackage extends EPackage {
 		EReference INITILAL_SUPER_STATE_VIEW__INTERNAL_INITILAL_SUPER_STATE = eINSTANCE.getInitilalSuperStateView_InternalInitilalSuperState();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.RootStateDeclarationNodeViewImpl <em>Root State Declaration Node View</em>}' class.
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.RootStateDeclarationViewImpl <em>Root State Declaration View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.RootStateDeclarationNodeViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getRootStateDeclarationNodeView()
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.RootStateDeclarationViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getRootStateDeclarationView()
 		 * @generated
 		 */
-		EClass ROOT_STATE_DECLARATION_NODE_VIEW = eINSTANCE.getRootStateDeclarationNodeView();
+		EClass ROOT_STATE_DECLARATION_VIEW = eINSTANCE.getRootStateDeclarationView();
 
 		/**
-		 * The meta object literal for the '<em><b>Internal Root State Declaration Node</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Internal Root State Declaration</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ROOT_STATE_DECLARATION_NODE_VIEW__INTERNAL_ROOT_STATE_DECLARATION_NODE = eINSTANCE.getRootStateDeclarationNodeView_InternalRootStateDeclarationNode();
+		EReference ROOT_STATE_DECLARATION_VIEW__INTERNAL_ROOT_STATE_DECLARATION = eINSTANCE.getRootStateDeclarationView_InternalRootStateDeclaration();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Declaration Type</b></em>' operation.
@@ -7330,7 +6300,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation ROOT_STATE_DECLARATION_NODE_VIEW___GET_DECLARATION_TYPE = eINSTANCE.getRootStateDeclarationNodeView__GetDeclarationType();
+		EOperation ROOT_STATE_DECLARATION_VIEW___GET_DECLARATION_TYPE = eINSTANCE.getRootStateDeclarationView__GetDeclarationType();
 
 		/**
 		 * The meta object literal for the '<em><b>Set Declaration Type</b></em>' operation.
@@ -7338,7 +6308,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation ROOT_STATE_DECLARATION_NODE_VIEW___SET_DECLARATION_TYPE__STRING = eINSTANCE.getRootStateDeclarationNodeView__SetDeclarationType__String();
+		EOperation ROOT_STATE_DECLARATION_VIEW___SET_DECLARATION_TYPE__STRING = eINSTANCE.getRootStateDeclarationView__SetDeclarationType__String();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Input Output</b></em>' operation.
@@ -7346,7 +6316,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation ROOT_STATE_DECLARATION_NODE_VIEW___GET_INPUT_OUTPUT = eINSTANCE.getRootStateDeclarationNodeView__GetInputOutput();
+		EOperation ROOT_STATE_DECLARATION_VIEW___GET_INPUT_OUTPUT = eINSTANCE.getRootStateDeclarationView__GetInputOutput();
 
 		/**
 		 * The meta object literal for the '<em><b>Set Input Output</b></em>' operation.
@@ -7354,7 +6324,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation ROOT_STATE_DECLARATION_NODE_VIEW___SET_INPUT_OUTPUT__STRING = eINSTANCE.getRootStateDeclarationNodeView__SetInputOutput__String();
+		EOperation ROOT_STATE_DECLARATION_VIEW___SET_INPUT_OUTPUT__STRING = eINSTANCE.getRootStateDeclarationView__SetInputOutput__String();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Name</b></em>' operation.
@@ -7362,7 +6332,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation ROOT_STATE_DECLARATION_NODE_VIEW___GET_NAME = eINSTANCE.getRootStateDeclarationNodeView__GetName();
+		EOperation ROOT_STATE_DECLARATION_VIEW___GET_NAME = eINSTANCE.getRootStateDeclarationView__GetName();
 
 		/**
 		 * The meta object literal for the '<em><b>Set Name</b></em>' operation.
@@ -7370,25 +6340,25 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation ROOT_STATE_DECLARATION_NODE_VIEW___SET_NAME__STRING = eINSTANCE.getRootStateDeclarationNodeView__SetName__String();
+		EOperation ROOT_STATE_DECLARATION_VIEW___SET_NAME__STRING = eINSTANCE.getRootStateDeclarationView__SetName__String();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendNodeViewImpl <em>Suspend Node View</em>}' class.
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl <em>Suspend View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendNodeViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuspendNodeView()
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuspendView()
 		 * @generated
 		 */
-		EClass SUSPEND_NODE_VIEW = eINSTANCE.getSuspendNodeView();
+		EClass SUSPEND_VIEW = eINSTANCE.getSuspendView();
 
 		/**
-		 * The meta object literal for the '<em><b>Internal Suspend Node</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Internal Suspend</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUSPEND_NODE_VIEW__INTERNAL_SUSPEND_NODE = eINSTANCE.getSuspendNodeView_InternalSuspendNode();
+		EReference SUSPEND_VIEW__INTERNAL_SUSPEND = eINSTANCE.getSuspendView_InternalSuspend();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Condition</b></em>' operation.
@@ -7396,7 +6366,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation SUSPEND_NODE_VIEW___GET_CONDITION = eINSTANCE.getSuspendNodeView__GetCondition();
+		EOperation SUSPEND_VIEW___GET_CONDITION = eINSTANCE.getSuspendView__GetCondition();
 
 		/**
 		 * The meta object literal for the '<em><b>Set Condition</b></em>' operation.
@@ -7404,7 +6374,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation SUSPEND_NODE_VIEW___SET_CONDITION__STRING = eINSTANCE.getSuspendNodeView__SetCondition__String();
+		EOperation SUSPEND_VIEW___SET_CONDITION__STRING = eINSTANCE.getSuspendView__SetCondition__String();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Suspend Type</b></em>' operation.
@@ -7412,7 +6382,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation SUSPEND_NODE_VIEW___GET_SUSPEND_TYPE = eINSTANCE.getSuspendNodeView__GetSuspendType();
+		EOperation SUSPEND_VIEW___GET_SUSPEND_TYPE = eINSTANCE.getSuspendView__GetSuspendType();
 
 		/**
 		 * The meta object literal for the '<em><b>Set Suspend Type</b></em>' operation.
@@ -7420,25 +6390,107 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation SUSPEND_NODE_VIEW___SET_SUSPEND_TYPE__STRING = eINSTANCE.getSuspendNodeView__SetSuspendType__String();
+		EOperation SUSPEND_VIEW___SET_SUSPEND_TYPE__STRING = eINSTANCE.getSuspendView__SetSuspendType__String();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionNodeViewImpl <em>Action Node View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionNodeViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getActionNodeView()
-		 * @generated
-		 */
-		EClass ACTION_NODE_VIEW = eINSTANCE.getActionNodeView();
-
-		/**
-		 * The meta object literal for the '<em><b>Internal Action Node</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Get Uuid</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACTION_NODE_VIEW__INTERNAL_ACTION_NODE = eINSTANCE.getActionNodeView_InternalActionNode();
+		EOperation SUSPEND_VIEW___GET_UUID = eINSTANCE.getSuspendView__GetUuid();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Uuid</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUSPEND_VIEW___SET_UUID__STRING = eINSTANCE.getSuspendView__SetUuid__String();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionViewImpl <em>Action View</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getActionView()
+		 * @generated
+		 */
+		EClass ACTION_VIEW = eINSTANCE.getActionView();
+
+		/**
+		 * The meta object literal for the '<em><b>Internal Action</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ACTION_VIEW__INTERNAL_ACTION = eINSTANCE.getActionView_InternalAction();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Action Type</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___GET_ACTION_TYPE = eINSTANCE.getActionView__GetActionType();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Action Type</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___SET_ACTION_TYPE__STRING = eINSTANCE.getActionView__SetActionType__String();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Condition</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___GET_CONDITION = eINSTANCE.getActionView__GetCondition();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Condition</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___SET_CONDITION__STRING = eINSTANCE.getActionView__SetCondition__String();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Effect</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___GET_EFFECT = eINSTANCE.getActionView__GetEffect();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Effect</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___SET_EFFECT__STRING = eINSTANCE.getActionView__SetEffect__String();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateDeclarationViewImpl <em>Super State Declaration View</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateDeclarationViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuperStateDeclarationView()
+		 * @generated
+		 */
+		EClass SUPER_STATE_DECLARATION_VIEW = eINSTANCE.getSuperStateDeclarationView();
+
+		/**
+		 * The meta object literal for the '<em><b>Internal Super State Declaration</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUPER_STATE_DECLARATION_VIEW__INTERNAL_SUPER_STATE_DECLARATION = eINSTANCE.getSuperStateDeclarationView_InternalSuperStateDeclaration();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Declaration Type</b></em>' operation.
@@ -7446,7 +6498,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation ACTION_NODE_VIEW___GET_DECLARATION_TYPE = eINSTANCE.getActionNodeView__GetDeclarationType();
+		EOperation SUPER_STATE_DECLARATION_VIEW___GET_DECLARATION_TYPE = eINSTANCE.getSuperStateDeclarationView__GetDeclarationType();
 
 		/**
 		 * The meta object literal for the '<em><b>Set Declaration Type</b></em>' operation.
@@ -7454,23 +6506,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation ACTION_NODE_VIEW___SET_DECLARATION_TYPE__STRING = eINSTANCE.getActionNodeView__SetDeclarationType__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Input Output</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ACTION_NODE_VIEW___GET_INPUT_OUTPUT = eINSTANCE.getActionNodeView__GetInputOutput();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Input Output</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ACTION_NODE_VIEW___SET_INPUT_OUTPUT__STRING = eINSTANCE.getActionNodeView__SetInputOutput__String();
+		EOperation SUPER_STATE_DECLARATION_VIEW___SET_DECLARATION_TYPE__STRING = eINSTANCE.getSuperStateDeclarationView__SetDeclarationType__String();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Name</b></em>' operation.
@@ -7478,7 +6514,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation ACTION_NODE_VIEW___GET_NAME = eINSTANCE.getActionNodeView__GetName();
+		EOperation SUPER_STATE_DECLARATION_VIEW___GET_NAME = eINSTANCE.getSuperStateDeclarationView__GetName();
 
 		/**
 		 * The meta object literal for the '<em><b>Set Name</b></em>' operation.
@@ -7486,57 +6522,23 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation ACTION_NODE_VIEW___SET_NAME__STRING = eINSTANCE.getActionNodeView__SetName__String();
+		EOperation SUPER_STATE_DECLARATION_VIEW___SET_NAME__STRING = eINSTANCE.getSuperStateDeclarationView__SetName__String();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateDeclarationNodeViewImpl <em>Super State Declaration Node View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateDeclarationNodeViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuperStateDeclarationNodeView()
-		 * @generated
-		 */
-		EClass SUPER_STATE_DECLARATION_NODE_VIEW = eINSTANCE.getSuperStateDeclarationNodeView();
-
-		/**
-		 * The meta object literal for the '<em><b>Internal Super State Declaration Node</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Get Const Sig</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUPER_STATE_DECLARATION_NODE_VIEW__INTERNAL_SUPER_STATE_DECLARATION_NODE = eINSTANCE.getSuperStateDeclarationNodeView_InternalSuperStateDeclarationNode();
+		EOperation SUPER_STATE_DECLARATION_VIEW___GET_CONST_SIG = eINSTANCE.getSuperStateDeclarationView__GetConstSig();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Declaration Type</b></em>' operation.
+		 * The meta object literal for the '<em><b>Set Const Sig</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation SUPER_STATE_DECLARATION_NODE_VIEW___GET_DECLARATION_TYPE = eINSTANCE.getSuperStateDeclarationNodeView__GetDeclarationType();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Declaration Type</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_DECLARATION_NODE_VIEW___SET_DECLARATION_TYPE__STRING = eINSTANCE.getSuperStateDeclarationNodeView__SetDeclarationType__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Name</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_DECLARATION_NODE_VIEW___GET_NAME = eINSTANCE.getSuperStateDeclarationNodeView__GetName();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Name</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_DECLARATION_NODE_VIEW___SET_NAME__STRING = eINSTANCE.getSuperStateDeclarationNodeView__SetName__String();
+		EOperation SUPER_STATE_DECLARATION_VIEW___SET_CONST_SIG__STRING = eINSTANCE.getSuperStateDeclarationView__SetConstSig__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SimpleStateViewImpl <em>Simple State View</em>}' class.
@@ -7645,6 +6647,22 @@ public interface ViewsPackage extends EPackage {
 		EReference INPUT_VIEW__INTERNAL_INPUT = eINSTANCE.getInputView_InternalInput();
 
 		/**
+		 * The meta object literal for the '<em><b>Get Label</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INPUT_VIEW___GET_LABEL = eINSTANCE.getInputView__GetLabel();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Label</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INPUT_VIEW___SET_LABEL__STRING = eINSTANCE.getInputView__SetLabel__String();
+
+		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.OutputViewImpl <em>Output View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7661,6 +6679,74 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference OUTPUT_VIEW__INTERNAL_OUTPUT = eINSTANCE.getOutputView_InternalOutput();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Label</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation OUTPUT_VIEW___GET_LABEL = eINSTANCE.getOutputView__GetLabel();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Label</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation OUTPUT_VIEW___SET_LABEL__STRING = eINSTANCE.getOutputView__SetLabel__String();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.OperatorViewImpl <em>Operator View</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.OperatorViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getOperatorView()
+		 * @generated
+		 */
+		EClass OPERATOR_VIEW = eINSTANCE.getOperatorView();
+
+		/**
+		 * The meta object literal for the '<em><b>Internal Operator</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OPERATOR_VIEW__INTERNAL_OPERATOR = eINSTANCE.getOperatorView_InternalOperator();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Operator</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation OPERATOR_VIEW___GET_OPERATOR = eINSTANCE.getOperatorView__GetOperator();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Operator</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation OPERATOR_VIEW___SET_OPERATOR__STRING = eINSTANCE.getOperatorView__SetOperator__String();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionCircuitViewImpl <em>Connection Circuit View</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionCircuitViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConnectionCircuitView()
+		 * @generated
+		 */
+		EClass CONNECTION_CIRCUIT_VIEW = eINSTANCE.getConnectionCircuitView();
+
+		/**
+		 * The meta object literal for the '<em><b>Internal Connection Circuit</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONNECTION_CIRCUIT_VIEW__INTERNAL_CONNECTION_CIRCUIT = eINSTANCE.getConnectionCircuitView_InternalConnectionCircuit();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.AbstractTransitionViewImpl <em>Abstract Transition View</em>}' class.
@@ -9047,270 +8133,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SC_CHART_VIEW__INTERNAL_SC_CHART = eINSTANCE.getSCChartView_InternalSCChart();
-
-		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.RootStateDeclarationViewImpl <em>Root State Declaration View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.RootStateDeclarationViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getRootStateDeclarationView()
-		 * @generated
-		 */
-		EClass ROOT_STATE_DECLARATION_VIEW = eINSTANCE.getRootStateDeclarationView();
-
-		/**
-		 * The meta object literal for the '<em><b>Internal Root State Declaration</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ROOT_STATE_DECLARATION_VIEW__INTERNAL_ROOT_STATE_DECLARATION = eINSTANCE.getRootStateDeclarationView_InternalRootStateDeclaration();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Declaration Type</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_DECLARATION_VIEW___GET_DECLARATION_TYPE = eINSTANCE.getRootStateDeclarationView__GetDeclarationType();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Declaration Type</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_DECLARATION_VIEW___SET_DECLARATION_TYPE__STRING = eINSTANCE.getRootStateDeclarationView__SetDeclarationType__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Input Output</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_DECLARATION_VIEW___GET_INPUT_OUTPUT = eINSTANCE.getRootStateDeclarationView__GetInputOutput();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Input Output</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_DECLARATION_VIEW___SET_INPUT_OUTPUT__STRING = eINSTANCE.getRootStateDeclarationView__SetInputOutput__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Name</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_DECLARATION_VIEW___GET_NAME = eINSTANCE.getRootStateDeclarationView__GetName();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Name</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ROOT_STATE_DECLARATION_VIEW___SET_NAME__STRING = eINSTANCE.getRootStateDeclarationView__SetName__String();
-
-		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateDeclarationViewImpl <em>Super State Declaration View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateDeclarationViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuperStateDeclarationView()
-		 * @generated
-		 */
-		EClass SUPER_STATE_DECLARATION_VIEW = eINSTANCE.getSuperStateDeclarationView();
-
-		/**
-		 * The meta object literal for the '<em><b>Internal Super State Declaration</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SUPER_STATE_DECLARATION_VIEW__INTERNAL_SUPER_STATE_DECLARATION = eINSTANCE.getSuperStateDeclarationView_InternalSuperStateDeclaration();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Declaration Type</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_DECLARATION_VIEW___GET_DECLARATION_TYPE = eINSTANCE.getSuperStateDeclarationView__GetDeclarationType();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Declaration Type</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_DECLARATION_VIEW___SET_DECLARATION_TYPE__STRING = eINSTANCE.getSuperStateDeclarationView__SetDeclarationType__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Name</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_DECLARATION_VIEW___GET_NAME = eINSTANCE.getSuperStateDeclarationView__GetName();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Name</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUPER_STATE_DECLARATION_VIEW___SET_NAME__STRING = eINSTANCE.getSuperStateDeclarationView__SetName__String();
-
-		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl <em>Suspend View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuspendView()
-		 * @generated
-		 */
-		EClass SUSPEND_VIEW = eINSTANCE.getSuspendView();
-
-		/**
-		 * The meta object literal for the '<em><b>Internal Suspend</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SUSPEND_VIEW__INTERNAL_SUSPEND = eINSTANCE.getSuspendView_InternalSuspend();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Condition</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUSPEND_VIEW___GET_CONDITION = eINSTANCE.getSuspendView__GetCondition();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Condition</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUSPEND_VIEW___SET_CONDITION__STRING = eINSTANCE.getSuspendView__SetCondition__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Name</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUSPEND_VIEW___GET_NAME = eINSTANCE.getSuspendView__GetName();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Name</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUSPEND_VIEW___SET_NAME__STRING = eINSTANCE.getSuspendView__SetName__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Suspend Type</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUSPEND_VIEW___GET_SUSPEND_TYPE = eINSTANCE.getSuspendView__GetSuspendType();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Suspend Type</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SUSPEND_VIEW___SET_SUSPEND_TYPE__STRING = eINSTANCE.getSuspendView__SetSuspendType__String();
-
-		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionViewImpl <em>Action View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ActionViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getActionView()
-		 * @generated
-		 */
-		EClass ACTION_VIEW = eINSTANCE.getActionView();
-
-		/**
-		 * The meta object literal for the '<em><b>Internal Action</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ACTION_VIEW__INTERNAL_ACTION = eINSTANCE.getActionView_InternalAction();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Action Type</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ACTION_VIEW___GET_ACTION_TYPE = eINSTANCE.getActionView__GetActionType();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Action Type</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ACTION_VIEW___SET_ACTION_TYPE__STRING = eINSTANCE.getActionView__SetActionType__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Condition</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ACTION_VIEW___GET_CONDITION = eINSTANCE.getActionView__GetCondition();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Condition</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ACTION_VIEW___SET_CONDITION__STRING = eINSTANCE.getActionView__SetCondition__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Effect</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ACTION_VIEW___GET_EFFECT = eINSTANCE.getActionView__GetEffect();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Effect</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ACTION_VIEW___SET_EFFECT__STRING = eINSTANCE.getActionView__SetEffect__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Name</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ACTION_VIEW___GET_NAME = eINSTANCE.getActionView__GetName();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Name</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ACTION_VIEW___SET_NAME__STRING = eINSTANCE.getActionView__SetName__String();
 
 	}
 

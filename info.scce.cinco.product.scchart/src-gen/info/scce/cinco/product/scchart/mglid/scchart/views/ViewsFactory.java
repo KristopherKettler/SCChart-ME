@@ -67,40 +67,40 @@ public interface ViewsFactory extends EFactory {
 	InitilalSuperStateView createInitilalSuperStateView();
 
 	/**
-	 * Returns a new object of class '<em>Root State Declaration Node View</em>'.
+	 * Returns a new object of class '<em>Root State Declaration View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Root State Declaration Node View</em>'.
+	 * @return a new object of class '<em>Root State Declaration View</em>'.
 	 * @generated
 	 */
-	RootStateDeclarationNodeView createRootStateDeclarationNodeView();
+	RootStateDeclarationView createRootStateDeclarationView();
 
 	/**
-	 * Returns a new object of class '<em>Suspend Node View</em>'.
+	 * Returns a new object of class '<em>Suspend View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Suspend Node View</em>'.
+	 * @return a new object of class '<em>Suspend View</em>'.
 	 * @generated
 	 */
-	SuspendNodeView createSuspendNodeView();
+	SuspendView createSuspendView();
 
 	/**
-	 * Returns a new object of class '<em>Action Node View</em>'.
+	 * Returns a new object of class '<em>Action View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Action Node View</em>'.
+	 * @return a new object of class '<em>Action View</em>'.
 	 * @generated
 	 */
-	ActionNodeView createActionNodeView();
+	ActionView createActionView();
 
 	/**
-	 * Returns a new object of class '<em>Super State Declaration Node View</em>'.
+	 * Returns a new object of class '<em>Super State Declaration View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Super State Declaration Node View</em>'.
+	 * @return a new object of class '<em>Super State Declaration View</em>'.
 	 * @generated
 	 */
-	SuperStateDeclarationNodeView createSuperStateDeclarationNodeView();
+	SuperStateDeclarationView createSuperStateDeclarationView();
 
 	/**
 	 * Returns a new object of class '<em>Simple State View</em>'.
@@ -155,6 +155,24 @@ public interface ViewsFactory extends EFactory {
 	 * @generated
 	 */
 	OutputView createOutputView();
+
+	/**
+	 * Returns a new object of class '<em>Operator View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Operator View</em>'.
+	 * @generated
+	 */
+	OperatorView createOperatorView();
+
+	/**
+	 * Returns a new object of class '<em>Connection Circuit View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Connection Circuit View</em>'.
+	 * @generated
+	 */
+	ConnectionCircuitView createConnectionCircuitView();
 
 	/**
 	 * Returns a new object of class '<em>Abstract Transition View</em>'.
@@ -344,42 +362,6 @@ public interface ViewsFactory extends EFactory {
 	 * @generated
 	 */
 	SCChartView createSCChartView();
-
-	/**
-	 * Returns a new object of class '<em>Root State Declaration View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Root State Declaration View</em>'.
-	 * @generated
-	 */
-	RootStateDeclarationView createRootStateDeclarationView();
-
-	/**
-	 * Returns a new object of class '<em>Super State Declaration View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Super State Declaration View</em>'.
-	 * @generated
-	 */
-	SuperStateDeclarationView createSuperStateDeclarationView();
-
-	/**
-	 * Returns a new object of class '<em>Suspend View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Suspend View</em>'.
-	 * @generated
-	 */
-	SuspendView createSuspendView();
-
-	/**
-	 * Returns a new object of class '<em>Action View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Action View</em>'.
-	 * @generated
-	 */
-	ActionView createActionView();
 
 	/**
 	 * Returns the package supported by this factory.

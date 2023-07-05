@@ -2,13 +2,7 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.views;
 
-import info.scce.cinco.product.scchart.mglid.scchart.Action;
-import info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration;
-import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
-
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState;
-
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -57,38 +51,6 @@ public interface SuperStateView extends EObject {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<Suspend> getSuspends();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model _argMany="true"
-	 * @generated
-	 */
-	void setSuspends(EList<Suspend> _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void addSuspends(Suspend _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void removeSuspends(Suspend suspends);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
 	String getLabel();
 
 	/**
@@ -98,69 +60,5 @@ public interface SuperStateView extends EObject {
 	 * @generated
 	 */
 	void setLabel(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<SuperStateDeclaration> getDeclaration();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model _argMany="true"
-	 * @generated
-	 */
-	void setDeclaration(EList<SuperStateDeclaration> _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void addDeclaration(SuperStateDeclaration _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void removeDeclaration(SuperStateDeclaration declaration);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<Action> getActions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model _argMany="true"
-	 * @generated
-	 */
-	void setActions(EList<Action> _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void addActions(Action _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void removeActions(Action actions);
 
 } // SuperStateView

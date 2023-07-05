@@ -67,40 +67,40 @@ public interface InternalFactory extends EFactory {
 	InternalInitilalSuperState createInternalInitilalSuperState();
 
 	/**
-	 * Returns a new object of class '<em>Root State Declaration Node</em>'.
+	 * Returns a new object of class '<em>Root State Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Root State Declaration Node</em>'.
+	 * @return a new object of class '<em>Root State Declaration</em>'.
 	 * @generated
 	 */
-	InternalRootStateDeclarationNode createInternalRootStateDeclarationNode();
+	InternalRootStateDeclaration createInternalRootStateDeclaration();
 
 	/**
-	 * Returns a new object of class '<em>Suspend Node</em>'.
+	 * Returns a new object of class '<em>Suspend</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Suspend Node</em>'.
+	 * @return a new object of class '<em>Suspend</em>'.
 	 * @generated
 	 */
-	InternalSuspendNode createInternalSuspendNode();
+	InternalSuspend createInternalSuspend();
 
 	/**
-	 * Returns a new object of class '<em>Action Node</em>'.
+	 * Returns a new object of class '<em>Action</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Action Node</em>'.
+	 * @return a new object of class '<em>Action</em>'.
 	 * @generated
 	 */
-	InternalActionNode createInternalActionNode();
+	InternalAction createInternalAction();
 
 	/**
-	 * Returns a new object of class '<em>Super State Declaration Node</em>'.
+	 * Returns a new object of class '<em>Super State Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Super State Declaration Node</em>'.
+	 * @return a new object of class '<em>Super State Declaration</em>'.
 	 * @generated
 	 */
-	InternalSuperStateDeclarationNode createInternalSuperStateDeclarationNode();
+	InternalSuperStateDeclaration createInternalSuperStateDeclaration();
 
 	/**
 	 * Returns a new object of class '<em>Simple State</em>'.
@@ -155,6 +155,24 @@ public interface InternalFactory extends EFactory {
 	 * @generated
 	 */
 	InternalOutput createInternalOutput();
+
+	/**
+	 * Returns a new object of class '<em>Operator</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Operator</em>'.
+	 * @generated
+	 */
+	InternalOperator createInternalOperator();
+
+	/**
+	 * Returns a new object of class '<em>Connection Circuit</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Connection Circuit</em>'.
+	 * @generated
+	 */
+	InternalConnectionCircuit createInternalConnectionCircuit();
 
 	/**
 	 * Returns a new object of class '<em>Abstract Transition</em>'.
@@ -344,42 +362,6 @@ public interface InternalFactory extends EFactory {
 	 * @generated
 	 */
 	InternalSCChart createInternalSCChart();
-
-	/**
-	 * Returns a new object of class '<em>Root State Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Root State Declaration</em>'.
-	 * @generated
-	 */
-	InternalRootStateDeclaration createInternalRootStateDeclaration();
-
-	/**
-	 * Returns a new object of class '<em>Super State Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Super State Declaration</em>'.
-	 * @generated
-	 */
-	InternalSuperStateDeclaration createInternalSuperStateDeclaration();
-
-	/**
-	 * Returns a new object of class '<em>Suspend</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Suspend</em>'.
-	 * @generated
-	 */
-	InternalSuspend createInternalSuspend();
-
-	/**
-	 * Returns a new object of class '<em>Action</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Action</em>'.
-	 * @generated
-	 */
-	InternalAction createInternalAction();
 
 	/**
 	 * Returns the package supported by this factory.

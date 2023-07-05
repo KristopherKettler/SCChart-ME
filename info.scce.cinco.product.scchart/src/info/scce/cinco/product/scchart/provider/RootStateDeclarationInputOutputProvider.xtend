@@ -8,7 +8,7 @@ class RootStateDeclarationInputOutputProvider extends CincoValuesProvider<RootSt
 
 	override Map<String, String> getPossibleValues(RootStateDeclaration inputOutput) {
 		
-		val String[] arr = #[' ','constant','input','output','input output'] 
+		val String[] arr = #[' ','signal','constant','input','output','input output'] 
 		
 		var map = newLinkedHashMap
 		for(string : arr){

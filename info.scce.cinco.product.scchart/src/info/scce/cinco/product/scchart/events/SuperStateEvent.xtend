@@ -45,17 +45,6 @@ final class SuperStateEvent extends info.scce.cinco.product.scchart.mglid.scchar
 	}
 	
 	override postAttributeChange(SuperState element, String attribute, Object oldValue) {
-		element.superStateDeclarationNodes.forEach[it.delete]
-		element.getDeclaration.forEach[ declaration , i |
-			element.newSuperStateDeclarationNode(10,10 + 10*(i+1),element.width-20,10)
-			if(declaration.declarationType !== "") {
-				element.superStateDeclarationNodes.last.setDeclarationType(declaration.declarationType)
-			}
-			else{
-				element.superStateDeclarationNodes.last.setDeclarationType("")
-			}
-			element.superStateDeclarationNodes.last.setName(declaration.name)
-			]
 	}
 	
 	override postCreate(SuperState element) {

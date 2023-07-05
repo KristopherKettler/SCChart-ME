@@ -4,14 +4,7 @@ import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
 import info.scce.cinco.product.scchart.mglid.scchart.Region;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
-import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
-import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclarationNode;
-import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
-import info.scce.cinco.product.scchart.mglid.scchart.SuspendNode;
-import java.util.function.Consumer;
 import org.eclipse.emf.common.util.EList;
-import org.eclipse.xtext.xbase.lib.IterableExtensions;
-import org.eclipse.xtext.xbase.lib.Procedures.Procedure2;
 
 /**
  * About this class:
@@ -53,50 +46,6 @@ public final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.
   
   @Override
   public void postAttributeChange(final RootState element, final String attribute, final Object oldValue) {
-    final Consumer<RootStateDeclarationNode> _function = (RootStateDeclarationNode it) -> {
-      it.delete();
-    };
-    element.getRootStateDeclarationNodes().forEach(_function);
-    final Procedure2<RootStateDeclaration, Integer> _function_1 = (RootStateDeclaration declaration, Integer index) -> {
-      int _width = element.getWidth();
-      int _minus = (_width - 20);
-      element.newRootStateDeclarationNode(10, (30 + (13 * (index).intValue())), _minus, 13);
-      IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).setInputOutput(declaration.getInputOutput());
-      IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).setDeclarationType(declaration.getDeclarationType());
-      IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).setName(declaration.getName());
-    };
-    IterableExtensions.<RootStateDeclaration>forEach(element.getDeclaration(), _function_1);
-    final Consumer<SuspendNode> _function_2 = (SuspendNode it) -> {
-      it.delete();
-    };
-    element.getSuspendNodes().forEach(_function_2);
-    final Procedure2<Suspend, Integer> _function_3 = (Suspend suspend, Integer index) -> {
-      int _size = element.getDeclaration().size();
-      int _multiply = (13 * _size);
-      int _plus = (30 + _multiply);
-      int _plus_1 = (_plus + (13 * (index).intValue()));
-      int _width = element.getWidth();
-      int _minus = (_width - 20);
-      element.newSuspendNode(10, _plus_1, _minus, 13);
-      IterableExtensions.<SuspendNode>last(element.getSuspendNodes()).setSuspendType(suspend.getSuspendType());
-      IterableExtensions.<SuspendNode>last(element.getSuspendNodes()).setCondition(suspend.getCondition());
-    };
-    IterableExtensions.<Suspend>forEach(element.getSuspends(), _function_3);
-    boolean break_ = true;
-    EList<Region> _regions = element.getRegions();
-    for (final Region region : _regions) {
-      if (((region.getY() < (IterableExtensions.<RootStateDeclarationNode>last(element.getRootStateDeclarationNodes()).getY() + 13)) || (region.getY() < (IterableExtensions.<SuspendNode>last(element.getSuspendNodes()).getY() + 13)))) {
-        EList<Region> _regions_1 = element.getRegions();
-        for (final Region region1 : _regions_1) {
-          int _y = region1.getY();
-          int _plus = (_y + 13);
-          region1.setY(_plus);
-        }
-        int _height = element.getHeight();
-        int _plus_1 = (_height + 13);
-        element.setHeight(_plus_1);
-      }
-    }
   }
   
   @Override

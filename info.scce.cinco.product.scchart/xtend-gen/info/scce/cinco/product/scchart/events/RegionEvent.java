@@ -67,7 +67,7 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
         boolean _equals_1 = (_size == 1);
         if (_equals_1) {
           it.setX(10);
-          int _size_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarationNodes().size();
+          int _size_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations().size();
           int _multiply = (_size_1 * 13);
           int _plus = (33 + _multiply);
           it.setY(_plus);
@@ -76,7 +76,7 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
           it.setWidth(_minus);
           int _height = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
           int _minus_1 = (_height - 43);
-          int _size_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarationNodes().size();
+          int _size_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations().size();
           int _multiply_1 = (_size_2 * 13);
           int _minus_2 = (_minus_1 - _multiply_1);
           it.setHeight(_minus_2);

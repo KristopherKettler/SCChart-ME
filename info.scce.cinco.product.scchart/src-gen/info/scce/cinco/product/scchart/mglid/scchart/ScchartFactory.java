@@ -67,40 +67,40 @@ public interface ScchartFactory extends EFactory {
 	InitilalSuperState createInitilalSuperState();
 
 	/**
-	 * Returns a new object of class '<em>Root State Declaration Node</em>'.
+	 * Returns a new object of class '<em>Root State Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Root State Declaration Node</em>'.
+	 * @return a new object of class '<em>Root State Declaration</em>'.
 	 * @generated
 	 */
-	RootStateDeclarationNode createRootStateDeclarationNode();
+	RootStateDeclaration createRootStateDeclaration();
 
 	/**
-	 * Returns a new object of class '<em>Suspend Node</em>'.
+	 * Returns a new object of class '<em>Suspend</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Suspend Node</em>'.
+	 * @return a new object of class '<em>Suspend</em>'.
 	 * @generated
 	 */
-	SuspendNode createSuspendNode();
+	Suspend createSuspend();
 
 	/**
-	 * Returns a new object of class '<em>Action Node</em>'.
+	 * Returns a new object of class '<em>Action</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Action Node</em>'.
+	 * @return a new object of class '<em>Action</em>'.
 	 * @generated
 	 */
-	ActionNode createActionNode();
+	Action createAction();
 
 	/**
-	 * Returns a new object of class '<em>Super State Declaration Node</em>'.
+	 * Returns a new object of class '<em>Super State Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Super State Declaration Node</em>'.
+	 * @return a new object of class '<em>Super State Declaration</em>'.
 	 * @generated
 	 */
-	SuperStateDeclarationNode createSuperStateDeclarationNode();
+	SuperStateDeclaration createSuperStateDeclaration();
 
 	/**
 	 * Returns a new object of class '<em>Simple State</em>'.
@@ -155,6 +155,24 @@ public interface ScchartFactory extends EFactory {
 	 * @generated
 	 */
 	Output createOutput();
+
+	/**
+	 * Returns a new object of class '<em>Operator</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Operator</em>'.
+	 * @generated
+	 */
+	Operator createOperator();
+
+	/**
+	 * Returns a new object of class '<em>Connection Circuit</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Connection Circuit</em>'.
+	 * @generated
+	 */
+	ConnectionCircuit createConnectionCircuit();
 
 	/**
 	 * Returns a new object of class '<em>Abstract Transition</em>'.
@@ -344,42 +362,6 @@ public interface ScchartFactory extends EFactory {
 	 * @generated
 	 */
 	SCChart createSCChart();
-
-	/**
-	 * Returns a new object of class '<em>Root State Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Root State Declaration</em>'.
-	 * @generated
-	 */
-	RootStateDeclaration createRootStateDeclaration();
-
-	/**
-	 * Returns a new object of class '<em>Super State Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Super State Declaration</em>'.
-	 * @generated
-	 */
-	SuperStateDeclaration createSuperStateDeclaration();
-
-	/**
-	 * Returns a new object of class '<em>Suspend</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Suspend</em>'.
-	 * @generated
-	 */
-	Suspend createSuspend();
-
-	/**
-	 * Returns a new object of class '<em>Action</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Action</em>'.
-	 * @generated
-	 */
-	Action createAction();
 
 	/**
 	 * Returns the package supported by this factory.

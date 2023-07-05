@@ -77,4 +77,20 @@ public interface SuperStateDeclarationView extends EObject {
 	 */
 	void setName(String _arg);
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	String getConstSig();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setConstSig(String _arg);
+
 } // SuperStateDeclarationView

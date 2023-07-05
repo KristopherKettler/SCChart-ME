@@ -11,11 +11,11 @@ graphModel SCChart {
 @event("info.scce.cinco.product.scchart.events.RootStateEvent")
 container RootState {
 	style rootStateStyle ("${label}")
-	containableElements(Region,RootStateDeclarationNode,SuspendNode)
+	containableElements(Region,RootStateDeclaration,Suspend)
 	outgoingEdges (*)
 	attr EString as label := "<insert name>"
-	attr RootStateDeclaration as declaration[0,*]
-	attr Suspend as suspends[0,*]
+	//attr RootStateDeclaration as declaration[0,*]
+	//attr Suspend as suspends[0,*]
 }
 
 @palette("SuperStates")
@@ -32,19 +32,19 @@ container Region {
 @palette("Dataflow")
 container DataFlowRegion extends Region {
 	style regionStyle ("${RegionID}")
-	containableElements(SuperState,InitilalSuperState[0,1],InitialState[0,1],SimpleState,FinalState,Input,Output)
+	containableElements(Input,Output,Operator)
 }
 
 @palette("SuperStates")
 @event("info.scce.cinco.product.scchart.events.SuperStateEvent")
 container SuperState {
 	style superStateStyle ("${label}")
-	containableElements(Region,SuperStateDeclarationNode,ActionNode,SuspendNode)
+	containableElements(Region,SuperStateDeclaration,Action,Suspend)
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 	outgoingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
-	attr SuperStateDeclaration as declaration[0,*]
-	attr Suspend as suspends[0,*] 
-	attr Action as actions[0,*]
+//	attr SuperStateDeclaration as declaration[0,*]
+//	attr Suspend as suspends[0,*] 
+//	attr Action as actions[0,*]
 	attr EString as label := "<insert name>"
 }
 
@@ -52,40 +52,52 @@ container SuperState {
 @event("info.scce.cinco.product.scchart.events.InitilalSuperStateEvent")
 container InitilalSuperState extends SuperState{
 	style initialSuperStateStyle ("${label}")
-	containableElements(Region,SuperStateDeclarationNode)
+	containableElements(Region,SuperStateDeclaration,Action,Suspend)
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 	outgoingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 }
 
-@palette
-@disable(select,delete)
-node RootStateDeclarationNode {
-	style declarationStyle("${InputOutput}", "${declarationType}","${name}")
-	attr EString as inputOutput
+@palette("Declaration")
+@disable(move,resize)
+@event("info.scce.cinco.product.scchart.events.RootStateDeclarationEvent")
+node RootStateDeclaration {
+	style declarationStyle("${(empty inputOutput || inputOutput == ' ' ? '' : inputOutput).concat(declarationType)}", "${declarationType}","${name}")
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationInputOutputProvider")
+	attr EString as inputOutput := ' '
 	attr EString as declarationType
 	attr EString as name
 }
 
-
-@palette
-node SuspendNode {
+@palette("Declaration")
+@disable(move,resize)
+@event("info.scce.cinco.product.scchart.events.SuspendEvent")
+node Suspend {
 	style suspendStyle("${(suspendType == ' ' ? ' ' : suspendType)}", "${(suspendType == ' ' ? ' ' : empty condition ? ' ' : condition)}")
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuspendTypeProvider")
 	attr EString as suspendType := ' '
 	attr EString as condition
+	@propertiesViewHidden
+	attr EString as uuid
 }
 
-@palette
-node ActionNode {
+@palette("Declaration")
+@disable(move,resize)
+@event("info.scce.cinco.product.scchart.events.ActionEvent")
+node Action {
 	style declarationStyle("${InputOutput}", "${declarationType}","${name}")
-	attr EString as inputOutput
-	attr EString as declarationType
-	attr EString as name
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.ActionTypeProvider")
+	attr EString as actionType := ' ' 
+	attr EString as condition
+	attr EString as effect
 }
 
-@palette
-@disable(select,delete)
-node SuperStateDeclarationNode {
+@palette("Declaration")
+@disable(move,resize)
+@event("info.scce.cinco.product.scchart.events.SuperStateDeclarationEvent")
+node SuperStateDeclaration {
 	style subSuperStateDeclarationStyle("${declarationType}","${name}")
+	attr EString as ConstSig
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
 	attr EString as declarationType
 	attr EString as name
 }
@@ -121,14 +133,31 @@ node Connector {
 
 @palette("Dataflow")
 node Input {
-	style inputStyle
+	style inputStyle("${empty label ? ' ' : label}")
 	outgoingEdges (Connection[1,1])
+	attr EString as label
 }
 
 @palette("Dataflow")
 node Output {
-	style outputStyle
+	style outputStyle("${empty label ? ' ' : label}")
 	incomingEdges (Connection[1,1])
+	attr EString as label
+}
+
+@palette("Dataflow")
+node Operator {
+	style operatorStyle("${empty operator ? ' ' : operator}")
+	incomingEdges (Connection)
+	outgoingEdges (Connection[1,1])
+	attr EString as operator
+}
+
+@palette("Dataflow")
+node ConnectionCircuit {
+	style connectorStyle
+	incomingEdges (Connection)
+	outgoingEdges (Connection)
 }
 
 /*Transitions */
@@ -138,6 +167,7 @@ edge AbstractTransition{
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.AbstractTransitionPriorityProvider")
 	attr EString as priority := '0'
 }
+
 edge Transition extends AbstractTransition{
 	style transitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(empty delay || delay == '<No count delay>' ? '' : delay).concat(condition == '<No condition>' ? '' : ' ['.concat(condition).concat(']')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
 	//attr EString as priority := '0'
@@ -290,7 +320,7 @@ edge StrongAbortHistoryTransition extends AbstractTransition{
 } 
 
 edge ImmediateStrongAbortHistoryTransition extends AbstractTransition{
-	style immediateStrongAbortHistoryTransitionStyle("","${H}")
+	style immediateStrongAbortHistoryTransitionStyle("","${deepHistory ? '*' : ' '}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
@@ -305,36 +335,36 @@ edge Connection {
 }
 
 
-@label(name)
-type RootStateDeclaration {
-	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationInputOutputProvider")
-	attr EString as InputOutput := ' '
-	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationTypeProvider")
-	attr EString as declarationType := "bool"
-	attr EString as name
-}
+//@label(name)
+//type RootStateDeclaration {
+//	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationInputOutputProvider")
+//	attr EString as InputOutput := ' '
+//	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationTypeProvider")
+//	attr EString as declarationType := "bool"
+//	attr EString as name
+//}
 
-@label(name)
-type SuperStateDeclaration {
-	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
-	attr EString as declarationType := "bool"
-	attr EString as name
-}
+//@label(name)
+//type SuperStateDeclaration {
+//	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
+//	attr EString as declarationType := "bool"
+//	attr EString as name
+//}
 
+//@label(name)
+//type SuspendType {
+//	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuspendTypeProvider")
+//	attr EString as suspendType := ' '
+//	attr EString as condition
+//	
+//	attr EString as name := "${suspendType.concat(empty condition || condition == '' ? ' ' : condition)}"
+//}
 
-@label(name)
-type Suspend {
-	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuspendTypeProvider")
-	attr EString as SuspendType := ' '
-	attr EString as condition
-	attr EString as name 
-}
-
-@label(name)
-type Action {
-	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.ActionTypeProvider")
-	attr EString as actionType := "entry"
-	attr EString as condition 
-	attr EString as effect
-	attr EString as name 
-}
+//@label(name)
+//type Action {
+//	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.ActionTypeProvider")
+//	attr EString as actionType := "entry"
+//	attr EString as condition 
+//	attr EString as effect
+//	attr EString as name 
+//}

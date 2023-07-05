@@ -2,7 +2,7 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.internal.impl;
 
-import graphmodel.internal.impl.InternalTypeImpl;
+import graphmodel.internal.impl.InternalNodeImpl;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration;
@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class InternalRootStateDeclarationImpl extends InternalTypeImpl implements InternalRootStateDeclaration {
+public class InternalRootStateDeclarationImpl extends InternalNodeImpl implements InternalRootStateDeclaration {
 	/**
 	 * The default value of the '{@link #getDeclarationType() <em>Declaration Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -37,7 +37,7 @@ public class InternalRootStateDeclarationImpl extends InternalTypeImpl implement
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DECLARATION_TYPE_EDEFAULT = "bool";
+	protected static final String DECLARATION_TYPE_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getDeclarationType() <em>Declaration Type</em>}' attribute.
@@ -267,7 +267,7 @@ public class InternalRootStateDeclarationImpl extends InternalTypeImpl implement
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (declarationType: ");
 		result.append(declarationType);
-		result.append(", InputOutput: ");
+		result.append(", inputOutput: ");
 		result.append(inputOutput);
 		result.append(", name: ");
 		result.append(name);

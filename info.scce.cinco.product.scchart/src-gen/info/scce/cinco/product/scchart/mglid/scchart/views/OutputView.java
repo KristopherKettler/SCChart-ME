@@ -45,4 +45,20 @@ public interface OutputView extends EObject {
 	 */
 	void setInternalOutput(InternalOutput value);
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	String getLabel();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setLabel(String _arg);
+
 } // OutputView

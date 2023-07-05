@@ -11,35 +11,28 @@ import graphmodel.internal.InternalNode;
 
 import graphmodel.internal.impl.InternalContainerImpl;
 
+import info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit;
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.Operator;
 import info.scce.cinco.product.scchart.mglid.scchart.Output;
-import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
-import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState;
 
 import java.lang.reflect.InvocationTargetException;
 
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -49,24 +42,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateImpl#getSuspends <em>Suspends</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateImpl#getLabel <em>Label</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateImpl#getDeclaration <em>Declaration</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class InternalRootStateImpl extends InternalContainerImpl implements InternalRootState {
-	/**
-	 * The cached value of the '{@link #getSuspends() <em>Suspends</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSuspends()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Suspend> suspends;
-
 	/**
 	 * The default value of the '{@link #getLabel() <em>Label</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -88,16 +69,6 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	protected String label = LABEL_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getDeclaration() <em>Declaration</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDeclaration()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<RootStateDeclaration> declaration;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -114,19 +85,6 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	protected EClass eStaticClass() {
 		return InternalPackage.Literals.INTERNAL_ROOT_STATE;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<Suspend> getSuspends() {
-		if (suspends == null) {
-			suspends = new EObjectContainmentEList<Suspend>(Suspend.class, this, InternalPackage.INTERNAL_ROOT_STATE__SUSPENDS);
-		}
-		return suspends;
 	}
 
 	/**
@@ -158,25 +116,12 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 */
 	@Override
-	public EList<RootStateDeclaration> getDeclaration() {
-		if (declaration == null) {
-			declaration = new EObjectContainmentEList<RootStateDeclaration>(RootStateDeclaration.class, this, InternalPackage.INTERNAL_ROOT_STATE__DECLARATION);
-		}
-		return declaration;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<ContainmentConstraint> getContainmentConstraints() {
 		 org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>constraints =
 			new org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>();
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Region.class));
-		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclarationNode.class));
-		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.SuspendNode.class));
+		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration.class));
+		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Suspend.class));
 		return constraints;
 		
 	}
@@ -272,14 +217,18 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case InternalPackage.INTERNAL_ROOT_STATE__SUSPENDS:
-				return ((InternalEList<?>)getSuspends()).basicRemove(otherEnd, msgs);
-			case InternalPackage.INTERNAL_ROOT_STATE__DECLARATION:
-				return ((InternalEList<?>)getDeclaration()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+	public EList<Operator> getOperatorSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.Operator.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<ConnectionCircuit> getConnectionCircuitSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit.class);
 	}
 
 	/**
@@ -290,12 +239,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_ROOT_STATE__SUSPENDS:
-				return getSuspends();
 			case InternalPackage.INTERNAL_ROOT_STATE__LABEL:
 				return getLabel();
-			case InternalPackage.INTERNAL_ROOT_STATE__DECLARATION:
-				return getDeclaration();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -305,20 +250,11 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_ROOT_STATE__SUSPENDS:
-				getSuspends().clear();
-				getSuspends().addAll((Collection<? extends Suspend>)newValue);
-				return;
 			case InternalPackage.INTERNAL_ROOT_STATE__LABEL:
 				setLabel((String)newValue);
-				return;
-			case InternalPackage.INTERNAL_ROOT_STATE__DECLARATION:
-				getDeclaration().clear();
-				getDeclaration().addAll((Collection<? extends RootStateDeclaration>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -332,14 +268,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_ROOT_STATE__SUSPENDS:
-				getSuspends().clear();
-				return;
 			case InternalPackage.INTERNAL_ROOT_STATE__LABEL:
 				setLabel(LABEL_EDEFAULT);
-				return;
-			case InternalPackage.INTERNAL_ROOT_STATE__DECLARATION:
-				getDeclaration().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -353,12 +283,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_ROOT_STATE__SUSPENDS:
-				return suspends != null && !suspends.isEmpty();
 			case InternalPackage.INTERNAL_ROOT_STATE__LABEL:
 				return LABEL_EDEFAULT == null ? label != null : !LABEL_EDEFAULT.equals(label);
-			case InternalPackage.INTERNAL_ROOT_STATE__DECLARATION:
-				return declaration != null && !declaration.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -417,6 +343,10 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 				return getConnectorSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_OUTPUT_SUCCESSORS:
 				return getOutputSuccessors();
+			case InternalPackage.INTERNAL_ROOT_STATE___GET_OPERATOR_SUCCESSORS:
+				return getOperatorSuccessors();
+			case InternalPackage.INTERNAL_ROOT_STATE___GET_CONNECTION_CIRCUIT_SUCCESSORS:
+				return getConnectionCircuitSuccessors();
 		}
 		return super.eInvoke(operationID, arguments);
 	}

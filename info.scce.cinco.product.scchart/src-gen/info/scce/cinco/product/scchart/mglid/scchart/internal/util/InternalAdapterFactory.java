@@ -9,7 +9,6 @@ import graphmodel.internal.InternalIdentifiableElement;
 import graphmodel.internal.InternalModelElement;
 import graphmodel.internal.InternalModelElementContainer;
 import graphmodel.internal.InternalNode;
-import graphmodel.internal.InternalType;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.*;
 
@@ -97,20 +96,20 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 				return createInternalInitilalSuperStateAdapter();
 			}
 			@Override
-			public Adapter caseInternalRootStateDeclarationNode(InternalRootStateDeclarationNode object) {
-				return createInternalRootStateDeclarationNodeAdapter();
+			public Adapter caseInternalRootStateDeclaration(InternalRootStateDeclaration object) {
+				return createInternalRootStateDeclarationAdapter();
 			}
 			@Override
-			public Adapter caseInternalSuspendNode(InternalSuspendNode object) {
-				return createInternalSuspendNodeAdapter();
+			public Adapter caseInternalSuspend(InternalSuspend object) {
+				return createInternalSuspendAdapter();
 			}
 			@Override
-			public Adapter caseInternalActionNode(InternalActionNode object) {
-				return createInternalActionNodeAdapter();
+			public Adapter caseInternalAction(InternalAction object) {
+				return createInternalActionAdapter();
 			}
 			@Override
-			public Adapter caseInternalSuperStateDeclarationNode(InternalSuperStateDeclarationNode object) {
-				return createInternalSuperStateDeclarationNodeAdapter();
+			public Adapter caseInternalSuperStateDeclaration(InternalSuperStateDeclaration object) {
+				return createInternalSuperStateDeclarationAdapter();
 			}
 			@Override
 			public Adapter caseInternalSimpleState(InternalSimpleState object) {
@@ -135,6 +134,14 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseInternalOutput(InternalOutput object) {
 				return createInternalOutputAdapter();
+			}
+			@Override
+			public Adapter caseInternalOperator(InternalOperator object) {
+				return createInternalOperatorAdapter();
+			}
+			@Override
+			public Adapter caseInternalConnectionCircuit(InternalConnectionCircuit object) {
+				return createInternalConnectionCircuitAdapter();
 			}
 			@Override
 			public Adapter caseInternalAbstractTransition(InternalAbstractTransition object) {
@@ -221,22 +228,6 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 				return createInternalSCChartAdapter();
 			}
 			@Override
-			public Adapter caseInternalRootStateDeclaration(InternalRootStateDeclaration object) {
-				return createInternalRootStateDeclarationAdapter();
-			}
-			@Override
-			public Adapter caseInternalSuperStateDeclaration(InternalSuperStateDeclaration object) {
-				return createInternalSuperStateDeclarationAdapter();
-			}
-			@Override
-			public Adapter caseInternalSuspend(InternalSuspend object) {
-				return createInternalSuspendAdapter();
-			}
-			@Override
-			public Adapter caseInternalAction(InternalAction object) {
-				return createInternalActionAdapter();
-			}
-			@Override
 			public Adapter caseInternalIdentifiableElement(InternalIdentifiableElement object) {
 				return createInternalIdentifiableElementAdapter();
 			}
@@ -263,10 +254,6 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseInternalGraphModel(InternalGraphModel object) {
 				return createInternalGraphModelAdapter();
-			}
-			@Override
-			public Adapter caseInternalType(InternalType object) {
-				return createInternalTypeAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -359,58 +346,58 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclarationNode <em>Root State Declaration Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration <em>Root State Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclarationNode
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration
 	 * @generated
 	 */
-	public Adapter createInternalRootStateDeclarationNodeAdapter() {
+	public Adapter createInternalRootStateDeclarationAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspendNode <em>Suspend Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend <em>Suspend</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspendNode
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend
 	 * @generated
 	 */
-	public Adapter createInternalSuspendNodeAdapter() {
+	public Adapter createInternalSuspendAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalActionNode <em>Action Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction <em>Action</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalActionNode
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction
 	 * @generated
 	 */
-	public Adapter createInternalActionNodeAdapter() {
+	public Adapter createInternalActionAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclarationNode <em>Super State Declaration Node</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration <em>Super State Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclarationNode
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration
 	 * @generated
 	 */
-	public Adapter createInternalSuperStateDeclarationNodeAdapter() {
+	public Adapter createInternalSuperStateDeclarationAdapter() {
 		return null;
 	}
 
@@ -495,6 +482,34 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInternalOutputAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOperator <em>Operator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOperator
+	 * @generated
+	 */
+	public Adapter createInternalOperatorAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit <em>Connection Circuit</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit
+	 * @generated
+	 */
+	public Adapter createInternalConnectionCircuitAdapter() {
 		return null;
 	}
 
@@ -793,62 +808,6 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration <em>Root State Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration
-	 * @generated
-	 */
-	public Adapter createInternalRootStateDeclarationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration <em>Super State Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration
-	 * @generated
-	 */
-	public Adapter createInternalSuperStateDeclarationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend <em>Suspend</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend
-	 * @generated
-	 */
-	public Adapter createInternalSuspendAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction <em>Action</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction
-	 * @generated
-	 */
-	public Adapter createInternalActionAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link graphmodel.internal.InternalIdentifiableElement <em>Identifiable Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -943,20 +902,6 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInternalGraphModelAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link graphmodel.internal.InternalType <em>Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see graphmodel.internal.InternalType
-	 * @generated
-	 */
-	public Adapter createInternalTypeAdapter() {
 		return null;
 	}
 

@@ -154,6 +154,29 @@ public class SuperStateDeclarationViewImpl extends EObjectImpl implements SuperS
 	 * @generated
 	 */
 	@Override
+	public String getConstSig() {
+		return getInternalSuperStateDeclaration().getConstSig();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setConstSig(final String _arg) {
+		getInternalSuperStateDeclaration().getElement().transact("Set ConstSig", () -> {
+			getInternalSuperStateDeclaration().setConstSig(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.SUPER_STATE_DECLARATION_VIEW__INTERNAL_SUPER_STATE_DECLARATION:
@@ -224,6 +247,11 @@ public class SuperStateDeclarationViewImpl extends EObjectImpl implements SuperS
 				return getName();
 			case ViewsPackage.SUPER_STATE_DECLARATION_VIEW___SET_NAME__STRING:
 				setName((String)arguments.get(0));
+				return null;
+			case ViewsPackage.SUPER_STATE_DECLARATION_VIEW___GET_CONST_SIG:
+				return getConstSig();
+			case ViewsPackage.SUPER_STATE_DECLARATION_VIEW___SET_CONST_SIG__STRING:
+				setConstSig((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

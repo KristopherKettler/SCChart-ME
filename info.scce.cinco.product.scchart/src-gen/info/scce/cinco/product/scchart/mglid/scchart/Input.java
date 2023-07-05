@@ -29,6 +29,22 @@ public interface Input extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	String getLabel();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setLabel(String _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	InternalInput getInternalInput();
 
 	/**
@@ -101,7 +117,7 @@ public interface Input extends Node {
 	 * @model kind="operation" required="true" many="false"
 	 * @generated
 	 */
-	EList<? extends Output> getSuccessors();
+	EList<? extends Node> getSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -162,6 +178,22 @@ public interface Input extends Node {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<Operator> getOperatorSuccessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<ConnectionCircuit> getConnectionCircuitSuccessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @model targetRequired="true"
 	 * @generated
 	 */
@@ -182,6 +214,54 @@ public interface Input extends Node {
 	 * @generated
 	 */
 	Connection newConnection(Output target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewConnection(ConnectionCircuit target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	Connection newConnection(ConnectionCircuit target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	Connection newConnection(ConnectionCircuit target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewConnection(Operator target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	Connection newConnection(Operator target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	Connection newConnection(Operator target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->

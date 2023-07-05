@@ -88,20 +88,20 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 				return createInitilalSuperStateViewAdapter();
 			}
 			@Override
-			public Adapter caseRootStateDeclarationNodeView(RootStateDeclarationNodeView object) {
-				return createRootStateDeclarationNodeViewAdapter();
+			public Adapter caseRootStateDeclarationView(RootStateDeclarationView object) {
+				return createRootStateDeclarationViewAdapter();
 			}
 			@Override
-			public Adapter caseSuspendNodeView(SuspendNodeView object) {
-				return createSuspendNodeViewAdapter();
+			public Adapter caseSuspendView(SuspendView object) {
+				return createSuspendViewAdapter();
 			}
 			@Override
-			public Adapter caseActionNodeView(ActionNodeView object) {
-				return createActionNodeViewAdapter();
+			public Adapter caseActionView(ActionView object) {
+				return createActionViewAdapter();
 			}
 			@Override
-			public Adapter caseSuperStateDeclarationNodeView(SuperStateDeclarationNodeView object) {
-				return createSuperStateDeclarationNodeViewAdapter();
+			public Adapter caseSuperStateDeclarationView(SuperStateDeclarationView object) {
+				return createSuperStateDeclarationViewAdapter();
 			}
 			@Override
 			public Adapter caseSimpleStateView(SimpleStateView object) {
@@ -126,6 +126,14 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseOutputView(OutputView object) {
 				return createOutputViewAdapter();
+			}
+			@Override
+			public Adapter caseOperatorView(OperatorView object) {
+				return createOperatorViewAdapter();
+			}
+			@Override
+			public Adapter caseConnectionCircuitView(ConnectionCircuitView object) {
+				return createConnectionCircuitViewAdapter();
 			}
 			@Override
 			public Adapter caseAbstractTransitionView(AbstractTransitionView object) {
@@ -210,22 +218,6 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseSCChartView(SCChartView object) {
 				return createSCChartViewAdapter();
-			}
-			@Override
-			public Adapter caseRootStateDeclarationView(RootStateDeclarationView object) {
-				return createRootStateDeclarationViewAdapter();
-			}
-			@Override
-			public Adapter caseSuperStateDeclarationView(SuperStateDeclarationView object) {
-				return createSuperStateDeclarationViewAdapter();
-			}
-			@Override
-			public Adapter caseSuspendView(SuspendView object) {
-				return createSuspendViewAdapter();
-			}
-			@Override
-			public Adapter caseActionView(ActionView object) {
-				return createActionViewAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -318,58 +310,58 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView <em>Root State Declaration Node View</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView <em>Root State Declaration View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationNodeView
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView
 	 * @generated
 	 */
-	public Adapter createRootStateDeclarationNodeViewAdapter() {
+	public Adapter createRootStateDeclarationViewAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendNodeView <em>Suspend Node View</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView <em>Suspend View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendNodeView
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView
 	 * @generated
 	 */
-	public Adapter createSuspendNodeViewAdapter() {
+	public Adapter createSuspendViewAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView <em>Action Node View</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView <em>Action View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionNodeView
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView
 	 * @generated
 	 */
-	public Adapter createActionNodeViewAdapter() {
+	public Adapter createActionViewAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationNodeView <em>Super State Declaration Node View</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView <em>Super State Declaration View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationNodeView
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView
 	 * @generated
 	 */
-	public Adapter createSuperStateDeclarationNodeViewAdapter() {
+	public Adapter createSuperStateDeclarationViewAdapter() {
 		return null;
 	}
 
@@ -454,6 +446,34 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createOutputViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView <em>Operator View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView
+	 * @generated
+	 */
+	public Adapter createOperatorViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionCircuitView <em>Connection Circuit View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionCircuitView
+	 * @generated
+	 */
+	public Adapter createConnectionCircuitViewAdapter() {
 		return null;
 	}
 
@@ -748,62 +768,6 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSCChartViewAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView <em>Root State Declaration View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView
-	 * @generated
-	 */
-	public Adapter createRootStateDeclarationViewAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView <em>Super State Declaration View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView
-	 * @generated
-	 */
-	public Adapter createSuperStateDeclarationViewAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView <em>Suspend View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView
-	 * @generated
-	 */
-	public Adapter createSuspendViewAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView <em>Action View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView
-	 * @generated
-	 */
-	public Adapter createActionViewAdapter() {
 		return null;
 	}
 

@@ -2,7 +2,7 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.internal.impl;
 
-import graphmodel.internal.impl.InternalTypeImpl;
+import graphmodel.internal.impl.InternalNodeImpl;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration;
@@ -23,11 +23,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateDeclarationImpl#getDeclarationType <em>Declaration Type</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateDeclarationImpl#getName <em>Name</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateDeclarationImpl#getConstSig <em>Const Sig</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implements InternalSuperStateDeclaration {
+public class InternalSuperStateDeclarationImpl extends InternalNodeImpl implements InternalSuperStateDeclaration {
 	/**
 	 * The default value of the '{@link #getDeclarationType() <em>Declaration Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -36,7 +37,7 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DECLARATION_TYPE_EDEFAULT = "bool";
+	protected static final String DECLARATION_TYPE_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getDeclarationType() <em>Declaration Type</em>}' attribute.
@@ -67,6 +68,26 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getConstSig() <em>Const Sig</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConstSig()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String CONST_SIG_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getConstSig() <em>Const Sig</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConstSig()
+	 * @generated
+	 * @ordered
+	 */
+	protected String constSig = CONST_SIG_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -139,12 +160,37 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 	 * @generated
 	 */
 	@Override
+	public String getConstSig() {
+		return constSig;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setConstSig(String newConstSig) {
+		String oldConstSig = constSig;
+		constSig = newConstSig;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__CONST_SIG, oldConstSig, constSig));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__DECLARATION_TYPE:
 				return getDeclarationType();
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__NAME:
 				return getName();
+			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__CONST_SIG:
+				return getConstSig();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -162,6 +208,9 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 				return;
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__NAME:
 				setName((String)newValue);
+				return;
+			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__CONST_SIG:
+				setConstSig((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -181,6 +230,9 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__NAME:
 				setName(NAME_EDEFAULT);
 				return;
+			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__CONST_SIG:
+				setConstSig(CONST_SIG_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -197,6 +249,8 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 				return DECLARATION_TYPE_EDEFAULT == null ? declarationType != null : !DECLARATION_TYPE_EDEFAULT.equals(declarationType);
 			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION__CONST_SIG:
+				return CONST_SIG_EDEFAULT == null ? constSig != null : !CONST_SIG_EDEFAULT.equals(constSig);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -215,6 +269,8 @@ public class InternalSuperStateDeclarationImpl extends InternalTypeImpl implemen
 		result.append(declarationType);
 		result.append(", name: ");
 		result.append(name);
+		result.append(", ConstSig: ");
+		result.append(constSig);
 		result.append(')');
 		return result.toString();
 	}

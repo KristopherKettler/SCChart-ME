@@ -29,6 +29,22 @@ public interface Output extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	String getLabel();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setLabel(String _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	InternalOutput getInternalOutput();
 
 	/**
@@ -166,6 +182,22 @@ public interface Output extends Node {
 	 * @generated
 	 */
 	EList<Input> getInputPredecessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<Operator> getOperatorPredecessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<ConnectionCircuit> getConnectionCircuitPredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->

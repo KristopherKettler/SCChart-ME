@@ -61,16 +61,18 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 			case ScchartPackage.DATA_FLOW_REGION: return createDataFlowRegion();
 			case ScchartPackage.SUPER_STATE: return createSuperState();
 			case ScchartPackage.INITILAL_SUPER_STATE: return createInitilalSuperState();
-			case ScchartPackage.ROOT_STATE_DECLARATION_NODE: return createRootStateDeclarationNode();
-			case ScchartPackage.SUSPEND_NODE: return createSuspendNode();
-			case ScchartPackage.ACTION_NODE: return createActionNode();
-			case ScchartPackage.SUPER_STATE_DECLARATION_NODE: return createSuperStateDeclarationNode();
+			case ScchartPackage.ROOT_STATE_DECLARATION: return createRootStateDeclaration();
+			case ScchartPackage.SUSPEND: return createSuspend();
+			case ScchartPackage.ACTION: return createAction();
+			case ScchartPackage.SUPER_STATE_DECLARATION: return createSuperStateDeclaration();
 			case ScchartPackage.SIMPLE_STATE: return createSimpleState();
 			case ScchartPackage.INITIAL_STATE: return createInitialState();
 			case ScchartPackage.FINAL_STATE: return createFinalState();
 			case ScchartPackage.CONNECTOR: return createConnector();
 			case ScchartPackage.INPUT: return createInput();
 			case ScchartPackage.OUTPUT: return createOutput();
+			case ScchartPackage.OPERATOR: return createOperator();
+			case ScchartPackage.CONNECTION_CIRCUIT: return createConnectionCircuit();
 			case ScchartPackage.ABSTRACT_TRANSITION: return createAbstractTransition();
 			case ScchartPackage.TRANSITION: return createTransition();
 			case ScchartPackage.IMMEDIATE_TRANSITION: return createImmediateTransition();
@@ -92,10 +94,6 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION: return createImmediateStrongAbortHistoryTransition();
 			case ScchartPackage.CONNECTION: return createConnection();
 			case ScchartPackage.SC_CHART: return createSCChart();
-			case ScchartPackage.ROOT_STATE_DECLARATION: return createRootStateDeclaration();
-			case ScchartPackage.SUPER_STATE_DECLARATION: return createSuperStateDeclaration();
-			case ScchartPackage.SUSPEND: return createSuspend();
-			case ScchartPackage.ACTION: return createAction();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -162,9 +160,9 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public RootStateDeclarationNode createRootStateDeclarationNode() {
-		RootStateDeclarationNodeImpl rootStateDeclarationNode = new RootStateDeclarationNodeImpl();
-		return rootStateDeclarationNode;
+	public RootStateDeclaration createRootStateDeclaration() {
+		RootStateDeclarationImpl rootStateDeclaration = new RootStateDeclarationImpl();
+		return rootStateDeclaration;
 	}
 
 	/**
@@ -173,9 +171,9 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public SuspendNode createSuspendNode() {
-		SuspendNodeImpl suspendNode = new SuspendNodeImpl();
-		return suspendNode;
+	public Suspend createSuspend() {
+		SuspendImpl suspend = new SuspendImpl();
+		return suspend;
 	}
 
 	/**
@@ -184,9 +182,9 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public ActionNode createActionNode() {
-		ActionNodeImpl actionNode = new ActionNodeImpl();
-		return actionNode;
+	public Action createAction() {
+		ActionImpl action = new ActionImpl();
+		return action;
 	}
 
 	/**
@@ -195,9 +193,9 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public SuperStateDeclarationNode createSuperStateDeclarationNode() {
-		SuperStateDeclarationNodeImpl superStateDeclarationNode = new SuperStateDeclarationNodeImpl();
-		return superStateDeclarationNode;
+	public SuperStateDeclaration createSuperStateDeclaration() {
+		SuperStateDeclarationImpl superStateDeclaration = new SuperStateDeclarationImpl();
+		return superStateDeclaration;
 	}
 
 	/**
@@ -264,6 +262,28 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	public Output createOutput() {
 		OutputImpl output = new OutputImpl();
 		return output;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Operator createOperator() {
+		OperatorImpl operator = new OperatorImpl();
+		return operator;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ConnectionCircuit createConnectionCircuit() {
+		ConnectionCircuitImpl connectionCircuit = new ConnectionCircuitImpl();
+		return connectionCircuit;
 	}
 
 	/**
@@ -495,50 +515,6 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	public SCChart createSCChart() {
 		SCChartImpl scChart = new SCChartImpl();
 		return scChart;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RootStateDeclaration createRootStateDeclaration() {
-		RootStateDeclarationImpl rootStateDeclaration = new RootStateDeclarationImpl();
-		return rootStateDeclaration;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SuperStateDeclaration createSuperStateDeclaration() {
-		SuperStateDeclarationImpl superStateDeclaration = new SuperStateDeclarationImpl();
-		return superStateDeclaration;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Suspend createSuspend() {
-		SuspendImpl suspend = new SuspendImpl();
-		return suspend;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Action createAction() {
-		ActionImpl action = new ActionImpl();
-		return action;
 	}
 
 	/**

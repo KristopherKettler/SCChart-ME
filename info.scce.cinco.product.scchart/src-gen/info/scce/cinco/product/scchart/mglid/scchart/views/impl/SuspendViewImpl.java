@@ -131,29 +131,6 @@ public class SuspendViewImpl extends EObjectImpl implements SuspendView {
 	 * @generated
 	 */
 	@Override
-	public String getName() {
-		return getInternalSuspend().getName();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setName(final String _arg) {
-		getInternalSuspend().getElement().transact("Set Name", () -> {
-			getInternalSuspend().setName(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getSuspendType() {
 		return getInternalSuspend().getSuspendType();
 	}
@@ -167,6 +144,29 @@ public class SuspendViewImpl extends EObjectImpl implements SuspendView {
 	public void setSuspendType(final String _arg) {
 		getInternalSuspend().getElement().transact("Set SuspendType", () -> {
 			getInternalSuspend().setSuspendType(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getUuid() {
+		return getInternalSuspend().getUuid();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUuid(final String _arg) {
+		getInternalSuspend().getElement().transact("Set Uuid", () -> {
+			getInternalSuspend().setUuid(_arg);
 		});
 		
 	}
@@ -243,15 +243,15 @@ public class SuspendViewImpl extends EObjectImpl implements SuspendView {
 			case ViewsPackage.SUSPEND_VIEW___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ViewsPackage.SUSPEND_VIEW___GET_NAME:
-				return getName();
-			case ViewsPackage.SUSPEND_VIEW___SET_NAME__STRING:
-				setName((String)arguments.get(0));
-				return null;
 			case ViewsPackage.SUSPEND_VIEW___GET_SUSPEND_TYPE:
 				return getSuspendType();
 			case ViewsPackage.SUSPEND_VIEW___SET_SUSPEND_TYPE__STRING:
 				setSuspendType((String)arguments.get(0));
+				return null;
+			case ViewsPackage.SUSPEND_VIEW___GET_UUID:
+				return getUuid();
+			case ViewsPackage.SUSPEND_VIEW___SET_UUID__STRING:
+				setUuid((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

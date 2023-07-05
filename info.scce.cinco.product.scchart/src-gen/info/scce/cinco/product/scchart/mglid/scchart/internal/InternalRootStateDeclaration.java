@@ -2,7 +2,7 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.internal;
 
-import graphmodel.internal.InternalType;
+import graphmodel.internal.InternalNode;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,16 +22,15 @@ import graphmodel.internal.InternalType;
  * @model
  * @generated
  */
-public interface InternalRootStateDeclaration extends InternalType {
+public interface InternalRootStateDeclaration extends InternalNode {
 	/**
 	 * Returns the value of the '<em><b>Declaration Type</b></em>' attribute.
-	 * The default value is <code>"bool"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Declaration Type</em>' attribute.
 	 * @see #setDeclarationType(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalRootStateDeclaration_DeclarationType()
-	 * @model default="bool"
+	 * @model
 	 * @generated
 	 */
 	String getDeclarationType();

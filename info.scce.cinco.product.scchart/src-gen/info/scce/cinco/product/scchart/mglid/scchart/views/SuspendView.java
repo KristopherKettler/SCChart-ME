@@ -67,22 +67,6 @@ public interface SuspendView extends EObject {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	String getName();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setName(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
 	String getSuspendType();
 
 	/**
@@ -92,5 +76,21 @@ public interface SuspendView extends EObject {
 	 * @generated
 	 */
 	void setSuspendType(String _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	String getUuid();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setUuid(String _arg);
 
 } // SuspendView

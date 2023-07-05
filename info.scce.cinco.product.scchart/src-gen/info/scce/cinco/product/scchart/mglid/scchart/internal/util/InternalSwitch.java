@@ -9,7 +9,6 @@ import graphmodel.internal.InternalIdentifiableElement;
 import graphmodel.internal.InternalModelElement;
 import graphmodel.internal.InternalModelElementContainer;
 import graphmodel.internal.InternalNode;
-import graphmodel.internal.InternalType;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.*;
 
@@ -132,39 +131,39 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION_NODE: {
-				InternalRootStateDeclarationNode internalRootStateDeclarationNode = (InternalRootStateDeclarationNode)theEObject;
-				T result = caseInternalRootStateDeclarationNode(internalRootStateDeclarationNode);
-				if (result == null) result = caseInternalNode(internalRootStateDeclarationNode);
-				if (result == null) result = caseInternalModelElement(internalRootStateDeclarationNode);
-				if (result == null) result = caseInternalIdentifiableElement(internalRootStateDeclarationNode);
+			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION: {
+				InternalRootStateDeclaration internalRootStateDeclaration = (InternalRootStateDeclaration)theEObject;
+				T result = caseInternalRootStateDeclaration(internalRootStateDeclaration);
+				if (result == null) result = caseInternalNode(internalRootStateDeclaration);
+				if (result == null) result = caseInternalModelElement(internalRootStateDeclaration);
+				if (result == null) result = caseInternalIdentifiableElement(internalRootStateDeclaration);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case InternalPackage.INTERNAL_SUSPEND_NODE: {
-				InternalSuspendNode internalSuspendNode = (InternalSuspendNode)theEObject;
-				T result = caseInternalSuspendNode(internalSuspendNode);
-				if (result == null) result = caseInternalNode(internalSuspendNode);
-				if (result == null) result = caseInternalModelElement(internalSuspendNode);
-				if (result == null) result = caseInternalIdentifiableElement(internalSuspendNode);
+			case InternalPackage.INTERNAL_SUSPEND: {
+				InternalSuspend internalSuspend = (InternalSuspend)theEObject;
+				T result = caseInternalSuspend(internalSuspend);
+				if (result == null) result = caseInternalNode(internalSuspend);
+				if (result == null) result = caseInternalModelElement(internalSuspend);
+				if (result == null) result = caseInternalIdentifiableElement(internalSuspend);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case InternalPackage.INTERNAL_ACTION_NODE: {
-				InternalActionNode internalActionNode = (InternalActionNode)theEObject;
-				T result = caseInternalActionNode(internalActionNode);
-				if (result == null) result = caseInternalNode(internalActionNode);
-				if (result == null) result = caseInternalModelElement(internalActionNode);
-				if (result == null) result = caseInternalIdentifiableElement(internalActionNode);
+			case InternalPackage.INTERNAL_ACTION: {
+				InternalAction internalAction = (InternalAction)theEObject;
+				T result = caseInternalAction(internalAction);
+				if (result == null) result = caseInternalNode(internalAction);
+				if (result == null) result = caseInternalModelElement(internalAction);
+				if (result == null) result = caseInternalIdentifiableElement(internalAction);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION_NODE: {
-				InternalSuperStateDeclarationNode internalSuperStateDeclarationNode = (InternalSuperStateDeclarationNode)theEObject;
-				T result = caseInternalSuperStateDeclarationNode(internalSuperStateDeclarationNode);
-				if (result == null) result = caseInternalNode(internalSuperStateDeclarationNode);
-				if (result == null) result = caseInternalModelElement(internalSuperStateDeclarationNode);
-				if (result == null) result = caseInternalIdentifiableElement(internalSuperStateDeclarationNode);
+			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION: {
+				InternalSuperStateDeclaration internalSuperStateDeclaration = (InternalSuperStateDeclaration)theEObject;
+				T result = caseInternalSuperStateDeclaration(internalSuperStateDeclaration);
+				if (result == null) result = caseInternalNode(internalSuperStateDeclaration);
+				if (result == null) result = caseInternalModelElement(internalSuperStateDeclaration);
+				if (result == null) result = caseInternalIdentifiableElement(internalSuperStateDeclaration);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -221,6 +220,24 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = caseInternalNode(internalOutput);
 				if (result == null) result = caseInternalModelElement(internalOutput);
 				if (result == null) result = caseInternalIdentifiableElement(internalOutput);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_OPERATOR: {
+				InternalOperator internalOperator = (InternalOperator)theEObject;
+				T result = caseInternalOperator(internalOperator);
+				if (result == null) result = caseInternalNode(internalOperator);
+				if (result == null) result = caseInternalModelElement(internalOperator);
+				if (result == null) result = caseInternalIdentifiableElement(internalOperator);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_CONNECTION_CIRCUIT: {
+				InternalConnectionCircuit internalConnectionCircuit = (InternalConnectionCircuit)theEObject;
+				T result = caseInternalConnectionCircuit(internalConnectionCircuit);
+				if (result == null) result = caseInternalNode(internalConnectionCircuit);
+				if (result == null) result = caseInternalModelElement(internalConnectionCircuit);
+				if (result == null) result = caseInternalIdentifiableElement(internalConnectionCircuit);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -431,38 +448,6 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION: {
-				InternalRootStateDeclaration internalRootStateDeclaration = (InternalRootStateDeclaration)theEObject;
-				T result = caseInternalRootStateDeclaration(internalRootStateDeclaration);
-				if (result == null) result = caseInternalType(internalRootStateDeclaration);
-				if (result == null) result = caseInternalIdentifiableElement(internalRootStateDeclaration);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION: {
-				InternalSuperStateDeclaration internalSuperStateDeclaration = (InternalSuperStateDeclaration)theEObject;
-				T result = caseInternalSuperStateDeclaration(internalSuperStateDeclaration);
-				if (result == null) result = caseInternalType(internalSuperStateDeclaration);
-				if (result == null) result = caseInternalIdentifiableElement(internalSuperStateDeclaration);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case InternalPackage.INTERNAL_SUSPEND: {
-				InternalSuspend internalSuspend = (InternalSuspend)theEObject;
-				T result = caseInternalSuspend(internalSuspend);
-				if (result == null) result = caseInternalType(internalSuspend);
-				if (result == null) result = caseInternalIdentifiableElement(internalSuspend);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case InternalPackage.INTERNAL_ACTION: {
-				InternalAction internalAction = (InternalAction)theEObject;
-				T result = caseInternalAction(internalAction);
-				if (result == null) result = caseInternalType(internalAction);
-				if (result == null) result = caseInternalIdentifiableElement(internalAction);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -543,62 +528,62 @@ public class InternalSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Root State Declaration Node</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Root State Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Root State Declaration Node</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Root State Declaration</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInternalRootStateDeclarationNode(InternalRootStateDeclarationNode object) {
+	public T caseInternalRootStateDeclaration(InternalRootStateDeclaration object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Suspend Node</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Suspend</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Suspend Node</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Suspend</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInternalSuspendNode(InternalSuspendNode object) {
+	public T caseInternalSuspend(InternalSuspend object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Action Node</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Action</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Action Node</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Action</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInternalActionNode(InternalActionNode object) {
+	public T caseInternalAction(InternalAction object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Super State Declaration Node</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Super State Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Super State Declaration Node</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Super State Declaration</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInternalSuperStateDeclarationNode(InternalSuperStateDeclarationNode object) {
+	public T caseInternalSuperStateDeclaration(InternalSuperStateDeclaration object) {
 		return null;
 	}
 
@@ -689,6 +674,36 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalOutput(InternalOutput object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Operator</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Operator</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalOperator(InternalOperator object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Connection Circuit</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Connection Circuit</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalConnectionCircuit(InternalConnectionCircuit object) {
 		return null;
 	}
 
@@ -1008,66 +1023,6 @@ public class InternalSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Root State Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Root State Declaration</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalRootStateDeclaration(InternalRootStateDeclaration object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Super State Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Super State Declaration</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalSuperStateDeclaration(InternalSuperStateDeclaration object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Suspend</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Suspend</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalSuspend(InternalSuspend object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Action</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Action</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalAction(InternalAction object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Identifiable Element</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1169,21 +1124,6 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalGraphModel(InternalGraphModel object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalType(InternalType object) {
 		return null;
 	}
 

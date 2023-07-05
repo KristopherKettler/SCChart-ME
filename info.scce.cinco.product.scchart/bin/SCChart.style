@@ -248,17 +248,36 @@ nodeStyle connectorStyle{
 	}
 }
 
-nodeStyle inputStyle {
+nodeStyle inputStyle(1) {
 	polygon{
 		appearance default
 		points[(0,0)(0,-30)(50,-30)(60,-15)(50,0)]
+		text{
+			position (CENTER, MIDDLE)
+			value "%s"
+		}
 	}
 }
 
-nodeStyle outputStyle {
+nodeStyle outputStyle(1) {
 	polygon{
 		appearance default
 		points[(0,-15)(10,-30)(60,-30)(60,0)(10,0)]
+		text{
+			position (CENTER, MIDDLE)
+			value "%s"
+		}
+	}
+}
+
+nodeStyle operatorStyle(1) {
+	rectangle{
+		appearance default
+		size(40,40)
+		text{
+			position (CENTER, MIDDLE)
+			value "%s"
+		}
 	}
 }
 
@@ -763,5 +782,4 @@ edgeStyle immediateStrongAbortHistoryTransitionStyle(2) {
 
 edgeStyle connectionStyle {
 	appearance connectionAppearance
-	 
 }

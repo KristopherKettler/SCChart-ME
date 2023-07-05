@@ -7,7 +7,11 @@ import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInput;
 import info.scce.cinco.product.scchart.mglid.scchart.views.InputView;
 import info.scce.cinco.product.scchart.mglid.scchart.views.ViewsPackage;
 
+import java.lang.reflect.InvocationTargetException;
+
 import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -104,6 +108,29 @@ public class InputViewImpl extends EObjectImpl implements InputView {
 	 * @generated
 	 */
 	@Override
+	public String getLabel() {
+		return getInternalInput().getLabel();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLabel(final String _arg) {
+		getInternalInput().getElement().transact("Set Label", () -> {
+			getInternalInput().setLabel(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.INPUT_VIEW__INTERNAL_INPUT:
@@ -155,6 +182,23 @@ public class InputViewImpl extends EObjectImpl implements InputView {
 				return internalInput != null;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case ViewsPackage.INPUT_VIEW___GET_LABEL:
+				return getLabel();
+			case ViewsPackage.INPUT_VIEW___SET_LABEL__STRING:
+				setLabel((String)arguments.get(0));
+				return null;
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 } //InputViewImpl

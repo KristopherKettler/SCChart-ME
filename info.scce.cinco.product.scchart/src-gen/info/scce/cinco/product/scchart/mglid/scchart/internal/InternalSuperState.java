@@ -7,7 +7,6 @@ import de.jabc.cinco.meta.core.mgl.model.constraints.ContainmentConstraint;
 
 import graphmodel.internal.InternalContainer;
 
-import info.scce.cinco.product.scchart.mglid.scchart.Action;
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
@@ -15,8 +14,6 @@ import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
-import info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration;
-import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -29,10 +26,7 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getSuspends <em>Suspends</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getLabel <em>Label</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getDeclaration <em>Declaration</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getActions <em>Actions</em>}</li>
  * </ul>
  *
  * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuperState()
@@ -40,18 +34,6 @@ import org.eclipse.emf.common.util.EList;
  * @generated
  */
 public interface InternalSuperState extends InternalContainer {
-	/**
-	 * Returns the value of the '<em><b>Suspends</b></em>' containment reference list.
-	 * The list contents are of type {@link info.scce.cinco.product.scchart.mglid.scchart.Suspend}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Suspends</em>' containment reference list.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuperState_Suspends()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<Suspend> getSuspends();
-
 	/**
 	 * Returns the value of the '<em><b>Label</b></em>' attribute.
 	 * The default value is <code>"<insert name>"</code>.
@@ -74,30 +56,6 @@ public interface InternalSuperState extends InternalContainer {
 	 * @generated
 	 */
 	void setLabel(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Declaration</b></em>' containment reference list.
-	 * The list contents are of type {@link info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Declaration</em>' containment reference list.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuperState_Declaration()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<SuperStateDeclaration> getDeclaration();
-
-	/**
-	 * Returns the value of the '<em><b>Actions</b></em>' containment reference list.
-	 * The list contents are of type {@link info.scce.cinco.product.scchart.mglid.scchart.Action}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Actions</em>' containment reference list.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuperState_Actions()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<Action> getActions();
 
 	/**
 	 * <!-- begin-user-doc -->

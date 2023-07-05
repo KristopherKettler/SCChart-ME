@@ -45,4 +45,20 @@ public interface InputView extends EObject {
 	 */
 	void setInternalInput(InternalInput value);
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	String getLabel();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setLabel(String _arg);
+
 } // InputView

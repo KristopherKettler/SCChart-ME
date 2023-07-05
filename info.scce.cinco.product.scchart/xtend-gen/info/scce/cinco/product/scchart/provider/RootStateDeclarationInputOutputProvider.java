@@ -10,7 +10,7 @@ import org.eclipse.xtext.xbase.lib.CollectionLiterals;
 public class RootStateDeclarationInputOutputProvider extends CincoValuesProvider<RootStateDeclaration, String> {
   @Override
   public Map<String, String> getPossibleValues(final RootStateDeclaration inputOutput) {
-    final String[] arr = { " ", "constant", "input", "output", "input output" };
+    final String[] arr = { " ", "signal", "constant", "input", "output", "input output" };
     LinkedHashMap<String, String> map = CollectionLiterals.<String, String>newLinkedHashMap();
     for (final String string : arr) {
       map.put(string, string);

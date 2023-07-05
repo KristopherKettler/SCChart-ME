@@ -61,16 +61,18 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_DATA_FLOW_REGION: return createInternalDataFlowRegion();
 			case InternalPackage.INTERNAL_SUPER_STATE: return createInternalSuperState();
 			case InternalPackage.INTERNAL_INITILAL_SUPER_STATE: return createInternalInitilalSuperState();
-			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION_NODE: return createInternalRootStateDeclarationNode();
-			case InternalPackage.INTERNAL_SUSPEND_NODE: return createInternalSuspendNode();
-			case InternalPackage.INTERNAL_ACTION_NODE: return createInternalActionNode();
-			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION_NODE: return createInternalSuperStateDeclarationNode();
+			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION: return createInternalRootStateDeclaration();
+			case InternalPackage.INTERNAL_SUSPEND: return createInternalSuspend();
+			case InternalPackage.INTERNAL_ACTION: return createInternalAction();
+			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION: return createInternalSuperStateDeclaration();
 			case InternalPackage.INTERNAL_SIMPLE_STATE: return createInternalSimpleState();
 			case InternalPackage.INTERNAL_INITIAL_STATE: return createInternalInitialState();
 			case InternalPackage.INTERNAL_FINAL_STATE: return createInternalFinalState();
 			case InternalPackage.INTERNAL_CONNECTOR: return createInternalConnector();
 			case InternalPackage.INTERNAL_INPUT: return createInternalInput();
 			case InternalPackage.INTERNAL_OUTPUT: return createInternalOutput();
+			case InternalPackage.INTERNAL_OPERATOR: return createInternalOperator();
+			case InternalPackage.INTERNAL_CONNECTION_CIRCUIT: return createInternalConnectionCircuit();
 			case InternalPackage.INTERNAL_ABSTRACT_TRANSITION: return createInternalAbstractTransition();
 			case InternalPackage.INTERNAL_TRANSITION: return createInternalTransition();
 			case InternalPackage.INTERNAL_IMMEDIATE_TRANSITION: return createInternalImmediateTransition();
@@ -92,10 +94,6 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION: return createInternalImmediateStrongAbortHistoryTransition();
 			case InternalPackage.INTERNAL_CONNECTION: return createInternalConnection();
 			case InternalPackage.INTERNAL_SC_CHART: return createInternalSCChart();
-			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION: return createInternalRootStateDeclaration();
-			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION: return createInternalSuperStateDeclaration();
-			case InternalPackage.INTERNAL_SUSPEND: return createInternalSuspend();
-			case InternalPackage.INTERNAL_ACTION: return createInternalAction();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -162,9 +160,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalRootStateDeclarationNode createInternalRootStateDeclarationNode() {
-		InternalRootStateDeclarationNodeImpl internalRootStateDeclarationNode = new InternalRootStateDeclarationNodeImpl();
-		return internalRootStateDeclarationNode;
+	public InternalRootStateDeclaration createInternalRootStateDeclaration() {
+		InternalRootStateDeclarationImpl internalRootStateDeclaration = new InternalRootStateDeclarationImpl();
+		return internalRootStateDeclaration;
 	}
 
 	/**
@@ -173,9 +171,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalSuspendNode createInternalSuspendNode() {
-		InternalSuspendNodeImpl internalSuspendNode = new InternalSuspendNodeImpl();
-		return internalSuspendNode;
+	public InternalSuspend createInternalSuspend() {
+		InternalSuspendImpl internalSuspend = new InternalSuspendImpl();
+		return internalSuspend;
 	}
 
 	/**
@@ -184,9 +182,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalActionNode createInternalActionNode() {
-		InternalActionNodeImpl internalActionNode = new InternalActionNodeImpl();
-		return internalActionNode;
+	public InternalAction createInternalAction() {
+		InternalActionImpl internalAction = new InternalActionImpl();
+		return internalAction;
 	}
 
 	/**
@@ -195,9 +193,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalSuperStateDeclarationNode createInternalSuperStateDeclarationNode() {
-		InternalSuperStateDeclarationNodeImpl internalSuperStateDeclarationNode = new InternalSuperStateDeclarationNodeImpl();
-		return internalSuperStateDeclarationNode;
+	public InternalSuperStateDeclaration createInternalSuperStateDeclaration() {
+		InternalSuperStateDeclarationImpl internalSuperStateDeclaration = new InternalSuperStateDeclarationImpl();
+		return internalSuperStateDeclaration;
 	}
 
 	/**
@@ -264,6 +262,28 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalOutput createInternalOutput() {
 		InternalOutputImpl internalOutput = new InternalOutputImpl();
 		return internalOutput;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalOperator createInternalOperator() {
+		InternalOperatorImpl internalOperator = new InternalOperatorImpl();
+		return internalOperator;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalConnectionCircuit createInternalConnectionCircuit() {
+		InternalConnectionCircuitImpl internalConnectionCircuit = new InternalConnectionCircuitImpl();
+		return internalConnectionCircuit;
 	}
 
 	/**
@@ -495,50 +515,6 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalSCChart createInternalSCChart() {
 		InternalSCChartImpl internalSCChart = new InternalSCChartImpl();
 		return internalSCChart;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InternalRootStateDeclaration createInternalRootStateDeclaration() {
-		InternalRootStateDeclarationImpl internalRootStateDeclaration = new InternalRootStateDeclarationImpl();
-		return internalRootStateDeclaration;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InternalSuperStateDeclaration createInternalSuperStateDeclaration() {
-		InternalSuperStateDeclarationImpl internalSuperStateDeclaration = new InternalSuperStateDeclarationImpl();
-		return internalSuperStateDeclaration;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InternalSuspend createInternalSuspend() {
-		InternalSuspendImpl internalSuspend = new InternalSuspendImpl();
-		return internalSuspend;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InternalAction createInternalAction() {
-		InternalActionImpl internalAction = new InternalActionImpl();
-		return internalAction;
 	}
 
 	/**

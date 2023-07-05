@@ -22,3 +22,7 @@
 /.RegionEvent.xtendbin
 /InitilalSuperStateEvent.java
 /RegionEvent.java
+/.RootStateDeclarationEvent.java._trace
+/.SuspendEvent.java._trace
+/.ActionEvent.java._trace
+/.SuperStateDeclarationEvent.java._trace

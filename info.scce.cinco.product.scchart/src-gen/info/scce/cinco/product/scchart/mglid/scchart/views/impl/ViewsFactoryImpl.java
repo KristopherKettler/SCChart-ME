@@ -61,16 +61,18 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.DATA_FLOW_REGION_VIEW: return createDataFlowRegionView();
 			case ViewsPackage.SUPER_STATE_VIEW: return createSuperStateView();
 			case ViewsPackage.INITILAL_SUPER_STATE_VIEW: return createInitilalSuperStateView();
-			case ViewsPackage.ROOT_STATE_DECLARATION_NODE_VIEW: return createRootStateDeclarationNodeView();
-			case ViewsPackage.SUSPEND_NODE_VIEW: return createSuspendNodeView();
-			case ViewsPackage.ACTION_NODE_VIEW: return createActionNodeView();
-			case ViewsPackage.SUPER_STATE_DECLARATION_NODE_VIEW: return createSuperStateDeclarationNodeView();
+			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW: return createRootStateDeclarationView();
+			case ViewsPackage.SUSPEND_VIEW: return createSuspendView();
+			case ViewsPackage.ACTION_VIEW: return createActionView();
+			case ViewsPackage.SUPER_STATE_DECLARATION_VIEW: return createSuperStateDeclarationView();
 			case ViewsPackage.SIMPLE_STATE_VIEW: return createSimpleStateView();
 			case ViewsPackage.INITIAL_STATE_VIEW: return createInitialStateView();
 			case ViewsPackage.FINAL_STATE_VIEW: return createFinalStateView();
 			case ViewsPackage.CONNECTOR_VIEW: return createConnectorView();
 			case ViewsPackage.INPUT_VIEW: return createInputView();
 			case ViewsPackage.OUTPUT_VIEW: return createOutputView();
+			case ViewsPackage.OPERATOR_VIEW: return createOperatorView();
+			case ViewsPackage.CONNECTION_CIRCUIT_VIEW: return createConnectionCircuitView();
 			case ViewsPackage.ABSTRACT_TRANSITION_VIEW: return createAbstractTransitionView();
 			case ViewsPackage.TRANSITION_VIEW: return createTransitionView();
 			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW: return createImmediateTransitionView();
@@ -92,10 +94,6 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW: return createImmediateStrongAbortHistoryTransitionView();
 			case ViewsPackage.CONNECTION_VIEW: return createConnectionView();
 			case ViewsPackage.SC_CHART_VIEW: return createSCChartView();
-			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW: return createRootStateDeclarationView();
-			case ViewsPackage.SUPER_STATE_DECLARATION_VIEW: return createSuperStateDeclarationView();
-			case ViewsPackage.SUSPEND_VIEW: return createSuspendView();
-			case ViewsPackage.ACTION_VIEW: return createActionView();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -162,9 +160,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public RootStateDeclarationNodeView createRootStateDeclarationNodeView() {
-		RootStateDeclarationNodeViewImpl rootStateDeclarationNodeView = new RootStateDeclarationNodeViewImpl();
-		return rootStateDeclarationNodeView;
+	public RootStateDeclarationView createRootStateDeclarationView() {
+		RootStateDeclarationViewImpl rootStateDeclarationView = new RootStateDeclarationViewImpl();
+		return rootStateDeclarationView;
 	}
 
 	/**
@@ -173,9 +171,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public SuspendNodeView createSuspendNodeView() {
-		SuspendNodeViewImpl suspendNodeView = new SuspendNodeViewImpl();
-		return suspendNodeView;
+	public SuspendView createSuspendView() {
+		SuspendViewImpl suspendView = new SuspendViewImpl();
+		return suspendView;
 	}
 
 	/**
@@ -184,9 +182,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public ActionNodeView createActionNodeView() {
-		ActionNodeViewImpl actionNodeView = new ActionNodeViewImpl();
-		return actionNodeView;
+	public ActionView createActionView() {
+		ActionViewImpl actionView = new ActionViewImpl();
+		return actionView;
 	}
 
 	/**
@@ -195,9 +193,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public SuperStateDeclarationNodeView createSuperStateDeclarationNodeView() {
-		SuperStateDeclarationNodeViewImpl superStateDeclarationNodeView = new SuperStateDeclarationNodeViewImpl();
-		return superStateDeclarationNodeView;
+	public SuperStateDeclarationView createSuperStateDeclarationView() {
+		SuperStateDeclarationViewImpl superStateDeclarationView = new SuperStateDeclarationViewImpl();
+		return superStateDeclarationView;
 	}
 
 	/**
@@ -264,6 +262,28 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public OutputView createOutputView() {
 		OutputViewImpl outputView = new OutputViewImpl();
 		return outputView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OperatorView createOperatorView() {
+		OperatorViewImpl operatorView = new OperatorViewImpl();
+		return operatorView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ConnectionCircuitView createConnectionCircuitView() {
+		ConnectionCircuitViewImpl connectionCircuitView = new ConnectionCircuitViewImpl();
+		return connectionCircuitView;
 	}
 
 	/**
@@ -495,50 +515,6 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public SCChartView createSCChartView() {
 		SCChartViewImpl scChartView = new SCChartViewImpl();
 		return scChartView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RootStateDeclarationView createRootStateDeclarationView() {
-		RootStateDeclarationViewImpl rootStateDeclarationView = new RootStateDeclarationViewImpl();
-		return rootStateDeclarationView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SuperStateDeclarationView createSuperStateDeclarationView() {
-		SuperStateDeclarationViewImpl superStateDeclarationView = new SuperStateDeclarationViewImpl();
-		return superStateDeclarationView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SuspendView createSuspendView() {
-		SuspendViewImpl suspendView = new SuspendViewImpl();
-		return suspendView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ActionView createActionView() {
-		ActionViewImpl actionView = new ActionViewImpl();
-		return actionView;
 	}
 
 	/**

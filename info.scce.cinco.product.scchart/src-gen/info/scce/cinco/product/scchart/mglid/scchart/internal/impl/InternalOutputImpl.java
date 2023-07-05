@@ -8,7 +8,9 @@ import graphmodel.internal.InternalNode;
 
 import graphmodel.internal.impl.InternalNodeImpl;
 
+import info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit;
 import info.scce.cinco.product.scchart.mglid.scchart.Input;
+import info.scce.cinco.product.scchart.mglid.scchart.Operator;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOutput;
@@ -16,18 +18,48 @@ import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
 
 import java.lang.reflect.InvocationTargetException;
 
+import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Output</b></em>'.
  * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalOutputImpl#getLabel <em>Label</em>}</li>
+ * </ul>
  *
  * @generated
  */
 public class InternalOutputImpl extends InternalNodeImpl implements InternalOutput {
+	/**
+	 * The default value of the '{@link #getLabel() <em>Label</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLabel()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String LABEL_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getLabel() <em>Label</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLabel()
+	 * @generated
+	 * @ordered
+	 */
+	protected String label = LABEL_EDEFAULT;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -45,6 +77,29 @@ public class InternalOutputImpl extends InternalNodeImpl implements InternalOutp
 	@Override
 	protected EClass eStaticClass() {
 		return InternalPackage.Literals.INTERNAL_OUTPUT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getLabel() {
+		return label;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLabel(String newLabel) {
+		String oldLabel = label;
+		label = newLabel;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_OUTPUT__LABEL, oldLabel, label));
 	}
 
 	/**
@@ -88,6 +143,84 @@ public class InternalOutputImpl extends InternalNodeImpl implements InternalOutp
 	 * @generated
 	 */
 	@Override
+	public EList<Operator> getOperatorPredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.Operator.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<ConnectionCircuit> getConnectionCircuitPredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case InternalPackage.INTERNAL_OUTPUT__LABEL:
+				return getLabel();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case InternalPackage.INTERNAL_OUTPUT__LABEL:
+				setLabel((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case InternalPackage.INTERNAL_OUTPUT__LABEL:
+				setLabel(LABEL_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case InternalPackage.INTERNAL_OUTPUT__LABEL:
+				return LABEL_EDEFAULT == null ? label != null : !LABEL_EDEFAULT.equals(label);
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public int eDerivedOperationID(int baseOperationID, Class<?> baseClass) {
 		if (baseClass == InternalNode.class) {
 			switch (baseOperationID) {
@@ -112,8 +245,28 @@ public class InternalOutputImpl extends InternalNodeImpl implements InternalOutp
 				return getRootStatePredecessors();
 			case InternalPackage.INTERNAL_OUTPUT___GET_INPUT_PREDECESSORS:
 				return getInputPredecessors();
+			case InternalPackage.INTERNAL_OUTPUT___GET_OPERATOR_PREDECESSORS:
+				return getOperatorPredecessors();
+			case InternalPackage.INTERNAL_OUTPUT___GET_CONNECTION_CIRCUIT_PREDECESSORS:
+				return getConnectionCircuitPredecessors();
 		}
 		return super.eInvoke(operationID, arguments);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (label: ");
+		result.append(label);
+		result.append(')');
+		return result.toString();
 	}
 
 } //InternalOutputImpl

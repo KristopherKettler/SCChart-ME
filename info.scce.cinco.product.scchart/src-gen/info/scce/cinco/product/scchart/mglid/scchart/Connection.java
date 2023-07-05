@@ -98,7 +98,7 @@ public interface Connection extends Edge {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	Output getTargetElement();
+	Node getTargetElement();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -122,6 +122,22 @@ public interface Connection extends Edge {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
+	boolean canReconnectSource(ConnectionCircuit source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(ConnectionCircuit source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
 	boolean canReconnectSource(Input source);
 
 	/**
@@ -131,6 +147,22 @@ public interface Connection extends Edge {
 	 * @generated
 	 */
 	void reconnectSource(Input source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectSource(Operator source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(Operator source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,6 +179,38 @@ public interface Connection extends Edge {
 	 * @generated
 	 */
 	void reconnectTarget(Output target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(ConnectionCircuit target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(ConnectionCircuit target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(Operator target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(Operator target);
 
 	/**
 	 * <!-- begin-user-doc -->

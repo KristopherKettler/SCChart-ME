@@ -2,9 +2,6 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.views.impl;
 
-import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
-import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
-
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState;
 
 import info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView;
@@ -111,56 +108,6 @@ public class RootStateViewImpl extends EObjectImpl implements RootStateView {
 	 * @generated
 	 */
 	@Override
-	public EList<Suspend> getSuspends() {
-		return getInternalRootState().getSuspends();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSuspends(final EList<Suspend> _arg) {
-		getInternalRootState().getElement().transact("Set Suspends", () -> {
-			getInternalRootState().getSuspends().clear();
-			getInternalRootState().getSuspends().addAll(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void addSuspends(final Suspend _arg) {
-		getInternalRootState().getElement().transact("Set Suspends", () -> {
-			getInternalRootState().getSuspends().add(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void removeSuspends(final Suspend suspends) {
-		getInternalRootState().getElement().transact("Set Suspends", () -> {
-			getInternalRootState().getSuspends().remove(suspends);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getLabel() {
 		return getInternalRootState().getLabel();
 	}
@@ -174,56 +121,6 @@ public class RootStateViewImpl extends EObjectImpl implements RootStateView {
 	public void setLabel(final String _arg) {
 		getInternalRootState().getElement().transact("Set Label", () -> {
 			getInternalRootState().setLabel(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<RootStateDeclaration> getDeclaration() {
-		return getInternalRootState().getDeclaration();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDeclaration(final EList<RootStateDeclaration> _arg) {
-		getInternalRootState().getElement().transact("Set Declaration", () -> {
-			getInternalRootState().getDeclaration().clear();
-			getInternalRootState().getDeclaration().addAll(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void addDeclaration(final RootStateDeclaration _arg) {
-		getInternalRootState().getElement().transact("Set Declaration", () -> {
-			getInternalRootState().getDeclaration().add(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void removeDeclaration(final RootStateDeclaration declaration) {
-		getInternalRootState().getElement().transact("Set Declaration", () -> {
-			getInternalRootState().getDeclaration().remove(declaration);
 		});
 		
 	}
@@ -293,35 +190,12 @@ public class RootStateViewImpl extends EObjectImpl implements RootStateView {
 	 * @generated
 	 */
 	@Override
-	@SuppressWarnings("unchecked")
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case ViewsPackage.ROOT_STATE_VIEW___GET_SUSPENDS:
-				return getSuspends();
-			case ViewsPackage.ROOT_STATE_VIEW___SET_SUSPENDS__ELIST:
-				setSuspends((EList<Suspend>)arguments.get(0));
-				return null;
-			case ViewsPackage.ROOT_STATE_VIEW___ADD_SUSPENDS__SUSPEND:
-				addSuspends((Suspend)arguments.get(0));
-				return null;
-			case ViewsPackage.ROOT_STATE_VIEW___REMOVE_SUSPENDS__SUSPEND:
-				removeSuspends((Suspend)arguments.get(0));
-				return null;
 			case ViewsPackage.ROOT_STATE_VIEW___GET_LABEL:
 				return getLabel();
 			case ViewsPackage.ROOT_STATE_VIEW___SET_LABEL__STRING:
 				setLabel((String)arguments.get(0));
-				return null;
-			case ViewsPackage.ROOT_STATE_VIEW___GET_DECLARATION:
-				return getDeclaration();
-			case ViewsPackage.ROOT_STATE_VIEW___SET_DECLARATION__ELIST:
-				setDeclaration((EList<RootStateDeclaration>)arguments.get(0));
-				return null;
-			case ViewsPackage.ROOT_STATE_VIEW___ADD_DECLARATION__ROOTSTATEDECLARATION:
-				addDeclaration((RootStateDeclaration)arguments.get(0));
-				return null;
-			case ViewsPackage.ROOT_STATE_VIEW___REMOVE_DECLARATION__ROOTSTATEDECLARATION:
-				removeDeclaration((RootStateDeclaration)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);
