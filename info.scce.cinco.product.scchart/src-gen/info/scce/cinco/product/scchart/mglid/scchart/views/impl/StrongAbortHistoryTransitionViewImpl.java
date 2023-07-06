@@ -199,29 +199,6 @@ public class StrongAbortHistoryTransitionViewImpl extends AbstractTransitionView
 	 * @generated
 	 */
 	@Override
-	public String getH() {
-		return getInternalStrongAbortHistoryTransition().getH();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setH(final String _arg) {
-		getInternalStrongAbortHistoryTransition().getElement().transact("Set H", () -> {
-			getInternalStrongAbortHistoryTransition().setH(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.STRONG_ABORT_HISTORY_TRANSITION_VIEW__INTERNAL_STRONG_ABORT_HISTORY_TRANSITION:
@@ -302,11 +279,6 @@ public class StrongAbortHistoryTransitionViewImpl extends AbstractTransitionView
 				return getEffect();
 			case ViewsPackage.STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING:
 				setEffect((String)arguments.get(0));
-				return null;
-			case ViewsPackage.STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_H:
-				return getH();
-			case ViewsPackage.STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_H__STRING:
-				setH((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

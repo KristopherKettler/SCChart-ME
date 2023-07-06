@@ -176,29 +176,6 @@ public class TerminationHistoryTransitionViewImpl extends AbstractTransitionView
 	 * @generated
 	 */
 	@Override
-	public String getH() {
-		return getInternalTerminationHistoryTransition().getH();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setH(final String _arg) {
-		getInternalTerminationHistoryTransition().getElement().transact("Set H", () -> {
-			getInternalTerminationHistoryTransition().setH(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW__INTERNAL_TERMINATION_HISTORY_TRANSITION:
@@ -274,11 +251,6 @@ public class TerminationHistoryTransitionViewImpl extends AbstractTransitionView
 				return getEffect();
 			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING:
 				setEffect((String)arguments.get(0));
-				return null;
-			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___GET_H:
-				return getH();
-			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___SET_H__STRING:
-				setH((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

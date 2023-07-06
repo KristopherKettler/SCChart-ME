@@ -80,7 +80,7 @@ node Suspend {
 @disable(move,resize)
 @event("info.scce.cinco.product.scchart.events.ActionEvent")
 node Action {
-	style declarationStyle("${actionType}", "${(actionType == '<set action>' ? ' ' : empty condition ? ' ' : condition)}")
+	style declarationStyle("${actionType}", "${(actionType == '<set action>' ? ' ' : empty condition ? '' : condition.concat(empty effect ? '' : ' / '.concat(effect)))}")
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.ActionTypeProvider")
 	attr EString as actionType := '<set action>' 
 	attr EString as condition
@@ -262,46 +262,38 @@ edge ImmediateStrongAbortDeferredTransition extends AbstractTransition{
 }
 
 edge HistoryTransition extends AbstractTransition{
-	style historyTransitionStyle("","${H}")
+	style historyTransitionStyle("","${deepHistory ? '*' : ' '}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 	attr EBoolean as deepHistory
-	@propertiesViewHidden
-	attr EString as H := ""
 }
 
 edge ImmediateHistoryTransition extends AbstractTransition{
-	style immediateHistoryTransitionStyle("","${H}")
+	style immediateHistoryTransitionStyle("","${deepHistory ? '*' : ' '}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 	attr EBoolean as deepHistory
-	@propertiesViewHidden
-	attr EString as H := ""
 }
 
 edge TerminationHistoryTransition extends AbstractTransition{
-	style terminationHistoryTransitionStyle("","${H}")
+	style terminationHistoryTransitionStyle("","${deepHistory ? '*' : ' '}")
 	//attr EString as priority := '0'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 	attr EBoolean as deepHistory
-	@propertiesViewHidden
-	attr EString as H := ""
 }
 
 edge ConditionalTerminationHistoryTransition extends AbstractTransition{
-	style conditionalTerminationHistoryTransitionStyle("","${H}")
+	style conditionalTerminationHistoryTransitionStyle("","${deepHistory ? '*' : ' '}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 	attr EBoolean as deepHistory
-	@propertiesViewHidden
-	attr EString as H := ""
 }
 
 edge StrongAbortHistoryTransition extends AbstractTransition{
@@ -311,8 +303,6 @@ edge StrongAbortHistoryTransition extends AbstractTransition{
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 	attr EBoolean as deepHistory
-	@propertiesViewHidden
-	attr EString as H := ""
 } 
 
 edge ImmediateStrongAbortHistoryTransition extends AbstractTransition{
@@ -322,8 +312,6 @@ edge ImmediateStrongAbortHistoryTransition extends AbstractTransition{
 	attr EString as effect := '<No effect>'
 	attr EString as delay := '<No count delay>'
 	attr EBoolean as deepHistory
-	@propertiesViewHidden
-	attr EString as H := ""
 } 
 
 edge Connection {

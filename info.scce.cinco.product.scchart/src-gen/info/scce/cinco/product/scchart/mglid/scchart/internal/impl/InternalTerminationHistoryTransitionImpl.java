@@ -22,7 +22,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationHistoryTransitionImpl#getDelay <em>Delay</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationHistoryTransitionImpl#isDeepHistory <em>Deep History</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationHistoryTransitionImpl#getEffect <em>Effect</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationHistoryTransitionImpl#getH <em>H</em>}</li>
  * </ul>
  *
  * @generated
@@ -87,26 +86,6 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 	 * @ordered
 	 */
 	protected String effect = EFFECT_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getH() <em>H</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getH()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String H_EDEFAULT = "";
-
-	/**
-	 * The cached value of the '{@link #getH() <em>H</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getH()
-	 * @generated
-	 * @ordered
-	 */
-	protected String h = H_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -202,29 +181,6 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 	 * @generated
 	 */
 	@Override
-	public String getH() {
-		return h;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setH(String newH) {
-		String oldH = h;
-		h = newH;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__H, oldH, h));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DELAY:
@@ -233,8 +189,6 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 				return isDeepHistory();
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__EFFECT:
 				return getEffect();
-			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__H:
-				return getH();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -255,9 +209,6 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 				return;
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__EFFECT:
 				setEffect((String)newValue);
-				return;
-			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__H:
-				setH((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -280,9 +231,6 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__EFFECT:
 				setEffect(EFFECT_EDEFAULT);
 				return;
-			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__H:
-				setH(H_EDEFAULT);
-				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -301,8 +249,6 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 				return deepHistory != DEEP_HISTORY_EDEFAULT;
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__EFFECT:
 				return EFFECT_EDEFAULT == null ? effect != null : !EFFECT_EDEFAULT.equals(effect);
-			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__H:
-				return H_EDEFAULT == null ? h != null : !H_EDEFAULT.equals(h);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -323,8 +269,6 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 		result.append(deepHistory);
 		result.append(", effect: ");
 		result.append(effect);
-		result.append(", H: ");
-		result.append(h);
 		result.append(')');
 		return result.toString();
 	}

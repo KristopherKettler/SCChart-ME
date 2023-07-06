@@ -199,29 +199,6 @@ public class HistoryTransitionViewImpl extends AbstractTransitionViewImpl implem
 	 * @generated
 	 */
 	@Override
-	public String getH() {
-		return getInternalHistoryTransition().getH();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setH(final String _arg) {
-		getInternalHistoryTransition().getElement().transact("Set H", () -> {
-			getInternalHistoryTransition().setH(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.HISTORY_TRANSITION_VIEW__INTERNAL_HISTORY_TRANSITION:
@@ -302,11 +279,6 @@ public class HistoryTransitionViewImpl extends AbstractTransitionViewImpl implem
 				return getEffect();
 			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING:
 				setEffect((String)arguments.get(0));
-				return null;
-			case ViewsPackage.HISTORY_TRANSITION_VIEW___GET_H:
-				return getH();
-			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_H__STRING:
-				setH((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

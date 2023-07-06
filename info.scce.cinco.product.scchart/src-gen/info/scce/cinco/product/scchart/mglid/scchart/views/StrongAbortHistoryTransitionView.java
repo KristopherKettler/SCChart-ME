@@ -107,20 +107,4 @@ public interface StrongAbortHistoryTransitionView extends AbstractTransitionView
 	 */
 	void setEffect(String _arg);
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	String getH();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setH(String _arg);
-
 } // StrongAbortHistoryTransitionView

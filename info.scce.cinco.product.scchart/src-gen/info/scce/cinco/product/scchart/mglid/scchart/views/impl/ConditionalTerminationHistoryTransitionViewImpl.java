@@ -199,29 +199,6 @@ public class ConditionalTerminationHistoryTransitionViewImpl extends AbstractTra
 	 * @generated
 	 */
 	@Override
-	public String getH() {
-		return getInternalConditionalTerminationHistoryTransition().getH();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setH(final String _arg) {
-		getInternalConditionalTerminationHistoryTransition().getElement().transact("Set H", () -> {
-			getInternalConditionalTerminationHistoryTransition().setH(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW__INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION:
@@ -302,11 +279,6 @@ public class ConditionalTerminationHistoryTransitionViewImpl extends AbstractTra
 				return getEffect();
 			case ViewsPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING:
 				setEffect((String)arguments.get(0));
-				return null;
-			case ViewsPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___GET_H:
-				return getH();
-			case ViewsPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_H__STRING:
-				setH((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

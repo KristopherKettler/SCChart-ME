@@ -89,22 +89,6 @@ public interface ImmediateStrongAbortHistoryTransition extends AbstractTransitio
 	 * @model kind="operation"
 	 * @generated
 	 */
-	String getH();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setH(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
 	InternalImmediateStrongAbortHistoryTransition getInternalImmediateStrongAbortHistoryTransition();
 
 	/**
@@ -185,22 +169,6 @@ public interface ImmediateStrongAbortHistoryTransition extends AbstractTransitio
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(SuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(SuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
 	boolean canReconnectSource(RootState source);
 
 	/**
@@ -210,6 +178,22 @@ public interface ImmediateStrongAbortHistoryTransition extends AbstractTransitio
 	 * @generated
 	 */
 	void reconnectSource(RootState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectSource(SuperState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(SuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->

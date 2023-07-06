@@ -8728,22 +8728,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_HISTORY_TRANSITION__EFFECT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>H</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_HISTORY_TRANSITION__H = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 4;
-
-	/**
 	 * The number of structural features of the '<em>History Transition</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_HISTORY_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 5;
+	int INTERNAL_HISTORY_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -8963,22 +8954,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_IMMEDIATE_HISTORY_TRANSITION__EFFECT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>H</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_HISTORY_TRANSITION__H = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 4;
-
-	/**
 	 * The number of structural features of the '<em>Immediate History Transition</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_HISTORY_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 5;
+	int INTERNAL_IMMEDIATE_HISTORY_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -9189,22 +9171,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_TERMINATION_HISTORY_TRANSITION__EFFECT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>H</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_TERMINATION_HISTORY_TRANSITION__H = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 3;
-
-	/**
 	 * The number of structural features of the '<em>Termination History Transition</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_TERMINATION_HISTORY_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 4;
+	int INTERNAL_TERMINATION_HISTORY_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -9424,22 +9397,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION__EFFECT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>H</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION__H = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 4;
-
-	/**
 	 * The number of structural features of the '<em>Conditional Termination History Transition</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 5;
+	int INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -9659,22 +9623,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_STRONG_ABORT_HISTORY_TRANSITION__EFFECT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>H</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_STRONG_ABORT_HISTORY_TRANSITION__H = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 4;
-
-	/**
 	 * The number of structural features of the '<em>Strong Abort History Transition</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_HISTORY_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 5;
+	int INTERNAL_STRONG_ABORT_HISTORY_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -9894,22 +9849,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION__EFFECT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>H</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION__H = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 4;
-
-	/**
 	 * The number of structural features of the '<em>Immediate Strong Abort History Transition</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 5;
+	int INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -12617,17 +12563,6 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalHistoryTransition_Effect();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#getH <em>H</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>H</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#getH()
-	 * @see #getInternalHistoryTransition()
-	 * @generated
-	 */
-	EAttribute getInternalHistoryTransition_H();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateHistoryTransition <em>Immediate History Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12682,17 +12617,6 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalImmediateHistoryTransition_Effect();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateHistoryTransition#getH <em>H</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>H</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateHistoryTransition#getH()
-	 * @see #getInternalImmediateHistoryTransition()
-	 * @generated
-	 */
-	EAttribute getInternalImmediateHistoryTransition_H();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationHistoryTransition <em>Termination History Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12734,17 +12658,6 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getInternalTerminationHistoryTransition_Effect();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationHistoryTransition#getH <em>H</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>H</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationHistoryTransition#getH()
-	 * @see #getInternalTerminationHistoryTransition()
-	 * @generated
-	 */
-	EAttribute getInternalTerminationHistoryTransition_H();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationHistoryTransition <em>Conditional Termination History Transition</em>}'.
@@ -12801,17 +12714,6 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalConditionalTerminationHistoryTransition_Effect();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationHistoryTransition#getH <em>H</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>H</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationHistoryTransition#getH()
-	 * @see #getInternalConditionalTerminationHistoryTransition()
-	 * @generated
-	 */
-	EAttribute getInternalConditionalTerminationHistoryTransition_H();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortHistoryTransition <em>Strong Abort History Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12866,17 +12768,6 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalStrongAbortHistoryTransition_Effect();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortHistoryTransition#getH <em>H</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>H</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortHistoryTransition#getH()
-	 * @see #getInternalStrongAbortHistoryTransition()
-	 * @generated
-	 */
-	EAttribute getInternalStrongAbortHistoryTransition_H();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortHistoryTransition <em>Immediate Strong Abort History Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12929,17 +12820,6 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getInternalImmediateStrongAbortHistoryTransition_Effect();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortHistoryTransition#getH <em>H</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>H</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortHistoryTransition#getH()
-	 * @see #getInternalImmediateStrongAbortHistoryTransition()
-	 * @generated
-	 */
-	EAttribute getInternalImmediateStrongAbortHistoryTransition_H();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnection <em>Connection</em>}'.
@@ -14833,14 +14713,6 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_HISTORY_TRANSITION__EFFECT = eINSTANCE.getInternalHistoryTransition_Effect();
 
 		/**
-		 * The meta object literal for the '<em><b>H</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_HISTORY_TRANSITION__H = eINSTANCE.getInternalHistoryTransition_H();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalImmediateHistoryTransitionImpl <em>Immediate History Transition</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -14883,14 +14755,6 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_IMMEDIATE_HISTORY_TRANSITION__EFFECT = eINSTANCE.getInternalImmediateHistoryTransition_Effect();
 
 		/**
-		 * The meta object literal for the '<em><b>H</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_IMMEDIATE_HISTORY_TRANSITION__H = eINSTANCE.getInternalImmediateHistoryTransition_H();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationHistoryTransitionImpl <em>Termination History Transition</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -14923,14 +14787,6 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute INTERNAL_TERMINATION_HISTORY_TRANSITION__EFFECT = eINSTANCE.getInternalTerminationHistoryTransition_Effect();
-
-		/**
-		 * The meta object literal for the '<em><b>H</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_TERMINATION_HISTORY_TRANSITION__H = eINSTANCE.getInternalTerminationHistoryTransition_H();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalConditionalTerminationHistoryTransitionImpl <em>Conditional Termination History Transition</em>}' class.
@@ -14975,14 +14831,6 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION__EFFECT = eINSTANCE.getInternalConditionalTerminationHistoryTransition_Effect();
 
 		/**
-		 * The meta object literal for the '<em><b>H</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION__H = eINSTANCE.getInternalConditionalTerminationHistoryTransition_H();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalStrongAbortHistoryTransitionImpl <em>Strong Abort History Transition</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -15025,14 +14873,6 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_STRONG_ABORT_HISTORY_TRANSITION__EFFECT = eINSTANCE.getInternalStrongAbortHistoryTransition_Effect();
 
 		/**
-		 * The meta object literal for the '<em><b>H</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_STRONG_ABORT_HISTORY_TRANSITION__H = eINSTANCE.getInternalStrongAbortHistoryTransition_H();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalImmediateStrongAbortHistoryTransitionImpl <em>Immediate Strong Abort History Transition</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -15073,14 +14913,6 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION__EFFECT = eINSTANCE.getInternalImmediateStrongAbortHistoryTransition_Effect();
-
-		/**
-		 * The meta object literal for the '<em><b>H</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION__H = eINSTANCE.getInternalImmediateStrongAbortHistoryTransition_H();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalConnectionImpl <em>Connection</em>}' class.

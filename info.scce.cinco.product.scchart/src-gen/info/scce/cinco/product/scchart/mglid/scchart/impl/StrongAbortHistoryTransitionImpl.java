@@ -151,29 +151,6 @@ public class StrongAbortHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public String getH() {
-		return getInternalStrongAbortHistoryTransition().getH();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setH(final String _arg) {
-		getInternalStrongAbortHistoryTransition().getElement().transact("Set H", () -> {
-			getInternalStrongAbortHistoryTransition().setH(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public InternalStrongAbortHistoryTransition getInternalStrongAbortHistoryTransition() {
 		return (info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortHistoryTransition) getInternalElement();
 	}
@@ -277,26 +254,6 @@ public class StrongAbortHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final SuperState source) {
-		return source.canStart(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectSource(final SuperState source) {
-		this.setSourceElement(source);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean canReconnectSource(final RootState source) {
 		return source.canStart(this.getClass());
 	}
@@ -308,6 +265,26 @@ public class StrongAbortHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 */
 	@Override
 	public void reconnectSource(final RootState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final SuperState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final SuperState source) {
 		this.setSourceElement(source);
 	}
 
@@ -462,11 +439,6 @@ public class StrongAbortHistoryTransitionImpl extends AbstractTransitionImpl imp
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___SET_EFFECT__STRING:
 				setEffect((String)arguments.get(0));
 				return null;
-			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___GET_H:
-				return getH();
-			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___SET_H__STRING:
-				setH((String)arguments.get(0));
-				return null;
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___GET_INTERNAL_STRONG_ABORT_HISTORY_TRANSITION:
 				return getInternalStrongAbortHistoryTransition();
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___IS_EXACTLY_STRONG_ABORT_HISTORY_TRANSITION:
@@ -490,15 +462,15 @@ public class StrongAbortHistoryTransitionImpl extends AbstractTransitionImpl imp
 				return getSourceElement();
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___GET_TARGET_ELEMENT:
 				return getTargetElement();
-			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__SUPERSTATE:
-				return canReconnectSource((SuperState)arguments.get(0));
-			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___RECONNECT_SOURCE__SUPERSTATE:
-				reconnectSource((SuperState)arguments.get(0));
-				return null;
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
 				return canReconnectSource((RootState)arguments.get(0));
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
 				reconnectSource((RootState)arguments.get(0));
+				return null;
+			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__SUPERSTATE:
+				return canReconnectSource((SuperState)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___RECONNECT_SOURCE__SUPERSTATE:
+				reconnectSource((SuperState)arguments.get(0));
 				return null;
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__INITILALSUPERSTATE:
 				return canReconnectSource((InitilalSuperState)arguments.get(0));

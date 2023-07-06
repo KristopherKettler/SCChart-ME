@@ -107,20 +107,4 @@ public interface ConditionalTerminationHistoryTransitionView extends AbstractTra
 	 */
 	void setEffect(String _arg);
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	String getH();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setH(String _arg);
-
 } // ConditionalTerminationHistoryTransitionView

@@ -2752,31 +2752,13 @@ public interface ViewsPackage extends EPackage {
 	int HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 7;
 
 	/**
-	 * The operation id for the '<em>Get H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_TRANSITION_VIEW___GET_H = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
-
-	/**
-	 * The operation id for the '<em>Set H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_TRANSITION_VIEW___SET_H__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 9;
-
-	/**
 	 * The number of operations of the '<em>History Transition View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 10;
+	int HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateHistoryTransitionViewImpl <em>Immediate History Transition View</em>}' class.
@@ -2906,31 +2888,13 @@ public interface ViewsPackage extends EPackage {
 	int IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 7;
 
 	/**
-	 * The operation id for the '<em>Get H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW___GET_H = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
-
-	/**
-	 * The operation id for the '<em>Set H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_H__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 9;
-
-	/**
 	 * The number of operations of the '<em>Immediate History Transition View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 10;
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.TerminationHistoryTransitionViewImpl <em>Termination History Transition View</em>}' class.
@@ -3042,31 +3006,13 @@ public interface ViewsPackage extends EPackage {
 	int TERMINATION_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 5;
 
 	/**
-	 * The operation id for the '<em>Get H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW___GET_H = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
-
-	/**
-	 * The operation id for the '<em>Set H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW___SET_H__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 7;
-
-	/**
 	 * The number of operations of the '<em>Termination History Transition View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
+	int TERMINATION_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConditionalTerminationHistoryTransitionViewImpl <em>Conditional Termination History Transition View</em>}' class.
@@ -3196,31 +3142,13 @@ public interface ViewsPackage extends EPackage {
 	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 7;
 
 	/**
-	 * The operation id for the '<em>Get H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___GET_H = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
-
-	/**
-	 * The operation id for the '<em>Set H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_H__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 9;
-
-	/**
 	 * The number of operations of the '<em>Conditional Termination History Transition View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 10;
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.StrongAbortHistoryTransitionViewImpl <em>Strong Abort History Transition View</em>}' class.
@@ -3350,31 +3278,13 @@ public interface ViewsPackage extends EPackage {
 	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 7;
 
 	/**
-	 * The operation id for the '<em>Get H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_H = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
-
-	/**
-	 * The operation id for the '<em>Set H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_H__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 9;
-
-	/**
 	 * The number of operations of the '<em>Strong Abort History Transition View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 10;
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateStrongAbortHistoryTransitionViewImpl <em>Immediate Strong Abort History Transition View</em>}' class.
@@ -3504,31 +3414,13 @@ public interface ViewsPackage extends EPackage {
 	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 7;
 
 	/**
-	 * The operation id for the '<em>Get H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_H = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
-
-	/**
-	 * The operation id for the '<em>Set H</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_H__STRING = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 9;
-
-	/**
 	 * The number of operations of the '<em>Immediate Strong Abort History Transition View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 10;
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionViewImpl <em>Connection View</em>}' class.
@@ -5437,26 +5329,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getHistoryTransitionView__SetEffect__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#getH() <em>Get H</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get H</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#getH()
-	 * @generated
-	 */
-	EOperation getHistoryTransitionView__GetH();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#setH(java.lang.String) <em>Set H</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set H</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.HistoryTransitionView#setH(java.lang.String)
-	 * @generated
-	 */
-	EOperation getHistoryTransitionView__SetH__String();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateHistoryTransitionView <em>Immediate History Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5558,26 +5430,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getImmediateHistoryTransitionView__SetEffect__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateHistoryTransitionView#getH() <em>Get H</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get H</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateHistoryTransitionView#getH()
-	 * @generated
-	 */
-	EOperation getImmediateHistoryTransitionView__GetH();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateHistoryTransitionView#setH(java.lang.String) <em>Set H</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set H</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateHistoryTransitionView#setH(java.lang.String)
-	 * @generated
-	 */
-	EOperation getImmediateHistoryTransitionView__SetH__String();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationHistoryTransitionView <em>Termination History Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5657,26 +5509,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getTerminationHistoryTransitionView__SetEffect__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationHistoryTransitionView#getH() <em>Get H</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get H</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TerminationHistoryTransitionView#getH()
-	 * @generated
-	 */
-	EOperation getTerminationHistoryTransitionView__GetH();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.TerminationHistoryTransitionView#setH(java.lang.String) <em>Set H</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set H</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.TerminationHistoryTransitionView#setH(java.lang.String)
-	 * @generated
-	 */
-	EOperation getTerminationHistoryTransitionView__SetH__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationHistoryTransitionView <em>Conditional Termination History Transition View</em>}'.
@@ -5780,26 +5612,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getConditionalTerminationHistoryTransitionView__SetEffect__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationHistoryTransitionView#getH() <em>Get H</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get H</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationHistoryTransitionView#getH()
-	 * @generated
-	 */
-	EOperation getConditionalTerminationHistoryTransitionView__GetH();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationHistoryTransitionView#setH(java.lang.String) <em>Set H</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set H</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConditionalTerminationHistoryTransitionView#setH(java.lang.String)
-	 * @generated
-	 */
-	EOperation getConditionalTerminationHistoryTransitionView__SetH__String();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortHistoryTransitionView <em>Strong Abort History Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5901,26 +5713,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getStrongAbortHistoryTransitionView__SetEffect__String();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortHistoryTransitionView#getH() <em>Get H</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get H</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortHistoryTransitionView#getH()
-	 * @generated
-	 */
-	EOperation getStrongAbortHistoryTransitionView__GetH();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortHistoryTransitionView#setH(java.lang.String) <em>Set H</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set H</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.StrongAbortHistoryTransitionView#setH(java.lang.String)
-	 * @generated
-	 */
-	EOperation getStrongAbortHistoryTransitionView__SetH__String();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortHistoryTransitionView <em>Immediate Strong Abort History Transition View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6020,26 +5812,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getImmediateStrongAbortHistoryTransitionView__SetEffect__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortHistoryTransitionView#getH() <em>Get H</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get H</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortHistoryTransitionView#getH()
-	 * @generated
-	 */
-	EOperation getImmediateStrongAbortHistoryTransitionView__GetH();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortHistoryTransitionView#setH(java.lang.String) <em>Set H</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set H</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ImmediateStrongAbortHistoryTransitionView#setH(java.lang.String)
-	 * @generated
-	 */
-	EOperation getImmediateStrongAbortHistoryTransitionView__SetH__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionView <em>Connection View</em>}'.
@@ -7609,22 +7381,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getHistoryTransitionView__SetEffect__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get H</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation HISTORY_TRANSITION_VIEW___GET_H = eINSTANCE.getHistoryTransitionView__GetH();
-
-		/**
-		 * The meta object literal for the '<em><b>Set H</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation HISTORY_TRANSITION_VIEW___SET_H__STRING = eINSTANCE.getHistoryTransitionView__SetH__String();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateHistoryTransitionViewImpl <em>Immediate History Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7707,22 +7463,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getImmediateHistoryTransitionView__SetEffect__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get H</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_HISTORY_TRANSITION_VIEW___GET_H = eINSTANCE.getImmediateHistoryTransitionView__GetH();
-
-		/**
-		 * The meta object literal for the '<em><b>Set H</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_HISTORY_TRANSITION_VIEW___SET_H__STRING = eINSTANCE.getImmediateHistoryTransitionView__SetH__String();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.TerminationHistoryTransitionViewImpl <em>Termination History Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7787,22 +7527,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation TERMINATION_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getTerminationHistoryTransitionView__SetEffect__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get H</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TERMINATION_HISTORY_TRANSITION_VIEW___GET_H = eINSTANCE.getTerminationHistoryTransitionView__GetH();
-
-		/**
-		 * The meta object literal for the '<em><b>Set H</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation TERMINATION_HISTORY_TRANSITION_VIEW___SET_H__STRING = eINSTANCE.getTerminationHistoryTransitionView__SetH__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConditionalTerminationHistoryTransitionViewImpl <em>Conditional Termination History Transition View</em>}' class.
@@ -7887,22 +7611,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getConditionalTerminationHistoryTransitionView__SetEffect__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get H</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___GET_H = eINSTANCE.getConditionalTerminationHistoryTransitionView__GetH();
-
-		/**
-		 * The meta object literal for the '<em><b>Set H</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW___SET_H__STRING = eINSTANCE.getConditionalTerminationHistoryTransitionView__SetH__String();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.StrongAbortHistoryTransitionViewImpl <em>Strong Abort History Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7985,22 +7693,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getStrongAbortHistoryTransitionView__SetEffect__String();
 
 		/**
-		 * The meta object literal for the '<em><b>Get H</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_H = eINSTANCE.getStrongAbortHistoryTransitionView__GetH();
-
-		/**
-		 * The meta object literal for the '<em><b>Set H</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_H__STRING = eINSTANCE.getStrongAbortHistoryTransitionView__SetH__String();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ImmediateStrongAbortHistoryTransitionViewImpl <em>Immediate Strong Abort History Transition View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -8081,22 +7773,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getImmediateStrongAbortHistoryTransitionView__SetEffect__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Get H</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_H = eINSTANCE.getImmediateStrongAbortHistoryTransitionView__GetH();
-
-		/**
-		 * The meta object literal for the '<em><b>Set H</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_H__STRING = eINSTANCE.getImmediateStrongAbortHistoryTransitionView__SetH__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionViewImpl <em>Connection View</em>}' class.

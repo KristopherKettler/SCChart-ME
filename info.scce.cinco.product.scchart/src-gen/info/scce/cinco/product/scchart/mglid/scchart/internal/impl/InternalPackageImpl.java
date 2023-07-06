@@ -2685,16 +2685,6 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalHistoryTransition_H() {
-        return (EAttribute)getInternalHistoryTransition().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getInternalImmediateHistoryTransition() {
 		if (internalImmediateHistoryTransitionEClass == null) {
 			internalImmediateHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(31);
@@ -2748,16 +2738,6 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalImmediateHistoryTransition_H() {
-        return (EAttribute)getInternalImmediateHistoryTransition().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getInternalTerminationHistoryTransition() {
 		if (internalTerminationHistoryTransitionEClass == null) {
 			internalTerminationHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(32);
@@ -2793,16 +2773,6 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EAttribute getInternalTerminationHistoryTransition_Effect() {
         return (EAttribute)getInternalTerminationHistoryTransition().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getInternalTerminationHistoryTransition_H() {
-        return (EAttribute)getInternalTerminationHistoryTransition().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -2864,16 +2834,6 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalConditionalTerminationHistoryTransition_H() {
-        return (EAttribute)getInternalConditionalTerminationHistoryTransition().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getInternalStrongAbortHistoryTransition() {
 		if (internalStrongAbortHistoryTransitionEClass == null) {
 			internalStrongAbortHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(34);
@@ -2927,16 +2887,6 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalStrongAbortHistoryTransition_H() {
-        return (EAttribute)getInternalStrongAbortHistoryTransition().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getInternalImmediateStrongAbortHistoryTransition() {
 		if (internalImmediateStrongAbortHistoryTransitionEClass == null) {
 			internalImmediateStrongAbortHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(35);
@@ -2982,16 +2932,6 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EAttribute getInternalImmediateStrongAbortHistoryTransition_Effect() {
         return (EAttribute)getInternalImmediateStrongAbortHistoryTransition().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getInternalImmediateStrongAbortHistoryTransition_H() {
-        return (EAttribute)getInternalImmediateStrongAbortHistoryTransition().getEStructuralFeatures().get(4);
 	}
 
 	/**
