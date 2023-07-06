@@ -46,39 +46,7 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 	}
 	
 	override postAttributeChange(RootState element, String attribute, Object oldValue) {
-//		//must be recoded
-//		element.rootStateDeclarationNodes.forEach[it.delete]
-//		element.getDeclaration.forEach[ declaration , index |
-//			element.newRootStateDeclarationNode(10,30 + 13*index,element.width-20,13)
-//			element.rootStateDeclarationNodes.last.setInputOutput(declaration.inputOutput)
-//			element.rootStateDeclarationNodes.last.setDeclarationType(declaration.declarationType)
-//			element.rootStateDeclarationNodes.last.setName(declaration.name)
-//		]
-//		element.getSuspendNodes.forEach[it.delete]
-//		element.getSuspends.forEach[ suspend , index |
-//			element.newSuspendNode(10,30 + 13*element.getDeclaration.size+13*index,element.width-20,13)
-//			element.suspendNodes.last.setSuspendType(suspend.suspendType)
-//			element.suspendNodes.last.setCondition(suspend.condition)
-//		]
-//		
-//		var boolean break = true
-//		for(region : element.regions){
-//			if(region.y<element.getRootStateDeclarationNodes.last.y+13||region.y<element.getSuspendNodes.last.y+13){
-//				for(region1 : element.regions){
-//					region1.y = region1.y + 13
-//				}
-//				element.height = element.height + 13
-//			}
-//		}
-//		val regionCount = element.getRegions.size
-//		val declarationCount = element.getRootStateDeclarationNodes.size
-//		val yZeroPosition = 33 + 13* declarationCount
-//		element.regions.forEach[ region , index | 
-//			region.x = 10
-//			region.y = yZeroPosition + (element.height - yZeroPosition )/regionCount*index
-//			region.height = (element.height - yZeroPosition)/regionCount - 10
-//			region.width = element.width - 20
-//		]
+		// TODO: Auto-generated method stub
 	}
 	
 	override postCreate(RootState element) {
@@ -104,28 +72,43 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 	}
 	
 	override postResize(RootState element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction) {
-		val float eleOldWidth = oldWidth
-		val float eleOldHeight = oldHeight
-		val float eleWidth = element.width
-		val float eleHeight = element.height
-		
-		val float proportionWidth = eleWidth/eleOldWidth
-		val float proportionHeight = eleHeight/eleOldHeight
-		for(region : element.getRegions){
-			//region.x = proportionWidth*region.x
-			val float regWidth = region.width
-			val float regHeight = region.height
-			val float width = proportionWidth*regWidth
-			val float height = proportionHeight*regHeight	
-			region.width = Math.round(width) 
-			//region.y = proportionHeight*region.y
-			region.height =  Math.round(height) 
+		for(declaration : element.rootStateDeclarations){
+			declaration.width = element.width-20
 		}
-		
+		for(suspend : element.suspends){
+			suspend.width = element.width-20
+		}
+		for(region : element.regions){
+			if(oldX!=element.x){
+				if(region.x<12){
+					region.width = region.width+(oldX-element.x)
+				}
+				else{
+					region.x=region.x+(oldX-element.x)
+				}
+			}
+			if(oldY!=element.y){
+				if(region.y<35+element.getRootElement.getRootStates.head.getRootStateDeclarations.size*13+element.getRootElement.getRootStates.head.getSuspends.size*13){
+					region.height = region.height+(oldY-element.y)
+				}
+				else{
+					region.y=region.y+(oldY-element.y)
+				}
+			}
+			if(oldX==element.x&&oldWidth!=element.width){
+				if(oldWidth-(region.x+region.width)<12){
+					region.width=region.width+(element.width-oldWidth)
+				}
+			}
+			if(oldY==element.y&&oldHeight!=element.height){
+				if(oldHeight-(region.y+region.height)<12){
+					region.height=region.height+(element.height-oldHeight)
+				}
+			}
+		}
 	}
 	
 	override postSelect(RootState element) {
-		//var l = element.getEdges(Edge)
 		// TODO: Auto-generated method stub
 	}
 	

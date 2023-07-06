@@ -70,16 +70,22 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
           int _size_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations().size();
           int _multiply = (_size_1 * 13);
           int _plus = (33 + _multiply);
-          it.setY(_plus);
+          int _size_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends().size();
+          int _multiply_1 = (_size_2 * 13);
+          int _plus_1 = (_plus + _multiply_1);
+          it.setY(_plus_1);
           int _width = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getWidth();
           int _minus = (_width - 20);
           it.setWidth(_minus);
           int _height = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
           int _minus_1 = (_height - 43);
-          int _size_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations().size();
-          int _multiply_1 = (_size_2 * 13);
-          int _minus_2 = (_minus_1 - _multiply_1);
-          it.setHeight(_minus_2);
+          int _size_3 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations().size();
+          int _multiply_2 = (_size_3 * 13);
+          int _minus_2 = (_minus_1 - _multiply_2);
+          int _size_4 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends().size();
+          int _multiply_3 = (_size_4 * 13);
+          int _plus_2 = (_minus_2 + _multiply_3);
+          it.setHeight(_plus_2);
         } else {
           boolean break_ = true;
           EList<Region> _regions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
@@ -93,9 +99,9 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
               it.setHeight(region1.getHeight());
               int _x = region1.getX();
               int _width_2 = region1.getWidth();
-              int _plus_1 = (_x + _width_2);
-              int _plus_2 = (_plus_1 + 10);
-              it.setX(_plus_2);
+              int _plus_3 = (_x + _width_2);
+              int _plus_4 = (_plus_3 + 10);
+              it.setX(_plus_4);
               it.setY(region1.getY());
               break_ = false;
             } else {
@@ -110,9 +116,9 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
                 it.setY(region1.getY());
                 int _x_1 = region1.getX();
                 int _width_4 = region1.getWidth();
-                int _plus_3 = (_x_1 + _width_4);
-                int _plus_4 = (_plus_3 + 10);
-                region1.setX(_plus_4);
+                int _plus_5 = (_x_1 + _width_4);
+                int _plus_6 = (_plus_5 + 10);
+                region1.setX(_plus_6);
                 break_ = false;
               } else {
                 if (((((((((it.getY() - region1.getY()) - region1.getHeight()) <= 13) && (((it.getY() - region1.getY()) - region1.getHeight()) > (-1))) && break_) && (region1.getX() < it.getX())) && ((region1.getX() + region1.getWidth()) > it.getX())) && (!Objects.equal(it.getUuid(), region1.getUuid())))) {
@@ -125,9 +131,9 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
                   it.setX(region1.getX());
                   int _y = region1.getY();
                   int _height_2 = region1.getHeight();
-                  int _plus_5 = (_y + _height_2);
-                  int _plus_6 = (_plus_5 + 10);
-                  it.setY(_plus_6);
+                  int _plus_7 = (_y + _height_2);
+                  int _plus_8 = (_plus_7 + 10);
+                  it.setY(_plus_8);
                   break_ = false;
                 } else {
                   if ((((((((region1.getY() - it.getY()) <= 13) && ((region1.getY() - it.getY()) > (-1))) && break_) && (region1.getX() < it.getX())) && ((region1.getX() + region1.getWidth()) > it.getX())) && (!Objects.equal(it.getUuid(), region1.getUuid())))) {
@@ -141,9 +147,9 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
                     it.setY(region1.getY());
                     int _y_1 = region1.getY();
                     int _height_4 = region1.getHeight();
-                    int _plus_7 = (_y_1 + _height_4);
-                    int _plus_8 = (_plus_7 + 10);
-                    region1.setY(_plus_8);
+                    int _plus_9 = (_y_1 + _height_4);
+                    int _plus_10 = (_plus_9 + 10);
+                    region1.setY(_plus_10);
                     break_ = false;
                   } else {
                     if ((((((((region1.getY() - it.getY()) <= 13) && ((region1.getY() - it.getY()) > (-1))) && break_) && (region1.getX() < it.getX())) && ((region1.getX() + region1.getWidth()) > it.getX())) && (!Objects.equal(it.getUuid(), region1.getUuid())))) {

@@ -49,18 +49,36 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 	}
 	
 	override postCreate(Suspend element) {
-		element.getRootElement.getRootStates.head.getRootStateDeclarations.forEach[	declaration , index |
+		if(element.getRootElement.getRootStates.head.getRootStateDeclarations !== null){
+			element.getRootElement.getRootStates.head.getRootStateDeclarations.forEach[	declaration , index |
 			declaration.x =10
 			declaration.y =30+ 13*index
 			declaration.width =element.getRootElement.getRootStates.head.width-20
 			declaration.height = 13
-		]
-		element.getRootElement.getRootStates.head.getSuspends.forEach[	suspend , index |
-			suspend.x =10
-			suspend.y =30+ 13*element.getRootElement.getRootStates.head.getRootStateDeclarations.size+13*index
-			suspend.width =element.getRootElement.getRootStates.head.width-20
-			suspend.height = 13
-		]
+			]
+		}
+		
+		if(element.getRootElement.getRootStates.head.getRootStateDeclarations !== null){
+			val rootStateDeclarationCount = element.getRootElement.getRootStates.head.getRootStateDeclarations.size
+			element.getRootElement.getRootStates.head.getSuspends.forEach[	suspend , index |
+				suspend.x =10
+				suspend.y =30+ 13*rootStateDeclarationCount+13*index
+				suspend.width =element.getRootElement.getRootStates.head.width-20
+				suspend.height = 13
+			]
+		}
+		else{
+			val rootStateDeclarationCount = 0
+			element.getRootElement.getRootStates.head.getSuspends.forEach[	suspend , index |
+				suspend.x =10
+				suspend.y =30+ 13*rootStateDeclarationCount+13*index
+				suspend.width =element.getRootElement.getRootStates.head.width-20
+				suspend.height = 13
+			]
+		}
+		for(var i = 0;i < element.getRootElement.getRootStates.head.regions.size;i++){
+			
+		}
 		for(region : element.getRootElement.getRootStates.head.regions){
 			if(region.y<element.getRootElement.getRootStates.head.getRootStateDeclarations.last.y+13||region.y<element.getRootElement.getRootStates.head.getSuspends.last.y+13){
 				for(region1 : element.getRootElement.getRootStates.head.regions){
