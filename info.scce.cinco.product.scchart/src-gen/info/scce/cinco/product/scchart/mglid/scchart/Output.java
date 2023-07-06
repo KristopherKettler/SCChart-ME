@@ -197,7 +197,7 @@ public interface Output extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<ConnectionCircuit> getConnectionCircuitPredecessors();
+	EList<CircuitConnecter> getCircuitConnecterPredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -10,7 +10,7 @@ import org.eclipse.xtext.xbase.lib.CollectionLiterals;
 public class RootStateDeclarationTypeProvider extends CincoValuesProvider<RootStateDeclaration, String> {
   @Override
   public Map<String, String> getPossibleValues(final RootStateDeclaration type) {
-    final String[] arr = { "string", "bool", "int", "float" };
+    final String[] arr = { " ", "bool", "int", "float", "string" };
     LinkedHashMap<String, String> map = CollectionLiterals.<String, String>newLinkedHashMap();
     for (final String string : arr) {
       map.put(string, string);

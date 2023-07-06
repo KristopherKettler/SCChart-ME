@@ -232,12 +232,12 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ScchartPackage.CONNECTION_CIRCUIT: {
-				ConnectionCircuit connectionCircuit = (ConnectionCircuit)theEObject;
-				T result = caseConnectionCircuit(connectionCircuit);
-				if (result == null) result = caseNode(connectionCircuit);
-				if (result == null) result = caseModelElement(connectionCircuit);
-				if (result == null) result = caseIdentifiableElement(connectionCircuit);
+			case ScchartPackage.CIRCUIT_CONNECTER: {
+				CircuitConnecter circuitConnecter = (CircuitConnecter)theEObject;
+				T result = caseCircuitConnecter(circuitConnecter);
+				if (result == null) result = caseNode(circuitConnecter);
+				if (result == null) result = caseModelElement(circuitConnecter);
+				if (result == null) result = caseIdentifiableElement(circuitConnecter);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -693,17 +693,17 @@ public class ScchartSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Connection Circuit</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Circuit Connecter</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Connection Circuit</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Circuit Connecter</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConnectionCircuit(ConnectionCircuit object) {
+	public T caseCircuitConnecter(CircuitConnecter object) {
 		return null;
 	}
 

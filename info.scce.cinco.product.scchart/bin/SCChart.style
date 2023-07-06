@@ -133,19 +133,19 @@ nodeStyle initialSuperStateStyle (1) {
 	}
 }
 
-nodeStyle declarationStyle(3){
+nodeStyle declarationStyle(2){
 	rectangle {
 		appearance declarationAppearance
 		size(140,80)
 		text {
 			appearance declarationText
 			position ( LEFT 5, MIDDLE )
-			value "%1$s %2$s %3$s"
+			value "%1$s %2$s"
 		}
 		text {
 			appearance textHighlight
 			position ( LEFT 5, MIDDLE )
-			value "%1$s %2$s"
+			value "%1$s"
 		}
 	}
 }

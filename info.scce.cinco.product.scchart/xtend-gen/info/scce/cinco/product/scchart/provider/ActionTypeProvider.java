@@ -10,7 +10,7 @@ import org.eclipse.xtext.xbase.lib.CollectionLiterals;
 public class ActionTypeProvider extends CincoValuesProvider<Action, String> {
   @Override
   public Map<String, String> getPossibleValues(final Action type) {
-    final String[] arr = { "entry", "during", "immediate during", "exit" };
+    final String[] arr = { "<set action>", "entry", "during", "immediate during", "exit" };
     LinkedHashMap<String, String> map = CollectionLiterals.<String, String>newLinkedHashMap();
     for (final String string : arr) {
       map.put(string, string);

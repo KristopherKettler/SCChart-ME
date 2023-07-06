@@ -166,13 +166,13 @@ public interface ViewsFactory extends EFactory {
 	OperatorView createOperatorView();
 
 	/**
-	 * Returns a new object of class '<em>Connection Circuit View</em>'.
+	 * Returns a new object of class '<em>Circuit Connecter View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Connection Circuit View</em>'.
+	 * @return a new object of class '<em>Circuit Connecter View</em>'.
 	 * @generated
 	 */
-	ConnectionCircuitView createConnectionCircuitView();
+	CircuitConnecterView createCircuitConnecterView();
 
 	/**
 	 * Returns a new object of class '<em>Abstract Transition View</em>'.

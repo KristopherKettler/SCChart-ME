@@ -1171,41 +1171,41 @@ public interface ViewsPackage extends EPackage {
 	int OPERATOR_VIEW_OPERATION_COUNT = 2;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionCircuitViewImpl <em>Connection Circuit View</em>}' class.
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.CircuitConnecterViewImpl <em>Circuit Connecter View</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionCircuitViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConnectionCircuitView()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.CircuitConnecterViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getCircuitConnecterView()
 	 * @generated
 	 */
-	int CONNECTION_CIRCUIT_VIEW = 16;
+	int CIRCUIT_CONNECTER_VIEW = 16;
 
 	/**
-	 * The feature id for the '<em><b>Internal Connection Circuit</b></em>' reference.
+	 * The feature id for the '<em><b>Internal Circuit Connecter</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONNECTION_CIRCUIT_VIEW__INTERNAL_CONNECTION_CIRCUIT = 0;
+	int CIRCUIT_CONNECTER_VIEW__INTERNAL_CIRCUIT_CONNECTER = 0;
 
 	/**
-	 * The number of structural features of the '<em>Connection Circuit View</em>' class.
+	 * The number of structural features of the '<em>Circuit Connecter View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONNECTION_CIRCUIT_VIEW_FEATURE_COUNT = 1;
+	int CIRCUIT_CONNECTER_VIEW_FEATURE_COUNT = 1;
 
 	/**
-	 * The number of operations of the '<em>Connection Circuit View</em>' class.
+	 * The number of operations of the '<em>Circuit Connecter View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONNECTION_CIRCUIT_VIEW_OPERATION_COUNT = 0;
+	int CIRCUIT_CONNECTER_VIEW_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.AbstractTransitionViewImpl <em>Abstract Transition View</em>}' class.
@@ -4362,25 +4362,25 @@ public interface ViewsPackage extends EPackage {
 	EOperation getOperatorView__SetOperator__String();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionCircuitView <em>Connection Circuit View</em>}'.
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.CircuitConnecterView <em>Circuit Connecter View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Connection Circuit View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionCircuitView
+	 * @return the meta object for class '<em>Circuit Connecter View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.CircuitConnecterView
 	 * @generated
 	 */
-	EClass getConnectionCircuitView();
+	EClass getCircuitConnecterView();
 
 	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionCircuitView#getInternalConnectionCircuit <em>Internal Connection Circuit</em>}'.
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.CircuitConnecterView#getInternalCircuitConnecter <em>Internal Circuit Connecter</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Connection Circuit</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionCircuitView#getInternalConnectionCircuit()
-	 * @see #getConnectionCircuitView()
+	 * @return the meta object for the reference '<em>Internal Circuit Connecter</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.CircuitConnecterView#getInternalCircuitConnecter()
+	 * @see #getCircuitConnecterView()
 	 * @generated
 	 */
-	EReference getConnectionCircuitView_InternalConnectionCircuit();
+	EReference getCircuitConnecterView_InternalCircuitConnecter();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AbstractTransitionView <em>Abstract Transition View</em>}'.
@@ -6731,22 +6731,22 @@ public interface ViewsPackage extends EPackage {
 		EOperation OPERATOR_VIEW___SET_OPERATOR__STRING = eINSTANCE.getOperatorView__SetOperator__String();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionCircuitViewImpl <em>Connection Circuit View</em>}' class.
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.CircuitConnecterViewImpl <em>Circuit Connecter View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionCircuitViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConnectionCircuitView()
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.CircuitConnecterViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getCircuitConnecterView()
 		 * @generated
 		 */
-		EClass CONNECTION_CIRCUIT_VIEW = eINSTANCE.getConnectionCircuitView();
+		EClass CIRCUIT_CONNECTER_VIEW = eINSTANCE.getCircuitConnecterView();
 
 		/**
-		 * The meta object literal for the '<em><b>Internal Connection Circuit</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Internal Circuit Connecter</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CONNECTION_CIRCUIT_VIEW__INTERNAL_CONNECTION_CIRCUIT = eINSTANCE.getConnectionCircuitView_InternalConnectionCircuit();
+		EReference CIRCUIT_CONNECTER_VIEW__INTERNAL_CIRCUIT_CONNECTER = eINSTANCE.getCircuitConnecterView_InternalCircuitConnecter();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.AbstractTransitionViewImpl <em>Abstract Transition View</em>}' class.

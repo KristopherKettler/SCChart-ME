@@ -14,8 +14,6 @@ container RootState {
 	containableElements(Region,RootStateDeclaration,Suspend)
 	outgoingEdges (*)
 	attr EString as label := "<insert name>"
-	//attr RootStateDeclaration as declaration[0,*]
-	//attr Suspend as suspends[0,*]
 }
 
 @palette("SuperStates")
@@ -32,7 +30,7 @@ container Region {
 @palette("Dataflow")
 container DataFlowRegion extends Region {
 	style regionStyle ("${RegionID}")
-	containableElements(Input,Output,Operator)
+	containableElements(Input,Output,Operator,CircuitConnecter)
 }
 
 @palette("SuperStates")
@@ -42,9 +40,6 @@ container SuperState {
 	containableElements(Region,SuperStateDeclaration,Action,Suspend)
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 	outgoingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
-//	attr SuperStateDeclaration as declaration[0,*]
-//	attr Suspend as suspends[0,*] 
-//	attr Action as actions[0,*]
 	attr EString as label := "<insert name>"
 }
 
@@ -61,10 +56,11 @@ container InitilalSuperState extends SuperState{
 @disable(move,resize)
 @event("info.scce.cinco.product.scchart.events.RootStateDeclarationEvent")
 node RootStateDeclaration {
-	style declarationStyle("${(empty inputOutput || inputOutput == ' ' ? '' : inputOutput).concat(declarationType)}", "${declarationType}","${name}")
+	style declarationStyle("${(empty inputOutput || inputOutput == ' ' ? '' : inputOutput.concat(' ')).concat(empty declarationType || declarationType == ' ' ? '' : declarationType.concat(' '))}", "${(empty name || name == ' ' ? '' : name)}")
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationInputOutputProvider")
 	attr EString as inputOutput := ' '
-	attr EString as declarationType
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationTypeProvider")
+	attr EString as declarationType := ' '
 	attr EString as name
 }
 
@@ -72,9 +68,9 @@ node RootStateDeclaration {
 @disable(move,resize)
 @event("info.scce.cinco.product.scchart.events.SuspendEvent")
 node Suspend {
-	style suspendStyle("${(suspendType == ' ' ? ' ' : suspendType)}", "${(suspendType == ' ' ? ' ' : empty condition ? ' ' : condition)}")
+	style suspendStyle("${(suspendType)}", "${(suspendType == '<set suspend>' ? ' ' : empty condition ? ' ' : condition)}")
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuspendTypeProvider")
-	attr EString as suspendType := ' '
+	attr EString as suspendType := '<set suspend>'
 	attr EString as condition
 	@propertiesViewHidden
 	attr EString as uuid
@@ -84,9 +80,9 @@ node Suspend {
 @disable(move,resize)
 @event("info.scce.cinco.product.scchart.events.ActionEvent")
 node Action {
-	style declarationStyle("${InputOutput}", "${declarationType}","${name}")
+	style declarationStyle("${actionType}", "${(actionType == '<set action>' ? ' ' : empty condition ? ' ' : condition)}")
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.ActionTypeProvider")
-	attr EString as actionType := ' ' 
+	attr EString as actionType := '<set action>' 
 	attr EString as condition
 	attr EString as effect
 }
@@ -154,7 +150,7 @@ node Operator {
 }
 
 @palette("Dataflow")
-node ConnectionCircuit {
+node CircuitConnecter {
 	style connectorStyle
 	incomingEdges (Connection)
 	outgoingEdges (Connection)
@@ -309,7 +305,7 @@ edge ConditionalTerminationHistoryTransition extends AbstractTransition{
 }
 
 edge StrongAbortHistoryTransition extends AbstractTransition{
-	style strongAbortHistoryTransitionStyle("","${H}")
+	style strongAbortHistoryTransitionStyle("","${deepHistory ? '*' : ' '}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'

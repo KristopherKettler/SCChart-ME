@@ -11,8 +11,8 @@ import graphmodel.Node;
 
 import graphmodel.impl.NodeImpl;
 
+import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Connection;
-import info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit;
 import info.scce.cinco.product.scchart.mglid.scchart.DataFlowRegion;
 import info.scce.cinco.product.scchart.mglid.scchart.Input;
 import info.scce.cinco.product.scchart.mglid.scchart.Operator;
@@ -273,8 +273,8 @@ public class InputImpl extends NodeImpl implements Input {
 	 * @generated
 	 */
 	@Override
-	public EList<ConnectionCircuit> getConnectionCircuitSuccessors() {
-		return ((graphmodel.Node)this).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit.class);
+	public EList<CircuitConnecter> getCircuitConnecterSuccessors() {
+		return ((graphmodel.Node)this).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
 	}
 
 	/**
@@ -283,7 +283,7 @@ public class InputImpl extends NodeImpl implements Input {
 	 * @generated
 	 */
 	@Override
-	public boolean canNewConnection(final Output target) {
+	public boolean canNewConnection(final CircuitConnecter target) {
 		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class);
 	}
 
@@ -293,7 +293,7 @@ public class InputImpl extends NodeImpl implements Input {
 	 * @generated
 	 */
 	@Override
-	public Connection newConnection(final Output target) {
+	public Connection newConnection(final CircuitConnecter target) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Connection.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
@@ -314,58 +314,7 @@ public class InputImpl extends NodeImpl implements Input {
 	 * @generated
 	 */
 	@Override
-	public Connection newConnection(final Output target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Connection.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Connection.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.Connection edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnection(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewConnection(final ConnectionCircuit target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Connection newConnection(final ConnectionCircuit target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Connection.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Connection.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.Connection edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnection((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Connection newConnection(final ConnectionCircuit target, final String id) {
+	public Connection newConnection(final CircuitConnecter target, final String id) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Connection.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
@@ -417,6 +366,57 @@ public class InputImpl extends NodeImpl implements Input {
 	 */
 	@Override
 	public Connection newConnection(final Operator target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Connection.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Connection.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.Connection edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnection(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewConnection(final Output target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Connection newConnection(final Output target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Connection.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Connection.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.Connection edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnection((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Connection newConnection(final Output target, final String id) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Connection.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
@@ -592,26 +592,26 @@ public class InputImpl extends NodeImpl implements Input {
 				return getOutputSuccessors();
 			case ScchartPackage.INPUT___GET_OPERATOR_SUCCESSORS:
 				return getOperatorSuccessors();
-			case ScchartPackage.INPUT___GET_CONNECTION_CIRCUIT_SUCCESSORS:
-				return getConnectionCircuitSuccessors();
-			case ScchartPackage.INPUT___CAN_NEW_CONNECTION__OUTPUT:
-				return canNewConnection((Output)arguments.get(0));
-			case ScchartPackage.INPUT___NEW_CONNECTION__OUTPUT:
-				return newConnection((Output)arguments.get(0));
-			case ScchartPackage.INPUT___NEW_CONNECTION__OUTPUT_STRING:
-				return newConnection((Output)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.INPUT___CAN_NEW_CONNECTION__CONNECTIONCIRCUIT:
-				return canNewConnection((ConnectionCircuit)arguments.get(0));
-			case ScchartPackage.INPUT___NEW_CONNECTION__CONNECTIONCIRCUIT:
-				return newConnection((ConnectionCircuit)arguments.get(0));
-			case ScchartPackage.INPUT___NEW_CONNECTION__CONNECTIONCIRCUIT_STRING:
-				return newConnection((ConnectionCircuit)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.INPUT___GET_CIRCUIT_CONNECTER_SUCCESSORS:
+				return getCircuitConnecterSuccessors();
+			case ScchartPackage.INPUT___CAN_NEW_CONNECTION__CIRCUITCONNECTER:
+				return canNewConnection((CircuitConnecter)arguments.get(0));
+			case ScchartPackage.INPUT___NEW_CONNECTION__CIRCUITCONNECTER:
+				return newConnection((CircuitConnecter)arguments.get(0));
+			case ScchartPackage.INPUT___NEW_CONNECTION__CIRCUITCONNECTER_STRING:
+				return newConnection((CircuitConnecter)arguments.get(0), (String)arguments.get(1));
 			case ScchartPackage.INPUT___CAN_NEW_CONNECTION__OPERATOR:
 				return canNewConnection((Operator)arguments.get(0));
 			case ScchartPackage.INPUT___NEW_CONNECTION__OPERATOR:
 				return newConnection((Operator)arguments.get(0));
 			case ScchartPackage.INPUT___NEW_CONNECTION__OPERATOR_STRING:
 				return newConnection((Operator)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.INPUT___CAN_NEW_CONNECTION__OUTPUT:
+				return canNewConnection((Output)arguments.get(0));
+			case ScchartPackage.INPUT___NEW_CONNECTION__OUTPUT:
+				return newConnection((Output)arguments.get(0));
+			case ScchartPackage.INPUT___NEW_CONNECTION__OUTPUT_STRING:
+				return newConnection((Output)arguments.get(0), (String)arguments.get(1));
 			case ScchartPackage.INPUT___CAN_MOVE_TO__DATAFLOWREGION_INT_INT:
 				return canMoveTo((DataFlowRegion)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 			case ScchartPackage.INPUT___MOVE_TO__DATAFLOWREGION_INT_INT:

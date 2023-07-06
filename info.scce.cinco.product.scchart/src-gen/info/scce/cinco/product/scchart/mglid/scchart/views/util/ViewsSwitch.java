@@ -166,9 +166,9 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.CONNECTION_CIRCUIT_VIEW: {
-				ConnectionCircuitView connectionCircuitView = (ConnectionCircuitView)theEObject;
-				T result = caseConnectionCircuitView(connectionCircuitView);
+			case ViewsPackage.CIRCUIT_CONNECTER_VIEW: {
+				CircuitConnecterView circuitConnecterView = (CircuitConnecterView)theEObject;
+				T result = caseCircuitConnecterView(circuitConnecterView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -561,17 +561,17 @@ public class ViewsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Connection Circuit View</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Circuit Connecter View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Connection Circuit View</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Circuit Connecter View</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConnectionCircuitView(ConnectionCircuitView object) {
+	public T caseCircuitConnecterView(CircuitConnecterView object) {
 		return null;
 	}
 

@@ -6,7 +6,7 @@ import de.jabc.cinco.meta.core.mgl.model.constraints.ConnectionConstraint;
 
 import graphmodel.internal.InternalNode;
 
-import info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit;
+import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Input;
 import info.scce.cinco.product.scchart.mglid.scchart.Operator;
 import info.scce.cinco.product.scchart.mglid.scchart.Output;
@@ -16,15 +16,15 @@ import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Connection Circuit</b></em>'.
+ * A representation of the model object '<em><b>Circuit Connecter</b></em>'.
  * <!-- end-user-doc -->
  *
  *
- * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalConnectionCircuit()
+ * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalCircuitConnecter()
  * @model
  * @generated
  */
-public interface InternalConnectionCircuit extends InternalNode {
+public interface InternalCircuitConnecter extends InternalNode {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,7 +71,7 @@ public interface InternalConnectionCircuit extends InternalNode {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<ConnectionCircuit> getConnectionCircuitPredecessors();
+	EList<CircuitConnecter> getCircuitConnecterPredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,6 +95,6 @@ public interface InternalConnectionCircuit extends InternalNode {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<ConnectionCircuit> getConnectionCircuitSuccessors();
+	EList<CircuitConnecter> getCircuitConnecterSuccessors();
 
-} // InternalConnectionCircuit
+} // InternalCircuitConnecter

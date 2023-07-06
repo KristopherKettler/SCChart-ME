@@ -37,7 +37,7 @@ public class InternalActionImpl extends InternalNodeImpl implements InternalActi
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String ACTION_TYPE_EDEFAULT = " ";
+	protected static final String ACTION_TYPE_EDEFAULT = "<set action>";
 
 	/**
 	 * The cached value of the '{@link #getActionType() <em>Action Type</em>}' attribute.

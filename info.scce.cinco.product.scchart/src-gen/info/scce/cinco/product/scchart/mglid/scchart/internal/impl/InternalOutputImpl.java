@@ -8,7 +8,7 @@ import graphmodel.internal.InternalNode;
 
 import graphmodel.internal.impl.InternalNodeImpl;
 
-import info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit;
+import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Input;
 import info.scce.cinco.product.scchart.mglid.scchart.Operator;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
@@ -153,8 +153,8 @@ public class InternalOutputImpl extends InternalNodeImpl implements InternalOutp
 	 * @generated
 	 */
 	@Override
-	public EList<ConnectionCircuit> getConnectionCircuitPredecessors() {
-		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit.class);
+	public EList<CircuitConnecter> getCircuitConnecterPredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
 	}
 
 	/**
@@ -247,8 +247,8 @@ public class InternalOutputImpl extends InternalNodeImpl implements InternalOutp
 				return getInputPredecessors();
 			case InternalPackage.INTERNAL_OUTPUT___GET_OPERATOR_PREDECESSORS:
 				return getOperatorPredecessors();
-			case InternalPackage.INTERNAL_OUTPUT___GET_CONNECTION_CIRCUIT_PREDECESSORS:
-				return getConnectionCircuitPredecessors();
+			case InternalPackage.INTERNAL_OUTPUT___GET_CIRCUIT_CONNECTER_PREDECESSORS:
+				return getCircuitConnecterPredecessors();
 		}
 		return super.eInvoke(operationID, arguments);
 	}

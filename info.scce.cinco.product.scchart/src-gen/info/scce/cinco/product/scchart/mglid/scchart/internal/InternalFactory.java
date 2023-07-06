@@ -166,13 +166,13 @@ public interface InternalFactory extends EFactory {
 	InternalOperator createInternalOperator();
 
 	/**
-	 * Returns a new object of class '<em>Connection Circuit</em>'.
+	 * Returns a new object of class '<em>Circuit Connecter</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Connection Circuit</em>'.
+	 * @return a new object of class '<em>Circuit Connecter</em>'.
 	 * @generated
 	 */
-	InternalConnectionCircuit createInternalConnectionCircuit();
+	InternalCircuitConnecter createInternalCircuitConnecter();
 
 	/**
 	 * Returns a new object of class '<em>Abstract Transition</em>'.

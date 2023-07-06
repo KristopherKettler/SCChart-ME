@@ -72,7 +72,7 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_INPUT: return createInternalInput();
 			case InternalPackage.INTERNAL_OUTPUT: return createInternalOutput();
 			case InternalPackage.INTERNAL_OPERATOR: return createInternalOperator();
-			case InternalPackage.INTERNAL_CONNECTION_CIRCUIT: return createInternalConnectionCircuit();
+			case InternalPackage.INTERNAL_CIRCUIT_CONNECTER: return createInternalCircuitConnecter();
 			case InternalPackage.INTERNAL_ABSTRACT_TRANSITION: return createInternalAbstractTransition();
 			case InternalPackage.INTERNAL_TRANSITION: return createInternalTransition();
 			case InternalPackage.INTERNAL_IMMEDIATE_TRANSITION: return createInternalImmediateTransition();
@@ -281,9 +281,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalConnectionCircuit createInternalConnectionCircuit() {
-		InternalConnectionCircuitImpl internalConnectionCircuit = new InternalConnectionCircuitImpl();
-		return internalConnectionCircuit;
+	public InternalCircuitConnecter createInternalCircuitConnecter() {
+		InternalCircuitConnecterImpl internalCircuitConnecter = new InternalCircuitConnecterImpl();
+		return internalCircuitConnecter;
 	}
 
 	/**

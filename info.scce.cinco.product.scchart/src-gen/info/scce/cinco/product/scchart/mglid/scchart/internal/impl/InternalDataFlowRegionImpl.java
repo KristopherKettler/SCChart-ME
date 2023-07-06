@@ -62,6 +62,7 @@ public class InternalDataFlowRegionImpl extends InternalRegionImpl implements In
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Input.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Output.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Operator.class));
+		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.SuperState.class));
 		constraints.add(new ContainmentConstraint(0,1,info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class));
 		constraints.add(new ContainmentConstraint(0,1,info.scce.cinco.product.scchart.mglid.scchart.InitialState.class));

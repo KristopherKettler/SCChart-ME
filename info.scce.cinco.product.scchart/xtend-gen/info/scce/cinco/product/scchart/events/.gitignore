@@ -26,3 +26,11 @@
 /.SuspendEvent.java._trace
 /.ActionEvent.java._trace
 /.SuperStateDeclarationEvent.java._trace
+/.ActionEvent.xtendbin
+/.RootStateDeclarationEvent.xtendbin
+/.SuperStateDeclarationEvent.xtendbin
+/.SuspendEvent.xtendbin
+/ActionEvent.java
+/RootStateDeclarationEvent.java
+/SuperStateDeclarationEvent.java
+/SuspendEvent.java

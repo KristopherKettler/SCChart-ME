@@ -140,8 +140,8 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 				return createInternalOperatorAdapter();
 			}
 			@Override
-			public Adapter caseInternalConnectionCircuit(InternalConnectionCircuit object) {
-				return createInternalConnectionCircuitAdapter();
+			public Adapter caseInternalCircuitConnecter(InternalCircuitConnecter object) {
+				return createInternalCircuitConnecterAdapter();
 			}
 			@Override
 			public Adapter caseInternalAbstractTransition(InternalAbstractTransition object) {
@@ -500,16 +500,16 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit <em>Connection Circuit</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter <em>Circuit Connecter</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter
 	 * @generated
 	 */
-	public Adapter createInternalConnectionCircuitAdapter() {
+	public Adapter createInternalCircuitConnecterAdapter() {
 		return null;
 	}
 

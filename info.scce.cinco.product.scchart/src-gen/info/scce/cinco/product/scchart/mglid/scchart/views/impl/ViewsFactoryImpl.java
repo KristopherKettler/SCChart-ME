@@ -72,7 +72,7 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.INPUT_VIEW: return createInputView();
 			case ViewsPackage.OUTPUT_VIEW: return createOutputView();
 			case ViewsPackage.OPERATOR_VIEW: return createOperatorView();
-			case ViewsPackage.CONNECTION_CIRCUIT_VIEW: return createConnectionCircuitView();
+			case ViewsPackage.CIRCUIT_CONNECTER_VIEW: return createCircuitConnecterView();
 			case ViewsPackage.ABSTRACT_TRANSITION_VIEW: return createAbstractTransitionView();
 			case ViewsPackage.TRANSITION_VIEW: return createTransitionView();
 			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW: return createImmediateTransitionView();
@@ -281,9 +281,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public ConnectionCircuitView createConnectionCircuitView() {
-		ConnectionCircuitViewImpl connectionCircuitView = new ConnectionCircuitViewImpl();
-		return connectionCircuitView;
+	public CircuitConnecterView createCircuitConnecterView() {
+		CircuitConnecterViewImpl circuitConnecterView = new CircuitConnecterViewImpl();
+		return circuitConnecterView;
 	}
 
 	/**

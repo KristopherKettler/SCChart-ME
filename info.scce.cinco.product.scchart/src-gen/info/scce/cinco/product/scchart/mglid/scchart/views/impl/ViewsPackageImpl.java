@@ -147,7 +147,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass connectionCircuitViewEClass = null;
+	private EClass circuitConnecterViewEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1160,11 +1160,11 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getConnectionCircuitView() {
-		if (connectionCircuitViewEClass == null) {
-			connectionCircuitViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(16);
+	public EClass getCircuitConnecterView() {
+		if (circuitConnecterViewEClass == null) {
+			circuitConnecterViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(16);
 		}
-		return connectionCircuitViewEClass;
+		return circuitConnecterViewEClass;
 	}
 
 	/**
@@ -1173,8 +1173,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getConnectionCircuitView_InternalConnectionCircuit() {
-        return (EReference)getConnectionCircuitView().getEStructuralFeatures().get(0);
+	public EReference getCircuitConnecterView_InternalCircuitConnecter() {
+        return (EReference)getCircuitConnecterView().getEStructuralFeatures().get(0);
 	}
 
 	/**

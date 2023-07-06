@@ -60,7 +60,16 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 			suspend.y =30+ 13*element.getRootElement.getRootStates.head.getRootStateDeclarations.size+13*index
 			suspend.width =element.getRootElement.getRootStates.head.width-20
 			suspend.height = 13
-		]// TODO: Auto-generated method stub
+		]
+		for(region : element.getRootElement.getRootStates.head.regions){
+			if(region.y<element.getRootElement.getRootStates.head.getRootStateDeclarations.last.y+13||region.y<element.getRootElement.getRootStates.head.getSuspends.last.y+13){
+				for(region1 : element.getRootElement.getRootStates.head.regions){
+					region1.y = region1.y + 13
+				}
+				element.getRootElement.getRootStates.head.height = element.getRootElement.getRootStates.head.height + 13
+			}
+		}
+		// TODO: Auto-generated method stub
 	}
 	
 	override postDelete(Suspend element) {

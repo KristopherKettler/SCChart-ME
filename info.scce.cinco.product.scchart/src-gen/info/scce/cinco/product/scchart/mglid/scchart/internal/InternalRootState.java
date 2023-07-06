@@ -7,7 +7,7 @@ import de.jabc.cinco.meta.core.mgl.model.constraints.ContainmentConstraint;
 
 import graphmodel.internal.InternalContainer;
 
-import info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit;
+import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
@@ -145,6 +145,6 @@ public interface InternalRootState extends InternalContainer {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<ConnectionCircuit> getConnectionCircuitSuccessors();
+	EList<CircuitConnecter> getCircuitConnecterSuccessors();
 
 } // InternalRootState

@@ -37,7 +37,7 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DECLARATION_TYPE_EDEFAULT = null;
+	protected static final String DECLARATION_TYPE_EDEFAULT = " ";
 
 	/**
 	 * The cached value of the '{@link #getDeclarationType() <em>Declaration Type</em>}' attribute.

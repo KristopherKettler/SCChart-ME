@@ -11,7 +11,7 @@ import graphmodel.internal.InternalNode;
 
 import graphmodel.internal.impl.InternalContainerImpl;
 
-import info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit;
+import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
@@ -227,8 +227,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 */
 	@Override
-	public EList<ConnectionCircuit> getConnectionCircuitSuccessors() {
-		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit.class);
+	public EList<CircuitConnecter> getCircuitConnecterSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
 	}
 
 	/**
@@ -345,8 +345,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 				return getOutputSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_OPERATOR_SUCCESSORS:
 				return getOperatorSuccessors();
-			case InternalPackage.INTERNAL_ROOT_STATE___GET_CONNECTION_CIRCUIT_SUCCESSORS:
-				return getConnectionCircuitSuccessors();
+			case InternalPackage.INTERNAL_ROOT_STATE___GET_CIRCUIT_CONNECTER_SUCCESSORS:
+				return getCircuitConnecterSuccessors();
 		}
 		return super.eInvoke(operationID, arguments);
 	}

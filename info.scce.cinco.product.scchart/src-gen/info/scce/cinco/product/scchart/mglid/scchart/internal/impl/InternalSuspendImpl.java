@@ -57,7 +57,7 @@ public class InternalSuspendImpl extends InternalNodeImpl implements InternalSus
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String SUSPEND_TYPE_EDEFAULT = " ";
+	protected static final String SUSPEND_TYPE_EDEFAULT = "<set suspend>";
 
 	/**
 	 * The cached value of the '{@link #getSuspendType() <em>Suspend Type</em>}' attribute.

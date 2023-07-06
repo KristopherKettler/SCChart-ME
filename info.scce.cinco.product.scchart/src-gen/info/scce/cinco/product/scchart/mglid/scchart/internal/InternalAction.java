@@ -25,13 +25,13 @@ import graphmodel.internal.InternalNode;
 public interface InternalAction extends InternalNode {
 	/**
 	 * Returns the value of the '<em><b>Action Type</b></em>' attribute.
-	 * The default value is <code>" "</code>.
+	 * The default value is <code>"<set action>"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Action Type</em>' attribute.
 	 * @see #setActionType(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalAction_ActionType()
-	 * @model default=" "
+	 * @model default="&lt;set action&gt;"
 	 * @generated
 	 */
 	String getActionType();

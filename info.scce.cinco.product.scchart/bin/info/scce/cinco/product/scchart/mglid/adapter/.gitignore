@@ -182,3 +182,8 @@
 /OutputEContentAdapter.java
 /.OperatorEContentAdapter.java._trace
 /.ConnectionCircuitEContentAdapter.java._trace
+/.ConnectionCircuitEContentAdapter.xtendbin
+/.OperatorEContentAdapter.xtendbin
+/ConnectionCircuitEContentAdapter.java
+/OperatorEContentAdapter.java
+/.CircuitConnecterEContentAdapter.java._trace

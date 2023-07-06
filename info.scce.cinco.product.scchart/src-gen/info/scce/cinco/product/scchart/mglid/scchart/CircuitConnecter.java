@@ -3,34 +3,33 @@
 package info.scce.cinco.product.scchart.mglid.scchart;
 
 import graphmodel.Direction;
-import graphmodel.GraphModel;
 import graphmodel.ModelElementContainer;
 import graphmodel.Node;
 
-import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit;
+import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter;
 
-import info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionCircuitView;
+import info.scce.cinco.product.scchart.mglid.scchart.views.CircuitConnecterView;
 
 import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Connection Circuit</b></em>'.
+ * A representation of the model object '<em><b>Circuit Connecter</b></em>'.
  * <!-- end-user-doc -->
  *
  *
- * @see info.scce.cinco.product.scchart.mglid.scchart.ScchartPackage#getConnectionCircuit()
+ * @see info.scce.cinco.product.scchart.mglid.scchart.ScchartPackage#getCircuitConnecter()
  * @model
  * @generated
  */
-public interface ConnectionCircuit extends Node {
+public interface CircuitConnecter extends Node {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation"
 	 * @generated
 	 */
-	InternalConnectionCircuit getInternalConnectionCircuit();
+	InternalCircuitConnecter getInternalCircuitConnecter();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -38,7 +37,7 @@ public interface ConnectionCircuit extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	boolean isExactlyConnectionCircuit();
+	boolean isExactlyCircuitConnecter();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,7 +85,7 @@ public interface ConnectionCircuit extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	GraphModel getRootElement();
+	SCChart getRootElement();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -206,7 +205,7 @@ public interface ConnectionCircuit extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<ConnectionCircuit> getConnectionCircuitPredecessors();
+	EList<CircuitConnecter> getCircuitConnecterPredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -230,7 +229,7 @@ public interface ConnectionCircuit extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<ConnectionCircuit> getConnectionCircuitSuccessors();
+	EList<CircuitConnecter> getCircuitConnecterSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -238,7 +237,7 @@ public interface ConnectionCircuit extends Node {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewConnection(Output target);
+	boolean canNewConnection(CircuitConnecter target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -246,7 +245,7 @@ public interface ConnectionCircuit extends Node {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	Connection newConnection(Output target);
+	Connection newConnection(CircuitConnecter target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -254,31 +253,7 @@ public interface ConnectionCircuit extends Node {
 	 * @model targetRequired="true" idRequired="true"
 	 * @generated
 	 */
-	Connection newConnection(Output target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewConnection(ConnectionCircuit target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	Connection newConnection(ConnectionCircuit target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	Connection newConnection(ConnectionCircuit target, String id);
+	Connection newConnection(CircuitConnecter target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -307,9 +282,65 @@ public interface ConnectionCircuit extends Node {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewConnection(Output target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	Connection newConnection(Output target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	Connection newConnection(Output target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" dataFlowRegionRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	boolean canMoveTo(DataFlowRegion dataFlowRegion, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model dataFlowRegionRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void moveTo(DataFlowRegion dataFlowRegion, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model dataFlowRegionRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void s_moveTo(DataFlowRegion dataFlowRegion, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @model kind="operation"
 	 * @generated
 	 */
-	ConnectionCircuitView getConnectionCircuitView();
+	DataFlowRegion getContainer();
 
-} // ConnectionCircuit
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	CircuitConnecterView getCircuitConnecterView();
+
+} // CircuitConnecter

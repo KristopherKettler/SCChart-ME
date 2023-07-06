@@ -11,8 +11,8 @@ import graphmodel.Node;
 
 import graphmodel.impl.NodeImpl;
 
+import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Connection;
-import info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit;
 import info.scce.cinco.product.scchart.mglid.scchart.DataFlowRegion;
 import info.scce.cinco.product.scchart.mglid.scchart.Input;
 import info.scce.cinco.product.scchart.mglid.scchart.Operator;
@@ -284,8 +284,8 @@ public class OutputImpl extends NodeImpl implements Output {
 	 * @generated
 	 */
 	@Override
-	public EList<ConnectionCircuit> getConnectionCircuitPredecessors() {
-		return ((graphmodel.Node)this).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit.class);
+	public EList<CircuitConnecter> getCircuitConnecterPredecessors() {
+		return ((graphmodel.Node)this).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
 	}
 
 	/**
@@ -452,8 +452,8 @@ public class OutputImpl extends NodeImpl implements Output {
 				return getInputPredecessors();
 			case ScchartPackage.OUTPUT___GET_OPERATOR_PREDECESSORS:
 				return getOperatorPredecessors();
-			case ScchartPackage.OUTPUT___GET_CONNECTION_CIRCUIT_PREDECESSORS:
-				return getConnectionCircuitPredecessors();
+			case ScchartPackage.OUTPUT___GET_CIRCUIT_CONNECTER_PREDECESSORS:
+				return getCircuitConnecterPredecessors();
 			case ScchartPackage.OUTPUT___CAN_MOVE_TO__DATAFLOWREGION_INT_INT:
 				return canMoveTo((DataFlowRegion)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 			case ScchartPackage.OUTPUT___MOVE_TO__DATAFLOWREGION_INT_INT:

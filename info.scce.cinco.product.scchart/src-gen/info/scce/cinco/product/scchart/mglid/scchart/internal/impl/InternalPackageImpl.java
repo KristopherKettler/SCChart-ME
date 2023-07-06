@@ -147,7 +147,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass internalConnectionCircuitEClass = null;
+	private EClass internalCircuitConnecterEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -495,7 +495,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalRootState__GetConnectionCircuitSuccessors() {
+	public EOperation getInternalRootState__GetCircuitConnecterSuccessors() {
         return getInternalRootState().getEOperations().get(10);
 	}
 
@@ -1824,7 +1824,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInput__GetConnectionCircuitSuccessors() {
+	public EOperation getInternalInput__GetCircuitConnecterSuccessors() {
         return getInternalInput().getEOperations().get(3);
 	}
 
@@ -1897,7 +1897,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalOutput__GetConnectionCircuitPredecessors() {
+	public EOperation getInternalOutput__GetCircuitConnecterPredecessors() {
         return getInternalOutput().getEOperations().get(4);
 	}
 
@@ -1980,7 +1980,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalOperator__GetConnectionCircuitPredecessors() {
+	public EOperation getInternalOperator__GetCircuitConnecterPredecessors() {
         return getInternalOperator().getEOperations().get(5);
 	}
 
@@ -2010,7 +2010,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalOperator__GetConnectionCircuitSuccessors() {
+	public EOperation getInternalOperator__GetCircuitConnecterSuccessors() {
         return getInternalOperator().getEOperations().get(8);
 	}
 
@@ -2020,11 +2020,11 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EClass getInternalConnectionCircuit() {
-		if (internalConnectionCircuitEClass == null) {
-			internalConnectionCircuitEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(16);
+	public EClass getInternalCircuitConnecter() {
+		if (internalCircuitConnecterEClass == null) {
+			internalCircuitConnecterEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(16);
 		}
-		return internalConnectionCircuitEClass;
+		return internalCircuitConnecterEClass;
 	}
 
 	/**
@@ -2033,8 +2033,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnectionCircuit__GetIncomingConstraints() {
-        return getInternalConnectionCircuit().getEOperations().get(0);
+	public EOperation getInternalCircuitConnecter__GetIncomingConstraints() {
+        return getInternalCircuitConnecter().getEOperations().get(0);
 	}
 
 	/**
@@ -2043,8 +2043,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnectionCircuit__GetOutgoingConstraints() {
-        return getInternalConnectionCircuit().getEOperations().get(1);
+	public EOperation getInternalCircuitConnecter__GetOutgoingConstraints() {
+        return getInternalCircuitConnecter().getEOperations().get(1);
 	}
 
 	/**
@@ -2053,8 +2053,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnectionCircuit__GetRootStatePredecessors() {
-        return getInternalConnectionCircuit().getEOperations().get(2);
+	public EOperation getInternalCircuitConnecter__GetRootStatePredecessors() {
+        return getInternalCircuitConnecter().getEOperations().get(2);
 	}
 
 	/**
@@ -2063,8 +2063,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnectionCircuit__GetInputPredecessors() {
-        return getInternalConnectionCircuit().getEOperations().get(3);
+	public EOperation getInternalCircuitConnecter__GetInputPredecessors() {
+        return getInternalCircuitConnecter().getEOperations().get(3);
 	}
 
 	/**
@@ -2073,8 +2073,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnectionCircuit__GetOperatorPredecessors() {
-        return getInternalConnectionCircuit().getEOperations().get(4);
+	public EOperation getInternalCircuitConnecter__GetOperatorPredecessors() {
+        return getInternalCircuitConnecter().getEOperations().get(4);
 	}
 
 	/**
@@ -2083,8 +2083,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnectionCircuit__GetConnectionCircuitPredecessors() {
-        return getInternalConnectionCircuit().getEOperations().get(5);
+	public EOperation getInternalCircuitConnecter__GetCircuitConnecterPredecessors() {
+        return getInternalCircuitConnecter().getEOperations().get(5);
 	}
 
 	/**
@@ -2093,8 +2093,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnectionCircuit__GetOutputSuccessors() {
-        return getInternalConnectionCircuit().getEOperations().get(6);
+	public EOperation getInternalCircuitConnecter__GetOutputSuccessors() {
+        return getInternalCircuitConnecter().getEOperations().get(6);
 	}
 
 	/**
@@ -2103,8 +2103,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnectionCircuit__GetOperatorSuccessors() {
-        return getInternalConnectionCircuit().getEOperations().get(7);
+	public EOperation getInternalCircuitConnecter__GetOperatorSuccessors() {
+        return getInternalCircuitConnecter().getEOperations().get(7);
 	}
 
 	/**
@@ -2113,8 +2113,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnectionCircuit__GetConnectionCircuitSuccessors() {
-        return getInternalConnectionCircuit().getEOperations().get(8);
+	public EOperation getInternalCircuitConnecter__GetCircuitConnecterSuccessors() {
+        return getInternalCircuitConnecter().getEOperations().get(8);
 	}
 
 	/**

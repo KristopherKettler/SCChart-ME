@@ -436,13 +436,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_ROOT_STATE___GET_OPERATOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 9;
 
 	/**
-	 * The operation id for the '<em>Get Connection Circuit Successors</em>' operation.
+	 * The operation id for the '<em>Get Circuit Connecter Successors</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE___GET_CONNECTION_CIRCUIT_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 10;
+	int INTERNAL_ROOT_STATE___GET_CIRCUIT_CONNECTER_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 10;
 
 	/**
 	 * The number of operations of the '<em>Root State</em>' class.
@@ -4886,13 +4886,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_INPUT___GET_OPERATOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 2;
 
 	/**
-	 * The operation id for the '<em>Get Connection Circuit Successors</em>' operation.
+	 * The operation id for the '<em>Get Circuit Connecter Successors</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INPUT___GET_CONNECTION_CIRCUIT_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 3;
+	int INTERNAL_INPUT___GET_CIRCUIT_CONNECTER_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 3;
 
 	/**
 	 * The number of operations of the '<em>Input</em>' class.
@@ -5184,13 +5184,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_OUTPUT___GET_OPERATOR_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 3;
 
 	/**
-	 * The operation id for the '<em>Get Connection Circuit Predecessors</em>' operation.
+	 * The operation id for the '<em>Get Circuit Connecter Predecessors</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_OUTPUT___GET_CONNECTION_CIRCUIT_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 4;
+	int INTERNAL_OUTPUT___GET_CIRCUIT_CONNECTER_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 4;
 
 	/**
 	 * The number of operations of the '<em>Output</em>' class.
@@ -5482,13 +5482,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_OPERATOR___GET_OPERATOR_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 4;
 
 	/**
-	 * The operation id for the '<em>Get Connection Circuit Predecessors</em>' operation.
+	 * The operation id for the '<em>Get Circuit Connecter Predecessors</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_OPERATOR___GET_CONNECTION_CIRCUIT_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 5;
+	int INTERNAL_OPERATOR___GET_CIRCUIT_CONNECTER_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 5;
 
 	/**
 	 * The operation id for the '<em>Get Output Successors</em>' operation.
@@ -5509,13 +5509,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_OPERATOR___GET_OPERATOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 7;
 
 	/**
-	 * The operation id for the '<em>Get Connection Circuit Successors</em>' operation.
+	 * The operation id for the '<em>Get Circuit Connecter Successors</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_OPERATOR___GET_CONNECTION_CIRCUIT_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 8;
+	int INTERNAL_OPERATOR___GET_CIRCUIT_CONNECTER_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 8;
 
 	/**
 	 * The number of operations of the '<em>Operator</em>' class.
@@ -5527,14 +5527,14 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_OPERATOR_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 9;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalConnectionCircuitImpl <em>Connection Circuit</em>}' class.
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalCircuitConnecterImpl <em>Circuit Connecter</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalConnectionCircuitImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConnectionCircuit()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalCircuitConnecterImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalCircuitConnecter()
 	 * @generated
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT = 16;
+	int INTERNAL_CIRCUIT_CONNECTER = 16;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5543,7 +5543,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT__ID = graphmodel.internal.InternalPackage.INTERNAL_NODE__ID;
+	int INTERNAL_CIRCUIT_CONNECTER__ID = graphmodel.internal.InternalPackage.INTERNAL_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -5552,7 +5552,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_NODE__CONTAINER;
+	int INTERNAL_CIRCUIT_CONNECTER__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_NODE__CONTAINER;
 
 	/**
 	 * The feature id for the '<em><b>Element</b></em>' containment reference.
@@ -5561,7 +5561,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE__ELEMENT;
+	int INTERNAL_CIRCUIT_CONNECTER__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE__ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>X</b></em>' attribute.
@@ -5570,7 +5570,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT__X = graphmodel.internal.InternalPackage.INTERNAL_NODE__X;
+	int INTERNAL_CIRCUIT_CONNECTER__X = graphmodel.internal.InternalPackage.INTERNAL_NODE__X;
 
 	/**
 	 * The feature id for the '<em><b>Y</b></em>' attribute.
@@ -5579,7 +5579,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT__Y = graphmodel.internal.InternalPackage.INTERNAL_NODE__Y;
+	int INTERNAL_CIRCUIT_CONNECTER__Y = graphmodel.internal.InternalPackage.INTERNAL_NODE__Y;
 
 	/**
 	 * The feature id for the '<em><b>Height</b></em>' attribute.
@@ -5588,7 +5588,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT__HEIGHT = graphmodel.internal.InternalPackage.INTERNAL_NODE__HEIGHT;
+	int INTERNAL_CIRCUIT_CONNECTER__HEIGHT = graphmodel.internal.InternalPackage.INTERNAL_NODE__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -5597,7 +5597,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT__WIDTH = graphmodel.internal.InternalPackage.INTERNAL_NODE__WIDTH;
+	int INTERNAL_CIRCUIT_CONNECTER__WIDTH = graphmodel.internal.InternalPackage.INTERNAL_NODE__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
@@ -5606,7 +5606,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT__INCOMING = graphmodel.internal.InternalPackage.INTERNAL_NODE__INCOMING;
+	int INTERNAL_CIRCUIT_CONNECTER__INCOMING = graphmodel.internal.InternalPackage.INTERNAL_NODE__INCOMING;
 
 	/**
 	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
@@ -5615,16 +5615,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT__OUTGOING = graphmodel.internal.InternalPackage.INTERNAL_NODE__OUTGOING;
+	int INTERNAL_CIRCUIT_CONNECTER__OUTGOING = graphmodel.internal.InternalPackage.INTERNAL_NODE__OUTGOING;
 
 	/**
-	 * The number of structural features of the '<em>Connection Circuit</em>' class.
+	 * The number of structural features of the '<em>Circuit Connecter</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 0;
+	int INTERNAL_CIRCUIT_CONNECTER_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -5633,7 +5633,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_NODE___EQUALS__OBJECT;
+	int INTERNAL_CIRCUIT_CONNECTER___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_NODE___EQUALS__OBJECT;
 
 	/**
 	 * The operation id for the '<em>Hash Code</em>' operation.
@@ -5642,7 +5642,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_NODE___HASH_CODE;
+	int INTERNAL_CIRCUIT_CONNECTER___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_NODE___HASH_CODE;
 
 	/**
 	 * The operation id for the '<em>Save</em>' operation.
@@ -5651,7 +5651,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___SAVE = graphmodel.internal.InternalPackage.INTERNAL_NODE___SAVE;
+	int INTERNAL_CIRCUIT_CONNECTER___SAVE = graphmodel.internal.InternalPackage.INTERNAL_NODE___SAVE;
 
 	/**
 	 * The operation id for the '<em>Get Element</em>' operation.
@@ -5660,7 +5660,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_ELEMENT;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Root Element</em>' operation.
@@ -5669,7 +5669,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_ROOT_ELEMENT;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_ROOT_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Successors</em>' operation.
@@ -5678,7 +5678,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_SUCCESSORS;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_SUCCESSORS;
 
 	/**
 	 * The operation id for the '<em>Get Successors</em>' operation.
@@ -5687,7 +5687,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_SUCCESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_SUCCESSORS__CLASS;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_SUCCESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_SUCCESSORS__CLASS;
 
 	/**
 	 * The operation id for the '<em>Get Predecessors</em>' operation.
@@ -5696,7 +5696,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_PREDECESSORS;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_PREDECESSORS;
 
 	/**
 	 * The operation id for the '<em>Get Predecessors</em>' operation.
@@ -5705,7 +5705,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_PREDECESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_PREDECESSORS__CLASS;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_PREDECESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_PREDECESSORS__CLASS;
 
 	/**
 	 * The operation id for the '<em>Get Incoming</em>' operation.
@@ -5714,7 +5714,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_INCOMING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING__CLASS;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_INCOMING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING__CLASS;
 
 	/**
 	 * The operation id for the '<em>Get Outgoing</em>' operation.
@@ -5723,7 +5723,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_OUTGOING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING__CLASS;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_OUTGOING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING__CLASS;
 
 	/**
 	 * The operation id for the '<em>Can Connect</em>' operation.
@@ -5732,7 +5732,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___CAN_CONNECT__EDGE_NODE = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_CONNECT__EDGE_NODE;
+	int INTERNAL_CIRCUIT_CONNECTER___CAN_CONNECT__EDGE_NODE = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_CONNECT__EDGE_NODE;
 
 	/**
 	 * The operation id for the '<em>Can Start</em>' operation.
@@ -5741,7 +5741,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___CAN_START__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_START__CLASS;
+	int INTERNAL_CIRCUIT_CONNECTER___CAN_START__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_START__CLASS;
 
 	/**
 	 * The operation id for the '<em>Can End</em>' operation.
@@ -5750,7 +5750,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___CAN_END__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_END__CLASS;
+	int INTERNAL_CIRCUIT_CONNECTER___CAN_END__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_END__CLASS;
 
 	/**
 	 * The operation id for the '<em>Get Incoming Constraints</em>' operation.
@@ -5759,7 +5759,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_INCOMING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 0;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_INCOMING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Get Outgoing Constraints</em>' operation.
@@ -5768,7 +5768,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_OUTGOING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 1;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_OUTGOING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Get Root State Predecessors</em>' operation.
@@ -5777,7 +5777,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_ROOT_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 2;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_ROOT_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Get Input Predecessors</em>' operation.
@@ -5786,7 +5786,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_INPUT_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 3;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_INPUT_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Get Operator Predecessors</em>' operation.
@@ -5795,16 +5795,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_OPERATOR_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 4;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_OPERATOR_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 4;
 
 	/**
-	 * The operation id for the '<em>Get Connection Circuit Predecessors</em>' operation.
+	 * The operation id for the '<em>Get Circuit Connecter Predecessors</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_CONNECTION_CIRCUIT_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 5;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_CIRCUIT_CONNECTER_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 5;
 
 	/**
 	 * The operation id for the '<em>Get Output Successors</em>' operation.
@@ -5813,7 +5813,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_OUTPUT_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 6;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_OUTPUT_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 6;
 
 	/**
 	 * The operation id for the '<em>Get Operator Successors</em>' operation.
@@ -5822,25 +5822,25 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_OPERATOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 7;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_OPERATOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 7;
 
 	/**
-	 * The operation id for the '<em>Get Connection Circuit Successors</em>' operation.
+	 * The operation id for the '<em>Get Circuit Connecter Successors</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT___GET_CONNECTION_CIRCUIT_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 8;
+	int INTERNAL_CIRCUIT_CONNECTER___GET_CIRCUIT_CONNECTER_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 8;
 
 	/**
-	 * The number of operations of the '<em>Connection Circuit</em>' class.
+	 * The number of operations of the '<em>Circuit Connecter</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTION_CIRCUIT_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 9;
+	int INTERNAL_CIRCUIT_CONNECTER_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalAbstractTransitionImpl <em>Abstract Transition</em>}' class.
@@ -10459,14 +10459,14 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalRootState__GetOperatorSuccessors();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getConnectionCircuitSuccessors() <em>Get Connection Circuit Successors</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getCircuitConnecterSuccessors() <em>Get Circuit Connecter Successors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Connection Circuit Successors</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getConnectionCircuitSuccessors()
+	 * @return the meta object for the '<em>Get Circuit Connecter Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getCircuitConnecterSuccessors()
 	 * @generated
 	 */
-	EOperation getInternalRootState__GetConnectionCircuitSuccessors();
+	EOperation getInternalRootState__GetCircuitConnecterSuccessors();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion <em>Region</em>}'.
@@ -11767,14 +11767,14 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalInput__GetOperatorSuccessors();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInput#getConnectionCircuitSuccessors() <em>Get Connection Circuit Successors</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInput#getCircuitConnecterSuccessors() <em>Get Circuit Connecter Successors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Connection Circuit Successors</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInput#getConnectionCircuitSuccessors()
+	 * @return the meta object for the '<em>Get Circuit Connecter Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInput#getCircuitConnecterSuccessors()
 	 * @generated
 	 */
-	EOperation getInternalInput__GetConnectionCircuitSuccessors();
+	EOperation getInternalInput__GetCircuitConnecterSuccessors();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOutput <em>Output</em>}'.
@@ -11838,14 +11838,14 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalOutput__GetOperatorPredecessors();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOutput#getConnectionCircuitPredecessors() <em>Get Connection Circuit Predecessors</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOutput#getCircuitConnecterPredecessors() <em>Get Circuit Connecter Predecessors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Connection Circuit Predecessors</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOutput#getConnectionCircuitPredecessors()
+	 * @return the meta object for the '<em>Get Circuit Connecter Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOutput#getCircuitConnecterPredecessors()
 	 * @generated
 	 */
-	EOperation getInternalOutput__GetConnectionCircuitPredecessors();
+	EOperation getInternalOutput__GetCircuitConnecterPredecessors();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOperator <em>Operator</em>}'.
@@ -11919,14 +11919,14 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalOperator__GetOperatorPredecessors();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOperator#getConnectionCircuitPredecessors() <em>Get Connection Circuit Predecessors</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOperator#getCircuitConnecterPredecessors() <em>Get Circuit Connecter Predecessors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Connection Circuit Predecessors</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOperator#getConnectionCircuitPredecessors()
+	 * @return the meta object for the '<em>Get Circuit Connecter Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOperator#getCircuitConnecterPredecessors()
 	 * @generated
 	 */
-	EOperation getInternalOperator__GetConnectionCircuitPredecessors();
+	EOperation getInternalOperator__GetCircuitConnecterPredecessors();
 
 	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOperator#getOutputSuccessors() <em>Get Output Successors</em>}' operation.
@@ -11949,114 +11949,114 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalOperator__GetOperatorSuccessors();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOperator#getConnectionCircuitSuccessors() <em>Get Connection Circuit Successors</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOperator#getCircuitConnecterSuccessors() <em>Get Circuit Connecter Successors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Connection Circuit Successors</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOperator#getConnectionCircuitSuccessors()
+	 * @return the meta object for the '<em>Get Circuit Connecter Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalOperator#getCircuitConnecterSuccessors()
 	 * @generated
 	 */
-	EOperation getInternalOperator__GetConnectionCircuitSuccessors();
+	EOperation getInternalOperator__GetCircuitConnecterSuccessors();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit <em>Connection Circuit</em>}'.
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter <em>Circuit Connecter</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Connection Circuit</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit
+	 * @return the meta object for class '<em>Circuit Connecter</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter
 	 * @generated
 	 */
-	EClass getInternalConnectionCircuit();
+	EClass getInternalCircuitConnecter();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getIncomingConstraints() <em>Get Incoming Constraints</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getIncomingConstraints() <em>Get Incoming Constraints</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Get Incoming Constraints</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getIncomingConstraints()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getIncomingConstraints()
 	 * @generated
 	 */
-	EOperation getInternalConnectionCircuit__GetIncomingConstraints();
+	EOperation getInternalCircuitConnecter__GetIncomingConstraints();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getOutgoingConstraints() <em>Get Outgoing Constraints</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getOutgoingConstraints() <em>Get Outgoing Constraints</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Get Outgoing Constraints</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getOutgoingConstraints()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getOutgoingConstraints()
 	 * @generated
 	 */
-	EOperation getInternalConnectionCircuit__GetOutgoingConstraints();
+	EOperation getInternalCircuitConnecter__GetOutgoingConstraints();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getRootStatePredecessors() <em>Get Root State Predecessors</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getRootStatePredecessors() <em>Get Root State Predecessors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Get Root State Predecessors</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getRootStatePredecessors()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getRootStatePredecessors()
 	 * @generated
 	 */
-	EOperation getInternalConnectionCircuit__GetRootStatePredecessors();
+	EOperation getInternalCircuitConnecter__GetRootStatePredecessors();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getInputPredecessors() <em>Get Input Predecessors</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getInputPredecessors() <em>Get Input Predecessors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Get Input Predecessors</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getInputPredecessors()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getInputPredecessors()
 	 * @generated
 	 */
-	EOperation getInternalConnectionCircuit__GetInputPredecessors();
+	EOperation getInternalCircuitConnecter__GetInputPredecessors();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getOperatorPredecessors() <em>Get Operator Predecessors</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getOperatorPredecessors() <em>Get Operator Predecessors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Get Operator Predecessors</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getOperatorPredecessors()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getOperatorPredecessors()
 	 * @generated
 	 */
-	EOperation getInternalConnectionCircuit__GetOperatorPredecessors();
+	EOperation getInternalCircuitConnecter__GetOperatorPredecessors();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getConnectionCircuitPredecessors() <em>Get Connection Circuit Predecessors</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getCircuitConnecterPredecessors() <em>Get Circuit Connecter Predecessors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Connection Circuit Predecessors</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getConnectionCircuitPredecessors()
+	 * @return the meta object for the '<em>Get Circuit Connecter Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getCircuitConnecterPredecessors()
 	 * @generated
 	 */
-	EOperation getInternalConnectionCircuit__GetConnectionCircuitPredecessors();
+	EOperation getInternalCircuitConnecter__GetCircuitConnecterPredecessors();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getOutputSuccessors() <em>Get Output Successors</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getOutputSuccessors() <em>Get Output Successors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Get Output Successors</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getOutputSuccessors()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getOutputSuccessors()
 	 * @generated
 	 */
-	EOperation getInternalConnectionCircuit__GetOutputSuccessors();
+	EOperation getInternalCircuitConnecter__GetOutputSuccessors();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getOperatorSuccessors() <em>Get Operator Successors</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getOperatorSuccessors() <em>Get Operator Successors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Get Operator Successors</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getOperatorSuccessors()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getOperatorSuccessors()
 	 * @generated
 	 */
-	EOperation getInternalConnectionCircuit__GetOperatorSuccessors();
+	EOperation getInternalCircuitConnecter__GetOperatorSuccessors();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getConnectionCircuitSuccessors() <em>Get Connection Circuit Successors</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getCircuitConnecterSuccessors() <em>Get Circuit Connecter Successors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Connection Circuit Successors</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit#getConnectionCircuitSuccessors()
+	 * @return the meta object for the '<em>Get Circuit Connecter Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter#getCircuitConnecterSuccessors()
 	 * @generated
 	 */
-	EOperation getInternalConnectionCircuit__GetConnectionCircuitSuccessors();
+	EOperation getInternalCircuitConnecter__GetCircuitConnecterSuccessors();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAbstractTransition <em>Abstract Transition</em>}'.
@@ -13093,12 +13093,12 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_ROOT_STATE___GET_OPERATOR_SUCCESSORS = eINSTANCE.getInternalRootState__GetOperatorSuccessors();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Connection Circuit Successors</b></em>' operation.
+		 * The meta object literal for the '<em><b>Get Circuit Connecter Successors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation INTERNAL_ROOT_STATE___GET_CONNECTION_CIRCUIT_SUCCESSORS = eINSTANCE.getInternalRootState__GetConnectionCircuitSuccessors();
+		EOperation INTERNAL_ROOT_STATE___GET_CIRCUIT_CONNECTER_SUCCESSORS = eINSTANCE.getInternalRootState__GetCircuitConnecterSuccessors();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRegionImpl <em>Region</em>}' class.
@@ -14151,12 +14151,12 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_INPUT___GET_OPERATOR_SUCCESSORS = eINSTANCE.getInternalInput__GetOperatorSuccessors();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Connection Circuit Successors</b></em>' operation.
+		 * The meta object literal for the '<em><b>Get Circuit Connecter Successors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation INTERNAL_INPUT___GET_CONNECTION_CIRCUIT_SUCCESSORS = eINSTANCE.getInternalInput__GetConnectionCircuitSuccessors();
+		EOperation INTERNAL_INPUT___GET_CIRCUIT_CONNECTER_SUCCESSORS = eINSTANCE.getInternalInput__GetCircuitConnecterSuccessors();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalOutputImpl <em>Output</em>}' class.
@@ -14209,12 +14209,12 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_OUTPUT___GET_OPERATOR_PREDECESSORS = eINSTANCE.getInternalOutput__GetOperatorPredecessors();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Connection Circuit Predecessors</b></em>' operation.
+		 * The meta object literal for the '<em><b>Get Circuit Connecter Predecessors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation INTERNAL_OUTPUT___GET_CONNECTION_CIRCUIT_PREDECESSORS = eINSTANCE.getInternalOutput__GetConnectionCircuitPredecessors();
+		EOperation INTERNAL_OUTPUT___GET_CIRCUIT_CONNECTER_PREDECESSORS = eINSTANCE.getInternalOutput__GetCircuitConnecterPredecessors();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalOperatorImpl <em>Operator</em>}' class.
@@ -14275,12 +14275,12 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_OPERATOR___GET_OPERATOR_PREDECESSORS = eINSTANCE.getInternalOperator__GetOperatorPredecessors();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Connection Circuit Predecessors</b></em>' operation.
+		 * The meta object literal for the '<em><b>Get Circuit Connecter Predecessors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation INTERNAL_OPERATOR___GET_CONNECTION_CIRCUIT_PREDECESSORS = eINSTANCE.getInternalOperator__GetConnectionCircuitPredecessors();
+		EOperation INTERNAL_OPERATOR___GET_CIRCUIT_CONNECTER_PREDECESSORS = eINSTANCE.getInternalOperator__GetCircuitConnecterPredecessors();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Output Successors</b></em>' operation.
@@ -14299,22 +14299,22 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_OPERATOR___GET_OPERATOR_SUCCESSORS = eINSTANCE.getInternalOperator__GetOperatorSuccessors();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Connection Circuit Successors</b></em>' operation.
+		 * The meta object literal for the '<em><b>Get Circuit Connecter Successors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation INTERNAL_OPERATOR___GET_CONNECTION_CIRCUIT_SUCCESSORS = eINSTANCE.getInternalOperator__GetConnectionCircuitSuccessors();
+		EOperation INTERNAL_OPERATOR___GET_CIRCUIT_CONNECTER_SUCCESSORS = eINSTANCE.getInternalOperator__GetCircuitConnecterSuccessors();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalConnectionCircuitImpl <em>Connection Circuit</em>}' class.
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalCircuitConnecterImpl <em>Circuit Connecter</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalConnectionCircuitImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConnectionCircuit()
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalCircuitConnecterImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalCircuitConnecter()
 		 * @generated
 		 */
-		EClass INTERNAL_CONNECTION_CIRCUIT = eINSTANCE.getInternalConnectionCircuit();
+		EClass INTERNAL_CIRCUIT_CONNECTER = eINSTANCE.getInternalCircuitConnecter();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Incoming Constraints</b></em>' operation.
@@ -14322,7 +14322,7 @@ public interface InternalPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation INTERNAL_CONNECTION_CIRCUIT___GET_INCOMING_CONSTRAINTS = eINSTANCE.getInternalConnectionCircuit__GetIncomingConstraints();
+		EOperation INTERNAL_CIRCUIT_CONNECTER___GET_INCOMING_CONSTRAINTS = eINSTANCE.getInternalCircuitConnecter__GetIncomingConstraints();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Outgoing Constraints</b></em>' operation.
@@ -14330,7 +14330,7 @@ public interface InternalPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation INTERNAL_CONNECTION_CIRCUIT___GET_OUTGOING_CONSTRAINTS = eINSTANCE.getInternalConnectionCircuit__GetOutgoingConstraints();
+		EOperation INTERNAL_CIRCUIT_CONNECTER___GET_OUTGOING_CONSTRAINTS = eINSTANCE.getInternalCircuitConnecter__GetOutgoingConstraints();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Root State Predecessors</b></em>' operation.
@@ -14338,7 +14338,7 @@ public interface InternalPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation INTERNAL_CONNECTION_CIRCUIT___GET_ROOT_STATE_PREDECESSORS = eINSTANCE.getInternalConnectionCircuit__GetRootStatePredecessors();
+		EOperation INTERNAL_CIRCUIT_CONNECTER___GET_ROOT_STATE_PREDECESSORS = eINSTANCE.getInternalCircuitConnecter__GetRootStatePredecessors();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Input Predecessors</b></em>' operation.
@@ -14346,7 +14346,7 @@ public interface InternalPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation INTERNAL_CONNECTION_CIRCUIT___GET_INPUT_PREDECESSORS = eINSTANCE.getInternalConnectionCircuit__GetInputPredecessors();
+		EOperation INTERNAL_CIRCUIT_CONNECTER___GET_INPUT_PREDECESSORS = eINSTANCE.getInternalCircuitConnecter__GetInputPredecessors();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Operator Predecessors</b></em>' operation.
@@ -14354,15 +14354,15 @@ public interface InternalPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation INTERNAL_CONNECTION_CIRCUIT___GET_OPERATOR_PREDECESSORS = eINSTANCE.getInternalConnectionCircuit__GetOperatorPredecessors();
+		EOperation INTERNAL_CIRCUIT_CONNECTER___GET_OPERATOR_PREDECESSORS = eINSTANCE.getInternalCircuitConnecter__GetOperatorPredecessors();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Connection Circuit Predecessors</b></em>' operation.
+		 * The meta object literal for the '<em><b>Get Circuit Connecter Predecessors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation INTERNAL_CONNECTION_CIRCUIT___GET_CONNECTION_CIRCUIT_PREDECESSORS = eINSTANCE.getInternalConnectionCircuit__GetConnectionCircuitPredecessors();
+		EOperation INTERNAL_CIRCUIT_CONNECTER___GET_CIRCUIT_CONNECTER_PREDECESSORS = eINSTANCE.getInternalCircuitConnecter__GetCircuitConnecterPredecessors();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Output Successors</b></em>' operation.
@@ -14370,7 +14370,7 @@ public interface InternalPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation INTERNAL_CONNECTION_CIRCUIT___GET_OUTPUT_SUCCESSORS = eINSTANCE.getInternalConnectionCircuit__GetOutputSuccessors();
+		EOperation INTERNAL_CIRCUIT_CONNECTER___GET_OUTPUT_SUCCESSORS = eINSTANCE.getInternalCircuitConnecter__GetOutputSuccessors();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Operator Successors</b></em>' operation.
@@ -14378,15 +14378,15 @@ public interface InternalPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation INTERNAL_CONNECTION_CIRCUIT___GET_OPERATOR_SUCCESSORS = eINSTANCE.getInternalConnectionCircuit__GetOperatorSuccessors();
+		EOperation INTERNAL_CIRCUIT_CONNECTER___GET_OPERATOR_SUCCESSORS = eINSTANCE.getInternalCircuitConnecter__GetOperatorSuccessors();
 
 		/**
-		 * The meta object literal for the '<em><b>Get Connection Circuit Successors</b></em>' operation.
+		 * The meta object literal for the '<em><b>Get Circuit Connecter Successors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation INTERNAL_CONNECTION_CIRCUIT___GET_CONNECTION_CIRCUIT_SUCCESSORS = eINSTANCE.getInternalConnectionCircuit__GetConnectionCircuitSuccessors();
+		EOperation INTERNAL_CIRCUIT_CONNECTER___GET_CIRCUIT_CONNECTER_SUCCESSORS = eINSTANCE.getInternalCircuitConnecter__GetCircuitConnecterSuccessors();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalAbstractTransitionImpl <em>Abstract Transition</em>}' class.

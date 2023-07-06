@@ -8,7 +8,7 @@ import graphmodel.internal.InternalNode;
 
 import graphmodel.internal.impl.InternalNodeImpl;
 
-import info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit;
+import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Input;
 import info.scce.cinco.product.scchart.mglid.scchart.Operator;
 import info.scce.cinco.product.scchart.mglid.scchart.Output;
@@ -169,8 +169,8 @@ public class InternalOperatorImpl extends InternalNodeImpl implements InternalOp
 	 * @generated
 	 */
 	@Override
-	public EList<ConnectionCircuit> getConnectionCircuitPredecessors() {
-		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit.class);
+	public EList<CircuitConnecter> getCircuitConnecterPredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
 	}
 
 	/**
@@ -199,8 +199,8 @@ public class InternalOperatorImpl extends InternalNodeImpl implements InternalOp
 	 * @generated
 	 */
 	@Override
-	public EList<ConnectionCircuit> getConnectionCircuitSuccessors() {
-		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit.class);
+	public EList<CircuitConnecter> getCircuitConnecterSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
 	}
 
 	/**
@@ -296,14 +296,14 @@ public class InternalOperatorImpl extends InternalNodeImpl implements InternalOp
 				return getInputPredecessors();
 			case InternalPackage.INTERNAL_OPERATOR___GET_OPERATOR_PREDECESSORS:
 				return getOperatorPredecessors();
-			case InternalPackage.INTERNAL_OPERATOR___GET_CONNECTION_CIRCUIT_PREDECESSORS:
-				return getConnectionCircuitPredecessors();
+			case InternalPackage.INTERNAL_OPERATOR___GET_CIRCUIT_CONNECTER_PREDECESSORS:
+				return getCircuitConnecterPredecessors();
 			case InternalPackage.INTERNAL_OPERATOR___GET_OUTPUT_SUCCESSORS:
 				return getOutputSuccessors();
 			case InternalPackage.INTERNAL_OPERATOR___GET_OPERATOR_SUCCESSORS:
 				return getOperatorSuccessors();
-			case InternalPackage.INTERNAL_OPERATOR___GET_CONNECTION_CIRCUIT_SUCCESSORS:
-				return getConnectionCircuitSuccessors();
+			case InternalPackage.INTERNAL_OPERATOR___GET_CIRCUIT_CONNECTER_SUCCESSORS:
+				return getCircuitConnecterSuccessors();
 		}
 		return super.eInvoke(operationID, arguments);
 	}

@@ -1,12 +1,12 @@
 package info.scce.cinco.product.scchart.mglid.adapter
 
-class ConnectionCircuitEContentAdapter extends org.eclipse.emf.ecore.util.EContentAdapter implements de.jabc.cinco.meta.runtime.contentadapter.CincoEContentAdapter{
+class CircuitConnecterEContentAdapter extends org.eclipse.emf.ecore.util.EContentAdapter implements de.jabc.cinco.meta.runtime.contentadapter.CincoEContentAdapter{
 
 	override notifyChanged(org.eclipse.emf.common.notify.Notification notification) {
 		super.notifyChanged(notification)
 		val o = notification.notifier
 		val feature = notification.feature
-		if (o instanceof info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit) {
+		if (o instanceof info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter) {
 			if (o.eContainer == null && !(o instanceof graphmodel.internal.InternalGraphModel)) return;
 			switch feature {
 				org.eclipse.emf.ecore.EStructuralFeature case feature.isRelevant: {

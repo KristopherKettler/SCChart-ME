@@ -7,7 +7,7 @@ import java.util.Map
 class ActionTypeProvider  extends CincoValuesProvider<Action, String>{
 	
 	override Map<String, String> getPossibleValues(Action type) {
-		val String[] arr = #['entry','during','immediate during','exit'] 
+		val String[] arr = #['<set action>','entry','during','immediate during','exit'] 
 		var map = newLinkedHashMap
 		for(string : arr){
 			map.put(string,string)

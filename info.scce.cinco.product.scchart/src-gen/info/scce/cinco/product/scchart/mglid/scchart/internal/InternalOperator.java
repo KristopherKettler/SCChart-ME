@@ -6,7 +6,7 @@ import de.jabc.cinco.meta.core.mgl.model.constraints.ConnectionConstraint;
 
 import graphmodel.internal.InternalNode;
 
-import info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit;
+import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Input;
 import info.scce.cinco.product.scchart.mglid.scchart.Operator;
 import info.scce.cinco.product.scchart.mglid.scchart.Output;
@@ -99,7 +99,7 @@ public interface InternalOperator extends InternalNode {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<ConnectionCircuit> getConnectionCircuitPredecessors();
+	EList<CircuitConnecter> getCircuitConnecterPredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -123,6 +123,6 @@ public interface InternalOperator extends InternalNode {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<ConnectionCircuit> getConnectionCircuitSuccessors();
+	EList<CircuitConnecter> getCircuitConnecterSuccessors();
 
 } // InternalOperator

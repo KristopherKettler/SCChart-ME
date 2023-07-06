@@ -8,13 +8,13 @@ import graphmodel.internal.InternalNode;
 
 import graphmodel.internal.impl.InternalNodeImpl;
 
-import info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit;
+import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Input;
 import info.scce.cinco.product.scchart.mglid.scchart.Operator;
 import info.scce.cinco.product.scchart.mglid.scchart.Output;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 
-import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit;
+import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
 
 import java.lang.reflect.InvocationTargetException;
@@ -25,18 +25,18 @@ import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Connection Circuit</b></em>'.
+ * An implementation of the model object '<em><b>Circuit Connecter</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class InternalConnectionCircuitImpl extends InternalNodeImpl implements InternalConnectionCircuit {
+public class InternalCircuitConnecterImpl extends InternalNodeImpl implements InternalCircuitConnecter {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected InternalConnectionCircuitImpl() {
+	protected InternalCircuitConnecterImpl() {
 		super();
 	}
 
@@ -47,7 +47,7 @@ public class InternalConnectionCircuitImpl extends InternalNodeImpl implements I
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return InternalPackage.Literals.INTERNAL_CONNECTION_CIRCUIT;
+		return InternalPackage.Literals.INTERNAL_CIRCUIT_CONNECTER;
 	}
 
 	/**
@@ -116,8 +116,8 @@ public class InternalConnectionCircuitImpl extends InternalNodeImpl implements I
 	 * @generated
 	 */
 	@Override
-	public EList<ConnectionCircuit> getConnectionCircuitPredecessors() {
-		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit.class);
+	public EList<CircuitConnecter> getCircuitConnecterPredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
 	}
 
 	/**
@@ -146,8 +146,8 @@ public class InternalConnectionCircuitImpl extends InternalNodeImpl implements I
 	 * @generated
 	 */
 	@Override
-	public EList<ConnectionCircuit> getConnectionCircuitSuccessors() {
-		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit.class);
+	public EList<CircuitConnecter> getCircuitConnecterSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
 	}
 
 	/**
@@ -159,8 +159,8 @@ public class InternalConnectionCircuitImpl extends InternalNodeImpl implements I
 	public int eDerivedOperationID(int baseOperationID, Class<?> baseClass) {
 		if (baseClass == InternalNode.class) {
 			switch (baseOperationID) {
-				case graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING_CONSTRAINTS: return InternalPackage.INTERNAL_CONNECTION_CIRCUIT___GET_OUTGOING_CONSTRAINTS;
-				case graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING_CONSTRAINTS: return InternalPackage.INTERNAL_CONNECTION_CIRCUIT___GET_INCOMING_CONSTRAINTS;
+				case graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING_CONSTRAINTS: return InternalPackage.INTERNAL_CIRCUIT_CONNECTER___GET_OUTGOING_CONSTRAINTS;
+				case graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING_CONSTRAINTS: return InternalPackage.INTERNAL_CIRCUIT_CONNECTER___GET_INCOMING_CONSTRAINTS;
 				default: return super.eDerivedOperationID(baseOperationID, baseClass);
 			}
 		}
@@ -175,26 +175,26 @@ public class InternalConnectionCircuitImpl extends InternalNodeImpl implements I
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case InternalPackage.INTERNAL_CONNECTION_CIRCUIT___GET_INCOMING_CONSTRAINTS:
+			case InternalPackage.INTERNAL_CIRCUIT_CONNECTER___GET_INCOMING_CONSTRAINTS:
 				return getIncomingConstraints();
-			case InternalPackage.INTERNAL_CONNECTION_CIRCUIT___GET_OUTGOING_CONSTRAINTS:
+			case InternalPackage.INTERNAL_CIRCUIT_CONNECTER___GET_OUTGOING_CONSTRAINTS:
 				return getOutgoingConstraints();
-			case InternalPackage.INTERNAL_CONNECTION_CIRCUIT___GET_ROOT_STATE_PREDECESSORS:
+			case InternalPackage.INTERNAL_CIRCUIT_CONNECTER___GET_ROOT_STATE_PREDECESSORS:
 				return getRootStatePredecessors();
-			case InternalPackage.INTERNAL_CONNECTION_CIRCUIT___GET_INPUT_PREDECESSORS:
+			case InternalPackage.INTERNAL_CIRCUIT_CONNECTER___GET_INPUT_PREDECESSORS:
 				return getInputPredecessors();
-			case InternalPackage.INTERNAL_CONNECTION_CIRCUIT___GET_OPERATOR_PREDECESSORS:
+			case InternalPackage.INTERNAL_CIRCUIT_CONNECTER___GET_OPERATOR_PREDECESSORS:
 				return getOperatorPredecessors();
-			case InternalPackage.INTERNAL_CONNECTION_CIRCUIT___GET_CONNECTION_CIRCUIT_PREDECESSORS:
-				return getConnectionCircuitPredecessors();
-			case InternalPackage.INTERNAL_CONNECTION_CIRCUIT___GET_OUTPUT_SUCCESSORS:
+			case InternalPackage.INTERNAL_CIRCUIT_CONNECTER___GET_CIRCUIT_CONNECTER_PREDECESSORS:
+				return getCircuitConnecterPredecessors();
+			case InternalPackage.INTERNAL_CIRCUIT_CONNECTER___GET_OUTPUT_SUCCESSORS:
 				return getOutputSuccessors();
-			case InternalPackage.INTERNAL_CONNECTION_CIRCUIT___GET_OPERATOR_SUCCESSORS:
+			case InternalPackage.INTERNAL_CIRCUIT_CONNECTER___GET_OPERATOR_SUCCESSORS:
 				return getOperatorSuccessors();
-			case InternalPackage.INTERNAL_CONNECTION_CIRCUIT___GET_CONNECTION_CIRCUIT_SUCCESSORS:
-				return getConnectionCircuitSuccessors();
+			case InternalPackage.INTERNAL_CIRCUIT_CONNECTER___GET_CIRCUIT_CONNECTER_SUCCESSORS:
+				return getCircuitConnecterSuccessors();
 		}
 		return super.eInvoke(operationID, arguments);
 	}
 
-} //InternalConnectionCircuitImpl
+} //InternalCircuitConnecterImpl

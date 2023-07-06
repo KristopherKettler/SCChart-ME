@@ -2,9 +2,11 @@ package info.scce.cinco.product.scchart.events;
 
 import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
+import info.scce.cinco.product.scchart.mglid.scchart.Region;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
 import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
 import org.eclipse.xtext.xbase.lib.Procedures.Procedure2;
 
@@ -74,6 +76,21 @@ public final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.sc
       suspend.setHeight(13);
     };
     IterableExtensions.<Suspend>forEach(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends(), _function_1);
+    EList<Region> _regions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+    for (final Region region : _regions) {
+      if (((region.getY() < (IterableExtensions.<RootStateDeclaration>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations()).getY() + 13)) || (region.getY() < (IterableExtensions.<Suspend>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends()).getY() + 13)))) {
+        EList<Region> _regions_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+        for (final Region region1 : _regions_1) {
+          int _y = region1.getY();
+          int _plus = (_y + 13);
+          region1.setY(_plus);
+        }
+        RootState _head = IterableExtensions.<RootState>head(element.getRootElement().getRootStates());
+        int _height = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
+        int _plus_1 = (_height + 13);
+        _head.setHeight(_plus_1);
+      }
+    }
   }
   
   @Override

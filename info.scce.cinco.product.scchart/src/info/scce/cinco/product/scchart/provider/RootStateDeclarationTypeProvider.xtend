@@ -6,7 +6,7 @@ import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration
 
 class RootStateDeclarationTypeProvider extends CincoValuesProvider<RootStateDeclaration, String> {
 	override Map<String, String> getPossibleValues(RootStateDeclaration type) {
-		val String[] arr = #['string','bool','int','float'] 
+		val String[] arr = #[' ','bool','int','float','string'] 
 		
 		var map = newLinkedHashMap
 		for(string : arr){

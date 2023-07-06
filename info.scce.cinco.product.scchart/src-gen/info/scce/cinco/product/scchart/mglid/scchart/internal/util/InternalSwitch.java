@@ -232,12 +232,12 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case InternalPackage.INTERNAL_CONNECTION_CIRCUIT: {
-				InternalConnectionCircuit internalConnectionCircuit = (InternalConnectionCircuit)theEObject;
-				T result = caseInternalConnectionCircuit(internalConnectionCircuit);
-				if (result == null) result = caseInternalNode(internalConnectionCircuit);
-				if (result == null) result = caseInternalModelElement(internalConnectionCircuit);
-				if (result == null) result = caseInternalIdentifiableElement(internalConnectionCircuit);
+			case InternalPackage.INTERNAL_CIRCUIT_CONNECTER: {
+				InternalCircuitConnecter internalCircuitConnecter = (InternalCircuitConnecter)theEObject;
+				T result = caseInternalCircuitConnecter(internalCircuitConnecter);
+				if (result == null) result = caseInternalNode(internalCircuitConnecter);
+				if (result == null) result = caseInternalModelElement(internalCircuitConnecter);
+				if (result == null) result = caseInternalIdentifiableElement(internalCircuitConnecter);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -693,17 +693,17 @@ public class InternalSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Connection Circuit</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Circuit Connecter</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Connection Circuit</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Circuit Connecter</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInternalConnectionCircuit(InternalConnectionCircuit object) {
+	public T caseInternalCircuitConnecter(InternalCircuitConnecter object) {
 		return null;
 	}
 

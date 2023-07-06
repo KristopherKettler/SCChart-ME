@@ -47,13 +47,13 @@ public interface InternalSuspend extends InternalNode {
 
 	/**
 	 * Returns the value of the '<em><b>Suspend Type</b></em>' attribute.
-	 * The default value is <code>" "</code>.
+	 * The default value is <code>"<set suspend>"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Suspend Type</em>' attribute.
 	 * @see #setSuspendType(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuspend_SuspendType()
-	 * @model default=" "
+	 * @model default="&lt;set suspend&gt;"
 	 * @generated
 	 */
 	String getSuspendType();

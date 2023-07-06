@@ -3,7 +3,6 @@
 package info.scce.cinco.product.scchart.mglid.scchart.impl;
 
 import graphmodel.Direction;
-import graphmodel.GraphModel;
 import graphmodel.GraphmodelPackage;
 import graphmodel.IdentifiableElement;
 import graphmodel.ModelElement;
@@ -12,17 +11,19 @@ import graphmodel.Node;
 
 import graphmodel.impl.NodeImpl;
 
+import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Connection;
-import info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit;
+import info.scce.cinco.product.scchart.mglid.scchart.DataFlowRegion;
 import info.scce.cinco.product.scchart.mglid.scchart.Input;
 import info.scce.cinco.product.scchart.mglid.scchart.Operator;
 import info.scce.cinco.product.scchart.mglid.scchart.Output;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
+import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
 import info.scce.cinco.product.scchart.mglid.scchart.ScchartPackage;
 
-import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit;
+import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter;
 
-import info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionCircuitView;
+import info.scce.cinco.product.scchart.mglid.scchart.views.CircuitConnecterView;
 
 import java.lang.reflect.InvocationTargetException;
 
@@ -32,18 +33,18 @@ import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Connection Circuit</b></em>'.
+ * An implementation of the model object '<em><b>Circuit Connecter</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class ConnectionCircuitImpl extends NodeImpl implements ConnectionCircuit {
+public class CircuitConnecterImpl extends NodeImpl implements CircuitConnecter {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ConnectionCircuitImpl() {
+	protected CircuitConnecterImpl() {
 		super();
 	}
 
@@ -54,7 +55,7 @@ public class ConnectionCircuitImpl extends NodeImpl implements ConnectionCircuit
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ScchartPackage.eINSTANCE.getConnectionCircuit();
+		return ScchartPackage.eINSTANCE.getCircuitConnecter();
 	}
 
 	/**
@@ -63,8 +64,8 @@ public class ConnectionCircuitImpl extends NodeImpl implements ConnectionCircuit
 	 * @generated
 	 */
 	@Override
-	public InternalConnectionCircuit getInternalConnectionCircuit() {
-		return (info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit) getInternalElement();
+	public InternalCircuitConnecter getInternalCircuitConnecter() {
+		return (info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter) getInternalElement();
 	}
 
 	/**
@@ -73,7 +74,7 @@ public class ConnectionCircuitImpl extends NodeImpl implements ConnectionCircuit
 	 * @generated
 	 */
 	@Override
-	public boolean isExactlyConnectionCircuit() {
+	public boolean isExactlyCircuitConnecter() {
 		return true;
 	}
 
@@ -135,8 +136,8 @@ public class ConnectionCircuitImpl extends NodeImpl implements ConnectionCircuit
 	 * @generated
 	 */
 	@Override
-	public GraphModel getRootElement() {
-		return (graphmodel.GraphModel) this.getInternalElement().getRootElement().getElement();
+	public SCChart getRootElement() {
+		return (info.scce.cinco.product.scchart.mglid.scchart.SCChart) this.getInternalElement().getRootElement().getElement();
 		
 	}
 
@@ -294,8 +295,8 @@ public class ConnectionCircuitImpl extends NodeImpl implements ConnectionCircuit
 	 * @generated
 	 */
 	@Override
-	public EList<ConnectionCircuit> getConnectionCircuitPredecessors() {
-		return ((graphmodel.Node)this).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit.class);
+	public EList<CircuitConnecter> getCircuitConnecterPredecessors() {
+		return ((graphmodel.Node)this).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
 	}
 
 	/**
@@ -324,8 +325,8 @@ public class ConnectionCircuitImpl extends NodeImpl implements ConnectionCircuit
 	 * @generated
 	 */
 	@Override
-	public EList<ConnectionCircuit> getConnectionCircuitSuccessors() {
-		return ((graphmodel.Node)this).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.ConnectionCircuit.class);
+	public EList<CircuitConnecter> getCircuitConnecterSuccessors() {
+		return ((graphmodel.Node)this).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
 	}
 
 	/**
@@ -334,7 +335,7 @@ public class ConnectionCircuitImpl extends NodeImpl implements ConnectionCircuit
 	 * @generated
 	 */
 	@Override
-	public boolean canNewConnection(final Output target) {
+	public boolean canNewConnection(final CircuitConnecter target) {
 		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class);
 	}
 
@@ -344,7 +345,7 @@ public class ConnectionCircuitImpl extends NodeImpl implements ConnectionCircuit
 	 * @generated
 	 */
 	@Override
-	public Connection newConnection(final Output target) {
+	public Connection newConnection(final CircuitConnecter target) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Connection.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
@@ -365,58 +366,7 @@ public class ConnectionCircuitImpl extends NodeImpl implements ConnectionCircuit
 	 * @generated
 	 */
 	@Override
-	public Connection newConnection(final Output target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Connection.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Connection.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.Connection edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnection(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewConnection(final ConnectionCircuit target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Connection newConnection(final ConnectionCircuit target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Connection.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Connection.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.Connection edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnection((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Connection newConnection(final ConnectionCircuit target, final String id) {
+	public Connection newConnection(final CircuitConnecter target, final String id) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Connection.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
@@ -487,10 +437,112 @@ public class ConnectionCircuitImpl extends NodeImpl implements ConnectionCircuit
 	 * @generated
 	 */
 	@Override
-	public ConnectionCircuitView getConnectionCircuitView() {
-		ConnectionCircuitView connectionCircuitView = info.scce.cinco.product.scchart.mglid.scchart.views.ViewsFactory.eINSTANCE.createConnectionCircuitView();
-		connectionCircuitView.setInternalConnectionCircuit((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnectionCircuit)getInternalElement());
-		return connectionCircuitView;
+	public boolean canNewConnection(final Output target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Connection newConnection(final Output target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Connection.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Connection.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.Connection edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnection((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Connection newConnection(final Output target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Connection.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Connection.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.Connection edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnection(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canMoveTo(final DataFlowRegion dataFlowRegion, final int x, final int y) {
+		return dataFlowRegion.canContain(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void moveTo(final DataFlowRegion dataFlowRegion, final int x, final int y) {
+		transact("Move to", () -> {
+			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
+			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
+			int deltaX = x - ime.getX();
+			int deltaY = y - ime.getY();
+			s_moveTo(dataFlowRegion, x, y);
+			dataFlowRegion.getInternalContainerElement().getModelElements().add(ime);
+			ime.setX(x);
+			ime.setY(y);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void s_moveTo(final DataFlowRegion dataFlowRegion, final int x, final int y) {
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DataFlowRegion getContainer() {
+		return (info.scce.cinco.product.scchart.mglid.scchart.DataFlowRegion)getInternalElement().getContainer().getContainerElement();
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CircuitConnecterView getCircuitConnecterView() {
+		CircuitConnecterView circuitConnecterView = info.scce.cinco.product.scchart.mglid.scchart.views.ViewsFactory.eINSTANCE.createCircuitConnecterView();
+		circuitConnecterView.setInternalCircuitConnecter((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter)getInternalElement());
+		return circuitConnecterView;
 		
 	}
 
@@ -503,33 +555,34 @@ public class ConnectionCircuitImpl extends NodeImpl implements ConnectionCircuit
 	public int eDerivedOperationID(int baseOperationID, Class<?> baseClass) {
 		if (baseClass == IdentifiableElement.class) {
 			switch (baseOperationID) {
-				case GraphmodelPackage.IDENTIFIABLE_ELEMENT___PRE_SAVE: return ScchartPackage.CONNECTION_CIRCUIT___PRE_SAVE;
-				case GraphmodelPackage.IDENTIFIABLE_ELEMENT___POST_SAVE: return ScchartPackage.CONNECTION_CIRCUIT___POST_SAVE;
+				case GraphmodelPackage.IDENTIFIABLE_ELEMENT___PRE_SAVE: return ScchartPackage.CIRCUIT_CONNECTER___PRE_SAVE;
+				case GraphmodelPackage.IDENTIFIABLE_ELEMENT___POST_SAVE: return ScchartPackage.CIRCUIT_CONNECTER___POST_SAVE;
 				default: return super.eDerivedOperationID(baseOperationID, baseClass);
 			}
 		}
 		if (baseClass == ModelElement.class) {
 			switch (baseOperationID) {
-				case GraphmodelPackage.MODEL_ELEMENT___GET_ROOT_ELEMENT: return ScchartPackage.CONNECTION_CIRCUIT___GET_ROOT_ELEMENT;
-				case GraphmodelPackage.MODEL_ELEMENT___PRE_SAVE: return ScchartPackage.CONNECTION_CIRCUIT___PRE_SAVE;
-				case GraphmodelPackage.MODEL_ELEMENT___POST_SAVE: return ScchartPackage.CONNECTION_CIRCUIT___POST_SAVE;
+				case GraphmodelPackage.MODEL_ELEMENT___GET_CONTAINER: return ScchartPackage.CIRCUIT_CONNECTER___GET_CONTAINER;
+				case GraphmodelPackage.MODEL_ELEMENT___GET_ROOT_ELEMENT: return ScchartPackage.CIRCUIT_CONNECTER___GET_ROOT_ELEMENT;
+				case GraphmodelPackage.MODEL_ELEMENT___PRE_SAVE: return ScchartPackage.CIRCUIT_CONNECTER___PRE_SAVE;
+				case GraphmodelPackage.MODEL_ELEMENT___POST_SAVE: return ScchartPackage.CIRCUIT_CONNECTER___POST_SAVE;
 				default: return super.eDerivedOperationID(baseOperationID, baseClass);
 			}
 		}
 		if (baseClass == Node.class) {
 			switch (baseOperationID) {
-				case GraphmodelPackage.NODE___GET_SUCCESSORS: return ScchartPackage.CONNECTION_CIRCUIT___GET_SUCCESSORS;
-				case GraphmodelPackage.NODE___GET_PREDECESSORS: return ScchartPackage.CONNECTION_CIRCUIT___GET_PREDECESSORS;
-				case GraphmodelPackage.NODE___PRE_MOVE__MODELELEMENTCONTAINER_INT_INT: return ScchartPackage.CONNECTION_CIRCUIT___PRE_MOVE__MODELELEMENTCONTAINER_INT_INT;
-				case GraphmodelPackage.NODE___POST_MOVE__MODELELEMENTCONTAINER_MODELELEMENTCONTAINER_INT_INT_INT_INT: return ScchartPackage.CONNECTION_CIRCUIT___POST_MOVE__MODELELEMENTCONTAINER_MODELELEMENTCONTAINER_INT_INT_INT_INT;
-				case GraphmodelPackage.NODE___GET_POST_DELETE_FUNCTION: return ScchartPackage.CONNECTION_CIRCUIT___GET_POST_DELETE_FUNCTION;
-				case GraphmodelPackage.NODE___GET_POST_DELETE_EVENT: return ScchartPackage.CONNECTION_CIRCUIT___GET_POST_DELETE_EVENT;
-				case GraphmodelPackage.NODE___PRE_DELETE: return ScchartPackage.CONNECTION_CIRCUIT___PRE_DELETE;
-				case GraphmodelPackage.NODE___PRE_RESIZE__INT_INT_INT_INT_DIRECTION: return ScchartPackage.CONNECTION_CIRCUIT___PRE_RESIZE__INT_INT_INT_INT_DIRECTION;
-				case GraphmodelPackage.NODE___POST_RESIZE__INT_INT_INT_INT_DIRECTION: return ScchartPackage.CONNECTION_CIRCUIT___POST_RESIZE__INT_INT_INT_INT_DIRECTION;
-				case GraphmodelPackage.NODE___SMOVE_TO__MODELELEMENTCONTAINER_INT_INT: return ScchartPackage.CONNECTION_CIRCUIT___SMOVE_TO__MODELELEMENTCONTAINER_INT_INT;
-				case GraphmodelPackage.NODE___GET_INCOMING: return ScchartPackage.CONNECTION_CIRCUIT___GET_INCOMING;
-				case GraphmodelPackage.NODE___GET_OUTGOING: return ScchartPackage.CONNECTION_CIRCUIT___GET_OUTGOING;
+				case GraphmodelPackage.NODE___GET_SUCCESSORS: return ScchartPackage.CIRCUIT_CONNECTER___GET_SUCCESSORS;
+				case GraphmodelPackage.NODE___GET_PREDECESSORS: return ScchartPackage.CIRCUIT_CONNECTER___GET_PREDECESSORS;
+				case GraphmodelPackage.NODE___PRE_MOVE__MODELELEMENTCONTAINER_INT_INT: return ScchartPackage.CIRCUIT_CONNECTER___PRE_MOVE__MODELELEMENTCONTAINER_INT_INT;
+				case GraphmodelPackage.NODE___POST_MOVE__MODELELEMENTCONTAINER_MODELELEMENTCONTAINER_INT_INT_INT_INT: return ScchartPackage.CIRCUIT_CONNECTER___POST_MOVE__MODELELEMENTCONTAINER_MODELELEMENTCONTAINER_INT_INT_INT_INT;
+				case GraphmodelPackage.NODE___GET_POST_DELETE_FUNCTION: return ScchartPackage.CIRCUIT_CONNECTER___GET_POST_DELETE_FUNCTION;
+				case GraphmodelPackage.NODE___GET_POST_DELETE_EVENT: return ScchartPackage.CIRCUIT_CONNECTER___GET_POST_DELETE_EVENT;
+				case GraphmodelPackage.NODE___PRE_DELETE: return ScchartPackage.CIRCUIT_CONNECTER___PRE_DELETE;
+				case GraphmodelPackage.NODE___PRE_RESIZE__INT_INT_INT_INT_DIRECTION: return ScchartPackage.CIRCUIT_CONNECTER___PRE_RESIZE__INT_INT_INT_INT_DIRECTION;
+				case GraphmodelPackage.NODE___POST_RESIZE__INT_INT_INT_INT_DIRECTION: return ScchartPackage.CIRCUIT_CONNECTER___POST_RESIZE__INT_INT_INT_INT_DIRECTION;
+				case GraphmodelPackage.NODE___SMOVE_TO__MODELELEMENTCONTAINER_INT_INT: return ScchartPackage.CIRCUIT_CONNECTER___SMOVE_TO__MODELELEMENTCONTAINER_INT_INT;
+				case GraphmodelPackage.NODE___GET_INCOMING: return ScchartPackage.CIRCUIT_CONNECTER___GET_INCOMING;
+				case GraphmodelPackage.NODE___GET_OUTGOING: return ScchartPackage.CIRCUIT_CONNECTER___GET_OUTGOING;
 				default: return super.eDerivedOperationID(baseOperationID, baseClass);
 			}
 		}
@@ -544,88 +597,98 @@ public class ConnectionCircuitImpl extends NodeImpl implements ConnectionCircuit
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_INTERNAL_CONNECTION_CIRCUIT:
-				return getInternalConnectionCircuit();
-			case ScchartPackage.CONNECTION_CIRCUIT___IS_EXACTLY_CONNECTION_CIRCUIT:
-				return isExactlyConnectionCircuit();
-			case ScchartPackage.CONNECTION_CIRCUIT___PRE_DELETE:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_INTERNAL_CIRCUIT_CONNECTER:
+				return getInternalCircuitConnecter();
+			case ScchartPackage.CIRCUIT_CONNECTER___IS_EXACTLY_CIRCUIT_CONNECTER:
+				return isExactlyCircuitConnecter();
+			case ScchartPackage.CIRCUIT_CONNECTER___PRE_DELETE:
 				preDelete();
 				return null;
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_POST_DELETE_FUNCTION:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_POST_DELETE_FUNCTION:
 				return getPostDeleteFunction();
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_POST_DELETE_EVENT:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_POST_DELETE_EVENT:
 				return getPostDeleteEvent();
-			case ScchartPackage.CONNECTION_CIRCUIT___PRE_SAVE:
+			case ScchartPackage.CIRCUIT_CONNECTER___PRE_SAVE:
 				preSave();
 				return null;
-			case ScchartPackage.CONNECTION_CIRCUIT___POST_SAVE:
+			case ScchartPackage.CIRCUIT_CONNECTER___POST_SAVE:
 				postSave();
 				return null;
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_ROOT_ELEMENT:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_ROOT_ELEMENT:
 				return getRootElement();
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_OUTGOING:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_OUTGOING:
 				return getOutgoing();
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_SUCCESSORS:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_SUCCESSORS:
 				return getSuccessors();
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_INCOMING:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_INCOMING:
 				return getIncoming();
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_PREDECESSORS:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_PREDECESSORS:
 				return getPredecessors();
-			case ScchartPackage.CONNECTION_CIRCUIT___SMOVE_TO__MODELELEMENTCONTAINER_INT_INT:
+			case ScchartPackage.CIRCUIT_CONNECTER___SMOVE_TO__MODELELEMENTCONTAINER_INT_INT:
 				s_moveTo((ModelElementContainer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
-			case ScchartPackage.CONNECTION_CIRCUIT___PRE_MOVE__MODELELEMENTCONTAINER_INT_INT:
+			case ScchartPackage.CIRCUIT_CONNECTER___PRE_MOVE__MODELELEMENTCONTAINER_INT_INT:
 				preMove((ModelElementContainer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
-			case ScchartPackage.CONNECTION_CIRCUIT___POST_MOVE__MODELELEMENTCONTAINER_MODELELEMENTCONTAINER_INT_INT_INT_INT:
+			case ScchartPackage.CIRCUIT_CONNECTER___POST_MOVE__MODELELEMENTCONTAINER_MODELELEMENTCONTAINER_INT_INT_INT_INT:
 				postMove((ModelElementContainer)arguments.get(0), (ModelElementContainer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4), (Integer)arguments.get(5));
 				return null;
-			case ScchartPackage.CONNECTION_CIRCUIT___PRE_RESIZE__INT_INT_INT_INT_DIRECTION:
+			case ScchartPackage.CIRCUIT_CONNECTER___PRE_RESIZE__INT_INT_INT_INT_DIRECTION:
 				preResize((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Direction)arguments.get(4));
 				return null;
-			case ScchartPackage.CONNECTION_CIRCUIT___POST_RESIZE__INT_INT_INT_INT_DIRECTION:
+			case ScchartPackage.CIRCUIT_CONNECTER___POST_RESIZE__INT_INT_INT_INT_DIRECTION:
 				postResize((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Direction)arguments.get(4));
 				return null;
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_OUTGOING_CONNECTIONS:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_OUTGOING_CONNECTIONS:
 				return getOutgoingConnections();
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_INCOMING_CONNECTIONS:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_INCOMING_CONNECTIONS:
 				return getIncomingConnections();
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_ROOT_STATE_PREDECESSORS:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_ROOT_STATE_PREDECESSORS:
 				return getRootStatePredecessors();
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_INPUT_PREDECESSORS:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_INPUT_PREDECESSORS:
 				return getInputPredecessors();
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_OPERATOR_PREDECESSORS:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_OPERATOR_PREDECESSORS:
 				return getOperatorPredecessors();
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_CONNECTION_CIRCUIT_PREDECESSORS:
-				return getConnectionCircuitPredecessors();
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_OUTPUT_SUCCESSORS:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_CIRCUIT_CONNECTER_PREDECESSORS:
+				return getCircuitConnecterPredecessors();
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_OUTPUT_SUCCESSORS:
 				return getOutputSuccessors();
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_OPERATOR_SUCCESSORS:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_OPERATOR_SUCCESSORS:
 				return getOperatorSuccessors();
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_CONNECTION_CIRCUIT_SUCCESSORS:
-				return getConnectionCircuitSuccessors();
-			case ScchartPackage.CONNECTION_CIRCUIT___CAN_NEW_CONNECTION__OUTPUT:
-				return canNewConnection((Output)arguments.get(0));
-			case ScchartPackage.CONNECTION_CIRCUIT___NEW_CONNECTION__OUTPUT:
-				return newConnection((Output)arguments.get(0));
-			case ScchartPackage.CONNECTION_CIRCUIT___NEW_CONNECTION__OUTPUT_STRING:
-				return newConnection((Output)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.CONNECTION_CIRCUIT___CAN_NEW_CONNECTION__CONNECTIONCIRCUIT:
-				return canNewConnection((ConnectionCircuit)arguments.get(0));
-			case ScchartPackage.CONNECTION_CIRCUIT___NEW_CONNECTION__CONNECTIONCIRCUIT:
-				return newConnection((ConnectionCircuit)arguments.get(0));
-			case ScchartPackage.CONNECTION_CIRCUIT___NEW_CONNECTION__CONNECTIONCIRCUIT_STRING:
-				return newConnection((ConnectionCircuit)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.CONNECTION_CIRCUIT___CAN_NEW_CONNECTION__OPERATOR:
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_CIRCUIT_CONNECTER_SUCCESSORS:
+				return getCircuitConnecterSuccessors();
+			case ScchartPackage.CIRCUIT_CONNECTER___CAN_NEW_CONNECTION__CIRCUITCONNECTER:
+				return canNewConnection((CircuitConnecter)arguments.get(0));
+			case ScchartPackage.CIRCUIT_CONNECTER___NEW_CONNECTION__CIRCUITCONNECTER:
+				return newConnection((CircuitConnecter)arguments.get(0));
+			case ScchartPackage.CIRCUIT_CONNECTER___NEW_CONNECTION__CIRCUITCONNECTER_STRING:
+				return newConnection((CircuitConnecter)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.CIRCUIT_CONNECTER___CAN_NEW_CONNECTION__OPERATOR:
 				return canNewConnection((Operator)arguments.get(0));
-			case ScchartPackage.CONNECTION_CIRCUIT___NEW_CONNECTION__OPERATOR:
+			case ScchartPackage.CIRCUIT_CONNECTER___NEW_CONNECTION__OPERATOR:
 				return newConnection((Operator)arguments.get(0));
-			case ScchartPackage.CONNECTION_CIRCUIT___NEW_CONNECTION__OPERATOR_STRING:
+			case ScchartPackage.CIRCUIT_CONNECTER___NEW_CONNECTION__OPERATOR_STRING:
 				return newConnection((Operator)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.CONNECTION_CIRCUIT___GET_CONNECTION_CIRCUIT_VIEW:
-				return getConnectionCircuitView();
+			case ScchartPackage.CIRCUIT_CONNECTER___CAN_NEW_CONNECTION__OUTPUT:
+				return canNewConnection((Output)arguments.get(0));
+			case ScchartPackage.CIRCUIT_CONNECTER___NEW_CONNECTION__OUTPUT:
+				return newConnection((Output)arguments.get(0));
+			case ScchartPackage.CIRCUIT_CONNECTER___NEW_CONNECTION__OUTPUT_STRING:
+				return newConnection((Output)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.CIRCUIT_CONNECTER___CAN_MOVE_TO__DATAFLOWREGION_INT_INT:
+				return canMoveTo((DataFlowRegion)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.CIRCUIT_CONNECTER___MOVE_TO__DATAFLOWREGION_INT_INT:
+				moveTo((DataFlowRegion)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.CIRCUIT_CONNECTER___SMOVE_TO__DATAFLOWREGION_INT_INT:
+				s_moveTo((DataFlowRegion)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_CONTAINER:
+				return getContainer();
+			case ScchartPackage.CIRCUIT_CONNECTER___GET_CIRCUIT_CONNECTER_VIEW:
+				return getCircuitConnecterView();
 		}
 		return super.eInvoke(operationID, arguments);
 	}
 
-} //ConnectionCircuitImpl
+} //CircuitConnecterImpl
