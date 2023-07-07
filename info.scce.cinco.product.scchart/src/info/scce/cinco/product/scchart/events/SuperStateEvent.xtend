@@ -45,6 +45,7 @@ final class SuperStateEvent extends info.scce.cinco.product.scchart.mglid.scchar
 	}
 	
 	override postAttributeChange(SuperState element, String attribute, Object oldValue) {
+		// TODO: Auto-generated method stub
 	}
 	
 	override postCreate(SuperState element) {
@@ -70,7 +71,51 @@ final class SuperStateEvent extends info.scce.cinco.product.scchart.mglid.scchar
 	}
 	
 	override postResize(SuperState element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction) {
-		// TODO: Auto-generated method stub
+		if(element.superStateDeclarations !== null){
+			for(declaration : element.superStateDeclarations){
+				declaration.width = element.width-20
+			}
+		}
+		if (element.suspends!==null){
+			for(suspend : element.suspends){
+				suspend.width = element.width-20
+			}
+		}
+		if (element.actions!==null){
+			for(action : element.actions){
+				action.width = element.width-20
+			}
+		}
+		if(element.regions!==null){
+			for(region : element.regions){
+				if(oldX!=element.x){
+					if(region.x<12){
+						region.width = region.width+(oldX-element.x)
+					}
+					else{
+						region.x=region.x+(oldX-element.x)
+					}
+				}
+				if(oldY!=element.y){
+					if(region.y<35+element.getRootElement.getRootStates.head.getRootStateDeclarations.size*13+element.getRootElement.getRootStates.head.getSuspends.size*13){
+						region.height = region.height+(oldY-element.y)
+					}
+					else{
+						region.y=region.y+(oldY-element.y)
+					}
+				}
+				if(oldX==element.x&&oldWidth!=element.width){
+					if(oldWidth-(region.x+region.width)<12){
+						region.width=region.width+(element.width-oldWidth)
+					}
+				}
+				if(oldY==element.y&&oldHeight!=element.height){
+					if(oldHeight-(region.y+region.height)<12){
+						region.height=region.height+(element.height-oldHeight)
+					}
+				}
+			}
+		}
 	}
 	
 	override postSelect(SuperState element) {

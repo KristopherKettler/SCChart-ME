@@ -106,6 +106,22 @@ public interface Connection extends Edge {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
+	boolean canReconnectSource(Operator source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(Operator source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
 	boolean canReconnectSource(CircuitConnecter source);
 
 	/**
@@ -151,18 +167,18 @@ public interface Connection extends Edge {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
+	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(Operator source);
+	boolean canReconnectTarget(Operator target);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
+	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectSource(Operator source);
+	void reconnectTarget(Operator target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -195,22 +211,6 @@ public interface Connection extends Edge {
 	 * @generated
 	 */
 	void reconnectTarget(Output target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectTarget(Operator target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	void reconnectTarget(Operator target);
 
 	/**
 	 * <!-- begin-user-doc -->

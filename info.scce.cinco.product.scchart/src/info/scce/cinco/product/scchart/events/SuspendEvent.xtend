@@ -5,6 +5,9 @@ package info.scce.cinco.product.scchart.events
 import graphmodel.Direction
 import graphmodel.ModelElementContainer
 import info.scce.cinco.product.scchart.mglid.scchart.Suspend
+import java.util.UUID
+import graphmodel.Container
+import info.scce.cinco.product.scchart.mglid.scchart.SuperState
 
 /* 
  * About this class:
@@ -49,45 +52,84 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 	}
 	
 	override postCreate(Suspend element) {
-		if(element.getRootElement.getRootStates.head.getRootStateDeclarations !== null){
-			element.getRootElement.getRootStates.head.getRootStateDeclarations.forEach[	declaration , index |
-			declaration.x =10
-			declaration.y =30+ 13*index
-			declaration.width =element.getRootElement.getRootStates.head.width-20
-			declaration.height = 13
-			]
-		}
-		
-		if(element.getRootElement.getRootStates.head.getRootStateDeclarations !== null){
-			val rootStateDeclarationCount = element.getRootElement.getRootStates.head.getRootStateDeclarations.size
-			element.getRootElement.getRootStates.head.getSuspends.forEach[	suspend , index |
-				suspend.x =10
-				suspend.y =30+ 13*rootStateDeclarationCount+13*index
-				suspend.width =element.getRootElement.getRootStates.head.width-20
-				suspend.height = 13
-			]
-		}
-		else{
-			val rootStateDeclarationCount = 0
-			element.getRootElement.getRootStates.head.getSuspends.forEach[	suspend , index |
-				suspend.x =10
-				suspend.y =30+ 13*rootStateDeclarationCount+13*index
-				suspend.width =element.getRootElement.getRootStates.head.width-20
-				suspend.height = 13
-			]
-		}
-		for(var i = 0;i < element.getRootElement.getRootStates.head.regions.size;i++){
-			
-		}
-		for(region : element.getRootElement.getRootStates.head.regions){
-			if(region.y<element.getRootElement.getRootStates.head.getRootStateDeclarations.last.y+13||region.y<element.getRootElement.getRootStates.head.getSuspends.last.y+13){
-				for(region1 : element.getRootElement.getRootStates.head.regions){
-					region1.y = region1.y + 13
+		element.uuid=UUID.randomUUID.toString
+		var boolean break= false
+		for(suspend : element.rootElement.rootStates.head.suspends){
+			if(suspend.uuid==element.uuid){
+				var int declarationCount = 0
+				if(element.rootElement.rootStates.head.rootStateDeclarations !== null){
+					declarationCount=element.rootElement.getRootStates.head.rootStateDeclarations.size
 				}
-				element.getRootElement.getRootStates.head.height = element.getRootElement.getRootStates.head.height + 13
+				for(var i = 0; i<element.rootElement.rootStates.head.suspends.size;i++){
+					element.rootElement.rootStates.head.suspends.get(i).x=10
+					element.rootElement.rootStates.head.suspends.get(i).y=30+13*declarationCount+13*i
+					element.rootElement.rootStates.head.suspends.get(i).width=element.rootElement.rootStates.head.width-20
+					element.rootElement.rootStates.head.suspends.get(i).height=13
+				}
+				if(element.rootElement.rootStates.head.regions!==null){
+					for(region : element.rootElement.rootStates.head.regions){
+						if(region.y<element.rootElement.rootStates.head.suspends.last.y+13){
+							for(region1 : element.rootElement.rootStates.head.regions){
+								region1.y = region1.y + 13
+							}
+							element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height + 13
+						}
+					}
+				}
+				break = true
+			}
+		}
+		if(!break){
+			for(region : element.rootElement.rootStates.head.regions){
+				if(region.superStates !== null){
+					for(superState : region.superStates){
+						postCreateSuspend(superState,element)
+					}
+				}
 			}
 		}
 		// TODO: Auto-generated method stub
+	}
+	
+	def postCreateSuspend(SuperState superState, Suspend suspend){
+		var boolean break = false
+		if(superState.suspends !== null){
+			for(suspendList : superState.suspends){
+				if(suspendList.uuid==suspend.uuid){
+					var int declarationCount = 0
+					if(superState.superStateDeclarations !== null){
+						declarationCount=superState.superStateDeclarations.size
+					}
+					for(var i = 0; i<superState.suspends.size;i++){
+						superState.suspends.get(i).x=10
+						superState.suspends.get(i).y=30+13*declarationCount+13*i
+						superState.suspends.get(i).width=superState.width-20
+						superState.suspends.get(i).height=13
+					}	
+					if(superState.regions!==null){
+						for(region : superState.regions){
+							if(region.y<superState.suspends.last.y+13){
+								for(region1 : superState.regions){
+									region1.y = region1.y + 13
+								}
+								superState.height = superState.height + 13
+							}
+						}
+					}
+					break = true
+				}
+			}
+		}
+		if(!break && superState.regions!==null){
+			for(region : superState.regions){
+				if(region.superStates !== null){
+					for(superStateList: region.superStates){
+						postCreateSuspend(superStateList,suspend)
+						}
+					}
+				}
+			
+		}
 	}
 	
 	override postDelete(Suspend element) {
