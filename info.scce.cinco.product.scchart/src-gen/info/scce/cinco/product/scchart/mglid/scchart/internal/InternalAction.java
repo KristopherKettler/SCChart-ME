@@ -16,6 +16,7 @@ import graphmodel.internal.InternalNode;
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getActionType <em>Action Type</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getCondition <em>Condition</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getEffect <em>Effect</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getUuid <em>Uuid</em>}</li>
  * </ul>
  *
  * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalAction()
@@ -89,5 +90,27 @@ public interface InternalAction extends InternalNode {
 	 * @generated
 	 */
 	void setEffect(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Uuid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Uuid</em>' attribute.
+	 * @see #setUuid(String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalAction_Uuid()
+	 * @model
+	 * @generated
+	 */
+	String getUuid();
+
+	/**
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getUuid <em>Uuid</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Uuid</em>' attribute.
+	 * @see #getUuid()
+	 * @generated
+	 */
+	void setUuid(String value);
 
 } // InternalAction

@@ -49,27 +49,42 @@ final class RootStateDeclarationEvent extends info.scce.cinco.product.scchart.mg
 	}
 	
 	override postCreate(RootStateDeclaration element) {
-		element.getRootElement.getRootStates.head.getRootStateDeclarations.forEach[	declaration , index |
+		element.rootElement.rootStates.head.rootStateDeclarations.forEach[	declaration , index |
 			declaration.x =10
 			declaration.y =30+ 13*index
-			declaration.width =element.getRootElement.getRootStates.head.width-20
+			declaration.width =element.rootElement.rootStates.head.width-20
 			declaration.height = 13
 		]
-		element.getRootElement.getRootStates.head.getSuspends.forEach[	suspend , index |
-			suspend.x =10
-			suspend.y =30+ 13*element.getRootElement.getRootStates.head.getRootStateDeclarations.size+13*index
-			suspend.width =element.getRootElement.getRootStates.head.width-20
-			suspend.height = 13
-		]
-		for(region : element.getRootElement.getRootStates.head.regions){
-			if(region.y<element.getRootElement.getRootStates.head.getRootStateDeclarations.last.y+13||region.y<element.getRootElement.getRootStates.head.getSuspends.last.y+13){
-				for(region1 : element.getRootElement.getRootStates.head.regions){
-					region1.y = region1.y + 13
+		if(element.rootElement.rootStates.head.suspends!==null){
+			element.rootElement.rootStates.head.suspends.forEach[	suspend , index |
+				suspend.x =10
+				suspend.y =30+ 13*element.rootElement.rootStates.head.rootStateDeclarations.size+13*index
+				suspend.width =element.rootElement.rootStates.head.width-20
+				suspend.height = 13
+			]
+			if(element.rootElement.rootStates.head.regions!== null){
+				for(region : element.rootElement.rootStates.head.regions){
+					if(region.y<element.rootElement.rootStates.head.rootStateDeclarations.last.y+13||region.y<element.rootElement.rootStates.head.suspends.last.y+13){
+						for(region1 : element.rootElement.rootStates.head.regions){
+							region1.y = region1.y + 13
+						}
+						element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height + 13
+					}
 				}
-				element.getRootElement.getRootStates.head.height = element.getRootElement.getRootStates.head.height + 13
 			}
 		}
-		// TODO: Auto-generated method stub
+		else{
+			if(element.rootElement.rootStates.head.regions!== null){
+				for(region : element.rootElement.rootStates.head.regions){
+					if(region.y<element.rootElement.rootStates.head.rootStateDeclarations.last.y+13){
+						for(region1 : element.rootElement.rootStates.head.regions){
+							region1.y = region1.y + 13
+						}
+						element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height + 13
+					}
+				}
+			}
+		}
 	}
 	
 	override postDelete(RootStateDeclaration element) {

@@ -1066,6 +1066,16 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
+	public EAttribute getInternalAction_Uuid() {
+        return (EAttribute)getInternalAction().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getInternalSuperStateDeclaration() {
 		if (internalSuperStateDeclarationEClass == null) {
 			internalSuperStateDeclarationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(8);

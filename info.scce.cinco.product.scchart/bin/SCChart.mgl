@@ -11,7 +11,7 @@ graphModel SCChart {
 @event("info.scce.cinco.product.scchart.events.RootStateEvent")
 container RootState {
 	style rootStateStyle ("${label}")
-	containableElements(Region,RootStateDeclaration,Suspend)
+	containableElements(Region,RootStateDeclaration,Suspend,Action)
 	outgoingEdges (*)
 	attr EString as label := "<insert name>"
 }
@@ -85,6 +85,8 @@ node Action {
 	attr EString as actionType := '<set action>' 
 	attr EString as condition
 	attr EString as effect
+	@propertiesViewHidden
+	attr EString as uuid
 }
 
 @palette("Declaration")

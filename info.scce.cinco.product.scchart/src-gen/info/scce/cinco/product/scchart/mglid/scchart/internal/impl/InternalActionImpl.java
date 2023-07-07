@@ -24,6 +24,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionImpl#getActionType <em>Action Type</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionImpl#getCondition <em>Condition</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionImpl#getEffect <em>Effect</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalActionImpl#getUuid <em>Uuid</em>}</li>
  * </ul>
  *
  * @generated
@@ -88,6 +89,26 @@ public class InternalActionImpl extends InternalNodeImpl implements InternalActi
 	 * @ordered
 	 */
 	protected String effect = EFFECT_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getUuid() <em>Uuid</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUuid()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String UUID_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getUuid() <em>Uuid</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUuid()
+	 * @generated
+	 * @ordered
+	 */
+	protected String uuid = UUID_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -183,6 +204,29 @@ public class InternalActionImpl extends InternalNodeImpl implements InternalActi
 	 * @generated
 	 */
 	@Override
+	public String getUuid() {
+		return uuid;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUuid(String newUuid) {
+		String oldUuid = uuid;
+		uuid = newUuid;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_ACTION__UUID, oldUuid, uuid));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case InternalPackage.INTERNAL_ACTION__ACTION_TYPE:
@@ -191,6 +235,8 @@ public class InternalActionImpl extends InternalNodeImpl implements InternalActi
 				return getCondition();
 			case InternalPackage.INTERNAL_ACTION__EFFECT:
 				return getEffect();
+			case InternalPackage.INTERNAL_ACTION__UUID:
+				return getUuid();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -211,6 +257,9 @@ public class InternalActionImpl extends InternalNodeImpl implements InternalActi
 				return;
 			case InternalPackage.INTERNAL_ACTION__EFFECT:
 				setEffect((String)newValue);
+				return;
+			case InternalPackage.INTERNAL_ACTION__UUID:
+				setUuid((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -233,6 +282,9 @@ public class InternalActionImpl extends InternalNodeImpl implements InternalActi
 			case InternalPackage.INTERNAL_ACTION__EFFECT:
 				setEffect(EFFECT_EDEFAULT);
 				return;
+			case InternalPackage.INTERNAL_ACTION__UUID:
+				setUuid(UUID_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -251,6 +303,8 @@ public class InternalActionImpl extends InternalNodeImpl implements InternalActi
 				return CONDITION_EDEFAULT == null ? condition != null : !CONDITION_EDEFAULT.equals(condition);
 			case InternalPackage.INTERNAL_ACTION__EFFECT:
 				return EFFECT_EDEFAULT == null ? effect != null : !EFFECT_EDEFAULT.equals(effect);
+			case InternalPackage.INTERNAL_ACTION__UUID:
+				return UUID_EDEFAULT == null ? uuid != null : !UUID_EDEFAULT.equals(uuid);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -271,6 +325,8 @@ public class InternalActionImpl extends InternalNodeImpl implements InternalActi
 		result.append(condition);
 		result.append(", effect: ");
 		result.append(effect);
+		result.append(", uuid: ");
+		result.append(uuid);
 		result.append(')');
 		return result.toString();
 	}

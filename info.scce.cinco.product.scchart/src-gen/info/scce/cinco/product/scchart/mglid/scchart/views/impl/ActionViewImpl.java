@@ -177,6 +177,29 @@ public class ActionViewImpl extends EObjectImpl implements ActionView {
 	 * @generated
 	 */
 	@Override
+	public String getUuid() {
+		return getInternalAction().getUuid();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUuid(final String _arg) {
+		getInternalAction().getElement().transact("Set Uuid", () -> {
+			getInternalAction().setUuid(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.ACTION_VIEW__INTERNAL_ACTION:
@@ -252,6 +275,11 @@ public class ActionViewImpl extends EObjectImpl implements ActionView {
 				return getEffect();
 			case ViewsPackage.ACTION_VIEW___SET_EFFECT__STRING:
 				setEffect((String)arguments.get(0));
+				return null;
+			case ViewsPackage.ACTION_VIEW___GET_UUID:
+				return getUuid();
+			case ViewsPackage.ACTION_VIEW___SET_UUID__STRING:
+				setUuid((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

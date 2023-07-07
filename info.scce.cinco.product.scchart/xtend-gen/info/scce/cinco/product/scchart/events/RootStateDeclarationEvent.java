@@ -63,32 +63,64 @@ public final class RootStateDeclarationEvent extends info.scce.cinco.product.scc
       declaration.setHeight(13);
     };
     IterableExtensions.<RootStateDeclaration>forEach(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations(), _function);
-    final Procedure2<Suspend, Integer> _function_1 = (Suspend suspend, Integer index) -> {
-      suspend.setX(10);
-      int _size = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations().size();
-      int _multiply = (13 * _size);
-      int _plus = (30 + _multiply);
-      int _plus_1 = (_plus + (13 * (index).intValue()));
-      suspend.setY(_plus_1);
-      int _width = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getWidth();
-      int _minus = (_width - 20);
-      suspend.setWidth(_minus);
-      suspend.setHeight(13);
-    };
-    IterableExtensions.<Suspend>forEach(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends(), _function_1);
-    EList<Region> _regions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-    for (final Region region : _regions) {
-      if (((region.getY() < (IterableExtensions.<RootStateDeclaration>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations()).getY() + 13)) || (region.getY() < (IterableExtensions.<Suspend>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends()).getY() + 13)))) {
+    EList<Suspend> _suspends = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends();
+    boolean _tripleNotEquals = (_suspends != null);
+    if (_tripleNotEquals) {
+      final Procedure2<Suspend, Integer> _function_1 = (Suspend suspend, Integer index) -> {
+        suspend.setX(10);
+        int _size = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations().size();
+        int _multiply = (13 * _size);
+        int _plus = (30 + _multiply);
+        int _plus_1 = (_plus + (13 * (index).intValue()));
+        suspend.setY(_plus_1);
+        int _width = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getWidth();
+        int _minus = (_width - 20);
+        suspend.setWidth(_minus);
+        suspend.setHeight(13);
+      };
+      IterableExtensions.<Suspend>forEach(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends(), _function_1);
+      EList<Region> _regions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+      boolean _tripleNotEquals_1 = (_regions != null);
+      if (_tripleNotEquals_1) {
         EList<Region> _regions_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-        for (final Region region1 : _regions_1) {
-          int _y = region1.getY();
-          int _plus = (_y + 13);
-          region1.setY(_plus);
+        for (final Region region : _regions_1) {
+          if (((region.getY() < (IterableExtensions.<RootStateDeclaration>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations()).getY() + 13)) || (region.getY() < (IterableExtensions.<Suspend>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends()).getY() + 13)))) {
+            EList<Region> _regions_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+            for (final Region region1 : _regions_2) {
+              int _y = region1.getY();
+              int _plus = (_y + 13);
+              region1.setY(_plus);
+            }
+            RootState _head = IterableExtensions.<RootState>head(element.getRootElement().getRootStates());
+            int _height = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
+            int _plus_1 = (_height + 13);
+            _head.setHeight(_plus_1);
+          }
         }
-        RootState _head = IterableExtensions.<RootState>head(element.getRootElement().getRootStates());
-        int _height = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
-        int _plus_1 = (_height + 13);
-        _head.setHeight(_plus_1);
+      }
+    } else {
+      EList<Region> _regions_3 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+      boolean _tripleNotEquals_2 = (_regions_3 != null);
+      if (_tripleNotEquals_2) {
+        EList<Region> _regions_4 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+        for (final Region region_1 : _regions_4) {
+          int _y_1 = region_1.getY();
+          int _y_2 = IterableExtensions.<RootStateDeclaration>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations()).getY();
+          int _plus_2 = (_y_2 + 13);
+          boolean _lessThan = (_y_1 < _plus_2);
+          if (_lessThan) {
+            EList<Region> _regions_5 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+            for (final Region region1_1 : _regions_5) {
+              int _y_3 = region1_1.getY();
+              int _plus_3 = (_y_3 + 13);
+              region1_1.setY(_plus_3);
+            }
+            RootState _head_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates());
+            int _height_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
+            int _plus_4 = (_height_1 + 13);
+            _head_1.setHeight(_plus_4);
+          }
+        }
       }
     }
   }

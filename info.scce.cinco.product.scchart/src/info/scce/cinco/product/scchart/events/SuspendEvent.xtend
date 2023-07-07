@@ -4,10 +4,9 @@ package info.scce.cinco.product.scchart.events
 
 import graphmodel.Direction
 import graphmodel.ModelElementContainer
+import info.scce.cinco.product.scchart.mglid.scchart.SuperState
 import info.scce.cinco.product.scchart.mglid.scchart.Suspend
 import java.util.UUID
-import graphmodel.Container
-import info.scce.cinco.product.scchart.mglid.scchart.SuperState
 
 /* 
  * About this class:
@@ -88,7 +87,6 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 				}
 			}
 		}
-		// TODO: Auto-generated method stub
 	}
 	
 	def postCreateSuspend(SuperState superState, Suspend suspend){

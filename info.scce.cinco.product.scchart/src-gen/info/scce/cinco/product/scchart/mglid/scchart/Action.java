@@ -75,6 +75,22 @@ public interface Action extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	String getUuid();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setUuid(String _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	InternalAction getInternalAction();
 
 	/**
@@ -176,6 +192,30 @@ public interface Action extends Node {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @model required="true" rootStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	boolean canMoveTo(RootState rootState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model rootStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void moveTo(RootState rootState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model rootStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void s_moveTo(RootState rootState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @model required="true" superStateRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
@@ -220,14 +260,6 @@ public interface Action extends Node {
 	 * @generated
 	 */
 	void s_moveTo(InitilalSuperState initilalSuperState, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	SuperState getContainer();
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -3,6 +3,7 @@ package info.scce.cinco.product.scchart.events;
 import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
 import info.scce.cinco.product.scchart.mglid.scchart.Action;
+import java.util.UUID;
 
 /**
  * About this class:
@@ -48,6 +49,7 @@ public final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scc
   
   @Override
   public void postCreate(final Action element) {
+    element.setUuid(UUID.randomUUID().toString());
   }
   
   @Override

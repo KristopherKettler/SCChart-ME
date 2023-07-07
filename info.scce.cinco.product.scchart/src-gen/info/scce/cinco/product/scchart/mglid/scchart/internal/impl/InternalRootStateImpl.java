@@ -122,6 +122,7 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Region.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Suspend.class));
+		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Action.class));
 		return constraints;
 		
 	}

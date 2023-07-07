@@ -13,6 +13,7 @@ import graphmodel.impl.NodeImpl;
 
 import info.scce.cinco.product.scchart.mglid.scchart.Action;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
 import info.scce.cinco.product.scchart.mglid.scchart.ScchartPackage;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
@@ -119,6 +120,29 @@ public class ActionImpl extends NodeImpl implements Action {
 	public void setEffect(final String _arg) {
 		getInternalAction().getElement().transact("Set Effect", () -> {
 			getInternalAction().setEffect(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getUuid() {
+		return getInternalAction().getUuid();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUuid(final String _arg) {
+		getInternalAction().getElement().transact("Set Uuid", () -> {
+			getInternalAction().setUuid(_arg);
 		});
 		
 	}
@@ -287,6 +311,48 @@ public class ActionImpl extends NodeImpl implements Action {
 	 * @generated
 	 */
 	@Override
+	public boolean canMoveTo(final RootState rootState, final int x, final int y) {
+		return rootState.canContain(info.scce.cinco.product.scchart.mglid.scchart.Action.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void moveTo(final RootState rootState, final int x, final int y) {
+		transact("Move to", () -> {
+			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
+			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
+			int deltaX = x - ime.getX();
+			int deltaY = y - ime.getY();
+			preMove(rootState, x, y);
+			s_moveTo(rootState, x, y);
+			rootState.getInternalContainerElement().getModelElements().add(ime);
+			ime.setX(x);
+			ime.setY(y);
+			postMove(sourceContainer, rootState, x, y, deltaX, deltaY);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void s_moveTo(final RootState rootState, final int x, final int y) {
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean canMoveTo(final SuperState superState, final int x, final int y) {
 		return superState.canContain(info.scce.cinco.product.scchart.mglid.scchart.Action.class);
 	}
@@ -371,17 +437,6 @@ public class ActionImpl extends NodeImpl implements Action {
 	 * @generated
 	 */
 	@Override
-	public SuperState getContainer() {
-		return (info.scce.cinco.product.scchart.mglid.scchart.SuperState)getInternalElement().getContainer().getContainerElement();
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ActionView getActionView() {
 		ActionView actionView = info.scce.cinco.product.scchart.mglid.scchart.views.ViewsFactory.eINSTANCE.createActionView();
 		actionView.setInternalAction((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction)getInternalElement());
@@ -405,7 +460,6 @@ public class ActionImpl extends NodeImpl implements Action {
 		}
 		if (baseClass == ModelElement.class) {
 			switch (baseOperationID) {
-				case GraphmodelPackage.MODEL_ELEMENT___GET_CONTAINER: return ScchartPackage.ACTION___GET_CONTAINER;
 				case GraphmodelPackage.MODEL_ELEMENT___GET_ROOT_ELEMENT: return ScchartPackage.ACTION___GET_ROOT_ELEMENT;
 				case GraphmodelPackage.MODEL_ELEMENT___PRE_SAVE: return ScchartPackage.ACTION___PRE_SAVE;
 				case GraphmodelPackage.MODEL_ELEMENT___POST_SAVE: return ScchartPackage.ACTION___POST_SAVE;
@@ -451,6 +505,11 @@ public class ActionImpl extends NodeImpl implements Action {
 			case ScchartPackage.ACTION___SET_EFFECT__STRING:
 				setEffect((String)arguments.get(0));
 				return null;
+			case ScchartPackage.ACTION___GET_UUID:
+				return getUuid();
+			case ScchartPackage.ACTION___SET_UUID__STRING:
+				setUuid((String)arguments.get(0));
+				return null;
 			case ScchartPackage.ACTION___GET_INTERNAL_ACTION:
 				return getInternalAction();
 			case ScchartPackage.ACTION___IS_EXACTLY_ACTION:
@@ -485,6 +544,14 @@ public class ActionImpl extends NodeImpl implements Action {
 			case ScchartPackage.ACTION___POST_RESIZE__INT_INT_INT_INT_DIRECTION:
 				postResize((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Direction)arguments.get(4));
 				return null;
+			case ScchartPackage.ACTION___CAN_MOVE_TO__ROOTSTATE_INT_INT:
+				return canMoveTo((RootState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.ACTION___MOVE_TO__ROOTSTATE_INT_INT:
+				moveTo((RootState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.ACTION___SMOVE_TO__ROOTSTATE_INT_INT:
+				s_moveTo((RootState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
 			case ScchartPackage.ACTION___CAN_MOVE_TO__SUPERSTATE_INT_INT:
 				return canMoveTo((SuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 			case ScchartPackage.ACTION___MOVE_TO__SUPERSTATE_INT_INT:
@@ -501,8 +568,6 @@ public class ActionImpl extends NodeImpl implements Action {
 			case ScchartPackage.ACTION___SMOVE_TO__INITILALSUPERSTATE_INT_INT:
 				s_moveTo((InitilalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
-			case ScchartPackage.ACTION___GET_CONTAINER:
-				return getContainer();
 			case ScchartPackage.ACTION___GET_ACTION_VIEW:
 				return getActionView();
 		}

@@ -2666,13 +2666,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_ACTION__EFFECT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Uuid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ACTION__UUID = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Action</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ACTION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 3;
+	int INTERNAL_ACTION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -10968,6 +10977,17 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalAction_Effect();
 
 	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getUuid <em>Uuid</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Uuid</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction#getUuid()
+	 * @see #getInternalAction()
+	 * @generated
+	 */
+	EAttribute getInternalAction_Uuid();
+
+	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration <em>Super State Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13425,6 +13445,14 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute INTERNAL_ACTION__EFFECT = eINSTANCE.getInternalAction_Effect();
+
+		/**
+		 * The meta object literal for the '<em><b>Uuid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_ACTION__UUID = eINSTANCE.getInternalAction_Uuid();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateDeclarationImpl <em>Super State Declaration</em>}' class.

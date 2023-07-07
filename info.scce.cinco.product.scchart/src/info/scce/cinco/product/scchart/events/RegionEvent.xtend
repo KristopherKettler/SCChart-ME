@@ -2,14 +2,11 @@
 
 package info.scce.cinco.product.scchart.events
 
+import graphmodel.Container
 import graphmodel.Direction
 import graphmodel.ModelElementContainer
 import info.scce.cinco.product.scchart.mglid.scchart.Region
 import java.util.UUID
-import java.lang.Math
-import info.scce.cinco.product.scchart.mglid.scchart.SuperState
-import java.util.Arrays
-import graphmodel.Container
 
 /* 
  * About this class:
@@ -194,7 +191,7 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 					}
 				}
 			}
-		]// TODO: Auto-generated method stub
+		]
 	}
 	
 	def searchElement(Container superState,Region element){

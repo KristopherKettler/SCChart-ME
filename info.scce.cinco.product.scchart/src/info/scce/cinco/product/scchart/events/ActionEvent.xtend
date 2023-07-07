@@ -5,6 +5,7 @@ package info.scce.cinco.product.scchart.events
 import graphmodel.Direction
 import graphmodel.ModelElementContainer
 import info.scce.cinco.product.scchart.mglid.scchart.Action
+import java.util.UUID
 
 /* 
  * About this class:
@@ -49,6 +50,7 @@ final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 	}
 	
 	override postCreate(Action element) {
+		element.uuid=UUID.randomUUID.toString
 		// TODO: Auto-generated method stub
 	}
 	

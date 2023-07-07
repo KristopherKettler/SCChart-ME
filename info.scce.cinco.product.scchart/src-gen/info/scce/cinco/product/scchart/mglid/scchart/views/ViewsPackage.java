@@ -686,13 +686,31 @@ public interface ViewsPackage extends EPackage {
 	int ACTION_VIEW___SET_EFFECT__STRING = 5;
 
 	/**
+	 * The operation id for the '<em>Get Uuid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___GET_UUID = 6;
+
+	/**
+	 * The operation id for the '<em>Set Uuid</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_VIEW___SET_UUID__STRING = 7;
+
+	/**
 	 * The number of operations of the '<em>Action View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACTION_VIEW_OPERATION_COUNT = 6;
+	int ACTION_VIEW_OPERATION_COUNT = 8;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateDeclarationViewImpl <em>Super State Declaration View</em>}' class.
@@ -3946,6 +3964,26 @@ public interface ViewsPackage extends EPackage {
 	EOperation getActionView__SetEffect__String();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getUuid() <em>Get Uuid</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Uuid</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#getUuid()
+	 * @generated
+	 */
+	EOperation getActionView__GetUuid();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setUuid(java.lang.String) <em>Set Uuid</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Uuid</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ActionView#setUuid(java.lang.String)
+	 * @generated
+	 */
+	EOperation getActionView__SetUuid__String();
+
+	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView <em>Super State Declaration View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6245,6 +6283,22 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation ACTION_VIEW___SET_EFFECT__STRING = eINSTANCE.getActionView__SetEffect__String();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Uuid</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___GET_UUID = eINSTANCE.getActionView__GetUuid();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Uuid</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ACTION_VIEW___SET_UUID__STRING = eINSTANCE.getActionView__SetUuid__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateDeclarationViewImpl <em>Super State Declaration View</em>}' class.
