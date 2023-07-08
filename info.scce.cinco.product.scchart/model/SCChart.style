@@ -80,7 +80,6 @@ appearance textFont{
 }
 
 appearance connectionAppearance {
-	
 }
 
 nodeStyle rootStateStyle (1) {
@@ -150,66 +149,13 @@ nodeStyle declarationStyle(2){
 	}
 }
 
-nodeStyle subSuperStateDeclarationStyle(2){
-	rectangle {
-		appearance declarationAppearance
-		size(140,80)
-		text {
-			appearance declarationText
-			position ( LEFT 5, MIDDLE )
-			value "%1$s %2$s"
-		}
-		text {
-			appearance textHighlight
-			position ( LEFT 5, MIDDLE )
-			value "%1$s"
-		}
-	}
-}
-
-nodeStyle suspendStyle(2) {
-	rectangle {
-		appearance declarationAppearance
-		size(140,80)
-		text {
-			appearance declarationText
-			position ( LEFT 5, MIDDLE )
-			value "%1$s %2$s"
-		}
-		text {
-			appearance textHighlight
-			position ( LEFT 5, MIDDLE )
-			value "%1$s"
-		}
-	}
-}
-nodeStyle startNodeStyle(1){
+nodeStyle initialStateStyle(1){
 	ellipse{
 		appearance startNodeLine
 		size(60,60)
 		text {
 			position ( CENTER, MIDDLE )
 			value "%s"
-		}
-	}
-}
-
-nodeStyle startEndNodeStyle(1){
-	ellipse{
-		appearance startNodeLine
-		size(60,60)
-		text {
-			position ( CENTER, MIDDLE )
-			value "%s"
-		}
-		ellipse{
-			appearance default
-			position ( CENTER, MIDDLE )
-			size(50,50)
-			text {
-				position ( CENTER, MIDDLE )
-				value "%s"
-			}
 		}
 	}
 }
@@ -230,7 +176,7 @@ nodeStyle finalStateStyle(1){
 		appearance nodeLine
 		size(60,60)
 		ellipse{
-			appearance default
+			appearance nodeLine
 			position ( CENTER, MIDDLE )
 			size(50,50)
 					text {

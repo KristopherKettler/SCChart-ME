@@ -153,7 +153,7 @@ public interface ImmediateTransition extends AbstractTransition {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(SuperState source);
+	boolean canReconnectSource(RootState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -161,7 +161,7 @@ public interface ImmediateTransition extends AbstractTransition {
 	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectSource(SuperState source);
+	void reconnectSource(RootState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -185,7 +185,7 @@ public interface ImmediateTransition extends AbstractTransition {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(SimpleState source);
+	boolean canReconnectSource(SuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -193,39 +193,7 @@ public interface ImmediateTransition extends AbstractTransition {
 	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectSource(SimpleState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectSource(RootState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(RootState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectSource(InitilalSuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(InitilalSuperState source);
+	void reconnectSource(SuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,6 +217,38 @@ public interface ImmediateTransition extends AbstractTransition {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
+	boolean canReconnectSource(SimpleState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(SimpleState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectSource(InitilalSuperState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(InitilalSuperState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
 	boolean canReconnectSource(FinalState source);
 
 	/**
@@ -258,6 +258,22 @@ public interface ImmediateTransition extends AbstractTransition {
 	 * @generated
 	 */
 	void reconnectSource(FinalState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(Connector target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -281,7 +297,7 @@ public interface ImmediateTransition extends AbstractTransition {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(Connector target);
+	boolean canReconnectTarget(InitialState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -289,7 +305,7 @@ public interface ImmediateTransition extends AbstractTransition {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(Connector target);
+	void reconnectTarget(InitialState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -322,22 +338,6 @@ public interface ImmediateTransition extends AbstractTransition {
 	 * @generated
 	 */
 	void reconnectTarget(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectTarget(InitialState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	void reconnectTarget(InitialState target);
 
 	/**
 	 * <!-- begin-user-doc -->

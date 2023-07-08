@@ -68,7 +68,7 @@ node RootStateDeclaration {
 @disable(move,resize)
 @event("info.scce.cinco.product.scchart.events.SuspendEvent")
 node Suspend {
-	style suspendStyle("${(suspendType)}", "${(suspendType == '<set suspend>' ? ' ' : empty condition ? ' ' : condition)}")
+	style declarationStyle("${(suspendType)}", "${(suspendType == '<set suspend>' ? ' ' : empty condition ? ' ' : condition)}")
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuspendTypeProvider")
 	attr EString as suspendType := '<set suspend>'
 	attr EString as condition
@@ -93,7 +93,7 @@ node Action {
 @disable(move,resize)
 @event("info.scce.cinco.product.scchart.events.SuperStateDeclarationEvent")
 node SuperStateDeclaration {
-	style subSuperStateDeclarationStyle("${declarationType}","${name}")
+	style declarationStyle("${declarationType}","${name}")
 	attr EString as ConstSig
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
 	attr EString as declarationType
@@ -110,7 +110,7 @@ node SimpleState {
 
 @palette("States")
 node InitialState extends SimpleState {
-	style startNodeStyle("${label}")
+	style initialStateStyle("${label}")
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition)
 	outgoingEdges (Transition,ImmediateTransition)
 }							
