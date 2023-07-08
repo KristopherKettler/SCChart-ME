@@ -97,7 +97,7 @@ final class SuperStateEvent extends info.scce.cinco.product.scchart.mglid.scchar
 					}
 				}
 				if(oldY!=element.y){
-					if(region.y<35+element.getRootElement.getRootStates.head.getRootStateDeclarations.size*13+element.getRootElement.getRootStates.head.getSuspends.size*13){
+					if(region.y<35+element.rootElement.rootStates.head.rootStateDeclarations.size*13+element.rootElement.rootStates.head.getSuspends.size*13){
 						region.height = region.height+(oldY-element.y)
 					}
 					else{

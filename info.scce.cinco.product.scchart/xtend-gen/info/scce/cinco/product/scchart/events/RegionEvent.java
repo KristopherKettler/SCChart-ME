@@ -1,14 +1,15 @@
 package info.scce.cinco.product.scchart.events;
 
 import com.google.common.base.Objects;
-import graphmodel.Container;
 import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
+import info.scce.cinco.product.scchart.mglid.scchart.Action;
 import info.scce.cinco.product.scchart.mglid.scchart.Region;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
+import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
 import java.util.UUID;
-import java.util.function.Consumer;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
 
@@ -57,12 +58,14 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
   @Override
   public void postCreate(final Region element) {
     element.setUuid(UUID.randomUUID().toString());
-    final Consumer<Region> _function = (Region it) -> {
-      this.searchElement(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()), it);
+    boolean regionFound = false;
+    EList<Region> _regions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+    for (final Region it : _regions) {
       String _uuid = it.getUuid();
       String _uuid_1 = element.getUuid();
       boolean _equals = Objects.equal(_uuid, _uuid_1);
       if (_equals) {
+        regionFound = true;
         int _size = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions().size();
         boolean _equals_1 = (_size == 1);
         if (_equals_1) {
@@ -88,8 +91,8 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
           it.setHeight(_plus_2);
         } else {
           boolean break_ = true;
-          EList<Region> _regions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-          for (final Region region1 : _regions) {
+          EList<Region> _regions_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+          for (final Region region1 : _regions_1) {
             if (((((((((it.getX() - region1.getX()) - region1.getWidth()) <= 13) && (((it.getX() - region1.getX()) - region1.getWidth()) > (-1))) && break_) && (region1.getY() < it.getY())) && ((region1.getY() + region1.getHeight()) > it.getY())) && (!Objects.equal(it.getUuid(), region1.getUuid())))) {
               int _width_1 = region1.getWidth();
               int _minus_3 = (_width_1 - 10);
@@ -152,7 +155,87 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
                     region1.setY(_plus_10);
                     break_ = false;
                   } else {
-                    if ((((((((region1.getY() - it.getY()) <= 13) && ((region1.getY() - it.getY()) > (-1))) && break_) && (region1.getX() < it.getX())) && ((region1.getX() + region1.getWidth()) > it.getX())) && (!Objects.equal(it.getUuid(), region1.getUuid())))) {
+                    if (((((((it.getY() - region1.getY()) - region1.getHeight()) <= 13) && (((it.getY() - region1.getY()) - region1.getHeight()) > (-1))) && break_) && (!Objects.equal(it.getUuid(), region1.getUuid())))) {
+                      EList<Region> _regions_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+                      for (final Region region2 : _regions_2) {
+                        int _y_2 = region2.getY();
+                        int _y_3 = it.getY();
+                        int _minus_7 = (_y_3 - 3);
+                        boolean _greaterThan = (_y_2 > _minus_7);
+                        if (_greaterThan) {
+                          int _y_4 = region2.getY();
+                          int _plus_11 = (_y_4 + 160);
+                          region2.setY(_plus_11);
+                        }
+                      }
+                      RootState _head = IterableExtensions.<RootState>head(element.getRootElement().getRootStates());
+                      int _height_5 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
+                      int _plus_12 = (_height_5 + 160);
+                      _head.setHeight(_plus_12);
+                      int _y_5 = region1.getY();
+                      int _height_6 = region1.getHeight();
+                      int _plus_13 = (_y_5 + _height_6);
+                      int _plus_14 = (_plus_13 + 10);
+                      it.setY(_plus_14);
+                      it.setX(10);
+                      it.setHeight(150);
+                      int _width_5 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getWidth();
+                      int _minus_8 = (_width_5 - 20);
+                      it.setWidth(_minus_8);
+                      break_ = false;
+                    } else {
+                      if (break_) {
+                        int declarationCount = 0;
+                        EList<RootStateDeclaration> _rootStateDeclarations = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations();
+                        boolean _tripleNotEquals = (_rootStateDeclarations != null);
+                        if (_tripleNotEquals) {
+                          int _declarationCount = declarationCount;
+                          int _size_5 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations().size();
+                          declarationCount = (_declarationCount + _size_5);
+                        }
+                        EList<Suspend> _suspends = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends();
+                        boolean _tripleNotEquals_1 = (_suspends != null);
+                        if (_tripleNotEquals_1) {
+                          int _declarationCount_1 = declarationCount;
+                          int _size_6 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends().size();
+                          declarationCount = (_declarationCount_1 + _size_6);
+                        }
+                        EList<Action> _actions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getActions();
+                        boolean _tripleNotEquals_2 = (_actions != null);
+                        if (_tripleNotEquals_2) {
+                          int _declarationCount_2 = declarationCount;
+                          int _size_7 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getActions().size();
+                          declarationCount = (_declarationCount_2 + _size_7);
+                        }
+                        int _y_6 = it.getY();
+                        boolean _lessThan = (_y_6 < (33 + (13 * declarationCount)));
+                        if (_lessThan) {
+                          EList<Region> _regions_3 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+                          for (final Region region2_1 : _regions_3) {
+                            String _uuid_2 = region2_1.getUuid();
+                            String _uuid_3 = it.getUuid();
+                            boolean _notEquals = (!Objects.equal(_uuid_2, _uuid_3));
+                            if (_notEquals) {
+                              int _y_7 = region2_1.getY();
+                              int _plus_15 = (_y_7 + 160);
+                              region2_1.setY(_plus_15);
+                            }
+                          }
+                          RootState _head_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates());
+                          int _height_7 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
+                          int _plus_16 = (_height_7 + 160);
+                          _head_1.setHeight(_plus_16);
+                          it.setY((33 + (13 * declarationCount)));
+                          it.setX(10);
+                          it.setHeight(150);
+                          int _width_6 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getWidth();
+                          int _minus_9 = (_width_6 - 20);
+                          it.setWidth(_minus_9);
+                        }
+                        break_ = false;
+                      } else {
+                        it.delete();
+                      }
                     }
                   }
                 }
@@ -162,26 +245,27 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
         }
       } else {
         EList<SuperState> _superStates = it.getSuperStates();
-        boolean _notEquals = (!Objects.equal(_superStates, null));
-        if (_notEquals) {
+        boolean _tripleNotEquals_3 = (_superStates != null);
+        if (_tripleNotEquals_3) {
           EList<SuperState> _superStates_1 = it.getSuperStates();
           for (final SuperState superState : _superStates_1) {
-            EList<Region> _regions_1 = superState.getRegions();
-            boolean _notEquals_1 = (!Objects.equal(_regions_1, null));
-            if (_notEquals_1) {
-              EList<Region> _regions_2 = superState.getRegions();
-              for (final Region region : _regions_2) {
-                this.searchElement(superState, region);
+            EList<Region> _regions_4 = superState.getRegions();
+            boolean _tripleNotEquals_4 = (_regions_4 != null);
+            if (_tripleNotEquals_4) {
+              EList<Region> _regions_5 = superState.getRegions();
+              for (final Region region : _regions_5) {
+                this.postCreateInSuperState(superState, element);
               }
             }
           }
         }
       }
-    };
-    IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions().forEach(_function);
+    }
+    if ((!regionFound)) {
+    }
   }
   
-  public Object searchElement(final Container superState, final Region element) {
+  public Object postCreateInSuperState(final SuperState superState, final Region element) {
     return null;
   }
   
