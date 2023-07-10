@@ -165,14 +165,6 @@ public interface InitialState extends SimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<AbstractTransition> getOutgoingAbstractTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
 	EList<Transition> getOutgoingTransitions();
 
 	/**
@@ -189,31 +181,7 @@ public interface InitialState extends SimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<StrongAbortTransition> getIncomingStrongAbortTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<AbstractTransition> getIncomingAbstractTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<Transition> getIncomingTransitions();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<ConditionalTerminationTransition> getIncomingConditionalTerminationTransitions();
+	EList<AbstractTransition> getOutgoingAbstractTransitions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -229,6 +197,22 @@ public interface InitialState extends SimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	EList<ImmediateStrongAbortTransition> getIncomingImmediateStrongAbortTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<Transition> getIncomingTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	EList<ImmediateTransition> getIncomingImmediateTransitions();
 
 	/**
@@ -237,7 +221,23 @@ public interface InitialState extends SimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<ImmediateStrongAbortTransition> getIncomingImmediateStrongAbortTransitions();
+	EList<AbstractTransition> getIncomingAbstractTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<ConditionalTerminationTransition> getIncomingConditionalTerminationTransitions();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<StrongAbortTransition> getIncomingStrongAbortTransitions();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -349,6 +349,30 @@ public interface InitialState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
+	boolean canNewTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	Transition newTransition(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	Transition newTransition(FinalState target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
 	boolean canNewTransition(InitialState target);
 
 	/**
@@ -421,7 +445,7 @@ public interface InitialState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewTransition(FinalState target);
+	boolean canNewTransition(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -429,7 +453,7 @@ public interface InitialState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	Transition newTransition(FinalState target);
+	Transition newTransition(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -437,7 +461,7 @@ public interface InitialState extends SimpleState {
 	 * @model targetRequired="true" idRequired="true"
 	 * @generated
 	 */
-	Transition newTransition(FinalState target, String id);
+	Transition newTransition(Connector target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -469,7 +493,7 @@ public interface InitialState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewTransition(Connector target);
+	boolean canNewImmediateTransition(FinalState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -477,7 +501,7 @@ public interface InitialState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	Transition newTransition(Connector target);
+	ImmediateTransition newImmediateTransition(FinalState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -485,7 +509,7 @@ public interface InitialState extends SimpleState {
 	 * @model targetRequired="true" idRequired="true"
 	 * @generated
 	 */
-	Transition newTransition(Connector target, String id);
+	ImmediateTransition newImmediateTransition(FinalState target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -565,7 +589,7 @@ public interface InitialState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewImmediateTransition(FinalState target);
+	boolean canNewImmediateTransition(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -573,7 +597,7 @@ public interface InitialState extends SimpleState {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	ImmediateTransition newImmediateTransition(FinalState target);
+	ImmediateTransition newImmediateTransition(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -581,7 +605,7 @@ public interface InitialState extends SimpleState {
 	 * @model targetRequired="true" idRequired="true"
 	 * @generated
 	 */
-	ImmediateTransition newImmediateTransition(FinalState target, String id);
+	ImmediateTransition newImmediateTransition(Connector target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -606,30 +630,6 @@ public interface InitialState extends SimpleState {
 	 * @generated
 	 */
 	ImmediateTransition newImmediateTransition(SuperState target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	boolean canNewImmediateTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	ImmediateTransition newImmediateTransition(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	ImmediateTransition newImmediateTransition(Connector target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -150,6 +150,54 @@ public interface Region extends Container {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	EList<FinalState> getFinalStates();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewFinalState();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	FinalState newFinalState(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	FinalState newFinalState(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	FinalState newFinalState(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	FinalState newFinalState(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	EList<InitialState> getInitialStates();
 
 	/**
@@ -294,7 +342,7 @@ public interface Region extends Container {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<FinalState> getFinalStates();
+	EList<Connector> getConnectors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -302,7 +350,7 @@ public interface Region extends Container {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewFinalState();
+	boolean canNewConnector();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -310,7 +358,7 @@ public interface Region extends Container {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	FinalState newFinalState(int x, int y);
+	Connector newConnector(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -318,7 +366,7 @@ public interface Region extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	FinalState newFinalState(String id, int x, int y);
+	Connector newConnector(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -326,7 +374,7 @@ public interface Region extends Container {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	FinalState newFinalState(int x, int y, int width, int height);
+	Connector newConnector(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -334,7 +382,7 @@ public interface Region extends Container {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	FinalState newFinalState(String id, int x, int y, int width, int height);
+	Connector newConnector(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -383,54 +431,6 @@ public interface Region extends Container {
 	 * @generated
 	 */
 	SuperState newSuperState(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<Connector> getConnectors();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewConnector();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	Connector newConnector(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	Connector newConnector(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	Connector newConnector(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	Connector newConnector(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->

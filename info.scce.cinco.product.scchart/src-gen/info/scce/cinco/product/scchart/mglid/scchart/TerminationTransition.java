@@ -121,6 +121,22 @@ public interface TerminationTransition extends AbstractTransition {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
+	boolean canReconnectSource(RootState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(RootState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
 	boolean canReconnectSource(InitilalSuperState source);
 
 	/**
@@ -150,18 +166,18 @@ public interface TerminationTransition extends AbstractTransition {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
+	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(RootState source);
+	boolean canReconnectTarget(FinalState target);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
+	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectSource(RootState source);
+	void reconnectTarget(FinalState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,7 +233,7 @@ public interface TerminationTransition extends AbstractTransition {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(FinalState target);
+	boolean canReconnectTarget(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -225,7 +241,7 @@ public interface TerminationTransition extends AbstractTransition {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(FinalState target);
+	void reconnectTarget(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -242,22 +258,6 @@ public interface TerminationTransition extends AbstractTransition {
 	 * @generated
 	 */
 	void reconnectTarget(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectTarget(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	void reconnectTarget(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->

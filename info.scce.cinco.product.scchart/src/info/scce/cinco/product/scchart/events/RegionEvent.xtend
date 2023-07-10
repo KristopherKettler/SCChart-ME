@@ -58,6 +58,8 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 			//check if container contains region
 			if(it.uuid==element.uuid){
 				regionFound=true
+				//manual break
+				var break = true
 				//if the region is the only one in the container
 				if(element.rootElement.rootStates.head.regions.size==1){
 					it.x=10
@@ -66,10 +68,8 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 					it.height=element.rootElement.rootStates.head.height-43-element.rootElement.rootStates.head.rootStateDeclarations.size*13+element.rootElement.rootStates.head.suspends.size*13
 				}
 				else {
-					//manual break
-					var break = true
 					for(region1 : element.rootElement.rootStates.head.regions){
-						if((it.x-region1.x-region1.width<=13&&it.x-region1.x-region1.width>-1)&&break&&region1.y<it.y&&region1.y+region1.height>it.y &&it.uuid!=region1.uuid){
+						if((it.x-region1.x-region1.width<=13&&it.x-region1.x-region1.width>-3)&&break&&region1.y<it.y&&region1.y+region1.height>it.y &&it.uuid!=region1.uuid){
 							region1.width = (region1.width - 10)/2
 							it.width = region1.width
 							it.height = region1.height
@@ -77,7 +77,7 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 							it.y = region1.y
 							break = false
 						}
-						else if((region1.x-it.x<=13&&region1.x-it.x>-1)&&break&&region1.y<it.y&&region1.y+region1.height>it.y &&it.uuid!=region1.uuid){
+						else if((region1.x-it.x<=13&&region1.x-it.x>-3)&&break&&region1.y<it.y&&region1.y+region1.height>it.y &&it.uuid!=region1.uuid){
 							region1.width = (region1.width - 10)/2
 							it.width = region1.width
 							it.height = region1.height
@@ -103,54 +103,58 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 							region1.y = region1.y +region1.height+10
 							break = false
 						}
-						else if((it.y-region1.y-region1.height<=13&&it.y-region1.y-region1.height>-1)&&break&&it.uuid!=region1.uuid){
-							for(region2: element.rootElement.rootStates.head.regions){
-								if(region2.y>it.y-3){
-									region2.y = region2.y+160
-								}
-							}
-							element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height+160
-							it.y = region1.y + region1.height+10
-							it.x = 10
-							it.height = 150
-							it.width = element.rootElement.rootStates.head.width-20
-							break = false
-						}
-						else if(break){
-							var int declarationCount = 0
-							if(element.rootElement.rootStates.head.rootStateDeclarations!==null){
-								declarationCount += element.rootElement.rootStates.head.rootStateDeclarations.size
-							}
-							if(element.rootElement.rootStates.head.suspends!==null){
-								declarationCount += element.rootElement.rootStates.head.suspends.size
-							}
-							if(element.rootElement.rootStates.head.actions!==null){
-								declarationCount += element.rootElement.rootStates.head.actions.size
-							}
-							if(it.y<33+13*declarationCount){
+//						else if(break){
+//							it.delete
+//							break = false
+//						}
+					}
+					if(break){
+						for(region1:element.rootElement.rootStates.head.regions){
+							if((it.y-region1.y-region1.height<=13&&it.y-region1.y-region1.height>-1)&&break&&it.uuid!=region1.uuid){
 								for(region2: element.rootElement.rootStates.head.regions){
-									if(region2.uuid!=it.uuid){
+									if(region2.y>it.y-3){
 										region2.y = region2.y+160
 									}
 								}
 								element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height+160
-								it.y = 33+13*declarationCount
+								it.y = region1.y + region1.height+10
 								it.x = 10
 								it.height = 150
 								it.width = element.rootElement.rootStates.head.width-20
+								break = false
 							}
-							break = false
-						}
-						else {
-							it.delete
-						}
+							else if(break){
+								var int declarationCount = 0
+								if(element.rootElement.rootStates.head.rootStateDeclarations!==null){
+									declarationCount += element.rootElement.rootStates.head.rootStateDeclarations.size
+								}
+								if(element.rootElement.rootStates.head.suspends!==null){
+									declarationCount += element.rootElement.rootStates.head.suspends.size
+								}
+								if(element.rootElement.rootStates.head.actions!==null){
+									declarationCount += element.rootElement.rootStates.head.actions.size
+								}
+								if(it.y<33+13*declarationCount){
+									for(region2: element.rootElement.rootStates.head.regions){
+										if(region2.uuid!=it.uuid){
+											region2.y = region2.y+160
+										}
+									}
+									element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height+160
+									it.y = 33+13*declarationCount
+									it.x = 10
+									it.height = 150
+									it.width = element.rootElement.rootStates.head.width-20
+									break = false
+								}
+							}
 					}
 //				element.width = element.rootElement.rootStates.head.width-20
 //				element.height = 100
 //				element.moveTo(element.rootElement.rootStates.head,10,element.rootElement.rootStates.head.height)
 //				element.rootElement.rootStates.head.width = element.rootElement.rootStates.head.width
 //				element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height+110
-				
+				}
 				}
 				
 			}

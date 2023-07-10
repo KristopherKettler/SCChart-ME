@@ -20,8 +20,9 @@ appearance textHighlight{
 	background (166, 0, 99)
 }
 
-appearance nodeLine {
+appearance finalStateOuterCircle {
 	lineWidth 2
+	foreground (119,136,153) //LightSlateGrey 
 }
 
 appearance superStateAppearance {
@@ -39,7 +40,7 @@ appearance regionAppearance {
 	foreground (119,136,153) //LightSlateGrey 
 }
 
-appearance startNodeLine {
+appearance initialStateAppearance {
 	background (198,226,255) //LightSlateGrey 
 	lineWidth 4
 }
@@ -80,6 +81,7 @@ appearance textFont{
 }
 
 appearance connectionAppearance {
+	
 }
 
 nodeStyle rootStateStyle (1) {
@@ -151,7 +153,7 @@ nodeStyle declarationStyle(2){
 
 nodeStyle initialStateStyle(1){
 	ellipse{
-		appearance startNodeLine
+		appearance initialStateAppearance
 		size(60,60)
 		text {
 			position ( CENTER, MIDDLE )
@@ -173,7 +175,7 @@ nodeStyle simpleStateStyle (1){
 
 nodeStyle finalStateStyle(1){
 	ellipse{
-		appearance default
+		appearance finalStateOuterCircle
 		size(60,60)
 		ellipse{
 			appearance default
