@@ -2088,13 +2088,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_ROOT_STATE_DECLARATION__DECLARATION_TYPE = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Const</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ROOT_STATE_DECLARATION__CONST = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 1;
+
+	/**
 	 * The feature id for the '<em><b>Input Output</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__INPUT_OUTPUT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 1;
+	int INTERNAL_ROOT_STATE_DECLARATION__INPUT_OUTPUT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2103,7 +2112,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__NAME = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 2;
+	int INTERNAL_ROOT_STATE_DECLARATION__NAME = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Signal</b></em>' attribute.
@@ -2112,7 +2121,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__SIGNAL = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 3;
+	int INTERNAL_ROOT_STATE_DECLARATION__SIGNAL = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of structural features of the '<em>Root State Declaration</em>' class.
@@ -2121,7 +2130,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 4;
+	int INTERNAL_ROOT_STATE_DECLARATION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 5;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -2946,13 +2955,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_SUPER_STATE_DECLARATION__DECLARATION_TYPE = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Const</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUPER_STATE_DECLARATION__CONST = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 1;
+
+	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__NAME = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 1;
+	int INTERNAL_SUPER_STATE_DECLARATION__NAME = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Const Sig</b></em>' attribute.
@@ -2961,7 +2979,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__CONST_SIG = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 2;
+	int INTERNAL_SUPER_STATE_DECLARATION__CONST_SIG = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Signal</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUPER_STATE_DECLARATION__SIGNAL = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of structural features of the '<em>Super State Declaration</em>' class.
@@ -2970,7 +2997,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE_DECLARATION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 3;
+	int INTERNAL_SUPER_STATE_DECLARATION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 5;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -10878,6 +10905,17 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalRootStateDeclaration_DeclarationType();
 
 	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#isConst <em>Const</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Const</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#isConst()
+	 * @see #getInternalRootStateDeclaration()
+	 * @generated
+	 */
+	EAttribute getInternalRootStateDeclaration_Const();
+
+	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#getInputOutput <em>Input Output</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11029,6 +11067,17 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalSuperStateDeclaration_DeclarationType();
 
 	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#isConst <em>Const</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Const</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#isConst()
+	 * @see #getInternalSuperStateDeclaration()
+	 * @generated
+	 */
+	EAttribute getInternalSuperStateDeclaration_Const();
+
+	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11049,6 +11098,17 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getInternalSuperStateDeclaration_ConstSig();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#isSignal <em>Signal</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Signal</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#isSignal()
+	 * @see #getInternalSuperStateDeclaration()
+	 * @generated
+	 */
+	EAttribute getInternalSuperStateDeclaration_Signal();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSimpleState <em>Simple State</em>}'.
@@ -13383,6 +13443,14 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_ROOT_STATE_DECLARATION__DECLARATION_TYPE = eINSTANCE.getInternalRootStateDeclaration_DeclarationType();
 
 		/**
+		 * The meta object literal for the '<em><b>Const</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_ROOT_STATE_DECLARATION__CONST = eINSTANCE.getInternalRootStateDeclaration_Const();
+
+		/**
 		 * The meta object literal for the '<em><b>Input Output</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -13501,6 +13569,14 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_SUPER_STATE_DECLARATION__DECLARATION_TYPE = eINSTANCE.getInternalSuperStateDeclaration_DeclarationType();
 
 		/**
+		 * The meta object literal for the '<em><b>Const</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_SUPER_STATE_DECLARATION__CONST = eINSTANCE.getInternalSuperStateDeclaration_Const();
+
+		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -13515,6 +13591,14 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute INTERNAL_SUPER_STATE_DECLARATION__CONST_SIG = eINSTANCE.getInternalSuperStateDeclaration_ConstSig();
+
+		/**
+		 * The meta object literal for the '<em><b>Signal</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_SUPER_STATE_DECLARATION__SIGNAL = eINSTANCE.getInternalSuperStateDeclaration_Signal();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSimpleStateImpl <em>Simple State</em>}' class.

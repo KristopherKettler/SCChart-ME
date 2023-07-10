@@ -43,6 +43,22 @@ public interface SuperStateDeclaration extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	boolean isConst();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setConst(boolean _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	String getName();
 
 	/**
@@ -68,6 +84,22 @@ public interface SuperStateDeclaration extends Node {
 	 * @generated
 	 */
 	void setConstSig(String _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	boolean isSignal();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setSignal(boolean _arg);
 
 	/**
 	 * <!-- begin-user-doc -->

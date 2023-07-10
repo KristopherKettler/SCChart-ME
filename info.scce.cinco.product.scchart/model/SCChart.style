@@ -250,7 +250,7 @@ edgeStyle immediateTransitionStyle(1) {
 	decorator {
 		location (1.0) // at the end of the edge
 		ARROW
-		appearance default 
+		appearance transitionAppearance 
 	}
 	decorator {
 		location (0.5)
@@ -266,7 +266,7 @@ edgeStyle terminationTransitionStyle(1) {
 	decorator {
 		location (1.0) // at the end of the edge
 		ARROW
-		appearance default 
+		appearance transitionAppearance 
 	}
 	decorator {
 		location (0)
@@ -289,7 +289,7 @@ edgeStyle conditionalTerminationTransitionStyle(1) {
 	decorator {
 		location (1.0) // at the end of the edge
 		ARROW
-		appearance default 
+		appearance transitionAppearance 
 	}
 	decorator {
 		location (0)
@@ -312,7 +312,7 @@ edgeStyle strongAbortTransitionStyle(1) {
 	decorator {
 		location (1.0) // at the end of the edge
 		ARROW
-		appearance default 
+		appearance transitionAppearance 
 	}
 	decorator {
 		location (0)
@@ -333,7 +333,7 @@ edgeStyle immediateStrongAbortTransitionStyle(1) {
 	decorator {
 		location (1.0) // at the end of the edge
 		ARROW
-		appearance default 
+		appearance transitionAppearance 
 	}
 	decorator {
 		location (0)

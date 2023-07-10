@@ -14,8 +14,10 @@ import graphmodel.internal.InternalNode;
  * </p>
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#getDeclarationType <em>Declaration Type</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#isConst <em>Const</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#getName <em>Name</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#getConstSig <em>Const Sig</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#isSignal <em>Signal</em>}</li>
  * </ul>
  *
  * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuperStateDeclaration()
@@ -44,6 +46,28 @@ public interface InternalSuperStateDeclaration extends InternalNode {
 	 * @generated
 	 */
 	void setDeclarationType(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Const</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Const</em>' attribute.
+	 * @see #setConst(boolean)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuperStateDeclaration_Const()
+	 * @model
+	 * @generated
+	 */
+	boolean isConst();
+
+	/**
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#isConst <em>Const</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Const</em>' attribute.
+	 * @see #isConst()
+	 * @generated
+	 */
+	void setConst(boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
@@ -88,5 +112,27 @@ public interface InternalSuperStateDeclaration extends InternalNode {
 	 * @generated
 	 */
 	void setConstSig(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Signal</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Signal</em>' attribute.
+	 * @see #setSignal(boolean)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuperStateDeclaration_Signal()
+	 * @model
+	 * @generated
+	 */
+	boolean isSignal();
+
+	/**
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#isSignal <em>Signal</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Signal</em>' attribute.
+	 * @see #isSignal()
+	 * @generated
+	 */
+	void setSignal(boolean value);
 
 } // InternalSuperStateDeclaration

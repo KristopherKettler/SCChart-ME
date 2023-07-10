@@ -57,12 +57,13 @@ container InitilalSuperState extends SuperState{
 @event("info.scce.cinco.product.scchart.events.RootStateDeclarationEvent")
 node RootStateDeclaration {
 	style declarationStyle("${(empty inputOutput || inputOutput == ' ' ? '' : (inputOutput.concat(' '))).concat(empty signal || !signal ? '' : 'signal ').concat(empty declarationType || declarationType == ' ' ? '' : declarationType)}", "${(empty name || name == ' ' ? '' : name)}")
-	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationInputOutputProvider")
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationInputOutputProvider")
 	attr EString as inputOutput := ' '
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationTypeProvider")
 	attr EString as declarationType := ' '
 	attr EString as name
 	attr EBoolean as signal
+	attr EBoolean as const
 }
 
 @palette("Declaration")
@@ -99,8 +100,11 @@ node SuperStateDeclaration {
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
 	attr EString as declarationType
 	attr EString as name
+	attr EBoolean as signal
+	attr EBoolean as const
 }
 
+@disable(resize)
 @palette("States")
 node SimpleState {
 	style simpleStateStyle("${label}")
@@ -109,6 +113,7 @@ node SimpleState {
 	attr EString as label := "<insert name>"
 }	
 
+@disable(resize)
 @palette("States")
 node InitialState extends SimpleState {
 	style initialStateStyle("${label}")
@@ -116,6 +121,7 @@ node InitialState extends SimpleState {
 	outgoingEdges (Transition,ImmediateTransition)
 }							
 
+@disable(resize)
 @palette("States")
 node FinalState extends SimpleState {
 	style finalStateStyle("${label}")
@@ -123,6 +129,7 @@ node FinalState extends SimpleState {
 	outgoingEdges (Transition,ImmediateTransition)
 }
 
+@disable(resize)
 @palette("States")
 node Connector {
 	style connectorStyle
@@ -130,6 +137,7 @@ node Connector {
 	outgoingEdges (Transition,ImmediateTransition)
 }
 
+@disable(resize)
 @palette("Dataflow")
 node Input {
 	style inputStyle("${empty label ? ' ' : label}")
@@ -137,6 +145,7 @@ node Input {
 	attr EString as label
 }
 
+@disable(resize)
 @palette("Dataflow")
 node Output {
 	style outputStyle("${empty label ? ' ' : label}")
@@ -144,6 +153,7 @@ node Output {
 	attr EString as label
 }
 
+@disable(resize)
 @palette("Dataflow")
 node Operator {
 	style operatorStyle("${empty operator ? ' ' : operator}")
@@ -152,6 +162,7 @@ node Operator {
 	attr EString as operator
 }
 
+@disable(resize)
 @palette("Dataflow")
 node CircuitConnecter {
 	style connectorStyle

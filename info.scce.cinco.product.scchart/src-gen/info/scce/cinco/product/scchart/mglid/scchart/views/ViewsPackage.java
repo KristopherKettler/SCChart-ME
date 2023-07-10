@@ -468,13 +468,31 @@ public interface ViewsPackage extends EPackage {
 	int ROOT_STATE_DECLARATION_VIEW___SET_DECLARATION_TYPE__STRING = 1;
 
 	/**
+	 * The operation id for the '<em>Is Const</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROOT_STATE_DECLARATION_VIEW___IS_CONST = 2;
+
+	/**
+	 * The operation id for the '<em>Set Const</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROOT_STATE_DECLARATION_VIEW___SET_CONST__BOOLEAN = 3;
+
+	/**
 	 * The operation id for the '<em>Get Input Output</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_VIEW___GET_INPUT_OUTPUT = 2;
+	int ROOT_STATE_DECLARATION_VIEW___GET_INPUT_OUTPUT = 4;
 
 	/**
 	 * The operation id for the '<em>Set Input Output</em>' operation.
@@ -483,7 +501,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_VIEW___SET_INPUT_OUTPUT__STRING = 3;
+	int ROOT_STATE_DECLARATION_VIEW___SET_INPUT_OUTPUT__STRING = 5;
 
 	/**
 	 * The operation id for the '<em>Get Name</em>' operation.
@@ -492,7 +510,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_VIEW___GET_NAME = 4;
+	int ROOT_STATE_DECLARATION_VIEW___GET_NAME = 6;
 
 	/**
 	 * The operation id for the '<em>Set Name</em>' operation.
@@ -501,7 +519,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_VIEW___SET_NAME__STRING = 5;
+	int ROOT_STATE_DECLARATION_VIEW___SET_NAME__STRING = 7;
 
 	/**
 	 * The operation id for the '<em>Is Signal</em>' operation.
@@ -510,7 +528,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_VIEW___IS_SIGNAL = 6;
+	int ROOT_STATE_DECLARATION_VIEW___IS_SIGNAL = 8;
 
 	/**
 	 * The operation id for the '<em>Set Signal</em>' operation.
@@ -519,7 +537,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_VIEW___SET_SIGNAL__BOOLEAN = 7;
+	int ROOT_STATE_DECLARATION_VIEW___SET_SIGNAL__BOOLEAN = 9;
 
 	/**
 	 * The number of operations of the '<em>Root State Declaration View</em>' class.
@@ -528,7 +546,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_VIEW_OPERATION_COUNT = 8;
+	int ROOT_STATE_DECLARATION_VIEW_OPERATION_COUNT = 10;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl <em>Suspend View</em>}' class.
@@ -777,13 +795,31 @@ public interface ViewsPackage extends EPackage {
 	int SUPER_STATE_DECLARATION_VIEW___SET_DECLARATION_TYPE__STRING = 1;
 
 	/**
+	 * The operation id for the '<em>Is Const</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_DECLARATION_VIEW___IS_CONST = 2;
+
+	/**
+	 * The operation id for the '<em>Set Const</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_DECLARATION_VIEW___SET_CONST__BOOLEAN = 3;
+
+	/**
 	 * The operation id for the '<em>Get Name</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_DECLARATION_VIEW___GET_NAME = 2;
+	int SUPER_STATE_DECLARATION_VIEW___GET_NAME = 4;
 
 	/**
 	 * The operation id for the '<em>Set Name</em>' operation.
@@ -792,7 +828,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_DECLARATION_VIEW___SET_NAME__STRING = 3;
+	int SUPER_STATE_DECLARATION_VIEW___SET_NAME__STRING = 5;
 
 	/**
 	 * The operation id for the '<em>Get Const Sig</em>' operation.
@@ -801,7 +837,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_DECLARATION_VIEW___GET_CONST_SIG = 4;
+	int SUPER_STATE_DECLARATION_VIEW___GET_CONST_SIG = 6;
 
 	/**
 	 * The operation id for the '<em>Set Const Sig</em>' operation.
@@ -810,7 +846,25 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_DECLARATION_VIEW___SET_CONST_SIG__STRING = 5;
+	int SUPER_STATE_DECLARATION_VIEW___SET_CONST_SIG__STRING = 7;
+
+	/**
+	 * The operation id for the '<em>Is Signal</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_DECLARATION_VIEW___IS_SIGNAL = 8;
+
+	/**
+	 * The operation id for the '<em>Set Signal</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_DECLARATION_VIEW___SET_SIGNAL__BOOLEAN = 9;
 
 	/**
 	 * The number of operations of the '<em>Super State Declaration View</em>' class.
@@ -819,7 +873,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_DECLARATION_VIEW_OPERATION_COUNT = 6;
+	int SUPER_STATE_DECLARATION_VIEW_OPERATION_COUNT = 10;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SimpleStateViewImpl <em>Simple State View</em>}' class.
@@ -3780,6 +3834,26 @@ public interface ViewsPackage extends EPackage {
 	EOperation getRootStateDeclarationView__SetDeclarationType__String();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#isConst() <em>Is Const</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Const</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#isConst()
+	 * @generated
+	 */
+	EOperation getRootStateDeclarationView__IsConst();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setConst(boolean) <em>Set Const</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Const</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setConst(boolean)
+	 * @generated
+	 */
+	EOperation getRootStateDeclarationView__SetConst__boolean();
+
+	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#getInputOutput() <em>Get Input Output</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4063,6 +4137,26 @@ public interface ViewsPackage extends EPackage {
 	EOperation getSuperStateDeclarationView__SetDeclarationType__String();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#isConst() <em>Is Const</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Const</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#isConst()
+	 * @generated
+	 */
+	EOperation getSuperStateDeclarationView__IsConst();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#setConst(boolean) <em>Set Const</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Const</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#setConst(boolean)
+	 * @generated
+	 */
+	EOperation getSuperStateDeclarationView__SetConst__boolean();
+
+	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#getName() <em>Get Name</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4101,6 +4195,26 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getSuperStateDeclarationView__SetConstSig__String();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#isSignal() <em>Is Signal</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Signal</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#isSignal()
+	 * @generated
+	 */
+	EOperation getSuperStateDeclarationView__IsSignal();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#setSignal(boolean) <em>Set Signal</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Signal</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateDeclarationView#setSignal(boolean)
+	 * @generated
+	 */
+	EOperation getSuperStateDeclarationView__SetSignal__boolean();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SimpleStateView <em>Simple State View</em>}'.
@@ -6159,6 +6273,22 @@ public interface ViewsPackage extends EPackage {
 		EOperation ROOT_STATE_DECLARATION_VIEW___SET_DECLARATION_TYPE__STRING = eINSTANCE.getRootStateDeclarationView__SetDeclarationType__String();
 
 		/**
+		 * The meta object literal for the '<em><b>Is Const</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ROOT_STATE_DECLARATION_VIEW___IS_CONST = eINSTANCE.getRootStateDeclarationView__IsConst();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Const</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ROOT_STATE_DECLARATION_VIEW___SET_CONST__BOOLEAN = eINSTANCE.getRootStateDeclarationView__SetConst__boolean();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Input Output</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -6389,6 +6519,22 @@ public interface ViewsPackage extends EPackage {
 		EOperation SUPER_STATE_DECLARATION_VIEW___SET_DECLARATION_TYPE__STRING = eINSTANCE.getSuperStateDeclarationView__SetDeclarationType__String();
 
 		/**
+		 * The meta object literal for the '<em><b>Is Const</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_DECLARATION_VIEW___IS_CONST = eINSTANCE.getSuperStateDeclarationView__IsConst();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Const</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_DECLARATION_VIEW___SET_CONST__BOOLEAN = eINSTANCE.getSuperStateDeclarationView__SetConst__boolean();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Name</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -6419,6 +6565,22 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation SUPER_STATE_DECLARATION_VIEW___SET_CONST_SIG__STRING = eINSTANCE.getSuperStateDeclarationView__SetConstSig__String();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Signal</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_DECLARATION_VIEW___IS_SIGNAL = eINSTANCE.getSuperStateDeclarationView__IsSignal();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Signal</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_DECLARATION_VIEW___SET_SIGNAL__BOOLEAN = eINSTANCE.getSuperStateDeclarationView__SetSignal__boolean();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SimpleStateViewImpl <em>Simple State View</em>}' class.

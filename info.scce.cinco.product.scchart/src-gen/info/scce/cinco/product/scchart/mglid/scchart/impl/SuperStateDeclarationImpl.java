@@ -83,6 +83,29 @@ public class SuperStateDeclarationImpl extends NodeImpl implements SuperStateDec
 	 * @generated
 	 */
 	@Override
+	public boolean isConst() {
+		return getInternalSuperStateDeclaration().isConst();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setConst(final boolean _arg) {
+		getInternalSuperStateDeclaration().getElement().transact("Set Const", () -> {
+			getInternalSuperStateDeclaration().setConst(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getName() {
 		return getInternalSuperStateDeclaration().getName();
 	}
@@ -119,6 +142,29 @@ public class SuperStateDeclarationImpl extends NodeImpl implements SuperStateDec
 	public void setConstSig(final String _arg) {
 		getInternalSuperStateDeclaration().getElement().transact("Set ConstSig", () -> {
 			getInternalSuperStateDeclaration().setConstSig(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isSignal() {
+		return getInternalSuperStateDeclaration().isSignal();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSignal(final boolean _arg) {
+		getInternalSuperStateDeclaration().getElement().transact("Set Signal", () -> {
+			getInternalSuperStateDeclaration().setSignal(_arg);
 		});
 		
 	}
@@ -441,6 +487,11 @@ public class SuperStateDeclarationImpl extends NodeImpl implements SuperStateDec
 			case ScchartPackage.SUPER_STATE_DECLARATION___SET_DECLARATION_TYPE__STRING:
 				setDeclarationType((String)arguments.get(0));
 				return null;
+			case ScchartPackage.SUPER_STATE_DECLARATION___IS_CONST:
+				return isConst();
+			case ScchartPackage.SUPER_STATE_DECLARATION___SET_CONST__BOOLEAN:
+				setConst((Boolean)arguments.get(0));
+				return null;
 			case ScchartPackage.SUPER_STATE_DECLARATION___GET_NAME:
 				return getName();
 			case ScchartPackage.SUPER_STATE_DECLARATION___SET_NAME__STRING:
@@ -450,6 +501,11 @@ public class SuperStateDeclarationImpl extends NodeImpl implements SuperStateDec
 				return getConstSig();
 			case ScchartPackage.SUPER_STATE_DECLARATION___SET_CONST_SIG__STRING:
 				setConstSig((String)arguments.get(0));
+				return null;
+			case ScchartPackage.SUPER_STATE_DECLARATION___IS_SIGNAL:
+				return isSignal();
+			case ScchartPackage.SUPER_STATE_DECLARATION___SET_SIGNAL__BOOLEAN:
+				setSignal((Boolean)arguments.get(0));
 				return null;
 			case ScchartPackage.SUPER_STATE_DECLARATION___GET_INTERNAL_SUPER_STATE_DECLARATION:
 				return getInternalSuperStateDeclaration();

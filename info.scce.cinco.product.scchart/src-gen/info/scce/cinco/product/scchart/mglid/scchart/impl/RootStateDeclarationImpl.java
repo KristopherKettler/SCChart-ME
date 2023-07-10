@@ -82,6 +82,29 @@ public class RootStateDeclarationImpl extends NodeImpl implements RootStateDecla
 	 * @generated
 	 */
 	@Override
+	public boolean isConst() {
+		return getInternalRootStateDeclaration().isConst();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setConst(final boolean _arg) {
+		getInternalRootStateDeclaration().getElement().transact("Set Const", () -> {
+			getInternalRootStateDeclaration().setConst(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getInputOutput() {
 		return getInternalRootStateDeclaration().getInputOutput();
 	}
@@ -420,6 +443,11 @@ public class RootStateDeclarationImpl extends NodeImpl implements RootStateDecla
 				return getDeclarationType();
 			case ScchartPackage.ROOT_STATE_DECLARATION___SET_DECLARATION_TYPE__STRING:
 				setDeclarationType((String)arguments.get(0));
+				return null;
+			case ScchartPackage.ROOT_STATE_DECLARATION___IS_CONST:
+				return isConst();
+			case ScchartPackage.ROOT_STATE_DECLARATION___SET_CONST__BOOLEAN:
+				setConst((Boolean)arguments.get(0));
 				return null;
 			case ScchartPackage.ROOT_STATE_DECLARATION___GET_INPUT_OUTPUT:
 				return getInputOutput();

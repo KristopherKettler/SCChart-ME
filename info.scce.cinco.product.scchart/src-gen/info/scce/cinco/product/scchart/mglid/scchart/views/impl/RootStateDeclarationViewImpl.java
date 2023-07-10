@@ -131,6 +131,29 @@ public class RootStateDeclarationViewImpl extends EObjectImpl implements RootSta
 	 * @generated
 	 */
 	@Override
+	public boolean isConst() {
+		return getInternalRootStateDeclaration().isConst();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setConst(final boolean _arg) {
+		getInternalRootStateDeclaration().getElement().transact("Set Const", () -> {
+			getInternalRootStateDeclaration().setConst(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getInputOutput() {
 		return getInternalRootStateDeclaration().getInputOutput();
 	}
@@ -265,6 +288,11 @@ public class RootStateDeclarationViewImpl extends EObjectImpl implements RootSta
 				return getDeclarationType();
 			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW___SET_DECLARATION_TYPE__STRING:
 				setDeclarationType((String)arguments.get(0));
+				return null;
+			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW___IS_CONST:
+				return isConst();
+			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW___SET_CONST__BOOLEAN:
+				setConst((Boolean)arguments.get(0));
 				return null;
 			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW___GET_INPUT_OUTPUT:
 				return getInputOutput();

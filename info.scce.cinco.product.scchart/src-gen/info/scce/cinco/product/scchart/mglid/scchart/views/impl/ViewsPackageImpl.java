@@ -630,7 +630,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateDeclarationView__GetInputOutput() {
+	public EOperation getRootStateDeclarationView__IsConst() {
         return getRootStateDeclarationView().getEOperations().get(2);
 	}
 
@@ -640,7 +640,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateDeclarationView__SetInputOutput__String() {
+	public EOperation getRootStateDeclarationView__SetConst__boolean() {
         return getRootStateDeclarationView().getEOperations().get(3);
 	}
 
@@ -650,7 +650,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateDeclarationView__GetName() {
+	public EOperation getRootStateDeclarationView__GetInputOutput() {
         return getRootStateDeclarationView().getEOperations().get(4);
 	}
 
@@ -660,7 +660,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateDeclarationView__SetName__String() {
+	public EOperation getRootStateDeclarationView__SetInputOutput__String() {
         return getRootStateDeclarationView().getEOperations().get(5);
 	}
 
@@ -670,7 +670,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateDeclarationView__IsSignal() {
+	public EOperation getRootStateDeclarationView__GetName() {
         return getRootStateDeclarationView().getEOperations().get(6);
 	}
 
@@ -680,8 +680,28 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateDeclarationView__SetSignal__boolean() {
+	public EOperation getRootStateDeclarationView__SetName__String() {
         return getRootStateDeclarationView().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRootStateDeclarationView__IsSignal() {
+        return getRootStateDeclarationView().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRootStateDeclarationView__SetSignal__boolean() {
+        return getRootStateDeclarationView().getEOperations().get(9);
 	}
 
 	/**
@@ -919,7 +939,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationView__GetName() {
+	public EOperation getSuperStateDeclarationView__IsConst() {
         return getSuperStateDeclarationView().getEOperations().get(2);
 	}
 
@@ -929,7 +949,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationView__SetName__String() {
+	public EOperation getSuperStateDeclarationView__SetConst__boolean() {
         return getSuperStateDeclarationView().getEOperations().get(3);
 	}
 
@@ -939,7 +959,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationView__GetConstSig() {
+	public EOperation getSuperStateDeclarationView__GetName() {
         return getSuperStateDeclarationView().getEOperations().get(4);
 	}
 
@@ -949,8 +969,48 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSuperStateDeclarationView__SetConstSig__String() {
+	public EOperation getSuperStateDeclarationView__SetName__String() {
         return getSuperStateDeclarationView().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSuperStateDeclarationView__GetConstSig() {
+        return getSuperStateDeclarationView().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSuperStateDeclarationView__SetConstSig__String() {
+        return getSuperStateDeclarationView().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSuperStateDeclarationView__IsSignal() {
+        return getSuperStateDeclarationView().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSuperStateDeclarationView__SetSignal__boolean() {
+        return getSuperStateDeclarationView().getEOperations().get(9);
 	}
 
 	/**

@@ -960,7 +960,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalRootStateDeclaration_InputOutput() {
+	public EAttribute getInternalRootStateDeclaration_Const() {
         return (EAttribute)getInternalRootStateDeclaration().getEStructuralFeatures().get(1);
 	}
 
@@ -970,7 +970,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalRootStateDeclaration_Name() {
+	public EAttribute getInternalRootStateDeclaration_InputOutput() {
         return (EAttribute)getInternalRootStateDeclaration().getEStructuralFeatures().get(2);
 	}
 
@@ -980,8 +980,18 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalRootStateDeclaration_Signal() {
+	public EAttribute getInternalRootStateDeclaration_Name() {
         return (EAttribute)getInternalRootStateDeclaration().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInternalRootStateDeclaration_Signal() {
+        return (EAttribute)getInternalRootStateDeclaration().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -1109,7 +1119,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalSuperStateDeclaration_Name() {
+	public EAttribute getInternalSuperStateDeclaration_Const() {
         return (EAttribute)getInternalSuperStateDeclaration().getEStructuralFeatures().get(1);
 	}
 
@@ -1119,8 +1129,28 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalSuperStateDeclaration_ConstSig() {
+	public EAttribute getInternalSuperStateDeclaration_Name() {
         return (EAttribute)getInternalSuperStateDeclaration().getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInternalSuperStateDeclaration_ConstSig() {
+        return (EAttribute)getInternalSuperStateDeclaration().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInternalSuperStateDeclaration_Signal() {
+        return (EAttribute)getInternalSuperStateDeclaration().getEStructuralFeatures().get(4);
 	}
 
 	/**

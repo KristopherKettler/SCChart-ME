@@ -22,6 +22,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * </p>
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateDeclarationImpl#getDeclarationType <em>Declaration Type</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateDeclarationImpl#isConst <em>Const</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateDeclarationImpl#getInputOutput <em>Input Output</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateDeclarationImpl#getName <em>Name</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateDeclarationImpl#isSignal <em>Signal</em>}</li>
@@ -49,6 +50,26 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 	 * @ordered
 	 */
 	protected String declarationType = DECLARATION_TYPE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #isConst() <em>Const</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isConst()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean CONST_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isConst() <em>Const</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isConst()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean const_ = CONST_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getInputOutput() <em>Input Output</em>}' attribute.
@@ -158,6 +179,29 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 	 * @generated
 	 */
 	@Override
+	public boolean isConst() {
+		return const_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setConst(boolean newConst) {
+		boolean oldConst = const_;
+		const_ = newConst;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__CONST, oldConst, const_));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getInputOutput() {
 		return inputOutput;
 	}
@@ -231,6 +275,8 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 		switch (featureID) {
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__DECLARATION_TYPE:
 				return getDeclarationType();
+			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__CONST:
+				return isConst();
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__INPUT_OUTPUT:
 				return getInputOutput();
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__NAME:
@@ -251,6 +297,9 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 		switch (featureID) {
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__DECLARATION_TYPE:
 				setDeclarationType((String)newValue);
+				return;
+			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__CONST:
+				setConst((Boolean)newValue);
 				return;
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__INPUT_OUTPUT:
 				setInputOutput((String)newValue);
@@ -276,6 +325,9 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__DECLARATION_TYPE:
 				setDeclarationType(DECLARATION_TYPE_EDEFAULT);
 				return;
+			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__CONST:
+				setConst(CONST_EDEFAULT);
+				return;
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__INPUT_OUTPUT:
 				setInputOutput(INPUT_OUTPUT_EDEFAULT);
 				return;
@@ -299,6 +351,8 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 		switch (featureID) {
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__DECLARATION_TYPE:
 				return DECLARATION_TYPE_EDEFAULT == null ? declarationType != null : !DECLARATION_TYPE_EDEFAULT.equals(declarationType);
+			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__CONST:
+				return const_ != CONST_EDEFAULT;
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__INPUT_OUTPUT:
 				return INPUT_OUTPUT_EDEFAULT == null ? inputOutput != null : !INPUT_OUTPUT_EDEFAULT.equals(inputOutput);
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__NAME:
@@ -321,6 +375,8 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (declarationType: ");
 		result.append(declarationType);
+		result.append(", const: ");
+		result.append(const_);
 		result.append(", inputOutput: ");
 		result.append(inputOutput);
 		result.append(", name: ");
