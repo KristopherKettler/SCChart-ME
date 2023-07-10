@@ -189,3 +189,15 @@
 /.CircuitConnecterEContentAdapter.java._trace
 /.CircuitConnecterEContentAdapter.xtendbin
 /CircuitConnecterEContentAdapter.java
+/.ActionEContentAdapter.xtendbin
+/.ConditionalTerminationTransitionEContentAdapter.xtendbin
+/.DeferredTransitionEContentAdapter.xtendbin
+/.HistoryTransitionEContentAdapter.xtendbin
+/.SuspendEContentAdapter.xtendbin
+/.TerminationTransitionEContentAdapter.xtendbin
+/ActionEContentAdapter.java
+/ConditionalTerminationTransitionEContentAdapter.java
+/DeferredTransitionEContentAdapter.java
+/HistoryTransitionEContentAdapter.java
+/SuspendEContentAdapter.java
+/TerminationTransitionEContentAdapter.java

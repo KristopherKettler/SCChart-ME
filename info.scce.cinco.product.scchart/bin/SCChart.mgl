@@ -56,12 +56,13 @@ container InitilalSuperState extends SuperState{
 @disable(move,resize)
 @event("info.scce.cinco.product.scchart.events.RootStateDeclarationEvent")
 node RootStateDeclaration {
-	style declarationStyle("${(empty inputOutput || inputOutput == ' ' ? '' : inputOutput.concat(' ')).concat(empty declarationType || declarationType == ' ' ? '' : declarationType.concat(' '))}", "${(empty name || name == ' ' ? '' : name)}")
-	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationInputOutputProvider")
+	style declarationStyle("${(empty inputOutput || inputOutput == ' ' ? '' : (inputOutput.concat(' '))).concat(empty signal || !signal ? '' : 'signal ').concat(empty declarationType || declarationType == ' ' ? '' : declarationType)}", "${(empty name || name == ' ' ? '' : name)}")
+	//@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationInputOutputProvider")
 	attr EString as inputOutput := ' '
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationTypeProvider")
 	attr EString as declarationType := ' '
 	attr EString as name
+	attr EBoolean as signal
 }
 
 @palette("Declaration")
@@ -319,38 +320,3 @@ edge ImmediateStrongAbortHistoryTransition extends AbstractTransition{
 edge Connection {
 	style connectionStyle
 }
-
-
-//@label(name)
-//type RootStateDeclaration {
-//	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationInputOutputProvider")
-//	attr EString as InputOutput := ' '
-//	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationTypeProvider")
-//	attr EString as declarationType := "bool"
-//	attr EString as name
-//}
-
-//@label(name)
-//type SuperStateDeclaration {
-//	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
-//	attr EString as declarationType := "bool"
-//	attr EString as name
-//}
-
-//@label(name)
-//type SuspendType {
-//	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuspendTypeProvider")
-//	attr EString as suspendType := ' '
-//	attr EString as condition
-//	
-//	attr EString as name := "${suspendType.concat(empty condition || condition == '' ? ' ' : condition)}"
-//}
-
-//@label(name)
-//type Action {
-//	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.ActionTypeProvider")
-//	attr EString as actionType := "entry"
-//	attr EString as condition 
-//	attr EString as effect
-//	attr EString as name 
-//}

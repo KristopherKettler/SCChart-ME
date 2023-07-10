@@ -2106,13 +2106,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_ROOT_STATE_DECLARATION__NAME = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Signal</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ROOT_STATE_DECLARATION__SIGNAL = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Root State Declaration</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 3;
+	int INTERNAL_ROOT_STATE_DECLARATION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -10891,6 +10900,17 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalRootStateDeclaration_Name();
 
 	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#isSignal <em>Signal</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Signal</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#isSignal()
+	 * @see #getInternalRootStateDeclaration()
+	 * @generated
+	 */
+	EAttribute getInternalRootStateDeclaration_Signal();
+
+	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend <em>Suspend</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13377,6 +13397,14 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute INTERNAL_ROOT_STATE_DECLARATION__NAME = eINSTANCE.getInternalRootStateDeclaration_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Signal</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_ROOT_STATE_DECLARATION__SIGNAL = eINSTANCE.getInternalRootStateDeclaration_Signal();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuspendImpl <em>Suspend</em>}' class.

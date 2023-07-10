@@ -24,6 +24,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateDeclarationImpl#getDeclarationType <em>Declaration Type</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateDeclarationImpl#getInputOutput <em>Input Output</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateDeclarationImpl#getName <em>Name</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateDeclarationImpl#isSignal <em>Signal</em>}</li>
  * </ul>
  *
  * @generated
@@ -88,6 +89,26 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #isSignal() <em>Signal</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isSignal()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean SIGNAL_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isSignal() <em>Signal</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isSignal()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean signal = SIGNAL_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -183,6 +204,29 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 	 * @generated
 	 */
 	@Override
+	public boolean isSignal() {
+		return signal;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSignal(boolean newSignal) {
+		boolean oldSignal = signal;
+		signal = newSignal;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__SIGNAL, oldSignal, signal));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__DECLARATION_TYPE:
@@ -191,6 +235,8 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 				return getInputOutput();
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__NAME:
 				return getName();
+			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__SIGNAL:
+				return isSignal();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -211,6 +257,9 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 				return;
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__NAME:
 				setName((String)newValue);
+				return;
+			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__SIGNAL:
+				setSignal((Boolean)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -233,6 +282,9 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__NAME:
 				setName(NAME_EDEFAULT);
 				return;
+			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__SIGNAL:
+				setSignal(SIGNAL_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -251,6 +303,8 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 				return INPUT_OUTPUT_EDEFAULT == null ? inputOutput != null : !INPUT_OUTPUT_EDEFAULT.equals(inputOutput);
 			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION__SIGNAL:
+				return signal != SIGNAL_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -271,6 +325,8 @@ public class InternalRootStateDeclarationImpl extends InternalNodeImpl implement
 		result.append(inputOutput);
 		result.append(", name: ");
 		result.append(name);
+		result.append(", signal: ");
+		result.append(signal);
 		result.append(')');
 		return result.toString();
 	}

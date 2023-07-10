@@ -177,6 +177,29 @@ public class RootStateDeclarationViewImpl extends EObjectImpl implements RootSta
 	 * @generated
 	 */
 	@Override
+	public boolean isSignal() {
+		return getInternalRootStateDeclaration().isSignal();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSignal(final boolean _arg) {
+		getInternalRootStateDeclaration().getElement().transact("Set Signal", () -> {
+			getInternalRootStateDeclaration().setSignal(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW__INTERNAL_ROOT_STATE_DECLARATION:
@@ -252,6 +275,11 @@ public class RootStateDeclarationViewImpl extends EObjectImpl implements RootSta
 				return getName();
 			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW___SET_NAME__STRING:
 				setName((String)arguments.get(0));
+				return null;
+			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW___IS_SIGNAL:
+				return isSignal();
+			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW___SET_SIGNAL__BOOLEAN:
+				setSignal((Boolean)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

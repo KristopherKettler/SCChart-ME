@@ -128,6 +128,29 @@ public class RootStateDeclarationImpl extends NodeImpl implements RootStateDecla
 	 * @generated
 	 */
 	@Override
+	public boolean isSignal() {
+		return getInternalRootStateDeclaration().isSignal();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSignal(final boolean _arg) {
+		getInternalRootStateDeclaration().getElement().transact("Set Signal", () -> {
+			getInternalRootStateDeclaration().setSignal(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public InternalRootStateDeclaration getInternalRootStateDeclaration() {
 		return (info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration) getInternalElement();
 	}
@@ -407,6 +430,11 @@ public class RootStateDeclarationImpl extends NodeImpl implements RootStateDecla
 				return getName();
 			case ScchartPackage.ROOT_STATE_DECLARATION___SET_NAME__STRING:
 				setName((String)arguments.get(0));
+				return null;
+			case ScchartPackage.ROOT_STATE_DECLARATION___IS_SIGNAL:
+				return isSignal();
+			case ScchartPackage.ROOT_STATE_DECLARATION___SET_SIGNAL__BOOLEAN:
+				setSignal((Boolean)arguments.get(0));
 				return null;
 			case ScchartPackage.ROOT_STATE_DECLARATION___GET_INTERNAL_ROOT_STATE_DECLARATION:
 				return getInternalRootStateDeclaration();

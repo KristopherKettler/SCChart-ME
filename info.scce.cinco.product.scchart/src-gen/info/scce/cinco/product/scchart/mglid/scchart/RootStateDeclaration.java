@@ -75,6 +75,22 @@ public interface RootStateDeclaration extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	boolean isSignal();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setSignal(boolean _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	InternalRootStateDeclaration getInternalRootStateDeclaration();
 
 	/**

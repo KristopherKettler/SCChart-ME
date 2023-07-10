@@ -504,13 +504,31 @@ public interface ViewsPackage extends EPackage {
 	int ROOT_STATE_DECLARATION_VIEW___SET_NAME__STRING = 5;
 
 	/**
+	 * The operation id for the '<em>Is Signal</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROOT_STATE_DECLARATION_VIEW___IS_SIGNAL = 6;
+
+	/**
+	 * The operation id for the '<em>Set Signal</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROOT_STATE_DECLARATION_VIEW___SET_SIGNAL__BOOLEAN = 7;
+
+	/**
 	 * The number of operations of the '<em>Root State Declaration View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_DECLARATION_VIEW_OPERATION_COUNT = 6;
+	int ROOT_STATE_DECLARATION_VIEW_OPERATION_COUNT = 8;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl <em>Suspend View</em>}' class.
@@ -3802,6 +3820,26 @@ public interface ViewsPackage extends EPackage {
 	EOperation getRootStateDeclarationView__SetName__String();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#isSignal() <em>Is Signal</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Signal</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#isSignal()
+	 * @generated
+	 */
+	EOperation getRootStateDeclarationView__IsSignal();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setSignal(boolean) <em>Set Signal</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Signal</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView#setSignal(boolean)
+	 * @generated
+	 */
+	EOperation getRootStateDeclarationView__SetSignal__boolean();
+
+	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuspendView <em>Suspend View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6151,6 +6189,22 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation ROOT_STATE_DECLARATION_VIEW___SET_NAME__STRING = eINSTANCE.getRootStateDeclarationView__SetName__String();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Signal</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ROOT_STATE_DECLARATION_VIEW___IS_SIGNAL = eINSTANCE.getRootStateDeclarationView__IsSignal();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Signal</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ROOT_STATE_DECLARATION_VIEW___SET_SIGNAL__BOOLEAN = eINSTANCE.getRootStateDeclarationView__SetSignal__boolean();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuspendViewImpl <em>Suspend View</em>}' class.

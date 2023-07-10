@@ -6,6 +6,7 @@ import graphmodel.Direction
 import graphmodel.ModelElementContainer
 import info.scce.cinco.product.scchart.mglid.scchart.Action
 import java.util.UUID
+import info.scce.cinco.product.scchart.mglid.scchart.SuperState
 
 /* 
  * About this class:
@@ -51,7 +52,88 @@ final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 	
 	override postCreate(Action element) {
 		element.uuid=UUID.randomUUID.toString
-		// TODO: Auto-generated method stub
+		var boolean break= false
+		for(action : element.rootElement.rootStates.head.actions){
+			if(action.uuid==element.uuid){
+				var int declarationCount = 0
+				if(element.rootElement.rootStates.head.rootStateDeclarations !== null){
+					declarationCount=element.rootElement.getRootStates.head.rootStateDeclarations.size
+				}
+				if(element.rootElement.rootStates.head.suspends !== null){
+					declarationCount += element.rootElement.rootStates.head.suspends.size 
+				}
+				for(var i = 0; i<element.rootElement.rootStates.head.actions.size;i++){
+					element.rootElement.rootStates.head.actions.get(i).x=10
+					element.rootElement.rootStates.head.actions.get(i).y=30+13*declarationCount+13*i
+					element.rootElement.rootStates.head.actions.get(i).width=element.rootElement.rootStates.head.width-20
+					element.rootElement.rootStates.head.actions.get(i).height=13
+				}
+				if(element.rootElement.rootStates.head.regions!==null){
+					for(region : element.rootElement.rootStates.head.regions){
+						if(region.y<element.rootElement.rootStates.head.actions.last.y+13){
+							for(region1 : element.rootElement.rootStates.head.regions){
+								region1.y = region1.y + 13
+							}
+							element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height + 13
+						}
+					}
+				}
+				break = true
+			}
+		}
+		if(!break){
+			for(region : element.rootElement.rootStates.head.regions){
+				if(region.superStates !== null){
+					for(superState : region.superStates){
+						postCreateAction(superState,element)
+					}
+				}
+			}
+		}
+	}
+	
+	def postCreateAction(SuperState superState, Action action){
+		var boolean break = false
+		if(superState.actions !== null){
+			for(actionList : superState.actions){
+				if(actionList.uuid==action.uuid){
+					var int declarationCount = 0
+					if(superState.superStateDeclarations !== null){
+						declarationCount=superState.superStateDeclarations.size
+					}
+					if(superState.suspends !== null){
+						declarationCount+=superState.suspends.size
+					}
+					for(var i = 0; i<superState.actions.size;i++){
+						superState.actions.get(i).x=10
+						superState.actions.get(i).y=30+13*declarationCount+13*i
+						superState.actions.get(i).width=superState.width-20
+						superState.actions.get(i).height=13
+					}	
+					if(superState.regions!==null){
+						for(region : superState.regions){
+							if(region.y<superState.actions.last.y+13){
+								for(region1 : superState.regions){
+									region1.y = region1.y + 13
+								}
+								superState.height = superState.height + 13
+							}
+						}
+					}
+					break = true
+				}
+			}
+		}
+		if(!break && superState.regions!==null){
+			for(region : superState.regions){
+				if(region.superStates !== null){
+					for(superStateList: region.superStates){
+						postCreateAction(superStateList,action)
+						}
+					}
+				}
+			
+		}
 	}
 	
 	override postDelete(Action element) {
