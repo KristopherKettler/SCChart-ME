@@ -6,21 +6,21 @@ import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
 import graphmodel.Node;
 
-import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration;
+import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration;
 
-import info.scce.cinco.product.scchart.mglid.scchart.views.RootStateDeclarationView;
+import info.scce.cinco.product.scchart.mglid.scchart.views.DeclarationView;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Root State Declaration</b></em>'.
+ * A representation of the model object '<em><b>Declaration</b></em>'.
  * <!-- end-user-doc -->
  *
  *
- * @see info.scce.cinco.product.scchart.mglid.scchart.ScchartPackage#getRootStateDeclaration()
+ * @see info.scce.cinco.product.scchart.mglid.scchart.ScchartPackage#getDeclaration()
  * @model
  * @generated
  */
-public interface RootStateDeclaration extends Node {
+public interface Declaration extends Node {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -43,7 +43,7 @@ public interface RootStateDeclaration extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	boolean isConst();
+	boolean isConstant();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -51,7 +51,7 @@ public interface RootStateDeclaration extends Node {
 	 * @model
 	 * @generated
 	 */
-	void setConst(boolean _arg);
+	void setConstant(boolean _arg);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -68,6 +68,22 @@ public interface RootStateDeclaration extends Node {
 	 * @generated
 	 */
 	void setInputOutput(String _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	String getAssignment();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setAssignment(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,7 +123,15 @@ public interface RootStateDeclaration extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	InternalRootStateDeclaration getInternalRootStateDeclaration();
+	String getUuid();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setUuid(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -115,7 +139,15 @@ public interface RootStateDeclaration extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	boolean isExactlyRootStateDeclaration();
+	InternalDeclaration getInternalDeclaration();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	boolean isExactlyDeclaration();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -232,10 +264,50 @@ public interface RootStateDeclaration extends Node {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation"
+	 * @model required="true" superStateRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	RootState getContainer();
+	boolean canMoveTo(SuperState superState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model superStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void moveTo(SuperState superState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model superStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void s_moveTo(SuperState superState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" initilalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	boolean canMoveTo(InitilalSuperState initilalSuperState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model initilalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void moveTo(InitilalSuperState initilalSuperState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model initilalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void s_moveTo(InitilalSuperState initilalSuperState, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -243,6 +315,6 @@ public interface RootStateDeclaration extends Node {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	RootStateDeclarationView getRootStateDeclarationView();
+	DeclarationView getDeclarationView();
 
-} // RootStateDeclaration
+} // Declaration

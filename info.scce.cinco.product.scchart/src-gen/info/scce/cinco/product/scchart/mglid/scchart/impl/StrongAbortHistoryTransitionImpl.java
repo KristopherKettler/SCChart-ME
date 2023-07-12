@@ -82,8 +82,8 @@ public class StrongAbortHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalStrongAbortHistoryTransition().getDelay();
+	public String getCount_delay() {
+		return getInternalStrongAbortHistoryTransition().getCount_delay();
 	}
 
 	/**
@@ -92,9 +92,9 @@ public class StrongAbortHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public void setDelay(final String _arg) {
-		getInternalStrongAbortHistoryTransition().getElement().transact("Set Delay", () -> {
-			getInternalStrongAbortHistoryTransition().setDelay(_arg);
+	public void setCount_delay(final String _arg) {
+		getInternalStrongAbortHistoryTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalStrongAbortHistoryTransition().setCount_delay(_arg);
 		});
 		
 	}
@@ -424,10 +424,10 @@ public class StrongAbortHistoryTransitionImpl extends AbstractTransitionImpl imp
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___GET_DELAY:
-				return getDelay();
-			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
 				return null;
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION___IS_DEEP_HISTORY:
 				return isDeepHistory();

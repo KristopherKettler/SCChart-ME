@@ -130,8 +130,8 @@ public class DeferredTransitionViewImpl extends AbstractTransitionViewImpl imple
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalDeferredTransition().getDelay();
+	public String getCount_delay() {
+		return getInternalDeferredTransition().getCount_delay();
 	}
 
 	/**
@@ -140,9 +140,9 @@ public class DeferredTransitionViewImpl extends AbstractTransitionViewImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setDelay(final String _arg) {
-		getInternalDeferredTransition().getElement().transact("Set Delay", () -> {
-			getInternalDeferredTransition().setDelay(_arg);
+	public void setCount_delay(final String _arg) {
+		getInternalDeferredTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalDeferredTransition().setCount_delay(_arg);
 		});
 		
 	}
@@ -242,10 +242,10 @@ public class DeferredTransitionViewImpl extends AbstractTransitionViewImpl imple
 			case ViewsPackage.DEFERRED_TRANSITION_VIEW___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ViewsPackage.DEFERRED_TRANSITION_VIEW___GET_DELAY:
-				return getDelay();
-			case ViewsPackage.DEFERRED_TRANSITION_VIEW___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
+			case ViewsPackage.DEFERRED_TRANSITION_VIEW___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ViewsPackage.DEFERRED_TRANSITION_VIEW___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
 				return null;
 			case ViewsPackage.DEFERRED_TRANSITION_VIEW___GET_EFFECT:
 				return getEffect();

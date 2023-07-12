@@ -56,8 +56,8 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 		for(suspend : element.rootElement.rootStates.head.suspends){
 			if(suspend.uuid==element.uuid){
 				var int declarationCount = 0
-				if(element.rootElement.rootStates.head.rootStateDeclarations !== null){
-					declarationCount=element.rootElement.getRootStates.head.rootStateDeclarations.size
+				if(element.rootElement.rootStates.head.declarations !== null){
+					declarationCount=element.rootElement.getRootStates.head.declarations.size
 				}
 				for(var i = 0; i<element.rootElement.rootStates.head.suspends.size;i++){
 					element.rootElement.rootStates.head.suspends.get(i).x=10
@@ -95,8 +95,8 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 			for(suspendList : superState.suspends){
 				if(suspendList.uuid==suspend.uuid){
 					var int declarationCount = 0
-					if(superState.superStateDeclarations !== null){
-						declarationCount=superState.superStateDeclarations.size
+					if(superState.declarations !== null){
+						declarationCount=superState.declarations.size
 					}
 					for(var i = 0; i<superState.suspends.size;i++){
 						superState.suspends.get(i).x=10

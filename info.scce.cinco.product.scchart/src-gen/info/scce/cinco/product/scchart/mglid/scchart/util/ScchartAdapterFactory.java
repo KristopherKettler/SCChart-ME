@@ -96,8 +96,8 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 				return createInitilalSuperStateAdapter();
 			}
 			@Override
-			public Adapter caseRootStateDeclaration(RootStateDeclaration object) {
-				return createRootStateDeclarationAdapter();
+			public Adapter caseDeclaration(Declaration object) {
+				return createDeclarationAdapter();
 			}
 			@Override
 			public Adapter caseSuspend(Suspend object) {
@@ -106,10 +106,6 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseAction(Action object) {
 				return createActionAdapter();
-			}
-			@Override
-			public Adapter caseSuperStateDeclaration(SuperStateDeclaration object) {
-				return createSuperStateDeclarationAdapter();
 			}
 			@Override
 			public Adapter caseSimpleState(SimpleState object) {
@@ -346,16 +342,16 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration <em>Root State Declaration</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.Declaration <em>Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.Declaration
 	 * @generated
 	 */
-	public Adapter createRootStateDeclarationAdapter() {
+	public Adapter createDeclarationAdapter() {
 		return null;
 	}
 
@@ -384,20 +380,6 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createActionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration <em>Super State Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration
-	 * @generated
-	 */
-	public Adapter createSuperStateDeclarationAdapter() {
 		return null;
 	}
 

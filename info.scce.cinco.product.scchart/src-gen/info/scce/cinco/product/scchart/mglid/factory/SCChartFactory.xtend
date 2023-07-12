@@ -102,233 +102,6 @@ class SCChartFactory extends ScchartFactoryImpl {
 		createSCChart(generateUUID)
 	}
 	/**
-	 * This method creates an Region with the given id.
-	 *
-	 * @param ID: The id for the new element
-	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-	 * element of the created element
-	 * @param hook: Indicates, if the post create hook should be executed
-	 */
-	def createRegion(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
-		super.createRegion => [
-			setID(ID)
-			internal = ime ?: createInternalRegion => [
-				setID(ID + "_INTERNAL")
-				container = parent
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.RegionEContentAdapter)
-			]
-			if (hook) postCreates
-		]
-		
-	}
-	
-	/**
-	 * This method creates an Region with the given id. Post create hook won't be triggered.
-	 */
-	def createRegion(String ID){
-		createRegion(ID,null,null,false)
-	}
-	
-	/**
-	 * This method creates an Region with the given id. Post create hook will be triggered.
-	 */
-	def createRegion(InternalModelElementContainer parent){
-		createRegion(generateUUID,null,parent,true)
-	}
-	
-	/**
-	 * This method creates an Region with the given id. Post create hook will be triggered.
-	 */
-	def createRegion(String ID, InternalModelElementContainer parent){
-		createRegion(ID,null,parent,true)
-	}
-	
-	def createRegion(String ID, InternalModelElement ime, InternalModelElementContainer parent){
-		createRegion(ID,ime,parent,true)
-	}
-	
-	/**
-	 * This method creates an Region with the given id. Post create hook won't be triggered.
-	 */
-	def createRegion(InternalModelElement ime) {
-		createRegion(generateUUID,ime,null,false)
-	}
-	
-	override createRegion() {
-		createRegion(generateUUID)
-	}
-	/**
-	 * This method creates an SuperStateDeclaration with the given id.
-	 *
-	 * @param ID: The id for the new element
-	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-	 * element of the created element
-	 * @param hook: Indicates, if the post create hook should be executed
-	 */
-	def createSuperStateDeclaration(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
-		super.createSuperStateDeclaration => [
-			setID(ID)
-			internal = ime ?: createInternalSuperStateDeclaration => [
-				setID(ID + "_INTERNAL")
-				container = parent
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.SuperStateDeclarationEContentAdapter)
-			]
-			if (hook) postCreates
-		]
-		
-	}
-	
-	/**
-	 * This method creates an SuperStateDeclaration with the given id. Post create hook won't be triggered.
-	 */
-	def createSuperStateDeclaration(String ID){
-		createSuperStateDeclaration(ID,null,null,false)
-	}
-	
-	/**
-	 * This method creates an SuperStateDeclaration with the given id. Post create hook will be triggered.
-	 */
-	def createSuperStateDeclaration(InternalModelElementContainer parent){
-		createSuperStateDeclaration(generateUUID,null,parent,true)
-	}
-	
-	/**
-	 * This method creates an SuperStateDeclaration with the given id. Post create hook will be triggered.
-	 */
-	def createSuperStateDeclaration(String ID, InternalModelElementContainer parent){
-		createSuperStateDeclaration(ID,null,parent,true)
-	}
-	
-	def createSuperStateDeclaration(String ID, InternalModelElement ime, InternalModelElementContainer parent){
-		createSuperStateDeclaration(ID,ime,parent,true)
-	}
-	
-	/**
-	 * This method creates an SuperStateDeclaration with the given id. Post create hook won't be triggered.
-	 */
-	def createSuperStateDeclaration(InternalModelElement ime) {
-		createSuperStateDeclaration(generateUUID,ime,null,false)
-	}
-	
-	override createSuperStateDeclaration() {
-		createSuperStateDeclaration(generateUUID)
-	}
-	/**
-	 * This method creates an Operator with the given id.
-	 *
-	 * @param ID: The id for the new element
-	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-	 * element of the created element
-	 * @param hook: Indicates, if the post create hook should be executed
-	 */
-	def createOperator(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
-		super.createOperator => [
-			setID(ID)
-			internal = ime ?: createInternalOperator => [
-				setID(ID + "_INTERNAL")
-				container = parent
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.OperatorEContentAdapter)
-			]
-		]
-		
-	}
-	
-	/**
-	 * This method creates an Operator with the given id. Post create hook won't be triggered.
-	 */
-	def createOperator(String ID){
-		createOperator(ID,null,null,false)
-	}
-	
-	/**
-	 * This method creates an Operator with the given id. Post create hook will be triggered.
-	 */
-	def createOperator(InternalModelElementContainer parent){
-		createOperator(generateUUID,null,parent,true)
-	}
-	
-	/**
-	 * This method creates an Operator with the given id. Post create hook will be triggered.
-	 */
-	def createOperator(String ID, InternalModelElementContainer parent){
-		createOperator(ID,null,parent,true)
-	}
-	
-	def createOperator(String ID, InternalModelElement ime, InternalModelElementContainer parent){
-		createOperator(ID,ime,parent,true)
-	}
-	
-	/**
-	 * This method creates an Operator with the given id. Post create hook won't be triggered.
-	 */
-	def createOperator(InternalModelElement ime) {
-		createOperator(generateUUID,ime,null,false)
-	}
-	
-	override createOperator() {
-		createOperator(generateUUID)
-	}
-	/**
-	 * This method creates an InitilalSuperState with the given id.
-	 *
-	 * @param ID: The id for the new element
-	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-	 * element of the created element
-	 * @param hook: Indicates, if the post create hook should be executed
-	 */
-	def createInitilalSuperState(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
-		super.createInitilalSuperState => [
-			setID(ID)
-			internal = ime ?: createInternalInitilalSuperState => [
-				setID(ID + "_INTERNAL")
-				container = parent
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.InitilalSuperStateEContentAdapter)
-			]
-			if (hook) postCreates
-		]
-		
-	}
-	
-	/**
-	 * This method creates an InitilalSuperState with the given id. Post create hook won't be triggered.
-	 */
-	def createInitilalSuperState(String ID){
-		createInitilalSuperState(ID,null,null,false)
-	}
-	
-	/**
-	 * This method creates an InitilalSuperState with the given id. Post create hook will be triggered.
-	 */
-	def createInitilalSuperState(InternalModelElementContainer parent){
-		createInitilalSuperState(generateUUID,null,parent,true)
-	}
-	
-	/**
-	 * This method creates an InitilalSuperState with the given id. Post create hook will be triggered.
-	 */
-	def createInitilalSuperState(String ID, InternalModelElementContainer parent){
-		createInitilalSuperState(ID,null,parent,true)
-	}
-	
-	def createInitilalSuperState(String ID, InternalModelElement ime, InternalModelElementContainer parent){
-		createInitilalSuperState(ID,ime,parent,true)
-	}
-	
-	/**
-	 * This method creates an InitilalSuperState with the given id. Post create hook won't be triggered.
-	 */
-	def createInitilalSuperState(InternalModelElement ime) {
-		createInitilalSuperState(generateUUID,ime,null,false)
-	}
-	
-	override createInitilalSuperState() {
-		createInitilalSuperState(generateUUID)
-	}
-	/**
 	 * This method creates an Input with the given id.
 	 *
 	 * @param ID: The id for the new element
@@ -383,63 +156,6 @@ class SCChartFactory extends ScchartFactoryImpl {
 	
 	override createInput() {
 		createInput(generateUUID)
-	}
-	/**
-	 * This method creates an Action with the given id.
-	 *
-	 * @param ID: The id for the new element
-	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-	 * element of the created element
-	 * @param hook: Indicates, if the post create hook should be executed
-	 */
-	def createAction(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
-		super.createAction => [
-			setID(ID)
-			internal = ime ?: createInternalAction => [
-				setID(ID + "_INTERNAL")
-				container = parent
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ActionEContentAdapter)
-			]
-			if (hook) postCreates
-		]
-		
-	}
-	
-	/**
-	 * This method creates an Action with the given id. Post create hook won't be triggered.
-	 */
-	def createAction(String ID){
-		createAction(ID,null,null,false)
-	}
-	
-	/**
-	 * This method creates an Action with the given id. Post create hook will be triggered.
-	 */
-	def createAction(InternalModelElementContainer parent){
-		createAction(generateUUID,null,parent,true)
-	}
-	
-	/**
-	 * This method creates an Action with the given id. Post create hook will be triggered.
-	 */
-	def createAction(String ID, InternalModelElementContainer parent){
-		createAction(ID,null,parent,true)
-	}
-	
-	def createAction(String ID, InternalModelElement ime, InternalModelElementContainer parent){
-		createAction(ID,ime,parent,true)
-	}
-	
-	/**
-	 * This method creates an Action with the given id. Post create hook won't be triggered.
-	 */
-	def createAction(InternalModelElement ime) {
-		createAction(generateUUID,ime,null,false)
-	}
-	
-	override createAction() {
-		createAction(generateUUID)
 	}
 	/**
 	 * This method creates an Output with the given id.
@@ -498,7 +214,7 @@ class SCChartFactory extends ScchartFactoryImpl {
 		createOutput(generateUUID)
 	}
 	/**
-	 * This method creates an Suspend with the given id.
+	 * This method creates an Operator with the given id.
 	 *
 	 * @param ID: The id for the new element
 	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
@@ -506,13 +222,69 @@ class SCChartFactory extends ScchartFactoryImpl {
 	 * element of the created element
 	 * @param hook: Indicates, if the post create hook should be executed
 	 */
-	def createSuspend(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
-		super.createSuspend => [
+	def createOperator(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
+		super.createOperator => [
 			setID(ID)
-			internal = ime ?: createInternalSuspend => [
+			internal = ime ?: createInternalOperator => [
 				setID(ID + "_INTERNAL")
 				container = parent
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.SuspendEContentAdapter)
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.OperatorEContentAdapter)
+			]
+		]
+		
+	}
+	
+	/**
+	 * This method creates an Operator with the given id. Post create hook won't be triggered.
+	 */
+	def createOperator(String ID){
+		createOperator(ID,null,null,false)
+	}
+	
+	/**
+	 * This method creates an Operator with the given id. Post create hook will be triggered.
+	 */
+	def createOperator(InternalModelElementContainer parent){
+		createOperator(generateUUID,null,parent,true)
+	}
+	
+	/**
+	 * This method creates an Operator with the given id. Post create hook will be triggered.
+	 */
+	def createOperator(String ID, InternalModelElementContainer parent){
+		createOperator(ID,null,parent,true)
+	}
+	
+	def createOperator(String ID, InternalModelElement ime, InternalModelElementContainer parent){
+		createOperator(ID,ime,parent,true)
+	}
+	
+	/**
+	 * This method creates an Operator with the given id. Post create hook won't be triggered.
+	 */
+	def createOperator(InternalModelElement ime) {
+		createOperator(generateUUID,ime,null,false)
+	}
+	
+	override createOperator() {
+		createOperator(generateUUID)
+	}
+	/**
+	 * This method creates an Declaration with the given id.
+	 *
+	 * @param ID: The id for the new element
+	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+	 * element of the created element
+	 * @param hook: Indicates, if the post create hook should be executed
+	 */
+	def createDeclaration(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
+		super.createDeclaration => [
+			setID(ID)
+			internal = ime ?: createInternalDeclaration => [
+				setID(ID + "_INTERNAL")
+				container = parent
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.DeclarationEContentAdapter)
 			]
 			if (hook) postCreates
 		]
@@ -520,42 +292,42 @@ class SCChartFactory extends ScchartFactoryImpl {
 	}
 	
 	/**
-	 * This method creates an Suspend with the given id. Post create hook won't be triggered.
+	 * This method creates an Declaration with the given id. Post create hook won't be triggered.
 	 */
-	def createSuspend(String ID){
-		createSuspend(ID,null,null,false)
+	def createDeclaration(String ID){
+		createDeclaration(ID,null,null,false)
 	}
 	
 	/**
-	 * This method creates an Suspend with the given id. Post create hook will be triggered.
+	 * This method creates an Declaration with the given id. Post create hook will be triggered.
 	 */
-	def createSuspend(InternalModelElementContainer parent){
-		createSuspend(generateUUID,null,parent,true)
+	def createDeclaration(InternalModelElementContainer parent){
+		createDeclaration(generateUUID,null,parent,true)
 	}
 	
 	/**
-	 * This method creates an Suspend with the given id. Post create hook will be triggered.
+	 * This method creates an Declaration with the given id. Post create hook will be triggered.
 	 */
-	def createSuspend(String ID, InternalModelElementContainer parent){
-		createSuspend(ID,null,parent,true)
+	def createDeclaration(String ID, InternalModelElementContainer parent){
+		createDeclaration(ID,null,parent,true)
 	}
 	
-	def createSuspend(String ID, InternalModelElement ime, InternalModelElementContainer parent){
-		createSuspend(ID,ime,parent,true)
+	def createDeclaration(String ID, InternalModelElement ime, InternalModelElementContainer parent){
+		createDeclaration(ID,ime,parent,true)
 	}
 	
 	/**
-	 * This method creates an Suspend with the given id. Post create hook won't be triggered.
+	 * This method creates an Declaration with the given id. Post create hook won't be triggered.
 	 */
-	def createSuspend(InternalModelElement ime) {
-		createSuspend(generateUUID,ime,null,false)
+	def createDeclaration(InternalModelElement ime) {
+		createDeclaration(generateUUID,ime,null,false)
 	}
 	
-	override createSuspend() {
-		createSuspend(generateUUID)
+	override createDeclaration() {
+		createDeclaration(generateUUID)
 	}
 	/**
-	 * This method creates an Connector with the given id.
+	 * This method creates an CircuitConnecter with the given id.
 	 *
 	 * @param ID: The id for the new element
 	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
@@ -563,108 +335,52 @@ class SCChartFactory extends ScchartFactoryImpl {
 	 * element of the created element
 	 * @param hook: Indicates, if the post create hook should be executed
 	 */
-	def createConnector(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
-		super.createConnector => [
+	def createCircuitConnecter(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
+		super.createCircuitConnecter => [
 			setID(ID)
-			internal = ime ?: createInternalConnector => [
+			internal = ime ?: createInternalCircuitConnecter => [
 				setID(ID + "_INTERNAL")
 				container = parent
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ConnectorEContentAdapter)
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.CircuitConnecterEContentAdapter)
 			]
 		]
 		
 	}
 	
 	/**
-	 * This method creates an Connector with the given id. Post create hook won't be triggered.
+	 * This method creates an CircuitConnecter with the given id. Post create hook won't be triggered.
 	 */
-	def createConnector(String ID){
-		createConnector(ID,null,null,false)
+	def createCircuitConnecter(String ID){
+		createCircuitConnecter(ID,null,null,false)
 	}
 	
 	/**
-	 * This method creates an Connector with the given id. Post create hook will be triggered.
+	 * This method creates an CircuitConnecter with the given id. Post create hook will be triggered.
 	 */
-	def createConnector(InternalModelElementContainer parent){
-		createConnector(generateUUID,null,parent,true)
+	def createCircuitConnecter(InternalModelElementContainer parent){
+		createCircuitConnecter(generateUUID,null,parent,true)
 	}
 	
 	/**
-	 * This method creates an Connector with the given id. Post create hook will be triggered.
+	 * This method creates an CircuitConnecter with the given id. Post create hook will be triggered.
 	 */
-	def createConnector(String ID, InternalModelElementContainer parent){
-		createConnector(ID,null,parent,true)
+	def createCircuitConnecter(String ID, InternalModelElementContainer parent){
+		createCircuitConnecter(ID,null,parent,true)
 	}
 	
-	def createConnector(String ID, InternalModelElement ime, InternalModelElementContainer parent){
-		createConnector(ID,ime,parent,true)
+	def createCircuitConnecter(String ID, InternalModelElement ime, InternalModelElementContainer parent){
+		createCircuitConnecter(ID,ime,parent,true)
 	}
 	
 	/**
-	 * This method creates an Connector with the given id. Post create hook won't be triggered.
+	 * This method creates an CircuitConnecter with the given id. Post create hook won't be triggered.
 	 */
-	def createConnector(InternalModelElement ime) {
-		createConnector(generateUUID,ime,null,false)
+	def createCircuitConnecter(InternalModelElement ime) {
+		createCircuitConnecter(generateUUID,ime,null,false)
 	}
 	
-	override createConnector() {
-		createConnector(generateUUID)
-	}
-	/**
-	 * This method creates an SimpleState with the given id.
-	 *
-	 * @param ID: The id for the new element
-	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-	 * element of the created element
-	 * @param hook: Indicates, if the post create hook should be executed
-	 */
-	def createSimpleState(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
-		super.createSimpleState => [
-			setID(ID)
-			internal = ime ?: createInternalSimpleState => [
-				setID(ID + "_INTERNAL")
-				container = parent
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.SimpleStateEContentAdapter)
-			]
-		]
-		
-	}
-	
-	/**
-	 * This method creates an SimpleState with the given id. Post create hook won't be triggered.
-	 */
-	def createSimpleState(String ID){
-		createSimpleState(ID,null,null,false)
-	}
-	
-	/**
-	 * This method creates an SimpleState with the given id. Post create hook will be triggered.
-	 */
-	def createSimpleState(InternalModelElementContainer parent){
-		createSimpleState(generateUUID,null,parent,true)
-	}
-	
-	/**
-	 * This method creates an SimpleState with the given id. Post create hook will be triggered.
-	 */
-	def createSimpleState(String ID, InternalModelElementContainer parent){
-		createSimpleState(ID,null,parent,true)
-	}
-	
-	def createSimpleState(String ID, InternalModelElement ime, InternalModelElementContainer parent){
-		createSimpleState(ID,ime,parent,true)
-	}
-	
-	/**
-	 * This method creates an SimpleState with the given id. Post create hook won't be triggered.
-	 */
-	def createSimpleState(InternalModelElement ime) {
-		createSimpleState(generateUUID,ime,null,false)
-	}
-	
-	override createSimpleState() {
-		createSimpleState(generateUUID)
+	override createCircuitConnecter() {
+		createCircuitConnecter(generateUUID)
 	}
 	/**
 	 * This method creates an FinalState with the given id.
@@ -780,63 +496,6 @@ class SCChartFactory extends ScchartFactoryImpl {
 		createRootState(generateUUID)
 	}
 	/**
-	 * This method creates an DataFlowRegion with the given id.
-	 *
-	 * @param ID: The id for the new element
-	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-	 * element of the created element
-	 * @param hook: Indicates, if the post create hook should be executed
-	 */
-	def createDataFlowRegion(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
-		super.createDataFlowRegion => [
-			setID(ID)
-			internal = ime ?: createInternalDataFlowRegion => [
-				setID(ID + "_INTERNAL")
-				container = parent
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.DataFlowRegionEContentAdapter)
-			]
-			if (hook) postCreates
-		]
-		
-	}
-	
-	/**
-	 * This method creates an DataFlowRegion with the given id. Post create hook won't be triggered.
-	 */
-	def createDataFlowRegion(String ID){
-		createDataFlowRegion(ID,null,null,false)
-	}
-	
-	/**
-	 * This method creates an DataFlowRegion with the given id. Post create hook will be triggered.
-	 */
-	def createDataFlowRegion(InternalModelElementContainer parent){
-		createDataFlowRegion(generateUUID,null,parent,true)
-	}
-	
-	/**
-	 * This method creates an DataFlowRegion with the given id. Post create hook will be triggered.
-	 */
-	def createDataFlowRegion(String ID, InternalModelElementContainer parent){
-		createDataFlowRegion(ID,null,parent,true)
-	}
-	
-	def createDataFlowRegion(String ID, InternalModelElement ime, InternalModelElementContainer parent){
-		createDataFlowRegion(ID,ime,parent,true)
-	}
-	
-	/**
-	 * This method creates an DataFlowRegion with the given id. Post create hook won't be triggered.
-	 */
-	def createDataFlowRegion(InternalModelElement ime) {
-		createDataFlowRegion(generateUUID,ime,null,false)
-	}
-	
-	override createDataFlowRegion() {
-		createDataFlowRegion(generateUUID)
-	}
-	/**
 	 * This method creates an SuperState with the given id.
 	 *
 	 * @param ID: The id for the new element
@@ -892,63 +551,6 @@ class SCChartFactory extends ScchartFactoryImpl {
 	
 	override createSuperState() {
 		createSuperState(generateUUID)
-	}
-	/**
-	 * This method creates an RootStateDeclaration with the given id.
-	 *
-	 * @param ID: The id for the new element
-	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-	 * element of the created element
-	 * @param hook: Indicates, if the post create hook should be executed
-	 */
-	def createRootStateDeclaration(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
-		super.createRootStateDeclaration => [
-			setID(ID)
-			internal = ime ?: createInternalRootStateDeclaration => [
-				setID(ID + "_INTERNAL")
-				container = parent
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.RootStateDeclarationEContentAdapter)
-			]
-			if (hook) postCreates
-		]
-		
-	}
-	
-	/**
-	 * This method creates an RootStateDeclaration with the given id. Post create hook won't be triggered.
-	 */
-	def createRootStateDeclaration(String ID){
-		createRootStateDeclaration(ID,null,null,false)
-	}
-	
-	/**
-	 * This method creates an RootStateDeclaration with the given id. Post create hook will be triggered.
-	 */
-	def createRootStateDeclaration(InternalModelElementContainer parent){
-		createRootStateDeclaration(generateUUID,null,parent,true)
-	}
-	
-	/**
-	 * This method creates an RootStateDeclaration with the given id. Post create hook will be triggered.
-	 */
-	def createRootStateDeclaration(String ID, InternalModelElementContainer parent){
-		createRootStateDeclaration(ID,null,parent,true)
-	}
-	
-	def createRootStateDeclaration(String ID, InternalModelElement ime, InternalModelElementContainer parent){
-		createRootStateDeclaration(ID,ime,parent,true)
-	}
-	
-	/**
-	 * This method creates an RootStateDeclaration with the given id. Post create hook won't be triggered.
-	 */
-	def createRootStateDeclaration(InternalModelElement ime) {
-		createRootStateDeclaration(generateUUID,ime,null,false)
-	}
-	
-	override createRootStateDeclaration() {
-		createRootStateDeclaration(generateUUID)
 	}
 	/**
 	 * This method creates an InitialState with the given id.
@@ -1007,7 +609,7 @@ class SCChartFactory extends ScchartFactoryImpl {
 		createInitialState(generateUUID)
 	}
 	/**
-	 * This method creates an CircuitConnecter with the given id.
+	 * This method creates an Connector with the given id.
 	 *
 	 * @param ID: The id for the new element
 	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
@@ -1015,492 +617,393 @@ class SCChartFactory extends ScchartFactoryImpl {
 	 * element of the created element
 	 * @param hook: Indicates, if the post create hook should be executed
 	 */
-	def createCircuitConnecter(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
-		super.createCircuitConnecter => [
+	def createConnector(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
+		super.createConnector => [
 			setID(ID)
-			internal = ime ?: createInternalCircuitConnecter => [
+			internal = ime ?: createInternalConnector => [
 				setID(ID + "_INTERNAL")
 				container = parent
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.CircuitConnecterEContentAdapter)
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ConnectorEContentAdapter)
 			]
 		]
 		
 	}
 	
 	/**
-	 * This method creates an CircuitConnecter with the given id. Post create hook won't be triggered.
+	 * This method creates an Connector with the given id. Post create hook won't be triggered.
 	 */
-	def createCircuitConnecter(String ID){
-		createCircuitConnecter(ID,null,null,false)
+	def createConnector(String ID){
+		createConnector(ID,null,null,false)
 	}
 	
 	/**
-	 * This method creates an CircuitConnecter with the given id. Post create hook will be triggered.
+	 * This method creates an Connector with the given id. Post create hook will be triggered.
 	 */
-	def createCircuitConnecter(InternalModelElementContainer parent){
-		createCircuitConnecter(generateUUID,null,parent,true)
+	def createConnector(InternalModelElementContainer parent){
+		createConnector(generateUUID,null,parent,true)
 	}
 	
 	/**
-	 * This method creates an CircuitConnecter with the given id. Post create hook will be triggered.
+	 * This method creates an Connector with the given id. Post create hook will be triggered.
 	 */
-	def createCircuitConnecter(String ID, InternalModelElementContainer parent){
-		createCircuitConnecter(ID,null,parent,true)
+	def createConnector(String ID, InternalModelElementContainer parent){
+		createConnector(ID,null,parent,true)
 	}
 	
-	def createCircuitConnecter(String ID, InternalModelElement ime, InternalModelElementContainer parent){
-		createCircuitConnecter(ID,ime,parent,true)
+	def createConnector(String ID, InternalModelElement ime, InternalModelElementContainer parent){
+		createConnector(ID,ime,parent,true)
 	}
 	
 	/**
-	 * This method creates an CircuitConnecter with the given id. Post create hook won't be triggered.
+	 * This method creates an Connector with the given id. Post create hook won't be triggered.
 	 */
-	def createCircuitConnecter(InternalModelElement ime) {
-		createCircuitConnecter(generateUUID,ime,null,false)
+	def createConnector(InternalModelElement ime) {
+		createConnector(generateUUID,ime,null,false)
 	}
 	
-	override createCircuitConnecter() {
-		createCircuitConnecter(generateUUID)
+	override createConnector() {
+		createConnector(generateUUID)
 	}
-	def createImmediateDeferredTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createImmediateDeferredTransition => [
+	/**
+	 * This method creates an Action with the given id.
+	 *
+	 * @param ID: The id for the new element
+	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+	 * element of the created element
+	 * @param hook: Indicates, if the post create hook should be executed
+	 */
+	def createAction(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
+		super.createAction => [
 			setID(ID)
-			internal = ime ?: createInternalImmediateDeferredTransition => [
-				(it as InternalEdge).set_sourceElement(source)
-				(it as InternalEdge).set_targetElement(target)
-				container = source?.rootElement ?: target?.rootElement
+			internal = ime ?: createInternalAction => [
 				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ImmediateDeferredTransitionEContentAdapter)
+				container = parent
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ActionEContentAdapter)
+			]
+			if (hook) postCreates
+		]
+		
+	}
+	
+	/**
+	 * This method creates an Action with the given id. Post create hook won't be triggered.
+	 */
+	def createAction(String ID){
+		createAction(ID,null,null,false)
+	}
+	
+	/**
+	 * This method creates an Action with the given id. Post create hook will be triggered.
+	 */
+	def createAction(InternalModelElementContainer parent){
+		createAction(generateUUID,null,parent,true)
+	}
+	
+	/**
+	 * This method creates an Action with the given id. Post create hook will be triggered.
+	 */
+	def createAction(String ID, InternalModelElementContainer parent){
+		createAction(ID,null,parent,true)
+	}
+	
+	def createAction(String ID, InternalModelElement ime, InternalModelElementContainer parent){
+		createAction(ID,ime,parent,true)
+	}
+	
+	/**
+	 * This method creates an Action with the given id. Post create hook won't be triggered.
+	 */
+	def createAction(InternalModelElement ime) {
+		createAction(generateUUID,ime,null,false)
+	}
+	
+	override createAction() {
+		createAction(generateUUID)
+	}
+	/**
+	 * This method creates an SimpleState with the given id.
+	 *
+	 * @param ID: The id for the new element
+	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+	 * element of the created element
+	 * @param hook: Indicates, if the post create hook should be executed
+	 */
+	def createSimpleState(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
+		super.createSimpleState => [
+			setID(ID)
+			internal = ime ?: createInternalSimpleState => [
+				setID(ID + "_INTERNAL")
+				container = parent
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.SimpleStateEContentAdapter)
 			]
 		]
+		
 	}
 	
 	/**
-	 * This method creates an ImmediateDeferredTransition with the given id. Post create hook will be triggered.
+	 * This method creates an SimpleState with the given id. Post create hook won't be triggered.
 	 */
-	def createImmediateDeferredTransition(String ID, InternalNode source, InternalNode target){
-		createImmediateDeferredTransition(ID,null,source,target,true)
+	def createSimpleState(String ID){
+		createSimpleState(ID,null,null,false)
 	}
 	
 	/**
-	 * This method creates an ImmediateDeferredTransition with generated id. Post create hook will be triggered.
+	 * This method creates an SimpleState with the given id. Post create hook will be triggered.
 	 */
-	def createImmediateDeferredTransition(InternalNode source, InternalNode target){
-		createImmediateDeferredTransition(generateUUID,null,source,target,true)
+	def createSimpleState(InternalModelElementContainer parent){
+		createSimpleState(generateUUID,null,parent,true)
 	}
 	
 	/**
-	 * This method creates an ImmediateDeferredTransition with the given id. Post create hook won't be triggered.
+	 * This method creates an SimpleState with the given id. Post create hook will be triggered.
 	 */
-	def createImmediateDeferredTransition(String ID){
-		createImmediateDeferredTransition(ID,null,null,null,false)
+	def createSimpleState(String ID, InternalModelElementContainer parent){
+		createSimpleState(ID,null,parent,true)
+	}
+	
+	def createSimpleState(String ID, InternalModelElement ime, InternalModelElementContainer parent){
+		createSimpleState(ID,ime,parent,true)
 	}
 	
 	/**
-	 * This method creates an ImmediateDeferredTransition with a generated id. Post create hook won't be triggered.
+	 * This method creates an SimpleState with the given id. Post create hook won't be triggered.
 	 */
-	override createImmediateDeferredTransition() {
-		createImmediateDeferredTransition(generateUUID)
+	def createSimpleState(InternalModelElement ime) {
+		createSimpleState(generateUUID,ime,null,false)
 	}
-	def createImmediateStrongAbortTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createImmediateStrongAbortTransition => [
+	
+	override createSimpleState() {
+		createSimpleState(generateUUID)
+	}
+	/**
+	 * This method creates an Suspend with the given id.
+	 *
+	 * @param ID: The id for the new element
+	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+	 * element of the created element
+	 * @param hook: Indicates, if the post create hook should be executed
+	 */
+	def createSuspend(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
+		super.createSuspend => [
 			setID(ID)
-			internal = ime ?: createInternalImmediateStrongAbortTransition => [
-				(it as InternalEdge).set_sourceElement(source)
-				(it as InternalEdge).set_targetElement(target)
-				container = source?.rootElement ?: target?.rootElement
+			internal = ime ?: createInternalSuspend => [
 				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ImmediateStrongAbortTransitionEContentAdapter)
+				container = parent
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.SuspendEContentAdapter)
 			]
+			if (hook) postCreates
 		]
+		
 	}
 	
 	/**
-	 * This method creates an ImmediateStrongAbortTransition with the given id. Post create hook will be triggered.
+	 * This method creates an Suspend with the given id. Post create hook won't be triggered.
 	 */
-	def createImmediateStrongAbortTransition(String ID, InternalNode source, InternalNode target){
-		createImmediateStrongAbortTransition(ID,null,source,target,true)
+	def createSuspend(String ID){
+		createSuspend(ID,null,null,false)
 	}
 	
 	/**
-	 * This method creates an ImmediateStrongAbortTransition with generated id. Post create hook will be triggered.
+	 * This method creates an Suspend with the given id. Post create hook will be triggered.
 	 */
-	def createImmediateStrongAbortTransition(InternalNode source, InternalNode target){
-		createImmediateStrongAbortTransition(generateUUID,null,source,target,true)
+	def createSuspend(InternalModelElementContainer parent){
+		createSuspend(generateUUID,null,parent,true)
 	}
 	
 	/**
-	 * This method creates an ImmediateStrongAbortTransition with the given id. Post create hook won't be triggered.
+	 * This method creates an Suspend with the given id. Post create hook will be triggered.
 	 */
-	def createImmediateStrongAbortTransition(String ID){
-		createImmediateStrongAbortTransition(ID,null,null,null,false)
+	def createSuspend(String ID, InternalModelElementContainer parent){
+		createSuspend(ID,null,parent,true)
+	}
+	
+	def createSuspend(String ID, InternalModelElement ime, InternalModelElementContainer parent){
+		createSuspend(ID,ime,parent,true)
 	}
 	
 	/**
-	 * This method creates an ImmediateStrongAbortTransition with a generated id. Post create hook won't be triggered.
+	 * This method creates an Suspend with the given id. Post create hook won't be triggered.
 	 */
-	override createImmediateStrongAbortTransition() {
-		createImmediateStrongAbortTransition(generateUUID)
+	def createSuspend(InternalModelElement ime) {
+		createSuspend(generateUUID,ime,null,false)
 	}
-	def createHistoryTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createHistoryTransition => [
+	
+	override createSuspend() {
+		createSuspend(generateUUID)
+	}
+	/**
+	 * This method creates an Region with the given id.
+	 *
+	 * @param ID: The id for the new element
+	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+	 * element of the created element
+	 * @param hook: Indicates, if the post create hook should be executed
+	 */
+	def createRegion(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
+		super.createRegion => [
 			setID(ID)
-			internal = ime ?: createInternalHistoryTransition => [
-				(it as InternalEdge).set_sourceElement(source)
-				(it as InternalEdge).set_targetElement(target)
-				container = source?.rootElement ?: target?.rootElement
+			internal = ime ?: createInternalRegion => [
 				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.HistoryTransitionEContentAdapter)
+				container = parent
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.RegionEContentAdapter)
 			]
+			if (hook) postCreates
 		]
+		
 	}
 	
 	/**
-	 * This method creates an HistoryTransition with the given id. Post create hook will be triggered.
+	 * This method creates an Region with the given id. Post create hook won't be triggered.
 	 */
-	def createHistoryTransition(String ID, InternalNode source, InternalNode target){
-		createHistoryTransition(ID,null,source,target,true)
+	def createRegion(String ID){
+		createRegion(ID,null,null,false)
 	}
 	
 	/**
-	 * This method creates an HistoryTransition with generated id. Post create hook will be triggered.
+	 * This method creates an Region with the given id. Post create hook will be triggered.
 	 */
-	def createHistoryTransition(InternalNode source, InternalNode target){
-		createHistoryTransition(generateUUID,null,source,target,true)
+	def createRegion(InternalModelElementContainer parent){
+		createRegion(generateUUID,null,parent,true)
 	}
 	
 	/**
-	 * This method creates an HistoryTransition with the given id. Post create hook won't be triggered.
+	 * This method creates an Region with the given id. Post create hook will be triggered.
 	 */
-	def createHistoryTransition(String ID){
-		createHistoryTransition(ID,null,null,null,false)
+	def createRegion(String ID, InternalModelElementContainer parent){
+		createRegion(ID,null,parent,true)
+	}
+	
+	def createRegion(String ID, InternalModelElement ime, InternalModelElementContainer parent){
+		createRegion(ID,ime,parent,true)
 	}
 	
 	/**
-	 * This method creates an HistoryTransition with a generated id. Post create hook won't be triggered.
+	 * This method creates an Region with the given id. Post create hook won't be triggered.
 	 */
-	override createHistoryTransition() {
-		createHistoryTransition(generateUUID)
+	def createRegion(InternalModelElement ime) {
+		createRegion(generateUUID,ime,null,false)
 	}
-	def createStrongAbortTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createStrongAbortTransition => [
+	
+	override createRegion() {
+		createRegion(generateUUID)
+	}
+	/**
+	 * This method creates an InitilalSuperState with the given id.
+	 *
+	 * @param ID: The id for the new element
+	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+	 * element of the created element
+	 * @param hook: Indicates, if the post create hook should be executed
+	 */
+	def createInitilalSuperState(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
+		super.createInitilalSuperState => [
 			setID(ID)
-			internal = ime ?: createInternalStrongAbortTransition => [
-				(it as InternalEdge).set_sourceElement(source)
-				(it as InternalEdge).set_targetElement(target)
-				container = source?.rootElement ?: target?.rootElement
+			internal = ime ?: createInternalInitilalSuperState => [
 				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.StrongAbortTransitionEContentAdapter)
+				container = parent
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.InitilalSuperStateEContentAdapter)
 			]
+			if (hook) postCreates
 		]
+		
 	}
 	
 	/**
-	 * This method creates an StrongAbortTransition with the given id. Post create hook will be triggered.
+	 * This method creates an InitilalSuperState with the given id. Post create hook won't be triggered.
 	 */
-	def createStrongAbortTransition(String ID, InternalNode source, InternalNode target){
-		createStrongAbortTransition(ID,null,source,target,true)
+	def createInitilalSuperState(String ID){
+		createInitilalSuperState(ID,null,null,false)
 	}
 	
 	/**
-	 * This method creates an StrongAbortTransition with generated id. Post create hook will be triggered.
+	 * This method creates an InitilalSuperState with the given id. Post create hook will be triggered.
 	 */
-	def createStrongAbortTransition(InternalNode source, InternalNode target){
-		createStrongAbortTransition(generateUUID,null,source,target,true)
+	def createInitilalSuperState(InternalModelElementContainer parent){
+		createInitilalSuperState(generateUUID,null,parent,true)
 	}
 	
 	/**
-	 * This method creates an StrongAbortTransition with the given id. Post create hook won't be triggered.
+	 * This method creates an InitilalSuperState with the given id. Post create hook will be triggered.
 	 */
-	def createStrongAbortTransition(String ID){
-		createStrongAbortTransition(ID,null,null,null,false)
+	def createInitilalSuperState(String ID, InternalModelElementContainer parent){
+		createInitilalSuperState(ID,null,parent,true)
+	}
+	
+	def createInitilalSuperState(String ID, InternalModelElement ime, InternalModelElementContainer parent){
+		createInitilalSuperState(ID,ime,parent,true)
 	}
 	
 	/**
-	 * This method creates an StrongAbortTransition with a generated id. Post create hook won't be triggered.
+	 * This method creates an InitilalSuperState with the given id. Post create hook won't be triggered.
 	 */
-	override createStrongAbortTransition() {
-		createStrongAbortTransition(generateUUID)
+	def createInitilalSuperState(InternalModelElement ime) {
+		createInitilalSuperState(generateUUID,ime,null,false)
 	}
-	def createDeferredTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createDeferredTransition => [
+	
+	override createInitilalSuperState() {
+		createInitilalSuperState(generateUUID)
+	}
+	/**
+	 * This method creates an DataFlowRegion with the given id.
+	 *
+	 * @param ID: The id for the new element
+	 * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+	 * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+	 * element of the created element
+	 * @param hook: Indicates, if the post create hook should be executed
+	 */
+	def createDataFlowRegion(String ID, InternalModelElement ime, InternalModelElementContainer parent, boolean hook){
+		super.createDataFlowRegion => [
 			setID(ID)
-			internal = ime ?: createInternalDeferredTransition => [
-				(it as InternalEdge).set_sourceElement(source)
-				(it as InternalEdge).set_targetElement(target)
-				container = source?.rootElement ?: target?.rootElement
+			internal = ime ?: createInternalDataFlowRegion => [
 				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.DeferredTransitionEContentAdapter)
+				container = parent
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.DataFlowRegionEContentAdapter)
 			]
+			if (hook) postCreates
 		]
+		
 	}
 	
 	/**
-	 * This method creates an DeferredTransition with the given id. Post create hook will be triggered.
+	 * This method creates an DataFlowRegion with the given id. Post create hook won't be triggered.
 	 */
-	def createDeferredTransition(String ID, InternalNode source, InternalNode target){
-		createDeferredTransition(ID,null,source,target,true)
+	def createDataFlowRegion(String ID){
+		createDataFlowRegion(ID,null,null,false)
 	}
 	
 	/**
-	 * This method creates an DeferredTransition with generated id. Post create hook will be triggered.
+	 * This method creates an DataFlowRegion with the given id. Post create hook will be triggered.
 	 */
-	def createDeferredTransition(InternalNode source, InternalNode target){
-		createDeferredTransition(generateUUID,null,source,target,true)
+	def createDataFlowRegion(InternalModelElementContainer parent){
+		createDataFlowRegion(generateUUID,null,parent,true)
 	}
 	
 	/**
-	 * This method creates an DeferredTransition with the given id. Post create hook won't be triggered.
+	 * This method creates an DataFlowRegion with the given id. Post create hook will be triggered.
 	 */
-	def createDeferredTransition(String ID){
-		createDeferredTransition(ID,null,null,null,false)
+	def createDataFlowRegion(String ID, InternalModelElementContainer parent){
+		createDataFlowRegion(ID,null,parent,true)
+	}
+	
+	def createDataFlowRegion(String ID, InternalModelElement ime, InternalModelElementContainer parent){
+		createDataFlowRegion(ID,ime,parent,true)
 	}
 	
 	/**
-	 * This method creates an DeferredTransition with a generated id. Post create hook won't be triggered.
+	 * This method creates an DataFlowRegion with the given id. Post create hook won't be triggered.
 	 */
-	override createDeferredTransition() {
-		createDeferredTransition(generateUUID)
-	}
-	def createTerminationTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createTerminationTransition => [
-			setID(ID)
-			internal = ime ?: createInternalTerminationTransition => [
-				(it as InternalEdge).set_sourceElement(source)
-				(it as InternalEdge).set_targetElement(target)
-				container = source?.rootElement ?: target?.rootElement
-				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.TerminationTransitionEContentAdapter)
-			]
-		]
+	def createDataFlowRegion(InternalModelElement ime) {
+		createDataFlowRegion(generateUUID,ime,null,false)
 	}
 	
-	/**
-	 * This method creates an TerminationTransition with the given id. Post create hook will be triggered.
-	 */
-	def createTerminationTransition(String ID, InternalNode source, InternalNode target){
-		createTerminationTransition(ID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an TerminationTransition with generated id. Post create hook will be triggered.
-	 */
-	def createTerminationTransition(InternalNode source, InternalNode target){
-		createTerminationTransition(generateUUID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an TerminationTransition with the given id. Post create hook won't be triggered.
-	 */
-	def createTerminationTransition(String ID){
-		createTerminationTransition(ID,null,null,null,false)
-	}
-	
-	/**
-	 * This method creates an TerminationTransition with a generated id. Post create hook won't be triggered.
-	 */
-	override createTerminationTransition() {
-		createTerminationTransition(generateUUID)
-	}
-	def createConnection(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createConnection => [
-			setID(ID)
-			internal = ime ?: createInternalConnection => [
-				(it as InternalEdge).set_sourceElement(source)
-				(it as InternalEdge).set_targetElement(target)
-				container = source?.rootElement ?: target?.rootElement
-				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ConnectionEContentAdapter)
-			]
-		]
-	}
-	
-	/**
-	 * This method creates an Connection with the given id. Post create hook will be triggered.
-	 */
-	def createConnection(String ID, InternalNode source, InternalNode target){
-		createConnection(ID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an Connection with generated id. Post create hook will be triggered.
-	 */
-	def createConnection(InternalNode source, InternalNode target){
-		createConnection(generateUUID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an Connection with the given id. Post create hook won't be triggered.
-	 */
-	def createConnection(String ID){
-		createConnection(ID,null,null,null,false)
-	}
-	
-	/**
-	 * This method creates an Connection with a generated id. Post create hook won't be triggered.
-	 */
-	override createConnection() {
-		createConnection(generateUUID)
-	}
-	def createImmediateHistoryTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createImmediateHistoryTransition => [
-			setID(ID)
-			internal = ime ?: createInternalImmediateHistoryTransition => [
-				(it as InternalEdge).set_sourceElement(source)
-				(it as InternalEdge).set_targetElement(target)
-				container = source?.rootElement ?: target?.rootElement
-				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ImmediateHistoryTransitionEContentAdapter)
-			]
-		]
-	}
-	
-	/**
-	 * This method creates an ImmediateHistoryTransition with the given id. Post create hook will be triggered.
-	 */
-	def createImmediateHistoryTransition(String ID, InternalNode source, InternalNode target){
-		createImmediateHistoryTransition(ID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an ImmediateHistoryTransition with generated id. Post create hook will be triggered.
-	 */
-	def createImmediateHistoryTransition(InternalNode source, InternalNode target){
-		createImmediateHistoryTransition(generateUUID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an ImmediateHistoryTransition with the given id. Post create hook won't be triggered.
-	 */
-	def createImmediateHistoryTransition(String ID){
-		createImmediateHistoryTransition(ID,null,null,null,false)
-	}
-	
-	/**
-	 * This method creates an ImmediateHistoryTransition with a generated id. Post create hook won't be triggered.
-	 */
-	override createImmediateHistoryTransition() {
-		createImmediateHistoryTransition(generateUUID)
-	}
-	def createConditionalTerminationHistoryTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createConditionalTerminationHistoryTransition => [
-			setID(ID)
-			internal = ime ?: createInternalConditionalTerminationHistoryTransition => [
-				(it as InternalEdge).set_sourceElement(source)
-				(it as InternalEdge).set_targetElement(target)
-				container = source?.rootElement ?: target?.rootElement
-				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ConditionalTerminationHistoryTransitionEContentAdapter)
-			]
-		]
-	}
-	
-	/**
-	 * This method creates an ConditionalTerminationHistoryTransition with the given id. Post create hook will be triggered.
-	 */
-	def createConditionalTerminationHistoryTransition(String ID, InternalNode source, InternalNode target){
-		createConditionalTerminationHistoryTransition(ID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an ConditionalTerminationHistoryTransition with generated id. Post create hook will be triggered.
-	 */
-	def createConditionalTerminationHistoryTransition(InternalNode source, InternalNode target){
-		createConditionalTerminationHistoryTransition(generateUUID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an ConditionalTerminationHistoryTransition with the given id. Post create hook won't be triggered.
-	 */
-	def createConditionalTerminationHistoryTransition(String ID){
-		createConditionalTerminationHistoryTransition(ID,null,null,null,false)
-	}
-	
-	/**
-	 * This method creates an ConditionalTerminationHistoryTransition with a generated id. Post create hook won't be triggered.
-	 */
-	override createConditionalTerminationHistoryTransition() {
-		createConditionalTerminationHistoryTransition(generateUUID)
-	}
-	def createTerminationDefferdTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createTerminationDefferdTransition => [
-			setID(ID)
-			internal = ime ?: createInternalTerminationDefferdTransition => [
-				(it as InternalEdge).set_sourceElement(source)
-				(it as InternalEdge).set_targetElement(target)
-				container = source?.rootElement ?: target?.rootElement
-				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.TerminationDefferdTransitionEContentAdapter)
-			]
-		]
-	}
-	
-	/**
-	 * This method creates an TerminationDefferdTransition with the given id. Post create hook will be triggered.
-	 */
-	def createTerminationDefferdTransition(String ID, InternalNode source, InternalNode target){
-		createTerminationDefferdTransition(ID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an TerminationDefferdTransition with generated id. Post create hook will be triggered.
-	 */
-	def createTerminationDefferdTransition(InternalNode source, InternalNode target){
-		createTerminationDefferdTransition(generateUUID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an TerminationDefferdTransition with the given id. Post create hook won't be triggered.
-	 */
-	def createTerminationDefferdTransition(String ID){
-		createTerminationDefferdTransition(ID,null,null,null,false)
-	}
-	
-	/**
-	 * This method creates an TerminationDefferdTransition with a generated id. Post create hook won't be triggered.
-	 */
-	override createTerminationDefferdTransition() {
-		createTerminationDefferdTransition(generateUUID)
-	}
-	def createImmediateTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createImmediateTransition => [
-			setID(ID)
-			internal = ime ?: createInternalImmediateTransition => [
-				(it as InternalEdge).set_sourceElement(source)
-				(it as InternalEdge).set_targetElement(target)
-				container = source?.rootElement ?: target?.rootElement
-				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ImmediateTransitionEContentAdapter)
-			]
-		]
-	}
-	
-	/**
-	 * This method creates an ImmediateTransition with the given id. Post create hook will be triggered.
-	 */
-	def createImmediateTransition(String ID, InternalNode source, InternalNode target){
-		createImmediateTransition(ID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an ImmediateTransition with generated id. Post create hook will be triggered.
-	 */
-	def createImmediateTransition(InternalNode source, InternalNode target){
-		createImmediateTransition(generateUUID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an ImmediateTransition with the given id. Post create hook won't be triggered.
-	 */
-	def createImmediateTransition(String ID){
-		createImmediateTransition(ID,null,null,null,false)
-	}
-	
-	/**
-	 * This method creates an ImmediateTransition with a generated id. Post create hook won't be triggered.
-	 */
-	override createImmediateTransition() {
-		createImmediateTransition(generateUUID)
+	override createDataFlowRegion() {
+		createDataFlowRegion(generateUUID)
 	}
 	def createStrongAbortHistoryTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
 		super.createStrongAbortHistoryTransition => [
@@ -1542,245 +1045,125 @@ class SCChartFactory extends ScchartFactoryImpl {
 	override createStrongAbortHistoryTransition() {
 		createStrongAbortHistoryTransition(generateUUID)
 	}
-	def createAbstractTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createAbstractTransition => [
+	def createConditionalTerminationDeferredTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createConditionalTerminationDeferredTransition => [
 			setID(ID)
-			internal = ime ?: createInternalAbstractTransition => [
+			internal = ime ?: createInternalConditionalTerminationDeferredTransition => [
 				(it as InternalEdge).set_sourceElement(source)
 				(it as InternalEdge).set_targetElement(target)
 				container = source?.rootElement ?: target?.rootElement
 				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.AbstractTransitionEContentAdapter)
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ConditionalTerminationDeferredTransitionEContentAdapter)
 			]
 		]
 	}
 	
 	/**
-	 * This method creates an AbstractTransition with the given id. Post create hook will be triggered.
+	 * This method creates an ConditionalTerminationDeferredTransition with the given id. Post create hook will be triggered.
 	 */
-	def createAbstractTransition(String ID, InternalNode source, InternalNode target){
-		createAbstractTransition(ID,null,source,target,true)
+	def createConditionalTerminationDeferredTransition(String ID, InternalNode source, InternalNode target){
+		createConditionalTerminationDeferredTransition(ID,null,source,target,true)
 	}
 	
 	/**
-	 * This method creates an AbstractTransition with generated id. Post create hook will be triggered.
+	 * This method creates an ConditionalTerminationDeferredTransition with generated id. Post create hook will be triggered.
 	 */
-	def createAbstractTransition(InternalNode source, InternalNode target){
-		createAbstractTransition(generateUUID,null,source,target,true)
+	def createConditionalTerminationDeferredTransition(InternalNode source, InternalNode target){
+		createConditionalTerminationDeferredTransition(generateUUID,null,source,target,true)
 	}
 	
 	/**
-	 * This method creates an AbstractTransition with the given id. Post create hook won't be triggered.
+	 * This method creates an ConditionalTerminationDeferredTransition with the given id. Post create hook won't be triggered.
 	 */
-	def createAbstractTransition(String ID){
-		createAbstractTransition(ID,null,null,null,false)
+	def createConditionalTerminationDeferredTransition(String ID){
+		createConditionalTerminationDeferredTransition(ID,null,null,null,false)
 	}
 	
 	/**
-	 * This method creates an AbstractTransition with a generated id. Post create hook won't be triggered.
+	 * This method creates an ConditionalTerminationDeferredTransition with a generated id. Post create hook won't be triggered.
 	 */
-	override createAbstractTransition() {
-		createAbstractTransition(generateUUID)
+	override createConditionalTerminationDeferredTransition() {
+		createConditionalTerminationDeferredTransition(generateUUID)
 	}
-	def createConditionalTerminationTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createConditionalTerminationTransition => [
+	def createConditionalTerminationHistoryTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createConditionalTerminationHistoryTransition => [
 			setID(ID)
-			internal = ime ?: createInternalConditionalTerminationTransition => [
+			internal = ime ?: createInternalConditionalTerminationHistoryTransition => [
 				(it as InternalEdge).set_sourceElement(source)
 				(it as InternalEdge).set_targetElement(target)
 				container = source?.rootElement ?: target?.rootElement
 				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ConditionalTerminationTransitionEContentAdapter)
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ConditionalTerminationHistoryTransitionEContentAdapter)
 			]
 		]
 	}
 	
 	/**
-	 * This method creates an ConditionalTerminationTransition with the given id. Post create hook will be triggered.
+	 * This method creates an ConditionalTerminationHistoryTransition with the given id. Post create hook will be triggered.
 	 */
-	def createConditionalTerminationTransition(String ID, InternalNode source, InternalNode target){
-		createConditionalTerminationTransition(ID,null,source,target,true)
+	def createConditionalTerminationHistoryTransition(String ID, InternalNode source, InternalNode target){
+		createConditionalTerminationHistoryTransition(ID,null,source,target,true)
 	}
 	
 	/**
-	 * This method creates an ConditionalTerminationTransition with generated id. Post create hook will be triggered.
+	 * This method creates an ConditionalTerminationHistoryTransition with generated id. Post create hook will be triggered.
 	 */
-	def createConditionalTerminationTransition(InternalNode source, InternalNode target){
-		createConditionalTerminationTransition(generateUUID,null,source,target,true)
+	def createConditionalTerminationHistoryTransition(InternalNode source, InternalNode target){
+		createConditionalTerminationHistoryTransition(generateUUID,null,source,target,true)
 	}
 	
 	/**
-	 * This method creates an ConditionalTerminationTransition with the given id. Post create hook won't be triggered.
+	 * This method creates an ConditionalTerminationHistoryTransition with the given id. Post create hook won't be triggered.
 	 */
-	def createConditionalTerminationTransition(String ID){
-		createConditionalTerminationTransition(ID,null,null,null,false)
+	def createConditionalTerminationHistoryTransition(String ID){
+		createConditionalTerminationHistoryTransition(ID,null,null,null,false)
 	}
 	
 	/**
-	 * This method creates an ConditionalTerminationTransition with a generated id. Post create hook won't be triggered.
+	 * This method creates an ConditionalTerminationHistoryTransition with a generated id. Post create hook won't be triggered.
 	 */
-	override createConditionalTerminationTransition() {
-		createConditionalTerminationTransition(generateUUID)
+	override createConditionalTerminationHistoryTransition() {
+		createConditionalTerminationHistoryTransition(generateUUID)
 	}
-	def createImmediateStrongAbortDeferredTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createImmediateStrongAbortDeferredTransition => [
+	def createImmediateDeferredTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createImmediateDeferredTransition => [
 			setID(ID)
-			internal = ime ?: createInternalImmediateStrongAbortDeferredTransition => [
+			internal = ime ?: createInternalImmediateDeferredTransition => [
 				(it as InternalEdge).set_sourceElement(source)
 				(it as InternalEdge).set_targetElement(target)
 				container = source?.rootElement ?: target?.rootElement
 				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ImmediateStrongAbortDeferredTransitionEContentAdapter)
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ImmediateDeferredTransitionEContentAdapter)
 			]
 		]
 	}
 	
 	/**
-	 * This method creates an ImmediateStrongAbortDeferredTransition with the given id. Post create hook will be triggered.
+	 * This method creates an ImmediateDeferredTransition with the given id. Post create hook will be triggered.
 	 */
-	def createImmediateStrongAbortDeferredTransition(String ID, InternalNode source, InternalNode target){
-		createImmediateStrongAbortDeferredTransition(ID,null,source,target,true)
+	def createImmediateDeferredTransition(String ID, InternalNode source, InternalNode target){
+		createImmediateDeferredTransition(ID,null,source,target,true)
 	}
 	
 	/**
-	 * This method creates an ImmediateStrongAbortDeferredTransition with generated id. Post create hook will be triggered.
+	 * This method creates an ImmediateDeferredTransition with generated id. Post create hook will be triggered.
 	 */
-	def createImmediateStrongAbortDeferredTransition(InternalNode source, InternalNode target){
-		createImmediateStrongAbortDeferredTransition(generateUUID,null,source,target,true)
+	def createImmediateDeferredTransition(InternalNode source, InternalNode target){
+		createImmediateDeferredTransition(generateUUID,null,source,target,true)
 	}
 	
 	/**
-	 * This method creates an ImmediateStrongAbortDeferredTransition with the given id. Post create hook won't be triggered.
+	 * This method creates an ImmediateDeferredTransition with the given id. Post create hook won't be triggered.
 	 */
-	def createImmediateStrongAbortDeferredTransition(String ID){
-		createImmediateStrongAbortDeferredTransition(ID,null,null,null,false)
+	def createImmediateDeferredTransition(String ID){
+		createImmediateDeferredTransition(ID,null,null,null,false)
 	}
 	
 	/**
-	 * This method creates an ImmediateStrongAbortDeferredTransition with a generated id. Post create hook won't be triggered.
+	 * This method creates an ImmediateDeferredTransition with a generated id. Post create hook won't be triggered.
 	 */
-	override createImmediateStrongAbortDeferredTransition() {
-		createImmediateStrongAbortDeferredTransition(generateUUID)
-	}
-	def createTerminationHistoryTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createTerminationHistoryTransition => [
-			setID(ID)
-			internal = ime ?: createInternalTerminationHistoryTransition => [
-				(it as InternalEdge).set_sourceElement(source)
-				(it as InternalEdge).set_targetElement(target)
-				container = source?.rootElement ?: target?.rootElement
-				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.TerminationHistoryTransitionEContentAdapter)
-			]
-		]
-	}
-	
-	/**
-	 * This method creates an TerminationHistoryTransition with the given id. Post create hook will be triggered.
-	 */
-	def createTerminationHistoryTransition(String ID, InternalNode source, InternalNode target){
-		createTerminationHistoryTransition(ID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an TerminationHistoryTransition with generated id. Post create hook will be triggered.
-	 */
-	def createTerminationHistoryTransition(InternalNode source, InternalNode target){
-		createTerminationHistoryTransition(generateUUID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an TerminationHistoryTransition with the given id. Post create hook won't be triggered.
-	 */
-	def createTerminationHistoryTransition(String ID){
-		createTerminationHistoryTransition(ID,null,null,null,false)
-	}
-	
-	/**
-	 * This method creates an TerminationHistoryTransition with a generated id. Post create hook won't be triggered.
-	 */
-	override createTerminationHistoryTransition() {
-		createTerminationHistoryTransition(generateUUID)
-	}
-	def createTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createTransition => [
-			setID(ID)
-			internal = ime ?: createInternalTransition => [
-				(it as InternalEdge).set_sourceElement(source)
-				(it as InternalEdge).set_targetElement(target)
-				container = source?.rootElement ?: target?.rootElement
-				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.TransitionEContentAdapter)
-			]
-		]
-	}
-	
-	/**
-	 * This method creates an Transition with the given id. Post create hook will be triggered.
-	 */
-	def createTransition(String ID, InternalNode source, InternalNode target){
-		createTransition(ID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an Transition with generated id. Post create hook will be triggered.
-	 */
-	def createTransition(InternalNode source, InternalNode target){
-		createTransition(generateUUID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an Transition with the given id. Post create hook won't be triggered.
-	 */
-	def createTransition(String ID){
-		createTransition(ID,null,null,null,false)
-	}
-	
-	/**
-	 * This method creates an Transition with a generated id. Post create hook won't be triggered.
-	 */
-	override createTransition() {
-		createTransition(generateUUID)
-	}
-	def createStrongAbortDeferredTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createStrongAbortDeferredTransition => [
-			setID(ID)
-			internal = ime ?: createInternalStrongAbortDeferredTransition => [
-				(it as InternalEdge).set_sourceElement(source)
-				(it as InternalEdge).set_targetElement(target)
-				container = source?.rootElement ?: target?.rootElement
-				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.StrongAbortDeferredTransitionEContentAdapter)
-			]
-		]
-	}
-	
-	/**
-	 * This method creates an StrongAbortDeferredTransition with the given id. Post create hook will be triggered.
-	 */
-	def createStrongAbortDeferredTransition(String ID, InternalNode source, InternalNode target){
-		createStrongAbortDeferredTransition(ID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an StrongAbortDeferredTransition with generated id. Post create hook will be triggered.
-	 */
-	def createStrongAbortDeferredTransition(InternalNode source, InternalNode target){
-		createStrongAbortDeferredTransition(generateUUID,null,source,target,true)
-	}
-	
-	/**
-	 * This method creates an StrongAbortDeferredTransition with the given id. Post create hook won't be triggered.
-	 */
-	def createStrongAbortDeferredTransition(String ID){
-		createStrongAbortDeferredTransition(ID,null,null,null,false)
-	}
-	
-	/**
-	 * This method creates an StrongAbortDeferredTransition with a generated id. Post create hook won't be triggered.
-	 */
-	override createStrongAbortDeferredTransition() {
-		createStrongAbortDeferredTransition(generateUUID)
+	override createImmediateDeferredTransition() {
+		createImmediateDeferredTransition(generateUUID)
 	}
 	def createImmediateStrongAbortHistoryTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
 		super.createImmediateStrongAbortHistoryTransition => [
@@ -1822,45 +1205,605 @@ class SCChartFactory extends ScchartFactoryImpl {
 	override createImmediateStrongAbortHistoryTransition() {
 		createImmediateStrongAbortHistoryTransition(generateUUID)
 	}
-	def createConditionalTerminationDeferredTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
-		super.createConditionalTerminationDeferredTransition => [
+	def createTerminationHistoryTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createTerminationHistoryTransition => [
 			setID(ID)
-			internal = ime ?: createInternalConditionalTerminationDeferredTransition => [
+			internal = ime ?: createInternalTerminationHistoryTransition => [
 				(it as InternalEdge).set_sourceElement(source)
 				(it as InternalEdge).set_targetElement(target)
 				container = source?.rootElement ?: target?.rootElement
 				setID(ID + "_INTERNAL")
-				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ConditionalTerminationDeferredTransitionEContentAdapter)
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.TerminationHistoryTransitionEContentAdapter)
 			]
 		]
 	}
 	
 	/**
-	 * This method creates an ConditionalTerminationDeferredTransition with the given id. Post create hook will be triggered.
+	 * This method creates an TerminationHistoryTransition with the given id. Post create hook will be triggered.
 	 */
-	def createConditionalTerminationDeferredTransition(String ID, InternalNode source, InternalNode target){
-		createConditionalTerminationDeferredTransition(ID,null,source,target,true)
+	def createTerminationHistoryTransition(String ID, InternalNode source, InternalNode target){
+		createTerminationHistoryTransition(ID,null,source,target,true)
 	}
 	
 	/**
-	 * This method creates an ConditionalTerminationDeferredTransition with generated id. Post create hook will be triggered.
+	 * This method creates an TerminationHistoryTransition with generated id. Post create hook will be triggered.
 	 */
-	def createConditionalTerminationDeferredTransition(InternalNode source, InternalNode target){
-		createConditionalTerminationDeferredTransition(generateUUID,null,source,target,true)
+	def createTerminationHistoryTransition(InternalNode source, InternalNode target){
+		createTerminationHistoryTransition(generateUUID,null,source,target,true)
 	}
 	
 	/**
-	 * This method creates an ConditionalTerminationDeferredTransition with the given id. Post create hook won't be triggered.
+	 * This method creates an TerminationHistoryTransition with the given id. Post create hook won't be triggered.
 	 */
-	def createConditionalTerminationDeferredTransition(String ID){
-		createConditionalTerminationDeferredTransition(ID,null,null,null,false)
+	def createTerminationHistoryTransition(String ID){
+		createTerminationHistoryTransition(ID,null,null,null,false)
 	}
 	
 	/**
-	 * This method creates an ConditionalTerminationDeferredTransition with a generated id. Post create hook won't be triggered.
+	 * This method creates an TerminationHistoryTransition with a generated id. Post create hook won't be triggered.
 	 */
-	override createConditionalTerminationDeferredTransition() {
-		createConditionalTerminationDeferredTransition(generateUUID)
+	override createTerminationHistoryTransition() {
+		createTerminationHistoryTransition(generateUUID)
+	}
+	def createStrongAbortTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createStrongAbortTransition => [
+			setID(ID)
+			internal = ime ?: createInternalStrongAbortTransition => [
+				(it as InternalEdge).set_sourceElement(source)
+				(it as InternalEdge).set_targetElement(target)
+				container = source?.rootElement ?: target?.rootElement
+				setID(ID + "_INTERNAL")
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.StrongAbortTransitionEContentAdapter)
+			]
+		]
+	}
+	
+	/**
+	 * This method creates an StrongAbortTransition with the given id. Post create hook will be triggered.
+	 */
+	def createStrongAbortTransition(String ID, InternalNode source, InternalNode target){
+		createStrongAbortTransition(ID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an StrongAbortTransition with generated id. Post create hook will be triggered.
+	 */
+	def createStrongAbortTransition(InternalNode source, InternalNode target){
+		createStrongAbortTransition(generateUUID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an StrongAbortTransition with the given id. Post create hook won't be triggered.
+	 */
+	def createStrongAbortTransition(String ID){
+		createStrongAbortTransition(ID,null,null,null,false)
+	}
+	
+	/**
+	 * This method creates an StrongAbortTransition with a generated id. Post create hook won't be triggered.
+	 */
+	override createStrongAbortTransition() {
+		createStrongAbortTransition(generateUUID)
+	}
+	def createTerminationDefferdTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createTerminationDefferdTransition => [
+			setID(ID)
+			internal = ime ?: createInternalTerminationDefferdTransition => [
+				(it as InternalEdge).set_sourceElement(source)
+				(it as InternalEdge).set_targetElement(target)
+				container = source?.rootElement ?: target?.rootElement
+				setID(ID + "_INTERNAL")
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.TerminationDefferdTransitionEContentAdapter)
+			]
+		]
+	}
+	
+	/**
+	 * This method creates an TerminationDefferdTransition with the given id. Post create hook will be triggered.
+	 */
+	def createTerminationDefferdTransition(String ID, InternalNode source, InternalNode target){
+		createTerminationDefferdTransition(ID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an TerminationDefferdTransition with generated id. Post create hook will be triggered.
+	 */
+	def createTerminationDefferdTransition(InternalNode source, InternalNode target){
+		createTerminationDefferdTransition(generateUUID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an TerminationDefferdTransition with the given id. Post create hook won't be triggered.
+	 */
+	def createTerminationDefferdTransition(String ID){
+		createTerminationDefferdTransition(ID,null,null,null,false)
+	}
+	
+	/**
+	 * This method creates an TerminationDefferdTransition with a generated id. Post create hook won't be triggered.
+	 */
+	override createTerminationDefferdTransition() {
+		createTerminationDefferdTransition(generateUUID)
+	}
+	def createAbstractTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createAbstractTransition => [
+			setID(ID)
+			internal = ime ?: createInternalAbstractTransition => [
+				(it as InternalEdge).set_sourceElement(source)
+				(it as InternalEdge).set_targetElement(target)
+				container = source?.rootElement ?: target?.rootElement
+				setID(ID + "_INTERNAL")
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.AbstractTransitionEContentAdapter)
+			]
+		]
+	}
+	
+	/**
+	 * This method creates an AbstractTransition with the given id. Post create hook will be triggered.
+	 */
+	def createAbstractTransition(String ID, InternalNode source, InternalNode target){
+		createAbstractTransition(ID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an AbstractTransition with generated id. Post create hook will be triggered.
+	 */
+	def createAbstractTransition(InternalNode source, InternalNode target){
+		createAbstractTransition(generateUUID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an AbstractTransition with the given id. Post create hook won't be triggered.
+	 */
+	def createAbstractTransition(String ID){
+		createAbstractTransition(ID,null,null,null,false)
+	}
+	
+	/**
+	 * This method creates an AbstractTransition with a generated id. Post create hook won't be triggered.
+	 */
+	override createAbstractTransition() {
+		createAbstractTransition(generateUUID)
+	}
+	def createDeferredTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createDeferredTransition => [
+			setID(ID)
+			internal = ime ?: createInternalDeferredTransition => [
+				(it as InternalEdge).set_sourceElement(source)
+				(it as InternalEdge).set_targetElement(target)
+				container = source?.rootElement ?: target?.rootElement
+				setID(ID + "_INTERNAL")
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.DeferredTransitionEContentAdapter)
+			]
+		]
+	}
+	
+	/**
+	 * This method creates an DeferredTransition with the given id. Post create hook will be triggered.
+	 */
+	def createDeferredTransition(String ID, InternalNode source, InternalNode target){
+		createDeferredTransition(ID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an DeferredTransition with generated id. Post create hook will be triggered.
+	 */
+	def createDeferredTransition(InternalNode source, InternalNode target){
+		createDeferredTransition(generateUUID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an DeferredTransition with the given id. Post create hook won't be triggered.
+	 */
+	def createDeferredTransition(String ID){
+		createDeferredTransition(ID,null,null,null,false)
+	}
+	
+	/**
+	 * This method creates an DeferredTransition with a generated id. Post create hook won't be triggered.
+	 */
+	override createDeferredTransition() {
+		createDeferredTransition(generateUUID)
+	}
+	def createHistoryTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createHistoryTransition => [
+			setID(ID)
+			internal = ime ?: createInternalHistoryTransition => [
+				(it as InternalEdge).set_sourceElement(source)
+				(it as InternalEdge).set_targetElement(target)
+				container = source?.rootElement ?: target?.rootElement
+				setID(ID + "_INTERNAL")
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.HistoryTransitionEContentAdapter)
+			]
+		]
+	}
+	
+	/**
+	 * This method creates an HistoryTransition with the given id. Post create hook will be triggered.
+	 */
+	def createHistoryTransition(String ID, InternalNode source, InternalNode target){
+		createHistoryTransition(ID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an HistoryTransition with generated id. Post create hook will be triggered.
+	 */
+	def createHistoryTransition(InternalNode source, InternalNode target){
+		createHistoryTransition(generateUUID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an HistoryTransition with the given id. Post create hook won't be triggered.
+	 */
+	def createHistoryTransition(String ID){
+		createHistoryTransition(ID,null,null,null,false)
+	}
+	
+	/**
+	 * This method creates an HistoryTransition with a generated id. Post create hook won't be triggered.
+	 */
+	override createHistoryTransition() {
+		createHistoryTransition(generateUUID)
+	}
+	def createConditionalTerminationTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createConditionalTerminationTransition => [
+			setID(ID)
+			internal = ime ?: createInternalConditionalTerminationTransition => [
+				(it as InternalEdge).set_sourceElement(source)
+				(it as InternalEdge).set_targetElement(target)
+				container = source?.rootElement ?: target?.rootElement
+				setID(ID + "_INTERNAL")
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ConditionalTerminationTransitionEContentAdapter)
+			]
+		]
+	}
+	
+	/**
+	 * This method creates an ConditionalTerminationTransition with the given id. Post create hook will be triggered.
+	 */
+	def createConditionalTerminationTransition(String ID, InternalNode source, InternalNode target){
+		createConditionalTerminationTransition(ID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an ConditionalTerminationTransition with generated id. Post create hook will be triggered.
+	 */
+	def createConditionalTerminationTransition(InternalNode source, InternalNode target){
+		createConditionalTerminationTransition(generateUUID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an ConditionalTerminationTransition with the given id. Post create hook won't be triggered.
+	 */
+	def createConditionalTerminationTransition(String ID){
+		createConditionalTerminationTransition(ID,null,null,null,false)
+	}
+	
+	/**
+	 * This method creates an ConditionalTerminationTransition with a generated id. Post create hook won't be triggered.
+	 */
+	override createConditionalTerminationTransition() {
+		createConditionalTerminationTransition(generateUUID)
+	}
+	def createImmediateHistoryTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createImmediateHistoryTransition => [
+			setID(ID)
+			internal = ime ?: createInternalImmediateHistoryTransition => [
+				(it as InternalEdge).set_sourceElement(source)
+				(it as InternalEdge).set_targetElement(target)
+				container = source?.rootElement ?: target?.rootElement
+				setID(ID + "_INTERNAL")
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ImmediateHistoryTransitionEContentAdapter)
+			]
+		]
+	}
+	
+	/**
+	 * This method creates an ImmediateHistoryTransition with the given id. Post create hook will be triggered.
+	 */
+	def createImmediateHistoryTransition(String ID, InternalNode source, InternalNode target){
+		createImmediateHistoryTransition(ID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an ImmediateHistoryTransition with generated id. Post create hook will be triggered.
+	 */
+	def createImmediateHistoryTransition(InternalNode source, InternalNode target){
+		createImmediateHistoryTransition(generateUUID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an ImmediateHistoryTransition with the given id. Post create hook won't be triggered.
+	 */
+	def createImmediateHistoryTransition(String ID){
+		createImmediateHistoryTransition(ID,null,null,null,false)
+	}
+	
+	/**
+	 * This method creates an ImmediateHistoryTransition with a generated id. Post create hook won't be triggered.
+	 */
+	override createImmediateHistoryTransition() {
+		createImmediateHistoryTransition(generateUUID)
+	}
+	def createTerminationTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createTerminationTransition => [
+			setID(ID)
+			internal = ime ?: createInternalTerminationTransition => [
+				(it as InternalEdge).set_sourceElement(source)
+				(it as InternalEdge).set_targetElement(target)
+				container = source?.rootElement ?: target?.rootElement
+				setID(ID + "_INTERNAL")
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.TerminationTransitionEContentAdapter)
+			]
+		]
+	}
+	
+	/**
+	 * This method creates an TerminationTransition with the given id. Post create hook will be triggered.
+	 */
+	def createTerminationTransition(String ID, InternalNode source, InternalNode target){
+		createTerminationTransition(ID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an TerminationTransition with generated id. Post create hook will be triggered.
+	 */
+	def createTerminationTransition(InternalNode source, InternalNode target){
+		createTerminationTransition(generateUUID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an TerminationTransition with the given id. Post create hook won't be triggered.
+	 */
+	def createTerminationTransition(String ID){
+		createTerminationTransition(ID,null,null,null,false)
+	}
+	
+	/**
+	 * This method creates an TerminationTransition with a generated id. Post create hook won't be triggered.
+	 */
+	override createTerminationTransition() {
+		createTerminationTransition(generateUUID)
+	}
+	def createImmediateStrongAbortTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createImmediateStrongAbortTransition => [
+			setID(ID)
+			internal = ime ?: createInternalImmediateStrongAbortTransition => [
+				(it as InternalEdge).set_sourceElement(source)
+				(it as InternalEdge).set_targetElement(target)
+				container = source?.rootElement ?: target?.rootElement
+				setID(ID + "_INTERNAL")
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ImmediateStrongAbortTransitionEContentAdapter)
+			]
+		]
+	}
+	
+	/**
+	 * This method creates an ImmediateStrongAbortTransition with the given id. Post create hook will be triggered.
+	 */
+	def createImmediateStrongAbortTransition(String ID, InternalNode source, InternalNode target){
+		createImmediateStrongAbortTransition(ID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an ImmediateStrongAbortTransition with generated id. Post create hook will be triggered.
+	 */
+	def createImmediateStrongAbortTransition(InternalNode source, InternalNode target){
+		createImmediateStrongAbortTransition(generateUUID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an ImmediateStrongAbortTransition with the given id. Post create hook won't be triggered.
+	 */
+	def createImmediateStrongAbortTransition(String ID){
+		createImmediateStrongAbortTransition(ID,null,null,null,false)
+	}
+	
+	/**
+	 * This method creates an ImmediateStrongAbortTransition with a generated id. Post create hook won't be triggered.
+	 */
+	override createImmediateStrongAbortTransition() {
+		createImmediateStrongAbortTransition(generateUUID)
+	}
+	def createConnection(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createConnection => [
+			setID(ID)
+			internal = ime ?: createInternalConnection => [
+				(it as InternalEdge).set_sourceElement(source)
+				(it as InternalEdge).set_targetElement(target)
+				container = source?.rootElement ?: target?.rootElement
+				setID(ID + "_INTERNAL")
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ConnectionEContentAdapter)
+			]
+		]
+	}
+	
+	/**
+	 * This method creates an Connection with the given id. Post create hook will be triggered.
+	 */
+	def createConnection(String ID, InternalNode source, InternalNode target){
+		createConnection(ID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an Connection with generated id. Post create hook will be triggered.
+	 */
+	def createConnection(InternalNode source, InternalNode target){
+		createConnection(generateUUID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an Connection with the given id. Post create hook won't be triggered.
+	 */
+	def createConnection(String ID){
+		createConnection(ID,null,null,null,false)
+	}
+	
+	/**
+	 * This method creates an Connection with a generated id. Post create hook won't be triggered.
+	 */
+	override createConnection() {
+		createConnection(generateUUID)
+	}
+	def createImmediateTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createImmediateTransition => [
+			setID(ID)
+			internal = ime ?: createInternalImmediateTransition => [
+				(it as InternalEdge).set_sourceElement(source)
+				(it as InternalEdge).set_targetElement(target)
+				container = source?.rootElement ?: target?.rootElement
+				setID(ID + "_INTERNAL")
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ImmediateTransitionEContentAdapter)
+			]
+		]
+	}
+	
+	/**
+	 * This method creates an ImmediateTransition with the given id. Post create hook will be triggered.
+	 */
+	def createImmediateTransition(String ID, InternalNode source, InternalNode target){
+		createImmediateTransition(ID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an ImmediateTransition with generated id. Post create hook will be triggered.
+	 */
+	def createImmediateTransition(InternalNode source, InternalNode target){
+		createImmediateTransition(generateUUID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an ImmediateTransition with the given id. Post create hook won't be triggered.
+	 */
+	def createImmediateTransition(String ID){
+		createImmediateTransition(ID,null,null,null,false)
+	}
+	
+	/**
+	 * This method creates an ImmediateTransition with a generated id. Post create hook won't be triggered.
+	 */
+	override createImmediateTransition() {
+		createImmediateTransition(generateUUID)
+	}
+	def createImmediateStrongAbortDeferredTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createImmediateStrongAbortDeferredTransition => [
+			setID(ID)
+			internal = ime ?: createInternalImmediateStrongAbortDeferredTransition => [
+				(it as InternalEdge).set_sourceElement(source)
+				(it as InternalEdge).set_targetElement(target)
+				container = source?.rootElement ?: target?.rootElement
+				setID(ID + "_INTERNAL")
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.ImmediateStrongAbortDeferredTransitionEContentAdapter)
+			]
+		]
+	}
+	
+	/**
+	 * This method creates an ImmediateStrongAbortDeferredTransition with the given id. Post create hook will be triggered.
+	 */
+	def createImmediateStrongAbortDeferredTransition(String ID, InternalNode source, InternalNode target){
+		createImmediateStrongAbortDeferredTransition(ID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an ImmediateStrongAbortDeferredTransition with generated id. Post create hook will be triggered.
+	 */
+	def createImmediateStrongAbortDeferredTransition(InternalNode source, InternalNode target){
+		createImmediateStrongAbortDeferredTransition(generateUUID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an ImmediateStrongAbortDeferredTransition with the given id. Post create hook won't be triggered.
+	 */
+	def createImmediateStrongAbortDeferredTransition(String ID){
+		createImmediateStrongAbortDeferredTransition(ID,null,null,null,false)
+	}
+	
+	/**
+	 * This method creates an ImmediateStrongAbortDeferredTransition with a generated id. Post create hook won't be triggered.
+	 */
+	override createImmediateStrongAbortDeferredTransition() {
+		createImmediateStrongAbortDeferredTransition(generateUUID)
+	}
+	def createStrongAbortDeferredTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createStrongAbortDeferredTransition => [
+			setID(ID)
+			internal = ime ?: createInternalStrongAbortDeferredTransition => [
+				(it as InternalEdge).set_sourceElement(source)
+				(it as InternalEdge).set_targetElement(target)
+				container = source?.rootElement ?: target?.rootElement
+				setID(ID + "_INTERNAL")
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.StrongAbortDeferredTransitionEContentAdapter)
+			]
+		]
+	}
+	
+	/**
+	 * This method creates an StrongAbortDeferredTransition with the given id. Post create hook will be triggered.
+	 */
+	def createStrongAbortDeferredTransition(String ID, InternalNode source, InternalNode target){
+		createStrongAbortDeferredTransition(ID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an StrongAbortDeferredTransition with generated id. Post create hook will be triggered.
+	 */
+	def createStrongAbortDeferredTransition(InternalNode source, InternalNode target){
+		createStrongAbortDeferredTransition(generateUUID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an StrongAbortDeferredTransition with the given id. Post create hook won't be triggered.
+	 */
+	def createStrongAbortDeferredTransition(String ID){
+		createStrongAbortDeferredTransition(ID,null,null,null,false)
+	}
+	
+	/**
+	 * This method creates an StrongAbortDeferredTransition with a generated id. Post create hook won't be triggered.
+	 */
+	override createStrongAbortDeferredTransition() {
+		createStrongAbortDeferredTransition(generateUUID)
+	}
+	def createTransition(String ID, InternalModelElement ime, InternalNode source, InternalNode target, boolean hook) {
+		super.createTransition => [
+			setID(ID)
+			internal = ime ?: createInternalTransition => [
+				(it as InternalEdge).set_sourceElement(source)
+				(it as InternalEdge).set_targetElement(target)
+				container = source?.rootElement ?: target?.rootElement
+				setID(ID + "_INTERNAL")
+				eAdapters.add(new info.scce.cinco.product.scchart.mglid.adapter.TransitionEContentAdapter)
+			]
+		]
+	}
+	
+	/**
+	 * This method creates an Transition with the given id. Post create hook will be triggered.
+	 */
+	def createTransition(String ID, InternalNode source, InternalNode target){
+		createTransition(ID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an Transition with generated id. Post create hook will be triggered.
+	 */
+	def createTransition(InternalNode source, InternalNode target){
+		createTransition(generateUUID,null,source,target,true)
+	}
+	
+	/**
+	 * This method creates an Transition with the given id. Post create hook won't be triggered.
+	 */
+	def createTransition(String ID){
+		createTransition(ID,null,null,null,false)
+	}
+	
+	/**
+	 * This method creates an Transition with a generated id. Post create hook won't be triggered.
+	 */
+	override createTransition() {
+		createTransition(generateUUID)
 	}
 	
 	private def <T extends IdentifiableElement> setInternal(T elm, InternalIdentifiableElement internal) {
@@ -1945,11 +1888,11 @@ class SCChartFactory extends ScchartFactoryImpl {
 		]
 	}
 	
-	def postCreates(info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration me) {
+	def postCreates(info.scce.cinco.product.scchart.mglid.scchart.Declaration me) {
 		me.transact [
-			// event.post.create.info_scce_cinco_product_scchart_mglid_scchart_RootStateDeclaration
-			val eventPayload = new de.jabc.cinco.meta.plugin.event.api.payload.PostCreatePayload<info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration>(me)
-			val eventContext = new de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PostCreatePayload<info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration>, java.lang.Void>('event.post.create.info_scce_cinco_product_scchart_mglid_scchart_RootStateDeclaration', eventPayload)
+			// event.post.create.info_scce_cinco_product_scchart_mglid_scchart_Declaration
+			val eventPayload = new de.jabc.cinco.meta.plugin.event.api.payload.PostCreatePayload<info.scce.cinco.product.scchart.mglid.scchart.Declaration>(me)
+			val eventContext = new de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PostCreatePayload<info.scce.cinco.product.scchart.mglid.scchart.Declaration>, java.lang.Void>('event.post.create.info_scce_cinco_product_scchart_mglid_scchart_Declaration', eventPayload)
 			de.jabc.cinco.meta.core.event.hub.EventHub.instance.notifyFirst(eventContext)
 		]
 	}
@@ -1968,15 +1911,6 @@ class SCChartFactory extends ScchartFactoryImpl {
 			// event.post.create.info_scce_cinco_product_scchart_mglid_scchart_Action
 			val eventPayload = new de.jabc.cinco.meta.plugin.event.api.payload.PostCreatePayload<info.scce.cinco.product.scchart.mglid.scchart.Action>(me)
 			val eventContext = new de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PostCreatePayload<info.scce.cinco.product.scchart.mglid.scchart.Action>, java.lang.Void>('event.post.create.info_scce_cinco_product_scchart_mglid_scchart_Action', eventPayload)
-			de.jabc.cinco.meta.core.event.hub.EventHub.instance.notifyFirst(eventContext)
-		]
-	}
-	
-	def postCreates(info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration me) {
-		me.transact [
-			// event.post.create.info_scce_cinco_product_scchart_mglid_scchart_SuperStateDeclaration
-			val eventPayload = new de.jabc.cinco.meta.plugin.event.api.payload.PostCreatePayload<info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration>(me)
-			val eventContext = new de.jabc.cinco.meta.core.event.hub.impl.PayloadContext<de.jabc.cinco.meta.plugin.event.api.payload.PostCreatePayload<info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration>, java.lang.Void>('event.post.create.info_scce_cinco_product_scchart_mglid_scchart_SuperStateDeclaration', eventPayload)
 			de.jabc.cinco.meta.core.event.hub.EventHub.instance.notifyFirst(eventContext)
 		]
 	}

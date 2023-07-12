@@ -3,11 +3,10 @@ package info.scce.cinco.product.scchart.events;
 import com.google.common.base.Objects;
 import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
+import info.scce.cinco.product.scchart.mglid.scchart.Declaration;
 import info.scce.cinco.product.scchart.mglid.scchart.Region;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
-import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
-import info.scce.cinco.product.scchart.mglid.scchart.SuperStateDeclaration;
 import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
 import java.util.UUID;
 import org.eclipse.emf.common.util.EList;
@@ -66,10 +65,10 @@ public final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.sc
       boolean _equals = Objects.equal(_uuid, _uuid_1);
       if (_equals) {
         int declarationCount = 0;
-        EList<RootStateDeclaration> _rootStateDeclarations = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations();
-        boolean _tripleNotEquals = (_rootStateDeclarations != null);
+        EList<Declaration> _declarations = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations();
+        boolean _tripleNotEquals = (_declarations != null);
         if (_tripleNotEquals) {
-          declarationCount = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations().size();
+          declarationCount = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations().size();
         }
         for (int i = 0; (i < IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends().size()); i++) {
           {
@@ -138,10 +137,10 @@ public final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.sc
         boolean _equals = Objects.equal(_uuid, _uuid_1);
         if (_equals) {
           int declarationCount = 0;
-          EList<SuperStateDeclaration> _superStateDeclarations = superState.getSuperStateDeclarations();
-          boolean _tripleNotEquals_1 = (_superStateDeclarations != null);
+          EList<Declaration> _declarations = superState.getDeclarations();
+          boolean _tripleNotEquals_1 = (_declarations != null);
           if (_tripleNotEquals_1) {
-            declarationCount = superState.getSuperStateDeclarations().size();
+            declarationCount = superState.getDeclarations().size();
           }
           for (int i = 0; (i < superState.getSuspends().size()); i++) {
             {

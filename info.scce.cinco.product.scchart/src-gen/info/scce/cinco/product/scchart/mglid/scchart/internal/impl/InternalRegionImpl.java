@@ -30,14 +30,34 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRegionImpl#getName <em>Name</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRegionImpl#getLabel <em>Label</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRegionImpl#getRegionID <em>Region ID</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRegionImpl#getUuid <em>Uuid</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class InternalRegionImpl extends InternalContainerImpl implements InternalRegion {
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getLabel() <em>Label</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -46,7 +66,7 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String LABEL_EDEFAULT = "<insert name>";
+	protected static final String LABEL_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getLabel() <em>Label</em>}' attribute.
@@ -57,26 +77,6 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 	 * @ordered
 	 */
 	protected String label = LABEL_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getRegionID() <em>Region ID</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRegionID()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String REGION_ID_EDEFAULT = "<insert name>";
-
-	/**
-	 * The cached value of the '{@link #getRegionID() <em>Region ID</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRegionID()
-	 * @generated
-	 * @ordered
-	 */
-	protected String regionID = REGION_ID_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getUuid() <em>Uuid</em>}' attribute.
@@ -123,6 +123,29 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 	 * @generated
 	 */
 	@Override
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_REGION__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getLabel() {
 		return label;
 	}
@@ -138,29 +161,6 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 		label = newLabel;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_REGION__LABEL, oldLabel, label));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getRegionID() {
-		return regionID;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRegionID(String newRegionID) {
-		String oldRegionID = regionID;
-		regionID = newRegionID;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_REGION__REGION_ID, oldRegionID, regionID));
 	}
 
 	/**
@@ -213,10 +213,10 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_REGION__NAME:
+				return getName();
 			case InternalPackage.INTERNAL_REGION__LABEL:
 				return getLabel();
-			case InternalPackage.INTERNAL_REGION__REGION_ID:
-				return getRegionID();
 			case InternalPackage.INTERNAL_REGION__UUID:
 				return getUuid();
 		}
@@ -231,11 +231,11 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_REGION__NAME:
+				setName((String)newValue);
+				return;
 			case InternalPackage.INTERNAL_REGION__LABEL:
 				setLabel((String)newValue);
-				return;
-			case InternalPackage.INTERNAL_REGION__REGION_ID:
-				setRegionID((String)newValue);
 				return;
 			case InternalPackage.INTERNAL_REGION__UUID:
 				setUuid((String)newValue);
@@ -252,11 +252,11 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_REGION__NAME:
+				setName(NAME_EDEFAULT);
+				return;
 			case InternalPackage.INTERNAL_REGION__LABEL:
 				setLabel(LABEL_EDEFAULT);
-				return;
-			case InternalPackage.INTERNAL_REGION__REGION_ID:
-				setRegionID(REGION_ID_EDEFAULT);
 				return;
 			case InternalPackage.INTERNAL_REGION__UUID:
 				setUuid(UUID_EDEFAULT);
@@ -273,10 +273,10 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_REGION__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case InternalPackage.INTERNAL_REGION__LABEL:
 				return LABEL_EDEFAULT == null ? label != null : !LABEL_EDEFAULT.equals(label);
-			case InternalPackage.INTERNAL_REGION__REGION_ID:
-				return REGION_ID_EDEFAULT == null ? regionID != null : !REGION_ID_EDEFAULT.equals(regionID);
 			case InternalPackage.INTERNAL_REGION__UUID:
 				return UUID_EDEFAULT == null ? uuid != null : !UUID_EDEFAULT.equals(uuid);
 		}
@@ -329,10 +329,10 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (label: ");
+		result.append(" (name: ");
+		result.append(name);
+		result.append(", label: ");
 		result.append(label);
-		result.append(", RegionID: ");
-		result.append(regionID);
 		result.append(", uuid: ");
 		result.append(uuid);
 		result.append(')');

@@ -82,8 +82,8 @@ public class ImmediateStrongAbortDeferredTransitionImpl extends AbstractTransiti
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalImmediateStrongAbortDeferredTransition().getDelay();
+	public String getCount_delay() {
+		return getInternalImmediateStrongAbortDeferredTransition().getCount_delay();
 	}
 
 	/**
@@ -92,9 +92,9 @@ public class ImmediateStrongAbortDeferredTransitionImpl extends AbstractTransiti
 	 * @generated
 	 */
 	@Override
-	public void setDelay(final String _arg) {
-		getInternalImmediateStrongAbortDeferredTransition().getElement().transact("Set Delay", () -> {
-			getInternalImmediateStrongAbortDeferredTransition().setDelay(_arg);
+	public void setCount_delay(final String _arg) {
+		getInternalImmediateStrongAbortDeferredTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalImmediateStrongAbortDeferredTransition().setCount_delay(_arg);
 		});
 		
 	}
@@ -401,10 +401,10 @@ public class ImmediateStrongAbortDeferredTransitionImpl extends AbstractTransiti
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION___GET_DELAY:
-				return getDelay();
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
 				return null;
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION___GET_EFFECT:
 				return getEffect();

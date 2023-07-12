@@ -82,8 +82,8 @@ public class ConditionalTerminationDeferredTransitionImpl extends AbstractTransi
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalConditionalTerminationDeferredTransition().getDelay();
+	public String getCount_delay() {
+		return getInternalConditionalTerminationDeferredTransition().getCount_delay();
 	}
 
 	/**
@@ -92,9 +92,9 @@ public class ConditionalTerminationDeferredTransitionImpl extends AbstractTransi
 	 * @generated
 	 */
 	@Override
-	public void setDelay(final String _arg) {
-		getInternalConditionalTerminationDeferredTransition().getElement().transact("Set Delay", () -> {
-			getInternalConditionalTerminationDeferredTransition().setDelay(_arg);
+	public void setCount_delay(final String _arg) {
+		getInternalConditionalTerminationDeferredTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalConditionalTerminationDeferredTransition().setCount_delay(_arg);
 		});
 		
 	}
@@ -401,10 +401,10 @@ public class ConditionalTerminationDeferredTransitionImpl extends AbstractTransi
 			case ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___GET_DELAY:
-				return getDelay();
-			case ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
+			case ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
 				return null;
 			case ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION___GET_EFFECT:
 				return getEffect();

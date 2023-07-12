@@ -51,6 +51,22 @@ public interface RegionView extends EObject {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	String getName();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setName(String _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	String getLabel();
 
 	/**
@@ -60,22 +76,6 @@ public interface RegionView extends EObject {
 	 * @generated
 	 */
 	void setLabel(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	String getRegionID();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setRegionID(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->

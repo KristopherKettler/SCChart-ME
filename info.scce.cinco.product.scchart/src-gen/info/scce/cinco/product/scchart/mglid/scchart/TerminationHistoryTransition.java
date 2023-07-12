@@ -25,22 +25,6 @@ public interface TerminationHistoryTransition extends AbstractTransition {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	String getDelay();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setDelay(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
 	boolean isDeepHistory();
 
 	/**

@@ -17,8 +17,8 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion#getName <em>Name</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion#getLabel <em>Label</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion#getRegionID <em>Region ID</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion#getUuid <em>Uuid</em>}</li>
  * </ul>
  *
@@ -28,14 +28,35 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface InternalRegion extends InternalContainer {
 	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalRegion_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+	/**
 	 * Returns the value of the '<em><b>Label</b></em>' attribute.
-	 * The default value is <code>"<insert name>"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Label</em>' attribute.
 	 * @see #setLabel(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalRegion_Label()
-	 * @model default="&lt;insert name&gt;"
+	 * @model
 	 * @generated
 	 */
 	String getLabel();
@@ -49,29 +70,6 @@ public interface InternalRegion extends InternalContainer {
 	 * @generated
 	 */
 	void setLabel(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Region ID</b></em>' attribute.
-	 * The default value is <code>"<insert name>"</code>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Region ID</em>' attribute.
-	 * @see #setRegionID(String)
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalRegion_RegionID()
-	 * @model default="&lt;insert name&gt;"
-	 * @generated
-	 */
-	String getRegionID();
-
-	/**
-	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion#getRegionID <em>Region ID</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Region ID</em>' attribute.
-	 * @see #getRegionID()
-	 * @generated
-	 */
-	void setRegionID(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Uuid</b></em>' attribute.

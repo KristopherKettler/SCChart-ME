@@ -5,7 +5,6 @@ package info.scce.cinco.product.scchart.events
 import graphmodel.Direction
 import graphmodel.ModelElementContainer
 import info.scce.cinco.product.scchart.mglid.scchart.RootState
-import graphmodel.Edge
 
 /* 
  * About this class:
@@ -72,8 +71,8 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 	}
 	
 	override postResize(RootState element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction) {
-		if(element.rootStateDeclarations !== null){
-			for(declaration : element.rootStateDeclarations){
+		if(element.declarations !== null){
+			for(declaration : element.declarations){
 				declaration.width = element.width-20
 			}
 		}
@@ -93,7 +92,7 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 					}
 				}
 				if(oldY!=element.y){
-					if(region.y<35+element.rootElement.rootStates.head.rootStateDeclarations.size*13+element.rootElement.rootStates.head.getSuspends.size*13){
+					if(region.y<35+element.rootElement.rootStates.head.declarations.size*13+element.rootElement.rootStates.head.getSuspends.size*13){
 						region.height = region.height+(oldY-element.y)
 					}
 					else{

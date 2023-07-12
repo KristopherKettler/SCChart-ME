@@ -130,8 +130,8 @@ public class HistoryTransitionViewImpl extends AbstractTransitionViewImpl implem
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalHistoryTransition().getDelay();
+	public String getCount_delay() {
+		return getInternalHistoryTransition().getCount_delay();
 	}
 
 	/**
@@ -140,9 +140,9 @@ public class HistoryTransitionViewImpl extends AbstractTransitionViewImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setDelay(final String _arg) {
-		getInternalHistoryTransition().getElement().transact("Set Delay", () -> {
-			getInternalHistoryTransition().setDelay(_arg);
+	public void setCount_delay(final String _arg) {
+		getInternalHistoryTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalHistoryTransition().setCount_delay(_arg);
 		});
 		
 	}
@@ -265,10 +265,10 @@ public class HistoryTransitionViewImpl extends AbstractTransitionViewImpl implem
 			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ViewsPackage.HISTORY_TRANSITION_VIEW___GET_DELAY:
-				return getDelay();
-			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
 				return null;
 			case ViewsPackage.HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY:
 				return isDeepHistory();

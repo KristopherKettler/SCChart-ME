@@ -130,8 +130,8 @@ public class ConditionalTerminationDeferredTransitionViewImpl extends AbstractTr
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalConditionalTerminationDeferredTransition().getDelay();
+	public String getCount_delay() {
+		return getInternalConditionalTerminationDeferredTransition().getCount_delay();
 	}
 
 	/**
@@ -140,9 +140,9 @@ public class ConditionalTerminationDeferredTransitionViewImpl extends AbstractTr
 	 * @generated
 	 */
 	@Override
-	public void setDelay(final String _arg) {
-		getInternalConditionalTerminationDeferredTransition().getElement().transact("Set Delay", () -> {
-			getInternalConditionalTerminationDeferredTransition().setDelay(_arg);
+	public void setCount_delay(final String _arg) {
+		getInternalConditionalTerminationDeferredTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalConditionalTerminationDeferredTransition().setCount_delay(_arg);
 		});
 		
 	}
@@ -242,10 +242,10 @@ public class ConditionalTerminationDeferredTransitionViewImpl extends AbstractTr
 			case ViewsPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ViewsPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___GET_DELAY:
-				return getDelay();
-			case ViewsPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
+			case ViewsPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ViewsPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
 				return null;
 			case ViewsPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW___GET_EFFECT:
 				return getEffect();

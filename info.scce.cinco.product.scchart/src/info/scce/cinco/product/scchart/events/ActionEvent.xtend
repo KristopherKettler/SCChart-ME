@@ -56,8 +56,8 @@ final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 		for(action : element.rootElement.rootStates.head.actions){
 			if(action.uuid==element.uuid){
 				var int declarationCount = 0
-				if(element.rootElement.rootStates.head.rootStateDeclarations !== null){
-					declarationCount=element.rootElement.getRootStates.head.rootStateDeclarations.size
+				if(element.rootElement.rootStates.head.declarations !== null){
+					declarationCount=element.rootElement.getRootStates.head.declarations.size
 				}
 				if(element.rootElement.rootStates.head.suspends !== null){
 					declarationCount += element.rootElement.rootStates.head.suspends.size 
@@ -98,8 +98,8 @@ final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 			for(actionList : superState.actions){
 				if(actionList.uuid==action.uuid){
 					var int declarationCount = 0
-					if(superState.superStateDeclarations !== null){
-						declarationCount=superState.superStateDeclarations.size
+					if(superState.declarations !== null){
+						declarationCount=superState.declarations.size
 					}
 					if(superState.suspends !== null){
 						declarationCount+=superState.suspends.size

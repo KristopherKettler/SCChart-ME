@@ -2,9 +2,9 @@ package info.scce.cinco.product.scchart.events;
 
 import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
+import info.scce.cinco.product.scchart.mglid.scchart.Declaration;
 import info.scce.cinco.product.scchart.mglid.scchart.Region;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
-import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
 import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
@@ -77,11 +77,11 @@ public final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.
   
   @Override
   public void postResize(final RootState element, final int oldWidth, final int oldHeight, final int oldX, final int oldY, final Direction direction) {
-    EList<RootStateDeclaration> _rootStateDeclarations = element.getRootStateDeclarations();
-    boolean _tripleNotEquals = (_rootStateDeclarations != null);
+    EList<Declaration> _declarations = element.getDeclarations();
+    boolean _tripleNotEquals = (_declarations != null);
     if (_tripleNotEquals) {
-      EList<RootStateDeclaration> _rootStateDeclarations_1 = element.getRootStateDeclarations();
-      for (final RootStateDeclaration declaration : _rootStateDeclarations_1) {
+      EList<Declaration> _declarations_1 = element.getDeclarations();
+      for (final Declaration declaration : _declarations_1) {
         int _width = element.getWidth();
         int _minus = (_width - 20);
         declaration.setWidth(_minus);
@@ -126,7 +126,7 @@ public final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.
           boolean _notEquals_1 = (oldY != _y);
           if (_notEquals_1) {
             int _y_1 = region.getY();
-            int _size = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations().size();
+            int _size = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations().size();
             int _multiply = (_size * 13);
             int _plus_2 = (35 + _multiply);
             int _size_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends().size();

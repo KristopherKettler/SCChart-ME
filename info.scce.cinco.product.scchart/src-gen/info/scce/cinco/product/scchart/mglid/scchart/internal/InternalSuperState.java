@@ -26,6 +26,7 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getName <em>Name</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getLabel <em>Label</em>}</li>
  * </ul>
  *
@@ -35,14 +36,36 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface InternalSuperState extends InternalContainer {
 	/**
-	 * Returns the value of the '<em><b>Label</b></em>' attribute.
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * The default value is <code>"<insert name>"</code>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuperState_Name()
+	 * @model default="&lt;insert name&gt;"
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Label</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Label</em>' attribute.
 	 * @see #setLabel(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuperState_Label()
-	 * @model default="&lt;insert name&gt;"
+	 * @model
 	 * @generated
 	 */
 	String getLabel();

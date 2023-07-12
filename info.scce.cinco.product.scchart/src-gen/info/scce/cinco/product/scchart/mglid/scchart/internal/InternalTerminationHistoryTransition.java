@@ -12,7 +12,6 @@ package info.scce.cinco.product.scchart.mglid.scchart.internal;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationHistoryTransition#getDelay <em>Delay</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationHistoryTransition#isDeepHistory <em>Deep History</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationHistoryTransition#getEffect <em>Effect</em>}</li>
  * </ul>
@@ -22,29 +21,6 @@ package info.scce.cinco.product.scchart.mglid.scchart.internal;
  * @generated
  */
 public interface InternalTerminationHistoryTransition extends InternalAbstractTransition {
-	/**
-	 * Returns the value of the '<em><b>Delay</b></em>' attribute.
-	 * The default value is <code>"<No count delay>"</code>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Delay</em>' attribute.
-	 * @see #setDelay(String)
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalTerminationHistoryTransition_Delay()
-	 * @model default="&lt;No count delay&gt;"
-	 * @generated
-	 */
-	String getDelay();
-
-	/**
-	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationHistoryTransition#getDelay <em>Delay</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Delay</em>' attribute.
-	 * @see #getDelay()
-	 * @generated
-	 */
-	void setDelay(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Deep History</b></em>' attribute.
 	 * <!-- begin-user-doc -->

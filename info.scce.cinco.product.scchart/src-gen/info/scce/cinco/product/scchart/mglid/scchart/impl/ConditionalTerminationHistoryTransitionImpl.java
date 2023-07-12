@@ -82,8 +82,8 @@ public class ConditionalTerminationHistoryTransitionImpl extends AbstractTransit
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalConditionalTerminationHistoryTransition().getDelay();
+	public String getCount_delay() {
+		return getInternalConditionalTerminationHistoryTransition().getCount_delay();
 	}
 
 	/**
@@ -92,9 +92,9 @@ public class ConditionalTerminationHistoryTransitionImpl extends AbstractTransit
 	 * @generated
 	 */
 	@Override
-	public void setDelay(final String _arg) {
-		getInternalConditionalTerminationHistoryTransition().getElement().transact("Set Delay", () -> {
-			getInternalConditionalTerminationHistoryTransition().setDelay(_arg);
+	public void setCount_delay(final String _arg) {
+		getInternalConditionalTerminationHistoryTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalConditionalTerminationHistoryTransition().setCount_delay(_arg);
 		});
 		
 	}
@@ -424,10 +424,10 @@ public class ConditionalTerminationHistoryTransitionImpl extends AbstractTransit
 			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___GET_DELAY:
-				return getDelay();
-			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
+			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
 				return null;
 			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___IS_DEEP_HISTORY:
 				return isDeepHistory();

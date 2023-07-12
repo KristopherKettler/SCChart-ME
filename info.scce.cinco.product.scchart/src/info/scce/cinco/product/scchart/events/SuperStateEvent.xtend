@@ -71,8 +71,8 @@ final class SuperStateEvent extends info.scce.cinco.product.scchart.mglid.scchar
 	}
 	
 	override postResize(SuperState element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction) {
-		if(element.superStateDeclarations !== null){
-			for(declaration : element.superStateDeclarations){
+		if(element.declarations !== null){
+			for(declaration : element.declarations){
 				declaration.width = element.width-20
 			}
 		}
@@ -97,7 +97,7 @@ final class SuperStateEvent extends info.scce.cinco.product.scchart.mglid.scchar
 					}
 				}
 				if(oldY!=element.y){
-					if(region.y<35+element.rootElement.rootStates.head.rootStateDeclarations.size*13+element.rootElement.rootStates.head.getSuspends.size*13){
+					if(region.y<35+element.rootElement.rootStates.head.declarations.size*13+element.rootElement.rootStates.head.getSuspends.size*13){
 						region.height = region.height+(oldY-element.y)
 					}
 					else{

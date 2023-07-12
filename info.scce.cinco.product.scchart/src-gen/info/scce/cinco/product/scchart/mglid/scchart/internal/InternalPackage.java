@@ -157,13 +157,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_ROOT_STATE__MODEL_ELEMENTS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__MODEL_ELEMENTS;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ROOT_STATE__NAME = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE__LABEL = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 0;
+	int INTERNAL_ROOT_STATE__LABEL = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Root State</em>' class.
@@ -172,7 +181,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 1;
+	int INTERNAL_ROOT_STATE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -554,22 +563,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_REGION__MODEL_ELEMENTS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__MODEL_ELEMENTS;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_REGION__NAME = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_REGION__LABEL = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Region ID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_REGION__REGION_ID = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 1;
+	int INTERNAL_REGION__LABEL = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Uuid</b></em>' attribute.
@@ -888,6 +897,15 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_DATA_FLOW_REGION__MODEL_ELEMENTS = INTERNAL_REGION__MODEL_ELEMENTS;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DATA_FLOW_REGION__NAME = INTERNAL_REGION__NAME;
+
+	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -895,15 +913,6 @@ public interface InternalPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERNAL_DATA_FLOW_REGION__LABEL = INTERNAL_REGION__LABEL;
-
-	/**
-	 * The feature id for the '<em><b>Region ID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_DATA_FLOW_REGION__REGION_ID = INTERNAL_REGION__REGION_ID;
 
 	/**
 	 * The feature id for the '<em><b>Uuid</b></em>' attribute.
@@ -1222,13 +1231,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_SUPER_STATE__MODEL_ELEMENTS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__MODEL_ELEMENTS;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUPER_STATE__NAME = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE__LABEL = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 0;
+	int INTERNAL_SUPER_STATE__LABEL = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Super State</em>' class.
@@ -1237,7 +1255,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 1;
+	int INTERNAL_SUPER_STATE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -1655,6 +1673,15 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_INITILAL_SUPER_STATE__MODEL_ELEMENTS = INTERNAL_SUPER_STATE__MODEL_ELEMENTS;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITILAL_SUPER_STATE__NAME = INTERNAL_SUPER_STATE__NAME;
+
+	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1988,14 +2015,14 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_INITILAL_SUPER_STATE_OPERATION_COUNT = INTERNAL_SUPER_STATE_OPERATION_COUNT + 16;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateDeclarationImpl <em>Root State Declaration</em>}' class.
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDeclarationImpl <em>Declaration</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateDeclarationImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalRootStateDeclaration()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDeclarationImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalDeclaration()
 	 * @generated
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION = 5;
+	int INTERNAL_DECLARATION = 5;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2004,7 +2031,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__ID = graphmodel.internal.InternalPackage.INTERNAL_NODE__ID;
+	int INTERNAL_DECLARATION__ID = graphmodel.internal.InternalPackage.INTERNAL_NODE__ID;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' container reference.
@@ -2013,7 +2040,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_NODE__CONTAINER;
+	int INTERNAL_DECLARATION__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_NODE__CONTAINER;
 
 	/**
 	 * The feature id for the '<em><b>Element</b></em>' containment reference.
@@ -2022,7 +2049,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE__ELEMENT;
+	int INTERNAL_DECLARATION__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE__ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>X</b></em>' attribute.
@@ -2031,7 +2058,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__X = graphmodel.internal.InternalPackage.INTERNAL_NODE__X;
+	int INTERNAL_DECLARATION__X = graphmodel.internal.InternalPackage.INTERNAL_NODE__X;
 
 	/**
 	 * The feature id for the '<em><b>Y</b></em>' attribute.
@@ -2040,7 +2067,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__Y = graphmodel.internal.InternalPackage.INTERNAL_NODE__Y;
+	int INTERNAL_DECLARATION__Y = graphmodel.internal.InternalPackage.INTERNAL_NODE__Y;
 
 	/**
 	 * The feature id for the '<em><b>Height</b></em>' attribute.
@@ -2049,7 +2076,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__HEIGHT = graphmodel.internal.InternalPackage.INTERNAL_NODE__HEIGHT;
+	int INTERNAL_DECLARATION__HEIGHT = graphmodel.internal.InternalPackage.INTERNAL_NODE__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -2058,7 +2085,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__WIDTH = graphmodel.internal.InternalPackage.INTERNAL_NODE__WIDTH;
+	int INTERNAL_DECLARATION__WIDTH = graphmodel.internal.InternalPackage.INTERNAL_NODE__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
@@ -2067,7 +2094,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__INCOMING = graphmodel.internal.InternalPackage.INTERNAL_NODE__INCOMING;
+	int INTERNAL_DECLARATION__INCOMING = graphmodel.internal.InternalPackage.INTERNAL_NODE__INCOMING;
 
 	/**
 	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
@@ -2076,7 +2103,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__OUTGOING = graphmodel.internal.InternalPackage.INTERNAL_NODE__OUTGOING;
+	int INTERNAL_DECLARATION__OUTGOING = graphmodel.internal.InternalPackage.INTERNAL_NODE__OUTGOING;
 
 	/**
 	 * The feature id for the '<em><b>Declaration Type</b></em>' attribute.
@@ -2085,16 +2112,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__DECLARATION_TYPE = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 0;
+	int INTERNAL_DECLARATION__DECLARATION_TYPE = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Const</b></em>' attribute.
+	 * The feature id for the '<em><b>Constant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__CONST = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 1;
+	int INTERNAL_DECLARATION__CONSTANT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Input Output</b></em>' attribute.
@@ -2103,7 +2130,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__INPUT_OUTPUT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 2;
+	int INTERNAL_DECLARATION__INPUT_OUTPUT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Assignment</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DECLARATION__ASSIGNMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2112,7 +2148,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__NAME = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 3;
+	int INTERNAL_DECLARATION__NAME = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Signal</b></em>' attribute.
@@ -2121,16 +2157,25 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION__SIGNAL = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 4;
+	int INTERNAL_DECLARATION__SIGNAL = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 5;
 
 	/**
-	 * The number of structural features of the '<em>Root State Declaration</em>' class.
+	 * The feature id for the '<em><b>Uuid</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 5;
+	int INTERNAL_DECLARATION__UUID = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 6;
+
+	/**
+	 * The number of structural features of the '<em>Declaration</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_DECLARATION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -2139,7 +2184,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_NODE___EQUALS__OBJECT;
+	int INTERNAL_DECLARATION___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_NODE___EQUALS__OBJECT;
 
 	/**
 	 * The operation id for the '<em>Hash Code</em>' operation.
@@ -2148,7 +2193,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_NODE___HASH_CODE;
+	int INTERNAL_DECLARATION___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_NODE___HASH_CODE;
 
 	/**
 	 * The operation id for the '<em>Save</em>' operation.
@@ -2157,7 +2202,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___SAVE = graphmodel.internal.InternalPackage.INTERNAL_NODE___SAVE;
+	int INTERNAL_DECLARATION___SAVE = graphmodel.internal.InternalPackage.INTERNAL_NODE___SAVE;
 
 	/**
 	 * The operation id for the '<em>Get Element</em>' operation.
@@ -2166,7 +2211,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_ELEMENT;
+	int INTERNAL_DECLARATION___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Root Element</em>' operation.
@@ -2175,7 +2220,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_ROOT_ELEMENT;
+	int INTERNAL_DECLARATION___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_ROOT_ELEMENT;
 
 	/**
 	 * The operation id for the '<em>Get Successors</em>' operation.
@@ -2184,7 +2229,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___GET_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_SUCCESSORS;
+	int INTERNAL_DECLARATION___GET_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_SUCCESSORS;
 
 	/**
 	 * The operation id for the '<em>Get Successors</em>' operation.
@@ -2193,7 +2238,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___GET_SUCCESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_SUCCESSORS__CLASS;
+	int INTERNAL_DECLARATION___GET_SUCCESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_SUCCESSORS__CLASS;
 
 	/**
 	 * The operation id for the '<em>Get Predecessors</em>' operation.
@@ -2202,7 +2247,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___GET_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_PREDECESSORS;
+	int INTERNAL_DECLARATION___GET_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_PREDECESSORS;
 
 	/**
 	 * The operation id for the '<em>Get Predecessors</em>' operation.
@@ -2211,7 +2256,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___GET_PREDECESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_PREDECESSORS__CLASS;
+	int INTERNAL_DECLARATION___GET_PREDECESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_PREDECESSORS__CLASS;
 
 	/**
 	 * The operation id for the '<em>Get Incoming</em>' operation.
@@ -2220,7 +2265,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___GET_INCOMING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING__CLASS;
+	int INTERNAL_DECLARATION___GET_INCOMING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING__CLASS;
 
 	/**
 	 * The operation id for the '<em>Get Outgoing</em>' operation.
@@ -2229,7 +2274,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___GET_OUTGOING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING__CLASS;
+	int INTERNAL_DECLARATION___GET_OUTGOING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING__CLASS;
 
 	/**
 	 * The operation id for the '<em>Can Connect</em>' operation.
@@ -2238,7 +2283,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___CAN_CONNECT__EDGE_NODE = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_CONNECT__EDGE_NODE;
+	int INTERNAL_DECLARATION___CAN_CONNECT__EDGE_NODE = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_CONNECT__EDGE_NODE;
 
 	/**
 	 * The operation id for the '<em>Get Outgoing Constraints</em>' operation.
@@ -2247,7 +2292,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___GET_OUTGOING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING_CONSTRAINTS;
+	int INTERNAL_DECLARATION___GET_OUTGOING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING_CONSTRAINTS;
 
 	/**
 	 * The operation id for the '<em>Get Incoming Constraints</em>' operation.
@@ -2256,7 +2301,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___GET_INCOMING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING_CONSTRAINTS;
+	int INTERNAL_DECLARATION___GET_INCOMING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING_CONSTRAINTS;
 
 	/**
 	 * The operation id for the '<em>Can Start</em>' operation.
@@ -2265,7 +2310,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___CAN_START__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_START__CLASS;
+	int INTERNAL_DECLARATION___CAN_START__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_START__CLASS;
 
 	/**
 	 * The operation id for the '<em>Can End</em>' operation.
@@ -2274,16 +2319,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION___CAN_END__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_END__CLASS;
+	int INTERNAL_DECLARATION___CAN_END__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_END__CLASS;
 
 	/**
-	 * The number of operations of the '<em>Root State Declaration</em>' class.
+	 * The number of operations of the '<em>Declaration</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_DECLARATION_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 0;
+	int INTERNAL_DECLARATION_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuspendImpl <em>Suspend</em>}' class.
@@ -2855,304 +2900,6 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_ACTION_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateDeclarationImpl <em>Super State Declaration</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateDeclarationImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuperStateDeclaration()
-	 * @generated
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION = 8;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__ID = graphmodel.internal.InternalPackage.INTERNAL_NODE__ID;
-
-	/**
-	 * The feature id for the '<em><b>Container</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_NODE__CONTAINER;
-
-	/**
-	 * The feature id for the '<em><b>Element</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE__ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>X</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__X = graphmodel.internal.InternalPackage.INTERNAL_NODE__X;
-
-	/**
-	 * The feature id for the '<em><b>Y</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__Y = graphmodel.internal.InternalPackage.INTERNAL_NODE__Y;
-
-	/**
-	 * The feature id for the '<em><b>Height</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__HEIGHT = graphmodel.internal.InternalPackage.INTERNAL_NODE__HEIGHT;
-
-	/**
-	 * The feature id for the '<em><b>Width</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__WIDTH = graphmodel.internal.InternalPackage.INTERNAL_NODE__WIDTH;
-
-	/**
-	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__INCOMING = graphmodel.internal.InternalPackage.INTERNAL_NODE__INCOMING;
-
-	/**
-	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__OUTGOING = graphmodel.internal.InternalPackage.INTERNAL_NODE__OUTGOING;
-
-	/**
-	 * The feature id for the '<em><b>Declaration Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__DECLARATION_TYPE = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Const</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__CONST = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__NAME = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Const Sig</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__CONST_SIG = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Signal</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION__SIGNAL = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 4;
-
-	/**
-	 * The number of structural features of the '<em>Super State Declaration</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 5;
-
-	/**
-	 * The operation id for the '<em>Equals</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_NODE___EQUALS__OBJECT;
-
-	/**
-	 * The operation id for the '<em>Hash Code</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_NODE___HASH_CODE;
-
-	/**
-	 * The operation id for the '<em>Save</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___SAVE = graphmodel.internal.InternalPackage.INTERNAL_NODE___SAVE;
-
-	/**
-	 * The operation id for the '<em>Get Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_ELEMENT;
-
-	/**
-	 * The operation id for the '<em>Get Root Element</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_ROOT_ELEMENT;
-
-	/**
-	 * The operation id for the '<em>Get Successors</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___GET_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_SUCCESSORS;
-
-	/**
-	 * The operation id for the '<em>Get Successors</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___GET_SUCCESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_SUCCESSORS__CLASS;
-
-	/**
-	 * The operation id for the '<em>Get Predecessors</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___GET_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_PREDECESSORS;
-
-	/**
-	 * The operation id for the '<em>Get Predecessors</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___GET_PREDECESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_PREDECESSORS__CLASS;
-
-	/**
-	 * The operation id for the '<em>Get Incoming</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___GET_INCOMING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING__CLASS;
-
-	/**
-	 * The operation id for the '<em>Get Outgoing</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___GET_OUTGOING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING__CLASS;
-
-	/**
-	 * The operation id for the '<em>Can Connect</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___CAN_CONNECT__EDGE_NODE = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_CONNECT__EDGE_NODE;
-
-	/**
-	 * The operation id for the '<em>Get Outgoing Constraints</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___GET_OUTGOING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING_CONSTRAINTS;
-
-	/**
-	 * The operation id for the '<em>Get Incoming Constraints</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___GET_INCOMING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING_CONSTRAINTS;
-
-	/**
-	 * The operation id for the '<em>Can Start</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___CAN_START__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_START__CLASS;
-
-	/**
-	 * The operation id for the '<em>Can End</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION___CAN_END__CLASS = graphmodel.internal.InternalPackage.INTERNAL_NODE___CAN_END__CLASS;
-
-	/**
-	 * The number of operations of the '<em>Super State Declaration</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_SUPER_STATE_DECLARATION_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSimpleStateImpl <em>Simple State</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3160,7 +2907,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSimpleState()
 	 * @generated
 	 */
-	int INTERNAL_SIMPLE_STATE = 9;
+	int INTERNAL_SIMPLE_STATE = 8;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3244,13 +2991,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_SIMPLE_STATE__OUTGOING = graphmodel.internal.InternalPackage.INTERNAL_NODE__OUTGOING;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SIMPLE_STATE__NAME = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SIMPLE_STATE__LABEL = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 0;
+	int INTERNAL_SIMPLE_STATE__LABEL = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Simple State</em>' class.
@@ -3259,7 +3015,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SIMPLE_STATE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 1;
+	int INTERNAL_SIMPLE_STATE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -3539,7 +3295,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalInitialState()
 	 * @generated
 	 */
-	int INTERNAL_INITIAL_STATE = 10;
+	int INTERNAL_INITIAL_STATE = 9;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3621,6 +3377,15 @@ public interface InternalPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERNAL_INITIAL_STATE__OUTGOING = INTERNAL_SIMPLE_STATE__OUTGOING;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_STATE__NAME = INTERNAL_SIMPLE_STATE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
@@ -3918,7 +3683,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalFinalState()
 	 * @generated
 	 */
-	int INTERNAL_FINAL_STATE = 11;
+	int INTERNAL_FINAL_STATE = 10;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4000,6 +3765,15 @@ public interface InternalPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERNAL_FINAL_STATE__OUTGOING = INTERNAL_SIMPLE_STATE__OUTGOING;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_STATE__NAME = INTERNAL_SIMPLE_STATE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
@@ -4297,7 +4071,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConnector()
 	 * @generated
 	 */
-	int INTERNAL_CONNECTOR = 12;
+	int INTERNAL_CONNECTOR = 11;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4667,7 +4441,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalInput()
 	 * @generated
 	 */
-	int INTERNAL_INPUT = 13;
+	int INTERNAL_INPUT = 12;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4956,7 +4730,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalOutput()
 	 * @generated
 	 */
-	int INTERNAL_OUTPUT = 14;
+	int INTERNAL_OUTPUT = 13;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5254,7 +5028,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalOperator()
 	 * @generated
 	 */
-	int INTERNAL_OPERATOR = 15;
+	int INTERNAL_OPERATOR = 14;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5579,7 +5353,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalCircuitConnecter()
 	 * @generated
 	 */
-	int INTERNAL_CIRCUIT_CONNECTER = 16;
+	int INTERNAL_CIRCUIT_CONNECTER = 15;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5895,7 +5669,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalAbstractTransition()
 	 * @generated
 	 */
-	int INTERNAL_ABSTRACT_TRANSITION = 17;
+	int INTERNAL_ABSTRACT_TRANSITION = 16;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6085,7 +5859,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTransition()
 	 * @generated
 	 */
-	int INTERNAL_TRANSITION = 18;
+	int INTERNAL_TRANSITION = 17;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6169,13 +5943,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Effect</b></em>' attribute.
@@ -6302,7 +6076,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION = 19;
+	int INTERNAL_IMMEDIATE_TRANSITION = 18;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6386,13 +6160,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_IMMEDIATE_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_IMMEDIATE_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Effect</b></em>' attribute.
@@ -6519,7 +6293,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTerminationTransition()
 	 * @generated
 	 */
-	int INTERNAL_TERMINATION_TRANSITION = 20;
+	int INTERNAL_TERMINATION_TRANSITION = 19;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6718,7 +6492,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConditionalTerminationTransition()
 	 * @generated
 	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_TRANSITION = 21;
+	int INTERNAL_CONDITIONAL_TERMINATION_TRANSITION = 20;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6802,13 +6576,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_CONDITIONAL_TERMINATION_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_CONDITIONAL_TERMINATION_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Effect</b></em>' attribute.
@@ -6935,7 +6709,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalStrongAbortTransition()
 	 * @generated
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION = 22;
+	int INTERNAL_STRONG_ABORT_TRANSITION = 21;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7019,13 +6793,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_STRONG_ABORT_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_STRONG_ABORT_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Effect</b></em>' attribute.
@@ -7152,7 +6926,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateStrongAbortTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION = 23;
+	int INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION = 22;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7236,13 +7010,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Effect</b></em>' attribute.
@@ -7369,7 +7143,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_DEFERRED_TRANSITION = 24;
+	int INTERNAL_DEFERRED_TRANSITION = 23;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7453,13 +7227,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_DEFERRED_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_DEFERRED_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_DEFERRED_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Effect</b></em>' attribute.
@@ -7586,7 +7360,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_DEFERRED_TRANSITION = 25;
+	int INTERNAL_IMMEDIATE_DEFERRED_TRANSITION = 24;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7670,13 +7444,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_IMMEDIATE_DEFERRED_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_DEFERRED_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_IMMEDIATE_DEFERRED_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Effect</b></em>' attribute.
@@ -7803,7 +7577,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTerminationDefferdTransition()
 	 * @generated
 	 */
-	int INTERNAL_TERMINATION_DEFFERD_TRANSITION = 26;
+	int INTERNAL_TERMINATION_DEFFERD_TRANSITION = 25;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7878,13 +7652,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_TERMINATION_DEFFERD_TRANSITION__PRIORITY = INTERNAL_ABSTRACT_TRANSITION__PRIORITY;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_TERMINATION_DEFFERD_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
+	int INTERNAL_TERMINATION_DEFFERD_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Effect</b></em>' attribute.
@@ -8011,7 +7785,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConditionalTerminationDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION = 27;
+	int INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION = 26;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8095,13 +7869,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Effect</b></em>' attribute.
@@ -8228,7 +8002,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalStrongAbortDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION = 28;
+	int INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION = 27;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8312,13 +8086,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Effect</b></em>' attribute.
@@ -8445,7 +8219,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateStrongAbortDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION = 29;
+	int INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION = 28;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8529,13 +8303,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Effect</b></em>' attribute.
@@ -8662,7 +8436,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_HISTORY_TRANSITION = 30;
+	int INTERNAL_HISTORY_TRANSITION = 29;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8746,13 +8520,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_HISTORY_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_HISTORY_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_HISTORY_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Deep History</b></em>' attribute.
@@ -8888,7 +8662,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_HISTORY_TRANSITION = 31;
+	int INTERNAL_IMMEDIATE_HISTORY_TRANSITION = 30;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8972,13 +8746,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_IMMEDIATE_HISTORY_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_HISTORY_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_IMMEDIATE_HISTORY_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Deep History</b></em>' attribute.
@@ -9114,7 +8888,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTerminationHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_TERMINATION_HISTORY_TRANSITION = 32;
+	int INTERNAL_TERMINATION_HISTORY_TRANSITION = 31;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9189,22 +8963,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_TERMINATION_HISTORY_TRANSITION__PRIORITY = INTERNAL_ABSTRACT_TRANSITION__PRIORITY;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_TERMINATION_HISTORY_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
-
-	/**
 	 * The feature id for the '<em><b>Deep History</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_TERMINATION_HISTORY_TRANSITION__DEEP_HISTORY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_TERMINATION_HISTORY_TRANSITION__DEEP_HISTORY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Effect</b></em>' attribute.
@@ -9213,7 +8978,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_TERMINATION_HISTORY_TRANSITION__EFFECT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 2;
+	int INTERNAL_TERMINATION_HISTORY_TRANSITION__EFFECT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Termination History Transition</em>' class.
@@ -9222,7 +8987,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_TERMINATION_HISTORY_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 3;
+	int INTERNAL_TERMINATION_HISTORY_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -9331,7 +9096,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConditionalTerminationHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION = 33;
+	int INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION = 32;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9415,13 +9180,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Deep History</b></em>' attribute.
@@ -9557,7 +9322,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalStrongAbortHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_STRONG_ABORT_HISTORY_TRANSITION = 34;
+	int INTERNAL_STRONG_ABORT_HISTORY_TRANSITION = 33;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9641,13 +9406,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_STRONG_ABORT_HISTORY_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_STRONG_ABORT_HISTORY_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_STRONG_ABORT_HISTORY_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Deep History</b></em>' attribute.
@@ -9783,7 +9548,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateStrongAbortHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION = 35;
+	int INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION = 34;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9867,13 +9632,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION__CONDITION = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Delay</b></em>' attribute.
+	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION__DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Deep History</b></em>' attribute.
@@ -10009,7 +9774,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConnection()
 	 * @generated
 	 */
-	int INTERNAL_CONNECTION = 36;
+	int INTERNAL_CONNECTION = 35;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -10190,7 +9955,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSCChart()
 	 * @generated
 	 */
-	int INTERNAL_SC_CHART = 37;
+	int INTERNAL_SC_CHART = 36;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -10339,6 +10104,17 @@ public interface InternalPackage extends EPackage {
 	EClass getInternalRootState();
 
 	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getName()
+	 * @see #getInternalRootState()
+	 * @generated
+	 */
+	EAttribute getInternalRootState_Name();
+
+	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getLabel <em>Label</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10470,6 +10246,17 @@ public interface InternalPackage extends EPackage {
 	EClass getInternalRegion();
 
 	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion#getName()
+	 * @see #getInternalRegion()
+	 * @generated
+	 */
+	EAttribute getInternalRegion_Name();
+
+	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion#getLabel <em>Label</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10479,17 +10266,6 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getInternalRegion_Label();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion#getRegionID <em>Region ID</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Region ID</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion#getRegionID()
-	 * @see #getInternalRegion()
-	 * @generated
-	 */
-	EAttribute getInternalRegion_RegionID();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRegion#getUuid <em>Uuid</em>}'.
@@ -10541,6 +10317,17 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getInternalSuperState();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getName()
+	 * @see #getInternalSuperState()
+	 * @generated
+	 */
+	EAttribute getInternalSuperState_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getLabel <em>Label</em>}'.
@@ -10884,69 +10671,91 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalInitilalSuperState__GetConnectorSuccessors();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration <em>Root State Declaration</em>}'.
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration <em>Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Root State Declaration</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration
+	 * @return the meta object for class '<em>Declaration</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration
 	 * @generated
 	 */
-	EClass getInternalRootStateDeclaration();
+	EClass getInternalDeclaration();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#getDeclarationType <em>Declaration Type</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration#getDeclarationType <em>Declaration Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Declaration Type</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#getDeclarationType()
-	 * @see #getInternalRootStateDeclaration()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration#getDeclarationType()
+	 * @see #getInternalDeclaration()
 	 * @generated
 	 */
-	EAttribute getInternalRootStateDeclaration_DeclarationType();
+	EAttribute getInternalDeclaration_DeclarationType();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#isConst <em>Const</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration#isConstant <em>Constant</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Const</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#isConst()
-	 * @see #getInternalRootStateDeclaration()
+	 * @return the meta object for the attribute '<em>Constant</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration#isConstant()
+	 * @see #getInternalDeclaration()
 	 * @generated
 	 */
-	EAttribute getInternalRootStateDeclaration_Const();
+	EAttribute getInternalDeclaration_Constant();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#getInputOutput <em>Input Output</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration#getInputOutput <em>Input Output</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Input Output</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#getInputOutput()
-	 * @see #getInternalRootStateDeclaration()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration#getInputOutput()
+	 * @see #getInternalDeclaration()
 	 * @generated
 	 */
-	EAttribute getInternalRootStateDeclaration_InputOutput();
+	EAttribute getInternalDeclaration_InputOutput();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration#getAssignment <em>Assignment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Assignment</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration#getAssignment()
+	 * @see #getInternalDeclaration()
+	 * @generated
+	 */
+	EAttribute getInternalDeclaration_Assignment();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#getName()
-	 * @see #getInternalRootStateDeclaration()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration#getName()
+	 * @see #getInternalDeclaration()
 	 * @generated
 	 */
-	EAttribute getInternalRootStateDeclaration_Name();
+	EAttribute getInternalDeclaration_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#isSignal <em>Signal</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration#isSignal <em>Signal</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Signal</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration#isSignal()
-	 * @see #getInternalRootStateDeclaration()
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration#isSignal()
+	 * @see #getInternalDeclaration()
 	 * @generated
 	 */
-	EAttribute getInternalRootStateDeclaration_Signal();
+	EAttribute getInternalDeclaration_Signal();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration#getUuid <em>Uuid</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Uuid</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration#getUuid()
+	 * @see #getInternalDeclaration()
+	 * @generated
+	 */
+	EAttribute getInternalDeclaration_Uuid();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend <em>Suspend</em>}'.
@@ -11046,71 +10855,6 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalAction_Uuid();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration <em>Super State Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Super State Declaration</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration
-	 * @generated
-	 */
-	EClass getInternalSuperStateDeclaration();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#getDeclarationType <em>Declaration Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Declaration Type</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#getDeclarationType()
-	 * @see #getInternalSuperStateDeclaration()
-	 * @generated
-	 */
-	EAttribute getInternalSuperStateDeclaration_DeclarationType();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#isConst <em>Const</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Const</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#isConst()
-	 * @see #getInternalSuperStateDeclaration()
-	 * @generated
-	 */
-	EAttribute getInternalSuperStateDeclaration_Const();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#getName()
-	 * @see #getInternalSuperStateDeclaration()
-	 * @generated
-	 */
-	EAttribute getInternalSuperStateDeclaration_Name();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#getConstSig <em>Const Sig</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Const Sig</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#getConstSig()
-	 * @see #getInternalSuperStateDeclaration()
-	 * @generated
-	 */
-	EAttribute getInternalSuperStateDeclaration_ConstSig();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#isSignal <em>Signal</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Signal</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperStateDeclaration#isSignal()
-	 * @see #getInternalSuperStateDeclaration()
-	 * @generated
-	 */
-	EAttribute getInternalSuperStateDeclaration_Signal();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSimpleState <em>Simple State</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11119,6 +10863,17 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getInternalSimpleState();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSimpleState#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSimpleState#getName()
+	 * @see #getInternalSimpleState()
+	 * @generated
+	 */
+	EAttribute getInternalSimpleState_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSimpleState#getLabel <em>Label</em>}'.
@@ -12147,15 +11902,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getCount_delay()
 	 * @see #getInternalTransition()
 	 * @generated
 	 */
-	EAttribute getInternalTransition_Delay();
+	EAttribute getInternalTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition#getEffect <em>Effect</em>}'.
@@ -12190,15 +11945,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalImmediateTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getCount_delay()
 	 * @see #getInternalImmediateTransition()
 	 * @generated
 	 */
-	EAttribute getInternalImmediateTransition_Delay();
+	EAttribute getInternalImmediateTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateTransition#getEffect <em>Effect</em>}'.
@@ -12254,15 +12009,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalConditionalTerminationTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationTransition#getCount_delay()
 	 * @see #getInternalConditionalTerminationTransition()
 	 * @generated
 	 */
-	EAttribute getInternalConditionalTerminationTransition_Delay();
+	EAttribute getInternalConditionalTerminationTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationTransition#getEffect <em>Effect</em>}'.
@@ -12297,15 +12052,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalStrongAbortTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortTransition#getCount_delay()
 	 * @see #getInternalStrongAbortTransition()
 	 * @generated
 	 */
-	EAttribute getInternalStrongAbortTransition_Delay();
+	EAttribute getInternalStrongAbortTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortTransition#getEffect <em>Effect</em>}'.
@@ -12340,15 +12095,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalImmediateStrongAbortTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortTransition#getCount_delay()
 	 * @see #getInternalImmediateStrongAbortTransition()
 	 * @generated
 	 */
-	EAttribute getInternalImmediateStrongAbortTransition_Delay();
+	EAttribute getInternalImmediateStrongAbortTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortTransition#getEffect <em>Effect</em>}'.
@@ -12383,15 +12138,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalDeferredTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeferredTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeferredTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeferredTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeferredTransition#getCount_delay()
 	 * @see #getInternalDeferredTransition()
 	 * @generated
 	 */
-	EAttribute getInternalDeferredTransition_Delay();
+	EAttribute getInternalDeferredTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeferredTransition#getEffect <em>Effect</em>}'.
@@ -12426,15 +12181,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalImmediateDeferredTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateDeferredTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateDeferredTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateDeferredTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateDeferredTransition#getCount_delay()
 	 * @see #getInternalImmediateDeferredTransition()
 	 * @generated
 	 */
-	EAttribute getInternalImmediateDeferredTransition_Delay();
+	EAttribute getInternalImmediateDeferredTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateDeferredTransition#getEffect <em>Effect</em>}'.
@@ -12458,15 +12213,15 @@ public interface InternalPackage extends EPackage {
 	EClass getInternalTerminationDefferdTransition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationDefferdTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationDefferdTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationDefferdTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationDefferdTransition#getCount_delay()
 	 * @see #getInternalTerminationDefferdTransition()
 	 * @generated
 	 */
-	EAttribute getInternalTerminationDefferdTransition_Delay();
+	EAttribute getInternalTerminationDefferdTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationDefferdTransition#getEffect <em>Effect</em>}'.
@@ -12501,15 +12256,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalConditionalTerminationDeferredTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationDeferredTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationDeferredTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationDeferredTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationDeferredTransition#getCount_delay()
 	 * @see #getInternalConditionalTerminationDeferredTransition()
 	 * @generated
 	 */
-	EAttribute getInternalConditionalTerminationDeferredTransition_Delay();
+	EAttribute getInternalConditionalTerminationDeferredTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationDeferredTransition#getEffect <em>Effect</em>}'.
@@ -12544,15 +12299,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalStrongAbortDeferredTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortDeferredTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortDeferredTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortDeferredTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortDeferredTransition#getCount_delay()
 	 * @see #getInternalStrongAbortDeferredTransition()
 	 * @generated
 	 */
-	EAttribute getInternalStrongAbortDeferredTransition_Delay();
+	EAttribute getInternalStrongAbortDeferredTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortDeferredTransition#getEffect <em>Effect</em>}'.
@@ -12587,15 +12342,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalImmediateStrongAbortDeferredTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortDeferredTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortDeferredTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortDeferredTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortDeferredTransition#getCount_delay()
 	 * @see #getInternalImmediateStrongAbortDeferredTransition()
 	 * @generated
 	 */
-	EAttribute getInternalImmediateStrongAbortDeferredTransition_Delay();
+	EAttribute getInternalImmediateStrongAbortDeferredTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortDeferredTransition#getEffect <em>Effect</em>}'.
@@ -12630,15 +12385,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalHistoryTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#getCount_delay()
 	 * @see #getInternalHistoryTransition()
 	 * @generated
 	 */
-	EAttribute getInternalHistoryTransition_Delay();
+	EAttribute getInternalHistoryTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#isDeepHistory <em>Deep History</em>}'.
@@ -12684,15 +12439,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalImmediateHistoryTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateHistoryTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateHistoryTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateHistoryTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateHistoryTransition#getCount_delay()
 	 * @see #getInternalImmediateHistoryTransition()
 	 * @generated
 	 */
-	EAttribute getInternalImmediateHistoryTransition_Delay();
+	EAttribute getInternalImmediateHistoryTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateHistoryTransition#isDeepHistory <em>Deep History</em>}'.
@@ -12725,17 +12480,6 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getInternalTerminationHistoryTransition();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationHistoryTransition#getDelay <em>Delay</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationHistoryTransition#getDelay()
-	 * @see #getInternalTerminationHistoryTransition()
-	 * @generated
-	 */
-	EAttribute getInternalTerminationHistoryTransition_Delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationHistoryTransition#isDeepHistory <em>Deep History</em>}'.
@@ -12781,15 +12525,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalConditionalTerminationHistoryTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationHistoryTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationHistoryTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationHistoryTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationHistoryTransition#getCount_delay()
 	 * @see #getInternalConditionalTerminationHistoryTransition()
 	 * @generated
 	 */
-	EAttribute getInternalConditionalTerminationHistoryTransition_Delay();
+	EAttribute getInternalConditionalTerminationHistoryTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConditionalTerminationHistoryTransition#isDeepHistory <em>Deep History</em>}'.
@@ -12835,15 +12579,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalStrongAbortHistoryTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortHistoryTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortHistoryTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortHistoryTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortHistoryTransition#getCount_delay()
 	 * @see #getInternalStrongAbortHistoryTransition()
 	 * @generated
 	 */
-	EAttribute getInternalStrongAbortHistoryTransition_Delay();
+	EAttribute getInternalStrongAbortHistoryTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalStrongAbortHistoryTransition#isDeepHistory <em>Deep History</em>}'.
@@ -12889,15 +12633,15 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalImmediateStrongAbortHistoryTransition_Condition();
 
 	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortHistoryTransition#getDelay <em>Delay</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortHistoryTransition#getCount_delay <em>Count delay</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortHistoryTransition#getDelay()
+	 * @return the meta object for the attribute '<em>Count delay</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortHistoryTransition#getCount_delay()
 	 * @see #getInternalImmediateStrongAbortHistoryTransition()
 	 * @generated
 	 */
-	EAttribute getInternalImmediateStrongAbortHistoryTransition_Delay();
+	EAttribute getInternalImmediateStrongAbortHistoryTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalImmediateStrongAbortHistoryTransition#isDeepHistory <em>Deep History</em>}'.
@@ -12983,6 +12727,14 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EClass INTERNAL_ROOT_STATE = eINSTANCE.getInternalRootState();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_ROOT_STATE__NAME = eINSTANCE.getInternalRootState_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Label</b></em>' attribute feature.
@@ -13091,20 +12843,20 @@ public interface InternalPackage extends EPackage {
 		EClass INTERNAL_REGION = eINSTANCE.getInternalRegion();
 
 		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_REGION__NAME = eINSTANCE.getInternalRegion_Name();
+
+		/**
 		 * The meta object literal for the '<em><b>Label</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute INTERNAL_REGION__LABEL = eINSTANCE.getInternalRegion_Label();
-
-		/**
-		 * The meta object literal for the '<em><b>Region ID</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_REGION__REGION_ID = eINSTANCE.getInternalRegion_RegionID();
 
 		/**
 		 * The meta object literal for the '<em><b>Uuid</b></em>' attribute feature.
@@ -13149,6 +12901,14 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EClass INTERNAL_SUPER_STATE = eINSTANCE.getInternalSuperState();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_SUPER_STATE__NAME = eINSTANCE.getInternalSuperState_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Label</b></em>' attribute feature.
@@ -13425,14 +13185,14 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_INITILAL_SUPER_STATE___GET_CONNECTOR_SUCCESSORS = eINSTANCE.getInternalInitilalSuperState__GetConnectorSuccessors();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateDeclarationImpl <em>Root State Declaration</em>}' class.
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDeclarationImpl <em>Declaration</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateDeclarationImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalRootStateDeclaration()
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDeclarationImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalDeclaration()
 		 * @generated
 		 */
-		EClass INTERNAL_ROOT_STATE_DECLARATION = eINSTANCE.getInternalRootStateDeclaration();
+		EClass INTERNAL_DECLARATION = eINSTANCE.getInternalDeclaration();
 
 		/**
 		 * The meta object literal for the '<em><b>Declaration Type</b></em>' attribute feature.
@@ -13440,15 +13200,15 @@ public interface InternalPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_ROOT_STATE_DECLARATION__DECLARATION_TYPE = eINSTANCE.getInternalRootStateDeclaration_DeclarationType();
+		EAttribute INTERNAL_DECLARATION__DECLARATION_TYPE = eINSTANCE.getInternalDeclaration_DeclarationType();
 
 		/**
-		 * The meta object literal for the '<em><b>Const</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Constant</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_ROOT_STATE_DECLARATION__CONST = eINSTANCE.getInternalRootStateDeclaration_Const();
+		EAttribute INTERNAL_DECLARATION__CONSTANT = eINSTANCE.getInternalDeclaration_Constant();
 
 		/**
 		 * The meta object literal for the '<em><b>Input Output</b></em>' attribute feature.
@@ -13456,7 +13216,15 @@ public interface InternalPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_ROOT_STATE_DECLARATION__INPUT_OUTPUT = eINSTANCE.getInternalRootStateDeclaration_InputOutput();
+		EAttribute INTERNAL_DECLARATION__INPUT_OUTPUT = eINSTANCE.getInternalDeclaration_InputOutput();
+
+		/**
+		 * The meta object literal for the '<em><b>Assignment</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_DECLARATION__ASSIGNMENT = eINSTANCE.getInternalDeclaration_Assignment();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -13464,7 +13232,7 @@ public interface InternalPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_ROOT_STATE_DECLARATION__NAME = eINSTANCE.getInternalRootStateDeclaration_Name();
+		EAttribute INTERNAL_DECLARATION__NAME = eINSTANCE.getInternalDeclaration_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Signal</b></em>' attribute feature.
@@ -13472,7 +13240,15 @@ public interface InternalPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_ROOT_STATE_DECLARATION__SIGNAL = eINSTANCE.getInternalRootStateDeclaration_Signal();
+		EAttribute INTERNAL_DECLARATION__SIGNAL = eINSTANCE.getInternalDeclaration_Signal();
+
+		/**
+		 * The meta object literal for the '<em><b>Uuid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_DECLARATION__UUID = eINSTANCE.getInternalDeclaration_Uuid();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuspendImpl <em>Suspend</em>}' class.
@@ -13551,56 +13327,6 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_ACTION__UUID = eINSTANCE.getInternalAction_Uuid();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateDeclarationImpl <em>Super State Declaration</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateDeclarationImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuperStateDeclaration()
-		 * @generated
-		 */
-		EClass INTERNAL_SUPER_STATE_DECLARATION = eINSTANCE.getInternalSuperStateDeclaration();
-
-		/**
-		 * The meta object literal for the '<em><b>Declaration Type</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_SUPER_STATE_DECLARATION__DECLARATION_TYPE = eINSTANCE.getInternalSuperStateDeclaration_DeclarationType();
-
-		/**
-		 * The meta object literal for the '<em><b>Const</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_SUPER_STATE_DECLARATION__CONST = eINSTANCE.getInternalSuperStateDeclaration_Const();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_SUPER_STATE_DECLARATION__NAME = eINSTANCE.getInternalSuperStateDeclaration_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Const Sig</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_SUPER_STATE_DECLARATION__CONST_SIG = eINSTANCE.getInternalSuperStateDeclaration_ConstSig();
-
-		/**
-		 * The meta object literal for the '<em><b>Signal</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_SUPER_STATE_DECLARATION__SIGNAL = eINSTANCE.getInternalSuperStateDeclaration_Signal();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSimpleStateImpl <em>Simple State</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -13609,6 +13335,14 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EClass INTERNAL_SIMPLE_STATE = eINSTANCE.getInternalSimpleState();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_SIMPLE_STATE__NAME = eINSTANCE.getInternalSimpleState_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Label</b></em>' attribute feature.
@@ -14445,12 +14179,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_TRANSITION__CONDITION = eINSTANCE.getInternalTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_TRANSITION__DELAY = eINSTANCE.getInternalTransition_Delay();
+		EAttribute INTERNAL_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
@@ -14479,12 +14213,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_IMMEDIATE_TRANSITION__CONDITION = eINSTANCE.getInternalImmediateTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_IMMEDIATE_TRANSITION__DELAY = eINSTANCE.getInternalImmediateTransition_Delay();
+		EAttribute INTERNAL_IMMEDIATE_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalImmediateTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
@@ -14531,12 +14265,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_CONDITIONAL_TERMINATION_TRANSITION__CONDITION = eINSTANCE.getInternalConditionalTerminationTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_CONDITIONAL_TERMINATION_TRANSITION__DELAY = eINSTANCE.getInternalConditionalTerminationTransition_Delay();
+		EAttribute INTERNAL_CONDITIONAL_TERMINATION_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalConditionalTerminationTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
@@ -14565,12 +14299,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_STRONG_ABORT_TRANSITION__CONDITION = eINSTANCE.getInternalStrongAbortTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_STRONG_ABORT_TRANSITION__DELAY = eINSTANCE.getInternalStrongAbortTransition_Delay();
+		EAttribute INTERNAL_STRONG_ABORT_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalStrongAbortTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
@@ -14599,12 +14333,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION__CONDITION = eINSTANCE.getInternalImmediateStrongAbortTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION__DELAY = eINSTANCE.getInternalImmediateStrongAbortTransition_Delay();
+		EAttribute INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalImmediateStrongAbortTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
@@ -14633,12 +14367,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_DEFERRED_TRANSITION__CONDITION = eINSTANCE.getInternalDeferredTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_DEFERRED_TRANSITION__DELAY = eINSTANCE.getInternalDeferredTransition_Delay();
+		EAttribute INTERNAL_DEFERRED_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalDeferredTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
@@ -14667,12 +14401,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_IMMEDIATE_DEFERRED_TRANSITION__CONDITION = eINSTANCE.getInternalImmediateDeferredTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_IMMEDIATE_DEFERRED_TRANSITION__DELAY = eINSTANCE.getInternalImmediateDeferredTransition_Delay();
+		EAttribute INTERNAL_IMMEDIATE_DEFERRED_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalImmediateDeferredTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
@@ -14693,12 +14427,12 @@ public interface InternalPackage extends EPackage {
 		EClass INTERNAL_TERMINATION_DEFFERD_TRANSITION = eINSTANCE.getInternalTerminationDefferdTransition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_TERMINATION_DEFFERD_TRANSITION__DELAY = eINSTANCE.getInternalTerminationDefferdTransition_Delay();
+		EAttribute INTERNAL_TERMINATION_DEFFERD_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalTerminationDefferdTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
@@ -14727,12 +14461,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION__CONDITION = eINSTANCE.getInternalConditionalTerminationDeferredTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION__DELAY = eINSTANCE.getInternalConditionalTerminationDeferredTransition_Delay();
+		EAttribute INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalConditionalTerminationDeferredTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
@@ -14761,12 +14495,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION__CONDITION = eINSTANCE.getInternalStrongAbortDeferredTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION__DELAY = eINSTANCE.getInternalStrongAbortDeferredTransition_Delay();
+		EAttribute INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalStrongAbortDeferredTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
@@ -14795,12 +14529,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__CONDITION = eINSTANCE.getInternalImmediateStrongAbortDeferredTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__DELAY = eINSTANCE.getInternalImmediateStrongAbortDeferredTransition_Delay();
+		EAttribute INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalImmediateStrongAbortDeferredTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.
@@ -14829,12 +14563,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_HISTORY_TRANSITION__CONDITION = eINSTANCE.getInternalHistoryTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_HISTORY_TRANSITION__DELAY = eINSTANCE.getInternalHistoryTransition_Delay();
+		EAttribute INTERNAL_HISTORY_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalHistoryTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Deep History</b></em>' attribute feature.
@@ -14871,12 +14605,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_IMMEDIATE_HISTORY_TRANSITION__CONDITION = eINSTANCE.getInternalImmediateHistoryTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_IMMEDIATE_HISTORY_TRANSITION__DELAY = eINSTANCE.getInternalImmediateHistoryTransition_Delay();
+		EAttribute INTERNAL_IMMEDIATE_HISTORY_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalImmediateHistoryTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Deep History</b></em>' attribute feature.
@@ -14903,14 +14637,6 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EClass INTERNAL_TERMINATION_HISTORY_TRANSITION = eINSTANCE.getInternalTerminationHistoryTransition();
-
-		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_TERMINATION_HISTORY_TRANSITION__DELAY = eINSTANCE.getInternalTerminationHistoryTransition_Delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Deep History</b></em>' attribute feature.
@@ -14947,12 +14673,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION__CONDITION = eINSTANCE.getInternalConditionalTerminationHistoryTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION__DELAY = eINSTANCE.getInternalConditionalTerminationHistoryTransition_Delay();
+		EAttribute INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalConditionalTerminationHistoryTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Deep History</b></em>' attribute feature.
@@ -14989,12 +14715,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_STRONG_ABORT_HISTORY_TRANSITION__CONDITION = eINSTANCE.getInternalStrongAbortHistoryTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_STRONG_ABORT_HISTORY_TRANSITION__DELAY = eINSTANCE.getInternalStrongAbortHistoryTransition_Delay();
+		EAttribute INTERNAL_STRONG_ABORT_HISTORY_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalStrongAbortHistoryTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Deep History</b></em>' attribute feature.
@@ -15031,12 +14757,12 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION__CONDITION = eINSTANCE.getInternalImmediateStrongAbortHistoryTransition_Condition();
 
 		/**
-		 * The meta object literal for the '<em><b>Delay</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION__DELAY = eINSTANCE.getInternalImmediateStrongAbortHistoryTransition_Delay();
+		EAttribute INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalImmediateStrongAbortHistoryTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Deep History</b></em>' attribute feature.

@@ -130,8 +130,8 @@ public class ImmediateStrongAbortHistoryTransitionViewImpl extends AbstractTrans
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalImmediateStrongAbortHistoryTransition().getDelay();
+	public String getCount_delay() {
+		return getInternalImmediateStrongAbortHistoryTransition().getCount_delay();
 	}
 
 	/**
@@ -140,9 +140,9 @@ public class ImmediateStrongAbortHistoryTransitionViewImpl extends AbstractTrans
 	 * @generated
 	 */
 	@Override
-	public void setDelay(final String _arg) {
-		getInternalImmediateStrongAbortHistoryTransition().getElement().transact("Set Delay", () -> {
-			getInternalImmediateStrongAbortHistoryTransition().setDelay(_arg);
+	public void setCount_delay(final String _arg) {
+		getInternalImmediateStrongAbortHistoryTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalImmediateStrongAbortHistoryTransition().setCount_delay(_arg);
 		});
 		
 	}
@@ -265,10 +265,10 @@ public class ImmediateStrongAbortHistoryTransitionViewImpl extends AbstractTrans
 			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_DELAY:
-				return getDelay();
-			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
+			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
 				return null;
 			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY:
 				return isDeepHistory();

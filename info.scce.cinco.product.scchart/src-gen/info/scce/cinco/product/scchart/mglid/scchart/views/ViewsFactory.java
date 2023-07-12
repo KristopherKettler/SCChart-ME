@@ -67,13 +67,13 @@ public interface ViewsFactory extends EFactory {
 	InitilalSuperStateView createInitilalSuperStateView();
 
 	/**
-	 * Returns a new object of class '<em>Root State Declaration View</em>'.
+	 * Returns a new object of class '<em>Declaration View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Root State Declaration View</em>'.
+	 * @return a new object of class '<em>Declaration View</em>'.
 	 * @generated
 	 */
-	RootStateDeclarationView createRootStateDeclarationView();
+	DeclarationView createDeclarationView();
 
 	/**
 	 * Returns a new object of class '<em>Suspend View</em>'.
@@ -92,15 +92,6 @@ public interface ViewsFactory extends EFactory {
 	 * @generated
 	 */
 	ActionView createActionView();
-
-	/**
-	 * Returns a new object of class '<em>Super State Declaration View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Super State Declaration View</em>'.
-	 * @generated
-	 */
-	SuperStateDeclarationView createSuperStateDeclarationView();
 
 	/**
 	 * Returns a new object of class '<em>Simple State View</em>'.

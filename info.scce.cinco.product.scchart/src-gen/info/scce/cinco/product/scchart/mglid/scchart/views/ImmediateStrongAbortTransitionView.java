@@ -65,7 +65,7 @@ public interface ImmediateStrongAbortTransitionView extends AbstractTransitionVi
 	 * @model kind="operation"
 	 * @generated
 	 */
-	String getDelay();
+	String getCount_delay();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -73,7 +73,7 @@ public interface ImmediateStrongAbortTransitionView extends AbstractTransitionVi
 	 * @model
 	 * @generated
 	 */
-	void setDelay(String _arg);
+	void setCount_delay(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->

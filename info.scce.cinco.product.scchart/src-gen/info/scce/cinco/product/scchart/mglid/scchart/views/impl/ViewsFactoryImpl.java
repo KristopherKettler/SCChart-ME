@@ -61,10 +61,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.DATA_FLOW_REGION_VIEW: return createDataFlowRegionView();
 			case ViewsPackage.SUPER_STATE_VIEW: return createSuperStateView();
 			case ViewsPackage.INITILAL_SUPER_STATE_VIEW: return createInitilalSuperStateView();
-			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW: return createRootStateDeclarationView();
+			case ViewsPackage.DECLARATION_VIEW: return createDeclarationView();
 			case ViewsPackage.SUSPEND_VIEW: return createSuspendView();
 			case ViewsPackage.ACTION_VIEW: return createActionView();
-			case ViewsPackage.SUPER_STATE_DECLARATION_VIEW: return createSuperStateDeclarationView();
 			case ViewsPackage.SIMPLE_STATE_VIEW: return createSimpleStateView();
 			case ViewsPackage.INITIAL_STATE_VIEW: return createInitialStateView();
 			case ViewsPackage.FINAL_STATE_VIEW: return createFinalStateView();
@@ -160,9 +159,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public RootStateDeclarationView createRootStateDeclarationView() {
-		RootStateDeclarationViewImpl rootStateDeclarationView = new RootStateDeclarationViewImpl();
-		return rootStateDeclarationView;
+	public DeclarationView createDeclarationView() {
+		DeclarationViewImpl declarationView = new DeclarationViewImpl();
+		return declarationView;
 	}
 
 	/**
@@ -185,17 +184,6 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public ActionView createActionView() {
 		ActionViewImpl actionView = new ActionViewImpl();
 		return actionView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SuperStateDeclarationView createSuperStateDeclarationView() {
-		SuperStateDeclarationViewImpl superStateDeclarationView = new SuperStateDeclarationViewImpl();
-		return superStateDeclarationView;
 	}
 
 	/**

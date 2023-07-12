@@ -19,7 +19,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationHistoryTransitionImpl#getDelay <em>Delay</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationHistoryTransitionImpl#isDeepHistory <em>Deep History</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationHistoryTransitionImpl#getEffect <em>Effect</em>}</li>
  * </ul>
@@ -27,26 +26,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * @generated
  */
 public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTransitionImpl implements InternalTerminationHistoryTransition {
-	/**
-	 * The default value of the '{@link #getDelay() <em>Delay</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDelay()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String DELAY_EDEFAULT = "<No count delay>";
-
-	/**
-	 * The cached value of the '{@link #getDelay() <em>Delay</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDelay()
-	 * @generated
-	 * @ordered
-	 */
-	protected String delay = DELAY_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #isDeepHistory() <em>Deep History</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -112,29 +91,6 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return delay;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDelay(String newDelay) {
-		String oldDelay = delay;
-		delay = newDelay;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DELAY, oldDelay, delay));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean isDeepHistory() {
 		return deepHistory;
 	}
@@ -183,8 +139,6 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DELAY:
-				return getDelay();
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DEEP_HISTORY:
 				return isDeepHistory();
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__EFFECT:
@@ -201,9 +155,6 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DELAY:
-				setDelay((String)newValue);
-				return;
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DEEP_HISTORY:
 				setDeepHistory((Boolean)newValue);
 				return;
@@ -222,9 +173,6 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DELAY:
-				setDelay(DELAY_EDEFAULT);
-				return;
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DEEP_HISTORY:
 				setDeepHistory(DEEP_HISTORY_EDEFAULT);
 				return;
@@ -243,8 +191,6 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DELAY:
-				return DELAY_EDEFAULT == null ? delay != null : !DELAY_EDEFAULT.equals(delay);
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DEEP_HISTORY:
 				return deepHistory != DEEP_HISTORY_EDEFAULT;
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__EFFECT:
@@ -263,9 +209,7 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (delay: ");
-		result.append(delay);
-		result.append(", deepHistory: ");
+		result.append(" (deepHistory: ");
 		result.append(deepHistory);
 		result.append(", effect: ");
 		result.append(effect);

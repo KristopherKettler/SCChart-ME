@@ -59,58 +59,58 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 			if(it.uuid==element.uuid){
 				regionFound=true
 				//manual break
-				var break = true
+				var continue = true
 				//if the region is the only one in the container
 				if(element.rootElement.rootStates.head.regions.size==1){
 					it.x=10
-					it.y=33+element.rootElement.rootStates.head.rootStateDeclarations.size*13+element.rootElement.rootStates.head.suspends.size*13
+					it.y=33+element.rootElement.rootStates.head.declarations.size*13+element.rootElement.rootStates.head.suspends.size*13
 					it.width=element.rootElement.rootStates.head.width-20
-					it.height=element.rootElement.rootStates.head.height-43-element.rootElement.rootStates.head.rootStateDeclarations.size*13+element.rootElement.rootStates.head.suspends.size*13
+					it.height=element.rootElement.rootStates.head.height-43-element.rootElement.rootStates.head.declarations.size*13+element.rootElement.rootStates.head.suspends.size*13
 				}
 				else {
 					for(region1 : element.rootElement.rootStates.head.regions){
-						if((it.x-region1.x-region1.width<=13&&it.x-region1.x-region1.width>-3)&&break&&region1.y<it.y&&region1.y+region1.height>it.y &&it.uuid!=region1.uuid){
+						if((it.x-region1.x-region1.width<=13&&it.x-region1.x-region1.width>-1)&&continue&&region1.y<it.y&&region1.y+region1.height>it.y &&it.uuid!=region1.uuid){
 							region1.width = (region1.width - 10)/2
 							it.width = region1.width
 							it.height = region1.height
 							it.x = region1.x+region1.width+10
 							it.y = region1.y
-							break = false
+							continue = false
 						}
-						else if((region1.x-it.x<=13&&region1.x-it.x>-3)&&break&&region1.y<it.y&&region1.y+region1.height>it.y &&it.uuid!=region1.uuid){
+						else if((region1.x-it.x<=13&&region1.x-it.x>-1)&&continue&&region1.y<it.y&&region1.y+region1.height>it.y &&it.uuid!=region1.uuid){
 							region1.width = (region1.width - 10)/2
 							it.width = region1.width
 							it.height = region1.height
 							it.x = region1.x
 							it.y = region1.y
 							region1.x= region1.x + region1.width+10
-							break = false
+							continue = false
 						}
-						else if((it.y-region1.y-region1.height<=13&&it.y-region1.y-region1.height>-1)&&break&&region1.x<it.x&&region1.x+region1.width>it.x &&it.uuid!=region1.uuid){
+						else if((it.y-region1.y-region1.height<=13&&it.y-region1.y-region1.height>-1)&&continue&&region1.x<it.x&&region1.x+region1.width>it.x &&it.uuid!=region1.uuid){
 							region1.height = (region1.height - 10)/2
 							it.width = region1.width
 							it.height = region1.height
 							it.x = region1.x
 							it.y = region1.y+region1.height+10
-							break = false
+							continue = false
 						}
-						else if((region1.y-it.y<=13&&region1.y-it.y>-1)&&break&&region1.x<it.x&&region1.x+region1.width>it.x &&it.uuid!=region1.uuid){
+						else if((region1.y-it.y<=13&&region1.y-it.y>-1)&&continue&&region1.x<it.x&&region1.x+region1.width>it.x &&it.uuid!=region1.uuid){
 							region1.height = (region1.height - 10)/2
 							it.width = region1.width
 							it.height = region1.height
 							it.x = region1.x
 							it.y = region1.y
 							region1.y = region1.y +region1.height+10
-							break = false
+							continue = false
 						}
 //						else if(break){
 //							it.delete
 //							break = false
 //						}
 					}
-					if(break){
+					if(continue){
 						for(region1:element.rootElement.rootStates.head.regions){
-							if((it.y-region1.y-region1.height<=13&&it.y-region1.y-region1.height>-1)&&break&&it.uuid!=region1.uuid){
+							if((it.y-region1.y-region1.height<=13&&it.y-region1.y-region1.height>-1)&&continue&&it.uuid!=region1.uuid){
 								for(region2: element.rootElement.rootStates.head.regions){
 									if(region2.y>it.y-3){
 										region2.y = region2.y+160
@@ -121,12 +121,12 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 								it.x = 10
 								it.height = 150
 								it.width = element.rootElement.rootStates.head.width-20
-								break = false
+								continue = false
 							}
-							else if(break){
+							else if(continue){
 								var int declarationCount = 0
-								if(element.rootElement.rootStates.head.rootStateDeclarations!==null){
-									declarationCount += element.rootElement.rootStates.head.rootStateDeclarations.size
+								if(element.rootElement.rootStates.head.declarations!==null){
+									declarationCount += element.rootElement.rootStates.head.declarations.size
 								}
 								if(element.rootElement.rootStates.head.suspends!==null){
 									declarationCount += element.rootElement.rootStates.head.suspends.size
@@ -145,7 +145,7 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 									it.x = 10
 									it.height = 150
 									it.width = element.rootElement.rootStates.head.width-20
-									break = false
+									continue = false
 								}
 							}
 					}

@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * </p>
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalImmediateStrongAbortDeferredTransitionImpl#getCondition <em>Condition</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalImmediateStrongAbortDeferredTransitionImpl#getDelay <em>Delay</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalImmediateStrongAbortDeferredTransitionImpl#getCount_delay <em>Count delay</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalImmediateStrongAbortDeferredTransitionImpl#getEffect <em>Effect</em>}</li>
  * </ul>
  *
@@ -48,24 +48,24 @@ public class InternalImmediateStrongAbortDeferredTransitionImpl extends Internal
 	protected String condition = CONDITION_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getDelay() <em>Delay</em>}' attribute.
+	 * The default value of the '{@link #getCount_delay() <em>Count delay</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDelay()
+	 * @see #getCount_delay()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DELAY_EDEFAULT = "<No count delay>";
+	protected static final String COUNT_DELAY_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getDelay() <em>Delay</em>}' attribute.
+	 * The cached value of the '{@link #getCount_delay() <em>Count delay</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDelay()
+	 * @see #getCount_delay()
 	 * @generated
 	 * @ordered
 	 */
-	protected String delay = DELAY_EDEFAULT;
+	protected String count_delay = COUNT_DELAY_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getEffect() <em>Effect</em>}' attribute.
@@ -135,8 +135,8 @@ public class InternalImmediateStrongAbortDeferredTransitionImpl extends Internal
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return delay;
+	public String getCount_delay() {
+		return count_delay;
 	}
 
 	/**
@@ -145,11 +145,11 @@ public class InternalImmediateStrongAbortDeferredTransitionImpl extends Internal
 	 * @generated
 	 */
 	@Override
-	public void setDelay(String newDelay) {
-		String oldDelay = delay;
-		delay = newDelay;
+	public void setCount_delay(String newCount_delay) {
+		String oldCount_delay = count_delay;
+		count_delay = newCount_delay;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__DELAY, oldDelay, delay));
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__COUNT_DELAY, oldCount_delay, count_delay));
 	}
 
 	/**
@@ -185,8 +185,8 @@ public class InternalImmediateStrongAbortDeferredTransitionImpl extends Internal
 		switch (featureID) {
 			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__CONDITION:
 				return getCondition();
-			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__DELAY:
-				return getDelay();
+			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__COUNT_DELAY:
+				return getCount_delay();
 			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__EFFECT:
 				return getEffect();
 		}
@@ -204,8 +204,8 @@ public class InternalImmediateStrongAbortDeferredTransitionImpl extends Internal
 			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__CONDITION:
 				setCondition((String)newValue);
 				return;
-			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__DELAY:
-				setDelay((String)newValue);
+			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__COUNT_DELAY:
+				setCount_delay((String)newValue);
 				return;
 			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__EFFECT:
 				setEffect((String)newValue);
@@ -225,8 +225,8 @@ public class InternalImmediateStrongAbortDeferredTransitionImpl extends Internal
 			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__CONDITION:
 				setCondition(CONDITION_EDEFAULT);
 				return;
-			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__DELAY:
-				setDelay(DELAY_EDEFAULT);
+			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__COUNT_DELAY:
+				setCount_delay(COUNT_DELAY_EDEFAULT);
 				return;
 			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__EFFECT:
 				setEffect(EFFECT_EDEFAULT);
@@ -245,8 +245,8 @@ public class InternalImmediateStrongAbortDeferredTransitionImpl extends Internal
 		switch (featureID) {
 			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__CONDITION:
 				return CONDITION_EDEFAULT == null ? condition != null : !CONDITION_EDEFAULT.equals(condition);
-			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__DELAY:
-				return DELAY_EDEFAULT == null ? delay != null : !DELAY_EDEFAULT.equals(delay);
+			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__COUNT_DELAY:
+				return COUNT_DELAY_EDEFAULT == null ? count_delay != null : !COUNT_DELAY_EDEFAULT.equals(count_delay);
 			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION__EFFECT:
 				return EFFECT_EDEFAULT == null ? effect != null : !EFFECT_EDEFAULT.equals(effect);
 		}
@@ -265,8 +265,8 @@ public class InternalImmediateStrongAbortDeferredTransitionImpl extends Internal
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (condition: ");
 		result.append(condition);
-		result.append(", delay: ");
-		result.append(delay);
+		result.append(", count_delay: ");
+		result.append(count_delay);
 		result.append(", effect: ");
 		result.append(effect);
 		result.append(')');

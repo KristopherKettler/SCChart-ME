@@ -108,6 +108,29 @@ public class SuperStateViewImpl extends EObjectImpl implements SuperStateView {
 	 * @generated
 	 */
 	@Override
+	public String getName() {
+		return getInternalSuperState().getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(final String _arg) {
+		getInternalSuperState().getElement().transact("Set Name", () -> {
+			getInternalSuperState().setName(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getLabel() {
 		return getInternalSuperState().getLabel();
 	}
@@ -192,6 +215,11 @@ public class SuperStateViewImpl extends EObjectImpl implements SuperStateView {
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
+			case ViewsPackage.SUPER_STATE_VIEW___GET_NAME:
+				return getName();
+			case ViewsPackage.SUPER_STATE_VIEW___SET_NAME__STRING:
+				setName((String)arguments.get(0));
+				return null;
 			case ViewsPackage.SUPER_STATE_VIEW___GET_LABEL:
 				return getLabel();
 			case ViewsPackage.SUPER_STATE_VIEW___SET_LABEL__STRING:

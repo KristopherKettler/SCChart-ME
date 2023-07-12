@@ -59,29 +59,6 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalTerminationHistoryTransition().getDelay();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDelay(final String _arg) {
-		getInternalTerminationHistoryTransition().getElement().transact("Set Delay", () -> {
-			getInternalTerminationHistoryTransition().setDelay(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean isDeepHistory() {
 		return getInternalTerminationHistoryTransition().isDeepHistory();
 	}
@@ -396,11 +373,6 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___GET_DELAY:
-				return getDelay();
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
-				return null;
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___IS_DEEP_HISTORY:
 				return isDeepHistory();
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___SET_DEEP_HISTORY__BOOLEAN:

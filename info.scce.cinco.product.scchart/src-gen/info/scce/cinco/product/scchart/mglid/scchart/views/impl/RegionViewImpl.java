@@ -108,6 +108,29 @@ public class RegionViewImpl extends EObjectImpl implements RegionView {
 	 * @generated
 	 */
 	@Override
+	public String getName() {
+		return getInternalRegion().getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(final String _arg) {
+		getInternalRegion().getElement().transact("Set Name", () -> {
+			getInternalRegion().setName(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getLabel() {
 		return getInternalRegion().getLabel();
 	}
@@ -121,29 +144,6 @@ public class RegionViewImpl extends EObjectImpl implements RegionView {
 	public void setLabel(final String _arg) {
 		getInternalRegion().getElement().transact("Set Label", () -> {
 			getInternalRegion().setLabel(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getRegionID() {
-		return getInternalRegion().getRegionID();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRegionID(final String _arg) {
-		getInternalRegion().getElement().transact("Set RegionID", () -> {
-			getInternalRegion().setRegionID(_arg);
 		});
 		
 	}
@@ -238,15 +238,15 @@ public class RegionViewImpl extends EObjectImpl implements RegionView {
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
+			case ViewsPackage.REGION_VIEW___GET_NAME:
+				return getName();
+			case ViewsPackage.REGION_VIEW___SET_NAME__STRING:
+				setName((String)arguments.get(0));
+				return null;
 			case ViewsPackage.REGION_VIEW___GET_LABEL:
 				return getLabel();
 			case ViewsPackage.REGION_VIEW___SET_LABEL__STRING:
 				setLabel((String)arguments.get(0));
-				return null;
-			case ViewsPackage.REGION_VIEW___GET_REGION_ID:
-				return getRegionID();
-			case ViewsPackage.REGION_VIEW___SET_REGION_ID__STRING:
-				setRegionID((String)arguments.get(0));
 				return null;
 			case ViewsPackage.REGION_VIEW___GET_UUID:
 				return getUuid();

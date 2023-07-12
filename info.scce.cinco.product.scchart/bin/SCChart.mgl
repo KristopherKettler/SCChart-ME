@@ -10,60 +10,65 @@ graphModel SCChart {
 @palette
 @event("info.scce.cinco.product.scchart.events.RootStateEvent")
 container RootState {
-	style rootStateStyle ("${label}")
-	containableElements(Region,RootStateDeclaration,Suspend,Action)
+	style rootStateStyle ("${empty label ? name : label}")
+	containableElements(Region,Declaration,Suspend,Action)
 	outgoingEdges (*)
-	attr EString as label := "<insert name>"
+	attr EString as name := "<insert name>"
+	attr EString as label 
 }
 
 @palette("SuperStates")
 @event("info.scce.cinco.product.scchart.events.RegionEvent")
 container Region {
-	style regionStyle ("${RegionID}")
+	style regionStyle ("${empty label ? (empty name ? '' : name) : label}")
 	containableElements(SuperState,InitilalSuperState[0,1],InitialState[0,1],SimpleState,FinalState,Connector)
-	attr EString as label := "<insert name>"
-	attr EString as RegionID := "<insert name>"
+	attr EString as name
+	attr EString as label
 	@propertiesViewHidden
 	attr EString as uuid
 }
 
 @palette("Dataflow")
 container DataFlowRegion extends Region {
-	style regionStyle ("${RegionID}")
+	style regionStyle ("${empty label ? (empty name ? '' : name) : label}")
 	containableElements(Input,Output,Operator,CircuitConnecter)
 }
 
 @palette("SuperStates")
 @event("info.scce.cinco.product.scchart.events.SuperStateEvent")
 container SuperState {
-	style superStateStyle ("${label}")
-	containableElements(Region,SuperStateDeclaration,Action,Suspend)
+	style superStateStyle ("${empty label ? name : label}")
+	containableElements(Region,Declaration,Action,Suspend)
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 	outgoingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
-	attr EString as label := "<insert name>"
+	attr EString as name := "<insert name>"
+	attr EString as label
 }
 
 @palette("SuperStates")
 @event("info.scce.cinco.product.scchart.events.InitilalSuperStateEvent")
 container InitilalSuperState extends SuperState{
-	style initialSuperStateStyle ("${label}")
-	containableElements(Region,SuperStateDeclaration,Action,Suspend)
+	style initialSuperStateStyle ("${empty label ? name : label}")
+	containableElements(Region,Declaration,Action,Suspend)
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 	outgoingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 }
 
 @palette("Declaration")
 @disable(move,resize)
-@event("info.scce.cinco.product.scchart.events.RootStateDeclarationEvent")
-node RootStateDeclaration {
-	style declarationStyle("${(empty inputOutput || inputOutput == ' ' ? '' : (inputOutput.concat(' '))).concat(empty signal || !signal ? '' : 'signal ').concat(empty declarationType || declarationType == ' ' ? '' : declarationType)}", "${(empty name || name == ' ' ? '' : name)}")
-	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationInputOutputProvider")
+@event("info.scce.cinco.product.scchart.events.DeclarationEvent")
+node Declaration {
+	style declarationStyle("${(empty inputOutput || inputOutput == ' ' ? '' : (inputOutput.concat(' '))).concat(empty constant || !constant ? '' : 'const ').concat(empty signal || !signal ? '' : 'signal ').concat(empty declarationType || declarationType == ' ' ? '' : declarationType)}", "${(empty name || name == ' ' ? '' : (name.concat(empty assignment || assignment == ' ' ? '' : (' = '.concat(assignment)))))}")
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.DeclarationInputOutputProvider")
 	attr EString as inputOutput := ' '
-	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.RootStateDeclarationTypeProvider")
+	attr EBoolean as constant
+	attr EBoolean as signal
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.DeclarationTypeProvider")
 	attr EString as declarationType := ' '
 	attr EString as name
-	attr EBoolean as signal
-	attr EBoolean as const
+	attr EString as assignment
+	@propertiesViewHidden
+	attr EString as uuid
 }
 
 @palette("Declaration")
@@ -91,32 +96,20 @@ node Action {
 	attr EString as uuid
 }
 
-@palette("Declaration")
-@disable(move,resize)
-@event("info.scce.cinco.product.scchart.events.SuperStateDeclarationEvent")
-node SuperStateDeclaration {
-	style declarationStyle("${declarationType}","${name}")
-	attr EString as ConstSig
-	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.SuperStateDeclarationTypeProvider")
-	attr EString as declarationType
-	attr EString as name
-	attr EBoolean as signal
-	attr EBoolean as const
-}
-
 @disable(resize)
 @palette("States")
 node SimpleState {
-	style simpleStateStyle("${label}")
+	style simpleStateStyle("${empty label ? name : label}")
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition)
 	outgoingEdges (Transition,ImmediateTransition)
-	attr EString as label := "<insert name>"
+	attr EString as name := "<insert name>"
+	attr EString as label 
 }	
 
 @disable(resize)
 @palette("States")
 node InitialState extends SimpleState {
-	style initialStateStyle("${label}")
+	style initialStateStyle("${empty label ? name : label}")
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition)
 	outgoingEdges (Transition,ImmediateTransition)
 }							
@@ -124,7 +117,7 @@ node InitialState extends SimpleState {
 @disable(resize)
 @palette("States")
 node FinalState extends SimpleState {
-	style finalStateStyle("${label}")
+	style finalStateStyle("${empty label ? name : label}")
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition)
 	outgoingEdges (Transition,ImmediateTransition)
 }
@@ -171,7 +164,7 @@ node CircuitConnecter {
 }
 
 /*Transitions */
-/*same as auto and delayed transition, weak abort for superstates*/
+/*same as auto and count_delayed transition, weak abort for superstates*/
 edge AbstractTransition{
 	style connectionStyle
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.AbstractTransitionPriorityProvider")
@@ -179,19 +172,19 @@ edge AbstractTransition{
 }
 
 edge Transition extends AbstractTransition{
-	style transitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(empty delay || delay == '<No count delay>' ? '' : delay).concat(condition == '<No condition>' ? '' : ' ['.concat(condition).concat(']')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
+	style transitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay 
 }
 
 edge ImmediateTransition extends AbstractTransition{
-	style immediateTransitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(empty delay || delay == '<No count delay>' ? '' : delay).concat(condition == '<No condition>' ? '' : ' ['.concat(condition).concat(']')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
+	style immediateTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 }
 
 /*unconditional Termination */
@@ -202,131 +195,130 @@ edge TerminationTransition extends AbstractTransition{
 }
 
 edge ConditionalTerminationTransition extends AbstractTransition{
-	style conditionalTerminationTransitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(empty delay || delay == '<No count delay>' ? '' : delay).concat(condition == '<No condition>' ? '' : ' ['.concat(condition).concat(']')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
+	style conditionalTerminationTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 }
 
 /* immediate terminate superstate */
 edge StrongAbortTransition extends AbstractTransition{
-	style strongAbortTransitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(empty delay || delay == '<No count delay>' ? '' : delay).concat(condition == '<No condition>' ? '' : ' ['.concat(condition).concat(']')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
+	style strongAbortTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 }
 
 /* immediate terminate superstate */
 edge ImmediateStrongAbortTransition extends AbstractTransition{
-	style immediateStrongAbortTransitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(empty delay || delay == '<No count delay>' ? '' : delay).concat(condition == '<No condition>' ? '' : ' ['.concat(condition).concat(']')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
+	style immediateStrongAbortTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 }
 
 /* preempt all immediate behavior in target state */
 edge DeferredTransition extends AbstractTransition{
-	style deferredTransitionStyle("")
+	style deferredTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 }
 
 edge ImmediateDeferredTransition extends AbstractTransition{
-	style immediateDeferredTransitionStyle("")
+	style immediateDeferredTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 }  
 
 edge TerminationDefferdTransition extends AbstractTransition{
-	style terminationDeferredTransitionStyle("")
+	style terminationDeferredTransitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
 	//attr EString as priority := '0'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 }
 
 edge  ConditionalTerminationDeferredTransition extends AbstractTransition{
-	style conditionalTerminationDeferredTransitionStyle("")
+	style conditionalTerminationDeferredTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 }
 
 edge StrongAbortDeferredTransition extends AbstractTransition{
-	style immediateStrongAbortDeferredTransitionStyle("")
+	style immediateStrongAbortDeferredTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 }
 
 edge ImmediateStrongAbortDeferredTransition extends AbstractTransition{
-	style strongAbortDeferredTransitionStyle("")
+	style strongAbortDeferredTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 }
 
 edge HistoryTransition extends AbstractTransition{
-	style historyTransitionStyle("","${deepHistory ? '*' : ' '}")
+	style historyTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}","${deepHistory ? '*' : ' '}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 	attr EBoolean as deepHistory
 }
 
 edge ImmediateHistoryTransition extends AbstractTransition{
-	style immediateHistoryTransitionStyle("","${deepHistory ? '*' : ' '}")
+	style immediateHistoryTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}","${deepHistory ? '*' : ' '}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 	attr EBoolean as deepHistory
 }
 
 edge TerminationHistoryTransition extends AbstractTransition{
-	style terminationHistoryTransitionStyle("","${deepHistory ? '*' : ' '}")
+	style terminationHistoryTransitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}","${deepHistory ? '*' : ' '}")
 	//attr EString as priority := '0'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
 	attr EBoolean as deepHistory
 }
 
 edge ConditionalTerminationHistoryTransition extends AbstractTransition{
-	style conditionalTerminationHistoryTransitionStyle("","${deepHistory ? '*' : ' '}")
+	style conditionalTerminationHistoryTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}","${deepHistory ? '*' : ' '}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 	attr EBoolean as deepHistory
 }
 
 edge StrongAbortHistoryTransition extends AbstractTransition{
-	style strongAbortHistoryTransitionStyle("","${deepHistory ? '*' : ' '}")
+	style strongAbortHistoryTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}","${deepHistory ? '*' : ' '}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 	attr EBoolean as deepHistory
 } 
 
 edge ImmediateStrongAbortHistoryTransition extends AbstractTransition{
-	style immediateStrongAbortHistoryTransitionStyle("","${deepHistory ? '*' : ' '}")
+	style immediateStrongAbortHistoryTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}","${deepHistory ? '*' : ' '}")
 	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
-	attr EString as delay := '<No count delay>'
+	attr EString as count_delay
 	attr EBoolean as deepHistory
-} 
+}
 
 edge Connection {
 	style connectionStyle

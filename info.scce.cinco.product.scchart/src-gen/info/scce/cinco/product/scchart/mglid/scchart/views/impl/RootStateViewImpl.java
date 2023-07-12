@@ -108,6 +108,29 @@ public class RootStateViewImpl extends EObjectImpl implements RootStateView {
 	 * @generated
 	 */
 	@Override
+	public String getName() {
+		return getInternalRootState().getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(final String _arg) {
+		getInternalRootState().getElement().transact("Set Name", () -> {
+			getInternalRootState().setName(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getLabel() {
 		return getInternalRootState().getLabel();
 	}
@@ -192,6 +215,11 @@ public class RootStateViewImpl extends EObjectImpl implements RootStateView {
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
+			case ViewsPackage.ROOT_STATE_VIEW___GET_NAME:
+				return getName();
+			case ViewsPackage.ROOT_STATE_VIEW___SET_NAME__STRING:
+				setName((String)arguments.get(0));
+				return null;
 			case ViewsPackage.ROOT_STATE_VIEW___GET_LABEL:
 				return getLabel();
 			case ViewsPackage.ROOT_STATE_VIEW___SET_LABEL__STRING:

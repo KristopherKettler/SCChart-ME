@@ -107,29 +107,6 @@ public class TerminationHistoryTransitionViewImpl extends AbstractTransitionView
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalTerminationHistoryTransition().getDelay();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDelay(final String _arg) {
-		getInternalTerminationHistoryTransition().getElement().transact("Set Delay", () -> {
-			getInternalTerminationHistoryTransition().setDelay(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean isDeepHistory() {
 		return getInternalTerminationHistoryTransition().isDeepHistory();
 	}
@@ -237,11 +214,6 @@ public class TerminationHistoryTransitionViewImpl extends AbstractTransitionView
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___GET_DELAY:
-				return getDelay();
-			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
-				return null;
 			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY:
 				return isDeepHistory();
 			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN:

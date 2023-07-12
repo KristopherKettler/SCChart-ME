@@ -42,12 +42,33 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateImpl#getName <em>Name</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateImpl#getLabel <em>Label</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class InternalRootStateImpl extends InternalContainerImpl implements InternalRootState {
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = "<insert name>";
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getLabel() <em>Label</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -56,7 +77,7 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String LABEL_EDEFAULT = "<insert name>";
+	protected static final String LABEL_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getLabel() <em>Label</em>}' attribute.
@@ -93,6 +114,29 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 */
 	@Override
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_ROOT_STATE__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getLabel() {
 		return label;
 	}
@@ -120,7 +164,7 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 		 org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>constraints =
 			new org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>();
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Region.class));
-		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration.class));
+		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Declaration.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Suspend.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Action.class));
 		return constraints;
@@ -240,6 +284,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_ROOT_STATE__NAME:
+				return getName();
 			case InternalPackage.INTERNAL_ROOT_STATE__LABEL:
 				return getLabel();
 		}
@@ -254,6 +300,9 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_ROOT_STATE__NAME:
+				setName((String)newValue);
+				return;
 			case InternalPackage.INTERNAL_ROOT_STATE__LABEL:
 				setLabel((String)newValue);
 				return;
@@ -269,6 +318,9 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_ROOT_STATE__NAME:
+				setName(NAME_EDEFAULT);
+				return;
 			case InternalPackage.INTERNAL_ROOT_STATE__LABEL:
 				setLabel(LABEL_EDEFAULT);
 				return;
@@ -284,6 +336,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_ROOT_STATE__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case InternalPackage.INTERNAL_ROOT_STATE__LABEL:
 				return LABEL_EDEFAULT == null ? label != null : !LABEL_EDEFAULT.equals(label);
 		}
@@ -362,7 +416,9 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (label: ");
+		result.append(" (name: ");
+		result.append(name);
+		result.append(", label: ");
 		result.append(label);
 		result.append(')');
 		return result.toString();

@@ -130,8 +130,8 @@ public class ImmediateStrongAbortTransitionViewImpl extends AbstractTransitionVi
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalImmediateStrongAbortTransition().getDelay();
+	public String getCount_delay() {
+		return getInternalImmediateStrongAbortTransition().getCount_delay();
 	}
 
 	/**
@@ -140,9 +140,9 @@ public class ImmediateStrongAbortTransitionViewImpl extends AbstractTransitionVi
 	 * @generated
 	 */
 	@Override
-	public void setDelay(final String _arg) {
-		getInternalImmediateStrongAbortTransition().getElement().transact("Set Delay", () -> {
-			getInternalImmediateStrongAbortTransition().setDelay(_arg);
+	public void setCount_delay(final String _arg) {
+		getInternalImmediateStrongAbortTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalImmediateStrongAbortTransition().setCount_delay(_arg);
 		});
 		
 	}
@@ -242,10 +242,10 @@ public class ImmediateStrongAbortTransitionViewImpl extends AbstractTransitionVi
 			case ViewsPackage.IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ViewsPackage.IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___GET_DELAY:
-				return getDelay();
-			case ViewsPackage.IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
+			case ViewsPackage.IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ViewsPackage.IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
 				return null;
 			case ViewsPackage.IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW___GET_EFFECT:
 				return getEffect();

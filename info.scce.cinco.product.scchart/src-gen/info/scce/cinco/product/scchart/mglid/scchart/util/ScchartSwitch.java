@@ -131,12 +131,12 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ScchartPackage.ROOT_STATE_DECLARATION: {
-				RootStateDeclaration rootStateDeclaration = (RootStateDeclaration)theEObject;
-				T result = caseRootStateDeclaration(rootStateDeclaration);
-				if (result == null) result = caseNode(rootStateDeclaration);
-				if (result == null) result = caseModelElement(rootStateDeclaration);
-				if (result == null) result = caseIdentifiableElement(rootStateDeclaration);
+			case ScchartPackage.DECLARATION: {
+				Declaration declaration = (Declaration)theEObject;
+				T result = caseDeclaration(declaration);
+				if (result == null) result = caseNode(declaration);
+				if (result == null) result = caseModelElement(declaration);
+				if (result == null) result = caseIdentifiableElement(declaration);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -155,15 +155,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = caseNode(action);
 				if (result == null) result = caseModelElement(action);
 				if (result == null) result = caseIdentifiableElement(action);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ScchartPackage.SUPER_STATE_DECLARATION: {
-				SuperStateDeclaration superStateDeclaration = (SuperStateDeclaration)theEObject;
-				T result = caseSuperStateDeclaration(superStateDeclaration);
-				if (result == null) result = caseNode(superStateDeclaration);
-				if (result == null) result = caseModelElement(superStateDeclaration);
-				if (result == null) result = caseIdentifiableElement(superStateDeclaration);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -528,17 +519,17 @@ public class ScchartSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Root State Declaration</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Root State Declaration</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Declaration</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRootStateDeclaration(RootStateDeclaration object) {
+	public T caseDeclaration(Declaration object) {
 		return null;
 	}
 
@@ -569,21 +560,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseAction(Action object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Super State Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Super State Declaration</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSuperStateDeclaration(SuperStateDeclaration object) {
 		return null;
 	}
 

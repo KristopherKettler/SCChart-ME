@@ -234,7 +234,7 @@ edgeStyle transitionStyle(1){
 	decorator {
 		location (1.0) // at the end of the edge
 		ARROW
-		appearance default 
+		appearance transitionAppearance 
 	}
 	decorator {
 		location (0.5)

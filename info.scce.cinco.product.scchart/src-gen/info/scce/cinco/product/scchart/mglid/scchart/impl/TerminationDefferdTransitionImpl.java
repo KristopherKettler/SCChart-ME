@@ -59,8 +59,8 @@ public class TerminationDefferdTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalTerminationDefferdTransition().getDelay();
+	public String getCount_delay() {
+		return getInternalTerminationDefferdTransition().getCount_delay();
 	}
 
 	/**
@@ -69,9 +69,9 @@ public class TerminationDefferdTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public void setDelay(final String _arg) {
-		getInternalTerminationDefferdTransition().getElement().transact("Set Delay", () -> {
-			getInternalTerminationDefferdTransition().setDelay(_arg);
+	public void setCount_delay(final String _arg) {
+		getInternalTerminationDefferdTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalTerminationDefferdTransition().setCount_delay(_arg);
 		});
 		
 	}
@@ -373,10 +373,10 @@ public class TerminationDefferdTransitionImpl extends AbstractTransitionImpl imp
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case ScchartPackage.TERMINATION_DEFFERD_TRANSITION___GET_DELAY:
-				return getDelay();
-			case ScchartPackage.TERMINATION_DEFFERD_TRANSITION___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
+			case ScchartPackage.TERMINATION_DEFFERD_TRANSITION___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ScchartPackage.TERMINATION_DEFFERD_TRANSITION___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
 				return null;
 			case ScchartPackage.TERMINATION_DEFFERD_TRANSITION___GET_EFFECT:
 				return getEffect();

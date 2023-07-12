@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * </p>
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalImmediateHistoryTransitionImpl#getCondition <em>Condition</em>}</li>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalImmediateHistoryTransitionImpl#getDelay <em>Delay</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalImmediateHistoryTransitionImpl#getCount_delay <em>Count delay</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalImmediateHistoryTransitionImpl#isDeepHistory <em>Deep History</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalImmediateHistoryTransitionImpl#getEffect <em>Effect</em>}</li>
  * </ul>
@@ -49,24 +49,24 @@ public class InternalImmediateHistoryTransitionImpl extends InternalAbstractTran
 	protected String condition = CONDITION_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getDelay() <em>Delay</em>}' attribute.
+	 * The default value of the '{@link #getCount_delay() <em>Count delay</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDelay()
+	 * @see #getCount_delay()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DELAY_EDEFAULT = "<No count delay>";
+	protected static final String COUNT_DELAY_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getDelay() <em>Delay</em>}' attribute.
+	 * The cached value of the '{@link #getCount_delay() <em>Count delay</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDelay()
+	 * @see #getCount_delay()
 	 * @generated
 	 * @ordered
 	 */
-	protected String delay = DELAY_EDEFAULT;
+	protected String count_delay = COUNT_DELAY_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #isDeepHistory() <em>Deep History</em>}' attribute.
@@ -156,8 +156,8 @@ public class InternalImmediateHistoryTransitionImpl extends InternalAbstractTran
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return delay;
+	public String getCount_delay() {
+		return count_delay;
 	}
 
 	/**
@@ -166,11 +166,11 @@ public class InternalImmediateHistoryTransitionImpl extends InternalAbstractTran
 	 * @generated
 	 */
 	@Override
-	public void setDelay(String newDelay) {
-		String oldDelay = delay;
-		delay = newDelay;
+	public void setCount_delay(String newCount_delay) {
+		String oldCount_delay = count_delay;
+		count_delay = newCount_delay;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__DELAY, oldDelay, delay));
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__COUNT_DELAY, oldCount_delay, count_delay));
 	}
 
 	/**
@@ -229,8 +229,8 @@ public class InternalImmediateHistoryTransitionImpl extends InternalAbstractTran
 		switch (featureID) {
 			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__CONDITION:
 				return getCondition();
-			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__DELAY:
-				return getDelay();
+			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__COUNT_DELAY:
+				return getCount_delay();
 			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__DEEP_HISTORY:
 				return isDeepHistory();
 			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__EFFECT:
@@ -250,8 +250,8 @@ public class InternalImmediateHistoryTransitionImpl extends InternalAbstractTran
 			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__CONDITION:
 				setCondition((String)newValue);
 				return;
-			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__DELAY:
-				setDelay((String)newValue);
+			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__COUNT_DELAY:
+				setCount_delay((String)newValue);
 				return;
 			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__DEEP_HISTORY:
 				setDeepHistory((Boolean)newValue);
@@ -274,8 +274,8 @@ public class InternalImmediateHistoryTransitionImpl extends InternalAbstractTran
 			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__CONDITION:
 				setCondition(CONDITION_EDEFAULT);
 				return;
-			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__DELAY:
-				setDelay(DELAY_EDEFAULT);
+			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__COUNT_DELAY:
+				setCount_delay(COUNT_DELAY_EDEFAULT);
 				return;
 			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__DEEP_HISTORY:
 				setDeepHistory(DEEP_HISTORY_EDEFAULT);
@@ -297,8 +297,8 @@ public class InternalImmediateHistoryTransitionImpl extends InternalAbstractTran
 		switch (featureID) {
 			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__CONDITION:
 				return CONDITION_EDEFAULT == null ? condition != null : !CONDITION_EDEFAULT.equals(condition);
-			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__DELAY:
-				return DELAY_EDEFAULT == null ? delay != null : !DELAY_EDEFAULT.equals(delay);
+			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__COUNT_DELAY:
+				return COUNT_DELAY_EDEFAULT == null ? count_delay != null : !COUNT_DELAY_EDEFAULT.equals(count_delay);
 			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__DEEP_HISTORY:
 				return deepHistory != DEEP_HISTORY_EDEFAULT;
 			case InternalPackage.INTERNAL_IMMEDIATE_HISTORY_TRANSITION__EFFECT:
@@ -319,8 +319,8 @@ public class InternalImmediateHistoryTransitionImpl extends InternalAbstractTran
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (condition: ");
 		result.append(condition);
-		result.append(", delay: ");
-		result.append(delay);
+		result.append(", count_delay: ");
+		result.append(count_delay);
 		result.append(", deepHistory: ");
 		result.append(deepHistory);
 		result.append(", effect: ");

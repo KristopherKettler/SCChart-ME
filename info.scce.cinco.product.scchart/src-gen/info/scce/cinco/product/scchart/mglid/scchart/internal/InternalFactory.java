@@ -67,13 +67,13 @@ public interface InternalFactory extends EFactory {
 	InternalInitilalSuperState createInternalInitilalSuperState();
 
 	/**
-	 * Returns a new object of class '<em>Root State Declaration</em>'.
+	 * Returns a new object of class '<em>Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Root State Declaration</em>'.
+	 * @return a new object of class '<em>Declaration</em>'.
 	 * @generated
 	 */
-	InternalRootStateDeclaration createInternalRootStateDeclaration();
+	InternalDeclaration createInternalDeclaration();
 
 	/**
 	 * Returns a new object of class '<em>Suspend</em>'.
@@ -92,15 +92,6 @@ public interface InternalFactory extends EFactory {
 	 * @generated
 	 */
 	InternalAction createInternalAction();
-
-	/**
-	 * Returns a new object of class '<em>Super State Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Super State Declaration</em>'.
-	 * @generated
-	 */
-	InternalSuperStateDeclaration createInternalSuperStateDeclaration();
 
 	/**
 	 * Returns a new object of class '<em>Simple State</em>'.

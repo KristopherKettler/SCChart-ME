@@ -82,8 +82,8 @@ public class ImmediateDeferredTransitionImpl extends AbstractTransitionImpl impl
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalImmediateDeferredTransition().getDelay();
+	public String getCount_delay() {
+		return getInternalImmediateDeferredTransition().getCount_delay();
 	}
 
 	/**
@@ -92,9 +92,9 @@ public class ImmediateDeferredTransitionImpl extends AbstractTransitionImpl impl
 	 * @generated
 	 */
 	@Override
-	public void setDelay(final String _arg) {
-		getInternalImmediateDeferredTransition().getElement().transact("Set Delay", () -> {
-			getInternalImmediateDeferredTransition().setDelay(_arg);
+	public void setCount_delay(final String _arg) {
+		getInternalImmediateDeferredTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalImmediateDeferredTransition().setCount_delay(_arg);
 		});
 		
 	}
@@ -401,10 +401,10 @@ public class ImmediateDeferredTransitionImpl extends AbstractTransitionImpl impl
 			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___GET_DELAY:
-				return getDelay();
-			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
 				return null;
 			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___GET_EFFECT:
 				return getEffect();

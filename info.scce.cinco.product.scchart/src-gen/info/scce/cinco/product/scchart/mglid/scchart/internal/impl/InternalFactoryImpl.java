@@ -61,10 +61,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_DATA_FLOW_REGION: return createInternalDataFlowRegion();
 			case InternalPackage.INTERNAL_SUPER_STATE: return createInternalSuperState();
 			case InternalPackage.INTERNAL_INITILAL_SUPER_STATE: return createInternalInitilalSuperState();
-			case InternalPackage.INTERNAL_ROOT_STATE_DECLARATION: return createInternalRootStateDeclaration();
+			case InternalPackage.INTERNAL_DECLARATION: return createInternalDeclaration();
 			case InternalPackage.INTERNAL_SUSPEND: return createInternalSuspend();
 			case InternalPackage.INTERNAL_ACTION: return createInternalAction();
-			case InternalPackage.INTERNAL_SUPER_STATE_DECLARATION: return createInternalSuperStateDeclaration();
 			case InternalPackage.INTERNAL_SIMPLE_STATE: return createInternalSimpleState();
 			case InternalPackage.INTERNAL_INITIAL_STATE: return createInternalInitialState();
 			case InternalPackage.INTERNAL_FINAL_STATE: return createInternalFinalState();
@@ -160,9 +159,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalRootStateDeclaration createInternalRootStateDeclaration() {
-		InternalRootStateDeclarationImpl internalRootStateDeclaration = new InternalRootStateDeclarationImpl();
-		return internalRootStateDeclaration;
+	public InternalDeclaration createInternalDeclaration() {
+		InternalDeclarationImpl internalDeclaration = new InternalDeclarationImpl();
+		return internalDeclaration;
 	}
 
 	/**
@@ -185,17 +184,6 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalAction createInternalAction() {
 		InternalActionImpl internalAction = new InternalActionImpl();
 		return internalAction;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InternalSuperStateDeclaration createInternalSuperStateDeclaration() {
-		InternalSuperStateDeclarationImpl internalSuperStateDeclaration = new InternalSuperStateDeclarationImpl();
-		return internalSuperStateDeclaration;
 	}
 
 	/**

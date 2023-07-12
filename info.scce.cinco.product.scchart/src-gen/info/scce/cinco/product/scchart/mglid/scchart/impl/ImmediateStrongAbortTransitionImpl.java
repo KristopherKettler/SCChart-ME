@@ -86,8 +86,8 @@ public class ImmediateStrongAbortTransitionImpl extends AbstractTransitionImpl i
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalImmediateStrongAbortTransition().getDelay();
+	public String getCount_delay() {
+		return getInternalImmediateStrongAbortTransition().getCount_delay();
 	}
 
 	/**
@@ -96,9 +96,9 @@ public class ImmediateStrongAbortTransitionImpl extends AbstractTransitionImpl i
 	 * @generated
 	 */
 	@Override
-	public void setDelay(final String _arg) {
-		getInternalImmediateStrongAbortTransition().getElement().transact("Set Delay", () -> {
-			getInternalImmediateStrongAbortTransition().setDelay(_arg);
+	public void setCount_delay(final String _arg) {
+		getInternalImmediateStrongAbortTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalImmediateStrongAbortTransition().setCount_delay(_arg);
 		});
 		
 	}
@@ -315,26 +315,6 @@ public class ImmediateStrongAbortTransitionImpl extends AbstractTransitionImpl i
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final InitilalSuperState target) {
-		return target.canEnd(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectTarget(final InitilalSuperState target) {
-		this.setTargetElement(target);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean canReconnectTarget(final Connector target) {
 		return target.canEnd(this.getClass());
 	}
@@ -355,7 +335,7 @@ public class ImmediateStrongAbortTransitionImpl extends AbstractTransitionImpl i
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final FinalState target) {
+	public boolean canReconnectTarget(final InitilalSuperState target) {
 		return target.canEnd(this.getClass());
 	}
 
@@ -365,7 +345,27 @@ public class ImmediateStrongAbortTransitionImpl extends AbstractTransitionImpl i
 	 * @generated
 	 */
 	@Override
-	public void reconnectTarget(final FinalState target) {
+	public void reconnectTarget(final InitilalSuperState target) {
+		this.setTargetElement(target);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectTarget(final SimpleState target) {
+		return target.canEnd(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectTarget(final SimpleState target) {
 		this.setTargetElement(target);
 	}
 
@@ -395,7 +395,7 @@ public class ImmediateStrongAbortTransitionImpl extends AbstractTransitionImpl i
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final SimpleState target) {
+	public boolean canReconnectTarget(final FinalState target) {
 		return target.canEnd(this.getClass());
 	}
 
@@ -405,7 +405,7 @@ public class ImmediateStrongAbortTransitionImpl extends AbstractTransitionImpl i
 	 * @generated
 	 */
 	@Override
-	public void reconnectTarget(final SimpleState target) {
+	public void reconnectTarget(final FinalState target) {
 		this.setTargetElement(target);
 	}
 
@@ -485,10 +485,10 @@ public class ImmediateStrongAbortTransitionImpl extends AbstractTransitionImpl i
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___GET_DELAY:
-				return getDelay();
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
 				return null;
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___GET_EFFECT:
 				return getEffect();
@@ -538,30 +538,30 @@ public class ImmediateStrongAbortTransitionImpl extends AbstractTransitionImpl i
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___RECONNECT_TARGET__SUPERSTATE:
 				reconnectTarget((SuperState)arguments.get(0));
 				return null;
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
-				return canReconnectTarget((InitilalSuperState)arguments.get(0));
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
-				reconnectTarget((InitilalSuperState)arguments.get(0));
-				return null;
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___CAN_RECONNECT_TARGET__CONNECTOR:
 				return canReconnectTarget((Connector)arguments.get(0));
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___RECONNECT_TARGET__CONNECTOR:
 				reconnectTarget((Connector)arguments.get(0));
 				return null;
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___CAN_RECONNECT_TARGET__FINALSTATE:
-				return canReconnectTarget((FinalState)arguments.get(0));
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___RECONNECT_TARGET__FINALSTATE:
-				reconnectTarget((FinalState)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
+				return canReconnectTarget((InitilalSuperState)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
+				reconnectTarget((InitilalSuperState)arguments.get(0));
+				return null;
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___CAN_RECONNECT_TARGET__SIMPLESTATE:
+				return canReconnectTarget((SimpleState)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___RECONNECT_TARGET__SIMPLESTATE:
+				reconnectTarget((SimpleState)arguments.get(0));
 				return null;
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___CAN_RECONNECT_TARGET__INITIALSTATE:
 				return canReconnectTarget((InitialState)arguments.get(0));
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___RECONNECT_TARGET__INITIALSTATE:
 				reconnectTarget((InitialState)arguments.get(0));
 				return null;
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___CAN_RECONNECT_TARGET__SIMPLESTATE:
-				return canReconnectTarget((SimpleState)arguments.get(0));
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___RECONNECT_TARGET__SIMPLESTATE:
-				reconnectTarget((SimpleState)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___CAN_RECONNECT_TARGET__FINALSTATE:
+				return canReconnectTarget((FinalState)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___RECONNECT_TARGET__FINALSTATE:
+				reconnectTarget((FinalState)arguments.get(0));
 				return null;
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION___GET_IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW:
 				return getImmediateStrongAbortTransitionView();

@@ -41,7 +41,7 @@ public interface ImmediateStrongAbortTransition extends AbstractTransition {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	String getDelay();
+	String getCount_delay();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,7 +49,7 @@ public interface ImmediateStrongAbortTransition extends AbstractTransition {
 	 * @model
 	 * @generated
 	 */
-	void setDelay(String _arg);
+	void setCount_delay(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,22 +217,6 @@ public interface ImmediateStrongAbortTransition extends AbstractTransition {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	void reconnectTarget(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
-	 * @generated
-	 */
 	boolean canReconnectTarget(Connector target);
 
 	/**
@@ -249,7 +233,7 @@ public interface ImmediateStrongAbortTransition extends AbstractTransition {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(FinalState target);
+	boolean canReconnectTarget(InitilalSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -257,7 +241,23 @@ public interface ImmediateStrongAbortTransition extends AbstractTransition {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(FinalState target);
+	void reconnectTarget(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(SimpleState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -281,7 +281,7 @@ public interface ImmediateStrongAbortTransition extends AbstractTransition {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(SimpleState target);
+	boolean canReconnectTarget(FinalState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -289,7 +289,7 @@ public interface ImmediateStrongAbortTransition extends AbstractTransition {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(SimpleState target);
+	void reconnectTarget(FinalState target);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -41,7 +41,7 @@ public interface ConditionalTerminationHistoryTransition extends AbstractTransit
 	 * @model kind="operation"
 	 * @generated
 	 */
-	String getDelay();
+	String getCount_delay();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,7 +49,7 @@ public interface ConditionalTerminationHistoryTransition extends AbstractTransit
 	 * @model
 	 * @generated
 	 */
-	void setDelay(String _arg);
+	void setCount_delay(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -61,10 +61,9 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 			case ScchartPackage.DATA_FLOW_REGION: return createDataFlowRegion();
 			case ScchartPackage.SUPER_STATE: return createSuperState();
 			case ScchartPackage.INITILAL_SUPER_STATE: return createInitilalSuperState();
-			case ScchartPackage.ROOT_STATE_DECLARATION: return createRootStateDeclaration();
+			case ScchartPackage.DECLARATION: return createDeclaration();
 			case ScchartPackage.SUSPEND: return createSuspend();
 			case ScchartPackage.ACTION: return createAction();
-			case ScchartPackage.SUPER_STATE_DECLARATION: return createSuperStateDeclaration();
 			case ScchartPackage.SIMPLE_STATE: return createSimpleState();
 			case ScchartPackage.INITIAL_STATE: return createInitialState();
 			case ScchartPackage.FINAL_STATE: return createFinalState();
@@ -160,9 +159,9 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public RootStateDeclaration createRootStateDeclaration() {
-		RootStateDeclarationImpl rootStateDeclaration = new RootStateDeclarationImpl();
-		return rootStateDeclaration;
+	public Declaration createDeclaration() {
+		DeclarationImpl declaration = new DeclarationImpl();
+		return declaration;
 	}
 
 	/**
@@ -185,17 +184,6 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	public Action createAction() {
 		ActionImpl action = new ActionImpl();
 		return action;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SuperStateDeclaration createSuperStateDeclaration() {
-		SuperStateDeclarationImpl superStateDeclaration = new SuperStateDeclarationImpl();
-		return superStateDeclaration;
 	}
 
 	/**

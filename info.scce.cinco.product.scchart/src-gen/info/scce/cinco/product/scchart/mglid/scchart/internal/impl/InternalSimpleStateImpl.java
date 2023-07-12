@@ -37,12 +37,33 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSimpleStateImpl#getName <em>Name</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSimpleStateImpl#getLabel <em>Label</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class InternalSimpleStateImpl extends InternalNodeImpl implements InternalSimpleState {
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = "<insert name>";
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getLabel() <em>Label</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -51,7 +72,7 @@ public class InternalSimpleStateImpl extends InternalNodeImpl implements Interna
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String LABEL_EDEFAULT = "<insert name>";
+	protected static final String LABEL_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getLabel() <em>Label</em>}' attribute.
@@ -80,6 +101,29 @@ public class InternalSimpleStateImpl extends InternalNodeImpl implements Interna
 	@Override
 	protected EClass eStaticClass() {
 		return InternalPackage.Literals.INTERNAL_SIMPLE_STATE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_SIMPLE_STATE__NAME, oldName, name));
 	}
 
 	/**
@@ -279,6 +323,8 @@ public class InternalSimpleStateImpl extends InternalNodeImpl implements Interna
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_SIMPLE_STATE__NAME:
+				return getName();
 			case InternalPackage.INTERNAL_SIMPLE_STATE__LABEL:
 				return getLabel();
 		}
@@ -293,6 +339,9 @@ public class InternalSimpleStateImpl extends InternalNodeImpl implements Interna
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_SIMPLE_STATE__NAME:
+				setName((String)newValue);
+				return;
 			case InternalPackage.INTERNAL_SIMPLE_STATE__LABEL:
 				setLabel((String)newValue);
 				return;
@@ -308,6 +357,9 @@ public class InternalSimpleStateImpl extends InternalNodeImpl implements Interna
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_SIMPLE_STATE__NAME:
+				setName(NAME_EDEFAULT);
+				return;
 			case InternalPackage.INTERNAL_SIMPLE_STATE__LABEL:
 				setLabel(LABEL_EDEFAULT);
 				return;
@@ -323,6 +375,8 @@ public class InternalSimpleStateImpl extends InternalNodeImpl implements Interna
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_SIMPLE_STATE__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case InternalPackage.INTERNAL_SIMPLE_STATE__LABEL:
 				return LABEL_EDEFAULT == null ? label != null : !LABEL_EDEFAULT.equals(label);
 		}
@@ -398,7 +452,9 @@ public class InternalSimpleStateImpl extends InternalNodeImpl implements Interna
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (label: ");
+		result.append(" (name: ");
+		result.append(name);
+		result.append(", label: ");
 		result.append(label);
 		result.append(')');
 		return result.toString();

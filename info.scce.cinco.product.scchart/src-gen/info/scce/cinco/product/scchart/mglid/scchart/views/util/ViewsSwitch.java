@@ -98,9 +98,9 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.ROOT_STATE_DECLARATION_VIEW: {
-				RootStateDeclarationView rootStateDeclarationView = (RootStateDeclarationView)theEObject;
-				T result = caseRootStateDeclarationView(rootStateDeclarationView);
+			case ViewsPackage.DECLARATION_VIEW: {
+				DeclarationView declarationView = (DeclarationView)theEObject;
+				T result = caseDeclarationView(declarationView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -113,12 +113,6 @@ public class ViewsSwitch<T> extends Switch<T> {
 			case ViewsPackage.ACTION_VIEW: {
 				ActionView actionView = (ActionView)theEObject;
 				T result = caseActionView(actionView);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ViewsPackage.SUPER_STATE_DECLARATION_VIEW: {
-				SuperStateDeclarationView superStateDeclarationView = (SuperStateDeclarationView)theEObject;
-				T result = caseSuperStateDeclarationView(superStateDeclarationView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -396,17 +390,17 @@ public class ViewsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Root State Declaration View</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Declaration View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Root State Declaration View</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Declaration View</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRootStateDeclarationView(RootStateDeclarationView object) {
+	public T caseDeclarationView(DeclarationView object) {
 		return null;
 	}
 
@@ -437,21 +431,6 @@ public class ViewsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseActionView(ActionView object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Super State Declaration View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Super State Declaration View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseSuperStateDeclarationView(SuperStateDeclarationView object) {
 		return null;
 	}
 

@@ -82,8 +82,8 @@ public class HistoryTransitionImpl extends AbstractTransitionImpl implements His
 	 * @generated
 	 */
 	@Override
-	public String getDelay() {
-		return getInternalHistoryTransition().getDelay();
+	public String getCount_delay() {
+		return getInternalHistoryTransition().getCount_delay();
 	}
 
 	/**
@@ -92,9 +92,9 @@ public class HistoryTransitionImpl extends AbstractTransitionImpl implements His
 	 * @generated
 	 */
 	@Override
-	public void setDelay(final String _arg) {
-		getInternalHistoryTransition().getElement().transact("Set Delay", () -> {
-			getInternalHistoryTransition().setDelay(_arg);
+	public void setCount_delay(final String _arg) {
+		getInternalHistoryTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalHistoryTransition().setCount_delay(_arg);
 		});
 		
 	}
@@ -424,10 +424,10 @@ public class HistoryTransitionImpl extends AbstractTransitionImpl implements His
 			case ScchartPackage.HISTORY_TRANSITION___SET_CONDITION__STRING:
 				setCondition((String)arguments.get(0));
 				return null;
-			case ScchartPackage.HISTORY_TRANSITION___GET_DELAY:
-				return getDelay();
-			case ScchartPackage.HISTORY_TRANSITION___SET_DELAY__STRING:
-				setDelay((String)arguments.get(0));
+			case ScchartPackage.HISTORY_TRANSITION___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ScchartPackage.HISTORY_TRANSITION___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
 				return null;
 			case ScchartPackage.HISTORY_TRANSITION___IS_DEEP_HISTORY:
 				return isDeepHistory();

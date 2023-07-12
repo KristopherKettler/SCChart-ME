@@ -8,9 +8,9 @@ import de.jabc.cinco.meta.runtime.contentadapter.CincoEContentAdapter;
 import graphmodel.GraphModel;
 import graphmodel.ModelElement;
 import graphmodel.internal.InternalGraphModel;
-import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
+import info.scce.cinco.product.scchart.mglid.scchart.Declaration;
+import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
-import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootStateDeclaration;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
@@ -19,14 +19,14 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.util.EContentAdapter;
 
 @SuppressWarnings("all")
-public class RootStateDeclarationEContentAdapter extends EContentAdapter implements CincoEContentAdapter {
+public class DeclarationEContentAdapter extends EContentAdapter implements CincoEContentAdapter {
   @Override
   public void notifyChanged(final Notification notification) {
     super.notifyChanged(notification);
     final Object o = notification.getNotifier();
     final Object feature = notification.getFeature();
-    if ((o instanceof InternalRootStateDeclaration)) {
-      if ((Objects.equal(((InternalRootStateDeclaration)o).eContainer(), null) && (!(o instanceof InternalGraphModel)))) {
+    if ((o instanceof InternalDeclaration)) {
+      if ((Objects.equal(((InternalDeclaration)o).eContainer(), null) && (!(o instanceof InternalGraphModel)))) {
         return;
       }
       boolean _matched = false;
@@ -34,13 +34,13 @@ public class RootStateDeclarationEContentAdapter extends EContentAdapter impleme
         boolean _isRelevant = this.isRelevant(((EStructuralFeature)feature));
         if (_isRelevant) {
           _matched=true;
-          ModelElement _element = ((InternalRootStateDeclaration)o).getElement();
+          ModelElement _element = ((InternalDeclaration)o).getElement();
           String _name = ((EStructuralFeature)feature).getName();
           Object _oldValue = notification.getOldValue();
-          final PostAttributeChangePayload<RootStateDeclaration> eventPayload = new PostAttributeChangePayload<RootStateDeclaration>(((RootStateDeclaration) _element), _name, _oldValue);
-          final PayloadContext<PostAttributeChangePayload<RootStateDeclaration>, Void> eventContext = new PayloadContext<PostAttributeChangePayload<RootStateDeclaration>, Void>("event.post.attributeChange.info_scce_cinco_product_scchart_mglid_scchart_RootStateDeclaration", eventPayload);
+          final PostAttributeChangePayload<Declaration> eventPayload = new PostAttributeChangePayload<Declaration>(((Declaration) _element), _name, _oldValue);
+          final PayloadContext<PostAttributeChangePayload<Declaration>, Void> eventContext = new PayloadContext<PostAttributeChangePayload<Declaration>, Void>("event.post.attributeChange.info_scce_cinco_product_scchart_mglid_scchart_Declaration", eventPayload);
           EventHub.getInstance().notifyFirst(eventContext);
-          ModelElement _element_1 = ((InternalRootStateDeclaration)o).getElement();
+          ModelElement _element_1 = ((InternalDeclaration)o).getElement();
           GraphModel _rootElement = null;
           if (_element_1!=null) {
             _rootElement=_element_1.getRootElement();

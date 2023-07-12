@@ -3,12 +3,11 @@ package info.scce.cinco.product.scchart.mglid.scchart.event;
 import de.jabc.cinco.meta.runtime.IStartup;
 import info.scce.cinco.product.scchart.mglid.scchart.event.ActionEvent;
 import info.scce.cinco.product.scchart.mglid.scchart.event.DataFlowRegionEvent;
+import info.scce.cinco.product.scchart.mglid.scchart.event.DeclarationEvent;
 import info.scce.cinco.product.scchart.mglid.scchart.event.InitilalSuperStateEvent;
 import info.scce.cinco.product.scchart.mglid.scchart.event.RegionEvent;
-import info.scce.cinco.product.scchart.mglid.scchart.event.RootStateDeclarationEvent;
 import info.scce.cinco.product.scchart.mglid.scchart.event.RootStateEvent;
 import info.scce.cinco.product.scchart.mglid.scchart.event.SCChartEvent;
-import info.scce.cinco.product.scchart.mglid.scchart.event.SuperStateDeclarationEvent;
 import info.scce.cinco.product.scchart.mglid.scchart.event.SuperStateEvent;
 import info.scce.cinco.product.scchart.mglid.scchart.event.SuspendEvent;
 
@@ -25,10 +24,9 @@ public class EventStartup implements IStartup {
     DataFlowRegionEvent.getInstance().subscribe();
     SuperStateEvent.getInstance().subscribe();
     InitilalSuperStateEvent.getInstance().subscribe();
-    RootStateDeclarationEvent.getInstance().subscribe();
+    DeclarationEvent.getInstance().subscribe();
     SuspendEvent.getInstance().subscribe();
     ActionEvent.getInstance().subscribe();
-    SuperStateDeclarationEvent.getInstance().subscribe();
     SCChartEvent.getInstance().subscribe();
   }
   
@@ -38,10 +36,9 @@ public class EventStartup implements IStartup {
     DataFlowRegionEvent.getInstance().unsubscribe();
     SuperStateEvent.getInstance().unsubscribe();
     InitilalSuperStateEvent.getInstance().unsubscribe();
-    RootStateDeclarationEvent.getInstance().unsubscribe();
+    DeclarationEvent.getInstance().unsubscribe();
     SuspendEvent.getInstance().unsubscribe();
     ActionEvent.getInstance().unsubscribe();
-    SuperStateDeclarationEvent.getInstance().unsubscribe();
     SCChartEvent.getInstance().unsubscribe();
   }
 }

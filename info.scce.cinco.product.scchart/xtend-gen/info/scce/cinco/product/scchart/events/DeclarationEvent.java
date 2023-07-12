@@ -2,9 +2,9 @@ package info.scce.cinco.product.scchart.events;
 
 import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
+import info.scce.cinco.product.scchart.mglid.scchart.Declaration;
 import info.scce.cinco.product.scchart.mglid.scchart.Region;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
-import info.scce.cinco.product.scchart.mglid.scchart.RootStateDeclaration;
 import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
@@ -12,49 +12,49 @@ import org.eclipse.xtext.xbase.lib.Procedures.Procedure2;
 
 /**
  * About this class:
- * - This is a default implementation for info.scce.cinco.product.scchart.mglid.scchart.event.RootStateDeclarationEvent.
+ * - This is a default implementation for info.scce.cinco.product.scchart.mglid.scchart.event.declarationEvent.
  * - This class was generated, because you added an "@event" annotation to
- *   Node "RootStateDeclaration" in "SCChart.mgl".
+ *   Node "declaration" in "SCChart.mgl".
  * - This file will not be overwritten on future generation processes.
  * 
  * Available event methods:
- * - preCreate(Class<? extends RootStateDeclaration> elementClass, ModelElementContainer container, int x, int y, int width, int height)
- * - preDelete(RootStateDeclaration element)
- * - preMove(RootStateDeclaration element, ModelElementContainer newContainer, int newX, int newY)
- * - preResize(RootStateDeclaration element, int newWidth, int newHeight, int newX, int newY, Direction direction)
- * - postAttributeChange(RootStateDeclaration element, String attribute, Object oldValue)
- * - postCreate(RootStateDeclaration element)
- * - postDelete(RootStateDeclaration element)
- * - postDoubleClick(RootStateDeclaration element)
- * - postMove(RootStateDeclaration element, ModelElementContainer oldContainer, int oldX, int oldY)
- * - postResize(RootStateDeclaration element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction)
- * - postSelect(RootStateDeclaration element)
+ * - preCreate(Class<? extends declaration> elementClass, ModelElementContainer container, int x, int y, int width, int height)
+ * - preDelete(declaration element)
+ * - preMove(declaration element, ModelElementContainer newContainer, int newX, int newY)
+ * - preResize(declaration element, int newWidth, int newHeight, int newX, int newY, Direction direction)
+ * - postAttributeChange(declaration element, String attribute, Object oldValue)
+ * - postCreate(declaration element)
+ * - postDelete(declaration element)
+ * - postDoubleClick(declaration element)
+ * - postMove(declaration element, ModelElementContainer oldContainer, int oldX, int oldY)
+ * - postResize(declaration element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction)
+ * - postSelect(declaration element)
  */
 @SuppressWarnings("all")
-public final class RootStateDeclarationEvent extends info.scce.cinco.product.scchart.mglid.scchart.event.RootStateDeclarationEvent {
+public final class DeclarationEvent extends info.scce.cinco.product.scchart.mglid.scchart.event.DeclarationEvent {
   @Override
-  public void preCreate(final Class<? extends RootStateDeclaration> elementClass, final ModelElementContainer container, final int x, final int y, final int width, final int height) {
+  public void preCreate(final Class<? extends Declaration> elementClass, final ModelElementContainer container, final int x, final int y, final int width, final int height) {
   }
   
   @Override
-  public void preDelete(final RootStateDeclaration element) {
+  public void preDelete(final Declaration element) {
   }
   
   @Override
-  public void preMove(final RootStateDeclaration element, final ModelElementContainer newContainer, final int newX, final int newY) {
+  public void preMove(final Declaration element, final ModelElementContainer newContainer, final int newX, final int newY) {
   }
   
   @Override
-  public void preResize(final RootStateDeclaration element, final int newWidth, final int newHeight, final int newX, final int newY, final Direction direction) {
+  public void preResize(final Declaration element, final int newWidth, final int newHeight, final int newX, final int newY, final Direction direction) {
   }
   
   @Override
-  public void postAttributeChange(final RootStateDeclaration element, final String attribute, final Object oldValue) {
+  public void postAttributeChange(final Declaration element, final String attribute, final Object oldValue) {
   }
   
   @Override
-  public void postCreate(final RootStateDeclaration element) {
-    final Procedure2<RootStateDeclaration, Integer> _function = (RootStateDeclaration declaration, Integer index) -> {
+  public void postCreate(final Declaration element) {
+    final Procedure2<Declaration, Integer> _function = (Declaration declaration, Integer index) -> {
       declaration.setX(10);
       declaration.setY((30 + (13 * (index).intValue())));
       int _width = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getWidth();
@@ -62,13 +62,13 @@ public final class RootStateDeclarationEvent extends info.scce.cinco.product.scc
       declaration.setWidth(_minus);
       declaration.setHeight(13);
     };
-    IterableExtensions.<RootStateDeclaration>forEach(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations(), _function);
+    IterableExtensions.<Declaration>forEach(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations(), _function);
     EList<Suspend> _suspends = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends();
     boolean _tripleNotEquals = (_suspends != null);
     if (_tripleNotEquals) {
       final Procedure2<Suspend, Integer> _function_1 = (Suspend suspend, Integer index) -> {
         suspend.setX(10);
-        int _size = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations().size();
+        int _size = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations().size();
         int _multiply = (13 * _size);
         int _plus = (30 + _multiply);
         int _plus_1 = (_plus + (13 * (index).intValue()));
@@ -84,7 +84,7 @@ public final class RootStateDeclarationEvent extends info.scce.cinco.product.scc
       if (_tripleNotEquals_1) {
         EList<Region> _regions_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
         for (final Region region : _regions_1) {
-          if (((region.getY() < (IterableExtensions.<RootStateDeclaration>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations()).getY() + 13)) || (region.getY() < (IterableExtensions.<Suspend>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends()).getY() + 13)))) {
+          if (((region.getY() < (IterableExtensions.<Declaration>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations()).getY() + 13)) || (region.getY() < (IterableExtensions.<Suspend>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends()).getY() + 13)))) {
             EList<Region> _regions_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
             for (final Region region1 : _regions_2) {
               int _y = region1.getY();
@@ -105,7 +105,7 @@ public final class RootStateDeclarationEvent extends info.scce.cinco.product.scc
         EList<Region> _regions_4 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
         for (final Region region_1 : _regions_4) {
           int _y_1 = region_1.getY();
-          int _y_2 = IterableExtensions.<RootStateDeclaration>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRootStateDeclarations()).getY();
+          int _y_2 = IterableExtensions.<Declaration>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations()).getY();
           int _plus_2 = (_y_2 + 13);
           boolean _lessThan = (_y_1 < _plus_2);
           if (_lessThan) {
@@ -126,25 +126,25 @@ public final class RootStateDeclarationEvent extends info.scce.cinco.product.scc
   }
   
   @Override
-  public Runnable postDelete(final RootStateDeclaration element) {
+  public Runnable postDelete(final Declaration element) {
     final Runnable _function = () -> {
     };
     return _function;
   }
   
   @Override
-  public void postDoubleClick(final RootStateDeclaration element) {
+  public void postDoubleClick(final Declaration element) {
   }
   
   @Override
-  public void postMove(final RootStateDeclaration element, final ModelElementContainer oldContainer, final int oldX, final int oldY) {
+  public void postMove(final Declaration element, final ModelElementContainer oldContainer, final int oldX, final int oldY) {
   }
   
   @Override
-  public void postResize(final RootStateDeclaration element, final int oldWidth, final int oldHeight, final int oldX, final int oldY, final Direction direction) {
+  public void postResize(final Declaration element, final int oldWidth, final int oldHeight, final int oldX, final int oldY, final Direction direction) {
   }
   
   @Override
-  public void postSelect(final RootStateDeclaration element) {
+  public void postSelect(final Declaration element) {
   }
 }

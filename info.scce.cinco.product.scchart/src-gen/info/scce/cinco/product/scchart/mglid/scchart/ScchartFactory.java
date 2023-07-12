@@ -67,13 +67,13 @@ public interface ScchartFactory extends EFactory {
 	InitilalSuperState createInitilalSuperState();
 
 	/**
-	 * Returns a new object of class '<em>Root State Declaration</em>'.
+	 * Returns a new object of class '<em>Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Root State Declaration</em>'.
+	 * @return a new object of class '<em>Declaration</em>'.
 	 * @generated
 	 */
-	RootStateDeclaration createRootStateDeclaration();
+	Declaration createDeclaration();
 
 	/**
 	 * Returns a new object of class '<em>Suspend</em>'.
@@ -92,15 +92,6 @@ public interface ScchartFactory extends EFactory {
 	 * @generated
 	 */
 	Action createAction();
-
-	/**
-	 * Returns a new object of class '<em>Super State Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Super State Declaration</em>'.
-	 * @generated
-	 */
-	SuperStateDeclaration createSuperStateDeclaration();
 
 	/**
 	 * Returns a new object of class '<em>Simple State</em>'.

@@ -108,6 +108,29 @@ public class SimpleStateViewImpl extends EObjectImpl implements SimpleStateView 
 	 * @generated
 	 */
 	@Override
+	public String getName() {
+		return getInternalSimpleState().getName();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(final String _arg) {
+		getInternalSimpleState().getElement().transact("Set Name", () -> {
+			getInternalSimpleState().setName(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getLabel() {
 		return getInternalSimpleState().getLabel();
 	}
@@ -192,6 +215,11 @@ public class SimpleStateViewImpl extends EObjectImpl implements SimpleStateView 
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
+			case ViewsPackage.SIMPLE_STATE_VIEW___GET_NAME:
+				return getName();
+			case ViewsPackage.SIMPLE_STATE_VIEW___SET_NAME__STRING:
+				setName((String)arguments.get(0));
+				return null;
 			case ViewsPackage.SIMPLE_STATE_VIEW___GET_LABEL:
 				return getLabel();
 			case ViewsPackage.SIMPLE_STATE_VIEW___SET_LABEL__STRING:
