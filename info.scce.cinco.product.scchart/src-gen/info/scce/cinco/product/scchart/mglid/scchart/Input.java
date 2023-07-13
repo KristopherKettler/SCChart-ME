@@ -197,30 +197,6 @@ public interface Input extends Node {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewConnection(Output target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	Connection newConnection(Output target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	Connection newConnection(Output target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
 	boolean canNewConnection(Operator target);
 
 	/**
@@ -238,6 +214,30 @@ public interface Input extends Node {
 	 * @generated
 	 */
 	Connection newConnection(Operator target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewConnection(Output target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	Connection newConnection(Output target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	Connection newConnection(Output target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->

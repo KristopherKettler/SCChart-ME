@@ -24,7 +24,7 @@ import graphmodel.ModelElementContainer
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState
 import java.util.List
 
-abstract class InitilalSuperStateEvent implements ContainerEvent<InitilalSuperState> {
+final class InitilalSuperStateEvent implements ContainerEvent<InitilalSuperState> {
 	
 	protected extension EventApiExtension = new EventApiExtension
 	
@@ -38,7 +38,7 @@ abstract class InitilalSuperStateEvent implements ContainerEvent<InitilalSuperSt
 	
 	def final static InitilalSuperStateEvent getInstance() {
 		if (eventInstance === null) {
-			eventInstance = new info.scce.cinco.product.scchart.events.InitilalSuperStateEvent
+			eventInstance = new InitilalSuperStateEvent
 		}
 		return eventInstance
 	}

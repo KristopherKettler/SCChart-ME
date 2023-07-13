@@ -31,7 +31,7 @@ import org.eclipse.xtext.xbase.lib.Functions.Function1;
 import org.eclipse.xtext.xbase.lib.Procedures.Procedure1;
 
 @SuppressWarnings("all")
-public abstract class InitilalSuperStateEvent implements ContainerEvent<InitilalSuperState> {
+public final class InitilalSuperStateEvent implements ContainerEvent<InitilalSuperState> {
   @Extension
   protected EventApiExtension _eventApiExtension = new EventApiExtension();
   
@@ -44,7 +44,7 @@ public abstract class InitilalSuperStateEvent implements ContainerEvent<Initilal
   
   public static final InitilalSuperStateEvent getInstance() {
     if ((InitilalSuperStateEvent.eventInstance == null)) {
-      info.scce.cinco.product.scchart.events.InitilalSuperStateEvent _initilalSuperStateEvent = new info.scce.cinco.product.scchart.events.InitilalSuperStateEvent();
+      InitilalSuperStateEvent _initilalSuperStateEvent = new InitilalSuperStateEvent();
       InitilalSuperStateEvent.eventInstance = _initilalSuperStateEvent;
     }
     return InitilalSuperStateEvent.eventInstance;

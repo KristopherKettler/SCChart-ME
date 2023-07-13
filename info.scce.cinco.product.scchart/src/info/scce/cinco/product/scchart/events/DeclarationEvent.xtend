@@ -5,6 +5,8 @@ package info.scce.cinco.product.scchart.events
 import graphmodel.Direction
 import graphmodel.ModelElementContainer
 import info.scce.cinco.product.scchart.mglid.scchart.Declaration
+import info.scce.cinco.product.scchart.mglid.scchart.SuperState
+import java.util.UUID
 
 /* 
  * About this class:
@@ -49,38 +51,98 @@ final class DeclarationEvent extends info.scce.cinco.product.scchart.mglid.sccha
 	}
 	
 	override postCreate(Declaration element) {
-		element.rootElement.rootStates.head.declarations.forEach[	declaration , index |
-			declaration.x =10
-			declaration.y =30+ 13*index
-			declaration.width =element.rootElement.rootStates.head.width-20
-			declaration.height = 13
-		]
-		if(element.rootElement.rootStates.head.suspends!==null){
-			element.rootElement.rootStates.head.suspends.forEach[	suspend , index |
-				suspend.x =10
-				suspend.y =30+ 13*element.rootElement.rootStates.head.declarations.size+13*index
-				suspend.width =element.rootElement.rootStates.head.width-20
-				suspend.height = 13
-			]
-			if(element.rootElement.rootStates.head.regions!== null){
-				for(region : element.rootElement.rootStates.head.regions){
-					if(region.y<element.rootElement.rootStates.head.declarations.last.y+13||region.y<element.rootElement.rootStates.head.suspends.last.y+13){
-						for(region1 : element.rootElement.rootStates.head.regions){
-							region1.y = region1.y + 13
+		element.uuid=UUID.randomUUID.toString
+		var boolean continue= false
+		for(declaration : element.rootElement.rootStates.head.declarations){
+			if(declaration.uuid==element.uuid){
+				var int declarationCount = 0
+				declarationCount = element.rootElement.rootStates.head.declarations.size
+				for(var i = 0; i<element.rootElement.rootStates.head.declarations.size;i++){
+					element.rootElement.rootStates.head.declarations.get(i).x=10
+					element.rootElement.rootStates.head.declarations.get(i).y=30+13*i
+					element.rootElement.rootStates.head.declarations.get(i).width=element.rootElement.rootStates.head.width-20
+					element.rootElement.rootStates.head.declarations.get(i).height=13
+				}
+				if(element.rootElement.rootStates.head.suspends !== null){
+					for(suspend : element.rootElement.rootStates.head.suspends){
+						suspend.y = suspend.y + 13
+					}
+					declarationCount+=element.rootElement.getRootStates.head.suspends.size
+				}
+				if(element.rootElement.rootStates.head.actions !== null){
+					for(action : element.rootElement.rootStates.head.actions){
+						action.y = action.y + 13
+					}
+					declarationCount+=element.rootElement.getRootStates.head.actions.size
+				}
+				if(element.rootElement.rootStates.head.regions!==null){
+					for(region : element.rootElement.rootStates.head.regions){
+						if(region.y<30+declarationCount*13){
+							for(region1 : element.rootElement.rootStates.head.regions){
+								region1.y = region1.y + 13
+							}
+							element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height + 13
 						}
-						element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height + 13
+					}
+				}
+				continue = true
+			}
+		}
+		if(!continue){
+			for(region : element.rootElement.rootStates.head.regions){
+				if(region.superStates !== null){
+					for(superState : region.superStates){
+						postCreateDeclaration(superState,element)
 					}
 				}
 			}
 		}
-		else{
-			if(element.rootElement.rootStates.head.regions!== null){
-				for(region : element.rootElement.rootStates.head.regions){
-					if(region.y<element.rootElement.rootStates.head.declarations.last.y+13){
-						for(region1 : element.rootElement.rootStates.head.regions){
-							region1.y = region1.y + 13
+	}
+	
+	def postCreateDeclaration(SuperState superState, Declaration declaration){
+		var boolean continue = false
+		if(superState.declarations !== null){
+			for(declarartionList : superState.declarations){
+				if(declarartionList.uuid==declaration.uuid){
+					var int declarationCount = 0
+					declarationCount = superState.declarations.size
+					for(var i = 0; i<superState.declarations.size;i++){
+						superState.declarations.get(i).x=10
+						superState.declarations.get(i).y=30+13*i
+						superState.declarations.get(i).width=superState.width-20
+						superState.declarations.get(i).height=13
+					}
+					if(superState.suspends !== null){
+						for(suspend : superState.suspends){
+							suspend.y = suspend.y + 13
 						}
-						element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height + 13
+						declarationCount+=superState.suspends.size
+					}
+					if(superState.actions !== null){
+						for(action : superState.actions){
+							action.y = action.y + 13
+						}
+						declarationCount+=superState.actions.size
+					}
+					if(superState.regions!==null){
+						for(region : superState.regions){
+							if(region.y<30+declarationCount*13){
+								for(region1 : superState.regions){
+									region1.y = region1.y + 13
+								}
+								superState.height = superState.height + 13
+							}
+						}
+					}
+					continue = true
+				}
+			}
+		}
+		if(!continue && superState.regions!==null){
+			for(region : superState.regions){
+				if(region.superStates !== null){
+					for(superStateList: region.superStates){
+						postCreateDeclaration(superStateList,declaration)
 					}
 				}
 			}

@@ -58,7 +58,7 @@ public final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scc
   @Override
   public void postCreate(final Action element) {
     element.setUuid(UUID.randomUUID().toString());
-    boolean break_ = false;
+    boolean continue_ = false;
     EList<Action> _actions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getActions();
     for (final Action action : _actions) {
       String _uuid = action.getUuid();
@@ -92,33 +92,34 @@ public final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scc
             _get_3.setHeight(13);
           }
         }
+        int _declarationCount_1 = declarationCount;
+        int _size_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getActions().size();
+        declarationCount = (_declarationCount_1 + _size_1);
         EList<Region> _regions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
         boolean _tripleNotEquals_2 = (_regions != null);
         if (_tripleNotEquals_2) {
           EList<Region> _regions_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
           for (final Region region : _regions_1) {
             int _y = region.getY();
-            int _y_1 = IterableExtensions.<Action>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getActions()).getY();
-            int _plus = (_y_1 + 13);
-            boolean _lessThan = (_y < _plus);
+            boolean _lessThan = (_y < (30 + (declarationCount * 13)));
             if (_lessThan) {
               EList<Region> _regions_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
               for (final Region region1 : _regions_2) {
-                int _y_2 = region1.getY();
-                int _plus_1 = (_y_2 + 13);
-                region1.setY(_plus_1);
+                int _y_1 = region1.getY();
+                int _plus = (_y_1 + 13);
+                region1.setY(_plus);
               }
               RootState _head = IterableExtensions.<RootState>head(element.getRootElement().getRootStates());
               int _height = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
-              int _plus_2 = (_height + 13);
-              _head.setHeight(_plus_2);
+              int _plus_1 = (_height + 13);
+              _head.setHeight(_plus_1);
             }
           }
         }
-        break_ = true;
+        continue_ = true;
       }
     }
-    if ((!break_)) {
+    if ((!continue_)) {
       EList<Region> _regions_3 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
       for (final Region region_1 : _regions_3) {
         EList<SuperState> _superStates = region_1.getSuperStates();
@@ -134,7 +135,7 @@ public final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scc
   }
   
   public void postCreateAction(final SuperState superState, final Action action) {
-    boolean break_ = false;
+    boolean continue_ = false;
     EList<Action> _actions = superState.getActions();
     boolean _tripleNotEquals = (_actions != null);
     if (_tripleNotEquals) {
@@ -171,33 +172,34 @@ public final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scc
               _get_3.setHeight(13);
             }
           }
+          int _declarationCount_1 = declarationCount;
+          int _size_1 = superState.getActions().size();
+          declarationCount = (_declarationCount_1 + _size_1);
           EList<Region> _regions = superState.getRegions();
           boolean _tripleNotEquals_3 = (_regions != null);
           if (_tripleNotEquals_3) {
             EList<Region> _regions_1 = superState.getRegions();
             for (final Region region : _regions_1) {
               int _y = region.getY();
-              int _y_1 = IterableExtensions.<Action>last(superState.getActions()).getY();
-              int _plus = (_y_1 + 13);
-              boolean _lessThan = (_y < _plus);
+              boolean _lessThan = (_y < (30 + (declarationCount * 13)));
               if (_lessThan) {
                 EList<Region> _regions_2 = superState.getRegions();
                 for (final Region region1 : _regions_2) {
-                  int _y_2 = region1.getY();
-                  int _plus_1 = (_y_2 + 13);
-                  region1.setY(_plus_1);
+                  int _y_1 = region1.getY();
+                  int _plus = (_y_1 + 13);
+                  region1.setY(_plus);
                 }
                 int _height = superState.getHeight();
-                int _plus_2 = (_height + 13);
-                superState.setHeight(_plus_2);
+                int _plus_1 = (_height + 13);
+                superState.setHeight(_plus_1);
               }
             }
           }
-          break_ = true;
+          continue_ = true;
         }
       }
     }
-    if (((!break_) && (superState.getRegions() != null))) {
+    if (((!continue_) && (superState.getRegions() != null))) {
       EList<Region> _regions_3 = superState.getRegions();
       for (final Region region_1 : _regions_3) {
         EList<SuperState> _superStates = region_1.getSuperStates();

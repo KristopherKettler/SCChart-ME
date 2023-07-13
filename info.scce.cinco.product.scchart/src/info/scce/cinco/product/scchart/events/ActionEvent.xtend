@@ -52,7 +52,7 @@ final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 	
 	override postCreate(Action element) {
 		element.uuid=UUID.randomUUID.toString
-		var boolean break= false
+		var boolean continue= false
 		for(action : element.rootElement.rootStates.head.actions){
 			if(action.uuid==element.uuid){
 				var int declarationCount = 0
@@ -68,9 +68,10 @@ final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 					element.rootElement.rootStates.head.actions.get(i).width=element.rootElement.rootStates.head.width-20
 					element.rootElement.rootStates.head.actions.get(i).height=13
 				}
+				declarationCount+=element.rootElement.getRootStates.head.actions.size
 				if(element.rootElement.rootStates.head.regions!==null){
 					for(region : element.rootElement.rootStates.head.regions){
-						if(region.y<element.rootElement.rootStates.head.actions.last.y+13){
+						if(region.y<30+declarationCount*13){
 							for(region1 : element.rootElement.rootStates.head.regions){
 								region1.y = region1.y + 13
 							}
@@ -78,10 +79,10 @@ final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 						}
 					}
 				}
-				break = true
+				continue = true
 			}
 		}
-		if(!break){
+		if(!continue){
 			for(region : element.rootElement.rootStates.head.regions){
 				if(region.superStates !== null){
 					for(superState : region.superStates){
@@ -93,7 +94,7 @@ final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 	}
 	
 	def postCreateAction(SuperState superState, Action action){
-		var boolean break = false
+		var boolean continue = false
 		if(superState.actions !== null){
 			for(actionList : superState.actions){
 				if(actionList.uuid==action.uuid){
@@ -110,9 +111,10 @@ final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 						superState.actions.get(i).width=superState.width-20
 						superState.actions.get(i).height=13
 					}	
+					declarationCount+=superState.actions.size
 					if(superState.regions!==null){
 						for(region : superState.regions){
-							if(region.y<superState.actions.last.y+13){
+							if(region.y<30+declarationCount*13){
 								for(region1 : superState.regions){
 									region1.y = region1.y + 13
 								}
@@ -120,19 +122,18 @@ final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 							}
 						}
 					}
-					break = true
+					continue = true
 				}
 			}
 		}
-		if(!break && superState.regions!==null){
+		if(!continue && superState.regions!==null){
 			for(region : superState.regions){
 				if(region.superStates !== null){
 					for(superStateList: region.superStates){
 						postCreateAction(superStateList,action)
-						}
 					}
 				}
-			
+			}
 		}
 	}
 	

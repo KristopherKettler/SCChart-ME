@@ -153,7 +153,7 @@ public interface ConditionalTerminationTransition extends AbstractTransition {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(SuperState source);
+	boolean canReconnectSource(FinalSuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -161,7 +161,7 @@ public interface ConditionalTerminationTransition extends AbstractTransition {
 	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectSource(SuperState source);
+	void reconnectSource(FinalSuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -185,22 +185,6 @@ public interface ConditionalTerminationTransition extends AbstractTransition {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(FinalSuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(FinalSuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
 	boolean canReconnectSource(RootState source);
 
 	/**
@@ -214,66 +198,18 @@ public interface ConditionalTerminationTransition extends AbstractTransition {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
+	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(FinalState target);
+	boolean canReconnectSource(SuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
+	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(FinalState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectTarget(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	void reconnectTarget(SuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectTarget(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	void reconnectTarget(Connector target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectTarget(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	void reconnectTarget(InitilalSuperState target);
+	void reconnectSource(SuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -297,7 +233,7 @@ public interface ConditionalTerminationTransition extends AbstractTransition {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(SimpleState target);
+	boolean canReconnectTarget(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -305,7 +241,7 @@ public interface ConditionalTerminationTransition extends AbstractTransition {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(SimpleState target);
+	void reconnectTarget(Connector target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -322,6 +258,70 @@ public interface ConditionalTerminationTransition extends AbstractTransition {
 	 * @generated
 	 */
 	void reconnectTarget(InitialState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(InitilalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(FinalState target);
 
 	/**
 	 * <!-- begin-user-doc -->

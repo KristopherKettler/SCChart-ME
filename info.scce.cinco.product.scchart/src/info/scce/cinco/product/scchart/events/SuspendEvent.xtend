@@ -65,10 +65,16 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 					element.rootElement.rootStates.head.suspends.get(i).width=element.rootElement.rootStates.head.width-20
 					element.rootElement.rootStates.head.suspends.get(i).height=13
 				}
-				//if()
+				if(element.rootElement.rootStates.head.actions !== null){
+					for(action : element.rootElement.rootStates.head.actions){
+						action.y = action.y + 13
+					}
+					declarationCount+=element.rootElement.getRootStates.head.actions.size
+				}
+				declarationCount+=element.rootElement.getRootStates.head.suspends.size
 				if(element.rootElement.rootStates.head.regions!==null){
 					for(region : element.rootElement.rootStates.head.regions){
-						if(region.y<element.rootElement.rootStates.head.suspends.last.y+13){
+						if(region.y<30+declarationCount*13){
 							for(region1 : element.rootElement.rootStates.head.regions){
 								region1.y = region1.y + 13
 							}
@@ -104,10 +110,17 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 						superState.suspends.get(i).y=30+13*declarationCount+13*i
 						superState.suspends.get(i).width=superState.width-20
 						superState.suspends.get(i).height=13
+					}
+					if(superState.actions !== null){
+						for(action : superState.actions){
+							action.y = action.y + 13
+						}
+						declarationCount+=superState.actions.size
 					}	
+					declarationCount+=superState.suspends.size
 					if(superState.regions!==null){
 						for(region : superState.regions){
-							if(region.y<superState.suspends.last.y+13){
+							if(region.y<30+declarationCount*13){
 								for(region1 : superState.regions){
 									region1.y = region1.y + 13
 								}
@@ -124,10 +137,9 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 				if(region.superStates !== null){
 					for(superStateList: region.superStates){
 						postCreateSuspend(superStateList,suspend)
-						}
 					}
 				}
-			
+			}
 		}
 	}
 	

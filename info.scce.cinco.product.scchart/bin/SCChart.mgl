@@ -21,7 +21,7 @@ container RootState {
 @event("info.scce.cinco.product.scchart.events.RegionEvent")
 container Region {
 	style regionStyle ("${empty label ? (empty name ? '' : name) : label}")
-	containableElements(SuperState,InitilalSuperState[0,1],InitialState[0,1],SimpleState,FinalState,Connector)
+	containableElements(SuperState,InitilalSuperState[0,1],InitialState[0,1],SimpleState,FinalState,Connector,FinalSuperState)
 	attr EString as name
 	attr EString as label
 	@propertiesViewHidden

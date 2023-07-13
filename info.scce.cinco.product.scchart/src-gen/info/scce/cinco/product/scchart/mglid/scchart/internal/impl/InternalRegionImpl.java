@@ -201,6 +201,7 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.FinalState.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.Connector.class));
+		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState.class));
 		return constraints;
 		
 	}

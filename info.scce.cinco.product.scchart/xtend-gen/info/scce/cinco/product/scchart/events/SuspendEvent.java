@@ -3,6 +3,7 @@ package info.scce.cinco.product.scchart.events;
 import com.google.common.base.Objects;
 import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
+import info.scce.cinco.product.scchart.mglid.scchart.Action;
 import info.scce.cinco.product.scchart.mglid.scchart.Declaration;
 import info.scce.cinco.product.scchart.mglid.scchart.Region;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
@@ -84,15 +85,29 @@ public final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.sc
             _get_3.setHeight(13);
           }
         }
-        EList<Region> _regions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-        boolean _tripleNotEquals_1 = (_regions != null);
+        EList<Action> _actions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getActions();
+        boolean _tripleNotEquals_1 = (_actions != null);
         if (_tripleNotEquals_1) {
+          EList<Action> _actions_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getActions();
+          for (final Action action : _actions_1) {
+            int _y = action.getY();
+            int _plus = (_y + 13);
+            action.setY(_plus);
+          }
+          int _declarationCount = declarationCount;
+          int _size = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getActions().size();
+          declarationCount = (_declarationCount + _size);
+        }
+        int _declarationCount_1 = declarationCount;
+        int _size_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends().size();
+        declarationCount = (_declarationCount_1 + _size_1);
+        EList<Region> _regions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+        boolean _tripleNotEquals_2 = (_regions != null);
+        if (_tripleNotEquals_2) {
           EList<Region> _regions_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
           for (final Region region : _regions_1) {
-            int _y = region.getY();
-            int _y_1 = IterableExtensions.<Suspend>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends()).getY();
-            int _plus = (_y_1 + 13);
-            boolean _lessThan = (_y < _plus);
+            int _y_1 = region.getY();
+            boolean _lessThan = (_y_1 < (30 + (declarationCount * 13)));
             if (_lessThan) {
               EList<Region> _regions_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
               for (final Region region1 : _regions_2) {
@@ -114,8 +129,8 @@ public final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.sc
       EList<Region> _regions_3 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
       for (final Region region_1 : _regions_3) {
         EList<SuperState> _superStates = region_1.getSuperStates();
-        boolean _tripleNotEquals_2 = (_superStates != null);
-        if (_tripleNotEquals_2) {
+        boolean _tripleNotEquals_3 = (_superStates != null);
+        if (_tripleNotEquals_3) {
           EList<SuperState> _superStates_1 = region_1.getSuperStates();
           for (final SuperState superState : _superStates_1) {
             this.postCreateSuspend(superState, element);
@@ -156,15 +171,29 @@ public final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.sc
               _get_3.setHeight(13);
             }
           }
-          EList<Region> _regions = superState.getRegions();
-          boolean _tripleNotEquals_2 = (_regions != null);
+          EList<Action> _actions = superState.getActions();
+          boolean _tripleNotEquals_2 = (_actions != null);
           if (_tripleNotEquals_2) {
+            EList<Action> _actions_1 = superState.getActions();
+            for (final Action action : _actions_1) {
+              int _y = action.getY();
+              int _plus = (_y + 13);
+              action.setY(_plus);
+            }
+            int _declarationCount = declarationCount;
+            int _size = superState.getActions().size();
+            declarationCount = (_declarationCount + _size);
+          }
+          int _declarationCount_1 = declarationCount;
+          int _size_1 = superState.getSuspends().size();
+          declarationCount = (_declarationCount_1 + _size_1);
+          EList<Region> _regions = superState.getRegions();
+          boolean _tripleNotEquals_3 = (_regions != null);
+          if (_tripleNotEquals_3) {
             EList<Region> _regions_1 = superState.getRegions();
             for (final Region region : _regions_1) {
-              int _y = region.getY();
-              int _y_1 = IterableExtensions.<Suspend>last(superState.getSuspends()).getY();
-              int _plus = (_y_1 + 13);
-              boolean _lessThan = (_y < _plus);
+              int _y_1 = region.getY();
+              boolean _lessThan = (_y_1 < (30 + (declarationCount * 13)));
               if (_lessThan) {
                 EList<Region> _regions_2 = superState.getRegions();
                 for (final Region region1 : _regions_2) {
@@ -186,8 +215,8 @@ public final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.sc
       EList<Region> _regions_3 = superState.getRegions();
       for (final Region region_1 : _regions_3) {
         EList<SuperState> _superStates = region_1.getSuperStates();
-        boolean _tripleNotEquals_3 = (_superStates != null);
-        if (_tripleNotEquals_3) {
+        boolean _tripleNotEquals_4 = (_superStates != null);
+        if (_tripleNotEquals_4) {
           EList<SuperState> _superStates_1 = region_1.getSuperStates();
           for (final SuperState superStateList : _superStates_1) {
             this.postCreateSuspend(superStateList, suspend);

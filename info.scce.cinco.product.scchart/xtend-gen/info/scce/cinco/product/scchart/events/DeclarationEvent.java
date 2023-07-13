@@ -1,14 +1,17 @@
 package info.scce.cinco.product.scchart.events;
 
+import com.google.common.base.Objects;
 import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
+import info.scce.cinco.product.scchart.mglid.scchart.Action;
 import info.scce.cinco.product.scchart.mglid.scchart.Declaration;
 import info.scce.cinco.product.scchart.mglid.scchart.Region;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
+import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
+import java.util.UUID;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
-import org.eclipse.xtext.xbase.lib.Procedures.Procedure2;
 
 /**
  * About this class:
@@ -54,71 +57,181 @@ public final class DeclarationEvent extends info.scce.cinco.product.scchart.mgli
   
   @Override
   public void postCreate(final Declaration element) {
-    final Procedure2<Declaration, Integer> _function = (Declaration declaration, Integer index) -> {
-      declaration.setX(10);
-      declaration.setY((30 + (13 * (index).intValue())));
-      int _width = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getWidth();
-      int _minus = (_width - 20);
-      declaration.setWidth(_minus);
-      declaration.setHeight(13);
-    };
-    IterableExtensions.<Declaration>forEach(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations(), _function);
-    EList<Suspend> _suspends = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends();
-    boolean _tripleNotEquals = (_suspends != null);
-    if (_tripleNotEquals) {
-      final Procedure2<Suspend, Integer> _function_1 = (Suspend suspend, Integer index) -> {
-        suspend.setX(10);
-        int _size = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations().size();
-        int _multiply = (13 * _size);
-        int _plus = (30 + _multiply);
-        int _plus_1 = (_plus + (13 * (index).intValue()));
-        suspend.setY(_plus_1);
-        int _width = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getWidth();
-        int _minus = (_width - 20);
-        suspend.setWidth(_minus);
-        suspend.setHeight(13);
-      };
-      IterableExtensions.<Suspend>forEach(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends(), _function_1);
-      EList<Region> _regions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-      boolean _tripleNotEquals_1 = (_regions != null);
-      if (_tripleNotEquals_1) {
-        EList<Region> _regions_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-        for (final Region region : _regions_1) {
-          if (((region.getY() < (IterableExtensions.<Declaration>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations()).getY() + 13)) || (region.getY() < (IterableExtensions.<Suspend>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends()).getY() + 13)))) {
-            EList<Region> _regions_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-            for (final Region region1 : _regions_2) {
-              int _y = region1.getY();
-              int _plus = (_y + 13);
-              region1.setY(_plus);
+    element.setUuid(UUID.randomUUID().toString());
+    boolean continue_ = false;
+    EList<Declaration> _declarations = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations();
+    for (final Declaration declaration : _declarations) {
+      String _uuid = declaration.getUuid();
+      String _uuid_1 = element.getUuid();
+      boolean _equals = Objects.equal(_uuid, _uuid_1);
+      if (_equals) {
+        int declarationCount = 0;
+        declarationCount = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations().size();
+        for (int i = 0; (i < IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations().size()); i++) {
+          {
+            Declaration _get = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations().get(i);
+            _get.setX(10);
+            Declaration _get_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations().get(i);
+            _get_1.setY((30 + (13 * i)));
+            Declaration _get_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations().get(i);
+            int _width = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getWidth();
+            int _minus = (_width - 20);
+            _get_2.setWidth(_minus);
+            Declaration _get_3 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations().get(i);
+            _get_3.setHeight(13);
+          }
+        }
+        EList<Suspend> _suspends = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends();
+        boolean _tripleNotEquals = (_suspends != null);
+        if (_tripleNotEquals) {
+          EList<Suspend> _suspends_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends();
+          for (final Suspend suspend : _suspends_1) {
+            int _y = suspend.getY();
+            int _plus = (_y + 13);
+            suspend.setY(_plus);
+          }
+          int _declarationCount = declarationCount;
+          int _size = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends().size();
+          declarationCount = (_declarationCount + _size);
+        }
+        EList<Action> _actions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getActions();
+        boolean _tripleNotEquals_1 = (_actions != null);
+        if (_tripleNotEquals_1) {
+          EList<Action> _actions_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getActions();
+          for (final Action action : _actions_1) {
+            int _y_1 = action.getY();
+            int _plus_1 = (_y_1 + 13);
+            action.setY(_plus_1);
+          }
+          int _declarationCount_1 = declarationCount;
+          int _size_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getActions().size();
+          declarationCount = (_declarationCount_1 + _size_1);
+        }
+        EList<Region> _regions = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+        boolean _tripleNotEquals_2 = (_regions != null);
+        if (_tripleNotEquals_2) {
+          EList<Region> _regions_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+          for (final Region region : _regions_1) {
+            int _y_2 = region.getY();
+            boolean _lessThan = (_y_2 < (30 + (declarationCount * 13)));
+            if (_lessThan) {
+              EList<Region> _regions_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+              for (final Region region1 : _regions_2) {
+                int _y_3 = region1.getY();
+                int _plus_2 = (_y_3 + 13);
+                region1.setY(_plus_2);
+              }
+              RootState _head = IterableExtensions.<RootState>head(element.getRootElement().getRootStates());
+              int _height = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
+              int _plus_3 = (_height + 13);
+              _head.setHeight(_plus_3);
             }
-            RootState _head = IterableExtensions.<RootState>head(element.getRootElement().getRootStates());
-            int _height = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
-            int _plus_1 = (_height + 13);
-            _head.setHeight(_plus_1);
+          }
+        }
+        continue_ = true;
+      }
+    }
+    if ((!continue_)) {
+      EList<Region> _regions_3 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+      for (final Region region_1 : _regions_3) {
+        EList<SuperState> _superStates = region_1.getSuperStates();
+        boolean _tripleNotEquals_3 = (_superStates != null);
+        if (_tripleNotEquals_3) {
+          EList<SuperState> _superStates_1 = region_1.getSuperStates();
+          for (final SuperState superState : _superStates_1) {
+            this.postCreateDeclaration(superState, element);
           }
         }
       }
-    } else {
-      EList<Region> _regions_3 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-      boolean _tripleNotEquals_2 = (_regions_3 != null);
-      if (_tripleNotEquals_2) {
-        EList<Region> _regions_4 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-        for (final Region region_1 : _regions_4) {
-          int _y_1 = region_1.getY();
-          int _y_2 = IterableExtensions.<Declaration>last(IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getDeclarations()).getY();
-          int _plus_2 = (_y_2 + 13);
-          boolean _lessThan = (_y_1 < _plus_2);
-          if (_lessThan) {
-            EList<Region> _regions_5 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-            for (final Region region1_1 : _regions_5) {
-              int _y_3 = region1_1.getY();
-              int _plus_3 = (_y_3 + 13);
-              region1_1.setY(_plus_3);
+    }
+  }
+  
+  public void postCreateDeclaration(final SuperState superState, final Declaration declaration) {
+    boolean continue_ = false;
+    EList<Declaration> _declarations = superState.getDeclarations();
+    boolean _tripleNotEquals = (_declarations != null);
+    if (_tripleNotEquals) {
+      EList<Declaration> _declarations_1 = superState.getDeclarations();
+      for (final Declaration declarartionList : _declarations_1) {
+        String _uuid = declarartionList.getUuid();
+        String _uuid_1 = declaration.getUuid();
+        boolean _equals = Objects.equal(_uuid, _uuid_1);
+        if (_equals) {
+          int declarationCount = 0;
+          declarationCount = superState.getDeclarations().size();
+          for (int i = 0; (i < superState.getDeclarations().size()); i++) {
+            {
+              Declaration _get = superState.getDeclarations().get(i);
+              _get.setX(10);
+              Declaration _get_1 = superState.getDeclarations().get(i);
+              _get_1.setY((30 + (13 * i)));
+              Declaration _get_2 = superState.getDeclarations().get(i);
+              int _width = superState.getWidth();
+              int _minus = (_width - 20);
+              _get_2.setWidth(_minus);
+              Declaration _get_3 = superState.getDeclarations().get(i);
+              _get_3.setHeight(13);
             }
-            RootState _head_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates());
-            int _height_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
-            int _plus_4 = (_height_1 + 13);
-            _head_1.setHeight(_plus_4);
+          }
+          EList<Suspend> _suspends = superState.getSuspends();
+          boolean _tripleNotEquals_1 = (_suspends != null);
+          if (_tripleNotEquals_1) {
+            EList<Suspend> _suspends_1 = superState.getSuspends();
+            for (final Suspend suspend : _suspends_1) {
+              int _y = suspend.getY();
+              int _plus = (_y + 13);
+              suspend.setY(_plus);
+            }
+            int _declarationCount = declarationCount;
+            int _size = superState.getSuspends().size();
+            declarationCount = (_declarationCount + _size);
+          }
+          EList<Action> _actions = superState.getActions();
+          boolean _tripleNotEquals_2 = (_actions != null);
+          if (_tripleNotEquals_2) {
+            EList<Action> _actions_1 = superState.getActions();
+            for (final Action action : _actions_1) {
+              int _y_1 = action.getY();
+              int _plus_1 = (_y_1 + 13);
+              action.setY(_plus_1);
+            }
+            int _declarationCount_1 = declarationCount;
+            int _size_1 = superState.getActions().size();
+            declarationCount = (_declarationCount_1 + _size_1);
+          }
+          EList<Region> _regions = superState.getRegions();
+          boolean _tripleNotEquals_3 = (_regions != null);
+          if (_tripleNotEquals_3) {
+            EList<Region> _regions_1 = superState.getRegions();
+            for (final Region region : _regions_1) {
+              int _y_2 = region.getY();
+              boolean _lessThan = (_y_2 < (30 + (declarationCount * 13)));
+              if (_lessThan) {
+                EList<Region> _regions_2 = superState.getRegions();
+                for (final Region region1 : _regions_2) {
+                  int _y_3 = region1.getY();
+                  int _plus_2 = (_y_3 + 13);
+                  region1.setY(_plus_2);
+                }
+                int _height = superState.getHeight();
+                int _plus_3 = (_height + 13);
+                superState.setHeight(_plus_3);
+              }
+            }
+          }
+          continue_ = true;
+        }
+      }
+    }
+    if (((!continue_) && (superState.getRegions() != null))) {
+      EList<Region> _regions_3 = superState.getRegions();
+      for (final Region region_1 : _regions_3) {
+        EList<SuperState> _superStates = region_1.getSuperStates();
+        boolean _tripleNotEquals_4 = (_superStates != null);
+        if (_tripleNotEquals_4) {
+          EList<SuperState> _superStates_1 = region_1.getSuperStates();
+          for (final SuperState superStateList : _superStates_1) {
+            this.postCreateDeclaration(superStateList, declaration);
           }
         }
       }
