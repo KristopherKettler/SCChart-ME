@@ -201,6 +201,38 @@ public interface ConditionalTerminationTransition extends AbstractTransition {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
+	boolean canReconnectTarget(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(FinalState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(SimpleState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
 	boolean canReconnectTarget(SuperState target);
 
 	/**
@@ -233,38 +265,6 @@ public interface ConditionalTerminationTransition extends AbstractTransition {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	void reconnectTarget(InitilalSuperState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectTarget(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	void reconnectTarget(SimpleState target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
-	 * @generated
-	 */
 	boolean canReconnectTarget(InitialState target);
 
 	/**
@@ -281,7 +281,7 @@ public interface ConditionalTerminationTransition extends AbstractTransition {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(FinalState target);
+	boolean canReconnectTarget(InitilalSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -289,7 +289,7 @@ public interface ConditionalTerminationTransition extends AbstractTransition {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(FinalState target);
+	void reconnectTarget(InitilalSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->

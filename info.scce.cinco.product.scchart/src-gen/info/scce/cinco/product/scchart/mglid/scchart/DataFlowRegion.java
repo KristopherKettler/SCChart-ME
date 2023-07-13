@@ -101,7 +101,7 @@ public interface DataFlowRegion extends Region {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<SuperState> getSuperStates();
+	EList<FinalState> getFinalStates();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -109,7 +109,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewSuperState();
+	boolean canNewFinalState();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -117,7 +117,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(int x, int y);
+	FinalState newFinalState(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -125,7 +125,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(String id, int x, int y);
+	FinalState newFinalState(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -133,7 +133,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(int x, int y, int width, int height);
+	FinalState newFinalState(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -141,199 +141,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<CircuitConnecter> getCircuitConnecters();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewCircuitConnecter();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	CircuitConnecter newCircuitConnecter(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	CircuitConnecter newCircuitConnecter(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	CircuitConnecter newCircuitConnecter(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	CircuitConnecter newCircuitConnecter(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<Output> getOutputs();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewOutput();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	Output newOutput(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	Output newOutput(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	Output newOutput(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	Output newOutput(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<Connector> getConnectors();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewConnector();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	Connector newConnector(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	Connector newConnector(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	Connector newConnector(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	Connector newConnector(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<InitilalSuperState> getInitilalSuperStates();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewInitilalSuperState();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	InitilalSuperState newInitilalSuperState(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	InitilalSuperState newInitilalSuperState(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	InitilalSuperState newInitilalSuperState(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	InitilalSuperState newInitilalSuperState(String id, int x, int y, int width, int height);
+	FinalState newFinalState(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -389,7 +197,7 @@ public interface DataFlowRegion extends Region {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<Input> getInputs();
+	EList<SuperState> getSuperStates();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -397,7 +205,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewInput();
+	boolean canNewSuperState();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -405,7 +213,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	Input newInput(int x, int y);
+	SuperState newSuperState(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -413,7 +221,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	Input newInput(String id, int x, int y);
+	SuperState newSuperState(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -421,7 +229,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	Input newInput(int x, int y, int width, int height);
+	SuperState newSuperState(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -429,7 +237,151 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	Input newInput(String id, int x, int y, int width, int height);
+	SuperState newSuperState(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<Connector> getConnectors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewConnector();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	Connector newConnector(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	Connector newConnector(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	Connector newConnector(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	Connector newConnector(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<CircuitConnecter> getCircuitConnecters();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewCircuitConnecter();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	CircuitConnecter newCircuitConnecter(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	CircuitConnecter newCircuitConnecter(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	CircuitConnecter newCircuitConnecter(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	CircuitConnecter newCircuitConnecter(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<Operator> getOperators();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewOperator();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	Operator newOperator(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	Operator newOperator(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	Operator newOperator(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	Operator newOperator(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -485,7 +437,7 @@ public interface DataFlowRegion extends Region {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<FinalState> getFinalStates();
+	EList<InitilalSuperState> getInitilalSuperStates();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -493,7 +445,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewFinalState();
+	boolean canNewInitilalSuperState();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -501,7 +453,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	FinalState newFinalState(int x, int y);
+	InitilalSuperState newInitilalSuperState(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -509,7 +461,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	FinalState newFinalState(String id, int x, int y);
+	InitilalSuperState newInitilalSuperState(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -517,7 +469,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	FinalState newFinalState(int x, int y, int width, int height);
+	InitilalSuperState newInitilalSuperState(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -525,7 +477,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	FinalState newFinalState(String id, int x, int y, int width, int height);
+	InitilalSuperState newInitilalSuperState(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -533,7 +485,7 @@ public interface DataFlowRegion extends Region {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<Operator> getOperators();
+	EList<Input> getInputs();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -541,7 +493,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewOperator();
+	boolean canNewInput();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -549,7 +501,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	Operator newOperator(int x, int y);
+	Input newInput(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -557,7 +509,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	Operator newOperator(String id, int x, int y);
+	Input newInput(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -565,7 +517,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	Operator newOperator(int x, int y, int width, int height);
+	Input newInput(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -573,7 +525,55 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	Operator newOperator(String id, int x, int y, int width, int height);
+	Input newInput(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<Output> getOutputs();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewOutput();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	Output newOutput(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	Output newOutput(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	Output newOutput(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	Output newOutput(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->

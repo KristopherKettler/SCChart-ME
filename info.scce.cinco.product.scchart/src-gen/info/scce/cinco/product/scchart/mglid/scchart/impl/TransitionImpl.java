@@ -235,6 +235,46 @@ public class TransitionImpl extends AbstractTransitionImpl implements Transition
 	 * @generated
 	 */
 	@Override
+	public boolean canReconnectSource(final FinalState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final FinalState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final SimpleState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final SimpleState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean canReconnectSource(final SuperState source) {
 		return source.canStart(this.getClass());
 	}
@@ -275,6 +315,26 @@ public class TransitionImpl extends AbstractTransitionImpl implements Transition
 	 * @generated
 	 */
 	@Override
+	public boolean canReconnectSource(final InitialState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final InitialState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean canReconnectSource(final InitilalSuperState source) {
 		return source.canStart(this.getClass());
 	}
@@ -286,26 +346,6 @@ public class TransitionImpl extends AbstractTransitionImpl implements Transition
 	 */
 	@Override
 	public void reconnectSource(final InitilalSuperState source) {
-		this.setSourceElement(source);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canReconnectSource(final SimpleState source) {
-		return source.canStart(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectSource(final SimpleState source) {
 		this.setSourceElement(source);
 	}
 
@@ -335,8 +375,8 @@ public class TransitionImpl extends AbstractTransitionImpl implements Transition
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final InitialState source) {
-		return source.canStart(this.getClass());
+	public boolean canReconnectTarget(final FinalState target) {
+		return target.canEnd(this.getClass());
 	}
 
 	/**
@@ -345,8 +385,8 @@ public class TransitionImpl extends AbstractTransitionImpl implements Transition
 	 * @generated
 	 */
 	@Override
-	public void reconnectSource(final InitialState source) {
-		this.setSourceElement(source);
+	public void reconnectTarget(final FinalState target) {
+		this.setTargetElement(target);
 	}
 
 	/**
@@ -355,8 +395,8 @@ public class TransitionImpl extends AbstractTransitionImpl implements Transition
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final FinalState source) {
-		return source.canStart(this.getClass());
+	public boolean canReconnectTarget(final SimpleState target) {
+		return target.canEnd(this.getClass());
 	}
 
 	/**
@@ -365,8 +405,8 @@ public class TransitionImpl extends AbstractTransitionImpl implements Transition
 	 * @generated
 	 */
 	@Override
-	public void reconnectSource(final FinalState source) {
-		this.setSourceElement(source);
+	public void reconnectTarget(final SimpleState target) {
+		this.setTargetElement(target);
 	}
 
 	/**
@@ -415,46 +455,6 @@ public class TransitionImpl extends AbstractTransitionImpl implements Transition
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final InitilalSuperState target) {
-		return target.canEnd(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectTarget(final InitilalSuperState target) {
-		this.setTargetElement(target);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canReconnectTarget(final SimpleState target) {
-		return target.canEnd(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectTarget(final SimpleState target) {
-		this.setTargetElement(target);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean canReconnectTarget(final InitialState target) {
 		return target.canEnd(this.getClass());
 	}
@@ -475,7 +475,7 @@ public class TransitionImpl extends AbstractTransitionImpl implements Transition
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final FinalState target) {
+	public boolean canReconnectTarget(final InitilalSuperState target) {
 		return target.canEnd(this.getClass());
 	}
 
@@ -485,7 +485,7 @@ public class TransitionImpl extends AbstractTransitionImpl implements Transition
 	 * @generated
 	 */
 	@Override
-	public void reconnectTarget(final FinalState target) {
+	public void reconnectTarget(final InitilalSuperState target) {
 		this.setTargetElement(target);
 	}
 
@@ -598,6 +598,16 @@ public class TransitionImpl extends AbstractTransitionImpl implements Transition
 				return getSourceElement();
 			case ScchartPackage.TRANSITION___GET_TARGET_ELEMENT:
 				return getTargetElement();
+			case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__FINALSTATE:
+				return canReconnectSource((FinalState)arguments.get(0));
+			case ScchartPackage.TRANSITION___RECONNECT_SOURCE__FINALSTATE:
+				reconnectSource((FinalState)arguments.get(0));
+				return null;
+			case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__SIMPLESTATE:
+				return canReconnectSource((SimpleState)arguments.get(0));
+			case ScchartPackage.TRANSITION___RECONNECT_SOURCE__SIMPLESTATE:
+				reconnectSource((SimpleState)arguments.get(0));
+				return null;
 			case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__SUPERSTATE:
 				return canReconnectSource((SuperState)arguments.get(0));
 			case ScchartPackage.TRANSITION___RECONNECT_SOURCE__SUPERSTATE:
@@ -608,30 +618,30 @@ public class TransitionImpl extends AbstractTransitionImpl implements Transition
 			case ScchartPackage.TRANSITION___RECONNECT_SOURCE__CONNECTOR:
 				reconnectSource((Connector)arguments.get(0));
 				return null;
+			case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__INITIALSTATE:
+				return canReconnectSource((InitialState)arguments.get(0));
+			case ScchartPackage.TRANSITION___RECONNECT_SOURCE__INITIALSTATE:
+				reconnectSource((InitialState)arguments.get(0));
+				return null;
 			case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__INITILALSUPERSTATE:
 				return canReconnectSource((InitilalSuperState)arguments.get(0));
 			case ScchartPackage.TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE:
 				reconnectSource((InitilalSuperState)arguments.get(0));
-				return null;
-			case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__SIMPLESTATE:
-				return canReconnectSource((SimpleState)arguments.get(0));
-			case ScchartPackage.TRANSITION___RECONNECT_SOURCE__SIMPLESTATE:
-				reconnectSource((SimpleState)arguments.get(0));
 				return null;
 			case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
 				return canReconnectSource((RootState)arguments.get(0));
 			case ScchartPackage.TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
 				reconnectSource((RootState)arguments.get(0));
 				return null;
-			case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__INITIALSTATE:
-				return canReconnectSource((InitialState)arguments.get(0));
-			case ScchartPackage.TRANSITION___RECONNECT_SOURCE__INITIALSTATE:
-				reconnectSource((InitialState)arguments.get(0));
+			case ScchartPackage.TRANSITION___CAN_RECONNECT_TARGET__FINALSTATE:
+				return canReconnectTarget((FinalState)arguments.get(0));
+			case ScchartPackage.TRANSITION___RECONNECT_TARGET__FINALSTATE:
+				reconnectTarget((FinalState)arguments.get(0));
 				return null;
-			case ScchartPackage.TRANSITION___CAN_RECONNECT_SOURCE__FINALSTATE:
-				return canReconnectSource((FinalState)arguments.get(0));
-			case ScchartPackage.TRANSITION___RECONNECT_SOURCE__FINALSTATE:
-				reconnectSource((FinalState)arguments.get(0));
+			case ScchartPackage.TRANSITION___CAN_RECONNECT_TARGET__SIMPLESTATE:
+				return canReconnectTarget((SimpleState)arguments.get(0));
+			case ScchartPackage.TRANSITION___RECONNECT_TARGET__SIMPLESTATE:
+				reconnectTarget((SimpleState)arguments.get(0));
 				return null;
 			case ScchartPackage.TRANSITION___CAN_RECONNECT_TARGET__SUPERSTATE:
 				return canReconnectTarget((SuperState)arguments.get(0));
@@ -643,25 +653,15 @@ public class TransitionImpl extends AbstractTransitionImpl implements Transition
 			case ScchartPackage.TRANSITION___RECONNECT_TARGET__CONNECTOR:
 				reconnectTarget((Connector)arguments.get(0));
 				return null;
-			case ScchartPackage.TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
-				return canReconnectTarget((InitilalSuperState)arguments.get(0));
-			case ScchartPackage.TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
-				reconnectTarget((InitilalSuperState)arguments.get(0));
-				return null;
-			case ScchartPackage.TRANSITION___CAN_RECONNECT_TARGET__SIMPLESTATE:
-				return canReconnectTarget((SimpleState)arguments.get(0));
-			case ScchartPackage.TRANSITION___RECONNECT_TARGET__SIMPLESTATE:
-				reconnectTarget((SimpleState)arguments.get(0));
-				return null;
 			case ScchartPackage.TRANSITION___CAN_RECONNECT_TARGET__INITIALSTATE:
 				return canReconnectTarget((InitialState)arguments.get(0));
 			case ScchartPackage.TRANSITION___RECONNECT_TARGET__INITIALSTATE:
 				reconnectTarget((InitialState)arguments.get(0));
 				return null;
-			case ScchartPackage.TRANSITION___CAN_RECONNECT_TARGET__FINALSTATE:
-				return canReconnectTarget((FinalState)arguments.get(0));
-			case ScchartPackage.TRANSITION___RECONNECT_TARGET__FINALSTATE:
-				reconnectTarget((FinalState)arguments.get(0));
+			case ScchartPackage.TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
+				return canReconnectTarget((InitilalSuperState)arguments.get(0));
+			case ScchartPackage.TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
+				reconnectTarget((InitilalSuperState)arguments.get(0));
 				return null;
 			case ScchartPackage.TRANSITION___GET_TRANSITION_VIEW:
 				return getTransitionView();
