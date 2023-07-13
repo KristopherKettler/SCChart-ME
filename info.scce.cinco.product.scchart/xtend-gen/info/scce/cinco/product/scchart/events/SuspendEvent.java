@@ -57,7 +57,7 @@ public final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.sc
   @Override
   public void postCreate(final Suspend element) {
     element.setUuid(UUID.randomUUID().toString());
-    boolean break_ = false;
+    boolean continue_ = false;
     EList<Suspend> _suspends = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getSuspends();
     for (final Suspend suspend : _suspends) {
       String _uuid = suspend.getUuid();
@@ -107,10 +107,10 @@ public final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.sc
             }
           }
         }
-        break_ = true;
+        continue_ = true;
       }
     }
-    if ((!break_)) {
+    if ((!continue_)) {
       EList<Region> _regions_3 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
       for (final Region region_1 : _regions_3) {
         EList<SuperState> _superStates = region_1.getSuperStates();
@@ -126,7 +126,7 @@ public final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.sc
   }
   
   public void postCreateSuspend(final SuperState superState, final Suspend suspend) {
-    boolean break_ = false;
+    boolean continue_ = false;
     EList<Suspend> _suspends = superState.getSuspends();
     boolean _tripleNotEquals = (_suspends != null);
     if (_tripleNotEquals) {
@@ -178,11 +178,11 @@ public final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.sc
               }
             }
           }
-          break_ = true;
+          continue_ = true;
         }
       }
     }
-    if (((!break_) && (superState.getRegions() != null))) {
+    if (((!continue_) && (superState.getRegions() != null))) {
       EList<Region> _regions_3 = superState.getRegions();
       for (final Region region_1 : _regions_3) {
         EList<SuperState> _superStates = region_1.getSuperStates();

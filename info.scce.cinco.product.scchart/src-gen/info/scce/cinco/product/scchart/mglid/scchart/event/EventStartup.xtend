@@ -16,6 +16,7 @@ class EventStartup implements IStartup {
 		DataFlowRegionEvent.instance.subscribe
 		SuperStateEvent.instance.subscribe
 		InitilalSuperStateEvent.instance.subscribe
+		FinalSuperStateEvent.instance.subscribe
 		DeclarationEvent.instance.subscribe
 		SuspendEvent.instance.subscribe
 		ActionEvent.instance.subscribe
@@ -28,6 +29,7 @@ class EventStartup implements IStartup {
 		DataFlowRegionEvent.instance.unsubscribe
 		SuperStateEvent.instance.unsubscribe
 		InitilalSuperStateEvent.instance.unsubscribe
+		FinalSuperStateEvent.instance.unsubscribe
 		DeclarationEvent.instance.unsubscribe
 		SuspendEvent.instance.unsubscribe
 		ActionEvent.instance.unsubscribe

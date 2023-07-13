@@ -10,6 +10,7 @@ import graphmodel.internal.impl.InternalNodeImpl;
 
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
@@ -124,6 +125,16 @@ public class InternalConnectorImpl extends InternalNodeImpl implements InternalC
 	 * @generated
 	 */
 	@Override
+	public EList<FinalSuperState> getFinalSuperStatePredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EList<SimpleState> getSimpleStatePredecessors() {
 		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class);
 	}
@@ -176,6 +187,16 @@ public class InternalConnectorImpl extends InternalNodeImpl implements InternalC
 	@Override
 	public EList<InitilalSuperState> getInitilalSuperStateSuccessors() {
 		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<FinalSuperState> getFinalSuperStateSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState.class);
 	}
 
 	/**
@@ -253,6 +274,8 @@ public class InternalConnectorImpl extends InternalNodeImpl implements InternalC
 				return getSuperStatePredecessors();
 			case InternalPackage.INTERNAL_CONNECTOR___GET_INITILAL_SUPER_STATE_PREDECESSORS:
 				return getInitilalSuperStatePredecessors();
+			case InternalPackage.INTERNAL_CONNECTOR___GET_FINAL_SUPER_STATE_PREDECESSORS:
+				return getFinalSuperStatePredecessors();
 			case InternalPackage.INTERNAL_CONNECTOR___GET_SIMPLE_STATE_PREDECESSORS:
 				return getSimpleStatePredecessors();
 			case InternalPackage.INTERNAL_CONNECTOR___GET_INITIAL_STATE_PREDECESSORS:
@@ -265,6 +288,8 @@ public class InternalConnectorImpl extends InternalNodeImpl implements InternalC
 				return getSuperStateSuccessors();
 			case InternalPackage.INTERNAL_CONNECTOR___GET_INITILAL_SUPER_STATE_SUCCESSORS:
 				return getInitilalSuperStateSuccessors();
+			case InternalPackage.INTERNAL_CONNECTOR___GET_FINAL_SUPER_STATE_SUCCESSORS:
+				return getFinalSuperStateSuccessors();
 			case InternalPackage.INTERNAL_CONNECTOR___GET_SIMPLE_STATE_SUCCESSORS:
 				return getSimpleStateSuccessors();
 			case InternalPackage.INTERNAL_CONNECTOR___GET_INITIAL_STATE_SUCCESSORS:

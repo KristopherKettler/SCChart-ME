@@ -67,6 +67,15 @@ public interface InternalFactory extends EFactory {
 	InternalInitilalSuperState createInternalInitilalSuperState();
 
 	/**
+	 * Returns a new object of class '<em>Final Super State</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Final Super State</em>'.
+	 * @generated
+	 */
+	InternalFinalSuperState createInternalFinalSuperState();
+
+	/**
 	 * Returns a new object of class '<em>Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

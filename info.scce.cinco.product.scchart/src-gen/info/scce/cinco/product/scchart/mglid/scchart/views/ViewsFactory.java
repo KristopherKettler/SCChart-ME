@@ -67,6 +67,15 @@ public interface ViewsFactory extends EFactory {
 	InitilalSuperStateView createInitilalSuperStateView();
 
 	/**
+	 * Returns a new object of class '<em>Final Super State View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Final Super State View</em>'.
+	 * @generated
+	 */
+	FinalSuperStateView createFinalSuperStateView();
+
+	/**
 	 * Returns a new object of class '<em>Declaration View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

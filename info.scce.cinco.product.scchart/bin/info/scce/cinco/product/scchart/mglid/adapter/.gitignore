@@ -35,3 +35,6 @@
 /.TerminationHistoryTransitionEContentAdapter.java._trace
 /.TerminationTransitionEContentAdapter.java._trace
 /.TransitionEContentAdapter.java._trace
+/.DeclarationEContentAdapter.xtendbin
+/DeclarationEContentAdapter.java
+/.FinalSuperStateEContentAdapter.java._trace

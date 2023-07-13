@@ -312,6 +312,30 @@ public interface Declaration extends Node {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @model required="true" finalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	boolean canMoveTo(FinalSuperState finalSuperState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model finalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void moveTo(FinalSuperState finalSuperState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model finalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void s_moveTo(FinalSuperState finalSuperState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @model kind="operation"
 	 * @generated
 	 */

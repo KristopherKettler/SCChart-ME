@@ -61,6 +61,7 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_DATA_FLOW_REGION: return createInternalDataFlowRegion();
 			case InternalPackage.INTERNAL_SUPER_STATE: return createInternalSuperState();
 			case InternalPackage.INTERNAL_INITILAL_SUPER_STATE: return createInternalInitilalSuperState();
+			case InternalPackage.INTERNAL_FINAL_SUPER_STATE: return createInternalFinalSuperState();
 			case InternalPackage.INTERNAL_DECLARATION: return createInternalDeclaration();
 			case InternalPackage.INTERNAL_SUSPEND: return createInternalSuspend();
 			case InternalPackage.INTERNAL_ACTION: return createInternalAction();
@@ -151,6 +152,17 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalInitilalSuperState createInternalInitilalSuperState() {
 		InternalInitilalSuperStateImpl internalInitilalSuperState = new InternalInitilalSuperStateImpl();
 		return internalInitilalSuperState;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalFinalSuperState createInternalFinalSuperState() {
+		InternalFinalSuperStateImpl internalFinalSuperState = new InternalFinalSuperStateImpl();
+		return internalFinalSuperState;
 	}
 
 	/**

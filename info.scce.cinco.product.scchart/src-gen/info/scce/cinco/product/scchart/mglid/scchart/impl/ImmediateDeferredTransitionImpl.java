@@ -9,6 +9,7 @@ import graphmodel.ModelElement;
 import graphmodel.Node;
 
 import info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.ImmediateDeferredTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
@@ -271,6 +272,26 @@ public class ImmediateDeferredTransitionImpl extends AbstractTransitionImpl impl
 	 * @generated
 	 */
 	@Override
+	public boolean canReconnectSource(final FinalSuperState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final FinalSuperState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean canReconnectSource(final RootState source) {
 		return source.canStart(this.getClass());
 	}
@@ -322,6 +343,26 @@ public class ImmediateDeferredTransitionImpl extends AbstractTransitionImpl impl
 	 */
 	@Override
 	public void reconnectTarget(final InitilalSuperState target) {
+		this.setTargetElement(target);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectTarget(final FinalSuperState target) {
+		return target.canEnd(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectTarget(final FinalSuperState target) {
 		this.setTargetElement(target);
 	}
 
@@ -444,6 +485,11 @@ public class ImmediateDeferredTransitionImpl extends AbstractTransitionImpl impl
 			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE:
 				reconnectSource((InitilalSuperState)arguments.get(0));
 				return null;
+			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__FINALSUPERSTATE:
+				return canReconnectSource((FinalSuperState)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___RECONNECT_SOURCE__FINALSUPERSTATE:
+				reconnectSource((FinalSuperState)arguments.get(0));
+				return null;
 			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
 				return canReconnectSource((RootState)arguments.get(0));
 			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
@@ -458,6 +504,11 @@ public class ImmediateDeferredTransitionImpl extends AbstractTransitionImpl impl
 				return canReconnectTarget((InitilalSuperState)arguments.get(0));
 			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
 				reconnectTarget((InitilalSuperState)arguments.get(0));
+				return null;
+			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___CAN_RECONNECT_TARGET__FINALSUPERSTATE:
+				return canReconnectTarget((FinalSuperState)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___RECONNECT_TARGET__FINALSUPERSTATE:
+				reconnectTarget((FinalSuperState)arguments.get(0));
 				return null;
 			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___GET_IMMEDIATE_DEFERRED_TRANSITION_VIEW:
 				return getImmediateDeferredTransitionView();

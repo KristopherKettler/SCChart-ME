@@ -14,6 +14,7 @@ import graphmodel.internal.impl.InternalContainerImpl;
 import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.Operator;
@@ -212,6 +213,16 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 */
 	@Override
+	public EList<FinalSuperState> getFinalSuperStateSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EList<SimpleState> getSimpleStateSuccessors() {
 		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class);
 	}
@@ -388,6 +399,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 				return getSuperStateSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS:
 				return getInitilalSuperStateSuccessors();
+			case InternalPackage.INTERNAL_ROOT_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS:
+				return getFinalSuperStateSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_SIMPLE_STATE_SUCCESSORS:
 				return getSimpleStateSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_INITIAL_STATE_SUCCESSORS:

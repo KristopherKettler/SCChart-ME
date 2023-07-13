@@ -106,22 +106,6 @@ public interface Connection extends Edge {
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(CircuitConnecter source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(CircuitConnecter source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
 	boolean canReconnectSource(Operator source);
 
 	/**
@@ -131,6 +115,22 @@ public interface Connection extends Edge {
 	 * @generated
 	 */
 	void reconnectSource(Operator source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectSource(CircuitConnecter source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(CircuitConnecter source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -170,7 +170,7 @@ public interface Connection extends Edge {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(CircuitConnecter target);
+	boolean canReconnectTarget(Output target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -178,7 +178,7 @@ public interface Connection extends Edge {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(CircuitConnecter target);
+	void reconnectTarget(Output target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -202,7 +202,7 @@ public interface Connection extends Edge {
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(Output target);
+	boolean canReconnectTarget(CircuitConnecter target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,7 +210,7 @@ public interface Connection extends Edge {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(Output target);
+	void reconnectTarget(CircuitConnecter target);
 
 	/**
 	 * <!-- begin-user-doc -->

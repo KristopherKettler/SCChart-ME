@@ -98,6 +98,13 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ViewsPackage.FINAL_SUPER_STATE_VIEW: {
+				FinalSuperStateView finalSuperStateView = (FinalSuperStateView)theEObject;
+				T result = caseFinalSuperStateView(finalSuperStateView);
+				if (result == null) result = caseSuperStateView(finalSuperStateView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ViewsPackage.DECLARATION_VIEW: {
 				DeclarationView declarationView = (DeclarationView)theEObject;
 				T result = caseDeclarationView(declarationView);
@@ -386,6 +393,21 @@ public class ViewsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInitilalSuperStateView(InitilalSuperStateView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Final Super State View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Final Super State View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFinalSuperStateView(FinalSuperStateView object) {
 		return null;
 	}
 

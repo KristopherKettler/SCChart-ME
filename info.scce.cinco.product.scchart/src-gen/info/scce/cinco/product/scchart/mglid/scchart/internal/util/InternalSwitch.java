@@ -131,6 +131,18 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case InternalPackage.INTERNAL_FINAL_SUPER_STATE: {
+				InternalFinalSuperState internalFinalSuperState = (InternalFinalSuperState)theEObject;
+				T result = caseInternalFinalSuperState(internalFinalSuperState);
+				if (result == null) result = caseInternalSuperState(internalFinalSuperState);
+				if (result == null) result = caseInternalContainer(internalFinalSuperState);
+				if (result == null) result = caseInternalNode(internalFinalSuperState);
+				if (result == null) result = caseInternalModelElementContainer(internalFinalSuperState);
+				if (result == null) result = caseInternalModelElement(internalFinalSuperState);
+				if (result == null) result = caseInternalIdentifiableElement(internalFinalSuperState);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case InternalPackage.INTERNAL_DECLARATION: {
 				InternalDeclaration internalDeclaration = (InternalDeclaration)theEObject;
 				T result = caseInternalDeclaration(internalDeclaration);
@@ -515,6 +527,21 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalInitilalSuperState(InternalInitilalSuperState object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Final Super State</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Final Super State</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalFinalSuperState(InternalFinalSuperState object) {
 		return null;
 	}
 

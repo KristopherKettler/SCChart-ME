@@ -476,6 +476,88 @@ public interface ViewsPackage extends EPackage {
 	int INITILAL_SUPER_STATE_VIEW_OPERATION_COUNT = SUPER_STATE_VIEW_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.FinalSuperStateViewImpl <em>Final Super State View</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.FinalSuperStateViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getFinalSuperStateView()
+	 * @generated
+	 */
+	int FINAL_SUPER_STATE_VIEW = 5;
+
+	/**
+	 * The feature id for the '<em><b>Internal Super State</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FINAL_SUPER_STATE_VIEW__INTERNAL_SUPER_STATE = SUPER_STATE_VIEW__INTERNAL_SUPER_STATE;
+
+	/**
+	 * The feature id for the '<em><b>Internal Final Super State</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FINAL_SUPER_STATE_VIEW__INTERNAL_FINAL_SUPER_STATE = SUPER_STATE_VIEW_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Final Super State View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FINAL_SUPER_STATE_VIEW_FEATURE_COUNT = SUPER_STATE_VIEW_FEATURE_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FINAL_SUPER_STATE_VIEW___GET_NAME = SUPER_STATE_VIEW___GET_NAME;
+
+	/**
+	 * The operation id for the '<em>Set Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FINAL_SUPER_STATE_VIEW___SET_NAME__STRING = SUPER_STATE_VIEW___SET_NAME__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FINAL_SUPER_STATE_VIEW___GET_LABEL = SUPER_STATE_VIEW___GET_LABEL;
+
+	/**
+	 * The operation id for the '<em>Set Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FINAL_SUPER_STATE_VIEW___SET_LABEL__STRING = SUPER_STATE_VIEW___SET_LABEL__STRING;
+
+	/**
+	 * The number of operations of the '<em>Final Super State View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FINAL_SUPER_STATE_VIEW_OPERATION_COUNT = SUPER_STATE_VIEW_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.DeclarationViewImpl <em>Declaration View</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -483,7 +565,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDeclarationView()
 	 * @generated
 	 */
-	int DECLARATION_VIEW = 5;
+	int DECLARATION_VIEW = 6;
 
 	/**
 	 * The feature id for the '<em><b>Internal Declaration</b></em>' reference.
@@ -646,7 +728,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuspendView()
 	 * @generated
 	 */
-	int SUSPEND_VIEW = 6;
+	int SUSPEND_VIEW = 7;
 
 	/**
 	 * The feature id for the '<em><b>Internal Suspend</b></em>' reference.
@@ -737,7 +819,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getActionView()
 	 * @generated
 	 */
-	int ACTION_VIEW = 7;
+	int ACTION_VIEW = 8;
 
 	/**
 	 * The feature id for the '<em><b>Internal Action</b></em>' reference.
@@ -846,7 +928,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSimpleStateView()
 	 * @generated
 	 */
-	int SIMPLE_STATE_VIEW = 8;
+	int SIMPLE_STATE_VIEW = 9;
 
 	/**
 	 * The feature id for the '<em><b>Internal Simple State</b></em>' reference.
@@ -919,7 +1001,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getInitialStateView()
 	 * @generated
 	 */
-	int INITIAL_STATE_VIEW = 9;
+	int INITIAL_STATE_VIEW = 10;
 
 	/**
 	 * The feature id for the '<em><b>Internal Simple State</b></em>' reference.
@@ -1001,7 +1083,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getFinalStateView()
 	 * @generated
 	 */
-	int FINAL_STATE_VIEW = 10;
+	int FINAL_STATE_VIEW = 11;
 
 	/**
 	 * The feature id for the '<em><b>Internal Simple State</b></em>' reference.
@@ -1083,7 +1165,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConnectorView()
 	 * @generated
 	 */
-	int CONNECTOR_VIEW = 11;
+	int CONNECTOR_VIEW = 12;
 
 	/**
 	 * The feature id for the '<em><b>Internal Connector</b></em>' reference.
@@ -1120,7 +1202,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getInputView()
 	 * @generated
 	 */
-	int INPUT_VIEW = 12;
+	int INPUT_VIEW = 13;
 
 	/**
 	 * The feature id for the '<em><b>Internal Input</b></em>' reference.
@@ -1175,7 +1257,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getOutputView()
 	 * @generated
 	 */
-	int OUTPUT_VIEW = 13;
+	int OUTPUT_VIEW = 14;
 
 	/**
 	 * The feature id for the '<em><b>Internal Output</b></em>' reference.
@@ -1230,7 +1312,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getOperatorView()
 	 * @generated
 	 */
-	int OPERATOR_VIEW = 14;
+	int OPERATOR_VIEW = 15;
 
 	/**
 	 * The feature id for the '<em><b>Internal Operator</b></em>' reference.
@@ -1285,7 +1367,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getCircuitConnecterView()
 	 * @generated
 	 */
-	int CIRCUIT_CONNECTER_VIEW = 15;
+	int CIRCUIT_CONNECTER_VIEW = 16;
 
 	/**
 	 * The feature id for the '<em><b>Internal Circuit Connecter</b></em>' reference.
@@ -1322,7 +1404,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getAbstractTransitionView()
 	 * @generated
 	 */
-	int ABSTRACT_TRANSITION_VIEW = 16;
+	int ABSTRACT_TRANSITION_VIEW = 17;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -1377,7 +1459,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTransitionView()
 	 * @generated
 	 */
-	int TRANSITION_VIEW = 17;
+	int TRANSITION_VIEW = 18;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -1495,7 +1577,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_TRANSITION_VIEW = 18;
+	int IMMEDIATE_TRANSITION_VIEW = 19;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -1613,7 +1695,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTerminationTransitionView()
 	 * @generated
 	 */
-	int TERMINATION_TRANSITION_VIEW = 19;
+	int TERMINATION_TRANSITION_VIEW = 20;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -1695,7 +1777,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConditionalTerminationTransitionView()
 	 * @generated
 	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW = 20;
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW = 21;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -1813,7 +1895,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getStrongAbortTransitionView()
 	 * @generated
 	 */
-	int STRONG_ABORT_TRANSITION_VIEW = 21;
+	int STRONG_ABORT_TRANSITION_VIEW = 22;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -1931,7 +2013,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateStrongAbortTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW = 22;
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW = 23;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2049,7 +2131,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDeferredTransitionView()
 	 * @generated
 	 */
-	int DEFERRED_TRANSITION_VIEW = 23;
+	int DEFERRED_TRANSITION_VIEW = 24;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2167,7 +2249,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateDeferredTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW = 24;
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW = 25;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2285,7 +2367,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTerminationDefferdTransitionView()
 	 * @generated
 	 */
-	int TERMINATION_DEFFERD_TRANSITION_VIEW = 25;
+	int TERMINATION_DEFFERD_TRANSITION_VIEW = 26;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2385,7 +2467,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConditionalTerminationDeferredTransitionView()
 	 * @generated
 	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW = 26;
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW = 27;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2503,7 +2585,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getStrongAbortDeferredTransitionView()
 	 * @generated
 	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 27;
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 28;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2621,7 +2703,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateStrongAbortDeferredTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 28;
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 29;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2739,7 +2821,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getHistoryTransitionView()
 	 * @generated
 	 */
-	int HISTORY_TRANSITION_VIEW = 29;
+	int HISTORY_TRANSITION_VIEW = 30;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2875,7 +2957,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateHistoryTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW = 30;
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW = 31;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3011,7 +3093,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTerminationHistoryTransitionView()
 	 * @generated
 	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW = 31;
+	int TERMINATION_HISTORY_TRANSITION_VIEW = 32;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3111,7 +3193,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConditionalTerminationHistoryTransitionView()
 	 * @generated
 	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW = 32;
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW = 33;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3247,7 +3329,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getStrongAbortHistoryTransitionView()
 	 * @generated
 	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW = 33;
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW = 34;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3383,7 +3465,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateStrongAbortHistoryTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW = 34;
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW = 35;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3519,7 +3601,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConnectionView()
 	 * @generated
 	 */
-	int CONNECTION_VIEW = 35;
+	int CONNECTION_VIEW = 36;
 
 	/**
 	 * The feature id for the '<em><b>Internal Connection</b></em>' reference.
@@ -3556,7 +3638,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSCChartView()
 	 * @generated
 	 */
-	int SC_CHART_VIEW = 36;
+	int SC_CHART_VIEW = 37;
 
 	/**
 	 * The feature id for the '<em><b>Internal SC Chart</b></em>' reference.
@@ -3830,6 +3912,27 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getInitilalSuperStateView_InternalInitilalSuperState();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.FinalSuperStateView <em>Final Super State View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Final Super State View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.FinalSuperStateView
+	 * @generated
+	 */
+	EClass getFinalSuperStateView();
+
+	/**
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.FinalSuperStateView#getInternalFinalSuperState <em>Internal Final Super State</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Internal Final Super State</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.FinalSuperStateView#getInternalFinalSuperState()
+	 * @see #getFinalSuperStateView()
+	 * @generated
+	 */
+	EReference getFinalSuperStateView_InternalFinalSuperState();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.DeclarationView <em>Declaration View</em>}'.
@@ -6227,6 +6330,24 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference INITILAL_SUPER_STATE_VIEW__INTERNAL_INITILAL_SUPER_STATE = eINSTANCE.getInitilalSuperStateView_InternalInitilalSuperState();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.FinalSuperStateViewImpl <em>Final Super State View</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.FinalSuperStateViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getFinalSuperStateView()
+		 * @generated
+		 */
+		EClass FINAL_SUPER_STATE_VIEW = eINSTANCE.getFinalSuperStateView();
+
+		/**
+		 * The meta object literal for the '<em><b>Internal Final Super State</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FINAL_SUPER_STATE_VIEW__INTERNAL_FINAL_SUPER_STATE = eINSTANCE.getFinalSuperStateView_InternalFinalSuperState();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.DeclarationViewImpl <em>Declaration View</em>}' class.

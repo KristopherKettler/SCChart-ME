@@ -61,6 +61,7 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.DATA_FLOW_REGION_VIEW: return createDataFlowRegionView();
 			case ViewsPackage.SUPER_STATE_VIEW: return createSuperStateView();
 			case ViewsPackage.INITILAL_SUPER_STATE_VIEW: return createInitilalSuperStateView();
+			case ViewsPackage.FINAL_SUPER_STATE_VIEW: return createFinalSuperStateView();
 			case ViewsPackage.DECLARATION_VIEW: return createDeclarationView();
 			case ViewsPackage.SUSPEND_VIEW: return createSuspendView();
 			case ViewsPackage.ACTION_VIEW: return createActionView();
@@ -151,6 +152,17 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public InitilalSuperStateView createInitilalSuperStateView() {
 		InitilalSuperStateViewImpl initilalSuperStateView = new InitilalSuperStateViewImpl();
 		return initilalSuperStateView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FinalSuperStateView createFinalSuperStateView() {
+		FinalSuperStateViewImpl finalSuperStateView = new FinalSuperStateViewImpl();
+		return finalSuperStateView;
 	}
 
 	/**

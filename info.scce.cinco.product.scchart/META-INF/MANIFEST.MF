@@ -21,15 +21,14 @@ Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,de.jabc.cinco
  abc.cinco.meta.plugin.event.api
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-11
-Export-Package: info.scce.cinco.pr
- oduct.scchart.mglid.adapter,info.scce.cinco.product.scchart.mglid.facto
- ry,info.scce.cinco.product.scchart.mglid.scchart,info.scce.cinco.produc
- t.scchart.mglid.scchart.impl,info.scce.cinco.product.scchart.mglid.scch
- art.internal,info.scce.cinco.product.scchart.mglid.scchart.internal.imp
- l,info.scce.cinco.product.scchart.mglid.scchart.internal.util,info.scce
- .cinco.product.scchart.mglid.scchart.util,info.scce.cinco.product.sccha
- rt.mglid.scchart.views,info.scce.cinco.product.scchart.mglid.scchart.vi
- ews.impl,info.scce.cinco.product.scchart.mglid.scchart.views.util,info.
- scce.cinco.product.scchart.perspective,info.scce.cinco.product.scchart.
- provider
+Export-Package: info.scce.cinco.product.scchart.mglid.adapter,info.scce.
+ cinco.product.scchart.mglid.factory,info.scce.cinco.product.scchart.mgl
+ id.scchart,info.scce.cinco.product.scchart.mglid.scchart.impl,info.scce
+ .cinco.product.scchart.mglid.scchart.internal,info.scce.cinco.product.s
+ cchart.mglid.scchart.internal.impl,info.scce.cinco.product.scchart.mgli
+ d.scchart.internal.util,info.scce.cinco.product.scchart.mglid.scchart.u
+ til,info.scce.cinco.product.scchart.mglid.scchart.views,info.scce.cinco
+ .product.scchart.mglid.scchart.views.impl,info.scce.cinco.product.sccha
+ rt.mglid.scchart.views.util,info.scce.cinco.product.scchart.perspective
+ ,info.scce.cinco.product.scchart.provider
 

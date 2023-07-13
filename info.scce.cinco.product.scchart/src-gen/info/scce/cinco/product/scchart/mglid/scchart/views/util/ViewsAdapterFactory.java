@@ -88,6 +88,10 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 				return createInitilalSuperStateViewAdapter();
 			}
 			@Override
+			public Adapter caseFinalSuperStateView(FinalSuperStateView object) {
+				return createFinalSuperStateViewAdapter();
+			}
+			@Override
 			public Adapter caseDeclarationView(DeclarationView object) {
 				return createDeclarationViewAdapter();
 			}
@@ -302,6 +306,20 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInitilalSuperStateViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.FinalSuperStateView <em>Final Super State View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.FinalSuperStateView
+	 * @generated
+	 */
+	public Adapter createFinalSuperStateViewAdapter() {
 		return null;
 	}
 

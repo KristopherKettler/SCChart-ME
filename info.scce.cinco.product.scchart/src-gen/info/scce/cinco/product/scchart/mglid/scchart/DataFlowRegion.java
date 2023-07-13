@@ -149,7 +149,7 @@ public interface DataFlowRegion extends Region {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<SimpleState> getSimpleStates();
+	EList<Output> getOutputs();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -157,7 +157,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewSimpleState();
+	boolean canNewOutput();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -165,7 +165,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SimpleState newSimpleState(int x, int y);
+	Output newOutput(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,7 +173,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SimpleState newSimpleState(String id, int x, int y);
+	Output newOutput(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -181,7 +181,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SimpleState newSimpleState(int x, int y, int width, int height);
+	Output newOutput(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -189,7 +189,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SimpleState newSimpleState(String id, int x, int y, int width, int height);
+	Output newOutput(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -293,7 +293,7 @@ public interface DataFlowRegion extends Region {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<CircuitConnecter> getCircuitConnecters();
+	EList<InitilalSuperState> getInitilalSuperStates();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -301,7 +301,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewCircuitConnecter();
+	boolean canNewInitilalSuperState();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -309,7 +309,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	CircuitConnecter newCircuitConnecter(int x, int y);
+	InitilalSuperState newInitilalSuperState(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -317,7 +317,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	CircuitConnecter newCircuitConnecter(String id, int x, int y);
+	InitilalSuperState newInitilalSuperState(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -325,7 +325,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	CircuitConnecter newCircuitConnecter(int x, int y, int width, int height);
+	InitilalSuperState newInitilalSuperState(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -333,7 +333,55 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	CircuitConnecter newCircuitConnecter(String id, int x, int y, int width, int height);
+	InitilalSuperState newInitilalSuperState(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<FinalSuperState> getFinalSuperStates();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewFinalSuperState();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	FinalSuperState newFinalSuperState(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	FinalSuperState newFinalSuperState(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	FinalSuperState newFinalSuperState(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	FinalSuperState newFinalSuperState(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -389,6 +437,102 @@ public interface DataFlowRegion extends Region {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	EList<CircuitConnecter> getCircuitConnecters();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewCircuitConnecter();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	CircuitConnecter newCircuitConnecter(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	CircuitConnecter newCircuitConnecter(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	CircuitConnecter newCircuitConnecter(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	CircuitConnecter newCircuitConnecter(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<SimpleState> getSimpleStates();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewSimpleState();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SimpleState newSimpleState(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SimpleState newSimpleState(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SimpleState newSimpleState(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SimpleState newSimpleState(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	EList<InitialState> getInitialStates();
 
 	/**
@@ -437,54 +581,6 @@ public interface DataFlowRegion extends Region {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<InitilalSuperState> getInitilalSuperStates();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewInitilalSuperState();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	InitilalSuperState newInitilalSuperState(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	InitilalSuperState newInitilalSuperState(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	InitilalSuperState newInitilalSuperState(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	InitilalSuperState newInitilalSuperState(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
 	EList<Input> getInputs();
 
 	/**
@@ -526,54 +622,6 @@ public interface DataFlowRegion extends Region {
 	 * @generated
 	 */
 	Input newInput(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<Output> getOutputs();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewOutput();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	Output newOutput(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	Output newOutput(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	Output newOutput(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	Output newOutput(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -686,6 +734,30 @@ public interface DataFlowRegion extends Region {
 	 * @generated
 	 */
 	void s_moveTo(InitilalSuperState initilalSuperState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" finalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	boolean canMoveTo(FinalSuperState finalSuperState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model finalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void moveTo(FinalSuperState finalSuperState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model finalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void s_moveTo(FinalSuperState finalSuperState, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->

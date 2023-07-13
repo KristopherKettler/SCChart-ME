@@ -134,6 +134,25 @@ nodeStyle initialSuperStateStyle (1) {
 	}
 }
 
+nodeStyle finalSuperStateStyle (1) {
+	roundedRectangle {
+		appearance finalStateOuterCircle
+		size(140,80)
+		corner(15,15)
+		roundedRectangle {
+			appearance superStateAppearance
+			position (CENTER,MIDDLE)
+			size(134,74)
+			corner(15,15)
+			text {
+				appearance textFont
+				position (CENTER,TOP 3)
+				value "%1$s"
+			}
+		}
+	}
+}
+
 nodeStyle declarationStyle(2){
 	rectangle {
 		appearance declarationAppearance

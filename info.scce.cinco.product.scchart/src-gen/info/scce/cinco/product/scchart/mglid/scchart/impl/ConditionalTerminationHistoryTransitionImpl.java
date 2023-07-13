@@ -10,6 +10,7 @@ import graphmodel.Node;
 
 import info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationHistoryTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
@@ -294,6 +295,26 @@ public class ConditionalTerminationHistoryTransitionImpl extends AbstractTransit
 	 * @generated
 	 */
 	@Override
+	public boolean canReconnectSource(final FinalSuperState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final FinalSuperState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean canReconnectSource(final RootState source) {
 		return source.canStart(this.getClass());
 	}
@@ -345,6 +366,26 @@ public class ConditionalTerminationHistoryTransitionImpl extends AbstractTransit
 	 */
 	@Override
 	public void reconnectTarget(final InitilalSuperState target) {
+		this.setTargetElement(target);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectTarget(final FinalSuperState target) {
+		return target.canEnd(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectTarget(final FinalSuperState target) {
 		this.setTargetElement(target);
 	}
 
@@ -472,6 +513,11 @@ public class ConditionalTerminationHistoryTransitionImpl extends AbstractTransit
 			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE:
 				reconnectSource((InitilalSuperState)arguments.get(0));
 				return null;
+			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__FINALSUPERSTATE:
+				return canReconnectSource((FinalSuperState)arguments.get(0));
+			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__FINALSUPERSTATE:
+				reconnectSource((FinalSuperState)arguments.get(0));
+				return null;
 			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
 				return canReconnectSource((RootState)arguments.get(0));
 			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
@@ -486,6 +532,11 @@ public class ConditionalTerminationHistoryTransitionImpl extends AbstractTransit
 				return canReconnectTarget((InitilalSuperState)arguments.get(0));
 			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
 				reconnectTarget((InitilalSuperState)arguments.get(0));
+				return null;
+			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_TARGET__FINALSUPERSTATE:
+				return canReconnectTarget((FinalSuperState)arguments.get(0));
+			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___RECONNECT_TARGET__FINALSUPERSTATE:
+				reconnectTarget((FinalSuperState)arguments.get(0));
 				return null;
 			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION___GET_CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW:
 				return getConditionalTerminationHistoryTransitionView();

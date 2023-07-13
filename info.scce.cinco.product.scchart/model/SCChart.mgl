@@ -46,13 +46,21 @@ container SuperState {
 }
 
 @palette("SuperStates")
-@event("info.scce.cinco.product.scchart.events.InitilalSuperStateEvent")
 container InitilalSuperState extends SuperState{
 	style initialSuperStateStyle ("${empty label ? name : label}")
 	containableElements(Region,Declaration,Action,Suspend)
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 	outgoingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 }
+
+@palette("SuperStates")
+container FinalSuperState extends SuperState{
+	style finalSuperStateStyle ("${empty label ? name : label}")
+	containableElements(Region,Declaration,Action,Suspend)
+	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
+	outgoingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
+}
+
 
 @palette("Declaration")
 @disable(move,resize)
@@ -70,7 +78,7 @@ node Declaration {
 	@propertiesViewHidden
 	attr EString as uuid
 }
-
+ 
 @palette("Declaration")
 @disable(move,resize)
 @event("info.scce.cinco.product.scchart.events.SuspendEvent")

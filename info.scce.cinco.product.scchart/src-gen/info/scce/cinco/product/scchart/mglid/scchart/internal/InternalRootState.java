@@ -10,6 +10,7 @@ import graphmodel.internal.InternalContainer;
 import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.Operator;
@@ -113,6 +114,14 @@ public interface InternalRootState extends InternalContainer {
 	 * @generated
 	 */
 	EList<InitilalSuperState> getInitilalSuperStateSuccessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<FinalSuperState> getFinalSuperStateSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->

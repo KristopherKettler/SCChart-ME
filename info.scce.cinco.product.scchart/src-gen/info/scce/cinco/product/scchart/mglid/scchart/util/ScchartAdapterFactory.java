@@ -96,6 +96,10 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 				return createInitilalSuperStateAdapter();
 			}
 			@Override
+			public Adapter caseFinalSuperState(FinalSuperState object) {
+				return createFinalSuperStateAdapter();
+			}
+			@Override
 			public Adapter caseDeclaration(Declaration object) {
 				return createDeclarationAdapter();
 			}
@@ -338,6 +342,20 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInitilalSuperStateAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState <em>Final Super State</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState
+	 * @generated
+	 */
+	public Adapter createFinalSuperStateAdapter() {
 		return null;
 	}
 

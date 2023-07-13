@@ -8,3 +8,6 @@
 /.SCChartEvent.java._trace
 /.SuperStateEvent.java._trace
 /.SuspendEvent.java._trace
+/.DeclarationEvent.xtendbin
+/DeclarationEvent.java
+/.FinalSuperStateEvent.java._trace

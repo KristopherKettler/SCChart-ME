@@ -131,6 +131,18 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ScchartPackage.FINAL_SUPER_STATE: {
+				FinalSuperState finalSuperState = (FinalSuperState)theEObject;
+				T result = caseFinalSuperState(finalSuperState);
+				if (result == null) result = caseSuperState(finalSuperState);
+				if (result == null) result = caseContainer(finalSuperState);
+				if (result == null) result = caseModelElementContainer(finalSuperState);
+				if (result == null) result = caseNode(finalSuperState);
+				if (result == null) result = caseModelElement(finalSuperState);
+				if (result == null) result = caseIdentifiableElement(finalSuperState);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ScchartPackage.DECLARATION: {
 				Declaration declaration = (Declaration)theEObject;
 				T result = caseDeclaration(declaration);
@@ -515,6 +527,21 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInitilalSuperState(InitilalSuperState object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Final Super State</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Final Super State</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFinalSuperState(FinalSuperState object) {
 		return null;
 	}
 

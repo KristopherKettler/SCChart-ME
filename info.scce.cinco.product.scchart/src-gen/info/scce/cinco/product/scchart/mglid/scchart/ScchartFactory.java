@@ -67,6 +67,15 @@ public interface ScchartFactory extends EFactory {
 	InitilalSuperState createInitilalSuperState();
 
 	/**
+	 * Returns a new object of class '<em>Final Super State</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Final Super State</em>'.
+	 * @generated
+	 */
+	FinalSuperState createFinalSuperState();
+
+	/**
 	 * Returns a new object of class '<em>Declaration</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

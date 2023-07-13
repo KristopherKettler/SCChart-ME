@@ -8,23 +8,23 @@ import info.scce.cinco.product.scchart.mglid.scchart.Declaration
 
 /* 
  * About this class:
- * - This is a default implementation for info.scce.cinco.product.scchart.mglid.scchart.event.declarationEvent.
+ * - This is a default implementation for info.scce.cinco.product.scchart.mglid.scchart.event.DeclarationEvent.
  * - This class was generated, because you added an "@event" annotation to
- *   Node "declaration" in "SCChart.mgl".
+ *   Node "Declaration" in "SCChart.mgl".
  * - This file will not be overwritten on future generation processes.
  * 
  * Available event methods:
- * - preCreate(Class<? extends declaration> elementClass, ModelElementContainer container, int x, int y, int width, int height)
- * - preDelete(declaration element)
- * - preMove(declaration element, ModelElementContainer newContainer, int newX, int newY)
- * - preResize(declaration element, int newWidth, int newHeight, int newX, int newY, Direction direction)
- * - postAttributeChange(declaration element, String attribute, Object oldValue)
- * - postCreate(declaration element)
- * - postDelete(declaration element)
- * - postDoubleClick(declaration element)
- * - postMove(declaration element, ModelElementContainer oldContainer, int oldX, int oldY)
- * - postResize(declaration element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction)
- * - postSelect(declaration element)
+ * - preCreate(Class<? extends Declaration> elementClass, ModelElementContainer container, int x, int y, int width, int height)
+ * - preDelete(Declaration element)
+ * - preMove(Declaration element, ModelElementContainer newContainer, int newX, int newY)
+ * - preResize(Declaration element, int newWidth, int newHeight, int newX, int newY, Direction direction)
+ * - postAttributeChange(Declaration element, String attribute, Object oldValue)
+ * - postCreate(Declaration element)
+ * - postDelete(Declaration element)
+ * - postDoubleClick(Declaration element)
+ * - postMove(Declaration element, ModelElementContainer oldContainer, int oldX, int oldY)
+ * - postResize(Declaration element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction)
+ * - postSelect(Declaration element)
  */
 final class DeclarationEvent extends info.scce.cinco.product.scchart.mglid.scchart.event.DeclarationEvent {
 	

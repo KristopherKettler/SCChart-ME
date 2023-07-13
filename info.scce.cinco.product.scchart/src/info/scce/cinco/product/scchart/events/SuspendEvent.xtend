@@ -52,7 +52,7 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 	
 	override postCreate(Suspend element) {
 		element.uuid=UUID.randomUUID.toString
-		var boolean break= false
+		var boolean continue= false
 		for(suspend : element.rootElement.rootStates.head.suspends){
 			if(suspend.uuid==element.uuid){
 				var int declarationCount = 0
@@ -65,6 +65,7 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 					element.rootElement.rootStates.head.suspends.get(i).width=element.rootElement.rootStates.head.width-20
 					element.rootElement.rootStates.head.suspends.get(i).height=13
 				}
+				//if()
 				if(element.rootElement.rootStates.head.regions!==null){
 					for(region : element.rootElement.rootStates.head.regions){
 						if(region.y<element.rootElement.rootStates.head.suspends.last.y+13){
@@ -75,10 +76,10 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 						}
 					}
 				}
-				break = true
+				continue = true
 			}
 		}
-		if(!break){
+		if(!continue){
 			for(region : element.rootElement.rootStates.head.regions){
 				if(region.superStates !== null){
 					for(superState : region.superStates){
@@ -90,7 +91,7 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 	}
 	
 	def postCreateSuspend(SuperState superState, Suspend suspend){
-		var boolean break = false
+		var boolean continue = false
 		if(superState.suspends !== null){
 			for(suspendList : superState.suspends){
 				if(suspendList.uuid==suspend.uuid){
@@ -114,11 +115,11 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 							}
 						}
 					}
-					break = true
+					continue = true
 				}
 			}
 		}
-		if(!break && superState.regions!==null){
+		if(!continue && superState.regions!==null){
 			for(region : superState.regions){
 				if(region.superStates !== null){
 					for(superStateList: region.superStates){

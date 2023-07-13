@@ -391,13 +391,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_ROOT_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 3;
 
 	/**
+	 * The operation id for the '<em>Get Final Super State Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ROOT_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 4;
+
+	/**
 	 * The operation id for the '<em>Get Simple State Successors</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE___GET_SIMPLE_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 4;
+	int INTERNAL_ROOT_STATE___GET_SIMPLE_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 5;
 
 	/**
 	 * The operation id for the '<em>Get Initial State Successors</em>' operation.
@@ -406,7 +415,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE___GET_INITIAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 5;
+	int INTERNAL_ROOT_STATE___GET_INITIAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 6;
 
 	/**
 	 * The operation id for the '<em>Get Final State Successors</em>' operation.
@@ -415,7 +424,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE___GET_FINAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 6;
+	int INTERNAL_ROOT_STATE___GET_FINAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Get Connector Successors</em>' operation.
@@ -424,7 +433,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE___GET_CONNECTOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 7;
+	int INTERNAL_ROOT_STATE___GET_CONNECTOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 8;
 
 	/**
 	 * The operation id for the '<em>Get Output Successors</em>' operation.
@@ -433,7 +442,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE___GET_OUTPUT_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 8;
+	int INTERNAL_ROOT_STATE___GET_OUTPUT_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Get Operator Successors</em>' operation.
@@ -442,7 +451,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE___GET_OPERATOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 9;
+	int INTERNAL_ROOT_STATE___GET_OPERATOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 10;
 
 	/**
 	 * The operation id for the '<em>Get Circuit Connecter Successors</em>' operation.
@@ -451,7 +460,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE___GET_CIRCUIT_CONNECTER_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 10;
+	int INTERNAL_ROOT_STATE___GET_CIRCUIT_CONNECTER_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 11;
 
 	/**
 	 * The number of operations of the '<em>Root State</em>' class.
@@ -460,7 +469,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 11;
+	int INTERNAL_ROOT_STATE_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRegionImpl <em>Region</em>}' class.
@@ -1474,13 +1483,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_SUPER_STATE___GET_INITILAL_SUPER_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 5;
 
 	/**
+	 * The operation id for the '<em>Get Final Super State Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUPER_STATE___GET_FINAL_SUPER_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 6;
+
+	/**
 	 * The operation id for the '<em>Get Simple State Predecessors</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE___GET_SIMPLE_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 6;
+	int INTERNAL_SUPER_STATE___GET_SIMPLE_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Get Initial State Predecessors</em>' operation.
@@ -1489,7 +1507,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE___GET_INITIAL_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 7;
+	int INTERNAL_SUPER_STATE___GET_INITIAL_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 8;
 
 	/**
 	 * The operation id for the '<em>Get Final State Predecessors</em>' operation.
@@ -1498,7 +1516,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE___GET_FINAL_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 8;
+	int INTERNAL_SUPER_STATE___GET_FINAL_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Get Connector Predecessors</em>' operation.
@@ -1507,7 +1525,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE___GET_CONNECTOR_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 9;
+	int INTERNAL_SUPER_STATE___GET_CONNECTOR_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 10;
 
 	/**
 	 * The operation id for the '<em>Get Super State Successors</em>' operation.
@@ -1516,7 +1534,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE___GET_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 10;
+	int INTERNAL_SUPER_STATE___GET_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 11;
 
 	/**
 	 * The operation id for the '<em>Get Initilal Super State Successors</em>' operation.
@@ -1525,7 +1543,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 11;
+	int INTERNAL_SUPER_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 12;
+
+	/**
+	 * The operation id for the '<em>Get Final Super State Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUPER_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 13;
 
 	/**
 	 * The operation id for the '<em>Get Simple State Successors</em>' operation.
@@ -1534,7 +1561,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE___GET_SIMPLE_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 12;
+	int INTERNAL_SUPER_STATE___GET_SIMPLE_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 14;
 
 	/**
 	 * The operation id for the '<em>Get Initial State Successors</em>' operation.
@@ -1543,7 +1570,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE___GET_INITIAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 13;
+	int INTERNAL_SUPER_STATE___GET_INITIAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Get Final State Successors</em>' operation.
@@ -1552,7 +1579,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE___GET_FINAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 14;
+	int INTERNAL_SUPER_STATE___GET_FINAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 16;
 
 	/**
 	 * The operation id for the '<em>Get Connector Successors</em>' operation.
@@ -1561,7 +1588,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE___GET_CONNECTOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 15;
+	int INTERNAL_SUPER_STATE___GET_CONNECTOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 17;
 
 	/**
 	 * The number of operations of the '<em>Super State</em>' class.
@@ -1570,7 +1597,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 16;
+	int INTERNAL_SUPER_STATE_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 18;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalInitilalSuperStateImpl <em>Initilal Super State</em>}' class.
@@ -1916,13 +1943,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_INITILAL_SUPER_STATE___GET_INITILAL_SUPER_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 5;
 
 	/**
+	 * The operation id for the '<em>Get Final Super State Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITILAL_SUPER_STATE___GET_FINAL_SUPER_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 6;
+
+	/**
 	 * The operation id for the '<em>Get Simple State Predecessors</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITILAL_SUPER_STATE___GET_SIMPLE_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 6;
+	int INTERNAL_INITILAL_SUPER_STATE___GET_SIMPLE_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Get Initial State Predecessors</em>' operation.
@@ -1931,7 +1967,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITILAL_SUPER_STATE___GET_INITIAL_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 7;
+	int INTERNAL_INITILAL_SUPER_STATE___GET_INITIAL_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 8;
 
 	/**
 	 * The operation id for the '<em>Get Final State Predecessors</em>' operation.
@@ -1940,7 +1976,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITILAL_SUPER_STATE___GET_FINAL_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 8;
+	int INTERNAL_INITILAL_SUPER_STATE___GET_FINAL_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Get Connector Predecessors</em>' operation.
@@ -1949,7 +1985,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITILAL_SUPER_STATE___GET_CONNECTOR_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 9;
+	int INTERNAL_INITILAL_SUPER_STATE___GET_CONNECTOR_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 10;
 
 	/**
 	 * The operation id for the '<em>Get Super State Successors</em>' operation.
@@ -1958,7 +1994,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITILAL_SUPER_STATE___GET_SUPER_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 10;
+	int INTERNAL_INITILAL_SUPER_STATE___GET_SUPER_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 11;
 
 	/**
 	 * The operation id for the '<em>Get Initilal Super State Successors</em>' operation.
@@ -1967,7 +2003,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITILAL_SUPER_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 11;
+	int INTERNAL_INITILAL_SUPER_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 12;
+
+	/**
+	 * The operation id for the '<em>Get Final Super State Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITILAL_SUPER_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 13;
 
 	/**
 	 * The operation id for the '<em>Get Simple State Successors</em>' operation.
@@ -1976,7 +2021,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITILAL_SUPER_STATE___GET_SIMPLE_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 12;
+	int INTERNAL_INITILAL_SUPER_STATE___GET_SIMPLE_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 14;
 
 	/**
 	 * The operation id for the '<em>Get Initial State Successors</em>' operation.
@@ -1985,7 +2030,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITILAL_SUPER_STATE___GET_INITIAL_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 13;
+	int INTERNAL_INITILAL_SUPER_STATE___GET_INITIAL_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Get Final State Successors</em>' operation.
@@ -1994,7 +2039,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITILAL_SUPER_STATE___GET_FINAL_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 14;
+	int INTERNAL_INITILAL_SUPER_STATE___GET_FINAL_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 16;
 
 	/**
 	 * The operation id for the '<em>Get Connector Successors</em>' operation.
@@ -2003,7 +2048,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITILAL_SUPER_STATE___GET_CONNECTOR_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 15;
+	int INTERNAL_INITILAL_SUPER_STATE___GET_CONNECTOR_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 17;
 
 	/**
 	 * The number of operations of the '<em>Initilal Super State</em>' class.
@@ -2012,7 +2057,467 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITILAL_SUPER_STATE_OPERATION_COUNT = INTERNAL_SUPER_STATE_OPERATION_COUNT + 16;
+	int INTERNAL_INITILAL_SUPER_STATE_OPERATION_COUNT = INTERNAL_SUPER_STATE_OPERATION_COUNT + 18;
+
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalFinalSuperStateImpl <em>Final Super State</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalFinalSuperStateImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalFinalSuperState()
+	 * @generated
+	 */
+	int INTERNAL_FINAL_SUPER_STATE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE__ID = INTERNAL_SUPER_STATE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE__CONTAINER = INTERNAL_SUPER_STATE__CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>Element</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE__ELEMENT = INTERNAL_SUPER_STATE__ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>X</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE__X = INTERNAL_SUPER_STATE__X;
+
+	/**
+	 * The feature id for the '<em><b>Y</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE__Y = INTERNAL_SUPER_STATE__Y;
+
+	/**
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE__HEIGHT = INTERNAL_SUPER_STATE__HEIGHT;
+
+	/**
+	 * The feature id for the '<em><b>Width</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE__WIDTH = INTERNAL_SUPER_STATE__WIDTH;
+
+	/**
+	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE__INCOMING = INTERNAL_SUPER_STATE__INCOMING;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE__OUTGOING = INTERNAL_SUPER_STATE__OUTGOING;
+
+	/**
+	 * The feature id for the '<em><b>Model Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE__MODEL_ELEMENTS = INTERNAL_SUPER_STATE__MODEL_ELEMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE__NAME = INTERNAL_SUPER_STATE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Label</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE__LABEL = INTERNAL_SUPER_STATE__LABEL;
+
+	/**
+	 * The number of structural features of the '<em>Final Super State</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE_FEATURE_COUNT = INTERNAL_SUPER_STATE_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Equals</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___EQUALS__OBJECT = INTERNAL_SUPER_STATE___EQUALS__OBJECT;
+
+	/**
+	 * The operation id for the '<em>Hash Code</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___HASH_CODE = INTERNAL_SUPER_STATE___HASH_CODE;
+
+	/**
+	 * The operation id for the '<em>Save</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___SAVE = INTERNAL_SUPER_STATE___SAVE;
+
+	/**
+	 * The operation id for the '<em>Get Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_ELEMENT = INTERNAL_SUPER_STATE___GET_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Root Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_ROOT_ELEMENT = INTERNAL_SUPER_STATE___GET_ROOT_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_SUCCESSORS = INTERNAL_SUPER_STATE___GET_SUCCESSORS;
+
+	/**
+	 * The operation id for the '<em>Get Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_SUCCESSORS__CLASS = INTERNAL_SUPER_STATE___GET_SUCCESSORS__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_PREDECESSORS = INTERNAL_SUPER_STATE___GET_PREDECESSORS;
+
+	/**
+	 * The operation id for the '<em>Get Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_PREDECESSORS__CLASS = INTERNAL_SUPER_STATE___GET_PREDECESSORS__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Incoming</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_INCOMING__CLASS = INTERNAL_SUPER_STATE___GET_INCOMING__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Outgoing</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_OUTGOING__CLASS = INTERNAL_SUPER_STATE___GET_OUTGOING__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Connect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___CAN_CONNECT__EDGE_NODE = INTERNAL_SUPER_STATE___CAN_CONNECT__EDGE_NODE;
+
+	/**
+	 * The operation id for the '<em>Can Start</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___CAN_START__CLASS = INTERNAL_SUPER_STATE___CAN_START__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___CAN_END__CLASS = INTERNAL_SUPER_STATE___CAN_END__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Contain</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___CAN_CONTAIN__CLASS = INTERNAL_SUPER_STATE___CAN_CONTAIN__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Contain Nodes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___CAN_CONTAIN_NODES__ELIST = INTERNAL_SUPER_STATE___CAN_CONTAIN_NODES__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Container Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_CONTAINER_ELEMENT = INTERNAL_SUPER_STATE___GET_CONTAINER_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Can Contain</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___CAN_CONTAIN__ELIST = INTERNAL_SUPER_STATE___CAN_CONTAIN__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Containment Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_CONTAINMENT_CONSTRAINTS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Get Incoming Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_INCOMING_CONSTRAINTS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Outgoing Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_OUTGOING_CONSTRAINTS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Get Root State Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_ROOT_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Get Super State Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_SUPER_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Get Initilal Super State Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_INITILAL_SUPER_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Get Final Super State Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_FINAL_SUPER_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 6;
+
+	/**
+	 * The operation id for the '<em>Get Simple State Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_SIMPLE_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 7;
+
+	/**
+	 * The operation id for the '<em>Get Initial State Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_INITIAL_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 8;
+
+	/**
+	 * The operation id for the '<em>Get Final State Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_FINAL_STATE_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 9;
+
+	/**
+	 * The operation id for the '<em>Get Connector Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_CONNECTOR_PREDECESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 10;
+
+	/**
+	 * The operation id for the '<em>Get Super State Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_SUPER_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 11;
+
+	/**
+	 * The operation id for the '<em>Get Initilal Super State Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 12;
+
+	/**
+	 * The operation id for the '<em>Get Final Super State Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 13;
+
+	/**
+	 * The operation id for the '<em>Get Simple State Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_SIMPLE_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 14;
+
+	/**
+	 * The operation id for the '<em>Get Initial State Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_INITIAL_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 15;
+
+	/**
+	 * The operation id for the '<em>Get Final State Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_FINAL_STATE_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 16;
+
+	/**
+	 * The operation id for the '<em>Get Connector Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE___GET_CONNECTOR_SUCCESSORS = INTERNAL_SUPER_STATE_OPERATION_COUNT + 17;
+
+	/**
+	 * The number of operations of the '<em>Final Super State</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE_OPERATION_COUNT = INTERNAL_SUPER_STATE_OPERATION_COUNT + 18;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDeclarationImpl <em>Declaration</em>}' class.
@@ -2022,7 +2527,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalDeclaration()
 	 * @generated
 	 */
-	int INTERNAL_DECLARATION = 5;
+	int INTERNAL_DECLARATION = 6;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2338,7 +2843,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSuspend()
 	 * @generated
 	 */
-	int INTERNAL_SUSPEND = 6;
+	int INTERNAL_SUSPEND = 7;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2618,7 +3123,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalAction()
 	 * @generated
 	 */
-	int INTERNAL_ACTION = 7;
+	int INTERNAL_ACTION = 8;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2907,7 +3412,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSimpleState()
 	 * @generated
 	 */
-	int INTERNAL_SIMPLE_STATE = 8;
+	int INTERNAL_SIMPLE_STATE = 9;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3189,13 +3694,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_SIMPLE_STATE___GET_INITILAL_SUPER_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 4;
 
 	/**
+	 * The operation id for the '<em>Get Final Super State Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SIMPLE_STATE___GET_FINAL_SUPER_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 5;
+
+	/**
 	 * The operation id for the '<em>Get Simple State Predecessors</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SIMPLE_STATE___GET_SIMPLE_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 5;
+	int INTERNAL_SIMPLE_STATE___GET_SIMPLE_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 6;
 
 	/**
 	 * The operation id for the '<em>Get Initial State Predecessors</em>' operation.
@@ -3204,7 +3718,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SIMPLE_STATE___GET_INITIAL_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 6;
+	int INTERNAL_SIMPLE_STATE___GET_INITIAL_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Get Final State Predecessors</em>' operation.
@@ -3213,7 +3727,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SIMPLE_STATE___GET_FINAL_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 7;
+	int INTERNAL_SIMPLE_STATE___GET_FINAL_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 8;
 
 	/**
 	 * The operation id for the '<em>Get Connector Predecessors</em>' operation.
@@ -3222,7 +3736,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SIMPLE_STATE___GET_CONNECTOR_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 8;
+	int INTERNAL_SIMPLE_STATE___GET_CONNECTOR_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Get Super State Successors</em>' operation.
@@ -3231,7 +3745,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SIMPLE_STATE___GET_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 9;
+	int INTERNAL_SIMPLE_STATE___GET_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 10;
 
 	/**
 	 * The operation id for the '<em>Get Initilal Super State Successors</em>' operation.
@@ -3240,7 +3754,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SIMPLE_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 10;
+	int INTERNAL_SIMPLE_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 11;
+
+	/**
+	 * The operation id for the '<em>Get Final Super State Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SIMPLE_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 12;
 
 	/**
 	 * The operation id for the '<em>Get Simple State Successors</em>' operation.
@@ -3249,7 +3772,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SIMPLE_STATE___GET_SIMPLE_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 11;
+	int INTERNAL_SIMPLE_STATE___GET_SIMPLE_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 13;
 
 	/**
 	 * The operation id for the '<em>Get Initial State Successors</em>' operation.
@@ -3258,7 +3781,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SIMPLE_STATE___GET_INITIAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 12;
+	int INTERNAL_SIMPLE_STATE___GET_INITIAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 14;
 
 	/**
 	 * The operation id for the '<em>Get Final State Successors</em>' operation.
@@ -3267,7 +3790,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SIMPLE_STATE___GET_FINAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 13;
+	int INTERNAL_SIMPLE_STATE___GET_FINAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Get Connector Successors</em>' operation.
@@ -3276,7 +3799,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SIMPLE_STATE___GET_CONNECTOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 14;
+	int INTERNAL_SIMPLE_STATE___GET_CONNECTOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 16;
 
 	/**
 	 * The number of operations of the '<em>Simple State</em>' class.
@@ -3285,7 +3808,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SIMPLE_STATE_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 15;
+	int INTERNAL_SIMPLE_STATE_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 17;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalInitialStateImpl <em>Initial State</em>}' class.
@@ -3295,7 +3818,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalInitialState()
 	 * @generated
 	 */
-	int INTERNAL_INITIAL_STATE = 9;
+	int INTERNAL_INITIAL_STATE = 10;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3577,13 +4100,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_INITIAL_STATE___GET_INITILAL_SUPER_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 4;
 
 	/**
+	 * The operation id for the '<em>Get Final Super State Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_STATE___GET_FINAL_SUPER_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 5;
+
+	/**
 	 * The operation id for the '<em>Get Simple State Predecessors</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITIAL_STATE___GET_SIMPLE_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 5;
+	int INTERNAL_INITIAL_STATE___GET_SIMPLE_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 6;
 
 	/**
 	 * The operation id for the '<em>Get Initial State Predecessors</em>' operation.
@@ -3592,7 +4124,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITIAL_STATE___GET_INITIAL_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 6;
+	int INTERNAL_INITIAL_STATE___GET_INITIAL_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Get Final State Predecessors</em>' operation.
@@ -3601,7 +4133,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITIAL_STATE___GET_FINAL_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 7;
+	int INTERNAL_INITIAL_STATE___GET_FINAL_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 8;
 
 	/**
 	 * The operation id for the '<em>Get Connector Predecessors</em>' operation.
@@ -3610,7 +4142,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITIAL_STATE___GET_CONNECTOR_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 8;
+	int INTERNAL_INITIAL_STATE___GET_CONNECTOR_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Get Super State Successors</em>' operation.
@@ -3619,7 +4151,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITIAL_STATE___GET_SUPER_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 9;
+	int INTERNAL_INITIAL_STATE___GET_SUPER_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 10;
 
 	/**
 	 * The operation id for the '<em>Get Initilal Super State Successors</em>' operation.
@@ -3628,7 +4160,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITIAL_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 10;
+	int INTERNAL_INITIAL_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 11;
+
+	/**
+	 * The operation id for the '<em>Get Final Super State Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 12;
 
 	/**
 	 * The operation id for the '<em>Get Simple State Successors</em>' operation.
@@ -3637,7 +4178,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITIAL_STATE___GET_SIMPLE_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 11;
+	int INTERNAL_INITIAL_STATE___GET_SIMPLE_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 13;
 
 	/**
 	 * The operation id for the '<em>Get Initial State Successors</em>' operation.
@@ -3646,7 +4187,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITIAL_STATE___GET_INITIAL_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 12;
+	int INTERNAL_INITIAL_STATE___GET_INITIAL_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 14;
 
 	/**
 	 * The operation id for the '<em>Get Final State Successors</em>' operation.
@@ -3655,7 +4196,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITIAL_STATE___GET_FINAL_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 13;
+	int INTERNAL_INITIAL_STATE___GET_FINAL_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Get Connector Successors</em>' operation.
@@ -3664,7 +4205,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITIAL_STATE___GET_CONNECTOR_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 14;
+	int INTERNAL_INITIAL_STATE___GET_CONNECTOR_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 16;
 
 	/**
 	 * The number of operations of the '<em>Initial State</em>' class.
@@ -3673,7 +4214,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITIAL_STATE_OPERATION_COUNT = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 15;
+	int INTERNAL_INITIAL_STATE_OPERATION_COUNT = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 17;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalFinalStateImpl <em>Final State</em>}' class.
@@ -3683,7 +4224,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalFinalState()
 	 * @generated
 	 */
-	int INTERNAL_FINAL_STATE = 10;
+	int INTERNAL_FINAL_STATE = 11;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3965,13 +4506,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_FINAL_STATE___GET_INITILAL_SUPER_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 4;
 
 	/**
+	 * The operation id for the '<em>Get Final Super State Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_STATE___GET_FINAL_SUPER_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 5;
+
+	/**
 	 * The operation id for the '<em>Get Simple State Predecessors</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_FINAL_STATE___GET_SIMPLE_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 5;
+	int INTERNAL_FINAL_STATE___GET_SIMPLE_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 6;
 
 	/**
 	 * The operation id for the '<em>Get Initial State Predecessors</em>' operation.
@@ -3980,7 +4530,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_FINAL_STATE___GET_INITIAL_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 6;
+	int INTERNAL_FINAL_STATE___GET_INITIAL_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Get Final State Predecessors</em>' operation.
@@ -3989,7 +4539,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_FINAL_STATE___GET_FINAL_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 7;
+	int INTERNAL_FINAL_STATE___GET_FINAL_STATE_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 8;
 
 	/**
 	 * The operation id for the '<em>Get Connector Predecessors</em>' operation.
@@ -3998,7 +4548,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_FINAL_STATE___GET_CONNECTOR_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 8;
+	int INTERNAL_FINAL_STATE___GET_CONNECTOR_PREDECESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Get Super State Successors</em>' operation.
@@ -4007,7 +4557,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_FINAL_STATE___GET_SUPER_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 9;
+	int INTERNAL_FINAL_STATE___GET_SUPER_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 10;
 
 	/**
 	 * The operation id for the '<em>Get Initilal Super State Successors</em>' operation.
@@ -4016,7 +4566,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_FINAL_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 10;
+	int INTERNAL_FINAL_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 11;
+
+	/**
+	 * The operation id for the '<em>Get Final Super State Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 12;
 
 	/**
 	 * The operation id for the '<em>Get Simple State Successors</em>' operation.
@@ -4025,7 +4584,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_FINAL_STATE___GET_SIMPLE_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 11;
+	int INTERNAL_FINAL_STATE___GET_SIMPLE_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 13;
 
 	/**
 	 * The operation id for the '<em>Get Initial State Successors</em>' operation.
@@ -4034,7 +4593,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_FINAL_STATE___GET_INITIAL_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 12;
+	int INTERNAL_FINAL_STATE___GET_INITIAL_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 14;
 
 	/**
 	 * The operation id for the '<em>Get Final State Successors</em>' operation.
@@ -4043,7 +4602,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_FINAL_STATE___GET_FINAL_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 13;
+	int INTERNAL_FINAL_STATE___GET_FINAL_STATE_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Get Connector Successors</em>' operation.
@@ -4052,7 +4611,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_FINAL_STATE___GET_CONNECTOR_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 14;
+	int INTERNAL_FINAL_STATE___GET_CONNECTOR_SUCCESSORS = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 16;
 
 	/**
 	 * The number of operations of the '<em>Final State</em>' class.
@@ -4061,7 +4620,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_FINAL_STATE_OPERATION_COUNT = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 15;
+	int INTERNAL_FINAL_STATE_OPERATION_COUNT = INTERNAL_SIMPLE_STATE_OPERATION_COUNT + 17;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalConnectorImpl <em>Connector</em>}' class.
@@ -4071,7 +4630,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConnector()
 	 * @generated
 	 */
-	int INTERNAL_CONNECTOR = 11;
+	int INTERNAL_CONNECTOR = 12;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4335,13 +4894,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_CONNECTOR___GET_INITILAL_SUPER_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 4;
 
 	/**
+	 * The operation id for the '<em>Get Final Super State Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTOR___GET_FINAL_SUPER_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 5;
+
+	/**
 	 * The operation id for the '<em>Get Simple State Predecessors</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTOR___GET_SIMPLE_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 5;
+	int INTERNAL_CONNECTOR___GET_SIMPLE_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 6;
 
 	/**
 	 * The operation id for the '<em>Get Initial State Predecessors</em>' operation.
@@ -4350,7 +4918,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTOR___GET_INITIAL_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 6;
+	int INTERNAL_CONNECTOR___GET_INITIAL_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Get Final State Predecessors</em>' operation.
@@ -4359,7 +4927,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTOR___GET_FINAL_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 7;
+	int INTERNAL_CONNECTOR___GET_FINAL_STATE_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 8;
 
 	/**
 	 * The operation id for the '<em>Get Connector Predecessors</em>' operation.
@@ -4368,7 +4936,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTOR___GET_CONNECTOR_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 8;
+	int INTERNAL_CONNECTOR___GET_CONNECTOR_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Get Super State Successors</em>' operation.
@@ -4377,7 +4945,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTOR___GET_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 9;
+	int INTERNAL_CONNECTOR___GET_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 10;
 
 	/**
 	 * The operation id for the '<em>Get Initilal Super State Successors</em>' operation.
@@ -4386,7 +4954,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTOR___GET_INITILAL_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 10;
+	int INTERNAL_CONNECTOR___GET_INITILAL_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 11;
+
+	/**
+	 * The operation id for the '<em>Get Final Super State Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_CONNECTOR___GET_FINAL_SUPER_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 12;
 
 	/**
 	 * The operation id for the '<em>Get Simple State Successors</em>' operation.
@@ -4395,7 +4972,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTOR___GET_SIMPLE_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 11;
+	int INTERNAL_CONNECTOR___GET_SIMPLE_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 13;
 
 	/**
 	 * The operation id for the '<em>Get Initial State Successors</em>' operation.
@@ -4404,7 +4981,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTOR___GET_INITIAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 12;
+	int INTERNAL_CONNECTOR___GET_INITIAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 14;
 
 	/**
 	 * The operation id for the '<em>Get Final State Successors</em>' operation.
@@ -4413,7 +4990,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTOR___GET_FINAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 13;
+	int INTERNAL_CONNECTOR___GET_FINAL_STATE_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Get Connector Successors</em>' operation.
@@ -4422,7 +4999,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTOR___GET_CONNECTOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 14;
+	int INTERNAL_CONNECTOR___GET_CONNECTOR_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 16;
 
 	/**
 	 * The number of operations of the '<em>Connector</em>' class.
@@ -4431,7 +5008,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_CONNECTOR_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 15;
+	int INTERNAL_CONNECTOR_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 17;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalInputImpl <em>Input</em>}' class.
@@ -4441,7 +5018,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalInput()
 	 * @generated
 	 */
-	int INTERNAL_INPUT = 12;
+	int INTERNAL_INPUT = 13;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4730,7 +5307,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalOutput()
 	 * @generated
 	 */
-	int INTERNAL_OUTPUT = 13;
+	int INTERNAL_OUTPUT = 14;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5028,7 +5605,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalOperator()
 	 * @generated
 	 */
-	int INTERNAL_OPERATOR = 14;
+	int INTERNAL_OPERATOR = 15;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5353,7 +5930,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalCircuitConnecter()
 	 * @generated
 	 */
-	int INTERNAL_CIRCUIT_CONNECTER = 15;
+	int INTERNAL_CIRCUIT_CONNECTER = 16;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5669,7 +6246,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalAbstractTransition()
 	 * @generated
 	 */
-	int INTERNAL_ABSTRACT_TRANSITION = 16;
+	int INTERNAL_ABSTRACT_TRANSITION = 17;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5859,7 +6436,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTransition()
 	 * @generated
 	 */
-	int INTERNAL_TRANSITION = 17;
+	int INTERNAL_TRANSITION = 18;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6076,7 +6653,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION = 18;
+	int INTERNAL_IMMEDIATE_TRANSITION = 19;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6293,7 +6870,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTerminationTransition()
 	 * @generated
 	 */
-	int INTERNAL_TERMINATION_TRANSITION = 19;
+	int INTERNAL_TERMINATION_TRANSITION = 20;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6492,7 +7069,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConditionalTerminationTransition()
 	 * @generated
 	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_TRANSITION = 20;
+	int INTERNAL_CONDITIONAL_TERMINATION_TRANSITION = 21;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6709,7 +7286,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalStrongAbortTransition()
 	 * @generated
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION = 21;
+	int INTERNAL_STRONG_ABORT_TRANSITION = 22;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6926,7 +7503,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateStrongAbortTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION = 22;
+	int INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION = 23;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7143,7 +7720,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_DEFERRED_TRANSITION = 23;
+	int INTERNAL_DEFERRED_TRANSITION = 24;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7360,7 +7937,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_DEFERRED_TRANSITION = 24;
+	int INTERNAL_IMMEDIATE_DEFERRED_TRANSITION = 25;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7577,7 +8154,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTerminationDefferdTransition()
 	 * @generated
 	 */
-	int INTERNAL_TERMINATION_DEFFERD_TRANSITION = 25;
+	int INTERNAL_TERMINATION_DEFFERD_TRANSITION = 26;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7785,7 +8362,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConditionalTerminationDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION = 26;
+	int INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION = 27;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8002,7 +8579,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalStrongAbortDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION = 27;
+	int INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION = 28;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8219,7 +8796,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateStrongAbortDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION = 28;
+	int INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION = 29;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8436,7 +9013,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_HISTORY_TRANSITION = 29;
+	int INTERNAL_HISTORY_TRANSITION = 30;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8662,7 +9239,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_HISTORY_TRANSITION = 30;
+	int INTERNAL_IMMEDIATE_HISTORY_TRANSITION = 31;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8888,7 +9465,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTerminationHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_TERMINATION_HISTORY_TRANSITION = 31;
+	int INTERNAL_TERMINATION_HISTORY_TRANSITION = 32;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9096,7 +9673,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConditionalTerminationHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION = 32;
+	int INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION = 33;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9322,7 +9899,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalStrongAbortHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_STRONG_ABORT_HISTORY_TRANSITION = 33;
+	int INTERNAL_STRONG_ABORT_HISTORY_TRANSITION = 34;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9548,7 +10125,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateStrongAbortHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION = 34;
+	int INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION = 35;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9774,7 +10351,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConnection()
 	 * @generated
 	 */
-	int INTERNAL_CONNECTION = 35;
+	int INTERNAL_CONNECTION = 36;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9955,7 +10532,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSCChart()
 	 * @generated
 	 */
-	int INTERNAL_SC_CHART = 36;
+	int INTERNAL_SC_CHART = 37;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -10164,6 +10741,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getInternalRootState__GetInitilalSuperStateSuccessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getFinalSuperStateSuccessors() <em>Get Final Super State Successors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getFinalSuperStateSuccessors()
+	 * @generated
+	 */
+	EOperation getInternalRootState__GetFinalSuperStateSuccessors();
 
 	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getSimpleStateSuccessors() <em>Get Simple State Successors</em>}' operation.
@@ -10401,6 +10988,16 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalSuperState__GetInitilalSuperStatePredecessors();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getFinalSuperStatePredecessors() <em>Get Final Super State Predecessors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getFinalSuperStatePredecessors()
+	 * @generated
+	 */
+	EOperation getInternalSuperState__GetFinalSuperStatePredecessors();
+
+	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getSimpleStatePredecessors() <em>Get Simple State Predecessors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10459,6 +11056,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getInternalSuperState__GetInitilalSuperStateSuccessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getFinalSuperStateSuccessors() <em>Get Final Super State Successors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getFinalSuperStateSuccessors()
+	 * @generated
+	 */
+	EOperation getInternalSuperState__GetFinalSuperStateSuccessors();
 
 	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getSimpleStateSuccessors() <em>Get Simple State Successors</em>}' operation.
@@ -10571,6 +11178,16 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalInitilalSuperState__GetInitilalSuperStatePredecessors();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitilalSuperState#getFinalSuperStatePredecessors() <em>Get Final Super State Predecessors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitilalSuperState#getFinalSuperStatePredecessors()
+	 * @generated
+	 */
+	EOperation getInternalInitilalSuperState__GetFinalSuperStatePredecessors();
+
+	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitilalSuperState#getSimpleStatePredecessors() <em>Get Simple State Predecessors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10631,6 +11248,16 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalInitilalSuperState__GetInitilalSuperStateSuccessors();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitilalSuperState#getFinalSuperStateSuccessors() <em>Get Final Super State Successors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitilalSuperState#getFinalSuperStateSuccessors()
+	 * @generated
+	 */
+	EOperation getInternalInitilalSuperState__GetFinalSuperStateSuccessors();
+
+	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitilalSuperState#getSimpleStateSuccessors() <em>Get Simple State Successors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10669,6 +11296,196 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getInternalInitilalSuperState__GetConnectorSuccessors();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState <em>Final Super State</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Final Super State</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState
+	 * @generated
+	 */
+	EClass getInternalFinalSuperState();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getContainmentConstraints() <em>Get Containment Constraints</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Containment Constraints</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getContainmentConstraints()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetContainmentConstraints();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getIncomingConstraints() <em>Get Incoming Constraints</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Incoming Constraints</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getIncomingConstraints()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetIncomingConstraints();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getOutgoingConstraints() <em>Get Outgoing Constraints</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Outgoing Constraints</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getOutgoingConstraints()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetOutgoingConstraints();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getRootStatePredecessors() <em>Get Root State Predecessors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Root State Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getRootStatePredecessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetRootStatePredecessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getSuperStatePredecessors() <em>Get Super State Predecessors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Super State Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getSuperStatePredecessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetSuperStatePredecessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getInitilalSuperStatePredecessors() <em>Get Initilal Super State Predecessors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Initilal Super State Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getInitilalSuperStatePredecessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetInitilalSuperStatePredecessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getFinalSuperStatePredecessors() <em>Get Final Super State Predecessors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getFinalSuperStatePredecessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetFinalSuperStatePredecessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getSimpleStatePredecessors() <em>Get Simple State Predecessors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Simple State Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getSimpleStatePredecessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetSimpleStatePredecessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getInitialStatePredecessors() <em>Get Initial State Predecessors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Initial State Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getInitialStatePredecessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetInitialStatePredecessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getFinalStatePredecessors() <em>Get Final State Predecessors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final State Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getFinalStatePredecessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetFinalStatePredecessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getConnectorPredecessors() <em>Get Connector Predecessors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Connector Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getConnectorPredecessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetConnectorPredecessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getSuperStateSuccessors() <em>Get Super State Successors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Super State Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getSuperStateSuccessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetSuperStateSuccessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getInitilalSuperStateSuccessors() <em>Get Initilal Super State Successors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Initilal Super State Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getInitilalSuperStateSuccessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetInitilalSuperStateSuccessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getFinalSuperStateSuccessors() <em>Get Final Super State Successors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getFinalSuperStateSuccessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetFinalSuperStateSuccessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getSimpleStateSuccessors() <em>Get Simple State Successors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Simple State Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getSimpleStateSuccessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetSimpleStateSuccessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getInitialStateSuccessors() <em>Get Initial State Successors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Initial State Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getInitialStateSuccessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetInitialStateSuccessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getFinalStateSuccessors() <em>Get Final State Successors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final State Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getFinalStateSuccessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetFinalStateSuccessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getConnectorSuccessors() <em>Get Connector Successors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Connector Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSuperState#getConnectorSuccessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalSuperState__GetConnectorSuccessors();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalDeclaration <em>Declaration</em>}'.
@@ -10937,6 +11754,16 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalSimpleState__GetInitilalSuperStatePredecessors();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSimpleState#getFinalSuperStatePredecessors() <em>Get Final Super State Predecessors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSimpleState#getFinalSuperStatePredecessors()
+	 * @generated
+	 */
+	EOperation getInternalSimpleState__GetFinalSuperStatePredecessors();
+
+	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSimpleState#getSimpleStatePredecessors() <em>Get Simple State Predecessors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10995,6 +11822,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getInternalSimpleState__GetInitilalSuperStateSuccessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSimpleState#getFinalSuperStateSuccessors() <em>Get Final Super State Successors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSimpleState#getFinalSuperStateSuccessors()
+	 * @generated
+	 */
+	EOperation getInternalSimpleState__GetFinalSuperStateSuccessors();
 
 	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSimpleState#getSimpleStateSuccessors() <em>Get Simple State Successors</em>}' operation.
@@ -11097,6 +11934,16 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalInitialState__GetInitilalSuperStatePredecessors();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialState#getFinalSuperStatePredecessors() <em>Get Final Super State Predecessors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialState#getFinalSuperStatePredecessors()
+	 * @generated
+	 */
+	EOperation getInternalInitialState__GetFinalSuperStatePredecessors();
+
+	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialState#getSimpleStatePredecessors() <em>Get Simple State Predecessors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11155,6 +12002,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getInternalInitialState__GetInitilalSuperStateSuccessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialState#getFinalSuperStateSuccessors() <em>Get Final Super State Successors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialState#getFinalSuperStateSuccessors()
+	 * @generated
+	 */
+	EOperation getInternalInitialState__GetFinalSuperStateSuccessors();
 
 	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialState#getSimpleStateSuccessors() <em>Get Simple State Successors</em>}' operation.
@@ -11257,6 +12114,16 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalFinalState__GetInitilalSuperStatePredecessors();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalState#getFinalSuperStatePredecessors() <em>Get Final Super State Predecessors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalState#getFinalSuperStatePredecessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalState__GetFinalSuperStatePredecessors();
+
+	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalState#getSimpleStatePredecessors() <em>Get Simple State Predecessors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11315,6 +12182,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getInternalFinalState__GetInitilalSuperStateSuccessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalState#getFinalSuperStateSuccessors() <em>Get Final Super State Successors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalState#getFinalSuperStateSuccessors()
+	 * @generated
+	 */
+	EOperation getInternalFinalState__GetFinalSuperStateSuccessors();
 
 	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalState#getSimpleStateSuccessors() <em>Get Simple State Successors</em>}' operation.
@@ -11417,6 +12294,16 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalConnector__GetInitilalSuperStatePredecessors();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnector#getFinalSuperStatePredecessors() <em>Get Final Super State Predecessors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Predecessors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnector#getFinalSuperStatePredecessors()
+	 * @generated
+	 */
+	EOperation getInternalConnector__GetFinalSuperStatePredecessors();
+
+	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnector#getSimpleStatePredecessors() <em>Get Simple State Predecessors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11475,6 +12362,16 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getInternalConnector__GetInitilalSuperStateSuccessors();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnector#getFinalSuperStateSuccessors() <em>Get Final Super State Successors</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Final Super State Successors</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnector#getFinalSuperStateSuccessors()
+	 * @generated
+	 */
+	EOperation getInternalConnector__GetFinalSuperStateSuccessors();
 
 	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnector#getSimpleStateSuccessors() <em>Get Simple State Successors</em>}' operation.
@@ -12777,6 +13674,14 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_ROOT_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalRootState__GetInitilalSuperStateSuccessors();
 
 		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Successors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_ROOT_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalRootState__GetFinalSuperStateSuccessors();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Simple State Successors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -12967,6 +13872,14 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_SUPER_STATE___GET_INITILAL_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalSuperState__GetInitilalSuperStatePredecessors();
 
 		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Predecessors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_SUPER_STATE___GET_FINAL_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalSuperState__GetFinalSuperStatePredecessors();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Simple State Predecessors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -13013,6 +13926,14 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation INTERNAL_SUPER_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalSuperState__GetInitilalSuperStateSuccessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Successors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_SUPER_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalSuperState__GetFinalSuperStateSuccessors();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Simple State Successors</b></em>' operation.
@@ -13105,6 +14026,14 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_INITILAL_SUPER_STATE___GET_INITILAL_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalInitilalSuperState__GetInitilalSuperStatePredecessors();
 
 		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Predecessors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_INITILAL_SUPER_STATE___GET_FINAL_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalInitilalSuperState__GetFinalSuperStatePredecessors();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Simple State Predecessors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -13153,6 +14082,14 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_INITILAL_SUPER_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalInitilalSuperState__GetInitilalSuperStateSuccessors();
 
 		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Successors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_INITILAL_SUPER_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalInitilalSuperState__GetFinalSuperStateSuccessors();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Simple State Successors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -13183,6 +14120,160 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation INTERNAL_INITILAL_SUPER_STATE___GET_CONNECTOR_SUCCESSORS = eINSTANCE.getInternalInitilalSuperState__GetConnectorSuccessors();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalFinalSuperStateImpl <em>Final Super State</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalFinalSuperStateImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalFinalSuperState()
+		 * @generated
+		 */
+		EClass INTERNAL_FINAL_SUPER_STATE = eINSTANCE.getInternalFinalSuperState();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Containment Constraints</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_CONTAINMENT_CONSTRAINTS = eINSTANCE.getInternalFinalSuperState__GetContainmentConstraints();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Incoming Constraints</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_INCOMING_CONSTRAINTS = eINSTANCE.getInternalFinalSuperState__GetIncomingConstraints();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Outgoing Constraints</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_OUTGOING_CONSTRAINTS = eINSTANCE.getInternalFinalSuperState__GetOutgoingConstraints();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Root State Predecessors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_ROOT_STATE_PREDECESSORS = eINSTANCE.getInternalFinalSuperState__GetRootStatePredecessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Super State Predecessors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalFinalSuperState__GetSuperStatePredecessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Initilal Super State Predecessors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_INITILAL_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalFinalSuperState__GetInitilalSuperStatePredecessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Predecessors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_FINAL_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalFinalSuperState__GetFinalSuperStatePredecessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Simple State Predecessors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_SIMPLE_STATE_PREDECESSORS = eINSTANCE.getInternalFinalSuperState__GetSimpleStatePredecessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Initial State Predecessors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_INITIAL_STATE_PREDECESSORS = eINSTANCE.getInternalFinalSuperState__GetInitialStatePredecessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Final State Predecessors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_FINAL_STATE_PREDECESSORS = eINSTANCE.getInternalFinalSuperState__GetFinalStatePredecessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Connector Predecessors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_CONNECTOR_PREDECESSORS = eINSTANCE.getInternalFinalSuperState__GetConnectorPredecessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Super State Successors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalFinalSuperState__GetSuperStateSuccessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Initilal Super State Successors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalFinalSuperState__GetInitilalSuperStateSuccessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Successors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalFinalSuperState__GetFinalSuperStateSuccessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Simple State Successors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_SIMPLE_STATE_SUCCESSORS = eINSTANCE.getInternalFinalSuperState__GetSimpleStateSuccessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Initial State Successors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_INITIAL_STATE_SUCCESSORS = eINSTANCE.getInternalFinalSuperState__GetInitialStateSuccessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Final State Successors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_FINAL_STATE_SUCCESSORS = eINSTANCE.getInternalFinalSuperState__GetFinalStateSuccessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Connector Successors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SUPER_STATE___GET_CONNECTOR_SUCCESSORS = eINSTANCE.getInternalFinalSuperState__GetConnectorSuccessors();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDeclarationImpl <em>Declaration</em>}' class.
@@ -13393,6 +14484,14 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_SIMPLE_STATE___GET_INITILAL_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalSimpleState__GetInitilalSuperStatePredecessors();
 
 		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Predecessors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_SIMPLE_STATE___GET_FINAL_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalSimpleState__GetFinalSuperStatePredecessors();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Simple State Predecessors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -13439,6 +14538,14 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation INTERNAL_SIMPLE_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalSimpleState__GetInitilalSuperStateSuccessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Successors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_SIMPLE_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalSimpleState__GetFinalSuperStateSuccessors();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Simple State Successors</b></em>' operation.
@@ -13523,6 +14630,14 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_INITIAL_STATE___GET_INITILAL_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalInitialState__GetInitilalSuperStatePredecessors();
 
 		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Predecessors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_INITIAL_STATE___GET_FINAL_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalInitialState__GetFinalSuperStatePredecessors();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Simple State Predecessors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -13569,6 +14684,14 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation INTERNAL_INITIAL_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalInitialState__GetInitilalSuperStateSuccessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Successors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_INITIAL_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalInitialState__GetFinalSuperStateSuccessors();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Simple State Successors</b></em>' operation.
@@ -13653,6 +14776,14 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_FINAL_STATE___GET_INITILAL_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalFinalState__GetInitilalSuperStatePredecessors();
 
 		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Predecessors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_STATE___GET_FINAL_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalFinalState__GetFinalSuperStatePredecessors();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Simple State Predecessors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -13699,6 +14830,14 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation INTERNAL_FINAL_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalFinalState__GetInitilalSuperStateSuccessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Successors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalFinalState__GetFinalSuperStateSuccessors();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Simple State Successors</b></em>' operation.
@@ -13783,6 +14922,14 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_CONNECTOR___GET_INITILAL_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalConnector__GetInitilalSuperStatePredecessors();
 
 		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Predecessors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_CONNECTOR___GET_FINAL_SUPER_STATE_PREDECESSORS = eINSTANCE.getInternalConnector__GetFinalSuperStatePredecessors();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Simple State Predecessors</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -13829,6 +14976,14 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation INTERNAL_CONNECTOR___GET_INITILAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalConnector__GetInitilalSuperStateSuccessors();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Final Super State Successors</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_CONNECTOR___GET_FINAL_SUPER_STATE_SUCCESSORS = eINSTANCE.getInternalConnector__GetFinalSuperStateSuccessors();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Simple State Successors</b></em>' operation.

@@ -12,6 +12,7 @@ import graphmodel.Node;
 import graphmodel.impl.NodeImpl;
 
 import info.scce.cinco.product.scchart.mglid.scchart.Action;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
@@ -437,6 +438,48 @@ public class ActionImpl extends NodeImpl implements Action {
 	 * @generated
 	 */
 	@Override
+	public boolean canMoveTo(final FinalSuperState finalSuperState, final int x, final int y) {
+		return finalSuperState.canContain(info.scce.cinco.product.scchart.mglid.scchart.Action.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void moveTo(final FinalSuperState finalSuperState, final int x, final int y) {
+		transact("Move to", () -> {
+			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
+			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
+			int deltaX = x - ime.getX();
+			int deltaY = y - ime.getY();
+			preMove(finalSuperState, x, y);
+			s_moveTo(finalSuperState, x, y);
+			finalSuperState.getInternalContainerElement().getModelElements().add(ime);
+			ime.setX(x);
+			ime.setY(y);
+			postMove(sourceContainer, finalSuperState, x, y, deltaX, deltaY);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void s_moveTo(final FinalSuperState finalSuperState, final int x, final int y) {
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ActionView getActionView() {
 		ActionView actionView = info.scce.cinco.product.scchart.mglid.scchart.views.ViewsFactory.eINSTANCE.createActionView();
 		actionView.setInternalAction((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAction)getInternalElement());
@@ -567,6 +610,14 @@ public class ActionImpl extends NodeImpl implements Action {
 				return null;
 			case ScchartPackage.ACTION___SMOVE_TO__INITILALSUPERSTATE_INT_INT:
 				s_moveTo((InitilalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.ACTION___CAN_MOVE_TO__FINALSUPERSTATE_INT_INT:
+				return canMoveTo((FinalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.ACTION___MOVE_TO__FINALSUPERSTATE_INT_INT:
+				moveTo((FinalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.ACTION___SMOVE_TO__FINALSUPERSTATE_INT_INT:
+				s_moveTo((FinalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
 			case ScchartPackage.ACTION___GET_ACTION_VIEW:
 				return getActionView();

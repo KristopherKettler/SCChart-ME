@@ -7,6 +7,7 @@ import de.jabc.cinco.meta.core.mgl.model.constraints.ContainmentConstraint;
 
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
@@ -80,6 +81,14 @@ public interface InternalInitilalSuperState extends InternalSuperState {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	EList<FinalSuperState> getFinalSuperStatePredecessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	EList<SimpleState> getSimpleStatePredecessors();
 
 	/**
@@ -121,6 +130,14 @@ public interface InternalInitilalSuperState extends InternalSuperState {
 	 * @generated
 	 */
 	EList<InitilalSuperState> getInitilalSuperStateSuccessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<FinalSuperState> getFinalSuperStateSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->
