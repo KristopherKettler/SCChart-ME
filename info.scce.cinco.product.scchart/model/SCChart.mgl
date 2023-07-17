@@ -1,6 +1,7 @@
 id info.scce.cinco.product.scchart.mglid
 stylePath "model/SCChart.style"
 
+@primeviewer
 @event("info.scce.cinco.product.scchart.events.SCChartEvent")
 graphModel SCChart {
 	diagramExtension "scchart"
@@ -21,7 +22,7 @@ container RootState {
 @event("info.scce.cinco.product.scchart.events.RegionEvent")
 container Region {
 	style regionStyle ("${empty label ? (empty name ? '' : name) : label}")
-	containableElements(SuperState,InitilalSuperState[0,1],InitialState[0,1],SimpleState,FinalState,Connector,FinalSuperState)
+	containableElements(SuperState,InitilalSuperState[0,1],InitialState[0,1],SimpleState,FinalState,Connector,FinalSuperState,SCChartReferece,InitialSCChartReferece,FinalSCChartReferece)
 	attr EString as name
 	attr EString as label
 	@propertiesViewHidden
@@ -31,7 +32,7 @@ container Region {
 @palette("Dataflow")
 container DataFlowRegion extends Region {
 	style regionStyle ("${empty label ? (empty name ? '' : name) : label}")
-	containableElements(Input,Output,Operator,CircuitConnecter)
+	containableElements(Input,Output,Operator,CircuitConnecter,SCChartReferece)
 }
 
 @palette("SuperStates")
@@ -171,6 +172,38 @@ node CircuitConnecter {
 	outgoingEdges (Connection)
 }
 
+//@disable(highlighted)
+@event("info.scce.cinco.product.scchart.events.SCChartRefereceEvent")
+container SCChartReferece {
+	style sCChartRefereceStyle("${empty label ? name : label} @ ${reference.name}")
+	containableElements(*)
+	@pvFileExtension("scchart")   
+	@pvLabel(name)
+	prime this::RootState as reference
+	attr EString as inputsOutputs[0,*]
+	attr EString as assignments[0,*]
+	attr EString as name := "<insert name>"
+	attr EString as label
+	@propertiesViewHidden
+	attr EString as uuid
+}
+
+container InitialSCChartReferece extends SCChartReferece{
+	style initialSCChartRefereceStyle("${empty label ? name : label} @ ${reference.name}")
+	containableElements(*)
+	@pvFileExtension("scchart")   
+	@pvLabel(name)
+	prime this::RootState as reference
+}
+
+container FinalSCChartReferece extends SCChartReferece{
+	style finalSCChartRefereceStyle("${empty label ? name : label} @ ${reference.name}")
+	containableElements(*)
+	@pvFileExtension("scchart")   
+	@pvLabel(name)
+	prime this::RootState as reference
+}
+
 /*Transitions */
 /*same as auto and count_delayed transition, weak abort for superstates*/
 edge AbstractTransition{
@@ -181,7 +214,6 @@ edge AbstractTransition{
 
 edge Transition extends AbstractTransition{
 	style transitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay 
@@ -189,7 +221,6 @@ edge Transition extends AbstractTransition{
 
 edge ImmediateTransition extends AbstractTransition{
 	style immediateTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay
@@ -198,13 +229,11 @@ edge ImmediateTransition extends AbstractTransition{
 /*unconditional Termination */
 edge TerminationTransition extends AbstractTransition{
 	style terminationTransitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//attr EString as priority := '0'
 	attr EString as effect := '<No effect>'
 }
 
 edge ConditionalTerminationTransition extends AbstractTransition{
 	style conditionalTerminationTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay
@@ -213,7 +242,6 @@ edge ConditionalTerminationTransition extends AbstractTransition{
 /* immediate terminate superstate */
 edge StrongAbortTransition extends AbstractTransition{
 	style strongAbortTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay
@@ -222,7 +250,6 @@ edge StrongAbortTransition extends AbstractTransition{
 /* immediate terminate superstate */
 edge ImmediateStrongAbortTransition extends AbstractTransition{
 	style immediateStrongAbortTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay
@@ -231,7 +258,6 @@ edge ImmediateStrongAbortTransition extends AbstractTransition{
 /* preempt all immediate behavior in target state */
 edge DeferredTransition extends AbstractTransition{
 	style deferredTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay
@@ -239,7 +265,6 @@ edge DeferredTransition extends AbstractTransition{
 
 edge ImmediateDeferredTransition extends AbstractTransition{
 	style immediateDeferredTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay
@@ -247,14 +272,11 @@ edge ImmediateDeferredTransition extends AbstractTransition{
 
 edge TerminationDefferdTransition extends AbstractTransition{
 	style terminationDeferredTransitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//attr EString as priority := '0'
 	attr EString as effect := '<No effect>'
-	attr EString as count_delay
 }
 
 edge  ConditionalTerminationDeferredTransition extends AbstractTransition{
 	style conditionalTerminationDeferredTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay
@@ -262,7 +284,6 @@ edge  ConditionalTerminationDeferredTransition extends AbstractTransition{
 
 edge StrongAbortDeferredTransition extends AbstractTransition{
 	style immediateStrongAbortDeferredTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay
@@ -270,7 +291,6 @@ edge StrongAbortDeferredTransition extends AbstractTransition{
 
 edge ImmediateStrongAbortDeferredTransition extends AbstractTransition{
 	style strongAbortDeferredTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay
@@ -278,7 +298,6 @@ edge ImmediateStrongAbortDeferredTransition extends AbstractTransition{
 
 edge HistoryTransition extends AbstractTransition{
 	style historyTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}","${deepHistory ? '*' : ' '}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay
@@ -287,7 +306,6 @@ edge HistoryTransition extends AbstractTransition{
 
 edge ImmediateHistoryTransition extends AbstractTransition{
 	style immediateHistoryTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}","${deepHistory ? '*' : ' '}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay
@@ -296,14 +314,12 @@ edge ImmediateHistoryTransition extends AbstractTransition{
 
 edge TerminationHistoryTransition extends AbstractTransition{
 	style terminationHistoryTransitionStyle("${(priority == '0' ? ' ' : priority.concat(': ')).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}","${deepHistory ? '*' : ' '}")
-	//attr EString as priority := '0'
 	attr EString as effect := '<No effect>'
 	attr EBoolean as deepHistory
 }
 
 edge ConditionalTerminationHistoryTransition extends AbstractTransition{
 	style conditionalTerminationHistoryTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}","${deepHistory ? '*' : ' '}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay
@@ -312,7 +328,6 @@ edge ConditionalTerminationHistoryTransition extends AbstractTransition{
 
 edge StrongAbortHistoryTransition extends AbstractTransition{
 	style strongAbortHistoryTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}","${deepHistory ? '*' : ' '}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay
@@ -321,7 +336,6 @@ edge StrongAbortHistoryTransition extends AbstractTransition{
 
 edge ImmediateStrongAbortHistoryTransition extends AbstractTransition{
 	style immediateStrongAbortHistoryTransitionStyle("${(priority == '0' ? '' : priority.concat(': ')).concat(condition == '<No condition>' || empty condition ? '' : (empty count_delay ? '' : count_delay.concat(' ')).concat(condition)).concat(effect == '<No effect>' ? '' : ' / '.concat(effect))}","${deepHistory ? '*' : ' '}")
-	//attr EString as priority := '0'
 	attr EString as condition := '<No condition>'
 	attr EString as effect := '<No effect>'
 	attr EString as count_delay

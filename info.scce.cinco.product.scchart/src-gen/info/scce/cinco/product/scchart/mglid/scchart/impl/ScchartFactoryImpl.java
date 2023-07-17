@@ -73,6 +73,9 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 			case ScchartPackage.OUTPUT: return createOutput();
 			case ScchartPackage.OPERATOR: return createOperator();
 			case ScchartPackage.CIRCUIT_CONNECTER: return createCircuitConnecter();
+			case ScchartPackage.SC_CHART_REFERECE: return createSCChartReferece();
+			case ScchartPackage.INITIAL_SC_CHART_REFERECE: return createInitialSCChartReferece();
+			case ScchartPackage.FINAL_SC_CHART_REFERECE: return createFinalSCChartReferece();
 			case ScchartPackage.ABSTRACT_TRANSITION: return createAbstractTransition();
 			case ScchartPackage.TRANSITION: return createTransition();
 			case ScchartPackage.IMMEDIATE_TRANSITION: return createImmediateTransition();
@@ -284,6 +287,39 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	public CircuitConnecter createCircuitConnecter() {
 		CircuitConnecterImpl circuitConnecter = new CircuitConnecterImpl();
 		return circuitConnecter;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SCChartReferece createSCChartReferece() {
+		SCChartRefereceImpl scChartReferece = new SCChartRefereceImpl();
+		return scChartReferece;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InitialSCChartReferece createInitialSCChartReferece() {
+		InitialSCChartRefereceImpl initialSCChartReferece = new InitialSCChartRefereceImpl();
+		return initialSCChartReferece;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FinalSCChartReferece createFinalSCChartReferece() {
+		FinalSCChartRefereceImpl finalSCChartReferece = new FinalSCChartRefereceImpl();
+		return finalSCChartReferece;
 	}
 
 	/**

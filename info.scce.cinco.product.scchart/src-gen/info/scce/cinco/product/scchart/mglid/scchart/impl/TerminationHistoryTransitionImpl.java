@@ -229,7 +229,7 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final InitilalSuperState source) {
+	public boolean canReconnectSource(final SuperState source) {
 		return source.canStart(this.getClass());
 	}
 
@@ -239,7 +239,7 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public void reconnectSource(final InitilalSuperState source) {
+	public void reconnectSource(final SuperState source) {
 		this.setSourceElement(source);
 	}
 
@@ -269,7 +269,7 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final SuperState source) {
+	public boolean canReconnectSource(final InitilalSuperState source) {
 		return source.canStart(this.getClass());
 	}
 
@@ -279,7 +279,7 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public void reconnectSource(final SuperState source) {
+	public void reconnectSource(final InitilalSuperState source) {
 		this.setSourceElement(source);
 	}
 
@@ -309,26 +309,6 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final InitilalSuperState target) {
-		return target.canEnd(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectTarget(final InitilalSuperState target) {
-		this.setTargetElement(target);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean canReconnectTarget(final SuperState target) {
 		return target.canEnd(this.getClass());
 	}
@@ -340,6 +320,26 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 */
 	@Override
 	public void reconnectTarget(final SuperState target) {
+		this.setTargetElement(target);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectTarget(final InitilalSuperState target) {
+		return target.canEnd(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectTarget(final InitilalSuperState target) {
 		this.setTargetElement(target);
 	}
 
@@ -452,35 +452,35 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__FINALSUPERSTATE:
 				reconnectSource((FinalSuperState)arguments.get(0));
 				return null;
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__INITILALSUPERSTATE:
-				return canReconnectSource((InitilalSuperState)arguments.get(0));
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE:
-				reconnectSource((InitilalSuperState)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__SUPERSTATE:
+				return canReconnectSource((SuperState)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__SUPERSTATE:
+				reconnectSource((SuperState)arguments.get(0));
 				return null;
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
 				return canReconnectSource((RootState)arguments.get(0));
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
 				reconnectSource((RootState)arguments.get(0));
 				return null;
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__SUPERSTATE:
-				return canReconnectSource((SuperState)arguments.get(0));
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__SUPERSTATE:
-				reconnectSource((SuperState)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__INITILALSUPERSTATE:
+				return canReconnectSource((InitilalSuperState)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE:
+				reconnectSource((InitilalSuperState)arguments.get(0));
 				return null;
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_TARGET__FINALSUPERSTATE:
 				return canReconnectTarget((FinalSuperState)arguments.get(0));
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_TARGET__FINALSUPERSTATE:
 				reconnectTarget((FinalSuperState)arguments.get(0));
 				return null;
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
-				return canReconnectTarget((InitilalSuperState)arguments.get(0));
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
-				reconnectTarget((InitilalSuperState)arguments.get(0));
-				return null;
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_TARGET__SUPERSTATE:
 				return canReconnectTarget((SuperState)arguments.get(0));
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_TARGET__SUPERSTATE:
 				reconnectTarget((SuperState)arguments.get(0));
+				return null;
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
+				return canReconnectTarget((InitilalSuperState)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
+				reconnectTarget((InitilalSuperState)arguments.get(0));
 				return null;
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___GET_TERMINATION_HISTORY_TRANSITION_VIEW:
 				return getTerminationHistoryTransitionView();

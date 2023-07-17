@@ -73,6 +73,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_OUTPUT: return createInternalOutput();
 			case InternalPackage.INTERNAL_OPERATOR: return createInternalOperator();
 			case InternalPackage.INTERNAL_CIRCUIT_CONNECTER: return createInternalCircuitConnecter();
+			case InternalPackage.INTERNAL_SC_CHART_REFERECE: return createInternalSCChartReferece();
+			case InternalPackage.INTERNAL_INITIAL_SC_CHART_REFERECE: return createInternalInitialSCChartReferece();
+			case InternalPackage.INTERNAL_FINAL_SC_CHART_REFERECE: return createInternalFinalSCChartReferece();
 			case InternalPackage.INTERNAL_ABSTRACT_TRANSITION: return createInternalAbstractTransition();
 			case InternalPackage.INTERNAL_TRANSITION: return createInternalTransition();
 			case InternalPackage.INTERNAL_IMMEDIATE_TRANSITION: return createInternalImmediateTransition();
@@ -284,6 +287,39 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalCircuitConnecter createInternalCircuitConnecter() {
 		InternalCircuitConnecterImpl internalCircuitConnecter = new InternalCircuitConnecterImpl();
 		return internalCircuitConnecter;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalSCChartReferece createInternalSCChartReferece() {
+		InternalSCChartRefereceImpl internalSCChartReferece = new InternalSCChartRefereceImpl();
+		return internalSCChartReferece;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalInitialSCChartReferece createInternalInitialSCChartReferece() {
+		InternalInitialSCChartRefereceImpl internalInitialSCChartReferece = new InternalInitialSCChartRefereceImpl();
+		return internalInitialSCChartReferece;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalFinalSCChartReferece createInternalFinalSCChartReferece() {
+		InternalFinalSCChartRefereceImpl internalFinalSCChartReferece = new InternalFinalSCChartRefereceImpl();
+		return internalFinalSCChartReferece;
 	}
 
 	/**

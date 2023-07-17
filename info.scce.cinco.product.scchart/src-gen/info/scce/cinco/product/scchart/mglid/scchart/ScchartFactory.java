@@ -175,6 +175,33 @@ public interface ScchartFactory extends EFactory {
 	CircuitConnecter createCircuitConnecter();
 
 	/**
+	 * Returns a new object of class '<em>SC Chart Referece</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>SC Chart Referece</em>'.
+	 * @generated
+	 */
+	SCChartReferece createSCChartReferece();
+
+	/**
+	 * Returns a new object of class '<em>Initial SC Chart Referece</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Initial SC Chart Referece</em>'.
+	 * @generated
+	 */
+	InitialSCChartReferece createInitialSCChartReferece();
+
+	/**
+	 * Returns a new object of class '<em>Final SC Chart Referece</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Final SC Chart Referece</em>'.
+	 * @generated
+	 */
+	FinalSCChartReferece createFinalSCChartReferece();
+
+	/**
 	 * Returns a new object of class '<em>Abstract Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

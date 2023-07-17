@@ -49,6 +49,15 @@ appearance connector{
 	background (0,0,0) //Black
 }
 
+appearance sCChartRefereceAppearance {
+	background (255,207,241) //purple
+}
+
+appearance initialSCChartRefereceAppearance {
+	background (255,207,241) //purple
+	lineWidth 4
+}
+
 appearance transitionAppearance {
 	lineStyle SOLID
 	lineWidth 2
@@ -136,7 +145,7 @@ nodeStyle initialSuperStateStyle (1) {
 
 nodeStyle finalSuperStateStyle (1) {
 	roundedRectangle {
-		appearance finalStateOuterCircle
+		appearance regionAppearance
 		size(140,80)
 		corner(15,15)
 		roundedRectangle {
@@ -244,6 +253,50 @@ nodeStyle operatorStyle(1) {
 		text{
 			position (CENTER, MIDDLE)
 			value "%s"
+		}
+	}
+}
+
+nodeStyle sCChartRefereceStyle(1){
+	roundedRectangle{
+		appearance sCChartRefereceAppearance
+		size(140,80)
+		corner(15,15)
+		text{
+			position (CENTER, TOP)
+			value "%s"
+		}
+	}
+}
+
+nodeStyle initialSCChartRefereceStyle(1){
+	roundedRectangle {
+		appearance initialSCChartRefereceAppearance
+		size(140,80)
+		corner(15,15)
+		text {
+			appearance textFont
+			position (CENTER,TOP 3)
+			value "%1$s"
+		}
+	}
+}
+
+nodeStyle finalSCChartRefereceStyle(1){
+	roundedRectangle{
+		appearance regionAppearance
+		size(140,80)
+		corner(15,15)
+		roundedRectangle {
+			appearance sCChartRefereceAppearance
+			position (CENTER,MIDDLE)
+			size(134,74)
+			corner(15,15)
+			text {
+				appearance textFont
+				position (CENTER,TOP 3)
+				value "%1$s"
+			}
 		}
 	}
 }

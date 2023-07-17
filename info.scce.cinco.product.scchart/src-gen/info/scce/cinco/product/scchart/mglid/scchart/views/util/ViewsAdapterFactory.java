@@ -136,6 +136,18 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 				return createCircuitConnecterViewAdapter();
 			}
 			@Override
+			public Adapter caseSCChartRefereceView(SCChartRefereceView object) {
+				return createSCChartRefereceViewAdapter();
+			}
+			@Override
+			public Adapter caseInitialSCChartRefereceView(InitialSCChartRefereceView object) {
+				return createInitialSCChartRefereceViewAdapter();
+			}
+			@Override
+			public Adapter caseFinalSCChartRefereceView(FinalSCChartRefereceView object) {
+				return createFinalSCChartRefereceViewAdapter();
+			}
+			@Override
 			public Adapter caseAbstractTransitionView(AbstractTransitionView object) {
 				return createAbstractTransitionViewAdapter();
 			}
@@ -474,6 +486,48 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createCircuitConnecterViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView <em>SC Chart Referece View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView
+	 * @generated
+	 */
+	public Adapter createSCChartRefereceViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.InitialSCChartRefereceView <em>Initial SC Chart Referece View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.InitialSCChartRefereceView
+	 * @generated
+	 */
+	public Adapter createInitialSCChartRefereceViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.FinalSCChartRefereceView <em>Final SC Chart Referece View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.FinalSCChartRefereceView
+	 * @generated
+	 */
+	public Adapter createFinalSCChartRefereceViewAdapter() {
 		return null;
 	}
 

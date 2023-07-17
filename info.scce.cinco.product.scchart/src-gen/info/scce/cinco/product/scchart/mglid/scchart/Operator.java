@@ -277,30 +277,6 @@ public interface Operator extends Node {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewConnection(Output target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	Connection newConnection(Output target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	Connection newConnection(Output target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
 	boolean canNewConnection(CircuitConnecter target);
 
 	/**
@@ -318,6 +294,30 @@ public interface Operator extends Node {
 	 * @generated
 	 */
 	Connection newConnection(CircuitConnecter target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewConnection(Output target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	Connection newConnection(Output target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	Connection newConnection(Output target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -346,10 +346,74 @@ public interface Operator extends Node {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation"
+	 * @model required="true" sCChartRefereceRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	DataFlowRegion getContainer();
+	boolean canMoveTo(SCChartReferece sCChartReferece, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sCChartRefereceRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void moveTo(SCChartReferece sCChartReferece, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sCChartRefereceRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void s_moveTo(SCChartReferece sCChartReferece, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" initialSCChartRefereceRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	boolean canMoveTo(InitialSCChartReferece initialSCChartReferece, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model initialSCChartRefereceRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void moveTo(InitialSCChartReferece initialSCChartReferece, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model initialSCChartRefereceRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void s_moveTo(InitialSCChartReferece initialSCChartReferece, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" finalSCChartRefereceRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	boolean canMoveTo(FinalSCChartReferece finalSCChartReferece, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model finalSCChartRefereceRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void moveTo(FinalSCChartReferece finalSCChartReferece, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model finalSCChartRefereceRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void s_moveTo(FinalSCChartReferece finalSCChartReferece, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->

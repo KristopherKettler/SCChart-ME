@@ -14,11 +14,14 @@ import graphmodel.impl.NodeImpl;
 import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Connection;
 import info.scce.cinco.product.scchart.mglid.scchart.DataFlowRegion;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.Input;
 import info.scce.cinco.product.scchart.mglid.scchart.Operator;
 import info.scce.cinco.product.scchart.mglid.scchart.Output;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
+import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.ScchartPackage;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalCircuitConnecter;
@@ -386,57 +389,6 @@ public class CircuitConnecterImpl extends NodeImpl implements CircuitConnecter {
 	 * @generated
 	 */
 	@Override
-	public boolean canNewConnection(final Output target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Connection newConnection(final Output target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Connection.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Connection.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.Connection edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnection((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Connection newConnection(final Output target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Connection.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Connection.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.Connection edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnection(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean canNewConnection(final CircuitConnecter target) {
 		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class);
 	}
@@ -469,6 +421,57 @@ public class CircuitConnecterImpl extends NodeImpl implements CircuitConnecter {
 	 */
 	@Override
 	public Connection newConnection(final CircuitConnecter target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Connection.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Connection.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.Connection edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnection(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewConnection(final Output target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Connection newConnection(final Output target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Connection.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Connection.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.Connection edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createConnection((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Connection newConnection(final Output target, final String id) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Connection.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Connection.class))
@@ -528,8 +531,117 @@ public class CircuitConnecterImpl extends NodeImpl implements CircuitConnecter {
 	 * @generated
 	 */
 	@Override
-	public DataFlowRegion getContainer() {
-		return (info.scce.cinco.product.scchart.mglid.scchart.DataFlowRegion)getInternalElement().getContainer().getContainerElement();
+	public boolean canMoveTo(final SCChartReferece sCChartReferece, final int x, final int y) {
+		return sCChartReferece.canContain(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void moveTo(final SCChartReferece sCChartReferece, final int x, final int y) {
+		transact("Move to", () -> {
+			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
+			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
+			int deltaX = x - ime.getX();
+			int deltaY = y - ime.getY();
+			s_moveTo(sCChartReferece, x, y);
+			sCChartReferece.getInternalContainerElement().getModelElements().add(ime);
+			ime.setX(x);
+			ime.setY(y);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void s_moveTo(final SCChartReferece sCChartReferece, final int x, final int y) {
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canMoveTo(final InitialSCChartReferece initialSCChartReferece, final int x, final int y) {
+		return initialSCChartReferece.canContain(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void moveTo(final InitialSCChartReferece initialSCChartReferece, final int x, final int y) {
+		transact("Move to", () -> {
+			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
+			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
+			int deltaX = x - ime.getX();
+			int deltaY = y - ime.getY();
+			s_moveTo(initialSCChartReferece, x, y);
+			initialSCChartReferece.getInternalContainerElement().getModelElements().add(ime);
+			ime.setX(x);
+			ime.setY(y);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void s_moveTo(final InitialSCChartReferece initialSCChartReferece, final int x, final int y) {
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canMoveTo(final FinalSCChartReferece finalSCChartReferece, final int x, final int y) {
+		return finalSCChartReferece.canContain(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void moveTo(final FinalSCChartReferece finalSCChartReferece, final int x, final int y) {
+		transact("Move to", () -> {
+			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
+			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
+			int deltaX = x - ime.getX();
+			int deltaY = y - ime.getY();
+			s_moveTo(finalSCChartReferece, x, y);
+			finalSCChartReferece.getInternalContainerElement().getModelElements().add(ime);
+			ime.setX(x);
+			ime.setY(y);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void s_moveTo(final FinalSCChartReferece finalSCChartReferece, final int x, final int y) {
 		
 	}
 
@@ -562,7 +674,6 @@ public class CircuitConnecterImpl extends NodeImpl implements CircuitConnecter {
 		}
 		if (baseClass == ModelElement.class) {
 			switch (baseOperationID) {
-				case GraphmodelPackage.MODEL_ELEMENT___GET_CONTAINER: return ScchartPackage.CIRCUIT_CONNECTER___GET_CONTAINER;
 				case GraphmodelPackage.MODEL_ELEMENT___GET_ROOT_ELEMENT: return ScchartPackage.CIRCUIT_CONNECTER___GET_ROOT_ELEMENT;
 				case GraphmodelPackage.MODEL_ELEMENT___PRE_SAVE: return ScchartPackage.CIRCUIT_CONNECTER___PRE_SAVE;
 				case GraphmodelPackage.MODEL_ELEMENT___POST_SAVE: return ScchartPackage.CIRCUIT_CONNECTER___POST_SAVE;
@@ -663,18 +774,18 @@ public class CircuitConnecterImpl extends NodeImpl implements CircuitConnecter {
 				return newConnection((Operator)arguments.get(0));
 			case ScchartPackage.CIRCUIT_CONNECTER___NEW_CONNECTION__OPERATOR_STRING:
 				return newConnection((Operator)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.CIRCUIT_CONNECTER___CAN_NEW_CONNECTION__OUTPUT:
-				return canNewConnection((Output)arguments.get(0));
-			case ScchartPackage.CIRCUIT_CONNECTER___NEW_CONNECTION__OUTPUT:
-				return newConnection((Output)arguments.get(0));
-			case ScchartPackage.CIRCUIT_CONNECTER___NEW_CONNECTION__OUTPUT_STRING:
-				return newConnection((Output)arguments.get(0), (String)arguments.get(1));
 			case ScchartPackage.CIRCUIT_CONNECTER___CAN_NEW_CONNECTION__CIRCUITCONNECTER:
 				return canNewConnection((CircuitConnecter)arguments.get(0));
 			case ScchartPackage.CIRCUIT_CONNECTER___NEW_CONNECTION__CIRCUITCONNECTER:
 				return newConnection((CircuitConnecter)arguments.get(0));
 			case ScchartPackage.CIRCUIT_CONNECTER___NEW_CONNECTION__CIRCUITCONNECTER_STRING:
 				return newConnection((CircuitConnecter)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.CIRCUIT_CONNECTER___CAN_NEW_CONNECTION__OUTPUT:
+				return canNewConnection((Output)arguments.get(0));
+			case ScchartPackage.CIRCUIT_CONNECTER___NEW_CONNECTION__OUTPUT:
+				return newConnection((Output)arguments.get(0));
+			case ScchartPackage.CIRCUIT_CONNECTER___NEW_CONNECTION__OUTPUT_STRING:
+				return newConnection((Output)arguments.get(0), (String)arguments.get(1));
 			case ScchartPackage.CIRCUIT_CONNECTER___CAN_MOVE_TO__DATAFLOWREGION_INT_INT:
 				return canMoveTo((DataFlowRegion)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 			case ScchartPackage.CIRCUIT_CONNECTER___MOVE_TO__DATAFLOWREGION_INT_INT:
@@ -683,8 +794,30 @@ public class CircuitConnecterImpl extends NodeImpl implements CircuitConnecter {
 			case ScchartPackage.CIRCUIT_CONNECTER___SMOVE_TO__DATAFLOWREGION_INT_INT:
 				s_moveTo((DataFlowRegion)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
-			case ScchartPackage.CIRCUIT_CONNECTER___GET_CONTAINER:
-				return getContainer();
+			case ScchartPackage.CIRCUIT_CONNECTER___CAN_MOVE_TO__SCCHARTREFERECE_INT_INT:
+				return canMoveTo((SCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.CIRCUIT_CONNECTER___MOVE_TO__SCCHARTREFERECE_INT_INT:
+				moveTo((SCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.CIRCUIT_CONNECTER___SMOVE_TO__SCCHARTREFERECE_INT_INT:
+				s_moveTo((SCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.CIRCUIT_CONNECTER___CAN_MOVE_TO__INITIALSCCHARTREFERECE_INT_INT:
+				return canMoveTo((InitialSCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.CIRCUIT_CONNECTER___MOVE_TO__INITIALSCCHARTREFERECE_INT_INT:
+				moveTo((InitialSCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.CIRCUIT_CONNECTER___SMOVE_TO__INITIALSCCHARTREFERECE_INT_INT:
+				s_moveTo((InitialSCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.CIRCUIT_CONNECTER___CAN_MOVE_TO__FINALSCCHARTREFERECE_INT_INT:
+				return canMoveTo((FinalSCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.CIRCUIT_CONNECTER___MOVE_TO__FINALSCCHARTREFERECE_INT_INT:
+				moveTo((FinalSCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.CIRCUIT_CONNECTER___SMOVE_TO__FINALSCCHARTREFERECE_INT_INT:
+				s_moveTo((FinalSCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
 			case ScchartPackage.CIRCUIT_CONNECTER___GET_CIRCUIT_CONNECTER_VIEW:
 				return getCircuitConnecterView();
 		}

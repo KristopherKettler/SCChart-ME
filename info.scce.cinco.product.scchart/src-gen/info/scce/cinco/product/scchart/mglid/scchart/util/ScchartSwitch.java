@@ -244,6 +244,41 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ScchartPackage.SC_CHART_REFERECE: {
+				SCChartReferece scChartReferece = (SCChartReferece)theEObject;
+				T result = caseSCChartReferece(scChartReferece);
+				if (result == null) result = caseContainer(scChartReferece);
+				if (result == null) result = caseModelElementContainer(scChartReferece);
+				if (result == null) result = caseNode(scChartReferece);
+				if (result == null) result = caseModelElement(scChartReferece);
+				if (result == null) result = caseIdentifiableElement(scChartReferece);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ScchartPackage.INITIAL_SC_CHART_REFERECE: {
+				InitialSCChartReferece initialSCChartReferece = (InitialSCChartReferece)theEObject;
+				T result = caseInitialSCChartReferece(initialSCChartReferece);
+				if (result == null) result = caseSCChartReferece(initialSCChartReferece);
+				if (result == null) result = caseContainer(initialSCChartReferece);
+				if (result == null) result = caseModelElementContainer(initialSCChartReferece);
+				if (result == null) result = caseNode(initialSCChartReferece);
+				if (result == null) result = caseModelElement(initialSCChartReferece);
+				if (result == null) result = caseIdentifiableElement(initialSCChartReferece);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ScchartPackage.FINAL_SC_CHART_REFERECE: {
+				FinalSCChartReferece finalSCChartReferece = (FinalSCChartReferece)theEObject;
+				T result = caseFinalSCChartReferece(finalSCChartReferece);
+				if (result == null) result = caseSCChartReferece(finalSCChartReferece);
+				if (result == null) result = caseContainer(finalSCChartReferece);
+				if (result == null) result = caseModelElementContainer(finalSCChartReferece);
+				if (result == null) result = caseNode(finalSCChartReferece);
+				if (result == null) result = caseModelElement(finalSCChartReferece);
+				if (result == null) result = caseIdentifiableElement(finalSCChartReferece);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ScchartPackage.ABSTRACT_TRANSITION: {
 				AbstractTransition abstractTransition = (AbstractTransition)theEObject;
 				T result = caseAbstractTransition(abstractTransition);
@@ -707,6 +742,51 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCircuitConnecter(CircuitConnecter object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>SC Chart Referece</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>SC Chart Referece</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSCChartReferece(SCChartReferece object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Initial SC Chart Referece</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Initial SC Chart Referece</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInitialSCChartReferece(InitialSCChartReferece object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Final SC Chart Referece</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Final SC Chart Referece</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFinalSCChartReferece(FinalSCChartReferece object) {
 		return null;
 	}
 

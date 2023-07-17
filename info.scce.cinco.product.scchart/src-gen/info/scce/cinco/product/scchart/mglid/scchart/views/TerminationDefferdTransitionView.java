@@ -49,22 +49,6 @@ public interface TerminationDefferdTransitionView extends AbstractTransitionView
 	 * @model kind="operation"
 	 * @generated
 	 */
-	String getCount_delay();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setCount_delay(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
 	String getEffect();
 
 	/**

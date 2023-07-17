@@ -175,6 +175,33 @@ public interface ViewsFactory extends EFactory {
 	CircuitConnecterView createCircuitConnecterView();
 
 	/**
+	 * Returns a new object of class '<em>SC Chart Referece View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>SC Chart Referece View</em>'.
+	 * @generated
+	 */
+	SCChartRefereceView createSCChartRefereceView();
+
+	/**
+	 * Returns a new object of class '<em>Initial SC Chart Referece View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Initial SC Chart Referece View</em>'.
+	 * @generated
+	 */
+	InitialSCChartRefereceView createInitialSCChartRefereceView();
+
+	/**
+	 * Returns a new object of class '<em>Final SC Chart Referece View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Final SC Chart Referece View</em>'.
+	 * @generated
+	 */
+	FinalSCChartRefereceView createFinalSCChartRefereceView();
+
+	/**
 	 * Returns a new object of class '<em>Abstract Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

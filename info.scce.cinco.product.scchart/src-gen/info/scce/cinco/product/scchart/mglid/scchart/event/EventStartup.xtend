@@ -20,6 +20,9 @@ class EventStartup implements IStartup {
 		DeclarationEvent.instance.subscribe
 		SuspendEvent.instance.subscribe
 		ActionEvent.instance.subscribe
+		SCChartRefereceEvent.instance.subscribe
+		InitialSCChartRefereceEvent.instance.subscribe
+		FinalSCChartRefereceEvent.instance.subscribe
 		SCChartEvent.instance.subscribe
 	}
 	
@@ -33,6 +36,9 @@ class EventStartup implements IStartup {
 		DeclarationEvent.instance.unsubscribe
 		SuspendEvent.instance.unsubscribe
 		ActionEvent.instance.unsubscribe
+		SCChartRefereceEvent.instance.unsubscribe
+		InitialSCChartRefereceEvent.instance.unsubscribe
+		FinalSCChartRefereceEvent.instance.unsubscribe
 		SCChartEvent.instance.unsubscribe
 	}
 	

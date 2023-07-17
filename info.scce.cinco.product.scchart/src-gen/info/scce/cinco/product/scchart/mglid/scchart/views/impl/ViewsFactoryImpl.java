@@ -73,6 +73,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.OUTPUT_VIEW: return createOutputView();
 			case ViewsPackage.OPERATOR_VIEW: return createOperatorView();
 			case ViewsPackage.CIRCUIT_CONNECTER_VIEW: return createCircuitConnecterView();
+			case ViewsPackage.SC_CHART_REFERECE_VIEW: return createSCChartRefereceView();
+			case ViewsPackage.INITIAL_SC_CHART_REFERECE_VIEW: return createInitialSCChartRefereceView();
+			case ViewsPackage.FINAL_SC_CHART_REFERECE_VIEW: return createFinalSCChartRefereceView();
 			case ViewsPackage.ABSTRACT_TRANSITION_VIEW: return createAbstractTransitionView();
 			case ViewsPackage.TRANSITION_VIEW: return createTransitionView();
 			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW: return createImmediateTransitionView();
@@ -284,6 +287,39 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public CircuitConnecterView createCircuitConnecterView() {
 		CircuitConnecterViewImpl circuitConnecterView = new CircuitConnecterViewImpl();
 		return circuitConnecterView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SCChartRefereceView createSCChartRefereceView() {
+		SCChartRefereceViewImpl scChartRefereceView = new SCChartRefereceViewImpl();
+		return scChartRefereceView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InitialSCChartRefereceView createInitialSCChartRefereceView() {
+		InitialSCChartRefereceViewImpl initialSCChartRefereceView = new InitialSCChartRefereceViewImpl();
+		return initialSCChartRefereceView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FinalSCChartRefereceView createFinalSCChartRefereceView() {
+		FinalSCChartRefereceViewImpl finalSCChartRefereceView = new FinalSCChartRefereceViewImpl();
+		return finalSCChartRefereceView;
 	}
 
 	/**

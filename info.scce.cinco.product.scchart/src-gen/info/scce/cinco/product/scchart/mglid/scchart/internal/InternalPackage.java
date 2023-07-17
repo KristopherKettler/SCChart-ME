@@ -6239,6 +6239,1116 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_CIRCUIT_CONNECTER_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_NODE_OPERATION_COUNT + 9;
 
 	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSCChartRefereceImpl <em>SC Chart Referece</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSCChartRefereceImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSCChartReferece()
+	 * @generated
+	 */
+	int INTERNAL_SC_CHART_REFERECE = 17;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__ID = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__ID;
+
+	/**
+	 * The feature id for the '<em><b>Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__CONTAINER = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>Element</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>X</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__X = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__X;
+
+	/**
+	 * The feature id for the '<em><b>Y</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__Y = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__Y;
+
+	/**
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__HEIGHT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__HEIGHT;
+
+	/**
+	 * The feature id for the '<em><b>Width</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__WIDTH = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__WIDTH;
+
+	/**
+	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__INCOMING = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__INCOMING;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__OUTGOING = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__OUTGOING;
+
+	/**
+	 * The feature id for the '<em><b>Model Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__MODEL_ELEMENTS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__MODEL_ELEMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Assignments</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__ASSIGNMENTS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__NAME = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Label</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__LABEL = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Inputs Outputs</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__INPUTS_OUTPUTS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Uuid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__UUID = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Library Component UID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE__LIBRARY_COMPONENT_UID = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of structural features of the '<em>SC Chart Referece</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 6;
+
+	/**
+	 * The operation id for the '<em>Equals</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___EQUALS__OBJECT;
+
+	/**
+	 * The operation id for the '<em>Hash Code</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___HASH_CODE;
+
+	/**
+	 * The operation id for the '<em>Save</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___SAVE = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___SAVE;
+
+	/**
+	 * The operation id for the '<em>Get Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___GET_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Root Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___GET_ROOT_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___GET_ROOT_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___GET_SUCCESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___GET_SUCCESSORS;
+
+	/**
+	 * The operation id for the '<em>Get Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___GET_SUCCESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___GET_SUCCESSORS__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___GET_PREDECESSORS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___GET_PREDECESSORS;
+
+	/**
+	 * The operation id for the '<em>Get Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___GET_PREDECESSORS__CLASS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___GET_PREDECESSORS__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Incoming</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___GET_INCOMING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___GET_INCOMING__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Outgoing</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___GET_OUTGOING__CLASS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___GET_OUTGOING__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Connect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___CAN_CONNECT__EDGE_NODE = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___CAN_CONNECT__EDGE_NODE;
+
+	/**
+	 * The operation id for the '<em>Get Outgoing Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___GET_OUTGOING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___GET_OUTGOING_CONSTRAINTS;
+
+	/**
+	 * The operation id for the '<em>Get Incoming Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___GET_INCOMING_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___GET_INCOMING_CONSTRAINTS;
+
+	/**
+	 * The operation id for the '<em>Can Start</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___CAN_START__CLASS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___CAN_START__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___CAN_END__CLASS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___CAN_END__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Contain</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___CAN_CONTAIN__CLASS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___CAN_CONTAIN__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Contain Nodes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___CAN_CONTAIN_NODES__ELIST = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___CAN_CONTAIN_NODES__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Container Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___GET_CONTAINER_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___GET_CONTAINER_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Can Contain</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___CAN_CONTAIN__ELIST = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER___CAN_CONTAIN__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Containment Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___GET_CONTAINMENT_CONSTRAINTS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Get Reference</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE___GET_REFERENCE = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>SC Chart Referece</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SC_CHART_REFERECE_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_OPERATION_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalInitialSCChartRefereceImpl <em>Initial SC Chart Referece</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalInitialSCChartRefereceImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalInitialSCChartReferece()
+	 * @generated
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE = 18;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__ID = INTERNAL_SC_CHART_REFERECE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__CONTAINER = INTERNAL_SC_CHART_REFERECE__CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>Element</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__ELEMENT = INTERNAL_SC_CHART_REFERECE__ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>X</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__X = INTERNAL_SC_CHART_REFERECE__X;
+
+	/**
+	 * The feature id for the '<em><b>Y</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__Y = INTERNAL_SC_CHART_REFERECE__Y;
+
+	/**
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__HEIGHT = INTERNAL_SC_CHART_REFERECE__HEIGHT;
+
+	/**
+	 * The feature id for the '<em><b>Width</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__WIDTH = INTERNAL_SC_CHART_REFERECE__WIDTH;
+
+	/**
+	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__INCOMING = INTERNAL_SC_CHART_REFERECE__INCOMING;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__OUTGOING = INTERNAL_SC_CHART_REFERECE__OUTGOING;
+
+	/**
+	 * The feature id for the '<em><b>Model Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__MODEL_ELEMENTS = INTERNAL_SC_CHART_REFERECE__MODEL_ELEMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Assignments</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__ASSIGNMENTS = INTERNAL_SC_CHART_REFERECE__ASSIGNMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__NAME = INTERNAL_SC_CHART_REFERECE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Label</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__LABEL = INTERNAL_SC_CHART_REFERECE__LABEL;
+
+	/**
+	 * The feature id for the '<em><b>Inputs Outputs</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__INPUTS_OUTPUTS = INTERNAL_SC_CHART_REFERECE__INPUTS_OUTPUTS;
+
+	/**
+	 * The feature id for the '<em><b>Uuid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__UUID = INTERNAL_SC_CHART_REFERECE__UUID;
+
+	/**
+	 * The feature id for the '<em><b>Library Component UID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE__LIBRARY_COMPONENT_UID = INTERNAL_SC_CHART_REFERECE__LIBRARY_COMPONENT_UID;
+
+	/**
+	 * The number of structural features of the '<em>Initial SC Chart Referece</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE_FEATURE_COUNT = INTERNAL_SC_CHART_REFERECE_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Equals</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___EQUALS__OBJECT = INTERNAL_SC_CHART_REFERECE___EQUALS__OBJECT;
+
+	/**
+	 * The operation id for the '<em>Hash Code</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___HASH_CODE = INTERNAL_SC_CHART_REFERECE___HASH_CODE;
+
+	/**
+	 * The operation id for the '<em>Save</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___SAVE = INTERNAL_SC_CHART_REFERECE___SAVE;
+
+	/**
+	 * The operation id for the '<em>Get Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___GET_ELEMENT = INTERNAL_SC_CHART_REFERECE___GET_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Root Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___GET_ROOT_ELEMENT = INTERNAL_SC_CHART_REFERECE___GET_ROOT_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___GET_SUCCESSORS = INTERNAL_SC_CHART_REFERECE___GET_SUCCESSORS;
+
+	/**
+	 * The operation id for the '<em>Get Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___GET_SUCCESSORS__CLASS = INTERNAL_SC_CHART_REFERECE___GET_SUCCESSORS__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___GET_PREDECESSORS = INTERNAL_SC_CHART_REFERECE___GET_PREDECESSORS;
+
+	/**
+	 * The operation id for the '<em>Get Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___GET_PREDECESSORS__CLASS = INTERNAL_SC_CHART_REFERECE___GET_PREDECESSORS__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Incoming</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___GET_INCOMING__CLASS = INTERNAL_SC_CHART_REFERECE___GET_INCOMING__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Outgoing</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___GET_OUTGOING__CLASS = INTERNAL_SC_CHART_REFERECE___GET_OUTGOING__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Connect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___CAN_CONNECT__EDGE_NODE = INTERNAL_SC_CHART_REFERECE___CAN_CONNECT__EDGE_NODE;
+
+	/**
+	 * The operation id for the '<em>Get Outgoing Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___GET_OUTGOING_CONSTRAINTS = INTERNAL_SC_CHART_REFERECE___GET_OUTGOING_CONSTRAINTS;
+
+	/**
+	 * The operation id for the '<em>Get Incoming Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___GET_INCOMING_CONSTRAINTS = INTERNAL_SC_CHART_REFERECE___GET_INCOMING_CONSTRAINTS;
+
+	/**
+	 * The operation id for the '<em>Can Start</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___CAN_START__CLASS = INTERNAL_SC_CHART_REFERECE___CAN_START__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___CAN_END__CLASS = INTERNAL_SC_CHART_REFERECE___CAN_END__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Contain</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___CAN_CONTAIN__CLASS = INTERNAL_SC_CHART_REFERECE___CAN_CONTAIN__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Contain Nodes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___CAN_CONTAIN_NODES__ELIST = INTERNAL_SC_CHART_REFERECE___CAN_CONTAIN_NODES__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Container Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___GET_CONTAINER_ELEMENT = INTERNAL_SC_CHART_REFERECE___GET_CONTAINER_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Can Contain</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___CAN_CONTAIN__ELIST = INTERNAL_SC_CHART_REFERECE___CAN_CONTAIN__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Containment Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___GET_CONTAINMENT_CONSTRAINTS = INTERNAL_SC_CHART_REFERECE_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Get Reference</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE___GET_REFERENCE = INTERNAL_SC_CHART_REFERECE_OPERATION_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Initial SC Chart Referece</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITIAL_SC_CHART_REFERECE_OPERATION_COUNT = INTERNAL_SC_CHART_REFERECE_OPERATION_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalFinalSCChartRefereceImpl <em>Final SC Chart Referece</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalFinalSCChartRefereceImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalFinalSCChartReferece()
+	 * @generated
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE = 19;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__ID = INTERNAL_SC_CHART_REFERECE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__CONTAINER = INTERNAL_SC_CHART_REFERECE__CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>Element</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__ELEMENT = INTERNAL_SC_CHART_REFERECE__ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>X</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__X = INTERNAL_SC_CHART_REFERECE__X;
+
+	/**
+	 * The feature id for the '<em><b>Y</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__Y = INTERNAL_SC_CHART_REFERECE__Y;
+
+	/**
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__HEIGHT = INTERNAL_SC_CHART_REFERECE__HEIGHT;
+
+	/**
+	 * The feature id for the '<em><b>Width</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__WIDTH = INTERNAL_SC_CHART_REFERECE__WIDTH;
+
+	/**
+	 * The feature id for the '<em><b>Incoming</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__INCOMING = INTERNAL_SC_CHART_REFERECE__INCOMING;
+
+	/**
+	 * The feature id for the '<em><b>Outgoing</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__OUTGOING = INTERNAL_SC_CHART_REFERECE__OUTGOING;
+
+	/**
+	 * The feature id for the '<em><b>Model Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__MODEL_ELEMENTS = INTERNAL_SC_CHART_REFERECE__MODEL_ELEMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Assignments</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__ASSIGNMENTS = INTERNAL_SC_CHART_REFERECE__ASSIGNMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__NAME = INTERNAL_SC_CHART_REFERECE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Label</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__LABEL = INTERNAL_SC_CHART_REFERECE__LABEL;
+
+	/**
+	 * The feature id for the '<em><b>Inputs Outputs</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__INPUTS_OUTPUTS = INTERNAL_SC_CHART_REFERECE__INPUTS_OUTPUTS;
+
+	/**
+	 * The feature id for the '<em><b>Uuid</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__UUID = INTERNAL_SC_CHART_REFERECE__UUID;
+
+	/**
+	 * The feature id for the '<em><b>Library Component UID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE__LIBRARY_COMPONENT_UID = INTERNAL_SC_CHART_REFERECE__LIBRARY_COMPONENT_UID;
+
+	/**
+	 * The number of structural features of the '<em>Final SC Chart Referece</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE_FEATURE_COUNT = INTERNAL_SC_CHART_REFERECE_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Equals</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___EQUALS__OBJECT = INTERNAL_SC_CHART_REFERECE___EQUALS__OBJECT;
+
+	/**
+	 * The operation id for the '<em>Hash Code</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___HASH_CODE = INTERNAL_SC_CHART_REFERECE___HASH_CODE;
+
+	/**
+	 * The operation id for the '<em>Save</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___SAVE = INTERNAL_SC_CHART_REFERECE___SAVE;
+
+	/**
+	 * The operation id for the '<em>Get Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___GET_ELEMENT = INTERNAL_SC_CHART_REFERECE___GET_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Root Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___GET_ROOT_ELEMENT = INTERNAL_SC_CHART_REFERECE___GET_ROOT_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Get Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___GET_SUCCESSORS = INTERNAL_SC_CHART_REFERECE___GET_SUCCESSORS;
+
+	/**
+	 * The operation id for the '<em>Get Successors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___GET_SUCCESSORS__CLASS = INTERNAL_SC_CHART_REFERECE___GET_SUCCESSORS__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___GET_PREDECESSORS = INTERNAL_SC_CHART_REFERECE___GET_PREDECESSORS;
+
+	/**
+	 * The operation id for the '<em>Get Predecessors</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___GET_PREDECESSORS__CLASS = INTERNAL_SC_CHART_REFERECE___GET_PREDECESSORS__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Incoming</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___GET_INCOMING__CLASS = INTERNAL_SC_CHART_REFERECE___GET_INCOMING__CLASS;
+
+	/**
+	 * The operation id for the '<em>Get Outgoing</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___GET_OUTGOING__CLASS = INTERNAL_SC_CHART_REFERECE___GET_OUTGOING__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Connect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___CAN_CONNECT__EDGE_NODE = INTERNAL_SC_CHART_REFERECE___CAN_CONNECT__EDGE_NODE;
+
+	/**
+	 * The operation id for the '<em>Get Outgoing Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___GET_OUTGOING_CONSTRAINTS = INTERNAL_SC_CHART_REFERECE___GET_OUTGOING_CONSTRAINTS;
+
+	/**
+	 * The operation id for the '<em>Get Incoming Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___GET_INCOMING_CONSTRAINTS = INTERNAL_SC_CHART_REFERECE___GET_INCOMING_CONSTRAINTS;
+
+	/**
+	 * The operation id for the '<em>Can Start</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___CAN_START__CLASS = INTERNAL_SC_CHART_REFERECE___CAN_START__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can End</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___CAN_END__CLASS = INTERNAL_SC_CHART_REFERECE___CAN_END__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Contain</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___CAN_CONTAIN__CLASS = INTERNAL_SC_CHART_REFERECE___CAN_CONTAIN__CLASS;
+
+	/**
+	 * The operation id for the '<em>Can Contain Nodes</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___CAN_CONTAIN_NODES__ELIST = INTERNAL_SC_CHART_REFERECE___CAN_CONTAIN_NODES__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Container Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___GET_CONTAINER_ELEMENT = INTERNAL_SC_CHART_REFERECE___GET_CONTAINER_ELEMENT;
+
+	/**
+	 * The operation id for the '<em>Can Contain</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___CAN_CONTAIN__ELIST = INTERNAL_SC_CHART_REFERECE___CAN_CONTAIN__ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Containment Constraints</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___GET_CONTAINMENT_CONSTRAINTS = INTERNAL_SC_CHART_REFERECE_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Get Reference</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE___GET_REFERENCE = INTERNAL_SC_CHART_REFERECE_OPERATION_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Final SC Chart Referece</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SC_CHART_REFERECE_OPERATION_COUNT = INTERNAL_SC_CHART_REFERECE_OPERATION_COUNT + 2;
+
+	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalAbstractTransitionImpl <em>Abstract Transition</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6246,7 +7356,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalAbstractTransition()
 	 * @generated
 	 */
-	int INTERNAL_ABSTRACT_TRANSITION = 17;
+	int INTERNAL_ABSTRACT_TRANSITION = 20;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6436,7 +7546,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTransition()
 	 * @generated
 	 */
-	int INTERNAL_TRANSITION = 18;
+	int INTERNAL_TRANSITION = 21;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6653,7 +7763,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_TRANSITION = 19;
+	int INTERNAL_IMMEDIATE_TRANSITION = 22;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6870,7 +7980,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTerminationTransition()
 	 * @generated
 	 */
-	int INTERNAL_TERMINATION_TRANSITION = 20;
+	int INTERNAL_TERMINATION_TRANSITION = 23;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7069,7 +8179,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConditionalTerminationTransition()
 	 * @generated
 	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_TRANSITION = 21;
+	int INTERNAL_CONDITIONAL_TERMINATION_TRANSITION = 24;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7286,7 +8396,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalStrongAbortTransition()
 	 * @generated
 	 */
-	int INTERNAL_STRONG_ABORT_TRANSITION = 22;
+	int INTERNAL_STRONG_ABORT_TRANSITION = 25;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7503,7 +8613,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateStrongAbortTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION = 23;
+	int INTERNAL_IMMEDIATE_STRONG_ABORT_TRANSITION = 26;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7720,7 +8830,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_DEFERRED_TRANSITION = 24;
+	int INTERNAL_DEFERRED_TRANSITION = 27;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -7937,7 +9047,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_DEFERRED_TRANSITION = 25;
+	int INTERNAL_IMMEDIATE_DEFERRED_TRANSITION = 28;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8154,7 +9264,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTerminationDefferdTransition()
 	 * @generated
 	 */
-	int INTERNAL_TERMINATION_DEFFERD_TRANSITION = 26;
+	int INTERNAL_TERMINATION_DEFFERD_TRANSITION = 29;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8229,22 +9339,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_TERMINATION_DEFFERD_TRANSITION__PRIORITY = INTERNAL_ABSTRACT_TRANSITION__PRIORITY;
 
 	/**
-	 * The feature id for the '<em><b>Count delay</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_TERMINATION_DEFFERD_TRANSITION__COUNT_DELAY = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
-
-	/**
 	 * The feature id for the '<em><b>Effect</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_TERMINATION_DEFFERD_TRANSITION__EFFECT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
+	int INTERNAL_TERMINATION_DEFFERD_TRANSITION__EFFECT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Termination Defferd Transition</em>' class.
@@ -8253,7 +9354,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_TERMINATION_DEFFERD_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 2;
+	int INTERNAL_TERMINATION_DEFFERD_TRANSITION_FEATURE_COUNT = INTERNAL_ABSTRACT_TRANSITION_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -8362,7 +9463,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConditionalTerminationDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION = 27;
+	int INTERNAL_CONDITIONAL_TERMINATION_DEFERRED_TRANSITION = 30;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8579,7 +9680,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalStrongAbortDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION = 28;
+	int INTERNAL_STRONG_ABORT_DEFERRED_TRANSITION = 31;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8796,7 +9897,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateStrongAbortDeferredTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION = 29;
+	int INTERNAL_IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION = 32;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9013,7 +10114,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_HISTORY_TRANSITION = 30;
+	int INTERNAL_HISTORY_TRANSITION = 33;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9239,7 +10340,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_HISTORY_TRANSITION = 31;
+	int INTERNAL_IMMEDIATE_HISTORY_TRANSITION = 34;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9465,7 +10566,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalTerminationHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_TERMINATION_HISTORY_TRANSITION = 32;
+	int INTERNAL_TERMINATION_HISTORY_TRANSITION = 35;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9673,7 +10774,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConditionalTerminationHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION = 33;
+	int INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION = 36;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -9899,7 +11000,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalStrongAbortHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_STRONG_ABORT_HISTORY_TRANSITION = 34;
+	int INTERNAL_STRONG_ABORT_HISTORY_TRANSITION = 37;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -10125,7 +11226,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalImmediateStrongAbortHistoryTransition()
 	 * @generated
 	 */
-	int INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION = 35;
+	int INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION = 38;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -10351,7 +11452,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalConnection()
 	 * @generated
 	 */
-	int INTERNAL_CONNECTION = 36;
+	int INTERNAL_CONNECTION = 39;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -10532,7 +11633,7 @@ public interface InternalPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSCChart()
 	 * @generated
 	 */
-	int INTERNAL_SC_CHART = 37;
+	int INTERNAL_SC_CHART = 40;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -12757,6 +13858,162 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalCircuitConnecter__GetCircuitConnecterSuccessors();
 
 	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece <em>SC Chart Referece</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>SC Chart Referece</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece
+	 * @generated
+	 */
+	EClass getInternalSCChartReferece();
+
+	/**
+	 * Returns the meta object for the attribute list '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getAssignments <em>Assignments</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Assignments</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getAssignments()
+	 * @see #getInternalSCChartReferece()
+	 * @generated
+	 */
+	EAttribute getInternalSCChartReferece_Assignments();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getName()
+	 * @see #getInternalSCChartReferece()
+	 * @generated
+	 */
+	EAttribute getInternalSCChartReferece_Name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getLabel <em>Label</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Label</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getLabel()
+	 * @see #getInternalSCChartReferece()
+	 * @generated
+	 */
+	EAttribute getInternalSCChartReferece_Label();
+
+	/**
+	 * Returns the meta object for the attribute list '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getInputsOutputs <em>Inputs Outputs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Inputs Outputs</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getInputsOutputs()
+	 * @see #getInternalSCChartReferece()
+	 * @generated
+	 */
+	EAttribute getInternalSCChartReferece_InputsOutputs();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getUuid <em>Uuid</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Uuid</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getUuid()
+	 * @see #getInternalSCChartReferece()
+	 * @generated
+	 */
+	EAttribute getInternalSCChartReferece_Uuid();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getLibraryComponentUID <em>Library Component UID</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Library Component UID</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getLibraryComponentUID()
+	 * @see #getInternalSCChartReferece()
+	 * @generated
+	 */
+	EAttribute getInternalSCChartReferece_LibraryComponentUID();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getContainmentConstraints() <em>Get Containment Constraints</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Containment Constraints</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getContainmentConstraints()
+	 * @generated
+	 */
+	EOperation getInternalSCChartReferece__GetContainmentConstraints();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getReference() <em>Get Reference</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Reference</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getReference()
+	 * @generated
+	 */
+	EOperation getInternalSCChartReferece__GetReference();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialSCChartReferece <em>Initial SC Chart Referece</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Initial SC Chart Referece</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialSCChartReferece
+	 * @generated
+	 */
+	EClass getInternalInitialSCChartReferece();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialSCChartReferece#getContainmentConstraints() <em>Get Containment Constraints</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Containment Constraints</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialSCChartReferece#getContainmentConstraints()
+	 * @generated
+	 */
+	EOperation getInternalInitialSCChartReferece__GetContainmentConstraints();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialSCChartReferece#getReference() <em>Get Reference</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Reference</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialSCChartReferece#getReference()
+	 * @generated
+	 */
+	EOperation getInternalInitialSCChartReferece__GetReference();
+
+	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSCChartReferece <em>Final SC Chart Referece</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Final SC Chart Referece</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSCChartReferece
+	 * @generated
+	 */
+	EClass getInternalFinalSCChartReferece();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSCChartReferece#getContainmentConstraints() <em>Get Containment Constraints</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Containment Constraints</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSCChartReferece#getContainmentConstraints()
+	 * @generated
+	 */
+	EOperation getInternalFinalSCChartReferece__GetContainmentConstraints();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSCChartReferece#getReference() <em>Get Reference</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Reference</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalFinalSCChartReferece#getReference()
+	 * @generated
+	 */
+	EOperation getInternalFinalSCChartReferece__GetReference();
+
+	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAbstractTransition <em>Abstract Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13108,17 +14365,6 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getInternalTerminationDefferdTransition();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationDefferdTransition#getCount_delay <em>Count delay</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Count delay</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationDefferdTransition#getCount_delay()
-	 * @see #getInternalTerminationDefferdTransition()
-	 * @generated
-	 */
-	EAttribute getInternalTerminationDefferdTransition_Count_delay();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationDefferdTransition#getEffect <em>Effect</em>}'.
@@ -15298,6 +16544,132 @@ public interface InternalPackage extends EPackage {
 		EOperation INTERNAL_CIRCUIT_CONNECTER___GET_CIRCUIT_CONNECTER_SUCCESSORS = eINSTANCE.getInternalCircuitConnecter__GetCircuitConnecterSuccessors();
 
 		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSCChartRefereceImpl <em>SC Chart Referece</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSCChartRefereceImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalSCChartReferece()
+		 * @generated
+		 */
+		EClass INTERNAL_SC_CHART_REFERECE = eINSTANCE.getInternalSCChartReferece();
+
+		/**
+		 * The meta object literal for the '<em><b>Assignments</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_SC_CHART_REFERECE__ASSIGNMENTS = eINSTANCE.getInternalSCChartReferece_Assignments();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_SC_CHART_REFERECE__NAME = eINSTANCE.getInternalSCChartReferece_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Label</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_SC_CHART_REFERECE__LABEL = eINSTANCE.getInternalSCChartReferece_Label();
+
+		/**
+		 * The meta object literal for the '<em><b>Inputs Outputs</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_SC_CHART_REFERECE__INPUTS_OUTPUTS = eINSTANCE.getInternalSCChartReferece_InputsOutputs();
+
+		/**
+		 * The meta object literal for the '<em><b>Uuid</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_SC_CHART_REFERECE__UUID = eINSTANCE.getInternalSCChartReferece_Uuid();
+
+		/**
+		 * The meta object literal for the '<em><b>Library Component UID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_SC_CHART_REFERECE__LIBRARY_COMPONENT_UID = eINSTANCE.getInternalSCChartReferece_LibraryComponentUID();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Containment Constraints</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_SC_CHART_REFERECE___GET_CONTAINMENT_CONSTRAINTS = eINSTANCE.getInternalSCChartReferece__GetContainmentConstraints();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Reference</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_SC_CHART_REFERECE___GET_REFERENCE = eINSTANCE.getInternalSCChartReferece__GetReference();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalInitialSCChartRefereceImpl <em>Initial SC Chart Referece</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalInitialSCChartRefereceImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalInitialSCChartReferece()
+		 * @generated
+		 */
+		EClass INTERNAL_INITIAL_SC_CHART_REFERECE = eINSTANCE.getInternalInitialSCChartReferece();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Containment Constraints</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_INITIAL_SC_CHART_REFERECE___GET_CONTAINMENT_CONSTRAINTS = eINSTANCE.getInternalInitialSCChartReferece__GetContainmentConstraints();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Reference</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_INITIAL_SC_CHART_REFERECE___GET_REFERENCE = eINSTANCE.getInternalInitialSCChartReferece__GetReference();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalFinalSCChartRefereceImpl <em>Final SC Chart Referece</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalFinalSCChartRefereceImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalFinalSCChartReferece()
+		 * @generated
+		 */
+		EClass INTERNAL_FINAL_SC_CHART_REFERECE = eINSTANCE.getInternalFinalSCChartReferece();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Containment Constraints</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SC_CHART_REFERECE___GET_CONTAINMENT_CONSTRAINTS = eINSTANCE.getInternalFinalSCChartReferece__GetContainmentConstraints();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Reference</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation INTERNAL_FINAL_SC_CHART_REFERECE___GET_REFERENCE = eINSTANCE.getInternalFinalSCChartReferece__GetReference();
+
+		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalAbstractTransitionImpl <em>Abstract Transition</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -15580,14 +16952,6 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EClass INTERNAL_TERMINATION_DEFFERD_TRANSITION = eINSTANCE.getInternalTerminationDefferdTransition();
-
-		/**
-		 * The meta object literal for the '<em><b>Count delay</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_TERMINATION_DEFFERD_TRANSITION__COUNT_DELAY = eINSTANCE.getInternalTerminationDefferdTransition_Count_delay();
 
 		/**
 		 * The meta object literal for the '<em><b>Effect</b></em>' attribute feature.

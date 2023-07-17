@@ -175,6 +175,33 @@ public interface InternalFactory extends EFactory {
 	InternalCircuitConnecter createInternalCircuitConnecter();
 
 	/**
+	 * Returns a new object of class '<em>SC Chart Referece</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>SC Chart Referece</em>'.
+	 * @generated
+	 */
+	InternalSCChartReferece createInternalSCChartReferece();
+
+	/**
+	 * Returns a new object of class '<em>Initial SC Chart Referece</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Initial SC Chart Referece</em>'.
+	 * @generated
+	 */
+	InternalInitialSCChartReferece createInternalInitialSCChartReferece();
+
+	/**
+	 * Returns a new object of class '<em>Final SC Chart Referece</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Final SC Chart Referece</em>'.
+	 * @generated
+	 */
+	InternalFinalSCChartReferece createInternalFinalSCChartReferece();
+
+	/**
 	 * Returns a new object of class '<em>Abstract Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -12,7 +12,6 @@ package info.scce.cinco.product.scchart.mglid.scchart.internal;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationDefferdTransition#getCount_delay <em>Count delay</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationDefferdTransition#getEffect <em>Effect</em>}</li>
  * </ul>
  *
@@ -21,28 +20,6 @@ package info.scce.cinco.product.scchart.mglid.scchart.internal;
  * @generated
  */
 public interface InternalTerminationDefferdTransition extends InternalAbstractTransition {
-	/**
-	 * Returns the value of the '<em><b>Count delay</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Count delay</em>' attribute.
-	 * @see #setCount_delay(String)
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalTerminationDefferdTransition_Count_delay()
-	 * @model
-	 * @generated
-	 */
-	String getCount_delay();
-
-	/**
-	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTerminationDefferdTransition#getCount_delay <em>Count delay</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Count delay</em>' attribute.
-	 * @see #getCount_delay()
-	 * @generated
-	 */
-	void setCount_delay(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Effect</b></em>' attribute.
 	 * The default value is <code>"<No effect>"</code>.

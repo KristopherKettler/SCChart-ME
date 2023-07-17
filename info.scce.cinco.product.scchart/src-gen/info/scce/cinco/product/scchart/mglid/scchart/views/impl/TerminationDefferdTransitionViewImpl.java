@@ -107,29 +107,6 @@ public class TerminationDefferdTransitionViewImpl extends AbstractTransitionView
 	 * @generated
 	 */
 	@Override
-	public String getCount_delay() {
-		return getInternalTerminationDefferdTransition().getCount_delay();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCount_delay(final String _arg) {
-		getInternalTerminationDefferdTransition().getElement().transact("Set Count_delay", () -> {
-			getInternalTerminationDefferdTransition().setCount_delay(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getEffect() {
 		return getInternalTerminationDefferdTransition().getEffect();
 	}
@@ -214,11 +191,6 @@ public class TerminationDefferdTransitionViewImpl extends AbstractTransitionView
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
-			case ViewsPackage.TERMINATION_DEFFERD_TRANSITION_VIEW___GET_COUNT_DELAY:
-				return getCount_delay();
-			case ViewsPackage.TERMINATION_DEFFERD_TRANSITION_VIEW___SET_COUNT_DELAY__STRING:
-				setCount_delay((String)arguments.get(0));
-				return null;
 			case ViewsPackage.TERMINATION_DEFFERD_TRANSITION_VIEW___GET_EFFECT:
 				return getEffect();
 			case ViewsPackage.TERMINATION_DEFFERD_TRANSITION_VIEW___SET_EFFECT__STRING:

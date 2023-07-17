@@ -11,3 +11,10 @@
 /.DeclarationEvent.xtendbin
 /DeclarationEvent.java
 /.FinalSuperStateEvent.java._trace
+/.FinalSuperStateEvent.xtendbin
+/FinalSuperStateEvent.java
+/.SCChartRefereceEvent.java._trace
+/.SCChartRefereceStartEvent.java._trace
+/.FinalSCChartRefereceEvent.java._trace
+/.IntialSCChartRefereceEvent.java._trace
+/.InitialSCChartRefereceEvent.java._trace

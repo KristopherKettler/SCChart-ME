@@ -173,6 +173,26 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ViewsPackage.SC_CHART_REFERECE_VIEW: {
+				SCChartRefereceView scChartRefereceView = (SCChartRefereceView)theEObject;
+				T result = caseSCChartRefereceView(scChartRefereceView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ViewsPackage.INITIAL_SC_CHART_REFERECE_VIEW: {
+				InitialSCChartRefereceView initialSCChartRefereceView = (InitialSCChartRefereceView)theEObject;
+				T result = caseInitialSCChartRefereceView(initialSCChartRefereceView);
+				if (result == null) result = caseSCChartRefereceView(initialSCChartRefereceView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ViewsPackage.FINAL_SC_CHART_REFERECE_VIEW: {
+				FinalSCChartRefereceView finalSCChartRefereceView = (FinalSCChartRefereceView)theEObject;
+				T result = caseFinalSCChartRefereceView(finalSCChartRefereceView);
+				if (result == null) result = caseSCChartRefereceView(finalSCChartRefereceView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ViewsPackage.ABSTRACT_TRANSITION_VIEW: {
 				AbstractTransitionView abstractTransitionView = (AbstractTransitionView)theEObject;
 				T result = caseAbstractTransitionView(abstractTransitionView);
@@ -573,6 +593,51 @@ public class ViewsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCircuitConnecterView(CircuitConnecterView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>SC Chart Referece View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>SC Chart Referece View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSCChartRefereceView(SCChartRefereceView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Initial SC Chart Referece View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Initial SC Chart Referece View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInitialSCChartRefereceView(InitialSCChartRefereceView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Final SC Chart Referece View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Final SC Chart Referece View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFinalSCChartRefereceView(FinalSCChartRefereceView object) {
 		return null;
 	}
 

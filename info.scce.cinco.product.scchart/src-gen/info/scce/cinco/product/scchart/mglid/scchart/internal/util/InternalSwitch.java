@@ -244,6 +244,41 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case InternalPackage.INTERNAL_SC_CHART_REFERECE: {
+				InternalSCChartReferece internalSCChartReferece = (InternalSCChartReferece)theEObject;
+				T result = caseInternalSCChartReferece(internalSCChartReferece);
+				if (result == null) result = caseInternalContainer(internalSCChartReferece);
+				if (result == null) result = caseInternalNode(internalSCChartReferece);
+				if (result == null) result = caseInternalModelElementContainer(internalSCChartReferece);
+				if (result == null) result = caseInternalModelElement(internalSCChartReferece);
+				if (result == null) result = caseInternalIdentifiableElement(internalSCChartReferece);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_INITIAL_SC_CHART_REFERECE: {
+				InternalInitialSCChartReferece internalInitialSCChartReferece = (InternalInitialSCChartReferece)theEObject;
+				T result = caseInternalInitialSCChartReferece(internalInitialSCChartReferece);
+				if (result == null) result = caseInternalSCChartReferece(internalInitialSCChartReferece);
+				if (result == null) result = caseInternalContainer(internalInitialSCChartReferece);
+				if (result == null) result = caseInternalNode(internalInitialSCChartReferece);
+				if (result == null) result = caseInternalModelElementContainer(internalInitialSCChartReferece);
+				if (result == null) result = caseInternalModelElement(internalInitialSCChartReferece);
+				if (result == null) result = caseInternalIdentifiableElement(internalInitialSCChartReferece);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_FINAL_SC_CHART_REFERECE: {
+				InternalFinalSCChartReferece internalFinalSCChartReferece = (InternalFinalSCChartReferece)theEObject;
+				T result = caseInternalFinalSCChartReferece(internalFinalSCChartReferece);
+				if (result == null) result = caseInternalSCChartReferece(internalFinalSCChartReferece);
+				if (result == null) result = caseInternalContainer(internalFinalSCChartReferece);
+				if (result == null) result = caseInternalNode(internalFinalSCChartReferece);
+				if (result == null) result = caseInternalModelElementContainer(internalFinalSCChartReferece);
+				if (result == null) result = caseInternalModelElement(internalFinalSCChartReferece);
+				if (result == null) result = caseInternalIdentifiableElement(internalFinalSCChartReferece);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case InternalPackage.INTERNAL_ABSTRACT_TRANSITION: {
 				InternalAbstractTransition internalAbstractTransition = (InternalAbstractTransition)theEObject;
 				T result = caseInternalAbstractTransition(internalAbstractTransition);
@@ -707,6 +742,51 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalCircuitConnecter(InternalCircuitConnecter object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>SC Chart Referece</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>SC Chart Referece</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalSCChartReferece(InternalSCChartReferece object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Initial SC Chart Referece</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Initial SC Chart Referece</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalInitialSCChartReferece(InternalInitialSCChartReferece object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Final SC Chart Referece</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Final SC Chart Referece</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalFinalSCChartReferece(InternalFinalSCChartReferece object) {
 		return null;
 	}
 

@@ -11,10 +11,13 @@ import graphmodel.Node;
 
 import graphmodel.impl.NodeImpl;
 
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
+import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.ScchartPackage;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
@@ -457,6 +460,132 @@ public class SuspendImpl extends NodeImpl implements Suspend {
 	 * @generated
 	 */
 	@Override
+	public boolean canMoveTo(final SCChartReferece sCChartReferece, final int x, final int y) {
+		return sCChartReferece.canContain(info.scce.cinco.product.scchart.mglid.scchart.Suspend.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void moveTo(final SCChartReferece sCChartReferece, final int x, final int y) {
+		transact("Move to", () -> {
+			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
+			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
+			int deltaX = x - ime.getX();
+			int deltaY = y - ime.getY();
+			preMove(sCChartReferece, x, y);
+			s_moveTo(sCChartReferece, x, y);
+			sCChartReferece.getInternalContainerElement().getModelElements().add(ime);
+			ime.setX(x);
+			ime.setY(y);
+			postMove(sourceContainer, sCChartReferece, x, y, deltaX, deltaY);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void s_moveTo(final SCChartReferece sCChartReferece, final int x, final int y) {
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canMoveTo(final InitialSCChartReferece initialSCChartReferece, final int x, final int y) {
+		return initialSCChartReferece.canContain(info.scce.cinco.product.scchart.mglid.scchart.Suspend.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void moveTo(final InitialSCChartReferece initialSCChartReferece, final int x, final int y) {
+		transact("Move to", () -> {
+			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
+			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
+			int deltaX = x - ime.getX();
+			int deltaY = y - ime.getY();
+			preMove(initialSCChartReferece, x, y);
+			s_moveTo(initialSCChartReferece, x, y);
+			initialSCChartReferece.getInternalContainerElement().getModelElements().add(ime);
+			ime.setX(x);
+			ime.setY(y);
+			postMove(sourceContainer, initialSCChartReferece, x, y, deltaX, deltaY);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void s_moveTo(final InitialSCChartReferece initialSCChartReferece, final int x, final int y) {
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canMoveTo(final FinalSCChartReferece finalSCChartReferece, final int x, final int y) {
+		return finalSCChartReferece.canContain(info.scce.cinco.product.scchart.mglid.scchart.Suspend.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void moveTo(final FinalSCChartReferece finalSCChartReferece, final int x, final int y) {
+		transact("Move to", () -> {
+			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
+			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
+			int deltaX = x - ime.getX();
+			int deltaY = y - ime.getY();
+			preMove(finalSCChartReferece, x, y);
+			s_moveTo(finalSCChartReferece, x, y);
+			finalSCChartReferece.getInternalContainerElement().getModelElements().add(ime);
+			ime.setX(x);
+			ime.setY(y);
+			postMove(sourceContainer, finalSCChartReferece, x, y, deltaX, deltaY);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void s_moveTo(final FinalSCChartReferece finalSCChartReferece, final int x, final int y) {
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public SuspendView getSuspendView() {
 		SuspendView suspendView = info.scce.cinco.product.scchart.mglid.scchart.views.ViewsFactory.eINSTANCE.createSuspendView();
 		suspendView.setInternalSuspend((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuspend)getInternalElement());
@@ -590,6 +719,30 @@ public class SuspendImpl extends NodeImpl implements Suspend {
 				return null;
 			case ScchartPackage.SUSPEND___SMOVE_TO__FINALSUPERSTATE_INT_INT:
 				s_moveTo((FinalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.SUSPEND___CAN_MOVE_TO__SCCHARTREFERECE_INT_INT:
+				return canMoveTo((SCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.SUSPEND___MOVE_TO__SCCHARTREFERECE_INT_INT:
+				moveTo((SCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.SUSPEND___SMOVE_TO__SCCHARTREFERECE_INT_INT:
+				s_moveTo((SCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.SUSPEND___CAN_MOVE_TO__INITIALSCCHARTREFERECE_INT_INT:
+				return canMoveTo((InitialSCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.SUSPEND___MOVE_TO__INITIALSCCHARTREFERECE_INT_INT:
+				moveTo((InitialSCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.SUSPEND___SMOVE_TO__INITIALSCCHARTREFERECE_INT_INT:
+				s_moveTo((InitialSCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.SUSPEND___CAN_MOVE_TO__FINALSCCHARTREFERECE_INT_INT:
+				return canMoveTo((FinalSCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.SUSPEND___MOVE_TO__FINALSCCHARTREFERECE_INT_INT:
+				moveTo((FinalSCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.SUSPEND___SMOVE_TO__FINALSCCHARTREFERECE_INT_INT:
+				s_moveTo((FinalSCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
 			case ScchartPackage.SUSPEND___GET_SUSPEND_VIEW:
 				return getSuspendView();
