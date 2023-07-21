@@ -391,6 +391,15 @@ public interface ViewsFactory extends EFactory {
 	SCChartView createSCChartView();
 
 	/**
+	 * Returns a new object of class '<em>Assignment View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assignment View</em>'.
+	 * @generated
+	 */
+	AssignmentView createAssignmentView();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

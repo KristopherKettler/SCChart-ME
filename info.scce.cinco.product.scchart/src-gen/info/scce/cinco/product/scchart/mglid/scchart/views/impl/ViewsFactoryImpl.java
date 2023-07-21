@@ -97,6 +97,7 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW: return createImmediateStrongAbortHistoryTransitionView();
 			case ViewsPackage.CONNECTION_VIEW: return createConnectionView();
 			case ViewsPackage.SC_CHART_VIEW: return createSCChartView();
+			case ViewsPackage.ASSIGNMENT_VIEW: return createAssignmentView();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -551,6 +552,17 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public SCChartView createSCChartView() {
 		SCChartViewImpl scChartView = new SCChartViewImpl();
 		return scChartView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AssignmentView createAssignmentView() {
+		AssignmentViewImpl assignmentView = new AssignmentViewImpl();
+		return assignmentView;
 	}
 
 	/**

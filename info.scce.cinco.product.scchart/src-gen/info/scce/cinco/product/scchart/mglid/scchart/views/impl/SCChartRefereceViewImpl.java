@@ -2,6 +2,8 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.views.impl;
 
+import info.scce.cinco.product.scchart.mglid.scchart.Assignment;
+
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece;
 
 import info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView;
@@ -108,7 +110,7 @@ public class SCChartRefereceViewImpl extends EObjectImpl implements SCChartRefer
 	 * @generated
 	 */
 	@Override
-	public EList<String> getAssignments() {
+	public EList<Assignment> getAssignments() {
 		return getInternalSCChartReferece().getAssignments();
 	}
 
@@ -118,7 +120,7 @@ public class SCChartRefereceViewImpl extends EObjectImpl implements SCChartRefer
 	 * @generated
 	 */
 	@Override
-	public void setAssignments(final EList<String> _arg) {
+	public void setAssignments(final EList<Assignment> _arg) {
 		getInternalSCChartReferece().getElement().transact("Set Assignments", () -> {
 			getInternalSCChartReferece().getAssignments().clear();
 			getInternalSCChartReferece().getAssignments().addAll(_arg);
@@ -132,7 +134,7 @@ public class SCChartRefereceViewImpl extends EObjectImpl implements SCChartRefer
 	 * @generated
 	 */
 	@Override
-	public void addAssignments(final String _arg) {
+	public void addAssignments(final Assignment _arg) {
 		getInternalSCChartReferece().getElement().transact("Set Assignments", () -> {
 			getInternalSCChartReferece().getAssignments().add(_arg);
 		});
@@ -145,7 +147,7 @@ public class SCChartRefereceViewImpl extends EObjectImpl implements SCChartRefer
 	 * @generated
 	 */
 	@Override
-	public void removeAssignments(final String assignments) {
+	public void removeAssignments(final Assignment assignments) {
 		getInternalSCChartReferece().getElement().transact("Set Assignments", () -> {
 			getInternalSCChartReferece().getAssignments().remove(assignments);
 		});
@@ -204,7 +206,7 @@ public class SCChartRefereceViewImpl extends EObjectImpl implements SCChartRefer
 	 * @generated
 	 */
 	@Override
-	public EList<String> getInputsOutputs() {
+	public String getInputsOutputs() {
 		return getInternalSCChartReferece().getInputsOutputs();
 	}
 
@@ -214,36 +216,9 @@ public class SCChartRefereceViewImpl extends EObjectImpl implements SCChartRefer
 	 * @generated
 	 */
 	@Override
-	public void setInputsOutputs(final EList<String> _arg) {
+	public void setInputsOutputs(final String _arg) {
 		getInternalSCChartReferece().getElement().transact("Set InputsOutputs", () -> {
-			getInternalSCChartReferece().getInputsOutputs().clear();
-			getInternalSCChartReferece().getInputsOutputs().addAll(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void addInputsOutputs(final String _arg) {
-		getInternalSCChartReferece().getElement().transact("Set InputsOutputs", () -> {
-			getInternalSCChartReferece().getInputsOutputs().add(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void removeInputsOutputs(final String inputsOutputs) {
-		getInternalSCChartReferece().getElement().transact("Set InputsOutputs", () -> {
-			getInternalSCChartReferece().getInputsOutputs().remove(inputsOutputs);
+			getInternalSCChartReferece().setInputsOutputs(_arg);
 		});
 		
 	}
@@ -342,13 +317,13 @@ public class SCChartRefereceViewImpl extends EObjectImpl implements SCChartRefer
 			case ViewsPackage.SC_CHART_REFERECE_VIEW___GET_ASSIGNMENTS:
 				return getAssignments();
 			case ViewsPackage.SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__ELIST:
-				setAssignments((EList<String>)arguments.get(0));
+				setAssignments((EList<Assignment>)arguments.get(0));
 				return null;
-			case ViewsPackage.SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__STRING:
-				addAssignments((String)arguments.get(0));
+			case ViewsPackage.SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__ASSIGNMENT:
+				addAssignments((Assignment)arguments.get(0));
 				return null;
-			case ViewsPackage.SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__STRING:
-				removeAssignments((String)arguments.get(0));
+			case ViewsPackage.SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__ASSIGNMENT:
+				removeAssignments((Assignment)arguments.get(0));
 				return null;
 			case ViewsPackage.SC_CHART_REFERECE_VIEW___GET_NAME:
 				return getName();
@@ -362,14 +337,8 @@ public class SCChartRefereceViewImpl extends EObjectImpl implements SCChartRefer
 				return null;
 			case ViewsPackage.SC_CHART_REFERECE_VIEW___GET_INPUTS_OUTPUTS:
 				return getInputsOutputs();
-			case ViewsPackage.SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__ELIST:
-				setInputsOutputs((EList<String>)arguments.get(0));
-				return null;
-			case ViewsPackage.SC_CHART_REFERECE_VIEW___ADD_INPUTS_OUTPUTS__STRING:
-				addInputsOutputs((String)arguments.get(0));
-				return null;
-			case ViewsPackage.SC_CHART_REFERECE_VIEW___REMOVE_INPUTS_OUTPUTS__STRING:
-				removeInputsOutputs((String)arguments.get(0));
+			case ViewsPackage.SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__STRING:
+				setInputsOutputs((String)arguments.get(0));
 				return null;
 			case ViewsPackage.SC_CHART_REFERECE_VIEW___GET_UUID:
 				return getUuid();

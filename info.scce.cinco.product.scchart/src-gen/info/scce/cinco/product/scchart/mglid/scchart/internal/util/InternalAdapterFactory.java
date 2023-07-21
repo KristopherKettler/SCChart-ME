@@ -9,6 +9,7 @@ import graphmodel.internal.InternalIdentifiableElement;
 import graphmodel.internal.InternalModelElement;
 import graphmodel.internal.InternalModelElementContainer;
 import graphmodel.internal.InternalNode;
+import graphmodel.internal.InternalType;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.*;
 
@@ -240,6 +241,10 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 				return createInternalSCChartAdapter();
 			}
 			@Override
+			public Adapter caseInternalAssignment(InternalAssignment object) {
+				return createInternalAssignmentAdapter();
+			}
+			@Override
 			public Adapter caseInternalIdentifiableElement(InternalIdentifiableElement object) {
 				return createInternalIdentifiableElementAdapter();
 			}
@@ -266,6 +271,10 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseInternalGraphModel(InternalGraphModel object) {
 				return createInternalGraphModelAdapter();
+			}
+			@Override
+			public Adapter caseInternalType(InternalType object) {
+				return createInternalTypeAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -862,6 +871,20 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAssignment <em>Assignment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAssignment
+	 * @generated
+	 */
+	public Adapter createInternalAssignmentAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link graphmodel.internal.InternalIdentifiableElement <em>Identifiable Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -956,6 +979,20 @@ public class InternalAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createInternalGraphModelAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link graphmodel.internal.InternalType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see graphmodel.internal.InternalType
+	 * @generated
+	 */
+	public Adapter createInternalTypeAdapter() {
 		return null;
 	}
 

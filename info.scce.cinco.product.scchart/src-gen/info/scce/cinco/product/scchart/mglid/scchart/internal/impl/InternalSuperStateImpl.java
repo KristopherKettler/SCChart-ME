@@ -25,6 +25,8 @@ import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState
 
 import java.lang.reflect.InvocationTargetException;
 
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.EList;
@@ -32,6 +34,8 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,6 +47,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateImpl#getName <em>Name</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateImpl#getLabel <em>Label</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalSuperStateImpl#getInputsOutputs <em>Inputs Outputs</em>}</li>
  * </ul>
  *
  * @generated
@@ -87,6 +92,16 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 	 * @ordered
 	 */
 	protected String label = LABEL_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getInputsOutputs() <em>Inputs Outputs</em>}' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInputsOutputs()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<String> inputsOutputs;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,6 +166,19 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 		label = newLabel;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_SUPER_STATE__LABEL, oldLabel, label));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<String> getInputsOutputs() {
+		if (inputsOutputs == null) {
+			inputsOutputs = new EDataTypeUniqueEList<String>(String.class, this, InternalPackage.INTERNAL_SUPER_STATE__INPUTS_OUTPUTS);
+		}
+		return inputsOutputs;
 	}
 
 	/**
@@ -396,6 +424,8 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 				return getName();
 			case InternalPackage.INTERNAL_SUPER_STATE__LABEL:
 				return getLabel();
+			case InternalPackage.INTERNAL_SUPER_STATE__INPUTS_OUTPUTS:
+				return getInputsOutputs();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -405,6 +435,7 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -413,6 +444,10 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 				return;
 			case InternalPackage.INTERNAL_SUPER_STATE__LABEL:
 				setLabel((String)newValue);
+				return;
+			case InternalPackage.INTERNAL_SUPER_STATE__INPUTS_OUTPUTS:
+				getInputsOutputs().clear();
+				getInputsOutputs().addAll((Collection<? extends String>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -432,6 +467,9 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 			case InternalPackage.INTERNAL_SUPER_STATE__LABEL:
 				setLabel(LABEL_EDEFAULT);
 				return;
+			case InternalPackage.INTERNAL_SUPER_STATE__INPUTS_OUTPUTS:
+				getInputsOutputs().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -448,6 +486,8 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case InternalPackage.INTERNAL_SUPER_STATE__LABEL:
 				return LABEL_EDEFAULT == null ? label != null : !LABEL_EDEFAULT.equals(label);
+			case InternalPackage.INTERNAL_SUPER_STATE__INPUTS_OUTPUTS:
+				return inputsOutputs != null && !inputsOutputs.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -543,6 +583,8 @@ public class InternalSuperStateImpl extends InternalContainerImpl implements Int
 		result.append(name);
 		result.append(", label: ");
 		result.append(label);
+		result.append(", inputsOutputs: ");
+		result.append(inputsOutputs);
 		result.append(')');
 		return result.toString();
 	}

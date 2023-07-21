@@ -103,6 +103,294 @@ public interface DataFlowRegion extends Region {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	EList<SimpleState> getSimpleStates();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewSimpleState();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SimpleState newSimpleState(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SimpleState newSimpleState(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SimpleState newSimpleState(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SimpleState newSimpleState(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<SCChartReferece> getSCChartRefereces();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewSCChartReferece();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" referenceRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SCChartReferece newSCChartReferece(EObject reference, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" referenceRequired="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SCChartReferece newSCChartReferece(EObject reference, String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" referenceRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SCChartReferece newSCChartReferece(EObject reference, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" referenceRequired="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SCChartReferece newSCChartReferece(EObject reference, String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<InitialSCChartReferece> getInitialSCChartRefereces();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewInitialSCChartReferece();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" referenceRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	InitialSCChartReferece newInitialSCChartReferece(EObject reference, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" referenceRequired="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	InitialSCChartReferece newInitialSCChartReferece(EObject reference, String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" referenceRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	InitialSCChartReferece newInitialSCChartReferece(EObject reference, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" referenceRequired="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	InitialSCChartReferece newInitialSCChartReferece(EObject reference, String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<SuperState> getSuperStates();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewSuperState();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SuperState newSuperState(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	SuperState newSuperState(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SuperState newSuperState(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	SuperState newSuperState(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<InitilalSuperState> getInitilalSuperStates();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewInitilalSuperState();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	InitilalSuperState newInitilalSuperState(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	InitilalSuperState newInitilalSuperState(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	InitilalSuperState newInitilalSuperState(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	InitilalSuperState newInitilalSuperState(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<Output> getOutputs();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean canNewOutput();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	Output newOutput(int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	Output newOutput(String id, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	Output newOutput(int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
+	 * @generated
+	 */
+	Output newOutput(String id, int x, int y, int width, int height);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	EList<CircuitConnecter> getCircuitConnecters();
 
 	/**
@@ -144,54 +432,6 @@ public interface DataFlowRegion extends Region {
 	 * @generated
 	 */
 	CircuitConnecter newCircuitConnecter(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<FinalState> getFinalStates();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewFinalState();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	FinalState newFinalState(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	FinalState newFinalState(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	FinalState newFinalState(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	FinalState newFinalState(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -295,150 +535,6 @@ public interface DataFlowRegion extends Region {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<Output> getOutputs();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewOutput();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	Output newOutput(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	Output newOutput(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	Output newOutput(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	Output newOutput(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<InitialSCChartReferece> getInitialSCChartRefereces();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewInitialSCChartReferece();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" referenceRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	InitialSCChartReferece newInitialSCChartReferece(EObject reference, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" referenceRequired="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	InitialSCChartReferece newInitialSCChartReferece(EObject reference, String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" referenceRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	InitialSCChartReferece newInitialSCChartReferece(EObject reference, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" referenceRequired="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	InitialSCChartReferece newInitialSCChartReferece(EObject reference, String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<Operator> getOperators();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewOperator();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	Operator newOperator(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	Operator newOperator(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	Operator newOperator(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	Operator newOperator(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
 	EList<FinalSuperState> getFinalSuperStates();
 
 	/**
@@ -487,7 +583,7 @@ public interface DataFlowRegion extends Region {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<SuperState> getSuperStates();
+	EList<FinalState> getFinalStates();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -495,7 +591,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewSuperState();
+	boolean canNewFinalState();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -503,7 +599,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(int x, int y);
+	FinalState newFinalState(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -511,7 +607,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(String id, int x, int y);
+	FinalState newFinalState(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -519,7 +615,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(int x, int y, int width, int height);
+	FinalState newFinalState(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -527,55 +623,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SuperState newSuperState(String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<InitialState> getInitialStates();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewInitialState();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	InitialState newInitialState(int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	InitialState newInitialState(String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	InitialState newInitialState(int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	InitialState newInitialState(String id, int x, int y, int width, int height);
+	FinalState newFinalState(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -631,7 +679,7 @@ public interface DataFlowRegion extends Region {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<SCChartReferece> getSCChartRefereces();
+	EList<Operator> getOperators();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -639,55 +687,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewSCChartReferece();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" referenceRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	SCChartReferece newSCChartReferece(EObject reference, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" referenceRequired="true" idRequired="true" xRequired="true" yRequired="true"
-	 * @generated
-	 */
-	SCChartReferece newSCChartReferece(EObject reference, String id, int x, int y);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" referenceRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	SCChartReferece newSCChartReferece(EObject reference, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" referenceRequired="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
-	 * @generated
-	 */
-	SCChartReferece newSCChartReferece(EObject reference, String id, int x, int y, int width, int height);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	EList<InitilalSuperState> getInitilalSuperStates();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true"
-	 * @generated
-	 */
-	boolean canNewInitilalSuperState();
+	boolean canNewOperator();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -695,7 +695,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	InitilalSuperState newInitilalSuperState(int x, int y);
+	Operator newOperator(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -703,7 +703,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	InitilalSuperState newInitilalSuperState(String id, int x, int y);
+	Operator newOperator(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -711,7 +711,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	InitilalSuperState newInitilalSuperState(int x, int y, int width, int height);
+	Operator newOperator(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -719,7 +719,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	InitilalSuperState newInitilalSuperState(String id, int x, int y, int width, int height);
+	Operator newOperator(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -727,7 +727,7 @@ public interface DataFlowRegion extends Region {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<SimpleState> getSimpleStates();
+	EList<InitialState> getInitialStates();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -735,7 +735,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true"
 	 * @generated
 	 */
-	boolean canNewSimpleState();
+	boolean canNewInitialState();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -743,7 +743,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SimpleState newSimpleState(int x, int y);
+	InitialState newInitialState(int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -751,7 +751,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	SimpleState newSimpleState(String id, int x, int y);
+	InitialState newInitialState(String id, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -759,7 +759,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SimpleState newSimpleState(int x, int y, int width, int height);
+	InitialState newInitialState(int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -767,7 +767,7 @@ public interface DataFlowRegion extends Region {
 	 * @model required="true" idRequired="true" xRequired="true" yRequired="true" widthRequired="true" heightRequired="true"
 	 * @generated
 	 */
-	SimpleState newSimpleState(String id, int x, int y, int width, int height);
+	InitialState newInitialState(String id, int x, int y, int width, int height);
 
 	/**
 	 * <!-- begin-user-doc -->

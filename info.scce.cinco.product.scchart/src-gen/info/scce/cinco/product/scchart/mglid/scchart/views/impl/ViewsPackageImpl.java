@@ -318,6 +318,13 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	private EClass scChartViewEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass assignmentViewEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -617,6 +624,46 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EOperation getSuperStateView__SetLabel__String() {
         return getSuperStateView().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSuperStateView__GetInputsOutputs() {
+        return getSuperStateView().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSuperStateView__SetInputsOutputs__EList() {
+        return getSuperStateView().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSuperStateView__AddInputsOutputs__String() {
+        return getSuperStateView().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getSuperStateView__RemoveInputsOutputs__String() {
+        return getSuperStateView().getEOperations().get(7);
 	}
 
 	/**
@@ -1347,7 +1394,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSCChartRefereceView__AddAssignments__String() {
+	public EOperation getSCChartRefereceView__AddAssignments__Assignment() {
         return getSCChartRefereceView().getEOperations().get(2);
 	}
 
@@ -1357,7 +1404,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSCChartRefereceView__RemoveAssignments__String() {
+	public EOperation getSCChartRefereceView__RemoveAssignments__Assignment() {
         return getSCChartRefereceView().getEOperations().get(3);
 	}
 
@@ -1417,7 +1464,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSCChartRefereceView__SetInputsOutputs__EList() {
+	public EOperation getSCChartRefereceView__SetInputsOutputs__String() {
         return getSCChartRefereceView().getEOperations().get(9);
 	}
 
@@ -1427,7 +1474,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSCChartRefereceView__AddInputsOutputs__String() {
+	public EOperation getSCChartRefereceView__GetUuid() {
         return getSCChartRefereceView().getEOperations().get(10);
 	}
 
@@ -1437,28 +1484,8 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getSCChartRefereceView__RemoveInputsOutputs__String() {
-        return getSCChartRefereceView().getEOperations().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getSCChartRefereceView__GetUuid() {
-        return getSCChartRefereceView().getEOperations().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EOperation getSCChartRefereceView__SetUuid__String() {
-        return getSCChartRefereceView().getEOperations().get(13);
+        return getSCChartRefereceView().getEOperations().get(11);
 	}
 
 	/**
@@ -3088,6 +3115,49 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EReference getSCChartView_InternalSCChart() {
         return (EReference)getSCChartView().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAssignmentView() {
+		if (assignmentViewEClass == null) {
+			assignmentViewEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(ViewsPackage.eNS_URI).getEClassifiers().get(41);
+		}
+		return assignmentViewEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getAssignmentView_InternalAssignment() {
+        return (EReference)getAssignmentView().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getAssignmentView__GetAssignment() {
+        return getAssignmentView().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getAssignmentView__SetAssignment__String() {
+        return getAssignmentView().getEOperations().get(1);
 	}
 
 	/**

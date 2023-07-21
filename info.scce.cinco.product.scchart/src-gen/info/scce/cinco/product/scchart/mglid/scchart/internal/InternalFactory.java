@@ -391,6 +391,15 @@ public interface InternalFactory extends EFactory {
 	InternalSCChart createInternalSCChart();
 
 	/**
+	 * Returns a new object of class '<em>Assignment</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assignment</em>'.
+	 * @generated
+	 */
+	InternalAssignment createInternalAssignment();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

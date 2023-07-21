@@ -9,6 +9,7 @@ import graphmodel.internal.InternalModelElementContainer;
 
 import graphmodel.internal.impl.InternalContainerImpl;
 
+import info.scce.cinco.product.scchart.mglid.scchart.Assignment;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
@@ -19,14 +20,17 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
-import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -48,14 +52,14 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  */
 public class InternalSCChartRefereceImpl extends InternalContainerImpl implements InternalSCChartReferece {
 	/**
-	 * The cached value of the '{@link #getAssignments() <em>Assignments</em>}' attribute list.
+	 * The cached value of the '{@link #getAssignments() <em>Assignments</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getAssignments()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<String> assignments;
+	protected EList<Assignment> assignments;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -98,14 +102,24 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 	protected String label = LABEL_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getInputsOutputs() <em>Inputs Outputs</em>}' attribute list.
+	 * The default value of the '{@link #getInputsOutputs() <em>Inputs Outputs</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getInputsOutputs()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<String> inputsOutputs;
+	protected static final String INPUTS_OUTPUTS_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getInputsOutputs() <em>Inputs Outputs</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInputsOutputs()
+	 * @generated
+	 * @ordered
+	 */
+	protected String inputsOutputs = INPUTS_OUTPUTS_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getUuid() <em>Uuid</em>}' attribute.
@@ -172,9 +186,9 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 	 * @generated
 	 */
 	@Override
-	public EList<String> getAssignments() {
+	public EList<Assignment> getAssignments() {
 		if (assignments == null) {
-			assignments = new EDataTypeUniqueEList<String>(String.class, this, InternalPackage.INTERNAL_SC_CHART_REFERECE__ASSIGNMENTS);
+			assignments = new EObjectContainmentEList<Assignment>(Assignment.class, this, InternalPackage.INTERNAL_SC_CHART_REFERECE__ASSIGNMENTS);
 		}
 		return assignments;
 	}
@@ -231,11 +245,21 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 	 * @generated
 	 */
 	@Override
-	public EList<String> getInputsOutputs() {
-		if (inputsOutputs == null) {
-			inputsOutputs = new EDataTypeUniqueEList<String>(String.class, this, InternalPackage.INTERNAL_SC_CHART_REFERECE__INPUTS_OUTPUTS);
-		}
+	public String getInputsOutputs() {
 		return inputsOutputs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInputsOutputs(String newInputsOutputs) {
+		String oldInputsOutputs = inputsOutputs;
+		inputsOutputs = newInputsOutputs;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_SC_CHART_REFERECE__INPUTS_OUTPUTS, oldInputsOutputs, inputsOutputs));
 	}
 
 	/**
@@ -316,6 +340,20 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 	 * @generated
 	 */
 	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case InternalPackage.INTERNAL_SC_CHART_REFERECE__ASSIGNMENTS:
+				return ((InternalEList<?>)getAssignments()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE__ASSIGNMENTS:
@@ -345,7 +383,7 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 		switch (featureID) {
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE__ASSIGNMENTS:
 				getAssignments().clear();
-				getAssignments().addAll((Collection<? extends String>)newValue);
+				getAssignments().addAll((Collection<? extends Assignment>)newValue);
 				return;
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE__NAME:
 				setName((String)newValue);
@@ -354,8 +392,7 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 				setLabel((String)newValue);
 				return;
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE__INPUTS_OUTPUTS:
-				getInputsOutputs().clear();
-				getInputsOutputs().addAll((Collection<? extends String>)newValue);
+				setInputsOutputs((String)newValue);
 				return;
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE__UUID:
 				setUuid((String)newValue);
@@ -385,7 +422,7 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 				setLabel(LABEL_EDEFAULT);
 				return;
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE__INPUTS_OUTPUTS:
-				getInputsOutputs().clear();
+				setInputsOutputs(INPUTS_OUTPUTS_EDEFAULT);
 				return;
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE__UUID:
 				setUuid(UUID_EDEFAULT);
@@ -412,7 +449,7 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE__LABEL:
 				return LABEL_EDEFAULT == null ? label != null : !LABEL_EDEFAULT.equals(label);
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE__INPUTS_OUTPUTS:
-				return inputsOutputs != null && !inputsOutputs.isEmpty();
+				return INPUTS_OUTPUTS_EDEFAULT == null ? inputsOutputs != null : !INPUTS_OUTPUTS_EDEFAULT.equals(inputsOutputs);
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE__UUID:
 				return UUID_EDEFAULT == null ? uuid != null : !UUID_EDEFAULT.equals(uuid);
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE__LIBRARY_COMPONENT_UID:
@@ -469,9 +506,7 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (assignments: ");
-		result.append(assignments);
-		result.append(", name: ");
+		result.append(" (name: ");
 		result.append(name);
 		result.append(", label: ");
 		result.append(label);

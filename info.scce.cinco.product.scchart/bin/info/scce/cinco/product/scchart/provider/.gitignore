@@ -7,3 +7,5 @@
 /.DeclarationTypeProvider.xtendbin
 /DeclarationInputOutputProvider.java
 /DeclarationTypeProvider.java
+/.ReferenceAssignmentProvider.java._trace
+/.AssignmentProvider.java._trace

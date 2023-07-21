@@ -221,30 +221,6 @@ public interface Input extends Node {
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	boolean canNewConnection(CircuitConnecter target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
-	Connection newConnection(CircuitConnecter target);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true" idRequired="true"
-	 * @generated
-	 */
-	Connection newConnection(CircuitConnecter target, String id);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
-	 * @generated
-	 */
 	boolean canNewConnection(Output target);
 
 	/**
@@ -262,6 +238,30 @@ public interface Input extends Node {
 	 * @generated
 	 */
 	Connection newConnection(Output target, String id);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	boolean canNewConnection(CircuitConnecter target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	Connection newConnection(CircuitConnecter target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true" idRequired="true"
+	 * @generated
+	 */
+	Connection newConnection(CircuitConnecter target, String id);
 
 	/**
 	 * <!-- begin-user-doc -->

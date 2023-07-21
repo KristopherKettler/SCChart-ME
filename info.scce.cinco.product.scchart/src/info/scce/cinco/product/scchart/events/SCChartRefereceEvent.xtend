@@ -50,12 +50,12 @@ final class SCChartRefereceEvent extends info.scce.cinco.product.scchart.mglid.s
 	
 	override postCreate(SCChartReferece element) {
 		if(element.reference.getDeclarations !== null){
-			element.reference.getDeclarations.forEach[ it ,index |
-				if(it.inputOutput!= ' '){
-					element.addInputsOutputs(it.inputOutput+ ' (assignment ' +index+ ')')
-					element.addAssignments('<insert assignment ' + index + '>')
-				} 
-			]
+//			element.reference.getDeclarations.forEach[ it ,index |
+//				if(it.inputOutput!= ' '){
+//					element.addInputsOutputs(it.inputOutput+ ' (assignment ' +index+ ')')
+//					element.addAssignments('<insert assignment ' + index + '>')
+//				} 
+//			]
 		}
 		// TODO: Auto-generated method stub
 	}

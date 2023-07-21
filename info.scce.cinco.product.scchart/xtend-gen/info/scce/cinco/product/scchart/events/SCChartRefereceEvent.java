@@ -1,13 +1,10 @@
 package info.scce.cinco.product.scchart.events;
 
-import com.google.common.base.Objects;
 import graphmodel.Direction;
 import graphmodel.ModelElementContainer;
 import info.scce.cinco.product.scchart.mglid.scchart.Declaration;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
 import org.eclipse.emf.common.util.EList;
-import org.eclipse.xtext.xbase.lib.IterableExtensions;
-import org.eclipse.xtext.xbase.lib.Procedures.Procedure2;
 
 /**
  * About this class:
@@ -56,19 +53,6 @@ public final class SCChartRefereceEvent extends info.scce.cinco.product.scchart.
     EList<Declaration> _declarations = element.getReference().getDeclarations();
     boolean _tripleNotEquals = (_declarations != null);
     if (_tripleNotEquals) {
-      final Procedure2<Declaration, Integer> _function = (Declaration it, Integer index) -> {
-        String _inputOutput = it.getInputOutput();
-        boolean _notEquals = (!Objects.equal(_inputOutput, " "));
-        if (_notEquals) {
-          String _inputOutput_1 = it.getInputOutput();
-          String _plus = (_inputOutput_1 + " (assignment ");
-          String _plus_1 = (_plus + index);
-          String _plus_2 = (_plus_1 + ")");
-          element.addInputsOutputs(_plus_2);
-          element.addAssignments((("<insert assignment " + index) + ">"));
-        }
-      };
-      IterableExtensions.<Declaration>forEach(element.getReference().getDeclarations(), _function);
     }
   }
   

@@ -385,13 +385,49 @@ public interface ViewsPackage extends EPackage {
 	int SUPER_STATE_VIEW___SET_LABEL__STRING = 3;
 
 	/**
+	 * The operation id for the '<em>Get Inputs Outputs</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_VIEW___GET_INPUTS_OUTPUTS = 4;
+
+	/**
+	 * The operation id for the '<em>Set Inputs Outputs</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_VIEW___SET_INPUTS_OUTPUTS__ELIST = 5;
+
+	/**
+	 * The operation id for the '<em>Add Inputs Outputs</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_VIEW___ADD_INPUTS_OUTPUTS__STRING = 6;
+
+	/**
+	 * The operation id for the '<em>Remove Inputs Outputs</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPER_STATE_VIEW___REMOVE_INPUTS_OUTPUTS__STRING = 7;
+
+	/**
 	 * The number of operations of the '<em>Super State View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPER_STATE_VIEW_OPERATION_COUNT = 4;
+	int SUPER_STATE_VIEW_OPERATION_COUNT = 8;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.InitilalSuperStateViewImpl <em>Initilal Super State View</em>}' class.
@@ -465,6 +501,42 @@ public interface ViewsPackage extends EPackage {
 	 * @ordered
 	 */
 	int INITILAL_SUPER_STATE_VIEW___SET_LABEL__STRING = SUPER_STATE_VIEW___SET_LABEL__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Inputs Outputs</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITILAL_SUPER_STATE_VIEW___GET_INPUTS_OUTPUTS = SUPER_STATE_VIEW___GET_INPUTS_OUTPUTS;
+
+	/**
+	 * The operation id for the '<em>Set Inputs Outputs</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITILAL_SUPER_STATE_VIEW___SET_INPUTS_OUTPUTS__ELIST = SUPER_STATE_VIEW___SET_INPUTS_OUTPUTS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Add Inputs Outputs</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITILAL_SUPER_STATE_VIEW___ADD_INPUTS_OUTPUTS__STRING = SUPER_STATE_VIEW___ADD_INPUTS_OUTPUTS__STRING;
+
+	/**
+	 * The operation id for the '<em>Remove Inputs Outputs</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITILAL_SUPER_STATE_VIEW___REMOVE_INPUTS_OUTPUTS__STRING = SUPER_STATE_VIEW___REMOVE_INPUTS_OUTPUTS__STRING;
 
 	/**
 	 * The number of operations of the '<em>Initilal Super State View</em>' class.
@@ -547,6 +619,42 @@ public interface ViewsPackage extends EPackage {
 	 * @ordered
 	 */
 	int FINAL_SUPER_STATE_VIEW___SET_LABEL__STRING = SUPER_STATE_VIEW___SET_LABEL__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Inputs Outputs</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FINAL_SUPER_STATE_VIEW___GET_INPUTS_OUTPUTS = SUPER_STATE_VIEW___GET_INPUTS_OUTPUTS;
+
+	/**
+	 * The operation id for the '<em>Set Inputs Outputs</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FINAL_SUPER_STATE_VIEW___SET_INPUTS_OUTPUTS__ELIST = SUPER_STATE_VIEW___SET_INPUTS_OUTPUTS__ELIST;
+
+	/**
+	 * The operation id for the '<em>Add Inputs Outputs</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FINAL_SUPER_STATE_VIEW___ADD_INPUTS_OUTPUTS__STRING = SUPER_STATE_VIEW___ADD_INPUTS_OUTPUTS__STRING;
+
+	/**
+	 * The operation id for the '<em>Remove Inputs Outputs</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FINAL_SUPER_STATE_VIEW___REMOVE_INPUTS_OUTPUTS__STRING = SUPER_STATE_VIEW___REMOVE_INPUTS_OUTPUTS__STRING;
 
 	/**
 	 * The number of operations of the '<em>Final Super State View</em>' class.
@@ -1449,7 +1557,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__STRING = 2;
+	int SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__ASSIGNMENT = 2;
 
 	/**
 	 * The operation id for the '<em>Remove Assignments</em>' operation.
@@ -1458,7 +1566,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__STRING = 3;
+	int SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__ASSIGNMENT = 3;
 
 	/**
 	 * The operation id for the '<em>Get Name</em>' operation.
@@ -1512,25 +1620,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__ELIST = 9;
-
-	/**
-	 * The operation id for the '<em>Add Inputs Outputs</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SC_CHART_REFERECE_VIEW___ADD_INPUTS_OUTPUTS__STRING = 10;
-
-	/**
-	 * The operation id for the '<em>Remove Inputs Outputs</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SC_CHART_REFERECE_VIEW___REMOVE_INPUTS_OUTPUTS__STRING = 11;
+	int SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__STRING = 9;
 
 	/**
 	 * The operation id for the '<em>Get Uuid</em>' operation.
@@ -1539,7 +1629,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW___GET_UUID = 12;
+	int SC_CHART_REFERECE_VIEW___GET_UUID = 10;
 
 	/**
 	 * The operation id for the '<em>Set Uuid</em>' operation.
@@ -1548,7 +1638,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW___SET_UUID__STRING = 13;
+	int SC_CHART_REFERECE_VIEW___SET_UUID__STRING = 11;
 
 	/**
 	 * The number of operations of the '<em>SC Chart Referece View</em>' class.
@@ -1557,7 +1647,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW_OPERATION_COUNT = 14;
+	int SC_CHART_REFERECE_VIEW_OPERATION_COUNT = 12;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.InitialSCChartRefereceViewImpl <em>Initial SC Chart Referece View</em>}' class.
@@ -1621,7 +1711,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INITIAL_SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__STRING = SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__STRING;
+	int INITIAL_SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__ASSIGNMENT = SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__ASSIGNMENT;
 
 	/**
 	 * The operation id for the '<em>Remove Assignments</em>' operation.
@@ -1630,7 +1720,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INITIAL_SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__STRING = SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__STRING;
+	int INITIAL_SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__ASSIGNMENT = SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__ASSIGNMENT;
 
 	/**
 	 * The operation id for the '<em>Get Name</em>' operation.
@@ -1684,25 +1774,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INITIAL_SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__ELIST = SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__ELIST;
-
-	/**
-	 * The operation id for the '<em>Add Inputs Outputs</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITIAL_SC_CHART_REFERECE_VIEW___ADD_INPUTS_OUTPUTS__STRING = SC_CHART_REFERECE_VIEW___ADD_INPUTS_OUTPUTS__STRING;
-
-	/**
-	 * The operation id for the '<em>Remove Inputs Outputs</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITIAL_SC_CHART_REFERECE_VIEW___REMOVE_INPUTS_OUTPUTS__STRING = SC_CHART_REFERECE_VIEW___REMOVE_INPUTS_OUTPUTS__STRING;
+	int INITIAL_SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__STRING = SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__STRING;
 
 	/**
 	 * The operation id for the '<em>Get Uuid</em>' operation.
@@ -1793,7 +1865,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FINAL_SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__STRING = SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__STRING;
+	int FINAL_SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__ASSIGNMENT = SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__ASSIGNMENT;
 
 	/**
 	 * The operation id for the '<em>Remove Assignments</em>' operation.
@@ -1802,7 +1874,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FINAL_SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__STRING = SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__STRING;
+	int FINAL_SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__ASSIGNMENT = SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__ASSIGNMENT;
 
 	/**
 	 * The operation id for the '<em>Get Name</em>' operation.
@@ -1856,25 +1928,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FINAL_SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__ELIST = SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__ELIST;
-
-	/**
-	 * The operation id for the '<em>Add Inputs Outputs</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FINAL_SC_CHART_REFERECE_VIEW___ADD_INPUTS_OUTPUTS__STRING = SC_CHART_REFERECE_VIEW___ADD_INPUTS_OUTPUTS__STRING;
-
-	/**
-	 * The operation id for the '<em>Remove Inputs Outputs</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FINAL_SC_CHART_REFERECE_VIEW___REMOVE_INPUTS_OUTPUTS__STRING = SC_CHART_REFERECE_VIEW___REMOVE_INPUTS_OUTPUTS__STRING;
+	int FINAL_SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__STRING = SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__STRING;
 
 	/**
 	 * The operation id for the '<em>Get Uuid</em>' operation.
@@ -4156,6 +4210,61 @@ public interface ViewsPackage extends EPackage {
 	 */
 	int SC_CHART_VIEW_OPERATION_COUNT = 0;
 
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.AssignmentViewImpl <em>Assignment View</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.AssignmentViewImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getAssignmentView()
+	 * @generated
+	 */
+	int ASSIGNMENT_VIEW = 41;
+
+	/**
+	 * The feature id for the '<em><b>Internal Assignment</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNMENT_VIEW__INTERNAL_ASSIGNMENT = 0;
+
+	/**
+	 * The number of structural features of the '<em>Assignment View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNMENT_VIEW_FEATURE_COUNT = 1;
+
+	/**
+	 * The operation id for the '<em>Get Assignment</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNMENT_VIEW___GET_ASSIGNMENT = 0;
+
+	/**
+	 * The operation id for the '<em>Set Assignment</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNMENT_VIEW___SET_ASSIGNMENT__STRING = 1;
+
+	/**
+	 * The number of operations of the '<em>Assignment View</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSIGNMENT_VIEW_OPERATION_COUNT = 2;
+
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView <em>Root State View</em>}'.
@@ -4380,6 +4489,46 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getSuperStateView__SetLabel__String();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#getInputsOutputs() <em>Get Inputs Outputs</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Inputs Outputs</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#getInputsOutputs()
+	 * @generated
+	 */
+	EOperation getSuperStateView__GetInputsOutputs();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#setInputsOutputs(org.eclipse.emf.common.util.EList) <em>Set Inputs Outputs</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Inputs Outputs</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#setInputsOutputs(org.eclipse.emf.common.util.EList)
+	 * @generated
+	 */
+	EOperation getSuperStateView__SetInputsOutputs__EList();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#addInputsOutputs(java.lang.String) <em>Add Inputs Outputs</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Add Inputs Outputs</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#addInputsOutputs(java.lang.String)
+	 * @generated
+	 */
+	EOperation getSuperStateView__AddInputsOutputs__String();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#removeInputsOutputs(java.lang.String) <em>Remove Inputs Outputs</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Remove Inputs Outputs</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView#removeInputsOutputs(java.lang.String)
+	 * @generated
+	 */
+	EOperation getSuperStateView__RemoveInputsOutputs__String();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.InitilalSuperStateView <em>Initilal Super State View</em>}'.
@@ -5076,24 +5225,24 @@ public interface ViewsPackage extends EPackage {
 	EOperation getSCChartRefereceView__SetAssignments__EList();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#addAssignments(java.lang.String) <em>Add Assignments</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#addAssignments(info.scce.cinco.product.scchart.mglid.scchart.Assignment) <em>Add Assignments</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Add Assignments</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#addAssignments(java.lang.String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#addAssignments(info.scce.cinco.product.scchart.mglid.scchart.Assignment)
 	 * @generated
 	 */
-	EOperation getSCChartRefereceView__AddAssignments__String();
+	EOperation getSCChartRefereceView__AddAssignments__Assignment();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#removeAssignments(java.lang.String) <em>Remove Assignments</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#removeAssignments(info.scce.cinco.product.scchart.mglid.scchart.Assignment) <em>Remove Assignments</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Remove Assignments</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#removeAssignments(java.lang.String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#removeAssignments(info.scce.cinco.product.scchart.mglid.scchart.Assignment)
 	 * @generated
 	 */
-	EOperation getSCChartRefereceView__RemoveAssignments__String();
+	EOperation getSCChartRefereceView__RemoveAssignments__Assignment();
 
 	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#getName() <em>Get Name</em>}' operation.
@@ -5146,34 +5295,14 @@ public interface ViewsPackage extends EPackage {
 	EOperation getSCChartRefereceView__GetInputsOutputs();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#setInputsOutputs(org.eclipse.emf.common.util.EList) <em>Set Inputs Outputs</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#setInputsOutputs(java.lang.String) <em>Set Inputs Outputs</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Set Inputs Outputs</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#setInputsOutputs(org.eclipse.emf.common.util.EList)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#setInputsOutputs(java.lang.String)
 	 * @generated
 	 */
-	EOperation getSCChartRefereceView__SetInputsOutputs__EList();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#addInputsOutputs(java.lang.String) <em>Add Inputs Outputs</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Inputs Outputs</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#addInputsOutputs(java.lang.String)
-	 * @generated
-	 */
-	EOperation getSCChartRefereceView__AddInputsOutputs__String();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#removeInputsOutputs(java.lang.String) <em>Remove Inputs Outputs</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Remove Inputs Outputs</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#removeInputsOutputs(java.lang.String)
-	 * @generated
-	 */
-	EOperation getSCChartRefereceView__RemoveInputsOutputs__String();
+	EOperation getSCChartRefereceView__SetInputsOutputs__String();
 
 	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#getUuid() <em>Get Uuid</em>}' operation.
@@ -6779,6 +6908,47 @@ public interface ViewsPackage extends EPackage {
 	EReference getSCChartView_InternalSCChart();
 
 	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView <em>Assignment View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Assignment View</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView
+	 * @generated
+	 */
+	EClass getAssignmentView();
+
+	/**
+	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView#getInternalAssignment <em>Internal Assignment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Internal Assignment</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView#getInternalAssignment()
+	 * @see #getAssignmentView()
+	 * @generated
+	 */
+	EReference getAssignmentView_InternalAssignment();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView#getAssignment() <em>Get Assignment</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Assignment</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView#getAssignment()
+	 * @generated
+	 */
+	EOperation getAssignmentView__GetAssignment();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView#setAssignment(java.lang.String) <em>Set Assignment</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Assignment</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView#setAssignment(java.lang.String)
+	 * @generated
+	 */
+	EOperation getAssignmentView__SetAssignment__String();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6984,6 +7154,38 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation SUPER_STATE_VIEW___SET_LABEL__STRING = eINSTANCE.getSuperStateView__SetLabel__String();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Inputs Outputs</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_VIEW___GET_INPUTS_OUTPUTS = eINSTANCE.getSuperStateView__GetInputsOutputs();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Inputs Outputs</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_VIEW___SET_INPUTS_OUTPUTS__ELIST = eINSTANCE.getSuperStateView__SetInputsOutputs__EList();
+
+		/**
+		 * The meta object literal for the '<em><b>Add Inputs Outputs</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_VIEW___ADD_INPUTS_OUTPUTS__STRING = eINSTANCE.getSuperStateView__AddInputsOutputs__String();
+
+		/**
+		 * The meta object literal for the '<em><b>Remove Inputs Outputs</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation SUPER_STATE_VIEW___REMOVE_INPUTS_OUTPUTS__STRING = eINSTANCE.getSuperStateView__RemoveInputsOutputs__String();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.InitilalSuperStateViewImpl <em>Initilal Super State View</em>}' class.
@@ -7563,7 +7765,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__STRING = eINSTANCE.getSCChartRefereceView__AddAssignments__String();
+		EOperation SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__ASSIGNMENT = eINSTANCE.getSCChartRefereceView__AddAssignments__Assignment();
 
 		/**
 		 * The meta object literal for the '<em><b>Remove Assignments</b></em>' operation.
@@ -7571,7 +7773,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__STRING = eINSTANCE.getSCChartRefereceView__RemoveAssignments__String();
+		EOperation SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__ASSIGNMENT = eINSTANCE.getSCChartRefereceView__RemoveAssignments__Assignment();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Name</b></em>' operation.
@@ -7619,23 +7821,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__ELIST = eINSTANCE.getSCChartRefereceView__SetInputsOutputs__EList();
-
-		/**
-		 * The meta object literal for the '<em><b>Add Inputs Outputs</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SC_CHART_REFERECE_VIEW___ADD_INPUTS_OUTPUTS__STRING = eINSTANCE.getSCChartRefereceView__AddInputsOutputs__String();
-
-		/**
-		 * The meta object literal for the '<em><b>Remove Inputs Outputs</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SC_CHART_REFERECE_VIEW___REMOVE_INPUTS_OUTPUTS__STRING = eINSTANCE.getSCChartRefereceView__RemoveInputsOutputs__String();
+		EOperation SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__STRING = eINSTANCE.getSCChartRefereceView__SetInputsOutputs__String();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Uuid</b></em>' operation.
@@ -8946,6 +9132,40 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SC_CHART_VIEW__INTERNAL_SC_CHART = eINSTANCE.getSCChartView_InternalSCChart();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.AssignmentViewImpl <em>Assignment View</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.AssignmentViewImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getAssignmentView()
+		 * @generated
+		 */
+		EClass ASSIGNMENT_VIEW = eINSTANCE.getAssignmentView();
+
+		/**
+		 * The meta object literal for the '<em><b>Internal Assignment</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ASSIGNMENT_VIEW__INTERNAL_ASSIGNMENT = eINSTANCE.getAssignmentView_InternalAssignment();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Assignment</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ASSIGNMENT_VIEW___GET_ASSIGNMENT = eINSTANCE.getAssignmentView__GetAssignment();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Assignment</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ASSIGNMENT_VIEW___SET_ASSIGNMENT__STRING = eINSTANCE.getAssignmentView__SetAssignment__String();
 
 	}
 

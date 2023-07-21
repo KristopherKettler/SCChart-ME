@@ -29,6 +29,7 @@ import org.eclipse.emf.common.util.EList;
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getName <em>Name</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getLabel <em>Label</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getInputsOutputs <em>Inputs Outputs</em>}</li>
  * </ul>
  *
  * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuperState()
@@ -80,6 +81,18 @@ public interface InternalSuperState extends InternalContainer {
 	 * @generated
 	 */
 	void setLabel(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Inputs Outputs</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Inputs Outputs</em>' attribute list.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSuperState_InputsOutputs()
+	 * @model
+	 * @generated
+	 */
+	EList<String> getInputsOutputs();
 
 	/**
 	 * <!-- begin-user-doc -->

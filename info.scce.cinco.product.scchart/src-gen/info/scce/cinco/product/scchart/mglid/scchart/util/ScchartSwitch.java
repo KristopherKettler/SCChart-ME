@@ -9,6 +9,7 @@ import graphmodel.IdentifiableElement;
 import graphmodel.ModelElement;
 import graphmodel.ModelElementContainer;
 import graphmodel.Node;
+import graphmodel.Type;
 
 import info.scce.cinco.product.scchart.mglid.scchart.*;
 
@@ -483,6 +484,14 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = caseGraphModel(scChart);
 				if (result == null) result = caseModelElementContainer(scChart);
 				if (result == null) result = caseIdentifiableElement(scChart);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ScchartPackage.ASSIGNMENT: {
+				Assignment assignment = (Assignment)theEObject;
+				T result = caseAssignment(assignment);
+				if (result == null) result = caseType(assignment);
+				if (result == null) result = caseIdentifiableElement(assignment);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1106,6 +1115,21 @@ public class ScchartSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Assignment</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assignment</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAssignment(Assignment object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Identifiable Element</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1207,6 +1231,21 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseGraphModel(GraphModel object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseType(Type object) {
 		return null;
 	}
 

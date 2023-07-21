@@ -232,6 +232,10 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 				return createSCChartViewAdapter();
 			}
 			@Override
+			public Adapter caseAssignmentView(AssignmentView object) {
+				return createAssignmentViewAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -822,6 +826,20 @@ public class ViewsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSCChartViewAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView <em>Assignment View</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView
+	 * @generated
+	 */
+	public Adapter createAssignmentViewAdapter() {
 		return null;
 	}
 

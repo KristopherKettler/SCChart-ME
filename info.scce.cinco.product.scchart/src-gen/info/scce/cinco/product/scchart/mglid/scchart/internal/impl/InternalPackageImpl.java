@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
@@ -316,6 +317,13 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	private EClass internalSCChartEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass internalAssignmentEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -647,6 +655,16 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EAttribute getInternalSuperState_Label() {
         return (EAttribute)getInternalSuperState().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInternalSuperState_InputsOutputs() {
+        return (EAttribute)getInternalSuperState().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -2517,8 +2535,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalSCChartReferece_Assignments() {
-        return (EAttribute)getInternalSCChartReferece().getEStructuralFeatures().get(0);
+	public EReference getInternalSCChartReferece_Assignments() {
+        return (EReference)getInternalSCChartReferece().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -3488,6 +3506,29 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EOperation getInternalSCChart__GetContainmentConstraints() {
         return getInternalSCChart().getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getInternalAssignment() {
+		if (internalAssignmentEClass == null) {
+			internalAssignmentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(41);
+		}
+		return internalAssignmentEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInternalAssignment_Assignment() {
+        return (EAttribute)getInternalAssignment().getEStructuralFeatures().get(0);
 	}
 
 	/**

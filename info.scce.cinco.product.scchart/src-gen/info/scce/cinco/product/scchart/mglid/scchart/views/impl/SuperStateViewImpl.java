@@ -154,6 +154,56 @@ public class SuperStateViewImpl extends EObjectImpl implements SuperStateView {
 	 * @generated
 	 */
 	@Override
+	public EList<String> getInputsOutputs() {
+		return getInternalSuperState().getInputsOutputs();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInputsOutputs(final EList<String> _arg) {
+		getInternalSuperState().getElement().transact("Set InputsOutputs", () -> {
+			getInternalSuperState().getInputsOutputs().clear();
+			getInternalSuperState().getInputsOutputs().addAll(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void addInputsOutputs(final String _arg) {
+		getInternalSuperState().getElement().transact("Set InputsOutputs", () -> {
+			getInternalSuperState().getInputsOutputs().add(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void removeInputsOutputs(final String inputsOutputs) {
+		getInternalSuperState().getElement().transact("Set InputsOutputs", () -> {
+			getInternalSuperState().getInputsOutputs().remove(inputsOutputs);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.SUPER_STATE_VIEW__INTERNAL_SUPER_STATE:
@@ -213,6 +263,7 @@ public class SuperStateViewImpl extends EObjectImpl implements SuperStateView {
 	 * @generated
 	 */
 	@Override
+	@SuppressWarnings("unchecked")
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
 			case ViewsPackage.SUPER_STATE_VIEW___GET_NAME:
@@ -224,6 +275,17 @@ public class SuperStateViewImpl extends EObjectImpl implements SuperStateView {
 				return getLabel();
 			case ViewsPackage.SUPER_STATE_VIEW___SET_LABEL__STRING:
 				setLabel((String)arguments.get(0));
+				return null;
+			case ViewsPackage.SUPER_STATE_VIEW___GET_INPUTS_OUTPUTS:
+				return getInputsOutputs();
+			case ViewsPackage.SUPER_STATE_VIEW___SET_INPUTS_OUTPUTS__ELIST:
+				setInputsOutputs((EList<String>)arguments.get(0));
+				return null;
+			case ViewsPackage.SUPER_STATE_VIEW___ADD_INPUTS_OUTPUTS__STRING:
+				addInputsOutputs((String)arguments.get(0));
+				return null;
+			case ViewsPackage.SUPER_STATE_VIEW___REMOVE_INPUTS_OUTPUTS__STRING:
+				removeInputsOutputs((String)arguments.get(0));
 				return null;
 		}
 		return super.eInvoke(operationID, arguments);

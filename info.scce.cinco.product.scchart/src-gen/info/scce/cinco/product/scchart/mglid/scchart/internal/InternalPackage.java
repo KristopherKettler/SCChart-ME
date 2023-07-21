@@ -6,6 +6,7 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
 
 /**
  * <!-- begin-user-doc -->
@@ -1258,13 +1259,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_SUPER_STATE__LABEL = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Inputs Outputs</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_SUPER_STATE__INPUTS_OUTPUTS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Super State</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_SUPER_STATE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 2;
+	int INTERNAL_SUPER_STATE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -1716,6 +1726,15 @@ public interface InternalPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERNAL_INITILAL_SUPER_STATE__LABEL = INTERNAL_SUPER_STATE__LABEL;
+
+	/**
+	 * The feature id for the '<em><b>Inputs Outputs</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_INITILAL_SUPER_STATE__INPUTS_OUTPUTS = INTERNAL_SUPER_STATE__INPUTS_OUTPUTS;
 
 	/**
 	 * The number of structural features of the '<em>Initilal Super State</em>' class.
@@ -2176,6 +2195,15 @@ public interface InternalPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERNAL_FINAL_SUPER_STATE__LABEL = INTERNAL_SUPER_STATE__LABEL;
+
+	/**
+	 * The feature id for the '<em><b>Inputs Outputs</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_FINAL_SUPER_STATE__INPUTS_OUTPUTS = INTERNAL_SUPER_STATE__INPUTS_OUTPUTS;
 
 	/**
 	 * The number of structural features of the '<em>Final Super State</em>' class.
@@ -6339,7 +6367,7 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_SC_CHART_REFERECE__MODEL_ELEMENTS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__MODEL_ELEMENTS;
 
 	/**
-	 * The feature id for the '<em><b>Assignments</b></em>' attribute list.
+	 * The feature id for the '<em><b>Assignments</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -6366,7 +6394,7 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_SC_CHART_REFERECE__LABEL = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>Inputs Outputs</b></em>' attribute list.
+	 * The feature id for the '<em><b>Inputs Outputs</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -6709,7 +6737,7 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_INITIAL_SC_CHART_REFERECE__MODEL_ELEMENTS = INTERNAL_SC_CHART_REFERECE__MODEL_ELEMENTS;
 
 	/**
-	 * The feature id for the '<em><b>Assignments</b></em>' attribute list.
+	 * The feature id for the '<em><b>Assignments</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -6736,7 +6764,7 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_INITIAL_SC_CHART_REFERECE__LABEL = INTERNAL_SC_CHART_REFERECE__LABEL;
 
 	/**
-	 * The feature id for the '<em><b>Inputs Outputs</b></em>' attribute list.
+	 * The feature id for the '<em><b>Inputs Outputs</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -7079,7 +7107,7 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_FINAL_SC_CHART_REFERECE__MODEL_ELEMENTS = INTERNAL_SC_CHART_REFERECE__MODEL_ELEMENTS;
 
 	/**
-	 * The feature id for the '<em><b>Assignments</b></em>' attribute list.
+	 * The feature id for the '<em><b>Assignments</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -7106,7 +7134,7 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_FINAL_SC_CHART_REFERECE__LABEL = INTERNAL_SC_CHART_REFERECE__LABEL;
 
 	/**
-	 * The feature id for the '<em><b>Inputs Outputs</b></em>' attribute list.
+	 * The feature id for the '<em><b>Inputs Outputs</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -11770,6 +11798,97 @@ public interface InternalPackage extends EPackage {
 	 */
 	int INTERNAL_SC_CHART_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_GRAPH_MODEL_OPERATION_COUNT + 1;
 
+	/**
+	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalAssignmentImpl <em>Assignment</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalAssignmentImpl
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalAssignment()
+	 * @generated
+	 */
+	int INTERNAL_ASSIGNMENT = 41;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ASSIGNMENT__ID = graphmodel.internal.InternalPackage.INTERNAL_TYPE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Element</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ASSIGNMENT__ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_TYPE__ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Assignment</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ASSIGNMENT__ASSIGNMENT = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Assignment</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ASSIGNMENT_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_TYPE_FEATURE_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Equals</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ASSIGNMENT___EQUALS__OBJECT = graphmodel.internal.InternalPackage.INTERNAL_TYPE___EQUALS__OBJECT;
+
+	/**
+	 * The operation id for the '<em>Hash Code</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ASSIGNMENT___HASH_CODE = graphmodel.internal.InternalPackage.INTERNAL_TYPE___HASH_CODE;
+
+	/**
+	 * The operation id for the '<em>Save</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ASSIGNMENT___SAVE = graphmodel.internal.InternalPackage.INTERNAL_TYPE___SAVE;
+
+	/**
+	 * The operation id for the '<em>Get Element</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ASSIGNMENT___GET_ELEMENT = graphmodel.internal.InternalPackage.INTERNAL_TYPE___GET_ELEMENT;
+
+	/**
+	 * The number of operations of the '<em>Assignment</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ASSIGNMENT_OPERATION_COUNT = graphmodel.internal.InternalPackage.INTERNAL_TYPE_OPERATION_COUNT + 0;
+
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState <em>Root State</em>}'.
@@ -12027,6 +12146,17 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getInternalSuperState_Label();
+
+	/**
+	 * Returns the meta object for the attribute list '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getInputsOutputs <em>Inputs Outputs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Inputs Outputs</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getInputsOutputs()
+	 * @see #getInternalSuperState()
+	 * @generated
+	 */
+	EAttribute getInternalSuperState_InputsOutputs();
 
 	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSuperState#getContainmentConstraints() <em>Get Containment Constraints</em>}' operation.
@@ -13868,15 +13998,15 @@ public interface InternalPackage extends EPackage {
 	EClass getInternalSCChartReferece();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getAssignments <em>Assignments</em>}'.
+	 * Returns the meta object for the containment reference list '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getAssignments <em>Assignments</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Assignments</em>'.
+	 * @return the meta object for the containment reference list '<em>Assignments</em>'.
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getAssignments()
 	 * @see #getInternalSCChartReferece()
 	 * @generated
 	 */
-	EAttribute getInternalSCChartReferece_Assignments();
+	EReference getInternalSCChartReferece_Assignments();
 
 	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getName <em>Name</em>}'.
@@ -13901,10 +14031,10 @@ public interface InternalPackage extends EPackage {
 	EAttribute getInternalSCChartReferece_Label();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getInputsOutputs <em>Inputs Outputs</em>}'.
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getInputsOutputs <em>Inputs Outputs</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Inputs Outputs</em>'.
+	 * @return the meta object for the attribute '<em>Inputs Outputs</em>'.
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getInputsOutputs()
 	 * @see #getInternalSCChartReferece()
 	 * @generated
@@ -14839,6 +14969,27 @@ public interface InternalPackage extends EPackage {
 	EOperation getInternalSCChart__GetContainmentConstraints();
 
 	/**
+	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAssignment <em>Assignment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Assignment</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAssignment
+	 * @generated
+	 */
+	EClass getInternalAssignment();
+
+	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAssignment#getAssignment <em>Assignment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Assignment</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalAssignment#getAssignment()
+	 * @see #getInternalAssignment()
+	 * @generated
+	 */
+	EAttribute getInternalAssignment_Assignment();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -15068,6 +15219,14 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute INTERNAL_SUPER_STATE__LABEL = eINSTANCE.getInternalSuperState_Label();
+
+		/**
+		 * The meta object literal for the '<em><b>Inputs Outputs</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_SUPER_STATE__INPUTS_OUTPUTS = eINSTANCE.getInternalSuperState_InputsOutputs();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Containment Constraints</b></em>' operation.
@@ -16554,12 +16713,12 @@ public interface InternalPackage extends EPackage {
 		EClass INTERNAL_SC_CHART_REFERECE = eINSTANCE.getInternalSCChartReferece();
 
 		/**
-		 * The meta object literal for the '<em><b>Assignments</b></em>' attribute list feature.
+		 * The meta object literal for the '<em><b>Assignments</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERNAL_SC_CHART_REFERECE__ASSIGNMENTS = eINSTANCE.getInternalSCChartReferece_Assignments();
+		EReference INTERNAL_SC_CHART_REFERECE__ASSIGNMENTS = eINSTANCE.getInternalSCChartReferece_Assignments();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -16578,7 +16737,7 @@ public interface InternalPackage extends EPackage {
 		EAttribute INTERNAL_SC_CHART_REFERECE__LABEL = eINSTANCE.getInternalSCChartReferece_Label();
 
 		/**
-		 * The meta object literal for the '<em><b>Inputs Outputs</b></em>' attribute list feature.
+		 * The meta object literal for the '<em><b>Inputs Outputs</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -17326,6 +17485,24 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation INTERNAL_SC_CHART___GET_CONTAINMENT_CONSTRAINTS = eINSTANCE.getInternalSCChart__GetContainmentConstraints();
+
+		/**
+		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalAssignmentImpl <em>Assignment</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalAssignmentImpl
+		 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalPackageImpl#getInternalAssignment()
+		 * @generated
+		 */
+		EClass INTERNAL_ASSIGNMENT = eINSTANCE.getInternalAssignment();
+
+		/**
+		 * The meta object literal for the '<em><b>Assignment</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_ASSIGNMENT__ASSIGNMENT = eINSTANCE.getInternalAssignment_Assignment();
 
 	}
 

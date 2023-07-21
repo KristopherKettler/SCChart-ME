@@ -97,6 +97,7 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION: return createInternalImmediateStrongAbortHistoryTransition();
 			case InternalPackage.INTERNAL_CONNECTION: return createInternalConnection();
 			case InternalPackage.INTERNAL_SC_CHART: return createInternalSCChart();
+			case InternalPackage.INTERNAL_ASSIGNMENT: return createInternalAssignment();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -551,6 +552,17 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalSCChart createInternalSCChart() {
 		InternalSCChartImpl internalSCChart = new InternalSCChartImpl();
 		return internalSCChart;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InternalAssignment createInternalAssignment() {
+		InternalAssignmentImpl internalAssignment = new InternalAssignmentImpl();
+		return internalAssignment;
 	}
 
 	/**

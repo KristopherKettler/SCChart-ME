@@ -9,6 +9,7 @@ import graphmodel.internal.InternalIdentifiableElement;
 import graphmodel.internal.InternalModelElement;
 import graphmodel.internal.InternalModelElementContainer;
 import graphmodel.internal.InternalNode;
+import graphmodel.internal.InternalType;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.*;
 
@@ -483,6 +484,14 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = caseInternalGraphModel(internalSCChart);
 				if (result == null) result = caseInternalModelElementContainer(internalSCChart);
 				if (result == null) result = caseInternalIdentifiableElement(internalSCChart);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case InternalPackage.INTERNAL_ASSIGNMENT: {
+				InternalAssignment internalAssignment = (InternalAssignment)theEObject;
+				T result = caseInternalAssignment(internalAssignment);
+				if (result == null) result = caseInternalType(internalAssignment);
+				if (result == null) result = caseInternalIdentifiableElement(internalAssignment);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1106,6 +1115,21 @@ public class InternalSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Assignment</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assignment</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalAssignment(InternalAssignment object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Identifiable Element</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1207,6 +1231,21 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalGraphModel(InternalGraphModel object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInternalType(InternalType object) {
 		return null;
 	}
 

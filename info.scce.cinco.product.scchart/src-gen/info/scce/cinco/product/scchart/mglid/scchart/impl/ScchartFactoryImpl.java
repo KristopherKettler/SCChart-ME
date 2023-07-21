@@ -97,6 +97,7 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION: return createImmediateStrongAbortHistoryTransition();
 			case ScchartPackage.CONNECTION: return createConnection();
 			case ScchartPackage.SC_CHART: return createSCChart();
+			case ScchartPackage.ASSIGNMENT: return createAssignment();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -551,6 +552,17 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	public SCChart createSCChart() {
 		SCChartImpl scChart = new SCChartImpl();
 		return scChart;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Assignment createAssignment() {
+		AssignmentImpl assignment = new AssignmentImpl();
+		return assignment;
 	}
 
 	/**

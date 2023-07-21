@@ -272,26 +272,6 @@ public class ImmediateDeferredTransitionImpl extends AbstractTransitionImpl impl
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final RootState source) {
-		return source.canStart(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectSource(final RootState source) {
-		this.setSourceElement(source);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean canReconnectSource(final InitilalSuperState source) {
 		return source.canStart(this.getClass());
 	}
@@ -303,6 +283,26 @@ public class ImmediateDeferredTransitionImpl extends AbstractTransitionImpl impl
 	 */
 	@Override
 	public void reconnectSource(final InitilalSuperState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final RootState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final RootState source) {
 		this.setSourceElement(source);
 	}
 
@@ -485,15 +485,15 @@ public class ImmediateDeferredTransitionImpl extends AbstractTransitionImpl impl
 			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___RECONNECT_SOURCE__SUPERSTATE:
 				reconnectSource((SuperState)arguments.get(0));
 				return null;
-			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
-				return canReconnectSource((RootState)arguments.get(0));
-			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
-				reconnectSource((RootState)arguments.get(0));
-				return null;
 			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__INITILALSUPERSTATE:
 				return canReconnectSource((InitilalSuperState)arguments.get(0));
 			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE:
 				reconnectSource((InitilalSuperState)arguments.get(0));
+				return null;
+			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
+				return canReconnectSource((RootState)arguments.get(0));
+			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
+				reconnectSource((RootState)arguments.get(0));
 				return null;
 			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION___CAN_RECONNECT_TARGET__FINALSUPERSTATE:
 				return canReconnectTarget((FinalSuperState)arguments.get(0));

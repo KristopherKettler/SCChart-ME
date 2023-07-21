@@ -2,6 +2,8 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.views;
 
+import info.scce.cinco.product.scchart.mglid.scchart.Assignment;
+
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece;
 
 import org.eclipse.emf.common.util.EList;
@@ -53,7 +55,7 @@ public interface SCChartRefereceView extends EObject {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<String> getAssignments();
+	EList<Assignment> getAssignments();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,7 +63,7 @@ public interface SCChartRefereceView extends EObject {
 	 * @model _argMany="true"
 	 * @generated
 	 */
-	void setAssignments(EList<String> _arg);
+	void setAssignments(EList<Assignment> _arg);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -69,7 +71,7 @@ public interface SCChartRefereceView extends EObject {
 	 * @model
 	 * @generated
 	 */
-	void addAssignments(String _arg);
+	void addAssignments(Assignment _arg);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -77,7 +79,7 @@ public interface SCChartRefereceView extends EObject {
 	 * @model
 	 * @generated
 	 */
-	void removeAssignments(String assignments);
+	void removeAssignments(Assignment assignments);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -117,15 +119,7 @@ public interface SCChartRefereceView extends EObject {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<String> getInputsOutputs();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model _argMany="true"
-	 * @generated
-	 */
-	void setInputsOutputs(EList<String> _arg);
+	String getInputsOutputs();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -133,15 +127,7 @@ public interface SCChartRefereceView extends EObject {
 	 * @model
 	 * @generated
 	 */
-	void addInputsOutputs(String _arg);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void removeInputsOutputs(String inputsOutputs);
+	void setInputsOutputs(String _arg);
 
 	/**
 	 * <!-- begin-user-doc -->

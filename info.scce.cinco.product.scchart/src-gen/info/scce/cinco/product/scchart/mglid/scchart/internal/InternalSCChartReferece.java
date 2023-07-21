@@ -6,6 +6,7 @@ import de.jabc.cinco.meta.core.mgl.model.constraints.ContainmentConstraint;
 
 import graphmodel.internal.InternalContainer;
 
+import info.scce.cinco.product.scchart.mglid.scchart.Assignment;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 
 import org.eclipse.emf.common.util.EList;
@@ -33,16 +34,16 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface InternalSCChartReferece extends InternalContainer {
 	/**
-	 * Returns the value of the '<em><b>Assignments</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.String}.
+	 * Returns the value of the '<em><b>Assignments</b></em>' containment reference list.
+	 * The list contents are of type {@link info.scce.cinco.product.scchart.mglid.scchart.Assignment}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Assignments</em>' attribute list.
+	 * @return the value of the '<em>Assignments</em>' containment reference list.
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSCChartReferece_Assignments()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
-	EList<String> getAssignments();
+	EList<Assignment> getAssignments();
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
@@ -90,16 +91,26 @@ public interface InternalSCChartReferece extends InternalContainer {
 	void setLabel(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Inputs Outputs</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.String}.
+	 * Returns the value of the '<em><b>Inputs Outputs</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Inputs Outputs</em>' attribute list.
+	 * @return the value of the '<em>Inputs Outputs</em>' attribute.
+	 * @see #setInputsOutputs(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalSCChartReferece_InputsOutputs()
 	 * @model
 	 * @generated
 	 */
-	EList<String> getInputsOutputs();
+	String getInputsOutputs();
+
+	/**
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece#getInputsOutputs <em>Inputs Outputs</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Inputs Outputs</em>' attribute.
+	 * @see #getInputsOutputs()
+	 * @generated
+	 */
+	void setInputsOutputs(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Uuid</b></em>' attribute.

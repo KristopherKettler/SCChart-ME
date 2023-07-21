@@ -44,6 +44,8 @@ container SuperState {
 	outgoingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 	attr EString as name := "<insert name>"
 	attr EString as label
+	@propertiesViewHidden
+	attr EString as inputsOutputs[0,*]
 }
 
 @palette("SuperStates")
@@ -175,13 +177,14 @@ node CircuitConnecter {
 //@disable(highlighted)
 @event("info.scce.cinco.product.scchart.events.SCChartRefereceEvent")
 container SCChartReferece {
-	style sCChartRefereceStyle("${empty label ? name : label} @ ${reference.name}")
+	style sCChartRefereceStyle("${empty label ? name : label} @ ${reference.name} ${assignments}")
 	containableElements(*)
 	@pvFileExtension("scchart")   
 	@pvLabel(name)
 	prime this::RootState as reference
-	attr EString as inputsOutputs[0,*]
-	attr EString as assignments[0,*]
+	@readOnly
+	attr EString as inputsOutputs
+	attr Assignment as assignments[0,*]
 	attr EString as name := "<insert name>"
 	attr EString as label
 	@propertiesViewHidden
@@ -344,4 +347,9 @@ edge ImmediateStrongAbortHistoryTransition extends AbstractTransition{
 
 edge Connection {
 	style connectionStyle
+}
+
+type Assignment {
+	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.AssignmentProvider")
+	attr EString as assignment
 }

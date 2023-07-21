@@ -384,6 +384,82 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 	 * @generated
 	 */
 	@Override
+	public EList<SimpleState> getSimpleStates() {
+		return getModelElements(info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewSimpleState() {
+		return this.canContain(info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SimpleState newSimpleState(final int x, final int y) {
+		return newSimpleState(x, y, -1, -1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SimpleState newSimpleState(final String id, final int x, final int y) {
+		return newSimpleState(x, y, -1, -1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SimpleState newSimpleState(final int x, final int y, final int width, final int height) {
+		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class)) {
+			info.scce.cinco.product.scchart.mglid.scchart.SimpleState node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createSimpleState((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
+			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
+			node.move(x, y);
+			node.resize(width, height);
+			return node;
+		} else throw new java.lang.RuntimeException(
+			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class, this.getClass()));
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SimpleState newSimpleState(final String id, final int x, final int y, final int width, final int height) {
+		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class)) {
+			info.scce.cinco.product.scchart.mglid.scchart.SimpleState node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createSimpleState((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
+			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
+			node.move(x, y);
+			node.resize(width, height);
+			return node;
+		} else throw new java.lang.RuntimeException(
+			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class, this.getClass()));
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EList<FinalState> getFinalStates() {
 		return getModelElements(info.scce.cinco.product.scchart.mglid.scchart.FinalState.class);
 	}
@@ -460,6 +536,170 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 	 * @generated
 	 */
 	@Override
+	public EList<SCChartReferece> getSCChartRefereces() {
+		return getModelElements(info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewSCChartReferece() {
+		return this.canContain(info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SCChartReferece newSCChartReferece(final EObject reference, final int x, final int y) {
+		return newSCChartReferece(reference,x,y,-1,-1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SCChartReferece newSCChartReferece(final EObject reference, final String id, final int x, final int y) {
+		return newSCChartReferece(reference,x,y,-1,-1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SCChartReferece newSCChartReferece(final EObject reference, final int x, final int y, final int width, final int height) {
+		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class)) {
+			info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createSCChartReferece();
+			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
+			((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece) node.getInternalElement())
+				.setLibraryComponentUID(org.eclipse.emf.ecore.util.EcoreUtil.getID(reference));
+			node.move(x, y);
+			node.resize(width, height);
+			info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.postCreates(node);
+			return node;
+		} else throw new java.lang.RuntimeException(
+			java.lang.String.format("Cannot add node %s to %s", SCChartReferece.class, this.getClass()));
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SCChartReferece newSCChartReferece(final EObject reference, final String id, final int x, final int y, final int width, final int height) {
+		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class)) {
+			info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createSCChartReferece();
+			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
+			((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece) node.getInternalElement())
+				.setLibraryComponentUID(org.eclipse.emf.ecore.util.EcoreUtil.getID(reference));
+			node.move(x, y);
+			node.resize(width, height);
+			info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.postCreates(node);
+			return node;
+		} else throw new java.lang.RuntimeException(
+			java.lang.String.format("Cannot add node %s to %s", SCChartReferece.class, this.getClass()));
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<InitialSCChartReferece> getInitialSCChartRefereces() {
+		return getModelElements(info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewInitialSCChartReferece() {
+		return this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InitialSCChartReferece newInitialSCChartReferece(final EObject reference, final int x, final int y) {
+		return newInitialSCChartReferece(reference,x,y,-1,-1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InitialSCChartReferece newInitialSCChartReferece(final EObject reference, final String id, final int x, final int y) {
+		return newInitialSCChartReferece(reference,x,y,-1,-1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InitialSCChartReferece newInitialSCChartReferece(final EObject reference, final int x, final int y, final int width, final int height) {
+		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class)) {
+			info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createInitialSCChartReferece();
+			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
+			((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialSCChartReferece) node.getInternalElement())
+				.setLibraryComponentUID(org.eclipse.emf.ecore.util.EcoreUtil.getID(reference));
+			node.move(x, y);
+			node.resize(width, height);
+			info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.postCreates(node);
+			return node;
+		} else throw new java.lang.RuntimeException(
+			java.lang.String.format("Cannot add node %s to %s", InitialSCChartReferece.class, this.getClass()));
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InitialSCChartReferece newInitialSCChartReferece(final EObject reference, final String id, final int x, final int y, final int width, final int height) {
+		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class)) {
+			info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createInitialSCChartReferece();
+			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
+			((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialSCChartReferece) node.getInternalElement())
+				.setLibraryComponentUID(org.eclipse.emf.ecore.util.EcoreUtil.getID(reference));
+			node.move(x, y);
+			node.resize(width, height);
+			info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.postCreates(node);
+			return node;
+		} else throw new java.lang.RuntimeException(
+			java.lang.String.format("Cannot add node %s to %s", InitialSCChartReferece.class, this.getClass()));
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EList<SuperState> getSuperStates() {
 		return getModelElements(info.scce.cinco.product.scchart.mglid.scchart.SuperState.class);
 	}
@@ -527,6 +767,82 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 			return node;
 		} else throw new java.lang.RuntimeException(
 			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.SuperState.class, this.getClass()));
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<InitilalSuperState> getInitilalSuperStates() {
+		return getModelElements(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewInitilalSuperState() {
+		return this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InitilalSuperState newInitilalSuperState(final int x, final int y) {
+		return newInitilalSuperState(x, y, -1, -1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InitilalSuperState newInitilalSuperState(final String id, final int x, final int y) {
+		return newInitilalSuperState(x, y, -1, -1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InitilalSuperState newInitilalSuperState(final int x, final int y, final int width, final int height) {
+		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class)) {
+			info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createInitilalSuperState((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
+			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
+			node.move(x, y);
+			node.resize(width, height);
+			return node;
+		} else throw new java.lang.RuntimeException(
+			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class, this.getClass()));
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InitilalSuperState newInitilalSuperState(final String id, final int x, final int y, final int width, final int height) {
+		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class)) {
+			info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createInitilalSuperState((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
+			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
+			node.move(x, y);
+			node.resize(width, height);
+			return node;
+		} else throw new java.lang.RuntimeException(
+			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class, this.getClass()));
 		
 	}
 
@@ -761,322 +1077,6 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 			return node;
 		} else throw new java.lang.RuntimeException(
 			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.Connector.class, this.getClass()));
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<SCChartReferece> getSCChartRefereces() {
-		return getModelElements(info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewSCChartReferece() {
-		return this.canContain(info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SCChartReferece newSCChartReferece(final EObject reference, final int x, final int y) {
-		return newSCChartReferece(reference,x,y,-1,-1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SCChartReferece newSCChartReferece(final EObject reference, final String id, final int x, final int y) {
-		return newSCChartReferece(reference,x,y,-1,-1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SCChartReferece newSCChartReferece(final EObject reference, final int x, final int y, final int width, final int height) {
-		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class)) {
-			info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createSCChartReferece();
-			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
-			((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece) node.getInternalElement())
-				.setLibraryComponentUID(org.eclipse.emf.ecore.util.EcoreUtil.getID(reference));
-			node.move(x, y);
-			node.resize(width, height);
-			info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.postCreates(node);
-			return node;
-		} else throw new java.lang.RuntimeException(
-			java.lang.String.format("Cannot add node %s to %s", SCChartReferece.class, this.getClass()));
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SCChartReferece newSCChartReferece(final EObject reference, final String id, final int x, final int y, final int width, final int height) {
-		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class)) {
-			info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createSCChartReferece();
-			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
-			((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece) node.getInternalElement())
-				.setLibraryComponentUID(org.eclipse.emf.ecore.util.EcoreUtil.getID(reference));
-			node.move(x, y);
-			node.resize(width, height);
-			info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.postCreates(node);
-			return node;
-		} else throw new java.lang.RuntimeException(
-			java.lang.String.format("Cannot add node %s to %s", SCChartReferece.class, this.getClass()));
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<InitialSCChartReferece> getInitialSCChartRefereces() {
-		return getModelElements(info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewInitialSCChartReferece() {
-		return this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InitialSCChartReferece newInitialSCChartReferece(final EObject reference, final int x, final int y) {
-		return newInitialSCChartReferece(reference,x,y,-1,-1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InitialSCChartReferece newInitialSCChartReferece(final EObject reference, final String id, final int x, final int y) {
-		return newInitialSCChartReferece(reference,x,y,-1,-1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InitialSCChartReferece newInitialSCChartReferece(final EObject reference, final int x, final int y, final int width, final int height) {
-		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class)) {
-			info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createInitialSCChartReferece();
-			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
-			((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialSCChartReferece) node.getInternalElement())
-				.setLibraryComponentUID(org.eclipse.emf.ecore.util.EcoreUtil.getID(reference));
-			node.move(x, y);
-			node.resize(width, height);
-			info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.postCreates(node);
-			return node;
-		} else throw new java.lang.RuntimeException(
-			java.lang.String.format("Cannot add node %s to %s", InitialSCChartReferece.class, this.getClass()));
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InitialSCChartReferece newInitialSCChartReferece(final EObject reference, final String id, final int x, final int y, final int width, final int height) {
-		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class)) {
-			info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createInitialSCChartReferece();
-			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
-			((info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialSCChartReferece) node.getInternalElement())
-				.setLibraryComponentUID(org.eclipse.emf.ecore.util.EcoreUtil.getID(reference));
-			node.move(x, y);
-			node.resize(width, height);
-			info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.postCreates(node);
-			return node;
-		} else throw new java.lang.RuntimeException(
-			java.lang.String.format("Cannot add node %s to %s", InitialSCChartReferece.class, this.getClass()));
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<InitilalSuperState> getInitilalSuperStates() {
-		return getModelElements(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewInitilalSuperState() {
-		return this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InitilalSuperState newInitilalSuperState(final int x, final int y) {
-		return newInitilalSuperState(x, y, -1, -1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InitilalSuperState newInitilalSuperState(final String id, final int x, final int y) {
-		return newInitilalSuperState(x, y, -1, -1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InitilalSuperState newInitilalSuperState(final int x, final int y, final int width, final int height) {
-		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class)) {
-			info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createInitilalSuperState((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
-			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
-			node.move(x, y);
-			node.resize(width, height);
-			return node;
-		} else throw new java.lang.RuntimeException(
-			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class, this.getClass()));
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InitilalSuperState newInitilalSuperState(final String id, final int x, final int y, final int width, final int height) {
-		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class)) {
-			info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createInitilalSuperState((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
-			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
-			node.move(x, y);
-			node.resize(width, height);
-			return node;
-		} else throw new java.lang.RuntimeException(
-			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class, this.getClass()));
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<SimpleState> getSimpleStates() {
-		return getModelElements(info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewSimpleState() {
-		return this.canContain(info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SimpleState newSimpleState(final int x, final int y) {
-		return newSimpleState(x, y, -1, -1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SimpleState newSimpleState(final String id, final int x, final int y) {
-		return newSimpleState(x, y, -1, -1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SimpleState newSimpleState(final int x, final int y, final int width, final int height) {
-		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class)) {
-			info.scce.cinco.product.scchart.mglid.scchart.SimpleState node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createSimpleState((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
-			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
-			node.move(x, y);
-			node.resize(width, height);
-			return node;
-		} else throw new java.lang.RuntimeException(
-			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class, this.getClass()));
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SimpleState newSimpleState(final String id, final int x, final int y, final int width, final int height) {
-		if (this.canContain(info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class)) {
-			info.scce.cinco.product.scchart.mglid.scchart.SimpleState node = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createSimpleState((graphmodel.internal.InternalModelElementContainer) this.getInternalElement());
-			this.getInternalContainerElement().getModelElements().add(node.getInternalElement());
-			node.move(x, y);
-			node.resize(width, height);
-			return node;
-		} else throw new java.lang.RuntimeException(
-			java.lang.String.format("Cannot add node %s to %s", info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class, this.getClass()));
 		
 	}
 
@@ -2253,6 +2253,18 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 				return newFinalSuperState((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
 			case ScchartPackage.REGION___NEW_FINAL_SUPER_STATE__STRING_INT_INT_INT_INT:
 				return newFinalSuperState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
+			case ScchartPackage.REGION___GET_SIMPLE_STATES:
+				return getSimpleStates();
+			case ScchartPackage.REGION___CAN_NEW_SIMPLE_STATE:
+				return canNewSimpleState();
+			case ScchartPackage.REGION___NEW_SIMPLE_STATE__INT_INT:
+				return newSimpleState((Integer)arguments.get(0), (Integer)arguments.get(1));
+			case ScchartPackage.REGION___NEW_SIMPLE_STATE__STRING_INT_INT:
+				return newSimpleState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.REGION___NEW_SIMPLE_STATE__INT_INT_INT_INT:
+				return newSimpleState((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
+			case ScchartPackage.REGION___NEW_SIMPLE_STATE__STRING_INT_INT_INT_INT:
+				return newSimpleState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
 			case ScchartPackage.REGION___GET_FINAL_STATES:
 				return getFinalStates();
 			case ScchartPackage.REGION___CAN_NEW_FINAL_STATE:
@@ -2265,6 +2277,30 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 				return newFinalState((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
 			case ScchartPackage.REGION___NEW_FINAL_STATE__STRING_INT_INT_INT_INT:
 				return newFinalState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
+			case ScchartPackage.REGION___GET_SC_CHART_REFERECES:
+				return getSCChartRefereces();
+			case ScchartPackage.REGION___CAN_NEW_SC_CHART_REFERECE:
+				return canNewSCChartReferece();
+			case ScchartPackage.REGION___NEW_SC_CHART_REFERECE__EOBJECT_INT_INT:
+				return newSCChartReferece((EObject)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.REGION___NEW_SC_CHART_REFERECE__EOBJECT_STRING_INT_INT:
+				return newSCChartReferece((EObject)arguments.get(0), (String)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
+			case ScchartPackage.REGION___NEW_SC_CHART_REFERECE__EOBJECT_INT_INT_INT_INT:
+				return newSCChartReferece((EObject)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
+			case ScchartPackage.REGION___NEW_SC_CHART_REFERECE__EOBJECT_STRING_INT_INT_INT_INT:
+				return newSCChartReferece((EObject)arguments.get(0), (String)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4), (Integer)arguments.get(5));
+			case ScchartPackage.REGION___GET_INITIAL_SC_CHART_REFERECES:
+				return getInitialSCChartRefereces();
+			case ScchartPackage.REGION___CAN_NEW_INITIAL_SC_CHART_REFERECE:
+				return canNewInitialSCChartReferece();
+			case ScchartPackage.REGION___NEW_INITIAL_SC_CHART_REFERECE__EOBJECT_INT_INT:
+				return newInitialSCChartReferece((EObject)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.REGION___NEW_INITIAL_SC_CHART_REFERECE__EOBJECT_STRING_INT_INT:
+				return newInitialSCChartReferece((EObject)arguments.get(0), (String)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
+			case ScchartPackage.REGION___NEW_INITIAL_SC_CHART_REFERECE__EOBJECT_INT_INT_INT_INT:
+				return newInitialSCChartReferece((EObject)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
+			case ScchartPackage.REGION___NEW_INITIAL_SC_CHART_REFERECE__EOBJECT_STRING_INT_INT_INT_INT:
+				return newInitialSCChartReferece((EObject)arguments.get(0), (String)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4), (Integer)arguments.get(5));
 			case ScchartPackage.REGION___GET_SUPER_STATES:
 				return getSuperStates();
 			case ScchartPackage.REGION___CAN_NEW_SUPER_STATE:
@@ -2277,6 +2313,18 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 				return newSuperState((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
 			case ScchartPackage.REGION___NEW_SUPER_STATE__STRING_INT_INT_INT_INT:
 				return newSuperState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
+			case ScchartPackage.REGION___GET_INITILAL_SUPER_STATES:
+				return getInitilalSuperStates();
+			case ScchartPackage.REGION___CAN_NEW_INITILAL_SUPER_STATE:
+				return canNewInitilalSuperState();
+			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__INT_INT:
+				return newInitilalSuperState((Integer)arguments.get(0), (Integer)arguments.get(1));
+			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__STRING_INT_INT:
+				return newInitilalSuperState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__INT_INT_INT_INT:
+				return newInitilalSuperState((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
+			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__STRING_INT_INT_INT_INT:
+				return newInitilalSuperState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
 			case ScchartPackage.REGION___GET_INITIAL_STATES:
 				return getInitialStates();
 			case ScchartPackage.REGION___CAN_NEW_INITIAL_STATE:
@@ -2313,54 +2361,6 @@ public class RegionImpl extends ModelElementContainerImpl implements Region {
 				return newConnector((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
 			case ScchartPackage.REGION___NEW_CONNECTOR__STRING_INT_INT_INT_INT:
 				return newConnector((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
-			case ScchartPackage.REGION___GET_SC_CHART_REFERECES:
-				return getSCChartRefereces();
-			case ScchartPackage.REGION___CAN_NEW_SC_CHART_REFERECE:
-				return canNewSCChartReferece();
-			case ScchartPackage.REGION___NEW_SC_CHART_REFERECE__EOBJECT_INT_INT:
-				return newSCChartReferece((EObject)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
-			case ScchartPackage.REGION___NEW_SC_CHART_REFERECE__EOBJECT_STRING_INT_INT:
-				return newSCChartReferece((EObject)arguments.get(0), (String)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
-			case ScchartPackage.REGION___NEW_SC_CHART_REFERECE__EOBJECT_INT_INT_INT_INT:
-				return newSCChartReferece((EObject)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
-			case ScchartPackage.REGION___NEW_SC_CHART_REFERECE__EOBJECT_STRING_INT_INT_INT_INT:
-				return newSCChartReferece((EObject)arguments.get(0), (String)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4), (Integer)arguments.get(5));
-			case ScchartPackage.REGION___GET_INITIAL_SC_CHART_REFERECES:
-				return getInitialSCChartRefereces();
-			case ScchartPackage.REGION___CAN_NEW_INITIAL_SC_CHART_REFERECE:
-				return canNewInitialSCChartReferece();
-			case ScchartPackage.REGION___NEW_INITIAL_SC_CHART_REFERECE__EOBJECT_INT_INT:
-				return newInitialSCChartReferece((EObject)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
-			case ScchartPackage.REGION___NEW_INITIAL_SC_CHART_REFERECE__EOBJECT_STRING_INT_INT:
-				return newInitialSCChartReferece((EObject)arguments.get(0), (String)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
-			case ScchartPackage.REGION___NEW_INITIAL_SC_CHART_REFERECE__EOBJECT_INT_INT_INT_INT:
-				return newInitialSCChartReferece((EObject)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
-			case ScchartPackage.REGION___NEW_INITIAL_SC_CHART_REFERECE__EOBJECT_STRING_INT_INT_INT_INT:
-				return newInitialSCChartReferece((EObject)arguments.get(0), (String)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4), (Integer)arguments.get(5));
-			case ScchartPackage.REGION___GET_INITILAL_SUPER_STATES:
-				return getInitilalSuperStates();
-			case ScchartPackage.REGION___CAN_NEW_INITILAL_SUPER_STATE:
-				return canNewInitilalSuperState();
-			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__INT_INT:
-				return newInitilalSuperState((Integer)arguments.get(0), (Integer)arguments.get(1));
-			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__STRING_INT_INT:
-				return newInitilalSuperState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
-			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__INT_INT_INT_INT:
-				return newInitilalSuperState((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
-			case ScchartPackage.REGION___NEW_INITILAL_SUPER_STATE__STRING_INT_INT_INT_INT:
-				return newInitilalSuperState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
-			case ScchartPackage.REGION___GET_SIMPLE_STATES:
-				return getSimpleStates();
-			case ScchartPackage.REGION___CAN_NEW_SIMPLE_STATE:
-				return canNewSimpleState();
-			case ScchartPackage.REGION___NEW_SIMPLE_STATE__INT_INT:
-				return newSimpleState((Integer)arguments.get(0), (Integer)arguments.get(1));
-			case ScchartPackage.REGION___NEW_SIMPLE_STATE__STRING_INT_INT:
-				return newSimpleState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
-			case ScchartPackage.REGION___NEW_SIMPLE_STATE__INT_INT_INT_INT:
-				return newSimpleState((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3));
-			case ScchartPackage.REGION___NEW_SIMPLE_STATE__STRING_INT_INT_INT_INT:
-				return newSimpleState((String)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Integer)arguments.get(4));
 			case ScchartPackage.REGION___SMOVE_TO__MODELELEMENTCONTAINER_INT_INT:
 				s_moveTo((ModelElementContainer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
