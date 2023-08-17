@@ -6,11 +6,14 @@ import de.jabc.cinco.meta.core.mgl.model.constraints.ConnectionConstraint;
 import de.jabc.cinco.meta.core.mgl.model.constraints.ContainmentConstraint;
 
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
+import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 
@@ -121,6 +124,30 @@ public interface InternalFinalSuperState extends InternalSuperState {
 	 * @model kind="operation"
 	 * @generated
 	 */
+	EList<SCChartReferece> getSCChartReferecePredecessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<InitialSCChartReferece> getInitialSCChartReferecePredecessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<FinalSCChartReferece> getFinalSCChartReferecePredecessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	EList<SuperState> getSuperStateSuccessors();
 
 	/**
@@ -170,5 +197,29 @@ public interface InternalFinalSuperState extends InternalSuperState {
 	 * @generated
 	 */
 	EList<Connector> getConnectorSuccessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<SCChartReferece> getSCChartRefereceSuccessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<InitialSCChartReferece> getInitialSCChartRefereceSuccessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<FinalSCChartReferece> getFinalSCChartRefereceSuccessors();
 
 } // InternalFinalSuperState

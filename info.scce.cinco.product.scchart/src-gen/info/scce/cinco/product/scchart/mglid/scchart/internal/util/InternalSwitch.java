@@ -9,7 +9,6 @@ import graphmodel.internal.InternalIdentifiableElement;
 import graphmodel.internal.InternalModelElement;
 import graphmodel.internal.InternalModelElementContainer;
 import graphmodel.internal.InternalNode;
-import graphmodel.internal.InternalType;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.*;
 
@@ -94,18 +93,6 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = caseInternalModelElementContainer(internalRegion);
 				if (result == null) result = caseInternalModelElement(internalRegion);
 				if (result == null) result = caseInternalIdentifiableElement(internalRegion);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case InternalPackage.INTERNAL_DATA_FLOW_REGION: {
-				InternalDataFlowRegion internalDataFlowRegion = (InternalDataFlowRegion)theEObject;
-				T result = caseInternalDataFlowRegion(internalDataFlowRegion);
-				if (result == null) result = caseInternalRegion(internalDataFlowRegion);
-				if (result == null) result = caseInternalContainer(internalDataFlowRegion);
-				if (result == null) result = caseInternalNode(internalDataFlowRegion);
-				if (result == null) result = caseInternalModelElementContainer(internalDataFlowRegion);
-				if (result == null) result = caseInternalModelElement(internalDataFlowRegion);
-				if (result == null) result = caseInternalIdentifiableElement(internalDataFlowRegion);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -203,45 +190,10 @@ public class InternalSwitch<T> extends Switch<T> {
 			case InternalPackage.INTERNAL_CONNECTOR: {
 				InternalConnector internalConnector = (InternalConnector)theEObject;
 				T result = caseInternalConnector(internalConnector);
+				if (result == null) result = caseInternalSimpleState(internalConnector);
 				if (result == null) result = caseInternalNode(internalConnector);
 				if (result == null) result = caseInternalModelElement(internalConnector);
 				if (result == null) result = caseInternalIdentifiableElement(internalConnector);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case InternalPackage.INTERNAL_INPUT: {
-				InternalInput internalInput = (InternalInput)theEObject;
-				T result = caseInternalInput(internalInput);
-				if (result == null) result = caseInternalNode(internalInput);
-				if (result == null) result = caseInternalModelElement(internalInput);
-				if (result == null) result = caseInternalIdentifiableElement(internalInput);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case InternalPackage.INTERNAL_OUTPUT: {
-				InternalOutput internalOutput = (InternalOutput)theEObject;
-				T result = caseInternalOutput(internalOutput);
-				if (result == null) result = caseInternalNode(internalOutput);
-				if (result == null) result = caseInternalModelElement(internalOutput);
-				if (result == null) result = caseInternalIdentifiableElement(internalOutput);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case InternalPackage.INTERNAL_OPERATOR: {
-				InternalOperator internalOperator = (InternalOperator)theEObject;
-				T result = caseInternalOperator(internalOperator);
-				if (result == null) result = caseInternalNode(internalOperator);
-				if (result == null) result = caseInternalModelElement(internalOperator);
-				if (result == null) result = caseInternalIdentifiableElement(internalOperator);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case InternalPackage.INTERNAL_CIRCUIT_CONNECTER: {
-				InternalCircuitConnecter internalCircuitConnecter = (InternalCircuitConnecter)theEObject;
-				T result = caseInternalCircuitConnecter(internalCircuitConnecter);
-				if (result == null) result = caseInternalNode(internalCircuitConnecter);
-				if (result == null) result = caseInternalModelElement(internalCircuitConnecter);
-				if (result == null) result = caseInternalIdentifiableElement(internalCircuitConnecter);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -469,29 +421,12 @@ public class InternalSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case InternalPackage.INTERNAL_CONNECTION: {
-				InternalConnection internalConnection = (InternalConnection)theEObject;
-				T result = caseInternalConnection(internalConnection);
-				if (result == null) result = caseInternalEdge(internalConnection);
-				if (result == null) result = caseInternalModelElement(internalConnection);
-				if (result == null) result = caseInternalIdentifiableElement(internalConnection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case InternalPackage.INTERNAL_SC_CHART: {
 				InternalSCChart internalSCChart = (InternalSCChart)theEObject;
 				T result = caseInternalSCChart(internalSCChart);
 				if (result == null) result = caseInternalGraphModel(internalSCChart);
 				if (result == null) result = caseInternalModelElementContainer(internalSCChart);
 				if (result == null) result = caseInternalIdentifiableElement(internalSCChart);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case InternalPackage.INTERNAL_ASSIGNMENT: {
-				InternalAssignment internalAssignment = (InternalAssignment)theEObject;
-				T result = caseInternalAssignment(internalAssignment);
-				if (result == null) result = caseInternalType(internalAssignment);
-				if (result == null) result = caseInternalIdentifiableElement(internalAssignment);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -526,21 +461,6 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalRegion(InternalRegion object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Data Flow Region</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Data Flow Region</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalDataFlowRegion(InternalDataFlowRegion object) {
 		return null;
 	}
 
@@ -691,66 +611,6 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalConnector(InternalConnector object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Input</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Input</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalInput(InternalInput object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Output</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Output</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalOutput(InternalOutput object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Operator</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Operator</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalOperator(InternalOperator object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Circuit Connecter</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Circuit Connecter</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalCircuitConnecter(InternalCircuitConnecter object) {
 		return null;
 	}
 
@@ -1085,21 +945,6 @@ public class InternalSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Connection</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Connection</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalConnection(InternalConnection object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>SC Chart</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1111,21 +956,6 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalSCChart(InternalSCChart object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Assignment</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Assignment</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalAssignment(InternalAssignment object) {
 		return null;
 	}
 
@@ -1231,21 +1061,6 @@ public class InternalSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseInternalGraphModel(InternalGraphModel object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInternalType(InternalType object) {
 		return null;
 	}
 

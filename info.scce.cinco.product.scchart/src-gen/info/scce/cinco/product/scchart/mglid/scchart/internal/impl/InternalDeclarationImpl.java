@@ -121,7 +121,7 @@ public class InternalDeclarationImpl extends InternalNodeImpl implements Interna
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = null;
+	protected static final String NAME_EDEFAULT = "<set name>";
 
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.

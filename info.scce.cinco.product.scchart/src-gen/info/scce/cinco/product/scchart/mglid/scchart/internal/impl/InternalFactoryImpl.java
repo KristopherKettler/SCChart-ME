@@ -58,7 +58,6 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 		switch (eClass.getClassifierID()) {
 			case InternalPackage.INTERNAL_ROOT_STATE: return createInternalRootState();
 			case InternalPackage.INTERNAL_REGION: return createInternalRegion();
-			case InternalPackage.INTERNAL_DATA_FLOW_REGION: return createInternalDataFlowRegion();
 			case InternalPackage.INTERNAL_SUPER_STATE: return createInternalSuperState();
 			case InternalPackage.INTERNAL_INITILAL_SUPER_STATE: return createInternalInitilalSuperState();
 			case InternalPackage.INTERNAL_FINAL_SUPER_STATE: return createInternalFinalSuperState();
@@ -69,10 +68,6 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_INITIAL_STATE: return createInternalInitialState();
 			case InternalPackage.INTERNAL_FINAL_STATE: return createInternalFinalState();
 			case InternalPackage.INTERNAL_CONNECTOR: return createInternalConnector();
-			case InternalPackage.INTERNAL_INPUT: return createInternalInput();
-			case InternalPackage.INTERNAL_OUTPUT: return createInternalOutput();
-			case InternalPackage.INTERNAL_OPERATOR: return createInternalOperator();
-			case InternalPackage.INTERNAL_CIRCUIT_CONNECTER: return createInternalCircuitConnecter();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE: return createInternalSCChartReferece();
 			case InternalPackage.INTERNAL_INITIAL_SC_CHART_REFERECE: return createInternalInitialSCChartReferece();
 			case InternalPackage.INTERNAL_FINAL_SC_CHART_REFERECE: return createInternalFinalSCChartReferece();
@@ -95,9 +90,7 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 			case InternalPackage.INTERNAL_CONDITIONAL_TERMINATION_HISTORY_TRANSITION: return createInternalConditionalTerminationHistoryTransition();
 			case InternalPackage.INTERNAL_STRONG_ABORT_HISTORY_TRANSITION: return createInternalStrongAbortHistoryTransition();
 			case InternalPackage.INTERNAL_IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION: return createInternalImmediateStrongAbortHistoryTransition();
-			case InternalPackage.INTERNAL_CONNECTION: return createInternalConnection();
 			case InternalPackage.INTERNAL_SC_CHART: return createInternalSCChart();
-			case InternalPackage.INTERNAL_ASSIGNMENT: return createInternalAssignment();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -123,17 +116,6 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalRegion createInternalRegion() {
 		InternalRegionImpl internalRegion = new InternalRegionImpl();
 		return internalRegion;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InternalDataFlowRegion createInternalDataFlowRegion() {
-		InternalDataFlowRegionImpl internalDataFlowRegion = new InternalDataFlowRegionImpl();
-		return internalDataFlowRegion;
 	}
 
 	/**
@@ -244,50 +226,6 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	public InternalConnector createInternalConnector() {
 		InternalConnectorImpl internalConnector = new InternalConnectorImpl();
 		return internalConnector;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InternalInput createInternalInput() {
-		InternalInputImpl internalInput = new InternalInputImpl();
-		return internalInput;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InternalOutput createInternalOutput() {
-		InternalOutputImpl internalOutput = new InternalOutputImpl();
-		return internalOutput;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InternalOperator createInternalOperator() {
-		InternalOperatorImpl internalOperator = new InternalOperatorImpl();
-		return internalOperator;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InternalCircuitConnecter createInternalCircuitConnecter() {
-		InternalCircuitConnecterImpl internalCircuitConnecter = new InternalCircuitConnecterImpl();
-		return internalCircuitConnecter;
 	}
 
 	/**
@@ -538,31 +476,9 @@ public class InternalFactoryImpl extends EFactoryImpl implements InternalFactory
 	 * @generated
 	 */
 	@Override
-	public InternalConnection createInternalConnection() {
-		InternalConnectionImpl internalConnection = new InternalConnectionImpl();
-		return internalConnection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public InternalSCChart createInternalSCChart() {
 		InternalSCChartImpl internalSCChart = new InternalSCChartImpl();
 		return internalSCChart;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InternalAssignment createInternalAssignment() {
-		InternalAssignmentImpl internalAssignment = new InternalAssignmentImpl();
-		return internalAssignment;
 	}
 
 	/**

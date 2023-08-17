@@ -4,8 +4,6 @@ package info.scce.cinco.product.scchart.mglid.scchart.views;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnector;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Connector View</b></em>'.
@@ -22,7 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface ConnectorView extends EObject {
+public interface ConnectorView extends SimpleStateView {
 	/**
 	 * Returns the value of the '<em><b>Internal Connector</b></em>' reference.
 	 * <!-- begin-user-doc -->

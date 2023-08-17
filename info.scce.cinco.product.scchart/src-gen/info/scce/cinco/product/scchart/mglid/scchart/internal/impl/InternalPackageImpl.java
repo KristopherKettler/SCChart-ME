@@ -20,7 +20,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
@@ -44,13 +43,6 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	private EClass internalRegionEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass internalDataFlowRegionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -121,34 +113,6 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	private EClass internalConnectorEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass internalInputEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass internalOutputEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass internalOperatorEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass internalCircuitConnecterEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -309,21 +273,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass internalConnectionEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass internalSCChartEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass internalAssignmentEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -524,7 +474,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalRootState__GetOutputSuccessors() {
+	public EOperation getInternalRootState__GetSCChartRefereceSuccessors() {
         return getInternalRootState().getEOperations().get(9);
 	}
 
@@ -534,7 +484,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalRootState__GetOperatorSuccessors() {
+	public EOperation getInternalRootState__GetInitialSCChartRefereceSuccessors() {
         return getInternalRootState().getEOperations().get(10);
 	}
 
@@ -544,7 +494,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalRootState__GetCircuitConnecterSuccessors() {
+	public EOperation getInternalRootState__GetFinalSCChartRefereceSuccessors() {
         return getInternalRootState().getEOperations().get(11);
 	}
 
@@ -607,32 +557,9 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EClass getInternalDataFlowRegion() {
-		if (internalDataFlowRegionEClass == null) {
-			internalDataFlowRegionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(2);
-		}
-		return internalDataFlowRegionEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalDataFlowRegion__GetContainmentConstraints() {
-        return getInternalDataFlowRegion().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getInternalSuperState() {
 		if (internalSuperStateEClass == null) {
-			internalSuperStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(3);
+			internalSuperStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(2);
 		}
 		return internalSuperStateEClass;
 	}
@@ -783,7 +710,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSuperState__GetSuperStateSuccessors() {
+	public EOperation getInternalSuperState__GetSCChartReferecePredecessors() {
         return getInternalSuperState().getEOperations().get(11);
 	}
 
@@ -793,7 +720,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSuperState__GetInitilalSuperStateSuccessors() {
+	public EOperation getInternalSuperState__GetInitialSCChartReferecePredecessors() {
         return getInternalSuperState().getEOperations().get(12);
 	}
 
@@ -803,7 +730,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSuperState__GetFinalSuperStateSuccessors() {
+	public EOperation getInternalSuperState__GetFinalSCChartReferecePredecessors() {
         return getInternalSuperState().getEOperations().get(13);
 	}
 
@@ -813,7 +740,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSuperState__GetSimpleStateSuccessors() {
+	public EOperation getInternalSuperState__GetSuperStateSuccessors() {
         return getInternalSuperState().getEOperations().get(14);
 	}
 
@@ -823,7 +750,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSuperState__GetInitialStateSuccessors() {
+	public EOperation getInternalSuperState__GetInitilalSuperStateSuccessors() {
         return getInternalSuperState().getEOperations().get(15);
 	}
 
@@ -833,7 +760,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSuperState__GetFinalStateSuccessors() {
+	public EOperation getInternalSuperState__GetFinalSuperStateSuccessors() {
         return getInternalSuperState().getEOperations().get(16);
 	}
 
@@ -843,8 +770,68 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSuperState__GetConnectorSuccessors() {
+	public EOperation getInternalSuperState__GetSimpleStateSuccessors() {
         return getInternalSuperState().getEOperations().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSuperState__GetInitialStateSuccessors() {
+        return getInternalSuperState().getEOperations().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSuperState__GetFinalStateSuccessors() {
+        return getInternalSuperState().getEOperations().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSuperState__GetConnectorSuccessors() {
+        return getInternalSuperState().getEOperations().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSuperState__GetSCChartRefereceSuccessors() {
+        return getInternalSuperState().getEOperations().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSuperState__GetInitialSCChartRefereceSuccessors() {
+        return getInternalSuperState().getEOperations().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSuperState__GetFinalSCChartRefereceSuccessors() {
+        return getInternalSuperState().getEOperations().get(23);
 	}
 
 	/**
@@ -855,7 +842,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalInitilalSuperState() {
 		if (internalInitilalSuperStateEClass == null) {
-			internalInitilalSuperStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(4);
+			internalInitilalSuperStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(3);
 		}
 		return internalInitilalSuperStateEClass;
 	}
@@ -976,7 +963,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitilalSuperState__GetSuperStateSuccessors() {
+	public EOperation getInternalInitilalSuperState__GetSCChartReferecePredecessors() {
         return getInternalInitilalSuperState().getEOperations().get(11);
 	}
 
@@ -986,7 +973,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitilalSuperState__GetInitilalSuperStateSuccessors() {
+	public EOperation getInternalInitilalSuperState__GetInitialSCChartReferecePredecessors() {
         return getInternalInitilalSuperState().getEOperations().get(12);
 	}
 
@@ -996,7 +983,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitilalSuperState__GetFinalSuperStateSuccessors() {
+	public EOperation getInternalInitilalSuperState__GetFinalSCChartReferecePredecessors() {
         return getInternalInitilalSuperState().getEOperations().get(13);
 	}
 
@@ -1006,7 +993,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitilalSuperState__GetSimpleStateSuccessors() {
+	public EOperation getInternalInitilalSuperState__GetSuperStateSuccessors() {
         return getInternalInitilalSuperState().getEOperations().get(14);
 	}
 
@@ -1016,7 +1003,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitilalSuperState__GetInitialStateSuccessors() {
+	public EOperation getInternalInitilalSuperState__GetInitilalSuperStateSuccessors() {
         return getInternalInitilalSuperState().getEOperations().get(15);
 	}
 
@@ -1026,7 +1013,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitilalSuperState__GetFinalStateSuccessors() {
+	public EOperation getInternalInitilalSuperState__GetFinalSuperStateSuccessors() {
         return getInternalInitilalSuperState().getEOperations().get(16);
 	}
 
@@ -1036,8 +1023,68 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitilalSuperState__GetConnectorSuccessors() {
+	public EOperation getInternalInitilalSuperState__GetSimpleStateSuccessors() {
         return getInternalInitilalSuperState().getEOperations().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitilalSuperState__GetInitialStateSuccessors() {
+        return getInternalInitilalSuperState().getEOperations().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitilalSuperState__GetFinalStateSuccessors() {
+        return getInternalInitilalSuperState().getEOperations().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitilalSuperState__GetConnectorSuccessors() {
+        return getInternalInitilalSuperState().getEOperations().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitilalSuperState__GetSCChartRefereceSuccessors() {
+        return getInternalInitilalSuperState().getEOperations().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitilalSuperState__GetInitialSCChartRefereceSuccessors() {
+        return getInternalInitilalSuperState().getEOperations().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitilalSuperState__GetFinalSCChartRefereceSuccessors() {
+        return getInternalInitilalSuperState().getEOperations().get(23);
 	}
 
 	/**
@@ -1048,7 +1095,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalFinalSuperState() {
 		if (internalFinalSuperStateEClass == null) {
-			internalFinalSuperStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(5);
+			internalFinalSuperStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(4);
 		}
 		return internalFinalSuperStateEClass;
 	}
@@ -1169,7 +1216,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalSuperState__GetSuperStateSuccessors() {
+	public EOperation getInternalFinalSuperState__GetSCChartReferecePredecessors() {
         return getInternalFinalSuperState().getEOperations().get(11);
 	}
 
@@ -1179,7 +1226,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalSuperState__GetInitilalSuperStateSuccessors() {
+	public EOperation getInternalFinalSuperState__GetInitialSCChartReferecePredecessors() {
         return getInternalFinalSuperState().getEOperations().get(12);
 	}
 
@@ -1189,7 +1236,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalSuperState__GetFinalSuperStateSuccessors() {
+	public EOperation getInternalFinalSuperState__GetFinalSCChartReferecePredecessors() {
         return getInternalFinalSuperState().getEOperations().get(13);
 	}
 
@@ -1199,7 +1246,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalSuperState__GetSimpleStateSuccessors() {
+	public EOperation getInternalFinalSuperState__GetSuperStateSuccessors() {
         return getInternalFinalSuperState().getEOperations().get(14);
 	}
 
@@ -1209,7 +1256,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalSuperState__GetInitialStateSuccessors() {
+	public EOperation getInternalFinalSuperState__GetInitilalSuperStateSuccessors() {
         return getInternalFinalSuperState().getEOperations().get(15);
 	}
 
@@ -1219,7 +1266,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalSuperState__GetFinalStateSuccessors() {
+	public EOperation getInternalFinalSuperState__GetFinalSuperStateSuccessors() {
         return getInternalFinalSuperState().getEOperations().get(16);
 	}
 
@@ -1229,8 +1276,68 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalSuperState__GetConnectorSuccessors() {
+	public EOperation getInternalFinalSuperState__GetSimpleStateSuccessors() {
         return getInternalFinalSuperState().getEOperations().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSuperState__GetInitialStateSuccessors() {
+        return getInternalFinalSuperState().getEOperations().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSuperState__GetFinalStateSuccessors() {
+        return getInternalFinalSuperState().getEOperations().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSuperState__GetConnectorSuccessors() {
+        return getInternalFinalSuperState().getEOperations().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSuperState__GetSCChartRefereceSuccessors() {
+        return getInternalFinalSuperState().getEOperations().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSuperState__GetInitialSCChartRefereceSuccessors() {
+        return getInternalFinalSuperState().getEOperations().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSuperState__GetFinalSCChartRefereceSuccessors() {
+        return getInternalFinalSuperState().getEOperations().get(23);
 	}
 
 	/**
@@ -1241,7 +1348,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalDeclaration() {
 		if (internalDeclarationEClass == null) {
-			internalDeclarationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(6);
+			internalDeclarationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(5);
 		}
 		return internalDeclarationEClass;
 	}
@@ -1324,7 +1431,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalSuspend() {
 		if (internalSuspendEClass == null) {
-			internalSuspendEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(7);
+			internalSuspendEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(6);
 		}
 		return internalSuspendEClass;
 	}
@@ -1367,7 +1474,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalAction() {
 		if (internalActionEClass == null) {
-			internalActionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(8);
+			internalActionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(7);
 		}
 		return internalActionEClass;
 	}
@@ -1420,7 +1527,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalSimpleState() {
 		if (internalSimpleStateEClass == null) {
-			internalSimpleStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(9);
+			internalSimpleStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(8);
 		}
 		return internalSimpleStateEClass;
 	}
@@ -1551,7 +1658,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSimpleState__GetSuperStateSuccessors() {
+	public EOperation getInternalSimpleState__GetSCChartReferecePredecessors() {
         return getInternalSimpleState().getEOperations().get(10);
 	}
 
@@ -1561,7 +1668,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSimpleState__GetInitilalSuperStateSuccessors() {
+	public EOperation getInternalSimpleState__GetInitialSCChartReferecePredecessors() {
         return getInternalSimpleState().getEOperations().get(11);
 	}
 
@@ -1571,7 +1678,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSimpleState__GetFinalSuperStateSuccessors() {
+	public EOperation getInternalSimpleState__GetFinalSCChartReferecePredecessors() {
         return getInternalSimpleState().getEOperations().get(12);
 	}
 
@@ -1581,7 +1688,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSimpleState__GetSimpleStateSuccessors() {
+	public EOperation getInternalSimpleState__GetSuperStateSuccessors() {
         return getInternalSimpleState().getEOperations().get(13);
 	}
 
@@ -1591,7 +1698,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSimpleState__GetInitialStateSuccessors() {
+	public EOperation getInternalSimpleState__GetInitilalSuperStateSuccessors() {
         return getInternalSimpleState().getEOperations().get(14);
 	}
 
@@ -1601,7 +1708,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSimpleState__GetFinalStateSuccessors() {
+	public EOperation getInternalSimpleState__GetFinalSuperStateSuccessors() {
         return getInternalSimpleState().getEOperations().get(15);
 	}
 
@@ -1611,8 +1718,68 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSimpleState__GetConnectorSuccessors() {
+	public EOperation getInternalSimpleState__GetSimpleStateSuccessors() {
         return getInternalSimpleState().getEOperations().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSimpleState__GetInitialStateSuccessors() {
+        return getInternalSimpleState().getEOperations().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSimpleState__GetFinalStateSuccessors() {
+        return getInternalSimpleState().getEOperations().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSimpleState__GetConnectorSuccessors() {
+        return getInternalSimpleState().getEOperations().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSimpleState__GetSCChartRefereceSuccessors() {
+        return getInternalSimpleState().getEOperations().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSimpleState__GetInitialSCChartRefereceSuccessors() {
+        return getInternalSimpleState().getEOperations().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSimpleState__GetFinalSCChartRefereceSuccessors() {
+        return getInternalSimpleState().getEOperations().get(22);
 	}
 
 	/**
@@ -1623,7 +1790,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalInitialState() {
 		if (internalInitialStateEClass == null) {
-			internalInitialStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(10);
+			internalInitialStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(9);
 		}
 		return internalInitialStateEClass;
 	}
@@ -1734,7 +1901,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitialState__GetSuperStateSuccessors() {
+	public EOperation getInternalInitialState__GetSCChartReferecePredecessors() {
         return getInternalInitialState().getEOperations().get(10);
 	}
 
@@ -1744,7 +1911,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitialState__GetInitilalSuperStateSuccessors() {
+	public EOperation getInternalInitialState__GetInitialSCChartReferecePredecessors() {
         return getInternalInitialState().getEOperations().get(11);
 	}
 
@@ -1754,7 +1921,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitialState__GetFinalSuperStateSuccessors() {
+	public EOperation getInternalInitialState__GetFinalSCChartReferecePredecessors() {
         return getInternalInitialState().getEOperations().get(12);
 	}
 
@@ -1764,7 +1931,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitialState__GetSimpleStateSuccessors() {
+	public EOperation getInternalInitialState__GetSuperStateSuccessors() {
         return getInternalInitialState().getEOperations().get(13);
 	}
 
@@ -1774,7 +1941,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitialState__GetInitialStateSuccessors() {
+	public EOperation getInternalInitialState__GetInitilalSuperStateSuccessors() {
         return getInternalInitialState().getEOperations().get(14);
 	}
 
@@ -1784,7 +1951,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitialState__GetFinalStateSuccessors() {
+	public EOperation getInternalInitialState__GetFinalSuperStateSuccessors() {
         return getInternalInitialState().getEOperations().get(15);
 	}
 
@@ -1794,8 +1961,68 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitialState__GetConnectorSuccessors() {
+	public EOperation getInternalInitialState__GetSimpleStateSuccessors() {
         return getInternalInitialState().getEOperations().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialState__GetInitialStateSuccessors() {
+        return getInternalInitialState().getEOperations().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialState__GetFinalStateSuccessors() {
+        return getInternalInitialState().getEOperations().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialState__GetConnectorSuccessors() {
+        return getInternalInitialState().getEOperations().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialState__GetSCChartRefereceSuccessors() {
+        return getInternalInitialState().getEOperations().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialState__GetInitialSCChartRefereceSuccessors() {
+        return getInternalInitialState().getEOperations().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialState__GetFinalSCChartRefereceSuccessors() {
+        return getInternalInitialState().getEOperations().get(22);
 	}
 
 	/**
@@ -1806,7 +2033,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalFinalState() {
 		if (internalFinalStateEClass == null) {
-			internalFinalStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(11);
+			internalFinalStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(10);
 		}
 		return internalFinalStateEClass;
 	}
@@ -1917,7 +2144,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalState__GetSuperStateSuccessors() {
+	public EOperation getInternalFinalState__GetSCChartReferecePredecessors() {
         return getInternalFinalState().getEOperations().get(10);
 	}
 
@@ -1927,7 +2154,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalState__GetInitilalSuperStateSuccessors() {
+	public EOperation getInternalFinalState__GetInitialSCChartReferecePredecessors() {
         return getInternalFinalState().getEOperations().get(11);
 	}
 
@@ -1937,7 +2164,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalState__GetFinalSuperStateSuccessors() {
+	public EOperation getInternalFinalState__GetFinalSCChartReferecePredecessors() {
         return getInternalFinalState().getEOperations().get(12);
 	}
 
@@ -1947,7 +2174,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalState__GetSimpleStateSuccessors() {
+	public EOperation getInternalFinalState__GetSuperStateSuccessors() {
         return getInternalFinalState().getEOperations().get(13);
 	}
 
@@ -1957,7 +2184,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalState__GetInitialStateSuccessors() {
+	public EOperation getInternalFinalState__GetInitilalSuperStateSuccessors() {
         return getInternalFinalState().getEOperations().get(14);
 	}
 
@@ -1967,7 +2194,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalState__GetFinalStateSuccessors() {
+	public EOperation getInternalFinalState__GetFinalSuperStateSuccessors() {
         return getInternalFinalState().getEOperations().get(15);
 	}
 
@@ -1977,8 +2204,68 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalState__GetConnectorSuccessors() {
+	public EOperation getInternalFinalState__GetSimpleStateSuccessors() {
         return getInternalFinalState().getEOperations().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalState__GetInitialStateSuccessors() {
+        return getInternalFinalState().getEOperations().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalState__GetFinalStateSuccessors() {
+        return getInternalFinalState().getEOperations().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalState__GetConnectorSuccessors() {
+        return getInternalFinalState().getEOperations().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalState__GetSCChartRefereceSuccessors() {
+        return getInternalFinalState().getEOperations().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalState__GetInitialSCChartRefereceSuccessors() {
+        return getInternalFinalState().getEOperations().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalState__GetFinalSCChartRefereceSuccessors() {
+        return getInternalFinalState().getEOperations().get(22);
 	}
 
 	/**
@@ -1989,7 +2276,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalConnector() {
 		if (internalConnectorEClass == null) {
-			internalConnectorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(12);
+			internalConnectorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(11);
 		}
 		return internalConnectorEClass;
 	}
@@ -2100,7 +2387,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnector__GetSuperStateSuccessors() {
+	public EOperation getInternalConnector__GetSCChartReferecePredecessors() {
         return getInternalConnector().getEOperations().get(10);
 	}
 
@@ -2110,7 +2397,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnector__GetInitilalSuperStateSuccessors() {
+	public EOperation getInternalConnector__GetInitialSCChartReferecePredecessors() {
         return getInternalConnector().getEOperations().get(11);
 	}
 
@@ -2120,7 +2407,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnector__GetFinalSuperStateSuccessors() {
+	public EOperation getInternalConnector__GetFinalSCChartReferecePredecessors() {
         return getInternalConnector().getEOperations().get(12);
 	}
 
@@ -2130,7 +2417,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnector__GetSimpleStateSuccessors() {
+	public EOperation getInternalConnector__GetSuperStateSuccessors() {
         return getInternalConnector().getEOperations().get(13);
 	}
 
@@ -2140,7 +2427,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnector__GetInitialStateSuccessors() {
+	public EOperation getInternalConnector__GetInitilalSuperStateSuccessors() {
         return getInternalConnector().getEOperations().get(14);
 	}
 
@@ -2150,7 +2437,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnector__GetFinalStateSuccessors() {
+	public EOperation getInternalConnector__GetFinalSuperStateSuccessors() {
         return getInternalConnector().getEOperations().get(15);
 	}
 
@@ -2160,7 +2447,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalConnector__GetConnectorSuccessors() {
+	public EOperation getInternalConnector__GetSimpleStateSuccessors() {
         return getInternalConnector().getEOperations().get(16);
 	}
 
@@ -2170,11 +2457,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EClass getInternalInput() {
-		if (internalInputEClass == null) {
-			internalInputEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(13);
-		}
-		return internalInputEClass;
+	public EOperation getInternalConnector__GetInitialStateSuccessors() {
+        return getInternalConnector().getEOperations().get(17);
 	}
 
 	/**
@@ -2183,8 +2467,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalInput_Label() {
-        return (EAttribute)getInternalInput().getEStructuralFeatures().get(0);
+	public EOperation getInternalConnector__GetFinalStateSuccessors() {
+        return getInternalConnector().getEOperations().get(18);
 	}
 
 	/**
@@ -2193,8 +2477,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInput__GetOutgoingConstraints() {
-        return getInternalInput().getEOperations().get(0);
+	public EOperation getInternalConnector__GetConnectorSuccessors() {
+        return getInternalConnector().getEOperations().get(19);
 	}
 
 	/**
@@ -2203,8 +2487,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInput__GetOutputSuccessors() {
-        return getInternalInput().getEOperations().get(1);
+	public EOperation getInternalConnector__GetSCChartRefereceSuccessors() {
+        return getInternalConnector().getEOperations().get(20);
 	}
 
 	/**
@@ -2213,8 +2497,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInput__GetOperatorSuccessors() {
-        return getInternalInput().getEOperations().get(2);
+	public EOperation getInternalConnector__GetInitialSCChartRefereceSuccessors() {
+        return getInternalConnector().getEOperations().get(21);
 	}
 
 	/**
@@ -2223,297 +2507,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInput__GetCircuitConnecterSuccessors() {
-        return getInternalInput().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getInternalOutput() {
-		if (internalOutputEClass == null) {
-			internalOutputEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(14);
-		}
-		return internalOutputEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getInternalOutput_Label() {
-        return (EAttribute)getInternalOutput().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalOutput__GetIncomingConstraints() {
-        return getInternalOutput().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalOutput__GetRootStatePredecessors() {
-        return getInternalOutput().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalOutput__GetInputPredecessors() {
-        return getInternalOutput().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalOutput__GetOperatorPredecessors() {
-        return getInternalOutput().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalOutput__GetCircuitConnecterPredecessors() {
-        return getInternalOutput().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getInternalOperator() {
-		if (internalOperatorEClass == null) {
-			internalOperatorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(15);
-		}
-		return internalOperatorEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getInternalOperator_Operator() {
-        return (EAttribute)getInternalOperator().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalOperator__GetIncomingConstraints() {
-        return getInternalOperator().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalOperator__GetOutgoingConstraints() {
-        return getInternalOperator().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalOperator__GetRootStatePredecessors() {
-        return getInternalOperator().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalOperator__GetInputPredecessors() {
-        return getInternalOperator().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalOperator__GetOperatorPredecessors() {
-        return getInternalOperator().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalOperator__GetCircuitConnecterPredecessors() {
-        return getInternalOperator().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalOperator__GetOutputSuccessors() {
-        return getInternalOperator().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalOperator__GetOperatorSuccessors() {
-        return getInternalOperator().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalOperator__GetCircuitConnecterSuccessors() {
-        return getInternalOperator().getEOperations().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getInternalCircuitConnecter() {
-		if (internalCircuitConnecterEClass == null) {
-			internalCircuitConnecterEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(16);
-		}
-		return internalCircuitConnecterEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalCircuitConnecter__GetIncomingConstraints() {
-        return getInternalCircuitConnecter().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalCircuitConnecter__GetOutgoingConstraints() {
-        return getInternalCircuitConnecter().getEOperations().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalCircuitConnecter__GetRootStatePredecessors() {
-        return getInternalCircuitConnecter().getEOperations().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalCircuitConnecter__GetInputPredecessors() {
-        return getInternalCircuitConnecter().getEOperations().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalCircuitConnecter__GetOperatorPredecessors() {
-        return getInternalCircuitConnecter().getEOperations().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalCircuitConnecter__GetCircuitConnecterPredecessors() {
-        return getInternalCircuitConnecter().getEOperations().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalCircuitConnecter__GetOutputSuccessors() {
-        return getInternalCircuitConnecter().getEOperations().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalCircuitConnecter__GetOperatorSuccessors() {
-        return getInternalCircuitConnecter().getEOperations().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInternalCircuitConnecter__GetCircuitConnecterSuccessors() {
-        return getInternalCircuitConnecter().getEOperations().get(8);
+	public EOperation getInternalConnector__GetFinalSCChartRefereceSuccessors() {
+        return getInternalConnector().getEOperations().get(22);
 	}
 
 	/**
@@ -2524,7 +2519,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalSCChartReferece() {
 		if (internalSCChartRefereceEClass == null) {
-			internalSCChartRefereceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(17);
+			internalSCChartRefereceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(12);
 		}
 		return internalSCChartRefereceEClass;
 	}
@@ -2535,8 +2530,8 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getInternalSCChartReferece_Assignments() {
-        return (EReference)getInternalSCChartReferece().getEStructuralFeatures().get(0);
+	public EAttribute getInternalSCChartReferece_Assignments() {
+        return (EAttribute)getInternalSCChartReferece().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -2605,8 +2600,238 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalSCChartReferece__GetReference() {
+	public EOperation getInternalSCChartReferece__GetIncomingConstraints() {
         return getInternalSCChartReferece().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetOutgoingConstraints() {
+        return getInternalSCChartReferece().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetRootStatePredecessors() {
+        return getInternalSCChartReferece().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetSuperStatePredecessors() {
+        return getInternalSCChartReferece().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetInitilalSuperStatePredecessors() {
+        return getInternalSCChartReferece().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetFinalSuperStatePredecessors() {
+        return getInternalSCChartReferece().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetSimpleStatePredecessors() {
+        return getInternalSCChartReferece().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetInitialStatePredecessors() {
+        return getInternalSCChartReferece().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetFinalStatePredecessors() {
+        return getInternalSCChartReferece().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetConnectorPredecessors() {
+        return getInternalSCChartReferece().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetSCChartReferecePredecessors() {
+        return getInternalSCChartReferece().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetInitialSCChartReferecePredecessors() {
+        return getInternalSCChartReferece().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetFinalSCChartReferecePredecessors() {
+        return getInternalSCChartReferece().getEOperations().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetSuperStateSuccessors() {
+        return getInternalSCChartReferece().getEOperations().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetInitilalSuperStateSuccessors() {
+        return getInternalSCChartReferece().getEOperations().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetFinalSuperStateSuccessors() {
+        return getInternalSCChartReferece().getEOperations().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetSimpleStateSuccessors() {
+        return getInternalSCChartReferece().getEOperations().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetInitialStateSuccessors() {
+        return getInternalSCChartReferece().getEOperations().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetFinalStateSuccessors() {
+        return getInternalSCChartReferece().getEOperations().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetConnectorSuccessors() {
+        return getInternalSCChartReferece().getEOperations().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetSCChartRefereceSuccessors() {
+        return getInternalSCChartReferece().getEOperations().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetInitialSCChartRefereceSuccessors() {
+        return getInternalSCChartReferece().getEOperations().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetFinalSCChartRefereceSuccessors() {
+        return getInternalSCChartReferece().getEOperations().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalSCChartReferece__GetReference() {
+        return getInternalSCChartReferece().getEOperations().get(24);
 	}
 
 	/**
@@ -2617,7 +2842,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalInitialSCChartReferece() {
 		if (internalInitialSCChartRefereceEClass == null) {
-			internalInitialSCChartRefereceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(18);
+			internalInitialSCChartRefereceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(13);
 		}
 		return internalInitialSCChartRefereceEClass;
 	}
@@ -2638,8 +2863,238 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalInitialSCChartReferece__GetReference() {
+	public EOperation getInternalInitialSCChartReferece__GetIncomingConstraints() {
         return getInternalInitialSCChartReferece().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetOutgoingConstraints() {
+        return getInternalInitialSCChartReferece().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetRootStatePredecessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetSuperStatePredecessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetInitilalSuperStatePredecessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetFinalSuperStatePredecessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetSimpleStatePredecessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetInitialStatePredecessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetFinalStatePredecessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetConnectorPredecessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetSCChartReferecePredecessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetInitialSCChartReferecePredecessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetFinalSCChartReferecePredecessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetSuperStateSuccessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetInitilalSuperStateSuccessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetFinalSuperStateSuccessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetSimpleStateSuccessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetInitialStateSuccessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetFinalStateSuccessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetConnectorSuccessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetSCChartRefereceSuccessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetInitialSCChartRefereceSuccessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetFinalSCChartRefereceSuccessors() {
+        return getInternalInitialSCChartReferece().getEOperations().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalInitialSCChartReferece__GetReference() {
+        return getInternalInitialSCChartReferece().getEOperations().get(24);
 	}
 
 	/**
@@ -2650,7 +3105,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalFinalSCChartReferece() {
 		if (internalFinalSCChartRefereceEClass == null) {
-			internalFinalSCChartRefereceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(19);
+			internalFinalSCChartRefereceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(14);
 		}
 		return internalFinalSCChartRefereceEClass;
 	}
@@ -2671,8 +3126,238 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EOperation getInternalFinalSCChartReferece__GetReference() {
+	public EOperation getInternalFinalSCChartReferece__GetIncomingConstraints() {
         return getInternalFinalSCChartReferece().getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetOutgoingConstraints() {
+        return getInternalFinalSCChartReferece().getEOperations().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetRootStatePredecessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetSuperStatePredecessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetInitilalSuperStatePredecessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetFinalSuperStatePredecessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetSimpleStatePredecessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetInitialStatePredecessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetFinalStatePredecessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetConnectorPredecessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetSCChartReferecePredecessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetInitialSCChartReferecePredecessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetFinalSCChartReferecePredecessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetSuperStateSuccessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetInitilalSuperStateSuccessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetFinalSuperStateSuccessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetSimpleStateSuccessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetInitialStateSuccessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetFinalStateSuccessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetConnectorSuccessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetSCChartRefereceSuccessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetInitialSCChartRefereceSuccessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetFinalSCChartRefereceSuccessors() {
+        return getInternalFinalSCChartReferece().getEOperations().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getInternalFinalSCChartReferece__GetReference() {
+        return getInternalFinalSCChartReferece().getEOperations().get(24);
 	}
 
 	/**
@@ -2683,7 +3368,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalAbstractTransition() {
 		if (internalAbstractTransitionEClass == null) {
-			internalAbstractTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(20);
+			internalAbstractTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(15);
 		}
 		return internalAbstractTransitionEClass;
 	}
@@ -2706,7 +3391,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalTransition() {
 		if (internalTransitionEClass == null) {
-			internalTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(21);
+			internalTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(16);
 		}
 		return internalTransitionEClass;
 	}
@@ -2749,7 +3434,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalImmediateTransition() {
 		if (internalImmediateTransitionEClass == null) {
-			internalImmediateTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(22);
+			internalImmediateTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(17);
 		}
 		return internalImmediateTransitionEClass;
 	}
@@ -2792,7 +3477,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalTerminationTransition() {
 		if (internalTerminationTransitionEClass == null) {
-			internalTerminationTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(23);
+			internalTerminationTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(18);
 		}
 		return internalTerminationTransitionEClass;
 	}
@@ -2815,7 +3500,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalConditionalTerminationTransition() {
 		if (internalConditionalTerminationTransitionEClass == null) {
-			internalConditionalTerminationTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(24);
+			internalConditionalTerminationTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(19);
 		}
 		return internalConditionalTerminationTransitionEClass;
 	}
@@ -2858,7 +3543,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalStrongAbortTransition() {
 		if (internalStrongAbortTransitionEClass == null) {
-			internalStrongAbortTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(25);
+			internalStrongAbortTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(20);
 		}
 		return internalStrongAbortTransitionEClass;
 	}
@@ -2901,7 +3586,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalImmediateStrongAbortTransition() {
 		if (internalImmediateStrongAbortTransitionEClass == null) {
-			internalImmediateStrongAbortTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(26);
+			internalImmediateStrongAbortTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(21);
 		}
 		return internalImmediateStrongAbortTransitionEClass;
 	}
@@ -2944,7 +3629,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalDeferredTransition() {
 		if (internalDeferredTransitionEClass == null) {
-			internalDeferredTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(27);
+			internalDeferredTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(22);
 		}
 		return internalDeferredTransitionEClass;
 	}
@@ -2987,7 +3672,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalImmediateDeferredTransition() {
 		if (internalImmediateDeferredTransitionEClass == null) {
-			internalImmediateDeferredTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(28);
+			internalImmediateDeferredTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(23);
 		}
 		return internalImmediateDeferredTransitionEClass;
 	}
@@ -3030,7 +3715,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalTerminationDefferdTransition() {
 		if (internalTerminationDefferdTransitionEClass == null) {
-			internalTerminationDefferdTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(29);
+			internalTerminationDefferdTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(24);
 		}
 		return internalTerminationDefferdTransitionEClass;
 	}
@@ -3053,7 +3738,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalConditionalTerminationDeferredTransition() {
 		if (internalConditionalTerminationDeferredTransitionEClass == null) {
-			internalConditionalTerminationDeferredTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(30);
+			internalConditionalTerminationDeferredTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(25);
 		}
 		return internalConditionalTerminationDeferredTransitionEClass;
 	}
@@ -3096,7 +3781,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalStrongAbortDeferredTransition() {
 		if (internalStrongAbortDeferredTransitionEClass == null) {
-			internalStrongAbortDeferredTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(31);
+			internalStrongAbortDeferredTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(26);
 		}
 		return internalStrongAbortDeferredTransitionEClass;
 	}
@@ -3139,7 +3824,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalImmediateStrongAbortDeferredTransition() {
 		if (internalImmediateStrongAbortDeferredTransitionEClass == null) {
-			internalImmediateStrongAbortDeferredTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(32);
+			internalImmediateStrongAbortDeferredTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(27);
 		}
 		return internalImmediateStrongAbortDeferredTransitionEClass;
 	}
@@ -3182,7 +3867,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalHistoryTransition() {
 		if (internalHistoryTransitionEClass == null) {
-			internalHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(33);
+			internalHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(28);
 		}
 		return internalHistoryTransitionEClass;
 	}
@@ -3235,7 +3920,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalImmediateHistoryTransition() {
 		if (internalImmediateHistoryTransitionEClass == null) {
-			internalImmediateHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(34);
+			internalImmediateHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(29);
 		}
 		return internalImmediateHistoryTransitionEClass;
 	}
@@ -3288,7 +3973,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalTerminationHistoryTransition() {
 		if (internalTerminationHistoryTransitionEClass == null) {
-			internalTerminationHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(35);
+			internalTerminationHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(30);
 		}
 		return internalTerminationHistoryTransitionEClass;
 	}
@@ -3321,7 +4006,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalConditionalTerminationHistoryTransition() {
 		if (internalConditionalTerminationHistoryTransitionEClass == null) {
-			internalConditionalTerminationHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(36);
+			internalConditionalTerminationHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(31);
 		}
 		return internalConditionalTerminationHistoryTransitionEClass;
 	}
@@ -3374,7 +4059,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalStrongAbortHistoryTransition() {
 		if (internalStrongAbortHistoryTransitionEClass == null) {
-			internalStrongAbortHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(37);
+			internalStrongAbortHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(32);
 		}
 		return internalStrongAbortHistoryTransitionEClass;
 	}
@@ -3427,7 +4112,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EClass getInternalImmediateStrongAbortHistoryTransition() {
 		if (internalImmediateStrongAbortHistoryTransitionEClass == null) {
-			internalImmediateStrongAbortHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(38);
+			internalImmediateStrongAbortHistoryTransitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(33);
 		}
 		return internalImmediateStrongAbortHistoryTransitionEClass;
 	}
@@ -3478,22 +4163,9 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EClass getInternalConnection() {
-		if (internalConnectionEClass == null) {
-			internalConnectionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(39);
-		}
-		return internalConnectionEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getInternalSCChart() {
 		if (internalSCChartEClass == null) {
-			internalSCChartEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(40);
+			internalSCChartEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(34);
 		}
 		return internalSCChartEClass;
 	}
@@ -3506,29 +4178,6 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	@Override
 	public EOperation getInternalSCChart__GetContainmentConstraints() {
         return getInternalSCChart().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getInternalAssignment() {
-		if (internalAssignmentEClass == null) {
-			internalAssignmentEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(41);
-		}
-		return internalAssignmentEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getInternalAssignment_Assignment() {
-        return (EAttribute)getInternalAssignment().getEStructuralFeatures().get(0);
 	}
 
 	/**

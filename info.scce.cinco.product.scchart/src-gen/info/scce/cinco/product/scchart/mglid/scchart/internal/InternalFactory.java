@@ -40,15 +40,6 @@ public interface InternalFactory extends EFactory {
 	InternalRegion createInternalRegion();
 
 	/**
-	 * Returns a new object of class '<em>Data Flow Region</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Data Flow Region</em>'.
-	 * @generated
-	 */
-	InternalDataFlowRegion createInternalDataFlowRegion();
-
-	/**
 	 * Returns a new object of class '<em>Super State</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -137,42 +128,6 @@ public interface InternalFactory extends EFactory {
 	 * @generated
 	 */
 	InternalConnector createInternalConnector();
-
-	/**
-	 * Returns a new object of class '<em>Input</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Input</em>'.
-	 * @generated
-	 */
-	InternalInput createInternalInput();
-
-	/**
-	 * Returns a new object of class '<em>Output</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Output</em>'.
-	 * @generated
-	 */
-	InternalOutput createInternalOutput();
-
-	/**
-	 * Returns a new object of class '<em>Operator</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Operator</em>'.
-	 * @generated
-	 */
-	InternalOperator createInternalOperator();
-
-	/**
-	 * Returns a new object of class '<em>Circuit Connecter</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Circuit Connecter</em>'.
-	 * @generated
-	 */
-	InternalCircuitConnecter createInternalCircuitConnecter();
 
 	/**
 	 * Returns a new object of class '<em>SC Chart Referece</em>'.
@@ -373,15 +328,6 @@ public interface InternalFactory extends EFactory {
 	InternalImmediateStrongAbortHistoryTransition createInternalImmediateStrongAbortHistoryTransition();
 
 	/**
-	 * Returns a new object of class '<em>Connection</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Connection</em>'.
-	 * @generated
-	 */
-	InternalConnection createInternalConnection();
-
-	/**
 	 * Returns a new object of class '<em>SC Chart</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -389,15 +335,6 @@ public interface InternalFactory extends EFactory {
 	 * @generated
 	 */
 	InternalSCChart createInternalSCChart();
-
-	/**
-	 * Returns a new object of class '<em>Assignment</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assignment</em>'.
-	 * @generated
-	 */
-	InternalAssignment createInternalAssignment();
 
 	/**
 	 * Returns the package supported by this factory.

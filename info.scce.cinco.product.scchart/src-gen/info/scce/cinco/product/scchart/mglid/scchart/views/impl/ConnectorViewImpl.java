@@ -13,7 +13,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +27,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class ConnectorViewImpl extends EObjectImpl implements ConnectorView {
+public class ConnectorViewImpl extends SimpleStateViewImpl implements ConnectorView {
 	/**
 	 * The cached value of the '{@link #getInternalConnector() <em>Internal Connector</em>}' reference.
 	 * <!-- begin-user-doc -->

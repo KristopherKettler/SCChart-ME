@@ -221,106 +221,6 @@ public interface ViewsPackage extends EPackage {
 	int REGION_VIEW_OPERATION_COUNT = 6;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.DataFlowRegionViewImpl <em>Data Flow Region View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.DataFlowRegionViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDataFlowRegionView()
-	 * @generated
-	 */
-	int DATA_FLOW_REGION_VIEW = 2;
-
-	/**
-	 * The feature id for the '<em><b>Internal Region</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATA_FLOW_REGION_VIEW__INTERNAL_REGION = REGION_VIEW__INTERNAL_REGION;
-
-	/**
-	 * The feature id for the '<em><b>Internal Data Flow Region</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATA_FLOW_REGION_VIEW__INTERNAL_DATA_FLOW_REGION = REGION_VIEW_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Data Flow Region View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATA_FLOW_REGION_VIEW_FEATURE_COUNT = REGION_VIEW_FEATURE_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Get Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATA_FLOW_REGION_VIEW___GET_NAME = REGION_VIEW___GET_NAME;
-
-	/**
-	 * The operation id for the '<em>Set Name</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATA_FLOW_REGION_VIEW___SET_NAME__STRING = REGION_VIEW___SET_NAME__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Label</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATA_FLOW_REGION_VIEW___GET_LABEL = REGION_VIEW___GET_LABEL;
-
-	/**
-	 * The operation id for the '<em>Set Label</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATA_FLOW_REGION_VIEW___SET_LABEL__STRING = REGION_VIEW___SET_LABEL__STRING;
-
-	/**
-	 * The operation id for the '<em>Get Uuid</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATA_FLOW_REGION_VIEW___GET_UUID = REGION_VIEW___GET_UUID;
-
-	/**
-	 * The operation id for the '<em>Set Uuid</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATA_FLOW_REGION_VIEW___SET_UUID__STRING = REGION_VIEW___SET_UUID__STRING;
-
-	/**
-	 * The number of operations of the '<em>Data Flow Region View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATA_FLOW_REGION_VIEW_OPERATION_COUNT = REGION_VIEW_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateViewImpl <em>Super State View</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -328,7 +228,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuperStateView()
 	 * @generated
 	 */
-	int SUPER_STATE_VIEW = 3;
+	int SUPER_STATE_VIEW = 2;
 
 	/**
 	 * The feature id for the '<em><b>Internal Super State</b></em>' reference.
@@ -437,7 +337,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getInitilalSuperStateView()
 	 * @generated
 	 */
-	int INITILAL_SUPER_STATE_VIEW = 4;
+	int INITILAL_SUPER_STATE_VIEW = 3;
 
 	/**
 	 * The feature id for the '<em><b>Internal Super State</b></em>' reference.
@@ -555,7 +455,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getFinalSuperStateView()
 	 * @generated
 	 */
-	int FINAL_SUPER_STATE_VIEW = 5;
+	int FINAL_SUPER_STATE_VIEW = 4;
 
 	/**
 	 * The feature id for the '<em><b>Internal Super State</b></em>' reference.
@@ -673,7 +573,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDeclarationView()
 	 * @generated
 	 */
-	int DECLARATION_VIEW = 6;
+	int DECLARATION_VIEW = 5;
 
 	/**
 	 * The feature id for the '<em><b>Internal Declaration</b></em>' reference.
@@ -836,7 +736,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSuspendView()
 	 * @generated
 	 */
-	int SUSPEND_VIEW = 7;
+	int SUSPEND_VIEW = 6;
 
 	/**
 	 * The feature id for the '<em><b>Internal Suspend</b></em>' reference.
@@ -927,7 +827,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getActionView()
 	 * @generated
 	 */
-	int ACTION_VIEW = 8;
+	int ACTION_VIEW = 7;
 
 	/**
 	 * The feature id for the '<em><b>Internal Action</b></em>' reference.
@@ -1036,7 +936,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSimpleStateView()
 	 * @generated
 	 */
-	int SIMPLE_STATE_VIEW = 9;
+	int SIMPLE_STATE_VIEW = 8;
 
 	/**
 	 * The feature id for the '<em><b>Internal Simple State</b></em>' reference.
@@ -1109,7 +1009,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getInitialStateView()
 	 * @generated
 	 */
-	int INITIAL_STATE_VIEW = 10;
+	int INITIAL_STATE_VIEW = 9;
 
 	/**
 	 * The feature id for the '<em><b>Internal Simple State</b></em>' reference.
@@ -1191,7 +1091,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getFinalStateView()
 	 * @generated
 	 */
-	int FINAL_STATE_VIEW = 11;
+	int FINAL_STATE_VIEW = 10;
 
 	/**
 	 * The feature id for the '<em><b>Internal Simple State</b></em>' reference.
@@ -1273,7 +1173,16 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConnectorView()
 	 * @generated
 	 */
-	int CONNECTOR_VIEW = 12;
+	int CONNECTOR_VIEW = 11;
+
+	/**
+	 * The feature id for the '<em><b>Internal Simple State</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTOR_VIEW__INTERNAL_SIMPLE_STATE = SIMPLE_STATE_VIEW__INTERNAL_SIMPLE_STATE;
 
 	/**
 	 * The feature id for the '<em><b>Internal Connector</b></em>' reference.
@@ -1282,7 +1191,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONNECTOR_VIEW__INTERNAL_CONNECTOR = 0;
+	int CONNECTOR_VIEW__INTERNAL_CONNECTOR = SIMPLE_STATE_VIEW_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Connector View</em>' class.
@@ -1291,7 +1200,43 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONNECTOR_VIEW_FEATURE_COUNT = 1;
+	int CONNECTOR_VIEW_FEATURE_COUNT = SIMPLE_STATE_VIEW_FEATURE_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Get Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTOR_VIEW___GET_NAME = SIMPLE_STATE_VIEW___GET_NAME;
+
+	/**
+	 * The operation id for the '<em>Set Name</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTOR_VIEW___SET_NAME__STRING = SIMPLE_STATE_VIEW___SET_NAME__STRING;
+
+	/**
+	 * The operation id for the '<em>Get Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTOR_VIEW___GET_LABEL = SIMPLE_STATE_VIEW___GET_LABEL;
+
+	/**
+	 * The operation id for the '<em>Set Label</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTOR_VIEW___SET_LABEL__STRING = SIMPLE_STATE_VIEW___SET_LABEL__STRING;
 
 	/**
 	 * The number of operations of the '<em>Connector View</em>' class.
@@ -1300,209 +1245,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONNECTOR_VIEW_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.InputViewImpl <em>Input View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.InputViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getInputView()
-	 * @generated
-	 */
-	int INPUT_VIEW = 13;
-
-	/**
-	 * The feature id for the '<em><b>Internal Input</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INPUT_VIEW__INTERNAL_INPUT = 0;
-
-	/**
-	 * The number of structural features of the '<em>Input View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INPUT_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Label</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INPUT_VIEW___GET_LABEL = 0;
-
-	/**
-	 * The operation id for the '<em>Set Label</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INPUT_VIEW___SET_LABEL__STRING = 1;
-
-	/**
-	 * The number of operations of the '<em>Input View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INPUT_VIEW_OPERATION_COUNT = 2;
-
-	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.OutputViewImpl <em>Output View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.OutputViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getOutputView()
-	 * @generated
-	 */
-	int OUTPUT_VIEW = 14;
-
-	/**
-	 * The feature id for the '<em><b>Internal Output</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OUTPUT_VIEW__INTERNAL_OUTPUT = 0;
-
-	/**
-	 * The number of structural features of the '<em>Output View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OUTPUT_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Label</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OUTPUT_VIEW___GET_LABEL = 0;
-
-	/**
-	 * The operation id for the '<em>Set Label</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OUTPUT_VIEW___SET_LABEL__STRING = 1;
-
-	/**
-	 * The number of operations of the '<em>Output View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OUTPUT_VIEW_OPERATION_COUNT = 2;
-
-	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.OperatorViewImpl <em>Operator View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.OperatorViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getOperatorView()
-	 * @generated
-	 */
-	int OPERATOR_VIEW = 15;
-
-	/**
-	 * The feature id for the '<em><b>Internal Operator</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OPERATOR_VIEW__INTERNAL_OPERATOR = 0;
-
-	/**
-	 * The number of structural features of the '<em>Operator View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OPERATOR_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Operator</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OPERATOR_VIEW___GET_OPERATOR = 0;
-
-	/**
-	 * The operation id for the '<em>Set Operator</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OPERATOR_VIEW___SET_OPERATOR__STRING = 1;
-
-	/**
-	 * The number of operations of the '<em>Operator View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OPERATOR_VIEW_OPERATION_COUNT = 2;
-
-	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.CircuitConnecterViewImpl <em>Circuit Connecter View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.CircuitConnecterViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getCircuitConnecterView()
-	 * @generated
-	 */
-	int CIRCUIT_CONNECTER_VIEW = 16;
-
-	/**
-	 * The feature id for the '<em><b>Internal Circuit Connecter</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CIRCUIT_CONNECTER_VIEW__INTERNAL_CIRCUIT_CONNECTER = 0;
-
-	/**
-	 * The number of structural features of the '<em>Circuit Connecter View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CIRCUIT_CONNECTER_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Circuit Connecter View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CIRCUIT_CONNECTER_VIEW_OPERATION_COUNT = 0;
+	int CONNECTOR_VIEW_OPERATION_COUNT = SIMPLE_STATE_VIEW_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SCChartRefereceViewImpl <em>SC Chart Referece View</em>}' class.
@@ -1512,7 +1255,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSCChartRefereceView()
 	 * @generated
 	 */
-	int SC_CHART_REFERECE_VIEW = 17;
+	int SC_CHART_REFERECE_VIEW = 12;
 
 	/**
 	 * The feature id for the '<em><b>Internal SC Chart Referece</b></em>' reference.
@@ -1548,25 +1291,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__ELIST = 1;
-
-	/**
-	 * The operation id for the '<em>Add Assignments</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__ASSIGNMENT = 2;
-
-	/**
-	 * The operation id for the '<em>Remove Assignments</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__ASSIGNMENT = 3;
+	int SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__STRING = 1;
 
 	/**
 	 * The operation id for the '<em>Get Name</em>' operation.
@@ -1575,7 +1300,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW___GET_NAME = 4;
+	int SC_CHART_REFERECE_VIEW___GET_NAME = 2;
 
 	/**
 	 * The operation id for the '<em>Set Name</em>' operation.
@@ -1584,7 +1309,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW___SET_NAME__STRING = 5;
+	int SC_CHART_REFERECE_VIEW___SET_NAME__STRING = 3;
 
 	/**
 	 * The operation id for the '<em>Get Label</em>' operation.
@@ -1593,7 +1318,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW___GET_LABEL = 6;
+	int SC_CHART_REFERECE_VIEW___GET_LABEL = 4;
 
 	/**
 	 * The operation id for the '<em>Set Label</em>' operation.
@@ -1602,7 +1327,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW___SET_LABEL__STRING = 7;
+	int SC_CHART_REFERECE_VIEW___SET_LABEL__STRING = 5;
 
 	/**
 	 * The operation id for the '<em>Get Inputs Outputs</em>' operation.
@@ -1611,7 +1336,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW___GET_INPUTS_OUTPUTS = 8;
+	int SC_CHART_REFERECE_VIEW___GET_INPUTS_OUTPUTS = 6;
 
 	/**
 	 * The operation id for the '<em>Set Inputs Outputs</em>' operation.
@@ -1620,7 +1345,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__STRING = 9;
+	int SC_CHART_REFERECE_VIEW___SET_INPUTS_OUTPUTS__STRING = 7;
 
 	/**
 	 * The operation id for the '<em>Get Uuid</em>' operation.
@@ -1629,7 +1354,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW___GET_UUID = 10;
+	int SC_CHART_REFERECE_VIEW___GET_UUID = 8;
 
 	/**
 	 * The operation id for the '<em>Set Uuid</em>' operation.
@@ -1638,7 +1363,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW___SET_UUID__STRING = 11;
+	int SC_CHART_REFERECE_VIEW___SET_UUID__STRING = 9;
 
 	/**
 	 * The number of operations of the '<em>SC Chart Referece View</em>' class.
@@ -1647,7 +1372,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SC_CHART_REFERECE_VIEW_OPERATION_COUNT = 12;
+	int SC_CHART_REFERECE_VIEW_OPERATION_COUNT = 10;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.InitialSCChartRefereceViewImpl <em>Initial SC Chart Referece View</em>}' class.
@@ -1657,7 +1382,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getInitialSCChartRefereceView()
 	 * @generated
 	 */
-	int INITIAL_SC_CHART_REFERECE_VIEW = 18;
+	int INITIAL_SC_CHART_REFERECE_VIEW = 13;
 
 	/**
 	 * The feature id for the '<em><b>Internal SC Chart Referece</b></em>' reference.
@@ -1702,25 +1427,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INITIAL_SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__ELIST = SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__ELIST;
-
-	/**
-	 * The operation id for the '<em>Add Assignments</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITIAL_SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__ASSIGNMENT = SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__ASSIGNMENT;
-
-	/**
-	 * The operation id for the '<em>Remove Assignments</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITIAL_SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__ASSIGNMENT = SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__ASSIGNMENT;
+	int INITIAL_SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__STRING = SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__STRING;
 
 	/**
 	 * The operation id for the '<em>Get Name</em>' operation.
@@ -1811,7 +1518,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getFinalSCChartRefereceView()
 	 * @generated
 	 */
-	int FINAL_SC_CHART_REFERECE_VIEW = 19;
+	int FINAL_SC_CHART_REFERECE_VIEW = 14;
 
 	/**
 	 * The feature id for the '<em><b>Internal SC Chart Referece</b></em>' reference.
@@ -1856,25 +1563,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FINAL_SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__ELIST = SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__ELIST;
-
-	/**
-	 * The operation id for the '<em>Add Assignments</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FINAL_SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__ASSIGNMENT = SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__ASSIGNMENT;
-
-	/**
-	 * The operation id for the '<em>Remove Assignments</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FINAL_SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__ASSIGNMENT = SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__ASSIGNMENT;
+	int FINAL_SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__STRING = SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__STRING;
 
 	/**
 	 * The operation id for the '<em>Get Name</em>' operation.
@@ -1965,7 +1654,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getAbstractTransitionView()
 	 * @generated
 	 */
-	int ABSTRACT_TRANSITION_VIEW = 20;
+	int ABSTRACT_TRANSITION_VIEW = 15;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2020,7 +1709,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTransitionView()
 	 * @generated
 	 */
-	int TRANSITION_VIEW = 21;
+	int TRANSITION_VIEW = 16;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2138,7 +1827,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_TRANSITION_VIEW = 22;
+	int IMMEDIATE_TRANSITION_VIEW = 17;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2256,7 +1945,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTerminationTransitionView()
 	 * @generated
 	 */
-	int TERMINATION_TRANSITION_VIEW = 23;
+	int TERMINATION_TRANSITION_VIEW = 18;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2338,7 +2027,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConditionalTerminationTransitionView()
 	 * @generated
 	 */
-	int CONDITIONAL_TERMINATION_TRANSITION_VIEW = 24;
+	int CONDITIONAL_TERMINATION_TRANSITION_VIEW = 19;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2456,7 +2145,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getStrongAbortTransitionView()
 	 * @generated
 	 */
-	int STRONG_ABORT_TRANSITION_VIEW = 25;
+	int STRONG_ABORT_TRANSITION_VIEW = 20;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2574,7 +2263,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateStrongAbortTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW = 26;
+	int IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW = 21;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2692,7 +2381,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDeferredTransitionView()
 	 * @generated
 	 */
-	int DEFERRED_TRANSITION_VIEW = 27;
+	int DEFERRED_TRANSITION_VIEW = 22;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2810,7 +2499,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateDeferredTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_DEFERRED_TRANSITION_VIEW = 28;
+	int IMMEDIATE_DEFERRED_TRANSITION_VIEW = 23;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -2928,7 +2617,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTerminationDefferdTransitionView()
 	 * @generated
 	 */
-	int TERMINATION_DEFFERD_TRANSITION_VIEW = 29;
+	int TERMINATION_DEFFERD_TRANSITION_VIEW = 24;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3010,7 +2699,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConditionalTerminationDeferredTransitionView()
 	 * @generated
 	 */
-	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW = 30;
+	int CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW = 25;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3128,7 +2817,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getStrongAbortDeferredTransitionView()
 	 * @generated
 	 */
-	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 31;
+	int STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 26;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3246,7 +2935,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateStrongAbortDeferredTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 32;
+	int IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW = 27;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3364,7 +3053,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getHistoryTransitionView()
 	 * @generated
 	 */
-	int HISTORY_TRANSITION_VIEW = 33;
+	int HISTORY_TRANSITION_VIEW = 28;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3500,7 +3189,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateHistoryTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_HISTORY_TRANSITION_VIEW = 34;
+	int IMMEDIATE_HISTORY_TRANSITION_VIEW = 29;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3636,7 +3325,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getTerminationHistoryTransitionView()
 	 * @generated
 	 */
-	int TERMINATION_HISTORY_TRANSITION_VIEW = 35;
+	int TERMINATION_HISTORY_TRANSITION_VIEW = 30;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3736,7 +3425,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConditionalTerminationHistoryTransitionView()
 	 * @generated
 	 */
-	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW = 36;
+	int CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW = 31;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -3872,7 +3561,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getStrongAbortHistoryTransitionView()
 	 * @generated
 	 */
-	int STRONG_ABORT_HISTORY_TRANSITION_VIEW = 37;
+	int STRONG_ABORT_HISTORY_TRANSITION_VIEW = 32;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -4008,7 +3697,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getImmediateStrongAbortHistoryTransitionView()
 	 * @generated
 	 */
-	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW = 38;
+	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW = 33;
 
 	/**
 	 * The feature id for the '<em><b>Internal Abstract Transition</b></em>' reference.
@@ -4137,43 +3826,6 @@ public interface ViewsPackage extends EPackage {
 	int IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW_OPERATION_COUNT = ABSTRACT_TRANSITION_VIEW_OPERATION_COUNT + 8;
 
 	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionViewImpl <em>Connection View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConnectionView()
-	 * @generated
-	 */
-	int CONNECTION_VIEW = 39;
-
-	/**
-	 * The feature id for the '<em><b>Internal Connection</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONNECTION_VIEW__INTERNAL_CONNECTION = 0;
-
-	/**
-	 * The number of structural features of the '<em>Connection View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONNECTION_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Connection View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONNECTION_VIEW_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SCChartViewImpl <em>SC Chart View</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4181,7 +3833,7 @@ public interface ViewsPackage extends EPackage {
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getSCChartView()
 	 * @generated
 	 */
-	int SC_CHART_VIEW = 40;
+	int SC_CHART_VIEW = 34;
 
 	/**
 	 * The feature id for the '<em><b>Internal SC Chart</b></em>' reference.
@@ -4209,61 +3861,6 @@ public interface ViewsPackage extends EPackage {
 	 * @ordered
 	 */
 	int SC_CHART_VIEW_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.AssignmentViewImpl <em>Assignment View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.AssignmentViewImpl
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getAssignmentView()
-	 * @generated
-	 */
-	int ASSIGNMENT_VIEW = 41;
-
-	/**
-	 * The feature id for the '<em><b>Internal Assignment</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSIGNMENT_VIEW__INTERNAL_ASSIGNMENT = 0;
-
-	/**
-	 * The number of structural features of the '<em>Assignment View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSIGNMENT_VIEW_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Get Assignment</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSIGNMENT_VIEW___GET_ASSIGNMENT = 0;
-
-	/**
-	 * The operation id for the '<em>Set Assignment</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSIGNMENT_VIEW___SET_ASSIGNMENT__STRING = 1;
-
-	/**
-	 * The number of operations of the '<em>Assignment View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSIGNMENT_VIEW_OPERATION_COUNT = 2;
 
 
 	/**
@@ -4407,27 +4004,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getRegionView__SetUuid__String();
-
-	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.DataFlowRegionView <em>Data Flow Region View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Data Flow Region View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.DataFlowRegionView
-	 * @generated
-	 */
-	EClass getDataFlowRegionView();
-
-	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.DataFlowRegionView#getInternalDataFlowRegion <em>Internal Data Flow Region</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Data Flow Region</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.DataFlowRegionView#getInternalDataFlowRegion()
-	 * @see #getDataFlowRegionView()
-	 * @generated
-	 */
-	EReference getDataFlowRegionView_InternalDataFlowRegion();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SuperStateView <em>Super State View</em>}'.
@@ -5040,150 +4616,6 @@ public interface ViewsPackage extends EPackage {
 	EReference getConnectorView_InternalConnector();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.InputView <em>Input View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Input View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.InputView
-	 * @generated
-	 */
-	EClass getInputView();
-
-	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.InputView#getInternalInput <em>Internal Input</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Input</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.InputView#getInternalInput()
-	 * @see #getInputView()
-	 * @generated
-	 */
-	EReference getInputView_InternalInput();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.InputView#getLabel() <em>Get Label</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Label</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.InputView#getLabel()
-	 * @generated
-	 */
-	EOperation getInputView__GetLabel();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.InputView#setLabel(java.lang.String) <em>Set Label</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Label</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.InputView#setLabel(java.lang.String)
-	 * @generated
-	 */
-	EOperation getInputView__SetLabel__String();
-
-	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OutputView <em>Output View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Output View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OutputView
-	 * @generated
-	 */
-	EClass getOutputView();
-
-	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OutputView#getInternalOutput <em>Internal Output</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Output</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OutputView#getInternalOutput()
-	 * @see #getOutputView()
-	 * @generated
-	 */
-	EReference getOutputView_InternalOutput();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OutputView#getLabel() <em>Get Label</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Label</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OutputView#getLabel()
-	 * @generated
-	 */
-	EOperation getOutputView__GetLabel();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OutputView#setLabel(java.lang.String) <em>Set Label</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Label</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OutputView#setLabel(java.lang.String)
-	 * @generated
-	 */
-	EOperation getOutputView__SetLabel__String();
-
-	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView <em>Operator View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Operator View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView
-	 * @generated
-	 */
-	EClass getOperatorView();
-
-	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView#getInternalOperator <em>Internal Operator</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Operator</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView#getInternalOperator()
-	 * @see #getOperatorView()
-	 * @generated
-	 */
-	EReference getOperatorView_InternalOperator();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView#getOperator() <em>Get Operator</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Operator</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView#getOperator()
-	 * @generated
-	 */
-	EOperation getOperatorView__GetOperator();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView#setOperator(java.lang.String) <em>Set Operator</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Operator</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.OperatorView#setOperator(java.lang.String)
-	 * @generated
-	 */
-	EOperation getOperatorView__SetOperator__String();
-
-	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.CircuitConnecterView <em>Circuit Connecter View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Circuit Connecter View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.CircuitConnecterView
-	 * @generated
-	 */
-	EClass getCircuitConnecterView();
-
-	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.CircuitConnecterView#getInternalCircuitConnecter <em>Internal Circuit Connecter</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Circuit Connecter</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.CircuitConnecterView#getInternalCircuitConnecter()
-	 * @see #getCircuitConnecterView()
-	 * @generated
-	 */
-	EReference getCircuitConnecterView_InternalCircuitConnecter();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView <em>SC Chart Referece View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5215,34 +4647,14 @@ public interface ViewsPackage extends EPackage {
 	EOperation getSCChartRefereceView__GetAssignments();
 
 	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#setAssignments(org.eclipse.emf.common.util.EList) <em>Set Assignments</em>}' operation.
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#setAssignments(java.lang.String) <em>Set Assignments</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Set Assignments</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#setAssignments(org.eclipse.emf.common.util.EList)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#setAssignments(java.lang.String)
 	 * @generated
 	 */
-	EOperation getSCChartRefereceView__SetAssignments__EList();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#addAssignments(info.scce.cinco.product.scchart.mglid.scchart.Assignment) <em>Add Assignments</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Add Assignments</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#addAssignments(info.scce.cinco.product.scchart.mglid.scchart.Assignment)
-	 * @generated
-	 */
-	EOperation getSCChartRefereceView__AddAssignments__Assignment();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#removeAssignments(info.scce.cinco.product.scchart.mglid.scchart.Assignment) <em>Remove Assignments</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Remove Assignments</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#removeAssignments(info.scce.cinco.product.scchart.mglid.scchart.Assignment)
-	 * @generated
-	 */
-	EOperation getSCChartRefereceView__RemoveAssignments__Assignment();
+	EOperation getSCChartRefereceView__SetAssignments__String();
 
 	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView#getName() <em>Get Name</em>}' operation.
@@ -6866,27 +6278,6 @@ public interface ViewsPackage extends EPackage {
 	EOperation getImmediateStrongAbortHistoryTransitionView__SetEffect__String();
 
 	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionView <em>Connection View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Connection View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionView
-	 * @generated
-	 */
-	EClass getConnectionView();
-
-	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionView#getInternalConnection <em>Internal Connection</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Connection</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.ConnectionView#getInternalConnection()
-	 * @see #getConnectionView()
-	 * @generated
-	 */
-	EReference getConnectionView_InternalConnection();
-
-	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.SCChartView <em>SC Chart View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6906,47 +6297,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getSCChartView_InternalSCChart();
-
-	/**
-	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView <em>Assignment View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Assignment View</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView
-	 * @generated
-	 */
-	EClass getAssignmentView();
-
-	/**
-	 * Returns the meta object for the reference '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView#getInternalAssignment <em>Internal Assignment</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Assignment</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView#getInternalAssignment()
-	 * @see #getAssignmentView()
-	 * @generated
-	 */
-	EReference getAssignmentView_InternalAssignment();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView#getAssignment() <em>Get Assignment</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Get Assignment</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView#getAssignment()
-	 * @generated
-	 */
-	EOperation getAssignmentView__GetAssignment();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView#setAssignment(java.lang.String) <em>Set Assignment</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Assignment</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.AssignmentView#setAssignment(java.lang.String)
-	 * @generated
-	 */
-	EOperation getAssignmentView__SetAssignment__String();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -7086,24 +6436,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation REGION_VIEW___SET_UUID__STRING = eINSTANCE.getRegionView__SetUuid__String();
-
-		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.DataFlowRegionViewImpl <em>Data Flow Region View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.DataFlowRegionViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getDataFlowRegionView()
-		 * @generated
-		 */
-		EClass DATA_FLOW_REGION_VIEW = eINSTANCE.getDataFlowRegionView();
-
-		/**
-		 * The meta object literal for the '<em><b>Internal Data Flow Region</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DATA_FLOW_REGION_VIEW__INTERNAL_DATA_FLOW_REGION = eINSTANCE.getDataFlowRegionView_InternalDataFlowRegion();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SuperStateViewImpl <em>Super State View</em>}' class.
@@ -7606,126 +6938,6 @@ public interface ViewsPackage extends EPackage {
 		EReference CONNECTOR_VIEW__INTERNAL_CONNECTOR = eINSTANCE.getConnectorView_InternalConnector();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.InputViewImpl <em>Input View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.InputViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getInputView()
-		 * @generated
-		 */
-		EClass INPUT_VIEW = eINSTANCE.getInputView();
-
-		/**
-		 * The meta object literal for the '<em><b>Internal Input</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference INPUT_VIEW__INTERNAL_INPUT = eINSTANCE.getInputView_InternalInput();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Label</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation INPUT_VIEW___GET_LABEL = eINSTANCE.getInputView__GetLabel();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Label</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation INPUT_VIEW___SET_LABEL__STRING = eINSTANCE.getInputView__SetLabel__String();
-
-		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.OutputViewImpl <em>Output View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.OutputViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getOutputView()
-		 * @generated
-		 */
-		EClass OUTPUT_VIEW = eINSTANCE.getOutputView();
-
-		/**
-		 * The meta object literal for the '<em><b>Internal Output</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference OUTPUT_VIEW__INTERNAL_OUTPUT = eINSTANCE.getOutputView_InternalOutput();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Label</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation OUTPUT_VIEW___GET_LABEL = eINSTANCE.getOutputView__GetLabel();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Label</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation OUTPUT_VIEW___SET_LABEL__STRING = eINSTANCE.getOutputView__SetLabel__String();
-
-		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.OperatorViewImpl <em>Operator View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.OperatorViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getOperatorView()
-		 * @generated
-		 */
-		EClass OPERATOR_VIEW = eINSTANCE.getOperatorView();
-
-		/**
-		 * The meta object literal for the '<em><b>Internal Operator</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference OPERATOR_VIEW__INTERNAL_OPERATOR = eINSTANCE.getOperatorView_InternalOperator();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Operator</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation OPERATOR_VIEW___GET_OPERATOR = eINSTANCE.getOperatorView__GetOperator();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Operator</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation OPERATOR_VIEW___SET_OPERATOR__STRING = eINSTANCE.getOperatorView__SetOperator__String();
-
-		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.CircuitConnecterViewImpl <em>Circuit Connecter View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.CircuitConnecterViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getCircuitConnecterView()
-		 * @generated
-		 */
-		EClass CIRCUIT_CONNECTER_VIEW = eINSTANCE.getCircuitConnecterView();
-
-		/**
-		 * The meta object literal for the '<em><b>Internal Circuit Connecter</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CIRCUIT_CONNECTER_VIEW__INTERNAL_CIRCUIT_CONNECTER = eINSTANCE.getCircuitConnecterView_InternalCircuitConnecter();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SCChartRefereceViewImpl <em>SC Chart Referece View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7757,23 +6969,7 @@ public interface ViewsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__ELIST = eINSTANCE.getSCChartRefereceView__SetAssignments__EList();
-
-		/**
-		 * The meta object literal for the '<em><b>Add Assignments</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__ASSIGNMENT = eINSTANCE.getSCChartRefereceView__AddAssignments__Assignment();
-
-		/**
-		 * The meta object literal for the '<em><b>Remove Assignments</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__ASSIGNMENT = eINSTANCE.getSCChartRefereceView__RemoveAssignments__Assignment();
+		EOperation SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__STRING = eINSTANCE.getSCChartRefereceView__SetAssignments__String();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Name</b></em>' operation.
@@ -9098,24 +8294,6 @@ public interface ViewsPackage extends EPackage {
 		EOperation IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_EFFECT__STRING = eINSTANCE.getImmediateStrongAbortHistoryTransitionView__SetEffect__String();
 
 		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionViewImpl <em>Connection View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ConnectionViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getConnectionView()
-		 * @generated
-		 */
-		EClass CONNECTION_VIEW = eINSTANCE.getConnectionView();
-
-		/**
-		 * The meta object literal for the '<em><b>Internal Connection</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CONNECTION_VIEW__INTERNAL_CONNECTION = eINSTANCE.getConnectionView_InternalConnection();
-
-		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.SCChartViewImpl <em>SC Chart View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -9132,40 +8310,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SC_CHART_VIEW__INTERNAL_SC_CHART = eINSTANCE.getSCChartView_InternalSCChart();
-
-		/**
-		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.AssignmentViewImpl <em>Assignment View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.AssignmentViewImpl
-		 * @see info.scce.cinco.product.scchart.mglid.scchart.views.impl.ViewsPackageImpl#getAssignmentView()
-		 * @generated
-		 */
-		EClass ASSIGNMENT_VIEW = eINSTANCE.getAssignmentView();
-
-		/**
-		 * The meta object literal for the '<em><b>Internal Assignment</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ASSIGNMENT_VIEW__INTERNAL_ASSIGNMENT = eINSTANCE.getAssignmentView_InternalAssignment();
-
-		/**
-		 * The meta object literal for the '<em><b>Get Assignment</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ASSIGNMENT_VIEW___GET_ASSIGNMENT = eINSTANCE.getAssignmentView__GetAssignment();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Assignment</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation ASSIGNMENT_VIEW___SET_ASSIGNMENT__STRING = eINSTANCE.getAssignmentView__SetAssignment__String();
 
 	}
 

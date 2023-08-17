@@ -11,14 +11,14 @@ import graphmodel.internal.InternalNode;
 
 import graphmodel.internal.impl.InternalContainerImpl;
 
-import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
-import info.scce.cinco.product.scchart.mglid.scchart.Operator;
-import info.scce.cinco.product.scchart.mglid.scchart.Output;
+import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 
@@ -58,7 +58,7 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = "<insert name>";
+	protected static final String NAME_EDEFAULT = "<set name>";
 
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -179,7 +179,7 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 */
 	@Override
 	public EList<ConnectionConstraint> getOutgoingConstraints() {
-		ConnectionConstraint cons0 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition.class,info.scce.cinco.product.scchart.mglid.scchart.Transition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationDefferdTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.Connection.class);
+		ConnectionConstraint cons0 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition.class,info.scce.cinco.product.scchart.mglid.scchart.Transition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationDefferdTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortHistoryTransition.class);
 		org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>eList = new org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>();
 		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0));
 		eList.addAll(super.getOutgoingConstraints());
@@ -263,8 +263,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 */
 	@Override
-	public EList<Output> getOutputSuccessors() {
-		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.Output.class);
+	public EList<SCChartReferece> getSCChartRefereceSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class);
 	}
 
 	/**
@@ -273,8 +273,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 */
 	@Override
-	public EList<Operator> getOperatorSuccessors() {
-		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.Operator.class);
+	public EList<InitialSCChartReferece> getInitialSCChartRefereceSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class);
 	}
 
 	/**
@@ -283,8 +283,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 */
 	@Override
-	public EList<CircuitConnecter> getCircuitConnecterSuccessors() {
-		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter.class);
+	public EList<FinalSCChartReferece> getFinalSCChartRefereceSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece.class);
 	}
 
 	/**
@@ -409,12 +409,12 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 				return getFinalStateSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_CONNECTOR_SUCCESSORS:
 				return getConnectorSuccessors();
-			case InternalPackage.INTERNAL_ROOT_STATE___GET_OUTPUT_SUCCESSORS:
-				return getOutputSuccessors();
-			case InternalPackage.INTERNAL_ROOT_STATE___GET_OPERATOR_SUCCESSORS:
-				return getOperatorSuccessors();
-			case InternalPackage.INTERNAL_ROOT_STATE___GET_CIRCUIT_CONNECTER_SUCCESSORS:
-				return getCircuitConnecterSuccessors();
+			case InternalPackage.INTERNAL_ROOT_STATE___GET_SC_CHART_REFERECE_SUCCESSORS:
+				return getSCChartRefereceSuccessors();
+			case InternalPackage.INTERNAL_ROOT_STATE___GET_INITIAL_SC_CHART_REFERECE_SUCCESSORS:
+				return getInitialSCChartRefereceSuccessors();
+			case InternalPackage.INTERNAL_ROOT_STATE___GET_FINAL_SC_CHART_REFERECE_SUCCESSORS:
+				return getFinalSCChartRefereceSuccessors();
 		}
 		return super.eInvoke(operationID, arguments);
 	}

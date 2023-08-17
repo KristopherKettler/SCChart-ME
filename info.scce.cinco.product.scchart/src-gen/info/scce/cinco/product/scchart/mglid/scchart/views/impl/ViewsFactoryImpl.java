@@ -58,7 +58,6 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 		switch (eClass.getClassifierID()) {
 			case ViewsPackage.ROOT_STATE_VIEW: return createRootStateView();
 			case ViewsPackage.REGION_VIEW: return createRegionView();
-			case ViewsPackage.DATA_FLOW_REGION_VIEW: return createDataFlowRegionView();
 			case ViewsPackage.SUPER_STATE_VIEW: return createSuperStateView();
 			case ViewsPackage.INITILAL_SUPER_STATE_VIEW: return createInitilalSuperStateView();
 			case ViewsPackage.FINAL_SUPER_STATE_VIEW: return createFinalSuperStateView();
@@ -69,10 +68,6 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.INITIAL_STATE_VIEW: return createInitialStateView();
 			case ViewsPackage.FINAL_STATE_VIEW: return createFinalStateView();
 			case ViewsPackage.CONNECTOR_VIEW: return createConnectorView();
-			case ViewsPackage.INPUT_VIEW: return createInputView();
-			case ViewsPackage.OUTPUT_VIEW: return createOutputView();
-			case ViewsPackage.OPERATOR_VIEW: return createOperatorView();
-			case ViewsPackage.CIRCUIT_CONNECTER_VIEW: return createCircuitConnecterView();
 			case ViewsPackage.SC_CHART_REFERECE_VIEW: return createSCChartRefereceView();
 			case ViewsPackage.INITIAL_SC_CHART_REFERECE_VIEW: return createInitialSCChartRefereceView();
 			case ViewsPackage.FINAL_SC_CHART_REFERECE_VIEW: return createFinalSCChartRefereceView();
@@ -95,9 +90,7 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 			case ViewsPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW: return createConditionalTerminationHistoryTransitionView();
 			case ViewsPackage.STRONG_ABORT_HISTORY_TRANSITION_VIEW: return createStrongAbortHistoryTransitionView();
 			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW: return createImmediateStrongAbortHistoryTransitionView();
-			case ViewsPackage.CONNECTION_VIEW: return createConnectionView();
 			case ViewsPackage.SC_CHART_VIEW: return createSCChartView();
-			case ViewsPackage.ASSIGNMENT_VIEW: return createAssignmentView();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -123,17 +116,6 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public RegionView createRegionView() {
 		RegionViewImpl regionView = new RegionViewImpl();
 		return regionView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DataFlowRegionView createDataFlowRegionView() {
-		DataFlowRegionViewImpl dataFlowRegionView = new DataFlowRegionViewImpl();
-		return dataFlowRegionView;
 	}
 
 	/**
@@ -244,50 +226,6 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	public ConnectorView createConnectorView() {
 		ConnectorViewImpl connectorView = new ConnectorViewImpl();
 		return connectorView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InputView createInputView() {
-		InputViewImpl inputView = new InputViewImpl();
-		return inputView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OutputView createOutputView() {
-		OutputViewImpl outputView = new OutputViewImpl();
-		return outputView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OperatorView createOperatorView() {
-		OperatorViewImpl operatorView = new OperatorViewImpl();
-		return operatorView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CircuitConnecterView createCircuitConnecterView() {
-		CircuitConnecterViewImpl circuitConnecterView = new CircuitConnecterViewImpl();
-		return circuitConnecterView;
 	}
 
 	/**
@@ -538,31 +476,9 @@ public class ViewsFactoryImpl extends EFactoryImpl implements ViewsFactory {
 	 * @generated
 	 */
 	@Override
-	public ConnectionView createConnectionView() {
-		ConnectionViewImpl connectionView = new ConnectionViewImpl();
-		return connectionView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public SCChartView createSCChartView() {
 		SCChartViewImpl scChartView = new SCChartViewImpl();
 		return scChartView;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AssignmentView createAssignmentView() {
-		AssignmentViewImpl assignmentView = new AssignmentViewImpl();
-		return assignmentView;
 	}
 
 	/**

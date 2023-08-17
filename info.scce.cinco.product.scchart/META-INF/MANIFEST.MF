@@ -18,7 +18,8 @@ Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,de.jabc.cinco
  tion,de.jabc.cinco.meta.libraries,org.eclipse.xtend.typesystem.emf,org.
  eclipse.emf.ecore.xmi;visibility:=reexport,com.google.guava,org.eclipse
  .xtext.xbase.lib,org.eclipse.xtend.lib,org.eclipse.xtend.lib.macro,de.j
- abc.cinco.meta.plugin.event.api
+ abc.cinco.meta.plugin.event.api,de.jabc.cinco.meta.plugin.generator.run
+ time,de.jabc.cinco.meta.plugin.mcam.runtime
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Export-Package: info.scce.cinco.product.scchart.mglid.adapter,info.scce.
@@ -30,5 +31,14 @@ Export-Package: info.scce.cinco.product.scchart.mglid.adapter,info.scce.
  til,info.scce.cinco.product.scchart.mglid.scchart.views,info.scce.cinco
  .product.scchart.mglid.scchart.views.impl,info.scce.cinco.product.sccha
  rt.mglid.scchart.views.util,info.scce.cinco.product.scchart.perspective
- ,info.scce.cinco.product.scchart.provider
+ ,info.scce.cinco.product.scchart.provider,info.scce.cinco.product.sccha
+ rt.factory,info.scce.cinco.product.scchart.adapter,info.scce.cinco.prod
+ uct.scchart.scchart,info.scce.cinco.product.scchart.scchart.impl,info.s
+ cce.cinco.product.scchart.scchart.internal,info.scce.cinco.product.scch
+ art.scchart.internal.impl,info.scce.cinco.product.scchart.scchart.inter
+ nal.util,info.scce.cinco.product.scchart.scchart.util,info.scce.cinco.p
+ roduct.scchart.scchart.views,info.scce.cinco.product.scchart.scchart.vi
+ ews.impl,info.scce.cinco.product.scchart.scchart.views.util,info.scce.c
+ inco.product.scchart.generator,info.scce.cinco.product.scchart.mglid.mc
+ am.adapter,info.scce.cinco.product.scchart.mglid.mcam.cli
 

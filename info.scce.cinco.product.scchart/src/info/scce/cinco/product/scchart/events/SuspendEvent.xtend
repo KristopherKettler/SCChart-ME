@@ -53,36 +53,38 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 	override postCreate(Suspend element) {
 		element.uuid=UUID.randomUUID.toString
 		var boolean continue= false
-		for(suspend : element.rootElement.rootStates.head.suspends){
-			if(suspend.uuid==element.uuid){
-				var int declarationCount = 0
-				if(element.rootElement.rootStates.head.declarations !== null){
-					declarationCount=element.rootElement.getRootStates.head.declarations.size
-				}
-				for(var i = 0; i<element.rootElement.rootStates.head.suspends.size;i++){
-					element.rootElement.rootStates.head.suspends.get(i).x=10
-					element.rootElement.rootStates.head.suspends.get(i).y=30+13*declarationCount+13*i
-					element.rootElement.rootStates.head.suspends.get(i).width=element.rootElement.rootStates.head.width-20
-					element.rootElement.rootStates.head.suspends.get(i).height=13
-				}
-				if(element.rootElement.rootStates.head.actions !== null){
-					for(action : element.rootElement.rootStates.head.actions){
-						action.y = action.y + 13
+		if(element.rootElement.rootStates.head.suspends!==null){
+			for(suspend : element.rootElement.rootStates.head.suspends){
+				if(suspend.uuid==element.uuid){
+					var int declarationCount = 0
+					if(element.rootElement.rootStates.head.declarations !== null){
+						declarationCount=element.rootElement.getRootStates.head.declarations.size
 					}
-					declarationCount+=element.rootElement.getRootStates.head.actions.size
-				}
-				declarationCount+=element.rootElement.getRootStates.head.suspends.size
-				if(element.rootElement.rootStates.head.regions!==null){
-					for(region : element.rootElement.rootStates.head.regions){
-						if(region.y<30+declarationCount*13){
-							for(region1 : element.rootElement.rootStates.head.regions){
-								region1.y = region1.y + 13
+					for(var i = 0; i<element.rootElement.rootStates.head.suspends.size;i++){
+						element.rootElement.rootStates.head.suspends.get(i).x=10
+						element.rootElement.rootStates.head.suspends.get(i).y=30+13*declarationCount+13*i
+						element.rootElement.rootStates.head.suspends.get(i).width=element.rootElement.rootStates.head.width-20
+						element.rootElement.rootStates.head.suspends.get(i).height=13
+					}
+					if(element.rootElement.rootStates.head.actions !== null){
+						for(action : element.rootElement.rootStates.head.actions){
+							action.y = action.y + 13
+						}
+						declarationCount+=element.rootElement.getRootStates.head.actions.size
+					}
+					declarationCount+=element.rootElement.getRootStates.head.suspends.size
+					if(element.rootElement.rootStates.head.regions!==null){
+						for(region : element.rootElement.rootStates.head.regions){
+							if(region.y<30+declarationCount*13){
+								for(region1 : element.rootElement.rootStates.head.regions){
+									region1.y = region1.y + 13
+								}
+								element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height + 13
 							}
-							element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height + 13
 						}
 					}
+					continue = true
 				}
-				continue = true
 			}
 		}
 		if(!continue){
@@ -144,6 +146,43 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 	}
 	
 	override postDelete(Suspend element) {
+		var boolean continue= false
+		if(element.rootElement.rootStates.head.suspends!==null){
+			for(var j = 0; j<element.rootElement.rootStates.head.suspends.size;j++){
+				if(element.rootElement.rootStates.head.suspends.get(j).uuid==element.uuid){
+					var int declarationCount = 0
+					if(element.rootElement.rootStates.head.declarations !== null){
+						declarationCount=element.rootElement.getRootStates.head.declarations.size
+					}
+					for(var i = j; i<element.rootElement.rootStates.head.suspends.size;i++){
+						element.rootElement.rootStates.head.suspends.get(i).y=element.rootElement.rootStates.head.suspends.get(i).y-13
+					}
+					if(element.rootElement.rootStates.head.actions !== null){
+						for(action : element.rootElement.rootStates.head.actions){
+							action.y = action.y - 13
+						}
+						declarationCount+=element.rootElement.getRootStates.head.actions.size
+					}
+					declarationCount+=element.rootElement.getRootStates.head.suspends.size
+					if(element.rootElement.rootStates.head.regions!==null){
+						for(region : element.rootElement.rootStates.head.regions){
+							region.y = region.y - 13
+						}
+					}
+					element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height - 13
+					continue = true
+				}
+			}
+		}
+		if(!continue){
+			for(region : element.rootElement.rootStates.head.regions){
+				if(region.superStates !== null){
+					for(superState : region.superStates){
+						postDeleteSuspend(superState,element)
+					}
+				}
+			}
+		}
 		// TODO: Auto-generated method stub
 		// Set up your post delete Runnable here.
 		// This will be executed pre delete.
@@ -151,6 +190,46 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 			// This is your post delete Runnable.
 			// This will be executed post delete.
 		]
+	}
+	
+	def postDeleteSuspend(SuperState superState, Suspend suspend){
+		var boolean continue = false
+		if(superState.suspends !== null){
+			for(var j = 0; j<superState.suspends.size;j++){
+				if(superState.suspends.get(j).uuid==suspend.uuid){
+					var int declarationCount = 0
+					if(superState.declarations !== null){
+						declarationCount=superState.declarations.size
+					}
+					for(var i = j; i<superState.suspends.size;i++){
+						superState.suspends.get(i).y=superState.suspends.get(i).y-13
+					}
+					if(superState.actions !== null){
+						for(action : superState.actions){
+							action.y = action.y - 13
+						}
+						declarationCount+=superState.actions.size
+					}	
+					declarationCount+=superState.suspends.size
+					if(superState.regions!==null){
+						for(region : superState.regions){
+							region.y = region.y - 13
+						}
+					}
+					superState.height = superState.height - 13
+					continue = true
+				}
+			}
+		}
+		if(!continue && superState.regions!==null){
+			for(region : superState.regions){
+				if(region.superStates !== null){
+					for(superStateList: region.superStates){
+						postDeleteSuspend(superStateList,suspend)
+					}
+				}
+			}
+		}
 	}
 	
 	override postDoubleClick(Suspend element) {

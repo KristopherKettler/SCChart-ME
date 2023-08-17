@@ -6,19 +6,21 @@ import de.jabc.cinco.meta.core.mgl.model.constraints.ConnectionConstraint;
 
 import graphmodel.internal.InternalNode;
 
-import graphmodel.internal.impl.InternalNodeImpl;
-
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
+import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalConnector;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
+import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSimpleState;
 
 import java.lang.reflect.InvocationTargetException;
 
@@ -33,7 +35,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class InternalConnectorImpl extends InternalNodeImpl implements InternalConnector {
+public class InternalConnectorImpl extends InternalSimpleStateImpl implements InternalConnector {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -175,6 +177,36 @@ public class InternalConnectorImpl extends InternalNodeImpl implements InternalC
 	 * @generated
 	 */
 	@Override
+	public EList<SCChartReferece> getSCChartReferecePredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<InitialSCChartReferece> getInitialSCChartReferecePredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<FinalSCChartReferece> getFinalSCChartReferecePredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EList<SuperState> getSuperStateSuccessors() {
 		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.SuperState.class);
 	}
@@ -245,11 +277,69 @@ public class InternalConnectorImpl extends InternalNodeImpl implements InternalC
 	 * @generated
 	 */
 	@Override
+	public EList<SCChartReferece> getSCChartRefereceSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<InitialSCChartReferece> getInitialSCChartRefereceSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<FinalSCChartReferece> getFinalSCChartRefereceSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public int eDerivedOperationID(int baseOperationID, Class<?> baseClass) {
 		if (baseClass == InternalNode.class) {
 			switch (baseOperationID) {
 				case graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_OUTGOING_CONSTRAINTS: return InternalPackage.INTERNAL_CONNECTOR___GET_OUTGOING_CONSTRAINTS;
 				case graphmodel.internal.InternalPackage.INTERNAL_NODE___GET_INCOMING_CONSTRAINTS: return InternalPackage.INTERNAL_CONNECTOR___GET_INCOMING_CONSTRAINTS;
+				default: return super.eDerivedOperationID(baseOperationID, baseClass);
+			}
+		}
+		if (baseClass == InternalSimpleState.class) {
+			switch (baseOperationID) {
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_INCOMING_CONSTRAINTS: return InternalPackage.INTERNAL_CONNECTOR___GET_INCOMING_CONSTRAINTS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_OUTGOING_CONSTRAINTS: return InternalPackage.INTERNAL_CONNECTOR___GET_OUTGOING_CONSTRAINTS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_ROOT_STATE_PREDECESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_ROOT_STATE_PREDECESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_SUPER_STATE_PREDECESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_SUPER_STATE_PREDECESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_INITILAL_SUPER_STATE_PREDECESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_INITILAL_SUPER_STATE_PREDECESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_FINAL_SUPER_STATE_PREDECESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_FINAL_SUPER_STATE_PREDECESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_SIMPLE_STATE_PREDECESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_SIMPLE_STATE_PREDECESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_INITIAL_STATE_PREDECESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_INITIAL_STATE_PREDECESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_FINAL_STATE_PREDECESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_FINAL_STATE_PREDECESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_CONNECTOR_PREDECESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_CONNECTOR_PREDECESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_SC_CHART_REFERECE_PREDECESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_SC_CHART_REFERECE_PREDECESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_INITIAL_SC_CHART_REFERECE_PREDECESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_INITIAL_SC_CHART_REFERECE_PREDECESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_FINAL_SC_CHART_REFERECE_PREDECESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_FINAL_SC_CHART_REFERECE_PREDECESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_SUPER_STATE_SUCCESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_SUPER_STATE_SUCCESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_INITILAL_SUPER_STATE_SUCCESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_FINAL_SUPER_STATE_SUCCESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_SIMPLE_STATE_SUCCESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_SIMPLE_STATE_SUCCESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_INITIAL_STATE_SUCCESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_INITIAL_STATE_SUCCESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_FINAL_STATE_SUCCESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_FINAL_STATE_SUCCESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_CONNECTOR_SUCCESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_CONNECTOR_SUCCESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_SC_CHART_REFERECE_SUCCESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_SC_CHART_REFERECE_SUCCESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_INITIAL_SC_CHART_REFERECE_SUCCESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_INITIAL_SC_CHART_REFERECE_SUCCESSORS;
+				case InternalPackage.INTERNAL_SIMPLE_STATE___GET_FINAL_SC_CHART_REFERECE_SUCCESSORS: return InternalPackage.INTERNAL_CONNECTOR___GET_FINAL_SC_CHART_REFERECE_SUCCESSORS;
 				default: return super.eDerivedOperationID(baseOperationID, baseClass);
 			}
 		}
@@ -284,6 +374,12 @@ public class InternalConnectorImpl extends InternalNodeImpl implements InternalC
 				return getFinalStatePredecessors();
 			case InternalPackage.INTERNAL_CONNECTOR___GET_CONNECTOR_PREDECESSORS:
 				return getConnectorPredecessors();
+			case InternalPackage.INTERNAL_CONNECTOR___GET_SC_CHART_REFERECE_PREDECESSORS:
+				return getSCChartReferecePredecessors();
+			case InternalPackage.INTERNAL_CONNECTOR___GET_INITIAL_SC_CHART_REFERECE_PREDECESSORS:
+				return getInitialSCChartReferecePredecessors();
+			case InternalPackage.INTERNAL_CONNECTOR___GET_FINAL_SC_CHART_REFERECE_PREDECESSORS:
+				return getFinalSCChartReferecePredecessors();
 			case InternalPackage.INTERNAL_CONNECTOR___GET_SUPER_STATE_SUCCESSORS:
 				return getSuperStateSuccessors();
 			case InternalPackage.INTERNAL_CONNECTOR___GET_INITILAL_SUPER_STATE_SUCCESSORS:
@@ -298,6 +394,12 @@ public class InternalConnectorImpl extends InternalNodeImpl implements InternalC
 				return getFinalStateSuccessors();
 			case InternalPackage.INTERNAL_CONNECTOR___GET_CONNECTOR_SUCCESSORS:
 				return getConnectorSuccessors();
+			case InternalPackage.INTERNAL_CONNECTOR___GET_SC_CHART_REFERECE_SUCCESSORS:
+				return getSCChartRefereceSuccessors();
+			case InternalPackage.INTERNAL_CONNECTOR___GET_INITIAL_SC_CHART_REFERECE_SUCCESSORS:
+				return getInitialSCChartRefereceSuccessors();
+			case InternalPackage.INTERNAL_CONNECTOR___GET_FINAL_SC_CHART_REFERECE_SUCCESSORS:
+				return getFinalSCChartRefereceSuccessors();
 		}
 		return super.eInvoke(operationID, arguments);
 	}

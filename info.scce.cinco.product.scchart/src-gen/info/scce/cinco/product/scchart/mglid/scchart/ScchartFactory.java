@@ -40,15 +40,6 @@ public interface ScchartFactory extends EFactory {
 	Region createRegion();
 
 	/**
-	 * Returns a new object of class '<em>Data Flow Region</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Data Flow Region</em>'.
-	 * @generated
-	 */
-	DataFlowRegion createDataFlowRegion();
-
-	/**
 	 * Returns a new object of class '<em>Super State</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -137,42 +128,6 @@ public interface ScchartFactory extends EFactory {
 	 * @generated
 	 */
 	Connector createConnector();
-
-	/**
-	 * Returns a new object of class '<em>Input</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Input</em>'.
-	 * @generated
-	 */
-	Input createInput();
-
-	/**
-	 * Returns a new object of class '<em>Output</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Output</em>'.
-	 * @generated
-	 */
-	Output createOutput();
-
-	/**
-	 * Returns a new object of class '<em>Operator</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Operator</em>'.
-	 * @generated
-	 */
-	Operator createOperator();
-
-	/**
-	 * Returns a new object of class '<em>Circuit Connecter</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Circuit Connecter</em>'.
-	 * @generated
-	 */
-	CircuitConnecter createCircuitConnecter();
 
 	/**
 	 * Returns a new object of class '<em>SC Chart Referece</em>'.
@@ -373,15 +328,6 @@ public interface ScchartFactory extends EFactory {
 	ImmediateStrongAbortHistoryTransition createImmediateStrongAbortHistoryTransition();
 
 	/**
-	 * Returns a new object of class '<em>Connection</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Connection</em>'.
-	 * @generated
-	 */
-	Connection createConnection();
-
-	/**
 	 * Returns a new object of class '<em>SC Chart</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -389,15 +335,6 @@ public interface ScchartFactory extends EFactory {
 	 * @generated
 	 */
 	SCChart createSCChart();
-
-	/**
-	 * Returns a new object of class '<em>Assignment</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assignment</em>'.
-	 * @generated
-	 */
-	Assignment createAssignment();
 
 	/**
 	 * Returns the package supported by this factory.

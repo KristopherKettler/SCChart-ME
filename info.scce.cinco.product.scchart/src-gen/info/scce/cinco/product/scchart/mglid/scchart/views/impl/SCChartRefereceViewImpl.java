@@ -2,8 +2,6 @@
  */
 package info.scce.cinco.product.scchart.mglid.scchart.views.impl;
 
-import info.scce.cinco.product.scchart.mglid.scchart.Assignment;
-
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSCChartReferece;
 
 import info.scce.cinco.product.scchart.mglid.scchart.views.SCChartRefereceView;
@@ -110,7 +108,7 @@ public class SCChartRefereceViewImpl extends EObjectImpl implements SCChartRefer
 	 * @generated
 	 */
 	@Override
-	public EList<Assignment> getAssignments() {
+	public String getAssignments() {
 		return getInternalSCChartReferece().getAssignments();
 	}
 
@@ -120,36 +118,9 @@ public class SCChartRefereceViewImpl extends EObjectImpl implements SCChartRefer
 	 * @generated
 	 */
 	@Override
-	public void setAssignments(final EList<Assignment> _arg) {
+	public void setAssignments(final String _arg) {
 		getInternalSCChartReferece().getElement().transact("Set Assignments", () -> {
-			getInternalSCChartReferece().getAssignments().clear();
-			getInternalSCChartReferece().getAssignments().addAll(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void addAssignments(final Assignment _arg) {
-		getInternalSCChartReferece().getElement().transact("Set Assignments", () -> {
-			getInternalSCChartReferece().getAssignments().add(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void removeAssignments(final Assignment assignments) {
-		getInternalSCChartReferece().getElement().transact("Set Assignments", () -> {
-			getInternalSCChartReferece().getAssignments().remove(assignments);
+			getInternalSCChartReferece().setAssignments(_arg);
 		});
 		
 	}
@@ -311,19 +282,12 @@ public class SCChartRefereceViewImpl extends EObjectImpl implements SCChartRefer
 	 * @generated
 	 */
 	@Override
-	@SuppressWarnings("unchecked")
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
 			case ViewsPackage.SC_CHART_REFERECE_VIEW___GET_ASSIGNMENTS:
 				return getAssignments();
-			case ViewsPackage.SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__ELIST:
-				setAssignments((EList<Assignment>)arguments.get(0));
-				return null;
-			case ViewsPackage.SC_CHART_REFERECE_VIEW___ADD_ASSIGNMENTS__ASSIGNMENT:
-				addAssignments((Assignment)arguments.get(0));
-				return null;
-			case ViewsPackage.SC_CHART_REFERECE_VIEW___REMOVE_ASSIGNMENTS__ASSIGNMENT:
-				removeAssignments((Assignment)arguments.get(0));
+			case ViewsPackage.SC_CHART_REFERECE_VIEW___SET_ASSIGNMENTS__STRING:
+				setAssignments((String)arguments.get(0));
 				return null;
 			case ViewsPackage.SC_CHART_REFERECE_VIEW___GET_NAME:
 				return getName();

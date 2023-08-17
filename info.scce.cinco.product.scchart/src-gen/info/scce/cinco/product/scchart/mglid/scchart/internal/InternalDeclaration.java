@@ -119,12 +119,13 @@ public interface InternalDeclaration extends InternalNode {
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * The default value is <code>"<set name>"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalDeclaration_Name()
-	 * @model
+	 * @model default="&lt;set name&gt;"
 	 * @generated
 	 */
 	String getName();

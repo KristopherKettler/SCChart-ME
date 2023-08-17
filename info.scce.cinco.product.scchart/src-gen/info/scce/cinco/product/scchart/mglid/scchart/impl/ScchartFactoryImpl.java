@@ -58,7 +58,6 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 		switch (eClass.getClassifierID()) {
 			case ScchartPackage.ROOT_STATE: return createRootState();
 			case ScchartPackage.REGION: return createRegion();
-			case ScchartPackage.DATA_FLOW_REGION: return createDataFlowRegion();
 			case ScchartPackage.SUPER_STATE: return createSuperState();
 			case ScchartPackage.INITILAL_SUPER_STATE: return createInitilalSuperState();
 			case ScchartPackage.FINAL_SUPER_STATE: return createFinalSuperState();
@@ -69,10 +68,6 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 			case ScchartPackage.INITIAL_STATE: return createInitialState();
 			case ScchartPackage.FINAL_STATE: return createFinalState();
 			case ScchartPackage.CONNECTOR: return createConnector();
-			case ScchartPackage.INPUT: return createInput();
-			case ScchartPackage.OUTPUT: return createOutput();
-			case ScchartPackage.OPERATOR: return createOperator();
-			case ScchartPackage.CIRCUIT_CONNECTER: return createCircuitConnecter();
 			case ScchartPackage.SC_CHART_REFERECE: return createSCChartReferece();
 			case ScchartPackage.INITIAL_SC_CHART_REFERECE: return createInitialSCChartReferece();
 			case ScchartPackage.FINAL_SC_CHART_REFERECE: return createFinalSCChartReferece();
@@ -95,9 +90,7 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION: return createConditionalTerminationHistoryTransition();
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION: return createStrongAbortHistoryTransition();
 			case ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION: return createImmediateStrongAbortHistoryTransition();
-			case ScchartPackage.CONNECTION: return createConnection();
 			case ScchartPackage.SC_CHART: return createSCChart();
-			case ScchartPackage.ASSIGNMENT: return createAssignment();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -123,17 +116,6 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	public Region createRegion() {
 		RegionImpl region = new RegionImpl();
 		return region;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DataFlowRegion createDataFlowRegion() {
-		DataFlowRegionImpl dataFlowRegion = new DataFlowRegionImpl();
-		return dataFlowRegion;
 	}
 
 	/**
@@ -244,50 +226,6 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	public Connector createConnector() {
 		ConnectorImpl connector = new ConnectorImpl();
 		return connector;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Input createInput() {
-		InputImpl input = new InputImpl();
-		return input;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Output createOutput() {
-		OutputImpl output = new OutputImpl();
-		return output;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Operator createOperator() {
-		OperatorImpl operator = new OperatorImpl();
-		return operator;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CircuitConnecter createCircuitConnecter() {
-		CircuitConnecterImpl circuitConnecter = new CircuitConnecterImpl();
-		return circuitConnecter;
 	}
 
 	/**
@@ -538,31 +476,9 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public Connection createConnection() {
-		ConnectionImpl connection = new ConnectionImpl();
-		return connection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public SCChart createSCChart() {
 		SCChartImpl scChart = new SCChartImpl();
 		return scChart;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Assignment createAssignment() {
-		AssignmentImpl assignment = new AssignmentImpl();
-		return assignment;
 	}
 
 	/**

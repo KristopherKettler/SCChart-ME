@@ -9,11 +9,14 @@ import graphmodel.internal.InternalNode;
 import graphmodel.internal.impl.InternalNodeImpl;
 
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
+import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 
@@ -53,7 +56,7 @@ public class InternalSimpleStateImpl extends InternalNodeImpl implements Interna
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = "<insert name>";
+	protected static final String NAME_EDEFAULT = "<set name>";
 
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -272,6 +275,36 @@ public class InternalSimpleStateImpl extends InternalNodeImpl implements Interna
 	 * @generated
 	 */
 	@Override
+	public EList<SCChartReferece> getSCChartReferecePredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<InitialSCChartReferece> getInitialSCChartReferecePredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<FinalSCChartReferece> getFinalSCChartReferecePredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EList<SuperState> getSuperStateSuccessors() {
 		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.SuperState.class);
 	}
@@ -334,6 +367,36 @@ public class InternalSimpleStateImpl extends InternalNodeImpl implements Interna
 	@Override
 	public EList<Connector> getConnectorSuccessors() {
 		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.Connector.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<SCChartReferece> getSCChartRefereceSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<InitialSCChartReferece> getInitialSCChartRefereceSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<FinalSCChartReferece> getFinalSCChartRefereceSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece.class);
 	}
 
 	/**
@@ -449,6 +512,12 @@ public class InternalSimpleStateImpl extends InternalNodeImpl implements Interna
 				return getFinalStatePredecessors();
 			case InternalPackage.INTERNAL_SIMPLE_STATE___GET_CONNECTOR_PREDECESSORS:
 				return getConnectorPredecessors();
+			case InternalPackage.INTERNAL_SIMPLE_STATE___GET_SC_CHART_REFERECE_PREDECESSORS:
+				return getSCChartReferecePredecessors();
+			case InternalPackage.INTERNAL_SIMPLE_STATE___GET_INITIAL_SC_CHART_REFERECE_PREDECESSORS:
+				return getInitialSCChartReferecePredecessors();
+			case InternalPackage.INTERNAL_SIMPLE_STATE___GET_FINAL_SC_CHART_REFERECE_PREDECESSORS:
+				return getFinalSCChartReferecePredecessors();
 			case InternalPackage.INTERNAL_SIMPLE_STATE___GET_SUPER_STATE_SUCCESSORS:
 				return getSuperStateSuccessors();
 			case InternalPackage.INTERNAL_SIMPLE_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS:
@@ -463,6 +532,12 @@ public class InternalSimpleStateImpl extends InternalNodeImpl implements Interna
 				return getFinalStateSuccessors();
 			case InternalPackage.INTERNAL_SIMPLE_STATE___GET_CONNECTOR_SUCCESSORS:
 				return getConnectorSuccessors();
+			case InternalPackage.INTERNAL_SIMPLE_STATE___GET_SC_CHART_REFERECE_SUCCESSORS:
+				return getSCChartRefereceSuccessors();
+			case InternalPackage.INTERNAL_SIMPLE_STATE___GET_INITIAL_SC_CHART_REFERECE_SUCCESSORS:
+				return getInitialSCChartRefereceSuccessors();
+			case InternalPackage.INTERNAL_SIMPLE_STATE___GET_FINAL_SC_CHART_REFERECE_SUCCESSORS:
+				return getFinalSCChartRefereceSuccessors();
 		}
 		return super.eInvoke(operationID, arguments);
 	}

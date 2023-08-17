@@ -53,39 +53,41 @@ final class DeclarationEvent extends info.scce.cinco.product.scchart.mglid.sccha
 	override postCreate(Declaration element) {
 		element.uuid=UUID.randomUUID.toString
 		var boolean continue= false
-		for(declaration : element.rootElement.rootStates.head.declarations){
-			if(declaration.uuid==element.uuid){
-				var int declarationCount = 0
-				declarationCount = element.rootElement.rootStates.head.declarations.size
-				for(var i = 0; i<element.rootElement.rootStates.head.declarations.size;i++){
-					element.rootElement.rootStates.head.declarations.get(i).x=10
-					element.rootElement.rootStates.head.declarations.get(i).y=30+13*i
-					element.rootElement.rootStates.head.declarations.get(i).width=element.rootElement.rootStates.head.width-20
-					element.rootElement.rootStates.head.declarations.get(i).height=13
-				}
-				if(element.rootElement.rootStates.head.suspends !== null){
-					for(suspend : element.rootElement.rootStates.head.suspends){
-						suspend.y = suspend.y + 13
+		if(element.rootElement.rootStates.head.declarations!==null){
+			for(declaration : element.rootElement.rootStates.head.declarations){
+				if(declaration.uuid==element.uuid){
+					var int declarationCount = 0
+					declarationCount = element.rootElement.rootStates.head.declarations.size
+					for(var i = 0; i<element.rootElement.rootStates.head.declarations.size;i++){
+						element.rootElement.rootStates.head.declarations.get(i).x=10
+						element.rootElement.rootStates.head.declarations.get(i).y=30+13*i
+						element.rootElement.rootStates.head.declarations.get(i).width=element.rootElement.rootStates.head.width-20
+						element.rootElement.rootStates.head.declarations.get(i).height=13
 					}
-					declarationCount+=element.rootElement.getRootStates.head.suspends.size
-				}
-				if(element.rootElement.rootStates.head.actions !== null){
-					for(action : element.rootElement.rootStates.head.actions){
-						action.y = action.y + 13
+					if(element.rootElement.rootStates.head.suspends !== null){
+						for(suspend : element.rootElement.rootStates.head.suspends){
+							suspend.y = suspend.y + 13
+						}
+						declarationCount+=element.rootElement.getRootStates.head.suspends.size
 					}
-					declarationCount+=element.rootElement.getRootStates.head.actions.size
-				}
-				if(element.rootElement.rootStates.head.regions!==null){
-					for(region : element.rootElement.rootStates.head.regions){
-						if(region.y<30+declarationCount*13){
-							for(region1 : element.rootElement.rootStates.head.regions){
-								region1.y = region1.y + 13
+					if(element.rootElement.rootStates.head.actions !== null){
+						for(action : element.rootElement.rootStates.head.actions){
+							action.y = action.y + 13
+						}
+						declarationCount+=element.rootElement.getRootStates.head.actions.size
+					}
+					if(element.rootElement.rootStates.head.regions!==null){
+						for(region : element.rootElement.rootStates.head.regions){
+							if(region.y<30+declarationCount*13){
+								for(region1 : element.rootElement.rootStates.head.regions){
+									region1.y = region1.y + 13
+								}
+								element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height + 13
 							}
-							element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height + 13
 						}
 					}
+					continue = true
 				}
-				continue = true
 			}
 		}
 		if(!continue){
@@ -150,6 +152,47 @@ final class DeclarationEvent extends info.scce.cinco.product.scchart.mglid.sccha
 	}
 	
 	override postDelete(Declaration element) {
+		element.uuid=UUID.randomUUID.toString
+		var boolean continue= false
+		if(element.rootElement.rootStates.head.declarations!==null){
+			for(var j = 0; j<element.rootElement.rootStates.head.declarations.size;j++){
+				if(element.rootElement.rootStates.head.declarations.get(j).uuid==element.uuid){
+					var int declarationCount = 0
+					declarationCount = element.rootElement.rootStates.head.declarations.size
+					for(var i = j; i<element.rootElement.rootStates.head.declarations.size;i++){
+						element.rootElement.rootStates.head.declarations.get(i).y=element.rootElement.rootStates.head.declarations.get(i).y-13
+					}
+					if(element.rootElement.rootStates.head.suspends !== null){
+						for(suspend : element.rootElement.rootStates.head.suspends){
+							suspend.y = suspend.y - 13
+						}
+						declarationCount+=element.rootElement.getRootStates.head.suspends.size
+					}
+					if(element.rootElement.rootStates.head.actions !== null){
+						for(action : element.rootElement.rootStates.head.actions){
+							action.y = action.y - 13
+						}
+						declarationCount+=element.rootElement.getRootStates.head.actions.size
+					}
+					if(element.rootElement.rootStates.head.regions!==null){
+						for(region : element.rootElement.rootStates.head.regions){
+							region.y = region.y - 13
+						}
+					}
+					element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height - 13
+					continue = true
+				}
+			}
+		}
+		if(!continue){
+			for(region : element.rootElement.rootStates.head.regions){
+				if(region.superStates !== null){
+					for(superState : region.superStates){
+						postDeleteDeclaration(superState,element)
+					}
+				}
+			}
+		}
 		// TODO: Auto-generated method stub
 		// Set up your post delete Runnable here.
 		// This will be executed pre delete.
@@ -157,6 +200,49 @@ final class DeclarationEvent extends info.scce.cinco.product.scchart.mglid.sccha
 			// This is your post delete Runnable.
 			// This will be executed post delete.
 		]
+	}
+	
+	def postDeleteDeclaration(SuperState superState, Declaration declaration){
+		var boolean continue = false
+		if(superState.declarations !== null){
+			for(var j = 0; j<superState.declarations.size;j++){
+				if(superState.declarations.get(j).uuid==declaration.uuid){
+					var int declarationCount = 0
+					declarationCount = superState.declarations.size
+					for(var i = j; i<superState.declarations.size;i++){
+						superState.declarations.get(i).y=superState.declarations.get(i).y-13
+					}
+					if(superState.suspends !== null){
+						for(suspend : superState.suspends){
+							suspend.y = suspend.y - 13
+						}
+						declarationCount+=superState.suspends.size
+					}
+					if(superState.actions !== null){
+						for(action : superState.actions){
+							action.y = action.y - 13
+						}
+						declarationCount+=superState.actions.size
+					}
+					if(superState.regions!==null){
+						for(region : superState.regions){
+								region.y = region.y - 13
+						}
+					}
+					superState.height = superState.height - 13
+					continue = true
+				}
+			}
+		}
+		if(!continue && superState.regions!==null){
+			for(region : superState.regions){
+				if(region.superStates !== null){
+					for(superStateList: region.superStates){
+						postDeleteDeclaration(superStateList,declaration)
+					}
+				}
+			}
+		}
 	}
 	
 	override postDoubleClick(Declaration element) {

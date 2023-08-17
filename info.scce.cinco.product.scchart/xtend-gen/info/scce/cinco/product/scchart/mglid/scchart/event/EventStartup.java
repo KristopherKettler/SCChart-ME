@@ -2,7 +2,6 @@ package info.scce.cinco.product.scchart.mglid.scchart.event;
 
 import de.jabc.cinco.meta.runtime.IStartup;
 import info.scce.cinco.product.scchart.mglid.scchart.event.ActionEvent;
-import info.scce.cinco.product.scchart.mglid.scchart.event.DataFlowRegionEvent;
 import info.scce.cinco.product.scchart.mglid.scchart.event.DeclarationEvent;
 import info.scce.cinco.product.scchart.mglid.scchart.event.FinalSCChartRefereceEvent;
 import info.scce.cinco.product.scchart.mglid.scchart.event.FinalSuperStateEvent;
@@ -25,7 +24,6 @@ public class EventStartup implements IStartup {
   public static void subscribe() {
     RootStateEvent.getInstance().subscribe();
     RegionEvent.getInstance().subscribe();
-    DataFlowRegionEvent.getInstance().subscribe();
     SuperStateEvent.getInstance().subscribe();
     InitilalSuperStateEvent.getInstance().subscribe();
     FinalSuperStateEvent.getInstance().subscribe();
@@ -41,7 +39,6 @@ public class EventStartup implements IStartup {
   public static void unsubscribe() {
     RootStateEvent.getInstance().unsubscribe();
     RegionEvent.getInstance().unsubscribe();
-    DataFlowRegionEvent.getInstance().unsubscribe();
     SuperStateEvent.getInstance().unsubscribe();
     InitilalSuperStateEvent.getInstance().unsubscribe();
     FinalSuperStateEvent.getInstance().unsubscribe();

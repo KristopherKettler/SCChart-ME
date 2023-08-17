@@ -2,6 +2,10 @@ id info.scce.cinco.product.scchart.mglid
 stylePath "model/SCChart.style"
 
 @primeviewer
+@mcam("check")
+@mcam_checkmodule("info.scce.cinco.product.scchart.checks.RootStateCheck")
+@mcam_checkmodule("info.scce.cinco.product.scchart.checks.RegionCheck")
+@generatable("info.scce.cinco.product.scchart.generator.CodeGenerator", "Code")
 @event("info.scce.cinco.product.scchart.events.SCChartEvent")
 graphModel SCChart {
 	diagramExtension "scchart"
@@ -14,12 +18,14 @@ container RootState {
 	style rootStateStyle ("${empty label ? name : label}")
 	containableElements(Region,Declaration,Suspend,Action)
 	outgoingEdges (*)
-	attr EString as name := "<insert name>"
+	attr EString as name := "<set name>"
 	attr EString as label 
 }
 
+/* Regions */
 @palette("SuperStates")
 @event("info.scce.cinco.product.scchart.events.RegionEvent")
+@disable(resize,move)
 container Region {
 	style regionStyle ("${empty label ? (empty name ? '' : name) : label}")
 	containableElements(SuperState,InitilalSuperState[0,1],InitialState[0,1],SimpleState,FinalState,Connector,FinalSuperState,SCChartReferece,InitialSCChartReferece,FinalSCChartReferece)
@@ -29,12 +35,13 @@ container Region {
 	attr EString as uuid
 }
 
-@palette("Dataflow")
-container DataFlowRegion extends Region {
-	style regionStyle ("${empty label ? (empty name ? '' : name) : label}")
-	containableElements(Input,Output,Operator,CircuitConnecter,SCChartReferece)
-}
+//@palette("Dataflow")
+//container DataFlowRegion extends Region {
+//	style regionStyle ("${empty label ? (empty name ? '' : name) : label}")
+//	containableElements(Input,Output,Operator,CircuitConnecter,SCChartReferece)
+//}
 
+/* SuperStates */
 @palette("SuperStates")
 @event("info.scce.cinco.product.scchart.events.SuperStateEvent")
 container SuperState {
@@ -42,7 +49,7 @@ container SuperState {
 	containableElements(Region,Declaration,Action,Suspend)
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 	outgoingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
-	attr EString as name := "<insert name>"
+	attr EString as name := "<set name>"
 	attr EString as label
 	@propertiesViewHidden
 	attr EString as inputsOutputs[0,*]
@@ -64,7 +71,7 @@ container FinalSuperState extends SuperState{
 	outgoingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 }
 
-
+/* Declarations */
 @palette("Declaration")
 @disable(move,resize)
 @event("info.scce.cinco.product.scchart.events.DeclarationEvent")
@@ -76,7 +83,7 @@ node Declaration {
 	attr EBoolean as signal
 	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.DeclarationTypeProvider")
 	attr EString as declarationType := ' '
-	attr EString as name
+	attr EString as name := '<set name>'
 	attr EString as assignment
 	@propertiesViewHidden
 	attr EString as uuid
@@ -107,13 +114,14 @@ node Action {
 	attr EString as uuid
 }
 
+/* States */
 @disable(resize)
 @palette("States")
 node SimpleState {
 	style simpleStateStyle("${empty label ? name : label}")
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition)
 	outgoingEdges (Transition,ImmediateTransition)
-	attr EString as name := "<insert name>"
+	attr EString as name := "<set name>"
 	attr EString as label 
 }	
 
@@ -135,60 +143,62 @@ node FinalState extends SimpleState {
 
 @disable(resize)
 @palette("States")
-node Connector {
+node Connector extends SimpleState{
 	style connectorStyle
 	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition)
 	outgoingEdges (Transition,ImmediateTransition)
 }
 
-@disable(resize)
-@palette("Dataflow")
-node Input {
-	style inputStyle("${empty label ? ' ' : label}")
-	outgoingEdges (Connection[1,1])
-	attr EString as label
-}
+/* Dataflow */
+//@disable(resize)
+//@palette("Dataflow ")
+//node Input {
+//	style inputStyle("${empty label ? ' ' : label}")
+//	outgoingEdges (Connection[1,1])
+//	attr EString as label
+//}
+//
+//@disable(resize)
+//@palette("Dataflow")
+//node Output {
+//	style outputStyle("${empty label ? ' ' : label}")
+//	incomingEdges (Connection[1,1])
+//	attr EString as label
+//}
+//
+//@disable(resize)
+//@palette("Dataflow")
+//node Operator {
+//	style operatorStyle("${empty operator ? ' ' : operator}")
+//	incomingEdges (Connection)
+//	outgoingEdges (Connection[1,1])
+//	attr EString as operator
+//}
+//
+//@disable(resize)
+//@palette("Dataflow")
+//node CircuitConnecter {
+//	style connectorStyle
+//	incomingEdges (Connection)
+//	outgoingEdges (Connection)
+//}
 
-@disable(resize)
-@palette("Dataflow")
-node Output {
-	style outputStyle("${empty label ? ' ' : label}")
-	incomingEdges (Connection[1,1])
-	attr EString as label
-}
-
-@disable(resize)
-@palette("Dataflow")
-node Operator {
-	style operatorStyle("${empty operator ? ' ' : operator}")
-	incomingEdges (Connection)
-	outgoingEdges (Connection[1,1])
-	attr EString as operator
-}
-
-@disable(resize)
-@palette("Dataflow")
-node CircuitConnecter {
-	style connectorStyle
-	incomingEdges (Connection)
-	outgoingEdges (Connection)
-}
-
-//@disable(highlighted)
+/* SCChart References */
 @event("info.scce.cinco.product.scchart.events.SCChartRefereceEvent")
-container SCChartReferece {
+container SCChartReferece{
 	style sCChartRefereceStyle("${empty label ? name : label} @ ${reference.name} ${assignments}")
 	containableElements(*)
+	incomingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
+	outgoingEdges (Transition,ImmediateTransition,TerminationTransition,ConditionalTerminationTransition,StrongAbortTransition,ImmediateStrongAbortTransition,DeferredTransition,ImmediateDeferredTransition,TerminationDefferdTransition,ConditionalTerminationDeferredTransition,StrongAbortDeferredTransition,ImmediateStrongAbortDeferredTransition,HistoryTransition,ImmediateHistoryTransition,TerminationHistoryTransition,ConditionalTerminationHistoryTransition,StrongAbortHistoryTransition,ImmediateStrongAbortHistoryTransition)
 	@pvFileExtension("scchart")   
 	@pvLabel(name)
 	prime this::RootState as reference
-	@readOnly
 	attr EString as inputsOutputs
-	attr Assignment as assignments[0,*]
-	attr EString as name := "<insert name>"
-	attr EString as label
+	attr EString as name := "<set name>"
 	@propertiesViewHidden
 	attr EString as uuid
+	attr EString as assignments
+	attr EString as label
 }
 
 container InitialSCChartReferece extends SCChartReferece{
@@ -345,11 +355,6 @@ edge ImmediateStrongAbortHistoryTransition extends AbstractTransition{
 	attr EBoolean as deepHistory
 }
 
-edge Connection {
-	style connectionStyle
-}
-
-type Assignment {
-	@possibleValuesProvider("info.scce.cinco.product.scchart.provider.AssignmentProvider")
-	attr EString as assignment
-}
+//edge Connection {
+//	style connectionStyle
+//}

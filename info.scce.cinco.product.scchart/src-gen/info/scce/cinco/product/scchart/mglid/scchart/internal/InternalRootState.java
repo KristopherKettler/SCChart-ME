@@ -7,14 +7,14 @@ import de.jabc.cinco.meta.core.mgl.model.constraints.ContainmentConstraint;
 
 import graphmodel.internal.InternalContainer;
 
-import info.scce.cinco.product.scchart.mglid.scchart.CircuitConnecter;
 import info.scce.cinco.product.scchart.mglid.scchart.Connector;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
-import info.scce.cinco.product.scchart.mglid.scchart.Operator;
-import info.scce.cinco.product.scchart.mglid.scchart.Output;
+import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 
@@ -40,13 +40,13 @@ import org.eclipse.emf.common.util.EList;
 public interface InternalRootState extends InternalContainer {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * The default value is <code>"<insert name>"</code>.
+	 * The default value is <code>"<set name>"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalRootState_Name()
-	 * @model default="&lt;insert name&gt;"
+	 * @model default="&lt;set name&gt;"
 	 * @generated
 	 */
 	String getName();
@@ -161,7 +161,7 @@ public interface InternalRootState extends InternalContainer {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<Output> getOutputSuccessors();
+	EList<SCChartReferece> getSCChartRefereceSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -169,7 +169,7 @@ public interface InternalRootState extends InternalContainer {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<Operator> getOperatorSuccessors();
+	EList<InitialSCChartReferece> getInitialSCChartRefereceSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -177,6 +177,6 @@ public interface InternalRootState extends InternalContainer {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<CircuitConnecter> getCircuitConnecterSuccessors();
+	EList<FinalSCChartReferece> getFinalSCChartRefereceSuccessors();
 
 } // InternalRootState

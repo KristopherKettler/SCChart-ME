@@ -40,15 +40,6 @@ public interface ViewsFactory extends EFactory {
 	RegionView createRegionView();
 
 	/**
-	 * Returns a new object of class '<em>Data Flow Region View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Data Flow Region View</em>'.
-	 * @generated
-	 */
-	DataFlowRegionView createDataFlowRegionView();
-
-	/**
 	 * Returns a new object of class '<em>Super State View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -137,42 +128,6 @@ public interface ViewsFactory extends EFactory {
 	 * @generated
 	 */
 	ConnectorView createConnectorView();
-
-	/**
-	 * Returns a new object of class '<em>Input View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Input View</em>'.
-	 * @generated
-	 */
-	InputView createInputView();
-
-	/**
-	 * Returns a new object of class '<em>Output View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Output View</em>'.
-	 * @generated
-	 */
-	OutputView createOutputView();
-
-	/**
-	 * Returns a new object of class '<em>Operator View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Operator View</em>'.
-	 * @generated
-	 */
-	OperatorView createOperatorView();
-
-	/**
-	 * Returns a new object of class '<em>Circuit Connecter View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Circuit Connecter View</em>'.
-	 * @generated
-	 */
-	CircuitConnecterView createCircuitConnecterView();
 
 	/**
 	 * Returns a new object of class '<em>SC Chart Referece View</em>'.
@@ -373,15 +328,6 @@ public interface ViewsFactory extends EFactory {
 	ImmediateStrongAbortHistoryTransitionView createImmediateStrongAbortHistoryTransitionView();
 
 	/**
-	 * Returns a new object of class '<em>Connection View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Connection View</em>'.
-	 * @generated
-	 */
-	ConnectionView createConnectionView();
-
-	/**
 	 * Returns a new object of class '<em>SC Chart View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -389,15 +335,6 @@ public interface ViewsFactory extends EFactory {
 	 * @generated
 	 */
 	SCChartView createSCChartView();
-
-	/**
-	 * Returns a new object of class '<em>Assignment View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assignment View</em>'.
-	 * @generated
-	 */
-	AssignmentView createAssignmentView();
 
 	/**
 	 * Returns the package supported by this factory.

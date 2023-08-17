@@ -86,7 +86,6 @@ appearance historyH {
 
 appearance textFont{
 	font ("Sans",10)
-	//lineWidth 2
 }
 
 appearance connectionAppearance {

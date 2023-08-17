@@ -60,15 +60,26 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 				regionFound=true
 				//manual break
 				var continue = true
+				var declarationCount = 0
+				if(element.rootElement.rootStates.head.declarations!==null){
+					declarationCount += element.rootElement.rootStates.head.declarations.size
+				}
+				if(element.rootElement.rootStates.head.suspends!==null){
+					declarationCount += element.rootElement.rootStates.head.suspends.size
+				}
+				if(element.rootElement.rootStates.head.actions!==null){
+					declarationCount += element.rootElement.rootStates.head.actions.size
+				}
 				//if the region is the only one in the container
 				if(element.rootElement.rootStates.head.regions.size==1){
 					it.x=10
-					it.y=33+element.rootElement.rootStates.head.declarations.size*13+element.rootElement.rootStates.head.suspends.size*13
+					it.y=33+declarationCount*13
 					it.width=element.rootElement.rootStates.head.width-20
-					it.height=element.rootElement.rootStates.head.height-43-element.rootElement.rootStates.head.declarations.size*13+element.rootElement.rootStates.head.suspends.size*13
+					it.height=element.rootElement.rootStates.head.height-43-declarationCount*13
 				}
 				else {
 					for(region1 : element.rootElement.rootStates.head.regions){
+						//new region left with half width 
 						if((it.x-region1.x-region1.width<=13&&it.x-region1.x-region1.width>-1)&&continue&&region1.y<it.y&&region1.y+region1.height>it.y &&it.uuid!=region1.uuid){
 							region1.width = (region1.width - 10)/2
 							it.width = region1.width
@@ -77,7 +88,8 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 							it.y = region1.y
 							continue = false
 						}
-						else if((region1.x-it.x<=13&&region1.x-it.x>-1)&&continue&&region1.y<it.y&&region1.y+region1.height>it.y &&it.uuid!=region1.uuid){
+						//new region near right rim with half width 
+						else if((it.x<=10)&&continue&&region1.y<it.y&&region1.y+region1.height>it.y &&it.uuid!=region1.uuid){
 							region1.width = (region1.width - 10)/2
 							it.width = region1.width
 							it.height = region1.height
@@ -86,6 +98,7 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 							region1.x= region1.x + region1.width+10
 							continue = false
 						}
+						//new region below with half height 
 						else if((it.y-region1.y-region1.height<=13&&it.y-region1.y-region1.height>-1)&&continue&&region1.x<it.x&&region1.x+region1.width>it.x &&it.uuid!=region1.uuid){
 							region1.height = (region1.height - 10)/2
 							it.width = region1.width
@@ -94,7 +107,8 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 							it.y = region1.y+region1.height+10
 							continue = false
 						}
-						else if((region1.y-it.y<=13&&region1.y-it.y>-1)&&continue&&region1.x<it.x&&region1.x+region1.width>it.x &&it.uuid!=region1.uuid){
+						//new region near right rim with half height ref. region
+						else if((it.y<33+declarationCount*13)&&continue&&region1.x<it.x&&region1.x+region1.width>it.x &&it.uuid!=region1.uuid){
 							region1.height = (region1.height - 10)/2
 							it.width = region1.width
 							it.height = region1.height
@@ -103,83 +117,221 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 							region1.y = region1.y +region1.height+10
 							continue = false
 						}
-//						else if(break){
-//							it.delete
-//							break = false
-//						}
 					}
+					//else place bottom
 					if(continue){
-						for(region1:element.rootElement.rootStates.head.regions){
-							if((it.y-region1.y-region1.height<=13&&it.y-region1.y-region1.height>-1)&&continue&&it.uuid!=region1.uuid){
-								for(region2: element.rootElement.rootStates.head.regions){
-									if(region2.y>it.y-3){
-										region2.y = region2.y+160
-									}
-								}
-								element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height+160
-								it.y = region1.y + region1.height+10
-								it.x = 10
-								it.height = 150
-								it.width = element.rootElement.rootStates.head.width-20
+						it.y = element.rootElement.rootStates.head.height
+						it.x = 10
+						it.height = 150
+						it.width = element.rootElement.rootStates.head.width-20
+						element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height+160
+						continue = false
+					}
+				}
+			}
+		}
+		//region created in superstates
+		if(!regionFound){
+			for(region : element.rootElement.rootStates.head.regions){
+				if(region.superStates !== null)	{
+					for(superState : region.superStates){
+						if(superState.regions !== null){
+							postCreateInSuperState(superState,element)
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	def postCreateInSuperState(SuperState superState,Region element){
+		var boolean regionFound = false
+		for(it : superState.regions){
+			//searchElement(element.rootElement.rootStates.head,it)
+			//check if container contains region
+			if(it.uuid==element.uuid){
+				regionFound=true
+				var declarationCount = 0
+				if(superState.declarations!==null){
+					declarationCount += superState.declarations.size
+				}
+				if(superState.suspends!==null){
+					declarationCount += superState.suspends.size
+				}
+				if(superState.actions!==null){
+					declarationCount += superState.actions.size
+				}
+				//if the region is the only one in the container
+				if(superState.regions.size==1){
+					it.x=10
+					it.y=33+declarationCount*13
+					it.width=superState.width-20
+					it.height=superState.height-43-declarationCount*13
+				}
+				else {
+					//manual break
+					var continue = true
+					for(region1 : superState.regions){
+						//new region left with half width 
+						if((it.x-region1.x-region1.width<=13&&it.x-region1.x-region1.width>-1)&&continue&&region1.y<it.y&&region1.y+region1.height>it.y &&it.uuid!=region1.uuid){
+							region1.width = (region1.width - 10)/2
+							it.width = region1.width
+							it.height = region1.height
+							it.x = region1.x+region1.width+10
+							it.y = region1.y
+							continue = false
+						}
+						//new region near right rim with half width 
+						else if((it.x<=10)&&continue&&region1.y<it.y&&region1.y+region1.height>it.y &&it.uuid!=region1.uuid){
+							region1.width = (region1.width - 10)/2
+							it.width = region1.width
+							it.height = region1.height
+							it.x = region1.x
+							it.y = region1.y
+							region1.x= region1.x + region1.width+10
+							continue = false
+						}
+						//new region below with half height 
+						else if((it.y-region1.y-region1.height<=13&&it.y-region1.y-region1.height>-1)&&continue&&region1.x<it.x&&region1.x+region1.width>it.x &&it.uuid!=region1.uuid){
+							region1.height = (region1.height - 10)/2
+							it.width = region1.width
+							it.height = region1.height
+							it.x = region1.x
+							it.y = region1.y+region1.height+10
+							continue = false
+						}
+						//new region near right rim with half height ref. region
+						else if((it.y<33+declarationCount*13)&&continue&&region1.x<it.x&&region1.x+region1.width>it.x &&it.uuid!=region1.uuid){
+							region1.height = (region1.height - 10)/2
+							it.width = region1.width
+							it.height = region1.height
+							it.x = region1.x
+							it.y = region1.y
+							region1.y = region1.y +region1.height+10
+							continue = false
+						}
+						
+					}
+					//else place bottom
+					if(continue){
+						it.y = superState.height
+						it.x = 10
+						it.height = 150
+						it.width = superState.width-20
+						superState.height = superState.height+160
+						continue = false
+					}
+				}
+			}
+		}
+		//region created in superstates
+		if(!regionFound){
+			for(region : superState.regions){
+				if(region.superStates !== null)	{
+					for(innerSuperState : region.superStates){
+						if(superState.regions !== null){
+							postCreateInSuperState(innerSuperState,element)
+						}
+					}
+				}
+			}
+		}
+		// TODO: rekursiv postCreate
+	}
+	
+	override postDelete(Region element) {
+		var boolean regionFound = false
+		for(it : element.rootElement.rootStates.head.regions){
+			//searchElement(element.rootElement.rootStates.head,it)
+			//check if container contains region
+			if(it.uuid==element.uuid){
+				regionFound=true
+				//manual break
+				var continue = true
+				//if the region is the only one in the container
+				if(element.rootElement.rootStates.head.regions.size==1){
+					//ok
+				}
+				else {
+					for(region1 : element.rootElement.rootStates.head.regions){
+						if((it.x==region1.x)&&continue&&region1.width==it.width&&(it.y-region1.y-region1.height<13&&it.y-region1.y-region1.height>5)&&it.uuid!=region1.uuid){
+							region1.height = region1.height+it.height+10
+							continue = false
+						}
+						else if((it.y==region1.y)&&continue&&region1.height==it.height &&(it.x-region1.x-region1.width<13&&it.x-region1.x-region1.width>5)&&it.uuid!=region1.uuid){
+							region1.width = region1.width+it.width+10
+							continue = false
+						}
+					}
+					//else place bottom
+					if(continue){
+						for(region1 : element.rootElement.rootStates.head.regions){
+						//deleted region is left region1
+							if((it.x==region1.x)&&continue&&region1.width==it.width&&(region1.y-it.y-it.height<13&&region1.y-it.y-it.height>5)&&it.uuid!=region1.uuid){
+								region1.y = it.y
+								region1.height = region1.height+it.height+10
 								continue = false
 							}
-							else if(continue){
-								var int declarationCount = 0
-								if(element.rootElement.rootStates.head.declarations!==null){
-									declarationCount += element.rootElement.rootStates.head.declarations.size
-								}
-								if(element.rootElement.rootStates.head.suspends!==null){
-									declarationCount += element.rootElement.rootStates.head.suspends.size
-								}
-								if(element.rootElement.rootStates.head.actions!==null){
-									declarationCount += element.rootElement.rootStates.head.actions.size
-								}
-								if(it.y<33+13*declarationCount){
-									for(region2: element.rootElement.rootStates.head.regions){
-										if(region2.uuid!=it.uuid){
-											region2.y = region2.y+160
-										}
-									}
-									element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height+160
-									it.y = 33+13*declarationCount
-									it.x = 10
-									it.height = 150
-									it.width = element.rootElement.rootStates.head.width-20
-									continue = false
-								}
+							else if((it.y==region1.y)&&continue&&region1.height==it.height &&(region1.x-it.x-it.width<13&&region1.x-it.x-it.width>5)&&it.uuid!=region1.uuid){
+								region1.x=it.x
+								region1.width = region1.width+it.width+10
+								continue = false
 							}
+						}
 					}
-//				element.width = element.rootElement.rootStates.head.width-20
-//				element.height = 100
-//				element.moveTo(element.rootElement.rootStates.head,10,element.rootElement.rootStates.head.height)
-//				element.rootElement.rootStates.head.width = element.rootElement.rootStates.head.width
-//				element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height+110
-				}
-				}
-				
-			}
-			else{
-				if(it.superStates !== null)	{
-					for(superState : it.superStates){
-						if(superState.regions !== null){
-							for(region : superState.regions){
-								postCreateInSuperState(superState,element)
+					if(continue){
+						for(region1 : element.rootElement.rootStates.head.regions){
+						//deleted region is left region1
+							if((region1.y-it.y-it.height<13&&region1.y-it.y-it.height>5)&&it.uuid!=region1.uuid){
+								region1.y = it.y
+								region1.height = region1.height+it.height+10
+								continue = false
+							}
+						}
+					}
+					if(continue){
+						for(region1 : element.rootElement.rootStates.head.regions){
+						//deleted region is left region1
+							if((region1.x-it.x-it.width<13&&region1.x-it.x-it.width>5)&&it.uuid!=region1.uuid){
+								region1.x=it.x
+								region1.width = region1.width+it.width+10
+								continue = false
+							}
+						}
+					}
+					if(continue){
+						for(region1 : element.rootElement.rootStates.head.regions){
+						//deleted region is left region1
+							if((it.y-region1.y-region1.height<13&&it.y-region1.y-region1.height>5)&&it.uuid!=region1.uuid){
+								region1.height = region1.height+it.height+10
+								continue = false
+							}
+						}
+					}
+					if(continue){
+						for(region1 : element.rootElement.rootStates.head.regions){
+						//deleted region is left region1
+							if((it.x-region1.x-region1.width<13&&it.x-region1.x-region1.width>5)&&it.uuid!=region1.uuid){
+								region1.width = region1.width+it.width+10
+								continue = false
 							}
 						}
 					}
 				}
 			}
 		}
+		//region created in superstates
 		if(!regionFound){
-			
+			for(region : element.rootElement.rootStates.head.regions){
+				if(region.superStates !== null)	{
+					for(superState : region.superStates){
+						if(superState.regions !== null){
+							postDeleteInSuperState(superState,element)
+						}
+					}
+				}
+			}
 		}
-	}
-	
-	def postCreateInSuperState(SuperState superState,Region element){
-		// TODO: rekursiv postCreate
-	}
-	
-	override postDelete(Region element) {
 		// TODO: Auto-generated method stub
 		// Set up your post delete Runnable here.
 		// This will be executed pre delete.
@@ -187,6 +339,101 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 			// This is your post delete Runnable.
 			// This will be executed post delete.
 		]
+	}
+	
+	def postDeleteInSuperState(SuperState superState,Region element){
+		var boolean regionFound = false
+		for(it : superState.regions){
+			//searchElement(element.rootElement.rootStates.head,it)
+			//check if container contains region
+			if(it.uuid==element.uuid){
+				regionFound=true
+				//if the region is the only one in the container
+				if(superState.regions.size==1){
+					//ok
+				}
+				else {
+					//manual break
+					var continue = true
+					for(region1 : superState.regions){
+						if((it.x==region1.x)&&continue&&region1.width==it.width&&(it.y-region1.y-region1.height<13&&it.y-region1.y-region1.height>5)&&it.uuid!=region1.uuid){
+							region1.height = region1.height+it.height+10
+							continue = false
+						}
+						else if((it.y==region1.y)&&continue&&region1.height==it.height &&(it.x-region1.x-region1.width<13&&it.x-region1.x-region1.width>5)&&it.uuid!=region1.uuid){
+							region1.width = region1.width+it.width+10
+							continue = false
+						}
+					}
+					if(continue){
+						for(region1 : superState.regions){
+						//deleted region is left region1
+							if((it.x==region1.x)&&continue&&region1.width==it.width&&(region1.y-it.y-it.height<13&&region1.y-it.y-it.height>5)&&it.uuid!=region1.uuid){
+								region1.y = it.y
+								region1.height = region1.height+it.height+10
+								continue = false
+							}
+							else if((it.y==region1.y)&&continue&&region1.height==it.height &&(region1.x-it.x-it.width<13&&region1.x-it.x-it.width>5)&&it.uuid!=region1.uuid){
+								region1.x=it.x
+								region1.width = region1.width+it.width+10
+								continue = false
+							}
+						}
+					}
+					if(continue){
+						for(region1 : superState.regions){
+						//deleted region is left region1
+							if((region1.y-it.y-it.height<13&&region1.y-it.y-it.height>5)&&it.uuid!=region1.uuid){
+								region1.y = it.y
+								region1.height = region1.height+it.height+10
+								continue = false
+							}
+						}
+					}
+					if(continue){
+						for(region1 : superState.regions){
+						//deleted region is left region1
+							if((region1.x-it.x-it.width<13&&region1.x-it.x-it.width>5)&&it.uuid!=region1.uuid){
+								region1.x=it.x
+								region1.width = region1.width+it.width+10
+								continue = false
+							}
+						}
+					}
+					if(continue){
+						for(region1 : superState.regions){
+						//deleted region is left region1
+							if((it.y-region1.y-region1.height<13&&it.y-region1.y-region1.height>5)&&it.uuid!=region1.uuid){
+								region1.height = region1.height+it.height+10
+								continue = false
+							}
+						}
+					}
+					if(continue){
+						for(region1 : superState.regions){
+						//deleted region is left region1
+							if((it.x-region1.x-region1.width<13&&it.x-region1.x-region1.width>5)&&it.uuid!=region1.uuid){
+								region1.width = region1.width+it.width+10
+								continue = false
+							}
+						}
+					}
+				}
+			}
+		}
+		//region created in superstates
+		if(!regionFound){
+			for(region : superState.regions){
+				if(region.superStates !== null)	{
+					for(innerSuperState : region.superStates){
+						if(superState.regions !== null){
+							postDeleteInSuperState(innerSuperState,element)
+						}
+					}
+				}
+			}
+		}
+		// TODO: rekursiv postCreate
 	}
 	
 	override postDoubleClick(Region element) {

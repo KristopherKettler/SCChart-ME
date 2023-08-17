@@ -9,10 +9,13 @@ import graphmodel.ModelElement;
 import graphmodel.Node;
 
 import info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
+import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.ScchartPackage;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition;
@@ -199,8 +202,68 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public SuperState getTargetElement() {
-		return(info.scce.cinco.product.scchart.mglid.scchart.SuperState)super.getTargetElement();
+	public Node getTargetElement() {
+		return(graphmodel.Node)super.getTargetElement();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final InitilalSuperState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final InitilalSuperState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final InitialSCChartReferece source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final InitialSCChartReferece source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final RootState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final RootState source) {
+		this.setSourceElement(source);
 	}
 
 	/**
@@ -249,7 +312,7 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final InitilalSuperState source) {
+	public boolean canReconnectSource(final FinalSCChartReferece source) {
 		return source.canStart(this.getClass());
 	}
 
@@ -259,7 +322,7 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public void reconnectSource(final InitilalSuperState source) {
+	public void reconnectSource(final FinalSCChartReferece source) {
 		this.setSourceElement(source);
 	}
 
@@ -269,7 +332,7 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final RootState source) {
+	public boolean canReconnectSource(final SCChartReferece source) {
 		return source.canStart(this.getClass());
 	}
 
@@ -279,8 +342,48 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public void reconnectSource(final RootState source) {
+	public void reconnectSource(final SCChartReferece source) {
 		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectTarget(final InitilalSuperState target) {
+		return target.canEnd(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectTarget(final InitilalSuperState target) {
+		this.setTargetElement(target);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectTarget(final InitialSCChartReferece target) {
+		return target.canEnd(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectTarget(final InitialSCChartReferece target) {
+		this.setTargetElement(target);
 	}
 
 	/**
@@ -329,7 +432,7 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final InitilalSuperState target) {
+	public boolean canReconnectTarget(final FinalSCChartReferece target) {
 		return target.canEnd(this.getClass());
 	}
 
@@ -339,7 +442,27 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 	 * @generated
 	 */
 	@Override
-	public void reconnectTarget(final InitilalSuperState target) {
+	public void reconnectTarget(final FinalSCChartReferece target) {
+		this.setTargetElement(target);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectTarget(final SCChartReferece target) {
+		return target.canEnd(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectTarget(final SCChartReferece target) {
 		this.setTargetElement(target);
 	}
 
@@ -447,6 +570,21 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 				return getSourceElement();
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___GET_TARGET_ELEMENT:
 				return getTargetElement();
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__INITILALSUPERSTATE:
+				return canReconnectSource((InitilalSuperState)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE:
+				reconnectSource((InitilalSuperState)arguments.get(0));
+				return null;
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__INITIALSCCHARTREFERECE:
+				return canReconnectSource((InitialSCChartReferece)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__INITIALSCCHARTREFERECE:
+				reconnectSource((InitialSCChartReferece)arguments.get(0));
+				return null;
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
+				return canReconnectSource((RootState)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
+				reconnectSource((RootState)arguments.get(0));
+				return null;
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__FINALSUPERSTATE:
 				return canReconnectSource((FinalSuperState)arguments.get(0));
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__FINALSUPERSTATE:
@@ -457,15 +595,25 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__SUPERSTATE:
 				reconnectSource((SuperState)arguments.get(0));
 				return null;
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__INITILALSUPERSTATE:
-				return canReconnectSource((InitilalSuperState)arguments.get(0));
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE:
-				reconnectSource((InitilalSuperState)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__FINALSCCHARTREFERECE:
+				return canReconnectSource((FinalSCChartReferece)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__FINALSCCHARTREFERECE:
+				reconnectSource((FinalSCChartReferece)arguments.get(0));
 				return null;
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
-				return canReconnectSource((RootState)arguments.get(0));
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
-				reconnectSource((RootState)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_SOURCE__SCCHARTREFERECE:
+				return canReconnectSource((SCChartReferece)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_SOURCE__SCCHARTREFERECE:
+				reconnectSource((SCChartReferece)arguments.get(0));
+				return null;
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
+				return canReconnectTarget((InitilalSuperState)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
+				reconnectTarget((InitilalSuperState)arguments.get(0));
+				return null;
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_TARGET__INITIALSCCHARTREFERECE:
+				return canReconnectTarget((InitialSCChartReferece)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_TARGET__INITIALSCCHARTREFERECE:
+				reconnectTarget((InitialSCChartReferece)arguments.get(0));
 				return null;
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_TARGET__FINALSUPERSTATE:
 				return canReconnectTarget((FinalSuperState)arguments.get(0));
@@ -477,10 +625,15 @@ public class TerminationHistoryTransitionImpl extends AbstractTransitionImpl imp
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_TARGET__SUPERSTATE:
 				reconnectTarget((SuperState)arguments.get(0));
 				return null;
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
-				return canReconnectTarget((InitilalSuperState)arguments.get(0));
-			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
-				reconnectTarget((InitilalSuperState)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_TARGET__FINALSCCHARTREFERECE:
+				return canReconnectTarget((FinalSCChartReferece)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_TARGET__FINALSCCHARTREFERECE:
+				reconnectTarget((FinalSCChartReferece)arguments.get(0));
+				return null;
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___CAN_RECONNECT_TARGET__SCCHARTREFERECE:
+				return canReconnectTarget((SCChartReferece)arguments.get(0));
+			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___RECONNECT_TARGET__SCCHARTREFERECE:
+				reconnectTarget((SCChartReferece)arguments.get(0));
 				return null;
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION___GET_TERMINATION_HISTORY_TRANSITION_VIEW:
 				return getTerminationHistoryTransitionView();

@@ -9,7 +9,6 @@ import graphmodel.IdentifiableElement;
 import graphmodel.ModelElement;
 import graphmodel.ModelElementContainer;
 import graphmodel.Node;
-import graphmodel.Type;
 
 import info.scce.cinco.product.scchart.mglid.scchart.*;
 
@@ -94,18 +93,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = caseNode(region);
 				if (result == null) result = caseModelElement(region);
 				if (result == null) result = caseIdentifiableElement(region);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ScchartPackage.DATA_FLOW_REGION: {
-				DataFlowRegion dataFlowRegion = (DataFlowRegion)theEObject;
-				T result = caseDataFlowRegion(dataFlowRegion);
-				if (result == null) result = caseRegion(dataFlowRegion);
-				if (result == null) result = caseContainer(dataFlowRegion);
-				if (result == null) result = caseModelElementContainer(dataFlowRegion);
-				if (result == null) result = caseNode(dataFlowRegion);
-				if (result == null) result = caseModelElement(dataFlowRegion);
-				if (result == null) result = caseIdentifiableElement(dataFlowRegion);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -203,45 +190,10 @@ public class ScchartSwitch<T> extends Switch<T> {
 			case ScchartPackage.CONNECTOR: {
 				Connector connector = (Connector)theEObject;
 				T result = caseConnector(connector);
+				if (result == null) result = caseSimpleState(connector);
 				if (result == null) result = caseNode(connector);
 				if (result == null) result = caseModelElement(connector);
 				if (result == null) result = caseIdentifiableElement(connector);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ScchartPackage.INPUT: {
-				Input input = (Input)theEObject;
-				T result = caseInput(input);
-				if (result == null) result = caseNode(input);
-				if (result == null) result = caseModelElement(input);
-				if (result == null) result = caseIdentifiableElement(input);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ScchartPackage.OUTPUT: {
-				Output output = (Output)theEObject;
-				T result = caseOutput(output);
-				if (result == null) result = caseNode(output);
-				if (result == null) result = caseModelElement(output);
-				if (result == null) result = caseIdentifiableElement(output);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ScchartPackage.OPERATOR: {
-				Operator operator = (Operator)theEObject;
-				T result = caseOperator(operator);
-				if (result == null) result = caseNode(operator);
-				if (result == null) result = caseModelElement(operator);
-				if (result == null) result = caseIdentifiableElement(operator);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ScchartPackage.CIRCUIT_CONNECTER: {
-				CircuitConnecter circuitConnecter = (CircuitConnecter)theEObject;
-				T result = caseCircuitConnecter(circuitConnecter);
-				if (result == null) result = caseNode(circuitConnecter);
-				if (result == null) result = caseModelElement(circuitConnecter);
-				if (result == null) result = caseIdentifiableElement(circuitConnecter);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -469,29 +421,12 @@ public class ScchartSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ScchartPackage.CONNECTION: {
-				Connection connection = (Connection)theEObject;
-				T result = caseConnection(connection);
-				if (result == null) result = caseEdge(connection);
-				if (result == null) result = caseModelElement(connection);
-				if (result == null) result = caseIdentifiableElement(connection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ScchartPackage.SC_CHART: {
 				SCChart scChart = (SCChart)theEObject;
 				T result = caseSCChart(scChart);
 				if (result == null) result = caseGraphModel(scChart);
 				if (result == null) result = caseModelElementContainer(scChart);
 				if (result == null) result = caseIdentifiableElement(scChart);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ScchartPackage.ASSIGNMENT: {
-				Assignment assignment = (Assignment)theEObject;
-				T result = caseAssignment(assignment);
-				if (result == null) result = caseType(assignment);
-				if (result == null) result = caseIdentifiableElement(assignment);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -526,21 +461,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRegion(Region object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Data Flow Region</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Data Flow Region</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseDataFlowRegion(DataFlowRegion object) {
 		return null;
 	}
 
@@ -691,66 +611,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseConnector(Connector object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Input</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Input</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInput(Input object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Output</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Output</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseOutput(Output object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Operator</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Operator</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseOperator(Operator object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Circuit Connecter</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Circuit Connecter</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCircuitConnecter(CircuitConnecter object) {
 		return null;
 	}
 
@@ -1085,21 +945,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Connection</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Connection</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseConnection(Connection object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>SC Chart</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1111,21 +956,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSCChart(SCChart object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Assignment</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Assignment</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAssignment(Assignment object) {
 		return null;
 	}
 
@@ -1231,21 +1061,6 @@ public class ScchartSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseGraphModel(GraphModel object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseType(Type object) {
 		return null;
 	}
 
