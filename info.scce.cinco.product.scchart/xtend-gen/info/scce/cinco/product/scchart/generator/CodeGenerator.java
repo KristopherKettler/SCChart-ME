@@ -7,38 +7,59 @@ import de.jabc.cinco.meta.runtime.CincoRuntimeBaseClass;
 import graphmodel.Node;
 import info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.Action;
-import info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.Declaration;
-import info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortTransition;
-import info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.DeferredHistoryTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialFinalState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.Region;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
+import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredHistoryTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.Suspend;
+import info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredHistoryTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.Transition;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import org.apache.commons.cli.ParseException;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtend2.lib.StringConcatenation;
+import org.eclipse.xtext.xbase.lib.Exceptions;
+import org.eclipse.xtext.xbase.lib.IntegerRange;
 
 @SuppressWarnings("all")
 public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart> {
   private String fileName;
   
-  private double sum = 0.0;
-  
   @Override
   public void generate(final SCChart scchart, final IPath path, final IProgressMonitor monitor) {
-    final String fullFileName = this._workspaceExtension.getFile(scchart).getName();
-    this.fileName = fullFileName.substring(0, fullFileName.lastIndexOf("."));
-    final IFile targetFile = this._workspaceExtension.getWorkspaceRoot().getFileForLocation(path.append((this.fileName + ".sctx")));
-    EclipseFileUtils.writeToFile(targetFile, this.template(scchart));
+    try {
+      final String fullFileName = this._workspaceExtension.getFile(scchart).getName();
+      this.fileName = fullFileName.substring(0, fullFileName.lastIndexOf("."));
+      final IFile targetFile = this._workspaceExtension.getWorkspaceRoot().getFileForLocation(path.append((this.fileName + ".sctx")));
+      EclipseFileUtils.writeToFile(targetFile, this.template(scchart));
+      this.commandLineParser(new String[] { "a", "v" });
+    } catch (Throwable _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
   }
   
   public CharSequence template(final SCChart scchart) {
@@ -217,14 +238,28 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     _builder.append(" {");
     _builder.newLineIfNotEmpty();
     {
-      Iterable<InitialState> _find = this._graphModelExtension.<InitialState>find(region, InitialState.class);
-      for(final InitialState initState : _find) {
+      Iterable<SuperState> _find = this._graphModelExtension.<SuperState>find(region, SuperState.class);
+      for(final SuperState superState : _find) {
         _builder.append("\t");
-        String _genInitState = this.genInitState(initState);
-        _builder.append(_genInitState, "\t");
+        CharSequence _genSuperState = this.genSuperState(superState);
+        _builder.append(_genSuperState, "\t");
         _builder.newLineIfNotEmpty();
         _builder.append("\t");
-        this.genEdgesOrder(initState.getOutgoingAbstractTransitions());
+        CharSequence _genEdgesOrder = this.genEdgesOrder(superState.getOutgoingAbstractTransitions());
+        _builder.append(_genEdgesOrder, "\t");
+        _builder.newLineIfNotEmpty();
+      }
+    }
+    {
+      Iterable<SimpleState> _find_1 = this._graphModelExtension.<SimpleState>find(region, SimpleState.class);
+      for(final SimpleState state : _find_1) {
+        _builder.append("\t");
+        String _genState = this.genState(state);
+        _builder.append(_genState, "\t");
+        _builder.newLineIfNotEmpty();
+        _builder.append("\t");
+        CharSequence _genEdgesOrder_1 = this.genEdgesOrder(state.getOutgoingAbstractTransitions());
+        _builder.append(_genEdgesOrder_1, "\t");
         _builder.newLineIfNotEmpty();
       }
     }
@@ -233,17 +268,81 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     return _builder;
   }
   
-  public String genInitState(final InitialState initState) {
-    String string = "initial state ";
-    String _name = initState.getName();
+  public CharSequence genSuperState(final SuperState superState) {
+    StringConcatenation _builder = new StringConcatenation();
+    String _superStateType = this.superStateType(superState);
+    _builder.append(_superStateType);
+    _builder.append(" {");
+    _builder.newLineIfNotEmpty();
+    {
+      Iterable<Declaration> _find = this._graphModelExtension.<Declaration>find(superState, Declaration.class);
+      for(final Declaration declaration : _find) {
+        _builder.append("\t");
+        String _genDeclaration = this.genDeclaration(declaration);
+        _builder.append(_genDeclaration, "\t");
+        _builder.newLineIfNotEmpty();
+      }
+    }
+    {
+      Iterable<Suspend> _find_1 = this._graphModelExtension.<Suspend>find(superState, Suspend.class);
+      for(final Suspend suspend : _find_1) {
+        _builder.append("\t");
+        String _genSuspend = this.genSuspend(suspend);
+        _builder.append(_genSuspend, "\t");
+        _builder.newLineIfNotEmpty();
+      }
+    }
+    {
+      Iterable<Action> _find_2 = this._graphModelExtension.<Action>find(superState, Action.class);
+      for(final Action action : _find_2) {
+        _builder.append("\t");
+        String _genAction = this.genAction(action);
+        _builder.append(_genAction, "\t");
+        _builder.newLineIfNotEmpty();
+      }
+    }
+    {
+      Iterable<Region> _find_3 = this._graphModelExtension.<Region>find(superState, Region.class);
+      for(final Region region : _find_3) {
+        _builder.append("\t");
+        Object _genRegion = this.genRegion(region);
+        _builder.append(_genRegion, "\t");
+        _builder.newLineIfNotEmpty();
+      }
+    }
+    _builder.append("}");
+    _builder.newLine();
+    return _builder;
+  }
+  
+  public String superStateType(final SuperState superState) {
+    String string = "state ";
+    String _name = superState.getName();
     String _plus = (string + _name);
     string = _plus;
-    String _label = initState.getLabel();
+    String _label = superState.getLabel();
     boolean _tripleNotEquals = (_label != null);
     if (_tripleNotEquals) {
-      String _label_1 = initState.getLabel();
+      String _label_1 = superState.getLabel();
       String _plus_1 = ((string + " ") + _label_1);
       string = _plus_1;
+    }
+    boolean _matched = false;
+    if ((superState instanceof InitialSuperState)) {
+      _matched=true;
+      return ("initial " + string);
+    }
+    if (!_matched) {
+      if ((superState instanceof FinalSuperState)) {
+        _matched=true;
+        return ("final " + string);
+      }
+    }
+    if (!_matched) {
+      if ((superState instanceof InitialFinalSuperState)) {
+        _matched=true;
+        return ("initial final " + string);
+      }
     }
     return string;
   }
@@ -260,24 +359,55 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
       String _plus_1 = ((string + " ") + _label_1);
       string = _plus_1;
     }
+    boolean _matched = false;
+    if ((simpleState instanceof InitialState)) {
+      _matched=true;
+      return ("initial " + string);
+    }
+    if (!_matched) {
+      if ((simpleState instanceof FinalState)) {
+        _matched=true;
+        return ("final " + string);
+      }
+    }
+    if (!_matched) {
+      if ((simpleState instanceof InitialFinalState)) {
+        _matched=true;
+        return ("initial final " + string);
+      }
+    }
+    if (!_matched) {
+      if ((simpleState instanceof Connector)) {
+        _matched=true;
+        return ("connector " + string);
+      }
+    }
     return string;
   }
   
-  public void genEdgesOrder(final EList<AbstractTransition> transitions) {
-    for (int i = 0; (i < transitions.size()); i++) {
-      {
-        boolean continue_ = false;
-        int j = 0;
-        while (((!continue_) && (j < transitions.size()))) {
-          String _priority = transitions.get(j).getPriority();
-          boolean _equals = Objects.equal(_priority, Integer.valueOf(i));
-          if (_equals) {
-            this.genEdge(transitions.get(j));
-            continue_ = true;
+  public CharSequence genEdgesOrder(final EList<AbstractTransition> transitions) {
+    StringConcatenation _builder = new StringConcatenation();
+    {
+      int _size = transitions.size();
+      IntegerRange _upTo = new IntegerRange(1, _size);
+      for(final Integer i : _upTo) {
+        {
+          for(final AbstractTransition transition : transitions) {
+            {
+              String _priority = transition.getPriority();
+              String _string = i.toString();
+              boolean _equals = Objects.equal(_priority, _string);
+              if (_equals) {
+                String _genEdge = this.genEdge(transition);
+                _builder.append(_genEdge);
+                _builder.newLineIfNotEmpty();
+              }
+            }
           }
         }
       }
     }
+    return _builder;
   }
   
   public String genEdge(final AbstractTransition transition) {
@@ -286,7 +416,73 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
       _matched=true;
       return this.genTransition(((Transition) transition));
     }
-    return "";
+    if (!_matched) {
+      if ((transition instanceof TerminationTransition)) {
+        _matched=true;
+        return this.genTerminationTransition(((TerminationTransition) transition));
+      }
+    }
+    if (!_matched) {
+      if ((transition instanceof StrongAbortTransition)) {
+        _matched=true;
+        return this.genStrongAbortTransition(((StrongAbortTransition) transition));
+      }
+    }
+    if (!_matched) {
+      if ((transition instanceof DeferredTransition)) {
+        _matched=true;
+        return this.genDeferredTransition(((DeferredTransition) transition));
+      }
+    }
+    if (!_matched) {
+      if ((transition instanceof HistoryTransition)) {
+        _matched=true;
+        return this.genHistoryTransition(((HistoryTransition) transition));
+      }
+    }
+    if (!_matched) {
+      if ((transition instanceof TerminationDeferredTransition)) {
+        _matched=true;
+        return this.genTerminationDeferredTransition(((TerminationDeferredTransition) transition));
+      }
+    }
+    if (!_matched) {
+      if ((transition instanceof StrongAbortDeferredTransition)) {
+        _matched=true;
+        return this.genStrongAbortDeferredTransition(((StrongAbortDeferredTransition) transition));
+      }
+    }
+    if (!_matched) {
+      if ((transition instanceof TerminationHistoryTransition)) {
+        _matched=true;
+        return this.genTerminationHistoryTransition(((TerminationHistoryTransition) transition));
+      }
+    }
+    if (!_matched) {
+      if ((transition instanceof StrongAbortHistoryTransition)) {
+        _matched=true;
+        return this.genStrongAbortHistoryTransition(((StrongAbortHistoryTransition) transition));
+      }
+    }
+    if (!_matched) {
+      if ((transition instanceof DeferredHistoryTransition)) {
+        _matched=true;
+        return this.genDeferredHistoryTransition(((DeferredHistoryTransition) transition));
+      }
+    }
+    if (!_matched) {
+      if ((transition instanceof StrongAbortDeferredHistoryTransition)) {
+        _matched=true;
+        return this.genStrongAbortDeferredHistoryTransition(((StrongAbortDeferredHistoryTransition) transition));
+      }
+    }
+    if (!_matched) {
+      if ((transition instanceof TerminationDeferredHistoryTransition)) {
+        _matched=true;
+        return this.genTerminationDeferredHistoryTransition(((TerminationDeferredHistoryTransition) transition));
+      }
+    }
+    return null;
   }
   
   public String genTransition(final Transition transition) {
@@ -315,63 +511,9 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
         string = _plus_3;
       }
     }
-    String _effect = transition.getEffect();
-    boolean _tripleNotEquals_2 = (_effect != null);
-    if (_tripleNotEquals_2) {
-      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
-      boolean _not_2 = (!_isEmpty_2);
-      if (_not_2) {
-        string = (string + " do ");
-        String _effect_1 = transition.getEffect();
-        /* (_effect_1 + " "); */
-      }
-    }
-    Node _targetElement = transition.getTargetElement();
-    boolean _matched = false;
-    Node _targetElement_1 = transition.getTargetElement();
-    if ((_targetElement_1 instanceof SuperState)) {
-      _matched=true;
-      Node _targetElement_2 = transition.getTargetElement();
-      String _name = ((SuperState) _targetElement_2).getName();
-      /* ((string + "go to ") + _name); */
-    }
-    if (!_matched) {
-      Node _targetElement_3 = transition.getTargetElement();
-      if ((_targetElement_3 instanceof SimpleState)) {
-        _matched=true;
-        Node _targetElement_4 = transition.getTargetElement();
-        String _name_1 = ((SimpleState) _targetElement_4).getName();
-        /* ((string + "go to ") + _name_1); */
-      }
-    }
-    return string;
-  }
-  
-  public String genImmediateTransition(final ImmediateTransition transition) {
-    String string = "";
-    String _count_delay = transition.getCount_delay();
-    boolean _tripleNotEquals = (_count_delay != null);
-    if (_tripleNotEquals) {
-      boolean _isEmpty = transition.getCount_delay().trim().isEmpty();
-      boolean _not = (!_isEmpty);
-      if (_not) {
-        String _count_delay_1 = transition.getCount_delay();
-        String _plus = (string + _count_delay_1);
-        String _plus_1 = (_plus + " ");
-        string = _plus_1;
-      }
-    }
-    String _condition = transition.getCondition();
-    boolean _tripleNotEquals_1 = (_condition != null);
-    if (_tripleNotEquals_1) {
-      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
-      boolean _not_1 = (!_isEmpty_1);
-      if (_not_1) {
-        String _condition_1 = transition.getCondition();
-        String _plus_2 = (("if " + string) + _condition_1);
-        String _plus_3 = (_plus_2 + " ");
-        string = _plus_3;
-      }
+    boolean _isImmediate = transition.isImmediate();
+    if (_isImmediate) {
+      string = ("immediate " + string);
     }
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
@@ -379,68 +521,34 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
       boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
       boolean _not_2 = (!_isEmpty_2);
       if (_not_2) {
-        string = (string + " do ");
         String _effect_1 = transition.getEffect();
-        /* (_effect_1 + " "); */
+        String _plus_4 = ((string + "do ") + _effect_1);
+        String _plus_5 = (_plus_4 + " ");
+        string = _plus_5;
       }
     }
-    Node _targetElement = transition.getTargetElement();
     boolean _matched = false;
-    Node _targetElement_1 = transition.getTargetElement();
-    if ((_targetElement_1 instanceof SuperState)) {
+    Node _targetElement = transition.getTargetElement();
+    if ((_targetElement instanceof SuperState)) {
       _matched=true;
-      Node _targetElement_2 = transition.getTargetElement();
-      String _name = ((SuperState) _targetElement_2).getName();
-      /* ((string + "go to ") + _name); */
+      Node _targetElement_1 = transition.getTargetElement();
+      String _name = ((SuperState) _targetElement_1).getName();
+      return ((string + "go to ") + _name);
     }
     if (!_matched) {
-      Node _targetElement_3 = transition.getTargetElement();
-      if ((_targetElement_3 instanceof SimpleState)) {
+      Node _targetElement_2 = transition.getTargetElement();
+      if ((_targetElement_2 instanceof SimpleState)) {
         _matched=true;
-        Node _targetElement_4 = transition.getTargetElement();
-        String _name_1 = ((SimpleState) _targetElement_4).getName();
-        /* ((string + "go to ") + _name_1); */
+        Node _targetElement_3 = transition.getTargetElement();
+        String _name_1 = ((SimpleState) _targetElement_3).getName();
+        return ((string + "go to ") + _name_1);
       }
     }
-    return string;
+    return null;
   }
   
   public String genTerminationTransition(final TerminationTransition transition) {
     String string = "";
-    String _effect = transition.getEffect();
-    boolean _tripleNotEquals = (_effect != null);
-    if (_tripleNotEquals) {
-      boolean _isEmpty = transition.getEffect().trim().isEmpty();
-      boolean _not = (!_isEmpty);
-      if (_not) {
-        string = (string + " do ");
-        String _effect_1 = transition.getEffect();
-        /* (_effect_1 + " "); */
-      }
-    }
-    Node _targetElement = transition.getTargetElement();
-    boolean _matched = false;
-    Node _targetElement_1 = transition.getTargetElement();
-    if ((_targetElement_1 instanceof SuperState)) {
-      _matched=true;
-      Node _targetElement_2 = transition.getTargetElement();
-      String _name = ((SuperState) _targetElement_2).getName();
-      /* ((string + "join to ") + _name); */
-    }
-    if (!_matched) {
-      Node _targetElement_3 = transition.getTargetElement();
-      if ((_targetElement_3 instanceof SimpleState)) {
-        _matched=true;
-        Node _targetElement_4 = transition.getTargetElement();
-        String _name_1 = ((SimpleState) _targetElement_4).getName();
-        /* ((string + "join to ") + _name_1); */
-      }
-    }
-    return string;
-  }
-  
-  public String genConditionalTerminationTransition(final ConditionalTerminationTransition transition) {
-    String string = "";
     String _count_delay = transition.getCount_delay();
     boolean _tripleNotEquals = (_count_delay != null);
     if (_tripleNotEquals) {
@@ -465,15 +573,20 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
         string = _plus_3;
       }
     }
+    boolean _isImmediate = transition.isImmediate();
+    if (_isImmediate) {
+      string = ("immediate " + string);
+    }
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
     if (_tripleNotEquals_2) {
       boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
       boolean _not_2 = (!_isEmpty_2);
       if (_not_2) {
-        string = (string + " do ");
         String _effect_1 = transition.getEffect();
-        /* (_effect_1 + " "); */
+        String _plus_4 = ((string + "do ") + _effect_1);
+        String _plus_5 = (_plus_4 + " ");
+        string = _plus_5;
       }
     }
     Node _targetElement = transition.getTargetElement();
@@ -483,7 +596,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
       _matched=true;
       Node _targetElement_2 = transition.getTargetElement();
       String _name = ((SuperState) _targetElement_2).getName();
-      /* ((string + "join to ") + _name); */
+      return ((string + "join to ") + _name);
     }
     if (!_matched) {
       Node _targetElement_3 = transition.getTargetElement();
@@ -491,10 +604,10 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
         _matched=true;
         Node _targetElement_4 = transition.getTargetElement();
         String _name_1 = ((SimpleState) _targetElement_4).getName();
-        /* ((string + "join to ") + _name_1); */
+        return ((string + "join to ") + _name_1);
       }
     }
-    return string;
+    return null;
   }
   
   public String genStrongAbortTransition(final StrongAbortTransition transition) {
@@ -523,39 +636,43 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
         string = _plus_3;
       }
     }
+    boolean _isImmediate = transition.isImmediate();
+    if (_isImmediate) {
+      string = ("immediate " + string);
+    }
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
     if (_tripleNotEquals_2) {
       boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
       boolean _not_2 = (!_isEmpty_2);
       if (_not_2) {
-        string = (string + " do ");
         String _effect_1 = transition.getEffect();
-        /* (_effect_1 + " "); */
+        String _plus_4 = ((string + "do ") + _effect_1);
+        String _plus_5 = (_plus_4 + " ");
+        string = _plus_5;
       }
     }
-    Node _targetElement = transition.getTargetElement();
     boolean _matched = false;
-    Node _targetElement_1 = transition.getTargetElement();
-    if ((_targetElement_1 instanceof SuperState)) {
+    Node _targetElement = transition.getTargetElement();
+    if ((_targetElement instanceof SuperState)) {
       _matched=true;
-      Node _targetElement_2 = transition.getTargetElement();
-      String _name = ((SuperState) _targetElement_2).getName();
+      Node _targetElement_1 = transition.getTargetElement();
+      String _name = ((SuperState) _targetElement_1).getName();
       /* ((string + "abort to ") + _name); */
     }
     if (!_matched) {
-      Node _targetElement_3 = transition.getTargetElement();
-      if ((_targetElement_3 instanceof SimpleState)) {
+      Node _targetElement_2 = transition.getTargetElement();
+      if ((_targetElement_2 instanceof SimpleState)) {
         _matched=true;
-        Node _targetElement_4 = transition.getTargetElement();
-        String _name_1 = ((SimpleState) _targetElement_4).getName();
+        Node _targetElement_3 = transition.getTargetElement();
+        String _name_1 = ((SimpleState) _targetElement_3).getName();
         /* ((string + "abort to ") + _name_1); */
       }
     }
     return string;
   }
   
-  public String genImmediateStrongAbortTransition(final ImmediateStrongAbortTransition transition) {
+  public String genDeferredTransition(final DeferredTransition transition) {
     String string = "";
     String _count_delay = transition.getCount_delay();
     boolean _tripleNotEquals = (_count_delay != null);
@@ -576,10 +693,14 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
       boolean _not_1 = (!_isEmpty_1);
       if (_not_1) {
         String _condition_1 = transition.getCondition();
-        String _plus_2 = (("immediate if " + string) + _condition_1);
+        String _plus_2 = (("if " + string) + _condition_1);
         String _plus_3 = (_plus_2 + " ");
         string = _plus_3;
       }
+    }
+    boolean _isImmediate = transition.isImmediate();
+    if (_isImmediate) {
+      string = ("immediate " + string);
     }
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
@@ -587,9 +708,144 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
       boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
       boolean _not_2 = (!_isEmpty_2);
       if (_not_2) {
-        string = (string + " do ");
         String _effect_1 = transition.getEffect();
-        /* (_effect_1 + " "); */
+        String _plus_4 = ((string + "do ") + _effect_1);
+        String _plus_5 = (_plus_4 + " ");
+        string = _plus_5;
+      }
+    }
+    boolean _matched = false;
+    Node _targetElement = transition.getTargetElement();
+    if ((_targetElement instanceof SuperState)) {
+      _matched=true;
+      Node _targetElement_1 = transition.getTargetElement();
+      String _name = ((SuperState) _targetElement_1).getName();
+      String _plus_6 = ((string + "go to ") + _name);
+      /* (_plus_6 + "deferred"); */
+    }
+    if (!_matched) {
+      Node _targetElement_2 = transition.getTargetElement();
+      if ((_targetElement_2 instanceof SimpleState)) {
+        _matched=true;
+        Node _targetElement_3 = transition.getTargetElement();
+        String _name_1 = ((SimpleState) _targetElement_3).getName();
+        String _plus_7 = ((string + "go to ") + _name_1);
+        /* (_plus_7 + "deferred"); */
+      }
+    }
+    return string;
+  }
+  
+  public String genHistoryTransition(final HistoryTransition transition) {
+    String string = "";
+    String _count_delay = transition.getCount_delay();
+    boolean _tripleNotEquals = (_count_delay != null);
+    if (_tripleNotEquals) {
+      boolean _isEmpty = transition.getCount_delay().trim().isEmpty();
+      boolean _not = (!_isEmpty);
+      if (_not) {
+        String _count_delay_1 = transition.getCount_delay();
+        String _plus = (string + _count_delay_1);
+        String _plus_1 = (_plus + " ");
+        string = _plus_1;
+      }
+    }
+    String _condition = transition.getCondition();
+    boolean _tripleNotEquals_1 = (_condition != null);
+    if (_tripleNotEquals_1) {
+      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
+      boolean _not_1 = (!_isEmpty_1);
+      if (_not_1) {
+        String _condition_1 = transition.getCondition();
+        String _plus_2 = (("if " + string) + _condition_1);
+        String _plus_3 = (_plus_2 + " ");
+        string = _plus_3;
+      }
+    }
+    boolean _isImmediate = transition.isImmediate();
+    if (_isImmediate) {
+      string = ("immediate " + string);
+    }
+    String _effect = transition.getEffect();
+    boolean _tripleNotEquals_2 = (_effect != null);
+    if (_tripleNotEquals_2) {
+      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
+      boolean _not_2 = (!_isEmpty_2);
+      if (_not_2) {
+        String _effect_1 = transition.getEffect();
+        String _plus_4 = ((string + "do ") + _effect_1);
+        String _plus_5 = (_plus_4 + " ");
+        string = _plus_5;
+      }
+    }
+    String history = "history";
+    boolean _isDeepHistory = transition.isDeepHistory();
+    boolean _not_3 = (!_isDeepHistory);
+    if (_not_3) {
+      history = ("shallow " + history);
+    }
+    boolean _matched = false;
+    Node _targetElement = transition.getTargetElement();
+    if ((_targetElement instanceof SuperState)) {
+      _matched=true;
+      Node _targetElement_1 = transition.getTargetElement();
+      String _name = ((SuperState) _targetElement_1).getName();
+      String _plus_6 = ((string + "go to ") + _name);
+      /* (_plus_6 + history); */
+    }
+    if (!_matched) {
+      Node _targetElement_2 = transition.getTargetElement();
+      if ((_targetElement_2 instanceof SimpleState)) {
+        _matched=true;
+        Node _targetElement_3 = transition.getTargetElement();
+        String _name_1 = ((SimpleState) _targetElement_3).getName();
+        String _plus_7 = ((string + "go to ") + _name_1);
+        /* (_plus_7 + history); */
+      }
+    }
+    return string;
+  }
+  
+  public String genTerminationDeferredTransition(final TerminationDeferredTransition transition) {
+    String string = "";
+    String _count_delay = transition.getCount_delay();
+    boolean _tripleNotEquals = (_count_delay != null);
+    if (_tripleNotEquals) {
+      boolean _isEmpty = transition.getCount_delay().trim().isEmpty();
+      boolean _not = (!_isEmpty);
+      if (_not) {
+        String _count_delay_1 = transition.getCount_delay();
+        String _plus = (string + _count_delay_1);
+        String _plus_1 = (_plus + " ");
+        string = _plus_1;
+      }
+    }
+    String _condition = transition.getCondition();
+    boolean _tripleNotEquals_1 = (_condition != null);
+    if (_tripleNotEquals_1) {
+      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
+      boolean _not_1 = (!_isEmpty_1);
+      if (_not_1) {
+        String _condition_1 = transition.getCondition();
+        String _plus_2 = (("if " + string) + _condition_1);
+        String _plus_3 = (_plus_2 + " ");
+        string = _plus_3;
+      }
+    }
+    boolean _isImmediate = transition.isImmediate();
+    if (_isImmediate) {
+      string = ("immediate " + string);
+    }
+    String _effect = transition.getEffect();
+    boolean _tripleNotEquals_2 = (_effect != null);
+    if (_tripleNotEquals_2) {
+      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
+      boolean _not_2 = (!_isEmpty_2);
+      if (_not_2) {
+        String _effect_1 = transition.getEffect();
+        String _plus_4 = ((string + "do ") + _effect_1);
+        String _plus_5 = (_plus_4 + " ");
+        string = _plus_5;
       }
     }
     Node _targetElement = transition.getTargetElement();
@@ -599,7 +855,8 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
       _matched=true;
       Node _targetElement_2 = transition.getTargetElement();
       String _name = ((SuperState) _targetElement_2).getName();
-      /* ((string + "abort to ") + _name); */
+      String _plus_6 = ((string + "join to ") + _name);
+      return (_plus_6 + "deferred");
     }
     if (!_matched) {
       Node _targetElement_3 = transition.getTargetElement();
@@ -607,9 +864,456 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
         _matched=true;
         Node _targetElement_4 = transition.getTargetElement();
         String _name_1 = ((SimpleState) _targetElement_4).getName();
-        /* ((string + "abort to ") + _name_1); */
+        String _plus_7 = ((string + "join to ") + _name_1);
+        return (_plus_7 + "deferred");
+      }
+    }
+    return null;
+  }
+  
+  public String genStrongAbortDeferredTransition(final StrongAbortDeferredTransition transition) {
+    String string = "";
+    String _count_delay = transition.getCount_delay();
+    boolean _tripleNotEquals = (_count_delay != null);
+    if (_tripleNotEquals) {
+      boolean _isEmpty = transition.getCount_delay().trim().isEmpty();
+      boolean _not = (!_isEmpty);
+      if (_not) {
+        String _count_delay_1 = transition.getCount_delay();
+        String _plus = (string + _count_delay_1);
+        String _plus_1 = (_plus + " ");
+        string = _plus_1;
+      }
+    }
+    String _condition = transition.getCondition();
+    boolean _tripleNotEquals_1 = (_condition != null);
+    if (_tripleNotEquals_1) {
+      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
+      boolean _not_1 = (!_isEmpty_1);
+      if (_not_1) {
+        String _condition_1 = transition.getCondition();
+        String _plus_2 = (("if " + string) + _condition_1);
+        String _plus_3 = (_plus_2 + " ");
+        string = _plus_3;
+      }
+    }
+    boolean _isImmediate = transition.isImmediate();
+    if (_isImmediate) {
+      string = ("immediate " + string);
+    }
+    String _effect = transition.getEffect();
+    boolean _tripleNotEquals_2 = (_effect != null);
+    if (_tripleNotEquals_2) {
+      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
+      boolean _not_2 = (!_isEmpty_2);
+      if (_not_2) {
+        String _effect_1 = transition.getEffect();
+        String _plus_4 = ((string + "do ") + _effect_1);
+        String _plus_5 = (_plus_4 + " ");
+        string = _plus_5;
+      }
+    }
+    boolean _matched = false;
+    Node _targetElement = transition.getTargetElement();
+    if ((_targetElement instanceof SuperState)) {
+      _matched=true;
+      Node _targetElement_1 = transition.getTargetElement();
+      String _name = ((SuperState) _targetElement_1).getName();
+      String _plus_6 = ((string + "abort to ") + _name);
+      /* (_plus_6 + "deferred"); */
+    }
+    if (!_matched) {
+      Node _targetElement_2 = transition.getTargetElement();
+      if ((_targetElement_2 instanceof SimpleState)) {
+        _matched=true;
+        Node _targetElement_3 = transition.getTargetElement();
+        String _name_1 = ((SimpleState) _targetElement_3).getName();
+        String _plus_7 = ((string + "abort to ") + _name_1);
+        /* (_plus_7 + "deferred"); */
       }
     }
     return string;
+  }
+  
+  public String genTerminationHistoryTransition(final TerminationHistoryTransition transition) {
+    String string = "";
+    String _count_delay = transition.getCount_delay();
+    boolean _tripleNotEquals = (_count_delay != null);
+    if (_tripleNotEquals) {
+      boolean _isEmpty = transition.getCount_delay().trim().isEmpty();
+      boolean _not = (!_isEmpty);
+      if (_not) {
+        String _count_delay_1 = transition.getCount_delay();
+        String _plus = (string + _count_delay_1);
+        String _plus_1 = (_plus + " ");
+        string = _plus_1;
+      }
+    }
+    String _condition = transition.getCondition();
+    boolean _tripleNotEquals_1 = (_condition != null);
+    if (_tripleNotEquals_1) {
+      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
+      boolean _not_1 = (!_isEmpty_1);
+      if (_not_1) {
+        String _condition_1 = transition.getCondition();
+        String _plus_2 = (("if " + string) + _condition_1);
+        String _plus_3 = (_plus_2 + " ");
+        string = _plus_3;
+      }
+    }
+    boolean _isImmediate = transition.isImmediate();
+    if (_isImmediate) {
+      string = ("immediate " + string);
+    }
+    String _effect = transition.getEffect();
+    boolean _tripleNotEquals_2 = (_effect != null);
+    if (_tripleNotEquals_2) {
+      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
+      boolean _not_2 = (!_isEmpty_2);
+      if (_not_2) {
+        String _effect_1 = transition.getEffect();
+        String _plus_4 = ((string + "do ") + _effect_1);
+        String _plus_5 = (_plus_4 + " ");
+        string = _plus_5;
+      }
+    }
+    String history = "history";
+    boolean _isDeepHistory = transition.isDeepHistory();
+    boolean _not_3 = (!_isDeepHistory);
+    if (_not_3) {
+      history = ("shallow " + history);
+    }
+    Node _targetElement = transition.getTargetElement();
+    boolean _matched = false;
+    Node _targetElement_1 = transition.getTargetElement();
+    if ((_targetElement_1 instanceof SuperState)) {
+      _matched=true;
+      Node _targetElement_2 = transition.getTargetElement();
+      String _name = ((SuperState) _targetElement_2).getName();
+      String _plus_6 = ((string + "join to ") + _name);
+      return (_plus_6 + history);
+    }
+    if (!_matched) {
+      Node _targetElement_3 = transition.getTargetElement();
+      if ((_targetElement_3 instanceof SimpleState)) {
+        _matched=true;
+        Node _targetElement_4 = transition.getTargetElement();
+        String _name_1 = ((SimpleState) _targetElement_4).getName();
+        String _plus_7 = ((string + "join to ") + _name_1);
+        return (_plus_7 + history);
+      }
+    }
+    return null;
+  }
+  
+  public String genStrongAbortHistoryTransition(final StrongAbortHistoryTransition transition) {
+    String string = "";
+    String _count_delay = transition.getCount_delay();
+    boolean _tripleNotEquals = (_count_delay != null);
+    if (_tripleNotEquals) {
+      boolean _isEmpty = transition.getCount_delay().trim().isEmpty();
+      boolean _not = (!_isEmpty);
+      if (_not) {
+        String _count_delay_1 = transition.getCount_delay();
+        String _plus = (string + _count_delay_1);
+        String _plus_1 = (_plus + " ");
+        string = _plus_1;
+      }
+    }
+    String _condition = transition.getCondition();
+    boolean _tripleNotEquals_1 = (_condition != null);
+    if (_tripleNotEquals_1) {
+      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
+      boolean _not_1 = (!_isEmpty_1);
+      if (_not_1) {
+        String _condition_1 = transition.getCondition();
+        String _plus_2 = (("if " + string) + _condition_1);
+        String _plus_3 = (_plus_2 + " ");
+        string = _plus_3;
+      }
+    }
+    boolean _isImmediate = transition.isImmediate();
+    if (_isImmediate) {
+      string = ("immediate " + string);
+    }
+    String _effect = transition.getEffect();
+    boolean _tripleNotEquals_2 = (_effect != null);
+    if (_tripleNotEquals_2) {
+      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
+      boolean _not_2 = (!_isEmpty_2);
+      if (_not_2) {
+        String _effect_1 = transition.getEffect();
+        String _plus_4 = ((string + "do ") + _effect_1);
+        String _plus_5 = (_plus_4 + " ");
+        string = _plus_5;
+      }
+    }
+    String history = "history";
+    boolean _isDeepHistory = transition.isDeepHistory();
+    boolean _not_3 = (!_isDeepHistory);
+    if (_not_3) {
+      history = ("shallow " + history);
+    }
+    boolean _matched = false;
+    Node _targetElement = transition.getTargetElement();
+    if ((_targetElement instanceof SuperState)) {
+      _matched=true;
+      Node _targetElement_1 = transition.getTargetElement();
+      String _name = ((SuperState) _targetElement_1).getName();
+      String _plus_6 = ((string + "abort to ") + _name);
+      /* (_plus_6 + history); */
+    }
+    if (!_matched) {
+      Node _targetElement_2 = transition.getTargetElement();
+      if ((_targetElement_2 instanceof SimpleState)) {
+        _matched=true;
+        Node _targetElement_3 = transition.getTargetElement();
+        String _name_1 = ((SimpleState) _targetElement_3).getName();
+        String _plus_7 = ((string + "abort to ") + _name_1);
+        /* (_plus_7 + history); */
+      }
+    }
+    return string;
+  }
+  
+  public String genDeferredHistoryTransition(final DeferredHistoryTransition transition) {
+    String string = "";
+    String _count_delay = transition.getCount_delay();
+    boolean _tripleNotEquals = (_count_delay != null);
+    if (_tripleNotEquals) {
+      boolean _isEmpty = transition.getCount_delay().trim().isEmpty();
+      boolean _not = (!_isEmpty);
+      if (_not) {
+        String _count_delay_1 = transition.getCount_delay();
+        String _plus = (string + _count_delay_1);
+        String _plus_1 = (_plus + " ");
+        string = _plus_1;
+      }
+    }
+    String _condition = transition.getCondition();
+    boolean _tripleNotEquals_1 = (_condition != null);
+    if (_tripleNotEquals_1) {
+      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
+      boolean _not_1 = (!_isEmpty_1);
+      if (_not_1) {
+        String _condition_1 = transition.getCondition();
+        String _plus_2 = (("if " + string) + _condition_1);
+        String _plus_3 = (_plus_2 + " ");
+        string = _plus_3;
+      }
+    }
+    boolean _isImmediate = transition.isImmediate();
+    if (_isImmediate) {
+      string = ("immediate " + string);
+    }
+    String _effect = transition.getEffect();
+    boolean _tripleNotEquals_2 = (_effect != null);
+    if (_tripleNotEquals_2) {
+      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
+      boolean _not_2 = (!_isEmpty_2);
+      if (_not_2) {
+        String _effect_1 = transition.getEffect();
+        String _plus_4 = ((string + "do ") + _effect_1);
+        String _plus_5 = (_plus_4 + " ");
+        string = _plus_5;
+      }
+    }
+    String history = "history";
+    boolean _isDeepHistory = transition.isDeepHistory();
+    boolean _not_3 = (!_isDeepHistory);
+    if (_not_3) {
+      history = ("shallow " + history);
+    }
+    boolean _matched = false;
+    SuperState _targetElement = transition.getTargetElement();
+    if ((_targetElement instanceof SuperState)) {
+      _matched=true;
+      SuperState _targetElement_1 = transition.getTargetElement();
+      String _name = ((SuperState) _targetElement_1).getName();
+      String _plus_6 = ((string + "go to ") + _name);
+      String _plus_7 = (_plus_6 + "deferred");
+      /* (_plus_7 + history); */
+    }
+    if (!_matched) {
+      SuperState _targetElement_2 = transition.getTargetElement();
+      if ((_targetElement_2 instanceof SimpleState)) {
+        _matched=true;
+        SuperState _targetElement_3 = transition.getTargetElement();
+        String _name_1 = ((SimpleState) _targetElement_3).getName();
+        String _plus_8 = ((string + "go to ") + _name_1);
+        String _plus_9 = (_plus_8 + "deferred");
+        /* (_plus_9 + history); */
+      }
+    }
+    return string;
+  }
+  
+  public String genStrongAbortDeferredHistoryTransition(final StrongAbortDeferredHistoryTransition transition) {
+    String string = "";
+    String _count_delay = transition.getCount_delay();
+    boolean _tripleNotEquals = (_count_delay != null);
+    if (_tripleNotEquals) {
+      boolean _isEmpty = transition.getCount_delay().trim().isEmpty();
+      boolean _not = (!_isEmpty);
+      if (_not) {
+        String _count_delay_1 = transition.getCount_delay();
+        String _plus = (string + _count_delay_1);
+        String _plus_1 = (_plus + " ");
+        string = _plus_1;
+      }
+    }
+    String _condition = transition.getCondition();
+    boolean _tripleNotEquals_1 = (_condition != null);
+    if (_tripleNotEquals_1) {
+      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
+      boolean _not_1 = (!_isEmpty_1);
+      if (_not_1) {
+        String _condition_1 = transition.getCondition();
+        String _plus_2 = (("if " + string) + _condition_1);
+        String _plus_3 = (_plus_2 + " ");
+        string = _plus_3;
+      }
+    }
+    boolean _isImmediate = transition.isImmediate();
+    if (_isImmediate) {
+      string = ("immediate " + string);
+    }
+    String _effect = transition.getEffect();
+    boolean _tripleNotEquals_2 = (_effect != null);
+    if (_tripleNotEquals_2) {
+      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
+      boolean _not_2 = (!_isEmpty_2);
+      if (_not_2) {
+        String _effect_1 = transition.getEffect();
+        String _plus_4 = ((string + "do ") + _effect_1);
+        String _plus_5 = (_plus_4 + " ");
+        string = _plus_5;
+      }
+    }
+    String history = "history";
+    boolean _isDeepHistory = transition.isDeepHistory();
+    boolean _not_3 = (!_isDeepHistory);
+    if (_not_3) {
+      history = ("shallow " + history);
+    }
+    boolean _matched = false;
+    SuperState _targetElement = transition.getTargetElement();
+    if ((_targetElement instanceof SuperState)) {
+      _matched=true;
+      SuperState _targetElement_1 = transition.getTargetElement();
+      String _name = ((SuperState) _targetElement_1).getName();
+      String _plus_6 = ((string + "abort to ") + _name);
+      String _plus_7 = (_plus_6 + "deferred");
+      /* (_plus_7 + history); */
+    }
+    if (!_matched) {
+      SuperState _targetElement_2 = transition.getTargetElement();
+      if ((_targetElement_2 instanceof SimpleState)) {
+        _matched=true;
+        SuperState _targetElement_3 = transition.getTargetElement();
+        String _name_1 = ((SimpleState) _targetElement_3).getName();
+        String _plus_8 = ((string + "abort to ") + _name_1);
+        String _plus_9 = (_plus_8 + "deferred");
+        /* (_plus_9 + history); */
+      }
+    }
+    return string;
+  }
+  
+  public String genTerminationDeferredHistoryTransition(final TerminationDeferredHistoryTransition transition) {
+    String string = "";
+    String _count_delay = transition.getCount_delay();
+    boolean _tripleNotEquals = (_count_delay != null);
+    if (_tripleNotEquals) {
+      boolean _isEmpty = transition.getCount_delay().trim().isEmpty();
+      boolean _not = (!_isEmpty);
+      if (_not) {
+        String _count_delay_1 = transition.getCount_delay();
+        String _plus = (string + _count_delay_1);
+        String _plus_1 = (_plus + " ");
+        string = _plus_1;
+      }
+    }
+    String _condition = transition.getCondition();
+    boolean _tripleNotEquals_1 = (_condition != null);
+    if (_tripleNotEquals_1) {
+      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
+      boolean _not_1 = (!_isEmpty_1);
+      if (_not_1) {
+        String _condition_1 = transition.getCondition();
+        String _plus_2 = (("if " + string) + _condition_1);
+        String _plus_3 = (_plus_2 + " ");
+        string = _plus_3;
+      }
+    }
+    boolean _isImmediate = transition.isImmediate();
+    if (_isImmediate) {
+      string = ("immediate " + string);
+    }
+    String _effect = transition.getEffect();
+    boolean _tripleNotEquals_2 = (_effect != null);
+    if (_tripleNotEquals_2) {
+      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
+      boolean _not_2 = (!_isEmpty_2);
+      if (_not_2) {
+        String _effect_1 = transition.getEffect();
+        String _plus_4 = ((string + "do ") + _effect_1);
+        String _plus_5 = (_plus_4 + " ");
+        string = _plus_5;
+      }
+    }
+    String history = "history";
+    boolean _isDeepHistory = transition.isDeepHistory();
+    boolean _not_3 = (!_isDeepHistory);
+    if (_not_3) {
+      history = ("shallow " + history);
+    }
+    boolean _matched = false;
+    SuperState _targetElement = transition.getTargetElement();
+    if ((_targetElement instanceof SuperState)) {
+      _matched=true;
+      SuperState _targetElement_1 = transition.getTargetElement();
+      String _name = ((SuperState) _targetElement_1).getName();
+      String _plus_6 = ((string + "join to ") + _name);
+      String _plus_7 = (_plus_6 + "deferred");
+      /* (_plus_7 + history); */
+    }
+    if (!_matched) {
+      SuperState _targetElement_2 = transition.getTargetElement();
+      if ((_targetElement_2 instanceof SimpleState)) {
+        _matched=true;
+        SuperState _targetElement_3 = transition.getTargetElement();
+        String _name_1 = ((SimpleState) _targetElement_3).getName();
+        String _plus_8 = ((string + "join to ") + _name_1);
+        String _plus_9 = (_plus_8 + "deferred");
+        /* (_plus_9 + history); */
+      }
+    }
+    return string;
+  }
+  
+  public void commandLineParser(final String[] args) throws ParseException {
+    ProcessBuilder builder = new ProcessBuilder();
+    try {
+      URL url = this.getClass().getResource("info.scce.cinco.product.scchart/src/kico-win.bat");
+      String _path = url.getPath();
+      File f = new File(_path);
+      String absolute = f.getAbsolutePath();
+      String _path_1 = f.getPath();
+      String _plus = ("Original path: " + _path_1);
+      System.out.println(_plus);
+      System.out.println(
+        ("Absolute path: " + absolute));
+    } catch (final Throwable _t) {
+      if (_t instanceof IOException) {
+        final IOException e = (IOException)_t;
+        e.printStackTrace();
+      } else if (_t instanceof InterruptedException) {
+        final InterruptedException e_1 = (InterruptedException)_t;
+        e_1.printStackTrace();
+      } else {
+        throw Exceptions.sneakyThrow(_t);
+      }
+    }
   }
 }

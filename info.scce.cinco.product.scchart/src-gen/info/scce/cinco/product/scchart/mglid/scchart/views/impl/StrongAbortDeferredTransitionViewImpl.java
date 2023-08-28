@@ -153,6 +153,29 @@ public class StrongAbortDeferredTransitionViewImpl extends AbstractTransitionVie
 	 * @generated
 	 */
 	@Override
+	public boolean isImmediate() {
+		return getInternalStrongAbortDeferredTransition().isImmediate();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setImmediate(final boolean _arg) {
+		getInternalStrongAbortDeferredTransition().getElement().transact("Set Immediate", () -> {
+			getInternalStrongAbortDeferredTransition().setImmediate(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEffect() {
 		return getInternalStrongAbortDeferredTransition().getEffect();
 	}
@@ -246,6 +269,11 @@ public class StrongAbortDeferredTransitionViewImpl extends AbstractTransitionVie
 				return getCount_delay();
 			case ViewsPackage.STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_COUNT_DELAY__STRING:
 				setCount_delay((String)arguments.get(0));
+				return null;
+			case ViewsPackage.STRONG_ABORT_DEFERRED_TRANSITION_VIEW___IS_IMMEDIATE:
+				return isImmediate();
+			case ViewsPackage.STRONG_ABORT_DEFERRED_TRANSITION_VIEW___SET_IMMEDIATE__BOOLEAN:
+				setImmediate((Boolean)arguments.get(0));
 				return null;
 			case ViewsPackage.STRONG_ABORT_DEFERRED_TRANSITION_VIEW___GET_EFFECT:
 				return getEffect();

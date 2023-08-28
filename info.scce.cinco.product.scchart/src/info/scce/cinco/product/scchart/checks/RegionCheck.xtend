@@ -4,6 +4,7 @@ import info.scce.cinco.product.scchart.mglid.mcam.modules.checks.SCChartCheck
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart
 import static extension java.lang.Character.*
 import info.scce.cinco.product.scchart.mglid.scchart.Region
+import info.scce.cinco.product.scchart.mglid.scchart.RootState
 
 class RegionCheck extends SCChartCheck{
 	
@@ -12,28 +13,23 @@ class RegionCheck extends SCChartCheck{
 	}
 	
 	def checkNameConvention(SCChart scchart){
-		if(scchart.rootStates.head.regions!==null){
-			scchart.rootStates.head.regions
-		}
+		scchart.findThe(RootState).find(Region).forEach[
+			if(it.name!==null&&!it.name.isEmpty){
+				if(!((it.name.charAt(0) >= 'a' && it.name.charAt(0) <= 'z') || (it.name.charAt(0) >= 'A' && it.name.charAt(0) <= 'Z'))) {
+					it.addError("name should start a with letter")
+				}
+				else {
+					var break = false
+					var i = 1
+					while(i<it.name.length&&!break){
+						if(!((it.name.charAt(i) >= 'a' && it.name.charAt(i) <= 'z') || (it.name.charAt(i) >= 'A' && it.name.charAt(i) <= 'Z') || it.name.charAt(i).isDigit)){
+							it.addError("name should only contain letters and numbers")
+							break = true
+						}
+						i++
+					}
+				}
+			}
+		]
 	}
-//		if(scchart.rootStates.head.find(Region))
-//			for(rootState : scchart.rootStates){
-//			if(rootState.name=="<set name>" || rootState.name.isEmpty){
-//				rootState.addError("set name")
-//			}
-//			if(!(rootState.name.charAt(0) >= 'a' && rootState.name.charAt(0) <= 'z') || (rootState.name.charAt(0) >= 'A' && rootState.name.charAt(0) <= 'Z')) {
-//				rootState.addError("name should start with a letter")
-//			}
-//			var break = false
-//			var i = 1
-//			while(i<rootState.name.length&&!break){
-//				if(!((rootState.name.charAt(i) >= 'a' && rootState.name.charAt(i) <= 'z') || (rootState.name.charAt(i) >= 'A' && rootState.name.charAt(i) <= 'Z') || rootState.name.charAt(i).isDigit)){
-//					rootState.addError("name should only contain letters and numbers")
-//					break = true
-//				}
-//				i++
-//			}
-//		}
-//	}
-	
 }

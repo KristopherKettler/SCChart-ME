@@ -21,6 +21,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <ul>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDeferredTransitionImpl#getCondition <em>Condition</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDeferredTransitionImpl#getCount_delay <em>Count delay</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDeferredTransitionImpl#isImmediate <em>Immediate</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalDeferredTransitionImpl#getEffect <em>Effect</em>}</li>
  * </ul>
  *
@@ -66,6 +67,26 @@ public class InternalDeferredTransitionImpl extends InternalAbstractTransitionIm
 	 * @ordered
 	 */
 	protected String count_delay = COUNT_DELAY_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #isImmediate() <em>Immediate</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isImmediate()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean IMMEDIATE_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isImmediate() <em>Immediate</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isImmediate()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean immediate = IMMEDIATE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getEffect() <em>Effect</em>}' attribute.
@@ -158,6 +179,29 @@ public class InternalDeferredTransitionImpl extends InternalAbstractTransitionIm
 	 * @generated
 	 */
 	@Override
+	public boolean isImmediate() {
+		return immediate;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setImmediate(boolean newImmediate) {
+		boolean oldImmediate = immediate;
+		immediate = newImmediate;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_DEFERRED_TRANSITION__IMMEDIATE, oldImmediate, immediate));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEffect() {
 		return effect;
 	}
@@ -187,6 +231,8 @@ public class InternalDeferredTransitionImpl extends InternalAbstractTransitionIm
 				return getCondition();
 			case InternalPackage.INTERNAL_DEFERRED_TRANSITION__COUNT_DELAY:
 				return getCount_delay();
+			case InternalPackage.INTERNAL_DEFERRED_TRANSITION__IMMEDIATE:
+				return isImmediate();
 			case InternalPackage.INTERNAL_DEFERRED_TRANSITION__EFFECT:
 				return getEffect();
 		}
@@ -206,6 +252,9 @@ public class InternalDeferredTransitionImpl extends InternalAbstractTransitionIm
 				return;
 			case InternalPackage.INTERNAL_DEFERRED_TRANSITION__COUNT_DELAY:
 				setCount_delay((String)newValue);
+				return;
+			case InternalPackage.INTERNAL_DEFERRED_TRANSITION__IMMEDIATE:
+				setImmediate((Boolean)newValue);
 				return;
 			case InternalPackage.INTERNAL_DEFERRED_TRANSITION__EFFECT:
 				setEffect((String)newValue);
@@ -228,6 +277,9 @@ public class InternalDeferredTransitionImpl extends InternalAbstractTransitionIm
 			case InternalPackage.INTERNAL_DEFERRED_TRANSITION__COUNT_DELAY:
 				setCount_delay(COUNT_DELAY_EDEFAULT);
 				return;
+			case InternalPackage.INTERNAL_DEFERRED_TRANSITION__IMMEDIATE:
+				setImmediate(IMMEDIATE_EDEFAULT);
+				return;
 			case InternalPackage.INTERNAL_DEFERRED_TRANSITION__EFFECT:
 				setEffect(EFFECT_EDEFAULT);
 				return;
@@ -247,6 +299,8 @@ public class InternalDeferredTransitionImpl extends InternalAbstractTransitionIm
 				return CONDITION_EDEFAULT == null ? condition != null : !CONDITION_EDEFAULT.equals(condition);
 			case InternalPackage.INTERNAL_DEFERRED_TRANSITION__COUNT_DELAY:
 				return COUNT_DELAY_EDEFAULT == null ? count_delay != null : !COUNT_DELAY_EDEFAULT.equals(count_delay);
+			case InternalPackage.INTERNAL_DEFERRED_TRANSITION__IMMEDIATE:
+				return immediate != IMMEDIATE_EDEFAULT;
 			case InternalPackage.INTERNAL_DEFERRED_TRANSITION__EFFECT:
 				return EFFECT_EDEFAULT == null ? effect != null : !EFFECT_EDEFAULT.equals(effect);
 		}
@@ -267,6 +321,8 @@ public class InternalDeferredTransitionImpl extends InternalAbstractTransitionIm
 		result.append(condition);
 		result.append(", count_delay: ");
 		result.append(count_delay);
+		result.append(", immediate: ");
+		result.append(immediate);
 		result.append(", effect: ");
 		result.append(effect);
 		result.append(')');

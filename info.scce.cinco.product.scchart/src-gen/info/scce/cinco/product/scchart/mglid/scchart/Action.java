@@ -240,26 +240,26 @@ public interface Action extends Node {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" initilalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @model required="true" initialSuperStateRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	boolean canMoveTo(InitilalSuperState initilalSuperState, int x, int y);
+	boolean canMoveTo(InitialSuperState initialSuperState, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model initilalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @model initialSuperStateRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	void moveTo(InitilalSuperState initilalSuperState, int x, int y);
+	void moveTo(InitialSuperState initialSuperState, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model initilalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @model initialSuperStateRequired="true" xRequired="true" yRequired="true"
 	 * @generated
 	 */
-	void s_moveTo(InitilalSuperState initilalSuperState, int x, int y);
+	void s_moveTo(InitialSuperState initialSuperState, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,6 +284,30 @@ public interface Action extends Node {
 	 * @generated
 	 */
 	void s_moveTo(FinalSuperState finalSuperState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" initialFinalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	boolean canMoveTo(InitialFinalSuperState initialFinalSuperState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model initialFinalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void moveTo(InitialFinalSuperState initialFinalSuperState, int x, int y);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model initialFinalSuperStateRequired="true" xRequired="true" yRequired="true"
+	 * @generated
+	 */
+	void s_moveTo(InitialFinalSuperState initialFinalSuperState, int x, int y);
 
 	/**
 	 * <!-- begin-user-doc -->

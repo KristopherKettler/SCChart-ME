@@ -9,9 +9,11 @@ import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialFinalState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
-import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
@@ -76,7 +78,7 @@ public interface InternalInitialSCChartReferece extends InternalSCChartReferece 
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<InitilalSuperState> getInitilalSuperStatePredecessors();
+	EList<InitialSuperState> getInitialSuperStatePredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,6 +87,14 @@ public interface InternalInitialSCChartReferece extends InternalSCChartReferece 
 	 * @generated
 	 */
 	EList<FinalSuperState> getFinalSuperStatePredecessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<InitialFinalSuperState> getInitialFinalSuperStatePredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -109,6 +119,14 @@ public interface InternalInitialSCChartReferece extends InternalSCChartReferece 
 	 * @generated
 	 */
 	EList<FinalState> getFinalStatePredecessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<InitialFinalState> getInitialFinalStatePredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -156,7 +174,7 @@ public interface InternalInitialSCChartReferece extends InternalSCChartReferece 
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<InitilalSuperState> getInitilalSuperStateSuccessors();
+	EList<InitialSuperState> getInitialSuperStateSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -165,6 +183,14 @@ public interface InternalInitialSCChartReferece extends InternalSCChartReferece 
 	 * @generated
 	 */
 	EList<FinalSuperState> getFinalSuperStateSuccessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<InitialFinalSuperState> getInitialFinalSuperStateSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -189,6 +215,14 @@ public interface InternalInitialSCChartReferece extends InternalSCChartReferece 
 	 * @generated
 	 */
 	EList<FinalState> getFinalStateSuccessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<InitialFinalState> getInitialFinalStateSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -97,6 +97,22 @@ public interface StrongAbortHistoryTransitionView extends AbstractTransitionView
 	 * @model kind="operation"
 	 * @generated
 	 */
+	boolean isImmediate();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setImmediate(boolean _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	String getEffect();
 
 	/**

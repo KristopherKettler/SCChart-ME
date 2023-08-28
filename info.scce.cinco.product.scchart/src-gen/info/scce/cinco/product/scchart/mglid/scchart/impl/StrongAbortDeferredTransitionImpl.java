@@ -11,8 +11,9 @@ import graphmodel.Node;
 import info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece;
-import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
@@ -99,6 +100,29 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 	public void setCount_delay(final String _arg) {
 		getInternalStrongAbortDeferredTransition().getElement().transact("Set Count_delay", () -> {
 			getInternalStrongAbortDeferredTransition().setCount_delay(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isImmediate() {
+		return getInternalStrongAbortDeferredTransition().isImmediate();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setImmediate(final boolean _arg) {
+		getInternalStrongAbortDeferredTransition().getElement().transact("Set Immediate", () -> {
+			getInternalStrongAbortDeferredTransition().setImmediate(_arg);
 		});
 		
 	}
@@ -235,7 +259,7 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final InitilalSuperState source) {
+	public boolean canReconnectSource(final SCChartReferece source) {
 		return source.canStart(this.getClass());
 	}
 
@@ -245,7 +269,7 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 	 * @generated
 	 */
 	@Override
-	public void reconnectSource(final InitilalSuperState source) {
+	public void reconnectSource(final SCChartReferece source) {
 		this.setSourceElement(source);
 	}
 
@@ -255,7 +279,7 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final InitialSCChartReferece source) {
+	public boolean canReconnectSource(final InitialSuperState source) {
 		return source.canStart(this.getClass());
 	}
 
@@ -265,27 +289,7 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 	 * @generated
 	 */
 	@Override
-	public void reconnectSource(final InitialSCChartReferece source) {
-		this.setSourceElement(source);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canReconnectSource(final RootState source) {
-		return source.canStart(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectSource(final RootState source) {
+	public void reconnectSource(final InitialSuperState source) {
 		this.setSourceElement(source);
 	}
 
@@ -335,6 +339,66 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 	 * @generated
 	 */
 	@Override
+	public boolean canReconnectSource(final RootState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final RootState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final InitialFinalSuperState source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final InitialFinalSuperState source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectSource(final InitialSCChartReferece source) {
+		return source.canStart(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectSource(final InitialSCChartReferece source) {
+		this.setSourceElement(source);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean canReconnectSource(final FinalSCChartReferece source) {
 		return source.canStart(this.getClass());
 	}
@@ -355,27 +419,7 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectSource(final SCChartReferece source) {
-		return source.canStart(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectSource(final SCChartReferece source) {
-		this.setSourceElement(source);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canReconnectTarget(final InitilalSuperState target) {
+	public boolean canReconnectTarget(final SCChartReferece target) {
 		return target.canEnd(this.getClass());
 	}
 
@@ -385,7 +429,7 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 	 * @generated
 	 */
 	@Override
-	public void reconnectTarget(final InitilalSuperState target) {
+	public void reconnectTarget(final SCChartReferece target) {
 		this.setTargetElement(target);
 	}
 
@@ -395,7 +439,7 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean canReconnectTarget(final InitialSCChartReferece target) {
+	public boolean canReconnectTarget(final InitialSuperState target) {
 		return target.canEnd(this.getClass());
 	}
 
@@ -405,7 +449,7 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 	 * @generated
 	 */
 	@Override
-	public void reconnectTarget(final InitialSCChartReferece target) {
+	public void reconnectTarget(final InitialSuperState target) {
 		this.setTargetElement(target);
 	}
 
@@ -455,6 +499,46 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 	 * @generated
 	 */
 	@Override
+	public boolean canReconnectTarget(final InitialFinalSuperState target) {
+		return target.canEnd(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectTarget(final InitialFinalSuperState target) {
+		this.setTargetElement(target);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canReconnectTarget(final InitialSCChartReferece target) {
+		return target.canEnd(this.getClass());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void reconnectTarget(final InitialSCChartReferece target) {
+		this.setTargetElement(target);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean canReconnectTarget(final FinalSCChartReferece target) {
 		return target.canEnd(this.getClass());
 	}
@@ -466,26 +550,6 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 	 */
 	@Override
 	public void reconnectTarget(final FinalSCChartReferece target) {
-		this.setTargetElement(target);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canReconnectTarget(final SCChartReferece target) {
-		return target.canEnd(this.getClass());
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void reconnectTarget(final SCChartReferece target) {
 		this.setTargetElement(target);
 	}
 
@@ -570,6 +634,11 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___SET_COUNT_DELAY__STRING:
 				setCount_delay((String)arguments.get(0));
 				return null;
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___IS_IMMEDIATE:
+				return isImmediate();
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___SET_IMMEDIATE__BOOLEAN:
+				setImmediate((Boolean)arguments.get(0));
+				return null;
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___GET_EFFECT:
 				return getEffect();
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___SET_EFFECT__STRING:
@@ -598,20 +667,15 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 				return getSourceElement();
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___GET_TARGET_ELEMENT:
 				return getTargetElement();
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__INITILALSUPERSTATE:
-				return canReconnectSource((InitilalSuperState)arguments.get(0));
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_SOURCE__INITILALSUPERSTATE:
-				reconnectSource((InitilalSuperState)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__SCCHARTREFERECE:
+				return canReconnectSource((SCChartReferece)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_SOURCE__SCCHARTREFERECE:
+				reconnectSource((SCChartReferece)arguments.get(0));
 				return null;
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__INITIALSCCHARTREFERECE:
-				return canReconnectSource((InitialSCChartReferece)arguments.get(0));
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_SOURCE__INITIALSCCHARTREFERECE:
-				reconnectSource((InitialSCChartReferece)arguments.get(0));
-				return null;
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
-				return canReconnectSource((RootState)arguments.get(0));
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
-				reconnectSource((RootState)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__INITIALSUPERSTATE:
+				return canReconnectSource((InitialSuperState)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_SOURCE__INITIALSUPERSTATE:
+				reconnectSource((InitialSuperState)arguments.get(0));
 				return null;
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__FINALSUPERSTATE:
 				return canReconnectSource((FinalSuperState)arguments.get(0));
@@ -623,25 +687,35 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_SOURCE__SUPERSTATE:
 				reconnectSource((SuperState)arguments.get(0));
 				return null;
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__ROOTSTATE:
+				return canReconnectSource((RootState)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_SOURCE__ROOTSTATE:
+				reconnectSource((RootState)arguments.get(0));
+				return null;
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__INITIALFINALSUPERSTATE:
+				return canReconnectSource((InitialFinalSuperState)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_SOURCE__INITIALFINALSUPERSTATE:
+				reconnectSource((InitialFinalSuperState)arguments.get(0));
+				return null;
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__INITIALSCCHARTREFERECE:
+				return canReconnectSource((InitialSCChartReferece)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_SOURCE__INITIALSCCHARTREFERECE:
+				reconnectSource((InitialSCChartReferece)arguments.get(0));
+				return null;
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__FINALSCCHARTREFERECE:
 				return canReconnectSource((FinalSCChartReferece)arguments.get(0));
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_SOURCE__FINALSCCHARTREFERECE:
 				reconnectSource((FinalSCChartReferece)arguments.get(0));
 				return null;
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_SOURCE__SCCHARTREFERECE:
-				return canReconnectSource((SCChartReferece)arguments.get(0));
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_SOURCE__SCCHARTREFERECE:
-				reconnectSource((SCChartReferece)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_TARGET__SCCHARTREFERECE:
+				return canReconnectTarget((SCChartReferece)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_TARGET__SCCHARTREFERECE:
+				reconnectTarget((SCChartReferece)arguments.get(0));
 				return null;
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_TARGET__INITILALSUPERSTATE:
-				return canReconnectTarget((InitilalSuperState)arguments.get(0));
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_TARGET__INITILALSUPERSTATE:
-				reconnectTarget((InitilalSuperState)arguments.get(0));
-				return null;
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_TARGET__INITIALSCCHARTREFERECE:
-				return canReconnectTarget((InitialSCChartReferece)arguments.get(0));
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_TARGET__INITIALSCCHARTREFERECE:
-				reconnectTarget((InitialSCChartReferece)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_TARGET__INITIALSUPERSTATE:
+				return canReconnectTarget((InitialSuperState)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_TARGET__INITIALSUPERSTATE:
+				reconnectTarget((InitialSuperState)arguments.get(0));
 				return null;
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_TARGET__FINALSUPERSTATE:
 				return canReconnectTarget((FinalSuperState)arguments.get(0));
@@ -653,15 +727,20 @@ public class StrongAbortDeferredTransitionImpl extends AbstractTransitionImpl im
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_TARGET__SUPERSTATE:
 				reconnectTarget((SuperState)arguments.get(0));
 				return null;
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_TARGET__INITIALFINALSUPERSTATE:
+				return canReconnectTarget((InitialFinalSuperState)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_TARGET__INITIALFINALSUPERSTATE:
+				reconnectTarget((InitialFinalSuperState)arguments.get(0));
+				return null;
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_TARGET__INITIALSCCHARTREFERECE:
+				return canReconnectTarget((InitialSCChartReferece)arguments.get(0));
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_TARGET__INITIALSCCHARTREFERECE:
+				reconnectTarget((InitialSCChartReferece)arguments.get(0));
+				return null;
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_TARGET__FINALSCCHARTREFERECE:
 				return canReconnectTarget((FinalSCChartReferece)arguments.get(0));
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_TARGET__FINALSCCHARTREFERECE:
 				reconnectTarget((FinalSCChartReferece)arguments.get(0));
-				return null;
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___CAN_RECONNECT_TARGET__SCCHARTREFERECE:
-				return canReconnectTarget((SCChartReferece)arguments.get(0));
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___RECONNECT_TARGET__SCCHARTREFERECE:
-				reconnectTarget((SCChartReferece)arguments.get(0));
 				return null;
 			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION___GET_STRONG_ABORT_DEFERRED_TRANSITION_VIEW:
 				return getStrongAbortDeferredTransitionView();

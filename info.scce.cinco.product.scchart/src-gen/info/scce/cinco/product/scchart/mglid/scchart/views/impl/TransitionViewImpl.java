@@ -153,6 +153,29 @@ public class TransitionViewImpl extends AbstractTransitionViewImpl implements Tr
 	 * @generated
 	 */
 	@Override
+	public boolean isImmediate() {
+		return getInternalTransition().isImmediate();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setImmediate(final boolean _arg) {
+		getInternalTransition().getElement().transact("Set Immediate", () -> {
+			getInternalTransition().setImmediate(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEffect() {
 		return getInternalTransition().getEffect();
 	}
@@ -246,6 +269,11 @@ public class TransitionViewImpl extends AbstractTransitionViewImpl implements Tr
 				return getCount_delay();
 			case ViewsPackage.TRANSITION_VIEW___SET_COUNT_DELAY__STRING:
 				setCount_delay((String)arguments.get(0));
+				return null;
+			case ViewsPackage.TRANSITION_VIEW___IS_IMMEDIATE:
+				return isImmediate();
+			case ViewsPackage.TRANSITION_VIEW___SET_IMMEDIATE__BOOLEAN:
+				setImmediate((Boolean)arguments.get(0));
 				return null;
 			case ViewsPackage.TRANSITION_VIEW___GET_EFFECT:
 				return getEffect();

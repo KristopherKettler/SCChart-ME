@@ -88,12 +88,16 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 				return createSuperStateAdapter();
 			}
 			@Override
-			public Adapter caseInitilalSuperState(InitilalSuperState object) {
-				return createInitilalSuperStateAdapter();
+			public Adapter caseInitialSuperState(InitialSuperState object) {
+				return createInitialSuperStateAdapter();
 			}
 			@Override
 			public Adapter caseFinalSuperState(FinalSuperState object) {
 				return createFinalSuperStateAdapter();
+			}
+			@Override
+			public Adapter caseInitialFinalSuperState(InitialFinalSuperState object) {
+				return createInitialFinalSuperStateAdapter();
 			}
 			@Override
 			public Adapter caseDeclaration(Declaration object) {
@@ -120,6 +124,10 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 				return createFinalStateAdapter();
 			}
 			@Override
+			public Adapter caseInitialFinalState(InitialFinalState object) {
+				return createInitialFinalStateAdapter();
+			}
+			@Override
 			public Adapter caseConnector(Connector object) {
 				return createConnectorAdapter();
 			}
@@ -144,72 +152,48 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 				return createTransitionAdapter();
 			}
 			@Override
-			public Adapter caseImmediateTransition(ImmediateTransition object) {
-				return createImmediateTransitionAdapter();
-			}
-			@Override
 			public Adapter caseTerminationTransition(TerminationTransition object) {
 				return createTerminationTransitionAdapter();
-			}
-			@Override
-			public Adapter caseConditionalTerminationTransition(ConditionalTerminationTransition object) {
-				return createConditionalTerminationTransitionAdapter();
 			}
 			@Override
 			public Adapter caseStrongAbortTransition(StrongAbortTransition object) {
 				return createStrongAbortTransitionAdapter();
 			}
 			@Override
-			public Adapter caseImmediateStrongAbortTransition(ImmediateStrongAbortTransition object) {
-				return createImmediateStrongAbortTransitionAdapter();
-			}
-			@Override
 			public Adapter caseDeferredTransition(DeferredTransition object) {
 				return createDeferredTransitionAdapter();
-			}
-			@Override
-			public Adapter caseImmediateDeferredTransition(ImmediateDeferredTransition object) {
-				return createImmediateDeferredTransitionAdapter();
-			}
-			@Override
-			public Adapter caseTerminationDefferdTransition(TerminationDefferdTransition object) {
-				return createTerminationDefferdTransitionAdapter();
-			}
-			@Override
-			public Adapter caseConditionalTerminationDeferredTransition(ConditionalTerminationDeferredTransition object) {
-				return createConditionalTerminationDeferredTransitionAdapter();
-			}
-			@Override
-			public Adapter caseStrongAbortDeferredTransition(StrongAbortDeferredTransition object) {
-				return createStrongAbortDeferredTransitionAdapter();
-			}
-			@Override
-			public Adapter caseImmediateStrongAbortDeferredTransition(ImmediateStrongAbortDeferredTransition object) {
-				return createImmediateStrongAbortDeferredTransitionAdapter();
 			}
 			@Override
 			public Adapter caseHistoryTransition(HistoryTransition object) {
 				return createHistoryTransitionAdapter();
 			}
 			@Override
-			public Adapter caseImmediateHistoryTransition(ImmediateHistoryTransition object) {
-				return createImmediateHistoryTransitionAdapter();
+			public Adapter caseTerminationDeferredTransition(TerminationDeferredTransition object) {
+				return createTerminationDeferredTransitionAdapter();
+			}
+			@Override
+			public Adapter caseStrongAbortDeferredTransition(StrongAbortDeferredTransition object) {
+				return createStrongAbortDeferredTransitionAdapter();
 			}
 			@Override
 			public Adapter caseTerminationHistoryTransition(TerminationHistoryTransition object) {
 				return createTerminationHistoryTransitionAdapter();
 			}
 			@Override
-			public Adapter caseConditionalTerminationHistoryTransition(ConditionalTerminationHistoryTransition object) {
-				return createConditionalTerminationHistoryTransitionAdapter();
-			}
-			@Override
 			public Adapter caseStrongAbortHistoryTransition(StrongAbortHistoryTransition object) {
 				return createStrongAbortHistoryTransitionAdapter();
 			}
 			@Override
-			public Adapter caseImmediateStrongAbortHistoryTransition(ImmediateStrongAbortHistoryTransition object) {
-				return createImmediateStrongAbortHistoryTransitionAdapter();
+			public Adapter caseDeferredHistoryTransition(DeferredHistoryTransition object) {
+				return createDeferredHistoryTransitionAdapter();
+			}
+			@Override
+			public Adapter caseStrongAbortDeferredHistoryTransition(StrongAbortDeferredHistoryTransition object) {
+				return createStrongAbortDeferredHistoryTransitionAdapter();
+			}
+			@Override
+			public Adapter caseTerminationDeferredHistoryTransition(TerminationDeferredHistoryTransition object) {
+				return createTerminationDeferredHistoryTransitionAdapter();
 			}
 			@Override
 			public Adapter caseSCChart(SCChart object) {
@@ -306,16 +290,16 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState <em>Initilal Super State</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState <em>Initial Super State</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState
 	 * @generated
 	 */
-	public Adapter createInitilalSuperStateAdapter() {
+	public Adapter createInitialSuperStateAdapter() {
 		return null;
 	}
 
@@ -330,6 +314,20 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createFinalSuperStateAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState <em>Initial Final Super State</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState
+	 * @generated
+	 */
+	public Adapter createInitialFinalSuperStateAdapter() {
 		return null;
 	}
 
@@ -418,6 +416,20 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.InitialFinalState <em>Initial Final State</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.InitialFinalState
+	 * @generated
+	 */
+	public Adapter createInitialFinalStateAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.Connector <em>Connector</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -502,20 +514,6 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition <em>Immediate Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition
-	 * @generated
-	 */
-	public Adapter createImmediateTransitionAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition <em>Termination Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -526,20 +524,6 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createTerminationTransitionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition <em>Conditional Termination Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition
-	 * @generated
-	 */
-	public Adapter createConditionalTerminationTransitionAdapter() {
 		return null;
 	}
 
@@ -558,20 +542,6 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortTransition <em>Immediate Strong Abort Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortTransition
-	 * @generated
-	 */
-	public Adapter createImmediateStrongAbortTransitionAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition <em>Deferred Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -582,76 +552,6 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDeferredTransitionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.ImmediateDeferredTransition <em>Immediate Deferred Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.ImmediateDeferredTransition
-	 * @generated
-	 */
-	public Adapter createImmediateDeferredTransitionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.TerminationDefferdTransition <em>Termination Defferd Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.TerminationDefferdTransition
-	 * @generated
-	 */
-	public Adapter createTerminationDefferdTransitionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationDeferredTransition <em>Conditional Termination Deferred Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationDeferredTransition
-	 * @generated
-	 */
-	public Adapter createConditionalTerminationDeferredTransitionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition <em>Strong Abort Deferred Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition
-	 * @generated
-	 */
-	public Adapter createStrongAbortDeferredTransitionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortDeferredTransition <em>Immediate Strong Abort Deferred Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortDeferredTransition
-	 * @generated
-	 */
-	public Adapter createImmediateStrongAbortDeferredTransitionAdapter() {
 		return null;
 	}
 
@@ -670,16 +570,30 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.ImmediateHistoryTransition <em>Immediate History Transition</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredTransition <em>Termination Deferred Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.ImmediateHistoryTransition
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredTransition
 	 * @generated
 	 */
-	public Adapter createImmediateHistoryTransitionAdapter() {
+	public Adapter createTerminationDeferredTransitionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition <em>Strong Abort Deferred Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition
+	 * @generated
+	 */
+	public Adapter createStrongAbortDeferredTransitionAdapter() {
 		return null;
 	}
 
@@ -698,20 +612,6 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationHistoryTransition <em>Conditional Termination History Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationHistoryTransition
-	 * @generated
-	 */
-	public Adapter createConditionalTerminationHistoryTransitionAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition <em>Strong Abort History Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -726,16 +626,44 @@ public class ScchartAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortHistoryTransition <em>Immediate Strong Abort History Transition</em>}'.
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.DeferredHistoryTransition <em>Deferred History Transition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortHistoryTransition
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.DeferredHistoryTransition
 	 * @generated
 	 */
-	public Adapter createImmediateStrongAbortHistoryTransitionAdapter() {
+	public Adapter createDeferredHistoryTransitionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredHistoryTransition <em>Strong Abort Deferred History Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredHistoryTransition
+	 * @generated
+	 */
+	public Adapter createStrongAbortDeferredHistoryTransitionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredHistoryTransition <em>Termination Deferred History Transition</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredHistoryTransition
+	 * @generated
+	 */
+	public Adapter createTerminationDeferredHistoryTransitionAdapter() {
 		return null;
 	}
 

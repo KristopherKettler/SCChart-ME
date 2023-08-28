@@ -84,10 +84,10 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.INITILAL_SUPER_STATE_VIEW: {
-				InitilalSuperStateView initilalSuperStateView = (InitilalSuperStateView)theEObject;
-				T result = caseInitilalSuperStateView(initilalSuperStateView);
-				if (result == null) result = caseSuperStateView(initilalSuperStateView);
+			case ViewsPackage.INITIAL_SUPER_STATE_VIEW: {
+				InitialSuperStateView initialSuperStateView = (InitialSuperStateView)theEObject;
+				T result = caseInitialSuperStateView(initialSuperStateView);
+				if (result == null) result = caseSuperStateView(initialSuperStateView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -95,6 +95,13 @@ public class ViewsSwitch<T> extends Switch<T> {
 				FinalSuperStateView finalSuperStateView = (FinalSuperStateView)theEObject;
 				T result = caseFinalSuperStateView(finalSuperStateView);
 				if (result == null) result = caseSuperStateView(finalSuperStateView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ViewsPackage.INITIAL_FINAL_SUPER_STATE_VIEW: {
+				InitialFinalSuperStateView initialFinalSuperStateView = (InitialFinalSuperStateView)theEObject;
+				T result = caseInitialFinalSuperStateView(initialFinalSuperStateView);
+				if (result == null) result = caseSuperStateView(initialFinalSuperStateView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -133,6 +140,13 @@ public class ViewsSwitch<T> extends Switch<T> {
 				FinalStateView finalStateView = (FinalStateView)theEObject;
 				T result = caseFinalStateView(finalStateView);
 				if (result == null) result = caseSimpleStateView(finalStateView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ViewsPackage.INITIAL_FINAL_STATE_VIEW: {
+				InitialFinalStateView initialFinalStateView = (InitialFinalStateView)theEObject;
+				T result = caseInitialFinalStateView(initialFinalStateView);
+				if (result == null) result = caseSimpleStateView(initialFinalStateView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -176,24 +190,10 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.IMMEDIATE_TRANSITION_VIEW: {
-				ImmediateTransitionView immediateTransitionView = (ImmediateTransitionView)theEObject;
-				T result = caseImmediateTransitionView(immediateTransitionView);
-				if (result == null) result = caseAbstractTransitionView(immediateTransitionView);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ViewsPackage.TERMINATION_TRANSITION_VIEW: {
 				TerminationTransitionView terminationTransitionView = (TerminationTransitionView)theEObject;
 				T result = caseTerminationTransitionView(terminationTransitionView);
 				if (result == null) result = caseAbstractTransitionView(terminationTransitionView);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ViewsPackage.CONDITIONAL_TERMINATION_TRANSITION_VIEW: {
-				ConditionalTerminationTransitionView conditionalTerminationTransitionView = (ConditionalTerminationTransitionView)theEObject;
-				T result = caseConditionalTerminationTransitionView(conditionalTerminationTransitionView);
-				if (result == null) result = caseAbstractTransitionView(conditionalTerminationTransitionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -204,52 +204,10 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.IMMEDIATE_STRONG_ABORT_TRANSITION_VIEW: {
-				ImmediateStrongAbortTransitionView immediateStrongAbortTransitionView = (ImmediateStrongAbortTransitionView)theEObject;
-				T result = caseImmediateStrongAbortTransitionView(immediateStrongAbortTransitionView);
-				if (result == null) result = caseAbstractTransitionView(immediateStrongAbortTransitionView);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ViewsPackage.DEFERRED_TRANSITION_VIEW: {
 				DeferredTransitionView deferredTransitionView = (DeferredTransitionView)theEObject;
 				T result = caseDeferredTransitionView(deferredTransitionView);
 				if (result == null) result = caseAbstractTransitionView(deferredTransitionView);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ViewsPackage.IMMEDIATE_DEFERRED_TRANSITION_VIEW: {
-				ImmediateDeferredTransitionView immediateDeferredTransitionView = (ImmediateDeferredTransitionView)theEObject;
-				T result = caseImmediateDeferredTransitionView(immediateDeferredTransitionView);
-				if (result == null) result = caseAbstractTransitionView(immediateDeferredTransitionView);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ViewsPackage.TERMINATION_DEFFERD_TRANSITION_VIEW: {
-				TerminationDefferdTransitionView terminationDefferdTransitionView = (TerminationDefferdTransitionView)theEObject;
-				T result = caseTerminationDefferdTransitionView(terminationDefferdTransitionView);
-				if (result == null) result = caseAbstractTransitionView(terminationDefferdTransitionView);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ViewsPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION_VIEW: {
-				ConditionalTerminationDeferredTransitionView conditionalTerminationDeferredTransitionView = (ConditionalTerminationDeferredTransitionView)theEObject;
-				T result = caseConditionalTerminationDeferredTransitionView(conditionalTerminationDeferredTransitionView);
-				if (result == null) result = caseAbstractTransitionView(conditionalTerminationDeferredTransitionView);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ViewsPackage.STRONG_ABORT_DEFERRED_TRANSITION_VIEW: {
-				StrongAbortDeferredTransitionView strongAbortDeferredTransitionView = (StrongAbortDeferredTransitionView)theEObject;
-				T result = caseStrongAbortDeferredTransitionView(strongAbortDeferredTransitionView);
-				if (result == null) result = caseAbstractTransitionView(strongAbortDeferredTransitionView);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case ViewsPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION_VIEW: {
-				ImmediateStrongAbortDeferredTransitionView immediateStrongAbortDeferredTransitionView = (ImmediateStrongAbortDeferredTransitionView)theEObject;
-				T result = caseImmediateStrongAbortDeferredTransitionView(immediateStrongAbortDeferredTransitionView);
-				if (result == null) result = caseAbstractTransitionView(immediateStrongAbortDeferredTransitionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -260,10 +218,17 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.IMMEDIATE_HISTORY_TRANSITION_VIEW: {
-				ImmediateHistoryTransitionView immediateHistoryTransitionView = (ImmediateHistoryTransitionView)theEObject;
-				T result = caseImmediateHistoryTransitionView(immediateHistoryTransitionView);
-				if (result == null) result = caseAbstractTransitionView(immediateHistoryTransitionView);
+			case ViewsPackage.TERMINATION_DEFERRED_TRANSITION_VIEW: {
+				TerminationDeferredTransitionView terminationDeferredTransitionView = (TerminationDeferredTransitionView)theEObject;
+				T result = caseTerminationDeferredTransitionView(terminationDeferredTransitionView);
+				if (result == null) result = caseAbstractTransitionView(terminationDeferredTransitionView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ViewsPackage.STRONG_ABORT_DEFERRED_TRANSITION_VIEW: {
+				StrongAbortDeferredTransitionView strongAbortDeferredTransitionView = (StrongAbortDeferredTransitionView)theEObject;
+				T result = caseStrongAbortDeferredTransitionView(strongAbortDeferredTransitionView);
+				if (result == null) result = caseAbstractTransitionView(strongAbortDeferredTransitionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -274,13 +239,6 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION_VIEW: {
-				ConditionalTerminationHistoryTransitionView conditionalTerminationHistoryTransitionView = (ConditionalTerminationHistoryTransitionView)theEObject;
-				T result = caseConditionalTerminationHistoryTransitionView(conditionalTerminationHistoryTransitionView);
-				if (result == null) result = caseAbstractTransitionView(conditionalTerminationHistoryTransitionView);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case ViewsPackage.STRONG_ABORT_HISTORY_TRANSITION_VIEW: {
 				StrongAbortHistoryTransitionView strongAbortHistoryTransitionView = (StrongAbortHistoryTransitionView)theEObject;
 				T result = caseStrongAbortHistoryTransitionView(strongAbortHistoryTransitionView);
@@ -288,10 +246,24 @@ public class ViewsSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ViewsPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION_VIEW: {
-				ImmediateStrongAbortHistoryTransitionView immediateStrongAbortHistoryTransitionView = (ImmediateStrongAbortHistoryTransitionView)theEObject;
-				T result = caseImmediateStrongAbortHistoryTransitionView(immediateStrongAbortHistoryTransitionView);
-				if (result == null) result = caseAbstractTransitionView(immediateStrongAbortHistoryTransitionView);
+			case ViewsPackage.DEFERRED_HISTORY_TRANSITION_VIEW: {
+				DeferredHistoryTransitionView deferredHistoryTransitionView = (DeferredHistoryTransitionView)theEObject;
+				T result = caseDeferredHistoryTransitionView(deferredHistoryTransitionView);
+				if (result == null) result = caseAbstractTransitionView(deferredHistoryTransitionView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ViewsPackage.STRONG_ABORT_DEFERRED_HISTORY_TRANSITION_VIEW: {
+				StrongAbortDeferredHistoryTransitionView strongAbortDeferredHistoryTransitionView = (StrongAbortDeferredHistoryTransitionView)theEObject;
+				T result = caseStrongAbortDeferredHistoryTransitionView(strongAbortDeferredHistoryTransitionView);
+				if (result == null) result = caseAbstractTransitionView(strongAbortDeferredHistoryTransitionView);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ViewsPackage.TERMINATION_DEFERRED_HISTORY_TRANSITION_VIEW: {
+				TerminationDeferredHistoryTransitionView terminationDeferredHistoryTransitionView = (TerminationDeferredHistoryTransitionView)theEObject;
+				T result = caseTerminationDeferredHistoryTransitionView(terminationDeferredHistoryTransitionView);
+				if (result == null) result = caseAbstractTransitionView(terminationDeferredHistoryTransitionView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -351,17 +323,17 @@ public class ViewsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Initilal Super State View</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Initial Super State View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Initilal Super State View</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Initial Super State View</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInitilalSuperStateView(InitilalSuperStateView object) {
+	public T caseInitialSuperStateView(InitialSuperStateView object) {
 		return null;
 	}
 
@@ -377,6 +349,21 @@ public class ViewsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseFinalSuperStateView(FinalSuperStateView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Initial Final Super State View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Initial Final Super State View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInitialFinalSuperStateView(InitialFinalSuperStateView object) {
 		return null;
 	}
 
@@ -471,6 +458,21 @@ public class ViewsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Initial Final State View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Initial Final State View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInitialFinalStateView(InitialFinalStateView object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Connector View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -561,21 +563,6 @@ public class ViewsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Immediate Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Immediate Transition View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseImmediateTransitionView(ImmediateTransitionView object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Termination Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -587,21 +574,6 @@ public class ViewsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseTerminationTransitionView(TerminationTransitionView object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Conditional Termination Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Conditional Termination Transition View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseConditionalTerminationTransitionView(ConditionalTerminationTransitionView object) {
 		return null;
 	}
 
@@ -621,21 +593,6 @@ public class ViewsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Immediate Strong Abort Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Immediate Strong Abort Transition View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseImmediateStrongAbortTransitionView(ImmediateStrongAbortTransitionView object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Deferred Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -647,81 +604,6 @@ public class ViewsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDeferredTransitionView(DeferredTransitionView object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Immediate Deferred Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Immediate Deferred Transition View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseImmediateDeferredTransitionView(ImmediateDeferredTransitionView object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Termination Defferd Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Termination Defferd Transition View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseTerminationDefferdTransitionView(TerminationDefferdTransitionView object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Conditional Termination Deferred Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Conditional Termination Deferred Transition View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseConditionalTerminationDeferredTransitionView(ConditionalTerminationDeferredTransitionView object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Strong Abort Deferred Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Strong Abort Deferred Transition View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseStrongAbortDeferredTransitionView(StrongAbortDeferredTransitionView object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Immediate Strong Abort Deferred Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Immediate Strong Abort Deferred Transition View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseImmediateStrongAbortDeferredTransitionView(ImmediateStrongAbortDeferredTransitionView object) {
 		return null;
 	}
 
@@ -741,17 +623,32 @@ public class ViewsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Immediate History Transition View</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Termination Deferred Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Immediate History Transition View</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Termination Deferred Transition View</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseImmediateHistoryTransitionView(ImmediateHistoryTransitionView object) {
+	public T caseTerminationDeferredTransitionView(TerminationDeferredTransitionView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Strong Abort Deferred Transition View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Strong Abort Deferred Transition View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStrongAbortDeferredTransitionView(StrongAbortDeferredTransitionView object) {
 		return null;
 	}
 
@@ -771,21 +668,6 @@ public class ViewsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Conditional Termination History Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Conditional Termination History Transition View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseConditionalTerminationHistoryTransitionView(ConditionalTerminationHistoryTransitionView object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Strong Abort History Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -801,17 +683,47 @@ public class ViewsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Immediate Strong Abort History Transition View</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Deferred History Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Immediate Strong Abort History Transition View</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Deferred History Transition View</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseImmediateStrongAbortHistoryTransitionView(ImmediateStrongAbortHistoryTransitionView object) {
+	public T caseDeferredHistoryTransitionView(DeferredHistoryTransitionView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Strong Abort Deferred History Transition View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Strong Abort Deferred History Transition View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStrongAbortDeferredHistoryTransitionView(StrongAbortDeferredHistoryTransitionView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Termination Deferred History Transition View</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Termination Deferred History Transition View</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTerminationDeferredHistoryTransitionView(TerminationDeferredHistoryTransitionView object) {
 		return null;
 	}
 

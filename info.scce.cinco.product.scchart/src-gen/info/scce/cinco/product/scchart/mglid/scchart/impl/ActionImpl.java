@@ -14,8 +14,9 @@ import graphmodel.impl.NodeImpl;
 import info.scce.cinco.product.scchart.mglid.scchart.Action;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece;
-import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
@@ -399,8 +400,8 @@ public class ActionImpl extends NodeImpl implements Action {
 	 * @generated
 	 */
 	@Override
-	public boolean canMoveTo(final InitilalSuperState initilalSuperState, final int x, final int y) {
-		return initilalSuperState.canContain(info.scce.cinco.product.scchart.mglid.scchart.Action.class);
+	public boolean canMoveTo(final InitialSuperState initialSuperState, final int x, final int y) {
+		return initialSuperState.canContain(info.scce.cinco.product.scchart.mglid.scchart.Action.class);
 	}
 
 	/**
@@ -409,18 +410,18 @@ public class ActionImpl extends NodeImpl implements Action {
 	 * @generated
 	 */
 	@Override
-	public void moveTo(final InitilalSuperState initilalSuperState, final int x, final int y) {
+	public void moveTo(final InitialSuperState initialSuperState, final int x, final int y) {
 		transact("Move to", () -> {
 			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
 			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
 			int deltaX = x - ime.getX();
 			int deltaY = y - ime.getY();
-			preMove(initilalSuperState, x, y);
-			s_moveTo(initilalSuperState, x, y);
-			initilalSuperState.getInternalContainerElement().getModelElements().add(ime);
+			preMove(initialSuperState, x, y);
+			s_moveTo(initialSuperState, x, y);
+			initialSuperState.getInternalContainerElement().getModelElements().add(ime);
 			ime.setX(x);
 			ime.setY(y);
-			postMove(sourceContainer, initilalSuperState, x, y, deltaX, deltaY);
+			postMove(sourceContainer, initialSuperState, x, y, deltaX, deltaY);
 		});
 		
 	}
@@ -431,7 +432,7 @@ public class ActionImpl extends NodeImpl implements Action {
 	 * @generated
 	 */
 	@Override
-	public void s_moveTo(final InitilalSuperState initilalSuperState, final int x, final int y) {
+	public void s_moveTo(final InitialSuperState initialSuperState, final int x, final int y) {
 		
 	}
 
@@ -474,6 +475,48 @@ public class ActionImpl extends NodeImpl implements Action {
 	 */
 	@Override
 	public void s_moveTo(final FinalSuperState finalSuperState, final int x, final int y) {
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canMoveTo(final InitialFinalSuperState initialFinalSuperState, final int x, final int y) {
+		return initialFinalSuperState.canContain(info.scce.cinco.product.scchart.mglid.scchart.Action.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void moveTo(final InitialFinalSuperState initialFinalSuperState, final int x, final int y) {
+		transact("Move to", () -> {
+			graphmodel.ModelElementContainer sourceContainer = this.getContainer();
+			graphmodel.internal.InternalNode ime = (graphmodel.internal.InternalNode) this.getInternalElement();
+			int deltaX = x - ime.getX();
+			int deltaY = y - ime.getY();
+			preMove(initialFinalSuperState, x, y);
+			s_moveTo(initialFinalSuperState, x, y);
+			initialFinalSuperState.getInternalContainerElement().getModelElements().add(ime);
+			ime.setX(x);
+			ime.setY(y);
+			postMove(sourceContainer, initialFinalSuperState, x, y, deltaX, deltaY);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void s_moveTo(final InitialFinalSuperState initialFinalSuperState, final int x, final int y) {
 		
 	}
 
@@ -732,13 +775,13 @@ public class ActionImpl extends NodeImpl implements Action {
 			case ScchartPackage.ACTION___SMOVE_TO__SUPERSTATE_INT_INT:
 				s_moveTo((SuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
-			case ScchartPackage.ACTION___CAN_MOVE_TO__INITILALSUPERSTATE_INT_INT:
-				return canMoveTo((InitilalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
-			case ScchartPackage.ACTION___MOVE_TO__INITILALSUPERSTATE_INT_INT:
-				moveTo((InitilalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.ACTION___CAN_MOVE_TO__INITIALSUPERSTATE_INT_INT:
+				return canMoveTo((InitialSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.ACTION___MOVE_TO__INITIALSUPERSTATE_INT_INT:
+				moveTo((InitialSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
-			case ScchartPackage.ACTION___SMOVE_TO__INITILALSUPERSTATE_INT_INT:
-				s_moveTo((InitilalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.ACTION___SMOVE_TO__INITIALSUPERSTATE_INT_INT:
+				s_moveTo((InitialSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
 			case ScchartPackage.ACTION___CAN_MOVE_TO__FINALSUPERSTATE_INT_INT:
 				return canMoveTo((FinalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
@@ -747,6 +790,14 @@ public class ActionImpl extends NodeImpl implements Action {
 				return null;
 			case ScchartPackage.ACTION___SMOVE_TO__FINALSUPERSTATE_INT_INT:
 				s_moveTo((FinalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.ACTION___CAN_MOVE_TO__INITIALFINALSUPERSTATE_INT_INT:
+				return canMoveTo((InitialFinalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+			case ScchartPackage.ACTION___MOVE_TO__INITIALFINALSUPERSTATE_INT_INT:
+				moveTo((InitialFinalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
+				return null;
+			case ScchartPackage.ACTION___SMOVE_TO__INITIALFINALSUPERSTATE_INT_INT:
+				s_moveTo((InitialFinalSuperState)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 				return null;
 			case ScchartPackage.ACTION___CAN_MOVE_TO__SCCHARTREFERECE_INT_INT:
 				return canMoveTo((SCChartReferece)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));

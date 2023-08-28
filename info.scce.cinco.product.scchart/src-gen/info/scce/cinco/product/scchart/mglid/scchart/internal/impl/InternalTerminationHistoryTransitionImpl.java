@@ -19,13 +19,56 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationHistoryTransitionImpl#getCondition <em>Condition</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationHistoryTransitionImpl#getCount_delay <em>Count delay</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationHistoryTransitionImpl#isDeepHistory <em>Deep History</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationHistoryTransitionImpl#isImmediate <em>Immediate</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalTerminationHistoryTransitionImpl#getEffect <em>Effect</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTransitionImpl implements InternalTerminationHistoryTransition {
+	/**
+	 * The default value of the '{@link #getCondition() <em>Condition</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCondition()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String CONDITION_EDEFAULT = "<No condition>";
+
+	/**
+	 * The cached value of the '{@link #getCondition() <em>Condition</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCondition()
+	 * @generated
+	 * @ordered
+	 */
+	protected String condition = CONDITION_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getCount_delay() <em>Count delay</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCount_delay()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String COUNT_DELAY_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getCount_delay() <em>Count delay</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCount_delay()
+	 * @generated
+	 * @ordered
+	 */
+	protected String count_delay = COUNT_DELAY_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #isDeepHistory() <em>Deep History</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -45,6 +88,26 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 	 * @ordered
 	 */
 	protected boolean deepHistory = DEEP_HISTORY_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #isImmediate() <em>Immediate</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isImmediate()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean IMMEDIATE_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isImmediate() <em>Immediate</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isImmediate()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean immediate = IMMEDIATE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getEffect() <em>Effect</em>}' attribute.
@@ -91,6 +154,52 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 	 * @generated
 	 */
 	@Override
+	public String getCondition() {
+		return condition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCondition(String newCondition) {
+		String oldCondition = condition;
+		condition = newCondition;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__CONDITION, oldCondition, condition));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCount_delay() {
+		return count_delay;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCount_delay(String newCount_delay) {
+		String oldCount_delay = count_delay;
+		count_delay = newCount_delay;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__COUNT_DELAY, oldCount_delay, count_delay));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean isDeepHistory() {
 		return deepHistory;
 	}
@@ -106,6 +215,29 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 		deepHistory = newDeepHistory;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DEEP_HISTORY, oldDeepHistory, deepHistory));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isImmediate() {
+		return immediate;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setImmediate(boolean newImmediate) {
+		boolean oldImmediate = immediate;
+		immediate = newImmediate;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__IMMEDIATE, oldImmediate, immediate));
 	}
 
 	/**
@@ -139,8 +271,14 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__CONDITION:
+				return getCondition();
+			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__COUNT_DELAY:
+				return getCount_delay();
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DEEP_HISTORY:
 				return isDeepHistory();
+			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__IMMEDIATE:
+				return isImmediate();
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__EFFECT:
 				return getEffect();
 		}
@@ -155,8 +293,17 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__CONDITION:
+				setCondition((String)newValue);
+				return;
+			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__COUNT_DELAY:
+				setCount_delay((String)newValue);
+				return;
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DEEP_HISTORY:
 				setDeepHistory((Boolean)newValue);
+				return;
+			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__IMMEDIATE:
+				setImmediate((Boolean)newValue);
 				return;
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__EFFECT:
 				setEffect((String)newValue);
@@ -173,8 +320,17 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__CONDITION:
+				setCondition(CONDITION_EDEFAULT);
+				return;
+			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__COUNT_DELAY:
+				setCount_delay(COUNT_DELAY_EDEFAULT);
+				return;
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DEEP_HISTORY:
 				setDeepHistory(DEEP_HISTORY_EDEFAULT);
+				return;
+			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__IMMEDIATE:
+				setImmediate(IMMEDIATE_EDEFAULT);
 				return;
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__EFFECT:
 				setEffect(EFFECT_EDEFAULT);
@@ -191,8 +347,14 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__CONDITION:
+				return CONDITION_EDEFAULT == null ? condition != null : !CONDITION_EDEFAULT.equals(condition);
+			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__COUNT_DELAY:
+				return COUNT_DELAY_EDEFAULT == null ? count_delay != null : !COUNT_DELAY_EDEFAULT.equals(count_delay);
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__DEEP_HISTORY:
 				return deepHistory != DEEP_HISTORY_EDEFAULT;
+			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__IMMEDIATE:
+				return immediate != IMMEDIATE_EDEFAULT;
 			case InternalPackage.INTERNAL_TERMINATION_HISTORY_TRANSITION__EFFECT:
 				return EFFECT_EDEFAULT == null ? effect != null : !EFFECT_EDEFAULT.equals(effect);
 		}
@@ -209,8 +371,14 @@ public class InternalTerminationHistoryTransitionImpl extends InternalAbstractTr
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (deepHistory: ");
+		result.append(" (condition: ");
+		result.append(condition);
+		result.append(", count_delay: ");
+		result.append(count_delay);
+		result.append(", deepHistory: ");
 		result.append(deepHistory);
+		result.append(", immediate: ");
+		result.append(immediate);
 		result.append(", effect: ");
 		result.append(effect);
 		result.append(')');

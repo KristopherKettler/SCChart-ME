@@ -107,6 +107,75 @@ public class TerminationTransitionViewImpl extends AbstractTransitionViewImpl im
 	 * @generated
 	 */
 	@Override
+	public String getCondition() {
+		return getInternalTerminationTransition().getCondition();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCondition(final String _arg) {
+		getInternalTerminationTransition().getElement().transact("Set Condition", () -> {
+			getInternalTerminationTransition().setCondition(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCount_delay() {
+		return getInternalTerminationTransition().getCount_delay();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCount_delay(final String _arg) {
+		getInternalTerminationTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalTerminationTransition().setCount_delay(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isImmediate() {
+		return getInternalTerminationTransition().isImmediate();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setImmediate(final boolean _arg) {
+		getInternalTerminationTransition().getElement().transact("Set Immediate", () -> {
+			getInternalTerminationTransition().setImmediate(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEffect() {
 		return getInternalTerminationTransition().getEffect();
 	}
@@ -191,6 +260,21 @@ public class TerminationTransitionViewImpl extends AbstractTransitionViewImpl im
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
+			case ViewsPackage.TERMINATION_TRANSITION_VIEW___GET_CONDITION:
+				return getCondition();
+			case ViewsPackage.TERMINATION_TRANSITION_VIEW___SET_CONDITION__STRING:
+				setCondition((String)arguments.get(0));
+				return null;
+			case ViewsPackage.TERMINATION_TRANSITION_VIEW___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ViewsPackage.TERMINATION_TRANSITION_VIEW___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
+				return null;
+			case ViewsPackage.TERMINATION_TRANSITION_VIEW___IS_IMMEDIATE:
+				return isImmediate();
+			case ViewsPackage.TERMINATION_TRANSITION_VIEW___SET_IMMEDIATE__BOOLEAN:
+				setImmediate((Boolean)arguments.get(0));
+				return null;
 			case ViewsPackage.TERMINATION_TRANSITION_VIEW___GET_EFFECT:
 				return getEffect();
 			case ViewsPackage.TERMINATION_TRANSITION_VIEW___SET_EFFECT__STRING:

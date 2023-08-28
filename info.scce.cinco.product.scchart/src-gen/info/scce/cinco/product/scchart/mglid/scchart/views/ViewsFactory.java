@@ -49,13 +49,13 @@ public interface ViewsFactory extends EFactory {
 	SuperStateView createSuperStateView();
 
 	/**
-	 * Returns a new object of class '<em>Initilal Super State View</em>'.
+	 * Returns a new object of class '<em>Initial Super State View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Initilal Super State View</em>'.
+	 * @return a new object of class '<em>Initial Super State View</em>'.
 	 * @generated
 	 */
-	InitilalSuperStateView createInitilalSuperStateView();
+	InitialSuperStateView createInitialSuperStateView();
 
 	/**
 	 * Returns a new object of class '<em>Final Super State View</em>'.
@@ -65,6 +65,15 @@ public interface ViewsFactory extends EFactory {
 	 * @generated
 	 */
 	FinalSuperStateView createFinalSuperStateView();
+
+	/**
+	 * Returns a new object of class '<em>Initial Final Super State View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Initial Final Super State View</em>'.
+	 * @generated
+	 */
+	InitialFinalSuperStateView createInitialFinalSuperStateView();
 
 	/**
 	 * Returns a new object of class '<em>Declaration View</em>'.
@@ -121,6 +130,15 @@ public interface ViewsFactory extends EFactory {
 	FinalStateView createFinalStateView();
 
 	/**
+	 * Returns a new object of class '<em>Initial Final State View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Initial Final State View</em>'.
+	 * @generated
+	 */
+	InitialFinalStateView createInitialFinalStateView();
+
+	/**
 	 * Returns a new object of class '<em>Connector View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -175,15 +193,6 @@ public interface ViewsFactory extends EFactory {
 	TransitionView createTransitionView();
 
 	/**
-	 * Returns a new object of class '<em>Immediate Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate Transition View</em>'.
-	 * @generated
-	 */
-	ImmediateTransitionView createImmediateTransitionView();
-
-	/**
 	 * Returns a new object of class '<em>Termination Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -191,15 +200,6 @@ public interface ViewsFactory extends EFactory {
 	 * @generated
 	 */
 	TerminationTransitionView createTerminationTransitionView();
-
-	/**
-	 * Returns a new object of class '<em>Conditional Termination Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Conditional Termination Transition View</em>'.
-	 * @generated
-	 */
-	ConditionalTerminationTransitionView createConditionalTerminationTransitionView();
 
 	/**
 	 * Returns a new object of class '<em>Strong Abort Transition View</em>'.
@@ -211,15 +211,6 @@ public interface ViewsFactory extends EFactory {
 	StrongAbortTransitionView createStrongAbortTransitionView();
 
 	/**
-	 * Returns a new object of class '<em>Immediate Strong Abort Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate Strong Abort Transition View</em>'.
-	 * @generated
-	 */
-	ImmediateStrongAbortTransitionView createImmediateStrongAbortTransitionView();
-
-	/**
 	 * Returns a new object of class '<em>Deferred Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -227,51 +218,6 @@ public interface ViewsFactory extends EFactory {
 	 * @generated
 	 */
 	DeferredTransitionView createDeferredTransitionView();
-
-	/**
-	 * Returns a new object of class '<em>Immediate Deferred Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate Deferred Transition View</em>'.
-	 * @generated
-	 */
-	ImmediateDeferredTransitionView createImmediateDeferredTransitionView();
-
-	/**
-	 * Returns a new object of class '<em>Termination Defferd Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Termination Defferd Transition View</em>'.
-	 * @generated
-	 */
-	TerminationDefferdTransitionView createTerminationDefferdTransitionView();
-
-	/**
-	 * Returns a new object of class '<em>Conditional Termination Deferred Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Conditional Termination Deferred Transition View</em>'.
-	 * @generated
-	 */
-	ConditionalTerminationDeferredTransitionView createConditionalTerminationDeferredTransitionView();
-
-	/**
-	 * Returns a new object of class '<em>Strong Abort Deferred Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Strong Abort Deferred Transition View</em>'.
-	 * @generated
-	 */
-	StrongAbortDeferredTransitionView createStrongAbortDeferredTransitionView();
-
-	/**
-	 * Returns a new object of class '<em>Immediate Strong Abort Deferred Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate Strong Abort Deferred Transition View</em>'.
-	 * @generated
-	 */
-	ImmediateStrongAbortDeferredTransitionView createImmediateStrongAbortDeferredTransitionView();
 
 	/**
 	 * Returns a new object of class '<em>History Transition View</em>'.
@@ -283,13 +229,22 @@ public interface ViewsFactory extends EFactory {
 	HistoryTransitionView createHistoryTransitionView();
 
 	/**
-	 * Returns a new object of class '<em>Immediate History Transition View</em>'.
+	 * Returns a new object of class '<em>Termination Deferred Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate History Transition View</em>'.
+	 * @return a new object of class '<em>Termination Deferred Transition View</em>'.
 	 * @generated
 	 */
-	ImmediateHistoryTransitionView createImmediateHistoryTransitionView();
+	TerminationDeferredTransitionView createTerminationDeferredTransitionView();
+
+	/**
+	 * Returns a new object of class '<em>Strong Abort Deferred Transition View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Strong Abort Deferred Transition View</em>'.
+	 * @generated
+	 */
+	StrongAbortDeferredTransitionView createStrongAbortDeferredTransitionView();
 
 	/**
 	 * Returns a new object of class '<em>Termination History Transition View</em>'.
@@ -301,15 +256,6 @@ public interface ViewsFactory extends EFactory {
 	TerminationHistoryTransitionView createTerminationHistoryTransitionView();
 
 	/**
-	 * Returns a new object of class '<em>Conditional Termination History Transition View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Conditional Termination History Transition View</em>'.
-	 * @generated
-	 */
-	ConditionalTerminationHistoryTransitionView createConditionalTerminationHistoryTransitionView();
-
-	/**
 	 * Returns a new object of class '<em>Strong Abort History Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -319,13 +265,31 @@ public interface ViewsFactory extends EFactory {
 	StrongAbortHistoryTransitionView createStrongAbortHistoryTransitionView();
 
 	/**
-	 * Returns a new object of class '<em>Immediate Strong Abort History Transition View</em>'.
+	 * Returns a new object of class '<em>Deferred History Transition View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate Strong Abort History Transition View</em>'.
+	 * @return a new object of class '<em>Deferred History Transition View</em>'.
 	 * @generated
 	 */
-	ImmediateStrongAbortHistoryTransitionView createImmediateStrongAbortHistoryTransitionView();
+	DeferredHistoryTransitionView createDeferredHistoryTransitionView();
+
+	/**
+	 * Returns a new object of class '<em>Strong Abort Deferred History Transition View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Strong Abort Deferred History Transition View</em>'.
+	 * @generated
+	 */
+	StrongAbortDeferredHistoryTransitionView createStrongAbortDeferredHistoryTransitionView();
+
+	/**
+	 * Returns a new object of class '<em>Termination Deferred History Transition View</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Termination Deferred History Transition View</em>'.
+	 * @generated
+	 */
+	TerminationDeferredHistoryTransitionView createTerminationDeferredHistoryTransitionView();
 
 	/**
 	 * Returns a new object of class '<em>SC Chart View</em>'.

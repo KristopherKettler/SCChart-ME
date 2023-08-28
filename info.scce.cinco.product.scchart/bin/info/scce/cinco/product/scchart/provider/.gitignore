@@ -9,3 +9,5 @@
 /DeclarationTypeProvider.java
 /.ReferenceAssignmentProvider.java._trace
 /.AssignmentProvider.java._trace
+/.TransitionExiteffectProvider.java._trace
+/.TransitionEnteringeffectProvider.java._trace

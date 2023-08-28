@@ -176,6 +176,29 @@ public class HistoryTransitionViewImpl extends AbstractTransitionViewImpl implem
 	 * @generated
 	 */
 	@Override
+	public boolean isImmediate() {
+		return getInternalHistoryTransition().isImmediate();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setImmediate(final boolean _arg) {
+		getInternalHistoryTransition().getElement().transact("Set Immediate", () -> {
+			getInternalHistoryTransition().setImmediate(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEffect() {
 		return getInternalHistoryTransition().getEffect();
 	}
@@ -274,6 +297,11 @@ public class HistoryTransitionViewImpl extends AbstractTransitionViewImpl implem
 				return isDeepHistory();
 			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN:
 				setDeepHistory((Boolean)arguments.get(0));
+				return null;
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___IS_IMMEDIATE:
+				return isImmediate();
+			case ViewsPackage.HISTORY_TRANSITION_VIEW___SET_IMMEDIATE__BOOLEAN:
+				setImmediate((Boolean)arguments.get(0));
 				return null;
 			case ViewsPackage.HISTORY_TRANSITION_VIEW___GET_EFFECT:
 				return getEffect();

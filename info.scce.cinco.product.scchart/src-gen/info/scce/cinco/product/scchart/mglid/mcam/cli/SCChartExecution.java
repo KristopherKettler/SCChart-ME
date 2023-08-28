@@ -48,6 +48,12 @@ public class SCChartExecution extends de.jabc.cinco.meta.plugin.mcam.runtime.cor
 
 		reg.add(new info.scce.cinco.product.scchart.checks.RootStateCheck());
 		reg.add(new info.scce.cinco.product.scchart.checks.RegionCheck());
+		reg.add(new info.scce.cinco.product.scchart.checks.SuperStateCheck());
+		reg.add(new info.scce.cinco.product.scchart.checks.StateCheck());
+		reg.add(new info.scce.cinco.product.scchart.checks.DeclarationCheck());
+		reg.add(new info.scce.cinco.product.scchart.checks.SuspendCheck());
+		reg.add(new info.scce.cinco.product.scchart.checks.ActionCheck());
+		reg.add(new info.scce.cinco.product.scchart.checks.TransitionCheck());
 		reg.add(new info.scce.cinco.product.scchart.mglid.mcam.modules.checks.SCChartContainmentCheck());
 		reg.add(new info.scce.cinco.product.scchart.mglid.mcam.modules.checks.SCChartIncomingCheck());
 		reg.add(new info.scce.cinco.product.scchart.mglid.mcam.modules.checks.SCChartOutgoingCheck());

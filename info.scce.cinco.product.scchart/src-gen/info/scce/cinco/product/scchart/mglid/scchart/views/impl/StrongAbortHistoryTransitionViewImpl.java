@@ -176,6 +176,29 @@ public class StrongAbortHistoryTransitionViewImpl extends AbstractTransitionView
 	 * @generated
 	 */
 	@Override
+	public boolean isImmediate() {
+		return getInternalStrongAbortHistoryTransition().isImmediate();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setImmediate(final boolean _arg) {
+		getInternalStrongAbortHistoryTransition().getElement().transact("Set Immediate", () -> {
+			getInternalStrongAbortHistoryTransition().setImmediate(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEffect() {
 		return getInternalStrongAbortHistoryTransition().getEffect();
 	}
@@ -274,6 +297,11 @@ public class StrongAbortHistoryTransitionViewImpl extends AbstractTransitionView
 				return isDeepHistory();
 			case ViewsPackage.STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN:
 				setDeepHistory((Boolean)arguments.get(0));
+				return null;
+			case ViewsPackage.STRONG_ABORT_HISTORY_TRANSITION_VIEW___IS_IMMEDIATE:
+				return isImmediate();
+			case ViewsPackage.STRONG_ABORT_HISTORY_TRANSITION_VIEW___SET_IMMEDIATE__BOOLEAN:
+				setImmediate((Boolean)arguments.get(0));
 				return null;
 			case ViewsPackage.STRONG_ABORT_HISTORY_TRANSITION_VIEW___GET_EFFECT:
 				return getEffect();

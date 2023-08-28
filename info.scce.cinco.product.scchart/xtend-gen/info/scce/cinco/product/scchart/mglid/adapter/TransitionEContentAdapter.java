@@ -1,10 +1,14 @@
 package info.scce.cinco.product.scchart.mglid.adapter;
 
 import com.google.common.base.Objects;
+import de.jabc.cinco.meta.core.event.hub.EventHub;
+import de.jabc.cinco.meta.core.event.hub.impl.PayloadContext;
+import de.jabc.cinco.meta.plugin.event.api.payload.PostAttributeChangePayload;
 import de.jabc.cinco.meta.runtime.contentadapter.CincoEContentAdapter;
 import graphmodel.GraphModel;
 import graphmodel.ModelElement;
 import graphmodel.internal.InternalGraphModel;
+import info.scce.cinco.product.scchart.mglid.scchart.Transition;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage;
 import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalTransition;
 import org.eclipse.emf.common.notify.Notification;
@@ -31,9 +35,15 @@ public class TransitionEContentAdapter extends EContentAdapter implements CincoE
         if (_isRelevant) {
           _matched=true;
           ModelElement _element = ((InternalTransition)o).getElement();
+          String _name = ((EStructuralFeature)feature).getName();
+          Object _oldValue = notification.getOldValue();
+          final PostAttributeChangePayload<Transition> eventPayload = new PostAttributeChangePayload<Transition>(((Transition) _element), _name, _oldValue);
+          final PayloadContext<PostAttributeChangePayload<Transition>, Void> eventContext = new PayloadContext<PostAttributeChangePayload<Transition>, Void>("event.post.attributeChange.info_scce_cinco_product_scchart_mglid_scchart_Transition", eventPayload);
+          EventHub.getInstance().notifyFirst(eventContext);
+          ModelElement _element_1 = ((InternalTransition)o).getElement();
           GraphModel _rootElement = null;
-          if (_element!=null) {
-            _rootElement=_element.getRootElement();
+          if (_element_1!=null) {
+            _rootElement=_element_1.getRootElement();
           }
           if (_rootElement!=null) {
             _rootElement.updateModelElements();

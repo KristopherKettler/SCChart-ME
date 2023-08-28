@@ -15,29 +15,47 @@ import info.scce.cinco.product.scchart.mglid.scchart.Action
 import info.scce.cinco.product.scchart.mglid.scchart.Region
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState
-import graphmodel.Edge
 import org.eclipse.emf.common.util.EList
 import info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition
-import java.util.Comparator
 import info.scce.cinco.product.scchart.mglid.scchart.Transition
-import info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState
 import info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition
-import info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition
 import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition
-import info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortTransition
+import info.scce.cinco.product.scchart.mglid.scchart.FinalState
+import info.scce.cinco.product.scchart.mglid.scchart.InitialFinalState
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState
+import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState
+import info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState
+import info.scce.cinco.product.scchart.mglid.scchart.Connector
+import info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition
+import info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition
+import info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredTransition
+import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition
+import info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition
+import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition
+import info.scce.cinco.product.scchart.mglid.scchart.DeferredHistoryTransition
+import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredHistoryTransition
+import info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredHistoryTransition
+import org.apache.commons.cli.*;
+import java.io.File
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.concurrent.Future
+import java.net.URL
 
 class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>{
 	
 	String fileName
-	var sum = 0.0
 	
 	override generate(SCChart scchart, IPath path, IProgressMonitor monitor) {
 		val fullFileName = scchart.file.name
 		fileName = fullFileName.substring(0, fullFileName.lastIndexOf('.'))
 		val targetFile = workspaceRoot.getFileForLocation(path.append(fileName + ".sctx"))
 		EclipseFileUtils.writeToFile(targetFile, template(scchart))
-
+		commandLineParser(#['a','v'])
 	}
 	
 	def template(SCChart scchart) '''
@@ -117,20 +135,46 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 	
 	def genRegion(Region region)'''
 		region «IF(region.name!==null)»«region.name»«ENDIF»«IF(region.label!==null)»"«region.label»"«ENDIF» {
-			«FOR initState : region.find(InitialState)»
-			«initState.genInitState»
-			«initState.getOutgoingAbstractTransitions().genEdgesOrder»
+			«FOR superState : region.find(SuperState)»
+			«superState.genSuperState»
+			«superState.getOutgoingAbstractTransitions().genEdgesOrder»
+			«ENDFOR»
+			«FOR state : region.find(SimpleState)»
+			«state.genState»
+			«state.getOutgoingAbstractTransitions().genEdgesOrder»
 			«ENDFOR»
 		}
 	'''
 	
-	def genInitState(InitialState initState){
-		var string = "initial state "
-		string = string + initState.name
-		if(initState.label!==null){
-			string = string + " " + initState.label
+	def genSuperState(SuperState superState)'''
+		«superState.superStateType» {
+			«FOR declaration : superState.find(Declaration)»
+			«declaration.genDeclaration»
+			«ENDFOR»
+			«FOR suspend : superState.find(Suspend)»
+			«suspend.genSuspend»
+			«ENDFOR»
+			«FOR action : superState.find(Action)»
+			«action.genAction»
+			«ENDFOR»
+			«FOR region : superState.find(Region)»
+			«region.genRegion»
+			«ENDFOR»
 		}
-		return string
+	'''
+		
+	def superStateType(SuperState superState){
+		var string = "state "
+		string = string + superState.name
+		if(superState.label!==null){
+			string = string + " " + superState.label
+		}
+		switch superState {
+			case superState instanceof InitialSuperState : return "initial " + string
+			case superState instanceof FinalSuperState : return "final " + string
+			case superState instanceof InitialFinalSuperState : return "initial final " + string
+			default : return string
+		}
 	}
 	
 	def genState(SimpleState simpleState){
@@ -139,49 +183,41 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 		if(simpleState.label!==null){
 			string = string + " " + simpleState.label
 		}
-		return string
+		switch simpleState {
+			case simpleState instanceof InitialState : return "initial " + string
+			case simpleState instanceof FinalState : return "final " + string
+			case simpleState instanceof InitialFinalState : return "initial final " + string
+			case simpleState instanceof Connector : return "connector " + string
+			default : return string
+		}
+		
 	}
 	
-	def genEdgesOrder(EList<AbstractTransition> transitions){
-		for(var i = 0; i <transitions.size;i++){
-			var continue = false
-			var j = 0
-			while(!continue&&j<transitions.size){
-				if(transitions.get(j).priority==i){
-					transitions.get(j).genEdge
-					continue = true
-				}
-			}
-		}
-	}
-//
-//	'''
-//		«FOR transition : transitions»
-//		«transition.genEdge»
-//		«ENDFOR»
-//	'''
+	def genEdgesOrder(EList<AbstractTransition> transitions)'''
+		«FOR i : 1..transitions.size»
+		«FOR transition : transitions»
+		«IF(transition.priority==i.toString)»
+		«transition.genEdge»
+		«ENDIF»
+		«ENDFOR»
+		«ENDFOR»
+	'''
+
 	
 	def genEdge(AbstractTransition transition){
 			switch transition {
 				case transition instanceof Transition : return genTransition(transition as Transition)
-//				case transition instanceof ImmediateTransition : return genImmediateTransition(transition as ImmediateTransition)
-//				case transition instanceof TerminationTransition : return genTerminationTransition(transition as TerminationTransition)
-//				case transition instanceof ConditionalTerminationTransition : return genConditionalTerminationTransition(transition as ConditionalTerminationTransition)
-//				case transition instanceof StrongAbortTransition : return genStrongAbortTransition(transition as StrongAbortTransition)
-//				case transition instanceof ImmediateStrongAbortTransition : return genImmediateStrongAbortTransition(transition as ImmediateStrongAbortTransition)
-//				case transition instanceof Transition : return genTransition(transition as Transition)
-//				case transition instanceof Transition : return genTransition(transition as Transition)
-//				case transition instanceof Transition : return genTransition(transition as Transition)
-//				case transition instanceof Transition : return genTransition(transition as Transition)
-//				case transition instanceof Transition : return genTransition(transition as Transition)
-//				case transition instanceof Transition : return genTransition(transition as Transition)
-//				case transition instanceof Transition : return genTransition(transition as Transition)
-//				case transition instanceof Transition : return genTransition(transition as Transition)
-//				case transition instanceof Transition : return genTransition(transition as Transition)
-//				case transition instanceof Transition : return genTransition(transition as Transition)
-//				case transition instanceof Transition : return genTransition(transition as Transition)
-//				case transition instanceof Transition : return genTransition(transition as Transition)
-				default : return ""
+				case transition instanceof TerminationTransition : return genTerminationTransition(transition as TerminationTransition)
+				case transition instanceof StrongAbortTransition : return genStrongAbortTransition(transition as StrongAbortTransition)
+				case transition instanceof DeferredTransition : return genDeferredTransition(transition as DeferredTransition)
+				case transition instanceof HistoryTransition : return genHistoryTransition(transition as HistoryTransition)
+				case transition instanceof TerminationDeferredTransition : return genTerminationDeferredTransition(transition as TerminationDeferredTransition)
+				case transition instanceof StrongAbortDeferredTransition : return genStrongAbortDeferredTransition(transition as StrongAbortDeferredTransition)
+				case transition instanceof TerminationHistoryTransition : return genTerminationHistoryTransition(transition as TerminationHistoryTransition)
+				case transition instanceof StrongAbortHistoryTransition : return genStrongAbortHistoryTransition(transition as StrongAbortHistoryTransition)
+				case transition instanceof DeferredHistoryTransition : return genDeferredHistoryTransition(transition as DeferredHistoryTransition)
+				case transition instanceof StrongAbortDeferredHistoryTransition : return genStrongAbortDeferredHistoryTransition(transition as StrongAbortDeferredHistoryTransition)
+				case transition instanceof TerminationDeferredHistoryTransition : return genTerminationDeferredHistoryTransition(transition as TerminationDeferredHistoryTransition)
 			}
 	}
 	
@@ -197,58 +233,22 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 				string = "if " + string + transition.condition + " "
 			}
 		}
-		if(transition.effect!==null){
-			if(!transition.effect.trim.isEmpty){
-				string = string + " do " transition.effect + " "
-			}
-		}
-		switch transition.getTargetElement {
-			case transition.getTargetElement instanceof SuperState : string + "go to " + (transition.getTargetElement as SuperState).name
-			case transition.getTargetElement instanceof SimpleState : string + "go to " + (transition.getTargetElement as SimpleState).name
-		}
-		return string
-	}
-	
-	def genImmediateTransition(ImmediateTransition transition){
-		var string =  ""
-		if(transition.count_delay!==null){
-			if(!transition.count_delay.trim.isEmpty){
-				string = string + transition.count_delay + " "
-			}
-		}
-		if(transition.condition!==null){
-			if(!transition.condition.trim.isEmpty){
-				string = "if " + string + transition.condition + " "
-			}
+		if(transition.immediate){
+			string = "immediate " + string
 		}
 		if(transition.effect!==null){
 			if(!transition.effect.trim.isEmpty){
-				string = string + " do " transition.effect + " "
+				string = string + "do " + transition.effect + " "
 			}
 		}
-		switch transition.getTargetElement {
-			case transition.getTargetElement instanceof SuperState : string + "go to " + (transition.getTargetElement as SuperState).name
-			case transition.getTargetElement instanceof SimpleState : string + "go to " + (transition.getTargetElement as SimpleState).name
+		switch transition {
+			case transition.getTargetElement instanceof SuperState : return string + "go to " + (transition.getTargetElement as SuperState).name
+			case transition.getTargetElement instanceof SimpleState : return string + "go to " + (transition.getTargetElement as SimpleState).name
 		}
-		return string
 	}
 	
 	def genTerminationTransition(TerminationTransition transition){
 		var string =  ""
-		if(transition.effect!==null){
-			if(!transition.effect.trim.isEmpty){
-				string = string + " do " transition.effect + " "
-			}
-		}
-		switch transition.getTargetElement {
-			case transition.getTargetElement instanceof SuperState : string + "join to " + (transition.getTargetElement as SuperState).name
-			case transition.getTargetElement instanceof SimpleState : string + "join to " + (transition.getTargetElement as SimpleState).name
-		}
-		return string
-	}
-	
-	def genConditionalTerminationTransition(ConditionalTerminationTransition transition){
-		var string =  ""
 		if(transition.count_delay!==null){
 			if(!transition.count_delay.trim.isEmpty){
 				string = string + transition.count_delay + " "
@@ -259,16 +259,18 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 				string = "if " + string + transition.condition + " "
 			}
 		}
+		if(transition.immediate){
+			string = "immediate " + string
+		}
 		if(transition.effect!==null){
 			if(!transition.effect.trim.isEmpty){
-				string = string + " do " transition.effect + " "
+				string = string + "do " + transition.effect + " "
 			}
 		}
 		switch transition.getTargetElement {
-			case transition.getTargetElement instanceof SuperState : string + "join to " + (transition.getTargetElement as SuperState).name
-			case transition.getTargetElement instanceof SimpleState : string + "join to " + (transition.getTargetElement as SimpleState).name
+			case transition.getTargetElement instanceof SuperState : return string + "join to " + (transition.getTargetElement as SuperState).name
+			case transition.getTargetElement instanceof SimpleState : return string + "join to " + (transition.getTargetElement as SimpleState).name
 		}
-		return string
 	}
 	
 	def genStrongAbortTransition(StrongAbortTransition transition){
@@ -283,19 +285,22 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 				string = "if " + string + transition.condition + " "
 			}
 		}
+		if(transition.immediate){
+			string = "immediate " + string
+		}
 		if(transition.effect!==null){
 			if(!transition.effect.trim.isEmpty){
-				string = string + " do " transition.effect + " "
+				string = string + "do " + transition.effect + " "
 			}
 		}
-		switch transition.getTargetElement {
+		switch transition {
 			case transition.getTargetElement instanceof SuperState : string + "abort to " + (transition.getTargetElement as SuperState).name
 			case transition.getTargetElement instanceof SimpleState : string + "abort to " + (transition.getTargetElement as SimpleState).name
 		}
 		return string
 	}
 	
-	def genImmediateStrongAbortTransition(ImmediateStrongAbortTransition transition){
+	def genDeferredTransition(DeferredTransition transition){
 		var string =  ""
 		if(transition.count_delay!==null){
 			if(!transition.count_delay.trim.isEmpty){
@@ -304,18 +309,320 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 		}
 		if(transition.condition!==null){
 			if(!transition.condition.trim.isEmpty){
-				string = "immediate if " + string + transition.condition + " "
+				string = "if " + string + transition.condition + " "
 			}
+		}
+		if(transition.immediate){
+			string = "immediate " + string
 		}
 		if(transition.effect!==null){
 			if(!transition.effect.trim.isEmpty){
-				string = string + " do " transition.effect + " "
+				string = string + "do " + transition.effect + " "
+			}
+		}
+		switch transition {
+			case transition.getTargetElement instanceof SuperState : string + "go to " + (transition.getTargetElement as SuperState).name + "deferred"
+			case transition.getTargetElement instanceof SimpleState : string + "go to " + (transition.getTargetElement as SimpleState).name + "deferred"
+		}
+		return string
+	}
+	
+	def genHistoryTransition(HistoryTransition transition){
+		var string =  ""
+		if(transition.count_delay!==null){
+			if(!transition.count_delay.trim.isEmpty){
+				string = string + transition.count_delay + " "
+			}
+		}
+		if(transition.condition!==null){
+			if(!transition.condition.trim.isEmpty){
+				string = "if " + string + transition.condition + " "
+			}
+		}
+		if(transition.immediate){
+			string = "immediate " + string
+		}
+		if(transition.effect!==null){
+			if(!transition.effect.trim.isEmpty){
+				string = string + "do " + transition.effect + " "
+			}
+		}
+		var history = "history"
+		if(!transition.deepHistory){
+			history =  "shallow " + history 
+		}
+		switch transition {
+			case transition.getTargetElement instanceof SuperState : string + "go to " + (transition.getTargetElement as SuperState).name + history
+			case transition.getTargetElement instanceof SimpleState : string + "go to " + (transition.getTargetElement as SimpleState).name + history
+		}
+		return string
+	}
+	
+	def genTerminationDeferredTransition(TerminationDeferredTransition transition){
+		var string =  ""
+		if(transition.count_delay!==null){
+			if(!transition.count_delay.trim.isEmpty){
+				string = string + transition.count_delay + " "
+			}
+		}
+		if(transition.condition!==null){
+			if(!transition.condition.trim.isEmpty){
+				string = "if " + string + transition.condition + " "
+			}
+		}
+		if(transition.immediate){
+			string = "immediate " + string
+		}
+		if(transition.effect!==null){
+			if(!transition.effect.trim.isEmpty){
+				string = string + "do " + transition.effect + " "
 			}
 		}
 		switch transition.getTargetElement {
-			case transition.getTargetElement instanceof SuperState : string + "abort to " + (transition.getTargetElement as SuperState).name
-			case transition.getTargetElement instanceof SimpleState : string + "abort to " + (transition.getTargetElement as SimpleState).name
+			case transition.getTargetElement instanceof SuperState : return string + "join to " + (transition.getTargetElement as SuperState).name + "deferred"
+			case transition.getTargetElement instanceof SimpleState : return string + "join to " + (transition.getTargetElement as SimpleState).name + "deferred"
+		}
+	}
+	
+	def genStrongAbortDeferredTransition(StrongAbortDeferredTransition transition){
+		var string =  ""
+		if(transition.count_delay!==null){
+			if(!transition.count_delay.trim.isEmpty){
+				string = string + transition.count_delay + " "
+			}
+		}
+		if(transition.condition!==null){
+			if(!transition.condition.trim.isEmpty){
+				string = "if " + string + transition.condition + " "
+			}
+		}
+		if(transition.immediate){
+			string = "immediate " + string
+		}
+		if(transition.effect!==null){
+			if(!transition.effect.trim.isEmpty){
+				string = string + "do " + transition.effect + " "
+			}
+		}
+		switch transition {
+			case transition.getTargetElement instanceof SuperState : string + "abort to " + (transition.getTargetElement as SuperState).name + "deferred"
+			case transition.getTargetElement instanceof SimpleState : string + "abort to " + (transition.getTargetElement as SimpleState).name + "deferred"
 		}
 		return string
+	}
+	
+	def genTerminationHistoryTransition(TerminationHistoryTransition transition){
+		var string =  ""
+		if(transition.count_delay!==null){
+			if(!transition.count_delay.trim.isEmpty){
+				string = string + transition.count_delay + " "
+			}
+		}
+		if(transition.condition!==null){
+			if(!transition.condition.trim.isEmpty){
+				string = "if " + string + transition.condition + " "
+			}
+		}
+		if(transition.immediate){
+			string = "immediate " + string
+		}
+		if(transition.effect!==null){
+			if(!transition.effect.trim.isEmpty){
+				string = string + "do " + transition.effect + " "
+			}
+		}
+		var history = "history"
+		if(!transition.deepHistory){
+			history =  "shallow " + history 
+		}
+		switch transition.getTargetElement {
+			case transition.getTargetElement instanceof SuperState : return string + "join to " + (transition.getTargetElement as SuperState).name + history
+			case transition.getTargetElement instanceof SimpleState : return string + "join to " + (transition.getTargetElement as SimpleState).name + history
+		}
+	}
+	
+	def genStrongAbortHistoryTransition(StrongAbortHistoryTransition transition){
+		var string =  ""
+		if(transition.count_delay!==null){
+			if(!transition.count_delay.trim.isEmpty){
+				string = string + transition.count_delay + " "
+			}
+		}
+		if(transition.condition!==null){
+			if(!transition.condition.trim.isEmpty){
+				string = "if " + string + transition.condition + " "
+			}
+		}
+		if(transition.immediate){
+			string = "immediate " + string
+		}
+		if(transition.effect!==null){
+			if(!transition.effect.trim.isEmpty){
+				string = string + "do " + transition.effect + " "
+			}
+		}
+		var history = "history"
+		if(!transition.deepHistory){
+			history =  "shallow " + history 
+		}
+		switch transition {
+			case transition.getTargetElement instanceof SuperState : string + "abort to " + (transition.getTargetElement as SuperState).name + history
+			case transition.getTargetElement instanceof SimpleState : string + "abort to " + (transition.getTargetElement as SimpleState).name + history
+		}
+		return string
+	}
+	
+	def genDeferredHistoryTransition(DeferredHistoryTransition transition){
+		var string =  ""
+		if(transition.count_delay!==null){
+			if(!transition.count_delay.trim.isEmpty){
+				string = string + transition.count_delay + " "
+			}
+		}
+		if(transition.condition!==null){
+			if(!transition.condition.trim.isEmpty){
+				string = "if " + string + transition.condition + " "
+			}
+		}
+		if(transition.immediate){
+			string = "immediate " + string
+		}
+		if(transition.effect!==null){
+			if(!transition.effect.trim.isEmpty){
+				string = string + "do " + transition.effect + " "
+			}
+		}
+		var history = "history"
+		if(!transition.deepHistory){
+			history =  "shallow " + history 
+		}
+		switch transition {
+			case transition.getTargetElement instanceof SuperState : string + "go to " + (transition.getTargetElement as SuperState).name + "deferred" + history
+			case transition.getTargetElement instanceof SimpleState : string + "go to " + (transition.getTargetElement as SimpleState).name + "deferred" + history
+		}
+		return string
+	}
+	
+	
+	def genStrongAbortDeferredHistoryTransition(StrongAbortDeferredHistoryTransition transition){
+		var string =  ""
+		if(transition.count_delay!==null){
+			if(!transition.count_delay.trim.isEmpty){
+				string = string + transition.count_delay + " "
+			}
+		}
+		if(transition.condition!==null){
+			if(!transition.condition.trim.isEmpty){
+				string = "if " + string + transition.condition + " "
+			}
+		}
+		if(transition.immediate){
+			string = "immediate " + string
+		}
+		if(transition.effect!==null){
+			if(!transition.effect.trim.isEmpty){
+				string = string + "do " + transition.effect + " "
+			}
+		}
+		var history = "history"
+		if(!transition.deepHistory){
+			history =  "shallow " + history 
+		}
+		switch transition {
+			case transition.getTargetElement instanceof SuperState : string + "abort to " + (transition.getTargetElement as SuperState).name + "deferred" + history
+			case transition.getTargetElement instanceof SimpleState : string + "abort to " + (transition.getTargetElement as SimpleState).name + "deferred" + history
+		}
+		return string
+	}
+	
+	def genTerminationDeferredHistoryTransition(TerminationDeferredHistoryTransition transition){
+		var string =  ""
+		if(transition.count_delay!==null){
+			if(!transition.count_delay.trim.isEmpty){
+				string = string + transition.count_delay + " "
+			}
+		}
+		if(transition.condition!==null){
+			if(!transition.condition.trim.isEmpty){
+				string = "if " + string + transition.condition + " "
+			}
+		}
+		if(transition.immediate){
+			string = "immediate " + string
+		}
+		if(transition.effect!==null){
+			if(!transition.effect.trim.isEmpty){
+				string = string + "do " + transition.effect + " "
+			}
+		}
+		var history = "history"
+		if(!transition.deepHistory){
+			history =  "shallow " + history 
+		}
+		switch transition {
+			case transition.getTargetElement instanceof SuperState : string + "join to " + (transition.getTargetElement as SuperState).name + "deferred" + history
+			case transition.getTargetElement instanceof SimpleState : string + "join to " + (transition.getTargetElement as SimpleState).name + "deferred" + history
+		}
+		return string
+	}
+	
+	def commandLineParser(String[] args)throws ParseException{
+		var ProcessBuilder builder = new ProcessBuilder();
+		
+		try {
+	
+			// -- Linux --
+			
+			
+			// Run a shell command
+			// Process process = Runtime.getRuntime().exec("ls /home/mkyong/");
+	
+			// Run a shell script
+			// Process process = Runtime.getRuntime().exec("path/to/hello.sh");
+	
+			// -- Windows --
+			var URL url = getClass().getResource("info.scce.cinco.product.scchart/src/kico-win.bat");
+			// Run a command
+			//Process process = Runtime.getRuntime().exec("cmd /c dir C:\\Users\\mkyong");
+			var File f = new File(url.path);
+			var String absolute = f.getAbsolutePath();
+  
+            // Display the file path of the file object
+            // and also the file path of absolute file
+            System.out.println("Original path: "
+                               + f.getPath());
+            System.out.println("Absolute path: "
+                               + absolute);
+			//var String path = info.scce.cinco.product.scchart/KICO/kico-win.bat
+			//Run a bat file
+//			var Process process = Runtime.getRuntime().exec(
+//					absolute)
+//	
+//			var StringBuilder output = new StringBuilder();
+//	
+//			var BufferedReader reader = new BufferedReader(
+//					new InputStreamReader(process.getInputStream()));
+//	
+//			var String line;
+//			while ((line = reader.readLine()) != null) {
+//				output.append(line + "\n");
+//			}
+//	
+//			var int exitVal = process.waitFor();
+//			if (exitVal == 0) {
+//				System.out.println("Success!");
+//				System.out.println(output);
+//				System.exit(0);
+//			} else {
+//				
+//			}
+	
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	
+	
 	}
 }

@@ -22,6 +22,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalHistoryTransitionImpl#getCondition <em>Condition</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalHistoryTransitionImpl#getCount_delay <em>Count delay</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalHistoryTransitionImpl#isDeepHistory <em>Deep History</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalHistoryTransitionImpl#isImmediate <em>Immediate</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalHistoryTransitionImpl#getEffect <em>Effect</em>}</li>
  * </ul>
  *
@@ -87,6 +88,26 @@ public class InternalHistoryTransitionImpl extends InternalAbstractTransitionImp
 	 * @ordered
 	 */
 	protected boolean deepHistory = DEEP_HISTORY_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #isImmediate() <em>Immediate</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isImmediate()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean IMMEDIATE_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isImmediate() <em>Immediate</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isImmediate()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean immediate = IMMEDIATE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getEffect() <em>Effect</em>}' attribute.
@@ -202,6 +223,29 @@ public class InternalHistoryTransitionImpl extends InternalAbstractTransitionImp
 	 * @generated
 	 */
 	@Override
+	public boolean isImmediate() {
+		return immediate;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setImmediate(boolean newImmediate) {
+		boolean oldImmediate = immediate;
+		immediate = newImmediate;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_HISTORY_TRANSITION__IMMEDIATE, oldImmediate, immediate));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEffect() {
 		return effect;
 	}
@@ -233,6 +277,8 @@ public class InternalHistoryTransitionImpl extends InternalAbstractTransitionImp
 				return getCount_delay();
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__DEEP_HISTORY:
 				return isDeepHistory();
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__IMMEDIATE:
+				return isImmediate();
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__EFFECT:
 				return getEffect();
 		}
@@ -255,6 +301,9 @@ public class InternalHistoryTransitionImpl extends InternalAbstractTransitionImp
 				return;
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__DEEP_HISTORY:
 				setDeepHistory((Boolean)newValue);
+				return;
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__IMMEDIATE:
+				setImmediate((Boolean)newValue);
 				return;
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__EFFECT:
 				setEffect((String)newValue);
@@ -280,6 +329,9 @@ public class InternalHistoryTransitionImpl extends InternalAbstractTransitionImp
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__DEEP_HISTORY:
 				setDeepHistory(DEEP_HISTORY_EDEFAULT);
 				return;
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__IMMEDIATE:
+				setImmediate(IMMEDIATE_EDEFAULT);
+				return;
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__EFFECT:
 				setEffect(EFFECT_EDEFAULT);
 				return;
@@ -301,6 +353,8 @@ public class InternalHistoryTransitionImpl extends InternalAbstractTransitionImp
 				return COUNT_DELAY_EDEFAULT == null ? count_delay != null : !COUNT_DELAY_EDEFAULT.equals(count_delay);
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__DEEP_HISTORY:
 				return deepHistory != DEEP_HISTORY_EDEFAULT;
+			case InternalPackage.INTERNAL_HISTORY_TRANSITION__IMMEDIATE:
+				return immediate != IMMEDIATE_EDEFAULT;
 			case InternalPackage.INTERNAL_HISTORY_TRANSITION__EFFECT:
 				return EFFECT_EDEFAULT == null ? effect != null : !EFFECT_EDEFAULT.equals(effect);
 		}
@@ -323,6 +377,8 @@ public class InternalHistoryTransitionImpl extends InternalAbstractTransitionImp
 		result.append(count_delay);
 		result.append(", deepHistory: ");
 		result.append(deepHistory);
+		result.append(", immediate: ");
+		result.append(immediate);
 		result.append(", effect: ");
 		result.append(effect);
 		result.append(')');

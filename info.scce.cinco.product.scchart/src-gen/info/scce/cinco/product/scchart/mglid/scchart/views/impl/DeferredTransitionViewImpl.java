@@ -153,6 +153,29 @@ public class DeferredTransitionViewImpl extends AbstractTransitionViewImpl imple
 	 * @generated
 	 */
 	@Override
+	public boolean isImmediate() {
+		return getInternalDeferredTransition().isImmediate();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setImmediate(final boolean _arg) {
+		getInternalDeferredTransition().getElement().transact("Set Immediate", () -> {
+			getInternalDeferredTransition().setImmediate(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEffect() {
 		return getInternalDeferredTransition().getEffect();
 	}
@@ -246,6 +269,11 @@ public class DeferredTransitionViewImpl extends AbstractTransitionViewImpl imple
 				return getCount_delay();
 			case ViewsPackage.DEFERRED_TRANSITION_VIEW___SET_COUNT_DELAY__STRING:
 				setCount_delay((String)arguments.get(0));
+				return null;
+			case ViewsPackage.DEFERRED_TRANSITION_VIEW___IS_IMMEDIATE:
+				return isImmediate();
+			case ViewsPackage.DEFERRED_TRANSITION_VIEW___SET_IMMEDIATE__BOOLEAN:
+				setImmediate((Boolean)arguments.get(0));
 				return null;
 			case ViewsPackage.DEFERRED_TRANSITION_VIEW___GET_EFFECT:
 				return getEffect();

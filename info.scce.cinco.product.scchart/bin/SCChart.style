@@ -25,6 +25,11 @@ appearance finalStateOuterCircle {
 	foreground (119,136,153) //LightSlateGrey 
 }
 
+appearance initialFinalStateOuterCircle {
+	lineWidth 3
+	
+}
+
 appearance superStateAppearance {
 	background (198,226,255) //SlateGrey2 
 	foreground (119,136,153) //LightSlateGrey 
@@ -33,7 +38,7 @@ appearance superStateAppearance {
 appearance initialSuperStateAppearance {
 	background (198,226,255) //SlateGrey2 
 	foreground (0,0,0) //Black
-	lineWidth 4
+	lineWidth 3
 }
 
 appearance regionAppearance {
@@ -161,6 +166,25 @@ nodeStyle finalSuperStateStyle (1) {
 	}
 }
 
+nodeStyle initialFinalSuperStateStyle (1) {
+	roundedRectangle {
+		appearance initialFinalStateOuterCircle
+		size(140,80)
+		corner(15,15)
+		roundedRectangle {
+			appearance superStateAppearance
+			position (CENTER,MIDDLE)
+			size(134,74)
+			corner(15,15)
+			text {
+				appearance textFont
+				position (CENTER,TOP 3)
+				value "%1$s"
+			}
+		}
+	}
+}
+
 nodeStyle declarationStyle(2){
 	rectangle {
 		appearance declarationAppearance
@@ -203,6 +227,22 @@ nodeStyle simpleStateStyle (1){
 nodeStyle finalStateStyle(1){
 	ellipse{
 		appearance finalStateOuterCircle
+		size(60,60)
+		ellipse{
+			appearance default
+			position ( CENTER, MIDDLE )
+			size(50,50)
+					text {
+			position ( CENTER, MIDDLE )
+			value "%s"
+			}
+		}
+	}
+}
+
+nodeStyle initialFinalStateStyle(1){
+	ellipse{
+		appearance initialFinalStateOuterCircle
 		size(60,60)
 		ellipse{
 			appearance default
@@ -301,6 +341,7 @@ nodeStyle finalSCChartRefereceStyle(1){
 }
 
 edgeStyle transitionStyle(1){
+	appearanceProvider("info.scce.cinco.product.scchart.appearance.TransitionAppearance")
 	appearance transitionAppearance
 	decorator {
 		location (1.0) // at the end of the edge
@@ -315,25 +356,10 @@ edgeStyle transitionStyle(1){
 		}
 	}
 }
-
-edgeStyle immediateTransitionStyle(1) {
-	appearance immediateTransitionAppearance
-	decorator {
-		location (1.0) // at the end of the edge
-		ARROW
-		appearance transitionAppearance 
-	}
-	decorator {
-		location (0.5)
-		movable
-		text {
-			value "%s"
-		}
-	}
-} 
 
 edgeStyle terminationTransitionStyle(1) {
-	appearance immediateTransitionAppearance
+	appearanceProvider("info.scce.cinco.product.scchart.appearance.TerminationTransitionAppearance")
+	appearance transitionAppearance
 	decorator {
 		location (1.0) // at the end of the edge
 		ARROW
@@ -343,7 +369,7 @@ edgeStyle terminationTransitionStyle(1) {
 		location (0)
 		polygon {
 			appearance greenTriangle 
-			points [(0,0) (0,5) (15,0)(0,-5)]
+			points [(0,0) (0,7) (15,0)(0,-7)]
 		}
 	}
 	decorator {
@@ -355,30 +381,8 @@ edgeStyle terminationTransitionStyle(1) {
 	}
 } 
 
-edgeStyle conditionalTerminationTransitionStyle(1) {
-	appearance transitionAppearance
-	decorator {
-		location (1.0) // at the end of the edge
-		ARROW
-		appearance transitionAppearance 
-	}
-	decorator {
-		location (0)
-		polygon {
-			appearance greenTriangle 
-			points [(0,0) (0,5) (11,0)(0,-5)]
-		}
-	}
-	decorator {
-		location (0.5)
-		movable
-		text {
-			value "%s"
-		}
-	}
-}
-
 edgeStyle strongAbortTransitionStyle(1) {
+	appearanceProvider("info.scce.cinco.product.scchart.appearance.StrongAbortTransitionAppearance")
 	appearance transitionAppearance
 	decorator {
 		location (1.0) // at the end of the edge
@@ -399,52 +403,9 @@ edgeStyle strongAbortTransitionStyle(1) {
 	}
 }
 
-edgeStyle immediateStrongAbortTransitionStyle(1) {
-	appearance immediateTransitionAppearance
-	decorator {
-		location (1.0) // at the end of the edge
-		ARROW
-		appearance transitionAppearance 
-	}
-	decorator {
-		location (0)
-		CIRCLE 
-		appearance redCircle
-	}
-	decorator {
-		location (0.5)
-		movable
-		text {
-			value "%s"
-		}
-	}
-}
-
 edgeStyle deferredTransitionStyle(1) {
+	appearanceProvider("info.scce.cinco.product.scchart.appearance.DeferredTransitionAppearance")
 	appearance transitionAppearance
-	decorator {
-		location (1.0)
-		polyline{
-			appearance transitionAppearance
-			points[(-22,-5)(-12,0)(-22,5)]
-		}
-	}
-	decorator {
-		location (1.0)
-		CIRCLE 
-		appearance redCircle
-	}
-	decorator {
-		location (0.5)
-		movable
-		text {
-			value "%s"
-		}
-	}
-}
-
-edgeStyle immediateDeferredTransitionStyle(1) {
-	appearance immediateTransitionAppearance
 	decorator {
 		location (1.0)
 		polyline{
@@ -615,78 +576,7 @@ edgeStyle historyTransitionStyle(2) {
 	}
 }
 
-edgeStyle immediateHistoryTransitionStyle(2) {
-	appearance immediateTransitionAppearance
-	decorator {
-		location (1.0)
-		ellipse {
-			appearance historyCircle
-			size(15,15)
-		}
-	}
-	decorator {
-		location (1.0)
-		text {
-			appearance historyH
-			value "%2$s"
-		}
-	}
-	decorator {
-		location (1.0)
-		polyline{
-			appearance historyH
-			points[(-5,-5)(-5,5)(-5,0)(-10,0)(-10,-5)(-10,5)]
-		}
-	}
-	decorator {
-		location (1.0)
-		polyline{
-			appearance transitionAppearance
-			points[(-25,-5)(-15,0)(-25,5)]
-		}
-	}
-}
-
 edgeStyle terminationHistoryTransitionStyle(2) {
-	appearance immediateTransitionAppearance
-	decorator {
-		location (1.0)
-		ellipse {
-			appearance historyCircle
-			size(15,15)
-		}
-	}
-	decorator {
-		location (1.0)
-		text {
-			appearance historyH
-			value "%2$s"
-		}
-	}
-	decorator {
-		location (1.0)
-		polyline{
-			appearance historyH
-			points[(-5,-5)(-5,5)(-5,0)(-10,0)(-10,-5)(-10,5)]
-		}
-	}
-	decorator {
-		location (1.0)
-		polyline{
-			appearance transitionAppearance
-			points[(-25,-5)(-15,0)(-25,5)]
-		}
-	}
-	decorator {
-		location (0)
-		polygon {
-			appearance greenTriangle 
-			points [(0,0) (0,5) (11,0)(0,-5)]
-		}
-	}
-}
-
-edgeStyle conditionalTerminationHistoryTransitionStyle(2) {
 	appearance immediateTransitionAppearance
 	decorator {
 		location (1.0)
@@ -727,43 +617,6 @@ edgeStyle conditionalTerminationHistoryTransitionStyle(2) {
 
 edgeStyle strongAbortHistoryTransitionStyle(2) {
 	appearance transitionAppearance
-	decorator {
-		location (1.0)
-		ellipse {
-			appearance historyCircle
-			size(15,15)
-		}
-	}
-	decorator {
-		location (1.0)
-		text {
-			appearance historyH
-			value "%2$s"
-		}
-	}
-	decorator {
-		location (1.0)
-		polyline{
-			appearance historyH
-			points[(-5,-5)(-5,5)(-5,0)(-10,0)(-10,-5)(-10,5)]
-		}
-	}
-	decorator {
-		location (1.0)
-		polyline{
-			appearance transitionAppearance
-			points[(-25,-5)(-15,0)(-25,5)]
-		}
-	}
-	decorator {
-		location (0)
-		CIRCLE 
-		appearance redCircle
-	}
-}
-
-edgeStyle immediateStrongAbortHistoryTransitionStyle(2) {
-	appearance immediateTransitionAppearance
 	decorator {
 		location (1.0)
 		ellipse {

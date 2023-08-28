@@ -14,14 +14,16 @@ class EventStartup implements IStartup {
 		RootStateEvent.instance.subscribe
 		RegionEvent.instance.subscribe
 		SuperStateEvent.instance.subscribe
-		InitilalSuperStateEvent.instance.subscribe
+		InitialSuperStateEvent.instance.subscribe
 		FinalSuperStateEvent.instance.subscribe
+		InitialFinalSuperStateEvent.instance.subscribe
 		DeclarationEvent.instance.subscribe
 		SuspendEvent.instance.subscribe
 		ActionEvent.instance.subscribe
 		SCChartRefereceEvent.instance.subscribe
 		InitialSCChartRefereceEvent.instance.subscribe
 		FinalSCChartRefereceEvent.instance.subscribe
+		TransitionEvent.instance.subscribe
 		SCChartEvent.instance.subscribe
 	}
 	
@@ -29,14 +31,16 @@ class EventStartup implements IStartup {
 		RootStateEvent.instance.unsubscribe
 		RegionEvent.instance.unsubscribe
 		SuperStateEvent.instance.unsubscribe
-		InitilalSuperStateEvent.instance.unsubscribe
+		InitialSuperStateEvent.instance.unsubscribe
 		FinalSuperStateEvent.instance.unsubscribe
+		InitialFinalSuperStateEvent.instance.unsubscribe
 		DeclarationEvent.instance.unsubscribe
 		SuspendEvent.instance.unsubscribe
 		ActionEvent.instance.unsubscribe
 		SCChartRefereceEvent.instance.unsubscribe
 		InitialSCChartRefereceEvent.instance.unsubscribe
 		FinalSCChartRefereceEvent.instance.unsubscribe
+		TransitionEvent.instance.unsubscribe
 		SCChartEvent.instance.unsubscribe
 	}
 	

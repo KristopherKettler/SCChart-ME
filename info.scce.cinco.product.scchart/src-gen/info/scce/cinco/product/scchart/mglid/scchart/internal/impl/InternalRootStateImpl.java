@@ -15,9 +15,11 @@ import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialFinalState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
-import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
 import info.scce.cinco.product.scchart.mglid.scchart.SuperState;
@@ -179,7 +181,7 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 */
 	@Override
 	public EList<ConnectionConstraint> getOutgoingConstraints() {
-		ConnectionConstraint cons0 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition.class,info.scce.cinco.product.scchart.mglid.scchart.Transition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationDefferdTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortHistoryTransition.class);
+		ConnectionConstraint cons0 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition.class,info.scce.cinco.product.scchart.mglid.scchart.Transition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class,info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.DeferredHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredHistoryTransition.class,info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredHistoryTransition.class);
 		org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>eList = new org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>();
 		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0));
 		eList.addAll(super.getOutgoingConstraints());
@@ -203,8 +205,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	 * @generated
 	 */
 	@Override
-	public EList<InitilalSuperState> getInitilalSuperStateSuccessors() {
-		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class);
+	public EList<InitialSuperState> getInitialSuperStateSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState.class);
 	}
 
 	/**
@@ -215,6 +217,16 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public EList<FinalSuperState> getFinalSuperStateSuccessors() {
 		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<InitialFinalSuperState> getInitialFinalSuperStateSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState.class);
 	}
 
 	/**
@@ -245,6 +257,16 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public EList<FinalState> getFinalStateSuccessors() {
 		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.FinalState.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<InitialFinalState> getInitialFinalStateSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.InitialFinalState.class);
 	}
 
 	/**
@@ -397,16 +419,20 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 				return getOutgoingConstraints();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_SUPER_STATE_SUCCESSORS:
 				return getSuperStateSuccessors();
-			case InternalPackage.INTERNAL_ROOT_STATE___GET_INITILAL_SUPER_STATE_SUCCESSORS:
-				return getInitilalSuperStateSuccessors();
+			case InternalPackage.INTERNAL_ROOT_STATE___GET_INITIAL_SUPER_STATE_SUCCESSORS:
+				return getInitialSuperStateSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_FINAL_SUPER_STATE_SUCCESSORS:
 				return getFinalSuperStateSuccessors();
+			case InternalPackage.INTERNAL_ROOT_STATE___GET_INITIAL_FINAL_SUPER_STATE_SUCCESSORS:
+				return getInitialFinalSuperStateSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_SIMPLE_STATE_SUCCESSORS:
 				return getSimpleStateSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_INITIAL_STATE_SUCCESSORS:
 				return getInitialStateSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_FINAL_STATE_SUCCESSORS:
 				return getFinalStateSuccessors();
+			case InternalPackage.INTERNAL_ROOT_STATE___GET_INITIAL_FINAL_STATE_SUCCESSORS:
+				return getInitialFinalStateSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_CONNECTOR_SUCCESSORS:
 				return getConnectorSuccessors();
 			case InternalPackage.INTERNAL_ROOT_STATE___GET_SC_CHART_REFERECE_SUCCESSORS:

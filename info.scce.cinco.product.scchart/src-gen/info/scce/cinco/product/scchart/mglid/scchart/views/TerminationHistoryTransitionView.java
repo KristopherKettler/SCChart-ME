@@ -49,6 +49,38 @@ public interface TerminationHistoryTransitionView extends AbstractTransitionView
 	 * @model kind="operation"
 	 * @generated
 	 */
+	String getCondition();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setCondition(String _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	String getCount_delay();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setCount_delay(String _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
 	boolean isDeepHistory();
 
 	/**
@@ -58,6 +90,22 @@ public interface TerminationHistoryTransitionView extends AbstractTransitionView
 	 * @generated
 	 */
 	void setDeepHistory(boolean _arg);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	boolean isImmediate();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void setImmediate(boolean _arg);
 
 	/**
 	 * <!-- begin-user-doc -->

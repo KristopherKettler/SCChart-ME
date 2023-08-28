@@ -107,6 +107,52 @@ public class TerminationHistoryTransitionViewImpl extends AbstractTransitionView
 	 * @generated
 	 */
 	@Override
+	public String getCondition() {
+		return getInternalTerminationHistoryTransition().getCondition();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCondition(final String _arg) {
+		getInternalTerminationHistoryTransition().getElement().transact("Set Condition", () -> {
+			getInternalTerminationHistoryTransition().setCondition(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCount_delay() {
+		return getInternalTerminationHistoryTransition().getCount_delay();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCount_delay(final String _arg) {
+		getInternalTerminationHistoryTransition().getElement().transact("Set Count_delay", () -> {
+			getInternalTerminationHistoryTransition().setCount_delay(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean isDeepHistory() {
 		return getInternalTerminationHistoryTransition().isDeepHistory();
 	}
@@ -120,6 +166,29 @@ public class TerminationHistoryTransitionViewImpl extends AbstractTransitionView
 	public void setDeepHistory(final boolean _arg) {
 		getInternalTerminationHistoryTransition().getElement().transact("Set DeepHistory", () -> {
 			getInternalTerminationHistoryTransition().setDeepHistory(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isImmediate() {
+		return getInternalTerminationHistoryTransition().isImmediate();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setImmediate(final boolean _arg) {
+		getInternalTerminationHistoryTransition().getElement().transact("Set Immediate", () -> {
+			getInternalTerminationHistoryTransition().setImmediate(_arg);
 		});
 		
 	}
@@ -214,10 +283,25 @@ public class TerminationHistoryTransitionViewImpl extends AbstractTransitionView
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
+			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___GET_CONDITION:
+				return getCondition();
+			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___SET_CONDITION__STRING:
+				setCondition((String)arguments.get(0));
+				return null;
+			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___GET_COUNT_DELAY:
+				return getCount_delay();
+			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___SET_COUNT_DELAY__STRING:
+				setCount_delay((String)arguments.get(0));
+				return null;
 			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___IS_DEEP_HISTORY:
 				return isDeepHistory();
 			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___SET_DEEP_HISTORY__BOOLEAN:
 				setDeepHistory((Boolean)arguments.get(0));
+				return null;
+			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___IS_IMMEDIATE:
+				return isImmediate();
+			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___SET_IMMEDIATE__BOOLEAN:
+				setImmediate((Boolean)arguments.get(0));
 				return null;
 			case ViewsPackage.TERMINATION_HISTORY_TRANSITION_VIEW___GET_EFFECT:
 				return getEffect();

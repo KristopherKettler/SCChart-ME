@@ -8,9 +8,11 @@ import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialFinalState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
-import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
@@ -23,12 +25,40 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>Initial State</b></em>'.
  * <!-- end-user-doc -->
  *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialState#isInitialFinalState <em>Initial Final State</em>}</li>
+ * </ul>
  *
  * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalInitialState()
  * @model
  * @generated
  */
 public interface InternalInitialState extends InternalSimpleState {
+	/**
+	 * Returns the value of the '<em><b>Initial Final State</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Initial Final State</em>' attribute.
+	 * @see #setInitialFinalState(boolean)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalInitialState_InitialFinalState()
+	 * @model
+	 * @generated
+	 */
+	boolean isInitialFinalState();
+
+	/**
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialState#isInitialFinalState <em>Initial Final State</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Initial Final State</em>' attribute.
+	 * @see #isInitialFinalState()
+	 * @generated
+	 */
+	void setInitialFinalState(boolean value);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -67,7 +97,7 @@ public interface InternalInitialState extends InternalSimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<InitilalSuperState> getInitilalSuperStatePredecessors();
+	EList<InitialSuperState> getInitialSuperStatePredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -76,6 +106,14 @@ public interface InternalInitialState extends InternalSimpleState {
 	 * @generated
 	 */
 	EList<FinalSuperState> getFinalSuperStatePredecessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<InitialFinalSuperState> getInitialFinalSuperStatePredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -100,6 +138,14 @@ public interface InternalInitialState extends InternalSimpleState {
 	 * @generated
 	 */
 	EList<FinalState> getFinalStatePredecessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<InitialFinalState> getInitialFinalStatePredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,7 +193,7 @@ public interface InternalInitialState extends InternalSimpleState {
 	 * @model kind="operation"
 	 * @generated
 	 */
-	EList<InitilalSuperState> getInitilalSuperStateSuccessors();
+	EList<InitialSuperState> getInitialSuperStateSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -156,6 +202,14 @@ public interface InternalInitialState extends InternalSimpleState {
 	 * @generated
 	 */
 	EList<FinalSuperState> getFinalSuperStateSuccessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<InitialFinalSuperState> getInitialFinalSuperStateSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -180,6 +234,14 @@ public interface InternalInitialState extends InternalSimpleState {
 	 * @generated
 	 */
 	EList<FinalState> getFinalStateSuccessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 * @generated
+	 */
+	EList<InitialFinalState> getInitialFinalStateSuccessors();
 
 	/**
 	 * <!-- begin-user-doc -->

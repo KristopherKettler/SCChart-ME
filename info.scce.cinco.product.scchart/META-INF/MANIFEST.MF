@@ -39,6 +39,7 @@ Export-Package: info.scce.cinco.product.scchart.mglid.adapter,info.scce.
  nal.util,info.scce.cinco.product.scchart.scchart.util,info.scce.cinco.p
  roduct.scchart.scchart.views,info.scce.cinco.product.scchart.scchart.vi
  ews.impl,info.scce.cinco.product.scchart.scchart.views.util,info.scce.c
- inco.product.scchart.generator,info.scce.cinco.product.scchart.mglid.mc
- am.adapter,info.scce.cinco.product.scchart.mglid.mcam.cli
+ inco.product.scchart.generator,info.scce.cinco.product.scchart.appearan
+ ce,info.scce.cinco.product.scchart.mglid.mcam.adapter,info.scce.cinco.p
+ roduct.scchart.mglid.mcam.cli
 

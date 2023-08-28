@@ -196,7 +196,7 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 		 org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>constraints =
 			new org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>();
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.SuperState.class));
-		constraints.add(new ContainmentConstraint(0,1,info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class));
+		constraints.add(new ContainmentConstraint(0,1,info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState.class));
 		constraints.add(new ContainmentConstraint(0,1,info.scce.cinco.product.scchart.mglid.scchart.InitialState.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.FinalState.class));
@@ -205,6 +205,8 @@ public class InternalRegionImpl extends InternalContainerImpl implements Interna
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class));
 		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece.class));
+		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState.class));
+		constraints.add(new ContainmentConstraint(0,1,info.scce.cinco.product.scchart.mglid.scchart.InitialFinalState.class));
 		return constraints;
 		
 	}

@@ -15,9 +15,11 @@ import info.scce.cinco.product.scchart.mglid.scchart.Connector;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalState;
 import info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialFinalState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.InitialState;
-import info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState;
+import info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece;
 import info.scce.cinco.product.scchart.mglid.scchart.SimpleState;
@@ -341,7 +343,7 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 	public EList<ContainmentConstraint> getContainmentConstraints() {
 		 org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>constraints =
 			new org.eclipse.emf.common.util.BasicEList<ContainmentConstraint>();
-		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.RootState.class,info.scce.cinco.product.scchart.mglid.scchart.Region.class,info.scce.cinco.product.scchart.mglid.scchart.SuperState.class,info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class,info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState.class,info.scce.cinco.product.scchart.mglid.scchart.Declaration.class,info.scce.cinco.product.scchart.mglid.scchart.Suspend.class,info.scce.cinco.product.scchart.mglid.scchart.Action.class,info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class,info.scce.cinco.product.scchart.mglid.scchart.InitialState.class,info.scce.cinco.product.scchart.mglid.scchart.FinalState.class,info.scce.cinco.product.scchart.mglid.scchart.Connector.class,info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class,info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class,info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece.class));
+		constraints.add(new ContainmentConstraint(0,-1,info.scce.cinco.product.scchart.mglid.scchart.RootState.class,info.scce.cinco.product.scchart.mglid.scchart.Region.class,info.scce.cinco.product.scchart.mglid.scchart.SuperState.class,info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState.class,info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState.class,info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState.class,info.scce.cinco.product.scchart.mglid.scchart.Declaration.class,info.scce.cinco.product.scchart.mglid.scchart.Suspend.class,info.scce.cinco.product.scchart.mglid.scchart.Action.class,info.scce.cinco.product.scchart.mglid.scchart.SimpleState.class,info.scce.cinco.product.scchart.mglid.scchart.InitialState.class,info.scce.cinco.product.scchart.mglid.scchart.FinalState.class,info.scce.cinco.product.scchart.mglid.scchart.InitialFinalState.class,info.scce.cinco.product.scchart.mglid.scchart.Connector.class,info.scce.cinco.product.scchart.mglid.scchart.SCChartReferece.class,info.scce.cinco.product.scchart.mglid.scchart.InitialSCChartReferece.class,info.scce.cinco.product.scchart.mglid.scchart.FinalSCChartReferece.class));
 		return constraints;
 		
 	}
@@ -354,25 +356,16 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 	@Override
 	public EList<ConnectionConstraint> getIncomingConstraints() {
 		ConnectionConstraint cons0 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
-		ConnectionConstraint cons1 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class);
-		ConnectionConstraint cons2 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class);
-		ConnectionConstraint cons3 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition.class);
-		ConnectionConstraint cons4 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class);
-		ConnectionConstraint cons5 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortTransition.class);
-		ConnectionConstraint cons6 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
-		ConnectionConstraint cons7 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateDeferredTransition.class);
-		ConnectionConstraint cons8 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationDefferdTransition.class);
-		ConnectionConstraint cons9 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationDeferredTransition.class);
-		ConnectionConstraint cons10 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition.class);
-		ConnectionConstraint cons11 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortDeferredTransition.class);
-		ConnectionConstraint cons12 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
-		ConnectionConstraint cons13 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateHistoryTransition.class);
-		ConnectionConstraint cons14 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition.class);
-		ConnectionConstraint cons15 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationHistoryTransition.class);
-		ConnectionConstraint cons16 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition.class);
-		ConnectionConstraint cons17 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortHistoryTransition.class);
+		ConnectionConstraint cons1 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class);
+		ConnectionConstraint cons2 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class);
+		ConnectionConstraint cons3 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
+		ConnectionConstraint cons4 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredTransition.class);
+		ConnectionConstraint cons5 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition.class);
+		ConnectionConstraint cons6 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
+		ConnectionConstraint cons7 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition.class);
+		ConnectionConstraint cons8 = new ConnectionConstraint(false, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition.class);
 		org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>eList = new org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>();
-		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0,cons1,cons2,cons3,cons4,cons5,cons6,cons7,cons8,cons9,cons10,cons11,cons12,cons13,cons14,cons15,cons16,cons17));
+		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0,cons1,cons2,cons3,cons4,cons5,cons6,cons7,cons8));
 		eList.addAll(super.getIncomingConstraints());
 		return eList;
 		
@@ -386,25 +379,16 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 	@Override
 	public EList<ConnectionConstraint> getOutgoingConstraints() {
 		ConnectionConstraint cons0 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
-		ConnectionConstraint cons1 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateTransition.class);
-		ConnectionConstraint cons2 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class);
-		ConnectionConstraint cons3 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationTransition.class);
-		ConnectionConstraint cons4 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class);
-		ConnectionConstraint cons5 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortTransition.class);
-		ConnectionConstraint cons6 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
-		ConnectionConstraint cons7 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateDeferredTransition.class);
-		ConnectionConstraint cons8 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationDefferdTransition.class);
-		ConnectionConstraint cons9 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationDeferredTransition.class);
-		ConnectionConstraint cons10 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition.class);
-		ConnectionConstraint cons11 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortDeferredTransition.class);
-		ConnectionConstraint cons12 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
-		ConnectionConstraint cons13 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateHistoryTransition.class);
-		ConnectionConstraint cons14 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition.class);
-		ConnectionConstraint cons15 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ConditionalTerminationHistoryTransition.class);
-		ConnectionConstraint cons16 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition.class);
-		ConnectionConstraint cons17 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.ImmediateStrongAbortHistoryTransition.class);
+		ConnectionConstraint cons1 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class);
+		ConnectionConstraint cons2 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition.class);
+		ConnectionConstraint cons3 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
+		ConnectionConstraint cons4 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredTransition.class);
+		ConnectionConstraint cons5 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition.class);
+		ConnectionConstraint cons6 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
+		ConnectionConstraint cons7 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition.class);
+		ConnectionConstraint cons8 = new ConnectionConstraint(true, 0, -1, info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition.class);
 		org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>eList = new org.eclipse.emf.common.util.BasicEList<ConnectionConstraint>();
-		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0,cons1,cons2,cons3,cons4,cons5,cons6,cons7,cons8,cons9,cons10,cons11,cons12,cons13,cons14,cons15,cons16,cons17));
+		eList.addAll(com.google.common.collect.Lists.newArrayList(cons0,cons1,cons2,cons3,cons4,cons5,cons6,cons7,cons8));
 		eList.addAll(super.getOutgoingConstraints());
 		return eList;
 		
@@ -436,8 +420,8 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 	 * @generated
 	 */
 	@Override
-	public EList<InitilalSuperState> getInitilalSuperStatePredecessors() {
-		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class);
+	public EList<InitialSuperState> getInitialSuperStatePredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState.class);
 	}
 
 	/**
@@ -448,6 +432,16 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 	@Override
 	public EList<FinalSuperState> getFinalSuperStatePredecessors() {
 		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<InitialFinalSuperState> getInitialFinalSuperStatePredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState.class);
 	}
 
 	/**
@@ -478,6 +472,16 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 	@Override
 	public EList<FinalState> getFinalStatePredecessors() {
 		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.FinalState.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<InitialFinalState> getInitialFinalStatePredecessors() {
+		return ((graphmodel.Node)this.getElement()).getPredecessors(info.scce.cinco.product.scchart.mglid.scchart.InitialFinalState.class);
 	}
 
 	/**
@@ -536,8 +540,8 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 	 * @generated
 	 */
 	@Override
-	public EList<InitilalSuperState> getInitilalSuperStateSuccessors() {
-		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.InitilalSuperState.class);
+	public EList<InitialSuperState> getInitialSuperStateSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.InitialSuperState.class);
 	}
 
 	/**
@@ -548,6 +552,16 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 	@Override
 	public EList<FinalSuperState> getFinalSuperStateSuccessors() {
 		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.FinalSuperState.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<InitialFinalSuperState> getInitialFinalSuperStateSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.InitialFinalSuperState.class);
 	}
 
 	/**
@@ -578,6 +592,16 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 	@Override
 	public EList<FinalState> getFinalStateSuccessors() {
 		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.FinalState.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<InitialFinalState> getInitialFinalStateSuccessors() {
+		return ((graphmodel.Node)this.getElement()).getSuccessors(info.scce.cinco.product.scchart.mglid.scchart.InitialFinalState.class);
 	}
 
 	/**
@@ -787,16 +811,20 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 				return getRootStatePredecessors();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_SUPER_STATE_PREDECESSORS:
 				return getSuperStatePredecessors();
-			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_INITILAL_SUPER_STATE_PREDECESSORS:
-				return getInitilalSuperStatePredecessors();
+			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_INITIAL_SUPER_STATE_PREDECESSORS:
+				return getInitialSuperStatePredecessors();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_FINAL_SUPER_STATE_PREDECESSORS:
 				return getFinalSuperStatePredecessors();
+			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_INITIAL_FINAL_SUPER_STATE_PREDECESSORS:
+				return getInitialFinalSuperStatePredecessors();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_SIMPLE_STATE_PREDECESSORS:
 				return getSimpleStatePredecessors();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_INITIAL_STATE_PREDECESSORS:
 				return getInitialStatePredecessors();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_FINAL_STATE_PREDECESSORS:
 				return getFinalStatePredecessors();
+			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_INITIAL_FINAL_STATE_PREDECESSORS:
+				return getInitialFinalStatePredecessors();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_CONNECTOR_PREDECESSORS:
 				return getConnectorPredecessors();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_SC_CHART_REFERECE_PREDECESSORS:
@@ -807,16 +835,20 @@ public class InternalSCChartRefereceImpl extends InternalContainerImpl implement
 				return getFinalSCChartReferecePredecessors();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_SUPER_STATE_SUCCESSORS:
 				return getSuperStateSuccessors();
-			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_INITILAL_SUPER_STATE_SUCCESSORS:
-				return getInitilalSuperStateSuccessors();
+			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_INITIAL_SUPER_STATE_SUCCESSORS:
+				return getInitialSuperStateSuccessors();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_FINAL_SUPER_STATE_SUCCESSORS:
 				return getFinalSuperStateSuccessors();
+			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_INITIAL_FINAL_SUPER_STATE_SUCCESSORS:
+				return getInitialFinalSuperStateSuccessors();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_SIMPLE_STATE_SUCCESSORS:
 				return getSimpleStateSuccessors();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_INITIAL_STATE_SUCCESSORS:
 				return getInitialStateSuccessors();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_FINAL_STATE_SUCCESSORS:
 				return getFinalStateSuccessors();
+			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_INITIAL_FINAL_STATE_SUCCESSORS:
+				return getInitialFinalStateSuccessors();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_CONNECTOR_SUCCESSORS:
 				return getConnectorSuccessors();
 			case InternalPackage.INTERNAL_SC_CHART_REFERECE___GET_SC_CHART_REFERECE_SUCCESSORS:

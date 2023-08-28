@@ -49,13 +49,13 @@ public interface InternalFactory extends EFactory {
 	InternalSuperState createInternalSuperState();
 
 	/**
-	 * Returns a new object of class '<em>Initilal Super State</em>'.
+	 * Returns a new object of class '<em>Initial Super State</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Initilal Super State</em>'.
+	 * @return a new object of class '<em>Initial Super State</em>'.
 	 * @generated
 	 */
-	InternalInitilalSuperState createInternalInitilalSuperState();
+	InternalInitialSuperState createInternalInitialSuperState();
 
 	/**
 	 * Returns a new object of class '<em>Final Super State</em>'.
@@ -65,6 +65,15 @@ public interface InternalFactory extends EFactory {
 	 * @generated
 	 */
 	InternalFinalSuperState createInternalFinalSuperState();
+
+	/**
+	 * Returns a new object of class '<em>Initial Final Super State</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Initial Final Super State</em>'.
+	 * @generated
+	 */
+	InternalInitialFinalSuperState createInternalInitialFinalSuperState();
 
 	/**
 	 * Returns a new object of class '<em>Declaration</em>'.
@@ -121,6 +130,15 @@ public interface InternalFactory extends EFactory {
 	InternalFinalState createInternalFinalState();
 
 	/**
+	 * Returns a new object of class '<em>Initial Final State</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Initial Final State</em>'.
+	 * @generated
+	 */
+	InternalInitialFinalState createInternalInitialFinalState();
+
+	/**
 	 * Returns a new object of class '<em>Connector</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -175,15 +193,6 @@ public interface InternalFactory extends EFactory {
 	InternalTransition createInternalTransition();
 
 	/**
-	 * Returns a new object of class '<em>Immediate Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate Transition</em>'.
-	 * @generated
-	 */
-	InternalImmediateTransition createInternalImmediateTransition();
-
-	/**
 	 * Returns a new object of class '<em>Termination Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -191,15 +200,6 @@ public interface InternalFactory extends EFactory {
 	 * @generated
 	 */
 	InternalTerminationTransition createInternalTerminationTransition();
-
-	/**
-	 * Returns a new object of class '<em>Conditional Termination Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Conditional Termination Transition</em>'.
-	 * @generated
-	 */
-	InternalConditionalTerminationTransition createInternalConditionalTerminationTransition();
 
 	/**
 	 * Returns a new object of class '<em>Strong Abort Transition</em>'.
@@ -211,15 +211,6 @@ public interface InternalFactory extends EFactory {
 	InternalStrongAbortTransition createInternalStrongAbortTransition();
 
 	/**
-	 * Returns a new object of class '<em>Immediate Strong Abort Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate Strong Abort Transition</em>'.
-	 * @generated
-	 */
-	InternalImmediateStrongAbortTransition createInternalImmediateStrongAbortTransition();
-
-	/**
 	 * Returns a new object of class '<em>Deferred Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -227,51 +218,6 @@ public interface InternalFactory extends EFactory {
 	 * @generated
 	 */
 	InternalDeferredTransition createInternalDeferredTransition();
-
-	/**
-	 * Returns a new object of class '<em>Immediate Deferred Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate Deferred Transition</em>'.
-	 * @generated
-	 */
-	InternalImmediateDeferredTransition createInternalImmediateDeferredTransition();
-
-	/**
-	 * Returns a new object of class '<em>Termination Defferd Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Termination Defferd Transition</em>'.
-	 * @generated
-	 */
-	InternalTerminationDefferdTransition createInternalTerminationDefferdTransition();
-
-	/**
-	 * Returns a new object of class '<em>Conditional Termination Deferred Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Conditional Termination Deferred Transition</em>'.
-	 * @generated
-	 */
-	InternalConditionalTerminationDeferredTransition createInternalConditionalTerminationDeferredTransition();
-
-	/**
-	 * Returns a new object of class '<em>Strong Abort Deferred Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Strong Abort Deferred Transition</em>'.
-	 * @generated
-	 */
-	InternalStrongAbortDeferredTransition createInternalStrongAbortDeferredTransition();
-
-	/**
-	 * Returns a new object of class '<em>Immediate Strong Abort Deferred Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate Strong Abort Deferred Transition</em>'.
-	 * @generated
-	 */
-	InternalImmediateStrongAbortDeferredTransition createInternalImmediateStrongAbortDeferredTransition();
 
 	/**
 	 * Returns a new object of class '<em>History Transition</em>'.
@@ -283,13 +229,22 @@ public interface InternalFactory extends EFactory {
 	InternalHistoryTransition createInternalHistoryTransition();
 
 	/**
-	 * Returns a new object of class '<em>Immediate History Transition</em>'.
+	 * Returns a new object of class '<em>Termination Deferred Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate History Transition</em>'.
+	 * @return a new object of class '<em>Termination Deferred Transition</em>'.
 	 * @generated
 	 */
-	InternalImmediateHistoryTransition createInternalImmediateHistoryTransition();
+	InternalTerminationDeferredTransition createInternalTerminationDeferredTransition();
+
+	/**
+	 * Returns a new object of class '<em>Strong Abort Deferred Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Strong Abort Deferred Transition</em>'.
+	 * @generated
+	 */
+	InternalStrongAbortDeferredTransition createInternalStrongAbortDeferredTransition();
 
 	/**
 	 * Returns a new object of class '<em>Termination History Transition</em>'.
@@ -301,15 +256,6 @@ public interface InternalFactory extends EFactory {
 	InternalTerminationHistoryTransition createInternalTerminationHistoryTransition();
 
 	/**
-	 * Returns a new object of class '<em>Conditional Termination History Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Conditional Termination History Transition</em>'.
-	 * @generated
-	 */
-	InternalConditionalTerminationHistoryTransition createInternalConditionalTerminationHistoryTransition();
-
-	/**
 	 * Returns a new object of class '<em>Strong Abort History Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -319,13 +265,31 @@ public interface InternalFactory extends EFactory {
 	InternalStrongAbortHistoryTransition createInternalStrongAbortHistoryTransition();
 
 	/**
-	 * Returns a new object of class '<em>Immediate Strong Abort History Transition</em>'.
+	 * Returns a new object of class '<em>Deferred History Transition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immediate Strong Abort History Transition</em>'.
+	 * @return a new object of class '<em>Deferred History Transition</em>'.
 	 * @generated
 	 */
-	InternalImmediateStrongAbortHistoryTransition createInternalImmediateStrongAbortHistoryTransition();
+	InternalDeferredHistoryTransition createInternalDeferredHistoryTransition();
+
+	/**
+	 * Returns a new object of class '<em>Strong Abort Deferred History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Strong Abort Deferred History Transition</em>'.
+	 * @generated
+	 */
+	InternalStrongAbortDeferredHistoryTransition createInternalStrongAbortDeferredHistoryTransition();
+
+	/**
+	 * Returns a new object of class '<em>Termination Deferred History Transition</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Termination Deferred History Transition</em>'.
+	 * @generated
+	 */
+	InternalTerminationDeferredHistoryTransition createInternalTerminationDeferredHistoryTransition();
 
 	/**
 	 * Returns a new object of class '<em>SC Chart</em>'.

@@ -15,6 +15,7 @@ package info.scce.cinco.product.scchart.mglid.scchart.internal;
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#getCondition <em>Condition</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#getCount_delay <em>Count delay</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#isDeepHistory <em>Deep History</em>}</li>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#isImmediate <em>Immediate</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#getEffect <em>Effect</em>}</li>
  * </ul>
  *
@@ -89,6 +90,28 @@ public interface InternalHistoryTransition extends InternalAbstractTransition {
 	 * @generated
 	 */
 	void setDeepHistory(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Immediate</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Immediate</em>' attribute.
+	 * @see #setImmediate(boolean)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalHistoryTransition_Immediate()
+	 * @model
+	 * @generated
+	 */
+	boolean isImmediate();
+
+	/**
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalHistoryTransition#isImmediate <em>Immediate</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Immediate</em>' attribute.
+	 * @see #isImmediate()
+	 * @generated
+	 */
+	void setImmediate(boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Effect</b></em>' attribute.

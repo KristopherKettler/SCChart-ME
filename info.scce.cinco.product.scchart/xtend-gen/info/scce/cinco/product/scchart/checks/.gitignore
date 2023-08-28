@@ -1,2 +1,8 @@
 /.RootStateCheck.java._trace
 /.RegionCheck.java._trace
+/.StateCheck.java._trace
+/.SuperStateCheck.java._trace
+/.DeclarationCheck.java._trace
+/.SuspendCheck.java._trace
+/.ActionCheck.java._trace
+/.TransitionCheck.java._trace

@@ -59,37 +59,33 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 			case ScchartPackage.ROOT_STATE: return createRootState();
 			case ScchartPackage.REGION: return createRegion();
 			case ScchartPackage.SUPER_STATE: return createSuperState();
-			case ScchartPackage.INITILAL_SUPER_STATE: return createInitilalSuperState();
+			case ScchartPackage.INITIAL_SUPER_STATE: return createInitialSuperState();
 			case ScchartPackage.FINAL_SUPER_STATE: return createFinalSuperState();
+			case ScchartPackage.INITIAL_FINAL_SUPER_STATE: return createInitialFinalSuperState();
 			case ScchartPackage.DECLARATION: return createDeclaration();
 			case ScchartPackage.SUSPEND: return createSuspend();
 			case ScchartPackage.ACTION: return createAction();
 			case ScchartPackage.SIMPLE_STATE: return createSimpleState();
 			case ScchartPackage.INITIAL_STATE: return createInitialState();
 			case ScchartPackage.FINAL_STATE: return createFinalState();
+			case ScchartPackage.INITIAL_FINAL_STATE: return createInitialFinalState();
 			case ScchartPackage.CONNECTOR: return createConnector();
 			case ScchartPackage.SC_CHART_REFERECE: return createSCChartReferece();
 			case ScchartPackage.INITIAL_SC_CHART_REFERECE: return createInitialSCChartReferece();
 			case ScchartPackage.FINAL_SC_CHART_REFERECE: return createFinalSCChartReferece();
 			case ScchartPackage.ABSTRACT_TRANSITION: return createAbstractTransition();
 			case ScchartPackage.TRANSITION: return createTransition();
-			case ScchartPackage.IMMEDIATE_TRANSITION: return createImmediateTransition();
 			case ScchartPackage.TERMINATION_TRANSITION: return createTerminationTransition();
-			case ScchartPackage.CONDITIONAL_TERMINATION_TRANSITION: return createConditionalTerminationTransition();
 			case ScchartPackage.STRONG_ABORT_TRANSITION: return createStrongAbortTransition();
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_TRANSITION: return createImmediateStrongAbortTransition();
 			case ScchartPackage.DEFERRED_TRANSITION: return createDeferredTransition();
-			case ScchartPackage.IMMEDIATE_DEFERRED_TRANSITION: return createImmediateDeferredTransition();
-			case ScchartPackage.TERMINATION_DEFFERD_TRANSITION: return createTerminationDefferdTransition();
-			case ScchartPackage.CONDITIONAL_TERMINATION_DEFERRED_TRANSITION: return createConditionalTerminationDeferredTransition();
-			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION: return createStrongAbortDeferredTransition();
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_DEFERRED_TRANSITION: return createImmediateStrongAbortDeferredTransition();
 			case ScchartPackage.HISTORY_TRANSITION: return createHistoryTransition();
-			case ScchartPackage.IMMEDIATE_HISTORY_TRANSITION: return createImmediateHistoryTransition();
+			case ScchartPackage.TERMINATION_DEFERRED_TRANSITION: return createTerminationDeferredTransition();
+			case ScchartPackage.STRONG_ABORT_DEFERRED_TRANSITION: return createStrongAbortDeferredTransition();
 			case ScchartPackage.TERMINATION_HISTORY_TRANSITION: return createTerminationHistoryTransition();
-			case ScchartPackage.CONDITIONAL_TERMINATION_HISTORY_TRANSITION: return createConditionalTerminationHistoryTransition();
 			case ScchartPackage.STRONG_ABORT_HISTORY_TRANSITION: return createStrongAbortHistoryTransition();
-			case ScchartPackage.IMMEDIATE_STRONG_ABORT_HISTORY_TRANSITION: return createImmediateStrongAbortHistoryTransition();
+			case ScchartPackage.DEFERRED_HISTORY_TRANSITION: return createDeferredHistoryTransition();
+			case ScchartPackage.STRONG_ABORT_DEFERRED_HISTORY_TRANSITION: return createStrongAbortDeferredHistoryTransition();
+			case ScchartPackage.TERMINATION_DEFERRED_HISTORY_TRANSITION: return createTerminationDeferredHistoryTransition();
 			case ScchartPackage.SC_CHART: return createSCChart();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -135,9 +131,9 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public InitilalSuperState createInitilalSuperState() {
-		InitilalSuperStateImpl initilalSuperState = new InitilalSuperStateImpl();
-		return initilalSuperState;
+	public InitialSuperState createInitialSuperState() {
+		InitialSuperStateImpl initialSuperState = new InitialSuperStateImpl();
+		return initialSuperState;
 	}
 
 	/**
@@ -149,6 +145,17 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	public FinalSuperState createFinalSuperState() {
 		FinalSuperStateImpl finalSuperState = new FinalSuperStateImpl();
 		return finalSuperState;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InitialFinalSuperState createInitialFinalSuperState() {
+		InitialFinalSuperStateImpl initialFinalSuperState = new InitialFinalSuperStateImpl();
+		return initialFinalSuperState;
 	}
 
 	/**
@@ -223,6 +230,17 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
+	public InitialFinalState createInitialFinalState() {
+		InitialFinalStateImpl initialFinalState = new InitialFinalStateImpl();
+		return initialFinalState;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Connector createConnector() {
 		ConnectorImpl connector = new ConnectorImpl();
 		return connector;
@@ -289,31 +307,9 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public ImmediateTransition createImmediateTransition() {
-		ImmediateTransitionImpl immediateTransition = new ImmediateTransitionImpl();
-		return immediateTransition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public TerminationTransition createTerminationTransition() {
 		TerminationTransitionImpl terminationTransition = new TerminationTransitionImpl();
 		return terminationTransition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ConditionalTerminationTransition createConditionalTerminationTransition() {
-		ConditionalTerminationTransitionImpl conditionalTerminationTransition = new ConditionalTerminationTransitionImpl();
-		return conditionalTerminationTransition;
 	}
 
 	/**
@@ -333,75 +329,9 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public ImmediateStrongAbortTransition createImmediateStrongAbortTransition() {
-		ImmediateStrongAbortTransitionImpl immediateStrongAbortTransition = new ImmediateStrongAbortTransitionImpl();
-		return immediateStrongAbortTransition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public DeferredTransition createDeferredTransition() {
 		DeferredTransitionImpl deferredTransition = new DeferredTransitionImpl();
 		return deferredTransition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ImmediateDeferredTransition createImmediateDeferredTransition() {
-		ImmediateDeferredTransitionImpl immediateDeferredTransition = new ImmediateDeferredTransitionImpl();
-		return immediateDeferredTransition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public TerminationDefferdTransition createTerminationDefferdTransition() {
-		TerminationDefferdTransitionImpl terminationDefferdTransition = new TerminationDefferdTransitionImpl();
-		return terminationDefferdTransition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ConditionalTerminationDeferredTransition createConditionalTerminationDeferredTransition() {
-		ConditionalTerminationDeferredTransitionImpl conditionalTerminationDeferredTransition = new ConditionalTerminationDeferredTransitionImpl();
-		return conditionalTerminationDeferredTransition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StrongAbortDeferredTransition createStrongAbortDeferredTransition() {
-		StrongAbortDeferredTransitionImpl strongAbortDeferredTransition = new StrongAbortDeferredTransitionImpl();
-		return strongAbortDeferredTransition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ImmediateStrongAbortDeferredTransition createImmediateStrongAbortDeferredTransition() {
-		ImmediateStrongAbortDeferredTransitionImpl immediateStrongAbortDeferredTransition = new ImmediateStrongAbortDeferredTransitionImpl();
-		return immediateStrongAbortDeferredTransition;
 	}
 
 	/**
@@ -421,9 +351,20 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public ImmediateHistoryTransition createImmediateHistoryTransition() {
-		ImmediateHistoryTransitionImpl immediateHistoryTransition = new ImmediateHistoryTransitionImpl();
-		return immediateHistoryTransition;
+	public TerminationDeferredTransition createTerminationDeferredTransition() {
+		TerminationDeferredTransitionImpl terminationDeferredTransition = new TerminationDeferredTransitionImpl();
+		return terminationDeferredTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StrongAbortDeferredTransition createStrongAbortDeferredTransition() {
+		StrongAbortDeferredTransitionImpl strongAbortDeferredTransition = new StrongAbortDeferredTransitionImpl();
+		return strongAbortDeferredTransition;
 	}
 
 	/**
@@ -443,17 +384,6 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public ConditionalTerminationHistoryTransition createConditionalTerminationHistoryTransition() {
-		ConditionalTerminationHistoryTransitionImpl conditionalTerminationHistoryTransition = new ConditionalTerminationHistoryTransitionImpl();
-		return conditionalTerminationHistoryTransition;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public StrongAbortHistoryTransition createStrongAbortHistoryTransition() {
 		StrongAbortHistoryTransitionImpl strongAbortHistoryTransition = new StrongAbortHistoryTransitionImpl();
 		return strongAbortHistoryTransition;
@@ -465,9 +395,31 @@ public class ScchartFactoryImpl extends EFactoryImpl implements ScchartFactory {
 	 * @generated
 	 */
 	@Override
-	public ImmediateStrongAbortHistoryTransition createImmediateStrongAbortHistoryTransition() {
-		ImmediateStrongAbortHistoryTransitionImpl immediateStrongAbortHistoryTransition = new ImmediateStrongAbortHistoryTransitionImpl();
-		return immediateStrongAbortHistoryTransition;
+	public DeferredHistoryTransition createDeferredHistoryTransition() {
+		DeferredHistoryTransitionImpl deferredHistoryTransition = new DeferredHistoryTransitionImpl();
+		return deferredHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StrongAbortDeferredHistoryTransition createStrongAbortDeferredHistoryTransition() {
+		StrongAbortDeferredHistoryTransitionImpl strongAbortDeferredHistoryTransition = new StrongAbortDeferredHistoryTransitionImpl();
+		return strongAbortDeferredHistoryTransition;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TerminationDeferredHistoryTransition createTerminationDeferredHistoryTransition() {
+		TerminationDeferredHistoryTransitionImpl terminationDeferredHistoryTransition = new TerminationDeferredHistoryTransitionImpl();
+		return terminationDeferredHistoryTransition;
 	}
 
 	/**
