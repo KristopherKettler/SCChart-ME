@@ -1,8 +1,6 @@
 package info.scce.cinco.product.scchart.events;
 
 import com.google.common.base.Objects;
-import graphmodel.Direction;
-import graphmodel.ModelElementContainer;
 import info.scce.cinco.product.scchart.mglid.scchart.Action;
 import info.scce.cinco.product.scchart.mglid.scchart.Declaration;
 import info.scce.cinco.product.scchart.mglid.scchart.Region;
@@ -35,26 +33,6 @@ import org.eclipse.xtext.xbase.lib.IterableExtensions;
  */
 @SuppressWarnings("all")
 public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.event.RegionEvent {
-  @Override
-  public void preCreate(final Class<? extends Region> elementClass, final ModelElementContainer container, final int x, final int y, final int width, final int height) {
-  }
-  
-  @Override
-  public void preDelete(final Region element) {
-  }
-  
-  @Override
-  public void preMove(final Region element, final ModelElementContainer newContainer, final int newX, final int newY) {
-  }
-  
-  @Override
-  public void preResize(final Region element, final int newWidth, final int newHeight, final int newX, final int newY, final Direction direction) {
-  }
-  
-  @Override
-  public void postAttributeChange(final Region element, final String attribute, final Object oldValue) {
-  }
-  
   @Override
   public void postCreate(final Region element) {
     element.setUuid(UUID.randomUUID().toString());
@@ -622,21 +600,5 @@ public final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scc
         }
       }
     }
-  }
-  
-  @Override
-  public void postDoubleClick(final Region element) {
-  }
-  
-  @Override
-  public void postMove(final Region element, final ModelElementContainer oldContainer, final int oldX, final int oldY) {
-  }
-  
-  @Override
-  public void postResize(final Region element, final int oldWidth, final int oldHeight, final int oldX, final int oldY, final Direction direction) {
-  }
-  
-  @Override
-  public void postSelect(final Region element) {
   }
 }

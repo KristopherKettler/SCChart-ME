@@ -20,25 +20,10 @@ import org.eclipse.core.runtime.IPath
  * - postSave(SCChart element)
  */
 final class SCChartEvent extends info.scce.cinco.product.scchart.mglid.scchart.event.SCChartEvent {
-	
-	override preCreate(Class<? extends SCChart> elementClass, String name, IPath path) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override preSave(SCChart element) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postAttributeChange(SCChart element, String attribute, Object oldValue) {
-		// TODO: Auto-generated method stub
-	}
-	
+
 	override postCreate(SCChart element) {
 		element.newRootState(20,20,200,180)
 	}
-	
-	override postSave(SCChart element) {
-		// TODO: Auto-generated method stub
-	}
+
 	
 }

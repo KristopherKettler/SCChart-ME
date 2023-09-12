@@ -25,40 +25,12 @@ import org.eclipse.emf.common.util.EList;
  * A representation of the model object '<em><b>Initial State</b></em>'.
  * <!-- end-user-doc -->
  *
- * <p>
- * The following features are supported:
- * </p>
- * <ul>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialState#isInitialFinalState <em>Initial Final State</em>}</li>
- * </ul>
  *
  * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalInitialState()
  * @model
  * @generated
  */
 public interface InternalInitialState extends InternalSimpleState {
-	/**
-	 * Returns the value of the '<em><b>Initial Final State</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Initial Final State</em>' attribute.
-	 * @see #setInitialFinalState(boolean)
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalInitialState_InitialFinalState()
-	 * @model
-	 * @generated
-	 */
-	boolean isInitialFinalState();
-
-	/**
-	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialState#isInitialFinalState <em>Initial Final State</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Initial Final State</em>' attribute.
-	 * @see #isInitialFinalState()
-	 * @generated
-	 */
-	void setInitialFinalState(boolean value);
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

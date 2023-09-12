@@ -7,7 +7,7 @@ class AbstractTransitionPriorityProvider extends CincoValuesProvider<AbstractTra
 	
 	override getPossibleValues(AbstractTransition abstractTransition) {
 		var map = newLinkedHashMap
-		for(var i = 0 ; i <= abstractTransition.getSourceElement.getOutgoing.size;i++){
+		for(var i = 1 ; i <= abstractTransition.getSourceElement.getOutgoing.size;i++){
 			map.put(i.toString,i.toString)
 		}
 		return map

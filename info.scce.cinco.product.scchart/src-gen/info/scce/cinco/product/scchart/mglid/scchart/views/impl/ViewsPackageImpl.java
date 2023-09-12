@@ -346,7 +346,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateView__GetName() {
+	public EOperation getRootStateView__GetGeneratorOutput() {
         return getRootStateView().getEOperations().get(0);
 	}
 
@@ -356,7 +356,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateView__SetName__String() {
+	public EOperation getRootStateView__SetGeneratorOutput__String() {
         return getRootStateView().getEOperations().get(1);
 	}
 
@@ -366,7 +366,7 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateView__GetLabel() {
+	public EOperation getRootStateView__GetName() {
         return getRootStateView().getEOperations().get(2);
 	}
 
@@ -376,8 +376,28 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	 * @generated
 	 */
 	@Override
-	public EOperation getRootStateView__SetLabel__String() {
+	public EOperation getRootStateView__SetName__String() {
         return getRootStateView().getEOperations().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRootStateView__GetLabel() {
+        return getRootStateView().getEOperations().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EOperation getRootStateView__SetLabel__String() {
+        return getRootStateView().getEOperations().get(5);
 	}
 
 	/**
@@ -1068,26 +1088,6 @@ public class ViewsPackageImpl extends EPackageImpl implements ViewsPackage {
 	@Override
 	public EReference getInitialStateView_InternalInitialState() {
         return (EReference)getInitialStateView().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInitialStateView__IsInitialFinalState() {
-        return getInitialStateView().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EOperation getInitialStateView__SetInitialFinalState__boolean() {
-        return getInitialStateView().getEOperations().get(1);
 	}
 
 	/**

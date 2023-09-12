@@ -25,9 +25,9 @@ public class SuspendCheck extends SCChartCheck {
         int i = 1;
         while (((i < it.getCondition().length()) && (!break_))) {
           {
-            boolean _not = (!((((it.getCondition().charAt(i) >= 'a') && (it.getCondition().charAt(i) <= 'z')) || ((it.getCondition().charAt(i) >= 'A') && (it.getCondition().charAt(i) <= 'Z'))) || Character.isDigit(it.getCondition().charAt(i))));
+            boolean _not = (!(((((((((((it.getCondition().charAt(i) >= 'a') && (it.getCondition().charAt(i) <= 'z')) || ((it.getCondition().charAt(i) >= 'A') && (it.getCondition().charAt(i) <= 'Z'))) || Character.isDigit(it.getCondition().charAt(i))) || Objects.equal(Character.valueOf(it.getCondition().charAt(i)), ">")) || Objects.equal(Character.valueOf(it.getCondition().charAt(i)), "<")) || Objects.equal(Character.valueOf(it.getCondition().charAt(i)), "+")) || Objects.equal(Character.valueOf(it.getCondition().charAt(i)), "*")) || Objects.equal(Character.valueOf(it.getCondition().charAt(i)), "-")) || Objects.equal(Character.valueOf(it.getCondition().charAt(i)), "/")) || Objects.equal(Character.valueOf(it.getCondition().charAt(i)), "=")));
             if (_not) {
-              this.addError(it, "name should only contain letters and numbers");
+              this.addError(it, "invalid condition");
               break_ = true;
             }
             i++;

@@ -10,6 +10,7 @@ class RegionCheck extends SCChartCheck{
 	
 	override check(SCChart scchart) {
 		checkNameConvention(scchart)
+		checkForInitialState(scchart)
 	}
 	
 	def checkNameConvention(SCChart scchart){
@@ -29,6 +30,27 @@ class RegionCheck extends SCChartCheck{
 						i++
 					}
 				}
+			}
+		]
+	}
+	
+	def checkForInitialState(SCChart scchart){
+		scchart.findThe(RootState).find(Region).forEach[
+			var count = 0
+			if(it.getInitialStates!==null){
+				count = count + it.getInitialStates.size 
+			}
+			if(it.getInitialFinalStates!==null){
+				count = count + it.getInitialFinalStates.size 
+			}
+			if(it.getInitialSuperStates!==null){
+				count = count + it.getInitialSuperStates.size 
+			}
+			if(it.getInitialFinalSuperStates!==null){
+				count = count + it.getInitialFinalSuperStates.size 
+			}
+			if(count!=1){
+				it.addError("region may only have one initial state")
 			}
 		]
 	}

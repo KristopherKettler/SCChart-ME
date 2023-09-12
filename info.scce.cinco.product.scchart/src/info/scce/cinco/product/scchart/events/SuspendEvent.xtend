@@ -30,26 +30,6 @@ import java.util.UUID
  */
 final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.event.SuspendEvent {
 	
-	override preCreate(Class<? extends Suspend> elementClass, ModelElementContainer container, int x, int y, int width, int height) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override preDelete(Suspend element) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override preMove(Suspend element, ModelElementContainer newContainer, int newX, int newY) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override preResize(Suspend element, int newWidth, int newHeight, int newX, int newY, Direction direction) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postAttributeChange(Suspend element, String attribute, Object oldValue) {
-		// TODO: Auto-generated method stub
-	}
-	
 	override postCreate(Suspend element) {
 		element.uuid=UUID.randomUUID.toString
 		var boolean continue= false
@@ -76,10 +56,8 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 					if(element.rootElement.rootStates.head.regions!==null){
 						for(region : element.rootElement.rootStates.head.regions){
 							if(region.y<30+declarationCount*13){
-								for(region1 : element.rootElement.rootStates.head.regions){
-									region1.y = region1.y + 13
-								}
-								element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height + 13
+								region.y = region.y + 13
+								region.height = region.height - 13
 							}
 						}
 					}
@@ -123,10 +101,8 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 					if(superState.regions!==null){
 						for(region : superState.regions){
 							if(region.y<30+declarationCount*13){
-								for(region1 : superState.regions){
-									region1.y = region1.y + 13
-								}
-								superState.height = superState.height + 13
+								region.y = region.y + 13
+								region.height = region.height - 13
 							}
 						}
 					}
@@ -166,7 +142,10 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 					declarationCount+=element.rootElement.getRootStates.head.suspends.size
 					if(element.rootElement.rootStates.head.regions!==null){
 						for(region : element.rootElement.rootStates.head.regions){
-							region.y = region.y - 13
+							if(region.y==33+declarationCount*13){
+								region.y = region.y - 13
+								region.height= region.height+13
+							}
 						}
 					}
 					element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height - 13
@@ -213,7 +192,10 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 					declarationCount+=superState.suspends.size
 					if(superState.regions!==null){
 						for(region : superState.regions){
-							region.y = region.y - 13
+							if(region.y==33+declarationCount*13){
+								region.y = region.y - 13
+								region.height= region.height+13
+							}
 						}
 					}
 					superState.height = superState.height - 13
@@ -231,21 +213,4 @@ final class SuspendEvent extends info.scce.cinco.product.scchart.mglid.scchart.e
 			}
 		}
 	}
-	
-	override postDoubleClick(Suspend element) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postMove(Suspend element, ModelElementContainer oldContainer, int oldX, int oldY) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postResize(Suspend element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postSelect(Suspend element) {
-		// TODO: Auto-generated method stub
-	}
-	
 }

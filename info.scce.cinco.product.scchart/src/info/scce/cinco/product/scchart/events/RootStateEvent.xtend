@@ -28,59 +28,30 @@ import info.scce.cinco.product.scchart.mglid.scchart.RootState
  */
 final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart.event.RootStateEvent {
 	
-	override preCreate(Class<? extends RootState> elementClass, ModelElementContainer container, int x, int y, int width, int height) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override preDelete(RootState element) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override preMove(RootState element, ModelElementContainer newContainer, int newX, int newY) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override preResize(RootState element, int newWidth, int newHeight, int newX, int newY, Direction direction) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postAttributeChange(RootState element, String attribute, Object oldValue) {
-		// TODO: Auto-generated method stub
-	}
-	
 	override postCreate(RootState element) {
-		element.newRegion(10,30,element.width-20,element.height-40)
-	}
-	
-	override postDelete(RootState element) {
-		// TODO: Auto-generated method stub
-		// Set up your post delete Runnable here.
-		// This will be executed pre delete.
-		return [
-			// This is your post delete Runnable.
-			// This will be executed post delete.
-		]
-	}
-	
-	override postDoubleClick(RootState element) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postMove(RootState element, ModelElementContainer oldContainer, int oldX, int oldY) {
-		// TODO: Auto-generated method stub
+		element.newRegion(10,33,element.width-20,element.height-40)
 	}
 	
 	override postResize(RootState element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction) {
+		
 		if(element.declarations !== null){
 			for(declaration : element.declarations){
 				declaration.width = element.width-20
 			}
 		}
+		
 		if (element.suspends!==null){
 			for(suspend : element.suspends){
 				suspend.width = element.width-20
 			}
 		}
+		
+		if (element.actions!==null){
+			for(action : element.actions){
+				action.width = element.width-20
+			}
+		}
+		
 		if(element.regions!==null){
 			for(region : element.regions){
 				if(oldX!=element.x){
@@ -92,7 +63,7 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 					}
 				}
 				if(oldY!=element.y){
-					if(region.y<35+element.rootElement.rootStates.head.declarations.size*13+element.rootElement.rootStates.head.getSuspends.size*13){
+					if(region.y<35+element.rootElement.rootStates.head.declarations.size*13+element.rootElement.rootStates.head.getSuspends.size*13+element.rootElement.rootStates.head.getActions.size*13){
 						region.height = region.height+(oldY-element.y)
 					}
 					else{
@@ -113,9 +84,4 @@ final class RootStateEvent extends info.scce.cinco.product.scchart.mglid.scchart
 		}
 		
 	}
-	
-	override postSelect(RootState element) {
-		// TODO: Auto-generated method stub
-	}
-	
 }

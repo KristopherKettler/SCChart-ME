@@ -108,6 +108,29 @@ public class RootStateViewImpl extends EObjectImpl implements RootStateView {
 	 * @generated
 	 */
 	@Override
+	public String getGeneratorOutput() {
+		return getInternalRootState().getGeneratorOutput();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGeneratorOutput(final String _arg) {
+		getInternalRootState().getElement().transact("Set GeneratorOutput", () -> {
+			getInternalRootState().setGeneratorOutput(_arg);
+		});
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getName() {
 		return getInternalRootState().getName();
 	}
@@ -215,6 +238,11 @@ public class RootStateViewImpl extends EObjectImpl implements RootStateView {
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
+			case ViewsPackage.ROOT_STATE_VIEW___GET_GENERATOR_OUTPUT:
+				return getGeneratorOutput();
+			case ViewsPackage.ROOT_STATE_VIEW___SET_GENERATOR_OUTPUT__STRING:
+				setGeneratorOutput((String)arguments.get(0));
+				return null;
 			case ViewsPackage.ROOT_STATE_VIEW___GET_NAME:
 				return getName();
 			case ViewsPackage.ROOT_STATE_VIEW___SET_NAME__STRING:

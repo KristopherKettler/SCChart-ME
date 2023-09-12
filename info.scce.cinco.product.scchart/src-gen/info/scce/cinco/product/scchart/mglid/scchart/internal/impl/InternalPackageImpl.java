@@ -336,7 +336,7 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalRootState_Name() {
+	public EAttribute getInternalRootState_GeneratorOutput() {
         return (EAttribute)getInternalRootState().getEStructuralFeatures().get(0);
 	}
 
@@ -346,8 +346,18 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getInternalRootState_Label() {
+	public EAttribute getInternalRootState_Name() {
         return (EAttribute)getInternalRootState().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getInternalRootState_Label() {
+        return (EAttribute)getInternalRootState().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -2238,16 +2248,6 @@ public class InternalPackageImpl extends EPackageImpl implements InternalPackage
 			internalInitialStateEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(InternalPackage.eNS_URI).getEClassifiers().get(10);
 		}
 		return internalInitialStateEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getInternalInitialState_InitialFinalState() {
-        return (EAttribute)getInternalInitialState().getEStructuralFeatures().get(0);
 	}
 
 	/**

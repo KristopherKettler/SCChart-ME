@@ -1,8 +1,6 @@
 package info.scce.cinco.product.scchart.events;
 
 import com.google.common.base.Objects;
-import graphmodel.Direction;
-import graphmodel.ModelElementContainer;
 import info.scce.cinco.product.scchart.mglid.scchart.Action;
 import info.scce.cinco.product.scchart.mglid.scchart.Declaration;
 import info.scce.cinco.product.scchart.mglid.scchart.Region;
@@ -35,26 +33,6 @@ import org.eclipse.xtext.xbase.lib.IterableExtensions;
  */
 @SuppressWarnings("all")
 public final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scchart.event.ActionEvent {
-  @Override
-  public void preCreate(final Class<? extends Action> elementClass, final ModelElementContainer container, final int x, final int y, final int width, final int height) {
-  }
-  
-  @Override
-  public void preDelete(final Action element) {
-  }
-  
-  @Override
-  public void preMove(final Action element, final ModelElementContainer newContainer, final int newX, final int newY) {
-  }
-  
-  @Override
-  public void preResize(final Action element, final int newWidth, final int newHeight, final int newX, final int newY, final Direction direction) {
-  }
-  
-  @Override
-  public void postAttributeChange(final Action element, final String attribute, final Object oldValue) {
-  }
-  
   @Override
   public void postCreate(final Action element) {
     element.setUuid(UUID.randomUUID().toString());
@@ -106,16 +84,12 @@ public final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scc
               int _y = region.getY();
               boolean _lessThan = (_y < (30 + (declarationCount * 13)));
               if (_lessThan) {
-                EList<Region> _regions_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-                for (final Region region1 : _regions_2) {
-                  int _y_1 = region1.getY();
-                  int _plus = (_y_1 + 13);
-                  region1.setY(_plus);
-                }
-                RootState _head = IterableExtensions.<RootState>head(element.getRootElement().getRootStates());
-                int _height = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
-                int _plus_1 = (_height + 13);
-                _head.setHeight(_plus_1);
+                int _y_1 = region.getY();
+                int _plus = (_y_1 + 13);
+                region.setY(_plus);
+                int _height = region.getHeight();
+                int _minus = (_height - 13);
+                region.setHeight(_minus);
               }
             }
           }
@@ -124,8 +98,8 @@ public final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scc
       }
     }
     if ((!continue_)) {
-      EList<Region> _regions_3 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
-      for (final Region region_1 : _regions_3) {
+      EList<Region> _regions_2 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
+      for (final Region region_1 : _regions_2) {
         EList<SuperState> _superStates = region_1.getSuperStates();
         boolean _tripleNotEquals_4 = (_superStates != null);
         if (_tripleNotEquals_4) {
@@ -187,15 +161,12 @@ public final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scc
               int _y = region.getY();
               boolean _lessThan = (_y < (30 + (declarationCount * 13)));
               if (_lessThan) {
-                EList<Region> _regions_2 = superState.getRegions();
-                for (final Region region1 : _regions_2) {
-                  int _y_1 = region1.getY();
-                  int _plus = (_y_1 + 13);
-                  region1.setY(_plus);
-                }
-                int _height = superState.getHeight();
-                int _plus_1 = (_height + 13);
-                superState.setHeight(_plus_1);
+                int _y_1 = region.getY();
+                int _plus = (_y_1 + 13);
+                region.setY(_plus);
+                int _height = region.getHeight();
+                int _minus = (_height - 13);
+                region.setHeight(_minus);
               }
             }
           }
@@ -204,8 +175,8 @@ public final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scc
       }
     }
     if (((!continue_) && (superState.getRegions() != null))) {
-      EList<Region> _regions_3 = superState.getRegions();
-      for (final Region region_1 : _regions_3) {
+      EList<Region> _regions_2 = superState.getRegions();
+      for (final Region region_1 : _regions_2) {
         EList<SuperState> _superStates = region_1.getSuperStates();
         boolean _tripleNotEquals_4 = (_superStates != null);
         if (_tripleNotEquals_4) {
@@ -257,15 +228,18 @@ public final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scc
             EList<Region> _regions_1 = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getRegions();
             for (final Region region : _regions_1) {
               int _y = region.getY();
-              int _minus = (_y - 13);
-              region.setY(_minus);
+              boolean _equals_1 = (_y == (33 + (declarationCount * 13)));
+              if (_equals_1) {
+                int _y_1 = region.getY();
+                int _minus = (_y_1 - 13);
+                region.setY(_minus);
+                int _height = region.getHeight();
+                int _plus = (_height + 13);
+                region.setHeight(_plus);
+              }
             }
           }
           continue_ = true;
-          RootState _head = IterableExtensions.<RootState>head(element.getRootElement().getRootStates());
-          int _height = IterableExtensions.<RootState>head(element.getRootElement().getRootStates()).getHeight();
-          int _minus_1 = (_height - 13);
-          _head.setHeight(_minus_1);
         }
       }
     }
@@ -325,13 +299,17 @@ public final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scc
             EList<Region> _regions_1 = superState.getRegions();
             for (final Region region : _regions_1) {
               int _y = region.getY();
-              int _minus = (_y - 13);
-              region.setY(_minus);
+              boolean _equals_1 = (_y == (33 + (declarationCount * 13)));
+              if (_equals_1) {
+                int _y_1 = region.getY();
+                int _minus = (_y_1 - 13);
+                region.setY(_minus);
+                int _height = region.getHeight();
+                int _plus = (_height + 13);
+                region.setHeight(_plus);
+              }
             }
           }
-          int _height = superState.getHeight();
-          int _minus_1 = (_height - 13);
-          superState.setHeight(_minus_1);
           continue_ = true;
         }
       }
@@ -349,21 +327,5 @@ public final class ActionEvent extends info.scce.cinco.product.scchart.mglid.scc
         }
       }
     }
-  }
-  
-  @Override
-  public void postDoubleClick(final Action element) {
-  }
-  
-  @Override
-  public void postMove(final Action element, final ModelElementContainer oldContainer, final int oldX, final int oldY) {
-  }
-  
-  @Override
-  public void postResize(final Action element, final int oldWidth, final int oldHeight, final int oldX, final int oldY, final Direction direction) {
-  }
-  
-  @Override
-  public void postSelect(final Action element) {
   }
 }

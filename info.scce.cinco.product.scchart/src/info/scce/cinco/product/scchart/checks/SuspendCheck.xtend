@@ -21,8 +21,8 @@ class SuspendCheck extends SCChartCheck {
 				var break = false
 				var i = 1
 				while(i<it.condition.length&&!break){
-					if(!((it.condition.charAt(i) >= 'a' && it.condition.charAt(i) <= 'z') || (it.condition.charAt(i) >= 'A' && it.condition.charAt(i) <= 'Z') || it.condition.charAt(i).isDigit)){
-						it.addError("name should only contain letters and numbers")
+					if(!((it.condition.charAt(i) >= 'a' && it.condition.charAt(i) <= 'z') || (it.condition.charAt(i) >= 'A' && it.condition.charAt(i) <= 'Z') || it.condition.charAt(i).isDigit || it.condition.charAt(i)=='>' || it.condition.charAt(i)=='<'|| it.condition.charAt(i)=='+'|| it.condition.charAt(i)=='*'|| it.condition.charAt(i)=='-'|| it.condition.charAt(i)=='/'|| it.condition.charAt(i)=='=')){
+						it.addError("invalid condition")
 						break = true
 					}
 					i++

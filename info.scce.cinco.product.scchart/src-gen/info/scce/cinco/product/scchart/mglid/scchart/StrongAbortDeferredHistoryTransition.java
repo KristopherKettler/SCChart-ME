@@ -177,23 +177,7 @@ public interface StrongAbortDeferredHistoryTransition extends AbstractTransition
 	 * @model kind="operation"
 	 * @generated
 	 */
-	SuperState getTargetElement();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model required="true" sourceRequired="true"
-	 * @generated
-	 */
-	boolean canReconnectSource(InitialSuperState source);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model sourceRequired="true"
-	 * @generated
-	 */
-	void reconnectSource(InitialSuperState source);
+	Node getTargetElement();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,7 +201,7 @@ public interface StrongAbortDeferredHistoryTransition extends AbstractTransition
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(SuperState source);
+	boolean canReconnectSource(InitialSuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -225,7 +209,55 @@ public interface StrongAbortDeferredHistoryTransition extends AbstractTransition
 	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectSource(SuperState source);
+	void reconnectSource(InitialSuperState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectSource(InitialFinalSuperState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(InitialFinalSuperState source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectSource(SCChartReferece source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(SCChartReferece source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" sourceRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectSource(InitialSCChartReferece source);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model sourceRequired="true"
+	 * @generated
+	 */
+	void reconnectSource(InitialSCChartReferece source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,7 +281,7 @@ public interface StrongAbortDeferredHistoryTransition extends AbstractTransition
 	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectSource(InitialFinalSuperState source);
+	boolean canReconnectSource(FinalSCChartReferece source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -257,23 +289,23 @@ public interface StrongAbortDeferredHistoryTransition extends AbstractTransition
 	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectSource(InitialFinalSuperState source);
+	void reconnectSource(FinalSCChartReferece source);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model required="true" targetRequired="true"
+	 * @model required="true" sourceRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(InitialSuperState target);
+	boolean canReconnectSource(SuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model targetRequired="true"
+	 * @model sourceRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(InitialSuperState target);
+	void reconnectSource(SuperState source);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -297,7 +329,7 @@ public interface StrongAbortDeferredHistoryTransition extends AbstractTransition
 	 * @model required="true" targetRequired="true"
 	 * @generated
 	 */
-	boolean canReconnectTarget(SuperState target);
+	boolean canReconnectTarget(InitialSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -305,7 +337,7 @@ public interface StrongAbortDeferredHistoryTransition extends AbstractTransition
 	 * @model targetRequired="true"
 	 * @generated
 	 */
-	void reconnectTarget(SuperState target);
+	void reconnectTarget(InitialSuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -322,6 +354,70 @@ public interface StrongAbortDeferredHistoryTransition extends AbstractTransition
 	 * @generated
 	 */
 	void reconnectTarget(InitialFinalSuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(SCChartReferece target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(SCChartReferece target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(InitialSCChartReferece target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(InitialSCChartReferece target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(FinalSCChartReferece target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(FinalSCChartReferece target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" targetRequired="true"
+	 * @generated
+	 */
+	boolean canReconnectTarget(SuperState target);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model targetRequired="true"
+	 * @generated
+	 */
+	void reconnectTarget(SuperState target);
 
 	/**
 	 * <!-- begin-user-doc -->

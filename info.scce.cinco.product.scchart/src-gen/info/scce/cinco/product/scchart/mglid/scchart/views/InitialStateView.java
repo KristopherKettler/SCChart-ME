@@ -43,20 +43,4 @@ public interface InitialStateView extends SimpleStateView {
 	 */
 	void setInternalInitialState(InternalInitialState value);
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
-	 * @generated
-	 */
-	boolean isInitialFinalState();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	void setInitialFinalState(boolean _arg);
-
 } // InitialStateView

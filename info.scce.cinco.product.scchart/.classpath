@@ -10,6 +10,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
-	<classpathentry kind="lib" path="src/kico-win.bat"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -45,6 +45,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateImpl#getGeneratorOutput <em>Generator Output</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateImpl#getName <em>Name</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalRootStateImpl#getLabel <em>Label</em>}</li>
  * </ul>
@@ -52,6 +53,26 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * @generated
  */
 public class InternalRootStateImpl extends InternalContainerImpl implements InternalRootState {
+	/**
+	 * The default value of the '{@link #getGeneratorOutput() <em>Generator Output</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getGeneratorOutput()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GENERATOR_OUTPUT_EDEFAULT = "Identity Diagram";
+
+	/**
+	 * The cached value of the '{@link #getGeneratorOutput() <em>Generator Output</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getGeneratorOutput()
+	 * @generated
+	 * @ordered
+	 */
+	protected String generatorOutput = GENERATOR_OUTPUT_EDEFAULT;
+
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -109,6 +130,29 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	protected EClass eStaticClass() {
 		return InternalPackage.Literals.INTERNAL_ROOT_STATE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getGeneratorOutput() {
+		return generatorOutput;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGeneratorOutput(String newGeneratorOutput) {
+		String oldGeneratorOutput = generatorOutput;
+		generatorOutput = newGeneratorOutput;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_ROOT_STATE__GENERATOR_OUTPUT, oldGeneratorOutput, generatorOutput));
 	}
 
 	/**
@@ -317,6 +361,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_ROOT_STATE__GENERATOR_OUTPUT:
+				return getGeneratorOutput();
 			case InternalPackage.INTERNAL_ROOT_STATE__NAME:
 				return getName();
 			case InternalPackage.INTERNAL_ROOT_STATE__LABEL:
@@ -333,6 +379,9 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_ROOT_STATE__GENERATOR_OUTPUT:
+				setGeneratorOutput((String)newValue);
+				return;
 			case InternalPackage.INTERNAL_ROOT_STATE__NAME:
 				setName((String)newValue);
 				return;
@@ -351,6 +400,9 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_ROOT_STATE__GENERATOR_OUTPUT:
+				setGeneratorOutput(GENERATOR_OUTPUT_EDEFAULT);
+				return;
 			case InternalPackage.INTERNAL_ROOT_STATE__NAME:
 				setName(NAME_EDEFAULT);
 				return;
@@ -369,6 +421,8 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case InternalPackage.INTERNAL_ROOT_STATE__GENERATOR_OUTPUT:
+				return GENERATOR_OUTPUT_EDEFAULT == null ? generatorOutput != null : !GENERATOR_OUTPUT_EDEFAULT.equals(generatorOutput);
 			case InternalPackage.INTERNAL_ROOT_STATE__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case InternalPackage.INTERNAL_ROOT_STATE__LABEL:
@@ -455,7 +509,9 @@ public class InternalRootStateImpl extends InternalContainerImpl implements Inte
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (name: ");
+		result.append(" (generatorOutput: ");
+		result.append(generatorOutput);
+		result.append(", name: ");
 		result.append(name);
 		result.append(", label: ");
 		result.append(label);

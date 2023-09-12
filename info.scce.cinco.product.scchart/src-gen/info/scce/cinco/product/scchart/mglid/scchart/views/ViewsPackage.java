@@ -85,13 +85,31 @@ public interface ViewsPackage extends EPackage {
 	int ROOT_STATE_VIEW_FEATURE_COUNT = 1;
 
 	/**
+	 * The operation id for the '<em>Get Generator Output</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROOT_STATE_VIEW___GET_GENERATOR_OUTPUT = 0;
+
+	/**
+	 * The operation id for the '<em>Set Generator Output</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROOT_STATE_VIEW___SET_GENERATOR_OUTPUT__STRING = 1;
+
+	/**
 	 * The operation id for the '<em>Get Name</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW___GET_NAME = 0;
+	int ROOT_STATE_VIEW___GET_NAME = 2;
 
 	/**
 	 * The operation id for the '<em>Set Name</em>' operation.
@@ -100,7 +118,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW___SET_NAME__STRING = 1;
+	int ROOT_STATE_VIEW___SET_NAME__STRING = 3;
 
 	/**
 	 * The operation id for the '<em>Get Label</em>' operation.
@@ -109,7 +127,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW___GET_LABEL = 2;
+	int ROOT_STATE_VIEW___GET_LABEL = 4;
 
 	/**
 	 * The operation id for the '<em>Set Label</em>' operation.
@@ -118,7 +136,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW___SET_LABEL__STRING = 3;
+	int ROOT_STATE_VIEW___SET_LABEL__STRING = 5;
 
 	/**
 	 * The number of operations of the '<em>Root State View</em>' class.
@@ -127,7 +145,7 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROOT_STATE_VIEW_OPERATION_COUNT = 4;
+	int ROOT_STATE_VIEW_OPERATION_COUNT = 6;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.RegionViewImpl <em>Region View</em>}' class.
@@ -1193,31 +1211,13 @@ public interface ViewsPackage extends EPackage {
 	int INITIAL_STATE_VIEW___SET_LABEL__STRING = SIMPLE_STATE_VIEW___SET_LABEL__STRING;
 
 	/**
-	 * The operation id for the '<em>Is Initial Final State</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITIAL_STATE_VIEW___IS_INITIAL_FINAL_STATE = SIMPLE_STATE_VIEW_OPERATION_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Set Initial Final State</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INITIAL_STATE_VIEW___SET_INITIAL_FINAL_STATE__BOOLEAN = SIMPLE_STATE_VIEW_OPERATION_COUNT + 1;
-
-	/**
 	 * The number of operations of the '<em>Initial State View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INITIAL_STATE_VIEW_OPERATION_COUNT = SIMPLE_STATE_VIEW_OPERATION_COUNT + 2;
+	int INITIAL_STATE_VIEW_OPERATION_COUNT = SIMPLE_STATE_VIEW_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.FinalStateViewImpl <em>Final State View</em>}' class.
@@ -3719,6 +3719,26 @@ public interface ViewsPackage extends EPackage {
 	EReference getRootStateView_InternalRootState();
 
 	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#getGeneratorOutput() <em>Get Generator Output</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Generator Output</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#getGeneratorOutput()
+	 * @generated
+	 */
+	EOperation getRootStateView__GetGeneratorOutput();
+
+	/**
+	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#setGeneratorOutput(java.lang.String) <em>Set Generator Output</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Set Generator Output</em>' operation.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#setGeneratorOutput(java.lang.String)
+	 * @generated
+	 */
+	EOperation getRootStateView__SetGeneratorOutput__String();
+
+	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.RootStateView#getName() <em>Get Name</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4427,26 +4447,6 @@ public interface ViewsPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getInitialStateView_InternalInitialState();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.InitialStateView#isInitialFinalState() <em>Is Initial Final State</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Initial Final State</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.InitialStateView#isInitialFinalState()
-	 * @generated
-	 */
-	EOperation getInitialStateView__IsInitialFinalState();
-
-	/**
-	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.InitialStateView#setInitialFinalState(boolean) <em>Set Initial Final State</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Set Initial Final State</em>' operation.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.views.InitialStateView#setInitialFinalState(boolean)
-	 * @generated
-	 */
-	EOperation getInitialStateView__SetInitialFinalState__boolean();
 
 	/**
 	 * Returns the meta object for class '{@link info.scce.cinco.product.scchart.mglid.scchart.views.FinalStateView <em>Final State View</em>}'.
@@ -6110,6 +6110,22 @@ public interface ViewsPackage extends EPackage {
 		EReference ROOT_STATE_VIEW__INTERNAL_ROOT_STATE = eINSTANCE.getRootStateView_InternalRootState();
 
 		/**
+		 * The meta object literal for the '<em><b>Get Generator Output</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ROOT_STATE_VIEW___GET_GENERATOR_OUTPUT = eINSTANCE.getRootStateView__GetGeneratorOutput();
+
+		/**
+		 * The meta object literal for the '<em><b>Set Generator Output</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ROOT_STATE_VIEW___SET_GENERATOR_OUTPUT__STRING = eINSTANCE.getRootStateView__SetGeneratorOutput__String();
+
+		/**
 		 * The meta object literal for the '<em><b>Get Name</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -6688,22 +6704,6 @@ public interface ViewsPackage extends EPackage {
 		 * @generated
 		 */
 		EReference INITIAL_STATE_VIEW__INTERNAL_INITIAL_STATE = eINSTANCE.getInitialStateView_InternalInitialState();
-
-		/**
-		 * The meta object literal for the '<em><b>Is Initial Final State</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation INITIAL_STATE_VIEW___IS_INITIAL_FINAL_STATE = eINSTANCE.getInitialStateView__IsInitialFinalState();
-
-		/**
-		 * The meta object literal for the '<em><b>Set Initial Final State</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation INITIAL_STATE_VIEW___SET_INITIAL_FINAL_STATE__BOOLEAN = eINSTANCE.getInitialStateView__SetInitialFinalState__boolean();
 
 		/**
 		 * The meta object literal for the '{@link info.scce.cinco.product.scchart.mglid.scchart.views.impl.FinalStateViewImpl <em>Final State View</em>}' class.

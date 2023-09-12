@@ -30,26 +30,6 @@ import java.util.UUID
  */
 final class DeclarationEvent extends info.scce.cinco.product.scchart.mglid.scchart.event.DeclarationEvent {
 	
-	override preCreate(Class<? extends Declaration> elementClass, ModelElementContainer container, int x, int y, int width, int height) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override preDelete(Declaration element) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override preMove(Declaration element, ModelElementContainer newContainer, int newX, int newY) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override preResize(Declaration element, int newWidth, int newHeight, int newX, int newY, Direction direction) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postAttributeChange(Declaration element, String attribute, Object oldValue) {
-		// TODO: Auto-generated method stub
-	}
-	
 	override postCreate(Declaration element) {
 		element.uuid=UUID.randomUUID.toString
 		var boolean continue= false
@@ -79,10 +59,9 @@ final class DeclarationEvent extends info.scce.cinco.product.scchart.mglid.sccha
 					if(element.rootElement.rootStates.head.regions!==null){
 						for(region : element.rootElement.rootStates.head.regions){
 							if(region.y<30+declarationCount*13){
-								for(region1 : element.rootElement.rootStates.head.regions){
-									region1.y = region1.y + 13
-								}
-								element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height + 13
+								region.y = region.y + 13
+								region.height = region.height - 13
+
 							}
 						}
 					}
@@ -129,10 +108,8 @@ final class DeclarationEvent extends info.scce.cinco.product.scchart.mglid.sccha
 					if(superState.regions!==null){
 						for(region : superState.regions){
 							if(region.y<30+declarationCount*13){
-								for(region1 : superState.regions){
-									region1.y = region1.y + 13
-								}
-								superState.height = superState.height + 13
+								region.y = region.y + 13
+								region.height = region.height - 13
 							}
 						}
 					}
@@ -176,10 +153,12 @@ final class DeclarationEvent extends info.scce.cinco.product.scchart.mglid.sccha
 					}
 					if(element.rootElement.rootStates.head.regions!==null){
 						for(region : element.rootElement.rootStates.head.regions){
-							region.y = region.y - 13
+							if(region.y==33+declarationCount*13){
+								region.y = region.y - 13
+								region.height= region.height+13
+							}
 						}
 					}
-					element.rootElement.rootStates.head.height = element.rootElement.rootStates.head.height - 13
 					continue = true
 				}
 			}
@@ -226,10 +205,12 @@ final class DeclarationEvent extends info.scce.cinco.product.scchart.mglid.sccha
 					}
 					if(superState.regions!==null){
 						for(region : superState.regions){
+							if(region.y==33+declarationCount*13){
 								region.y = region.y - 13
+								region.height= region.height+13
+							}
 						}
 					}
-					superState.height = superState.height - 13
 					continue = true
 				}
 			}
@@ -244,21 +225,4 @@ final class DeclarationEvent extends info.scce.cinco.product.scchart.mglid.sccha
 			}
 		}
 	}
-	
-	override postDoubleClick(Declaration element) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postMove(Declaration element, ModelElementContainer oldContainer, int oldX, int oldY) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postResize(Declaration element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postSelect(Declaration element) {
-		// TODO: Auto-generated method stub
-	}
-	
 }

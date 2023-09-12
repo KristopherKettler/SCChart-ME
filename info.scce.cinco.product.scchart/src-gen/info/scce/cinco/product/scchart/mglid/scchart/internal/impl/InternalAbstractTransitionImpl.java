@@ -35,7 +35,7 @@ public class InternalAbstractTransitionImpl extends InternalEdgeImpl implements 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String PRIORITY_EDEFAULT = "0";
+	protected static final String PRIORITY_EDEFAULT = "1";
 
 	/**
 	 * The cached value of the '{@link #getPriority() <em>Priority</em>}' attribute.

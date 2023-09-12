@@ -236,6 +236,79 @@ public class SCChartFactory extends ScchartFactoryImpl {
   }
   
   /**
+   * This method creates an Suspend with the given id.
+   * 
+   * @param ID: The id for the new element
+   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+   * element of the created element
+   * @param hook: Indicates, if the post create hook should be executed
+   */
+  public Suspend createSuspend(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
+    Suspend _createSuspend = super.createSuspend();
+    final Procedure1<Suspend> _function = (Suspend it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalSuspend _createInternalSuspend = this._internalFactory.createInternalSuspend();
+        _elvis = _createInternalSuspend;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        it_1.setContainer(parent);
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        SuspendEContentAdapter _suspendEContentAdapter = new SuspendEContentAdapter();
+        _eAdapters.add(_suspendEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+      if (hook) {
+        this.postCreates(it);
+      }
+    };
+    return ObjectExtensions.<Suspend>operator_doubleArrow(_createSuspend, _function);
+  }
+  
+  /**
+   * This method creates an Suspend with the given id. Post create hook won't be triggered.
+   */
+  public Suspend createSuspend(final String ID) {
+    return this.createSuspend(ID, null, null, false);
+  }
+  
+  /**
+   * This method creates an Suspend with the given id. Post create hook will be triggered.
+   */
+  public Suspend createSuspend(final InternalModelElementContainer parent) {
+    return this.createSuspend(EcoreUtil.generateUUID(), null, parent, true);
+  }
+  
+  /**
+   * This method creates an Suspend with the given id. Post create hook will be triggered.
+   */
+  public Suspend createSuspend(final String ID, final InternalModelElementContainer parent) {
+    return this.createSuspend(ID, null, parent, true);
+  }
+  
+  public Suspend createSuspend(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
+    return this.createSuspend(ID, ime, parent, true);
+  }
+  
+  /**
+   * This method creates an Suspend with the given id. Post create hook won't be triggered.
+   */
+  public Suspend createSuspend(final InternalModelElement ime) {
+    return this.createSuspend(EcoreUtil.generateUUID(), ime, null, false);
+  }
+  
+  @Override
+  public Suspend createSuspend() {
+    return this.createSuspend(EcoreUtil.generateUUID());
+  }
+  
+  /**
    * This method creates an Declaration with the given id.
    * 
    * @param ID: The id for the new element
@@ -306,222 +379,6 @@ public class SCChartFactory extends ScchartFactoryImpl {
   @Override
   public Declaration createDeclaration() {
     return this.createDeclaration(EcoreUtil.generateUUID());
-  }
-  
-  /**
-   * This method creates an FinalSCChartReferece with the given id.
-   * 
-   * @param ID: The id for the new element
-   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-   * element of the created element
-   * @param hook: Indicates, if the post create hook should be executed
-   */
-  public FinalSCChartReferece createFinalSCChartReferece(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
-    FinalSCChartReferece _createFinalSCChartReferece = super.createFinalSCChartReferece();
-    final Procedure1<FinalSCChartReferece> _function = (FinalSCChartReferece it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalFinalSCChartReferece _createInternalFinalSCChartReferece = this._internalFactory.createInternalFinalSCChartReferece();
-        _elvis = _createInternalFinalSCChartReferece;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        it_1.setContainer(parent);
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        FinalSCChartRefereceEContentAdapter _finalSCChartRefereceEContentAdapter = new FinalSCChartRefereceEContentAdapter();
-        _eAdapters.add(_finalSCChartRefereceEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-      if (hook) {
-        this.postCreates(it);
-      }
-    };
-    return ObjectExtensions.<FinalSCChartReferece>operator_doubleArrow(_createFinalSCChartReferece, _function);
-  }
-  
-  /**
-   * This method creates an FinalSCChartReferece with the given id. Post create hook won't be triggered.
-   */
-  public FinalSCChartReferece createFinalSCChartReferece(final String ID) {
-    return this.createFinalSCChartReferece(ID, null, null, false);
-  }
-  
-  /**
-   * This method creates an FinalSCChartReferece with the given id. Post create hook will be triggered.
-   */
-  public FinalSCChartReferece createFinalSCChartReferece(final InternalModelElementContainer parent) {
-    return this.createFinalSCChartReferece(EcoreUtil.generateUUID(), null, parent, true);
-  }
-  
-  /**
-   * This method creates an FinalSCChartReferece with the given id. Post create hook will be triggered.
-   */
-  public FinalSCChartReferece createFinalSCChartReferece(final String ID, final InternalModelElementContainer parent) {
-    return this.createFinalSCChartReferece(ID, null, parent, true);
-  }
-  
-  public FinalSCChartReferece createFinalSCChartReferece(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
-    return this.createFinalSCChartReferece(ID, ime, parent, true);
-  }
-  
-  /**
-   * This method creates an FinalSCChartReferece with the given id. Post create hook won't be triggered.
-   */
-  public FinalSCChartReferece createFinalSCChartReferece(final InternalModelElement ime) {
-    return this.createFinalSCChartReferece(EcoreUtil.generateUUID(), ime, null, false);
-  }
-  
-  @Override
-  public FinalSCChartReferece createFinalSCChartReferece() {
-    return this.createFinalSCChartReferece(EcoreUtil.generateUUID());
-  }
-  
-  /**
-   * This method creates an Region with the given id.
-   * 
-   * @param ID: The id for the new element
-   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-   * element of the created element
-   * @param hook: Indicates, if the post create hook should be executed
-   */
-  public Region createRegion(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
-    Region _createRegion = super.createRegion();
-    final Procedure1<Region> _function = (Region it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalRegion _createInternalRegion = this._internalFactory.createInternalRegion();
-        _elvis = _createInternalRegion;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        it_1.setContainer(parent);
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        RegionEContentAdapter _regionEContentAdapter = new RegionEContentAdapter();
-        _eAdapters.add(_regionEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-      if (hook) {
-        this.postCreates(it);
-      }
-    };
-    return ObjectExtensions.<Region>operator_doubleArrow(_createRegion, _function);
-  }
-  
-  /**
-   * This method creates an Region with the given id. Post create hook won't be triggered.
-   */
-  public Region createRegion(final String ID) {
-    return this.createRegion(ID, null, null, false);
-  }
-  
-  /**
-   * This method creates an Region with the given id. Post create hook will be triggered.
-   */
-  public Region createRegion(final InternalModelElementContainer parent) {
-    return this.createRegion(EcoreUtil.generateUUID(), null, parent, true);
-  }
-  
-  /**
-   * This method creates an Region with the given id. Post create hook will be triggered.
-   */
-  public Region createRegion(final String ID, final InternalModelElementContainer parent) {
-    return this.createRegion(ID, null, parent, true);
-  }
-  
-  public Region createRegion(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
-    return this.createRegion(ID, ime, parent, true);
-  }
-  
-  /**
-   * This method creates an Region with the given id. Post create hook won't be triggered.
-   */
-  public Region createRegion(final InternalModelElement ime) {
-    return this.createRegion(EcoreUtil.generateUUID(), ime, null, false);
-  }
-  
-  @Override
-  public Region createRegion() {
-    return this.createRegion(EcoreUtil.generateUUID());
-  }
-  
-  /**
-   * This method creates an InitialState with the given id.
-   * 
-   * @param ID: The id for the new element
-   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-   * element of the created element
-   * @param hook: Indicates, if the post create hook should be executed
-   */
-  public InitialState createInitialState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
-    InitialState _createInitialState = super.createInitialState();
-    final Procedure1<InitialState> _function = (InitialState it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalInitialState _createInternalInitialState = this._internalFactory.createInternalInitialState();
-        _elvis = _createInternalInitialState;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        it_1.setContainer(parent);
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        InitialStateEContentAdapter _initialStateEContentAdapter = new InitialStateEContentAdapter();
-        _eAdapters.add(_initialStateEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-    };
-    return ObjectExtensions.<InitialState>operator_doubleArrow(_createInitialState, _function);
-  }
-  
-  /**
-   * This method creates an InitialState with the given id. Post create hook won't be triggered.
-   */
-  public InitialState createInitialState(final String ID) {
-    return this.createInitialState(ID, null, null, false);
-  }
-  
-  /**
-   * This method creates an InitialState with the given id. Post create hook will be triggered.
-   */
-  public InitialState createInitialState(final InternalModelElementContainer parent) {
-    return this.createInitialState(EcoreUtil.generateUUID(), null, parent, true);
-  }
-  
-  /**
-   * This method creates an InitialState with the given id. Post create hook will be triggered.
-   */
-  public InitialState createInitialState(final String ID, final InternalModelElementContainer parent) {
-    return this.createInitialState(ID, null, parent, true);
-  }
-  
-  public InitialState createInitialState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
-    return this.createInitialState(ID, ime, parent, true);
-  }
-  
-  /**
-   * This method creates an InitialState with the given id. Post create hook won't be triggered.
-   */
-  public InitialState createInitialState(final InternalModelElement ime) {
-    return this.createInitialState(EcoreUtil.generateUUID(), ime, null, false);
-  }
-  
-  @Override
-  public InitialState createInitialState() {
-    return this.createInitialState(EcoreUtil.generateUUID());
   }
   
   /**
@@ -598,7 +455,7 @@ public class SCChartFactory extends ScchartFactoryImpl {
   }
   
   /**
-   * This method creates an RootState with the given id.
+   * This method creates an InitialFinalSuperState with the given id.
    * 
    * @param ID: The id for the new element
    * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
@@ -606,23 +463,23 @@ public class SCChartFactory extends ScchartFactoryImpl {
    * element of the created element
    * @param hook: Indicates, if the post create hook should be executed
    */
-  public RootState createRootState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
-    RootState _createRootState = super.createRootState();
-    final Procedure1<RootState> _function = (RootState it) -> {
+  public InitialFinalSuperState createInitialFinalSuperState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
+    InitialFinalSuperState _createInitialFinalSuperState = super.createInitialFinalSuperState();
+    final Procedure1<InitialFinalSuperState> _function = (InitialFinalSuperState it) -> {
       EcoreUtil.setID(it, ID);
       InternalModelElement _elvis = null;
       if (ime != null) {
         _elvis = ime;
       } else {
-        InternalRootState _createInternalRootState = this._internalFactory.createInternalRootState();
-        _elvis = _createInternalRootState;
+        InternalInitialFinalSuperState _createInternalInitialFinalSuperState = this._internalFactory.createInternalInitialFinalSuperState();
+        _elvis = _createInternalInitialFinalSuperState;
       }
       final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
         EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
         it_1.setContainer(parent);
         EList<Adapter> _eAdapters = it_1.eAdapters();
-        RootStateEContentAdapter _rootStateEContentAdapter = new RootStateEContentAdapter();
-        _eAdapters.add(_rootStateEContentAdapter);
+        InitialFinalSuperStateEContentAdapter _initialFinalSuperStateEContentAdapter = new InitialFinalSuperStateEContentAdapter();
+        _eAdapters.add(_initialFinalSuperStateEContentAdapter);
       };
       InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
       this.setInternal(it, _doubleArrow);
@@ -630,48 +487,48 @@ public class SCChartFactory extends ScchartFactoryImpl {
         this.postCreates(it);
       }
     };
-    return ObjectExtensions.<RootState>operator_doubleArrow(_createRootState, _function);
+    return ObjectExtensions.<InitialFinalSuperState>operator_doubleArrow(_createInitialFinalSuperState, _function);
   }
   
   /**
-   * This method creates an RootState with the given id. Post create hook won't be triggered.
+   * This method creates an InitialFinalSuperState with the given id. Post create hook won't be triggered.
    */
-  public RootState createRootState(final String ID) {
-    return this.createRootState(ID, null, null, false);
+  public InitialFinalSuperState createInitialFinalSuperState(final String ID) {
+    return this.createInitialFinalSuperState(ID, null, null, false);
   }
   
   /**
-   * This method creates an RootState with the given id. Post create hook will be triggered.
+   * This method creates an InitialFinalSuperState with the given id. Post create hook will be triggered.
    */
-  public RootState createRootState(final InternalModelElementContainer parent) {
-    return this.createRootState(EcoreUtil.generateUUID(), null, parent, true);
+  public InitialFinalSuperState createInitialFinalSuperState(final InternalModelElementContainer parent) {
+    return this.createInitialFinalSuperState(EcoreUtil.generateUUID(), null, parent, true);
   }
   
   /**
-   * This method creates an RootState with the given id. Post create hook will be triggered.
+   * This method creates an InitialFinalSuperState with the given id. Post create hook will be triggered.
    */
-  public RootState createRootState(final String ID, final InternalModelElementContainer parent) {
-    return this.createRootState(ID, null, parent, true);
+  public InitialFinalSuperState createInitialFinalSuperState(final String ID, final InternalModelElementContainer parent) {
+    return this.createInitialFinalSuperState(ID, null, parent, true);
   }
   
-  public RootState createRootState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
-    return this.createRootState(ID, ime, parent, true);
+  public InitialFinalSuperState createInitialFinalSuperState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
+    return this.createInitialFinalSuperState(ID, ime, parent, true);
   }
   
   /**
-   * This method creates an RootState with the given id. Post create hook won't be triggered.
+   * This method creates an InitialFinalSuperState with the given id. Post create hook won't be triggered.
    */
-  public RootState createRootState(final InternalModelElement ime) {
-    return this.createRootState(EcoreUtil.generateUUID(), ime, null, false);
+  public InitialFinalSuperState createInitialFinalSuperState(final InternalModelElement ime) {
+    return this.createInitialFinalSuperState(EcoreUtil.generateUUID(), ime, null, false);
   }
   
   @Override
-  public RootState createRootState() {
-    return this.createRootState(EcoreUtil.generateUUID());
+  public InitialFinalSuperState createInitialFinalSuperState() {
+    return this.createInitialFinalSuperState(EcoreUtil.generateUUID());
   }
   
   /**
-   * This method creates an Suspend with the given id.
+   * This method creates an InitialSuperState with the given id.
    * 
    * @param ID: The id for the new element
    * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
@@ -679,23 +536,23 @@ public class SCChartFactory extends ScchartFactoryImpl {
    * element of the created element
    * @param hook: Indicates, if the post create hook should be executed
    */
-  public Suspend createSuspend(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
-    Suspend _createSuspend = super.createSuspend();
-    final Procedure1<Suspend> _function = (Suspend it) -> {
+  public InitialSuperState createInitialSuperState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
+    InitialSuperState _createInitialSuperState = super.createInitialSuperState();
+    final Procedure1<InitialSuperState> _function = (InitialSuperState it) -> {
       EcoreUtil.setID(it, ID);
       InternalModelElement _elvis = null;
       if (ime != null) {
         _elvis = ime;
       } else {
-        InternalSuspend _createInternalSuspend = this._internalFactory.createInternalSuspend();
-        _elvis = _createInternalSuspend;
+        InternalInitialSuperState _createInternalInitialSuperState = this._internalFactory.createInternalInitialSuperState();
+        _elvis = _createInternalInitialSuperState;
       }
       final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
         EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
         it_1.setContainer(parent);
         EList<Adapter> _eAdapters = it_1.eAdapters();
-        SuspendEContentAdapter _suspendEContentAdapter = new SuspendEContentAdapter();
-        _eAdapters.add(_suspendEContentAdapter);
+        InitialSuperStateEContentAdapter _initialSuperStateEContentAdapter = new InitialSuperStateEContentAdapter();
+        _eAdapters.add(_initialSuperStateEContentAdapter);
       };
       InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
       this.setInternal(it, _doubleArrow);
@@ -703,44 +560,114 @@ public class SCChartFactory extends ScchartFactoryImpl {
         this.postCreates(it);
       }
     };
-    return ObjectExtensions.<Suspend>operator_doubleArrow(_createSuspend, _function);
+    return ObjectExtensions.<InitialSuperState>operator_doubleArrow(_createInitialSuperState, _function);
   }
   
   /**
-   * This method creates an Suspend with the given id. Post create hook won't be triggered.
+   * This method creates an InitialSuperState with the given id. Post create hook won't be triggered.
    */
-  public Suspend createSuspend(final String ID) {
-    return this.createSuspend(ID, null, null, false);
+  public InitialSuperState createInitialSuperState(final String ID) {
+    return this.createInitialSuperState(ID, null, null, false);
   }
   
   /**
-   * This method creates an Suspend with the given id. Post create hook will be triggered.
+   * This method creates an InitialSuperState with the given id. Post create hook will be triggered.
    */
-  public Suspend createSuspend(final InternalModelElementContainer parent) {
-    return this.createSuspend(EcoreUtil.generateUUID(), null, parent, true);
+  public InitialSuperState createInitialSuperState(final InternalModelElementContainer parent) {
+    return this.createInitialSuperState(EcoreUtil.generateUUID(), null, parent, true);
   }
   
   /**
-   * This method creates an Suspend with the given id. Post create hook will be triggered.
+   * This method creates an InitialSuperState with the given id. Post create hook will be triggered.
    */
-  public Suspend createSuspend(final String ID, final InternalModelElementContainer parent) {
-    return this.createSuspend(ID, null, parent, true);
+  public InitialSuperState createInitialSuperState(final String ID, final InternalModelElementContainer parent) {
+    return this.createInitialSuperState(ID, null, parent, true);
   }
   
-  public Suspend createSuspend(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
-    return this.createSuspend(ID, ime, parent, true);
+  public InitialSuperState createInitialSuperState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
+    return this.createInitialSuperState(ID, ime, parent, true);
   }
   
   /**
-   * This method creates an Suspend with the given id. Post create hook won't be triggered.
+   * This method creates an InitialSuperState with the given id. Post create hook won't be triggered.
    */
-  public Suspend createSuspend(final InternalModelElement ime) {
-    return this.createSuspend(EcoreUtil.generateUUID(), ime, null, false);
+  public InitialSuperState createInitialSuperState(final InternalModelElement ime) {
+    return this.createInitialSuperState(EcoreUtil.generateUUID(), ime, null, false);
   }
   
   @Override
-  public Suspend createSuspend() {
-    return this.createSuspend(EcoreUtil.generateUUID());
+  public InitialSuperState createInitialSuperState() {
+    return this.createInitialSuperState(EcoreUtil.generateUUID());
+  }
+  
+  /**
+   * This method creates an FinalState with the given id.
+   * 
+   * @param ID: The id for the new element
+   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+   * element of the created element
+   * @param hook: Indicates, if the post create hook should be executed
+   */
+  public FinalState createFinalState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
+    FinalState _createFinalState = super.createFinalState();
+    final Procedure1<FinalState> _function = (FinalState it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalFinalState _createInternalFinalState = this._internalFactory.createInternalFinalState();
+        _elvis = _createInternalFinalState;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        it_1.setContainer(parent);
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        FinalStateEContentAdapter _finalStateEContentAdapter = new FinalStateEContentAdapter();
+        _eAdapters.add(_finalStateEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+    };
+    return ObjectExtensions.<FinalState>operator_doubleArrow(_createFinalState, _function);
+  }
+  
+  /**
+   * This method creates an FinalState with the given id. Post create hook won't be triggered.
+   */
+  public FinalState createFinalState(final String ID) {
+    return this.createFinalState(ID, null, null, false);
+  }
+  
+  /**
+   * This method creates an FinalState with the given id. Post create hook will be triggered.
+   */
+  public FinalState createFinalState(final InternalModelElementContainer parent) {
+    return this.createFinalState(EcoreUtil.generateUUID(), null, parent, true);
+  }
+  
+  /**
+   * This method creates an FinalState with the given id. Post create hook will be triggered.
+   */
+  public FinalState createFinalState(final String ID, final InternalModelElementContainer parent) {
+    return this.createFinalState(ID, null, parent, true);
+  }
+  
+  public FinalState createFinalState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
+    return this.createFinalState(ID, ime, parent, true);
+  }
+  
+  /**
+   * This method creates an FinalState with the given id. Post create hook won't be triggered.
+   */
+  public FinalState createFinalState(final InternalModelElement ime) {
+    return this.createFinalState(EcoreUtil.generateUUID(), ime, null, false);
+  }
+  
+  @Override
+  public FinalState createFinalState() {
+    return this.createFinalState(EcoreUtil.generateUUID());
   }
   
   /**
@@ -817,149 +744,6 @@ public class SCChartFactory extends ScchartFactoryImpl {
   }
   
   /**
-   * This method creates an InitialFinalSuperState with the given id.
-   * 
-   * @param ID: The id for the new element
-   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-   * element of the created element
-   * @param hook: Indicates, if the post create hook should be executed
-   */
-  public InitialFinalSuperState createInitialFinalSuperState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
-    InitialFinalSuperState _createInitialFinalSuperState = super.createInitialFinalSuperState();
-    final Procedure1<InitialFinalSuperState> _function = (InitialFinalSuperState it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalInitialFinalSuperState _createInternalInitialFinalSuperState = this._internalFactory.createInternalInitialFinalSuperState();
-        _elvis = _createInternalInitialFinalSuperState;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        it_1.setContainer(parent);
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        InitialFinalSuperStateEContentAdapter _initialFinalSuperStateEContentAdapter = new InitialFinalSuperStateEContentAdapter();
-        _eAdapters.add(_initialFinalSuperStateEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-      if (hook) {
-        this.postCreates(it);
-      }
-    };
-    return ObjectExtensions.<InitialFinalSuperState>operator_doubleArrow(_createInitialFinalSuperState, _function);
-  }
-  
-  /**
-   * This method creates an InitialFinalSuperState with the given id. Post create hook won't be triggered.
-   */
-  public InitialFinalSuperState createInitialFinalSuperState(final String ID) {
-    return this.createInitialFinalSuperState(ID, null, null, false);
-  }
-  
-  /**
-   * This method creates an InitialFinalSuperState with the given id. Post create hook will be triggered.
-   */
-  public InitialFinalSuperState createInitialFinalSuperState(final InternalModelElementContainer parent) {
-    return this.createInitialFinalSuperState(EcoreUtil.generateUUID(), null, parent, true);
-  }
-  
-  /**
-   * This method creates an InitialFinalSuperState with the given id. Post create hook will be triggered.
-   */
-  public InitialFinalSuperState createInitialFinalSuperState(final String ID, final InternalModelElementContainer parent) {
-    return this.createInitialFinalSuperState(ID, null, parent, true);
-  }
-  
-  public InitialFinalSuperState createInitialFinalSuperState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
-    return this.createInitialFinalSuperState(ID, ime, parent, true);
-  }
-  
-  /**
-   * This method creates an InitialFinalSuperState with the given id. Post create hook won't be triggered.
-   */
-  public InitialFinalSuperState createInitialFinalSuperState(final InternalModelElement ime) {
-    return this.createInitialFinalSuperState(EcoreUtil.generateUUID(), ime, null, false);
-  }
-  
-  @Override
-  public InitialFinalSuperState createInitialFinalSuperState() {
-    return this.createInitialFinalSuperState(EcoreUtil.generateUUID());
-  }
-  
-  /**
-   * This method creates an InitialFinalState with the given id.
-   * 
-   * @param ID: The id for the new element
-   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-   * element of the created element
-   * @param hook: Indicates, if the post create hook should be executed
-   */
-  public InitialFinalState createInitialFinalState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
-    InitialFinalState _createInitialFinalState = super.createInitialFinalState();
-    final Procedure1<InitialFinalState> _function = (InitialFinalState it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalInitialFinalState _createInternalInitialFinalState = this._internalFactory.createInternalInitialFinalState();
-        _elvis = _createInternalInitialFinalState;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        it_1.setContainer(parent);
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        InitialFinalStateEContentAdapter _initialFinalStateEContentAdapter = new InitialFinalStateEContentAdapter();
-        _eAdapters.add(_initialFinalStateEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-    };
-    return ObjectExtensions.<InitialFinalState>operator_doubleArrow(_createInitialFinalState, _function);
-  }
-  
-  /**
-   * This method creates an InitialFinalState with the given id. Post create hook won't be triggered.
-   */
-  public InitialFinalState createInitialFinalState(final String ID) {
-    return this.createInitialFinalState(ID, null, null, false);
-  }
-  
-  /**
-   * This method creates an InitialFinalState with the given id. Post create hook will be triggered.
-   */
-  public InitialFinalState createInitialFinalState(final InternalModelElementContainer parent) {
-    return this.createInitialFinalState(EcoreUtil.generateUUID(), null, parent, true);
-  }
-  
-  /**
-   * This method creates an InitialFinalState with the given id. Post create hook will be triggered.
-   */
-  public InitialFinalState createInitialFinalState(final String ID, final InternalModelElementContainer parent) {
-    return this.createInitialFinalState(ID, null, parent, true);
-  }
-  
-  public InitialFinalState createInitialFinalState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
-    return this.createInitialFinalState(ID, ime, parent, true);
-  }
-  
-  /**
-   * This method creates an InitialFinalState with the given id. Post create hook won't be triggered.
-   */
-  public InitialFinalState createInitialFinalState(final InternalModelElement ime) {
-    return this.createInitialFinalState(EcoreUtil.generateUUID(), ime, null, false);
-  }
-  
-  @Override
-  public InitialFinalState createInitialFinalState() {
-    return this.createInitialFinalState(EcoreUtil.generateUUID());
-  }
-  
-  /**
    * This method creates an Action with the given id.
    * 
    * @param ID: The id for the new element
@@ -1030,6 +814,289 @@ public class SCChartFactory extends ScchartFactoryImpl {
   @Override
   public Action createAction() {
     return this.createAction(EcoreUtil.generateUUID());
+  }
+  
+  /**
+   * This method creates an SimpleState with the given id.
+   * 
+   * @param ID: The id for the new element
+   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+   * element of the created element
+   * @param hook: Indicates, if the post create hook should be executed
+   */
+  public SimpleState createSimpleState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
+    SimpleState _createSimpleState = super.createSimpleState();
+    final Procedure1<SimpleState> _function = (SimpleState it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalSimpleState _createInternalSimpleState = this._internalFactory.createInternalSimpleState();
+        _elvis = _createInternalSimpleState;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        it_1.setContainer(parent);
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        SimpleStateEContentAdapter _simpleStateEContentAdapter = new SimpleStateEContentAdapter();
+        _eAdapters.add(_simpleStateEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+    };
+    return ObjectExtensions.<SimpleState>operator_doubleArrow(_createSimpleState, _function);
+  }
+  
+  /**
+   * This method creates an SimpleState with the given id. Post create hook won't be triggered.
+   */
+  public SimpleState createSimpleState(final String ID) {
+    return this.createSimpleState(ID, null, null, false);
+  }
+  
+  /**
+   * This method creates an SimpleState with the given id. Post create hook will be triggered.
+   */
+  public SimpleState createSimpleState(final InternalModelElementContainer parent) {
+    return this.createSimpleState(EcoreUtil.generateUUID(), null, parent, true);
+  }
+  
+  /**
+   * This method creates an SimpleState with the given id. Post create hook will be triggered.
+   */
+  public SimpleState createSimpleState(final String ID, final InternalModelElementContainer parent) {
+    return this.createSimpleState(ID, null, parent, true);
+  }
+  
+  public SimpleState createSimpleState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
+    return this.createSimpleState(ID, ime, parent, true);
+  }
+  
+  /**
+   * This method creates an SimpleState with the given id. Post create hook won't be triggered.
+   */
+  public SimpleState createSimpleState(final InternalModelElement ime) {
+    return this.createSimpleState(EcoreUtil.generateUUID(), ime, null, false);
+  }
+  
+  @Override
+  public SimpleState createSimpleState() {
+    return this.createSimpleState(EcoreUtil.generateUUID());
+  }
+  
+  /**
+   * This method creates an InitialState with the given id.
+   * 
+   * @param ID: The id for the new element
+   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+   * element of the created element
+   * @param hook: Indicates, if the post create hook should be executed
+   */
+  public InitialState createInitialState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
+    InitialState _createInitialState = super.createInitialState();
+    final Procedure1<InitialState> _function = (InitialState it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalInitialState _createInternalInitialState = this._internalFactory.createInternalInitialState();
+        _elvis = _createInternalInitialState;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        it_1.setContainer(parent);
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        InitialStateEContentAdapter _initialStateEContentAdapter = new InitialStateEContentAdapter();
+        _eAdapters.add(_initialStateEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+    };
+    return ObjectExtensions.<InitialState>operator_doubleArrow(_createInitialState, _function);
+  }
+  
+  /**
+   * This method creates an InitialState with the given id. Post create hook won't be triggered.
+   */
+  public InitialState createInitialState(final String ID) {
+    return this.createInitialState(ID, null, null, false);
+  }
+  
+  /**
+   * This method creates an InitialState with the given id. Post create hook will be triggered.
+   */
+  public InitialState createInitialState(final InternalModelElementContainer parent) {
+    return this.createInitialState(EcoreUtil.generateUUID(), null, parent, true);
+  }
+  
+  /**
+   * This method creates an InitialState with the given id. Post create hook will be triggered.
+   */
+  public InitialState createInitialState(final String ID, final InternalModelElementContainer parent) {
+    return this.createInitialState(ID, null, parent, true);
+  }
+  
+  public InitialState createInitialState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
+    return this.createInitialState(ID, ime, parent, true);
+  }
+  
+  /**
+   * This method creates an InitialState with the given id. Post create hook won't be triggered.
+   */
+  public InitialState createInitialState(final InternalModelElement ime) {
+    return this.createInitialState(EcoreUtil.generateUUID(), ime, null, false);
+  }
+  
+  @Override
+  public InitialState createInitialState() {
+    return this.createInitialState(EcoreUtil.generateUUID());
+  }
+  
+  /**
+   * This method creates an FinalSCChartReferece with the given id.
+   * 
+   * @param ID: The id for the new element
+   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+   * element of the created element
+   * @param hook: Indicates, if the post create hook should be executed
+   */
+  public FinalSCChartReferece createFinalSCChartReferece(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
+    FinalSCChartReferece _createFinalSCChartReferece = super.createFinalSCChartReferece();
+    final Procedure1<FinalSCChartReferece> _function = (FinalSCChartReferece it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalFinalSCChartReferece _createInternalFinalSCChartReferece = this._internalFactory.createInternalFinalSCChartReferece();
+        _elvis = _createInternalFinalSCChartReferece;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        it_1.setContainer(parent);
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        FinalSCChartRefereceEContentAdapter _finalSCChartRefereceEContentAdapter = new FinalSCChartRefereceEContentAdapter();
+        _eAdapters.add(_finalSCChartRefereceEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+      if (hook) {
+        this.postCreates(it);
+      }
+    };
+    return ObjectExtensions.<FinalSCChartReferece>operator_doubleArrow(_createFinalSCChartReferece, _function);
+  }
+  
+  /**
+   * This method creates an FinalSCChartReferece with the given id. Post create hook won't be triggered.
+   */
+  public FinalSCChartReferece createFinalSCChartReferece(final String ID) {
+    return this.createFinalSCChartReferece(ID, null, null, false);
+  }
+  
+  /**
+   * This method creates an FinalSCChartReferece with the given id. Post create hook will be triggered.
+   */
+  public FinalSCChartReferece createFinalSCChartReferece(final InternalModelElementContainer parent) {
+    return this.createFinalSCChartReferece(EcoreUtil.generateUUID(), null, parent, true);
+  }
+  
+  /**
+   * This method creates an FinalSCChartReferece with the given id. Post create hook will be triggered.
+   */
+  public FinalSCChartReferece createFinalSCChartReferece(final String ID, final InternalModelElementContainer parent) {
+    return this.createFinalSCChartReferece(ID, null, parent, true);
+  }
+  
+  public FinalSCChartReferece createFinalSCChartReferece(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
+    return this.createFinalSCChartReferece(ID, ime, parent, true);
+  }
+  
+  /**
+   * This method creates an FinalSCChartReferece with the given id. Post create hook won't be triggered.
+   */
+  public FinalSCChartReferece createFinalSCChartReferece(final InternalModelElement ime) {
+    return this.createFinalSCChartReferece(EcoreUtil.generateUUID(), ime, null, false);
+  }
+  
+  @Override
+  public FinalSCChartReferece createFinalSCChartReferece() {
+    return this.createFinalSCChartReferece(EcoreUtil.generateUUID());
+  }
+  
+  /**
+   * This method creates an Connector with the given id.
+   * 
+   * @param ID: The id for the new element
+   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+   * element of the created element
+   * @param hook: Indicates, if the post create hook should be executed
+   */
+  public Connector createConnector(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
+    Connector _createConnector = super.createConnector();
+    final Procedure1<Connector> _function = (Connector it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalConnector _createInternalConnector = this._internalFactory.createInternalConnector();
+        _elvis = _createInternalConnector;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        it_1.setContainer(parent);
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        ConnectorEContentAdapter _connectorEContentAdapter = new ConnectorEContentAdapter();
+        _eAdapters.add(_connectorEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+    };
+    return ObjectExtensions.<Connector>operator_doubleArrow(_createConnector, _function);
+  }
+  
+  /**
+   * This method creates an Connector with the given id. Post create hook won't be triggered.
+   */
+  public Connector createConnector(final String ID) {
+    return this.createConnector(ID, null, null, false);
+  }
+  
+  /**
+   * This method creates an Connector with the given id. Post create hook will be triggered.
+   */
+  public Connector createConnector(final InternalModelElementContainer parent) {
+    return this.createConnector(EcoreUtil.generateUUID(), null, parent, true);
+  }
+  
+  /**
+   * This method creates an Connector with the given id. Post create hook will be triggered.
+   */
+  public Connector createConnector(final String ID, final InternalModelElementContainer parent) {
+    return this.createConnector(ID, null, parent, true);
+  }
+  
+  public Connector createConnector(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
+    return this.createConnector(ID, ime, parent, true);
+  }
+  
+  /**
+   * This method creates an Connector with the given id. Post create hook won't be triggered.
+   */
+  public Connector createConnector(final InternalModelElement ime) {
+    return this.createConnector(EcoreUtil.generateUUID(), ime, null, false);
+  }
+  
+  @Override
+  public Connector createConnector() {
+    return this.createConnector(EcoreUtil.generateUUID());
   }
   
   /**
@@ -1106,6 +1173,149 @@ public class SCChartFactory extends ScchartFactoryImpl {
   }
   
   /**
+   * This method creates an InitialFinalState with the given id.
+   * 
+   * @param ID: The id for the new element
+   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+   * element of the created element
+   * @param hook: Indicates, if the post create hook should be executed
+   */
+  public InitialFinalState createInitialFinalState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
+    InitialFinalState _createInitialFinalState = super.createInitialFinalState();
+    final Procedure1<InitialFinalState> _function = (InitialFinalState it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalInitialFinalState _createInternalInitialFinalState = this._internalFactory.createInternalInitialFinalState();
+        _elvis = _createInternalInitialFinalState;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        it_1.setContainer(parent);
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        InitialFinalStateEContentAdapter _initialFinalStateEContentAdapter = new InitialFinalStateEContentAdapter();
+        _eAdapters.add(_initialFinalStateEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+    };
+    return ObjectExtensions.<InitialFinalState>operator_doubleArrow(_createInitialFinalState, _function);
+  }
+  
+  /**
+   * This method creates an InitialFinalState with the given id. Post create hook won't be triggered.
+   */
+  public InitialFinalState createInitialFinalState(final String ID) {
+    return this.createInitialFinalState(ID, null, null, false);
+  }
+  
+  /**
+   * This method creates an InitialFinalState with the given id. Post create hook will be triggered.
+   */
+  public InitialFinalState createInitialFinalState(final InternalModelElementContainer parent) {
+    return this.createInitialFinalState(EcoreUtil.generateUUID(), null, parent, true);
+  }
+  
+  /**
+   * This method creates an InitialFinalState with the given id. Post create hook will be triggered.
+   */
+  public InitialFinalState createInitialFinalState(final String ID, final InternalModelElementContainer parent) {
+    return this.createInitialFinalState(ID, null, parent, true);
+  }
+  
+  public InitialFinalState createInitialFinalState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
+    return this.createInitialFinalState(ID, ime, parent, true);
+  }
+  
+  /**
+   * This method creates an InitialFinalState with the given id. Post create hook won't be triggered.
+   */
+  public InitialFinalState createInitialFinalState(final InternalModelElement ime) {
+    return this.createInitialFinalState(EcoreUtil.generateUUID(), ime, null, false);
+  }
+  
+  @Override
+  public InitialFinalState createInitialFinalState() {
+    return this.createInitialFinalState(EcoreUtil.generateUUID());
+  }
+  
+  /**
+   * This method creates an RootState with the given id.
+   * 
+   * @param ID: The id for the new element
+   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
+   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
+   * element of the created element
+   * @param hook: Indicates, if the post create hook should be executed
+   */
+  public RootState createRootState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
+    RootState _createRootState = super.createRootState();
+    final Procedure1<RootState> _function = (RootState it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalRootState _createInternalRootState = this._internalFactory.createInternalRootState();
+        _elvis = _createInternalRootState;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        it_1.setContainer(parent);
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        RootStateEContentAdapter _rootStateEContentAdapter = new RootStateEContentAdapter();
+        _eAdapters.add(_rootStateEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+      if (hook) {
+        this.postCreates(it);
+      }
+    };
+    return ObjectExtensions.<RootState>operator_doubleArrow(_createRootState, _function);
+  }
+  
+  /**
+   * This method creates an RootState with the given id. Post create hook won't be triggered.
+   */
+  public RootState createRootState(final String ID) {
+    return this.createRootState(ID, null, null, false);
+  }
+  
+  /**
+   * This method creates an RootState with the given id. Post create hook will be triggered.
+   */
+  public RootState createRootState(final InternalModelElementContainer parent) {
+    return this.createRootState(EcoreUtil.generateUUID(), null, parent, true);
+  }
+  
+  /**
+   * This method creates an RootState with the given id. Post create hook will be triggered.
+   */
+  public RootState createRootState(final String ID, final InternalModelElementContainer parent) {
+    return this.createRootState(ID, null, parent, true);
+  }
+  
+  public RootState createRootState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
+    return this.createRootState(ID, ime, parent, true);
+  }
+  
+  /**
+   * This method creates an RootState with the given id. Post create hook won't be triggered.
+   */
+  public RootState createRootState(final InternalModelElement ime) {
+    return this.createRootState(EcoreUtil.generateUUID(), ime, null, false);
+  }
+  
+  @Override
+  public RootState createRootState() {
+    return this.createRootState(EcoreUtil.generateUUID());
+  }
+  
+  /**
    * This method creates an FinalSuperState with the given id.
    * 
    * @param ID: The id for the new element
@@ -1179,7 +1389,7 @@ public class SCChartFactory extends ScchartFactoryImpl {
   }
   
   /**
-   * This method creates an Connector with the given id.
+   * This method creates an Region with the given id.
    * 
    * @param ID: The id for the new element
    * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
@@ -1187,233 +1397,23 @@ public class SCChartFactory extends ScchartFactoryImpl {
    * element of the created element
    * @param hook: Indicates, if the post create hook should be executed
    */
-  public Connector createConnector(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
-    Connector _createConnector = super.createConnector();
-    final Procedure1<Connector> _function = (Connector it) -> {
+  public Region createRegion(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
+    Region _createRegion = super.createRegion();
+    final Procedure1<Region> _function = (Region it) -> {
       EcoreUtil.setID(it, ID);
       InternalModelElement _elvis = null;
       if (ime != null) {
         _elvis = ime;
       } else {
-        InternalConnector _createInternalConnector = this._internalFactory.createInternalConnector();
-        _elvis = _createInternalConnector;
+        InternalRegion _createInternalRegion = this._internalFactory.createInternalRegion();
+        _elvis = _createInternalRegion;
       }
       final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
         EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
         it_1.setContainer(parent);
         EList<Adapter> _eAdapters = it_1.eAdapters();
-        ConnectorEContentAdapter _connectorEContentAdapter = new ConnectorEContentAdapter();
-        _eAdapters.add(_connectorEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-    };
-    return ObjectExtensions.<Connector>operator_doubleArrow(_createConnector, _function);
-  }
-  
-  /**
-   * This method creates an Connector with the given id. Post create hook won't be triggered.
-   */
-  public Connector createConnector(final String ID) {
-    return this.createConnector(ID, null, null, false);
-  }
-  
-  /**
-   * This method creates an Connector with the given id. Post create hook will be triggered.
-   */
-  public Connector createConnector(final InternalModelElementContainer parent) {
-    return this.createConnector(EcoreUtil.generateUUID(), null, parent, true);
-  }
-  
-  /**
-   * This method creates an Connector with the given id. Post create hook will be triggered.
-   */
-  public Connector createConnector(final String ID, final InternalModelElementContainer parent) {
-    return this.createConnector(ID, null, parent, true);
-  }
-  
-  public Connector createConnector(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
-    return this.createConnector(ID, ime, parent, true);
-  }
-  
-  /**
-   * This method creates an Connector with the given id. Post create hook won't be triggered.
-   */
-  public Connector createConnector(final InternalModelElement ime) {
-    return this.createConnector(EcoreUtil.generateUUID(), ime, null, false);
-  }
-  
-  @Override
-  public Connector createConnector() {
-    return this.createConnector(EcoreUtil.generateUUID());
-  }
-  
-  /**
-   * This method creates an FinalState with the given id.
-   * 
-   * @param ID: The id for the new element
-   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-   * element of the created element
-   * @param hook: Indicates, if the post create hook should be executed
-   */
-  public FinalState createFinalState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
-    FinalState _createFinalState = super.createFinalState();
-    final Procedure1<FinalState> _function = (FinalState it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalFinalState _createInternalFinalState = this._internalFactory.createInternalFinalState();
-        _elvis = _createInternalFinalState;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        it_1.setContainer(parent);
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        FinalStateEContentAdapter _finalStateEContentAdapter = new FinalStateEContentAdapter();
-        _eAdapters.add(_finalStateEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-    };
-    return ObjectExtensions.<FinalState>operator_doubleArrow(_createFinalState, _function);
-  }
-  
-  /**
-   * This method creates an FinalState with the given id. Post create hook won't be triggered.
-   */
-  public FinalState createFinalState(final String ID) {
-    return this.createFinalState(ID, null, null, false);
-  }
-  
-  /**
-   * This method creates an FinalState with the given id. Post create hook will be triggered.
-   */
-  public FinalState createFinalState(final InternalModelElementContainer parent) {
-    return this.createFinalState(EcoreUtil.generateUUID(), null, parent, true);
-  }
-  
-  /**
-   * This method creates an FinalState with the given id. Post create hook will be triggered.
-   */
-  public FinalState createFinalState(final String ID, final InternalModelElementContainer parent) {
-    return this.createFinalState(ID, null, parent, true);
-  }
-  
-  public FinalState createFinalState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
-    return this.createFinalState(ID, ime, parent, true);
-  }
-  
-  /**
-   * This method creates an FinalState with the given id. Post create hook won't be triggered.
-   */
-  public FinalState createFinalState(final InternalModelElement ime) {
-    return this.createFinalState(EcoreUtil.generateUUID(), ime, null, false);
-  }
-  
-  @Override
-  public FinalState createFinalState() {
-    return this.createFinalState(EcoreUtil.generateUUID());
-  }
-  
-  /**
-   * This method creates an SimpleState with the given id.
-   * 
-   * @param ID: The id for the new element
-   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-   * element of the created element
-   * @param hook: Indicates, if the post create hook should be executed
-   */
-  public SimpleState createSimpleState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
-    SimpleState _createSimpleState = super.createSimpleState();
-    final Procedure1<SimpleState> _function = (SimpleState it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalSimpleState _createInternalSimpleState = this._internalFactory.createInternalSimpleState();
-        _elvis = _createInternalSimpleState;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        it_1.setContainer(parent);
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        SimpleStateEContentAdapter _simpleStateEContentAdapter = new SimpleStateEContentAdapter();
-        _eAdapters.add(_simpleStateEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-    };
-    return ObjectExtensions.<SimpleState>operator_doubleArrow(_createSimpleState, _function);
-  }
-  
-  /**
-   * This method creates an SimpleState with the given id. Post create hook won't be triggered.
-   */
-  public SimpleState createSimpleState(final String ID) {
-    return this.createSimpleState(ID, null, null, false);
-  }
-  
-  /**
-   * This method creates an SimpleState with the given id. Post create hook will be triggered.
-   */
-  public SimpleState createSimpleState(final InternalModelElementContainer parent) {
-    return this.createSimpleState(EcoreUtil.generateUUID(), null, parent, true);
-  }
-  
-  /**
-   * This method creates an SimpleState with the given id. Post create hook will be triggered.
-   */
-  public SimpleState createSimpleState(final String ID, final InternalModelElementContainer parent) {
-    return this.createSimpleState(ID, null, parent, true);
-  }
-  
-  public SimpleState createSimpleState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
-    return this.createSimpleState(ID, ime, parent, true);
-  }
-  
-  /**
-   * This method creates an SimpleState with the given id. Post create hook won't be triggered.
-   */
-  public SimpleState createSimpleState(final InternalModelElement ime) {
-    return this.createSimpleState(EcoreUtil.generateUUID(), ime, null, false);
-  }
-  
-  @Override
-  public SimpleState createSimpleState() {
-    return this.createSimpleState(EcoreUtil.generateUUID());
-  }
-  
-  /**
-   * This method creates an InitialSuperState with the given id.
-   * 
-   * @param ID: The id for the new element
-   * @param ime: The internal model element {@link graphmodel.internal.InternalModelElement}
-   * @param parent: The parent element of the newly created element. Needed if a post create hook accesses the parent
-   * element of the created element
-   * @param hook: Indicates, if the post create hook should be executed
-   */
-  public InitialSuperState createInitialSuperState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent, final boolean hook) {
-    InitialSuperState _createInitialSuperState = super.createInitialSuperState();
-    final Procedure1<InitialSuperState> _function = (InitialSuperState it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalInitialSuperState _createInternalInitialSuperState = this._internalFactory.createInternalInitialSuperState();
-        _elvis = _createInternalInitialSuperState;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        it_1.setContainer(parent);
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        InitialSuperStateEContentAdapter _initialSuperStateEContentAdapter = new InitialSuperStateEContentAdapter();
-        _eAdapters.add(_initialSuperStateEContentAdapter);
+        RegionEContentAdapter _regionEContentAdapter = new RegionEContentAdapter();
+        _eAdapters.add(_regionEContentAdapter);
       };
       InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
       this.setInternal(it, _doubleArrow);
@@ -1421,44 +1421,527 @@ public class SCChartFactory extends ScchartFactoryImpl {
         this.postCreates(it);
       }
     };
-    return ObjectExtensions.<InitialSuperState>operator_doubleArrow(_createInitialSuperState, _function);
+    return ObjectExtensions.<Region>operator_doubleArrow(_createRegion, _function);
   }
   
   /**
-   * This method creates an InitialSuperState with the given id. Post create hook won't be triggered.
+   * This method creates an Region with the given id. Post create hook won't be triggered.
    */
-  public InitialSuperState createInitialSuperState(final String ID) {
-    return this.createInitialSuperState(ID, null, null, false);
+  public Region createRegion(final String ID) {
+    return this.createRegion(ID, null, null, false);
   }
   
   /**
-   * This method creates an InitialSuperState with the given id. Post create hook will be triggered.
+   * This method creates an Region with the given id. Post create hook will be triggered.
    */
-  public InitialSuperState createInitialSuperState(final InternalModelElementContainer parent) {
-    return this.createInitialSuperState(EcoreUtil.generateUUID(), null, parent, true);
+  public Region createRegion(final InternalModelElementContainer parent) {
+    return this.createRegion(EcoreUtil.generateUUID(), null, parent, true);
   }
   
   /**
-   * This method creates an InitialSuperState with the given id. Post create hook will be triggered.
+   * This method creates an Region with the given id. Post create hook will be triggered.
    */
-  public InitialSuperState createInitialSuperState(final String ID, final InternalModelElementContainer parent) {
-    return this.createInitialSuperState(ID, null, parent, true);
+  public Region createRegion(final String ID, final InternalModelElementContainer parent) {
+    return this.createRegion(ID, null, parent, true);
   }
   
-  public InitialSuperState createInitialSuperState(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
-    return this.createInitialSuperState(ID, ime, parent, true);
+  public Region createRegion(final String ID, final InternalModelElement ime, final InternalModelElementContainer parent) {
+    return this.createRegion(ID, ime, parent, true);
   }
   
   /**
-   * This method creates an InitialSuperState with the given id. Post create hook won't be triggered.
+   * This method creates an Region with the given id. Post create hook won't be triggered.
    */
-  public InitialSuperState createInitialSuperState(final InternalModelElement ime) {
-    return this.createInitialSuperState(EcoreUtil.generateUUID(), ime, null, false);
+  public Region createRegion(final InternalModelElement ime) {
+    return this.createRegion(EcoreUtil.generateUUID(), ime, null, false);
   }
   
   @Override
-  public InitialSuperState createInitialSuperState() {
-    return this.createInitialSuperState(EcoreUtil.generateUUID());
+  public Region createRegion() {
+    return this.createRegion(EcoreUtil.generateUUID());
+  }
+  
+  public TerminationDeferredHistoryTransition createTerminationDeferredHistoryTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
+    TerminationDeferredHistoryTransition _createTerminationDeferredHistoryTransition = super.createTerminationDeferredHistoryTransition();
+    final Procedure1<TerminationDeferredHistoryTransition> _function = (TerminationDeferredHistoryTransition it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalTerminationDeferredHistoryTransition _createInternalTerminationDeferredHistoryTransition = this._internalFactory.createInternalTerminationDeferredHistoryTransition();
+        _elvis = _createInternalTerminationDeferredHistoryTransition;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        ((InternalEdge) it_1).set_sourceElement(source);
+        ((InternalEdge) it_1).set_targetElement(target);
+        InternalGraphModel _elvis_1 = null;
+        InternalGraphModel _rootElement = null;
+        if (source!=null) {
+          _rootElement=source.getRootElement();
+        }
+        if (_rootElement != null) {
+          _elvis_1 = _rootElement;
+        } else {
+          InternalGraphModel _rootElement_1 = null;
+          if (target!=null) {
+            _rootElement_1=target.getRootElement();
+          }
+          _elvis_1 = _rootElement_1;
+        }
+        it_1.setContainer(_elvis_1);
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        TerminationDeferredHistoryTransitionEContentAdapter _terminationDeferredHistoryTransitionEContentAdapter = new TerminationDeferredHistoryTransitionEContentAdapter();
+        _eAdapters.add(_terminationDeferredHistoryTransitionEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+    };
+    return ObjectExtensions.<TerminationDeferredHistoryTransition>operator_doubleArrow(_createTerminationDeferredHistoryTransition, _function);
+  }
+  
+  /**
+   * This method creates an TerminationDeferredHistoryTransition with the given id. Post create hook will be triggered.
+   */
+  public TerminationDeferredHistoryTransition createTerminationDeferredHistoryTransition(final String ID, final InternalNode source, final InternalNode target) {
+    return this.createTerminationDeferredHistoryTransition(ID, null, source, target, true);
+  }
+  
+  /**
+   * This method creates an TerminationDeferredHistoryTransition with generated id. Post create hook will be triggered.
+   */
+  public TerminationDeferredHistoryTransition createTerminationDeferredHistoryTransition(final InternalNode source, final InternalNode target) {
+    return this.createTerminationDeferredHistoryTransition(EcoreUtil.generateUUID(), null, source, target, true);
+  }
+  
+  /**
+   * This method creates an TerminationDeferredHistoryTransition with the given id. Post create hook won't be triggered.
+   */
+  public TerminationDeferredHistoryTransition createTerminationDeferredHistoryTransition(final String ID) {
+    return this.createTerminationDeferredHistoryTransition(ID, null, null, null, false);
+  }
+  
+  /**
+   * This method creates an TerminationDeferredHistoryTransition with a generated id. Post create hook won't be triggered.
+   */
+  @Override
+  public TerminationDeferredHistoryTransition createTerminationDeferredHistoryTransition() {
+    return this.createTerminationDeferredHistoryTransition(EcoreUtil.generateUUID());
+  }
+  
+  public TerminationHistoryTransition createTerminationHistoryTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
+    TerminationHistoryTransition _createTerminationHistoryTransition = super.createTerminationHistoryTransition();
+    final Procedure1<TerminationHistoryTransition> _function = (TerminationHistoryTransition it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalTerminationHistoryTransition _createInternalTerminationHistoryTransition = this._internalFactory.createInternalTerminationHistoryTransition();
+        _elvis = _createInternalTerminationHistoryTransition;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        ((InternalEdge) it_1).set_sourceElement(source);
+        ((InternalEdge) it_1).set_targetElement(target);
+        InternalGraphModel _elvis_1 = null;
+        InternalGraphModel _rootElement = null;
+        if (source!=null) {
+          _rootElement=source.getRootElement();
+        }
+        if (_rootElement != null) {
+          _elvis_1 = _rootElement;
+        } else {
+          InternalGraphModel _rootElement_1 = null;
+          if (target!=null) {
+            _rootElement_1=target.getRootElement();
+          }
+          _elvis_1 = _rootElement_1;
+        }
+        it_1.setContainer(_elvis_1);
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        TerminationHistoryTransitionEContentAdapter _terminationHistoryTransitionEContentAdapter = new TerminationHistoryTransitionEContentAdapter();
+        _eAdapters.add(_terminationHistoryTransitionEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+    };
+    return ObjectExtensions.<TerminationHistoryTransition>operator_doubleArrow(_createTerminationHistoryTransition, _function);
+  }
+  
+  /**
+   * This method creates an TerminationHistoryTransition with the given id. Post create hook will be triggered.
+   */
+  public TerminationHistoryTransition createTerminationHistoryTransition(final String ID, final InternalNode source, final InternalNode target) {
+    return this.createTerminationHistoryTransition(ID, null, source, target, true);
+  }
+  
+  /**
+   * This method creates an TerminationHistoryTransition with generated id. Post create hook will be triggered.
+   */
+  public TerminationHistoryTransition createTerminationHistoryTransition(final InternalNode source, final InternalNode target) {
+    return this.createTerminationHistoryTransition(EcoreUtil.generateUUID(), null, source, target, true);
+  }
+  
+  /**
+   * This method creates an TerminationHistoryTransition with the given id. Post create hook won't be triggered.
+   */
+  public TerminationHistoryTransition createTerminationHistoryTransition(final String ID) {
+    return this.createTerminationHistoryTransition(ID, null, null, null, false);
+  }
+  
+  /**
+   * This method creates an TerminationHistoryTransition with a generated id. Post create hook won't be triggered.
+   */
+  @Override
+  public TerminationHistoryTransition createTerminationHistoryTransition() {
+    return this.createTerminationHistoryTransition(EcoreUtil.generateUUID());
+  }
+  
+  public StrongAbortHistoryTransition createStrongAbortHistoryTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
+    StrongAbortHistoryTransition _createStrongAbortHistoryTransition = super.createStrongAbortHistoryTransition();
+    final Procedure1<StrongAbortHistoryTransition> _function = (StrongAbortHistoryTransition it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalStrongAbortHistoryTransition _createInternalStrongAbortHistoryTransition = this._internalFactory.createInternalStrongAbortHistoryTransition();
+        _elvis = _createInternalStrongAbortHistoryTransition;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        ((InternalEdge) it_1).set_sourceElement(source);
+        ((InternalEdge) it_1).set_targetElement(target);
+        InternalGraphModel _elvis_1 = null;
+        InternalGraphModel _rootElement = null;
+        if (source!=null) {
+          _rootElement=source.getRootElement();
+        }
+        if (_rootElement != null) {
+          _elvis_1 = _rootElement;
+        } else {
+          InternalGraphModel _rootElement_1 = null;
+          if (target!=null) {
+            _rootElement_1=target.getRootElement();
+          }
+          _elvis_1 = _rootElement_1;
+        }
+        it_1.setContainer(_elvis_1);
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        StrongAbortHistoryTransitionEContentAdapter _strongAbortHistoryTransitionEContentAdapter = new StrongAbortHistoryTransitionEContentAdapter();
+        _eAdapters.add(_strongAbortHistoryTransitionEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+    };
+    return ObjectExtensions.<StrongAbortHistoryTransition>operator_doubleArrow(_createStrongAbortHistoryTransition, _function);
+  }
+  
+  /**
+   * This method creates an StrongAbortHistoryTransition with the given id. Post create hook will be triggered.
+   */
+  public StrongAbortHistoryTransition createStrongAbortHistoryTransition(final String ID, final InternalNode source, final InternalNode target) {
+    return this.createStrongAbortHistoryTransition(ID, null, source, target, true);
+  }
+  
+  /**
+   * This method creates an StrongAbortHistoryTransition with generated id. Post create hook will be triggered.
+   */
+  public StrongAbortHistoryTransition createStrongAbortHistoryTransition(final InternalNode source, final InternalNode target) {
+    return this.createStrongAbortHistoryTransition(EcoreUtil.generateUUID(), null, source, target, true);
+  }
+  
+  /**
+   * This method creates an StrongAbortHistoryTransition with the given id. Post create hook won't be triggered.
+   */
+  public StrongAbortHistoryTransition createStrongAbortHistoryTransition(final String ID) {
+    return this.createStrongAbortHistoryTransition(ID, null, null, null, false);
+  }
+  
+  /**
+   * This method creates an StrongAbortHistoryTransition with a generated id. Post create hook won't be triggered.
+   */
+  @Override
+  public StrongAbortHistoryTransition createStrongAbortHistoryTransition() {
+    return this.createStrongAbortHistoryTransition(EcoreUtil.generateUUID());
+  }
+  
+  public DeferredTransition createDeferredTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
+    DeferredTransition _createDeferredTransition = super.createDeferredTransition();
+    final Procedure1<DeferredTransition> _function = (DeferredTransition it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalDeferredTransition _createInternalDeferredTransition = this._internalFactory.createInternalDeferredTransition();
+        _elvis = _createInternalDeferredTransition;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        ((InternalEdge) it_1).set_sourceElement(source);
+        ((InternalEdge) it_1).set_targetElement(target);
+        InternalGraphModel _elvis_1 = null;
+        InternalGraphModel _rootElement = null;
+        if (source!=null) {
+          _rootElement=source.getRootElement();
+        }
+        if (_rootElement != null) {
+          _elvis_1 = _rootElement;
+        } else {
+          InternalGraphModel _rootElement_1 = null;
+          if (target!=null) {
+            _rootElement_1=target.getRootElement();
+          }
+          _elvis_1 = _rootElement_1;
+        }
+        it_1.setContainer(_elvis_1);
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        DeferredTransitionEContentAdapter _deferredTransitionEContentAdapter = new DeferredTransitionEContentAdapter();
+        _eAdapters.add(_deferredTransitionEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+    };
+    return ObjectExtensions.<DeferredTransition>operator_doubleArrow(_createDeferredTransition, _function);
+  }
+  
+  /**
+   * This method creates an DeferredTransition with the given id. Post create hook will be triggered.
+   */
+  public DeferredTransition createDeferredTransition(final String ID, final InternalNode source, final InternalNode target) {
+    return this.createDeferredTransition(ID, null, source, target, true);
+  }
+  
+  /**
+   * This method creates an DeferredTransition with generated id. Post create hook will be triggered.
+   */
+  public DeferredTransition createDeferredTransition(final InternalNode source, final InternalNode target) {
+    return this.createDeferredTransition(EcoreUtil.generateUUID(), null, source, target, true);
+  }
+  
+  /**
+   * This method creates an DeferredTransition with the given id. Post create hook won't be triggered.
+   */
+  public DeferredTransition createDeferredTransition(final String ID) {
+    return this.createDeferredTransition(ID, null, null, null, false);
+  }
+  
+  /**
+   * This method creates an DeferredTransition with a generated id. Post create hook won't be triggered.
+   */
+  @Override
+  public DeferredTransition createDeferredTransition() {
+    return this.createDeferredTransition(EcoreUtil.generateUUID());
+  }
+  
+  public StrongAbortDeferredTransition createStrongAbortDeferredTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
+    StrongAbortDeferredTransition _createStrongAbortDeferredTransition = super.createStrongAbortDeferredTransition();
+    final Procedure1<StrongAbortDeferredTransition> _function = (StrongAbortDeferredTransition it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalStrongAbortDeferredTransition _createInternalStrongAbortDeferredTransition = this._internalFactory.createInternalStrongAbortDeferredTransition();
+        _elvis = _createInternalStrongAbortDeferredTransition;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        ((InternalEdge) it_1).set_sourceElement(source);
+        ((InternalEdge) it_1).set_targetElement(target);
+        InternalGraphModel _elvis_1 = null;
+        InternalGraphModel _rootElement = null;
+        if (source!=null) {
+          _rootElement=source.getRootElement();
+        }
+        if (_rootElement != null) {
+          _elvis_1 = _rootElement;
+        } else {
+          InternalGraphModel _rootElement_1 = null;
+          if (target!=null) {
+            _rootElement_1=target.getRootElement();
+          }
+          _elvis_1 = _rootElement_1;
+        }
+        it_1.setContainer(_elvis_1);
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        StrongAbortDeferredTransitionEContentAdapter _strongAbortDeferredTransitionEContentAdapter = new StrongAbortDeferredTransitionEContentAdapter();
+        _eAdapters.add(_strongAbortDeferredTransitionEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+    };
+    return ObjectExtensions.<StrongAbortDeferredTransition>operator_doubleArrow(_createStrongAbortDeferredTransition, _function);
+  }
+  
+  /**
+   * This method creates an StrongAbortDeferredTransition with the given id. Post create hook will be triggered.
+   */
+  public StrongAbortDeferredTransition createStrongAbortDeferredTransition(final String ID, final InternalNode source, final InternalNode target) {
+    return this.createStrongAbortDeferredTransition(ID, null, source, target, true);
+  }
+  
+  /**
+   * This method creates an StrongAbortDeferredTransition with generated id. Post create hook will be triggered.
+   */
+  public StrongAbortDeferredTransition createStrongAbortDeferredTransition(final InternalNode source, final InternalNode target) {
+    return this.createStrongAbortDeferredTransition(EcoreUtil.generateUUID(), null, source, target, true);
+  }
+  
+  /**
+   * This method creates an StrongAbortDeferredTransition with the given id. Post create hook won't be triggered.
+   */
+  public StrongAbortDeferredTransition createStrongAbortDeferredTransition(final String ID) {
+    return this.createStrongAbortDeferredTransition(ID, null, null, null, false);
+  }
+  
+  /**
+   * This method creates an StrongAbortDeferredTransition with a generated id. Post create hook won't be triggered.
+   */
+  @Override
+  public StrongAbortDeferredTransition createStrongAbortDeferredTransition() {
+    return this.createStrongAbortDeferredTransition(EcoreUtil.generateUUID());
+  }
+  
+  public TerminationDeferredTransition createTerminationDeferredTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
+    TerminationDeferredTransition _createTerminationDeferredTransition = super.createTerminationDeferredTransition();
+    final Procedure1<TerminationDeferredTransition> _function = (TerminationDeferredTransition it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalTerminationDeferredTransition _createInternalTerminationDeferredTransition = this._internalFactory.createInternalTerminationDeferredTransition();
+        _elvis = _createInternalTerminationDeferredTransition;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        ((InternalEdge) it_1).set_sourceElement(source);
+        ((InternalEdge) it_1).set_targetElement(target);
+        InternalGraphModel _elvis_1 = null;
+        InternalGraphModel _rootElement = null;
+        if (source!=null) {
+          _rootElement=source.getRootElement();
+        }
+        if (_rootElement != null) {
+          _elvis_1 = _rootElement;
+        } else {
+          InternalGraphModel _rootElement_1 = null;
+          if (target!=null) {
+            _rootElement_1=target.getRootElement();
+          }
+          _elvis_1 = _rootElement_1;
+        }
+        it_1.setContainer(_elvis_1);
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        TerminationDeferredTransitionEContentAdapter _terminationDeferredTransitionEContentAdapter = new TerminationDeferredTransitionEContentAdapter();
+        _eAdapters.add(_terminationDeferredTransitionEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+    };
+    return ObjectExtensions.<TerminationDeferredTransition>operator_doubleArrow(_createTerminationDeferredTransition, _function);
+  }
+  
+  /**
+   * This method creates an TerminationDeferredTransition with the given id. Post create hook will be triggered.
+   */
+  public TerminationDeferredTransition createTerminationDeferredTransition(final String ID, final InternalNode source, final InternalNode target) {
+    return this.createTerminationDeferredTransition(ID, null, source, target, true);
+  }
+  
+  /**
+   * This method creates an TerminationDeferredTransition with generated id. Post create hook will be triggered.
+   */
+  public TerminationDeferredTransition createTerminationDeferredTransition(final InternalNode source, final InternalNode target) {
+    return this.createTerminationDeferredTransition(EcoreUtil.generateUUID(), null, source, target, true);
+  }
+  
+  /**
+   * This method creates an TerminationDeferredTransition with the given id. Post create hook won't be triggered.
+   */
+  public TerminationDeferredTransition createTerminationDeferredTransition(final String ID) {
+    return this.createTerminationDeferredTransition(ID, null, null, null, false);
+  }
+  
+  /**
+   * This method creates an TerminationDeferredTransition with a generated id. Post create hook won't be triggered.
+   */
+  @Override
+  public TerminationDeferredTransition createTerminationDeferredTransition() {
+    return this.createTerminationDeferredTransition(EcoreUtil.generateUUID());
+  }
+  
+  public HistoryTransition createHistoryTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
+    HistoryTransition _createHistoryTransition = super.createHistoryTransition();
+    final Procedure1<HistoryTransition> _function = (HistoryTransition it) -> {
+      EcoreUtil.setID(it, ID);
+      InternalModelElement _elvis = null;
+      if (ime != null) {
+        _elvis = ime;
+      } else {
+        InternalHistoryTransition _createInternalHistoryTransition = this._internalFactory.createInternalHistoryTransition();
+        _elvis = _createInternalHistoryTransition;
+      }
+      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
+        ((InternalEdge) it_1).set_sourceElement(source);
+        ((InternalEdge) it_1).set_targetElement(target);
+        InternalGraphModel _elvis_1 = null;
+        InternalGraphModel _rootElement = null;
+        if (source!=null) {
+          _rootElement=source.getRootElement();
+        }
+        if (_rootElement != null) {
+          _elvis_1 = _rootElement;
+        } else {
+          InternalGraphModel _rootElement_1 = null;
+          if (target!=null) {
+            _rootElement_1=target.getRootElement();
+          }
+          _elvis_1 = _rootElement_1;
+        }
+        it_1.setContainer(_elvis_1);
+        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
+        EList<Adapter> _eAdapters = it_1.eAdapters();
+        HistoryTransitionEContentAdapter _historyTransitionEContentAdapter = new HistoryTransitionEContentAdapter();
+        _eAdapters.add(_historyTransitionEContentAdapter);
+      };
+      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
+      this.setInternal(it, _doubleArrow);
+    };
+    return ObjectExtensions.<HistoryTransition>operator_doubleArrow(_createHistoryTransition, _function);
+  }
+  
+  /**
+   * This method creates an HistoryTransition with the given id. Post create hook will be triggered.
+   */
+  public HistoryTransition createHistoryTransition(final String ID, final InternalNode source, final InternalNode target) {
+    return this.createHistoryTransition(ID, null, source, target, true);
+  }
+  
+  /**
+   * This method creates an HistoryTransition with generated id. Post create hook will be triggered.
+   */
+  public HistoryTransition createHistoryTransition(final InternalNode source, final InternalNode target) {
+    return this.createHistoryTransition(EcoreUtil.generateUUID(), null, source, target, true);
+  }
+  
+  /**
+   * This method creates an HistoryTransition with the given id. Post create hook won't be triggered.
+   */
+  public HistoryTransition createHistoryTransition(final String ID) {
+    return this.createHistoryTransition(ID, null, null, null, false);
+  }
+  
+  /**
+   * This method creates an HistoryTransition with a generated id. Post create hook won't be triggered.
+   */
+  @Override
+  public HistoryTransition createHistoryTransition() {
+    return this.createHistoryTransition(EcoreUtil.generateUUID());
   }
   
   public Transition createTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
@@ -1531,420 +2014,6 @@ public class SCChartFactory extends ScchartFactoryImpl {
   @Override
   public Transition createTransition() {
     return this.createTransition(EcoreUtil.generateUUID());
-  }
-  
-  public TerminationHistoryTransition createTerminationHistoryTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
-    TerminationHistoryTransition _createTerminationHistoryTransition = super.createTerminationHistoryTransition();
-    final Procedure1<TerminationHistoryTransition> _function = (TerminationHistoryTransition it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalTerminationHistoryTransition _createInternalTerminationHistoryTransition = this._internalFactory.createInternalTerminationHistoryTransition();
-        _elvis = _createInternalTerminationHistoryTransition;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        ((InternalEdge) it_1).set_sourceElement(source);
-        ((InternalEdge) it_1).set_targetElement(target);
-        InternalGraphModel _elvis_1 = null;
-        InternalGraphModel _rootElement = null;
-        if (source!=null) {
-          _rootElement=source.getRootElement();
-        }
-        if (_rootElement != null) {
-          _elvis_1 = _rootElement;
-        } else {
-          InternalGraphModel _rootElement_1 = null;
-          if (target!=null) {
-            _rootElement_1=target.getRootElement();
-          }
-          _elvis_1 = _rootElement_1;
-        }
-        it_1.setContainer(_elvis_1);
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        TerminationHistoryTransitionEContentAdapter _terminationHistoryTransitionEContentAdapter = new TerminationHistoryTransitionEContentAdapter();
-        _eAdapters.add(_terminationHistoryTransitionEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-    };
-    return ObjectExtensions.<TerminationHistoryTransition>operator_doubleArrow(_createTerminationHistoryTransition, _function);
-  }
-  
-  /**
-   * This method creates an TerminationHistoryTransition with the given id. Post create hook will be triggered.
-   */
-  public TerminationHistoryTransition createTerminationHistoryTransition(final String ID, final InternalNode source, final InternalNode target) {
-    return this.createTerminationHistoryTransition(ID, null, source, target, true);
-  }
-  
-  /**
-   * This method creates an TerminationHistoryTransition with generated id. Post create hook will be triggered.
-   */
-  public TerminationHistoryTransition createTerminationHistoryTransition(final InternalNode source, final InternalNode target) {
-    return this.createTerminationHistoryTransition(EcoreUtil.generateUUID(), null, source, target, true);
-  }
-  
-  /**
-   * This method creates an TerminationHistoryTransition with the given id. Post create hook won't be triggered.
-   */
-  public TerminationHistoryTransition createTerminationHistoryTransition(final String ID) {
-    return this.createTerminationHistoryTransition(ID, null, null, null, false);
-  }
-  
-  /**
-   * This method creates an TerminationHistoryTransition with a generated id. Post create hook won't be triggered.
-   */
-  @Override
-  public TerminationHistoryTransition createTerminationHistoryTransition() {
-    return this.createTerminationHistoryTransition(EcoreUtil.generateUUID());
-  }
-  
-  public AbstractTransition createAbstractTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
-    AbstractTransition _createAbstractTransition = super.createAbstractTransition();
-    final Procedure1<AbstractTransition> _function = (AbstractTransition it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalAbstractTransition _createInternalAbstractTransition = this._internalFactory.createInternalAbstractTransition();
-        _elvis = _createInternalAbstractTransition;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        ((InternalEdge) it_1).set_sourceElement(source);
-        ((InternalEdge) it_1).set_targetElement(target);
-        InternalGraphModel _elvis_1 = null;
-        InternalGraphModel _rootElement = null;
-        if (source!=null) {
-          _rootElement=source.getRootElement();
-        }
-        if (_rootElement != null) {
-          _elvis_1 = _rootElement;
-        } else {
-          InternalGraphModel _rootElement_1 = null;
-          if (target!=null) {
-            _rootElement_1=target.getRootElement();
-          }
-          _elvis_1 = _rootElement_1;
-        }
-        it_1.setContainer(_elvis_1);
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        AbstractTransitionEContentAdapter _abstractTransitionEContentAdapter = new AbstractTransitionEContentAdapter();
-        _eAdapters.add(_abstractTransitionEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-    };
-    return ObjectExtensions.<AbstractTransition>operator_doubleArrow(_createAbstractTransition, _function);
-  }
-  
-  /**
-   * This method creates an AbstractTransition with the given id. Post create hook will be triggered.
-   */
-  public AbstractTransition createAbstractTransition(final String ID, final InternalNode source, final InternalNode target) {
-    return this.createAbstractTransition(ID, null, source, target, true);
-  }
-  
-  /**
-   * This method creates an AbstractTransition with generated id. Post create hook will be triggered.
-   */
-  public AbstractTransition createAbstractTransition(final InternalNode source, final InternalNode target) {
-    return this.createAbstractTransition(EcoreUtil.generateUUID(), null, source, target, true);
-  }
-  
-  /**
-   * This method creates an AbstractTransition with the given id. Post create hook won't be triggered.
-   */
-  public AbstractTransition createAbstractTransition(final String ID) {
-    return this.createAbstractTransition(ID, null, null, null, false);
-  }
-  
-  /**
-   * This method creates an AbstractTransition with a generated id. Post create hook won't be triggered.
-   */
-  @Override
-  public AbstractTransition createAbstractTransition() {
-    return this.createAbstractTransition(EcoreUtil.generateUUID());
-  }
-  
-  public TerminationDeferredTransition createTerminationDeferredTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
-    TerminationDeferredTransition _createTerminationDeferredTransition = super.createTerminationDeferredTransition();
-    final Procedure1<TerminationDeferredTransition> _function = (TerminationDeferredTransition it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalTerminationDeferredTransition _createInternalTerminationDeferredTransition = this._internalFactory.createInternalTerminationDeferredTransition();
-        _elvis = _createInternalTerminationDeferredTransition;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        ((InternalEdge) it_1).set_sourceElement(source);
-        ((InternalEdge) it_1).set_targetElement(target);
-        InternalGraphModel _elvis_1 = null;
-        InternalGraphModel _rootElement = null;
-        if (source!=null) {
-          _rootElement=source.getRootElement();
-        }
-        if (_rootElement != null) {
-          _elvis_1 = _rootElement;
-        } else {
-          InternalGraphModel _rootElement_1 = null;
-          if (target!=null) {
-            _rootElement_1=target.getRootElement();
-          }
-          _elvis_1 = _rootElement_1;
-        }
-        it_1.setContainer(_elvis_1);
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        TerminationDeferredTransitionEContentAdapter _terminationDeferredTransitionEContentAdapter = new TerminationDeferredTransitionEContentAdapter();
-        _eAdapters.add(_terminationDeferredTransitionEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-    };
-    return ObjectExtensions.<TerminationDeferredTransition>operator_doubleArrow(_createTerminationDeferredTransition, _function);
-  }
-  
-  /**
-   * This method creates an TerminationDeferredTransition with the given id. Post create hook will be triggered.
-   */
-  public TerminationDeferredTransition createTerminationDeferredTransition(final String ID, final InternalNode source, final InternalNode target) {
-    return this.createTerminationDeferredTransition(ID, null, source, target, true);
-  }
-  
-  /**
-   * This method creates an TerminationDeferredTransition with generated id. Post create hook will be triggered.
-   */
-  public TerminationDeferredTransition createTerminationDeferredTransition(final InternalNode source, final InternalNode target) {
-    return this.createTerminationDeferredTransition(EcoreUtil.generateUUID(), null, source, target, true);
-  }
-  
-  /**
-   * This method creates an TerminationDeferredTransition with the given id. Post create hook won't be triggered.
-   */
-  public TerminationDeferredTransition createTerminationDeferredTransition(final String ID) {
-    return this.createTerminationDeferredTransition(ID, null, null, null, false);
-  }
-  
-  /**
-   * This method creates an TerminationDeferredTransition with a generated id. Post create hook won't be triggered.
-   */
-  @Override
-  public TerminationDeferredTransition createTerminationDeferredTransition() {
-    return this.createTerminationDeferredTransition(EcoreUtil.generateUUID());
-  }
-  
-  public StrongAbortDeferredTransition createStrongAbortDeferredTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
-    StrongAbortDeferredTransition _createStrongAbortDeferredTransition = super.createStrongAbortDeferredTransition();
-    final Procedure1<StrongAbortDeferredTransition> _function = (StrongAbortDeferredTransition it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalStrongAbortDeferredTransition _createInternalStrongAbortDeferredTransition = this._internalFactory.createInternalStrongAbortDeferredTransition();
-        _elvis = _createInternalStrongAbortDeferredTransition;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        ((InternalEdge) it_1).set_sourceElement(source);
-        ((InternalEdge) it_1).set_targetElement(target);
-        InternalGraphModel _elvis_1 = null;
-        InternalGraphModel _rootElement = null;
-        if (source!=null) {
-          _rootElement=source.getRootElement();
-        }
-        if (_rootElement != null) {
-          _elvis_1 = _rootElement;
-        } else {
-          InternalGraphModel _rootElement_1 = null;
-          if (target!=null) {
-            _rootElement_1=target.getRootElement();
-          }
-          _elvis_1 = _rootElement_1;
-        }
-        it_1.setContainer(_elvis_1);
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        StrongAbortDeferredTransitionEContentAdapter _strongAbortDeferredTransitionEContentAdapter = new StrongAbortDeferredTransitionEContentAdapter();
-        _eAdapters.add(_strongAbortDeferredTransitionEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-    };
-    return ObjectExtensions.<StrongAbortDeferredTransition>operator_doubleArrow(_createStrongAbortDeferredTransition, _function);
-  }
-  
-  /**
-   * This method creates an StrongAbortDeferredTransition with the given id. Post create hook will be triggered.
-   */
-  public StrongAbortDeferredTransition createStrongAbortDeferredTransition(final String ID, final InternalNode source, final InternalNode target) {
-    return this.createStrongAbortDeferredTransition(ID, null, source, target, true);
-  }
-  
-  /**
-   * This method creates an StrongAbortDeferredTransition with generated id. Post create hook will be triggered.
-   */
-  public StrongAbortDeferredTransition createStrongAbortDeferredTransition(final InternalNode source, final InternalNode target) {
-    return this.createStrongAbortDeferredTransition(EcoreUtil.generateUUID(), null, source, target, true);
-  }
-  
-  /**
-   * This method creates an StrongAbortDeferredTransition with the given id. Post create hook won't be triggered.
-   */
-  public StrongAbortDeferredTransition createStrongAbortDeferredTransition(final String ID) {
-    return this.createStrongAbortDeferredTransition(ID, null, null, null, false);
-  }
-  
-  /**
-   * This method creates an StrongAbortDeferredTransition with a generated id. Post create hook won't be triggered.
-   */
-  @Override
-  public StrongAbortDeferredTransition createStrongAbortDeferredTransition() {
-    return this.createStrongAbortDeferredTransition(EcoreUtil.generateUUID());
-  }
-  
-  public TerminationDeferredHistoryTransition createTerminationDeferredHistoryTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
-    TerminationDeferredHistoryTransition _createTerminationDeferredHistoryTransition = super.createTerminationDeferredHistoryTransition();
-    final Procedure1<TerminationDeferredHistoryTransition> _function = (TerminationDeferredHistoryTransition it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalTerminationDeferredHistoryTransition _createInternalTerminationDeferredHistoryTransition = this._internalFactory.createInternalTerminationDeferredHistoryTransition();
-        _elvis = _createInternalTerminationDeferredHistoryTransition;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        ((InternalEdge) it_1).set_sourceElement(source);
-        ((InternalEdge) it_1).set_targetElement(target);
-        InternalGraphModel _elvis_1 = null;
-        InternalGraphModel _rootElement = null;
-        if (source!=null) {
-          _rootElement=source.getRootElement();
-        }
-        if (_rootElement != null) {
-          _elvis_1 = _rootElement;
-        } else {
-          InternalGraphModel _rootElement_1 = null;
-          if (target!=null) {
-            _rootElement_1=target.getRootElement();
-          }
-          _elvis_1 = _rootElement_1;
-        }
-        it_1.setContainer(_elvis_1);
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        TerminationDeferredHistoryTransitionEContentAdapter _terminationDeferredHistoryTransitionEContentAdapter = new TerminationDeferredHistoryTransitionEContentAdapter();
-        _eAdapters.add(_terminationDeferredHistoryTransitionEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-    };
-    return ObjectExtensions.<TerminationDeferredHistoryTransition>operator_doubleArrow(_createTerminationDeferredHistoryTransition, _function);
-  }
-  
-  /**
-   * This method creates an TerminationDeferredHistoryTransition with the given id. Post create hook will be triggered.
-   */
-  public TerminationDeferredHistoryTransition createTerminationDeferredHistoryTransition(final String ID, final InternalNode source, final InternalNode target) {
-    return this.createTerminationDeferredHistoryTransition(ID, null, source, target, true);
-  }
-  
-  /**
-   * This method creates an TerminationDeferredHistoryTransition with generated id. Post create hook will be triggered.
-   */
-  public TerminationDeferredHistoryTransition createTerminationDeferredHistoryTransition(final InternalNode source, final InternalNode target) {
-    return this.createTerminationDeferredHistoryTransition(EcoreUtil.generateUUID(), null, source, target, true);
-  }
-  
-  /**
-   * This method creates an TerminationDeferredHistoryTransition with the given id. Post create hook won't be triggered.
-   */
-  public TerminationDeferredHistoryTransition createTerminationDeferredHistoryTransition(final String ID) {
-    return this.createTerminationDeferredHistoryTransition(ID, null, null, null, false);
-  }
-  
-  /**
-   * This method creates an TerminationDeferredHistoryTransition with a generated id. Post create hook won't be triggered.
-   */
-  @Override
-  public TerminationDeferredHistoryTransition createTerminationDeferredHistoryTransition() {
-    return this.createTerminationDeferredHistoryTransition(EcoreUtil.generateUUID());
-  }
-  
-  public DeferredHistoryTransition createDeferredHistoryTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
-    DeferredHistoryTransition _createDeferredHistoryTransition = super.createDeferredHistoryTransition();
-    final Procedure1<DeferredHistoryTransition> _function = (DeferredHistoryTransition it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalDeferredHistoryTransition _createInternalDeferredHistoryTransition = this._internalFactory.createInternalDeferredHistoryTransition();
-        _elvis = _createInternalDeferredHistoryTransition;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        ((InternalEdge) it_1).set_sourceElement(source);
-        ((InternalEdge) it_1).set_targetElement(target);
-        InternalGraphModel _elvis_1 = null;
-        InternalGraphModel _rootElement = null;
-        if (source!=null) {
-          _rootElement=source.getRootElement();
-        }
-        if (_rootElement != null) {
-          _elvis_1 = _rootElement;
-        } else {
-          InternalGraphModel _rootElement_1 = null;
-          if (target!=null) {
-            _rootElement_1=target.getRootElement();
-          }
-          _elvis_1 = _rootElement_1;
-        }
-        it_1.setContainer(_elvis_1);
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        DeferredHistoryTransitionEContentAdapter _deferredHistoryTransitionEContentAdapter = new DeferredHistoryTransitionEContentAdapter();
-        _eAdapters.add(_deferredHistoryTransitionEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-    };
-    return ObjectExtensions.<DeferredHistoryTransition>operator_doubleArrow(_createDeferredHistoryTransition, _function);
-  }
-  
-  /**
-   * This method creates an DeferredHistoryTransition with the given id. Post create hook will be triggered.
-   */
-  public DeferredHistoryTransition createDeferredHistoryTransition(final String ID, final InternalNode source, final InternalNode target) {
-    return this.createDeferredHistoryTransition(ID, null, source, target, true);
-  }
-  
-  /**
-   * This method creates an DeferredHistoryTransition with generated id. Post create hook will be triggered.
-   */
-  public DeferredHistoryTransition createDeferredHistoryTransition(final InternalNode source, final InternalNode target) {
-    return this.createDeferredHistoryTransition(EcoreUtil.generateUUID(), null, source, target, true);
-  }
-  
-  /**
-   * This method creates an DeferredHistoryTransition with the given id. Post create hook won't be triggered.
-   */
-  public DeferredHistoryTransition createDeferredHistoryTransition(final String ID) {
-    return this.createDeferredHistoryTransition(ID, null, null, null, false);
-  }
-  
-  /**
-   * This method creates an DeferredHistoryTransition with a generated id. Post create hook won't be triggered.
-   */
-  @Override
-  public DeferredHistoryTransition createDeferredHistoryTransition() {
-    return this.createDeferredHistoryTransition(EcoreUtil.generateUUID());
   }
   
   public TerminationTransition createTerminationTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
@@ -2085,16 +2154,16 @@ public class SCChartFactory extends ScchartFactoryImpl {
     return this.createStrongAbortTransition(EcoreUtil.generateUUID());
   }
   
-  public DeferredTransition createDeferredTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
-    DeferredTransition _createDeferredTransition = super.createDeferredTransition();
-    final Procedure1<DeferredTransition> _function = (DeferredTransition it) -> {
+  public AbstractTransition createAbstractTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
+    AbstractTransition _createAbstractTransition = super.createAbstractTransition();
+    final Procedure1<AbstractTransition> _function = (AbstractTransition it) -> {
       EcoreUtil.setID(it, ID);
       InternalModelElement _elvis = null;
       if (ime != null) {
         _elvis = ime;
       } else {
-        InternalDeferredTransition _createInternalDeferredTransition = this._internalFactory.createInternalDeferredTransition();
-        _elvis = _createInternalDeferredTransition;
+        InternalAbstractTransition _createInternalAbstractTransition = this._internalFactory.createInternalAbstractTransition();
+        _elvis = _createInternalAbstractTransition;
       }
       final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
         ((InternalEdge) it_1).set_sourceElement(source);
@@ -2116,111 +2185,42 @@ public class SCChartFactory extends ScchartFactoryImpl {
         it_1.setContainer(_elvis_1);
         EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
         EList<Adapter> _eAdapters = it_1.eAdapters();
-        DeferredTransitionEContentAdapter _deferredTransitionEContentAdapter = new DeferredTransitionEContentAdapter();
-        _eAdapters.add(_deferredTransitionEContentAdapter);
+        AbstractTransitionEContentAdapter _abstractTransitionEContentAdapter = new AbstractTransitionEContentAdapter();
+        _eAdapters.add(_abstractTransitionEContentAdapter);
       };
       InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
       this.setInternal(it, _doubleArrow);
     };
-    return ObjectExtensions.<DeferredTransition>operator_doubleArrow(_createDeferredTransition, _function);
+    return ObjectExtensions.<AbstractTransition>operator_doubleArrow(_createAbstractTransition, _function);
   }
   
   /**
-   * This method creates an DeferredTransition with the given id. Post create hook will be triggered.
+   * This method creates an AbstractTransition with the given id. Post create hook will be triggered.
    */
-  public DeferredTransition createDeferredTransition(final String ID, final InternalNode source, final InternalNode target) {
-    return this.createDeferredTransition(ID, null, source, target, true);
+  public AbstractTransition createAbstractTransition(final String ID, final InternalNode source, final InternalNode target) {
+    return this.createAbstractTransition(ID, null, source, target, true);
   }
   
   /**
-   * This method creates an DeferredTransition with generated id. Post create hook will be triggered.
+   * This method creates an AbstractTransition with generated id. Post create hook will be triggered.
    */
-  public DeferredTransition createDeferredTransition(final InternalNode source, final InternalNode target) {
-    return this.createDeferredTransition(EcoreUtil.generateUUID(), null, source, target, true);
+  public AbstractTransition createAbstractTransition(final InternalNode source, final InternalNode target) {
+    return this.createAbstractTransition(EcoreUtil.generateUUID(), null, source, target, true);
   }
   
   /**
-   * This method creates an DeferredTransition with the given id. Post create hook won't be triggered.
+   * This method creates an AbstractTransition with the given id. Post create hook won't be triggered.
    */
-  public DeferredTransition createDeferredTransition(final String ID) {
-    return this.createDeferredTransition(ID, null, null, null, false);
+  public AbstractTransition createAbstractTransition(final String ID) {
+    return this.createAbstractTransition(ID, null, null, null, false);
   }
   
   /**
-   * This method creates an DeferredTransition with a generated id. Post create hook won't be triggered.
-   */
-  @Override
-  public DeferredTransition createDeferredTransition() {
-    return this.createDeferredTransition(EcoreUtil.generateUUID());
-  }
-  
-  public StrongAbortHistoryTransition createStrongAbortHistoryTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
-    StrongAbortHistoryTransition _createStrongAbortHistoryTransition = super.createStrongAbortHistoryTransition();
-    final Procedure1<StrongAbortHistoryTransition> _function = (StrongAbortHistoryTransition it) -> {
-      EcoreUtil.setID(it, ID);
-      InternalModelElement _elvis = null;
-      if (ime != null) {
-        _elvis = ime;
-      } else {
-        InternalStrongAbortHistoryTransition _createInternalStrongAbortHistoryTransition = this._internalFactory.createInternalStrongAbortHistoryTransition();
-        _elvis = _createInternalStrongAbortHistoryTransition;
-      }
-      final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
-        ((InternalEdge) it_1).set_sourceElement(source);
-        ((InternalEdge) it_1).set_targetElement(target);
-        InternalGraphModel _elvis_1 = null;
-        InternalGraphModel _rootElement = null;
-        if (source!=null) {
-          _rootElement=source.getRootElement();
-        }
-        if (_rootElement != null) {
-          _elvis_1 = _rootElement;
-        } else {
-          InternalGraphModel _rootElement_1 = null;
-          if (target!=null) {
-            _rootElement_1=target.getRootElement();
-          }
-          _elvis_1 = _rootElement_1;
-        }
-        it_1.setContainer(_elvis_1);
-        EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
-        EList<Adapter> _eAdapters = it_1.eAdapters();
-        StrongAbortHistoryTransitionEContentAdapter _strongAbortHistoryTransitionEContentAdapter = new StrongAbortHistoryTransitionEContentAdapter();
-        _eAdapters.add(_strongAbortHistoryTransitionEContentAdapter);
-      };
-      InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
-      this.setInternal(it, _doubleArrow);
-    };
-    return ObjectExtensions.<StrongAbortHistoryTransition>operator_doubleArrow(_createStrongAbortHistoryTransition, _function);
-  }
-  
-  /**
-   * This method creates an StrongAbortHistoryTransition with the given id. Post create hook will be triggered.
-   */
-  public StrongAbortHistoryTransition createStrongAbortHistoryTransition(final String ID, final InternalNode source, final InternalNode target) {
-    return this.createStrongAbortHistoryTransition(ID, null, source, target, true);
-  }
-  
-  /**
-   * This method creates an StrongAbortHistoryTransition with generated id. Post create hook will be triggered.
-   */
-  public StrongAbortHistoryTransition createStrongAbortHistoryTransition(final InternalNode source, final InternalNode target) {
-    return this.createStrongAbortHistoryTransition(EcoreUtil.generateUUID(), null, source, target, true);
-  }
-  
-  /**
-   * This method creates an StrongAbortHistoryTransition with the given id. Post create hook won't be triggered.
-   */
-  public StrongAbortHistoryTransition createStrongAbortHistoryTransition(final String ID) {
-    return this.createStrongAbortHistoryTransition(ID, null, null, null, false);
-  }
-  
-  /**
-   * This method creates an StrongAbortHistoryTransition with a generated id. Post create hook won't be triggered.
+   * This method creates an AbstractTransition with a generated id. Post create hook won't be triggered.
    */
   @Override
-  public StrongAbortHistoryTransition createStrongAbortHistoryTransition() {
-    return this.createStrongAbortHistoryTransition(EcoreUtil.generateUUID());
+  public AbstractTransition createAbstractTransition() {
+    return this.createAbstractTransition(EcoreUtil.generateUUID());
   }
   
   public StrongAbortDeferredHistoryTransition createStrongAbortDeferredHistoryTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
@@ -2292,16 +2292,16 @@ public class SCChartFactory extends ScchartFactoryImpl {
     return this.createStrongAbortDeferredHistoryTransition(EcoreUtil.generateUUID());
   }
   
-  public HistoryTransition createHistoryTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
-    HistoryTransition _createHistoryTransition = super.createHistoryTransition();
-    final Procedure1<HistoryTransition> _function = (HistoryTransition it) -> {
+  public DeferredHistoryTransition createDeferredHistoryTransition(final String ID, final InternalModelElement ime, final InternalNode source, final InternalNode target, final boolean hook) {
+    DeferredHistoryTransition _createDeferredHistoryTransition = super.createDeferredHistoryTransition();
+    final Procedure1<DeferredHistoryTransition> _function = (DeferredHistoryTransition it) -> {
       EcoreUtil.setID(it, ID);
       InternalModelElement _elvis = null;
       if (ime != null) {
         _elvis = ime;
       } else {
-        InternalHistoryTransition _createInternalHistoryTransition = this._internalFactory.createInternalHistoryTransition();
-        _elvis = _createInternalHistoryTransition;
+        InternalDeferredHistoryTransition _createInternalDeferredHistoryTransition = this._internalFactory.createInternalDeferredHistoryTransition();
+        _elvis = _createInternalDeferredHistoryTransition;
       }
       final Procedure1<InternalModelElement> _function_1 = (InternalModelElement it_1) -> {
         ((InternalEdge) it_1).set_sourceElement(source);
@@ -2323,42 +2323,42 @@ public class SCChartFactory extends ScchartFactoryImpl {
         it_1.setContainer(_elvis_1);
         EcoreUtil.setID(it_1, (ID + "_INTERNAL"));
         EList<Adapter> _eAdapters = it_1.eAdapters();
-        HistoryTransitionEContentAdapter _historyTransitionEContentAdapter = new HistoryTransitionEContentAdapter();
-        _eAdapters.add(_historyTransitionEContentAdapter);
+        DeferredHistoryTransitionEContentAdapter _deferredHistoryTransitionEContentAdapter = new DeferredHistoryTransitionEContentAdapter();
+        _eAdapters.add(_deferredHistoryTransitionEContentAdapter);
       };
       InternalModelElement _doubleArrow = ObjectExtensions.<InternalModelElement>operator_doubleArrow(_elvis, _function_1);
       this.setInternal(it, _doubleArrow);
     };
-    return ObjectExtensions.<HistoryTransition>operator_doubleArrow(_createHistoryTransition, _function);
+    return ObjectExtensions.<DeferredHistoryTransition>operator_doubleArrow(_createDeferredHistoryTransition, _function);
   }
   
   /**
-   * This method creates an HistoryTransition with the given id. Post create hook will be triggered.
+   * This method creates an DeferredHistoryTransition with the given id. Post create hook will be triggered.
    */
-  public HistoryTransition createHistoryTransition(final String ID, final InternalNode source, final InternalNode target) {
-    return this.createHistoryTransition(ID, null, source, target, true);
+  public DeferredHistoryTransition createDeferredHistoryTransition(final String ID, final InternalNode source, final InternalNode target) {
+    return this.createDeferredHistoryTransition(ID, null, source, target, true);
   }
   
   /**
-   * This method creates an HistoryTransition with generated id. Post create hook will be triggered.
+   * This method creates an DeferredHistoryTransition with generated id. Post create hook will be triggered.
    */
-  public HistoryTransition createHistoryTransition(final InternalNode source, final InternalNode target) {
-    return this.createHistoryTransition(EcoreUtil.generateUUID(), null, source, target, true);
+  public DeferredHistoryTransition createDeferredHistoryTransition(final InternalNode source, final InternalNode target) {
+    return this.createDeferredHistoryTransition(EcoreUtil.generateUUID(), null, source, target, true);
   }
   
   /**
-   * This method creates an HistoryTransition with the given id. Post create hook won't be triggered.
+   * This method creates an DeferredHistoryTransition with the given id. Post create hook won't be triggered.
    */
-  public HistoryTransition createHistoryTransition(final String ID) {
-    return this.createHistoryTransition(ID, null, null, null, false);
+  public DeferredHistoryTransition createDeferredHistoryTransition(final String ID) {
+    return this.createDeferredHistoryTransition(ID, null, null, null, false);
   }
   
   /**
-   * This method creates an HistoryTransition with a generated id. Post create hook won't be triggered.
+   * This method creates an DeferredHistoryTransition with a generated id. Post create hook won't be triggered.
    */
   @Override
-  public HistoryTransition createHistoryTransition() {
-    return this.createHistoryTransition(EcoreUtil.generateUUID());
+  public DeferredHistoryTransition createDeferredHistoryTransition() {
+    return this.createDeferredHistoryTransition(EcoreUtil.generateUUID());
   }
   
   private <T extends IdentifiableElement> T setInternal(final T elm, final InternalIdentifiableElement internal) {

@@ -1,7 +1,6 @@
 package info.scce.cinco.product.scchart.events;
 
 import info.scce.cinco.product.scchart.mglid.scchart.SCChart;
-import org.eclipse.core.runtime.IPath;
 
 /**
  * About this class:
@@ -20,23 +19,7 @@ import org.eclipse.core.runtime.IPath;
 @SuppressWarnings("all")
 public final class SCChartEvent extends info.scce.cinco.product.scchart.mglid.scchart.event.SCChartEvent {
   @Override
-  public void preCreate(final Class<? extends SCChart> elementClass, final String name, final IPath path) {
-  }
-  
-  @Override
-  public void preSave(final SCChart element) {
-  }
-  
-  @Override
-  public void postAttributeChange(final SCChart element, final String attribute, final Object oldValue) {
-  }
-  
-  @Override
   public void postCreate(final SCChart element) {
     element.newRootState(20, 20, 200, 180);
-  }
-  
-  @Override
-  public void postSave(final SCChart element) {
   }
 }

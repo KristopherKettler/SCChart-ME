@@ -35,7 +35,6 @@ import info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.Transition;
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import org.apache.commons.cli.ParseException;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.runtime.IPath;
@@ -44,6 +43,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.xbase.lib.Exceptions;
 import org.eclipse.xtext.xbase.lib.IntegerRange;
+import org.eclipse.xtext.xbase.lib.IterableExtensions;
 
 @SuppressWarnings("all")
 public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart> {
@@ -56,7 +56,8 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
       this.fileName = fullFileName.substring(0, fullFileName.lastIndexOf("."));
       final IFile targetFile = this._workspaceExtension.getWorkspaceRoot().getFileForLocation(path.append((this.fileName + ".sctx")));
       EclipseFileUtils.writeToFile(targetFile, this.template(scchart));
-      this.commandLineParser(new String[] { "a", "v" });
+      Thread.sleep(100);
+      this.commandLineParser(targetFile, scchart, path);
     } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
@@ -502,8 +503,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _condition = transition.getCondition();
     boolean _tripleNotEquals_1 = (_condition != null);
     if (_tripleNotEquals_1) {
-      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
-      boolean _not_1 = (!_isEmpty_1);
+      boolean _not_1 = (!(transition.getCondition().trim().isEmpty() || Objects.equal(transition.getCondition(), "<No condition>")));
       if (_not_1) {
         String _condition_1 = transition.getCondition();
         String _plus_2 = (("if " + string) + _condition_1);
@@ -518,8 +518,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
     if (_tripleNotEquals_2) {
-      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
-      boolean _not_2 = (!_isEmpty_2);
+      boolean _not_2 = (!(transition.getEffect().trim().isEmpty() || Objects.equal(transition.getEffect(), "<No effect>")));
       if (_not_2) {
         String _effect_1 = transition.getEffect();
         String _plus_4 = ((string + "do ") + _effect_1);
@@ -564,8 +563,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _condition = transition.getCondition();
     boolean _tripleNotEquals_1 = (_condition != null);
     if (_tripleNotEquals_1) {
-      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
-      boolean _not_1 = (!_isEmpty_1);
+      boolean _not_1 = (!(transition.getCondition().trim().isEmpty() || Objects.equal(transition.getCondition(), "<No condition>")));
       if (_not_1) {
         String _condition_1 = transition.getCondition();
         String _plus_2 = (("if " + string) + _condition_1);
@@ -580,8 +578,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
     if (_tripleNotEquals_2) {
-      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
-      boolean _not_2 = (!_isEmpty_2);
+      boolean _not_2 = (!(transition.getEffect().trim().isEmpty() || Objects.equal(transition.getEffect(), "<No effect>")));
       if (_not_2) {
         String _effect_1 = transition.getEffect();
         String _plus_4 = ((string + "do ") + _effect_1);
@@ -627,8 +624,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _condition = transition.getCondition();
     boolean _tripleNotEquals_1 = (_condition != null);
     if (_tripleNotEquals_1) {
-      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
-      boolean _not_1 = (!_isEmpty_1);
+      boolean _not_1 = (!(transition.getCondition().trim().isEmpty() || Objects.equal(transition.getCondition(), "<No condition>")));
       if (_not_1) {
         String _condition_1 = transition.getCondition();
         String _plus_2 = (("if " + string) + _condition_1);
@@ -643,8 +639,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
     if (_tripleNotEquals_2) {
-      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
-      boolean _not_2 = (!_isEmpty_2);
+      boolean _not_2 = (!(transition.getEffect().trim().isEmpty() || Objects.equal(transition.getEffect(), "<No effect>")));
       if (_not_2) {
         String _effect_1 = transition.getEffect();
         String _plus_4 = ((string + "do ") + _effect_1);
@@ -689,8 +684,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _condition = transition.getCondition();
     boolean _tripleNotEquals_1 = (_condition != null);
     if (_tripleNotEquals_1) {
-      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
-      boolean _not_1 = (!_isEmpty_1);
+      boolean _not_1 = (!(transition.getCondition().trim().isEmpty() || Objects.equal(transition.getCondition(), "<No condition>")));
       if (_not_1) {
         String _condition_1 = transition.getCondition();
         String _plus_2 = (("if " + string) + _condition_1);
@@ -705,8 +699,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
     if (_tripleNotEquals_2) {
-      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
-      boolean _not_2 = (!_isEmpty_2);
+      boolean _not_2 = (!(transition.getEffect().trim().isEmpty() || Objects.equal(transition.getEffect(), "<No effect>")));
       if (_not_2) {
         String _effect_1 = transition.getEffect();
         String _plus_4 = ((string + "do ") + _effect_1);
@@ -753,8 +746,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _condition = transition.getCondition();
     boolean _tripleNotEquals_1 = (_condition != null);
     if (_tripleNotEquals_1) {
-      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
-      boolean _not_1 = (!_isEmpty_1);
+      boolean _not_1 = (!(transition.getCondition().trim().isEmpty() || Objects.equal(transition.getCondition(), "<No condition>")));
       if (_not_1) {
         String _condition_1 = transition.getCondition();
         String _plus_2 = (("if " + string) + _condition_1);
@@ -769,8 +761,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
     if (_tripleNotEquals_2) {
-      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
-      boolean _not_2 = (!_isEmpty_2);
+      boolean _not_2 = (!(transition.getEffect().trim().isEmpty() || Objects.equal(transition.getEffect(), "<No effect>")));
       if (_not_2) {
         String _effect_1 = transition.getEffect();
         String _plus_4 = ((string + "do ") + _effect_1);
@@ -823,8 +814,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _condition = transition.getCondition();
     boolean _tripleNotEquals_1 = (_condition != null);
     if (_tripleNotEquals_1) {
-      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
-      boolean _not_1 = (!_isEmpty_1);
+      boolean _not_1 = (!(transition.getCondition().trim().isEmpty() || Objects.equal(transition.getCondition(), "<No condition>")));
       if (_not_1) {
         String _condition_1 = transition.getCondition();
         String _plus_2 = (("if " + string) + _condition_1);
@@ -839,8 +829,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
     if (_tripleNotEquals_2) {
-      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
-      boolean _not_2 = (!_isEmpty_2);
+      boolean _not_2 = (!(transition.getEffect().trim().isEmpty() || Objects.equal(transition.getEffect(), "<No effect>")));
       if (_not_2) {
         String _effect_1 = transition.getEffect();
         String _plus_4 = ((string + "do ") + _effect_1);
@@ -888,8 +877,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _condition = transition.getCondition();
     boolean _tripleNotEquals_1 = (_condition != null);
     if (_tripleNotEquals_1) {
-      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
-      boolean _not_1 = (!_isEmpty_1);
+      boolean _not_1 = (!(transition.getCondition().trim().isEmpty() || Objects.equal(transition.getCondition(), "<No condition>")));
       if (_not_1) {
         String _condition_1 = transition.getCondition();
         String _plus_2 = (("if " + string) + _condition_1);
@@ -904,8 +892,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
     if (_tripleNotEquals_2) {
-      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
-      boolean _not_2 = (!_isEmpty_2);
+      boolean _not_2 = (!(transition.getEffect().trim().isEmpty() || Objects.equal(transition.getEffect(), "<No effect>")));
       if (_not_2) {
         String _effect_1 = transition.getEffect();
         String _plus_4 = ((string + "do ") + _effect_1);
@@ -952,8 +939,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _condition = transition.getCondition();
     boolean _tripleNotEquals_1 = (_condition != null);
     if (_tripleNotEquals_1) {
-      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
-      boolean _not_1 = (!_isEmpty_1);
+      boolean _not_1 = (!(transition.getCondition().trim().isEmpty() || Objects.equal(transition.getCondition(), "<No condition>")));
       if (_not_1) {
         String _condition_1 = transition.getCondition();
         String _plus_2 = (("if " + string) + _condition_1);
@@ -968,8 +954,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
     if (_tripleNotEquals_2) {
-      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
-      boolean _not_2 = (!_isEmpty_2);
+      boolean _not_2 = (!(transition.getEffect().trim().isEmpty() || Objects.equal(transition.getEffect(), "<No effect>")));
       if (_not_2) {
         String _effect_1 = transition.getEffect();
         String _plus_4 = ((string + "do ") + _effect_1);
@@ -1023,8 +1008,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _condition = transition.getCondition();
     boolean _tripleNotEquals_1 = (_condition != null);
     if (_tripleNotEquals_1) {
-      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
-      boolean _not_1 = (!_isEmpty_1);
+      boolean _not_1 = (!(transition.getCondition().trim().isEmpty() || Objects.equal(transition.getCondition(), "<No condition>")));
       if (_not_1) {
         String _condition_1 = transition.getCondition();
         String _plus_2 = (("if " + string) + _condition_1);
@@ -1039,8 +1023,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
     if (_tripleNotEquals_2) {
-      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
-      boolean _not_2 = (!_isEmpty_2);
+      boolean _not_2 = (!(transition.getEffect().trim().isEmpty() || Objects.equal(transition.getEffect(), "<No effect>")));
       if (_not_2) {
         String _effect_1 = transition.getEffect();
         String _plus_4 = ((string + "do ") + _effect_1);
@@ -1093,8 +1076,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _condition = transition.getCondition();
     boolean _tripleNotEquals_1 = (_condition != null);
     if (_tripleNotEquals_1) {
-      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
-      boolean _not_1 = (!_isEmpty_1);
+      boolean _not_1 = (!(transition.getCondition().trim().isEmpty() || Objects.equal(transition.getCondition(), "<No condition>")));
       if (_not_1) {
         String _condition_1 = transition.getCondition();
         String _plus_2 = (("if " + string) + _condition_1);
@@ -1109,8 +1091,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
     if (_tripleNotEquals_2) {
-      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
-      boolean _not_2 = (!_isEmpty_2);
+      boolean _not_2 = (!(transition.getEffect().trim().isEmpty() || Objects.equal(transition.getEffect(), "<No effect>")));
       if (_not_2) {
         String _effect_1 = transition.getEffect();
         String _plus_4 = ((string + "do ") + _effect_1);
@@ -1125,20 +1106,20 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
       history = ("shallow " + history);
     }
     boolean _matched = false;
-    SuperState _targetElement = transition.getTargetElement();
+    Node _targetElement = transition.getTargetElement();
     if ((_targetElement instanceof SuperState)) {
       _matched=true;
-      SuperState _targetElement_1 = transition.getTargetElement();
+      Node _targetElement_1 = transition.getTargetElement();
       String _name = ((SuperState) _targetElement_1).getName();
       String _plus_6 = ((string + "go to ") + _name);
       String _plus_7 = (_plus_6 + "deferred");
       /* (_plus_7 + history); */
     }
     if (!_matched) {
-      SuperState _targetElement_2 = transition.getTargetElement();
+      Node _targetElement_2 = transition.getTargetElement();
       if ((_targetElement_2 instanceof SimpleState)) {
         _matched=true;
-        SuperState _targetElement_3 = transition.getTargetElement();
+        Node _targetElement_3 = transition.getTargetElement();
         String _name_1 = ((SimpleState) _targetElement_3).getName();
         String _plus_8 = ((string + "go to ") + _name_1);
         String _plus_9 = (_plus_8 + "deferred");
@@ -1165,8 +1146,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _condition = transition.getCondition();
     boolean _tripleNotEquals_1 = (_condition != null);
     if (_tripleNotEquals_1) {
-      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
-      boolean _not_1 = (!_isEmpty_1);
+      boolean _not_1 = (!(transition.getCondition().trim().isEmpty() || Objects.equal(transition.getCondition(), "<No condition>")));
       if (_not_1) {
         String _condition_1 = transition.getCondition();
         String _plus_2 = (("if " + string) + _condition_1);
@@ -1181,8 +1161,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
     if (_tripleNotEquals_2) {
-      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
-      boolean _not_2 = (!_isEmpty_2);
+      boolean _not_2 = (!(transition.getEffect().trim().isEmpty() || Objects.equal(transition.getEffect(), "<No effect>")));
       if (_not_2) {
         String _effect_1 = transition.getEffect();
         String _plus_4 = ((string + "do ") + _effect_1);
@@ -1197,20 +1176,20 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
       history = ("shallow " + history);
     }
     boolean _matched = false;
-    SuperState _targetElement = transition.getTargetElement();
+    Node _targetElement = transition.getTargetElement();
     if ((_targetElement instanceof SuperState)) {
       _matched=true;
-      SuperState _targetElement_1 = transition.getTargetElement();
+      Node _targetElement_1 = transition.getTargetElement();
       String _name = ((SuperState) _targetElement_1).getName();
       String _plus_6 = ((string + "abort to ") + _name);
       String _plus_7 = (_plus_6 + "deferred");
       /* (_plus_7 + history); */
     }
     if (!_matched) {
-      SuperState _targetElement_2 = transition.getTargetElement();
+      Node _targetElement_2 = transition.getTargetElement();
       if ((_targetElement_2 instanceof SimpleState)) {
         _matched=true;
-        SuperState _targetElement_3 = transition.getTargetElement();
+        Node _targetElement_3 = transition.getTargetElement();
         String _name_1 = ((SimpleState) _targetElement_3).getName();
         String _plus_8 = ((string + "abort to ") + _name_1);
         String _plus_9 = (_plus_8 + "deferred");
@@ -1237,8 +1216,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _condition = transition.getCondition();
     boolean _tripleNotEquals_1 = (_condition != null);
     if (_tripleNotEquals_1) {
-      boolean _isEmpty_1 = transition.getCondition().trim().isEmpty();
-      boolean _not_1 = (!_isEmpty_1);
+      boolean _not_1 = (!(transition.getCondition().trim().isEmpty() || Objects.equal(transition.getCondition(), "<No condition>")));
       if (_not_1) {
         String _condition_1 = transition.getCondition();
         String _plus_2 = (("if " + string) + _condition_1);
@@ -1253,8 +1231,7 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     String _effect = transition.getEffect();
     boolean _tripleNotEquals_2 = (_effect != null);
     if (_tripleNotEquals_2) {
-      boolean _isEmpty_2 = transition.getEffect().trim().isEmpty();
-      boolean _not_2 = (!_isEmpty_2);
+      boolean _not_2 = (!(transition.getEffect().trim().isEmpty() || Objects.equal(transition.getEffect(), "<No effect>")));
       if (_not_2) {
         String _effect_1 = transition.getEffect();
         String _plus_4 = ((string + "do ") + _effect_1);
@@ -1269,20 +1246,20 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
       history = ("shallow " + history);
     }
     boolean _matched = false;
-    SuperState _targetElement = transition.getTargetElement();
+    Node _targetElement = transition.getTargetElement();
     if ((_targetElement instanceof SuperState)) {
       _matched=true;
-      SuperState _targetElement_1 = transition.getTargetElement();
+      Node _targetElement_1 = transition.getTargetElement();
       String _name = ((SuperState) _targetElement_1).getName();
       String _plus_6 = ((string + "join to ") + _name);
       String _plus_7 = (_plus_6 + "deferred");
       /* (_plus_7 + history); */
     }
     if (!_matched) {
-      SuperState _targetElement_2 = transition.getTargetElement();
+      Node _targetElement_2 = transition.getTargetElement();
       if ((_targetElement_2 instanceof SimpleState)) {
         _matched=true;
-        SuperState _targetElement_3 = transition.getTargetElement();
+        Node _targetElement_3 = transition.getTargetElement();
         String _name_1 = ((SimpleState) _targetElement_3).getName();
         String _plus_8 = ((string + "join to ") + _name_1);
         String _plus_9 = (_plus_8 + "deferred");
@@ -1292,18 +1269,96 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
     return string;
   }
   
-  public void commandLineParser(final String[] args) throws ParseException {
-    ProcessBuilder builder = new ProcessBuilder();
+  public Process commandLineParser(final IFile file, final SCChart scchart, final IPath path) throws ParseException {
+    Process _xtrycatchfinallyexpression = null;
     try {
-      URL url = this.getClass().getResource("info.scce.cinco.product.scchart/src/kico-win.bat");
-      String _path = url.getPath();
-      File f = new File(_path);
-      String absolute = f.getAbsolutePath();
-      String _path_1 = f.getPath();
-      String _plus = ("Original path: " + _path_1);
-      System.out.println(_plus);
-      System.out.println(
-        ("Absolute path: " + absolute));
+      Process _xblockexpression = null;
+      {
+        File f = new File("KIELER_CLI/kicodia-win.bat");
+        String absolute = f.getAbsolutePath();
+        final String targetFile = file.getLocation().removeLastSegments(1).toFile().getAbsolutePath();
+        final String scchartSLTX = file.getLocation().toFile().getAbsolutePath();
+        String generatorOutput = "";
+        boolean _matched = false;
+        String _generatorOutput = IterableExtensions.<RootState>head(scchart.getRootStates()).getGeneratorOutput();
+        boolean _equals = Objects.equal(_generatorOutput, "Identity Diagram");
+        if (_equals) {
+          _matched=true;
+          generatorOutput = "-s de.cau.cs.kieler.kicool.identity -d";
+        }
+        if (!_matched) {
+          String _generatorOutput_1 = IterableExtensions.<RootState>head(scchart.getRootStates()).getGeneratorOutput();
+          boolean _equals_1 = Objects.equal(_generatorOutput_1, "Netlist-based Compilation (C)");
+          if (_equals_1) {
+            _matched=true;
+            generatorOutput = "-s de.cau.cs.kieler.sccharts.netlist";
+          }
+        }
+        if (!_matched) {
+          String _generatorOutput_2 = IterableExtensions.<RootState>head(scchart.getRootStates()).getGeneratorOutput();
+          boolean _equals_2 = Objects.equal(_generatorOutput_2, "Netlist-based Compilation (Java)");
+          if (_equals_2) {
+            _matched=true;
+            generatorOutput = "-s de.cau.cs.kieler.sccharts.netlist.java";
+          }
+        }
+        if (!_matched) {
+          String _generatorOutput_3 = IterableExtensions.<RootState>head(scchart.getRootStates()).getGeneratorOutput();
+          boolean _equals_3 = Objects.equal(_generatorOutput_3, "Netlist-based Deployment (NXJ)");
+          if (_equals_3) {
+            _matched=true;
+            generatorOutput = "-s de.cau.cs.kieler.sccharts.netlist.nxj.deploy";
+          }
+        }
+        if (!_matched) {
+          String _generatorOutput_4 = IterableExtensions.<RootState>head(scchart.getRootStates()).getGeneratorOutput();
+          boolean _equals_4 = Objects.equal(_generatorOutput_4, "Priority-based Compilation (C)");
+          if (_equals_4) {
+            _matched=true;
+            generatorOutput = "-s de.cau.cs.kieler.sccharts.priority";
+          }
+        }
+        if (!_matched) {
+          String _generatorOutput_5 = IterableExtensions.<RootState>head(scchart.getRootStates()).getGeneratorOutput();
+          boolean _equals_5 = Objects.equal(_generatorOutput_5, "Priority-based Compilation (Java)");
+          if (_equals_5) {
+            _matched=true;
+            generatorOutput = "-s de.cau.cs.kieler.sccharts.priority.java";
+          }
+        }
+        if (!_matched) {
+          String _generatorOutput_6 = IterableExtensions.<RootState>head(scchart.getRootStates()).getGeneratorOutput();
+          boolean _equals_6 = Objects.equal(_generatorOutput_6, "State-based Compilation (C) lean-mode (Template)");
+          if (_equals_6) {
+            _matched=true;
+            generatorOutput = "-s  de.cau.cs.kieler.sccharts.statebased.lean.c.template";
+          }
+        }
+        System.out.println(
+          ("generateSCChart: " + targetFile));
+        String _path = f.getPath();
+        String _plus = ("Original path: " + _path);
+        System.out.println(_plus);
+        System.out.println(
+          ("Absolute path: " + absolute));
+        System.out.println(
+          (((((((("Absolute path: " + "start ") + absolute) + " ") + scchartSLTX) + " -o ") + targetFile) + " ") + generatorOutput));
+        Process process = Runtime.getRuntime().exec(((((((("cmd.exe /c start " + absolute) + " ") + scchartSLTX) + " -o ") + targetFile) + " ") + generatorOutput));
+        int exitVal = process.waitFor();
+        Process _xifexpression = null;
+        if ((exitVal == 0)) {
+          Process _xblockexpression_1 = null;
+          {
+            System.out.println("Success!");
+            _xblockexpression_1 = Runtime.getRuntime().exec("taskkill /f /im cmd.exe");
+          }
+          _xifexpression = _xblockexpression_1;
+        } else {
+          System.out.println("Fail!");
+        }
+        _xblockexpression = _xifexpression;
+      }
+      _xtrycatchfinallyexpression = _xblockexpression;
     } catch (final Throwable _t) {
       if (_t instanceof IOException) {
         final IOException e = (IOException)_t;
@@ -1315,5 +1370,6 @@ public class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<S
         throw Exceptions.sneakyThrow(_t);
       }
     }
+    return _xtrycatchfinallyexpression;
   }
 }

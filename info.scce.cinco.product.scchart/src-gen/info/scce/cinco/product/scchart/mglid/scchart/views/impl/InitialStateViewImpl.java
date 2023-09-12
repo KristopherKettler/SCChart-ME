@@ -7,11 +7,7 @@ import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialSta
 import info.scce.cinco.product.scchart.mglid.scchart.views.InitialStateView;
 import info.scce.cinco.product.scchart.mglid.scchart.views.ViewsPackage;
 
-import java.lang.reflect.InvocationTargetException;
-
 import org.eclipse.emf.common.notify.Notification;
-
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -107,29 +103,6 @@ public class InitialStateViewImpl extends SimpleStateViewImpl implements Initial
 	 * @generated
 	 */
 	@Override
-	public boolean isInitialFinalState() {
-		return getInternalInitialState().isInitialFinalState();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInitialFinalState(final boolean _arg) {
-		getInternalInitialState().getElement().transact("Set InitialFinalState", () -> {
-			getInternalInitialState().setInitialFinalState(_arg);
-		});
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ViewsPackage.INITIAL_STATE_VIEW__INTERNAL_INITIAL_STATE:
@@ -181,23 +154,6 @@ public class InitialStateViewImpl extends SimpleStateViewImpl implements Initial
 				return internalInitialState != null;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case ViewsPackage.INITIAL_STATE_VIEW___IS_INITIAL_FINAL_STATE:
-				return isInitialFinalState();
-			case ViewsPackage.INITIAL_STATE_VIEW___SET_INITIAL_FINAL_STATE__BOOLEAN:
-				setInitialFinalState((Boolean)arguments.get(0));
-				return null;
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //InitialStateViewImpl

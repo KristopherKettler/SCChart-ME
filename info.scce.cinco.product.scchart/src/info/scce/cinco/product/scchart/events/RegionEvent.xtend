@@ -30,26 +30,6 @@ import java.util.UUID
  */
 final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.event.RegionEvent {
 	
-	override preCreate(Class<? extends Region> elementClass, ModelElementContainer container, int x, int y, int width, int height) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override preDelete(Region element) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override preMove(Region element, ModelElementContainer newContainer, int newX, int newY) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override preResize(Region element, int newWidth, int newHeight, int newX, int newY, Direction direction) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postAttributeChange(Region element, String attribute, Object oldValue) {
-		// TODO: Auto-generated method stub
-	}
-	
 	override postCreate(Region element) {
 		element.uuid=UUID.randomUUID.toString 
 		var boolean regionFound = false
@@ -434,22 +414,6 @@ final class RegionEvent extends info.scce.cinco.product.scchart.mglid.scchart.ev
 			}
 		}
 		// TODO: rekursiv postCreate
-	}
-	
-	override postDoubleClick(Region element) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postMove(Region element, ModelElementContainer oldContainer, int oldX, int oldY) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postResize(Region element, int oldWidth, int oldHeight, int oldX, int oldY, Direction direction) {
-		// TODO: Auto-generated method stub
-	}
-	
-	override postSelect(Region element) {
-		// TODO: Auto-generated method stub
 	}
 	
 }

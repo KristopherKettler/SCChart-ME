@@ -304,8 +304,8 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public EList<DeferredTransition> getOutgoingDeferredTransitions() {
-		return this.getOutgoing(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
+	public EList<AbstractTransition> getOutgoingAbstractTransitions() {
+		return this.getOutgoing(info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition.class);
 	}
 
 	/**
@@ -334,8 +334,18 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public EList<AbstractTransition> getOutgoingAbstractTransitions() {
-		return this.getOutgoing(info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition.class);
+	public EList<DeferredTransition> getOutgoingDeferredTransitions() {
+		return this.getOutgoing(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<AbstractTransition> getIncomingAbstractTransitions() {
+		return this.getIncoming(info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition.class);
 	}
 
 	/**
@@ -354,16 +364,6 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public EList<TerminationTransition> getIncomingTerminationTransitions() {
-		return this.getIncoming(info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<Transition> getIncomingTransitions() {
 		return this.getIncoming(info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
 	}
@@ -374,8 +374,8 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public EList<AbstractTransition> getIncomingAbstractTransitions() {
-		return this.getIncoming(info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition.class);
+	public EList<TerminationTransition> getIncomingTerminationTransitions() {
+		return this.getIncoming(info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition.class);
 	}
 
 	/**
@@ -634,364 +634,7 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public boolean canNewDeferredTransition(final SCChartReferece target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeferredTransition newDeferredTransition(final SCChartReferece target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeferredTransition newDeferredTransition(final SCChartReferece target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", DeferredTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", DeferredTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewDeferredTransition(final InitialSuperState target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeferredTransition newDeferredTransition(final InitialSuperState target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeferredTransition newDeferredTransition(final InitialSuperState target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", DeferredTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", DeferredTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewDeferredTransition(final FinalSuperState target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeferredTransition newDeferredTransition(final FinalSuperState target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeferredTransition newDeferredTransition(final FinalSuperState target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", DeferredTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", DeferredTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewDeferredTransition(final SuperState target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeferredTransition newDeferredTransition(final SuperState target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeferredTransition newDeferredTransition(final SuperState target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", DeferredTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", DeferredTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewDeferredTransition(final InitialFinalSuperState target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeferredTransition newDeferredTransition(final InitialFinalSuperState target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeferredTransition newDeferredTransition(final InitialFinalSuperState target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", DeferredTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", DeferredTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewDeferredTransition(final InitialSCChartReferece target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeferredTransition newDeferredTransition(final InitialSCChartReferece target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeferredTransition newDeferredTransition(final InitialSCChartReferece target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", DeferredTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", DeferredTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewDeferredTransition(final FinalSCChartReferece target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeferredTransition newDeferredTransition(final FinalSCChartReferece target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeferredTransition newDeferredTransition(final FinalSCChartReferece target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", DeferredTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", DeferredTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewHistoryTransition(final SCChartReferece target) {
+	public boolean canNewHistoryTransition(final FinalSuperState target) {
 		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
 	}
 
@@ -1001,7 +644,7 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public HistoryTransition newHistoryTransition(final SCChartReferece target) {
+	public HistoryTransition newHistoryTransition(final FinalSuperState target) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
@@ -1022,7 +665,7 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public HistoryTransition newHistoryTransition(final SCChartReferece target, final String id) {
+	public HistoryTransition newHistoryTransition(final FinalSuperState target, final String id) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", HistoryTransition.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
@@ -1093,108 +736,6 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public boolean canNewHistoryTransition(final FinalSuperState target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public HistoryTransition newHistoryTransition(final FinalSuperState target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createHistoryTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public HistoryTransition newHistoryTransition(final FinalSuperState target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", HistoryTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", HistoryTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createHistoryTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewHistoryTransition(final SuperState target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public HistoryTransition newHistoryTransition(final SuperState target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createHistoryTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public HistoryTransition newHistoryTransition(final SuperState target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", HistoryTransition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", HistoryTransition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createHistoryTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean canNewHistoryTransition(final InitialFinalSuperState target) {
 		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
 	}
@@ -1227,6 +768,57 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 */
 	@Override
 	public HistoryTransition newHistoryTransition(final InitialFinalSuperState target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", HistoryTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", HistoryTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createHistoryTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewHistoryTransition(final SCChartReferece target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public HistoryTransition newHistoryTransition(final SCChartReferece target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createHistoryTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public HistoryTransition newHistoryTransition(final SCChartReferece target, final String id) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", HistoryTransition.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
@@ -1348,7 +940,58 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public boolean canNewTransition(final InitialState target) {
+	public boolean canNewHistoryTransition(final SuperState target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public HistoryTransition newHistoryTransition(final SuperState target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createHistoryTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public HistoryTransition newHistoryTransition(final SuperState target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", HistoryTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", HistoryTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createHistoryTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewTransition(final SimpleState target) {
 		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
 	}
 
@@ -1358,7 +1001,7 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public Transition newTransition(final InitialState target) {
+	public Transition newTransition(final SimpleState target) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
@@ -1379,160 +1022,7 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public Transition newTransition(final InitialState target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Transition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Transition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewTransition(final SCChartReferece target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Transition newTransition(final SCChartReferece target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Transition newTransition(final SCChartReferece target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Transition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Transition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewTransition(final Connector target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Transition newTransition(final Connector target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Transition newTransition(final Connector target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Transition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Transition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewTransition(final InitialSuperState target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Transition newTransition(final InitialSuperState target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Transition newTransition(final InitialSuperState target, final String id) {
+	public Transition newTransition(final SimpleState target, final String id) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Transition.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
@@ -1603,7 +1093,7 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public boolean canNewTransition(final SuperState target) {
+	public boolean canNewTransition(final InitialSuperState target) {
 		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
 	}
 
@@ -1613,7 +1103,7 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public Transition newTransition(final SuperState target) {
+	public Transition newTransition(final InitialSuperState target) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
@@ -1634,7 +1124,7 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public Transition newTransition(final SuperState target, final String id) {
+	public Transition newTransition(final InitialSuperState target, final String id) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Transition.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
@@ -1654,7 +1144,7 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public boolean canNewTransition(final FinalState target) {
+	public boolean canNewTransition(final Connector target) {
 		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
 	}
 
@@ -1664,7 +1154,7 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public Transition newTransition(final FinalState target) {
+	public Transition newTransition(final Connector target) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
@@ -1685,58 +1175,7 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public Transition newTransition(final FinalState target, final String id) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Transition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Transition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean canNewTransition(final InitialFinalSuperState target) {
-		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Transition newTransition(final InitialFinalSuperState target) {
-		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, this.getClass()));
-		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
-			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, target.getClass()));
-		else {
-			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
-			edge.setSourceElement(this);
-			edge.setTargetElement(target);
-			target.getRootElement().getModelElements().add(edge);
-			return edge;
-		}
-		
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Transition newTransition(final InitialFinalSuperState target, final String id) {
+	public Transition newTransition(final Connector target, final String id) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Transition.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
@@ -1807,7 +1246,7 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public boolean canNewTransition(final SimpleState target) {
+	public boolean canNewTransition(final InitialFinalSuperState target) {
 		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
 	}
 
@@ -1817,7 +1256,7 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public Transition newTransition(final SimpleState target) {
+	public Transition newTransition(final InitialFinalSuperState target) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
@@ -1838,7 +1277,58 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
-	public Transition newTransition(final SimpleState target, final String id) {
+	public Transition newTransition(final InitialFinalSuperState target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Transition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Transition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewTransition(final SCChartReferece target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Transition newTransition(final SCChartReferece target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Transition newTransition(final SCChartReferece target, final String id) {
 		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Transition.class, this.getClass()));
 		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
@@ -1909,6 +1399,108 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 	 * @generated
 	 */
 	@Override
+	public boolean canNewTransition(final InitialState target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Transition newTransition(final InitialState target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Transition newTransition(final InitialState target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Transition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Transition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewTransition(final FinalState target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Transition newTransition(final FinalState target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Transition newTransition(final FinalState target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Transition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Transition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean canNewTransition(final FinalSCChartReferece target) {
 		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
 	}
@@ -1947,6 +1539,414 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Transition.class, target.getClass()));
 		else {
 			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewTransition(final SuperState target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Transition newTransition(final SuperState target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.Transition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Transition newTransition(final SuperState target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", Transition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.Transition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", Transition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.Transition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewDeferredTransition(final FinalSuperState target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeferredTransition newDeferredTransition(final FinalSuperState target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeferredTransition newDeferredTransition(final FinalSuperState target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", DeferredTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", DeferredTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewDeferredTransition(final InitialSuperState target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeferredTransition newDeferredTransition(final InitialSuperState target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeferredTransition newDeferredTransition(final InitialSuperState target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", DeferredTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", DeferredTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewDeferredTransition(final InitialFinalSuperState target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeferredTransition newDeferredTransition(final InitialFinalSuperState target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeferredTransition newDeferredTransition(final InitialFinalSuperState target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", DeferredTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", DeferredTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewDeferredTransition(final SCChartReferece target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeferredTransition newDeferredTransition(final SCChartReferece target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeferredTransition newDeferredTransition(final SCChartReferece target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", DeferredTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", DeferredTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewDeferredTransition(final InitialSCChartReferece target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeferredTransition newDeferredTransition(final InitialSCChartReferece target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeferredTransition newDeferredTransition(final InitialSCChartReferece target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", DeferredTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", DeferredTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewDeferredTransition(final FinalSCChartReferece target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeferredTransition newDeferredTransition(final FinalSCChartReferece target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeferredTransition newDeferredTransition(final FinalSCChartReferece target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", DeferredTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", DeferredTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean canNewDeferredTransition(final SuperState target) {
+		return this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class) && target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeferredTransition newDeferredTransition(final SuperState target) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition((graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
+			edge.setSourceElement(this);
+			edge.setTargetElement(target);
+			target.getRootElement().getModelElements().add(edge);
+			return edge;
+		}
+		
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DeferredTransition newDeferredTransition(final SuperState target, final String id) {
+		if (!this.canStart(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot start edge %s at node %s", DeferredTransition.class, this.getClass()));
+		else if (!target.canEnd(info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition.class))
+			throw new java.lang.RuntimeException(java.lang.String.format("Cannot end edge %s at node %s", DeferredTransition.class, target.getClass()));
+		else {
+			info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition edge = info.scce.cinco.product.scchart.mglid.factory.SCChartFactory.eINSTANCE.createDeferredTransition(id, (graphmodel.internal.InternalNode) this.getInternalElement(), (graphmodel.internal.InternalNode) target.getInternalElement());
 			edge.setSourceElement(this);
 			edge.setTargetElement(target);
 			return edge;
@@ -2229,22 +2229,22 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 			case ScchartPackage.SIMPLE_STATE___POST_RESIZE__INT_INT_INT_INT_DIRECTION:
 				postResize((Integer)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2), (Integer)arguments.get(3), (Direction)arguments.get(4));
 				return null;
-			case ScchartPackage.SIMPLE_STATE___GET_OUTGOING_DEFERRED_TRANSITIONS:
-				return getOutgoingDeferredTransitions();
+			case ScchartPackage.SIMPLE_STATE___GET_OUTGOING_ABSTRACT_TRANSITIONS:
+				return getOutgoingAbstractTransitions();
 			case ScchartPackage.SIMPLE_STATE___GET_OUTGOING_HISTORY_TRANSITIONS:
 				return getOutgoingHistoryTransitions();
 			case ScchartPackage.SIMPLE_STATE___GET_OUTGOING_TRANSITIONS:
 				return getOutgoingTransitions();
-			case ScchartPackage.SIMPLE_STATE___GET_OUTGOING_ABSTRACT_TRANSITIONS:
-				return getOutgoingAbstractTransitions();
-			case ScchartPackage.SIMPLE_STATE___GET_INCOMING_STRONG_ABORT_TRANSITIONS:
-				return getIncomingStrongAbortTransitions();
-			case ScchartPackage.SIMPLE_STATE___GET_INCOMING_TERMINATION_TRANSITIONS:
-				return getIncomingTerminationTransitions();
-			case ScchartPackage.SIMPLE_STATE___GET_INCOMING_TRANSITIONS:
-				return getIncomingTransitions();
+			case ScchartPackage.SIMPLE_STATE___GET_OUTGOING_DEFERRED_TRANSITIONS:
+				return getOutgoingDeferredTransitions();
 			case ScchartPackage.SIMPLE_STATE___GET_INCOMING_ABSTRACT_TRANSITIONS:
 				return getIncomingAbstractTransitions();
+			case ScchartPackage.SIMPLE_STATE___GET_INCOMING_STRONG_ABORT_TRANSITIONS:
+				return getIncomingStrongAbortTransitions();
+			case ScchartPackage.SIMPLE_STATE___GET_INCOMING_TRANSITIONS:
+				return getIncomingTransitions();
+			case ScchartPackage.SIMPLE_STATE___GET_INCOMING_TERMINATION_TRANSITIONS:
+				return getIncomingTerminationTransitions();
 			case ScchartPackage.SIMPLE_STATE___GET_ROOT_STATE_PREDECESSORS:
 				return getRootStatePredecessors();
 			case ScchartPackage.SIMPLE_STATE___GET_SUPER_STATE_PREDECESSORS:
@@ -2295,78 +2295,30 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 				return getInitialSCChartRefereceSuccessors();
 			case ScchartPackage.SIMPLE_STATE___GET_FINAL_SC_CHART_REFERECE_SUCCESSORS:
 				return getFinalSCChartRefereceSuccessors();
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_DEFERRED_TRANSITION__SCCHARTREFERECE:
-				return canNewDeferredTransition((SCChartReferece)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__SCCHARTREFERECE:
-				return newDeferredTransition((SCChartReferece)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__SCCHARTREFERECE_STRING:
-				return newDeferredTransition((SCChartReferece)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_DEFERRED_TRANSITION__INITIALSUPERSTATE:
-				return canNewDeferredTransition((InitialSuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__INITIALSUPERSTATE:
-				return newDeferredTransition((InitialSuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__INITIALSUPERSTATE_STRING:
-				return newDeferredTransition((InitialSuperState)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_DEFERRED_TRANSITION__FINALSUPERSTATE:
-				return canNewDeferredTransition((FinalSuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__FINALSUPERSTATE:
-				return newDeferredTransition((FinalSuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__FINALSUPERSTATE_STRING:
-				return newDeferredTransition((FinalSuperState)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_DEFERRED_TRANSITION__SUPERSTATE:
-				return canNewDeferredTransition((SuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__SUPERSTATE:
-				return newDeferredTransition((SuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__SUPERSTATE_STRING:
-				return newDeferredTransition((SuperState)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_DEFERRED_TRANSITION__INITIALFINALSUPERSTATE:
-				return canNewDeferredTransition((InitialFinalSuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__INITIALFINALSUPERSTATE:
-				return newDeferredTransition((InitialFinalSuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__INITIALFINALSUPERSTATE_STRING:
-				return newDeferredTransition((InitialFinalSuperState)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_DEFERRED_TRANSITION__INITIALSCCHARTREFERECE:
-				return canNewDeferredTransition((InitialSCChartReferece)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__INITIALSCCHARTREFERECE:
-				return newDeferredTransition((InitialSCChartReferece)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__INITIALSCCHARTREFERECE_STRING:
-				return newDeferredTransition((InitialSCChartReferece)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_DEFERRED_TRANSITION__FINALSCCHARTREFERECE:
-				return canNewDeferredTransition((FinalSCChartReferece)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__FINALSCCHARTREFERECE:
-				return newDeferredTransition((FinalSCChartReferece)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__FINALSCCHARTREFERECE_STRING:
-				return newDeferredTransition((FinalSCChartReferece)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_HISTORY_TRANSITION__SCCHARTREFERECE:
-				return canNewHistoryTransition((SCChartReferece)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__SCCHARTREFERECE:
-				return newHistoryTransition((SCChartReferece)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__SCCHARTREFERECE_STRING:
-				return newHistoryTransition((SCChartReferece)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_HISTORY_TRANSITION__INITIALSUPERSTATE:
-				return canNewHistoryTransition((InitialSuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__INITIALSUPERSTATE:
-				return newHistoryTransition((InitialSuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__INITIALSUPERSTATE_STRING:
-				return newHistoryTransition((InitialSuperState)arguments.get(0), (String)arguments.get(1));
 			case ScchartPackage.SIMPLE_STATE___CAN_NEW_HISTORY_TRANSITION__FINALSUPERSTATE:
 				return canNewHistoryTransition((FinalSuperState)arguments.get(0));
 			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__FINALSUPERSTATE:
 				return newHistoryTransition((FinalSuperState)arguments.get(0));
 			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__FINALSUPERSTATE_STRING:
 				return newHistoryTransition((FinalSuperState)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_HISTORY_TRANSITION__SUPERSTATE:
-				return canNewHistoryTransition((SuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__SUPERSTATE:
-				return newHistoryTransition((SuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__SUPERSTATE_STRING:
-				return newHistoryTransition((SuperState)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_HISTORY_TRANSITION__INITIALSUPERSTATE:
+				return canNewHistoryTransition((InitialSuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__INITIALSUPERSTATE:
+				return newHistoryTransition((InitialSuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__INITIALSUPERSTATE_STRING:
+				return newHistoryTransition((InitialSuperState)arguments.get(0), (String)arguments.get(1));
 			case ScchartPackage.SIMPLE_STATE___CAN_NEW_HISTORY_TRANSITION__INITIALFINALSUPERSTATE:
 				return canNewHistoryTransition((InitialFinalSuperState)arguments.get(0));
 			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__INITIALFINALSUPERSTATE:
 				return newHistoryTransition((InitialFinalSuperState)arguments.get(0));
 			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__INITIALFINALSUPERSTATE_STRING:
 				return newHistoryTransition((InitialFinalSuperState)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_HISTORY_TRANSITION__SCCHARTREFERECE:
+				return canNewHistoryTransition((SCChartReferece)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__SCCHARTREFERECE:
+				return newHistoryTransition((SCChartReferece)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__SCCHARTREFERECE_STRING:
+				return newHistoryTransition((SCChartReferece)arguments.get(0), (String)arguments.get(1));
 			case ScchartPackage.SIMPLE_STATE___CAN_NEW_HISTORY_TRANSITION__INITIALSCCHARTREFERECE:
 				return canNewHistoryTransition((InitialSCChartReferece)arguments.get(0));
 			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__INITIALSCCHARTREFERECE:
@@ -2379,78 +2331,126 @@ public class SimpleStateImpl extends NodeImpl implements SimpleState {
 				return newHistoryTransition((FinalSCChartReferece)arguments.get(0));
 			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__FINALSCCHARTREFERECE_STRING:
 				return newHistoryTransition((FinalSCChartReferece)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__INITIALSTATE:
-				return canNewTransition((InitialState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALSTATE:
-				return newTransition((InitialState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALSTATE_STRING:
-				return newTransition((InitialState)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__SCCHARTREFERECE:
-				return canNewTransition((SCChartReferece)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__SCCHARTREFERECE:
-				return newTransition((SCChartReferece)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__SCCHARTREFERECE_STRING:
-				return newTransition((SCChartReferece)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__CONNECTOR:
-				return canNewTransition((Connector)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__CONNECTOR:
-				return newTransition((Connector)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__CONNECTOR_STRING:
-				return newTransition((Connector)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__INITIALSUPERSTATE:
-				return canNewTransition((InitialSuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALSUPERSTATE:
-				return newTransition((InitialSuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALSUPERSTATE_STRING:
-				return newTransition((InitialSuperState)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__FINALSUPERSTATE:
-				return canNewTransition((FinalSuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__FINALSUPERSTATE:
-				return newTransition((FinalSuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__FINALSUPERSTATE_STRING:
-				return newTransition((FinalSuperState)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__SUPERSTATE:
-				return canNewTransition((SuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__SUPERSTATE:
-				return newTransition((SuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__SUPERSTATE_STRING:
-				return newTransition((SuperState)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__FINALSTATE:
-				return canNewTransition((FinalState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__FINALSTATE:
-				return newTransition((FinalState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__FINALSTATE_STRING:
-				return newTransition((FinalState)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__INITIALFINALSUPERSTATE:
-				return canNewTransition((InitialFinalSuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALFINALSUPERSTATE:
-				return newTransition((InitialFinalSuperState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALFINALSUPERSTATE_STRING:
-				return newTransition((InitialFinalSuperState)arguments.get(0), (String)arguments.get(1));
-			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__INITIALFINALSTATE:
-				return canNewTransition((InitialFinalState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALFINALSTATE:
-				return newTransition((InitialFinalState)arguments.get(0));
-			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALFINALSTATE_STRING:
-				return newTransition((InitialFinalState)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_HISTORY_TRANSITION__SUPERSTATE:
+				return canNewHistoryTransition((SuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__SUPERSTATE:
+				return newHistoryTransition((SuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_HISTORY_TRANSITION__SUPERSTATE_STRING:
+				return newHistoryTransition((SuperState)arguments.get(0), (String)arguments.get(1));
 			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__SIMPLESTATE:
 				return canNewTransition((SimpleState)arguments.get(0));
 			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__SIMPLESTATE:
 				return newTransition((SimpleState)arguments.get(0));
 			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__SIMPLESTATE_STRING:
 				return newTransition((SimpleState)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__FINALSUPERSTATE:
+				return canNewTransition((FinalSuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__FINALSUPERSTATE:
+				return newTransition((FinalSuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__FINALSUPERSTATE_STRING:
+				return newTransition((FinalSuperState)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__INITIALSUPERSTATE:
+				return canNewTransition((InitialSuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALSUPERSTATE:
+				return newTransition((InitialSuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALSUPERSTATE_STRING:
+				return newTransition((InitialSuperState)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__CONNECTOR:
+				return canNewTransition((Connector)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__CONNECTOR:
+				return newTransition((Connector)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__CONNECTOR_STRING:
+				return newTransition((Connector)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__INITIALFINALSTATE:
+				return canNewTransition((InitialFinalState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALFINALSTATE:
+				return newTransition((InitialFinalState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALFINALSTATE_STRING:
+				return newTransition((InitialFinalState)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__INITIALFINALSUPERSTATE:
+				return canNewTransition((InitialFinalSuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALFINALSUPERSTATE:
+				return newTransition((InitialFinalSuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALFINALSUPERSTATE_STRING:
+				return newTransition((InitialFinalSuperState)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__SCCHARTREFERECE:
+				return canNewTransition((SCChartReferece)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__SCCHARTREFERECE:
+				return newTransition((SCChartReferece)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__SCCHARTREFERECE_STRING:
+				return newTransition((SCChartReferece)arguments.get(0), (String)arguments.get(1));
 			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__INITIALSCCHARTREFERECE:
 				return canNewTransition((InitialSCChartReferece)arguments.get(0));
 			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALSCCHARTREFERECE:
 				return newTransition((InitialSCChartReferece)arguments.get(0));
 			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALSCCHARTREFERECE_STRING:
 				return newTransition((InitialSCChartReferece)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__INITIALSTATE:
+				return canNewTransition((InitialState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALSTATE:
+				return newTransition((InitialState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__INITIALSTATE_STRING:
+				return newTransition((InitialState)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__FINALSTATE:
+				return canNewTransition((FinalState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__FINALSTATE:
+				return newTransition((FinalState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__FINALSTATE_STRING:
+				return newTransition((FinalState)arguments.get(0), (String)arguments.get(1));
 			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__FINALSCCHARTREFERECE:
 				return canNewTransition((FinalSCChartReferece)arguments.get(0));
 			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__FINALSCCHARTREFERECE:
 				return newTransition((FinalSCChartReferece)arguments.get(0));
 			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__FINALSCCHARTREFERECE_STRING:
 				return newTransition((FinalSCChartReferece)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_TRANSITION__SUPERSTATE:
+				return canNewTransition((SuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__SUPERSTATE:
+				return newTransition((SuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_TRANSITION__SUPERSTATE_STRING:
+				return newTransition((SuperState)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_DEFERRED_TRANSITION__FINALSUPERSTATE:
+				return canNewDeferredTransition((FinalSuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__FINALSUPERSTATE:
+				return newDeferredTransition((FinalSuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__FINALSUPERSTATE_STRING:
+				return newDeferredTransition((FinalSuperState)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_DEFERRED_TRANSITION__INITIALSUPERSTATE:
+				return canNewDeferredTransition((InitialSuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__INITIALSUPERSTATE:
+				return newDeferredTransition((InitialSuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__INITIALSUPERSTATE_STRING:
+				return newDeferredTransition((InitialSuperState)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_DEFERRED_TRANSITION__INITIALFINALSUPERSTATE:
+				return canNewDeferredTransition((InitialFinalSuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__INITIALFINALSUPERSTATE:
+				return newDeferredTransition((InitialFinalSuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__INITIALFINALSUPERSTATE_STRING:
+				return newDeferredTransition((InitialFinalSuperState)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_DEFERRED_TRANSITION__SCCHARTREFERECE:
+				return canNewDeferredTransition((SCChartReferece)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__SCCHARTREFERECE:
+				return newDeferredTransition((SCChartReferece)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__SCCHARTREFERECE_STRING:
+				return newDeferredTransition((SCChartReferece)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_DEFERRED_TRANSITION__INITIALSCCHARTREFERECE:
+				return canNewDeferredTransition((InitialSCChartReferece)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__INITIALSCCHARTREFERECE:
+				return newDeferredTransition((InitialSCChartReferece)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__INITIALSCCHARTREFERECE_STRING:
+				return newDeferredTransition((InitialSCChartReferece)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_DEFERRED_TRANSITION__FINALSCCHARTREFERECE:
+				return canNewDeferredTransition((FinalSCChartReferece)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__FINALSCCHARTREFERECE:
+				return newDeferredTransition((FinalSCChartReferece)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__FINALSCCHARTREFERECE_STRING:
+				return newDeferredTransition((FinalSCChartReferece)arguments.get(0), (String)arguments.get(1));
+			case ScchartPackage.SIMPLE_STATE___CAN_NEW_DEFERRED_TRANSITION__SUPERSTATE:
+				return canNewDeferredTransition((SuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__SUPERSTATE:
+				return newDeferredTransition((SuperState)arguments.get(0));
+			case ScchartPackage.SIMPLE_STATE___NEW_DEFERRED_TRANSITION__SUPERSTATE_STRING:
+				return newDeferredTransition((SuperState)arguments.get(0), (String)arguments.get(1));
 			case ScchartPackage.SIMPLE_STATE___CAN_MOVE_TO__REGION_INT_INT:
 				return canMoveTo((Region)arguments.get(0), (Integer)arguments.get(1), (Integer)arguments.get(2));
 			case ScchartPackage.SIMPLE_STATE___MOVE_TO__REGION_INT_INT:

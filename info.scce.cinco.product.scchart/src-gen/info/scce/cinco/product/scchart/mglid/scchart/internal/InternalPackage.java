@@ -157,13 +157,22 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_ROOT_STATE__MODEL_ELEMENTS = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER__MODEL_ELEMENTS;
 
 	/**
+	 * The feature id for the '<em><b>Generator Output</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ROOT_STATE__GENERATOR_OUTPUT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE__NAME = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 0;
+	int INTERNAL_ROOT_STATE__NAME = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
@@ -172,7 +181,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE__LABEL = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 1;
+	int INTERNAL_ROOT_STATE__LABEL = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Root State</em>' class.
@@ -181,7 +190,7 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ROOT_STATE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 2;
+	int INTERNAL_ROOT_STATE_FEATURE_COUNT = graphmodel.internal.InternalPackage.INTERNAL_CONTAINER_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -4550,22 +4559,13 @@ public interface InternalPackage extends EPackage {
 	int INTERNAL_INITIAL_STATE__LABEL = INTERNAL_SIMPLE_STATE__LABEL;
 
 	/**
-	 * The feature id for the '<em><b>Initial Final State</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERNAL_INITIAL_STATE__INITIAL_FINAL_STATE = INTERNAL_SIMPLE_STATE_FEATURE_COUNT + 0;
-
-	/**
 	 * The number of structural features of the '<em>Initial State</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_INITIAL_STATE_FEATURE_COUNT = INTERNAL_SIMPLE_STATE_FEATURE_COUNT + 1;
+	int INTERNAL_INITIAL_STATE_FEATURE_COUNT = INTERNAL_SIMPLE_STATE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Equals</em>' operation.
@@ -11331,6 +11331,17 @@ public interface InternalPackage extends EPackage {
 	EClass getInternalRootState();
 
 	/**
+	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getGeneratorOutput <em>Generator Output</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generator Output</em>'.
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getGeneratorOutput()
+	 * @see #getInternalRootState()
+	 * @generated
+	 */
+	EAttribute getInternalRootState_GeneratorOutput();
+
+	/**
 	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13233,17 +13244,6 @@ public interface InternalPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getInternalInitialState();
-
-	/**
-	 * Returns the meta object for the attribute '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialState#isInitialFinalState <em>Initial Final State</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Initial Final State</em>'.
-	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialState#isInitialFinalState()
-	 * @see #getInternalInitialState()
-	 * @generated
-	 */
-	EAttribute getInternalInitialState_InitialFinalState();
 
 	/**
 	 * Returns the meta object for the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalInitialState#getIncomingConstraints() <em>Get Incoming Constraints</em>}' operation.
@@ -16110,6 +16110,14 @@ public interface InternalPackage extends EPackage {
 		EClass INTERNAL_ROOT_STATE = eINSTANCE.getInternalRootState();
 
 		/**
+		 * The meta object literal for the '<em><b>Generator Output</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INTERNAL_ROOT_STATE__GENERATOR_OUTPUT = eINSTANCE.getInternalRootState_GeneratorOutput();
+
+		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -17632,14 +17640,6 @@ public interface InternalPackage extends EPackage {
 		 * @generated
 		 */
 		EClass INTERNAL_INITIAL_STATE = eINSTANCE.getInternalInitialState();
-
-		/**
-		 * The meta object literal for the '<em><b>Initial Final State</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERNAL_INITIAL_STATE__INITIAL_FINAL_STATE = eINSTANCE.getInternalInitialState_InitialFinalState();
 
 		/**
 		 * The meta object literal for the '<em><b>Get Incoming Constraints</b></em>' operation.

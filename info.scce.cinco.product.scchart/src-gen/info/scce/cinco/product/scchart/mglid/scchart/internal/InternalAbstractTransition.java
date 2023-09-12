@@ -23,13 +23,13 @@ import graphmodel.internal.InternalEdge;
 public interface InternalAbstractTransition extends InternalEdge {
 	/**
 	 * Returns the value of the '<em><b>Priority</b></em>' attribute.
-	 * The default value is <code>"0"</code>.
+	 * The default value is <code>"1"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Priority</em>' attribute.
 	 * @see #setPriority(String)
 	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalAbstractTransition_Priority()
-	 * @model default="0"
+	 * @model default="1"
 	 * @generated
 	 */
 	String getPriority();

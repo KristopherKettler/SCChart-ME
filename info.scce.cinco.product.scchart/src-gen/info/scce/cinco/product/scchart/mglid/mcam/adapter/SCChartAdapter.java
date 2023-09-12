@@ -19,19 +19,19 @@ import info.scce.cinco.product.scchart.mglid.scchart.ScchartPackage;
 
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
 import info.scce.cinco.product.scchart.mglid.scchart.RootState;
-import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition;
-import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredHistoryTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.Transition;
 import info.scce.cinco.product.scchart.mglid.scchart.DeferredTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortHistoryTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.HistoryTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredHistoryTransition;
-import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition;
-import info.scce.cinco.product.scchart.mglid.scchart.AbstractTransition;
-import info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.TerminationTransition;
-import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredHistoryTransition;
 import info.scce.cinco.product.scchart.mglid.scchart.DeferredHistoryTransition;
-import info.scce.cinco.product.scchart.mglid.scchart.Transition;
-import info.scce.cinco.product.scchart.mglid.scchart.TerminationHistoryTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.TerminationDeferredTransition;
+import info.scce.cinco.product.scchart.mglid.scchart.StrongAbortDeferredTransition;
 
 public class SCChartAdapter extends _CincoAdapter<SCChartId,SCChart> {
 

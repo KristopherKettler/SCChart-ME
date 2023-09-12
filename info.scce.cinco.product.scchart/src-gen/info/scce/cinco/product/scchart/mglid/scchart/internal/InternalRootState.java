@@ -31,6 +31,7 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getGeneratorOutput <em>Generator Output</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getName <em>Name</em>}</li>
  *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getLabel <em>Label</em>}</li>
  * </ul>
@@ -40,6 +41,29 @@ import org.eclipse.emf.common.util.EList;
  * @generated
  */
 public interface InternalRootState extends InternalContainer {
+	/**
+	 * Returns the value of the '<em><b>Generator Output</b></em>' attribute.
+	 * The default value is <code>"Identity Diagram"</code>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Generator Output</em>' attribute.
+	 * @see #setGeneratorOutput(String)
+	 * @see info.scce.cinco.product.scchart.mglid.scchart.internal.InternalPackage#getInternalRootState_GeneratorOutput()
+	 * @model default="Identity Diagram"
+	 * @generated
+	 */
+	String getGeneratorOutput();
+
+	/**
+	 * Sets the value of the '{@link info.scce.cinco.product.scchart.mglid.scchart.internal.InternalRootState#getGeneratorOutput <em>Generator Output</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Generator Output</em>' attribute.
+	 * @see #getGeneratorOutput()
+	 * @generated
+	 */
+	void setGeneratorOutput(String value);
+
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * The default value is <code>"<set name>"</code>.

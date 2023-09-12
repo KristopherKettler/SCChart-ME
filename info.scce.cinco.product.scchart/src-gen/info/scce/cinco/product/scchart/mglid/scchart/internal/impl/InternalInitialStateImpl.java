@@ -26,48 +26,18 @@ import info.scce.cinco.product.scchart.mglid.scchart.internal.InternalSimpleStat
 
 import java.lang.reflect.InvocationTargetException;
 
-import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Initial State</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * The following features are implemented:
- * </p>
- * <ul>
- *   <li>{@link info.scce.cinco.product.scchart.mglid.scchart.internal.impl.InternalInitialStateImpl#isInitialFinalState <em>Initial Final State</em>}</li>
- * </ul>
  *
  * @generated
  */
 public class InternalInitialStateImpl extends InternalSimpleStateImpl implements InternalInitialState {
-	/**
-	 * The default value of the '{@link #isInitialFinalState() <em>Initial Final State</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #isInitialFinalState()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final boolean INITIAL_FINAL_STATE_EDEFAULT = false;
-
-	/**
-	 * The cached value of the '{@link #isInitialFinalState() <em>Initial Final State</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #isInitialFinalState()
-	 * @generated
-	 * @ordered
-	 */
-	protected boolean initialFinalState = INITIAL_FINAL_STATE_EDEFAULT;
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -85,29 +55,6 @@ public class InternalInitialStateImpl extends InternalSimpleStateImpl implements
 	@Override
 	protected EClass eStaticClass() {
 		return InternalPackage.Literals.INTERNAL_INITIAL_STATE;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean isInitialFinalState() {
-		return initialFinalState;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInitialFinalState(boolean newInitialFinalState) {
-		boolean oldInitialFinalState = initialFinalState;
-		initialFinalState = newInitialFinalState;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, InternalPackage.INTERNAL_INITIAL_STATE__INITIAL_FINAL_STATE, oldInitialFinalState, initialFinalState));
 	}
 
 	/**
@@ -400,64 +347,6 @@ public class InternalInitialStateImpl extends InternalSimpleStateImpl implements
 	 * @generated
 	 */
 	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case InternalPackage.INTERNAL_INITIAL_STATE__INITIAL_FINAL_STATE:
-				return isInitialFinalState();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case InternalPackage.INTERNAL_INITIAL_STATE__INITIAL_FINAL_STATE:
-				setInitialFinalState((Boolean)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eUnset(int featureID) {
-		switch (featureID) {
-			case InternalPackage.INTERNAL_INITIAL_STATE__INITIAL_FINAL_STATE:
-				setInitialFinalState(INITIAL_FINAL_STATE_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case InternalPackage.INTERNAL_INITIAL_STATE__INITIAL_FINAL_STATE:
-				return initialFinalState != INITIAL_FINAL_STATE_EDEFAULT;
-		}
-		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public int eDerivedOperationID(int baseOperationID, Class<?> baseClass) {
 		if (baseClass == InternalNode.class) {
 			switch (baseOperationID) {
@@ -565,22 +454,6 @@ public class InternalInitialStateImpl extends InternalSimpleStateImpl implements
 				return getFinalSCChartRefereceSuccessors();
 		}
 		return super.eInvoke(operationID, arguments);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (initialFinalState: ");
-		result.append(initialFinalState);
-		result.append(')');
-		return result.toString();
 	}
 
 } //InternalInitialStateImpl

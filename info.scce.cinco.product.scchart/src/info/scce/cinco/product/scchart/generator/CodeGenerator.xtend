@@ -45,6 +45,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.concurrent.Future
 import java.net.URL
+import org.eclipse.core.resources.IFile
+import org.eclipse.core.resources.IProject
+import org.eclipse.core.resources.ResourcesPlugin
+import org.eclipse.core.resources.IWorkspace
+import org.eclipse.core.resources.IResource
 
 class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>{
 	
@@ -55,7 +60,9 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 		fileName = fullFileName.substring(0, fullFileName.lastIndexOf('.'))
 		val targetFile = workspaceRoot.getFileForLocation(path.append(fileName + ".sctx"))
 		EclipseFileUtils.writeToFile(targetFile, template(scchart))
-		commandLineParser(#['a','v'])
+		Thread.sleep(100){
+			commandLineParser(targetFile,scchart,path)
+		}
 	}
 	
 	def template(SCChart scchart) '''
@@ -229,7 +236,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			}
 		}
 		if(transition.condition!==null){
-			if(!transition.condition.trim.isEmpty){
+			if(!(transition.condition.trim.isEmpty||transition.condition=="<No condition>")){
 				string = "if " + string + transition.condition + " "
 			}
 		}
@@ -237,7 +244,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			string = "immediate " + string
 		}
 		if(transition.effect!==null){
-			if(!transition.effect.trim.isEmpty){
+			if(!(transition.effect.trim.isEmpty || transition.effect=="<No effect>")){
 				string = string + "do " + transition.effect + " "
 			}
 		}
@@ -255,7 +262,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			}
 		}
 		if(transition.condition!==null){
-			if(!transition.condition.trim.isEmpty){
+			if(!(transition.condition.trim.isEmpty||transition.condition=="<No condition>")){
 				string = "if " + string + transition.condition + " "
 			}
 		}
@@ -263,7 +270,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			string = "immediate " + string
 		}
 		if(transition.effect!==null){
-			if(!transition.effect.trim.isEmpty){
+			if(!(transition.effect.trim.isEmpty || transition.effect=="<No effect>")){
 				string = string + "do " + transition.effect + " "
 			}
 		}
@@ -281,7 +288,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			}
 		}
 		if(transition.condition!==null){
-			if(!transition.condition.trim.isEmpty){
+			if(!(transition.condition.trim.isEmpty||transition.condition=="<No condition>")){
 				string = "if " + string + transition.condition + " "
 			}
 		}
@@ -289,7 +296,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			string = "immediate " + string
 		}
 		if(transition.effect!==null){
-			if(!transition.effect.trim.isEmpty){
+			if(!(transition.effect.trim.isEmpty || transition.effect=="<No effect>")){
 				string = string + "do " + transition.effect + " "
 			}
 		}
@@ -308,7 +315,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			}
 		}
 		if(transition.condition!==null){
-			if(!transition.condition.trim.isEmpty){
+			if(!(transition.condition.trim.isEmpty||transition.condition=="<No condition>")){
 				string = "if " + string + transition.condition + " "
 			}
 		}
@@ -316,7 +323,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			string = "immediate " + string
 		}
 		if(transition.effect!==null){
-			if(!transition.effect.trim.isEmpty){
+			if(!(transition.effect.trim.isEmpty || transition.effect=="<No effect>")){
 				string = string + "do " + transition.effect + " "
 			}
 		}
@@ -335,7 +342,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			}
 		}
 		if(transition.condition!==null){
-			if(!transition.condition.trim.isEmpty){
+			if(!(transition.condition.trim.isEmpty||transition.condition=="<No condition>")){
 				string = "if " + string + transition.condition + " "
 			}
 		}
@@ -343,7 +350,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			string = "immediate " + string
 		}
 		if(transition.effect!==null){
-			if(!transition.effect.trim.isEmpty){
+			if(!(transition.effect.trim.isEmpty || transition.effect=="<No effect>")){
 				string = string + "do " + transition.effect + " "
 			}
 		}
@@ -366,7 +373,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			}
 		}
 		if(transition.condition!==null){
-			if(!transition.condition.trim.isEmpty){
+			if(!(transition.condition.trim.isEmpty||transition.condition=="<No condition>")){
 				string = "if " + string + transition.condition + " "
 			}
 		}
@@ -374,7 +381,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			string = "immediate " + string
 		}
 		if(transition.effect!==null){
-			if(!transition.effect.trim.isEmpty){
+			if(!(transition.effect.trim.isEmpty || transition.effect=="<No effect>")){
 				string = string + "do " + transition.effect + " "
 			}
 		}
@@ -392,7 +399,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			}
 		}
 		if(transition.condition!==null){
-			if(!transition.condition.trim.isEmpty){
+			if(!(transition.condition.trim.isEmpty||transition.condition=="<No condition>")){
 				string = "if " + string + transition.condition + " "
 			}
 		}
@@ -400,7 +407,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			string = "immediate " + string
 		}
 		if(transition.effect!==null){
-			if(!transition.effect.trim.isEmpty){
+			if(!(transition.effect.trim.isEmpty || transition.effect=="<No effect>")){
 				string = string + "do " + transition.effect + " "
 			}
 		}
@@ -419,7 +426,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			}
 		}
 		if(transition.condition!==null){
-			if(!transition.condition.trim.isEmpty){
+			if(!(transition.condition.trim.isEmpty||transition.condition=="<No condition>")){
 				string = "if " + string + transition.condition + " "
 			}
 		}
@@ -427,7 +434,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			string = "immediate " + string
 		}
 		if(transition.effect!==null){
-			if(!transition.effect.trim.isEmpty){
+			if(!(transition.effect.trim.isEmpty || transition.effect=="<No effect>")){
 				string = string + "do " + transition.effect + " "
 			}
 		}
@@ -449,7 +456,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			}
 		}
 		if(transition.condition!==null){
-			if(!transition.condition.trim.isEmpty){
+			if(!(transition.condition.trim.isEmpty||transition.condition=="<No condition>")){
 				string = "if " + string + transition.condition + " "
 			}
 		}
@@ -457,7 +464,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			string = "immediate " + string
 		}
 		if(transition.effect!==null){
-			if(!transition.effect.trim.isEmpty){
+			if(!(transition.effect.trim.isEmpty || transition.effect=="<No effect>")){
 				string = string + "do " + transition.effect + " "
 			}
 		}
@@ -480,7 +487,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			}
 		}
 		if(transition.condition!==null){
-			if(!transition.condition.trim.isEmpty){
+			if(!(transition.condition.trim.isEmpty||transition.condition=="<No condition>")){
 				string = "if " + string + transition.condition + " "
 			}
 		}
@@ -488,7 +495,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			string = "immediate " + string
 		}
 		if(transition.effect!==null){
-			if(!transition.effect.trim.isEmpty){
+			if(!(transition.effect.trim.isEmpty || transition.effect=="<No effect>")){
 				string = string + "do " + transition.effect + " "
 			}
 		}
@@ -512,7 +519,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			}
 		}
 		if(transition.condition!==null){
-			if(!transition.condition.trim.isEmpty){
+			if(!(transition.condition.trim.isEmpty||transition.condition=="<No condition>")){
 				string = "if " + string + transition.condition + " "
 			}
 		}
@@ -520,7 +527,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			string = "immediate " + string
 		}
 		if(transition.effect!==null){
-			if(!transition.effect.trim.isEmpty){
+			if(!(transition.effect.trim.isEmpty || transition.effect=="<No effect>")){
 				string = string + "do " + transition.effect + " "
 			}
 		}
@@ -543,7 +550,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			}
 		}
 		if(transition.condition!==null){
-			if(!transition.condition.trim.isEmpty){
+			if(!(transition.condition.trim.isEmpty||transition.condition=="<No condition>")){
 				string = "if " + string + transition.condition + " "
 			}
 		}
@@ -551,7 +558,7 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 			string = "immediate " + string
 		}
 		if(transition.effect!==null){
-			if(!transition.effect.trim.isEmpty){
+			if(!(transition.effect.trim.isEmpty || transition.effect=="<No effect>")){
 				string = string + "do " + transition.effect + " "
 			}
 		}
@@ -566,63 +573,46 @@ class CodeGenerator extends CincoRuntimeBaseClass implements IGenerator<SCChart>
 		return string
 	}
 	
-	def commandLineParser(String[] args)throws ParseException{
-		var ProcessBuilder builder = new ProcessBuilder();
+	def commandLineParser(IFile file, SCChart scchart, IPath path)throws ParseException{
 		
+		//'Netlist-based Compilation (C)','Netlist-based Compilation (Java)','Netlist-based Deployment (NXJ)','Priority-based Compilation (C)','Priority-based Compilation (Java)','State-based Compilation (C) lean-mode (Template)'] 
 		try {
-	
-			// -- Linux --
-			
-			
-			// Run a shell command
-			// Process process = Runtime.getRuntime().exec("ls /home/mkyong/");
-	
-			// Run a shell script
-			// Process process = Runtime.getRuntime().exec("path/to/hello.sh");
-	
-			// -- Windows --
-			var URL url = getClass().getResource("info.scce.cinco.product.scchart/src/kico-win.bat");
-			// Run a command
-			//Process process = Runtime.getRuntime().exec("cmd /c dir C:\\Users\\mkyong");
-			var File f = new File(url.path);
-			var String absolute = f.getAbsolutePath();
-  
-            // Display the file path of the file object
-            // and also the file path of absolute file
+			var File f = new File("KIELER_CLI/kicodia-win.bat")
+			var String absolute = f.getAbsolutePath()
+			val targetFile = file.getLocation().removeLastSegments(1).toFile().getAbsolutePath();
+			val scchartSLTX =  file.getLocation().toFile().getAbsolutePath();
+			var generatorOutput = ""
+			switch scchart {
+				case scchart.rootStates.head.generatorOutput=="Identity Diagram" : generatorOutput ="-s de.cau.cs.kieler.kicool.identity -d"
+				case scchart.rootStates.head.generatorOutput=="Netlist-based Compilation (C)" : generatorOutput ="-s de.cau.cs.kieler.sccharts.netlist"
+				case scchart.rootStates.head.generatorOutput=="Netlist-based Compilation (Java)" : generatorOutput ="-s de.cau.cs.kieler.sccharts.netlist.java"
+				case scchart.rootStates.head.generatorOutput=="Netlist-based Deployment (NXJ)" : generatorOutput ="-s de.cau.cs.kieler.sccharts.netlist.nxj.deploy"
+				case scchart.rootStates.head.generatorOutput=="Priority-based Compilation (C)" : generatorOutput ="-s de.cau.cs.kieler.sccharts.priority"
+				case scchart.rootStates.head.generatorOutput=="Priority-based Compilation (Java)" : generatorOutput ="-s de.cau.cs.kieler.sccharts.priority.java"
+				case scchart.rootStates.head.generatorOutput=="State-based Compilation (C) lean-mode (Template)" : generatorOutput ="-s  de.cau.cs.kieler.sccharts.statebased.lean.c.template"
+			}
+			System.out.println("generateSCChart: "
+                               + targetFile)
             System.out.println("Original path: "
                                + f.getPath());
             System.out.println("Absolute path: "
                                + absolute);
-			//var String path = info.scce.cinco.product.scchart/KICO/kico-win.bat
-			//Run a bat file
-//			var Process process = Runtime.getRuntime().exec(
-//					absolute)
-//	
-//			var StringBuilder output = new StringBuilder();
-//	
-//			var BufferedReader reader = new BufferedReader(
-//					new InputStreamReader(process.getInputStream()));
-//	
-//			var String line;
-//			while ((line = reader.readLine()) != null) {
-//				output.append(line + "\n");
-//			}
-//	
-//			var int exitVal = process.waitFor();
-//			if (exitVal == 0) {
-//				System.out.println("Success!");
-//				System.out.println(output);
-//				System.exit(0);
-//			} else {
-//				
-//			}
-	
+			System.out.println("Absolute path: "
+                               + "start " + absolute + " " + scchartSLTX + " -o " + targetFile + " " + generatorOutput)
+			var Process process = Runtime.getRuntime().exec("cmd.exe /c start " + absolute + " " + scchartSLTX + " -o " + targetFile + " " + generatorOutput)
+			
+			var int exitVal = process.waitFor();
+			if (exitVal == 0) {
+				System.out.println("Success!");
+				Runtime.getRuntime().exec("taskkill /f /im cmd.exe")
+			} 
+			else {
+				System.out.println("Fail!");
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-	
-	
 	}
 }
